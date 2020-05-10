@@ -42,7 +42,7 @@ theme:
     custom_dir: material
     favicon: images/favicon.png
     features: [tabs]
-    font: {code: Roboto Mono, text: Roboto Condensed}
+    font: {code: Raleway, text: Roboto Condensed}
     logo: images/favicon-white.png
     name: material
     palette: {accent: red, primary: indigo}
