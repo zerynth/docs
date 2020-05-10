@@ -1,0 +1,49 @@
+---
+extra_css: [extra.css]
+markdown_extensions:
+- meta
+- admonition
+- footnotes
+- meta
+-   codehilite: {guess_lang: true}
+-   toc: {permalink: true}
+-   pymdownx.betterem: {smart_enable: all}
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.inlinehilite
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences
+-   pymdownx.tasklist: {custom_checkbox: true}
+- pymdownx.tabbed
+- pymdownx.tilde
+nav:
+-   Zerynth OS: [zerynth-os/Getting Started.md, zerynth-os/Installation Guide.md,
+        zerynth-os/demo-projects/Demo Projects.md]
+-   Zerynth Device Manager: [zdm/index.md]
+-   4ZeroPlatform: [4zp/4ZeroPlatform.md, 4zp/Getting started.md, 4zp/4ZeroManager.md,
+        4zp/4ZeroBox.md]
+-   Reference:
+    - {Index: reference.md}
+    -   Programming Guide:
+        - reference/guide/docs/index.md
+        - reference/guide/docs/basics.md
+        - reference/guide/docs/seqmap.md
+        - reference/guide/docs/pinmap.md
+        - reference/guide/docs/clang.md
+        -   Zerynth OS: [reference/guide/docs/zos.md, reference/guide/docs/vm.md,
+                reference/guide/docs/vosal.md, reference/guide/docs/vhal.md]
+plugins:
+- search
+-   minify: {minify_html: true}
+site_name: Zerynth
+theme:
+    custom_dir: material
+    favicon: images/favicon.png
+    features: [tabs]
+    font: {code: Roboto Mono, text: Roboto Condensed}
+    logo: images/favicon-white.png
+    name: material
+    palette: {accent: red, primary: indigo}
+...
