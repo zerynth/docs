@@ -24,9 +24,9 @@ nav:
 -   CONCEPTUAL MODEL: [zdm/index.md]
 -   GETTING STARTED: [4zp/4ZeroPlatform.md, 4zp/Getting started.md, 4zp/4ZeroManager.md,
         4zp/4ZeroBox.md]
--   DEVELOP: 
--   DEPLOY AND MANAGE: 
--   INTEGRATE:
+-   DEVELOP: []
+-   DEPLOY AND MANAGE: []
+-   INTEGRATE: []
 -   REFERENCE:
     - {Index: reference.md}
     -   Programming Guide:
