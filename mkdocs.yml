@@ -19,12 +19,15 @@ markdown_extensions:
 - pymdownx.tabbed
 - pymdownx.tilde
 nav:
--   Zerynth OS: [zerynth-os/Getting Started.md, zerynth-os/Installation Guide.md,
+-   WELCOME: [zerynth-os/Getting Started.md, zerynth-os/Installation Guide.md,
         zerynth-os/demo-projects/Demo Projects.md]
--   Zerynth Device Manager: [zdm/index.md]
--   4ZeroPlatform: [4zp/4ZeroPlatform.md, 4zp/Getting started.md, 4zp/4ZeroManager.md,
+-   CONCEPTUAL MODEL: [zdm/index.md]
+-   GETTING STARTED: [4zp/4ZeroPlatform.md, 4zp/Getting started.md, 4zp/4ZeroManager.md,
         4zp/4ZeroBox.md]
--   Reference:
+-   DEVELOP: 
+-   DEPLOY AND MANAGE: 
+-   INTEGRATE:
+-   REFERENCE:
     - {Index: reference.md}
     -   Programming Guide:
         - reference/guide/docs/index.md
