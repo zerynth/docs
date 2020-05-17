@@ -11,7 +11,7 @@ article {
 /* change block content width */
 
 .tx-hero__content{
-  max-width: 600px;
+  max-width: 600px!important;
 }
 
 /*
