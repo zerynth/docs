@@ -1,4 +1,4 @@
-# Getting Started
+# Develop
 
 This section introduces you to the main features of Zerynth and provides you a step-by-step guide to get started with the system. Take a look at the video below to see Zerynth in action!
 
@@ -258,5 +258,5 @@ In order for the users of your library to have a better programming experience, 
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjk5NzQ2NF19
+eyJoaXN0b3J5IjpbLTcwNzU3NTcyOF19
 -->
