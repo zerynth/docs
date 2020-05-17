@@ -22,7 +22,7 @@ nav:
 -   WELCOME: index.md
 -   CONCEPTUAL MODEL: [conceptualmodel/Conceptual Model.md, conceptualmodel/Zerynth Components.md]
 -   GETTING STARTED: [gettingstarted/Getting Started.md]
--   DEVELOP: []
+-   DEVELOP: [develop/Develop.md]
 -   DEPLOY AND MANAGE: []
 -   INTEGRATE: []
 -   REFERENCE:
