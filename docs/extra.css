@@ -7,6 +7,13 @@ article {
     font-size: 0.8rem !important; 
     line-height: normal;
 }
+
+/* change block content width */
+
+.tx-hero__content{
+  max-width: 600px;
+}
+
 /*
 h1 {
     font-family:"Roboto Slab";
