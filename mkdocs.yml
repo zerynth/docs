@@ -21,8 +21,7 @@ markdown_extensions:
 nav:
 -   WELCOME: index.md
 -   CONCEPTUAL MODEL: [zdm/index.md]
--   GETTING STARTED: [4zp/4ZeroPlatform.md, 4zp/Getting started.md, 4zp/4ZeroManager.md,
-        4zp/4ZeroBox.md]
+-   GETTING STARTED: [gettingstarted/index.md]
 -   DEVELOP: []
 -   DEPLOY AND MANAGE: []
 -   INTEGRATE: []
