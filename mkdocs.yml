@@ -21,7 +21,7 @@ markdown_extensions:
 nav:
 -   WELCOME: index.md
 -   CONCEPTUAL MODEL: [zdm/index.md]
--   GETTING STARTED: [gettingstarted/index.md]
+-   GETTING STARTED: [gettingstarted/Getting Started.md]
 -   DEVELOP: []
 -   DEPLOY AND MANAGE: []
 -   INTEGRATE: []
