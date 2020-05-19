@@ -89,7 +89,8 @@ We prepared a VSCode template project that enables the execution of compilation,
 
   
 
-Note: This guide requires Zerynth Version 2.5.1 or later
+!!! note
+	This guide requires Zerynth Version 2.5.1 or later
 
   
 
@@ -106,7 +107,8 @@ Download the VSCode project template for your platform from here:
 
   
 
-Note: the templates follow the Zerynth distribution versioning. Go to the Github release section and download the template for your Zerynth installation version. We strongly suggest having Zerynth always updated to the last version thus install the last release fo the VSCode templates.
+!!! note
+	 the templates follow the Zerynth distribution versioning. Go to the Github release section and download the template for your Zerynth installation version. We strongly suggest having Zerynth always updated to the last version thus install the last release fo the VSCode templates.
 
   
 
@@ -179,7 +181,7 @@ The following ZTC commands are available:
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjIyODU5NCwyNTg4ODM5NywtMTg3Nz
-k5Mzc4NiwxNTI4MjkyOTg3LC0xMDA3NzM0MzYyLC0xODI0NDUw
-NjA2LDI3MjY2MzUyMywtMjYyNjA2MTI2XX0=
+eyJoaXN0b3J5IjpbMTA0MzcyNjcyLDI1ODg4Mzk3LC0xODc3OT
+kzNzg2LDE1MjgyOTI5ODcsLTEwMDc3MzQzNjIsLTE4MjQ0NTA2
+MDYsMjcyNjYzNTIzLC0yNjI2MDYxMjZdfQ==
 -->
