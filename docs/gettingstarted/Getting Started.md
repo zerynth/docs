@@ -9,8 +9,8 @@ The Zerynth SDK is the gateway to our platform and includes:
 
 To install the ZSDK download the latest Zerynth Release according to your platform from the [Zerynth Download page](https://www.zerynth.com/zsdk/). 
 
-!!! note Zerynth works only for 64-bit platform
-  
+
+!!! note Zerynth works only for 64-bit platform.
 
 Start Zerynth Installation and agree to the Term of Service
 
@@ -181,6 +181,6 @@ The following ZTC commands are available:
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDc3MzQzNjIsLTE4MjQ0NTA2MDYsMj
-cyNjYzNTIzLC0yNjI2MDYxMjZdfQ==
+eyJoaXN0b3J5IjpbLTExNjk0MDMzODAsLTEwMDc3MzQzNjIsLT
+E4MjQ0NTA2MDYsMjcyNjYzNTIzLC0yNjI2MDYxMjZdfQ==
 -->
