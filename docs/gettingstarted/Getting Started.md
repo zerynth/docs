@@ -66,7 +66,7 @@ By choosing the “Expert Mode” you will be able to select the architectures y
 
 Now the system unpacks and installs all the required packages creating a working instance on your local machine; you have to wait a few minutes to complete the Zerynth installation.
 
-
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/instaling%20zerynth.jpg)
 
 Launch Zerynth Studio and you’ll be ready to work.
 
@@ -111,7 +111,7 @@ Note: the templates follow the Zerynth distribution versioning. Go to the Github
 
   
 
-![](https://lh4.googleusercontent.com/0IzMuTWwEu-YXEwKAqjH_-n-WBRT2CpnAoNrvZye6Z1KKrK91oaalBTX16f6jezwNBJmvVQ46X4n0hJqjdr-rfD1DIyDuuD_ZTPGosDP5iwaLraGDbRNVEbZn_OvP_wYfVoGd05d)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/getting%20started%20zdm%203.png)
 
   
 
@@ -133,7 +133,7 @@ Press CTRL+SHIFT+B and select the ZTC command to launch.
 
   
 
-![](https://lh4.googleusercontent.com/VVs1lTMxXUQgEat7oQPEqtlIUaUx9VOlp4Z7yMdrF7eRpElt_3JvOsDVzQkpzsYbnal_yMkVkPGO_xSGwemPt0RFuQ4QUKQDmJT0f4K4HamwE4GDmYIQd7qIouNdxFg8LQUSD6Ec)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/getting%20started%20zdm%201.png)
 
   
 
@@ -180,5 +180,5 @@ The following ZTC commands are available:
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0NDY5OTc0LC0yNjI2MDYxMjZdfQ==
+eyJoaXN0b3J5IjpbLTE0OTY0MjAyOTQsLTI2MjYwNjEyNl19
 -->
