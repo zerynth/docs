@@ -174,11 +174,11 @@ The following ZTC commands are available:
 
   
 
-![](https://lh6.googleusercontent.com/Nzt31lTEqSOfEhPuHrFoVsCY6FLTgxLwIWGMaNQcdTuJUMM-Bt2sy5hQJKRCeNN2iKqnRl8VknkT2kpWvtwwNIwdxWaY2XpXtNry4r8jA78yRIqOD190g_ZSiuIhA3FbePMy8RRa)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/getting%20started%20zdm%202.png)
 
   
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY0MjAyOTQsLTI2MjYwNjEyNl19
+eyJoaXN0b3J5IjpbMjcyNjYzNTIzLC0yNjI2MDYxMjZdfQ==
 -->
