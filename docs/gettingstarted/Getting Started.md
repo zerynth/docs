@@ -32,9 +32,8 @@ Once the installation has started, the window below will appear and you are aske
 
 ![welcome to zerynth screen](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/welcome%20to%20zerynth.jpg)
 
-Note
-
-To read all the agreement conditions, you can click on provided links
+!!! note
+	To read all the agreement conditions, you can click on provided links
 
 Then, after accepting the agreement conditions, you can choose between two options to complete the installation: online and offline.
 
@@ -180,7 +179,7 @@ The following ZTC commands are available:
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4ODgzOTcsLTE4Nzc5OTM3ODYsMTUyOD
-I5Mjk4NywtMTAwNzczNDM2MiwtMTgyNDQ1MDYwNiwyNzI2NjM1
-MjMsLTI2MjYwNjEyNl19
+eyJoaXN0b3J5IjpbMjA1MjIyODU5NCwyNTg4ODM5NywtMTg3Nz
+k5Mzc4NiwxNTI4MjkyOTg3LC0xMDA3NzM0MzYyLC0xODI0NDUw
+NjA2LDI3MjY2MzUyMywtMjYyNjA2MTI2XX0=
 -->
