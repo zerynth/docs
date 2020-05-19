@@ -30,7 +30,7 @@ Only for Microsoft Windows platform: if the alert message for “allowing unknow
 
 Once the installation has started, the window below will appear and you are asked to agree to the “License and Service Terms” to continue the operation
 
-![](https://lh4.googleusercontent.com/wTiuqdGRE6IhYD-wrtDPe0ZVzTttuT_rXlTWoSwI0XndRVVLqiThAebARiIWLXcpm39FbEVZarZ5PV_WmGnlcdcZUlyh5-s5k4UWCPTtZAUfVeZROdJUDRXvg0Kzfxn6VUe2q65q)
+![welcome to zerynth screen](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/welcome%20to%20zerynth.jpg)
 
 Note
 
@@ -180,5 +180,5 @@ The following ZTC commands are available:
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjYwNjEyNl19
+eyJoaXN0b3J5IjpbNjUzMDkyNjY3LC0yNjI2MDYxMjZdfQ==
 -->
