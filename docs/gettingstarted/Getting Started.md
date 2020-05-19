@@ -25,9 +25,8 @@ To start the installation, according to your platform, you can:
 
   
 
-Warning
-
-Only for Microsoft Windows platform: if the alert message for “allowing unknown publisher to make changes to this computer” appears click on the “Yes” option
+!!! warning
+	Only for Microsoft Windows platform: if the alert message for “allowing unknown publisher to make changes to this computer” appears click on the “Yes” option
 
 Once the installation has started, the window below will appear and you are asked to agree to the “License and Service Terms” to continue the operation
 
@@ -181,7 +180,7 @@ The following ZTC commands are available:
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc5OTM3ODYsMTUyODI5Mjk4NywtMT
-AwNzczNDM2MiwtMTgyNDQ1MDYwNiwyNzI2NjM1MjMsLTI2MjYw
-NjEyNl19
+eyJoaXN0b3J5IjpbMjU4ODgzOTcsLTE4Nzc5OTM3ODYsMTUyOD
+I5Mjk4NywtMTAwNzczNDM2MiwtMTgyNDQ1MDYwNiwyNzI2NjM1
+MjMsLTI2MjYwNjEyNl19
 -->
