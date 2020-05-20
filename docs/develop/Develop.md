@@ -67,8 +67,7 @@ The created Virtual Machine can now be virtualized (i.e. burned on the device). 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/5_choose_vm.png "5_choose_vm")
 
 !!! note
-
-Zerynth Studio toolbar allows to **“Virtualize”** the selected device.
+	Zerynth Studio toolbar allows to **“Virtualize”** the selected device.
 
 ### Zerynth Devices
 
@@ -87,9 +86,8 @@ The **Device Info Window** shows detailed information about the device, includin
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/7_device_info.png "7_device_info")
 
-## Warning
-
-Some boards cannot be automatically recognized by Zerynth Studio and need a disambiguation. In this case the system asks you to indicate the device type. You can always revert this choice by clicking on the “Forget” button.
+!!! warning
+	Some boards cannot be automatically recognized by Zerynth Studio and need a disambiguation. In this case the system asks you to indicate the device type. You can always revert this choice by clicking on the “Forget” button.
 
 Finally, the **Device Pinmap window** provides the pinout of the selected device, along with the hardware features and peripherals available on each pin. Thanks to the Device Pinmap window it is also possible to understand how the device embedded peripherals are grouped and/or multiplexed. This allows to better understand how to use each specific hardware feature in the Zerynth Python scripts without having hardware conflicts.
 
@@ -108,9 +106,8 @@ Zerynth examples can be cloned in just few clicks:
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/9_clone_example.png "9_clone_example")
 
-## Warning
-
-Remember that Zerynth does not allow two projects to have the same **Folder**
+!!! warning
+	Remember that Zerynth does not allow two projects to have the same **Folder**
 
 ### Verify and Uplink a Zerynth Project
 
@@ -120,9 +117,8 @@ To Uplink your verified project into a Virtualized device just click the **Uplin
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/uplink_photon.jpg "uplink_photon")
 
-## Warning
-
-Some devices require to be reset during the uplink operation in order to write in flash the bytecode
+!!! warning
+	Some devices require to be reset during the uplink operation in order to write in flash the bytecode
 
 ### Develop your First Zerynth Project
 
@@ -150,16 +146,12 @@ You can also add a new folder, delete a selected file, refresh the project folde
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/12_project_action.png "12_project_action")
 
-## Note
-
-When you add a `.py` file containing some code to be used in the main.py file (e.g. a file named `helpers.py`), you have to import it by adding the line `import helpers` in the main.py file. Thus, you can call functions located in the `helpers.py` file by using the following syntax:
-
+!!! note
+	When you add a `.py` file containing some code to be used in the main.py file (e.g. a file named `helpers.py`), you have to import it by adding the line `import helpers` in the main.py file. Thus, you can call functions located in the `helpers.py` file by using the following syntax:
 helpers.fun_name(fun_attribute1, fun_attribute2, ...)
 
-## Note
-
-If you want to save the `template.html` in the device flash as resource to be used by a specific module like the Zerynth App library, you have to use the `new_resource()` function defining the following code in the `main.py` file:
-
+!! note
+	If you want to save the `template.html` in the device flash as resource to be used by a specific module like the Zerynth App library, you have to use the `new_resource()` function defining the following code in the `main.py` file:
 new_resource("template.html")
 
 ### Import a Zerynth Package into a Project
@@ -250,6 +242,6 @@ In order for the users of your library to have a better programming experience, 
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MDE5NjMyNSwtNzA3NTc1NzI4LC03MD
+eyJoaXN0b3J5IjpbMjEzMzA3MjE1MSwtNzA3NTc1NzI4LC03MD
 c1NzU3MjhdfQ==
 -->
