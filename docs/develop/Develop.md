@@ -12,13 +12,11 @@ To register a new Zerynth Account or to Log in an existing one, you can proceed 
 
 [![](https://www.zerynth.com/wp-content/uploads/2020/03/1_zerynth_login.png)](https://www.zerynth.com/wp-content/uploads/2020/03/1_zerynth_login.png "1_zerynth_login")
 
-## Note
+!!! note
+	For Manual Registration: check your email and verify your new account by clicking on the link provided in the confirmation email
 
-For Manual Registration: check your email and verify your new account by clicking on the link provided in the confirmation email
-
-## Warning
-
-The first time you create a user account or if you have sign-in issues, a restart of Zerynth Studio might be necessary
+!!! warning
+	The first time you create a user account or if you have sign-in issues, a restart of Zerynth Studio might be necessary
 
 ### Connect, Register and Virtualize your Device
 
@@ -26,9 +24,8 @@ To make a device usable with Zerynth, you need to **Connect**, **Register**, and
 
 According to the platform used and to the connected device, the user has to install the related driver to make the machine able to recognize and exchange data with the board.
 
-## Warning
-
-Procedure to install drivers, if needed, is reported device by device in [Supported Devices](https://docs.zerynth.com/latest/supported_boards.html#doc-supported-boards).
+!!! warning
+	Procedure to install drivers, if needed, is reported device by device in [Supported Devices](https://docs.zerynth.com/latest/supported_boards.html#doc-supported-boards).
 
 The **Registration** phase is the process of retrieving the device info to allow the Zerynth backend to build its specific virtual machine.
 
@@ -42,39 +39,34 @@ To register a new device, you can follow these steps:
 2.  select the device from the dropdown menu;
 3.  click on the “Zerynth” button. Zerynth Studio will guide you in the entire process through info messages displayed in the log console section at the bottom of the screen.
 
-## Note
+!!! note
+	“Powered by Zerynth” devices are accompained by a redeemable code that can be inserted in the above window and exchanged for a free virtual machine license.
 
-“Powered by Zerynth” devices are accompained by a redeemable code that can be inserted in the above window and exchanged for a free virtual machine license.
-
-## Warning
-
-Some devices require to be set in Device Firmware Update (DFU) mode in order to allow their registration and the flashing of the Zerynth Virtual Machine. Detailed guides on how to put them in DFU mode is available in the [Supported Devices](https://docs.zerynth.com/latest/supported_boards.html#doc-supported-boards) section of the documentation.
+!!! warning
+	Some devices require to be set in Device Firmware Update (DFU) mode in order to allow their registration and the flashing of the Zerynth Virtual Machine. Detailed guides on how to put them in DFU mode is available in the [Supported Devices](https://docs.zerynth.com/latest/supported_boards.html#doc-supported-boards) section of the documentation.
 
 Once registration has been performed, the user is given the option to create a Virtual Machine for the registered device by clicking again the “Z” button.
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/3_virtualize.png "3_virtualize")
 
-## Note
-
-A device can always be registered again with the dedicated dialog button.
+!!! note
+	A device can always be registered again with the dedicated dialog button.
 
 In the figure below, after clicking the “Create” button, the user can select one available of different virtual machines compatible with the target device choosing the licenses (Starter/Premium), the real time operating system from those supported for the target device, and (for Premium licenses only) the features to be included in the virtual machine (FOTA, Power Saving, Secure Firmware, etc.).
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/4_create_vm.png "4_create_vm")
 
-## Note
+!!! note
+	Some devices cannot be recognized automatically; for these devices, the dialog provides some more options to be specified before the actual registration/virtualization can take place.
 
-Some devices cannot be recognized automatically; for these devices, the dialog provides some more options to be specified before the actual registration/virtualization can take place.
-
-## Warning
-
-The “Available” column in the table shows the possibility to create the related virtual machine according to the user asset.
+!!! warning
+	The “Available” column in the table shows the possibility to create the related virtual machine according to the user asset.
 
 The created Virtual Machine can now be virtualized (i.e. burned on the device). The **“Virtualization”** is the process of installing the Zerynth Virtual Machine by flashing it on a device. By clicking the “Virtualize” button, the user can select the Zerynth Virtual Machine to be installed in his device choosing from those created.
 
 ![](https://www.zerynth.com/wp-content/uploads/2020/03/5_choose_vm.png "5_choose_vm")
 
-## Note
+!!! note
 
 Zerynth Studio toolbar allows to **“Virtualize”** the selected device.
 
@@ -258,5 +250,6 @@ In order for the users of your library to have a better programming experience, 
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzU3NTcyOCwtNzA3NTc1NzI4XX0=
+eyJoaXN0b3J5IjpbLTI5MDE5NjMyNSwtNzA3NTc1NzI4LC03MD
+c1NzU3MjhdfQ==
 -->
