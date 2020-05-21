@@ -10,7 +10,7 @@ It is necessary to create a User Account to access Zerynth.
 
 To register a new Zerynth Account or to Log in an existing one, you can proceed manually (**email**, **username** and **password**) or you can automatically register/login with social credentials (**Facebook** and **Google+**).
 
-
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Create%20a%20Zerynth%20User%20Account.png)
 
 !!! note
 	For Manual Registration: check your email and verify your new account by clicking on the link provided in the confirmation email
@@ -29,7 +29,7 @@ According to the platform used and to the connected device, the user has to inst
 
 The **Registration** phase is the process of retrieving the device info to allow the Zerynth backend to build its specific virtual machine.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/2_zredeem.png "2_zredeem")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Registration%20phase.png)
 
 If the device has never been connected before, by clicking the “Z” button, the registration dialog, shown above, is displayed.
 
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjA4MDcyMywtMTI0MjQ4NTY1OCwtMT
+eyJoaXN0b3J5IjpbMTAwNDY0MzE5OCwtMTI0MjQ4NTY1OCwtMT
 EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
 -->
