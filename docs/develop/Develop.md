@@ -131,7 +131,7 @@ To create your First Zerynth Project from scratch you have to do just a few step
 
 Once you click on the “Create” button, the new Zerynth Project opens and you will be prompted with the editor of the “main.py” file. The main is where the principal Zerynth code is written in Python: here is where you develop the logic of your script.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/11_create_project.png "11_create_project")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Develop%20your%20First%20Zerynth%20Projec.png)
 
 If you wish to add more files to the Zerynth project you can easily do it. In Zerynth you can create html, json, txt, bin files and save them together with the bytecode on the device flash memory. You can also create more .py files where you can develop other parts of your code like modules and functions to be used in the main.py file.
 
@@ -144,7 +144,7 @@ To add new files to a Zerynth project, follow these steps:
 
 You can also add a new folder, delete a selected file, refresh the project folder, etc. by clicking the icon on the right of the “Project view” bar.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/12_project_action.png "12_project_action")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Project%20view.png)
 
 !!! note
 	When you add a `.py` file containing some code to be used in the main.py file (e.g. a file named `helpers.py`), you have to import it by adding the line `import helpers` in the main.py file. Thus, you can call functions located in the `helpers.py` file by using the following syntax:
@@ -180,7 +180,7 @@ Zerynth Studio has two different update mechanisms:
 
 When a new major version of Zerynth is released a notification “System Update!” will appear in the footer area of Zerynth Studio. By clicking the notification, the new version will be downloaded and installed. After a restart, the new version will be selected and launched. However, the previous version is still there and can be selected during the launch phase. If a previous version is not needed anymore, it can be deleted from the “Preferences” menu.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/Zerynth_Studio_Update_Message.jpg "Zerynth_Studio_Update_Message")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Zerynth%20Studio%20updates.jpg)
 
 On the contrary, rolling updates do not change the system version but just a group of packages. Rolling updates are notified by the “Rolling update” label in the footer area of Zerynth Studio. By clicking the notification, the list of updated packages and a detailed changelog are displayed. If accepted, a rolling update will download the selected packages only and will unpack them. After a restart, the launcher will take care of finishing the update and start Zerynth Studio.
 
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNDIyOTIyLC0xMjQyNDg1NjU4LC0xMT
-AyNjI4NTEyLC03MDc1NzU3MjgsLTcwNzU3NTcyOF19
+eyJoaXN0b3J5IjpbLTEzNzUzMDMxNzAsLTEyNDI0ODU2NTgsLT
+ExMDI2Mjg1MTIsLTcwNzU3NTcyOCwtNzA3NTc1NzI4XX0=
 -->
