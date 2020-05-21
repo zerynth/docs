@@ -128,11 +128,11 @@ Ubidots GATE
 
 In the Ubidots gate creation form you will find the Ubidots address URL pre-filled. To add a Ubidots webhook you need to add the “device label” of the Ubidots device where you want to receive the data. If you have already created a device on Ubidots, copy it here otherwise insert a device name you prefer (without spaces) and Ubidots will create it automatically when the ZDM gate is created. The Ubidots token can be copied from the Ubidots API credential section of the Ubidots user menu. In the Example 2 of this guide you will find more details on how to create a device in Ubidots.
 
-
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Ubidots%20GATE.png)
 
 **View, activate/deactivate, modify and delete a Gate**
 
-![](https://lh5.googleusercontent.com/mpsDWrnm9Rxk7m15zXH3RiXiC3cN45oFsH-cMgV3auFXLiF4ELJNgqu3EgjadtwoizwoAzNuMpra-DjapuHRnNlJ_VZVXP47MbkFw0cKZw8R2FfDMisGRN-60qNI4d079KzS_hoS "Schermata da 2020-03-26 13-21-54")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/View,%20activate%20deactivate,modify%20and%20delete%20a%20Gate.png)
 
 Once created, the Gates are added to the Gates tab, and from here it is possible to activate/deactivate them, edit and delete them.
 
@@ -144,7 +144,7 @@ Devices can be filtered by fleets and ordered by creation date. Through the tabl
 
 Selecting one or more devices from the list you can perform mass operations such as FOTA, Custom RPC, Device Reset and other bulk actions that can be selected from the drop-down menu on the left.
 
-![](https://lh4.googleusercontent.com/soFpTErMKz5sbs_p7PIaGEI4VZkarDTsH0ZuPSRfP3wBTp6-llZridX32cCc6ksBA23uVUw5ZuChFX0qsfuLbJq5wSDit7ofi7jicI8HiNk_MFoNFvxXZp78_TlNLpO72Cr00Ccg "Schermata da 2020-03-30 09-13-22")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/workspace%20Configuration.png)
 
 **Add new Fleet**
 
@@ -154,7 +154,7 @@ You can add a new fleet on the Workspace using the “Add new Fleet” button. T
 
 Just click on the “Add New Device” button on the workspace page. You will be prompted with the device creation form. Here, just fill in “Device Name” and select the fleet to which the device will be associated from the drop-down menu.
 
-![](https://lh5.googleusercontent.com/Vq0Wc1AXgR-AjSQ9nl_jQH7rNSsJta_EK5CmNckw0cB-lmgXynWxQnfzyZpXq_iOqNOr5zNptuh-Hgy1RCHMrgz-a39uKhLULO6F_LbMrB63H6sqefcZdwCGN6S51p_jnksYZY0w "Schermata da 2020-03-26 13-06-52")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Device.png)
 
 ![](https://lh3.googleusercontent.com/SaFlXCdFZlrGAcZ6huCd-6LaFBYwdDRcoQxZ7xQtWd8w7nMUAlJKlrGPaph01P92s8YcVBzaO7niNAQm2vktoBdRe0JZVkH1bcaoHxA1lfI00XQQJ-gvoLTRVdKXPziXiNKSuJ7s "Schermata da 2020-03-26 13-07-22")
 
@@ -628,9 +628,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjYyMjk0NDcsNTA5MDA2ODUwLC02NT
-gxMzA4NzgsMTc3NTU2OTE0NiwtMjQ1MDA0MzIzLC00NzA1NzI2
-MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4ODk4MTYxNjMsLT
-g1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1MiwtMTA3MzM4
-MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbMTA2MTAzMjk2NCw1MDkwMDY4NTAsLTY1OD
+EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
+OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
+U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
+MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
 -->
