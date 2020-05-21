@@ -10,7 +10,7 @@ It is necessary to create a User Account to access Zerynth.
 
 To register a new Zerynth Account or to Log in an existing one, you can proceed manually (**email**, **username** and **password**) or you can automatically register/login with social credentials (**Facebook** and **Google+**).
 
-[![](https://www.zerynth.com/wp-content/uploads/2020/03/1_zerynth_login.png)](https://www.zerynth.com/wp-content/uploads/2020/03/1_zerynth_login.png "1_zerynth_login")
+
 
 !!! note
 	For Manual Registration: check your email and verify your new account by clicking on the link provided in the confirmation email
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDI0ODU2NTgsLTExMDI2Mjg1MTIsLT
-cwNzU3NTcyOCwtNzA3NTc1NzI4XX0=
+eyJoaXN0b3J5IjpbMTczNjA4MDcyMywtMTI0MjQ4NTY1OCwtMT
+EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
 -->
