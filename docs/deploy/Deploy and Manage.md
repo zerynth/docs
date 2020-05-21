@@ -253,8 +253,8 @@ This section is a guide for the most used ZDM CLI commands.
 
 !!! note
 	that the zdm command line interface is available from Zerynth >= r2.4.3, download it [here](https://www.zerynth.com/zsdk/) or update to the last version!
-
-#### Adding ZDM to the OS path
+	
+**Adding ZDM to the OS path**
 
 In order to use the zdm command line interface, you need to add it to your OS path:
 
@@ -302,13 +302,13 @@ The first step to work with your devices and ZDM is to associate your devices to
 
 ### Account commands
 
-#### Account’s information
+**Account’s information**
 
 Once you’re logged in, if you want to see your account information use the command:
 ```python
 zdm profile
 ```
-#### Logout
+**Logout**
 
 To logout of the ZDM give the command:
 ```python
@@ -318,7 +318,7 @@ and your current session will be closed.
 
 ### Workspaces
 
-#### Workspace creation
+**Workspace creation**
 
 To create a new workspace use the following command:
 ```python
@@ -338,7 +338,7 @@ Once you’ve created a workspace, you should create a fleet inside to be able t
 
 Copy your new workspace’s id or use the list workspaces command to see all your workspaces.
 
-#### List workspaces and workspace information
+**List workspaces and workspace information**
 
 If you want to see the list of workspaces you’ve created, their name, description and id
 
@@ -353,7 +353,7 @@ zdm workspace get [WorkspaceId]
 
 ### Fleets
 
-#### Fleet creation
+**Fleet creation**
 
 To create a new fleet type the following command:
 ```python
@@ -626,9 +626,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NjIwNzA0MCwxNzc1NTY5MTQ2LC0yND
-UwMDQzMjMsLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNzQ3MDEw
-OSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4NywxND
-g2NTYyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5
-MzMzXX0=
+eyJoaXN0b3J5IjpbMjkyMzg0OTg4LDE3NzU1NjkxNDYsLTI0NT
+AwNDMyMywtNDcwNTcyNjA4LDc3NDEwOTg1MywxMjA3NDcwMTA5
+LC0xODg5ODE2MTYzLC04NTc5NzE2ODMsNDk2OTM3Mjg3LDE0OD
+Y1NjI4NTIsLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNTU5Njkz
+MzNdfQ==
 -->
