@@ -330,17 +330,9 @@ You can also give your workspace a description using the option –description
 
 If you create a workspace, you will see your workspace’s information:
 
-ID
-
-Name
-
-Description
-
-wks-id
-
-my-first
-
-description
+| ID     | Name     | Description |
+|--------|----------|-------------|
+| wks-id | my-first | description |
 
 Once you’ve created a workspace, you should create a fleet inside to be able to manage your devices’ data.
 
@@ -351,13 +343,9 @@ Copy your new workspace’s id or use the list workspaces command to see all you
 If you want to see the list of workspaces you’ve created, their name, description and id
 
 type the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm workspace all
-
+```
 You can also get information about one single workspace from your list giving the command:
 
 Copy to Clipboard
@@ -739,5 +727,6 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
+eyJoaXN0b3J5IjpbLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNT
+U5NjkzMzNdfQ==
 -->
