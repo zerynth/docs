@@ -84,14 +84,14 @@ Once the desired supported device (virtual or physically connected) is selected,
 
 The **Device Info Window** shows detailed information about the device, including the Flash/Ram size and the port for serial communication.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/7_device_info.png "7_device_info")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Device%20Info%20Window.png)
 
 !!! warning
 	Some boards cannot be automatically recognized by Zerynth Studio and need a disambiguation. In this case the system asks you to indicate the device type. You can always revert this choice by clicking on the “Forget” button.
 
 Finally, the **Device Pinmap window** provides the pinout of the selected device, along with the hardware features and peripherals available on each pin. Thanks to the Device Pinmap window it is also possible to understand how the device embedded peripherals are grouped and/or multiplexed. This allows to better understand how to use each specific hardware feature in the Zerynth Python scripts without having hardware conflicts.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/image.png "image")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Device%20Pinmap%20window.png)
 
 ### Clone an example and start with Zerynth Python Scripts
 
@@ -104,7 +104,7 @@ Zerynth examples can be cloned in just few clicks:
 3.  At this stage Zerynth converts the example into a new project giving you the possibility to edit the **Title**, the **Description** and the **Folder** of your new project project;
 4.  click on “Create” and you are done!
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/9_clone_example.png "9_clone_example")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Clone%20an%20example%20and%20start%20with%20Zerynth%20Python%20Scripts.png)
 
 !!! warning
 	Remember that Zerynth does not allow two projects to have the same **Folder**
@@ -115,7 +115,7 @@ The buttons on the upper left toolbar allow you to verify and uplink a script in
 
 To Uplink your verified project into a Virtualized device just click the **Uplink** icon and follow the Zerynth Studio messages.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/uplink_photon.jpg "uplink_photon")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Verify%20and%20Uplink%20a%20Zerynth%20Project.jpg)
 
 !!! warning
 	Some devices require to be reset during the uplink operation in order to write in flash the bytecode
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDgxNTQ4MCwtMTI0MjQ4NTY1OCwtMT
-EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
+eyJoaXN0b3J5IjpbMTEzNDIyOTIyLC0xMjQyNDg1NjU4LC0xMT
+AyNjI4NTEyLC03MDc1NzU3MjgsLTcwNzU3NTcyOF19
 -->
