@@ -446,27 +446,17 @@ Use the command
 zdm event list [workspaceId]
 ```
 If you want to see the last 25 events filtering on device use the option
-
-Copy to Clipboard
-
-1
-
+```python
 --device-id [deviceId]
-
+```
 It’s also possible to filter results on date. You can indicate a start and end date (RFC3339 format) using the options:
 
-Copy to Clipboard
-
-1
-
+```python
 --start [startDate]
-
-Copy to Clipboard
-
-1
-
+```
+```python
 --end [endDate]
-
+```
 ### Fota (Firmware over the air)
 
 Important: In order to perform the FOTA of a device you need to have a Virtual machine with the “Fota Enable” feature.
@@ -476,13 +466,9 @@ Important: In order to perform the FOTA of a device you need to have a Virtual m
 The first step to start a FOTA update on your devices is to upload a firmware to the ZDM cloud.
 
 To upload your firmware, use the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm fota prepare [firmwareProjectPath] [DeviceId] [Version]
-
+```python
 Where
 
 -   firmwareProjectPath is the firmware’s project location in your local file system,
@@ -684,6 +670,6 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MD
-g3Nzk4OTcsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbLTE5NDcyMzcyNiwxNDg2NTYyODUyLC0xMD
+czMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
 -->
