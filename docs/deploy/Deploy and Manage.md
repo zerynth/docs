@@ -305,23 +305,15 @@ The first step to work with your devices and ZDM is to associate your devices to
 #### Account’s information
 
 Once you’re logged in, if you want to see your account information use the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm profile
-
+```
 #### Logout
 
 To logout of the ZDM give the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm logout
-
+```
 and your current session will be closed.
 
 ### Workspaces
@@ -329,13 +321,9 @@ and your current session will be closed.
 #### Workspace creation
 
 To create a new workspace use the following command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm workspace create [WorkspaceName]
-
+```
 WorkspaceName is the name you want to give to your workspace (don’t use “default”).
 
 You can also give your workspace a description using the option –description
@@ -751,5 +739,5 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTUwODYxOCwyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbODA4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
 -->
