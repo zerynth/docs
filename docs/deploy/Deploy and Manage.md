@@ -468,7 +468,7 @@ The first step to start a FOTA update on your devices is to upload a firmware to
 To upload your firmware, use the command:
 ```python
 zdm fota prepare [firmwareProjectPath] [DeviceId] [Version]
-```python
+```
 Where
 
 -   firmwareProjectPath is the firmware’s project location in your local file system,
@@ -485,33 +485,21 @@ If you will associate new devices to the same workspace you can send them the sa
 #### Start FOTA
 
 Once you’ve uploaded your firmware, you can send the FOTA command to the device typing:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm fota schedule [FirmwareVersion] [DeviceId]
-
+```
 For example:
 
 schedule the new firmware to the device with id dev-yyyyy
-
-Copy to Clipboard
-
-1
-
+```python
 zdm fota schedule 1.0 dev-yyyy
-
+```
 #### Check FOTA status
 
 To check the status of a FOTA you started, to know if the device finished the task or if an error occurred, give the following commands to have a list of your fota and their status:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm fota check [DeviceId]
-
+```
 ### Gates
 
 Using the ZDM you’re able to also receive your device’s data on your webhooks.
@@ -548,37 +536,21 @@ The latest stable version of the ZDM-Client Python Library is available on PyPI 
 The installation assumes that you have installed the latest Python version with pip.
 
 In order to install the ZDM-Client Python Library, type the following command or add the zdm-client-py into the requirements.txt file.
-
-Copy to Clipboard
-
-1
-
+```python
 pip install zdm-client-py
-
+```
 If you want, you can also download the repository publicly available on GitHub.
-
-Copy to Clipboard
-
-1
-
+```python
 git clone https://github.com/zerynth/zdm-client-py.git
-
+```
 navigate to the download repo directory and create a virtual env using the command
-
-Copy to Clipboard
-
-1
-
+```python
 virtualenv venv
-
+```
 And install the python package locally.
-
-Copy to Clipboard
-
-1
-
+```python
 pip install
-
+```
 ### Usage
 
 Once you have installed the ZDM-client Python lib you can use it for connecting your CPU based device to the ZDM and stream your data.
@@ -670,6 +642,6 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDcyMzcyNiwxNDg2NTYyODUyLC0xMD
-czMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbNDk2OTM3Mjg3LDE0ODY1NjI4NTIsLTEwNz
+MzODExNjEsODA4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
 -->
