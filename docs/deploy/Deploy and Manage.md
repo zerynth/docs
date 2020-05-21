@@ -224,7 +224,8 @@ You will see a cascader with the Jobs that are common to all the devices you hav
 
 Select one, optionally fill in the text box below with the arguments if required, and click the “Launch” button.
 
-Note: If the selected devices do not have common Jobs, or if you select devices without custom Jobs defined in the firmware you will get the: “No Jobs found” message.
+!!! note
+	If the selected devices do not have common Jobs, or if you select devices without custom Jobs defined in the firmware you will get the: “No Jobs found” message.
 
 ### Device Page
 
@@ -250,7 +251,8 @@ By clicking in the left checkboxes you can better navigate the published data, t
 
 This section is a guide for the most used ZDM CLI commands.
 
-Note: that the zdm command line interface is available from Zerynth >= r2.4.3, download it [here](https://www.zerynth.com/zsdk/) or update to the last version!
+!!! note
+	that the zdm command line interface is available from Zerynth >= r2.4.3, download it [here](https://www.zerynth.com/zsdk/) or update to the last version!
 
 #### Adding ZDM to the OS path
 
@@ -769,5 +771,5 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NDg4NjcwM119
+eyJoaXN0b3J5IjpbMjA1NTk2OTMzM119
 -->
