@@ -98,7 +98,8 @@ Further down the configuration window, you can find the button to permanently de
 ### Gates
 
 Gates are the interfaces of the ZDM with external services. The ZDM aggregates data published by your devices into gates that can be exposed to external services via: webhooks and MQTT (coming soon). Gates for specific third party services are also available: we currently support [Ubidots](https://ubidots.com/), many others will come soon.
-Add new Gate
+
+**Add new Gate**
 
 To add a new GATE click on the Add new Gate button, and select the type of Gate you want to create. The new gate form will open.
 
@@ -127,7 +128,7 @@ In the Ubidots gate creation form you will find the Ubidots address URL pre-fill
 
 ![](https://lh6.googleusercontent.com/5Nr_rDzxvKSuBwOMxR04cjBA2w1r9I0vdIluHnVJoH1dIIJk0l0snXcqbGzRhyz-7YX1JdH8q_DVhR2Rie7tMQx6TK89IYhep-buvjK1VgASxYSoqZQpFe4TGUeNsq20ruEo4bIX "Schermata da 2020-03-30 09-15-01")
 
-#### View, activate/deactivate, modify and delete a Gate
+**View, activate/deactivate, modify and delete a Gate**
 
 ![](https://lh5.googleusercontent.com/mpsDWrnm9Rxk7m15zXH3RiXiC3cN45oFsH-cMgV3auFXLiF4ELJNgqu3EgjadtwoizwoAzNuMpra-DjapuHRnNlJ_VZVXP47MbkFw0cKZw8R2FfDMisGRN-60qNI4d079KzS_hoS "Schermata da 2020-03-26 13-21-54")
 
@@ -143,11 +144,11 @@ Selecting one or more devices from the list you can perform mass operations such
 
 ![](https://lh4.googleusercontent.com/soFpTErMKz5sbs_p7PIaGEI4VZkarDTsH0ZuPSRfP3wBTp6-llZridX32cCc6ksBA23uVUw5ZuChFX0qsfuLbJq5wSDit7ofi7jicI8HiNk_MFoNFvxXZp78_TlNLpO72Cr00Ccg "Schermata da 2020-03-30 09-13-22")
 
-#### Add new Fleet
+**Add new Fleet**
 
 You can add a new fleet on the Workspace using the “Add new Fleet” button. The form allows creating multiple fleets, just click the “+ add fleet” button, fill the form and click “Add” at the bottom of the dialog.
 
-#### Add new Device
+**Add new Device**
 
 Just click on the “Add New Device” button on the workspace page. You will be prompted with the device creation form. Here, just fill in “Device Name” and select the fleet to which the device will be associated from the drop-down menu.
 
@@ -163,7 +164,7 @@ Very important: for security reasons, the device’s password can’t be re-visu
 
 If you lose a device password you can always regenerate it from the specific device page. Device pages can be opened by clicking on each device name in the device list.
 
-#### Regenerate device password
+**Regenerate device password**
 
 ![](https://lh5.googleusercontent.com/qAdmToUGO7SgzBigWIvTtVQE2-2ICJbKAJybUUpsWtt-FGPDi9B8eGlNYSpFNwR5kzG6pQAPzryaHrb-QgVyVPWj2tTudwZWrn6fqbPRkQfGyyDW8z-VDWi0UeHQj3IWQPkTHW4C "Schermata da 2020-03-30 09-29-18")
 
@@ -625,7 +626,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5MjQyODEwLDE3NzU1NjkxNDYsLTI0NT
+eyJoaXN0b3J5IjpbLTQxNjgwMDc2LDE3NzU1NjkxNDYsLTI0NT
 AwNDMyMywtNDcwNTcyNjA4LDc3NDEwOTg1MywxMjA3NDcwMTA5
 LC0xODg5ODE2MTYzLC04NTc5NzE2ODMsNDk2OTM3Mjg3LDE0OD
 Y1NjI4NTIsLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNTU5Njkz
