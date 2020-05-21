@@ -555,7 +555,7 @@ pip install
 
 Once you have installed the ZDM-client Python lib you can use it for connecting your CPU based device to the ZDM and stream your data.
 
-Login to the ZDM in order to obtain the device id and the password of a device (see the [ZDM getting started guide](https://www.zerynth.com/blog/docs/the-tools/zdm/getting-started/) for more info)
+Login to the ZDM in order to obtain the device id and the password of a device (see the [ZDM getting started guide](https://www.zerynth.com/blog/docs/zdm/getting-started/) for more info)
 
 Create a new file zdm_basic.py and copy the following script and replace the obtained device id and password in the placeholders.
 
@@ -642,6 +642,7 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2OTM3Mjg3LDE0ODY1NjI4NTIsLTEwNz
-MzODExNjEsODA4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
+eyJoaXN0b3J5IjpbMzI4MDExMTU5LDQ5NjkzNzI4NywxNDg2NT
+YyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5MzMz
+XX0=
 -->
