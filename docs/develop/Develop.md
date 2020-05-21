@@ -184,13 +184,13 @@ When a new major version of Zerynth is released a notification “System Update!
 
 On the contrary, rolling updates do not change the system version but just a group of packages. Rolling updates are notified by the “Rolling update” label in the footer area of Zerynth Studio. By clicking the notification, the list of updated packages and a detailed changelog are displayed. If accepted, a rolling update will download the selected packages only and will unpack them. After a restart, the launcher will take care of finishing the update and start Zerynth Studio.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/Zerynth_Studio_Update_Rolling.jpg "Zerynth_Studio_Update_Rolling")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/rolling%20update.jpg)
 
 ### Zerynth and Git
 
 Zerynth Studio offers the possibility to store your projects on our backend, in a private git repository. Such feature is accessible from the Project View in the left panel by clicking the git “code-branch” icon.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/15_zstudio_git.png "15_zstudio_git")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Zerynth%20and%20Git.png)
 
 The first time a project is pushed to our backend, the “Create repository” option must be selected. From there on, the project view changes, showing a footer with information about the current remote/branch, the current tag if present, the number of modified files (identified by a bullet) and the status of the local repository with respect to the remote repository.
 
@@ -206,7 +206,7 @@ Libraries can be searched and installed from the Zerynth Library Manager Section
 
 The results of the search are shown in the left column that displays a brief description of the libraries together with the available version. By clicking “Install” or “Update” the library can be easily added to the system.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/16_search_install_package.png "16_search_install_package")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Search%20and%20Install%20Community%20Libraries.png)
 
 ### Publishing community libraries
 
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzUzMDMxNzAsLTEyNDI0ODU2NTgsLT
-ExMDI2Mjg1MTIsLTcwNzU3NTcyOCwtNzA3NTc1NzI4XX0=
+eyJoaXN0b3J5IjpbMjE2MTIxOTA4LC0xMjQyNDg1NjU4LC0xMT
+AyNjI4NTEyLC03MDc1NzU3MjgsLTcwNzU3NTcyOF19
 -->
