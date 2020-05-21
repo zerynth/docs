@@ -363,7 +363,7 @@ Also in this case, don’t use “default” as the fleet name, and use one of y
 
 A result message with the fleet name will be shown.
 
-#### List fleets and fleet information
+**List fleets and fleet information**
 
 If you want to see the list of fleets you’ve created type:
 ```python
@@ -373,7 +373,7 @@ You will have the fleet id, the name, and the workspace id of all of your fleets
 
 ### Devices
 
-#### Device creation
+**Device creation**
 
 Once you have created a new workspace and fleet, or you’ve decided to skip and to use the default ones, you can create a new device.
 
@@ -387,7 +387,7 @@ If you don’t specify a fleet id, the device will be associated to the default 
 
 To authenticate your new device, you have to generate a key for the device with the corresponding command. Let’s see a description of the other commands you can use to manage devices.
 
-#### Device list and device information
+**Device list and device information**
 
 If you want to list your devices or to get a device information you can use the list and get commands, to see the device name, id, and fleet id.
 
@@ -401,13 +401,13 @@ zdm device get [DeviceId]
 ```
 to have information about a single device.
 
-#### Get the device’s workspace
+**Get the device’s workspace**
 
 To get the workspace’s name and id that contains your device, you can use the following command:
 ```python
 zdm device workspace [DeviceId]
 ```
-#### Device’s key generation
+**Device’s key generation**
 
 To be able to manage your device’s data you have to create a key at first and then generate a password (as jwt token) from the created key.
 
@@ -461,7 +461,7 @@ It’s also possible to filter results on date. You can indicate a start and end
 
 Important: In order to perform the FOTA of a device you need to have a Virtual machine with the “Fota Enable” feature.
 
-#### Upload a firmware
+**Upload a firmware**
 
 The first step to start a FOTA update on your devices is to upload a firmware to the ZDM cloud.
 
@@ -482,7 +482,7 @@ Note that the firmware will be associated with the workspace that contains your 
 
 If you will associate new devices to the same workspace you can send them the same firmware.
 
-#### Start FOTA
+**Start FOTA**
 
 Once you’ve uploaded your firmware, you can send the FOTA command to the device typing:
 ```python
@@ -494,7 +494,7 @@ schedule the new firmware to the device with id dev-yyyyy
 ```python
 zdm fota schedule 1.0 dev-yyyy
 ```
-#### Check FOTA status
+**Check FOTA status**
 
 To check the status of a FOTA you started, to know if the device finished the task or if an error occurred, give the following commands to have a list of your fota and their status:
 ```python
@@ -563,7 +563,7 @@ Create a new file zdm_basic.py and copy the following script and replace the obt
 
 CODE TO BE TAKEN FROM WP ARTICLE
 
-#### Jobs
+**Jobs**
 
 In addition, the ZDM-client Python lib permits also to define a set of jobs on the client that can be invoked by the ZDM.
 
@@ -626,9 +626,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkyMzg0OTg4LDE3NzU1NjkxNDYsLTI0NT
-AwNDMyMywtNDcwNTcyNjA4LDc3NDEwOTg1MywxMjA3NDcwMTA5
-LC0xODg5ODE2MTYzLC04NTc5NzE2ODMsNDk2OTM3Mjg3LDE0OD
-Y1NjI4NTIsLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNTU5Njkz
-MzNdfQ==
+eyJoaXN0b3J5IjpbLTY1ODEzMDg3OCwxNzc1NTY5MTQ2LC0yND
+UwMDQzMjMsLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNzQ3MDEw
+OSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4NywxND
+g2NTYyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5
+MzMzXX0=
 -->
