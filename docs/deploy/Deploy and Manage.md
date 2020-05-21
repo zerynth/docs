@@ -53,7 +53,7 @@ Go to [https://zdm.zerynth.com](https://zdm.zerynth.com/) and login with your ze
 
 **Home Page**
 
-
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Home%20Page.png)
 
 From here you can get an overview of your workspaces, search for them and add new ones.
 
@@ -69,7 +69,7 @@ After clicking “Add” the new workspace will be added to the home ready to be
 
 If you don’t indicate any fleet in the form, the default fleet will be created automatically.
 
-![](https://lh5.googleusercontent.com/WaluHbWWipNKn44POhvAHjF5siDRYTLcuomvIIZk6GJka9E-KfHnNswzlmzKnBznPvIfzQzfbxUIMdbD1Qbo4ZL8ICijR1O-imIF9b2Cn8OgNJNAOP3VpypO3aM0INcDU6Bkc_0t "Schermata del 2020-03-26 12-03-30")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Workspace.png)
 
 ### Workspace
 
@@ -627,7 +627,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzk2Nzc1MCw1MDkwMDY4NTAsLTY1OD
+eyJoaXN0b3J5IjpbLTM0Mzg0MzIzMCw1MDkwMDY4NTAsLTY1OD
 EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
 OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
 U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
