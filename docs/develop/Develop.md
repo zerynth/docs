@@ -214,7 +214,7 @@ Zerynth Studio allows publishing your projects as community libraries that can b
 
 The first step is needed to get the user permission to manage the Github repository where the library will be hosted. In order to do so, a popup window will be displayed and the Github authorization flow for Zerynth will be started. It is usually needed to login to Github with the user credentials and authorize Zerynth. Upon correct authorization the Zerynth backend will associate the Github account with the user Zerynth account.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/zstudio-publish-0.png "zstudio-publish-0")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Publishing%20community%20libraries.jpg)
 
 In the second step the Github repository to host the library on must be chosen from the available ones. Some information on the library must be given in this step, namely:
 
@@ -226,7 +226,7 @@ In the second step the Github repository to host the library on must be chosen f
 
 If the library has already been published, some of the required field will be automatically filled.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/zstudio-publish-1.png "zstudio-publish-1")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/publishing%20wizard.jpg)
 
 The third step is a recap of what is going to happen during the publishing; read it carefully and confirm the repository, the project and the version of the library!
 
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2MTIxOTA4LC0xMjQyNDg1NjU4LC0xMT
-AyNjI4NTEyLC03MDc1NzU3MjgsLTcwNzU3NTcyOF19
+eyJoaXN0b3J5IjpbMTk0MjI0MTk5MCwtMTI0MjQ4NTY1OCwtMT
+EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
 -->
