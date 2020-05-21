@@ -69,17 +69,18 @@ After clicking “Add” the new workspace will be added to the home ready to be
 
 If you don’t indicate any fleet in the form, the default fleet will be created automatically.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Workspace.png)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Workspace.png)
 
 ### Workspace
 
 To open a workspace just click on its title in the homepage grid. The workspace page allows you to configure the workspace, manage associated devices, create gates and lunch jobs on your devices.
 
-![](https://lh6.googleusercontent.com/dFkvrUoFqCKod2Oqe67gNiXw_9wFS82LppLfyGj8rxvROZz9IrXrA2xoFD2heIj2PDAibcL9R7GwnwxLggIuKKpapMQI76NI9G-gRdAEziUU_t8by3F9RE5SmOWAb5JHzFhfDIiI "Schermata del 2020-03-26 12-05-09")![](https://lh3.googleusercontent.com/H4QJIiqR5xeAZZ_5ZAesGAPl4VhiwW_KWqDA3G76Us_Cviw0q9f7c5hnNY2DME-TDcH1VYhrcQCU-xDbQcUUX55LMlkq31oTnizOSUxUt9AG59zNevft7yQNxKqEOWPnfZh1L4fV "Schermata da 2020-03-30 09-13-22")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Workspace.png)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Workspace%202.png)
 
 **Configuration**
 
-The configuration button: ![](https://lh5.googleusercontent.com/m8LIf5Vv5PoOq7zwo9Z0D77YTycD4IoQLlnUF20ijXqdRTH1LwmoR6u-fuiUKQs4qNkkEyPEsm-sNCzkWG8K19PxoGYBCxWKNnic4If4T8VE-gxblK_JkNn1sFJxjdy0TRWZHJWW) is used to:
+The configuration button:  is used to:
 
 -   delete the fleets (you can delete only empty fleets)
     
@@ -627,7 +628,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Mzg0MzIzMCw1MDkwMDY4NTAsLTY1OD
+eyJoaXN0b3J5IjpbMTkwNDkxNjkwMiw1MDkwMDY4NTAsLTY1OD
 EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
 OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
 U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
