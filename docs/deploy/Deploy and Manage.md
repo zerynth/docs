@@ -71,7 +71,7 @@ If you don’t indicate any fleet in the form, the default fleet will be created
 
 ![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Workspace.png)
 
-### Workspace
+**Workspace**
 
 To open a workspace just click on its title in the homepage grid. The workspace page allows you to configure the workspace, manage associated devices, create gates and lunch jobs on your devices.
 
@@ -97,7 +97,7 @@ On the configuration page, you can view and delete fleets by clicking on the rec
 
 Further down the configuration window, you can find the button to permanently delete the workspace. Remember: only workspaces that do not have devices inside can be deleted.
 
-### Gates
+**Gates**
 
 Gates are the interfaces of the ZDM with external services. The ZDM aggregates data published by your devices into gates that can be exposed to external services via: webhooks and MQTT (coming soon). Gates for specific third party services are also available: we currently support [Ubidots](https://ubidots.com/), many others will come soon.
 
@@ -136,7 +136,7 @@ In the Ubidots gate creation form you will find the Ubidots address URL pre-fill
 
 Once created, the Gates are added to the Gates tab, and from here it is possible to activate/deactivate them, edit and delete them.
 
-### My Devices
+**My Devices**
 
 At the bottom of the workspace page, you will find the list of the devices associated.
 
@@ -229,7 +229,7 @@ Select one, optionally fill in the text box below with the arguments if required
 !!! note
 	If the selected devices do not have common Jobs, or if you select devices without custom Jobs defined in the firmware you will get the: “No Jobs found” message.
 
-### Device Page
+Device Page
 
 On the page of a specific device, you will see the info about that device, then the name, the creation date, workspace and fleet of belonging, etc.
 
@@ -627,7 +627,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MTI4MDMyNyw1MDMwOTcxODgsMTIwNT
+eyJoaXN0b3J5IjpbLTk1NTI5MDg4NSw1MDMwOTcxODgsMTIwNT
 YxNjYyOSw1MDkwMDY4NTAsLTY1ODEzMDg3OCwxNzc1NTY5MTQ2
 LC0yNDUwMDQzMjMsLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNz
 Q3MDEwOSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4
