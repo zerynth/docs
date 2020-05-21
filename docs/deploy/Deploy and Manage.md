@@ -60,7 +60,7 @@ Each registered user has the “Default Workspace” endowed with the “Default
 
 Keep your project well organized! We suggest using a new workspace for each new project.
 
-**Add new Workspace**
+Add new Workspace
 
 To add a new workspace, just click the “New Workspace” button on the ZDM home page, indicate the name and optionally add a description and some fleets.
 
@@ -70,13 +70,13 @@ If you don’t indicate any fleet in the form, the default fleet will be created
 
 ![](https://lh5.googleusercontent.com/WaluHbWWipNKn44POhvAHjF5siDRYTLcuomvIIZk6GJka9E-KfHnNswzlmzKnBznPvIfzQzfbxUIMdbD1Qbo4ZL8ICijR1O-imIF9b2Cn8OgNJNAOP3VpypO3aM0INcDU6Bkc_0t "Schermata del 2020-03-26 12-03-30")
 
-Workspace
+### Workspace
 
 To open a workspace just click on its title in the homepage grid. The workspace page allows you to configure the workspace, manage associated devices, create gates and lunch jobs on your devices.
 
 ![](https://lh6.googleusercontent.com/dFkvrUoFqCKod2Oqe67gNiXw_9wFS82LppLfyGj8rxvROZz9IrXrA2xoFD2heIj2PDAibcL9R7GwnwxLggIuKKpapMQI76NI9G-gRdAEziUU_t8by3F9RE5SmOWAb5JHzFhfDIiI "Schermata del 2020-03-26 12-05-09")![](https://lh3.googleusercontent.com/H4QJIiqR5xeAZZ_5ZAesGAPl4VhiwW_KWqDA3G76Us_Cviw0q9f7c5hnNY2DME-TDcH1VYhrcQCU-xDbQcUUX55LMlkq31oTnizOSUxUt9AG59zNevft7yQNxKqEOWPnfZh1L4fV "Schermata da 2020-03-30 09-13-22")
 
-**Configuration**
+#### Configuration
 
 The configuration button: ![](https://lh5.googleusercontent.com/m8LIf5Vv5PoOq7zwo9Z0D77YTycD4IoQLlnUF20ijXqdRTH1LwmoR6u-fuiUKQs4qNkkEyPEsm-sNCzkWG8K19PxoGYBCxWKNnic4If4T8VE-gxblK_JkNn1sFJxjdy0TRWZHJWW) is used to:
 
@@ -87,11 +87,11 @@ The configuration button: ![](https://lh5.googleusercontent.com/m8LIf5Vv5PoOq7zw
 
 ![](https://lh6.googleusercontent.com/Q9V0zl6B5n-pOFh8iLpuXTmunKdktOAafgOlL3IHhvRe8ZDUnFarg6o0DXWsOoNScJPWcUIAAPpStrW9Cg7XQspn880AhxPc6JNA2HEa2M3siJQCw3GzYv4SH9BZ4jJu3O0aCwtM "Schermata del 2020-03-26 12-20-45")
 
-**Fleets Management**
+#### Fleets Management
 
 On the configuration page, you can view and delete fleets by clicking on the recycle bin icon.
 
-**Delete a Workspace**
+#### Delete a Workspace
 
 Further down the configuration window, you can find the button to permanently delete the workspace. Remember: only workspaces that do not have devices inside can be deleted.
 
@@ -626,8 +626,8 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNz
-Q3MDEwOSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4
-NywxNDg2NTYyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMD
-U1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbLTI0NTAwNDMyMywtNDcwNTcyNjA4LDc3ND
+EwOTg1MywxMjA3NDcwMTA5LC0xODg5ODE2MTYzLC04NTc5NzE2
+ODMsNDk2OTM3Mjg3LDE0ODY1NjI4NTIsLTEwNzMzODExNjEsOD
+A4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
 -->
