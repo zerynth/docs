@@ -168,7 +168,7 @@ If you lose a device password you can always regenerate it from the specific dev
 
 ![](https://lh5.googleusercontent.com/qAdmToUGO7SgzBigWIvTtVQE2-2ICJbKAJybUUpsWtt-FGPDi9B8eGlNYSpFNwR5kzG6pQAPzryaHrb-QgVyVPWj2tTudwZWrn6fqbPRkQfGyyDW8z-VDWi0UeHQj3IWQPkTHW4C "Schermata da 2020-03-30 09-29-18")
 
-#### Bulk Actions
+**Bulk Actions**
 
 With the bulk actions you can do:
 
@@ -179,7 +179,7 @@ With the bulk actions you can do:
 
 just select one or more devices from the table, choose one of the actions in bulk from the drop-down menu and click on “Apply”
 
-#### FOTA
+**FOTA**
 
 The FOTA (Firmware Over The Air) update procedure is used to update the firmware of one or more devices remotely.
 
@@ -210,7 +210,7 @@ Just click FOTA, select the firmware you just uploaded and click Start.
 
 The FOTA procedure will be scheduled on your device. Refresh the device Status form and you will see the status of the FOTA procedure.
 
-#### Jobs
+**Jobs**
 
 Jobs are device actions that the ZDM will be scheduled. Jobs need to be enabled on device firmware associating the functions that will be called when a job request is received.
 
@@ -237,7 +237,7 @@ In addition you will see the Tag Console, which will show you in real time the d
 
 At the top you can see some summary information on your device such as name, id, fleet to which it belongs, associated tags, the firmware version, the status of the jobs called and the last time your device was seen online.
 
-#### Data Console
+**Data Console**
 
 At the end of device pages, you can find the Data Console, it allows you to see what data your device publishes in real time.
 
@@ -626,9 +626,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjgwMDc2LDE3NzU1NjkxNDYsLTI0NT
-AwNDMyMywtNDcwNTcyNjA4LDc3NDEwOTg1MywxMjA3NDcwMTA5
-LC0xODg5ODE2MTYzLC04NTc5NzE2ODMsNDk2OTM3Mjg3LDE0OD
-Y1NjI4NTIsLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNTU5Njkz
-MzNdfQ==
+eyJoaXN0b3J5IjpbMTA0NjIwNzA0MCwxNzc1NTY5MTQ2LC0yND
+UwMDQzMjMsLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNzQ3MDEw
+OSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4NywxND
+g2NTYyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5
+MzMzXX0=
 -->
