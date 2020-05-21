@@ -1,4 +1,4 @@
-# **Deploy and Manage**
+# Deploy and Manage
 Zerynth Device Manager (ZDM) is a device and data management service that speeds up the development of scalable, secure and reliable IoT solutions.
 
 Main features:
@@ -627,7 +627,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjU5MzI2LC02NTgxMzA4NzgsMTc3NT
+eyJoaXN0b3J5IjpbNTA5MDA2ODUwLC02NTgxMzA4NzgsMTc3NT
 U2OTE0NiwtMjQ1MDA0MzIzLC00NzA1NzI2MDgsNzc0MTA5ODUz
 LDEyMDc0NzAxMDksLTE4ODk4MTYxNjMsLTg1Nzk3MTY4Myw0OT
 Y5MzcyODcsMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MDg3Nzk4
