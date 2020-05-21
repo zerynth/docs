@@ -285,7 +285,7 @@ To see the list of all the possible commands with details use the help command w
 
 For example```zdm –help``` or ```zdm device –help```.
 
-### Login
+**Login**
 
 The first step to use the ZDM (Zerynth device manager) using the Zerynth Toolchain is to log in using your Zerynth account.
 
@@ -530,7 +530,7 @@ TK
 
 Zerynth Device Manager can be used for orchestrating both MCU (microcontroller) and CPU (microprocessor) based devices. If you want to connect an MCU device like a Raspberry PI, an SBC (Single Board Computer) a PC, or any Python application in general, the ZDM Client Python Library is what you need.
 
-### Installation
+**Installation**
 
 The latest stable version of the ZDM-Client Python Library is available on PyPI ([https://pypi.org/project/zdm-client-py/](https://pypi.org/project/zdm-client-py/))
 
@@ -552,7 +552,7 @@ And install the python package locally.
 ```python
 pip install
 ```
-### Usage
+**Usage**
 
 Once you have installed the ZDM-client Python lib you can use it for connecting your CPU based device to the ZDM and stream your data.
 
@@ -627,9 +627,10 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAzMDk3MTg4LDEyMDU2MTY2MjksNTA5MD
-A2ODUwLC02NTgxMzA4NzgsMTc3NTU2OTE0NiwtMjQ1MDA0MzIz
-LC00NzA1NzI2MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4OD
-k4MTYxNjMsLTg1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1
-MiwtMTA3MzM4MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbLTEyMjMwNzYwMjUsNTAzMDk3MTg4LDEyMD
+U2MTY2MjksNTA5MDA2ODUwLC02NTgxMzA4NzgsMTc3NTU2OTE0
+NiwtMjQ1MDA0MzIzLC00NzA1NzI2MDgsNzc0MTA5ODUzLDEyMD
+c0NzAxMDksLTE4ODk4MTYxNjMsLTg1Nzk3MTY4Myw0OTY5Mzcy
+ODcsMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MDg3Nzk4OTcsMj
+A1NTk2OTMzM119
 -->
