@@ -60,7 +60,7 @@ Each registered user has the “Default Workspace” endowed with the “Default
 
 Keep your project well organized! We suggest using a new workspace for each new project.
 
-Add new Workspace
+**Add new Workspace**
 
 To add a new workspace, just click the “New Workspace” button on the ZDM home page, indicate the name and optionally add a description and some fleets.
 
@@ -76,7 +76,7 @@ To open a workspace just click on its title in the homepage grid. The workspace 
 
 ![](https://lh6.googleusercontent.com/dFkvrUoFqCKod2Oqe67gNiXw_9wFS82LppLfyGj8rxvROZz9IrXrA2xoFD2heIj2PDAibcL9R7GwnwxLggIuKKpapMQI76NI9G-gRdAEziUU_t8by3F9RE5SmOWAb5JHzFhfDIiI "Schermata del 2020-03-26 12-05-09")![](https://lh3.googleusercontent.com/H4QJIiqR5xeAZZ_5ZAesGAPl4VhiwW_KWqDA3G76Us_Cviw0q9f7c5hnNY2DME-TDcH1VYhrcQCU-xDbQcUUX55LMlkq31oTnizOSUxUt9AG59zNevft7yQNxKqEOWPnfZh1L4fV "Schermata da 2020-03-30 09-13-22")
 
-#### Configuration
+**Configuration**
 
 The configuration button: ![](https://lh5.googleusercontent.com/m8LIf5Vv5PoOq7zwo9Z0D77YTycD4IoQLlnUF20ijXqdRTH1LwmoR6u-fuiUKQs4qNkkEyPEsm-sNCzkWG8K19PxoGYBCxWKNnic4If4T8VE-gxblK_JkNn1sFJxjdy0TRWZHJWW) is used to:
 
@@ -87,19 +87,18 @@ The configuration button: ![](https://lh5.googleusercontent.com/m8LIf5Vv5PoOq7zw
 
 ![](https://lh6.googleusercontent.com/Q9V0zl6B5n-pOFh8iLpuXTmunKdktOAafgOlL3IHhvRe8ZDUnFarg6o0DXWsOoNScJPWcUIAAPpStrW9Cg7XQspn880AhxPc6JNA2HEa2M3siJQCw3GzYv4SH9BZ4jJu3O0aCwtM "Schermata del 2020-03-26 12-20-45")
 
-#### Fleets Management
+**Fleets Management**
 
 On the configuration page, you can view and delete fleets by clicking on the recycle bin icon.
 
-#### Delete a Workspace
+**Delete a Workspace**
 
 Further down the configuration window, you can find the button to permanently delete the workspace. Remember: only workspaces that do not have devices inside can be deleted.
 
 ### Gates
 
 Gates are the interfaces of the ZDM with external services. The ZDM aggregates data published by your devices into gates that can be exposed to external services via: webhooks and MQTT (coming soon). Gates for specific third party services are also available: we currently support [Ubidots](https://ubidots.com/), many others will come soon.
-
-#### Add new Gate
+Add new Gate
 
 To add a new GATE click on the Add new Gate button, and select the type of Gate you want to create. The new gate form will open.
 
@@ -626,8 +625,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTU2OTE0NiwtMjQ1MDA0MzIzLC00Nz
-A1NzI2MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4ODk4MTYx
-NjMsLTg1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1MiwtMT
-A3MzM4MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbNzQ5MjQyODEwLDE3NzU1NjkxNDYsLTI0NT
+AwNDMyMywtNDcwNTcyNjA4LDc3NDEwOTg1MywxMjA3NDcwMTA5
+LC0xODg5ODE2MTYzLC04NTc5NzE2ODMsNDk2OTM3Mjg3LDE0OD
+Y1NjI4NTIsLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNTU5Njkz
+MzNdfQ==
 -->
