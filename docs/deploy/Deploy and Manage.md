@@ -271,23 +271,15 @@ On Windows: open the command prompt as administrator and launch the following co
 Close and reopen the command prompt.
 
 On Mac: open the terminal and launch the following command:
-
-Copy to Clipboard
-
-1
-
+```python
 ~/.zerynth2/sys/cli/zpm setpaths
-
+```
 Close and reopen the terminal or reload the “source” builtin command.
 
 Now you can use the zdm command line interface by typing on your command prompt
-
-Copy to Clipboard
-
-1
-
+```python
 zdm
-
+```
 To see the list of all the possible commands with details use the help command with option –help.
 
 For example zdm –help or zdm device –help.
@@ -763,5 +755,5 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTc3ODE2NSwyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbMTk4NDM4OSwyMDU1OTY5MzMzXX0=
 -->
