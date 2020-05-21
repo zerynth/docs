@@ -2,9 +2,7 @@
 
 This section introduces you to the main features of Zerynth and provides you a step-by-step guide to get started with the system. Take a look at the video below to see Zerynth in action!
 
-```
-<p align="center">
-```<iframe width="560" height="315" src="https://www.youtube.com/embed/u2pEH5dSZbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/u2pEH5dSZbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 ### Create a Zerynth User Account
 
@@ -243,7 +241,7 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDA4MjU5OSw4NDU5MDEwMTQsLTEyND
-I0ODU2NTgsLTExMDI2Mjg1MTIsLTcwNzU3NTcyOCwtNzA3NTc1
-NzI4XX0=
+eyJoaXN0b3J5IjpbNTU4MjAzMzQ0LDg0NTkwMTAxNCwtMTI0Mj
+Q4NTY1OCwtMTEwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3
+MjhdfQ==
 -->
