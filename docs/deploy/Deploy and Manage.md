@@ -265,13 +265,9 @@ On Linux: open the terminal and launch the following command:
 Close and reopen the terminal or reload the “source” builtin command.
 
 On Windows: open the command prompt as administrator and launch the following command:
-
-Copy to Clipboard
-
-1
-
+```python
 %userprofile%\zerynth2\sys\cli\zpm setpaths
-
+```
 Close and reopen the command prompt.
 
 On Mac: open the terminal and launch the following command:
@@ -767,5 +763,5 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA5NzE4MTQsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbMTU3OTc3ODE2NSwyMDU1OTY5MzMzXX0=
 -->
