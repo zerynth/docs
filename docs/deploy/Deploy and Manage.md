@@ -183,11 +183,12 @@ just select one or more devices from the table, choose one of the actions in bul
 
 The FOTA (Firmware Over The Air) update procedure is used to update the firmware of one or more devices remotely.
 
-Important: In order to perform the FOTA of a device you need to virtualize it with a “Fota Enabled” virtual machine.
+!!! important
+	 In order to perform the FOTA of a device you need to virtualize it with a “Fota Enabled” virtual machine.
 
 The first step to start a FOTA update on your devices is to prepare and upload a firmware to the ZDM cloud.
 
-To upload your firmware, open the Zerynth Studio (Note: Zerynth studio v. 2.5.0 or higher is required). Open the project you want to compile and use for the FOTA and click on the Zerynth Device Manager Icon on the left vertical menu.
+To upload your firmware, open the Zerynth Studio (**Note:** Zerynth studio v. 2.5.0 or higher is required). Open the project you want to compile and use for the FOTA and click on the Zerynth Device Manager Icon on the left vertical menu.
 
 ![](https://lh3.googleusercontent.com/EuOqz1r9_uwLXP1UTIs2DOIvgU1YTE1DY2Ug6Bt4oV5Bf8yTYLoqAUIpOBD_epbaJ5yynJ-zCHZHQUn3kwasQz806cO-hObWEMMgqXKo2N_UkuXunigA7YGbkGvP-oYN9gH_ne5n)
 
@@ -768,5 +769,5 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1Mjk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI3NDg4NjcwM119
 -->
