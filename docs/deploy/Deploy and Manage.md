@@ -80,14 +80,14 @@ To open a workspace just click on its title in the homepage grid. The workspace 
 
 **Configuration**
 
-The configuration button:  is used to:
+The configuration button: ![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/config.png) is used to:
 
 -   delete the fleets (you can delete only empty fleets)
     
 -   delete the workspace itself (only if it doesn’t contain devices)
     
 
-![](https://lh6.googleusercontent.com/Q9V0zl6B5n-pOFh8iLpuXTmunKdktOAafgOlL3IHhvRe8ZDUnFarg6o0DXWsOoNScJPWcUIAAPpStrW9Cg7XQspn880AhxPc6JNA2HEa2M3siJQCw3GzYv4SH9BZ4jJu3O0aCwtM "Schermata del 2020-03-26 12-20-45")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/workspace%20Configuration.png)
 
 **Fleets Management**
 
@@ -107,7 +107,7 @@ To add a new GATE click on the Add new Gate button, and select the type of Gate 
 
 Webhook
 
-![](https://lh6.googleusercontent.com/gzWrIIll4RmqZfuMFp24g80rYvYmCQc3Kd0Mv3EBGEMFYigYcjSkqSpAoBrJDeTnKVRMg-HrKNGyzjP2aRus8lB6AkKiGVV27d7kHXhZwr3AKe6QKzKi5jCSQQnnzqcAlNFZBCPR "image20")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Webhook.png)
 
 For the Webhook gate, you have to fill the form with:
 
@@ -128,7 +128,7 @@ Ubidots GATE
 
 In the Ubidots gate creation form you will find the Ubidots address URL pre-filled. To add a Ubidots webhook you need to add the “device label” of the Ubidots device where you want to receive the data. If you have already created a device on Ubidots, copy it here otherwise insert a device name you prefer (without spaces) and Ubidots will create it automatically when the ZDM gate is created. The Ubidots token can be copied from the Ubidots API credential section of the Ubidots user menu. In the Example 2 of this guide you will find more details on how to create a device in Ubidots.
 
-![](https://lh6.googleusercontent.com/5Nr_rDzxvKSuBwOMxR04cjBA2w1r9I0vdIluHnVJoH1dIIJk0l0snXcqbGzRhyz-7YX1JdH8q_DVhR2Rie7tMQx6TK89IYhep-buvjK1VgASxYSoqZQpFe4TGUeNsq20ruEo4bIX "Schermata da 2020-03-30 09-15-01")
+
 
 **View, activate/deactivate, modify and delete a Gate**
 
@@ -628,9 +628,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDkxNjkwMiw1MDkwMDY4NTAsLTY1OD
-EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
-OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
-U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
-MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbLTE1MjYyMjk0NDcsNTA5MDA2ODUwLC02NT
+gxMzA4NzgsMTc3NTU2OTE0NiwtMjQ1MDA0MzIzLC00NzA1NzI2
+MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4ODk4MTYxNjMsLT
+g1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1MiwtMTA3MzM4
+MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
 -->
