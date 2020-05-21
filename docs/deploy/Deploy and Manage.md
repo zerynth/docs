@@ -348,10 +348,8 @@ zdm workspace all
 ```
 You can also get information about one single workspace from your list giving the command:
 
-Copy to Clipboard
 
-1
-
+```python
 zdm workspace get [WorkspaceId]
 
 ### Fleets
@@ -727,6 +725,6 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzMzODExNjEsODA4Nzc5ODk3LDIwNT
-U5NjkzMzNdfQ==
+eyJoaXN0b3J5IjpbLTE1NzcyNDM2NjIsLTEwNzMzODExNjEsOD
+A4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
 -->
