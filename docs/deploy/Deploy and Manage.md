@@ -22,7 +22,7 @@ ZDM is device and OS independent, allowing the connection of microcontroller-bas
 
 This device produced data is collected, aggregated, and stored by the ZDM, allowing IoT application frontend to retrieve the data by means of RESTfull API or using the ZDM Gates.
 
-![](https://lh4.googleusercontent.com/RoaYn1piCIOQ7lbnpbMi3z7eKuWANlp9lNsPEG2HvvyAkFtwxheYJKZ0ZDc9C4Yzbh2teuczvdx2J-utKgz12bYCHZhYz_1v-zLmPI66_DDhs4_GgiWtHGbaDMXQPKLcwfQsguaQ "zdm-diagram")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm-diagram.jpg)
 
 The Zerynth Device Managers is based on the following key concepts;
 
@@ -53,7 +53,7 @@ Go to [https://zdm.zerynth.com](https://zdm.zerynth.com/) and login with your ze
 
 **Home Page**
 
-![](https://lh4.googleusercontent.com/CEwJ53z5mkyBhj1AanuLn3fpRdcGWYZ9bMDb11IRFTllX4UCAESOgil5_9JPEWIxJhKvTetqKDbv-0XQgEZvBT0sZ3uRi49IwY-tma0kZl8CAEU-1qa1tUZL-w6dgvnsuSnijh9r "Schermata del 2020-03-26 11-58-46")
+
 
 From here you can get an overview of your workspaces, search for them and add new ones.
 
@@ -627,9 +627,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA5MDA2ODUwLC02NTgxMzA4NzgsMTc3NT
-U2OTE0NiwtMjQ1MDA0MzIzLC00NzA1NzI2MDgsNzc0MTA5ODUz
-LDEyMDc0NzAxMDksLTE4ODk4MTYxNjMsLTg1Nzk3MTY4Myw0OT
-Y5MzcyODcsMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MDg3Nzk4
-OTcsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbLTE2Mzk2Nzc1MCw1MDkwMDY4NTAsLTY1OD
+EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
+OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
+U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
+MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
 -->
