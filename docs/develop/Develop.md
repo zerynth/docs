@@ -230,7 +230,7 @@ If the library has already been published, some of the required field will be au
 
 The third step is a recap of what is going to happen during the publishing; read it carefully and confirm the repository, the project and the version of the library!
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/zstudio-publish-2.png "zstudio-publish-2")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/publishing%20wizard%202.jpg)
 
 In the last step the selected Github repository is cloned, the project to be published is copied in and the changes are committed and pushed back to the master branch. Also, a new Github release is created with version and description given in step 2. As soon as the Zerynth backend discovers the new release, the library will be made available to all the Zerynth users.
 
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MjI0MTk5MCwtMTI0MjQ4NTY1OCwtMT
-EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
+eyJoaXN0b3J5IjpbODQ1OTAxMDE0LC0xMjQyNDg1NjU4LC0xMT
+AyNjI4NTEyLC03MDc1NzU3MjgsLTcwNzU3NTcyOF19
 -->
