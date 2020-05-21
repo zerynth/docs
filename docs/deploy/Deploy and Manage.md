@@ -229,7 +229,7 @@ Select one, optionally fill in the text box below with the arguments if required
 !!! note
 	If the selected devices do not have common Jobs, or if you select devices without custom Jobs defined in the firmware you will get the: “No Jobs found” message.
 
-Device Page
+**Device Page**
 
 On the page of a specific device, you will see the info about that device, then the name, the creation date, workspace and fleet of belonging, etc.
 
@@ -627,7 +627,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NTI5MDg4NSw1MDMwOTcxODgsMTIwNT
+eyJoaXN0b3J5IjpbMTgyMzA0MTMzOSw1MDMwOTcxODgsMTIwNT
 YxNjYyOSw1MDkwMDY4NTAsLTY1ODEzMDg3OCwxNzc1NTY5MTQ2
 LC0yNDUwMDQzMjMsLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNz
 Q3MDEwOSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4
