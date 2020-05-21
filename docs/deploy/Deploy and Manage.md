@@ -611,38 +611,20 @@ Steps needed to execute the job “set_led” on the device by using the ZDM CLI
 Make sure you have configured the ZDM CLI ([https://www.zerynth.com/blog/docs/the-tools/zdm/getting-started/](https://www.zerynth.com/blog/docs/the-tools/zdm/getting-started/)).
 
 In order to schedule the job, type the following command (where the DEVICE_ID must be substituted with the actual id of the device):
-
-  
-
-Copy to Clipboard
-
-1
-
+```python
 zdm job schedule set_temp <DEVICE_ID>
-
-  
+  ```
 
 Expected result:
 
 If the job has been correctly scheduled to the zdm client py, the following message will appear in the console:
-
-Copy to Clipboard
-
-1
-
+```python
 Executing job set_temp. Received args: {}
-
-2
-
 [INFO | zdmclient.py:185] > [DEVICE-ID] job set_temp executed with result res:{"msg": "Temperature set correctly."}
-
-3
-
-​
-
 That’s all! Edit the script file and build your own ZDM powered IOT project!
+```p
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4MDExMTU5LDQ5NjkzNzI4NywxNDg2NT
+eyJoaXN0b3J5IjpbNzIwNzI1ODYzLDQ5NjkzNzI4NywxNDg2NT
 YyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMDU1OTY5MzMz
 XX0=
 -->
