@@ -50,7 +50,7 @@ To use the ZDM service you need a Zerynth account, if you do not have it yet you
 
 Go to [https://zdm.zerynth.com](https://zdm.zerynth.com/) and login with your zerynth account, you will reach the ZDM home page.
 
-### Home Page
+**Home Page**
 
 ![](https://lh4.googleusercontent.com/CEwJ53z5mkyBhj1AanuLn3fpRdcGWYZ9bMDb11IRFTllX4UCAESOgil5_9JPEWIxJhKvTetqKDbv-0XQgEZvBT0sZ3uRi49IwY-tma0kZl8CAEU-1qa1tUZL-w6dgvnsuSnijh9r "Schermata del 2020-03-26 11-58-46")
 
@@ -626,8 +626,8 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NTAwNDMyMywtNDcwNTcyNjA4LDc3ND
-EwOTg1MywxMjA3NDcwMTA5LC0xODg5ODE2MTYzLC04NTc5NzE2
-ODMsNDk2OTM3Mjg3LDE0ODY1NjI4NTIsLTEwNzMzODExNjEsOD
-A4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
+eyJoaXN0b3J5IjpbMTc3NTU2OTE0NiwtMjQ1MDA0MzIzLC00Nz
+A1NzI2MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4ODk4MTYx
+NjMsLTg1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1MiwtMT
+A3MzM4MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
 -->
