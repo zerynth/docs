@@ -613,7 +613,7 @@ Make sure you have configured the ZDM CLI ([https://www.zerynth.com/blog/docs/th
 In order to schedule the job, type the following command (where the DEVICE_ID must be substituted with the actual id of the device):
 ```python
 zdm job schedule set_temp <DEVICE_ID>
-  ```
+```
 
 Expected result:
 
@@ -628,7 +628,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODk4MTYxNjMsLTg1Nzk3MTY4Myw0OT
-Y5MzcyODcsMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MDg3Nzk4
-OTcsMjA1NTk2OTMzM119
+eyJoaXN0b3J5IjpbMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
+U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
+MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
 -->
