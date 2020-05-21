@@ -620,15 +620,13 @@ Expected result:
 If the job has been correctly scheduled to the zdm client py, the following message will appear in the console:
 ```python
 Executing job set_temp. Received args: {}
-```
-```python
+
 [INFO | zdmclient.py:185] > [DEVICE-ID] job set_temp executed with result res:{"msg": "Temperature set correctly."}
-```
-```python
+
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
-U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
-MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4OD
+k4MTYxNjMsLTg1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1
+MiwtMTA3MzM4MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
 -->
