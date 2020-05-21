@@ -420,25 +420,17 @@ Create a new key.
 zdm device key create [DeviceId] [Name]
 ```
 Generate a new Jwt password for a device starting from a generated key.
-
-Copy to Clipboard
-
-1
-
+```python
 zdm device key generate [DeviceId] [KeyId]
-
+```
 ### Jobs and actions
 
 You can use ZDM to remotely send a job command to your devices.
 
 To send a new job to a device, you just have to start it using the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm job schedule [name] [devices]
-
+```
 The ‘name’’ argument is a string representing the method name.
 
 The ‘devices’’ argument is a list of the device ids you want to schedule the job (i.e. [“device1”, “device2”]).
@@ -450,13 +442,9 @@ If the device needs some arguments to execute the job, you can use the –arg op
 You can use ZDM CLI to see the last 25 events sent by your devices.
 
 Use the command
-
-Copy to Clipboard
-
-1
-
+```python
 zdm event list [workspaceId]
-
+```
 If you want to see the last 25 events filtering on device use the option
 
 Copy to Clipboard
@@ -696,6 +684,6 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjE2NTQxMywtMTA3MzM4MTE2MSw4MD
+eyJoaXN0b3J5IjpbMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MD
 g3Nzk4OTcsMjA1NTk2OTMzM119
 -->
