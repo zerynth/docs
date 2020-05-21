@@ -156,7 +156,7 @@ Just click on the “Add New Device” button on the workspace page. You will be
 
 ![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Device.png)
 
-![](https://lh3.googleusercontent.com/SaFlXCdFZlrGAcZ6huCd-6LaFBYwdDRcoQxZ7xQtWd8w7nMUAlJKlrGPaph01P92s8YcVBzaO7niNAQm2vktoBdRe0JZVkH1bcaoHxA1lfI00XQQJ-gvoLTRVdKXPziXiNKSuJ7s "Schermata da 2020-03-26 13-07-22")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Device%20added.png)
 
 Once successfully created, the screen will show the device id and the Password required for device authentication on the ZDM. Please copy the password and the device id, you will need to paste it in the Zerynth Device firmware or in your ZDM client lib based application.
 
@@ -168,7 +168,7 @@ If you lose a device password you can always regenerate it from the specific dev
 
 **Regenerate device password**
 
-![](https://lh5.googleusercontent.com/qAdmToUGO7SgzBigWIvTtVQE2-2ICJbKAJybUUpsWtt-FGPDi9B8eGlNYSpFNwR5kzG6pQAPzryaHrb-QgVyVPWj2tTudwZWrn6fqbPRkQfGyyDW8z-VDWi0UeHQj3IWQPkTHW4C "Schermata da 2020-03-30 09-29-18")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Regenerate%20device%20password.png)
 
 **Bulk Actions**
 
@@ -192,7 +192,7 @@ The first step to start a FOTA update on your devices is to prepare and upload a
 
 To upload your firmware, open the Zerynth Studio (**Note:** Zerynth studio v. 2.5.0 or higher is required). Open the project you want to compile and use for the FOTA and click on the Zerynth Device Manager Icon on the left vertical menu.
 
-![](https://lh3.googleusercontent.com/EuOqz1r9_uwLXP1UTIs2DOIvgU1YTE1DY2Ug6Bt4oV5Bf8yTYLoqAUIpOBD_epbaJ5yynJ-zCHZHQUn3kwasQz806cO-hObWEMMgqXKo2N_UkuXunigA7YGbkGvP-oYN9gH_ne5n)
+
 
 Now click on the ZDM FOTA Prepare orange button.
 
@@ -628,9 +628,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MTAzMjk2NCw1MDkwMDY4NTAsLTY1OD
-EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
-OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
-U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
-MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbNjEyNDE2MDcxLDUwOTAwNjg1MCwtNjU4MT
+MwODc4LDE3NzU1NjkxNDYsLTI0NTAwNDMyMywtNDcwNTcyNjA4
+LDc3NDEwOTg1MywxMjA3NDcwMTA5LC0xODg5ODE2MTYzLC04NT
+c5NzE2ODMsNDk2OTM3Mjg3LDE0ODY1NjI4NTIsLTEwNzMzODEx
+NjEsODA4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
 -->
