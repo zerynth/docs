@@ -280,22 +280,18 @@ Now you can use the zdm command line interface by typing on your command prompt
 ```python
 zdm
 ```
-To see the list of all the possible commands with details use the help command with option –help.
+To see the list of all the possible commands with details use the help command with option ```–help```.
 
-For example zdm –help or zdm device –help.
+For example```zdm –help``` or ```zdm device –help```.
 
 ### Login
 
 The first step to use the ZDM (Zerynth device manager) using the Zerynth Toolchain is to log in using your Zerynth account.
 
 Open a terminal and type this command to login with your Zerynth account:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm login
-
+```
 You will be redirected to the Zerynth SSO and, once logged, you will see your authorization token.
 
 Copy the generated token and paste it into the terminal.
@@ -755,5 +751,5 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NDM4OSwyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbMTMxNTUwODYxOCwyMDU1OTY5MzMzXX0=
 -->
