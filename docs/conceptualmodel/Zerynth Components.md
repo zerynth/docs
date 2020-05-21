@@ -2,7 +2,7 @@
 
 A multithreaded real-time OS that supports hybrid Python/C coding, advanced security and connectivity features, advanced power-management, FOTA, and provides real hardware independence.
 
-## Z**erynth Device Manager**
+## **Zerynth Device Manager**
 
 Zerynth Device Manager (ZDM) is a device and data management service that makes it easy to securely register, organize, monitor, and remotely manage IoT devices at scale.
 
@@ -34,6 +34,6 @@ TK
 
 4ZeroPlatform is composed of 4ZeroBox and 4ZeroManager. More info here
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDEwNDE4Myw4ODk3NDI5MDMsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3MTk2NTM4OTcsODg5NzQyOTAzLDczMD
+k5ODExNl19
 -->
