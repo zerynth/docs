@@ -347,23 +347,18 @@ type the command:
 zdm workspace all
 ```
 You can also get information about one single workspace from your list giving the command:
-
-
 ```python
 zdm workspace get [WorkspaceId]
+```
 
 ### Fleets
 
 #### Fleet creation
 
 To create a new fleet type the following command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm fleet create [FleetName] [WorkspaceId]
-
+```
 Also in this case, don’t use “default” as the fleet name, and use one of your workspaces’ id to create your new fleet.
 
 A result message with the fleet name will be shown.
@@ -371,13 +366,9 @@ A result message with the fleet name will be shown.
 #### List fleets and fleet information
 
 If you want to see the list of fleets you’ve created type:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm fleet all
-
+```
 You will have the fleet id, the name, and the workspace id of all of your fleets.
 
 ### Devices
@@ -387,13 +378,9 @@ You will have the fleet id, the name, and the workspace id of all of your fleets
 Once you have created a new workspace and fleet, or you’ve decided to skip and to use the default ones, you can create a new device.
 
 To create a device type the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm device create [DeviceName] [FleetId]
-
+```
 DeviceName represents the device’s name, FleetId is the fleet id you want the device to belong to.
 
 If you don’t specify a fleet id, the device will be associated to the default fleet in the default workspace.
@@ -405,33 +392,21 @@ To authenticate your new device, you have to generate a key for the device with 
 If you want to list your devices or to get a device information you can use the list and get commands, to see the device name, id, and fleet id.
 
 Give the command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm device all
-
+```
 to list all your devices or
-
-Copy to Clipboard
-
-1
-
+```python
 zdm device get [DeviceId]
-
+```
 to have information about a single device.
 
 #### Get the device’s workspace
 
 To get the workspace’s name and id that contains your device, you can use the following command:
-
-Copy to Clipboard
-
-1
-
+```python
 zdm device workspace [DeviceId]
-
+```
 #### Device’s key generation
 
 To be able to manage your device’s data you have to create a key at first and then generate a password (as jwt token) from the created key.
@@ -441,13 +416,9 @@ The generated key can be used as the password to connect your device to the ZDM 
 You can generate different keys with different names for your devices with the command:
 
 Create a new key.
-
-Copy to Clipboard
-
-1
-
+```python
 zdm device key create [DeviceId] [Name]
-
+```
 Generate a new Jwt password for a device starting from a generated key.
 
 Copy to Clipboard
@@ -725,6 +696,6 @@ Executing job set_temp. Received args: {}
 
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzcyNDM2NjIsLTEwNzMzODExNjEsOD
-A4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
+eyJoaXN0b3J5IjpbMTM5NjE2NTQxMywtMTA3MzM4MTE2MSw4MD
+g3Nzk4OTcsMjA1NTk2OTMzM119
 -->
