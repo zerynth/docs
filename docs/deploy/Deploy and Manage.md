@@ -245,10 +245,9 @@ At the end of device pages, you can find the Data Console, it allows you to see 
 
 By clicking in the left checkboxes you can better navigate the published data, they will be presented on the right in the “Show selected Data” box.
 
-
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Data%20Console.png)
 
   
-
 ## The ZDM Command Line Interface
 
 This section is a guide for the most used ZDM CLI commands.
@@ -628,7 +627,7 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1MzAxNTI4LDEyMDU2MTY2MjksNTA5MD
+eyJoaXN0b3J5IjpbNTAzMDk3MTg4LDEyMDU2MTY2MjksNTA5MD
 A2ODUwLC02NTgxMzA4NzgsMTc3NTU2OTE0NiwtMjQ1MDA0MzIz
 LC00NzA1NzI2MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4OD
 k4MTYxNjMsLTg1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1
