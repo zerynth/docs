@@ -208,7 +208,7 @@ You will be redirected to the ZDM selected device page.
 
 Just click FOTA, select the firmware you just uploaded and click Start.
 
-![](https://lh4.googleusercontent.com/oZ1KbRP-ZWeYE6z307Zkjq8cBfWpT-HJ0QivhhoBVf7915queRm0v3b10I1EY1tPyUb6PB_2wRfEnmnniNhnB6sqApNz9ZQ5PGXdtBSqG1niYJ3HHR-yzukorl98_OU2zDK7DzpO)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/ZDM%20selected%20device%20page.png)
 
 The FOTA procedure will be scheduled on your device. Refresh the device Status form and you will see the status of the FOTA procedure.
 
@@ -218,7 +218,7 @@ Jobs are device actions that the ZDM will be scheduled. Jobs need to be enabled 
 
 Once your device or devices are online and programmed with custom Jobs, you can select one or more devices and click the “Jobs” button.
 
-![](https://lh5.googleusercontent.com/B5lUBHAuVcxC7QcXecoZG2Fb0ByAIxU5oK415MfnNJnpifUHqKOjEO6D6BEbfv6Wu-BtFhTpD6Sh0ctU9Jln5p0I8Y29KX9n5kvaeYsFPr-vxNo6pGBTayQK3Kyp-JcVRT9Yup2J "Schermata da 2020-03-26 14-45-42")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Launch%20jobs.png)
 
 A dialog will come up, which will summarize the list of devices you have selected.
 
@@ -235,7 +235,7 @@ On the page of a specific device, you will see the info about that device, then 
 
 In addition you will see the Tag Console, which will show you in real time the data that that device is publishing in a specific tag.
 
-![](https://lh5.googleusercontent.com/mVvNKsN2MTGFVop09jMisvcMu70mDPnm3zwnwA8Ld1l8drSzIo8FSDTeE5efLxGLGitRvQkgA4wlgtPOxz4Crn3fauntmg-VDEFs-Otpc4CovDhikXtitsDvpdAZRY3E9PeNrvwg "image12")
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Device%20Page.png)
 
 At the top you can see some summary information on your device such as name, id, fleet to which it belongs, associated tags, the firmware version, the status of the jobs called and the last time your device was seen online.
 
@@ -245,7 +245,7 @@ At the end of device pages, you can find the Data Console, it allows you to see 
 
 By clicking in the left checkboxes you can better navigate the published data, they will be presented on the right in the “Show selected Data” box.
 
-![](https://lh3.googleusercontent.com/PuN9T5Gf1IwI04NAvNfWSfEHKREHMcLSBrNXDLvmqsydyD60EqrPOmLKutOdlH6LAUlmdemzj1RCL9_JDdsKvH0P23SIQATvDB1IjjDafpPQMV-V3XA4iIO-56R4MPcbUhxTw2BP "Schermata da 2020-03-26 13-51-08")
+
 
   
 
@@ -628,9 +628,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTYxNjYyOSw1MDkwMDY4NTAsLTY1OD
-EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
-OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
-U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
-MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
+eyJoaXN0b3J5IjpbNzA1MzAxNTI4LDEyMDU2MTY2MjksNTA5MD
+A2ODUwLC02NTgxMzA4NzgsMTc3NTU2OTE0NiwtMjQ1MDA0MzIz
+LC00NzA1NzI2MDgsNzc0MTA5ODUzLDEyMDc0NzAxMDksLTE4OD
+k4MTYxNjMsLTg1Nzk3MTY4Myw0OTY5MzcyODcsMTQ4NjU2Mjg1
+MiwtMTA3MzM4MTE2MSw4MDg3Nzk4OTcsMjA1NTk2OTMzM119
 -->
