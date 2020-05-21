@@ -192,15 +192,15 @@ The first step to start a FOTA update on your devices is to prepare and upload a
 
 To upload your firmware, open the Zerynth Studio (**Note:** Zerynth studio v. 2.5.0 or higher is required). Open the project you want to compile and use for the FOTA and click on the Zerynth Device Manager Icon on the left vertical menu.
 
-
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Zerynth%20Device%20Manager%20Icon%20on%20the%20left%20vertical%20menu.png)
 
 Now click on the ZDM FOTA Prepare orange button.
 
-![](https://lh6.googleusercontent.com/no6vIf-Va2_dViAwEosGjEmGa7oyDWnWf1QgdoDUeMj-FaQfZUK-mxPJzXeeCci4km7yFbEMr6gt52hplZUKNjkewx8qhA90-tv99-ZH2p8u_90AS-h6S1lGWCqr2EoOttDv7xyD)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/ZDM%20FOTA%20Prepare%20orange%20button.png)
 
 Select the ZDM device you want to update and indicate a unique firmware version identifier (you can’t reuse a version identifier previously used), click prepare.
 
-![](https://lh5.googleusercontent.com/KkI9vx0vC0HcqRDIPH7BFazCCeMEt7Rw8WuVxjBmSlAaYQTL6OCnN0bpY1V55J4pOP4_pBEoi-g9gc-lzj1sfu03pTr-OGAa_w6XLxTKpX4iWtE0hH1bMoR4YbYX4DSOYLyG0HG0)
+![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Select%20the%20ZDM%20device%20you%20want%20to%20update.png)
 
 When the firmware preparation and upload process will be completed Zerynth Studio will prompt you to another window. If you want to go ahead with the FOTA procedure click Open ZDM GUI.
 
@@ -628,9 +628,9 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyNDE2MDcxLDUwOTAwNjg1MCwtNjU4MT
-MwODc4LDE3NzU1NjkxNDYsLTI0NTAwNDMyMywtNDcwNTcyNjA4
-LDc3NDEwOTg1MywxMjA3NDcwMTA5LC0xODg5ODE2MTYzLC04NT
-c5NzE2ODMsNDk2OTM3Mjg3LDE0ODY1NjI4NTIsLTEwNzMzODEx
-NjEsODA4Nzc5ODk3LDIwNTU5NjkzMzNdfQ==
+eyJoaXN0b3J5IjpbMTIwNTYxNjYyOSw1MDkwMDY4NTAsLTY1OD
+EzMDg3OCwxNzc1NTY5MTQ2LC0yNDUwMDQzMjMsLTQ3MDU3MjYw
+OCw3NzQxMDk4NTMsMTIwNzQ3MDEwOSwtMTg4OTgxNjE2MywtOD
+U3OTcxNjgzLDQ5NjkzNzI4NywxNDg2NTYyODUyLC0xMDczMzgx
+MTYxLDgwODc3OTg5NywyMDU1OTY5MzMzXX0=
 -->
