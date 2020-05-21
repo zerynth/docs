@@ -54,7 +54,7 @@ Once registration has been performed, the user is given the option to create a V
 
 In the figure below, after clicking the “Create” button, the user can select one available of different virtual machines compatible with the target device choosing the licenses (Starter/Premium), the real time operating system from those supported for the target device, and (for Premium licenses only) the features to be included in the virtual machine (FOTA, Power Saving, Secure Firmware, etc.).
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/4_create_vm.png "4_create_vm")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/select%20avalaible%20virtual%20machine.png)
 
 !!! note
 	Some devices cannot be recognized automatically; for these devices, the dialog provides some more options to be specified before the actual registration/virtualization can take place.
@@ -64,7 +64,7 @@ In the figure below, after clicking the “Create” button, the user can select
 
 The created Virtual Machine can now be virtualized (i.e. burned on the device). The **“Virtualization”** is the process of installing the Zerynth Virtual Machine by flashing it on a device. By clicking the “Virtualize” button, the user can select the Zerynth Virtual Machine to be installed in his device choosing from those created.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/5_choose_vm.png "5_choose_vm")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Virtualization.png)
 
 !!! note
 	Zerynth Studio toolbar allows to **“Virtualize”** the selected device.
@@ -75,7 +75,7 @@ The supported devices are grouped into Physical Devices (the ones physically con
 
 The Zerynth “Virtual Devices” feature allows to implement and develop the user application verifying the code for all the supported devices, without having them physically connected to the local machine.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/choose-device.gif "choose device")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Zerynth%20Devices.gif)
 
 Once the desired supported device (virtual or physically connected) is selected, Zerynth Studio displays all collected info related to the chosen device in 2 different dialogs:
 
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTkzNjAxOCwtMTI0MjQ4NTY1OCwtMT
+eyJoaXN0b3J5IjpbMTExMDgxNTQ4MCwtMTI0MjQ4NTY1OCwtMT
 EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
 -->
