@@ -301,7 +301,7 @@ If you’re logging in for the first time, a default workspace and a default fle
 
 The first step to work with your devices and ZDM is to associate your devices to a fleet inside a workspace, so you can choose to use the default ones or to create your first custom workspace and fleet.
 
-### Account commands
+**Account commands**
 
 **Account’s information**
 
@@ -317,7 +317,7 @@ zdm logout
 ```
 and your current session will be closed.
 
-### Workspaces
+**Workspaces**
 
 **Workspace creation**
 
@@ -352,7 +352,7 @@ You can also get information about one single workspace from your list giving th
 zdm workspace get [WorkspaceId]
 ```
 
-### Fleets
+**Fleets**
 
 **Fleet creation**
 
@@ -372,7 +372,7 @@ zdm fleet all
 ```
 You will have the fleet id, the name, and the workspace id of all of your fleets.
 
-### Devices
+**Devices**
 
 **Device creation**
 
@@ -424,7 +424,7 @@ Generate a new Jwt password for a device starting from a generated key.
 ```python
 zdm device key generate [DeviceId] [KeyId]
 ```
-### Jobs and actions
+**Jobs and actions**
 
 You can use ZDM to remotely send a job command to your devices.
 
@@ -438,7 +438,7 @@ The ‘devices’’ argument is a list of the device ids you want to schedule t
 
 If the device needs some arguments to execute the job, you can use the –arg option.
 
-### Events
+**Events**
 
 You can use ZDM CLI to see the last 25 events sent by your devices.
 
@@ -458,7 +458,7 @@ It’s also possible to filter results on date. You can indicate a start and end
 ```python
 --end [endDate]
 ```
-### Fota (Firmware over the air)
+**Fota (Firmware over the air)**
 
 Important: In order to perform the FOTA of a device you need to have a Virtual machine with the “Fota Enable” feature.
 
@@ -501,7 +501,7 @@ To check the status of a FOTA you started, to know if the device finished the ta
 ```python
 zdm fota check [DeviceId]
 ```
-### Gates
+**Gates**
 
 Using the ZDM you’re able to also receive your device’s data on your webhooks.
 
@@ -627,10 +627,10 @@ Executing job set_temp. Received args: {}
 That’s all! Edit the script file and build your own ZDM powered IOT project!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjMwNzYwMjUsNTAzMDk3MTg4LDEyMD
-U2MTY2MjksNTA5MDA2ODUwLC02NTgxMzA4NzgsMTc3NTU2OTE0
-NiwtMjQ1MDA0MzIzLC00NzA1NzI2MDgsNzc0MTA5ODUzLDEyMD
-c0NzAxMDksLTE4ODk4MTYxNjMsLTg1Nzk3MTY4Myw0OTY5Mzcy
-ODcsMTQ4NjU2Mjg1MiwtMTA3MzM4MTE2MSw4MDg3Nzk4OTcsMj
-A1NTk2OTMzM119
+eyJoaXN0b3J5IjpbMTI1MTI4MDMyNyw1MDMwOTcxODgsMTIwNT
+YxNjYyOSw1MDkwMDY4NTAsLTY1ODEzMDg3OCwxNzc1NTY5MTQ2
+LC0yNDUwMDQzMjMsLTQ3MDU3MjYwOCw3NzQxMDk4NTMsMTIwNz
+Q3MDEwOSwtMTg4OTgxNjE2MywtODU3OTcxNjgzLDQ5NjkzNzI4
+NywxNDg2NTYyODUyLC0xMDczMzgxMTYxLDgwODc3OTg5NywyMD
+U1OTY5MzMzXX0=
 -->
