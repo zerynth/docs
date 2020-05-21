@@ -47,7 +47,7 @@ To register a new device, you can follow these steps:
 
 Once registration has been performed, the user is given the option to create a Virtual Machine for the registered device by clicking again the “Z” button.
 
-![](https://www.zerynth.com/wp-content/uploads/2020/03/3_virtualize.png "3_virtualize")
+![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/create%20a%20Virtual%20Machine.png)
 
 !!! note
 	A device can always be registered again with the dedicated dialog button.
@@ -241,6 +241,6 @@ In the last step the selected Github repository is cloned, the project to be pub
 
 Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDY0MzE5OCwtMTI0MjQ4NTY1OCwtMT
+eyJoaXN0b3J5IjpbLTQyOTkzNjAxOCwtMTI0MjQ4NTY1OCwtMT
 EwMjYyODUxMiwtNzA3NTc1NzI4LC03MDc1NzU3MjhdfQ==
 -->
