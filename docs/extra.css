@@ -14,6 +14,10 @@ article {
   max-width: 600px!important;
 }
 
+[data-md-color-accent=red]{
+--md-accent-fg-color: hsl(212, 100%, 47%);
+}
+
 /*
 h1 {
     font-family:"Roboto Slab";
