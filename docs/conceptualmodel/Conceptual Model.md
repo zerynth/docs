@@ -2,7 +2,6 @@ Zerynth is a platform that simplifies and accelerates the development of IoT app
 
 Zerynth offers developers, system integrators, and businesses a way to enable IoT for their products, rapidly.
 
-  
 
 Zerynth includes various tools, software and hardware units. The entry point to the Zerynth journey is not fixed, it depends on the user's needs and goals.
 
@@ -46,6 +45,6 @@ If you are interested in ready to use vertical IOT solutions, you can check the 
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjQwNDEwMiwtMjEyMjA5NzkyNiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNDcyMjY4NzQ4LC0xNTY0MDQxMDIsLTIxMj
+IwOTc5MjYsNzMwOTk4MTE2XX0=
 -->
