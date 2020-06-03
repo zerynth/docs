@@ -8,15 +8,15 @@ Zerynth includes various tools, software and hardware units. The entry point to 
 
   
 
-The development of IOT projects is a very long journey. Typically an IOT project requires a hardware platform, used as reference for the development of the IOT device. Zerynth can help you in this phase, thanks to the Zerynth Hardware and the Zerynth Powered Devices. Zerynth hardware are Zerynth officially commercialized devices that are fully integrated with the Zerynth suite, providing users a seamless IOT development experience. Zerynth Powered Devices are third party hardware units that natively include the Zerynth OS, thus making it ready for being programmed and managed with the Zerynth suite. Zerynth also supports many other boards. A comprehensive list of all the supported boards, sensors, peripherals and libraries can be found here.
+The development of IOT projects is a very long journey. Typically an IOT project requires a hardware platform, used as reference for the development of the IOT device. Zerynth can help you in this phase, thanks to the **Zerynth Hardware** and the **Zerynth Powered Devices**. **Zerynth hardware** are Zerynth officially commercialized devices that are fully integrated with the Zerynth suite, providing users a seamless IOT development experience. Zerynth Powered Devices are third party hardware units that natively include the Zerynth OS, thus making it ready for being programmed and managed with the Zerynth suite. Zerynth also supports many other boards. A comprehensive list of all the supported boards, sensors, peripherals and libraries can be found here.
 
   
 
-Once you have identified your IOT hardware it is time to develop the firmware for your embedded devices. The Zerynth OS (ZOS) is a tiny real-time operating system that runs on a variety of 32bit microcontrollers allowing code portability within IOT platforms. It means that if you develop your firmware for Zerynth OS you can easily load it on all the Zerynth supported devices in a few clicks. The ZOS includes Python Virtual Machines that allow developing IOT firmware in Python, or C and Python. For example, you can develop a motor control library in C in order to be very fast in the control cycle while developing the cloud connection code in Python in order to easily write and maintain the code.
+Once you have identified your IOT hardware it is time to develop the firmware for your embedded devices. The **Zerynth OS (ZOS)** is a tiny real-time operating system that runs on a variety of 32bit microcontrollers allowing code portability within IOT platforms. It means that if you develop your firmware for Zerynth OS you can easily load it on all the Zerynth supported devices in a few clicks. The ZOS includes Python Virtual Machines that allow developing IOT firmware in Python, or C and Python. For example, you can develop a motor control library in C in order to be very fast in the control cycle while developing the cloud connection code in Python in order to easily write and maintain the code.
 
   
 
-To develop for ZOS and to be able to manage your board’s firmware upload you need to install the Zerynth SDK. Z-SDK is a cross platform (Windows, Linux and MAC) toolkit that includes Zerynth Studio, The Zerynth Tool Chain and various board programming tools, libraries and drivers.
+To develop for ZOS and to be able to manage your board’s firmware upload you need to install the Zerynth SDK. Z-SDK is a cross platform (Windows, Linux and MAC) toolkit that includes **Zerynth Studio**, The Zerynth Tool Chain and various board programming tools, libraries and drivers.
 
   
 
@@ -46,5 +46,6 @@ If you are interested in ready to use vertical IOT solutions, you can check the 
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIwOTc5MjYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI3NDEzNjgyNiwtMjEyMjA5NzkyNiw3Mz
+A5OTgxMTZdfQ==
 -->
