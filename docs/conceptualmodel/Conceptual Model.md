@@ -14,7 +14,7 @@ Once you have identified your IOT hardware it is time to develop the firmware fo
 
   
 
-To develop for ZOS and to be able to manage your board’s firmware upload you need to install the Zerynth SDK. Z-SDK is a cross platform (Windows, Linux and MAC) toolkit that includes **Zerynth Studio**, **The Zerynth Tool Chain** and various board programming tools, libraries and drivers.
+To develop for ZOS and to be able to manage your board’s firmware upload you need to install the Zerynth SDK. Z-SDK is a cross platform (Windows, Linux and MAC) toolkit that includes **[Zerynth Studio](https://www.zerynth.com/zos/)**, **The Zerynth Tool Chain** and various board programming tools, libraries and drivers.
 
   
 
@@ -30,7 +30,7 @@ The development of an IOT project is not finished with device firmware creation.
 
   
 
-IOT Device Management and Data collection is provided in Zerynth thanks to the **Zerynth Device Manager**. ZDM is a data and device management system that allows to easily connect IOT devices to a cloud allowing an easy and intuitive management and aggregation of the data and a seamless management of IOT devices updates and security. ZDM is one of the few device managers available on the market that can be installed on premises on request. ZDM collects and stores your IOT data while also allowing a seamless forwarding of any other cloud (Azure, AWS, IBM, Google IOT) or backend service via Webhook or REST API.
+IOT Device Management and Data collection is provided in Zerynth thanks to the **[Zerynth Device Manager](https://www.zerynth.com/zdm/)**. ZDM is a data and device management system that allows to easily connect IOT devices to a cloud allowing an easy and intuitive management and aggregation of the data and a seamless management of IOT devices updates and security. ZDM is one of the few device managers available on the market that can be installed on premises on request. ZDM collects and stores your IOT data while also allowing a seamless forwarding of any other cloud (Azure, AWS, IBM, Google IOT) or backend service via Webhook or REST API.
 
   
 
@@ -44,7 +44,7 @@ If you are interested in ready to use vertical IOT solutions, you can check the 
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTgyMTIyMywtOTQzNTI2NzU0LDY1Nj
-g3MDk5Nyw0NzIyNjg3NDgsLTE1NjQwNDEwMiwtMjEyMjA5Nzky
-Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNDA3NjMxOTQwLC05NDM1MjY3NTQsNjU2OD
+cwOTk3LDQ3MjI2ODc0OCwtMTU2NDA0MTAyLC0yMTIyMDk3OTI2
+LDczMDk5ODExNl19
 -->
