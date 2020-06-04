@@ -39,13 +39,13 @@ You are at the end of the IOT development journey, if you need more help on fina
 
   
 
-If you are interested in ready to use vertical IOT solutions, you can check the Zerynth 4ZeroBox and the Zerynth IoT Tracker solutions. The Zerynth 4ZeroBox is a ready to use industrial unit that allows to easily interface modern and legacy industrial machines to the cloud, thus building the “digital twin” of the Industry 4.0 paradigms. The 4ZeroBox can be connected to the Zerynth Device Manager and collected data visualized thanks to our Grafana and Microsoft PowerBi integrations. The 4ZeroBox has been already used in various industrial use-cases you can find documented here.
+If you are interested in ready to use vertical IOT solutions, you can check the **Zerynth 4ZeroBox** and the **Zerynth IoT Tracker** solutions. The Zerynth 4ZeroBox is a ready to use industrial unit that allows to easily interface modern and legacy industrial machines to the cloud, thus building the “digital twin” of the Industry 4.0 paradigms. The 4ZeroBox can be connected to the Zerynth Device Manager and collected data visualized thanks to our **Grafana** and **Microsoft PowerBi** integrations. The 4ZeroBox has been already used in various industrial use-cases you can find documented here.
 
   
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4MjI0NDg5LC0xNDE1ODE2LC0yMDkxNz
+eyJoaXN0b3J5IjpbNzc4ODM0NDczLC0xNDE1ODE2LC0yMDkxNz
 A0NTM1LDIwNzgxMDUyOTAsMjA3ODEwNTI5MCw0MDc2MzE5NDAs
 LTk0MzUyNjc1NCw2NTY4NzA5OTcsNDcyMjY4NzQ4LC0xNTY0MD
 QxMDIsLTIxMjIwOTc5MjYsNzMwOTk4MTE2XX0=
