@@ -33,7 +33,7 @@ The development of an IOT project is not finished with device firmware creation.
 
 IOT Device Management and Data collection is provided in Zerynth thanks to the **[Zerynth Device Manager](https://www.zerynth.com/zdm/)**. ZDM is a data and device management system that allows to easily connect IOT devices to a cloud allowing an easy and intuitive management and aggregation of the data and a seamless management of IOT devices updates and security. ZDM is one of the few device managers available on the market that can be installed on premises on request. ZDM collects and stores your IOT data while also allowing a seamless forwarding of any other cloud (Azure, AWS, IBM, Google IOT) or backend service via Webhook or REST API.
 
-  
+  ![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm.png)
 
 You are at the end of the IOT development journey, if you need more help on finalizing your project or in converting your IOT prototype in an industrial project just check our R&D services.
 
@@ -45,7 +45,8 @@ If you are interested in ready to use vertical IOT solutions, you can check the 
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODEwNTI5MCwyMDc4MTA1MjkwLDQwNz
-YzMTk0MCwtOTQzNTI2NzU0LDY1Njg3MDk5Nyw0NzIyNjg3NDgs
-LTE1NjQwNDEwMiwtMjEyMjA5NzkyNiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTIwOTE3MDQ1MzUsMjA3ODEwNTI5MCwyMD
+c4MTA1MjkwLDQwNzYzMTk0MCwtOTQzNTI2NzU0LDY1Njg3MDk5
+Nyw0NzIyNjg3NDgsLTE1NjQwNDEwMiwtMjEyMjA5NzkyNiw3Mz
+A5OTgxMTZdfQ==
 -->
