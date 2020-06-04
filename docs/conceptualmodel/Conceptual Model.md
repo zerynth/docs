@@ -33,7 +33,8 @@ The development of an IOT project is not finished with device firmware creation.
 
 IOT Device Management and Data collection is provided in Zerynth thanks to the **[Zerynth Device Manager](https://www.zerynth.com/zdm/)**. ZDM is a data and device management system that allows to easily connect IOT devices to a cloud allowing an easy and intuitive management and aggregation of the data and a seamless management of IOT devices updates and security. ZDM is one of the few device managers available on the market that can be installed on premises on request. ZDM collects and stores your IOT data while also allowing a seamless forwarding of any other cloud (Azure, AWS, IBM, Google IOT) or backend service via Webhook or REST API.
 
-  ![enter image description here](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm-docs-image.png)
+  
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm-docs-image.png"></p>
 
 You are at the end of the IOT development journey, if you need more help on finalizing your project or in converting your IOT prototype in an industrial project just check our R&D services.
 
@@ -45,9 +46,9 @@ If you are interested in ready to use vertical IOT solutions, you can check the 
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0MzAyNzQwLDc3ODgzNDQ3MywtMTQxNT
-gxNiwtMjA5MTcwNDUzNSwyMDc4MTA1MjkwLDIwNzgxMDUyOTAs
-NDA3NjMxOTQwLC05NDM1MjY3NTQsNjU2ODcwOTk3LDQ3MjI2OD
-c0OCwtMTU2NDA0MTAyLC0yMTIyMDk3OTI2LDczMDk5ODExNl19
-
+eyJoaXN0b3J5IjpbMTk0NzA0NzY2MSwyOTQzMDI3NDAsNzc4OD
+M0NDczLC0xNDE1ODE2LC0yMDkxNzA0NTM1LDIwNzgxMDUyOTAs
+MjA3ODEwNTI5MCw0MDc2MzE5NDAsLTk0MzUyNjc1NCw2NTY4Nz
+A5OTcsNDcyMjY4NzQ4LC0xNTY0MDQxMDIsLTIxMjIwOTc5MjYs
+NzMwOTk4MTE2XX0=
 -->
