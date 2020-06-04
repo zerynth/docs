@@ -35,6 +35,328 @@ nav:
         - reference/guide/docs/clang.md
         -   Zerynth OS: [reference/guide/docs/zos.md, reference/guide/docs/vm.md,
                 reference/guide/docs/vosal.md, reference/guide/docs/vhal.md]
+    -   Standard Library:
+        - reference/core/stdlib/docs/index.md
+        - reference/core/stdlib/docs/builtins.md
+        - reference/core/stdlib/docs/streams.md
+        - reference/core/stdlib/docs/threading.md
+        - reference/core/stdlib/docs/struct.md
+        - reference/core/stdlib/docs/os.md
+        - reference/core/stdlib/docs/vm.md
+        - reference/core/stdlib/docs/gc.md
+        - reference/core/stdlib/docs/math.md
+        - reference/core/stdlib/docs/timers.md
+        - reference/core/stdlib/docs/bignum_bignum.md
+        -   Data Structures: [reference/core/stdlib/docs/fifo.md, reference/core/stdlib/docs/queue.md]
+        -   Serialization: [reference/core/stdlib/docs/base64.md, reference/core/stdlib/docs/json.md,
+                reference/core/stdlib/docs/cbor.md, reference/core/stdlib/docs/msgpack.md,
+                reference/core/stdlib/docs/jwt.md]
+        -   Storage: [reference/core/stdlib/docs/flash.md, reference/core/stdlib/docs/fatfs.md,
+                reference/core/stdlib/docs/spiflash.md, reference/core/stdlib/docs/qspiflash.md,
+                reference/core/stdlib/docs/spisd.md]
+        -   Peripherals: [reference/core/stdlib/docs/mcu.md, reference/core/stdlib/docs/gpio.md,
+                reference/core/stdlib/docs/i2c.md, reference/core/stdlib/docs/spi.md,
+                reference/core/stdlib/docs/adc.md, reference/core/stdlib/docs/dac.md,
+                reference/core/stdlib/docs/pwm.md, reference/core/stdlib/docs/icu.md,
+                reference/core/stdlib/docs/rtc.md, reference/core/stdlib/docs/can.md,
+                reference/core/stdlib/docs/hwtimers.md]
+        -   Networking: [reference/core/stdlib/docs/socket.md, reference/core/stdlib/docs/requests.md,
+                reference/core/stdlib/docs/urlparse.md, reference/core/stdlib/docs/ntpclient.md]
+        -   Connectivity: [reference/core/stdlib/docs/eth.md, reference/core/stdlib/docs/wireless_wifi.md,
+                reference/core/stdlib/docs/wireless_gsm.md, reference/core/stdlib/docs/wireless_ble.md,
+                reference/core/stdlib/docs/wireless_ble_beacons.md]
+        -   Security: [reference/core/stdlib/docs/ssl.md, reference/core/stdlib/docs/x509.md,
+                reference/core/stdlib/docs/crypto.md, reference/core/stdlib/docs/crypto_ecc_ecc.md,
+                reference/core/stdlib/docs/crypto_hash_md5.md, reference/core/stdlib/docs/crypto_hash_sha1.md,
+                reference/core/stdlib/docs/crypto_hash_sha2.md, reference/core/stdlib/docs/crypto_hash_sha3.md,
+                reference/core/stdlib/docs/crypto_hash_hmac.md, reference/core/stdlib/docs/crypto_hash_keccak.md]
+        - reference/core/stdlib/docs/pwr.md
+        - reference/core/stdlib/docs/sfw.md
+        - reference/core/stdlib/docs/fota.md
+        - reference/core/stdlib/docs/examples.md
+    -   Command Line Interface:
+        -   ZTC: [reference/core/toolchain/docs/index.md, reference/core/toolchain/docs/ztc.md,
+                reference/core/toolchain/docs/user_usercmd.md, reference/core/toolchain/docs/projects_projectcmd.md,
+                reference/core/toolchain/docs/devices_devcmd.md, reference/core/toolchain/docs/compiler_compilercmd.md,
+                reference/core/toolchain/docs/uplinker_uplinker.md, reference/core/toolchain/docs/uplinker_massprog.md,
+                reference/core/toolchain/docs/virtualmachines_vmcmd.md, reference/core/toolchain/docs/packages_packagecmd.md,
+                reference/core/toolchain/docs/things_thingcmd.md, reference/core/toolchain/docs/aws_awscmd.md,
+                reference/core/toolchain/docs/misc_misccmd.md, reference/core/toolchain/docs/provisioning_provisioningcmd.md]
+        -   ZDM: []
+    -   Devices: [reference/boards/adafruit_feather_huzzah/docs/index.md, reference/boards/adafruit_feather_m0wifi/docs/index.md,
+            reference/boards/adafruit_huzzah32/docs/index.md, reference/boards/arduino_due/docs/index.md,
+            reference/boards/arduino_mkr1000/docs/index.md, reference/boards/az3166/docs/index.md,
+            reference/boards/cvm_espwroom32/docs/index.md, reference/boards/doit_esp32/docs/index.md,
+            reference/boards/esp32_devkitc/docs/index.md, reference/boards/esp32_ethernetkit/docs/index.md,
+            reference/boards/esp32_pico_v4/docs/index.md, reference/boards/firebeetle_esp32/docs/index.md,
+            reference/boards/firebeetle_esp8266/docs/index.md, reference/boards/flipnclick_sam3x/docs/index.md,
+            reference/boards/genuino_zero/docs/index.md, reference/boards/heltec_wifikit32/docs/index.md,
+            reference/boards/hexagon_v1/docs/index.md, reference/boards/hexiwear/docs/index.md,
+            reference/boards/mikroe_quail/docs/index.md, reference/boards/nodemcu2/docs/index.md,
+            reference/boards/nodemcu3/docs/index.md, reference/boards/nodemcu_esp32/docs/index.md,
+            reference/boards/nordic_pca10040/docs/index.md, reference/boards/nordic_pca10056/docs/index.md,
+            reference/boards/oddwires_io/docs/index.md, reference/boards/oddwires_proteus/docs/index.md,
+            reference/boards/olimex_esp32evb/docs/index.md, reference/boards/olimex_esp32gateway/docs/index.md,
+            reference/boards/particle_core/docs/index.md, reference/boards/particle_electron/docs/index.md,
+            reference/boards/particle_photon/docs/index.md, reference/boards/polaris_2g/docs/index.md,
+            reference/boards/polaris_3g/docs/index.md, reference/boards/polaris_nbiot/docs/index.md,
+            reference/boards/psoc6wifibt_pioneerkit/docs/index.md, reference/boards/pycom_fipy_v1/docs/index.md,
+            reference/boards/pycom_wipy_v3/docs/index.md, reference/boards/redbear_blend2/docs/index.md,
+            reference/boards/redbear_nano2/docs/index.md, reference/boards/renesas_pks5d9/docs/index.md,
+            reference/boards/renesas_tbs5d5/docs/index.md, reference/boards/riverdi_tft50_iotxxx/docs/index.md,
+            reference/boards/sodaq_explorer/docs/index.md, reference/boards/sony_spresense/docs/index.md,
+            reference/boards/sparkfun_esp32thing/docs/index.md, reference/boards/sparkfun_esp8266thingdev/docs/index.md,
+            reference/boards/sparkfun_photon/docs/index.md, reference/boards/st_discoveryf407vg/docs/index.md,
+            reference/boards/st_nucleof401re/docs/index.md, reference/boards/st_nucleof429zi/docs/index.md,
+            reference/boards/st_nucleof746zg/docs/index.md, reference/boards/wemos_d1_mini/docs/index.md,
+            reference/boards/wemos_esp32_oled/docs/index.md, reference/boards/wio_link/docs/index.md,
+            reference/boards/wt8266_s2/docs/index.md, reference/boards/xinabox_esp32/docs/index.md,
+            reference/boards/xmc4200_digitalpowercc/docs/index.md, reference/boards/xmc4400_enterprisekit/docs/index.md,
+            reference/boards/xmc4700_relaxkit/docs/index.md, reference/boards/xmc4800_connectivitykit/docs/index.md,
+            reference/boards/xplained_c21/docs/index.md, reference/boards/xplained_c21n/docs/index.md,
+            reference/boards/xplained_d21/docs/index.md, reference/boards/xplained_l21b/docs/index.md,
+            reference/boards/xplained_samg55/docs/index.md]
+    -   Libraries:
+        -   adafruit:
+            -   bluefruit: [reference/libs/adafruit/bluefruit/docs/index.md, reference/libs/adafruit/bluefruit/docs/bluefruit.md,
+                    reference/libs/adafruit/bluefruit/docs/examples.md]
+        -   amphenol:
+            -   dlh: [reference/libs/amphenol/dlh/docs/index.md, reference/libs/amphenol/dlh/docs/dlh.md]
+        -   ams:
+            -   tsl2561: [reference/libs/ams/tsl2561/docs/index.md, reference/libs/ams/tsl2561/docs/tsl2561.md,
+                    reference/libs/ams/tsl2561/docs/examples.md]
+        -   aws:
+            -   greengrass: [reference/libs/aws/greengrass/docs/index.md, reference/libs/aws/greengrass/docs/greengrass.md,
+                    reference/libs/aws/greengrass/docs/examples.md]
+            -   iot: [reference/libs/aws/iot/docs/index.md, reference/libs/aws/iot/docs/iot.md,
+                    reference/libs/aws/iot/docs/jobs.md, reference/libs/aws/iot/docs/fota.md,
+                    reference/libs/aws/iot/docs/default_credentials.md, reference/libs/aws/iot/docs/examples.md]
+        -   azure:
+            -   iot: [reference/libs/azure/iot/docs/index.md, reference/libs/azure/iot/docs/iot.md,
+                    reference/libs/azure/iot/docs/examples.md]
+            -   sas: [reference/libs/azure/sas/docs/index.md, reference/libs/azure/sas/docs/sas.md]
+        -   blockchain:
+            -   ethereum: [reference/libs/blockchain/ethereum/docs/index.md, reference/libs/blockchain/ethereum/docs/rlp.md,
+                    reference/libs/blockchain/ethereum/docs/rpc.md, reference/libs/blockchain/ethereum/docs/ethereum.md,
+                    reference/libs/blockchain/ethereum/docs/examples.md]
+        -   bosch:
+            -   bme280: [reference/libs/bosch/bme280/docs/index.md, reference/libs/bosch/bme280/docs/bme280.md,
+                    reference/libs/bosch/bme280/docs/examples.md]
+            -   bmp180: [reference/libs/bosch/bmp180/docs/index.md, reference/libs/bosch/bmp180/docs/bmp180.md,
+                    reference/libs/bosch/bmp180/docs/examples.md]
+            -   bno055: [reference/libs/bosch/bno055/docs/index.md, reference/libs/bosch/bno055/docs/bno055.md,
+                    reference/libs/bosch/bno055/docs/examples.md]
+        -   bridgetek:
+            -   bt81x: [reference/libs/bridgetek/bt81x/docs/index.md, reference/libs/bridgetek/bt81x/docs/bt81x.md,
+                    reference/libs/bridgetek/bt81x/docs/examples.md]
+        -   broadcom:
+            -   bcm43362: [reference/libs/broadcom/bcm43362/docs/index.md, reference/libs/broadcom/bcm43362/docs/bcm43362.md]
+        -   cypress:
+            -   capsense: [reference/libs/cypress/capsense/docs/index.md, reference/libs/cypress/capsense/docs/capsense.md,
+                    reference/libs/cypress/capsense/docs/examples.md]
+        -   eseye:
+            -   anynetaws: [reference/libs/eseye/anynetaws/docs/index.md, reference/libs/eseye/anynetaws/docs/anynetaws.md,
+                    reference/libs/eseye/anynetaws/docs/examples.md]
+        -   espressif:
+            -   esp32ble: [reference/libs/espressif/esp32ble/docs/index.md, reference/libs/espressif/esp32ble/docs/esp32ble.md,
+                    reference/libs/espressif/esp32ble/docs/examples.md]
+            -   esp32net: [reference/libs/espressif/esp32net/docs/index.md, reference/libs/espressif/esp32net/docs/esp32eth.md,
+                    reference/libs/espressif/esp32net/docs/esp32wifi.md, reference/libs/espressif/esp32net/docs/examples.md]
+            -   esp8266wifi: [reference/libs/espressif/esp8266wifi/docs/index.md,
+                    reference/libs/espressif/esp8266wifi/docs/esp8266wifi.md, reference/libs/espressif/esp8266wifi/docs/examples.md]
+        -   fortebit:
+            -   iot: [reference/libs/fortebit/iot/docs/index.md, reference/libs/fortebit/iot/docs/iot.md,
+                    reference/libs/fortebit/iot/docs/mqtt_client.md, reference/libs/fortebit/iot/docs/http_client.md,
+                    reference/libs/fortebit/iot/docs/examples.md]
+            -   polaris: [reference/libs/fortebit/polaris/docs/index.md, reference/libs/fortebit/polaris/docs/gnss.md,
+                    reference/libs/fortebit/polaris/docs/main.md, reference/libs/fortebit/polaris/docs/modem.md,
+                    reference/libs/fortebit/polaris/docs/cloud.md, reference/libs/fortebit/polaris/docs/pinmap.md,
+                    reference/libs/fortebit/polaris/docs/polaris.md, reference/libs/fortebit/polaris/docs/qspiflash.md,
+                    reference/libs/fortebit/polaris/docs/ioexpander.md, reference/libs/fortebit/polaris/docs/accelerometer.md]
+        -   googlecloud:
+            -   iot: [reference/libs/googlecloud/iot/docs/index.md, reference/libs/googlecloud/iot/docs/iot.md,
+                    reference/libs/googlecloud/iot/docs/examples.md]
+        -   ibmcloud:
+            -   iot: [reference/libs/ibmcloud/iot/docs/index.md, reference/libs/ibmcloud/iot/docs/iot.md,
+                    reference/libs/ibmcloud/iot/docs/examples.md]
+        -   idinnovations:
+            -   id20la: [reference/libs/idinnovations/id20la/docs/index.md, reference/libs/idinnovations/id20la/docs/id20la.md,
+                    reference/libs/idinnovations/id20la/docs/examples.md]
+        -   infineon:
+            -   xmc4eth: [reference/libs/infineon/xmc4eth/docs/index.md, reference/libs/infineon/xmc4eth/docs/xmc4eth.md]
+        -   liveintersect:
+            -   iot: [reference/libs/liveintersect/iot/docs/index.md, reference/libs/liveintersect/iot/docs/iot.md,
+                    reference/libs/liveintersect/iot/docs/examples.md]
+        -   maxim:
+            -   ds1307: [reference/libs/maxim/ds1307/docs/index.md, reference/libs/maxim/ds1307/docs/ds1307.md]
+            -   ds1820: [reference/libs/maxim/ds1820/docs/index.md, reference/libs/maxim/ds1820/docs/ds1820.md]
+            -   ds2482: [reference/libs/maxim/ds2482/docs/index.md, reference/libs/maxim/ds2482/docs/ds2482.md]
+            -   max11644: [reference/libs/maxim/max11644/docs/index.md, reference/libs/maxim/max11644/docs/max11644.md]
+            -   max30101: [reference/libs/maxim/max30101/docs/index.md, reference/libs/maxim/max30101/docs/max30101.md,
+                    reference/libs/maxim/max30101/docs/examples.md]
+            -   max7219: [reference/libs/maxim/max7219/docs/index.md, reference/libs/maxim/max7219/docs/max7219.md,
+                    reference/libs/maxim/max7219/docs/examples.md]
+        -   meas:
+            -   htu21d: [reference/libs/meas/htu21d/docs/index.md, reference/libs/meas/htu21d/docs/htu21d.md,
+                    reference/libs/meas/htu21d/docs/examples.md]
+        -   melexis:
+            -   mlx90615: [reference/libs/melexis/mlx90615/docs/index.md, reference/libs/melexis/mlx90615/docs/mlx90615.md,
+                    reference/libs/melexis/mlx90615/docs/examples.md]
+        -   microchip:
+            -   ateccx08a: [reference/libs/microchip/ateccx08a/docs/index.md, reference/libs/microchip/ateccx08a/docs/ateccx08a.md,
+                    reference/libs/microchip/ateccx08a/docs/examples.md]
+            -   mcp2515: [reference/libs/microchip/mcp2515/docs/index.md, reference/libs/microchip/mcp2515/docs/mcp2515.md,
+                    reference/libs/microchip/mcp2515/docs/examples.md]
+            -   mcp3201: [reference/libs/microchip/mcp3201/docs/index.md, reference/libs/microchip/mcp3201/docs/mcp3201.md]
+            -   mcp3208: [reference/libs/microchip/mcp3208/docs/index.md, reference/libs/microchip/mcp3208/docs/mcp3208.md,
+                    reference/libs/microchip/mcp3208/docs/examples.md]
+            -   mcp3428: [reference/libs/microchip/mcp3428/docs/index.md, reference/libs/microchip/mcp3428/docs/mcp3428.md]
+            -   mcp4921: [reference/libs/microchip/mcp4921/docs/index.md, reference/libs/microchip/mcp4921/docs/mcp4921.md]
+            -   mcw1001a: [reference/libs/microchip/mcw1001a/docs/index.md, reference/libs/microchip/mcw1001a/docs/mcw1001a.md]
+            -   rn2483: [reference/libs/microchip/rn2483/docs/index.md, reference/libs/microchip/rn2483/docs/rn2483.md,
+                    reference/libs/microchip/rn2483/docs/examples.md]
+            -   winc1500: [reference/libs/microchip/winc1500/docs/index.md, reference/libs/microchip/winc1500/docs/winc1500.md]
+        -   mozilla:
+            -   webthing: [reference/libs/mozilla/webthing/docs/index.md, reference/libs/mozilla/webthing/docs/webthing.md,
+                    reference/libs/mozilla/webthing/docs/webserver.md, reference/libs/mozilla/webthing/docs/examples.md]
+        -   murata:
+            -   lbee5kl1dx: [reference/libs/murata/lbee5kl1dx/docs/index.md, reference/libs/murata/lbee5kl1dx/docs/lbee5kl1dx.md]
+        -   nordic:
+            -   nrf52_ble: [reference/libs/nordic/nrf52_ble/docs/index.md, reference/libs/nordic/nrf52_ble/docs/nrf52_ble.md,
+                    reference/libs/nordic/nrf52_ble/docs/examples.md]
+        -   nxp:
+            -   fxas21002c: [reference/libs/nxp/fxas21002c/docs/index.md, reference/libs/nxp/fxas21002c/docs/fxas21002c.md,
+                    reference/libs/nxp/fxas21002c/docs/examples.md]
+            -   fxos8700cq: [reference/libs/nxp/fxos8700cq/docs/index.md, reference/libs/nxp/fxos8700cq/docs/fxos8700cq.md,
+                    reference/libs/nxp/fxos8700cq/docs/examples.md]
+            -   hexiwear: [reference/libs/nxp/hexiwear/docs/index.md, reference/libs/nxp/hexiwear/docs/hexiwear.md,
+                    reference/libs/nxp/hexiwear/docs/kw40z_kw40z.md, reference/libs/nxp/hexiwear/docs/examples.md]
+            -   mpl3115a2: [reference/libs/nxp/mpl3115a2/docs/index.md, reference/libs/nxp/mpl3115a2/docs/mpl3115a2.md,
+                    reference/libs/nxp/mpl3115a2/docs/examples.md]
+        -   okdo:
+            -   iot: [reference/libs/okdo/iot/docs/index.md, reference/libs/okdo/iot/docs/iot.md,
+                    reference/libs/okdo/iot/docs/mqtt_client.md, reference/libs/okdo/iot/docs/http_client.md,
+                    reference/libs/okdo/iot/docs/examples.md]
+        -   onsemi:
+            -   ncv7240: [reference/libs/onsemi/ncv7240/docs/index.md, reference/libs/onsemi/ncv7240/docs/ncv7240.md]
+        -   patlite:
+            -   la6: [reference/libs/patlite/la6/docs/index.md, reference/libs/patlite/la6/docs/la6.md,
+                    reference/libs/patlite/la6/docs/examples.md]
+        -   quectel:
+            -   bg96: [reference/libs/quectel/bg96/docs/index.md, reference/libs/quectel/bg96/docs/bg96.md,
+                    reference/libs/quectel/bg96/docs/bg96gnss.md, reference/libs/quectel/bg96/docs/examples.md]
+            -   l76: [reference/libs/quectel/l76/docs/index.md, reference/libs/quectel/l76/docs/l76.md,
+                    reference/libs/quectel/l76/docs/examples.md]
+            -   m95: [reference/libs/quectel/m95/docs/index.md, reference/libs/quectel/m95/docs/m95.md,
+                    reference/libs/quectel/m95/docs/examples.md]
+            -   nmea: [reference/libs/quectel/nmea/docs/index.md, reference/libs/quectel/nmea/docs/nmea.md]
+            -   ug96: [reference/libs/quectel/ug96/docs/index.md, reference/libs/quectel/ug96/docs/ug96.md,
+                    reference/libs/quectel/ug96/docs/examples.md]
+        -   riverdi:
+            -   displays: [reference/libs/riverdi/displays/docs/index.md]
+        -   semtech:
+            -   sx1503: [reference/libs/semtech/sx1503/docs/index.md, reference/libs/semtech/sx1503/docs/sx1503.md]
+        -   siemens:
+            -   s7: [reference/libs/siemens/s7/docs/index.md, reference/libs/siemens/s7/docs/s7.md,
+                    reference/libs/siemens/s7/docs/examples.md]
+        -   solomon:
+            -   ssd1306: [reference/libs/solomon/ssd1306/docs/index.md, reference/libs/solomon/ssd1306/docs/ssd1306.md,
+                    reference/libs/solomon/ssd1306/docs/examples.md]
+            -   ssd1351: [reference/libs/solomon/ssd1351/docs/index.md, reference/libs/solomon/ssd1351/docs/ssd1351.md,
+                    reference/libs/solomon/ssd1351/docs/examples.md]
+        -   sony:
+            -   cxd5602gnss: [reference/libs/sony/cxd5602gnss/docs/index.md, reference/libs/sony/cxd5602gnss/docs/gnss.md,
+                    reference/libs/sony/cxd5602gnss/docs/examples.md]
+        -   stm:
+            -   f4eth: [reference/libs/stm/f4eth/docs/index.md, reference/libs/stm/f4eth/docs/f4eth.md]
+            -   hts221: [reference/libs/stm/hts221/docs/index.md, reference/libs/stm/hts221/docs/hts221.md]
+            -   iis3dwb: [reference/libs/stm/iis3dwb/docs/index.md, reference/libs/stm/iis3dwb/docs/iis3dwb.md,
+                    reference/libs/stm/iis3dwb/docs/examples.md]
+            -   ism330dhcx: [reference/libs/stm/ism330dhcx/docs/index.md, reference/libs/stm/ism330dhcx/docs/ism330dhcx.md,
+                    reference/libs/stm/ism330dhcx/docs/examples.md]
+            -   lis2hh12: [reference/libs/stm/lis2hh12/docs/index.md, reference/libs/stm/lis2hh12/docs/_index.md,
+                    reference/libs/stm/lis2hh12/docs/lis2hh12.md]
+            -   mfx: [reference/libs/stm/mfx/docs/index.md, reference/libs/stm/mfx/docs/mfx.md]
+            -   spwf01sa: [reference/libs/stm/spwf01sa/docs/index.md, reference/libs/stm/spwf01sa/docs/spwf01sa.md,
+                    reference/libs/stm/spwf01sa/docs/examples.md]
+            -   stts751: [reference/libs/stm/stts751/docs/index.md, reference/libs/stm/stts751/docs/stts751.md,
+                    reference/libs/stm/stts751/docs/examples.md]
+            -   teseoliv3f: [reference/libs/stm/teseoliv3f/docs/index.md, reference/libs/stm/teseoliv3f/docs/teseoliv3f.md,
+                    reference/libs/stm/teseoliv3f/docs/examples.md]
+        -   texas:
+            -   ads1015: [reference/libs/texas/ads1015/docs/index.md, reference/libs/texas/ads1015/docs/ads1015.md]
+            -   cc3000: [reference/libs/texas/cc3000/docs/index.md, reference/libs/texas/cc3000/docs/cc3000.md,
+                    reference/libs/texas/cc3000/docs/cc3000_tiny.md]
+            -   pca9536: [reference/libs/texas/pca9536/docs/index.md, reference/libs/texas/pca9536/docs/pca9536.md,
+                    reference/libs/texas/pca9536/docs/examples.md]
+            -   tmp112: [reference/libs/texas/tmp112/docs/index.md, reference/libs/texas/tmp112/docs/tmp112.md]
+        -   ubidots:
+            -   iot: [reference/libs/ubidots/iot/docs/index.md, reference/libs/ubidots/iot/docs/iot.md,
+                    reference/libs/ubidots/iot/docs/examples.md]
+        -   ublox:
+            -   g350: [reference/libs/ublox/g350/docs/index.md, reference/libs/ublox/g350/docs/g350.md,
+                    reference/libs/ublox/g350/docs/examples.md]
+        -   vishay:
+            -   vcnl4200: [reference/libs/vishay/vcnl4200/docs/index.md, reference/libs/vishay/vcnl4200/docs/main.md,
+                    reference/libs/vishay/vcnl4200/docs/vcnl4200.md, reference/libs/vishay/vcnl4200/docs/examples.md]
+        -   wolkabout:
+            -   iot: [reference/libs/wolkabout/iot/docs/index.md, reference/libs/wolkabout/iot/docs/iot.md,
+                    reference/libs/wolkabout/iot/docs/examples.md]
+        -   worldsemi:
+            -   ws2812: [reference/libs/worldsemi/ws2812/docs/index.md, reference/libs/worldsemi/ws2812/docs/ledstrips.md,
+                    reference/libs/worldsemi/ws2812/docs/examples.md]
+        -   xinabox:
+            -   ah01: [reference/libs/xinabox/ah01/docs/index.md, reference/libs/xinabox/ah01/docs/ah01.md,
+                    reference/libs/xinabox/ah01/docs/examples.md]
+            -   cr02: [reference/libs/xinabox/cr02/docs/index.md, reference/libs/xinabox/cr02/docs/cr02_lorawan.md,
+                    reference/libs/xinabox/cr02/docs/examples.md]
+            -   oc03: [reference/libs/xinabox/oc03/docs/index.md, reference/libs/xinabox/oc03/docs/oc03.md,
+                    reference/libs/xinabox/oc03/docs/examples.md]
+            -   oc05: [reference/libs/xinabox/oc05/docs/index.md, reference/libs/xinabox/oc05/docs/oc05.md,
+                    reference/libs/xinabox/oc05/docs/examples.md]
+            -   sh01: [reference/libs/xinabox/sh01/docs/index.md, reference/libs/xinabox/sh01/docs/sh01.md,
+                    reference/libs/xinabox/sh01/docs/examples.md]
+            -   sl01: [reference/libs/xinabox/sl01/docs/index.md, reference/libs/xinabox/sl01/docs/sl01.md,
+                    reference/libs/xinabox/sl01/docs/examples.md]
+            -   sl06: [reference/libs/xinabox/sl06/docs/index.md, reference/libs/xinabox/sl06/docs/sl06.md,
+                    reference/libs/xinabox/sl06/docs/examples.md]
+            -   su02: [reference/libs/xinabox/su02/docs/index.md, reference/libs/xinabox/su02/docs/su02.md,
+                    reference/libs/xinabox/su02/docs/examples.md]
+            -   sw01: [reference/libs/xinabox/sw01/docs/index.md, reference/libs/xinabox/sw01/docs/sw01.md,
+                    reference/libs/xinabox/sw01/docs/examples.md]
+            -   sw03: [reference/libs/xinabox/sw03/docs/index.md, reference/libs/xinabox/sw03/docs/sw03.md,
+                    reference/libs/xinabox/sw03/docs/examples.md]
+            -   sw10: [reference/libs/xinabox/sw10/docs/index.md, reference/libs/xinabox/sw10/docs/sw10.md,
+                    reference/libs/xinabox/sw10/docs/examples.md]
+        -   zerynth:
+            -   dcz: [reference/libs/zerynth/dcz/docs/index.md, reference/libs/zerynth/dcz/docs/dcz.md,
+                    reference/libs/zerynth/dcz/docs/examples.md]
+            -   genann: [reference/libs/zerynth/genann/docs/index.md, reference/libs/zerynth/genann/docs/genann.md,
+                    reference/libs/zerynth/genann/docs/examples.md]
+            -   infrared: [reference/libs/zerynth/infrared/docs/index.md, reference/libs/zerynth/infrared/docs/infrared.md,
+                    reference/libs/zerynth/infrared/docs/examples.md]
+            -   lwmqtt: [reference/libs/zerynth/lwmqtt/docs/index.md, reference/libs/zerynth/lwmqtt/docs/mqtt.md,
+                    reference/libs/zerynth/lwmqtt/docs/examples.md]
+            -   modbus: [reference/libs/zerynth/modbus/docs/index.md, reference/libs/zerynth/modbus/docs/modbus.md,
+                    reference/libs/zerynth/modbus/docs/examples.md]
+            -   mqtt: [reference/libs/zerynth/mqtt/docs/index.md, reference/libs/zerynth/mqtt/docs/mqtt.md,
+                    reference/libs/zerynth/mqtt/docs/examples.md]
+            -   rtttl: [reference/libs/zerynth/rtttl/docs/index.md, reference/libs/zerynth/rtttl/docs/rtttl.md,
+                    reference/libs/zerynth/rtttl/docs/examples.md]
+            -   servo: [reference/libs/zerynth/servo/docs/index.md, reference/libs/zerynth/servo/docs/servo.md,
+                    reference/libs/zerynth/servo/docs/examples.md]
+            -   smartsensors: [reference/libs/zerynth/smartsensors/docs/index.md,
+                    reference/libs/zerynth/smartsensors/docs/sensors.md, reference/libs/zerynth/smartsensors/docs/sensorPool.md,
+                    reference/libs/zerynth/smartsensors/docs/analogSensors.md, reference/libs/zerynth/smartsensors/docs/digitalSensors.md,
+                    reference/libs/zerynth/smartsensors/docs/examples.md]
+            -   zadm: [reference/libs/zerynth/zadm/docs/index.md, reference/libs/zerynth/zadm/docs/zadm.md,
+                    reference/libs/zerynth/zadm/docs/examples.md]
+            -   zdm: [reference/libs/zerynth/zdm/docs/index.md, reference/libs/zerynth/zdm/docs/zdm.md,
+                    reference/libs/zerynth/zdm/docs/examples.md]
+            -   zerynthapp: [reference/libs/zerynth/zerynthapp/docs/index.md, reference/libs/zerynth/zerynthapp/docs/zerynthapp.md,
+                    reference/libs/zerynth/zerynthapp/docs/examples.md]
+            -   zerynthshield: [reference/libs/zerynth/zerynthshield/docs/index.md,
+                    reference/libs/zerynth/zerynthshield/docs/zerynthshield.md, reference/libs/zerynth/zerynthshield/docs/examples.md]
 plugins:
 - search
 -   minify: {minify_html: true}
