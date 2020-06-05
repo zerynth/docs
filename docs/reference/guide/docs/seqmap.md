@@ -1,6 +1,6 @@
 # Sequences and Map Types
 
-The following sections describe the sequence and mapping types that are built into Zerynth.
+The following sections describe the **sequence** and mapping **types** that are built into Zerynth.
 
 ## Iterator Types
 
@@ -1782,6 +1782,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDI3ODM2NywtMTEzMTA3NzU3LC0xMz
-A1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMT
+MwNTYyNzg5Nyw3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
