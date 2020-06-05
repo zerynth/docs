@@ -25,23 +25,22 @@ Return the iterator object itself.  This is required to allow both containers an
 ```
 iterator.\__next__()
 ```
-Return the next item from the container.  If there are no further items, raise the 
+Return the next item from the container.  If there are no further items, raise the  exception.
 
 ```
 :exc:`StopIteration`
 ```
 
- exception.
 
-Once an iterator’s `__next__()` method raises
-
-
-```
-:exc:`StopIteration`
-```
-
-, it must continue to do so on subsequent calls.
+Once an iterator’s `__next__()` method raises, it must continue to do so on subsequent calls.
 Implementations that do not obey this property are deemed broken.
+
+
+```
+:exc:`StopIteration`
+```
+
+
 
 ## Sequence Types
 
@@ -1798,6 +1797,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyNjIwNDU3LDcwMjQwODA5MSwxNjUwOD
-M5ODEyXX0=
+eyJoaXN0b3J5IjpbLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NT
+A4Mzk4MTJdfQ==
 -->
