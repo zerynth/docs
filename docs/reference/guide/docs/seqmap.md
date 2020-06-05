@@ -203,18 +203,8 @@ If ```k``` is `None`, it is treated like `1`.
 7. Some sequence types (such as `range()`) only support item sequences that follow specific patterns, and hence don’t support sequence concatenation or repetition.
 
 
-8. `index` raises 
-
-```
-:exc:`ValueError`
-```
-
- when ```x``` is not found in ```s```.
-When supported, the additional arguments to the index method allow
-efficient searching of subsections of the sequence. Passing the extra
-arguments is roughly equivalent to using `s[i:j].index(x)`, only
-without copying any data and with the returned index being relative to
-the start of the sequence rather than the start of the slice.
+8. `index` raises `ValueError` when **x** is not found in .
+When supported, the additional arguments to the index method allow efficient searching of subsections of the sequence. Passing the extra arguments is roughly equivalent to using `s[i:j].index(x)`, only without copying any data and with the returned index being relative to the start of the sequence rather than the start of the slice.
 
 ### Immutable Sequence Types
 
@@ -1745,8 +1735,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Njc5NzEyMywtODkyOTU2NzE3LC0zNj
-E0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1Nzkx
-MDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgwOTEsMT
-Y1MDgzOTgxMl19
+eyJoaXN0b3J5IjpbLTE0NTM2NDIwMjAsLTY0Njc5NzEyMywtOD
+kyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0
+ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Ny
+w3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
