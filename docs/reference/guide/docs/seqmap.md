@@ -27,12 +27,12 @@ iterator.\__next__()
 ```
 Return the next item from the container.  If there are no further items, raise the  exception.
 
-Once an iterator’s `__next__()` method raises StopIteration, it must continue to do so on subsequent calls.
+Once an iterator’s `__next__()` method raises `StopIteration`, it must continue to do so on subsequent calls.
 Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic **sequence types**: lists, tuples, and range objects. Additional **sequence types** tailored for processing of [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and text strings are described in dedicated sections.
+There are three basic **sequence types**: lists, tuples, and range objects. Additional **sequence types** tailored for processing of [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#textseq) are described in dedicated sections.
 
 ### Common Sequence Operations
 
@@ -1782,6 +1782,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTM4MjIzNjMsLTExMzEwNzc1NywtMT
+eyJoaXN0b3J5IjpbLTEzNjQxNjM4NjYsLTExMzEwNzc1NywtMT
 MwNTYyNzg5Nyw3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
