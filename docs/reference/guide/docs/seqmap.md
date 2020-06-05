@@ -208,21 +208,11 @@ When supported, the additional arguments to the index method allow efficient sea
 
 ### Immutable Sequence Types
 
-The only feature that immutable sequence types generally implement that is
-not also implemented by mutable sequence types is hashing support.
+The only feature that immutable sequence types generally implement that is not also implemented by mutable sequence types is hashing support.
 
-This support allows immutable sequences, such as `tuple()` instances, to
-be used as `dict()` keys and stored in `set()` and `frozenset()`
-instances.
+This support allows immutable sequences, such as `tuple()` instances, to be used as `dict()` keys and stored in `set()` and `frozenset()` instances.
 
-Attempting to hash an immutable sequence that contains unhashable values will
-result in 
-
-```
-:exc:`TypeError`
-```
-
-.
+Attempting to hash an immutable sequence that contains unhashable values will result in `TypeError`.
 
 ### Mutable Sequence Types
 
@@ -1735,7 +1725,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTE3ODc2OSwtNjQ2Nzk3MTIzLC04OT
+eyJoaXN0b3J5IjpbMTA5MDYwMDQ4MywtNjQ2Nzk3MTIzLC04OT
 I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
 MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
 cwMjQwODA5MSwxNjUwODM5ODEyXX0=
