@@ -401,13 +401,9 @@ The `range()` type represents an immutable sequence of numbers and is commonly u
 The arguments to the range constructor must be integers.
 If the *step* argument is omitted, it defaults to **1**. If the *start* argument is omitted, it defaults to **0**. If *step*  is zero, `ValueError` is raised.
 
-For a positive ```step```, the contents of a range `r` are determined by the
-formula `r[i] = start + step\*i` where `i >= 0` and
-`r[i] < stop`.
+For a positive ```step```, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and `r[i] < stop`.
 
-For a negative ```step```, the contents of the range are still determined by
-the formula `r[i] = start + step\*i`, but the constraints are `i >= 0`
-and `r[i] > stop`.
+For a negative ```step```, the contents of the range are still determined by the formula `r[i] = start + step*i`, but the constraints are `i >= 0` and `r[i] > stop`.
 
 A range object will be empty if `r[0]` does not meet the value
 constraint. Ranges do support negative indices, but these are interpreted
@@ -1693,9 +1689,9 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2NTI4NzgxLDExOTU2MTE2NzksMTE5NT
-YxMTY3OSwtNjQ2Nzk3MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3
-NSwtNzAxMzAwMDA5LDQyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMT
-EzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5
-ODEyXX0=
+eyJoaXN0b3J5IjpbLTE2MDg4NDEwMjEsNDk2NTI4NzgxLDExOT
+U2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIzLC04OTI5NTY3
+MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4MywtMT
+I5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQw
+ODA5MSwxNjUwODM5ODEyXX0=
 -->
