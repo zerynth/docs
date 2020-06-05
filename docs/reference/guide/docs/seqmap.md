@@ -144,9 +144,7 @@ two sequences must be of the same type and have the same length.
 Notes:
 
 
-1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences
-(such as `str()`, `bytes()` and `bytearray()`) also use
-them for subsequence testing:
+1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences (such as `str()`, `bytes()` and `bytearray()`) also use them for subsequence testing:
 
 ```
 >>> "gg" in "eggs"
@@ -154,10 +152,7 @@ True
 ```
 
 
-2. Values of ```n``` less than `0` are treated as `0` (which yields an empty
-sequence of the same type as ```s```).  Note that items in the sequence ```s```
-are not copied; they are referenced multiple times.  This often haunts
-new Python programmers; consider:
+2. Values of ```n``` less than `0` are treated as `0` (which yields an empty sequence of the same type as ```s```).  Note that items in the sequence ```s``` are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
 ```
 >>> lists = [[]] * 3
@@ -1773,7 +1768,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTg2NDE3NywtNzAxMzAwMDA5LDQyMD
+eyJoaXN0b3J5IjpbLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMD
 MxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3
 ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
 -->
