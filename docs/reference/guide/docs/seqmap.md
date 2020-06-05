@@ -344,27 +344,15 @@ Notes:
 2. The optional argument ```i``` defaults to `-1`, so that by default the last item is removed and returned.
 
 
-3. `remove` raises `ValueError` when x is not found in s
+3. `remove` raises `ValueError` when **x** is not found in **s**.
+
+4. The `reverse()` method modifies the sequence in place for economy of space when reversing a large sequence.  To remind users that it operates by side effect, it does not return the reversed sequence.
 
 
-```
-
- when ```x``` is not found in ```s```.
+5. `clear()` and `copy()` are included for consistency with the interfaces of mutable containers that don’t support slicing operations (such as `dict()` and `set()`)
 
 
-4. The `reverse()` method modifies the sequence in place for economy of
-space when reversing a large sequence.  To remind users that it operates by
-side effect, it does not return the reversed sequence.
-
-
-5. `clear()` and `copy()` are included for consistency with the
-interfaces of mutable containers that don’t support slicing operations
-(such as `dict()` and `set()`)
-
-
-6. The value ```n``` is an integer. Zero and negative values of ```n``` clear
-the sequence.  Items in the sequence are not copied; they are referenced
-multiple times, as explained for `s \* n`.
+6. The value ```n``` is an integer. Zero and negative values of ```n``` clear the sequence.  Items in the sequence are not copied; they are referenced multiple times, as explained for `s \* n`.
 
 ### Lists
 
@@ -1718,7 +1706,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMjY2ODg2NCwtNjQ2Nzk3MTIzLC04OT
+eyJoaXN0b3J5IjpbLTg0NTc0MjkyOSwtNjQ2Nzk3MTIzLC04OT
 I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
 MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
 cwMjQwODA5MSwxNjUwODM5ODEyXX0=
