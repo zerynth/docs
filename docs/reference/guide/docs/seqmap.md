@@ -431,11 +431,9 @@ Triple quoted strings may span multiple lines - all associated whitespace will b
 
 String literals that are part of a single expression and have only whitespace between them will be implicitly converted to a single string literal. That is, `("spam " "eggs") == "spam eggs"`.
 
-Strings may also be created from other objects using the `str()`
-builtin.
+Strings may also be created from other objects using the `str` builtin.
 
-Since there is no separate “character” type, indexing a string produces
-strings of length 1. That is, for a non-empty string ```s```, `s[0] == s[0:1]`.
+Since there is no separate “character” type, indexing a string produces strings of length 1. That is, for a non-empty string **s**, `s[0] == s[0:1]`.
 
 There is also no mutable string type, but `str.join()` can be used to efficiently construct strings from
 multiple fragments.
@@ -1670,9 +1668,9 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIyNTc2ODAsLTE4MjI2NzY4OTEsND
-k2NTI4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3
-MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LD
-QyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1
-NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OT
+Y1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcx
+MjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAwMDksND
+IwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLTEzMDU2
+Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
 -->
