@@ -412,7 +412,7 @@ except concatenation and repetition (due to the fact that range objects can only
 
 The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same (small) amount of memory, no matter the size of the range it represents (as it only stores the `start`, `stop` and `step` values, calculating individual items and subranges as needed).
 
-Testing range objects for equality with `==` and `!=` compares them as sequences.  That is, two range objects are considered equal if they represent the same sequence of values.  (Note that two range objects that compare equal might have different `start`, `stop` and `step` attributes, for example `range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
+Testing range objects for equality with `==` and `!=` compares them as sequences.  That is, two range objects are considered equal if they represent the same sequence of values.  (Note that two range objects that compare equal might have different start, stop and step attributes, for example `range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
 
 ## Strings
 
@@ -1675,9 +1675,9 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc3NzUwMTksNDk2NTI4NzgxLDExOT
-U2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIzLC04OTI5NTY3
-MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4MywtMT
-I5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQw
-ODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTk4OTIwNDEyMyw0OTY1Mjg3ODEsMTE5NT
+YxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1Njcx
+NywtMzYxNDY5Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMj
+k0NTc5MTA1LC0xMTMxMDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4
+MDkxLDE2NTA4Mzk4MTJdfQ==
 -->
