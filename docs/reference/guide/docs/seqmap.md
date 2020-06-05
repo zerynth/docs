@@ -163,10 +163,7 @@ True
 [[3], [3], [3]]
 ```
 
-What has happened is that `[[]]` is a one-element list containing an empty
-list, so all three elements of `[[]] \* 3` are references to this single empty
-list.  Modifying any of the elements of `lists` modifies this single list.
-You can create a list of different lists this way:
+What has happened is that `[[]]` is a one-element list containing an empty list, so all three elements of `[[]] \* 3` are references to this single empty list.  Modifying any of the elements of `lists` modifies this single list. You can create a list of different lists this way:
 
 ```
 >>> lists = [[] for i in range(3)]
@@ -178,13 +175,10 @@ You can create a list of different lists this way:
 ```
 
 
-3. If ```i``` or ```j``` is negative, the index is relative to the end of the string:
-`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` is
-still `0`.
+3. If ```i``` or ```j``` is negative, the index is relative to the end of the string: `len(s) + i` or `len(s) + j` is substituted.  But note that `-0` is still `0`.
 
 
-4. The slice of ```s``` from ```i``` to ```j``` is defined as the sequence of items with index
-```k``` such that `i <= k < j`.  If ```i``` or ```j``` is greater than `len(s)`, use
+4. The slice of ```s``` from ```i``` to ```j``` is defined as the sequence of items with index ```k``` such that `i <= k < j`.  If ```i``` or ```j``` is greater than `len(s)`, use
 `len(s)`.  If ```i``` is omitted or `None`, use `0`.  If ```j``` is omitted or
 `None`, use `len(s)`.  If ```i``` is greater than or equal to ```j```, the slice is
 empty.
@@ -1768,7 +1762,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMD
-MxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3
-ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbMTkwMDk3MzcyMywtMzYxNDY5Mzc1LC03MD
+EzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3
+NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ
+==
 -->
