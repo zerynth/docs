@@ -12,7 +12,6 @@ One method needs to be defined for container objects to provide iteration
 support:
 
 
-```.py
 container.\__iter__()
 ```
 
@@ -1803,5 +1802,5 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDgzOTgxMl19
+eyJoaXN0b3J5IjpbNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
 -->
