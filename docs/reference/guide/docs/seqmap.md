@@ -25,8 +25,7 @@ Return the iterator object itself.  This is required to allow both containers an
 ```
 iterator.\__next__()
 ```
-Return the next item from the container.  If there are no further items, raise
-the 
+Return the next item from the container.  If there are no further items, raise the 
 
 ```
 :exc:`StopIteration`
@@ -1799,6 +1798,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyODQ4NDc2NSw3MDI0MDgwOTEsMTY1MD
-gzOTgxMl19
+eyJoaXN0b3J5IjpbOTUyNjIwNDU3LDcwMjQwODA5MSwxNjUwOD
+M5ODEyXX0=
 -->
