@@ -395,7 +395,7 @@ operations.
 
 The `range()` type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in `for` loops.
 
-class range(stop) class range(start,stop[step])
+`class range(stop)` `class range(start,stop[step])`
 
 The arguments to the range constructor must be integers.
 If the *step* argument is omitted, it defaults to **1**. If the *start* argument is omitted, it defaults to **0**. If *step*  is zero, `ValueError` is raised.
@@ -1692,8 +1692,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjkwMjk1ODUsMTE5NTYxMTY3OSwtNj
-Q2Nzk3MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAw
-MDA5LDQyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC
-0xMzA1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02ND
+Y3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAw
+MDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLT
+EzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
 -->
