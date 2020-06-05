@@ -416,7 +416,7 @@ Testing range objects for equality with `==` and `!=` compares them as sequences
 
 ## Strings
 
-Textual data in Python is handled with *strings*. Strings are immutable sequences of 8 bit characters. Zerynth does not support Unicode yet. String literals are written in a variety of ways:
+Textual data in Python is handled with *strings*. Strings are immutable [sequences](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#typesseq) of 8 bit characters. Zerynth does not support Unicode yet. String literals are written in a variety of ways:
 
 
 * Single quotes: `'allows embedded "double" quotes'`
@@ -427,12 +427,9 @@ Textual data in Python is handled with *strings*. Strings are immutable sequence
 
 * Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
 
-Triple quoted strings may span multiple lines - all associated whitespace will
-be included in the string literal.
+Triple quoted strings may span multiple lines - all associated whitespace will be included in the string literal.
 
-String literals that are part of a single expression and have only whitespace
-between them will be implicitly converted to a single string literal. That
-is, `("spam " "eggs") == "spam eggs"`.
+String literals that are part of a single expression and have only whitespace between them will be implicitly converted to a single string literal. That is, `("spam " "eggs") == "spam eggs"`.
 
 Strings may also be created from other objects using the `str()`
 builtin.
@@ -1673,7 +1670,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjU3Mzk2NDMsLTE4MjI2NzY4OTEsND
+eyJoaXN0b3J5IjpbLTE1NDIyNTc2ODAsLTE4MjI2NzY4OTEsND
 k2NTI4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3
 MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LD
 QyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1
