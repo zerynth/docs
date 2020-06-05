@@ -218,10 +218,7 @@ Attempting to hash an immutable sequence that contains unhashable values will re
 
 The operations in the following table are defined on mutable sequence types.
 
-In the table ```s``` is an instance of a mutable sequence type, ```t``` is any
-iterable object and ```x``` is an arbitrary object that meets any type
-and value restrictions imposed by ```s``` (for example, `bytearray()` only
-accepts integers that meet the value restriction `0 <= x <= 255`).
+In the table ```s``` is an instance of a mutable sequence type, ```t``` is arbitrary object and ```x``` is an arbitrary object that meets any type and value restrictions imposed by ```s``` (for example, `bytearray()` only accepts integers that meet the value restriction `0 <= x <= 255`).
 
 | Operation
 
@@ -1725,8 +1722,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDYwMDQ4MywtNjQ2Nzk3MTIzLC04OT
-I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
-MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
-cwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTIwMDAwOTQxODksLTY0Njc5NzEyMywtOD
+kyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0
+ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Ny
+w3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
