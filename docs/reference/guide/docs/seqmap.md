@@ -185,7 +185,7 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 If ```k``` is `None`, it is treated like `1`.
 
 
-6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length.  To get a linear runtime cost, you must switch to one of the alternatives below:
+6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
 
 
     * if concatenating `str()` objects, you can build a list and use `str.join()` at the end.
@@ -1745,8 +1745,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MD
-EzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3
-NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ
-==
+eyJoaXN0b3J5IjpbLTY0Njc5NzEyMywtODkyOTU2NzE3LC0zNj
+E0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1Nzkx
+MDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgwOTEsMT
+Y1MDgzOTgxMl19
 -->
