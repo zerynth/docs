@@ -352,7 +352,7 @@ Notes:
 5. `clear()` and `copy()` are included for consistency with the interfaces of mutable containers that don’t support slicing operations (such as `dict()` and `set()`)
 
 
-6. The value ```n``` is an integer. Zero and negative values of ```n``` clear the sequence.  Items in the sequence are not copied; they are referenced multiple times, as explained for `s \* n`.
+6. The value ```n``` is an integer. Zero and negative values of ```n``` clear the sequence.  Items in the sequence are not copied; they are referenced multiple times, as explained for `s * n`.
 
 ### Lists
 
@@ -374,9 +374,7 @@ mutable sequence operations.
 
 ### Tuples
 
-Tuples are immutable sequences, typically used to store collections of
-heterogeneous data (such as the 2-tuples produced by the `enumerate()`
-built-in). Tuples are also used for cases where an immutable sequence of
+Tuples are immutable sequences, typically used to store collections of heterogeneous data (such as the 2-tuples produced by the `enumerate()` built-in). Tuples are also used for cases where an immutable sequence of
 homogeneous data is needed.
 
 Tuples may be constructed in a number of ways:
@@ -395,9 +393,7 @@ operations.
 
 ### Ranges
 
-The `range()` type represents an immutable sequence of numbers and is
-commonly used for looping a specific number of times in `for`
-loops.
+The `range()` type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in `for`loops.
 
 
 ### class range(stop)
@@ -1706,8 +1702,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NTc0MjkyOSwtNjQ2Nzk3MTIzLC04OT
-I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
-MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
-cwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTEzMDY3MzQ1NjcsLTY0Njc5NzEyMywtOD
+kyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0
+ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Ny
+w3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
