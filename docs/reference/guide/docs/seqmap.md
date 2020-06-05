@@ -36,8 +36,7 @@ There are three basic **sequence types**: lists, tuples, and range objects. Addi
 
 ### Common Sequence Operations
 
-The operations in the following table are supported by most sequence types,
-both mutable and immutable.
+The operations in the following table are supported by most sequence types, both mutable and immutable.
 
 This table lists the sequence operations sorted in ascending priority.  In the
 table, ```s``` and ```t``` are sequences of the same type, ```n```, ```i```, ```j``` and ```k``` are
@@ -1782,6 +1781,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMT
-MwNTYyNzg5Nyw3MDI0MDgwOTEsMTY1MDgzOTgxMl19
+eyJoaXN0b3J5IjpbNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMT
+MxMDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4
+MTJdfQ==
 -->
