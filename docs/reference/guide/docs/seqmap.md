@@ -12,7 +12,7 @@ One method needs to be defined for container objects to provide iteration
 support:
 
 
-### container.\__iter__()
+container.\__iter__()
 Return an iterator object.  The object is required to support the iterator
 protocol described below.
 
@@ -1799,3 +1799,6 @@ existing keys.  Return `None`.
 
 Return a new view of the dictionary’s values.
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA2MzA4MjgzN119
+-->
