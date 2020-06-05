@@ -27,9 +27,6 @@ iterator.\__next__()
 ```
 Return the next item from the container.  If there are no further items, raise the  exception.
 
-```
-:exc:`StopIteration`
-```
 
 
 Once an iterator’s `__next__()` method raises, it must continue to do so on subsequent calls.
@@ -1797,6 +1794,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MD
-I0MDgwOTEsMTY1MDgzOTgxMl19
+eyJoaXN0b3J5IjpbLTExNjkyODczMjIsLTExMzEwNzc1NywtMT
+MwNTYyNzg5Nyw3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
