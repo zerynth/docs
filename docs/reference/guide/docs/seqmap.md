@@ -11,6 +11,7 @@ One method needs to be defined for container objects to provide iteration suppor
 ```python
 container.\__iter__()
 ```
+
 Return an iterator object.  The object is required to support the iterator protocol described below.
 
 The iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
@@ -1692,8 +1693,9 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02ND
-Y3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAw
-MDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLT
-EzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
+eyJoaXN0b3J5IjpbNDk2NTI4NzgxLDExOTU2MTE2NzksMTE5NT
+YxMTY3OSwtNjQ2Nzk3MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3
+NSwtNzAxMzAwMDA5LDQyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMT
+EzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5
+ODEyXX0=
 -->
