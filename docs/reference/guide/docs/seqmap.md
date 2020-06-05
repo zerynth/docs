@@ -398,10 +398,7 @@ The `range()` type represents an immutable sequence of numbers and is commonly u
 `class range(stop)` `class range(start,stop[step])`
 
 The arguments to the range constructor must be integers.
-If the *step* argument is omitted, it defaults to **1**.
-If the *start* argument is omitted, it defaults to **0**.
-If *step*  is zero, ValueError
-is raised.
+If the *step* argument is omitted, it defaults to **1**. If the *start* argument is omitted, it defaults to **0**. If *step*  is zero, `ValueError` is raised.
 
 For a positive ```step```, the contents of a range `r` are determined by the
 formula `r[i] = start + step\*i` where `i >= 0` and
@@ -1695,7 +1692,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgxODIwMSwtNjQ2Nzk3MTIzLC04OT
+eyJoaXN0b3J5IjpbMTE5NTYxMTY3OSwtNjQ2Nzk3MTIzLC04OT
 I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
 MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
 cwMjQwODA5MSwxNjUwODM5ODEyXX0=
