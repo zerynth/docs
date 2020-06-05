@@ -138,15 +138,13 @@ of ```x``` in ```s``` (at or after
 ```x``` in ```s```
 
                                 |                         |
-Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements.
-This means that to compare equal, every element must compare equal and the
+Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements. This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
 Notes:
 
 
-1. While the `in` and `not in` operations are used only for simple
-containment testing in the general case, some specialised sequences
+1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences
 (such as `str()`, `bytes()` and `bytearray()`) also use
 them for subsequence testing:
 
@@ -1775,7 +1773,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOT
-Q1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgw
-OTEsMTY1MDgzOTgxMl19
+eyJoaXN0b3J5IjpbLTYxNTg2NDE3NywtNzAxMzAwMDA5LDQyMD
+MxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3
+ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
 -->
