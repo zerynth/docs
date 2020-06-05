@@ -22,7 +22,9 @@ The iterator objects themselves are required to support the following two method
 Return the iterator object itself.  This is required to allow both containers and iterators to be used with the `for` and `in` statements.
 
 
-### iterator.\__next__()
+```
+iterator.\__next__()
+```
 Return the next item from the container.  If there are no further items, raise
 the 
 
@@ -1797,6 +1799,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjQzNDA2Miw3MDI0MDgwOTEsMTY1MD
+eyJoaXN0b3J5IjpbMTAyODQ4NDc2NSw3MDI0MDgwOTEsMTY1MD
 gzOTgxMl19
 -->
