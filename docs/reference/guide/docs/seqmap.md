@@ -32,10 +32,8 @@ Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic sequence types: lists, tuples, and range objects.
-Additional sequence types tailored for processing of
-binary data and text strings are
-described in dedicated sections.
+There are three basic **sequence types**: lists, tuples, and range objects. Additional sequence types tailored for processing of
+binary data and text strings are described in dedicated sections.
 
 ### Common Sequence Operations
 
@@ -1785,6 +1783,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzNTQxMTA2LC0xMTMxMDc3NTcsLTEzMD
-U2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
+eyJoaXN0b3J5IjpbLTk2NDk3MzkwOCwtMTEzMTA3NzU3LC0xMz
+A1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
 -->
