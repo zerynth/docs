@@ -1,6 +1,6 @@
 # Sequences and Map Types
 
-The following sections describe the **sequence** and mapping **types** that are built into Zerynth.
+The following sections describe the sequence and mapping types that are built into Zerynth.
 
 ## Iterator Types
 
@@ -38,10 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects. Addition
 
 The operations in the following table are supported by most sequence types, both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the
-table, ```s``` and ```t``` are sequences of the same type, ```n```, ```i```, ```j``` and ```k``` are
-integers and ```x``` is an arbitrary object that meets any type and value
-restrictions imposed by ```s```.
+This table lists the sequence operations sorted in ascending priority.  In the table, ```s``` and ```t``` are sequences of the same type, ```n```, ```i```, ```j``` and ```k``` are integers and ```x``` is an arbitrary object that meets any type and value restrictions imposed by ```s```.
 
 The `in` and `not in` operations have the same priorities as the
 comparison operations. The `+` (concatenation) and `\*` (repetition)
@@ -1781,7 +1778,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIxMzQ5ODk5LDQyMDMxMzQ4MywtMTI5ND
-U3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQwODA5
-MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbMjEyNjE2MTcxNSw0MjAzMTM0ODMsLTEyOT
+Q1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgw
+OTEsMTY1MDgzOTgxMl19
 -->
