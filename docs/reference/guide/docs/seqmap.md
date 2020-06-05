@@ -405,28 +405,14 @@ For a positive ```step```, the contents of a range `r` are determined by the for
 
 For a negative ```step```, the contents of the range are still determined by the formula `r[i] = start + step*i`, but the constraints are `i >= 0` and `r[i] > stop`.
 
-A range object will be empty if `r[0]` does not meet the value
-constraint. Ranges do support negative indices, but these are interpreted
-as indexing from the end of the sequence determined by the positive
-indices.
+A range object will be empty if `r[0]` does not meet the value constraint. Ranges do support negative indices, but these are interpreted as indexing from the end of the sequence determined by the positive indices.
 
 Ranges implement all of the common sequence operations
-except concatenation and repetition (due to the fact that range objects can
-only represent sequences that follow a strict pattern and repetition and
-concatenation will usually violate that pattern).
+except concatenation and repetition (due to the fact that range objects can only represent sequences that follow a strict pattern and repetition and concatenation will usually violate that pattern).
 
-The advantage of the `range()` type over a regular `list()` or
-`tuple()` is that a `range()` object will always take the same
-(small) amount of memory, no matter the size of the range it represents (as it
-only stores the `start`, `stop` and `step` values, calculating individual
-items and subranges as needed).
+The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same (small) amount of memory, no matter the size of the range it represents (as it only stores the `start`, `stop` and `step` values, calculating individual items and subranges as needed).
 
-Testing range objects for equality with `==` and `!=` compares
-them as sequences.  That is, two range objects are considered equal if
-they represent the same sequence of values.  (Note that two range
-objects that compare equal might have different `start`,
-`stop` and `step` attributes, for example
-`range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
+Testing range objects for equality with `==` and `!=` compares them as sequences.  That is, two range objects are considered equal if they represent the same sequence of values.  (Note that two range objects that compare equal might have different `start`, `stop` and `step` attributes, for example `range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
 
 ## Strings
 
@@ -1689,7 +1675,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDg4NDEwMjEsNDk2NTI4NzgxLDExOT
+eyJoaXN0b3J5IjpbLTE3Nzc3NzUwMTksNDk2NTI4NzgxLDExOT
 U2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIzLC04OTI5NTY3
 MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4MywtMT
 I5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQw
