@@ -4,22 +4,16 @@ The following sections describe the sequence and mapping types that are built in
 
 ## Iterator Types
 
-Python supports a concept of iteration over containers.  This is implemented
-using two distinct methods; these are used to allow user-defined classes to
-support iteration.
+Python supports a concept of iteration over containers.  This is implemented using two distinct methods; these are used to allow user-defined classes to support iteration.
 
-One method needs to be defined for container objects to provide iteration
-support:
+One method needs to be defined for container objects to provide iteration support:
 
-
+```python
 container.\__iter__()
 ```
+Return an iterator object.  The object is required to support the iterator protocol described below.
 
-Return an iterator object.  The object is required to support the iterator
-protocol described below.
-
-The iterator objects themselves are required to support the following two
-methods, which together form the *iterator protocol*:
+The iterator objects themselves are required to support the following twomethods, which together form the *iterator protocol*:
 
 
 ### iterator.\__iter__()
@@ -1802,5 +1796,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
+eyJoaXN0b3J5IjpbMTIwMzc5MjA1Nyw3MDI0MDgwOTEsMTY1MD
+gzOTgxMl19
 -->
