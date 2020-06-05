@@ -13,10 +13,12 @@ container.\__iter__()
 ```
 Return an iterator object.  The object is required to support the iterator protocol described below.
 
-The iterator objects themselves are required to support the following twomethods, which together form the *iterator protocol*:
+The iterator objects themselves are required to support the following two methods, which together form the *iterator protocol:
 
-
-### iterator.\__iter__()
+```python
+ iterator.\__iter__()
+```
+ 
 Return the iterator object itself.  This is required to allow both containers
 and iterators to be used with the `for` and `in` statements.
 
@@ -1796,6 +1798,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzc5MjA1Nyw3MDI0MDgwOTEsMTY1MD
+eyJoaXN0b3J5IjpbMTM1NTAwMDEwNiw3MDI0MDgwOTEsMTY1MD
 gzOTgxMl19
 -->
