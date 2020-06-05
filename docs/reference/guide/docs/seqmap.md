@@ -370,9 +370,7 @@ multiple times, as explained for `s \* n`.
 
 ### Lists
 
-Lists are mutable sequences, typically used to store collections of
-homogeneous items (where the precise degree of similarity will vary by
-application).
+Lists are mutable sequences, typically used to store collections of homogeneous items (where the precise degree of similarity will vary by application).
 
 Lists may be constructed in several ways:
 
@@ -1722,8 +1720,8 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDAwOTQxODksLTY0Njc5NzEyMywtOD
-kyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0
-ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Ny
-w3MDI0MDgwOTEsMTY1MDgzOTgxMl19
+eyJoaXN0b3J5IjpbMTMyNTA0MjU4NSwtNjQ2Nzk3MTIzLC04OT
+I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
+MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
+cwMjQwODA5MSwxNjUwODM5ODEyXX0=
 -->
