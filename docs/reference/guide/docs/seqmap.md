@@ -416,9 +416,7 @@ Testing range objects for equality with `==` and `!=` compares them as sequences
 
 ## Strings
 
-Textual data in Python is handled with ```strings```.
-Strings are immutable sequences of 8 bit characters. Zerynth does not support Unicode yet.
-String literals are written in a variety of ways:
+Textual data in Python is handled with *strings*. Strings are immutable sequences of 8 bit characters. Zerynth does not support Unicode yet. String literals are written in a variety of ways:
 
 
 * Single quotes: `'allows embedded "double" quotes'`
@@ -1675,9 +1673,9 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjI2NzY4OTEsNDk2NTI4NzgxLDExOT
-U2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIzLC04OTI5NTY3
-MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4MywtMT
-I5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LDcwMjQw
-ODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTExNjU3Mzk2NDMsLTE4MjI2NzY4OTEsND
+k2NTI4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3
+MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LD
+QyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1
+NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
 -->
