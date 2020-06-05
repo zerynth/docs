@@ -32,8 +32,7 @@ Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic **sequence types**: lists, tuples, and range objects. Additional sequence types tailored for processing of
-binary data and text strings are described in dedicated sections.
+There are three basic **sequence types**: lists, tuples, and range objects. Additional **sequence types** tailored for processing of [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and text strings are described in dedicated sections.
 
 ### Common Sequence Operations
 
@@ -1783,6 +1782,6 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDk3MzkwOCwtMTEzMTA3NzU3LC0xMz
-A1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbLTE0MTM4MjIzNjMsLTExMzEwNzc1NywtMT
+MwNTYyNzg5Nyw3MDI0MDgwOTEsMTY1MDgzOTgxMl19
 -->
