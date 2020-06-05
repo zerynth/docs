@@ -181,25 +181,17 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 4. The slice of ```s``` from ```i``` to ```j``` is defined as the sequence of items with index ```k``` such that `i <= k < j`.  If ```i``` or ```j``` is greater than `len(s)`, use `len(s)`.  If ```i``` is omitted or `None`, use `0`.  If ```j``` is omitted or `None`, use `len(s)`.  If ```i``` is greater than or equal to ```j```, the slice is empty.
 
 
-5. The slice of ```s``` from ```i``` to ```j``` with step ```k``` is defined as the sequence of items with index  `x = i + n\*k` such that `0 <= n < (j-i)/k`.  In other words,
-the indices are `i`, `i+k`, `i+2\*k`, `i+3\*k` and so on, stopping when ```j``` is reached (but never including ```j```).  If ```i``` or ```j``` is greater than `len(s)`, use `len(s)`.  If ```i``` or ```j``` are omitted or `None`, they become “end” values (which end depends on the sign of ```k```).  Note, ```k``` cannot be zero.
+5. The slice of ```s``` from ```i``` to ```j``` with step ```k``` is defined as the sequence of items with index  `x = i + n\*k` such that `0 <= n < (j-i)/k`.  In other words, the indices are `i`, `i+k`, `i+2\*k`, `i+3\*k` and so on, stopping when ```j``` is reached (but never including ```j```).  If ```i``` or ```j``` is greater than `len(s)`, use `len(s)`.  If ```i``` or ```j``` are omitted or `None`, they become “end” values (which end depends on the sign of ```k```).  Note, ```k``` cannot be zero.
 If ```k``` is `None`, it is treated like `1`.
 
 
-6. Concatenating immutable sequences always results in a new object.  This
-means that building up a sequence by repeated concatenation will have a
-quadratic runtime cost in the total sequence length.  To get a linear
-runtime cost, you must switch to one of the alternatives below:
+6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length.  To get a linear runtime cost, you must switch to one of the alternatives below:
 
 
-    * if concatenating `str()` objects, you can build a list and use
-`str.join()` at the end.
+    * if concatenating `str()` objects, you can build a list and use `str.join()` at the end.
 
 
-    * if concatenating `bytes()` objects, you can similarly use
-`bytes.join()` or you can do in-place
-concatenation with a `bytearray()` object.  `bytearray()`
-objects are mutable and have an efficient overallocation mechanism
+    * if concatenating `bytes()` objects, you can similarly use `bytes.join()` or you can do in-place concatenation with a `bytearray()` object.  `bytearray()` objects are mutable and have an efficient overallocation mechanism
 
 
     * if concatenating `tuple()` objects, extend a `list()` instead
@@ -208,9 +200,7 @@ objects are mutable and have an efficient overallocation mechanism
     * for other types, investigate the relevant class documentation
 
 
-7. Some sequence types (such as `range()`) only support item sequences
-that follow specific patterns, and hence don’t support sequence
-concatenation or repetition.
+7. Some sequence types (such as `range()`) only support item sequences that follow specific patterns, and hence don’t support sequence concatenation or repetition.
 
 
 8. `index` raises 
@@ -1755,7 +1745,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDE5MjYwNSwtMzYxNDY5Mzc1LC03MD
+eyJoaXN0b3J5IjpbLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MD
 EzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3
 NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ
 ==
