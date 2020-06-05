@@ -341,14 +341,12 @@ Notes:
 1. ```t``` must have the same length as the slice it is replacing.
 
 
-2. The optional argument ```i``` defaults to `-1`, so that by default the last
-item is removed and returned.
+2. The optional argument ```i``` defaults to `-1`, so that by default the last item is removed and returned.
 
 
-3. `remove` raises 
+3. `remove` raises `ValueError` when x is not found in s
 
-```
-:exc:`ValueError`
+
 ```
 
  when ```x``` is not found in ```s```.
@@ -1720,7 +1718,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNTA0MjU4NSwtNjQ2Nzk3MTIzLC04OT
+eyJoaXN0b3J5IjpbLTczMjY2ODg2NCwtNjQ2Nzk3MTIzLC04OT
 I5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMDMxMzQ4
 MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3ODk3LD
 cwMjQwODA5MSwxNjUwODM5ODEyXX0=
