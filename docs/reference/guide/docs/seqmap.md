@@ -40,7 +40,7 @@ The operations in the following table are supported by most sequence types, both
 
 This table lists the sequence operations sorted in ascending priority.  In the table, ```s``` and ```t``` are sequences of the same type, ```n```, ```i```, ```j``` and ```k``` are integers and ```x``` is an arbitrary object that meets any type and value restrictions imposed by ```s```.
 
-The `in` and `not in` operations have the same priorities as the comparison operations. The `+` (concatenation) and `\*` (repetition) operations have the same priority as the corresponding numeric operations.
+The `in` and `not in` operations have the same priorities as the comparison operations. The `+` (concatenation) and `*` (repetition) operations have the same priority as the corresponding numeric operations.
 
 | Operation
 
@@ -138,8 +138,7 @@ of ```x``` in ```s``` (at or after
 ```x``` in ```s```
 
                                 |                         |
-Sequences of the same type also support comparisons.  In particular, tuples
-and lists are compared lexicographically by comparing corresponding elements.
+Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements.
 This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
@@ -1776,7 +1775,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTE1MjYwOSw0MjAzMTM0ODMsLTEyOT
+eyJoaXN0b3J5IjpbLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOT
 Q1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgw
 OTEsMTY1MDgzOTgxMl19
 -->
