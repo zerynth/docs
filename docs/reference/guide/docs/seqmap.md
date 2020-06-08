@@ -481,16 +481,7 @@ not found.
 
     str.join(iterable)
 
-Return a string which is the concatenation of the strings in the iterable ```iterable```. ```iterable``` must be a builtin sequence or builtin map.
-
-A 
-
-```
-:exc:`TypeError`
-```
-
- will be raised if there are
-any non-string values in ```iterable```, excluding `bytes()` and `byterray()` objects that are treated as strings.  The separator between elements is the string providing this method.
+Return a string which is the concatenation of the strings in the iterable *iterable*. iterable`must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in ```iterable```, excluding `bytes()` and `byterray()` objects that are treated as strings.  The separator between elements is the string providing this method.
 
 
 ---
@@ -1640,11 +1631,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTg1NTYwLC0zNzI3MjMwNTcsMTE5Nj
-E2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0x
-OTU4ODA3MTkxLC05MDYzODQyMDUsLTE4MjI2NzY4OTEsNDk2NT
-I4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIz
-LC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMD
-MxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3
-ODk3XX0=
+eyJoaXN0b3J5IjpbLTE5NTg1OTk1MDQsLTM3MjcyMzA1NywxMT
+k2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYs
+LTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OT
+Y1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcx
+MjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAwMDksND
+IwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLTEzMDU2
+Mjc4OTddfQ==
 -->
