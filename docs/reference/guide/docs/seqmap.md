@@ -528,12 +528,9 @@ For example:
 ['1', '2', '3']
 ```
 
-    str.startswith`(prefix[, start[, end] ])
+    str.startswith(prefix[, start[, end] ])
 
-Return `True` if string starts with the ```prefix```, otherwise return `False`.
-With optional ```start```,
-test string beginning at that position.  With optional ```end```, stop comparing
-string at that position.
+Return `True` if string starts with the *prefix*, otherwise return `False`. With optional *start*, test string beginning at that position.  With optional *end*, stop comparing string at that position.
 
 
 ---
@@ -1608,11 +1605,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDgyMzE3Miw4Njg2MDQzNjIsMjE3Nj
-E5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2
-LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyND
-EyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwt
-OTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1Nj
-ExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3
-XX0=
+eyJoaXN0b3J5IjpbLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNz
+YxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAz
+NiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2Mj
+QxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEs
+LTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NT
+YxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1Njcx
+N119
 -->
