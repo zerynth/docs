@@ -749,16 +749,13 @@ The precision determines the number of digits after the decimal point and defaul
 
 ## Binary Sequence Types
 
-The core built-in types for manipulating binary data are `bytes()` and
-`bytearray()`.
+The core built-in types for manipulating binary data are `bytes()` and `bytearray()`.
 
 ### Bytes
 
-Bytes objects are immutable sequences of single bytes. Bytes are very similar to strings in Zerynth,
-except that when iterating over them, integers are generated instead of strings.
+Bytes objects are immutable sequences of single bytes. Bytes are very similar to strings in Zerynth, except that when iterating over them, integers are generated instead of strings.
 
-Firstly, the syntax for bytes literals is largely the same as that for string
-literals, except that a `b` prefix is added:
+Firstly, the syntax for bytes literals is largely the same as that for string literals, except that a `b` prefix is added:
 
 
 * Single quotes: `b'still allows embedded "double" quotes'`
@@ -1581,7 +1578,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEzMTgxOTQsMTQ0MzM1NTc4NCwtMT
+eyJoaXN0b3J5IjpbLTIwNjEzMTYxMTgsMTQ0MzM1NTc4NCwtMT
 A3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4
 ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNj
 IsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0
