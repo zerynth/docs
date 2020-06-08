@@ -582,16 +582,16 @@ A conversion specifier contains two or more characters and has the following com
 3. Conversion flags (optional), which affect the result of some conversion types.
 
 
-4. Minimum field width (optional).  If specified as an `'\*'` (asterisk), the actual width is read from the next element of the tuple in ```values```, and the object to convert comes after the minimum field width and optional precision.
+4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the next element of the tuple in *values*, and the object to convert comes after the minimum field width and optional precision.
 
 
-5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'\*'` (an asterisk), the actual precision is read from the next element of the tuple in ```values```, and the value to convert comes after the
+5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next element of the tuple in *values*, and the value to convert comes after the
 precision.
 
 
 6. Conversion type.
 
-When the right argument is a dictionary (or other mapping type), then the formats in the string ```must``` include a parenthesised mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key
+When the right argument is a dictionary (or other mapping type), then the formats in the string ```must``` include a parenthesized mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key
 selects the value to be formatted from the mapping.  For example:
 
 ```python
@@ -1585,11 +1585,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2NDgxOTA5LC0xMDcwNzI1NDMsLTE3MT
-k3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQxMzky
-NTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2MTk5NzAsMT
-g2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMzYsMTA3NTkw
-NzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0MTI3Niw3NT
-Y4NzM4OTIsODM3MjcxNTI2LC0xOTU4ODA3MTkxLC05MDYzODQy
-MDVdfQ==
+eyJoaXN0b3J5IjpbLTE0MzQyMzkwMjYsLTEwNzA3MjU0MywtMT
+cxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEz
+OTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MC
+wxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1
+OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LD
+c1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4
+NDIwNV19
 -->
