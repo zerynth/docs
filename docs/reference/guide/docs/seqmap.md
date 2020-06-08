@@ -547,13 +547,13 @@ Return a copy of the string with the leading and trailing characters removed. Th
 The *dir* parameter controls the side of stripping:
 
 
-* dir=0, strip ```chars``` from left and right side of ```str```
+* dir=0, strip *chars* from left and right side of str
 
 
-* dir>0, strip ```chars``` from left side of ```str```
+* dir>0, strip chars from left side of str
 
 
-* dir<0, strip ```chars``` from right side of ```str```
+* dir<0, strip chars from right side of str
 
 
 ---
@@ -1599,7 +1599,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTYyMTcwNSwtMTMyMjQ2ODAyMCw4Nj
+eyJoaXN0b3J5IjpbMTA4ODE3NDYzNywtMTMyMjQ2ODAyMCw4Nj
 g2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4
 OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOT
 YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
