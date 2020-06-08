@@ -475,20 +475,14 @@ NOTE: The `find()` method should be used only if you need to know the position o
 
     str.index(sub[,start[,end] ])
 
-Like `find()`, but raise Value
-```
-
- when the substring is
+Like `find()`, but raise `ValueError` when the substring is
 not found.
 
 
----
-#### `#!py3 join()`
+    str.join(iterable)
 
-!!!abstract "`#!py3 join(iterable)`"
+Return a string which is the concatenation of the strings in the iterable ```iterable```. ```iterable``` must be a builtin sequence or builtin map.
 
-Return a string which is the concatenation of the strings in the
-iterable ```iterable```. ```iterable``` must be a builtin sequence or builtin map.
 A 
 
 ```
@@ -1646,11 +1640,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxOTM3MzU4OCwtMzcyNzIzMDU3LDExOT
-YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
-MTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5Nj
-UyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEy
-MywtODkyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0Mj
-AzMTM0ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYy
-Nzg5N119
+eyJoaXN0b3J5IjpbMTE5MTg1NTYwLC0zNzI3MjMwNTcsMTE5Nj
+E2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0x
+OTU4ODA3MTkxLC05MDYzODQyMDUsLTE4MjI2NzY4OTEsNDk2NT
+I4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIz
+LC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMD
+MxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3
+ODk3XX0=
 -->
