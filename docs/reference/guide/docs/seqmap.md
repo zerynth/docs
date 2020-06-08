@@ -497,8 +497,7 @@ Return a copy of the string with all occurrences of substring *old* replaced by 
 
     str.split(sep=None, maxsplit=-1)
 
-Return a list of the words in the string, using *sep* as the delimiter string.  If *maxsplit* is given, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not
-specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
+Return a list of the words in the string, using *sep* as the delimiter string.  If *maxsplit* is given, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
 
 If *sep* is given, consecutive delimiters are not grouped together and are deemed to delimit empty strings (for example, `'1,,2'.split(',')` returns `['1', '', '2']`).  The ```sep``` argument may consist of multiple characters
 (for example, `'1<>2<>3'.split('<>')` returns `['1', '2', '3']`). Splitting an empty string with a specified separator returns `['']`.
@@ -1616,11 +1615,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NT
-A0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3
-LDExOTYxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MT
-UyNiwtMTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkx
-LDQ5NjUyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Nj
-c5NzEyMywtODkyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAw
-OV19
+eyJoaXN0b3J5IjpbODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4Nj
+YxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMs
+LTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mz
+g5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwt
+MTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1Nj
+ExNjc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1
+XX0=
 -->
