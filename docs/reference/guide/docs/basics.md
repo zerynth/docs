@@ -628,7 +628,8 @@ f()
 
 will print `5`.
 
-**Important warning:**  The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or
+!!! warning
+	The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or
 instances of most classes.  For example, the following function accumulates the arguments passed to it on subsequent calls:
 
 ```
@@ -760,3 +761,6 @@ function call with the  `\*`-operator to unpack the arguments out of a list or t
 
 In Python, dictionaries can deliver keyword arguments with the `\*\*`-operator. However this syntax is not yet supported in Zerynth
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTUzNzk3Njk2NF19
+-->
