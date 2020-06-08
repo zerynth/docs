@@ -393,7 +393,7 @@ operations.
 
 ### Ranges
 
-The `range()` type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in `for` loops.
+The `range` type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in `for` loops.
 
 `class range(stop)` `class range(start,stop[step])`
 
@@ -1667,10 +1667,10 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMT
-gyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjEx
-Njc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC
-03MDEzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMx
-MDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MT
-JdfQ==
+eyJoaXN0b3J5IjpbMTQxODU4MzQ2NCwtMTk1ODgwNzE5MSwtOT
+A2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1NjEx
+Njc5LDExOTU2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3LC
+0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1
+NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgwOT
+EsMTY1MDgzOTgxMl19
 -->
