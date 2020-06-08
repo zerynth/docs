@@ -494,16 +494,11 @@ Return a copy of the string with all the cased characters converted to lowercase
 
 Return a copy of the string with all occurrences of substring *old* replaced by *new.*
 
----
-#### `#!py3 split()`
 
-!!!abstract "`#!py3 split(sep=None, maxsplit=-1)`"
+    str.split(sep=None, maxsplit=-1)
 
-Return a list of the words in the string, using ```sep``` as the delimiter
-string.  If ```maxsplit``` is given, at most ```maxsplit``` splits are done (thus,
-the list will have at most `maxsplit+1` elements).  If ```maxsplit``` is not
-specified or `-1`, then there is no limit on the number of splits
-(all possible splits are made).
+Return a list of the words in the string, using ```sep``` as the delimiter string.  If ```maxsplit``` is given, at most ```maxsplit``` splits are done (thus, the list will have at most `maxsplit+1` elements).  If ```maxsplit``` is not
+specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
 
 If ```sep``` is given, consecutive delimiters are not grouped together and are
 deemed to delimit empty strings (for example, `'1,,2'.split(',')` returns
@@ -1624,11 +1619,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNz
-U5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYs
-NzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwtOTA2Mz
-g0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1NjExNjc5
-LDExOTU2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3LC0zNj
-E0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1Nzkx
-MDVdfQ==
+eyJoaXN0b3J5IjpbNzIzMTM4Mjg4LDExODUwNDU3ODgsMjAxND
+k3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcs
+NTk2MjQxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MD
+cxOTEsLTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEs
+MTE5NTYxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mj
+k1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgz
+XX0=
 -->
