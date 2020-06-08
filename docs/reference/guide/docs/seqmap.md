@@ -735,17 +735,14 @@ character in the result.
 Notes:
 
 
-1. Not all Python conversion types and conversion flags are supported by Zerynth.
-Refer to Python documentation for the (few) differences.
+1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
 
 
 2. Hexadecimal conversion does not produce the “0x” prefix.
 
 
 3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.
-
-The precision determines the number of digits after the decimal point and
-defaults to 6.
+The precision determines the number of digits after the decimal point and defaults to 6.
 
 
 4. If precision is `N`, the output is truncated to `N` characters.
@@ -1584,11 +1581,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNz
-E5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5
-MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLD
-E4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5
-MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNz
-U2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwtOTA2Mzg0
-MjA1XX0=
+eyJoaXN0b3J5IjpbLTEwMDEzMTgxOTQsMTQ0MzM1NTc4NCwtMT
+A3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4
+ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNj
+IsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0
+OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Ny
+w1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgw
+NzE5MV19
 -->
