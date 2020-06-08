@@ -452,7 +452,7 @@ Strings implement all of the common sequence operations, along with the addition
 
 Strings also support string formatting based on C `printf` style formatting..
 
-str.count(sub[ , start[ , end]])
+str.count(sub[ , start[ , end] ])
 
 
 Return the number of non-overlapping occurrences of substring ```sub``` in the
@@ -1663,7 +1663,7 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzU4NDMyLDgzNzI3MTUyNiwtMTk1OD
+eyJoaXN0b3J5IjpbNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1OD
 gwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4
 MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEyMywtOD
 kyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0
