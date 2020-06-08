@@ -533,10 +533,7 @@ For example:
 Return `True` if string starts with the *prefix*, otherwise return `False`. With optional *start*, test string beginning at that position.  With optional *end*, stop comparing string at that position.
 
 
----
-#### `#!py3 strip()`
-
-!!!abstract "`#!py3 strip()`"
+    str.strip([chars[,dir=0] ])
 
 Return a copy of the string with the leading and trailing characters removed.
 The ```chars``` argument is a string specifying the set of characters to be removed.
@@ -1604,12 +1601,13 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNz
-YxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAz
-NiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2Mj
-QxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEs
-LTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NT
-YxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1Njcx
-N119
+eyJoaXN0b3J5IjpbLTI1MDIwMjA1OSwtMTMyMjQ2ODAyMCw4Nj
+g2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4
+OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOT
+YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
+MTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5Nj
+UyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEy
+M119
 -->
