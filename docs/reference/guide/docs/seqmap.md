@@ -528,11 +528,7 @@ For example:
 ['1', '2', '3']
 ```
 
-
----
-#### `#!py3 startswith()`
-
-!!!abstract "`#!py3 startswith(prefix, )`"
+    str.startswith`(prefix[, start[, end] ])
 
 Return `True` if string starts with the ```prefix```, otherwise return `False`.
 With optional ```start```,
@@ -1612,7 +1608,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDUzODU1MCw4Njg2MDQzNjIsMjE3Nj
+eyJoaXN0b3J5IjpbMTYwNDgyMzE3Miw4Njg2MDQzNjIsMjE3Nj
 E5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2
 LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyND
 EyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwt
