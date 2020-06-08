@@ -457,9 +457,7 @@ Strings also support string formatting based on C `printf` style formatting..
 
 
 
-Return the number of non-overlapping occurrences of substring ```sub``` in the
-range [```start```, ```end```].  Optional arguments ```start``` and ```end``` are
-interpreted as in slice notation.
+Return the number of non-overlapping occurrences of substring *sub* in the range [```start```, ```end```].  Optional arguments ```start``` and ```end``` are interpreted as in slice notation.
 
 
 ---
@@ -1666,10 +1664,10 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjA5NTAxOCw3NTY4NzM4OTIsODM3Mj
-cxNTI2LC0xOTU4ODA3MTkxLC05MDYzODQyMDUsLTE4MjI2NzY4
-OTEsNDk2NTI4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNj
-Q2Nzk3MTIzLC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAw
-MDA5LDQyMDMxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC
-0xMzA1NjI3ODk3LDcwMjQwODA5MSwxNjUwODM5ODEyXX0=
+eyJoaXN0b3J5IjpbOTk0MzI1NjMwLDc1Njg3Mzg5Miw4MzcyNz
+E1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMTgyMjY3Njg5
+MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02ND
+Y3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAw
+MDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLT
+EzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
 -->
