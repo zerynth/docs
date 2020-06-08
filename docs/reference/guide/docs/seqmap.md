@@ -513,11 +513,8 @@ For example:
 ['1', '2', '', '3', '']
 ```
 
-If ```sep``` is not specified, a different splitting algorithm is
-applied: runs of consecutive whitespace are regarded as a single separator,
-and the result will contain no empty strings at the start or end if the
-string has leading or trailing whitespace.  Consequently, splitting an empty
-string or a string consisting of just whitespace with a `None` separator
+If *sep* is not specified, a different splitting algorithm is
+applied: runs of consecutive whitespace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing whitespace.  Consequently, splitting an empty string or a string consisting of just whitespace with a `None` separator
 returns `[]`.
 
 For example:
@@ -1615,11 +1612,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4Nj
-YxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMs
-LTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mz
-g5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwt
-MTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1Nj
-ExNjc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1
+eyJoaXN0b3J5IjpbMTk0NDUzODU1MCw4Njg2MDQzNjIsMjE3Nj
+E5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2
+LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyND
+EyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwt
+OTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1Nj
+ExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3
 XX0=
 -->
