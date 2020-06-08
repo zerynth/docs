@@ -489,7 +489,7 @@ Return a string which is the concatenation of the strings in the iterable *itera
 Return a copy of the string with all the cased characters converted to lowercase.
 
 
-    str.replace()
+    str.replace(old,new)
 
 !!!abstract "`#!py3 replace(old, new)`"
 
@@ -1627,11 +1627,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3Mj
-cyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mzg5Miw4
-MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMTgyMj
-Y3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5
-LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MD
-EzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3
-NTddfQ==
+eyJoaXN0b3J5IjpbLTE1Mzg3NTA0NTEsMjAxNDk3NjAzNiwxMD
+c1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2
+LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNj
+M4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3
+OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMz
+YxNDY5Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5
+MTA1XX0=
 -->
