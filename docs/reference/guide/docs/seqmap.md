@@ -566,7 +566,7 @@ Return a copy of the string with all the cased characters converted to uppercase
 
 ### `printf`-style String Formatting
 
-String objects have one unique built-in operation: the `%` operator (modulo). This is also known as the string ```formatting``` or ```interpolation``` operator.
+String objects have one unique built-in operation: the `%` operator (modulo). This is also known as the string *formatting* or *interpolation* operator.
 Given `format % values` (where ```format``` is a string), `%` conversionspecifications in ```format``` are replaced with zero or more elements of ```values```.
 The effect is similar to using the `sprintf()` in the C language.
 
@@ -1598,11 +1598,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMD
-EyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0
-NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLD
-ExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3Mjcy
-MzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mzg5Miw4Mz
-cyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMTgyMjY3
-Njg5MV19
+eyJoaXN0b3J5IjpbLTU3ODk4ODU5NSwtMTA3MDcyNTQzLC0xNz
+E5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5
+MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLD
+E4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5
+MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNz
+U2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwtOTA2Mzg0
+MjA1XX0=
 -->
