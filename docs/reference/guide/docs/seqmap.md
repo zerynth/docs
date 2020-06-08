@@ -453,7 +453,7 @@ Strings implement all of the common sequence operations, along with the addition
 Strings also support string formatting based on C `printf` style formatting..
 
 
-    str.count(sub[,start[,end]]) 
+    str.count(sub[,start[,end] ]) 
 
 
 
@@ -1664,10 +1664,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2MjQxMjc2LDc1Njg3Mzg5Miw4MzcyNz
-E1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMTgyMjY3Njg5
-MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02ND
-Y3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAw
-MDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLT
-EzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
+eyJoaXN0b3J5IjpbLTIxNDcyMDU2MTIsNTk2MjQxMjc2LDc1Nj
+g3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIw
+NSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMT
+k1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5
+Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC
+0xMTMxMDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4
+Mzk4MTJdfQ==
 -->
