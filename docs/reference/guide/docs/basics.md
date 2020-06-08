@@ -719,19 +719,7 @@ def write_multiple_items(file, separator, *args):
     file.write(separator.join(args))
 ```
 
-Normally, these `variadic` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the 
-
-```
-``
-```
-
-
-
-```
-*
-```
-
-args\`\`parameter are ‘keyword-only’ arguments, meaning that they can only be used as
+Normally, these `variadic` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the ``*args``parameter are ‘keyword-only’ arguments, meaning that they can only be used as
 keywords rather than positional arguments.
 
 ```
@@ -761,6 +749,6 @@ function call with the  `\*`-operator to unpack the arguments out of a list or t
 In Python, dictionaries can deliver keyword arguments with the `\*\*`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MTk0MTAwLC0xOTA1MTIxNjQwLC0xMD
-Q4MTQwNjA0LC0xMTAxOTE0NTI4XX0=
+eyJoaXN0b3J5IjpbMTAyODMzMzQyMCwyMDQxOTQxMDAsLTE5MD
+UxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5MTQ1MjhdfQ==
 -->
