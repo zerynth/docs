@@ -547,22 +547,17 @@ Return a copy of the string with the leading and trailing characters removed. Th
 The *dir* parameter controls the side of stripping:
 
 
-* dir=0, strip *chars* from left and right side of str
+* dir=0, strip *chars* from left and right side of *str*
 
 
-* dir>0, strip chars from left side of str
+* dir>0, strip *chars* from left side of *str*
 
 
-* dir<0, strip chars from right side of str
+* dir<0, strip *chars* from right side of *str*
 
+    str.upper()
 
----
-#### `#!py3 upper()`
-
-!!!abstract "`#!py3 upper()`"
-
-Return a copy of the string with all the cased characters converted to
-uppercase.
+Return a copy of the string with all the cased characters converted to uppercase.
 
 ### `printf`-style String Formatting
 
@@ -1599,11 +1594,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODE3NDYzNywtMTMyMjQ2ODAyMCw4Nj
-g2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4
-OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOT
-YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
-MTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5Nj
-UyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEy
-M119
+eyJoaXN0b3J5IjpbLTE2NDc3MDYxNTEsLTEzMjI0NjgwMjAsOD
+Y4NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3
+ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMT
+k2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYs
+LTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OT
+Y1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcx
+MjNdfQ==
 -->
