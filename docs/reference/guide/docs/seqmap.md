@@ -556,7 +556,7 @@ The *dir* parameter controls the side of stripping:
 * dir<0, strip *chars* from right side of *str*
 
 
-str.upper()
+    str.upper()
 
 Return a copy of the string with all the cased characters converted to uppercase.
 
@@ -1594,12 +1594,13 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczMTk5NTk1LC0xMzIyNDY4MDIwLDg2OD
-YwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4
-LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5Nj
-E2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0x
-OTU4ODA3MTkxLC05MDYzODQyMDUsLTE4MjI2NzY4OTEsNDk2NT
-I4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIz
-XX0=
+eyJoaXN0b3J5IjpbLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Nj
+g2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4
+OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOT
+YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
+MTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5Nj
+UyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEy
+M119
 -->
