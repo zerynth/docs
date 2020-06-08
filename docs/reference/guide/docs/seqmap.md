@@ -460,10 +460,7 @@ Strings also support string formatting based on C `printf` style formatting..
 Return the number of non-overlapping occurrences of substring *sub* in the range [*start, end*].  Optional arguments start and end are interpreted as in slice notation.
 
 
----
-#### `#!py3 endswith()`
-
-!!!abstract "`#!py3 endswith(suffix, )`"
+    str.endswith(suffix[,start[end] ])
 
 Return `True` if the string ends with the specified ```suffix```, otherwise return
 `False`.  With optional
@@ -1664,11 +1661,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDcyMDU2MTIsNTk2MjQxMjc2LDc1Nj
-g3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNjM4NDIw
-NSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMT
-k1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5
-Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC
-0xMTMxMDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4
-Mzk4MTJdfQ==
+eyJoaXN0b3J5IjpbLTg3MDU2ODE5Myw1OTYyNDEyNzYsNzU2OD
+czODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwtOTA2Mzg0MjA1
+LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1NjExNjc5LDExOT
+U2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3LC0zNjE0Njkz
+NzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1NzkxMDUsLT
+ExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgwOTEsMTY1MDgz
+OTgxMl19
 -->
