@@ -600,8 +600,7 @@ selects the value to be formatted from the mapping.  For example:
 Python has 002 quote types.
 ```
 
-In this case no `\*` specifiers may occur in a format (since they require a
-sequential parameter list).
+In this case no `*` specifiers may occur in a format (since they require a sequential parameter list).
 
 The conversion flag characters are:
 
@@ -1585,7 +1584,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjE2MTc0MiwtMTA3MDcyNTQzLC0xNz
+eyJoaXN0b3J5IjpbMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNz
 E5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5
 MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLD
 E4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5
