@@ -766,13 +766,9 @@ Firstly, the syntax for bytes literals is largely the same as that for string li
 
 * Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
 
-Only ASCII characters are permitted in bytes literals. Any binary values over 127 must be entered
-into bytes literals using the appropriate escape sequence.
+Only ASCII characters are permitted in bytes literals. Any binary values over 127 must be entered into bytes literals using the appropriate escape sequence.
 
-While bytes literals and representations are based on ASCII text, bytes
-objects actually behave like immutable sequences of integers, with each
-value in the sequence restricted such that `0 <= x < 256` (attempts to
-violate this restriction will trigger 
+While bytes literals and representations are based on ASCII text, bytes objects actually behave like immutable sequences of integers, with each value in the sequence restricted such that `0 <= x < 256` (attempts to violate this restriction will trigger 
 
 ```
 :exc:`ValueError`
@@ -1578,11 +1574,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjEzMTYxMTgsMTQ0MzM1NTc4NCwtMT
-A3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4
-ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNj
-IsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0
-OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Ny
-w1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgw
-NzE5MV19
+eyJoaXN0b3J5IjpbLTM2NzAxOTgzNiwxNDQzMzU1Nzg0LC0xMD
+cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
+MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
+wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
+NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LD
+U5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0xOTU4ODA3
+MTkxXX0=
 -->
