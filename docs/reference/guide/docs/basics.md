@@ -736,7 +736,7 @@ keywords rather than positional arguments.
 
 The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional
 arguments.  For instance, the built-in `range()` function expects separate ```start``` and ```stop``` arguments.  If they are not available separately, write the
-function call with the  `\*`-operator to unpack the arguments out of a list or tuple:
+function call with the  `*`-operator to unpack the arguments out of a list or tuple:
 
 ```
 >>> list(range(3, 6))            # normal call with separate arguments
@@ -746,9 +746,9 @@ function call with the  `\*`-operator to unpack the arguments out of a list or t
 [3, 4, 5]
 ```
 
-In Python, dictionaries can deliver keyword arguments with the `\*\*`-operator. However this syntax is not yet supported in Zerynth
+In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyODMzMzQyMCwyMDQxOTQxMDAsLTE5MD
+eyJoaXN0b3J5IjpbMjAyMjkxODgyOCwyMDQxOTQxMDAsLTE5MD
 UxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5MTQ1MjhdfQ==
 -->
