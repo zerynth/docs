@@ -484,13 +484,9 @@ not found.
 Return a string which is the concatenation of the strings in the iterable *iterable*. *iterable* must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in *iterable*, excluding `byte` and `byterray` objects that are treated as strings.  The separator between elements is the string providing this method.
 
 
----
-#### `#!py3 lower()`
+*str.lower()*
 
-!!!abstract "`#!py3 lower()`"
-
-Return a copy of the string with all the cased characters converted to
-lowercase.
+Return a copy of the string with all the cased characters converted to lowercase.
 
 
 ---
@@ -1631,11 +1627,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5Nj
-E2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0x
-OTU4ODA3MTkxLC05MDYzODQyMDUsLTE4MjI2NzY4OTEsNDk2NT
-I4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIz
-LC04OTI5NTY3MTcsLTM2MTQ2OTM3NSwtNzAxMzAwMDA5LDQyMD
-MxMzQ4MywtMTI5NDU3OTEwNSwtMTEzMTA3NzU3LC0xMzA1NjI3
-ODk3XX0=
+eyJoaXN0b3J5IjpbNzY3MTg3OTQyLDEwNzU5MDc2MywtMzcyNz
+IzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgz
+NzI3MTUyNiwtMTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNj
+c2ODkxLDQ5NjUyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2Nzks
+LTY0Njc5NzEyMywtODkyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMT
+MwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1
+N119
 -->
