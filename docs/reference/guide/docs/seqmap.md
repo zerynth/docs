@@ -785,9 +785,7 @@ Since bytes objects are sequences of integers (akin to a tuple), for a bytes obj
 
 ### Bytearray Objects
 
-`bytearray()` objects are a mutable counterpart to `bytes()`
-objects. There is no dedicated literal syntax for bytearray objects, instead
-they are always created by calling the constructor:
+`bytearray()` objects are a mutable counterpart to `bytes()` objects. There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
 
 
 * Creating an empty instance: `bytearray()`
@@ -800,15 +798,11 @@ they are always created by calling the constructor:
 
 As bytearray objects are mutable, they support the
 mutable sequence operations in addition to the
-common bytes and bytearray operations described in Bytes and Bytearray Operations.
+common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#bytes-methods).
 
-Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal
-numbers are a commonly used format for describing binary data.
+Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data.
 
-Since bytearray objects are sequences of integers (akin to a list), for a
-bytearray object ```b```, `b[0]` will be an integer, while `b[0:1]` will be
-a bytearray object of length 1.  (This contrasts with text strings, where
-both indexing and slicing will produce a string of length 1)
+Since bytearray objects are sequences of integers (akin to a list), for a bytearray object *b*, `b[0]` will be an integer, while `b[0:1]` will be a bytearray object of length 1.  (This contrasts with text strings, where both indexing and slicing will produce a string of length 1)
 
 ### Bytes and Bytearray Operations
 
@@ -1559,11 +1553,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0Mzg4ODQ0MywxNDQzMzU1Nzg0LC0xMD
-cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
-MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
-wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
-NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LD
-U5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0xOTU4ODA3
-MTkxXX0=
+eyJoaXN0b3J5IjpbLTIwNjA1Nzg0NTIsMTQ0MzM1NTc4NCwtMT
+A3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4
+ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNj
+IsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0
+OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Ny
+w1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgw
+NzE5MV19
 -->
