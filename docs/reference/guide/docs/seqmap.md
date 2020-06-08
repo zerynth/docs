@@ -491,11 +491,8 @@ Return a copy of the string with all the cased characters converted to lowercase
 
     str.replace(old,new)
 
-!!!abstract "`#!py3 replace(old, new)`"
 
-Return a copy of the string with all occurrences of substring ```old``` replaced by
-```new```.
-
+Return a copy of the string with all occurrences of substring *old* replaced by *new.*
 
 ---
 #### `#!py3 split()`
@@ -1627,11 +1624,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzg3NTA0NTEsMjAxNDk3NjAzNiwxMD
-c1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2
-LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEsLTkwNj
-M4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3
-OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMz
-YxNDY5Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5
-MTA1XX0=
+eyJoaXN0b3J5IjpbMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNz
+U5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYs
+NzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwtOTA2Mz
+g0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1NjExNjc5
+LDExOTU2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3LC0zNj
+E0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOTQ1Nzkx
+MDVdfQ==
 -->
