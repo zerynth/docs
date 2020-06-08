@@ -568,12 +568,9 @@ Return a copy of the string with all the cased characters converted to uppercase
 
 String objects have one unique built-in operation: the `%` operator (modulo). This is also known as the string *formatting* or *interpolation* operator. Given `format % values` (where *format* is a string), `%` conversion specifications in *format* are replaced with zero or more elements of *values*. The effect is similar to using the `sprintf()` in the C language.
 
-If ```format``` requires a single argument, ```values``` may be a single non-tuple
-object. Otherwise, ```values``` must be a tuple or list with exactly the number of
-items specified by the format string, or a single dictionary.
+If *format* requires a single argument, *values* may be a single non-tuple object. Otherwise, *values* must be a tuple or list with exactly the number of items specified by the *format* string, or a single dictionary.
 
-A conversion specifier contains two or more characters and has the following
-components, which must occur in this order:
+A conversion specifier contains two or more characters and has the following components, which must occur in this order:
 
 
 1. The `'%'` character, which marks the start of the specifier.
@@ -1596,7 +1593,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI2NzcyNTUsLTEwNzA3MjU0MywtMT
+eyJoaXN0b3J5IjpbLTE1OTI0MjE4OTksLTEwNzA3MjU0MywtMT
 cxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEz
 OTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MC
 wxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1
