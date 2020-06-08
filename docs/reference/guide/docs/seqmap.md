@@ -4,44 +4,43 @@ The following sections describe the sequence and mapping types that are built in
 
 ## Iterator Types
 
-Python supports a concept of iteration over containers.  This is implemented using two distinct methods; these are used to allow user-defined classes to support iteration.
+Python supports a concept of iteration over containers.  This is implementedusing two distinct methods; these are used to allow user-defined classes tosupport iteration.
 
-One method needs to be defined for container objects to provide iteration support:
+One method needs to be defined for container objects to provide iterationsupport:
 
 ```python
 container.\__iter__()
 ```
 
-Return an iterator object.  The object is required to support the iterator protocol described below.
+Return an iterator object.  The object is required to support the iteratorprotocol described below.
 
-The iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
+ iterator objects themselves are required to support the following twomethods, which together form the *iterator protocol*:
 
 ```python
  iterator.\__iter__()
 ```
  
-Return the iterator object itself.  This is required to allow both containers and iterators to be used with the `for` and `in` statements.
+Return the iterator object itself.  This is required to allow both containersand iterators to be used with the `for` and `in` statements.
 
 
-```
 iterator.\__next__()
 ```
 Return the next item from the container.  If there are no further items, raise the `StopIteration` exception.
 
-Once an iterator’s `__next__()` method raises `StopIteration`, it must continue to do so on subsequent calls.
+Once an iterator’s `__next__()` method raises`StopIteration`, it must continue to do so on subsequent calls.
 Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic sequence types: lists, tuples, and range objects. Additional sequence types tailored for processing of [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#textseq) are described in dedicated sections.
+There are three basic sequence types: lists, tuples, and range objects.Additional sequence types tailored for processing ofbinary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#textseq) aredescribed in dedicated sections.
 
 ### Common Sequence Operations
 
-The operations in the following table are supported by most sequence types, both mutable and immutable.
+The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, ```s``` and ```t``` are sequences of the same type, ```n```, ```i```, ```j``` and ```k``` are integers and ```x``` is an arbitrary object that meets any type and value restrictions imposed by ```s```.
+This table lists the sequence operations sorted in ascending priority.  In thetable, ```s``` and ```t``` are sequences of the same type, ```n```, ```i```, ```j``` and ```k``` areintegers and ```x``` is an arbitrary object that meets any type and valuerestrictions imposed by ```s```.
 
-The `in` and `not in` operations have the same priorities as the comparison operations. The `+` (concatenation) and `*` (repetition) operations have the same priority as the corresponding numeric operations.
+The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
 | Operation
 
@@ -139,13 +138,13 @@ of ```x``` in ```s``` (at or after
 ```x``` in ```s```
 
                                 |                         |
-Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements. This means that to compare equal, every element must compare equal and the
+Sequences of the same type also support comparisons.  In particular, tuplesand lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
 Notes:
 
 
-1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences (such as `str()`, `bytes()` and `bytearray()`) also use them for subsequence testing:
+1. While the `in` and `not in` operations are used only for simplecontainment testing in the general case, some specialised sequences(such as `str()`, `bytes()` and `bytearray()`) also usethem for subsequence testing:
 
 ```
 >>> "gg" in "eggs"
@@ -153,7 +152,7 @@ True
 ```
 
 
-2. Values of ```n``` less than `0` are treated as `0` (which yields an empty sequence of the same type as ```s```).  Note that items in the sequence ```s``` are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
+2. Values of ```n``` less than `0` are treated as `0` (which yields an emptysequence of the same type as ```s```).  Note that items in the sequence ```s```are not copied; they are referenced multiple times.  This often hauntsnew Python programmers; consider:
 
 ```
 >>> lists = [[]] * 3
@@ -164,7 +163,7 @@ True
 [[3], [3], [3]]
 ```
 
-What has happened is that `[[]]` is a one-element list containing an empty list, so all three elements of `[[]] \* 3` are references to this single empty list.  Modifying any of the elements of `lists` modifies this single list. You can create a list of different lists this way:
+What has happened is that `[[]]` is a one-element list containing an emptylist, so all three elements of `[[]] \* 3` are references to this single emptylist.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
 
 ```
 >>> lists = [[] for i in range(3)]
@@ -176,23 +175,23 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 ```
 
 
-3. If ```i``` or ```j``` is negative, the index is relative to the end of the string: `len(s) + i` or `len(s) + j` is substituted.  But note that `-0` is still `0`.
+3. If ```i``` or ```j``` is negative, the index is relative to the end of the string:`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` isstill `0`.
 
 
-4. The slice of ```s``` from ```i``` to ```j``` is defined as the sequence of items with index ```k``` such that `i <= k < j`.  If ```i``` or ```j``` is greater than `len(s)`, use `len(s)`.  If ```i``` is omitted or `None`, use `0`.  If ```j``` is omitted or `None`, use `len(s)`.  If ```i``` is greater than or equal to ```j```, the slice is empty.
+4. The slice of ```s``` from ```i``` to ```j``` is defined as the sequence of items with index```k``` such that `i <= k < j`.  If ```i``` or ```j``` is greater than `len(s)`, use`len(s)`.  If ```i``` is omitted or`None`, use `0`.  If ```j``` is omitted or `None`, use `len(s)`.  If ```i``` is greater than or equal to ```j```, the slice isempty.
 
 
-5. The slice of ```s``` from ```i``` to ```j``` with step ```k``` is defined as the sequence of items with index  `x = i + n\*k` such that `0 <= n < (j-i)/k`.  In other words, the indices are `i`, `i+k`, `i+2\*k`, `i+3\*k` and so on, stopping when ```j``` is reached (but never including ```j```).  If ```i``` or ```j``` is greater than `len(s)`, use `len(s)`.  If ```i``` or ```j``` are omitted or `None`, they become “end” values (which end depends on the sign of ```k```).  Note, ```k``` cannot be zero.
+5. The slice of ```s``` from ```i``` to ```j``` with step ```k``` is defined as the sequence ofitems with index  `x = i + n\*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2\*k`, `i+3\*k` and so on, stopping when```j``` is reached (but never including ```j```).  If ```i``` or ```j``` is greater than`len(s)`, use `len(s)`.  If ```i``` or ```j``` are omitted or `None`, they become“end” values (which end depends on the sign of ```k```).  Note, ```k``` cannot be zero.
 If ```k``` is `None`, it is treated like `1`.
 
 
-6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
+6. Concatenating immutable sequences always results in a new object.  Thismeans that building up a sequence by repeated concatenation will have aquadratic runtime cost in the total sequence length. To get a linearruntime cost, you must switch to one of the alternatives below:
 
 
-    * if concatenating `str()` objects, you can build a list and use `str.join()` at the end.
+    * if concatenating `str()` objects, you can build a list and use`str.join()` at the end.
 
 
-    * if concatenating `bytes()` objects, you can similarly use `bytes.join()` or you can do in-place concatenation with a `bytearray()` object.  `bytearray()` objects are mutable and have an efficient overallocation mechanism
+    * if concatenating `bytes()` objects, you can similarly use`bytes.join()` or you can do in-placeconcatenation with a `bytearray()` object.  `bytearray()`objects are mutable and have an efficient overallocation mechanism
 
 
     * if concatenating `tuple()` objects, extend a `list()` instead
@@ -201,25 +200,25 @@ If ```k``` is `None`, it is treated like `1`.
     * for other types, investigate the relevant class documentation
 
 
-7. Some sequence types (such as `range()`) only support item sequences that follow specific patterns, and hence don’t support sequence concatenation or repetition.
+7. Some sequence types (such as `range()`) only support item sequencesthat follow specific patterns, and hence don’t support sequenceconcatenation or repetition.
 
 
-8. `index` raises `ValueError` when **x** is not found in **s**.
-When supported, the additional arguments to the index method allow efficient searching of subsections of the sequence. Passing the extra arguments is roughly equivalent to using `s[i:j].index(x)`, only without copying any data and with the returned index being relative to the start of the sequence rather than the start of the slice.
+8. `index` raises `ValueError` when x is not found in s.
+When supported, the additional arguments to the index method allowefficient searching of subsections of the sequence. Passing the extraarguments is roughly equivalent to using `s[i:j].index(x)`, onlywithout copying any data and with the returned index being relative tothe start of the sequence rather than the start of the slice.
 
 ### Immutable Sequence Types
 
-The only feature that immutable sequence types generally implement that is not also implemented by mutable sequence types is hashing support.
+The only feature that immutable sequence types generally implement that isnot also implemented by mutable sequence types is hashing support.
 
-This support allows immutable sequences, such as `tuple()` instances, to be used as `dict()` keys and stored in `set()` and `frozenset()` instances.
+This support allows immutable sequences, such as `tuple()` instances, tobe used as `dict()` keys and stored in `set()` and `frozenset()`instances.
 
-Attempting to hash an immutable sequence that contains unhashable values will result in `TypeError`.
+Attempting to hash an immutable sequence that contains unhashable values willresult in `TypeError`.
 
 ### Mutable Sequence Types
 
 The operations in the following table are defined on mutable sequence types.
 
-In the table ```s``` is an instance of a mutable sequence type, ```t``` is arbitrary object and ```x``` is an arbitrary object that meets any type and value restrictions imposed by ```s``` (for example, `bytearray()` only accepts integers that meet the value restriction `0 <= x <= 255`).
+In the table ```s``` is an instance of a mutable sequence type, ```t``` is ararobject and ```x``` is an arbitrary object that meets any typeand value restrictions imposed by ```s``` (for example, `bytearray()` onlyaccepts integers that meet the value restriction `0 <= x <= 255`).
 
 | Operation
 
@@ -342,22 +341,21 @@ Notes:
 1. ```t``` must have the same length as the slice it is replacing.
 
 
-2. The optional argument ```i``` defaults to `-1`, so that by default the last item is removed and returned.
+2. The optional argument ```i``` defaults to `-1`, so that by default the lastitem is removed and returned.
 
 
-3. `remove` raises `ValueError` when **x** is not found in **s**.
-
-4. The `reverse()` method modifies the sequence in place for economy of space when reversing a large sequence.  To remind users that it operates by side effect, it does not return the reversed sequence.
-
-
-5. `clear()` and `copy()` are included for consistency with the interfaces of mutable containers that don’t support slicing operations (such as `dict()` and `set()`)
+3. `remove` raises `ValueError` when x is not found in s.
+4. The `reverse()` method modifies the sequence in place for economy ofspace when reversing a large sequence.  To remind users that it operates byside effect, it does not return the reversed sequence.
 
 
-6. The value ```n``` is an integer. Zero and negative values of ```n``` clear the sequence.  Items in the sequence are not copied; they are referenced multiple times, as explained for `s * n`.
+5. `clear()` and `copy()` are included for consistency with theinterfaces of mutable containers that don’t support slicing operations(such as `dict()` and `set()`)
+
+
+6. The value ```n``` is an integer. Zero and negative values of ```n``` clearthe sequence.  Items in the sequence are not copied; they are referencedmultiple times, as explained for `s * n`.
 
 ### Lists
 
-Lists are mutable sequences, typically used to store collections of homogeneous items (where the precise degree of similarity will vary by application).
+Lists are mutable sequences, typically used to store collections ofhomogeneous items (where the precise degree of similarity will vary byapplication).
 
 Lists may be constructed in several ways:
 
@@ -374,7 +372,7 @@ Lists implement all of the common and mutable sequence operations.
 
 ### Tuples
 
-Tuples are immutable sequences, typically used to store collections of heterogeneous data (such as the 2-tuples produced by the `enumerate()` built-in). Tuples are also used for cases where an immutable sequence of
+Tuples are immutable sequences, typically used to store collections ofheterogeneous data (such as the 2-tuples produced by the `enumerate()`built-in). Tuples are also used for cases where an immutable sequence of
 homogeneous data is needed.
 
 Tuples may be constructed in a number of ways:
@@ -393,29 +391,29 @@ operations.
 
 ### Ranges
 
-The `range` type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in `for` loops.
+The `range` type represents an immutable sequence of numbers and iscommonly used for looping a specific number of times in `for`loops.
 
-`class range(stop)` `class range(start,stop[step])`
+class range(stop) `class range(start,sto[step])`
 
 The arguments to the range constructor must be integers.
-If the *step* argument is omitted, it defaults to **1**. If the *start* argument is omitted, it defaults to **0**. If *step*  is zero, `ValueError` is raised.
+If the st argument is omitted, it defaults to 1.If the *st* ument is omitted, it defaults to 0.If step*is zero, `ValueError` is raised.
 
-For a positive ```step```, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and `r[i] < stop`.
+For a positive ```step```, the contents of a range `r` are determined by theformula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
 
-For a negative ```step```, the contents of the range are still determined by the formula `r[i] = start + step*i`, but the constraints are `i >= 0` and `r[i] > stop`.
+For a negative ```step```, the contents of the range are still determined bythe formula `r[i] = start + step*i`, but the constraints are `i >= 0`and `r[i] > stop`.
 
-A range object will be empty if `r[0]` does not meet the value constraint. Ranges do support negative indices, but these are interpreted as indexing from the end of the sequence determined by the positive indices.
+A range object will be empty if `r[0]` does not meet the valueconstraint. Ranges do support negative indices, but these are interpretedas indexing from the end of the sequence determined by the positiveindices.
 
 Ranges implement all of the common sequence operations
-except concatenation and repetition (due to the fact that range objects can only represent sequences that follow a strict pattern and repetition and concatenation will usually violate that pattern).
+except concatenation and repetition (due to the fact that range objects canonly represent sequences that follow a strict pattern and repetition andconcatenation will usually violate that pattern).
 
-The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same (small) amount of memory, no matter the size of the range it represents (as it only stores the `start`, `stop` and `step` values, calculating individual items and subranges as needed).
+The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same(small) amount of memory, no matter the size of the range it represents (as itonly stores the start,stop and step values, calculating individualitems and subranges as needed).
 
-Testing range objects for equality with `==` and `!=` compares them as sequences.  That is, two range objects are considered equal if they represent the same sequence of values.  (Note that two range objects that compare equal might have different **start**, **stop** and **step** attributes, for example `range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
+Testing range objects for equality with `==` and `!=` comparesthem as sequences.  That is, two rangeobjects are considered equal ifthey represent the same sequence of values.  (Note that two range objects that compare equal might have different **start**, **stop** and **step** attributes, for example`range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
 
 ## Strings
 
-Textual data in Python is handled with *strings*. Strings are immutable [sequences](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#typesseq) of 8 bit characters. Zerynth does not support Unicode yet. String literals are written in a variety of ways:
+Textual data in Python is handled with strin.. Strings are immutable [sequences](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#typesseq) of 8 bit characters. Zerynth does not support Unicode yet.String literals are written in a variety of ways:
 
 
 * Single quotes: `'allows embedded "double" quotes'`
@@ -426,13 +424,13 @@ Textual data in Python is handled with *strings*. Strings are immutable [sequenc
 
 * Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
 
-Triple quoted strings may span multiple lines - all associated whitespace will be included in the string literal.
+Triple quoted strings may span multiple lines - all associated whitespace willbe included in the string literal.
 
-String literals that are part of a single expression and have only whitespace between them will be implicitly converted to a single string literal. That is, `("spam " "eggs") == "spam eggs"`.
+String literals that are part of a single expression and have only whitespacebetween them will be implicitly converted to a single string literal. Thatis, `("spam " "eggs") == "spam eggs"`.
 
-Strings may also be created from other objects using the `str` builtin.
+Strings may also be created from other objects using the `str`builtin.
 
-Since there is no separate “character” type, indexing a string produces strings of length 1. That is, for a non-empty string **s**, `s[0] == s[0:1]`.
+Since there is no separate “character” type, indexing a string producesstrings of length 1. That is, for a non-empty string s, `s[0] == s[0:1]`.
 
 There is also no mutable string type, but `str.join()` can be used to efficiently construct strings from
 multiple fragments.
@@ -457,17 +455,19 @@ Strings also support string formatting based on C `printf` style formatting..
 
 
 
-Return the number of non-overlapping occurrences of substring *sub* in the range [*start, end*].  Optional arguments start and end are interpreted as in slice notation.
+Return the number of non-overlapping occurrences of substring *sub* in the
+range [*start].  Optional arguments start and  arinterpreted as in slice notation.
 
 
     str.endswith(suffix[,start[,end] ])
 
-Return `True` if the string ends with the specified *suffix*, otherwise return `False`.  With optional *start*, test beginning at that position.  With optional *end*, stop comparing at that position.
+Return `True` if the string ends with the specified *suffix, otherwise return `False`.  With optional *start`, test beginning at that position.  With optional *end*, stop comparing at that position.
 
 
     str.find(sub[,start[,end] ])
 
-Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start* and *end* are interpreted as in slice notation.  Return `-1` if *sub* is not found.
+Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start and *`end``` are 
+interpreted as in slice notation.  Return `-1` if *sub* is not found.
 
 NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
 
@@ -479,25 +479,27 @@ Like `find()`, but raise `ValueError` when the substring is
 not found.
 
 
-    str.join(iterable)
+    str.
+join(iterable)
 
-Return a string which is the concatenation of the strings in the iterable *iterable*. *iterable* must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in *iterable*, excluding `byte` and `byterray` objects that are treated as strings.  The separator between elements is the string providing this method.
+Return a string which is the concatenation of the strings in the iterable *iterableiterable* must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in *iterable, excluding `byte` and `byterray` objects that are treated as strings.  The separator between elements is the string providing this method.
 
 
-    str.lower()
+    str.
+
+lower()
 
 Return a copy of the string with all the cased characters converted to lowercase.
 
 
     str.replace(old,new)
 
-
 Return a copy of the string with all occurrences of substring *old* replaced by *new.*
 
 
     str.split(sep=None, maxsplit=-1)
 
-Return a list of the words in the string, using *sep* as the delimiter string.  If *maxsplit* is given, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
+Return a list of the words in the string, using *sep* as the delimiter string.  If *maxsplit is given, at most *maxsplit splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit is not specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
 
 If *sep* is given, consecutive delimiters are not grouped together and are deemed to delimit empty strings (for example, `'1,,2'.split(',')` returns `['1', '', '2']`).  The ```sep``` argument may consist of multiple characters
 (for example, `'1<>2<>3'.split('<>')` returns `['1', '2', '3']`). Splitting an empty string with a specified separator returns `['']`.
@@ -528,14 +530,14 @@ For example:
 ['1', '2', '3']
 ```
 
-    str.startswith(prefix[,start[,end] ])
+str.py3 startswith(prefix[,start[,end] ])upper()
 
-Return `True` if string starts with the *prefix*, otherwise return `False`. With optional *start*, test string beginning at that position.  With optional *end*, stop comparing string at that position.
+Return `True` if string starts with the *prefix, otherwise return `False`. With optional *starttest string beginning at that position.  With optional *end*, stop comparing string at that position.
 
 
     str.strip([chars[,dir=0] ])
 
-Return a copy of the string with the leading and trailing characters removed. The *chars* argument is a string specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
+Return a copy of the string with the leading and trailing characters removed. The chars* argument is a string specifying the set of characters to be removed. If omitted, the *chars argument defaults to removing whitespace. The chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
 ```
 >>> '   spacious   '.strip()
@@ -547,28 +549,27 @@ Return a copy of the string with the leading and trailing characters removed. Th
 The *dir* parameter controls the side of stripping:
 
 
-* dir=0, strip *chars* from left and right side of *str*
+* dir=0, strip *chars from left and right side of *str*
 
 
-* dir>0, strip *chars* from left side of *str*
+* dir>0, strip *chars from left side of *str*
 
 
-* dir<0, strip *chars* from right side of *str*
+* dir<0, strip *chars from right side of *str*
 
 
 ```python
-str.upper()
-```
+str.
 
-
+`"
 
 Return a copy of the string with all the cased characters converted to uppercase.
 
 ### `printf`-style String Formatting
 
-String objects have one unique built-in operation: the `%` operator (modulo). This is also known as the string *formatting* or *interpolation* operator. Given `format % values` (where *format* is a string), `%` conversion specifications in *format* are replaced with zero or more elements of *values*. The effect is similar to using the `sprintf()` in the C language.
+String objects have one unique built-in operation: the `%` operator (modulo). This is also known as the string *formatting* or interpolation* operator. Given `format % values` (where *format is a string), `%` conversion specifications in *format are replaced with zero or more elements of *valuesThe effect is similar to using the `sprintf()` in the C language.
 
-If *format* requires a single argument, *values* may be a single non-tuple object. Otherwise, *values* must be a tuple or list with exactly the number of items specified by the *format* string, or a single dictionary.
+If *format requires a single argument, *values may be a single non-tuple object. Otherwise, *values must be a tuple or list with exactly the number of items specified by the *format* string, or a single dictionary.
 
 A conversion specifier contains two or more characters and has the following components, which must occur in this order:
 
@@ -582,16 +583,17 @@ A conversion specifier contains two or more characters and has the following com
 3. Conversion flags (optional), which affect the result of some conversion types.
 
 
-4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the next element of the tuple in *values*, and the object to convert comes after the minimum field width and optional precision.
+4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the nextelement of the tuple in *values, and the object to convert comes after the minimum field width and optional precision.
 
 
-5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next element of the tuple in *values*, and the value to convert comes after the
+5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next 
+element of the tuple in *values, and the value to convert comes after the
 precision.
 
 
 6. Conversion type.
 
-When the right argument is a dictionary (or other mapping type), then the formats in the string *must* include a parenthesized mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key
+When the right argument is a dictionary (or other mapping type), then the formats in the string *must include a parenthesized mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key
 selects the value to be formatted from the mapping.  For example:
 
 ```python
@@ -779,9 +781,9 @@ In addition to the literal forms, bytes objects can be created in a number of ot
 
 * From an iterable of integers: `bytes([1,2,3])`
 
-Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data.
+Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimalnumbers are a commonly used format for describing binary data.
 
-Since bytes objects are sequences of integers (akin to a tuple), for a bytes object *b*, `b[0]` will be an integer, while `b[0:1]` will be a bytes object of length 1.  (This contrasts with text strings, where both indexing and slicing will produce a string of length 1.)
+Since bytes objects are sequences of integers (akin to a tuple), for a bytes object , `b[0]` will be an integer, while `b[0:1]` will be a bytes object of length 1.  (This contrasts with text strings, where both indexing and slicing will produce a string of length 1.)
 
 ### Bytearray Objects
 
@@ -800,7 +802,8 @@ As bytearray objects are mutable, they support the
 mutable sequence operations in addition to the
 common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#bytes-methods).
 
-Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data.
+Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal 
+numbers are a commonly used format for describing binary data.
 
 Since bytearray objects are sequences of integers (akin to a list), for a bytearray object *b*, `b[0]` will be an integer, while `b[0:1]` will be a bytearray object of length 1.  (This contrasts with text strings, where both indexing and slicing will produce a string of length 1.)
 
@@ -810,7 +813,8 @@ Both bytes and bytearray objects support the common
 sequence operations. They interoperate not just with operands of the same type, but with any bytes-like object. Due to this flexibility, they can be freely mixed in operations without causing errors. However, the return type
 of the result may depend on the order of operands.
 
-NOTE: Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as their arguments, just as the methods on strings accept bytes as their arguments.  For example, you can write:
+NOTE: Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as theirarguments, just as the methods on strings accept bytes as their 
+arguments.  For example, you can write:
 
 ```
 a = "abc"
@@ -1549,11 +1553,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMD
-cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
-MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
-wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
-NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LD
-U5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0xOTU4ODA3
-MTkxXX0=
+eyJoaXN0b3J5IjpbMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0ND
+MzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkx
+MDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMj
+AsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUw
+NDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1Ny
+wxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1
+MjZdfQ==
 -->
