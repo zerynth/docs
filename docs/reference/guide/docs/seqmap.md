@@ -771,8 +771,7 @@ Only ASCII characters are permitted in bytes literals. Any binary values over 12
 While bytes literals and representations are based on ASCII text, bytes objects actually behave like immutable sequences of integers, with each value in the sequence restricted such that `0 <= x < 256` (attempts to violate this restriction will trigger `ValueError`). This is done deliberately to emphasize that while many binary formats include ASCII based
 elements and can be usefully manipulated with some text-oriented algorithms, this is not generally the case for arbitrary binary data (blindly applying text processing algorithms to binary data formats that are not ASCII compatible will usually lead to data corruption).
 
-In addition to the literal forms, bytes objects can be created in a number of
-other ways:
+In addition to the literal forms, bytes objects can be created in a number of other ways:
 
 
 * A zero-filled bytes object of a specified length: `bytes(10)`
@@ -780,13 +779,9 @@ other ways:
 
 * From an iterable of integers: `bytes([1,2,3])`
 
-Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal
-numbers are a commonly used format for describing binary data.
+Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data.
 
-Since bytes objects are sequences of integers (akin to a tuple), for a bytes
-object ```b```, `b[0]` will be an integer, while `b[0:1]` will be a bytes
-object of length 1.  (This contrasts with text strings, where both indexing
-and slicing will produce a string of length 1)
+Since bytes objects are sequences of integers (akin to a tuple), for a bytes object *b*, `b[0]` will be an integer, while `b[0:1]` will be a bytes object of length 1.  (This contrasts with text strings, where both indexing and slicing will produce a string of length 1.)
 
 ### Bytearray Objects
 
@@ -1564,11 +1559,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTI5Njk3OTksMTQ0MzM1NTc4NCwtMT
-A3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4
-ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNj
-IsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0
-OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Ny
-w1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgw
-NzE5MV19
+eyJoaXN0b3J5IjpbMTM0Mzg4ODQ0MywxNDQzMzU1Nzg0LC0xMD
+cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
+MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
+wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
+NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LD
+U5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0xOTU4ODA3
+MTkxXX0=
 -->
