@@ -472,15 +472,10 @@ Return the lowest index in the string where substring *sub* is found within the 
 NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
 
 
----
-#### `#!py3 index()`
 
-!!!abstract "`#!py3 index(sub, )`"
+    str.index(sub[,start[,end] ])
 
-Like `find()`, but raise 
-
-```
-:exc:`ValueError`
+Like `find()`, but raise Value
 ```
 
  when the substring is
@@ -1651,11 +1646,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2Mj
-QxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEs
-LTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NT
-YxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1Njcx
-NywtMzYxNDY5Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMj
-k0NTc5MTA1LC0xMTMxMDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4
-MDkxXX0=
+eyJoaXN0b3J5IjpbLTMxOTM3MzU4OCwtMzcyNzIzMDU3LDExOT
+YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
+MTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5Nj
+UyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEy
+MywtODkyOTU2NzE3LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0Mj
+AzMTM0ODMsLTEyOTQ1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYy
+Nzg5N119
 -->
