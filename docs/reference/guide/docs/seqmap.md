@@ -469,8 +469,7 @@ Return `True` if the string ends with the specified *suffix*, otherwise return `
 
 Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start* and *end* are interpreted as in slice notation.  Return `-1` if *sub* is not found.
 
-NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if sub is a substring or not, use the
-`in` operator.
+NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
 
 
 ---
@@ -1652,11 +1651,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4ODI0MzA5LDExOTYxNjk0Nyw1OTYyND
-EyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwtMTk1ODgwNzE5MSwt
-OTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5NjUyODc4MSwxMTk1Nj
-ExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEyMywtODkyOTU2NzE3
-LC0zNjE0NjkzNzUsLTcwMTMwMDAwOSw0MjAzMTM0ODMsLTEyOT
-Q1NzkxMDUsLTExMzEwNzc1NywtMTMwNTYyNzg5Nyw3MDI0MDgw
-OTFdfQ==
+eyJoaXN0b3J5IjpbLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2Mj
+QxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1MjYsLTE5NTg4MDcxOTEs
+LTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NT
+YxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcxMjMsLTg5Mjk1Njcx
+NywtMzYxNDY5Mzc1LC03MDEzMDAwMDksNDIwMzEzNDgzLC0xMj
+k0NTc5MTA1LC0xMTMxMDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4
+MDkxXX0=
 -->
