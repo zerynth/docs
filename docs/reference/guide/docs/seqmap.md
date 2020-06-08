@@ -370,8 +370,7 @@ Lists may be constructed in several ways:
 
 * Using a list comprehension: `[x for x in iterable]`
 
-Lists implement all of the common and
-mutable sequence operations.
+Lists implement all of the common and mutable sequence operations.
 
 ### Tuples
 
@@ -1668,9 +1667,10 @@ existing keys.  Return `None`.
 Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjM4NDIwNSwtMTgyMjY3Njg5MSw0OT
-Y1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjExNjc5LC02NDY3OTcx
-MjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC03MDEzMDAwMDksND
-IwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMxMDc3NTcsLTEzMDU2
-Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MTJdfQ==
+eyJoaXN0b3J5IjpbLTE5NTg4MDcxOTEsLTkwNjM4NDIwNSwtMT
+gyMjY3Njg5MSw0OTY1Mjg3ODEsMTE5NTYxMTY3OSwxMTk1NjEx
+Njc5LC02NDY3OTcxMjMsLTg5Mjk1NjcxNywtMzYxNDY5Mzc1LC
+03MDEzMDAwMDksNDIwMzEzNDgzLC0xMjk0NTc5MTA1LC0xMTMx
+MDc3NTcsLTEzMDU2Mjc4OTcsNzAyNDA4MDkxLDE2NTA4Mzk4MT
+JdfQ==
 -->
