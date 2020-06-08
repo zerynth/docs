@@ -528,17 +528,15 @@ For example:
 ['1', '2', '3']
 ```
 
-    str.startswith(prefix[, start[, end] ])
+    str.startswith(prefix[,start[,end] ])
 
 Return `True` if string starts with the *prefix*, otherwise return `False`. With optional *start*, test string beginning at that position.  With optional *end*, stop comparing string at that position.
 
 
     str.strip([chars[,dir=0] ])
 
-Return a copy of the string with the leading and trailing characters removed.
-The ```chars``` argument is a string specifying the set of characters to be removed.
-If omitted, the ```chars``` argument defaults to removing whitespace.
-The ```chars``` argument is not a prefix or suffix; rather, all combinations of its
+Return a copy of the string with the leading and trailing characters removed. The *chars* argument is a string specifying the set of characters to be removed.
+If omitted, the *chars* argument defaults to removing whitespace. The charsargument is not a prefix or suffix; rather, all combinations of its
 values are stripped:
 
 ```
@@ -1603,11 +1601,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDIwMjA1OSwtMTMyMjQ2ODAyMCw4Nj
-g2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4
-OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOT
-YxNjk0Nyw1OTYyNDEyNzYsNzU2ODczODkyLDgzNzI3MTUyNiwt
-MTk1ODgwNzE5MSwtOTA2Mzg0MjA1LC0xODIyNjc2ODkxLDQ5Nj
-UyODc4MSwxMTk1NjExNjc5LDExOTU2MTE2NzksLTY0Njc5NzEy
-M119
+eyJoaXN0b3J5IjpbLTkzNDAyMzA5LC0xMzIyNDY4MDIwLDg2OD
+YwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4
+LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5Nj
+E2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4OTIsODM3MjcxNTI2LC0x
+OTU4ODA3MTkxLC05MDYzODQyMDUsLTE4MjI2NzY4OTEsNDk2NT
+I4NzgxLDExOTU2MTE2NzksMTE5NTYxMTY3OSwtNjQ2Nzk3MTIz
+XX0=
 -->
