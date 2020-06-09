@@ -1129,24 +1129,19 @@ Dictionaries can be created by placing a comma-separated list of `key: value` pa
 
     class dict(*args)
 
-If no positional argument is given, an empty dictionary is created.
-If a positional argument is given and it is a mapping object, a dictionary
-is created with the same key-value pairs as the mapping object.  Otherwise,
-the positional argument must be an iterable object.  Each item in
-the iterable must itself be an iterable with exactly two objects.  The
-first object of each item becomes a key in the new dictionary, and the
-second object the corresponding value.  If a key occurs more than once, the
-last value for that key becomes the corresponding value in the new
-dictionary.
+If no positional argument is given, an empty dictionary is created. If a positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.  Otherwise,the positional argument must be an iterable object.  Each item in the iterable must itself be an iterable with exactly two objects.  The first object of each item becomes a key in the new dictionary, and the
+second object the corresponding value.  If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
 
 These are the operations that dictionaries support:
 
 
-### len(d)()
-Return the number of items in the dictionary ```d```.
+    len(d)
+
+Return the number of items in the dictionary *d*.
 
 
-### d[key]()
+    d[key]
+
 Return the item of ```d``` with key ```key```.  Raises a 
 
 ```
@@ -1281,7 +1276,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5MTgyNDc1LC0xODM4MTY1MzEyLDg5ND
+eyJoaXN0b3J5IjpbLTcxNzcxNDE5LC0xODM4MTY1MzEyLDg5ND
 EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
 MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
 E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
