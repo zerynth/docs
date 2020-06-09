@@ -96,7 +96,7 @@ Besides numbers, Python can also manipulate strings, which can be expressed in s
 '"Isn\'t," she said.'
 ```
 
-Strings can be concatenated (glued together) with the `+` operator, and repeated with `\*`:
+Strings can be concatenated (glued together) with the `+` operator, and repeated with `*`:
 
 ```
 >>> # 3 times 'un', followed by 'ium'
@@ -748,7 +748,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NzEwODYwMCwyMDIyOTE4ODI4LDIwND
-E5NDEwMCwtMTkwNTEyMTY0MCwtMTA0ODE0MDYwNCwtMTEwMTkx
-NDUyOF19
+eyJoaXN0b3J5IjpbLTEyMzQ4OTAwNTYsMjAyMjkxODgyOCwyMD
+QxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5
+MTQ1MjhdfQ==
 -->
