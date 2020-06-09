@@ -857,10 +857,7 @@ The subsequence to search for may be any bytes-like object or an  integer in the
 `bytes.join(iterable)` `bytearray.join(iterable)`
 
 
-Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in iterable```
-that are not bytes-like objects or strings.
-The separator between elements is the contents
-of the bytes or bytearray object providing this method.
+Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in *iterable* that are not bytes-like objects or strings. The separator between elements is the contents of the bytes or bytearray object providing this method.
 
 
 ---
@@ -1483,11 +1480,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4MzcwNTM5LDExMTM5NDcwMDUsMTUzMz
-k0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4
-NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC
-0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2
-MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC
-0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNT
+MzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1
+Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NT
+EsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4
+NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3Nj
+MsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3
+Mzg5Ml19
 -->
