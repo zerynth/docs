@@ -1070,28 +1070,20 @@ The following table lists operations available for `set()` that do not apply to 
 
 
 
-update(other,...) set |= other | ...
+`update(other,...)` `set |= other | ...`
 
 Update the set, adding elements from all others.
 
+`intersection_update(other, ...)` `set &= other & ...`
 
----
-#### `#!py3 intersection_update()`
-
-!!!abstract "`#!py3 intersection_update(other, ...)`"
-
-
-### frozenset.set &= other & ...()
 Update the set, keeping only elements found in it and all others.
 
 
----
-#### `#!py3 difference_update()`
 
-!!!abstract "`#!py3 difference_update(other, ...)`"
+`difference_update`(_other_,  _..._)
 
+`set -= other | ...`
 
-### frozenset.set -= other | ...()
 Update the set, removing elements found in others.
 
 
@@ -1329,11 +1321,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDMzNjYzNCwyMDM3NDcwNzQxLC0xNT
-A1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1
-Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NS
-wtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2
-ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nz
-g4LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5
-NjE2OTQ3XX0=
+eyJoaXN0b3J5IjpbNzQ3Nzg1Mzk4LDIwMzc0NzA3NDEsLTE1MD
+U0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3
+ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC
+0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4
+NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3OD
+gsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2
+MTY5NDddfQ==
 -->
