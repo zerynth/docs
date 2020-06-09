@@ -1080,9 +1080,7 @@ Update the set, keeping only elements found in it and all others.
 
 
 
-`difference_update`(_other_,  _..._)
-
-`set -= other | ...`
+`difference_update(other, ...)` `set -= other | ...`
 
 Update the set, removing elements found in others.
 
@@ -1321,7 +1319,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3Nzg1Mzk4LDIwMzc0NzA3NDEsLTE1MD
+eyJoaXN0b3J5IjpbODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MD
 U0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3
 ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC
 0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4
