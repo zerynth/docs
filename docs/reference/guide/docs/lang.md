@@ -324,27 +324,27 @@ Set the number of elements of *seq* to *n*.
 
 
 **`PSEQUENCE_SIZE(seq)`**
-Return the maximum number of elements storable in seq*emphasized text*.
+Return the maximum number of elements storable in *seq*.
 
 
 **`PSEQUENCE_BYTES(seq)`**
-Return a uint8_t pointer to the bytes stored in ```seq```.
+Return a uint8_t pointer to the bytes stored in *seq*.
 
 
 **`PSEQUENCE_SHORTS(seq)`**
-Return a uint16_t pointer to the integers stored in ```seq```.
+Return a uint16_t pointer to the integers stored in *seq.*
 
 
 **`PSEQUENCE_OBJECTS(seq)`**
-Return a PObject\*\* to the PObjects stored in ```seq```.
+Return a PObject\*\* to the PObjects stored in *seq*.
 
 
 **`PLIST_ITEM(lst, i)`**
-Return the i-th item in ```lst``` with ```lst``` of type PLIST.
+Return the i-th item in *lst* with *lst*` of type PLIST.
 
 
  **`PLIST_SET_ITEM(lst, i, item)`**
-Set the i-th item in ```lst``` to ```item```, with ```lst``` of type PLIST.
+Set the i-th item in *lst* to ```item```, with ```lst``` of type PLIST.
 
 
 **`PTUPLE_ITEM(lst, i)`**
@@ -550,6 +550,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODMxMjEwNzksNzI5OTc2NDM0LDg2Mj
-c1MzQ3MywxMDUyMTg0OTc0XX0=
+eyJoaXN0b3J5IjpbMTIxMjU4MDM3MCw3Mjk5NzY0MzQsODYyNz
+UzNDczLDEwNTIxODQ5NzRdfQ==
 -->
