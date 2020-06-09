@@ -1086,9 +1086,10 @@ Update the set, removing elements found in others.
 
 
 
-`symmetric_difference_update`(_other_)
+`symmetric_difference_update(other)` 
 
-`set ^= other`
+    set ^= other
+
 Update the set, keeping only elements found in either set, but not in both.
 
 
@@ -1315,12 +1316,13 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY1MzEzNCw4OTQxMDkwMjYsMjAzNz
-Q3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5NDg5
-MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUxLD
-IwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MSwtMTMy
-MjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExND
-IsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcy
-NzIzMDU3XX0=
+eyJoaXN0b3J5IjpbLTEyMjk2MjQ1MzYsODk0MTA5MDI2LDIwMz
+c0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4
+OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MS
+wyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEz
+MjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMT
+QyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3
+MjcyMzA1N119
 -->
