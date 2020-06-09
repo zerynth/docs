@@ -1009,21 +1009,18 @@ Return the cardinality of set *s*.
 
     x in s
 
-Test *x* for membership in `s`.
+Test *x* for membership in *s*.
 
 
     x not in s
 
-Test ```x``` for non-membership in ```s```.
+Test *x* for non-membership in *s*.
 
 
----
-#### `#!py3 isdisjoint()`
 
-!!!abstract "`#!py3 isdisjoint(other)`"
+    isdisjoint(other)
 
-Return `True` if the set has no elements in common with ```other```.  Sets are
-disjoint if and only if their intersection is the empty set.
+Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
 
 ---
@@ -1370,11 +1367,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjUyMjgyOTcsLTE1MDU0MzMwMDcsMT
-ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
-MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
-AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
-NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
-AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
-MjQxMjc2XX0=
+eyJoaXN0b3J5IjpbLTU5ODE1MTY4NiwtMTUwNTQzMzAwNywxMT
+EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
+NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
+IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
+NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
+M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
+NDEyNzZdfQ==
 -->
