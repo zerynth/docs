@@ -1098,22 +1098,13 @@ Add element *elem* to the set.
 
     remove(elem)
 
-Remove element *elem* from the set.  Raises 
-
-```
-:exc:`KeyError`
-```
-
- if ```elem``` is
-not contained in the set.
+Remove element *elem* from the set.  Raises `KeyError`
+ if *elem* is not contained in the set.
 
 
----
-#### `#!py3 discard()`
+    discard(elem)
 
-!!!abstract "`#!py3 discard(elem)`"
-
-Remove element ```elem``` from the set if it is present.
+Remove element *elem* from the set if it is present.
 
 
 ---
@@ -1309,8 +1300,9 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4MTUxMTg5LC0xODM4MTY1MzEyLDg5ND
+eyJoaXN0b3J5IjpbNDM0Njg3MjY0LC0xODM4MTY1MzEyLDg5ND
 EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
 MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
 E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
