@@ -1121,20 +1121,14 @@ Remove all elements from the set.
 A mapping object maps hashable values to arbitrary objects.
 Mappings are mutable objects.  There is currently only one standard mapping type, the *dictionary*.
 
-A dictionary’s keys are *almost* arbitrary values.  Values that are not hashable, that is, values containing lists, dictionaries or other
-mutable types (that are compared by value rather than by object identity) may
-not be used as keys.  Numeric types used for keys obey the normal rules for
-numeric comparison: if two numbers compare equal (such as `1` and `1.0`)
-then they can be used interchangeably to index the same dictionary entry.  (Note
-however, that since computers store floating-point numbers as approximations it
-is usually unwise to use them as dictionary keys.)
+A dictionary’s keys are *almost* arbitrary values.  Values that are not hashable, that is, values containing lists, dictionaries or other mutable types (that are compared by value rather than by object identity) may not be used as keys.  Numeric types used for keys obey the normal rules for numeric comparison: if two numbers compare equal (such as `1` and `1.0`) then they can be used interchangeably to index the same dictionary entry.  (Note however, that since computers store floating-point numbers as approximations it is usually unwise to use them as dictionary keys.)
 
-Dictionaries can be created by placing a comma-separated list of `key: value`
-pairs within braces, for example: `{'jack': 4098, 'sjoerd': 4127}` or `{4098:
+Dictionaries can be created by placing a comma-separated list of `key: value` pairs within braces, for example: `{'jack': 4098, 'sjoerd': 4127}` or `{4098:
 'jack', 4127: 'sjoerd'}`, or by the `dict()` constructor.
 
 
-### class dict(\*args)
+    class dict(*args)
+
 If no positional argument is given, an empty dictionary is created.
 If a positional argument is given and it is a mapping object, a dictionary
 is created with the same key-value pairs as the mapping object.  Otherwise,
@@ -1287,7 +1281,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxNzAyMTgyLC0xODM4MTY1MzEyLDg5ND
+eyJoaXN0b3J5IjpbODY5MTgyNDc1LC0xODM4MTY1MzEyLDg5ND
 EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
 MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
 E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
