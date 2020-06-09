@@ -958,7 +958,7 @@ Shorts and shortsarray can’t be specified with literals, but only using one of
 
 Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal numbers are a commonly used format for describing binary data.
 
-Since shorts objects are sequences of integers (akin to a tuple), for a shorts object ```b```, `b[0]` will be an integer, while `b[0:1]` will be a shorts object of length 1.
+Since shorts objects are sequences of integers (akin to a tuple), for a shorts object *b*, `b[0]` will be an integer, while `b[0:1]` will be a shorts object of length 1.
 
 Shortarray objects are mutable sequences of 16 bits integers. Shorts and shortsarray can’t be specified with literals, but only using one of the following ways:
 
@@ -968,12 +968,9 @@ Shortarray objects are mutable sequences of 16 bits integers. Shorts and shortsa
 
 * From an iterable of integers: `shortarray([1,2,3])`
 
-Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal
-numbers are a commonly used format for describing binary data.
+Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal numbers are a commonly used format for describing binary data.
 
-Since shortarray objects are sequences of integers (akin to a list), for a shortarray
-object ```b```, `b[0]` will be an integer, while `b[0:1]` will be a shortarray
-object of length 1.
+Since shortarray objects are sequences of integers (akin to a list), for a shortarray object ```b```, `b[0]` will be an integer, while `b[0:1]` will be a shortarray object of length 1.
 
 Shorts and shortarryas support only a limited set of methods:
 
@@ -1388,11 +1385,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI2Njc3MjEsLTE1MDU0MzMwMDcsMT
-ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
-MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
-AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
-NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
-AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
-MjQxMjc2XX0=
+eyJoaXN0b3J5IjpbMjA2MTM5Nzc2MywtMTUwNTQzMzAwNywxMT
+EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
+NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
+IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
+NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
+M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
+NDEyNzZdfQ==
 -->
