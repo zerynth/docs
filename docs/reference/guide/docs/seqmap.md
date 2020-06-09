@@ -994,9 +994,8 @@ Non-empty sets (not frozensets) can be created by placing a comma-separated list
 The constructors for both classes work the same:
 
 
-### class set()
+`class set ([iterable])` `class frozenset ([ iterable])`
 
-### class frozenset()
 Return a new set or frozenset object whose elements are taken from
 ```iterable```.  The elements of a set must be hashable.  To
 represent sets of sets, the inner sets must be `frozenset()`
@@ -1372,7 +1371,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDg5MTcyNSwtMTUwNTQzMzAwNywxMT
+eyJoaXN0b3J5IjpbLTk3MTg4NDk2NywtMTUwNTQzMzAwNywxMT
 EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
 NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
 IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
