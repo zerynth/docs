@@ -548,8 +548,7 @@ passed using *call by value* (where the ```value``` is always an object ```refer
 
  When a function calls another function, a new local symbol table is created for that call.
 
-It is simple to write a function that returns a list of the numbers of the
-Fibonacci series, instead of printing it:
+It is simple to write a function that returns a list of the numbers of the Fibonacci series, instead of printing it:
 
 ```
 >>> def fib2(n): # return Fibonacci series up to n
@@ -580,8 +579,7 @@ object types and methods, using ```classes```, see tut-classes)The method `appen
 
 ### Default Argument Values
 
-The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is
-defined to allow.  For example:
+The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is defined to allow.  For example:
 
 ```
 def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
@@ -748,7 +746,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI5MjQyNCwtMTIzNDg5MDA1NiwyMD
-IyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEyMTY0MCwtMTA0ODE0
-MDYwNCwtMTEwMTkxNDUyOF19
+eyJoaXN0b3J5IjpbMjU5OTcxNzQwLC0xMjM0ODkwMDU2LDIwMj
+I5MTg4MjgsMjA0MTk0MTAwLC0xOTA1MTIxNjQwLC0xMDQ4MTQw
+NjA0LC0xMTAxOTE0NTI4XX0=
 -->
