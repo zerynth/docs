@@ -283,29 +283,29 @@ Return the float value contained in *x*, an untagged PObject of type PFLOAT.
 
 
  **`pinteger_new(int64_t x)`**
-Return a PINTEGER object with value ```x```
+Return a PINTEGER object with value *x*
 
 **`pfloat_new(double x)`**
-Return a PFLOAT object with value ```x```
+Return a PFLOAT object with value *x*
 
 ## Bool & None
 
 Python has some special values of boolean type, True and False, and a special value None. Accessing such values can be done with the following macros:
 
 
-### IS_BOOL(x)
-Return true if ```x``` is a PObject of type PBOOL
+**`IS_BOOL(x)`**
+Return true if *x* is a PObject of type PBOOL
 
 
-### PBOOL_TRUE()
+**`PBOOL_TRUE`**
 Return a tagged PObject of type PBOOL and value True
 
 
-### PBOOL_FALSE()
+**`PBOOL_FALSE`**
 Return a tagged PObject of type PBOOL and value False
 
 
-### MAKE_NONE()
+**`MAKE_NONE`**
 Return a tagged PObject of type PNONE and value None
 
 ## Sequences
@@ -550,6 +550,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2OTc4MjcxLDcyOTk3NjQzNCw4NjI3NT
+eyJoaXN0b3J5IjpbNzI2MDU5NzI2LDcyOTk3NjQzNCw4NjI3NT
 M0NzMsMTA1MjE4NDk3NF19
 -->
