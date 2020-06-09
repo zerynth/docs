@@ -261,7 +261,7 @@ if (parse_py_args("ifsI",nargs,args,&a,&b,&c,&len,2,&d)!=4)
 In the current version there are only three supported type of numbers: PSMALLINT, PINTEGER and PFLOAT.
 
 
-PSMALLINT_NEW(x)
+**`PSMALLINT_NEW(x)`**
 Return a tagged PObject of type PSMALLINT containing the integer value x. No overflow check is done.
 
 
@@ -552,6 +552,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjQ1NjIwNTksNzI5OTc2NDM0LDg2Mj
-c1MzQ3MywxMDUyMTg0OTc0XX0=
+eyJoaXN0b3J5IjpbMTQxNjI0ODI0NSw3Mjk5NzY0MzQsODYyNz
+UzNDczLDEwNTIxODQ5NzRdfQ==
 -->
