@@ -1062,24 +1062,16 @@ Return a new set with elements common to the set and all others.
 Return a new set with elements in either the set or *other* but not both.
 
 
----
-#### `#!py3 copy()`
+    copy()
 
-!!!abstract "`#!py3 copy()`"
+Return a new set with a shallow copy of *s*.
 
-Return a new set with a shallow copy of ```s```.
-
-The following table lists operations available for `set()` that do not
-apply to immutable instances of `frozenset()`:
+The following table lists operations available for `set()` that do not apply to immutable instances of `frozenset()`:
 
 
----
-#### `#!py3 update()`
 
-!!!abstract "`#!py3 update(other, ...)`"
+update(other,...) set |= other | ...
 
-
-### frozenset.set |= other | ...()
 Update the set, adding elements from all others.
 
 
@@ -1337,7 +1329,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzI3MDkxNCwyMDM3NDcwNzQxLC0xNT
+eyJoaXN0b3J5IjpbMjE0MDMzNjYzNCwyMDM3NDcwNzQxLC0xNT
 A1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1
 Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NS
 wtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2
