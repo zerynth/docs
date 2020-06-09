@@ -1194,31 +1194,18 @@ If *key* is in the dictionary, remove it and return its value, else return *defa
 
 Remove and return an arbitrary `(key, value)` pair from the dictionary.
 
-`popitem()` is useful to destructively iterate over a dictionary, as often used in set algorithms.  If the dictionary is empty, calling
-`popitem()` raises a 
-
-```
-:exc:`KeyError`
-```
-
-.
+`popitem()` is useful to destructively iterate over a dictionary, as often used in set algorithms.  If the dictionary is empty, calling `popitem()` raises a `KeyError`.
 
 
----
-#### `#!py3 update()`
 
-!!!abstract "`#!py3 update()`"
+    update()
 
-Update the dictionary with the key/value pairs from ```other```, overwriting
-existing keys.  Return `None`.
+Update the dictionary with the key/value pairs from *other*, overwriting existing keys.  Return `None`.
 
 `update()` accepts another dictionary object.
 
 
----
-#### `#!py3 values()`
-
-!!!abstract "`#!py3 values()`"
+    values()
 
 Return a new view of the dictionary’s values.
 
@@ -1238,11 +1225,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc1ODQwNjc4LDk0NTkyMDA0LC0xODM4MT
-Y1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3
-LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMD
-cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
-MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
-wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
-NzYwMzZdfQ==
+eyJoaXN0b3J5IjpbLTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4Mz
+gxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMw
+MDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLT
+EwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYz
+ODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0Mz
+YyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAx
+NDk3NjAzNl19
 -->
