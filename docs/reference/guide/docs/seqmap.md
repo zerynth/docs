@@ -1086,19 +1086,14 @@ Update the set, removing elements found in others.
 
 
 
-`symmetric_difference_update(other)` 
-
-    set ^= other
+`symmetric_difference_update(other)` `set ^= other`
 
 Update the set, keeping only elements found in either set, but not in both.
 
 
----
-#### `#!py3 add()`
+    add(elem)
 
-!!!abstract "`#!py3 add(elem)`"
-
-Add element ```elem``` to the set.
+Add element *elem* to the set.
 
 
 ---
@@ -1318,7 +1313,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjk2MjQ1MzYsODk0MTA5MDI2LDIwMz
+eyJoaXN0b3J5IjpbLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMz
 c0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4
 OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MS
 wyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEz
