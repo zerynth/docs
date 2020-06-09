@@ -902,13 +902,9 @@ For example:
 
 
 
-`bytes.strip([chars[, dir=0] ])` `bytearray.strip([chars[, dir=0] ])`
+`bytes.strip([chars[,dir=0] ])` `bytearray.strip([chars[,dir=0] ])`
 
-Return a copy of the binary sequence with the leading and trailing characters removed.
-The ```chars``` argument is a string or binary sequence specifying the set of characters to be removed.
-If omitted, the ```chars``` argument defaults to removing whitespace.
-The ```chars``` argument is not a prefix or suffix; rather, all combinations of its
-values are stripped:
+Return a copy of the binary sequence with the leading and trailing characters removed. The *chars* argument is a string or binary sequence specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
 ```
 >>> b'   spacious   '.strip()
@@ -1426,7 +1422,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODc2NjA4MSwtMTUwNTQzMzAwNywxMT
+eyJoaXN0b3J5IjpbLTc5MTU5NjkwOSwtMTUwNTQzMzAwNywxMT
 EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
 NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
 IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
