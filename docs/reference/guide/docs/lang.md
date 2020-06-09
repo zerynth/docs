@@ -65,51 +65,62 @@ Type of a PObject representing a 64 bits float. Untagged.
 Type of a PObject representing a boolean. Tagged.
 
 
-### PSTRING()
+    PSTRING
+
 Type of a PObject representing a string. Untagged.
 
 
-### PBYTES()
+    PBYTES
+
 Type of a PObject representing a byte immutable sequence. Untagged.
 
 
-### PBYTEARRAY()
+    PBYTEARRAY
+
 Type of a PObject representing a byte mutable sequence. Tagged.
 
 
-### PSHORTS()
+    PSHORTS
+
 Type of a PObject representing a 16 bits unsigned integer immutable sequence. Untagged.
 
+    PSHORTARRAY
 
-### PSHORTARRAY()
 Type of a PObject representing a 16 bits unsigned integer mutable sequence. Untagged.
 
 
-### PLIST()
+    PLIST
+
 Type of a PObject representing a mutable sequence of PObjects. Untagged.
 
 
-### PTUPLE()
+    PTUPLE
+
 Type of a PObject representing an immutable sequence of PObjects. Untagged.
 
 
-### PRANGE()
+    PRANGE
+
 Type of a PObject representing a range. Untagged.
 
 
-### PFSET()
+    PFSET
+
 Type of a PObject representing an immutable set. Untagged.
 
 
-### PSET()
+    PSET
+
 Type of a PObject representing a mutable set. Untagged.
 
 
-### PDICT()
+    PDICT
+
 Type of a PObject representing a dictionary. Untagged.
 
 
-### PFUNCTION()
+    PFUNCTION
+
 Type of a PObject representing a function. Untagged.
 
 
@@ -521,6 +532,7 @@ Raise InvalidHardwareStatusError.
 ### ERR_PERIPHERAL_INITIALIZATION_ERROR()
 Raise HardwareInitializationError.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDgwNzI0OTJdfQ==
+eyJoaXN0b3J5IjpbLTEyMDEzMjA2NThdfQ==
 -->
