@@ -67,16 +67,16 @@ err_t my_c_function(int32_t nargs, PObject *self, PObject **args, PObject **res)
 where:
 
 
-* **nargs** is the number of arguments passed to `my_py_function`
+* **```nargs**``` is the number of arguments passed to `my_py_function`
 
 
-* **self** is the self parameter in case `my_py_function` is a method
+* **```self**``` is the self parameter in case `my_py_function` is a method
 
 
-* **args** is an array of PObject\*, the generic structure used by the VM to represent Python objects
+* **```args**``` is an array of PObject\*, the generic structure used by the VM to represent Python objects
 
 
-* **res** is a pointer to a PObject containing the result of the function call
+* **res**```res``` is a pointer to a PObject containing the result of the function call
 
 
 * the returned value is of type `err_t`
@@ -92,7 +92,7 @@ For more details on the low level VM functions and macros available for hybrid p
 Some utility macros are added on top of the VM defined macro by the header `zerynth.h`.
 
 
-    C_NATIVE(fn)
+   ### C_NATIVE(fn)
 
 Used to define the implementation of a C function callable from Python. It equals to:
 
@@ -101,19 +101,19 @@ err_t fn(int nargs, PObject *self, PObject **args, PObject **res)
 ```
 
 
-    C_NATIVE_UNWARN()
+   ### C_NATIVE_UNWARN()
 
 Silences C warnings about unused `C_NATIVE` arguments in the body of a C function callable from Python
 
 
-    debug(...)
+   ### debug(...)
 
 If the user defines `ZERYNTH_DEBUG` before including `zerynth.h`, this macro behaves like a printf, writing to the default serial port of the virtual machine. Otherwise it does nothing.
 
 The printf funcionalities are limited to the following placeholders: `%s` `%i` `%I` `%d` `%D` `%u` `%U` `%x` `%X` `%p` `%c` `%%`.
 
 
-    printf(...)
+   ### printf(...)
 
 If the user defines `ZERYNTH_PRINTF` before including `zerynth.h`, this macro behaves like a printf, writing to the default serial port of the virtual machine. Otherwise it does nothing.
 
@@ -141,5 +141,5 @@ C functions callable from Python have some limitations:
 Refer to VM Guide for the available api.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0Mzk1NjU0XX0=
+eyJoaXN0b3J5IjpbLTEzMTI2MzI3MTIsNzg0Mzk1NjU0XX0=
 -->
