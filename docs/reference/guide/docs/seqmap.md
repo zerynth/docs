@@ -1107,25 +1107,12 @@ Remove element *elem* from the set.  Raises `KeyError`
 Remove element *elem* from the set if it is present.
 
 
----
-#### `#!py3 pop()`
-
-!!!abstract "`#!py3 pop()`"
+    pop()
 
 Remove and return an arbitrary element from the set.  Raises
+`KeyError` if the set is empty.
 
-
-```
-:exc:`KeyError`
-```
-
- if the set is empty.
-
-
----
-#### `#!py3 clear()`
-
-!!!abstract "`#!py3 clear()`"
+    clear()
 
 Remove all elements from the set.
 
@@ -1302,11 +1289,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0Njg3MjY0LC0xODM4MTY1MzEyLDg5ND
-EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
-MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
-E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
-MzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2MTk5Nz
-AsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMzYsMTA3
-NTkwNzYzXX0=
+eyJoaXN0b3J5IjpbLTIwNzU4NjQyNzQsLTE4MzgxNjUzMTIsOD
+k0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0
+NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0My
+wtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0y
+NDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOT
+k3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwx
+MDc1OTA3NjNdfQ==
 -->
