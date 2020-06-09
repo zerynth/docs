@@ -872,14 +872,9 @@ Return `True` if the binary data starts with the specified *prefix*, otherwise r
 
 `bytes.split(sep=None,maxsplit=-1)` `bytearray.split(sep=None, maxsplit=-1)`
 
-Split the binary sequence into subsequences of the same type, using ```sep```
-as the delimiter string. If ```maxsplit``` is given and non-negative, at most
-```maxsplit``` splits are done (thus, the list will have at most `maxsplit+1`
-elements).  If ```maxsplit``` is not specified or is `-1`, then there is no
-limit on the number of splits (all possible splits are made).
+Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string. If *maxsplit* is given and non-negative, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not specified or is `-1`, then there is no limit on the number of splits (all possible splits are made).
 
-If ```sep``` is given, consecutive delimiters are not grouped together and are
-deemed to delimit empty subsequences (for example, `b'1,,2'.split(b',')`
+If *sep* is given, consecutive delimiters are not grouped together and aredeemed to delimit empty subsequences (for example, `b'1,,2'.split(b',')`
 returns `[b'1', b'', b'2']`).  The ```sep``` argument may consist of a
 multibyte sequence (for example, `b'1<>2<>3'.split(b'<>')` returns
 `[b'1', b'2', b'3']`). Splitting an empty sequence with a specified
@@ -1449,7 +1444,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODkyMDM3LC0xNTA1NDMzMDA3LDExMT
+eyJoaXN0b3J5IjpbNjIzMTU0MjM3LC0xNTA1NDMzMDA3LDExMT
 M5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1
 NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMi
 wtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2
