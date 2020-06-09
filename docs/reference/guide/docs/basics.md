@@ -532,7 +532,7 @@ We can create a function that writes the Fibonacci series to an arbitrary bounda
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
 ```
 
-The keyword `def` introduces a function ```definition```.  It must be followed by the function name and the parenthesized list of formal parameters.
+The keyword `def` introduces a function *definition*.  It must be followed by the function name and the parenthesized list of formal parameters.
 The statements that form the body of the function start at the next line, and must be indented.
 
 The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or ```docstring```. There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.
@@ -748,7 +748,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQ4OTAwNTYsMjAyMjkxODgyOCwyMD
-QxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5
-MTQ1MjhdfQ==
+eyJoaXN0b3J5IjpbLTEyOTU4MjA3NDQsLTEyMzQ4OTAwNTYsMj
+AyMjkxODgyOCwyMDQxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgx
+NDA2MDQsLTExMDE5MTQ1MjhdfQ==
 -->
