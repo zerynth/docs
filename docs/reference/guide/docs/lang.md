@@ -206,9 +206,9 @@ Type of a PObject representing a Python thread. Untagged.
 
 Given an array of PObject pointers *args*, with *nargs* elements, try to convert such elements to C structures according to a format string *fmt*. *fmt* is conceptually similar to the format string of printf.
 
-The variadic arguments (vararg) are usually pointers to store the converted value of *args[n]*. The nth character of ```fmt``` identifies the type of PObject expected in *args[n]*. If the length of ```fmt``` is greater than ```nargs```, the remaining varargs must also specify default values.
+The variadic arguments (vararg) are usually pointers to store the converted value of *args[n]*. The nth character of *fmt* identifies the type of PObject expected in *args[n]*. If the length of *fmt* is greater than *nargs*, the remaining varargs must also specify default values.
 
-```fmt``` may contain any of the following characters in the nth position:
+*fmt* may contain any of the following characters in the nth position:
 
 
 * “l”: the nth argument must be of type PINTEGER. One vararg required of type int64_t\* to store the converted value.
@@ -552,6 +552,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY0OTk1MjI2LDg2Mjc1MzQ3MywxMDUyMT
-g0OTc0XX0=
+eyJoaXN0b3J5IjpbLTE5NjAzMzM1ODIsODYyNzUzNDczLDEwNT
+IxODQ5NzRdfQ==
 -->
