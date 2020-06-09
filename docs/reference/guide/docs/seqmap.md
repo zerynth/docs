@@ -1045,15 +1045,8 @@ Test whether the set is a proper superset of  *other*, that is,  `set  >=  other
 
 Return a new set with elements from the set and all others.
 
-intersection(other, _...) `set & other & ...`
+`intersection(other,...)` `set & other & ...`
 
----
-#### `#!py3 union()`
-
-!!!abstract "`#!py3 union(other, ...)`"
-
-
-### frozenset.set | other | ...()
 Return a new set with elements from the set and all others.
 
 
@@ -1362,7 +1355,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTE0NTYxMiwyMDM3NDcwNzQxLC0xNT
+eyJoaXN0b3J5IjpbMTk4MzAyMjgxMywyMDM3NDcwNzQxLC0xNT
 A1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1
 Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NS
 wtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2
