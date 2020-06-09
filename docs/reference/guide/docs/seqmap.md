@@ -1187,18 +1187,14 @@ Return a new view of the dictionary’s keys.  See the documentation of view obj
 
 
 
-If key is in the dictionary, remove it and return its value, else return```default```.  If ```default``` is not given and ```key``` is not in the dictionary, a  KeyError is raised.
+If *key* is in the dictionary, remove it and return its value, else return *default*.  If *default* is not given and *key* is not in the dictionary, a  `KeyError` is raised.
 
 
----
-#### `#!py3 popitem()`
-
-!!!abstract "`#!py3 popitem()`"
+    popitem()
 
 Remove and return an arbitrary `(key, value)` pair from the dictionary.
 
-`popitem()` is useful to destructively iterate over a dictionary, as
-often used in set algorithms.  If the dictionary is empty, calling
+`popitem()` is useful to destructively iterate over a dictionary, as often used in set algorithms.  If the dictionary is empty, calling
 `popitem()` raises a 
 
 ```
@@ -1242,11 +1238,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMjMyNjA0MSw5NDU5MjAwNCwtMTgzOD
-E2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAw
-NywxMTEzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMT
-A3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4
-ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNj
-IsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0
-OTc2MDM2XX0=
+eyJoaXN0b3J5IjpbMzc1ODQwNjc4LDk0NTkyMDA0LC0xODM4MT
+Y1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3
+LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMD
+cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
+MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
+wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
+NzYwMzZdfQ==
 -->
