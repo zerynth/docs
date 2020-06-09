@@ -92,7 +92,7 @@ For more details on the low level VM functions and macros available for hybrid p
 Some utility macros are added on top of the VM defined macro by the header `zerynth.h`.
 
 
-### C_NATIVE(fn)
+C_NATIVE(fn)
 Used to define the implementation of a C function callable from Python. It equals to:
 
 ```
@@ -137,5 +137,5 @@ C functions callable from Python have some limitations:
 Refer to VM Guide for the available api.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc1NjkwMThdfQ==
+eyJoaXN0b3J5IjpbLTE5MDYzOTI5NTFdfQ==
 -->
