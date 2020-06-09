@@ -866,8 +866,7 @@ Return a copy of the sequence with all occurrences of subsequence *old* replaced
 NOTE: The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
 
 
-
-bytes.startswith(prefix[,start[, end]])
+`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`
 
 Return `True` if the binary data starts with the specified ```prefix```,
 otherwise return `False`. With optional ```start```, test beginning at that position.
@@ -1462,7 +1461,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODY3NjQyNSwtMTUwNTQzMzAwNywxMT
+eyJoaXN0b3J5IjpbMTQ3MjEwMzg0NywtMTUwNTQzMzAwNywxMT
 EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
 NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
 IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
