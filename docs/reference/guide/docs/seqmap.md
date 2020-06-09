@@ -834,17 +834,10 @@ Return the number of non-overlapping occurrences of subsequence *sub* in the ran
 
 The subsequence to search for may be any bytes-like object or an integer in the range 0 to 255.
 
+bytes.endswith(suffix[,start[,end] ])
 
----
-#### `#!py3 endswith()`
+bytearray.endswith(suffix[,start[,end]])
 
-!!!abstract "`#!py3 endswith(suffix, )`"
-
-
----
-#### `#!py3 endswith()`
-
-!!!abstract "`#!py3 endswith(suffix, )`"
 
 Return `True` if the binary data ends with the specified ```suffix```,
 otherwise return `False`. With optional ```start```, test beginning at that position.  With
@@ -1540,11 +1533,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQyODA4ODcsMTExMzk0NzAwNSwxNT
-MzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1
-Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NT
-EsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4
-NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3Nj
-MsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3
-Mzg5Ml19
+eyJoaXN0b3J5IjpbMTg0MzYxMjY1NSwxMTEzOTQ3MDA1LDE1Mz
+M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
+ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
+wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
+NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2My
+wtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNzU2ODcz
+ODkyXX0=
 -->
