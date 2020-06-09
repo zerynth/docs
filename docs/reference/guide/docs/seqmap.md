@@ -913,21 +913,18 @@ b'spacious'
 b'example'
 ```
 
-The ```dir``` parameter controls the side of stripping:
+The *dir* parameter controls the side of stripping:
 
 
-* dir=0, strip ```chars``` from left and right side of ```str```
+* dir=0, strip *chars* from left and right side of *str*
 
 
-* dir>0, strip ```chars``` from left side of ```str```
+* dir>0, strip *chars* from left side of *str*
 
 
-* dir<0, strip ```chars``` from right side of ```str```
+* dir<0, strip *chars* from right side of *str*
 
-The following methods on bytes and bytearray objects assume the use of ASCII
-compatible binary formats and should not be applied to arbitrary binary data.
-Note that all of the bytearray methods in this section do ```not``` operate in
-place, and instead produce new objects.
+The following methods on bytes and bytearray objects assume the use of ASCII compatible binary formats and should not be applied to arbitrary binary data. Note that all of the bytearray methods in this section do ```not``` operate in place, and instead produce new objects.
 
 
 ---
@@ -1422,7 +1419,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTU5NjkwOSwtMTUwNTQzMzAwNywxMT
+eyJoaXN0b3J5IjpbMTA3NTkxNjUzNSwtMTUwNTQzMzAwNywxMT
 EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
 NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
 IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
