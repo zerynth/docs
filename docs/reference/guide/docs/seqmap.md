@@ -982,22 +982,13 @@ Shorts and shortarryas support only a limited set of methods:
 
 ## Set Types
 
-A ```set``` object is an unordered collection of distinct hashable objects.
-Common uses include membership testing, removing duplicates from a sequence, and
-computing mathematical operations such as intersection, union, difference, and
-symmetric difference.
+A *set* object is an unordered collection of distinct hashable objects. Common uses include membership testing, removing duplicates from a sequence, and computing mathematical operations such as intersection, union, difference, and symmetric difference.
 
-Like other collections, sets support `x in set`, `len(set)`, and `for x in
-set`.  Being an unordered collection, sets do not record element position or
-order of insertion.  Accordingly, sets do not support indexing, slicing, or
+Like other collections, sets support `x in set`, `len(set)`, and `for x in set`.  Being an unordered collection, sets do not record element position or order of insertion.  Accordingly, sets do not support indexing, slicing, or
 other sequence-like behavior.
 
-There are currently two built-in set types, `set()` and `frozenset()`.
-The `set()` type is mutable — the contents can be changed using methods
-like `add()` and `remove()`.  Since it is mutable, it has no
-hash value and cannot be used as either a dictionary key or as an element of
-another set.  The `frozenset()` type is immutable and hashable —
-its contents cannot be altered after it is created; it can therefore be used as
+There are currently two built-in set types, `set()` and `frozenset()`. The `set()` type is mutable — the contents can be changed using methods like `add()` and `remove()`.  Since it is mutable, it has no hash value and cannot be used as either a dictionary key or as an element of
+another set.  The `frozenset()` type is immutable and hashable — its contents cannot be altered after it is created; it can therefore be used as
 a dictionary key or as an element of another set.
 
 Non-empty sets (not frozensets) can be created by placing a comma-separated list
@@ -1385,11 +1376,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MTM5Nzc2MywtMTUwNTQzMzAwNywxMT
-EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
-NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
-IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
-NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
-M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
-NDEyNzZdfQ==
+eyJoaXN0b3J5IjpbLTEyNjEwNDI4MjMsLTE1MDU0MzMwMDcsMT
+ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
+MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
+AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
+NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
+AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
+MjQxMjc2XX0=
 -->
