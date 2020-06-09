@@ -828,10 +828,9 @@ a = b"abc"
 b = a.replace("a", b"f")
 ```
 
-    bytes.count(sub[,start[,end] ])
-`bytearray.``count`(_sub_[, _start_[, _end_]])
-Return the number of non-overlapping occurrences of subsequence ```sub``` in
-the range [```start```, ```end```].  Optional arguments ```start``` and ```end``` are
+    bytes.count(sub[,start[,end] ]) bytearray.count(sub[, start[, end] ])
+
+Return the number of non-overlapping occurrences of subsequence sub in the range [start,end```].  Optional arguments ```start``` and ```end``` are
 interpreted as in slice notation.
 
 The subsequence to search for may be any bytes-like object or an
@@ -1543,7 +1542,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDg4OTUwMSwxMTEzOTQ3MDA1LDE1Mz
+eyJoaXN0b3J5IjpbMTYxNzAyMTY5NywxMTEzOTQ3MDA1LDE1Mz
 M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
 ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
 wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
