@@ -1156,11 +1156,11 @@ Set `d[key]` to *value*.
 Remove `d[key]` from *d.*  Raises a `KeyError` if *key* is not in the map.
 
 
-### key in d()
-Return `True` if ```d``` has a key ```key```, else `False`.
+    key in d
 
+Return `True` if *d* has a key *key*, else `False`.
 
-### key not in d()
+key not in d
 Equivalent to `not key in d`.
 
 
@@ -1265,11 +1265,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE2NDMzMTIsLTE4MzgxNjUzMTIsOD
-k0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0
-NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0My
-wtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0y
-NDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOT
-k3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwx
-MDc1OTA3NjNdfQ==
+eyJoaXN0b3J5IjpbOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
+A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
+NSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMT
+cxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEz
+OTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MC
+wxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1
+OTA3NjNdfQ==
 -->
