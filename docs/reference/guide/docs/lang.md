@@ -315,43 +315,43 @@ Python provides many objects representing sequences of items. Zerynth supports l
 ### Macros
 
 
-### PSEQUENCE_ELEMENTS(seq)
+**`PSEQUENCE_ELEMENTS(seq)`**
 Return the elements of ```seq```.
 
 
-### PSEQUENCE_ELEMENTS_SET(seq, n)
+**`PSEQUENCE_ELEMENTS_SET(seq, n)`**
 Set the number of elements of ```seq``` to ```n```.
 
 
-### PSEQUENCE_SIZE(seq)
+**`PSEQUENCE_SIZE(seq)`**
 Return the maximum number of elements storable in ```seq```.
 
 
-### PSEQUENCE_BYTES(seq)
+**`PSEQUENCE_BYTES(seq)`**
 Return a uint8_t pointer to the bytes stored in ```seq```.
 
 
-### PSEQUENCE_SHORTS(seq)
+**`PSEQUENCE_SHORTS(seq)`**
 Return a uint16_t pointer to the integers stored in ```seq```.
 
 
-### PSEQUENCE_OBJECTS(seq)
+PSEQUENCE_OBJECTS(seq)
 Return a PObject\*\* to the PObjects stored in ```seq```.
 
 
-### PLIST_ITEM(lst, i)
+PLIST_ITEM(lst, i)
 Return the i-th item in ```lst``` with ```lst``` of type PLIST.
 
 
-### PLIST_SET_ITEM(lst, i, item)
+ PLIST_SET_ITEM(lst, i, item)
 Set the i-th item in ```lst``` to ```item```, with ```lst``` of type PLIST.
 
 
-### PTUPLE_ITEM(lst, i)
+PTUPLE_ITEM(lst, i)
 Return the i-th item in ```lst``` with ```lst``` of type PTUPLE.
 
 
-### PTUPLE_SET_ITEM(lst, i, item)
+PTUPLE_SET_ITEM(lst, i, item)
 Set the i-th item in ```lst``` to ```item```, with ```lst``` of type PTUPLE.
 
 ### Functions
@@ -550,6 +550,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI2MDU5NzI2LDcyOTk3NjQzNCw4NjI3NT
+eyJoaXN0b3J5IjpbNjk5NjQ0ODM4LDcyOTk3NjQzNCw4NjI3NT
 M0NzMsMTA1MjE4NDk3NF19
 -->
