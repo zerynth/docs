@@ -849,22 +849,13 @@ NOTE: The `find()` method should be used only if you need to know the position o
 
 `bytes.index(sub[, start[, end] ])` `bytearray.index(sub[, start[, end] ])`
 
-Like `find()`, but raise ValueError when thesubsequence is not found.
+Like `find()`, but raise `ValueError` when the subsequence is not found.
 
-The subsequence to search for may be any bytes-like object or an
-integer in the range 0 to 255.
-
-
----
-#### `#!py3 join()`
-
-!!!abstract "`#!py3 join(iterable)`"
+The subsequence to search for may be any bytes-like object or an  integer in the range 0 to 255.
 
 
----
-#### `#!py3 join()`
+bytes.join(iterable) bytearray.join(iterable)
 
-!!!abstract "`#!py3 join(iterable)`"
 
 Return a bytes or bytearray object which is the concatenation of the
 binary data sequences in the iterable ```iterable```.  A
@@ -1500,11 +1491,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzgwMjU0OSwxMTEzOTQ3MDA1LDE1Mz
-M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
-ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
-wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
-NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2My
-wtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNzU2ODcz
-ODkyXX0=
+eyJoaXN0b3J5IjpbLTE2MTgzMjU5NTUsMTExMzk0NzAwNSwxNT
+MzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1
+Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NT
+EsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4
+NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3Nj
+MsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3
+Mzg5Ml19
 -->
