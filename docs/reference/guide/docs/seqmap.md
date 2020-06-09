@@ -859,17 +859,8 @@ The subsequence to search for may be any bytes-like object or an  integer in the
 
 Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in *iterable* that are not bytes-like objects or strings. The separator between elements is the contents of the bytes or bytearray object providing this method.
 
+bytes.replace`(_old_, _new_) `bytearray.``replace`(_old_, _new_)
 
----
-#### `#!py3 replace()`
-
-!!!abstract "`#!py3 replace(old, new)`"
-
-
----
-#### `#!py3 replace()`
-
-!!!abstract "`#!py3 replace(old, new)`"
 
 Return a copy of the sequence with all occurrences of subsequence ```old```
 replaced by ```new```.
@@ -1480,11 +1471,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNT
-MzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1
-Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NT
-EsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4
-NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3Nj
-MsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3
-Mzg5Ml19
+eyJoaXN0b3J5IjpbMTU5NDQ3NTIzNywtMTUwNTQzMzAwNywxMT
+EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
+NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
+IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
+NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
+M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
+NDEyNzZdfQ==
 -->
