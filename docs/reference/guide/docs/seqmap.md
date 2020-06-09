@@ -870,17 +870,7 @@ NOTE: The bytearray version of this method does *not* operate in place - it alwa
 
 Return `True` if the binary data starts with the specified *prefix*, otherwise return `False`. With optional *start*, test beginning at that position. With optional *end*, stop comparing at that position.
 
-
----
-#### `#!py3 split()`
-
-!!!abstract "`#!py3 split(sep=None, maxsplit=-1)`"
-
-
----
-#### `#!py3 split()`
-
-!!!abstract "`#!py3 split(sep=None, maxsplit=-1)`"
+`bytes.split(sep=None,maxsplit=-1)` `bytearray.split(sep=None, maxsplit=-1)`
 
 Split the binary sequence into subsequences of the same type, using ```sep```
 as the delimiter string. If ```maxsplit``` is given and non-negative, at most
@@ -1459,11 +1449,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ4MjczMTUsLTE1MDU0MzMwMDcsMT
-ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
-MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
-AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
-NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
-AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
-MjQxMjc2XX0=
+eyJoaXN0b3J5IjpbLTUzODkyMDM3LC0xNTA1NDMzMDA3LDExMT
+M5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1
+NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMi
+wtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2
+MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMz
+YsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0
+MTI3Nl19
 -->
