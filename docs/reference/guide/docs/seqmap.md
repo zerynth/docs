@@ -1023,17 +1023,13 @@ Test *x* for non-membership in *s*.
 Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
 
----
-#### `#!py3 issubset()`
-
-!!!abstract "`#!py3 issubset(other)`"
+`issubset(other)` `set <= other`
 
 
-### frozenset.set <= other()
 Test whether every element in the set is in ```other```.
 
 
-### frozenset.set < other()
+
 Test whether the set is a proper subset of ```other```, that is,
 `set <= other and set != other`.
 
@@ -1367,7 +1363,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODE1MTY4NiwtMTUwNTQzMzAwNywxMT
+eyJoaXN0b3J5IjpbMTE2ODI0NTg2OSwtMTUwNTQzMzAwNywxMT
 EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
 NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
 IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
