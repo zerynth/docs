@@ -1026,11 +1026,11 @@ Return `True` if the set has no elements in common with *other*.  Sets are disjo
 `issubset(other)` `set <= other`
 
 
-Test whether every element in the set is in ```other```.
+Test whether every element in the set is in *other.*
 
+    set < other
 
-
-Test whether the set is a proper subset of ```other```, that is,
+Test whether the set is a proper subset of *other*, that is,
 `set <= other and set != other`.
 
 
@@ -1362,12 +1362,13 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODI0NTg2OSwtMTUwNTQzMzAwNywxMT
-EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
-NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
-IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
-NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
-M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
-NDEyNzZdfQ==
+eyJoaXN0b3J5IjpbLTMzMzcyNTY3LC0xNTA1NDMzMDA3LDExMT
+M5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1
+NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMi
+wtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2
+MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMz
+YsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0
+MTI3Nl19
 -->
