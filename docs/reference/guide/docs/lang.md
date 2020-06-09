@@ -201,7 +201,7 @@ Type of a PObject representing a Python thread. Untagged.
 ### Functions
 
 
-int parse_py_args(const char *fmt, int nargs, PObject _**args_, ...)
+    int parse_py_args(const char *fmt, int nargs, PObject **args,...)
 
 Given an array of PObject pointers ```args```, with ```nargs``` elements, try to convert such elements to C structures according to a format string ```fmt```. ```fmt``` is conceptually similar to the format string of printf.
 
@@ -550,5 +550,5 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwNzIwMjkwXX0=
+eyJoaXN0b3J5IjpbMTA1MjE4NDk3NF19
 -->
