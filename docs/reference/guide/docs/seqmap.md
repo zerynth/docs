@@ -927,16 +927,8 @@ The *dir* parameter controls the side of stripping:
 The following methods on bytes and bytearray objects assume the use of ASCII compatible binary formats and should not be applied to arbitrary binary data. Note that all of the bytearray methods in this section do *not* operate in place, and instead produce new objects.
 
 
----
-#### `#!py3 lower()`
 
-!!!abstract "`#!py3 lower()`"
-
-
----
-#### `#!py3 lower()`
-
-!!!abstract "`#!py3 lower()`"
+`bytes.lower()` `bytearray.lower()`
 
 Return a copy of the sequence with all the uppercase ASCII characters
 converted to their corresponding lowercase counterpart.
@@ -1418,12 +1410,13 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQxMjY1NTcsLTE1MDU0MzMwMDcsMT
-ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
-MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
-AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
-NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
-AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
-MjQxMjc2XX0=
+eyJoaXN0b3J5IjpbMTk5NDYwMDUzNSwtMTUwNTQzMzAwNywxMT
+EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
+NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
+IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
+NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
+M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
+NDEyNzZdfQ==
 -->
