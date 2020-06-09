@@ -1035,24 +1035,17 @@ Test whether the set is a proper subset of *other*, that is,
 
 `issuperset(other)` `set >= other`
 
-Test whether every element in  _other_  is in the set.
+Test whether every element in  *other*  is in the set.
 
 `set > other`
 
-Test whether the set is a proper superset of  _other_, that is,  `set  >=  other  and  set  !=  other`.
+Test whether the set is a proper superset of  *other*, that is,  `set  >=  other  and  set  !=  other`.
 
 `union(other,...)` `set | other | ...`
 
 Return a new set with elements from the set and all others.
 
-### frozenset.set >= other()
-Test whether every element in ```other``` is in the set.
-
-
-### frozenset.set > other()
-Test whether the set is a proper superset of ```other```, that is, `set >=
-other and set != other`.
-
+intersection(other, _...) `set & other & ...`
 
 ---
 #### `#!py3 union()`
@@ -1369,11 +1362,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0NTMxNzk5LDIwMzc0NzA3NDEsLTE1MD
-U0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3
-ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC
-0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4
-NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3OD
-gsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2
-MTY5NDddfQ==
+eyJoaXN0b3J5IjpbMTY2MTE0NTYxMiwyMDM3NDcwNzQxLC0xNT
+A1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1
+Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NS
+wtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2
+ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nz
+g4LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5
+NjE2OTQ3XX0=
 -->
