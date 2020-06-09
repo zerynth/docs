@@ -868,9 +868,7 @@ NOTE: The bytearray version of this method does *not* operate in place - it alwa
 
 `bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`
 
-Return `True` if the binary data starts with the specified ```prefix```,
-otherwise return `False`. With optional ```start```, test beginning at that position.
-With optional ```end```, stop comparing at that position.
+Return `True` if the binary data starts with the specified *prefix*, otherwise return `False`. With optional *start*, test beginning at that position. With optional *end*, stop comparing at that position.
 
 
 ---
@@ -1461,11 +1459,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjEwMzg0NywtMTUwNTQzMzAwNywxMT
-EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
-NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
-IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
-NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
-M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
-NDEyNzZdfQ==
+eyJoaXN0b3J5IjpbLTE2NzQ4MjczMTUsLTE1MDU0MzMwMDcsMT
+ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
+MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
+AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
+NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
+AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
+MjQxMjc2XX0=
 -->
