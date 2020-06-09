@@ -702,13 +702,11 @@ Traceback (most recent call last):
 TypeError: function() got multiple values for keyword argument 'a'
 ```
 
-In Python when  a final formal parameter of the form `\*\*name` is present, it receives a dictionary (see Mapping Types) containing all keyword arguments except for
-those corresponding to a formal parameter. However this syntax is not yet supported in Zerynth.
+In Python when  a final formal parameter of the form `**name` is present, it receives a dictionary (see Mapping Types) containing all keyword arguments except for those corresponding to a formal parameter. However this syntax is not yet supported in Zerynth.
 
 ### Arbitrary Argument Lists
 
-Finally, a frequently used option is to specify that a function can be called with an arbitrary number of arguments.  These arguments will be wrapped
-up in a tuple (see tut-tuples).  Before the variable number of arguments, zero or more normal arguments may occur.
+Finally, a frequently used option is to specify that a function can be called with an arbitrary number of arguments.  These arguments will be wrapped up in a tuple (see tut-tuples).  Before the variable number of arguments, zero or more normal arguments may occur.
 
 ```
 def write_multiple_items(file, separator, *args):
@@ -742,10 +740,10 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 [3, 4, 5]
 ```
 
-In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
+In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzIwNzMxNzEsLTEyMzQ4OTAwNTYsMj
-AyMjkxODgyOCwyMDQxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgx
-NDA2MDQsLTExMDE5MTQ1MjhdfQ==
+eyJoaXN0b3J5IjpbLTM5NDgzOTEzMywtMTIzNDg5MDA1NiwyMD
+IyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEyMTY0MCwtMTA0ODE0
+MDYwNCwtMTEwMTkxNDUyOF19
 -->
