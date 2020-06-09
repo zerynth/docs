@@ -945,14 +945,7 @@ Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijkl
 
 Both Shorts and Shortarrays are sequence types added by Zerynth to the standard Python. Shorts and shortsarray
 objects actually behave like sequences of integers, with each
-value in the sequence restricted such that `0 <= x < 65536` (attempts to
-violate this restriction will trigger 
-
-```
-:exc:`ValueError`
-```
-
-).
+value in the sequence restricted such that `0 <= x < 65536` (attempts to violate this restriction will trigger `ValueError`).
 
 Shorts objects are immutable sequences of 16 bits integers.
 Shorts and shortsarray can’t be specified with literals, but only using one of the following ways:
@@ -963,12 +956,9 @@ Shorts and shortsarray can’t be specified with literals, but only using one of
 
 * From an iterable of integers: `shorts([1,2,3])`
 
-Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal
-numbers are a commonly used format for describing binary data.
+Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal numbers are a commonly used format for describing binary data.
 
-Since shorts objects are sequences of integers (akin to a tuple), for a shorts
-object ```b```, `b[0]` will be an integer, while `b[0:1]` will be a shorts
-object of length 1.
+Since shorts objects are sequences of integers (akin to a tuple), for a shorts object ```b```, `b[0]` will be an integer, while `b[0:1]` will be a shorts object of length 1.
 
 Shortarray objects are mutable sequences of 16 bits integers. Shorts and shortsarray can’t be specified with literals, but only using one of the following ways:
 
@@ -1398,11 +1388,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2MjY5OTk3LC0xNTA1NDMzMDA3LDExMT
-M5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1
-NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMi
-wtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2
-MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMz
-YsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0
-MTI3Nl19
+eyJoaXN0b3J5IjpbLTIwMjI2Njc3MjEsLTE1MDU0MzMwMDcsMT
+ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
+MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
+AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
+NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
+AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
+MjQxMjc2XX0=
 -->
