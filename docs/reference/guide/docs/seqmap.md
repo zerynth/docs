@@ -834,10 +834,7 @@ Return the number of non-overlapping occurrences of subsequence *sub* in the ran
 
 The subsequence to search for may be any bytes-like object or an integer in the range 0 to 255.
 
-bytes.endswith(suffix[,start[,end] ])
-
-bytearray.endswith(suffix[,start[,end]])
-
+`bytes.endswith(suffix[,start[,end] ])` bytearray.endswith(suffix[,start[,end] ])
 
 Return `True` if the binary data ends with the specified ```suffix```,
 otherwise return `False`. With optional ```start```, test beginning at that position.  With
@@ -1532,8 +1529,9 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MzYxMjY1NSwxMTEzOTQ3MDA1LDE1Mz
+eyJoaXN0b3J5IjpbLTQ4MDY5MTY4MSwxMTEzOTQ3MDA1LDE1Mz
 M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
 ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
 wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
