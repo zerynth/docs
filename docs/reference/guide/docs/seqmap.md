@@ -1146,19 +1146,14 @@ Return the item of *d* with key *key*.  Raises a `KeyError`
  if *key* is not in the map.
 
 
-d[key] = value()
-Set `d[key]` to ```value```.
+    d[key] = value()
+
+Set `d[key]` to *value*.
 
 
-### del d[key]()
-Remove `d[key]` from ```d```.  Raises a 
+     del d[key]
 
-```
-:exc:`KeyError`
-```
-
- if ```key``` is not in the
-map.
+Remove `d[key]` from *d.*  Raises a `KeyError` if *key* is not in the map.
 
 
 ### key in d()
@@ -1270,7 +1265,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTc5MDk5ODYsLTE4MzgxNjUzMTIsOD
+eyJoaXN0b3J5IjpbLTE1NDE2NDMzMTIsLTE4MzgxNjUzMTIsOD
 k0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0
 NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0My
 wtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0y
