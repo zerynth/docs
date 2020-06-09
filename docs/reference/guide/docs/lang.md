@@ -265,29 +265,27 @@ In the current version there are only three supported type of numbers: PSMALLINT
 Return a tagged PObject of type PSMALLINT containing the integer value x. No overflow check is done.
 
 
-### PSMALLINT_VALUE(x)
+**`PSMALLINT_VALUE(x)`**
 Return the integer value contained in ```x```, a PObject of type PSMALLINT.
 
 
-### IS_PSMALLINT(x)
+**`IS_PSMALLINT(x)`**
 Check if ```x``` is of type PSMALLINT.
 
 
-### INTEGER_VALUE(x)
+**`INTEGER_VALUE(x)`**
 Return the integer value contained in ```x```; works for PSMALLINT and PINTEGER types.
 
-
-### PFLOAT_VALUE(x)
+**`PFLOAT_VALUE(x)`**
 Return the float value contained in ```x```, an untagged PObject of type PFLOAT.
 
 ### Functions
 
 
-### pinteger_new(int64_t*  x*)
+ **`pinteger_new(int64_t*  x*)`**
 Return a PINTEGER object with value ```x```
 
-
-### pfloat_new(double*  x*)
+**`pfloat_new(double*  x*)`**
 Return a PFLOAT object with value ```x```
 
 ## Bool & None
@@ -552,6 +550,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjI0ODI0NSw3Mjk5NzY0MzQsODYyNz
-UzNDczLDEwNTIxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbOTU3MTI2Mjg3LDcyOTk3NjQzNCw4NjI3NT
+M0NzMsMTA1MjE4NDk3NF19
 -->
