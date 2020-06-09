@@ -124,63 +124,77 @@ Type of a PObject representing a dictionary. Untagged.
 Type of a PObject representing a function. Untagged.
 
 
-### PMETHOD()
+    PMETHOD
+
 Type of a PObject representing a method. Untagged.
 
 
-### PCLASS()
+     PCLASS
+
 Type of a PObject representing a class. Untagged.
 
 
-### PINSTANCE()
+    PINSTANCE
+
 Type of a PObject representing an instance. Untagged.
 
 
-### PMODULE()
+    PMODULE
+
 Type of a PObject representing a module. Untagged.
 
 
-### PBUFFER()
+    PBUFFER
+
 Type of a PObject representing a buffer. Untagged.
 
 
-### PSLICE()
+    PSLICE
+
 Type of a PObject representing a slice. Untagged.
 
 
-### PITERATOR()
+    PITERATOR
+
 Type of a PObject representing an iterator over a sequence. Untagged.
 
 
-### PFRAME()
+    PFRAME
+
 Type of a PObject representing an execution frame. Untagged.
 
 
-### PCELL()
+    PCELL
+
 Type of a PObject representing a cell. Tagged.
 
 
-### PNONE()
+    PNONE
+
 Type of a PObject representing None. Tagged.
 
 
-### PEXCEPTION()
+     PEXCEPTION
+
 Type of a PObject representing an exception. Tagged.
 
 
-### PNATIVE()
+    PNATIVE
+
 Type of a PObject representing a native function. Tagged.
 
 
-### PSYSOBJ()
+    PSYSOBJ
+
 Type of a PObject representing a system object. Untagged.
 
 
-### PDRIVER()
+    PDRIVER
+
 Type of a PObject representing a driver. Tagged.
 
 
-### PTHREAD()
+PTHREAD()
 Type of a PObject representing a Python thread. Untagged.
 
 ### Functions
@@ -534,5 +548,5 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDEzMjA2NThdfQ==
+eyJoaXN0b3J5IjpbMjcyMDA3MjFdfQ==
 -->
