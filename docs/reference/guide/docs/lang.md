@@ -211,33 +211,33 @@ The variadic arguments (vararg) are usually pointers to store the converted valu
 *fmt* may contain any of the following characters in the nth position:
 
 
-* “l”: the nth argument must be of type PINTEGER. One vararg required of type int64_t\* to store the converted value.
+* “l”: the nth argument must be of type PINTEGER. One vararg required of type int64_t* to store the converted value.
 
 
-* “L”: the nth argument is an optional PINTEGER. Two varargs are required, one of type int64_t holding the default value, and one of type int64_t\* holding the converted value.
+* “L”: the nth argument is an optional PINTEGER. Two varargs are required, one of type int64_t holding the default value, and one of type int64_t* holding the converted value.
 
 
-* “i”: the nth argument must be of type PINTEGER. One vararg required of type int32_t\* to store the converted value.
+* “i”: the nth argument must be of type PINTEGER. One vararg required of type int32_t* to store the converted value.
 
 
-* “I”: the nth argument is an optional PINTEGER. Two varargs are required, one of type int32_t holding the default value, and one of type int32_t\* holding the converted value.
+* “I”: the nth argument is an optional PINTEGER. Two varargs are required, one of type int32_t holding the default value, and one of type int32_t* holding the converted value.
 
 
-* “s”: the nth argument must be of type PSTRING or PBYTES or PBYTEARRAY. Two varargs are required; the first of type uint8_t\*\* to hold the byte sequence, the second of type int32_t\* to hold the number of elements of the sequence.
+* “s”: the nth argument must be of type PSTRING or PBYTES or PBYTEARRAY. Two varargs are required; the first of type uint8_t** to hold the byte sequence, the second of type int32_t* to hold the number of elements of the sequence.
 
 
-* “S”: the nth argument must be of type PSTRING or PBYTES or PBYTEARRAY. Three varargs are required; the first of type uint_8\* holding a default byte sequence, the second of type uint8_t\*\* to hold the byte sequence, the third of type int32_t\* to hold the number of elements of the sequence.
+* “S”: the nth argument must be of type PSTRING or PBYTES or PBYTEARRAY. Three varargs are required; the first of type uint_8* holding a default byte sequence, the second of type uint8_t** to hold the byte sequence, the third of type int32_t* to hold the number of elements of the sequence.
 
 
 * “b” and “B”: same as “s” and “S” with the difference that the last vararg holds the maximum amount of elements storable in the sequence.
 
 
-* “f”: the nth argument must be of type PFLOAT. One vararg required of type double\* to store the converted value.
+* “f”: the nth argument must be of type PFLOAT. One vararg required of type double* to store the converted value.
 
 
-* “F”: the nth argument is an optional PFLOAT. Two varargs are required, one of type double holding the default value, and one of type double\* holding the converted value.
+* “F”: the nth argument is an optional PFLOAT. Two varargs are required, one of type double holding the default value, and one of type double* holding the converted value.
 
-Return the number of converted objects. If the return value is less than the length of ```fmt```, a conversion error has occurred.
+Return the number of converted objects. If the return value is less than the length of `fmt`, a conversion error has occurred.
 
 The following code illustrates the use of parse_py_args:
 
@@ -552,6 +552,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAzMzM1ODIsODYyNzUzNDczLDEwNT
-IxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMT
+g0OTc0XX0=
 -->
