@@ -201,7 +201,8 @@ Type of a PObject representing a Python thread. Untagged.
 ### Functions
 
 
-### parse_py_args(const char* \```fmt```, int* nargs*, PObject* \*\```args```, ...)
+int parse_py_args(const char *fmt, int nargs, PObject _**args_, ...)
+
 Given an array of PObject pointers ```args```, with ```nargs``` elements, try to convert such elements to C structures according to a format string ```fmt```. ```fmt``` is conceptually similar to the format string of printf.
 
 The variadic arguments (vararg) are usually pointers to store the converted value of *args[n]*. The nth character of ```fmt``` identifies the type of PObject expected in *args[n]*. If the length of ```fmt``` is greater than ```nargs```, the remaining varargs must also specify default values.
@@ -549,5 +550,5 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMDQ3OTkwOF19
+eyJoaXN0b3J5IjpbNjkwNzIwMjkwXX0=
 -->
