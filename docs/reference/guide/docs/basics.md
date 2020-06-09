@@ -59,7 +59,7 @@ Division (`/`) always returns a float.  To do floor division and get an integer 
 17
 ```
 
-With Python, it is possible to use the `\*\*` operator to calculate powers
+With Python, it is possible to use the `**` operator to calculate powers
 
 ```
 >>> 5 ** 2  # 5 squared
@@ -748,7 +748,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM5NjY0NzIsMjAyMjkxODgyOCwyMD
-QxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5
-MTQ1MjhdfQ==
+eyJoaXN0b3J5IjpbMjA4NzEwODYwMCwyMDIyOTE4ODI4LDIwND
+E5NDEwMCwtMTkwNTEyMTY0MCwtMTA0ODE0MDYwNCwtMTEwMTkx
+NDUyOF19
 -->
