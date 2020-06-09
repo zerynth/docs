@@ -45,8 +45,7 @@ For example:
 
 The integer numbers (e.g. `2`, `4`, `20`) have type `int()`, the ones with a fractional part (e.g. `5.0`, `1.6`) have type `float()`.
 
-Division (`/`) always returns a float.  To do floor division and get an integer result (discarding any fractional result) you can use the `//`
-operator; to calculate the remainder you can use `%`:
+Division (`/`) always returns a float.  To do floor division and get an integer result (discarding any fractional result) you can use the `//` operator; to calculate the remainder you can use `%`:
 
 ```
 >>> 17 / 3  # classic division returns a float
@@ -749,6 +748,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjkxODgyOCwyMDQxOTQxMDAsLTE5MD
-UxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5MTQ1MjhdfQ==
+eyJoaXN0b3J5IjpbLTExMjM5NjY0NzIsMjAyMjkxODgyOCwyMD
+QxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgxNDA2MDQsLTExMDE5
+MTQ1MjhdfQ==
 -->
