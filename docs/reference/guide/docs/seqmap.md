@@ -828,18 +828,8 @@ a = b"abc"
 b = a.replace("a", b"f")
 ```
 
-
----
-#### `#!py3 count()`
-
-!!!abstract "`#!py3 count(sub, )`"
-
-
----
-#### `#!py3 count()`
-
-!!!abstract "`#!py3 count(sub, )`"
-
+    bytes.count(sub[,start[,end] ])
+`bytearray.``count`(_sub_[, _start_[, _end_]])
 Return the number of non-overlapping occurrences of subsequence ```sub``` in
 the range [```start```, ```end```].  Optional arguments ```start``` and ```end``` are
 interpreted as in slice notation.
@@ -1553,11 +1543,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0ND
-MzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkx
-MDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMj
-AsODY4NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUw
-NDU3ODgsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1Ny
-wxMTk2MTY5NDcsNTk2MjQxMjc2LDc1Njg3Mzg5Miw4MzcyNzE1
-MjZdfQ==
+eyJoaXN0b3J5IjpbLTgzNDg4OTUwMSwxMTEzOTQ3MDA1LDE1Mz
+M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
+ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
+wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
+NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2My
+wtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNzU2ODcz
+ODkyXX0=
 -->
