@@ -1034,11 +1034,8 @@ Test whether the set is a proper subset of *other*, that is,
 `set <= other and set != other`.
 
 
----
-#### `#!py3 issuperset()`
 
-!!!abstract "`#!py3 issuperset(other)`"
-
+`issubset(other)` `set <= other`
 
 ### frozenset.set >= other()
 Test whether every element in ```other``` is in the set.
@@ -1364,11 +1361,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMzcyNTY3LC0xNTA1NDMzMDA3LDExMT
-M5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1
-NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMi
-wtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2
-MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMz
-YsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0
-MTI3Nl19
+eyJoaXN0b3J5IjpbLTE1MzI2ODMyOTUsLTE1MDU0MzMwMDcsMT
+ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
+MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
+AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
+NzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3Nj
+AzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2MTY5NDcsNTk2
+MjQxMjc2XX0=
 -->
