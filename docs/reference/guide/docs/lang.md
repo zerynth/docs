@@ -202,7 +202,7 @@ Type of a PObject representing a Python thread. Untagged.
 ### Functions
 
 
-    int### parse_py_args(const char *fmt* \```fmt```, int * nargs*, PObject **args,* \*\```args```, ...)
+    int parse_py_args(const char *fmt, int nargs, PObject **args, ...)
 
 Given an array of PObject pointers ```args```, with ```nargs``` elements, try to convert such elements to C structures according to a format string ```fmt```. ```fmt``` is conceptually similar to the format string of printf.
 
@@ -283,11 +283,11 @@ Return the float value contained in ```x```, an untagged PObject of type PFLOAT.
 ### Functions
 
 
-### pinteger_new(int64_t*  x*)
+### pinteger_new(int64_t*  x*)
 Return a PINTEGER object with value ```x```
 
 
-### pfloat_new(double*  x*)
+### pfloat_new(double*  x*)
 Return a PFLOAT object with value ```x```
 
 ## Bool & None
@@ -359,37 +359,37 @@ Set the i-th item in ```lst``` to ```item```, with ```lst``` of type PTUPLE.
 ### Functions
 
 
-### psequence_new(uint8_t*  type*, uint16_t*  elements*)
+### psequence_new(uint8_t*  type*, uint16_t*  elements*)
 Create an empty sequence of type ```type``` with space for at least ```elements``` elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence elementes are set to ```elements``` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-### pstring_new(uint16_t*  len*, uint8_t*  \```buf```)
+### pstring_new(uint16_t*  len*, uint8_t*  \```buf```)
 Create a sequence of type PSTRING with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the string.
 
 Return NULL on failure.
 
 
-### pbytes_new(uint16_t*  len*, uint8_t*  \```buf```)
+### pbytes_new(uint16_t*  len*, uint8_t*  \```buf```)
 Create a sequence of type PBYTES with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-### pshorts_new(uint16_t*  len*, uint16_t*  \```buf```)
+### pshorts_new(uint16_t*  len*, uint16_t*  \```buf```)
 Create a sequence of type PSHORTS with ```len``` elements. If ```buf``` is not NULL, ```len``` words from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-### ptuple_new(uint16_t*  len*, PObject*  \*\```buf```)
+### ptuple_new(uint16_t*  len*, PObject*  \*\```buf```)
 Create a sequence of type PTUPLE with ```len``` elements. If ```buf``` is not NULL, ```len``` objects from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-### plist_new(uint16_t*  len*, PObject*  \*\```buf```)
+### plist_new(uint16_t*  len*, PObject*  \*\```buf```)
 Create a sequence of type PLIST with ```len``` elements. If ```buf``` is not NULL, ```len``` objects from ```buf``` are used to initialize the sequence. Sequence elements are set to ```len```.
 
 Return NULL on failure.
@@ -442,13 +442,13 @@ Remove ```k``` from ```f``` of type PSET. Return NULL if ```k``` is not present.
 ### Functions
 
 
-### pdict_new(int*  size*)
+### pdict_new(int*  size*)
 Create an empty dictionary with enough space to hold ```size``` pairs (key,value)
 
 Return NULL on failure.
 
 
-### pset_new(int*  type*, int*  size*)
+### pset_new(int*  type*, int*  size*)
 Create an empty set or frozenset depending on ```type```, with enough space to contain ```size``` items.
 
 Return NULL on failure.
@@ -551,5 +551,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyNzUzNDczLDEwNTIxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbMTUwMTIxNzIxNiw4NjI3NTM0NzMsMTA1Mj
+E4NDk3NF19
 -->
