@@ -30,19 +30,19 @@ where GCH is an 8 byte header holding both garbage collection info and type/size
 
     IS_TAGGED(obj)
 
-Check if ```obj``` is tagged or untagged.
+Check if *obj* is tagged or untagged.
 
 
  
 
     PTYPE(obj)
 
-Extract type info from ```obj``` (both tagged or untagged)
+Extract type info from *obj* (both tagged or untagged)
 
 
     PHEADERTYPE(obj)
 
-Extract type info from ```obj``` (untagged only)
+Extract type info from *obj* (untagged only)
 
 
     PSMALLINT
@@ -194,7 +194,8 @@ Type of a PObject representing a system object. Untagged.
 Type of a PObject representing a driver. Tagged.
 
 
-PTHREAD()
+    PTHREAD
+
 Type of a PObject representing a Python thread. Untagged.
 
 ### Functions
@@ -548,5 +549,5 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyMDA3MjFdfQ==
+eyJoaXN0b3J5IjpbMTEyMDQ3OTkwOF19
 -->
