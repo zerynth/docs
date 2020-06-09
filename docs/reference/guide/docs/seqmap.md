@@ -847,16 +847,9 @@ The subsequence to search for may be any bytes-like object or an integer in the 
 NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the `in` operator.
 
 
-bytes.index(_sub_[, _start_[, _end_]]) `bytearray.``index`(_sub_[, _start_[, _end_]])
+`bytes.index(sub[, start[, end] ])` `bytearray.index(sub[, start[, end] ])`
 
-Like `find()`, but raise 
-
-```
-:exc:`ValueError`
-```
-
- when the
-subsequence is not found.
+Like `find()`, but raise ValueError when thesubsequence is not found.
 
 The subsequence to search for may be any bytes-like object or an
 integer in the range 0 to 255.
@@ -1505,12 +1498,13 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyMTAxNjM3LDExMTM5NDcwMDUsMTUzMz
-k0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4
-NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC
-0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2
-MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC
-0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0MTI3Niw3NTY4NzM4
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTM2NzgwMjU0OSwxMTEzOTQ3MDA1LDE1Mz
+M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
+ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
+wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
+NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2My
+wtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYyNDEyNzYsNzU2ODcz
+ODkyXX0=
 -->
