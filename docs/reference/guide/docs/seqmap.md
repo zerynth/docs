@@ -1050,21 +1050,15 @@ Return a new set with elements from the set and all others.
 Return a new set with elements from the set and all others.
 
 
----
-#### `#!py3 intersection()`
 
-!!!abstract "`#!py3 intersection(other, ...)`"
+`difference(other,...)` `set - other - ...`
 
-
-### frozenset.set & other & ...()
 Return a new set with elements common to the set and all others.
 
 
----
-#### `#!py3 difference()`
 
-!!!abstract "`#!py3 difference(other, ...)`"
-
+`symmetric_difference`(_other_)
+`set ^ other`
 
 ### frozenset.set - other - ...()
 Return a new set with elements in the set that are not in the others.
@@ -1355,11 +1349,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MzAyMjgxMywyMDM3NDcwNzQxLC0xNT
-A1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1
-Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NS
-wtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2
-ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nz
-g4LDIwMTQ5NzYwMzYsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5
-NjE2OTQ3XX0=
+eyJoaXN0b3J5IjpbNzU5NjYwMjAxLDIwMzc0NzA3NDEsLTE1MD
+U0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3
+ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC
+0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4
+NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3OD
+gsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2
+MTY5NDddfQ==
 -->
