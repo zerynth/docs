@@ -1037,6 +1037,8 @@ Test whether the set is a proper subset of *other*, that is,
 
 `union(other,...)` `set | other | ...`
 
+Return a new set with elements from the set and all others.
+
 ### frozenset.set >= other()
 Test whether every element in ```other``` is in the set.
 
@@ -1361,7 +1363,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjMxMDYwOSwtMTUwNTQzMzAwNywxMT
+eyJoaXN0b3J5IjpbMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMT
 EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
 NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
 IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
