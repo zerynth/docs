@@ -838,8 +838,7 @@ The subsequence to search for may be any bytes-like object or an integer in the 
 
 Return `True` if the binary data ends with the specified *suffix*, otherwise return `False`. With optional *start*, test beginning at that position.  With optional *end*, stop comparing at that position.
 
-
-    bytes.find(sub[,start[,end] ])  bytearray.find(sub[,start[,end]])
+`bytes.find(sub[,start[,end] ])bytearray.find(sub[,start[,end] ])
 
 Return the lowest index in the data where the subsequence ```sub``` is found,
 such that ```sub``` is contained in the slice `s[start:end]`.  Optional
@@ -1520,8 +1519,9 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzczMzE2NywxMTEzOTQ3MDA1LDE1Mz
+eyJoaXN0b3J5IjpbLTU1Nzg3MzQ3NywxMTEzOTQ3MDA1LDE1Mz
 M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
 ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
 wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
