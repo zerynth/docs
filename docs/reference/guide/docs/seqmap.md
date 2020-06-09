@@ -874,12 +874,7 @@ Return `True` if the binary data starts with the specified *prefix*, otherwise r
 
 Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string. If *maxsplit* is given and non-negative, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not specified or is `-1`, then there is no limit on the number of splits (all possible splits are made).
 
-If *sep* is given, consecutive delimiters are not grouped together and aredeemed to delimit empty subsequences (for example, `b'1,,2'.split(b',')`
-returns `[b'1', b'', b'2']`).  The ```sep``` argument may consist of a
-multibyte sequence (for example, `b'1<>2<>3'.split(b'<>')` returns
-`[b'1', b'2', b'3']`). Splitting an empty sequence with a specified
-separator returns `[b'']` or `[bytearray(b'')]` depending on the type
-of object being split.
+If *sep* is given, consecutive delimiters are not grouped together and are deemed to delimit empty subsequences (for example, `b'1,,2'.split(b',')` returns `[b'1', b'', b'2']`).  The sep argument may consist of a multibyte sequence (for example, `b'1<>2<>3'.split(b'<>')` returns `[b'1', b'2', b'3']`). Splitting an empty sequence with a specified separator returns `[b'']` or `[bytearray(b'')]` depending on the type of object being split.
 
 For example:
 
@@ -1444,11 +1439,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIzMTU0MjM3LC0xNTA1NDMzMDA3LDExMT
-M5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1
-NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMi
-wtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2
-MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMz
-YsMTA3NTkwNzYzLC0zNzI3MjMwNTcsMTE5NjE2OTQ3LDU5NjI0
-MTI3Nl19
+eyJoaXN0b3J5IjpbLTQyODYzMTQxOSwtMTUwNTQzMzAwNywxMT
+EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
+NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
+IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
+NjE5OTcwLDE4Njg2NjExNDIsMTE4NTA0NTc4OCwyMDE0OTc2MD
+M2LDEwNzU5MDc2MywtMzcyNzIzMDU3LDExOTYxNjk0Nyw1OTYy
+NDEyNzZdfQ==
 -->
