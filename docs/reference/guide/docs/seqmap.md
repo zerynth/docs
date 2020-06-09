@@ -1142,17 +1142,11 @@ Return the number of items in the dictionary *d*.
 
     d[key]
 
-Return the item of ```d``` with key ```key```.  Raises a 
-
-```
-:exc:`KeyError`
-```
-
- if ```key``` is
-not in the map.
+Return the item of *d* with key *key*.  Raises a `KeyError`
+ if *key* is not in the map.
 
 
-### d[key] = value()
+d[key] = value()
 Set `d[key]` to ```value```.
 
 
@@ -1276,11 +1270,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzcxNDE5LC0xODM4MTY1MzEyLDg5ND
-EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
-MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
-E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
-MzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2MTk5Nz
-AsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMzYsMTA3
-NTkwNzYzXX0=
+eyJoaXN0b3J5IjpbLTE3MTc5MDk5ODYsLTE4MzgxNjUzMTIsOD
+k0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0
+NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0My
+wtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0y
+NDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOT
+k3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwx
+MDc1OTA3NjNdfQ==
 -->
