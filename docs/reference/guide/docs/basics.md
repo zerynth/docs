@@ -535,9 +535,9 @@ We can create a function that writes the Fibonacci series to an arbitrary bounda
 The keyword `def` introduces a function *definition*.  It must be followed by the function name and the parenthesized list of formal parameters.
 The statements that form the body of the function start at the next line, and must be indented.
 
-The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or ```docstring```. There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.
+The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or *docstring*. There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.
 
-The ```execution``` of a function introduces a new symbol table used for the local variables of the function.  More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables cannot be directly assigned a value within a function (unless named in a `global` statement), although they may be referenced.
+The *execution* of a function introduces a new symbol table used for the local variables of the function.  More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables cannot be directly assigned a value within a function (unless named in a `global` statement), although they may be referenced.
 
 The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are
 passed using *call by value* (where the ```value``` is always an object ```reference```, not the value of the object). 
@@ -748,7 +748,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU4MjA3NDQsLTEyMzQ4OTAwNTYsMj
-AyMjkxODgyOCwyMDQxOTQxMDAsLTE5MDUxMjE2NDAsLTEwNDgx
-NDA2MDQsLTExMDE5MTQ1MjhdfQ==
+eyJoaXN0b3J5IjpbLTExOTI5MjQyNCwtMTIzNDg5MDA1NiwyMD
+IyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEyMTY0MCwtMTA0ODE0
+MDYwNCwtMTEwMTkxNDUyOF19
 -->
