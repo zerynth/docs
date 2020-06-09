@@ -1004,14 +1004,16 @@ operations:
 
     len(s)
 
-Return the cardinality of set ```s```.
+Return the cardinality of set *s*.
 
 
-### x in s()
-Test ```x``` for membership in ```s```.
+    x in s
+
+Test *x* for membership in `s`.
 
 
-### x not in s()
+    x not in s
+
 Test ```x``` for non-membership in ```s```.
 
 
@@ -1368,7 +1370,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQxMjE5OTMsLTE1MDU0MzMwMDcsMT
+eyJoaXN0b3J5IjpbLTE3NjUyMjgyOTcsLTE1MDU0MzMwMDcsMT
 ExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3
 MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNj
 AyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIx
