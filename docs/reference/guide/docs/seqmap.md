@@ -1085,13 +1085,10 @@ Update the set, keeping only elements found in it and all others.
 Update the set, removing elements found in others.
 
 
----
-#### `#!py3 symmetric_difference_update()`
 
-!!!abstract "`#!py3 symmetric_difference_update(other)`"
+`symmetric_difference_update`(_other_)
 
-
-### frozenset.set ^= other()
+`set ^= other`
 Update the set, keeping only elements found in either set, but not in both.
 
 
@@ -1319,11 +1316,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MD
-U0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3
-ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC
-0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4
-NjA0MzYyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3OD
-gsMjAxNDk3NjAzNiwxMDc1OTA3NjMsLTM3MjcyMzA1NywxMTk2
-MTY5NDddfQ==
+eyJoaXN0b3J5IjpbLTE0OTY1MzEzNCw4OTQxMDkwMjYsMjAzNz
+Q3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5NDg5
+MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUxLD
+IwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MSwtMTMy
+MjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExND
+IsMTE4NTA0NTc4OCwyMDE0OTc2MDM2LDEwNzU5MDc2MywtMzcy
+NzIzMDU3XX0=
 -->
