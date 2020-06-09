@@ -1160,30 +1160,20 @@ Remove `d[key]` from *d.*  Raises a `KeyError` if *key* is not in the map.
 
 Return `True` if *d* has a key *key*, else `False`.
 
-key not in d
+    key not in d
+
 Equivalent to `not key in d`.
 
 
----
-#### `#!py3 clear()`
-
-!!!abstract "`#!py3 clear()`"
+    clear()
 
 Remove all items from the dictionary.
 
-
----
-#### `#!py3 copy()`
-
-!!!abstract "`#!py3 copy()`"
+    copy()
 
 Return a shallow copy of the dictionary.
 
-
----
-#### `#!py3 items()`
-
-!!!abstract "`#!py3 items()`"
+    items()
 
 Return a new view of the dictionary’s items (`(key, value)` pairs).
 
@@ -1265,11 +1255,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
-A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
-NSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMT
-cxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEz
-OTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOTk3MC
-wxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwxMDc1
-OTA3NjNdfQ==
+eyJoaXN0b3J5IjpbLTkwMDUzODgzLDk0NTkyMDA0LC0xODM4MT
+Y1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3
+LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMD
+cwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4
+MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2Mi
+wyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5
+NzYwMzZdfQ==
 -->
