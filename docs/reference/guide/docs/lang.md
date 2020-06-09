@@ -28,31 +28,40 @@ where GCH is an 8 byte header holding both garbage collection info and type/size
 ### Macros
 
 
-### IS_TAGGED(obj)
+    IS_TAGGED(obj)
+
 Check if ```obj``` is tagged or untagged.
 
 
-### PTYPE(obj)
+ 
+
+    PTYPE(obj)
+
 Extract type info from ```obj``` (both tagged or untagged)
 
 
-### PHEADERTYPE(obj)
+    PHEADERTYPE(obj)
+
 Extract type info from ```obj``` (untagged only)
 
 
-### PSMALLINT()
+    PSMALLINT
+
 Type of a PObject representing a small integer (30 bits signed). Tagged.
 
 
-### PINTEGER()
+    PINTEGER
+
 Type of a PObject representing an integer up to int64_t. Untagged.
 
 
-### PFLOAT()
+    PFLOAT
+
 Type of a PObject representing a 64 bits float. Untagged.
 
 
-### PBOOL()
+     PBOOL
+
 Type of a PObject representing a boolean. Tagged.
 
 
@@ -513,5 +522,5 @@ Raise InvalidHardwareStatusError.
 Raise HardwareInitializationError.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2Mjc3MDM4MV19
+eyJoaXN0b3J5IjpbLTE3NDgwNzI0OTJdfQ==
 -->
