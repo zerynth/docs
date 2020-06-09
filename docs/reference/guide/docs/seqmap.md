@@ -1119,11 +1119,9 @@ Remove all elements from the set.
 ## Mapping Types
 
 A mapping object maps hashable values to arbitrary objects.
-Mappings are mutable objects.  There is currently only one standard mapping
-type, the ```dictionary```.
+Mappings are mutable objects.  There is currently only one standard mapping type, the *dictionary*.
 
-A dictionary’s keys are ```almost``` arbitrary values.  Values that are not
-hashable, that is, values containing lists, dictionaries or other
+A dictionary’s keys are *almost* arbitrary values.  Values that are not hashable, that is, values containing lists, dictionaries or other
 mutable types (that are compared by value rather than by object identity) may
 not be used as keys.  Numeric types used for keys obey the normal rules for
 numeric comparison: if two numbers compare equal (such as `1` and `1.0`)
@@ -1289,11 +1287,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzU4NjQyNzQsLTE4MzgxNjUzMTIsOD
-k0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0
-NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0My
-wtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0y
-NDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0MzYyLDIxNzYxOT
-k3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAxNDk3NjAzNiwx
-MDc1OTA3NjNdfQ==
+eyJoaXN0b3J5IjpbNjYxNzAyMTgyLC0xODM4MTY1MzEyLDg5ND
+EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
+MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
+E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
+MzkyNTUxLC0xMzIyNDY4MDIwLDg2ODYwNDM2MiwyMTc2MTk5Nz
+AsMTg2ODY2MTE0MiwxMTg1MDQ1Nzg4LDIwMTQ5NzYwMzYsMTA3
+NTkwNzYzXX0=
 -->
