@@ -372,9 +372,7 @@ The *dir* parameter controls the side of stripping:
 * dir<0, strip *chars from right side of *str*
 
 
-```python
-str.
-```
+**`upper()`**
 
 Return a copy of the string with all the cased characters converted to uppercase.
 
@@ -923,11 +921,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsxODkwMDU2NjI1LC0yMjA2Mj
-c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
-LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
-MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
-MTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMD
-kwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1
-LDE1MzM5NDg5MTJdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlsyNjA0NDQ0ODksLTIyMDYyNz
+cxNSwxOTMyMTk0NDc0LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMs
+MjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMz
+ExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0x
+MzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOT
+AyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcwMDUs
+MTUzMzk0ODkxMl19
 -->
