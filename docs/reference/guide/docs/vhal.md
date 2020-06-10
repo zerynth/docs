@@ -185,7 +185,7 @@ Return 0 in case of success. The parameter ```prph``` is ignored in the current 
 Attach callback ```fn``` to ```vpin```. ```fn``` is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
 If ```fn``` is NULL the currently attached function is removed and the interrupt disabled.
 
-typedef void `(*extCbkFn)`(int _slot_, int _dir_)
+**`typedef void(*extCbkFn)(int slot,int dir)`**
 
 The type of ```fn``` in `vhalPinAttachInterrupt()`. ```slot``` is the slot the callback has been attached to. ```dir``` is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
 
@@ -945,8 +945,8 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5NTA4ODQ5LC04NDUyNDU3NTksOTM0MT
-A5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0
-MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5My
-wtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTQ2MDM2NzY0NywtODQ1MjQ1NzU5LDkzND
+EwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3
+NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OT
+MsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
 -->
