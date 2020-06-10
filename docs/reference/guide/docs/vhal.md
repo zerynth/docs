@@ -333,15 +333,16 @@ To enable DAC functions the macro VHAL_DAC must be defined.
 
 **`int vhalInitDAC(void* data)`**
 
-Must be called before any function starting with ```vhalDac```.
+Must be called before any function starting with *vhalDac*.
 
 
 **`int vhalDacInit(uint32_t vpin)`**
 
-Initialize the DAC identified by the virtual pin ```vpin```. Return 0 on success, negative values in case of failure.
+Initialize the DAC identified by the virtual pin *vpin*. Return 0 on success, negative values in case of failure.
 
 
-### vhalDacWrite(uint32_t* vpin*, uint16_t* \```data```, uint32_t* len*, uint32_t* timestep*)
+int vhalDacWrite(uint32_t vpin, uint16_t *data, uint32_t len, uint32_t timestep)
+
 Return 0 on success. Starts sending data samples in ```data``` to DAC identified by ```vpin``` up to ```len``` samples, each one sent after a dealy of ```timestep```.
 The function suspends the current thread until the last sample is sent.
 
@@ -941,9 +942,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk5NzYwNTAsLTIxNDQxMTg0NDIsLT
-EzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUy
-NDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2Nz
-UsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwt
-MTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMTAyNDM4MDY5NCwtMjE0NDExODQ0MiwtMT
+M4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0
+NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NS
+wtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0x
+NTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
 -->
