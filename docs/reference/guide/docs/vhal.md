@@ -217,12 +217,12 @@ Select continuous conversion mode
 
 ### Types
 
-typedef int `(*adcCbkFn)`(uint32_t _adc_, _*nfo_)
+**`typedef int (*adcCbkFn)(uint32_t adc, vhalAdcCaptureInfo *nfo)`**
 
 The type of the ADC callback for continuous mode. Not used in current version of VHAL.
 
 
-### vhalAdcCaptureInfo()
+vhalAdcCaptureInfo(
 A structure containing the parameters needed to configure the ADC for the conversion:
 
 ```
@@ -935,7 +935,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NzQ4MTY0MSwtNDQ3MjkzOTkyLDExMD
+eyJoaXN0b3J5IjpbLTIxNzYzODU1OCwtNDQ3MjkzOTkyLDExMD
 k2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5
 NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC
 0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0x
