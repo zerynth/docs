@@ -231,7 +231,7 @@ Testing range objects for equality with `==` and `!=` compares them as sequences
 
 ## Strings
 
-Textual data in Python is handled with strin.. Strings are immutable [sequences](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#typesseq) of 8 bit characters. Zerynth does not support Unicode yet.String literals are written in a variety of ways:
+Textual data in Python is handled with strin.. Strings are immutable [sequences](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#typesseq) of 8 bit characters. Zerynth does not support Unicode yet. String literals are written in a variety of ways:
 
 
 * Single quotes: `'allows embedded "double" quotes'`
@@ -242,13 +242,13 @@ Textual data in Python is handled with strin.. Strings are immutable [sequences]
 
 * Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
 
-Triple quoted strings may span multiple lines - all associated whitespace willbe included in the string literal.
+Triple quoted strings may span multiple lines - all associated white space will be included in the string literal.
 
-String literals that are part of a single expression and have only whitespacebetween them will be implicitly converted to a single string literal. Thatis, `("spam " "eggs") == "spam eggs"`.
+String literals that are part of a single expression and have only white space between them will be implicitly converted to a single string literal. That is, `("spam " "eggs") == "spam eggs"`.
 
 Strings may also be created from other objects using the `str`builtin.
 
-Since there is no separate “character” type, indexing a string producesstrings of length 1. That is, for a non-empty string s, `s[0] == s[0:1]`.
+Since there is no separate “character” type, indexing a string produces strings of length 1. That is, for a non-empty string s, `s[0] == s[0:1]`.
 
 There is also no mutable string type, but `str.join()` can be used to efficiently construct strings from
 multiple fragments.
@@ -927,7 +927,7 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstNDA0Mjg0NTAxLC0xMzYxOT
+NjY4NzkwfX0sImhpc3RvcnkiOlstNDk1Mzk0OTgxLC0xMzYxOT
 AyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDEx
 NzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nz
 kxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5
