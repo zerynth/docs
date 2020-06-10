@@ -137,7 +137,22 @@ Attempting to hash an immutable sequence that contains unhashable values willres
 The operations in the following table are defined on mutable sequence types.
 
 In the table ```s``` is an instance of a mutable sequence type, ```t``` is ararobject and ```x``` is an arbitrary object that meets any typeand value restrictions imposed by ```s``` (for example, `bytearray()` onlyaccepts integers that meet the value restriction `0 <= x <= 255`).
-
+|       Operation       |                                         Result                                        |       Notes       |
+|:---------------------:|:-------------------------------------------------------------------------------------:|:-----------------:|
+| s[i] = x              | item i of s is replaced by x                                                          |                   |
+| s[i:j] = t            | slice of s from i to j is replaced by the contents of the iterable t                  |                   |
+| del s[i:j]            | same as s[i:j] = []                                                                   | NOT SUPPORTED YET |
+| s[i:j:k] = t          | the elements of s[i:j:k] are replaced by those of t                                   | (1)               |
+| del s[i:j:k]          | removes the elements of s[i:j:k] from the list                                        | NOT SUPPORTED YET |
+| s.append(x)           | appends x to the end of the sequence (same as s[len(s):len(s)] = [x])                 |                   |
+| s.clear()             | removes all items from s (same as del s[:])                                           | (5)               |
+| s.copy()              | creates a shallow copy of s (same as s[:])                                            | (5)               |
+| s.extend(t) or s += t | extends s with the contents of t (for the most part the same as s[len(s):len(s)] = t) |                   |
+| s *= n                | updates s with its contents repeated n times                                          | (6)               |
+| s.insert(i, x)        | inserts x into s at the index given by i (same as s[i:i] = [x])                       |                   |
+| s.pop([i])            | retrieves the item at i and also removes it from s                                    | (2)               |
+| s.remove(x)           | remove the first item from s where s[i] == x                                          | (3)               |
+| s.reverse()           | reverses the items of s in place                                                      | (4)               |
 Notes:
 
 
@@ -239,7 +254,7 @@ There is also no mutable string type, but `str.join()` can be used to efficientl
 multiple fragments.
 
 
-### class str(object='')
+**class str(object='')**
 Return a string version of ```object```.  If ```object``` is not
 provided, returns the empty string. Returns
 `object.__str__()`, which is the “informal” or nicely
@@ -272,7 +287,8 @@ Return `True` if the string ends with the specified *suffix, otherwise return `F
 Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start and *`end``` are 
 interpreted as in slice notation.  Return `-1` if *sub* is not found.
 
-NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
+!!! note
+	The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
 
 
 
@@ -1028,11 +1044,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDg5NDAwOSwtMTMwMzcxNzkyOSw5ND
-U5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0
-MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5NDg5MTIsMT
-Q0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0
-OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2OD
-AyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4
-NTA0NTc4OF19
+eyJoaXN0b3J5IjpbNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
+kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
+LC0xNTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxND
+QzMzU1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5
+MTA5NSwtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MD
+IwLDg2ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1
+MDQ1Nzg4XX0=
 -->
