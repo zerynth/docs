@@ -135,7 +135,7 @@ Attempting to hash an immutable sequence that contains unhashable values will re
 
 The operations in the following table are defined on mutable sequence types.
 
-In the table ```s``` is an instance of a mutable sequence type, ```t``` is ararobject and ```x``` is an arbitrary object that meets any typeand value restrictions imposed by ```s``` (for example, `bytearray()` onlyaccepts integers that meet the value restriction `0 <= x <= 255`).
+In the table **s** is an instance of a mutable sequence type, ```t``` is arbitrary object and x``` is an arbitrary object that meets any type and value restrictions imposed by ```s``` (for example, `bytearray()` only accepts integers that meet the value restriction `0 <= x <= 255`).
 
 |       Operation       |                                         Result                                        |       Notes       |
 |:---------------------:|:-------------------------------------------------------------------------------------:|:-----------------:|
@@ -928,7 +928,7 @@ LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsyMTQzODgwNTI3LDIxMDc4MT
+NjY4NzkwfX0sImhpc3RvcnkiOlstNTMyMTI1Mjk3LDIxMDc4MT
 Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
 NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
 kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
