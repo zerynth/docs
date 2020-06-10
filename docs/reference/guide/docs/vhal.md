@@ -208,17 +208,17 @@ To enable ADC functions the macro VHAL_ADC must be defined.
 ### Macros
 
 
-### ADC_CAPTURE_SINGLE()
+**`ADC_CAPTURE_SINGLE`**
 Select non continuous conversion mode
 
 
-### ADC_CAPTURE_CONTINUOUS()
+**`ADC_CAPTURE_CONTINUOUS`**
 Select continuous conversion mode
 
 ### Types
 
+typedef int `(*adcCbkFn)`(uint32_t _adc_, _*nfo_)
 
-### (\*adcCbkFn)(uint32_t* adc*, vhalAdcCaptureInfo* \```nfo```)
 The type of the ADC callback for continuous mode. Not used in current version of VHAL.
 
 
@@ -935,7 +935,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODE5NzcxMywtNDQ3MjkzOTkyLDExMD
+eyJoaXN0b3J5IjpbMTI5NzQ4MTY0MSwtNDQ3MjkzOTkyLDExMD
 k2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5
 NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC
 0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0x
