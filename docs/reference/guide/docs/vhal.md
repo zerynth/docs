@@ -16,6 +16,313 @@ All these levels of indirection are hidden by the VHAL using macros to access th
 
 The following scheme summarizes the available virtual pin info:
 
+| Pin Class
+
+ | Pin Offset
+
+ | Pin Value
+
+ | Pin Name
+
+ |
+| --------- | ---------- | --------- | -------- |
+| DIGITAL
+
+   | 0
+
+          | 0x0000
+
+    | D0
+
+       |
+| DIGITAL
+
+   | 1
+
+          | 0x0001
+
+    | D1
+
+       |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| ANALOG
+
+    | 0
+
+          | 0x0100
+
+    | A0
+
+       |
+| ANALOG
+
+    | 1
+
+          | 0x0101
+
+    | A1
+
+       |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| SPI
+
+       | 0
+
+          | 0x0200
+
+    | MOSI0
+
+    |
+| SPI
+
+       | 1
+
+          | 0x0201
+
+    | MISO0
+
+    |
+| SPI
+
+       | 2
+
+          | 0x0202
+
+    | SCLK0
+
+    |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| I2C
+
+       | 0
+
+          | 0x0300
+
+    | SDA0
+
+     |
+| I2C
+
+       | 1
+
+          | 0x0301
+
+    | SCL0
+
+     |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| PWM
+
+       | 0
+
+          | 0x0400
+
+    | PWM0
+
+     |
+| PWM
+
+       | 1
+
+          | 0x0401
+
+    | PWM1
+
+     |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| ICU
+
+       | 0
+
+          | 0x0500
+
+    | ICU0
+
+     |
+| ICU
+
+       | 1
+
+          | 0x0501
+
+    | ICU1
+
+     |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| CAN
+
+       | 0
+
+          | 0x0600
+
+    | CANRX0
+
+   |
+| CAN
+
+       | 1
+
+          | 0x0601
+
+    | CANTX0
+
+   |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| SER
+
+       | 0
+
+          | 0x0700
+
+    | RX0
+
+      |
+| SER
+
+       | 1
+
+          | 0x0701
+
+    | TX0
+
+      |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| DAC
+
+       | 0
+
+          | 0x0800
+
+    | DAC0
+
+     |
+| DAC
+
+       | 1
+
+          | 0x0801
+
+    | DAC1
+
+     |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| LED
+
+       | 0
+
+          | 0x0900
+
+    | LED0
+
+     |
+| LED
+
+       | 1
+
+          | 0x0901
+
+    | LED1
+
+     |
+| …
+
+         | …
+
+          | …
+
+         | …
+
+        |
+| BTN
+
+       | 0
+
+          | 0x0A00
+
+    | BTN0
+
+     |
+| BTN
+
+       | 1
+
+          | 0x0A01
+
+    | BTN1
+
+     |
 Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with 
 
 ```
@@ -139,53 +446,53 @@ Used to configure a pin as input. An interrupt will be generated when the status
 #### GPIO Functions
 
 
-### vhalPinSetMode(int* vpin*, int* mode*)
+### vhalPinSetMode(int*  vpin*, int*  mode*)
 Set the digital mode of ```vpin``` to ```mode```. Valid values for ```mode``` are the digital input and output PINMODE macros. Return 0 in case of success.
 
 
-### vhalPinRead(int* vpin*)
+### vhalPinRead(int*  vpin*)
 Read the digital value of ```vpin```. Return 0 if ```vpin``` is low, non-zero if ```vpin``` is high.
 
 
-### vhalPinWrite(int* vpin*, int* value*)
+### vhalPinWrite(int*  vpin*, int*  value*)
 Set the digital value of ```vpin``` to ```value```. If ```value``` is zero, ```vpin``` is set to low, otherwise is set to high. Return 0 in case of success.
 
 
-### vhalPinToggle(int* vpin*)
+### vhalPinToggle(int*  vpin*)
 Invert the digital value of ```vpin```. If ```vpin``` is high it is set to low, if ```vpin``` is low it is set to high. Return 0 in case of success.
 
 
-### vhalPinGetPort(int* vpin*)
+### vhalPinGetPort(int*  vpin*)
 Get the pointer to a gpio microcontroller register corresponding to ```vpin```. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-### vhalPinGetPad(int* vpin*)
+### vhalPinGetPad(int*  vpin*)
 Get the offset into a gpio microcontroller register corresponding to ```vpin```. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-### vhalPinFastSet(void* \```port```, int* pad*)
+### vhalPinFastSet(void*  \```port```, int*  pad*)
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to high.
 
 
-### vhalPinFastClear(void* \```port```, int* pad*)
+### vhalPinFastClear(void*  \```port```, int*  pad*)
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to low.
 
 
-### vhalPinFastRead(void* \```port```, int* pad*)
+### vhalPinFastRead(void*  \```port```, int*  pad*)
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Return 0 if the in is low, non-zero if it is high.
 
 
-### vhalPinSetToPeripheral(int* vpin*, int* prph*, uint32_t* prms*)
+### vhalPinSetToPeripheral(int*  vpin*, int*  prph*, uint32_t*  prms*)
 Transfer the control of ```vpin``` to a peripheral identified by ```prph```. The configuration parameters for ```vpin``` are passed via ```prms``` in a format depending on the microcontroller porting.
 Return 0 in case of success. The parameter ```prph``` is ignored in the current version of the VHAL.
 
 
-### vhalPinAttachInterrupt(int* vpin*, int* mode*, extCbkFn* fn*, uint32_t* timeout*)
+### vhalPinAttachInterrupt(int*  vpin*, int*  mode*, extCbkFn*  fn*, uint32_t*  timeout*)
 Attach callback ```fn``` to ```vpin```. ```fn``` is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
 If ```fn``` is NULL the currently attached function is removed and the interrupt disabled.
 
 
-### (\*extCbkFn)(int* slot*, int* dir*)
+### (\*extCbkFn)(int*  slot*, int*  dir*)
 The type of ```fn``` in `vhalPinAttachInterrupt()`. ```slot``` is the slot the callback has been attached to. ```dir``` is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
 
 if ```timeout``` is provided, ```fn``` is called only the status of the pin remains stable for at least ```timeout``` units of time, effectively implementing debouncing.
@@ -227,7 +534,7 @@ Select continuous conversion mode
 ### Types
 
 
-### (\*adcCbkFn)(uint32_t* adc*, vhalAdcCaptureInfo* \```nfo```)
+### (\*adcCbkFn)(uint32_t*  adc*, vhalAdcCaptureInfo*  \```nfo```)
 The type of the ADC callback for continuous mode. Not used in current version of VHAL.
 
 
@@ -293,30 +600,30 @@ typedef struct _vhal_adc_conf {
 #### Functions
 
 
-### vhalInitADC(void\** data*)
+### vhalInitADC(void\**  data*)
 Must be called before any function starting with ```vhalAdc```.
 
 
-### vhalAdcInit(uint32_t* adc*, vhalAdcConf* \```conf```)
+### vhalAdcInit(uint32_t*  adc*, vhalAdcConf*  \```conf```)
 Initialize the ADC identified by the peripheral index ```adc``` with values in ```conf```. Return 0 on success, negative values in case of failure.
 
 
-### vhalAdcGetPeripheralForPin(int* vpin*)
+### vhalAdcGetPeripheralForPin(int*  vpin*)
 Return the ADC peripheral index associated with ```vpin```.
 
 
-### vhalAdcPrepareCapture(uint32_t* adc*, vhalAdcCaptureInfo* \```info```)
+### vhalAdcPrepareCapture(uint32_t*  adc*, vhalAdcCaptureInfo*  \```info```)
 Must be called before `vhalAdcRead()` to configure the conversion. Return 0 on success.
 The member ```sample_size``` of ```info``` is set to the actual sample size.
 
 
-### vhalAdcRead(uint32_t* adc*, vhalAdcCaptureInfo* \```info```)
+### vhalAdcRead(uint32_t*  adc*, vhalAdcCaptureInfo*  \```info```)
 Must be called after `vhalAdcPrepareCapture()` has configured the conversion. Return 0 on success. The member ```buffer``` of ```info``` must be set to te correct size according to ```samples``` and ```sample_size```.
 The function suspends the current thread until the end of the conversion.
 The samples are stored in the order they are converted in info->buffer.
 
 
-### vhalAdcDone(uint32_t* adc*)
+### vhalAdcDone(uint32_t*  adc*)
 Disable the ADC identified by the peripheral index ```adc```.
 
 ## DAC
@@ -336,20 +643,20 @@ The VHAL aims at supporting the following features when available:
 To enable DAC functions the macro VHAL_DAC must be defined.
 
 
-### vhalInitDAC(void\** data*)
+### vhalInitDAC(void\**  data*)
 Must be called before any function starting with ```vhalDac```.
 
 
-### vhalDacInit(uint32_t* vpin*)
+### vhalDacInit(uint32_t*  vpin*)
 Initialize the DAC identified by the virtual pin ```vpin```. Return 0 on success, negative values in case of failure.
 
 
-### vhalDacWrite(uint32_t* vpin*, uint16_t* \```data```, uint32_t* len*, uint32_t* timestep*)
+### vhalDacWrite(uint32_t*  vpin*, uint16_t*  \```data```, uint32_t*  len*, uint32_t*  timestep*)
 Return 0 on success. Starts sending data samples in ```data``` to DAC identified by ```vpin``` up to ```len``` samples, each one sent after a dealy of ```timestep```.
 The function suspends the current thread until the last sample is sent.
 
 
-### vhalDacDone(uint32_t* vpin*)
+### vhalDacDone(uint32_t*  vpin*)
 Disable the DAC identified by the virtual pin ```vpin```.
 
 ## PWM
@@ -359,11 +666,11 @@ PWM peripherals are able to generate square waves on pins. Square waves are conf
 To enable PWM functions the macro VHAL_PWM must be defined.
 
 
-### vhalInitPWM(void\** data*)
+### vhalInitPWM(void\**  data*)
 Must be called before any function starting with ```vhalPwm```.
 
 
-### vhalPwmStart(int* vpin*, uint32_t* period*, uint32_t* pulse*, uint32_t* npulses*)
+### vhalPwmStart(int*  vpin*, uint32_t*  period*, uint32_t*  pulse*, uint32_t*  npulses*)
 Generate a square wave of period ```period``` and pulse ```pulse``` on ```vpin```. Timings must be expressed using `TIME_U` and both ```period``` and ```pulse``` must be expressed in the same time unit.
 
 If ```npulses``` is positive, the function blocks the current thread until a number of square waves equal to ```npulses``` is generated; afterwards, pwm is disabled and the function returns.
@@ -431,11 +738,11 @@ Extracts the input mode value from a ```cfg``` generated by `ICU_CFG`
 ### Functions
 
 
-### vhalInitICU(void\** data*)
+### vhalInitICU(void\**  data*)
 Must be called before any function starting with ```vhalIcu```.
 
 
-### vhalIcuStart(int* vpin*, uint32_t* cfg*, uint32_t* time_window*, uint32_t* \```buffer```, uint32_t* \```bufsize```, uint32_t* \```firstbit```)
+### vhalIcuStart(int*  vpin*, uint32_t*  cfg*, uint32_t*  time_window*, uint32_t*  \```buffer```, uint32_t*  \```bufsize```, uint32_t*  \```firstbit```)
 Start capturing on ```vpin```. The capture will start with pin mode and trigger parameters specified in ```cfg``` by means of the `ICU_CFG` macro. Once the capture starts, it will continue until one of the following conditions verifies:
 
 
@@ -464,11 +771,11 @@ Hardware Timers can be used to keep track of time with a greater precision with 
 To enable HTM functions the macro VHAL_HTM must be defined.
 
 
-### (\*htmFn)(uint32_t* tm*, void* \```args```)
+### (\*htmFn)(uint32_t*  tm*, void*  \```args```)
 Type of a hardware timer callback function.
 
 
-### vhalInitHTM(void\** data*)
+### vhalInitHTM(void\**  data*)
 Must be called before any function starting with ```vhalHtm```.
 
 
@@ -476,7 +783,7 @@ Must be called before any function starting with ```vhalHtm```.
 Return the peripheral index of the first available hardware timer. Return value is negative in case of error.
 
 
-### vhalHtmOneShot(uint32_t* tm*, uint32_t* delay*, htmFn* fn*, void* \```args```, uint32_t* blocking*)
+### vhalHtmOneShot(uint32_t*  tm*, uint32_t*  delay*, htmFn*  fn*, void*  \```args```, uint32_t*  blocking*)
 Given the peripheral index ```tm```, configure such timer to generate an interrupt after a time represented by ```delay``` (with `TIME_U`). On interrupt generation, ```fn``` is executed with arguments ```args```.
 
 If ```blocking``` is non-zero, the function blocks the current thread until ```fn``` is called.
@@ -487,7 +794,7 @@ If ```delay``` is zero, the timer is deactivated.
 Return 0 on success.
 
 
-### vhalHtmRecurrent(uint32_t* tm*, uint32_t* delay*, htmFn* fn*, void* \```args```)
+### vhalHtmRecurrent(uint32_t*  tm*, uint32_t*  delay*, htmFn*  fn*, void*  \```args```)
 Given the peripheral index ```tm```, configure such timer to generate an interrupt after a time represented by ```delay``` (with `TIME_U`). On interrupt generation, ```fn``` is executed with arguments ```args``` and the timer is reconfigured to generate another interrupt after the same ```delay```.
 
 If ```delay``` is zero, the timer is deactivated and ```fn``` stops to be executed periodically.
@@ -495,7 +802,7 @@ If ```delay``` is zero, the timer is deactivated and ```fn``` stops to be execut
 Return 0 on success.
 
 
-### vhalSleepMicros(uint32_t* tm*, uint32_t* micros*)
+### vhalSleepMicros(uint32_t*  tm*, uint32_t*  micros*)
 Given the peripheral index ```tm```, suspends the current thread for ```micros``` microseconds.
 
 Return 0 on success.
@@ -557,29 +864,29 @@ Return data bits configuration encoded in ```cfg```
 ### Functions
 
 
-### vhalSerialInit(uint32_t* ser*, uint32_t* baud*, uint32_t* cfg*, uint16_t* rxpin*, uint16_t* txpin*)
+### vhalSerialInit(uint32_t*  ser*, uint32_t*  baud*, uint32_t*  cfg*, uint16_t*  rxpin*, uint16_t*  txpin*)
 Initialize the serial peripheral indentified by the peripheral index ```ser```. Baudrate is set to ```baud``` and configuration parameters are taken from ```cfg``` encoded with `SERIAL_CFG`. ```rxpin``` and ```txpin``` are configured accordingly.
 
 Return 0 on success.
 
 
-### vhalSerialRead(uint32_t* ser*, uint8_t* \```buf```, uint32_t* len*)
+### vhalSerialRead(uint32_t*  ser*, uint8_t*  \```buf```, uint32_t*  len*)
 Read ```len``` bytes from ```ser``` into ```buf``` blocking the current thread until all bytes are read.
 
 Return the actual number of bytes read.
 
 
-### vhalSerialWrite(uint32_t* ser*, uint8_t* \```buf```, uint32_t* len*)
+### vhalSerialWrite(uint32_t*  ser*, uint8_t*  \```buf```, uint32_t*  len*)
 Write ```len``` bytes from ```buf``` to ```ser```. Depending on the implementation, the function may return before all bytes are actually written to ```ser```.
 
 Return the number of bytes written to ```ser``` or to an internal buffer.
 
 
-### vhalSerialAvailable(uint32_t* ser*)
+### vhalSerialAvailable(uint32_t*  ser*)
 Return the number of bytes available to the next `vhalSerialRead()` call.
 
 
-### vhalSerialDone(uint32_t* ser*)
+### vhalSerialDone(uint32_t*  ser*)
 Deactivate ```ser```.
 
 ## I2C
@@ -618,29 +925,29 @@ The meaning of vhalI2CConf members is:
 * ```mode```: not used yet.
 
 
-### vhalInitI2C(void* \```data```)
+### vhalInitI2C(void*  \```data```)
 Must be called before any function starting with ```vhalI2C```.
 
 
-### vhalI2CInit(uint32_t* i2c*, vhalI2CConf* \```conf```)
+### vhalI2CInit(uint32_t*  i2c*, vhalI2CConf*  \```conf```)
 Initialize the I2C bus corresponding to the ```i2c``` peripheral index with configuration parameters taken from ```conf```.
 
 Return 0 on success.
 
 
-### vhalI2CDone(uint32_t* i2c*)
+### vhalI2CDone(uint32_t*  i2c*)
 Deactivates ```i2c```.
 
 
-### vhalI2CLock(uint32_t* i2c*)
+### vhalI2CLock(uint32_t*  i2c*)
 Lock the I2C bus. To be used when multiple threads share the same bus.
 
 
-### vhalI2CUnlock(uint32_t* i2c*)
+### vhalI2CUnlock(uint32_t*  i2c*)
 Unlock the I2C bus. To be used when multiple threads share the same bus.
 
 
-### vhalI2CRead(uint32_t* i2c*, uint8_t\** buf*, uint32_t* len*, uint32_t* timeout*)
+### vhalI2CRead(uint32_t*  i2c*, uint8_t\**  buf*, uint32_t*  len*, uint32_t*  timeout*)
 Start reading from ```i2c``` (from configured ```addr```). Execution ends as soon as one of the following conditions verifies:
 
 
@@ -655,7 +962,7 @@ Start reading from ```i2c``` (from configured ```addr```). Execution ends as soo
 Return 0 on success.
 
 
-### vhalI2CTransmit(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint8_t* \```rx```, uint32_t* rxlen*, uint32_t* timeout*)
+### vhalI2CTransmit(uint32_t*  i2c*, uint8_t\**  tx*, uint32_t*  txlen*, uint8_t*  \```rx```, uint32_t*  rxlen*, uint32_t*  timeout*)
 Execute a two steps communication. First, ```txlen``` bytes from ```tx``` are written to the bus; second, ```rxlen``` bytes are read from the bus to ```rx```.
 
 Execution ends as soon as one of the following conditions verifies:
@@ -672,11 +979,11 @@ Execution ends as soon as one of the following conditions verifies:
 Return 0 on success.
 
 
-### vhalI2CWrite(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint32_t* timeout*)
+### vhalI2CWrite(uint32_t*  i2c*, uint8_t\**  tx*, uint32_t*  txlen*, uint32_t*  timeout*)
 Implemented as a macro calling *vhalI2CTransmit(i2c,tx,txlen,NULL,0,timeout)*.
 
 
-### vhalI2CSetAddr(uint32_t* i2c*, uint16_t* addr*)
+### vhalI2CSetAddr(uint32_t*  i2c*, uint16_t*  addr*)
 Change the peripheral address associated with ```i2c``` in `vhalI2CInit()` to ```addr```.
 
 ## SPI
@@ -754,33 +1061,33 @@ Data is transferred 32 bits at time
 ### Functions
 
 
-### vhalInitSPI(void* \```data```)
+### vhalInitSPI(void*  \```data```)
 Must be called before any function starting with ```vhalSpi```.
 
 
-### vhalSpiInit(uint32_t* spi*, vhalSpiConf* \```conf```)
+### vhalSpiInit(uint32_t*  spi*, vhalSpiConf*  \```conf```)
 Initialize the SPI bus identified by the peripheral index ```spi``` with configuration parameters taken from ```conf```.
 
 Return 0 on success.
 
 
-### vhalSpiLock(uint32_t* spi*)
+### vhalSpiLock(uint32_t*  spi*)
 Lock the SPI bus. To be used when multiple threads share the same bus.
 
 
-### vhalSpiUnlock(uint32_t* spi*)
+### vhalSpiUnlock(uint32_t*  spi*)
 Unlock the SPI bus. To be used when multiple threads share the same bus.
 
 
-### vhalSpiSelect(uint32_t* spi*)
+### vhalSpiSelect(uint32_t*  spi*)
 Select the SPI peripheral connected to ```nss```.
 
 
-### vhalSpiUnselect(uint32_t* spi*)
+### vhalSpiUnselect(uint32_t*  spi*)
 Unselect the SPI peripheral connected to ```nss```.
 
 
-### vhalSpiExchange(uint32_t* spi*, void* \```tosend```, void* \```toread```, uint32_t* blocks*)
+### vhalSpiExchange(uint32_t*  spi*, void*  \```tosend```, void*  \```toread```, uint32_t*  blocks*)
 Start a SPI communication on ```spi```, exchanging a number of data frames equal to ```blocks```. Size of data frame is configured with SPI_BITS macros.
 
 Data is exchanged synchronously; bytes in ```tosend``` are written to MOSI while bytes incoming on MISO are stored in ```toread```. If ```toread``` is NULL, incoming bytes are ignored (pure write). If ```tosend``` is NULL, nothing is written (pure read). If both ```toread``` and ```tosend``` are NULL, bytes on the bus are skipped.
@@ -788,7 +1095,7 @@ Data is exchanged synchronously; bytes in ```tosend``` are written to MOSI while
 Return 0 on success.
 
 
-### vhalSpiDone(uint32_t* spi*)
+### vhalSpiDone(uint32_t*  spi*)
 Deactivate ```spi```.
 
 ### Macros
@@ -818,7 +1125,7 @@ Nfo functions retrieve the unique identifier of a microcontroller.
 Return the unique identifier represented as a hex string.
 
 
-### vhalNfoGetUID(uint8_t* \```buf```)
+### vhalNfoGetUID(uint8_t*  \```buf```)
 Return the unique identifier as bytes in ```buf```
 
 
@@ -830,19 +1137,19 @@ Return the length in bytes of the unique identifier. The length of the correspon
 Microcontrollers usually have a non volatile storage memory  (flash memory) to hold code. These memories are usually organized in sectors or blocks, each of which can be erased and written indipendently of others.
 
 
-### vhalFlashErase(void* \```addr```, uint32_t* size*)
+### vhalFlashErase(void*  \```addr```, uint32_t*  size*)
 Erase sector starting at ```addr``` for ```size``` bytes. If ```size``` is greater than the sector length, following sectors are erased.
 
 Return 0 on success.
 
 
-### vhalFlashWrite(void* \```addr```, uint8_t* \```data```, uint32_t* len*)
+### vhalFlashWrite(void*  \```addr```, uint8_t*  \```data```, uint32_t*  len*)
 Write ```data``` starting at ```addr``` for ```len``` bytes. In many architectures, for vhalFlashWrite to work, the sectors must be erased first.
 
 Return written bytes number.
 
 
-### vhalFlashAlignToSector(void* \```addr```)
+### vhalFlashAlignToSector(void*  \```addr```)
 If ```addr``` points to the start of a sector, return ```addr```. Otherwise the start of the next sector is returned.
 
 Return NULL on error.
@@ -852,7 +1159,7 @@ Return NULL on error.
 Random Number Generators are often implemented in hardware. When such MCU feature is missing, the VHAL provides a software implementation.
 
 
-### vhalRngSeed(uint32_t* seed*)
+### vhalRngSeed(uint32_t*  seed*)
 Initialize the RNG with a seed. Must be called before using `vhalRngGenerate()`
 
 
@@ -864,12 +1171,12 @@ Return a random 32 bits number.
 A Real-Time Clock (RTC) might be available on-board to keep passing time with great accuracy.
 
 
-### vhalRTCInit(int* rtc*)
+### vhalRTCInit(int*  rtc*)
 Initialize the RTC identified by the peripheral index ```rtc```.
 Return 0 on success.
 
 
-### vhalRTCGetUTC(int* rtc*, vhalRTCTimeInfo\** vhal_time_info*)
+### vhalRTCGetUTC(int*  rtc*, vhalRTCTimeInfo\**  vhal_time_info*)
 Fill ```vhal_time_info``` structure with time information retrieved from the RTC.
 
 ```
@@ -892,7 +1199,7 @@ typedef struct _timeinfo {
 Return 0 on success.
 
 
-### vhalRTCSetUTC(int* rtc*, uint32_t* sec*, uint32_t* usec*)
+### vhalRTCSetUTC(int*  rtc*, uint32_t*  sec*, uint32_t*  usec*)
 Set an UTC reference for RTC identified by the peripheral index ```rtc``` passing reference Unix timestamp seconds and microseconds to obtain sub-second precision.
 Return 0 on success.
 
@@ -902,15 +1209,15 @@ In most microcontrollers function to be called in response to an interrupt are s
 To change the function called on interrupt, refer to `vosInstallHandler()`.
 
 
-### vhalIrqEnablePrio(uint32_t* irqn*, uint32_t* prio*)
+### vhalIrqEnablePrio(uint32_t*  irqn*, uint32_t*  prio*)
 Enables the interrupt ```irqn``` assignign a priority of ```prio```. Priority must be passed with the PORT_PRIO_MASK macro defined in the microcontroller porting files.
 
 
-### vhalIrqDisable(uint32_t* irqn*)
+### vhalIrqDisable(uint32_t*  irqn*)
 Disable interrupt ```irqn```
 
 
-### vhalIrqEnable(uint32_t* irqn*)
+### vhalIrqEnable(uint32_t*  irqn*)
 Enable interrupt ```irqn``` assigning a default priority. Implemented as a macro.
 
 ## Error Codes
@@ -944,5 +1251,5 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0ODE4OTkyMF19
+eyJoaXN0b3J5IjpbLTE2OTE5NDIxNzUsLTk0ODE4OTkyMF19
 -->
