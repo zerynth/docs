@@ -134,17 +134,17 @@ Set the digital mode of *vpin* to *mode*. Valid values for *mode* are the digita
 
 **`int vhalPinRead(int vpin)`**
 
-Read the digital value of *vpin*. Return 0 if ```vpin``` is low, non-zero if ```vpin``` is high.
+Read the digital value of *vpin*. Return 0 if *vpin* is low, non-zero if *vpin* is high.
 
 
 **`int vhalPinWrite(int vpin, int value)`**
 
-Set the digital value of ```vpin``` to ```value```. If ```value``` is zero, ```vpin``` is set to low, otherwise is set to high. Return 0 in case of success.
+Set the digital value of *vpin* to *value*. If *value* is zero, *vpin* is set to low, otherwise is set to high. Return 0 in case of success.
 
 
 **`int  vhalPinToggle(int vpin)`**
 
-Invert the digital value of ```vpin```. If ```vpin``` is high it is set to low, if ```vpin``` is low it is set to high. Return 0 in case of success.
+Invert the digital value of *vpin*. If vpin``` is high it is set to low, if ```vpin``` is low it is set to high. Return 0 in case of success.
 
 
 **`void* PinGetPort(int vpin)`**
@@ -945,8 +945,8 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyODUyNzA1LC04NDUyNDU3NTksOTM0MT
-A5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0
-MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5My
-wtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMjA2MzA1Nzg2MSwtODQ1MjQ1NzU5LDkzND
+EwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3
+NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OT
+MsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
 -->
