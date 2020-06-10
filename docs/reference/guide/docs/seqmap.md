@@ -502,7 +502,7 @@ Both bytes and bytearray objects support the common
 sequence operations. They interoperate not just with operands of the same type, but with any bytes-like object. Due to this flexibility, they can be freely mixed in operations without causing errors. However, the return type
 of the result may depend on the order of operands.
 
-NOTE: Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as theirarguments, just as the methods on strings accept bytes as their 
+NOTE: Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as their arguments, just as the methods on strings accept bytes as their 
 arguments.  For example, you can write:
 
 ```
@@ -517,17 +517,17 @@ a = b"abc"
 b = a.replace("a", b"f")
 ```
 
-`bytes.count(sub[,start[,end] ])` `bytearray.count(sub[, start[, end] ])`
+**`bytes.count(sub[,start[,end] ])`** **`bytearray.count(sub[, start[, end] ])`**
 
 Return the number of non-overlapping occurrences of subsequence *sub* in the range [*start,end*].  Optional arguments *start* and *end* are interpreted as in slice notation.
 
 The subsequence to search for may be any bytes-like object or an integer in the range 0 to 255.
 
-`bytes.endswith(suffix[,start[,end] ])` `bytearray.endswith(suffix[,start[,end] ])`
+**`bytes.endswith(suffix[,start[,end] ])` `bytearray.endswith(suffix[,start[,end] ])`**
 
 Return `True` if the binary data ends with the specified *suffix*, otherwise return `False`. With optional *start*, test beginning at that position.  With optional *end*, stop comparing at that position.
 
-`bytes.find(sub[,start[,end] ])` `bytearray.find(sub[,start[,end] ])`
+**`bytes.find(sub[,start[,end] ])` `bytearray.find(sub[,start[,end] ])`**
 
 Return the lowest index in the data where the subsequence *sub* is found, such that *sub* is contained in the slice `s[start:end]`.  Optional arguments *start* and *end* are interpreted as in slice notation.  Return `-1` if ```sub``` is not found.
 
@@ -536,14 +536,14 @@ The subsequence to search for may be any bytes-like object or an integer in the 
 NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the `in` operator.
 
 
-`bytes.index(sub[, start[, end] ])` `bytearray.index(sub[, start[, end] ])`
+**`bytes.index(sub[, start[, end] ])` `bytearray.index(sub[, start[, end] ])`**
 
 Like `find()`, but raise `ValueError` when the subsequence is not found.
 
 The subsequence to search for may be any bytes-like object or an  integer in the range 0 to 255.
 
 
-`bytes.join(iterable)` `bytearray.join(iterable)`
+**`bytes.join(iterable)` `bytearray.join(iterable)`**
 
 
 Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in *iterable* that are not bytes-like objects or strings. The separator between elements is the contents of the bytes or bytearray object providing this method.
@@ -921,11 +921,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTQ1MzQ1NjUxNywtMjIwNj
-I3NzE1LDE5MzIxOTQ0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1
-MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3Nj
-MzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEs
-LTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
-A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
-NSwxNTMzOTQ4OTEyXX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlstNjM5NDI4NTgxLC0yMjA2Mj
+c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
+LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
+MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
+MTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMD
+kwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1
+LDE1MzM5NDg5MTJdfQ==
 -->
