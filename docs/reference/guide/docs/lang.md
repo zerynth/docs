@@ -340,11 +340,11 @@ Return a PObject\*\* to the PObjects stored in *seq*.
 
 
 **`PLIST_ITEM(lst, i)`**
-Return the i-th item in *lst* with *lst*` of type PLIST.
+Return the i-th item in lst with lst of type PLIST.
 
 
  **`PLIST_SET_ITEM(lst, i, item)`**
-Set the i-th item in *lst* to *item*, with *lst* of type PLIST.
+Set the i-th item in *lst* to *item*, with  of type PLIST.
 
 
 **`PTUPLE_ITEM(lst, i)`**
@@ -352,7 +352,7 @@ Return the i-th item in *lst* with *lst* of type PTUPLE.
 
 
 **`PTUPLE_SET_ITEM(lst, i, item)`**
-Set the i-th item in *lst* to *item*, with *lst* of type PTUPLE.
+Set the i-th item in lst  *`em*```, with *lst*```lst``` of type PTUPLE.
 
 ### Functions
 
@@ -550,6 +550,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDkxMDg1NiwtMTgwMTYwMjQ5OCw3Mj
-k5NzY0MzQsODYyNzUzNDczLDEwNTIxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbODE5OTI3NTI2LDE2NzA5MTA4NTYsLTE4MD
+E2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMTg0OTc0
+XX0=
 -->
