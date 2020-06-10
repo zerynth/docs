@@ -411,41 +411,46 @@ Dictionaries and sets must be created, managed and manipulated with the followin
 
 **`PHASH_ELEMENTS(obj)`**
 
-Return the elements in ```obj``` with obj a PDICT, PSET or PFSET.
+Return the elements in *obj* with obj a PDICT, PSET or PFSET.
 
 
 **`PHASH_SIZE(obj)`**
 
-Return the total space for itens in ```obj``` with obj a PDICT, PSET or PFSET.
+Return the total space for itens in *obj* with obj a PDICT, PSET or PFSET.
 
 
 **`PCHECK_HASHABLE(obj)`**
 
-Return true if ```obj``` is hashable, i.e. an hash can be calculated for ```obj```.
+Return true if *obj* is hashable, i.e. an hash can be calculated for *obj*.
 
 
-**`pdict_put(f, k, v)`**
+**`pdict_put(f,k,v)`**
 
 Add the hashable PObject ```k``` as a key and PObject ```v``` as value, in ```f``` of type PDICT.
 
 
-pset_put(f, k)`
+**`pset_put(f,k)`**
+
 Add the hashable PObject ```k```  in ```f``` of type PSET.
 
 
-**`pdict_get(f, k)`**
+**`pdict_get(f,k)`**
+
 Return the value associated with the hashable PObject ```k``` in ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
-### **`pset_get(f, k)`**
+### **`pset_get(f,k)`**
+
 Return ```k``` if the hashable PObject ```k``` is in ```f``` of type PSET or PFSET. Return NULL if ```k``` is not present.
 
 
-**`pdict_del(f, k)`**
+**`pdict_del(f,k)`**
+
 Remove ```k``` and its associated value from ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
-**`pset_del(f, k)`**
+**`pset_del(f,k)`**
+
 Remove ```k``` from ```f``` of type PSET. Return NULL if ```k``` is not present.
 
 ### Functions
@@ -561,7 +566,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMjYyNDMwLC03OTgzNTI3NywtMTk0ND
+eyJoaXN0b3J5IjpbNDc0MjQ5NjUyLC03OTgzNTI3NywtMTk0ND
 E3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4
 OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2Mj
 I0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1
