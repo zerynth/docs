@@ -191,8 +191,7 @@ Lists implement all of the common and mutable sequence operations.
 
 ### Tuples
 
-Tuples are immutable sequences, typically used to store collections of the terogeneous data (such as the 2-tuples produced by the `enumerate()`built-in). Tuples are also used for cases where an immutable sequence of
-homogeneous data is needed.
+Tuples are immutable sequences, typically used to store collections of heterogeneous data (such as the 2-tuples produced by the `enumerate()`built-in). Tuples are also used for cases where an immutable sequence of homogeneous data is needed.
 
 Tuples may be constructed in a number of ways:
 
@@ -210,7 +209,7 @@ operations.
 
 ### Ranges
 
-The `range` type represents an immutable sequence of numbers and iscommonly used for looping a specific number of times in `for`loops.
+The `range` type represents an immutable sequence of numbers and iscomm only used for looping a specific number of times in `for`loops.
 
 class range(stop) `class range(start,sto[step])`
 
@@ -928,7 +927,7 @@ LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOls2NzM1MzMzODUsMjEwNzgxNj
+NjY4NzkwfX0sImhpc3RvcnkiOlsxNDUyNjc3MDksMjEwNzgxNj
 U1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1
 MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OT
 I5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3
