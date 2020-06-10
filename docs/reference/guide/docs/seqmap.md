@@ -96,14 +96,14 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 3. If *i* or *j* is negative, the index is relative to the end of the string:`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` isstill `0`.
 
 
-4. The slice of *s* from *i* to *j* is defined as the sequence of items with index *k* such that `i <= k < j`.  If *i* or j is greater than `len(s)`, use`len(s)`.  If ```i``` is omitted or`None`, use `0`.  If ```j``` is omitted or `None`, use `len(s)`.  If ```i``` is greater than or equal to ```j```, the slice isempty.
+4. The slice of *s* from *i* to *j* is defined as the sequence of items with index *k* such that `i <= k < j`.  If *i* or *j* is greater than `len(s)`, use`len(s)`.  If *i* is omitted or`None`, use `0`.  If *j* is omitted or `None`, use `len(s)`.  If *i* is greater than or equal to *j,* the slice is empty.
 
 
-5. The slice of ```s``` from ```i``` to ```j``` with step ```k``` is defined as the sequence ofitems with index  `x = i + n\*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2\*k`, `i+3\*k` and so on, stopping when```j``` is reached (but never including ```j```).  If ```i``` or ```j``` is greater than`len(s)`, use `len(s)`.  If ```i``` or ```j``` are omitted or `None`, they become“end” values (which end depends on the sign of ```k```).  Note, ```k``` cannot be zero.
+5. The slice of *s* from *i* to j with step ```k``` is defined as the sequence of items with index  `x = i + n\*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2\*k`, `i+3\*k` and so on, stopping when```j``` is reached (but never including ```j```).  If ```i``` or ```j``` is greater than`len(s)`, use `len(s)`.  If ```i``` or ```j``` are omitted or `None`, they become“end” values (which end depends on the sign of ```k```).  Note, ```k``` cannot be zero.
 If ```k``` is `None`, it is treated like `1`.
 
 
-6. Concatenating immutable sequences always results in a new object.  Thismeans that building up a sequence by repeated concatenation will have aquadratic runtime cost in the total sequence length. To get a linearruntime cost, you must switch to one of the alternatives below:
+6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have aquadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
 
 
     * if concatenating `str()` objects, you can build a list and use`str.join()` at the end.
@@ -929,11 +929,11 @@ LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTY2ODg2NjI1OSwzODk2NT
-U4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwz
-NzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMD
-A0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0x
-NTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMz
-U1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5
-NSwtMTQ2Mzg4MDYwMl19
+NjY4NzkwfX0sImhpc3RvcnkiOlstODQ3MDg5NzA1LDM4OTY1NT
+g5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0xODUyNDc1NzY4LDM3
+MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5MjksOTQ1OTIwMD
+QsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1
+MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNT
+U3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1
+LC0xNDYzODgwNjAyXX0=
 -->
