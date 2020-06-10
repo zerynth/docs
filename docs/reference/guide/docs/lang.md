@@ -357,16 +357,16 @@ Set the i-th item in *lst* to *item*, with *lst* of type PTUPLE.
 
 ### Functions
 
-```python
-PObject*psequence_new(uint8_t type, uint16_t  elements)
-```
+
+**`PObject*psequence_new(uint8_t type, uint16_t  elements)`**
 
 Create an empty sequence of type type with space for at least *elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence *elements* are set to elements` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-Pobject*pstring_new(uint16_t  len, uint8_t  \```buf```)
+**`Pobject*pstring_new(uint16_t  len, uint8_t *buf)`**
+
 Create a sequence of type PSTRING with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the string.
 
 Return NULL on failure.
@@ -553,8 +553,9 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY2NjA4ODgsMTU0MzQ1MzgzMSw0OD
-kxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOTE2Mzc5
-MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAyNDk4LD
-cyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbNjIxNjAwNzE4LC0xMzk2NjYwODg4LDE1ND
+M0NTM4MzEsNDg5MTExOTk3LC0yODA3Mjg1NzAsMTYyMjQwOTU3
+MiwxMDkxNjM3OTE3LC0xNTgwNDMwNTUzLDgxOTkyNzUyNiwtMT
+gwMTYwMjQ5OCw3Mjk5NzY0MzQsODYyNzUzNDczLDEwNTIxODQ5
+NzRdfQ==
 -->
