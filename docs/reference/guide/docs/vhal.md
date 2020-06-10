@@ -297,18 +297,17 @@ Initialize the ADC identified by the peripheral index *adc* with values in *conf
 
 **`int  vhalAdcGetPeripheralForPin(int vpin)`**
 
-Return the ADC peripheral index associated with vpin.
+Return the ADC peripheral index associated with *vpin*.
 
 
 **`int vhalAdcPrepareCapture(uint32_t adc,vhalAdcCaptureInfo *info)`**
 
-Must be called before `vhalAdcRead()` to configure the conversion. Return 0 on success.
-The member ```sample_size``` of ```info``` is set to the actual sample size.
+Must be called before `vhalAdcRead()` to configure the conversion. Return 0 on success. The member *sample_size* of *info* is set to the actual sample size.
 
 
 **`int vhalAdcRead(uint32_t adc,vhalAdcCaptureInfo *info)`**
 
-Must be called after `vhalAdcPrepareCapture()` has configured the conversion. Return 0 on success. The member ```buffer``` of ```info``` must be set to te correct size according to ```samples``` and ```sample_size```.
+Must be called after `vhalAdcPrepareCapture()` has configured the conversion. Return 0 on success. The member *buffer* of *info* must be set to the correct size according to *samples* and sample_size.
 The function suspends the current thread until the end of the conversion.
 The samples are stored in the order they are converted in info->buffer.
 
@@ -942,7 +941,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjExMzY3MiwtMTM4MDcwNzYwNCwtND
+eyJoaXN0b3J5IjpbLTEwMDc0MTYyNiwtMTM4MDcwNzYwNCwtND
 Q3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkx
 MTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC
 0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0x
