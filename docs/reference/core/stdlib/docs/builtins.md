@@ -834,11 +834,12 @@ Otherwise, if more than a positional argument is given, each argument is inserte
 ---
 #### `#!py3 open()`
 
-!!!abstract "`#!py3 open(file, mode="rb")`"
+open(file, mode="rb")`"
 
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbLTIwNTU3MTQ3OTEsLTIxNTkxMjg5MCwtMT
+c4ODgyMjg0Ml19
 -->
