@@ -214,7 +214,7 @@ The `range` type represents an immutable sequence of numbers and is commonly use
 **`class range(stop)`** **`class range(start,stop[,step] )`**
 
 The arguments to the range constructor must be integers.
-If the st argument is omitted, it defaults to 1. If the *st* ument is omitted, it defaults to 0.If step*is zero, `ValueError` is raised.
+If the st argument is omitted, it defaults to 1. If the *start* argument is omitted, it defaults to 0. If *step* is zero, `ValueError` is raised.
 
 For a positive ```step```, the contents of a range `r` are determined by theformula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
 
@@ -927,11 +927,11 @@ LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstNzEzOTE3NDA3LDIxMDc4MT
-Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
-NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
-kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
-NzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5ND
-g5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUx
-LDIwMTI0OTEwOTVdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTAyNzA1OTA0NCwyMTA3OD
+E2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0x
+ODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MT
+c5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIw
+Mzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOT
+Q4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1
+MSwyMDEyNDkxMDk1XX0=
 -->
