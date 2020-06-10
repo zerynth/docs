@@ -424,22 +424,22 @@ Return true if *obj* is hashable, i.e. an hash can be calculated for *obj*.
 
 pdict_put(f,k,v)`**
 
-Add the hashable PObject ```k``` as a key and PObject ```v``` as value, in ```f``` of type PDICT.
+Add the hashable PObject  as a key and PObject *v* as value, in  of type PDICT.
 
 
 pset_put(f,k)`**
 
-Add the hashable PObject ```k```  in ```f``` of type PSET.
+Add the hashable PObject *k* in *f* of type PSET.
 
 
 pdict_get(f,k)`**
 
-Return the value associated with the hashable PObject ```k``` in ```f``` of type PDICT. Return NULL if ```k``` is not present.
+Return the value associated with the hashable PObject *k* in *f* of type PDICT. Return NULL if ```k```*k* is not present.
 
 
 ### **`pset_get(f,k)`**
 
-Return ```k``` if the hashable PObject ```k``` is in ```f``` of type PSET or PFSET. Return NULL if ```k``` is not present.
+Return  if the hashable PObject k`is in ```f``` of type PSET or PFSET. Return NULL if  is not present.
 
 
 pdict_del(f,k)`**
@@ -564,10 +564,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ2NjE3Miw0NzQyNDk2NTIsLTc5OD
-M1Mjc3LC0xOTQ0MTczMjEsMTI3MTM0MTY2MSwxOTUxNjU1NDA0
-LC0xMzk2NjYwODg4LDE1NDM0NTM4MzEsNDg5MTExOTk3LC0yOD
-A3Mjg1NzAsMTYyMjQwOTU3MiwxMDkxNjM3OTE3LC0xNTgwNDMw
-NTUzLDgxOTkyNzUyNiwtMTgwMTYwMjQ5OCw3Mjk5NzY0MzQsOD
-YyNzUzNDczLDEwNTIxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbMTE0MzI4NzAwMiwtMTc0NDY2MTcyLC03OT
+gzNTI3NywtMTk0NDE3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQw
+NCwtMTM5NjY2MDg4OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMj
+gwNzI4NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQz
+MDU1Myw4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LD
+g2Mjc1MzQ3MywxMDUyMTg0OTc0XX0=
 -->
