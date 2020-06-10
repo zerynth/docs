@@ -142,17 +142,17 @@ Read the digital value of ```vpin```. Return 0 if ```vpin``` is low, non-zero if
 Set the digital value of ```vpin``` to ```value```. If ```value``` is zero, ```vpin``` is set to low, otherwise is set to high. Return 0 in case of success.
 
 
-**int  vhalPinToggle(int vpin)**
+**`int  vhalPinToggle(int vpin)`**
 
 Invert the digital value of ```vpin```. If ```vpin``` is high it is set to low, if ```vpin``` is low it is set to high. Return 0 in case of success.
 
 
-### vhalPinGetPort(int* vpin*)
+**`void* PinGetPort(int vpin)`**
 
 Get the pointer to a gpio microcontroller register corresponding to ```vpin```. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-### vhalPinGetPad(int* vpin*)
+**int PinGetPad(int vpin)**
 
 Get the offset into a gpio microcontroller register corresponding to ```vpin```. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
@@ -944,7 +944,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzODMzNDMsOTM0MTA5MTExLDE3OTM2NT
+eyJoaXN0b3J5IjpbNDc0ODYyNDAsOTM0MTA5MTExLDE3OTM2NT
 cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
 MiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMC
 wtMTY5MTk0MjE3NV19
