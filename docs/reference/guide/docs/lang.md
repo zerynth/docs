@@ -365,7 +365,7 @@ Create an empty sequence of type type with space for at least *elements elements
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-**`Pobject*pstring_new(uint16_t lenuint8_t 
+**`Pobject*pstring_new(uint16_t lenuint8_t
 Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the string.
 
 Return NULL on failure.
@@ -381,14 +381,12 @@ Return NULL on failure.
 
 **`PObject*pshorts_new(uint16_t len,uint8**
 16_t* 
-
 Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *len* words from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*ptuple_new(uint16_t lenPObject *b**
-*  \*\``*buf)`**
+**`PObject*ptuple_new(uint16_t lenPObject *  \*\``*buf)`**
 
 Create a sequence of type PTUPLE with *len* elements. If *buf* is not NULL, *len* objects from *buf* are used to initialize the sequence.
 
@@ -409,32 +407,32 @@ Dictionaries and sets must be created, managed and manipulated with the followin
 ### Macros
 
 
-**`PHASH_ELEMENTS(obj)`**
+PHASH_ELEMENTS(obj)`**
 
 Return the elements in *obj* with obj a PDICT, PSET or PFSET.
 
 
-**`PHASH_SIZE(obj)`**
+PHASH_SIZE(obj)`**
 
 Return the total space for itens in *obj* with obj a PDICT, PSET or PFSET.
 
 
-**`PCHECK_HASHABLE(obj)`**
+PCHECK_HASHABLE(obj)`**
 
 Return true if *obj* is hashable, i.e. an hash can be calculated for *obj*.
 
 
-**`pdict_put(f,k,v)`**
+pdict_put(f,k,v)`**
 
 Add the hashable PObject ```k``` as a key and PObject ```v``` as value, in ```f``` of type PDICT.
 
 
-**`pset_put(f,k)`**
+pset_put(f,k)`**
 
 Add the hashable PObject ```k```  in ```f``` of type PSET.
 
 
-**`pdict_get(f,k)`**
+pdict_get(f,k)`**
 
 Return the value associated with the hashable PObject ```k``` in ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
@@ -444,12 +442,12 @@ Return the value associated with the hashable PObject ```k``` in ```f``` of type
 Return ```k``` if the hashable PObject ```k``` is in ```f``` of type PSET or PFSET. Return NULL if ```k``` is not present.
 
 
-**`pdict_del(f,k)`**
+pdict_del(f,k)`**
 
 Remove ```k``` and its associated value from ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
-**`pset_del(f,k)`**
+pset_del(f,k)`**
 
 Remove ```k``` from ```f``` of type PSET. Return NULL if ```k``` is not present.
 
@@ -566,10 +564,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0MjQ5NjUyLC03OTgzNTI3NywtMTk0ND
-E3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4
-OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2Mj
-I0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1
-MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMD
-UyMTg0OTc0XX0=
+eyJoaXN0b3J5IjpbLTE3NDQ2NjE3Miw0NzQyNDk2NTIsLTc5OD
+M1Mjc3LC0xOTQ0MTczMjEsMTI3MTM0MTY2MSwxOTUxNjU1NDA0
+LC0xMzk2NjYwODg4LDE1NDM0NTM4MzEsNDg5MTExOTk3LC0yOD
+A3Mjg1NzAsMTYyMjQwOTU3MiwxMDkxNjM3OTE3LC0xNTgwNDMw
+NTUzLDgxOTkyNzUyNiwtMTgwMTYwMjQ5OCw3Mjk5NzY0MzQsOD
+YyNzUzNDczLDEwNTIxODQ5NzRdfQ==
 -->
