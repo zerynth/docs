@@ -256,12 +256,9 @@ multiple fragments.
 
 **`class str(object='')`**
 
-Return a [string](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) version of ```object```.  If ```object``` is not
-provided, returns the empty string. Returns
+Return a [string](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) version of *object*.  If *object* is not provided, returns the empty string. Returns
 `object.__str__()`, which is the “informal” or nicely
-printable string representation of ```object```.  For string objects, this is
-the string itself.  If ```object``` does not have a `__str__()`
-method, then `str()` raises TypeError.
+printable string representation of *object*.  For string objects, this is the string itself.  If *object* does not have a `__str__()` method, then `str()` raises TypeError.
 
 ### String Methods
 
@@ -928,11 +925,11 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTQzNjUxMzQ5MiwtMTM2MT
-kwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwx
-MTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0ND
-c5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4
-OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOT
-Q3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQz
-LC0xNzE5NzU3ODUxXX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlsxNDk5MDM0MTYwLC0xNDM2NT
+EzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAs
+NzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2OD
+gyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0x
+ODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1ND
+MzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0
+LC0xMDcwNzI1NDNdfQ==
 -->
