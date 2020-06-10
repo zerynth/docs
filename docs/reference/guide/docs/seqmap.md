@@ -423,115 +423,23 @@ Python has 002 quote types.
 In this case no `*` specifiers may occur in a format (since they require a sequential parameter list).
 
 The conversion flag characters are:
-| Flag |                                                    Meaning                                                   |
-|:----:|:------------------------------------------------------------------------------------------------------------:|
-| '0'  | The conversion will be zero padded for numeric values.                                                       |
-| '-'  | The converted value is left adjusted (overrides the '0' conversion if both are given).                       |
-| ' '  | (a space) A blank should be left before a positive number (or empty string) produced by a signed conversion. |
-| '+'  | A sign character ('+' or '-') will precede the conversion (overrides a “space” flag).                        |
-The conversion types are (1):
-
-| Conversion
-
-                            | Meaning
-
-                                                                                                      | Notes
-
-                   |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| `'d'`
-
-                                   | Signed integer decimal.
-
-                                                                                      |                         |
-| `'i'`
-
-                                   | Signed integer decimal.
-
-                                                                                      |                         |
-| `'u'`
-
-                                   | Obsolete type – it is identical to `'d'`.
-
-                                                                      |                         |
-| `'x'`
-
-                                   | Signed hexadecimal (lowercase).
-
-                                                                              | (2)
-
-                     |
-| `'X'`
-
-                                   | Signed hexadecimal (uppercase).
-
-                                                                              | (2)
-
-                     |
-| `'e'`
-
-                                   | Floating point exponential format (lowercase).
-
-                                                               | (3)
-
-                     |
-| `'E'`
-
-                                   | Floating point exponential format (uppercase).
-
-                                                               | (3)
-
-                     |
-| `'f'`
-
-                                   | Floating point decimal format.
-
-                                                                               | (3)
-
-                     |
-| `'F'`
-
-                                   | Floating point decimal format.
-
-                                                                               | (3)
-
-                     |
-| `'g'`
-
-                                   | Floating point format. Uses lowercase exponential
-format if exponent is less than -4 or not less than
-precision, decimal format otherwise.
-
- | (3)
-
-                     |
-| `'G'`
-
-                                   | Floating point format. Uses uppercase exponential
-format if exponent is less than -4 or not less than
-precision, decimal format otherwise.
-
- | (3)
-
-                     |
-| `'s'`
-
-                                   | String (converts any Python object using
-`str()`).
-
-                                                                                           | (4)
-
-                     |
-| `'%'`
-
-                                   | No argument is converted, results in a `'%'`
-character in the result.
-
-                                                                        |                         |
+| Conversion |                                                                   Meaning                                                                  | Notes |
+|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:-----:|
+| 'd'        | Signed integer decimal.                                                                                                                    |       |
+| 'i'        | Signed integer decimal.                                                                                                                    |       |
+| 'u'        | Obsolete type – it is identical to 'd'.                                                                                                    |       |
+| 'x'        | Signed hexadecimal (lowercase).                                                                                                            | (2)   |
+| 'X'        | Signed hexadecimal (uppercase).                                                                                                            | (2)   |
+| 'e'        | Floating point exponential format (lowercase).                                                                                             | (3)   |
+| 'E'        | Floating point exponential format (uppercase).                                                                                             | (3)   |
+| 'f'        | Floating point decimal format.                                                                                                             | (3)   |
+| 'F'        | Floating point decimal format.                                                                                                             | (3)   |
+| 'g'        | Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise. | (3)   |
+| 'G'        | Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise. | (3)   |
+| 's'        | String (converts any Python object using str()).                                                                                           | (4)   |
+| '%'        | No argument is converted, results in a '%' character in the result.                                                                        |       |
 Notes:
-
-
-1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
+	1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
 
 
 2. Hexadecimal conversion does not produce the “0x” prefix.
@@ -1019,7 +927,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5NDYyMTU1LDU5OTk0NDc5MSwtMTMwMz
+eyJoaXN0b3J5IjpbNTk0ODQ3NTI0LDU5OTk0NDc5MSwtMTMwMz
 cxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYs
 MjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1Mz
 M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
