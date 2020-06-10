@@ -38,7 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and  are sequences of the same type, **n**, **i**, **j** and **k** are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
+This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, j*j* and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -96,10 +96,10 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 3. If **i** or **j** is negative, the index is relative to the end of the string:`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` isstill `0`.
 
 
-4. The slice of **s** from **i** to **j** is defined as the sequence of items with index **k** such that `i <= k < j`.  If **i** or **j** is greater than `len(s)`, use`len(s)`.  If **i** is omitted or`None`, use `0`.  If **j** is omitted or `None`, use `len(s)`.  If **i** is greater than or equal to **j*,* the slice is empty.
+4. The slice of **s** from **i** to  is defined as the sequence of items with index **k** such that `i <= k < j`.  If **i** or **j**```i``` or  is greater than `len(s)`, use`len(s)`.  If **i** is omitted or`None`, use `0`.  If **j** is omitted or `None`, use `len(s)`.  If **i** is greater than or equal to **j*,* the slice is empty.
 
 
-5. The slice of **s** from **i** to **j** with step **k** is defined as the sequence of items with index  `x = i + n*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when **j** is reached (but never including ***j*).  If **i** or  **j** is greater than`len(s)`, use `len(s)`.  If **i** or **j** are omitted or `None`, they become“end” values (which end depends on the sign of **k**).  Note, **k** cannot be zero. If **k** is `None`, it is treated like `1`.
+5. The slice of **s** from **i** to **j** with step **k** is defined as the sequence of items with index  `x = i + n*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when **j** is reached (but never including ***j*).  If **i** or  **j**```j```).  If  is greater than`len(s)`, use `len(s)`.  If **i** or **j** are omitted or `None`, they become“end” values (which end depends on the sign of **k**).  Note, **k** cannot be zero. If ` is `None`, it is treated like `1`.
 
 
 6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
@@ -214,7 +214,7 @@ The `range` type represents an immutable sequence of numbers and is commonly use
 **`class range(stop)`** **`class range(start,stop[,step] )`**
 
 The arguments to the range constructor must be integers.
-If the st argument is omitted, it defaults to 1. If the *start* argument is omitted, it defaults to 0. If *step* is zero, `ValueError` is raised.
+If the stument is omitted, it defaults to 1. If the *start* arg* ument is omitted, it defaults to 0. If *step* is zero, `ValueError` is raised.
 
 For a positive ```step```, the contents of a range `r` are determined by theformula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
 
@@ -922,16 +922,16 @@ Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozODAw
-LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk5
+LCJlbmQiOjM4MTZ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTAyNzA1OTA0NCwyMTA3OD
-E2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0x
-ODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MT
-c5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIw
-Mzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOT
-Q4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1
-MSwyMDEyNDkxMDk1XX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTM2MTkwMjUzLC0xMDI3MD
+U5MDQ0LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwx
+MTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0ND
+c5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4
+OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOT
+Q3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQz
+LC0xNzE5NzU3ODUxXX0=
 -->
