@@ -4,27 +4,25 @@ The following sections describe the sequence and mapping types that are built in
 
 ## Iterator Types
 
-Python supports a concept of iteration over containers.  This is implementedusing two distinct methods; these are used to allow user-defined classes tosupport iteration.
+Python supports a concept of iteration over containers.  This is implemented using two distinct methods; these are used to allow user-defined classes to support iteration.
 
-One method needs to be defined for container objects to provide iterationsupport:
+One method needs to be defined for container objects to provide iteration support:
 
-```python
-container.\__iter__()
-```
 
-Return an iterator object.  The object is required to support the iteratorprotocol described below.
+**container.\__iter__()**
 
- iterator objects themselves are required to support the following twomethods, which together form the *iterator protocol*:
+Return an iterator object.  The object is required to support the iterator protocol described below.
 
-```python
- iterator.\__iter__()
-```
+ iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
+
+
+ **iterator.\__iter__()**
  
 Return the iterator object itself.  This is required to allow both containersand iterators to be used with the `for` and `in` statements.
 
-```
-iterator.\__next__()
-```
+
+**iterator.\__next__()**
+
 Return the next item from the container.  If there are no further items, raise the `StopIteration` exception.
 
 Once an iterator’s `__next__()` method raises`StopIteration`, it must continue to do so on subsequent calls.
@@ -916,16 +914,16 @@ Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk3
-LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzgy
+LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTI4ODkxNjcxMywtMjIwNj
-I3NzE1LDE5MzIxOTQ0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1
-MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3Nj
-MzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEs
-LTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
-A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
-NSwxNTMzOTQ4OTEyXX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlstOTk0MDEyODYxLC0yMjA2Mj
+c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
+LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
+MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
+MTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMD
+kwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1
+LDE1MzM5NDg5MTJdfQ==
 -->
