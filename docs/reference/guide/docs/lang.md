@@ -365,14 +365,15 @@ Create an empty sequence of type type with space for at least *elements elements
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-**`Pobject*pstring_new(uint16_t  len, uint8_t *buf)`**
+**`Pobject*pstring_new(uint16_t len,uint8_t*buf)`**
 
-Create a sequence of type PSTRING with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the string.
+Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the string.
 
 Return NULL on failure.
 
 
-PObject*pbytes_new(uint16_t*  len*, uint8_t*  \```buf```)
+PObject*pbytes_new(uint16_t*  len*, uint8_t*  \buf)
+
 Create a sequence of type PBYTES with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
@@ -553,9 +554,9 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxNjAwNzE4LC0xMzk2NjYwODg4LDE1ND
-M0NTM4MzEsNDg5MTExOTk3LC0yODA3Mjg1NzAsMTYyMjQwOTU3
-MiwxMDkxNjM3OTE3LC0xNTgwNDMwNTUzLDgxOTkyNzUyNiwtMT
-gwMTYwMjQ5OCw3Mjk5NzY0MzQsODYyNzUzNDczLDEwNTIxODQ5
-NzRdfQ==
+eyJoaXN0b3J5IjpbMTkwNDQ5MzMzMCwtMTM5NjY2MDg4OCwxNT
+QzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2MjI0MDk1
+NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1MjYsLT
+E4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMTg0
+OTc0XX0=
 -->
