@@ -227,7 +227,7 @@ except concatenation and repetition (due to the fact that range objects can only
 
 The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same(small) amount of memory, no matter the size of the range it represents (as it only stores the start,stop and step values, calculating individual items and sub ranges as needed).
 
-Testing range objects for equality with `==` and `!=` comparesthem as sequences.  That is, two rangeobjects are considered equal ifthey represent the same sequence of values.  (Note that two range objects that compare equal might have different **start**, **stop** and **step** attributes, for example`range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
+Testing range objects for equality with `==` and `!=` compares them as sequences.  That is, two range objects are considered equal if they represent the same sequence of values.  (Note that two range objects that compare equal might have different **start**, **stop** and **step** attributes, for example`range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
 
 ## Strings
 
@@ -927,11 +927,11 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOls2MjY2ODI3MjMsLTEzNjE5MD
-I1MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3
-NjMzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OT
-EsLTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0
-MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0Nz
-AwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0Mywt
-MTcxOTc1Nzg1MV19
+NjY4NzkwfX0sImhpc3RvcnkiOlstNDA0Mjg0NTAxLC0xMzYxOT
+AyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDEx
+NzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nz
+kxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5
+NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5ND
+cwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMs
+LTE3MTk3NTc4NTFdfQ==
 -->
