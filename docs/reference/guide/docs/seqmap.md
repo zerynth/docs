@@ -254,9 +254,9 @@ There is also no mutable string type, but `str.join()` can be used to efficientl
 multiple fragments.
 
 
-class str(object='')
+**`class str(object='')`**
 
-Return a string version of ```object```.  If ```object``` is not
+Return a [string](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) version of ```object```.  If ```object``` is not
 provided, returns the empty string. Returns
 `object.__str__()`, which is the “informal” or nicely
 printable string representation of ```object```.  For string objects, this is
@@ -928,11 +928,11 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsxNjc4NTI0NzE3LC0xMzYxOT
-AyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDEx
-NzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nz
-kxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5
-NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5ND
-cwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMs
-LTE3MTk3NTc4NTFdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTQzNjUxMzQ5MiwtMTM2MT
+kwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwx
+MTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0ND
+c5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4
+OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOT
+Q3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQz
+LC0xNzE5NzU3ODUxXX0=
 -->
