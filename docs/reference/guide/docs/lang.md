@@ -463,7 +463,7 @@ Return NULL on failure.
 
 **`PObject*pset_new(int type,int size)`**
 
-Create an empty set or frozenset depending on ```type```, with enough space to contain ```size``` items.
+Create an empty set or frozenset depending on *type*, with enough space to contain *size* items.
 
 Return NULL on failure.
 
@@ -472,75 +472,75 @@ Return NULL on failure.
 The following macros must be returned by functions declared with C_NATIVE to signal the result of the call and eventually rise an exception. Non builtin exception names can not be retrieved by VM system calls, so no exception macro exists; a workaround for this limitation is to pass exception names from Python and store them somewhere in a C structure to be raised when needed.
 
 
-### ERR_OK()
+ERR_OK
 Call successful.
 
 
-### ERR_TYPE_EXC()
+ERR_TYPE_EXC
 Raise TypeError.
 
 
-### ERR_ZERODIV_EXC()
+ERR_ZERODIV_EXC
 Raise ZeroDivisionError.
 
 
-### ERR_ATTRIBUTE_EXC()
+ERR_ATTRIBUTE_EXC
 Raise AttributeError.
 
 
-### ERR_RUNTIME_EXC()
+ERR_RUNTIME_EXC
 Raise RuntimeError.
 
 
-### ERR_VALUE_EXC()
+ERR_VALUE_EXC
 Raise ValueError.
 
 
-### ERR_INDEX_EXC()
+ERR_INDEX_EXC
 Raise IndexError.
 
 
-### ERR_KEY_EXC()
+ERR_KEY_EXC
 Raise KeyError.
 
 
-### ERR_NOT_IMPLEMENTED_EXC()
+ERR_NOT_IMPLEMENTED_EXC
 Raise NotImplementedError.
 
 
-### ERR_UNSUPPORTED_EXC()
+ERR_UNSUPPORTED_EXC
 Raise UnsupportedError.
 
 
-### ERR_OVERFLOW_EXC()
+ERR_OVERFLOW_EXC
 Raise OverflowError.
 
 
-### ERR_STOP_ITERATION()
+ERR_STOP_ITERATION
 Raise StopIteration.
 
 
-### ERR_NAME_EXC()
+ERR_NAME_EXC
 Raise NameError.
 
 
-### ERR_IOERROR_EXC()
+ERR_IOERROR_EXC
 Raise IOError.
 
 
-### ERR_IOERROR_EXC()
+ERR_IOERROR_EXC
 Raise IOError.
 
 
-### ERR_CONNECTION_REF_EXC()
+ERR_CONNECTION_REF_EXC
 Raise ConnectionRefusedError.
 
 
-### ERR_CONNECTION_RES_EXC()
+ERR_CONNECTION_RES_EXC
 Raise ConnectionResetError.
 
 
-### ERR_CONNECTION_ABR_EXC()
+ERR_CONNECTION_ABR_EXC
 Raise ConnectionAbortedError.
 
 
@@ -566,11 +566,11 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzNTU5MzkzLC03MjQwNDg1NjMsLTE2Mj
-A4NzkzMjYsLTE3NDQ2NjE3MiwtNzk4MzUyNzcsLTE5NDQxNzMy
-MSwxMjcxMzQxNjYxLDE5NTE2NTU0MDQsLTEzOTY2NjA4ODgsMT
-U0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5
-NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC
-0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4
-NDk3NF19
+eyJoaXN0b3J5IjpbLTE1OTYzNTM4OTEsLTcyNDA0ODU2MywtMT
+YyMDg3OTMyNiwtMTc0NDY2MTcyLC03OTgzNTI3NywtMTk0NDE3
+MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4OC
+wxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2MjI0
+MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1Mj
+YsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUy
+MTg0OTc0XX0=
 -->
