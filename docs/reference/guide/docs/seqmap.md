@@ -108,7 +108,7 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
     * if concatenating `str()` objects, you can build a list and use`str.join()` at the end.
 
 
-    * if concatenating `bytes()` objects, you can similarly use`bytes.join()` or you can do in-placeconcatenation with a `bytearray()` object.  `bytearray()`objects are mutable and have an efficient overallocation mechanism
+    * if concatenating `bytes()` objects, you can similarly use`bytes.join()` or you can do in-place concatenation with a `bytearray()` object.  `bytearray()`objects are mutable and have an efficient overallocation mechanism
 
 
     * if concatenating `tuple()` objects, extend a `list()` instead
@@ -117,7 +117,7 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
     * for other types, investigate the relevant class documentation
 
 
-7. Some sequence types (such as `range()`) only support item sequencesthat follow specific patterns, and hence don’t support sequenceconcatenation or repetition.
+7. Some sequence types (such as `range()`) only support item sequences that follow specific patterns, and hence don’t support sequence concatenation or repetition.
 
 
 8. `index` raises `ValueError` when x is not found in s.
@@ -125,7 +125,7 @@ When supported, the additional arguments to the index method allow efficient sea
 
 ### Immutable Sequence Types
 
-The only feature that immutable sequence types generally implement that isnot also implemented by mutable sequence types is hashing support.
+The only feature that immutable sequence types generally implement that is not also implemented by mutable sequence types is hashing support.
 
 This support allows immutable sequences, such as `tuple()` instances, to be used as `dict()` keys and stored in `set()` and `frozenset()`instances.
 
@@ -928,11 +928,11 @@ LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTA5MzAzNDI0NSwyMTA3OD
-E2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0x
-ODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MT
-c5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIw
-Mzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOT
-Q4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1
-MSwyMDEyNDkxMDk1XX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlstOTYyNDU3NDMzLDIxMDc4MT
+Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
+NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
+kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
+NzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5ND
+g5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUx
+LDIwMTI0OTEwOTVdfQ==
 -->
