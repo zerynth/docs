@@ -712,7 +712,7 @@ Test *x* for non-membership in *s*.
 Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
 
-`issubset(other)` `set <= other`
+**`issubset(other)` `set <= other`**
 
 
 Test whether every element in the set is in *other.*
@@ -722,36 +722,36 @@ Test whether every element in the set is in *other.*
 Test whether the set is a proper subset of *other*, that is,
 `set <= other and set != other`.
 
-`issuperset(other)` `set >= other`
+**`issuperset(other)` `set >= other`**
 
 Test whether every element in  *other*  is in the set.
 
-`set > other`
+**`set > other`**
 
 Test whether the set is a proper superset of  *other*, that is,  `set  >=  other  and  set  !=  other`.
 
-`union(other,...)` `set | other | ...`
+**`union(other,...)` `set | other | ...`**
 
 Return a new set with elements from the set and all others.
 
-`intersection(other,...)` `set & other & ...`
+**`intersection(other,...)` `set & other & ...`**
 
 Return a new set with elements from the set and all others.
 
 
 
-`difference(other,...)` `set - other - ...`
+**`difference(other,...)` `set - other - ...`**
 
 Return a new set with elements common to the set and all others.
 
 
 
-`symmetric_difference(other)` `set ^ other`
+**`symmetric_difference(other)` `set ^ other`**
 
 Return a new set with elements in either the set or *other* but not both.
 
 
-    copy()
+  **`copy()`**
 
 Return a new set with a shallow copy of *s*.
 
@@ -759,23 +759,23 @@ The following table lists operations available for `set()` that do not apply to 
 
 
 
-`update(other,...)` `set |= other | ...`
+**`update(other,...)` `set |= other | ...`**
 
 Update the set, adding elements from all others.
 
-`intersection_update(other, ...)` `set &= other & ...`
+**`intersection_update(other, ...)` `set &= other & ...`**
 
 Update the set, keeping only elements found in it and all others.
 
 
 
-`difference_update(other, ...)` `set -= other | ...`
+**`difference_update(other, ...)` `set -= other | ...`**
 
 Update the set, removing elements found in others.
 
 
 
-`symmetric_difference_update(other)` `set ^= other`
+**`symmetric_difference_update(other)` `set ^= other`**
 
 Update the set, keeping only elements found in either set, but not in both.
 
@@ -921,7 +921,7 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMzgxNDAyMjEzLC0yMjA2Mj
+NjY4NzkwfX0sImhpc3RvcnkiOlstNzgwNjk1Njk3LC0yMjA2Mj
 c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
 LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
 MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
