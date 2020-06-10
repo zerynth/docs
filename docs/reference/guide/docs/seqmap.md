@@ -254,7 +254,8 @@ There is also no mutable string type, but `str.join()` can be used to efficientl
 multiple fragments.
 
 
-**class str(object='')**
+class str(object='')
+
 Return a string version of ```object```.  If ```object``` is not
 provided, returns the empty string. Returns
 `object.__str__()`, which is the “informal” or nicely
@@ -927,7 +928,7 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstNDk1Mzk0OTgxLC0xMzYxOT
+NjY4NzkwfX0sImhpc3RvcnkiOlsxNjc4NTI0NzE3LC0xMzYxOT
 AyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDEx
 NzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nz
 kxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5
