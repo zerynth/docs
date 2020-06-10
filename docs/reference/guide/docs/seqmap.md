@@ -38,7 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, n, i, j and k are sequences of the same type, *n*, *i*, *j* and *k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by .
+This table lists the sequence operations sorted in ascending priority.  In the table, n, i, j and  are sequences of the same type, *n*, *i*, *j* and *k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by .
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -62,7 +62,7 @@ two sequences must be of the same type and have the same length.
 Notes:
 
 
-1. While the `in` and `not in` operations are used only for simplecontainment testing in the general case, some specialised sequences(such as `str()`, `bytes()` and `bytearray()`) also usethem for subsequence testing:
+1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences(such as `str()`, `bytes()` and `bytearray()`) also use them for subsequence testing:
 
 ```
 >>> "gg" in "eggs"
@@ -924,16 +924,16 @@ Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzc2
-LCJlbmQiOjM3OTN9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzc1
+LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlszODk2NTU4OTAsMTk2MTA2MD
-g4LDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4NTI0NzU3NjgsMzcz
-Njg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNC
-wtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUw
-NTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NT
-c4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUs
-LTE0NjM4ODA2MDJdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTc0NDgwMjUwMSwzODk2NT
+U4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwz
+NzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMD
+A0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0x
+NTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMz
+U1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5
+NSwtMTQ2Mzg4MDYwMl19
 -->
