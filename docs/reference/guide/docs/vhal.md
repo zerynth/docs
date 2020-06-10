@@ -76,80 +76,70 @@ A GPIO pin is a generic pin that can be used as input to read its digital status
 The following macros are used to set the pin mode of operation.
 
 
-**`PINMODE_INPUT_PULLNONE`**
-
+PINMODE_INPUT_PULLNONE
 Used to configure a pin as input with no pull up/down circuitry (floating mode)
 
 
-**`PINMODE_INPUT_PULLUP`**
-
+PINMODE_INPUT_PULLUP
 Used to configure a pin as input with pull up circuitry
 
 
-**`PINMODE_INPUT_ANALOG`**
-
+PINMODE_INPUT_ANALOG
 Used to configure a pin as analog input by connecting it to an analog to digital converter
 
 
-**`PINMODE_INPUT_PULLDOWN`**
-
+PINMODE_INPUT_PULLDOWN
 Used to configure a pin as input with pull down circuitry
 
 
-**`PINMODE_OUTPUT_PUSHPULL`**
-
+PINMODE_OUTPUT_PUSHPULL
 Used to configure a pin as output. The pin will be able to both sink and source current.
 
 
-**`PINMODE_OUTPUT_OPENDRAIN`**
-
+PINMODE_OUTPUT_OPENDRAIN
 Used to configure a pin as output. The pin will be able to only sink current. This means the pin output can only be set to low.
 
 
-**`PINMODE_OUTPUT_HIGHDRIVE`**
-
+PINMODE_OUTPUT_HIGHDRIVE
 Used to configure a pin as output. The pin will be able to only sink and source a higher current. Refer to each microcontroller datasheet for details.
 
-**`PINMODE_EXT_FALLING`**
-
+PINMODE_EXT_FALLING
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from high to low.
 
 
-**`PINMODE_EXT_RISING`**
-
+PINMODE_EXT_RISING
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from low to high.
 
 
-**`PINMODE_EXT_BOTH`**
-
+PINMODE_EXT_BOTH
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from low to high or from high to low.
 
 #### GPIO Functions
 
 
-**`int vhalPinSetMode(int vpin,int mode)`**
+**`int vhalPinSetMode(int vpinint*mode*`**
 
-Set the digital mode of *vpin* to *mode*. Valid values for *mode* are the digital input and output PINMODE macros. Return 0 in case of success.
+Set the digital mode of *vpin to *mode. Valid values for *mode are the digital input and output PINMODE macros. Return 0 in case of success.
 
 
 **`int vhalPinRead(int vpin)`**
 
-Read the digital value of *vpin*. Return 0 if *vpin* is low, non-zero if *vpin* is high.
+Read the digital value of *vpin. Return 0 if *vpin is low, non-zero if *vpin is high.
 
 
 **`int vhalPinWrite(int vpin, int value)`**
 
-Set the digital value of *vpin* to *value*. If *value* is zero, *vpin* is set to low, otherwise is set to high. Return 0 in case of success.
+Set the digital value of *vpin to *value. If value* is zero, *vpin is set to low, otherwise is set to high. Return 0 in case of success.
 
 
 **`int  vhalPinToggle(int vpin)`**
 
-Invert the digital value of *vpin*. If *vpin* is high it is set to low, if *vpin* is low it is set to high. Return 0 in case of success.
+Invert the digital value of *vpin. If *vpin is high it is set to low, if *vpin is low it is set to high. Return 0 in case of success.
 
 
 **`void* PinGetPort(int vpin)`**
 
-Get the pointer to a gpio microcontroller register corresponding to *vpin*. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
+Get the pointer to a gpio microcontroller register corresponding to *vpin. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
 **`int PinGetPad(int vpin)`**
@@ -157,7 +147,7 @@ Get the pointer to a gpio microcontroller register corresponding to *vpin*. The 
 Get the offset into a gpio microcontroller register corresponding to vpin. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-**`void vhalPinFastSet(void *port,int pad)`**
+**`void vhalPinFastSet(void *port,int pad
 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to high.
 
@@ -167,8 +157,8 @@ Bypass the virtual pin indirection by operating on the microcontroller register 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to low.
 
 
-**`int vhalPinFastRead(void *port,int pad_)`**
-
+**`int vhalPinFastRead(void *port,int pad)`**
+*)
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Return 0 if the in is low, non-zero if it is high.
 
 
@@ -179,13 +169,13 @@ Return 0 in case of success. The parameter ```prph``` is ignored in the current 
 
 
 
-**`int vhalPinAttachInterrupt(int vpin,int mode,extCbkFn fn, uint32_t timeout)`**
+**`int vhalPinAttachInterrupt(int vpinint*mode,extCbkFn fn, uint32_t timeout)`**
 
 
 Attach callback ```fn``` to ```vpin```. ```fn``` is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
 If ```fn``` is NULL the currently attached function is removed and the interrupt disabled.
 
-**`typedef void(*extCbkFn)(int slot,int dir)`**
+**`typedef void(*extCbkFn)(int slotint*dir*`**
 
 The type of ```fn``` in `vhalPinAttachInterrupt()`. ```slot``` is the slot the callback has been attached to. ```dir``` is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
 
@@ -945,8 +935,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NzY2MTA4MywtODQ1MjQ1NzU5LDkzND
-EwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3
-NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OT
-MsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbMTEwOTY5NDMxNCwxNjY3NjYxMDgzLC04ND
+UyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2
+NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MS
+wtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+
 -->
