@@ -17,13 +17,8 @@ All these levels of indirection are hidden by the VHAL using macros to access th
 The following scheme summarizes the available virtual pin info:
 
 
-Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with 
-
-```
-PINCLASS_
-```
-
- prepended, corresponding to the high byte of *Pin Value* (i.e. PINCLASS_DIGITAL is 0x00, PINCLASS_ANALOG is 0x01, etc…).
+Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with [PINCLASS_](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id9)
+prepended, corresponding to the high byte of *Pin Value* (i.e. PINCLASS_DIGITAL is 0x00, PINCLASS_ANALOG is 0x01, etc…).
 
 For each pin class, there exists a table containing configuration data. Such data can be accessed by the following macros:
 
@@ -926,6 +921,6 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLT
-E2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbMzIzOTEzNTAwLC0xNDA3ODU1NjQxLC0xNT
+k0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
 -->
