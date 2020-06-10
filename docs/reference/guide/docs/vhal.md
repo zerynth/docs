@@ -290,7 +290,8 @@ typedef struct _vhal_adc_conf {
 Must be called before any function starting with ```vhalAdc```.
 
 
-int vhalAdcInit(uint32_t adc*, vhalAdcConf* \```conf```)
+**`int vhalAdcInit(uint32_t adc,vhalAdcConf*conf)`**
+
 Initialize the ADC identified by the peripheral index ```adc``` with values in ```conf```. Return 0 on success, negative values in case of failure.
 
 
@@ -937,9 +938,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTgxMTI1MiwtNDQ3MjkzOTkyLDExMD
-k2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5
-NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC
-0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0x
-NjkxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbLTEwNTExNDQ4NjAsLTQ0NzI5Mzk5MiwxMT
+A5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcw
+OTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMi
+wtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwt
+MTY5MTk0MjE3NV19
 -->
