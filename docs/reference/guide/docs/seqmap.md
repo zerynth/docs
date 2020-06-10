@@ -272,7 +272,7 @@ Strings also support string formatting based on C `printf` style formatting..
 
 
 
-Return the number of non-overlapping occurrences of substring *sub* in the range [*start].  Optional arguments start and  arinterpreted as in slice notation.
+Return the number of non-overlapping occurrences of substring *sub* in the range [*start].  Optional arguments start and end arinterpreted as in slice notation.
 
 
     str.endswith(suffix[,start[,end] ])
@@ -925,11 +925,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMjIwNjI3NzE1LDE5MzIxOT
-Q0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1MywyMTA3ODE2NTU1
-LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0xODUyND
-c1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5Mjks
-OTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0Nz
-A3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEy
-LDE0NDMzNTU3ODRdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTk5MDEzODYyOCwtMjIwNj
+I3NzE1LDE5MzIxOTQ0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1
+MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3Nj
+MzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEs
+LTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
+A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
+NSwxNTMzOTQ4OTEyXX0=
 -->
