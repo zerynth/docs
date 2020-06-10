@@ -845,41 +845,41 @@ Set `d[key]` to *value*.
 Remove `d[key]` from *d.*  Raises a `KeyError` if *key* is not in the map.
 
 
-    key in d
+**`key in d`**
 
 Return `True` if *d* has a key *key*, else `False`.
 
-    key not in d
+**`strong text`**key not in d
 
 Equivalent to `not key in d`.
 
 
-    clear()
+**`clear()`**
 
 Remove all items from the dictionary.
 
-    copy()
+**`copy()`**
 
 Return a shallow copy of the dictionary.
 
-    items()
+**`items()`**
 
 Return a new view of the dictionary’s items (`(key, value)` pairs).
 
 
-    keys()
+**`keys()`**
 
 Return a new view of the dictionary’s keys.  See the documentation of view objects.
 
 
-    pop()
+**`pop()`**
 
 
 
 If *key* is in the dictionary, remove it and return its value, else return *default*.  If *default* is not given and *key* is not in the dictionary, a  `KeyError` is raised.
 
 
-    popitem()
+**`popitem()`**
 
 Remove and return an arbitrary `(key, value)` pair from the dictionary.
 
@@ -887,14 +887,14 @@ Remove and return an arbitrary `(key, value)` pair from the dictionary.
 
 
 
-    update()
+**`update()`**
 
 Update the dictionary with the key/value pairs from *other*, overwriting existing keys.  Return `None`.
 
 `update()` accepts another dictionary object.
 
 
-    values()
+**`values()`**
 
 Return a new view of the dictionary’s values.
 
@@ -921,11 +921,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsxNzEwOTUwOTA3LC0yMjA2Mj
-c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
-LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
-MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
-MTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMD
-kwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1
-LDE1MzM5NDg5MTJdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTI4ODkxNjcxMywtMjIwNj
+I3NzE1LDE5MzIxOTQ0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1
+MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3Nj
+MzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEs
+LTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
+A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
+NSwxNTMzOTQ4OTEyXX0=
 -->
