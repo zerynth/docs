@@ -780,28 +780,28 @@ Update the set, removing elements found in others.
 Update the set, keeping only elements found in either set, but not in both.
 
 
-    add(elem)
+  **`add(elem)`**
 
 Add element *elem* to the set.
 
 
-    remove(elem)
+**`remove(elem)`**
 
 Remove element *elem* from the set.  Raises `KeyError`
  if *elem* is not contained in the set.
 
 
-    discard(elem)
+**`discard(elem)`**
 
 Remove element *elem* from the set if it is present.
 
 
-    pop()
+**`pop()`**
 
 Remove and return an arbitrary element from the set.  Raises
 `KeyError` if the set is empty.
 
-    clear()
+**`clear()`**
 
 Remove all elements from the set.
 
@@ -816,7 +816,7 @@ Dictionaries can be created by placing a comma-separated list of `key: value` pa
 'jack', 4127: 'sjoerd'}`, or by the `dict()` constructor.
 
 
-    class dict(*args)
+**`class dict(*args)`**
 
 If no positional argument is given, an empty dictionary is created. If a positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.  Otherwise,the positional argument must be an iterable object.  Each item in the iterable must itself be an iterable with exactly two objects.  The first object of each item becomes a key in the new dictionary, and the
 second object the corresponding value.  If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
@@ -824,23 +824,23 @@ second object the corresponding value.  If a key occurs more than once, the last
 These are the operations that dictionaries support:
 
 
-    len(d)
+**`len(d)`**
 
 Return the number of items in the dictionary *d*.
 
 
-    d[key]
+**`d[key]`**
 
 Return the item of *d* with key *key*.  Raises a `KeyError`
  if *key* is not in the map.
 
 
-    d[key] = value()
+**`d[key] = value()`**
 
 Set `d[key]` to *value*.
 
 
-     del d[key]
+**`del d[key]`**
 
 Remove `d[key]` from *d.*  Raises a `KeyError` if *key* is not in the map.
 
@@ -921,7 +921,7 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstNzgwNjk1Njk3LC0yMjA2Mj
+NjY4NzkwfX0sImhpc3RvcnkiOlsxNzEwOTUwOTA3LC0yMjA2Mj
 c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
 LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
 MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
