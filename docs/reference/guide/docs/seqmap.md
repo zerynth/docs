@@ -441,17 +441,10 @@ The conversion flag characters are:
 | 's'        | String (converts any Python object using str()).                                                                                           | (4)   |
 | '%'        | No argument is converted, results in a '%' character in the result.                                                                        |       |
 
-**Notes:**
+	!!! note
 	1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
-
-
 2. Hexadecimal conversion does not produce the “0x” prefix.
-
-
-3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.
-The precision determines the number of digits after the decimal point and defaults to 6.
-
-
+3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.The precision determines the number of digits after the decimal point and defaults to 6.
 4. If precision is `N`, the output is truncated to `N` characters.
 
 ## Binary Sequence Types
@@ -930,11 +923,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTYwMzkzNjYsMTE3NjMzMTE0LC0xOD
-UyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5
-MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMz
-c0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4
-OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MS
-wyMDEyNDkxMDk1LC0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEz
-MjI0NjgwMjBdfQ==
+eyJoaXN0b3J5IjpbNzY1NDg0NjI4LC0yMDE2MDM5MzY2LDExNz
+YzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nzkx
+LC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5ND
+EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
+MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
+E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
+MzkyNTUxXX0=
 -->
