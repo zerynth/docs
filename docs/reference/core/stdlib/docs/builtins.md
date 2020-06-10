@@ -350,7 +350,7 @@ Can be used together with `onPinRise()` on the same pin.
 ## Builtin Functions
 
 
----
+
 #### `#!py3 int()`
 
 !!!abstract "`#!py3 int(x=0, base=10)`"
@@ -845,3 +845,6 @@ Otherwise, if more than a positional argument is given, each argument is inserte
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3ODg4MjI4NDJdfQ==
+-->
