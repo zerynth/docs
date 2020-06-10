@@ -341,9 +341,9 @@ Must be called before any function starting with *vhalDac*.
 Initialize the DAC identified by the virtual pin *vpin*. Return 0 on success, negative values in case of failure.
 
 
-int vhalDacWrite(uint32_t vpin, uint16_t *data, uint32_t len, uint32_t timestep)
+**`int vhalDacWrite(uint32_t vpin,uint16_t *data,uint32_t len,uint32_t timestep)`**
 
-Return 0 on success. Starts sending data samples in ```data``` to DAC identified by ```vpin``` up to ```len``` samples, each one sent after a dealy of ```timestep```.
+Return 0 on success. Starts sending data samples in *data* to DAC identified by *vpin* up to *len* samples, each one sent after a dealy of *timestep*.
 The function suspends the current thread until the last sample is sent.
 
 
@@ -942,7 +942,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDM4MDY5NCwtMjE0NDExODQ0MiwtMT
+eyJoaXN0b3J5IjpbMTYyNDUwNjcxNiwtMjE0NDExODQ0MiwtMT
 M4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0
 NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NS
 wtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0x
