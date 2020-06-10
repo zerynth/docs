@@ -70,7 +70,7 @@ True
 ```
 
 
-2. Values of *n* less than `0` are treated as `0` (which yields an empty sequence of the same type as *s*).  Note that items in the sequence *s* are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
+2. Values of **n** less than `0` are treated as `0` (which yields an empty sequence of the same type as **s**).  Note that items in the sequence *s* are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
 ```
 >>> lists = [[]] * 3
@@ -93,10 +93,10 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 ```
 
 
-3. If *i* or *j* is negative, the index is relative to the end of the string:`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` isstill `0`.
+3. If **i** or **j** is negative, the index is relative to the end of the string:`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` isstill `0`.
 
 
-4. The slice of *s* from *i* to *j* is defined as the sequence of items with index *k* such that `i <= k < j`.  If *i* or *j* is greater than `len(s)`, use`len(s)`.  If *i* is omitted or`None`, use `0`.  If *j* is omitted or `None`, use `len(s)`.  If *i* is greater than or equal to *j,* the slice is empty.
+4. The slice of **s** from **i** to **j** is defined as the sequence of items with index **k** such that `i <= k < j`.  If **i** or **j** is greater than `len(s)`, use`len(s)`.  If *i* is omitted or`None`, use `0`.  If *j* is omitted or `None`, use `len(s)`.  If *i* is greater than or equal to *j,* the slice is empty.
 
 
 5. The slice of *s* from *i* to *j* with step *k* is defined as the sequence of items with index  `x = i + n*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when *j* is reached (but never including *j*).  If *i* or  *j* is greater than`len(s)`, use `len(s)`.  If *i* or *j* are omitted or `None`, they become“end” values (which end depends on the sign of *k*).  Note, *k* cannot be zero. If *k* is `None`, it is treated like `1`.
@@ -928,7 +928,7 @@ LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstOTczNTUwMjA1LDIxMDc4MT
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTQ4NDM0MDM3LDIxMDc4MT
 Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
 NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
 kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
