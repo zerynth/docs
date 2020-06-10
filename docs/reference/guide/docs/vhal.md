@@ -149,30 +149,30 @@ Get the offset into a gpio microcontroller register corresponding to vpin. The r
 
 **`void vhalPinFastSet(void *port,int pad
 
-Bypass the virtual pin indirection by operating on the microcontroller register port` with offset . Set the corresponding pin to high.
+Bypass the virtual pin indirection by operating on the microcontroller register po` with offset . Set the corresponding pin to high.
 
 
 **`void vhalPinFastClear(void *port,int pad)`**
 
-Bypass the virtual pin indirection by operating on the microcontroller register port` with offset . Set the corresponding pin to low.
+Bypass the virtual pin indirection by operating on the microcontroller register po` with offset . Set the corresponding pin to low.
 
 
 **`int vhalPinFastRead(void *port,int pad_)`**
 *)
-Bypass the virtual pin indirection by operating on the microcontroller register port` with offset *pad.* Return 0 if the in is low, non-zero if it is high.
+Bypass the virtual pin indirection by operating on the microcontroller register po` with offset pad.* Return 0 if the in is low, non-zero if it is high.
 
 
 **`int vhalPinSetToPeripheral(int vpin, int prph, uint32_t prms)`**
 
-Transfer the control of *vpin* to a peripheral identified by *prph.* The configuration parameters for *vpin* are passed via *prms* in a format depending on the microcontroller porting.
-Return 0 in case of success. The parameter *prph* is ignored in the current version of the VHAL.
+Transfer the control of vp`` to a peripheral identified by *prph.* The configuration parameters for *vpin are passed via *prms in a format depending on the microcontroller porting.
+Return 0 in case of success. The parameter *prph is ignored in the current version of the VHAL.
 
 
 
 **`int vhalPinAttachInterrupt(int vpinintmode,extCbkFn fn, uint32_t timeout)`**
 
 
-Attach callback *fn* to *vpin*. fn is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
+Attach callback *fn* to `vpi```.  is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
 If ```fn``` is NULL the currently attached function is removed and the interrupt disabled.
 
 **`typedef void(*extCbkFn)(int slotintdir*`**
@@ -935,9 +935,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTI5MTU3LDExMDk2OTQzMTQsLTg0NT
-I0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3
-NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC
-0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
-
+eyJoaXN0b3J5IjpbLTQ0NzI5Mzk5MiwxNTk5MjkxNTcsMTEwOT
+Y5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2
+LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLT
+E0MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2
+OTE5NDIxNzVdfQ==
 -->
