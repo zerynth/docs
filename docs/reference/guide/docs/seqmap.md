@@ -157,10 +157,10 @@ In the table **s** is an instance of a mutable sequence type, **t** is arbitrary
 Notes:
 
 
-1. ```t``` must have the same length as the slice it is replacing.
+1. **t** must have the same length as the slice it is replacing.
 
 
-2. The optional argument ```i``` defaults to `-1`, so that by default the lastitem is removed and returned.
+2. The optional argument **i** defaults to `-1`, so that by default the last item is removed and returned.
 
 
 3. `remove` raises `ValueError` when x is not found in s.
@@ -928,11 +928,11 @@ LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstOTYyNDU3NDMzLDIxMDc4MT
-Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
-NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
-kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
-NzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5ND
-g5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUx
-LDIwMTI0OTEwOTVdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTU4MDU5NTA3MSwyMTA3OD
+E2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0x
+ODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MT
+c5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIw
+Mzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOT
+Q4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1
+MSwyMDEyNDkxMDk1XX0=
 -->
