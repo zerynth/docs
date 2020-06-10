@@ -175,7 +175,7 @@ Type of a PObject representing a cell. Tagged.
 Type of a PObject representing None. Tagged.
 
 
-    ### PEXCEPTION
+   ### PEXCEPTION
 ()
 Type of a PObject representing an exception. Tagged.
 
@@ -550,7 +550,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xOD
-AxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3
-NF19
+eyJoaXN0b3J5IjpbMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MT
+k5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3
+MywxMDUyMTg0OTc0XX0=
 -->
