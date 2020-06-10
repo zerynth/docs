@@ -7,7 +7,7 @@ modified to be compatible with Zerynth memory manager.
 ## The Bignum class
 
 
----
+
 #### `#!py3 BigNum()`
 
 !!!abstract "`#!py3 BigNum(val=0)`"
@@ -154,3 +154,6 @@ Return 1 if the current instance is a positive number, -1 if the current instanc
 !!!abstract "`#!py3 to_base(base)`"
 
 Return a string representation of the big number in base ```base```. Allowed values for ```base``` are in the range 2..64.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjg0MjYyMTEyXX0=
+-->
