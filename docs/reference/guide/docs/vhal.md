@@ -152,12 +152,12 @@ Invert the digital value of ```vpin```. If ```vpin``` is high it is set to low, 
 Get the pointer to a gpio microcontroller register corresponding to ```vpin```. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-**int PinGetPad(int vpin)**
+**`int PinGetPad(int vpin)`**
 
 Get the offset into a gpio microcontroller register corresponding to ```vpin```. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-### vhalPinFastSet(void* \```port```, int* pad*)
+**`void vhalPinFastSet(void *port,int pad)`**
 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to high.
 
@@ -944,8 +944,8 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0ODYyNDAsOTM0MTA5MTExLDE3OTM2NT
-cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
-MiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMC
-wtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMTk0OTQzMTM0NSw5MzQxMDkxMTEsMTc5Mz
+Y1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5
+NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5Nz
+EwLC0xNjkxOTQyMTc1XX0=
 -->
