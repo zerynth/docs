@@ -379,9 +379,9 @@ Create a sequence of type PBYTES with *len* elements. If *buf* is not NULL, *len
 Return NULL on failure.
 
 
-**`PObject*pbytes_new(uint16_t len,uint8_t*buf)`**
+**`PObject*pshorts_new(uint16_t len,uint8_t*buf)`**
 
-Create a sequence of type PSHORTS with ```len``` elements. If ```buf``` is not NULL, ```len``` words from ```buf``` are used to initialize the sequence.
+Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *len* words from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
@@ -555,7 +555,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ0ODI4ODA5LDE5NTE2NTU0MDQsLTEzOT
+eyJoaXN0b3J5IjpbOTkwMzE2NDgzLDE5NTE2NTU0MDQsLTEzOT
 Y2NjA4ODgsMTU0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcyODU3
 MCwxNjIyNDA5NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsOD
 E5OTI3NTI2LC0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0
