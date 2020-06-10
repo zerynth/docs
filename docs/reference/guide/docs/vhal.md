@@ -331,11 +331,13 @@ The VHAL aims at supporting the following features when available:
 To enable DAC functions the macro VHAL_DAC must be defined.
 
 
-### vhalInitDAC(void\** data*)
+**`int vhalInitDAC(void* data)`**
+
 Must be called before any function starting with ```vhalDac```.
 
 
-### vhalDacInit(uint32_t* vpin*)
+**`int vhalDacInit(uint32_t vpin)`**
+
 Initialize the DAC identified by the virtual pin ```vpin```. Return 0 on success, negative values in case of failure.
 
 
@@ -939,9 +941,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLT
-Q0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5
-MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MS
-wtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5Mywt
-MTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTE3Mjk5NzYwNTAsLTIxNDQxMTg0NDIsLT
+EzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUy
+NDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2Nz
+UsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwt
+MTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
 -->
