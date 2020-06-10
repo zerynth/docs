@@ -162,12 +162,16 @@ Get the offset into a gpio microcontroller register corresponding to ```vpin```.
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to high.
 
 
-### vhalPinFastClear(void* \```port```, int* pad*)
+**`void vhalPinFastClear(void *port,int pad)`**
 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to low.
 
 
-### vhalPinFastRead(void* \```port```, int* pad*)
+**
+|int vhalPinFastRead(void *port,int pad)|  |
+|---------------------------------------|--|
+|                                       |  |
+**
 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Return 0 if the in is low, non-zero if it is high.
 
@@ -944,7 +948,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTQzMTM0NSw5MzQxMDkxMTEsMTc5Mz
+eyJoaXN0b3J5IjpbLTE0NTQyNzEzMyw5MzQxMDkxMTEsMTc5Mz
 Y1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5
 NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5Nz
 EwLC0xNjkxOTQyMTc1XX0=
