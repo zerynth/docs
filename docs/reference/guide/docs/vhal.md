@@ -167,16 +167,12 @@ Bypass the virtual pin indirection by operating on the microcontroller register 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to low.
 
 
-**
-|int vhalPinFastRead(void *port,int pad)|  |
-|---------------------------------------|--|
-|                                       |  |
-**
+**`int vhalPinFastRead(void *port,int pad_)`**
 
 Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Return 0 if the in is low, non-zero if it is high.
 
 
-### vhalPinSetToPeripheral(int* vpin*, int* prph*, uint32_t* prms*)
+**`int vhalPinSetToPeripheral(int vpin, int prph, uint32_t prms)`**
 
 Transfer the control of ```vpin``` to a peripheral identified by ```prph```. The configuration parameters for ```vpin``` are passed via ```prms``` in a format depending on the microcontroller porting.
 Return 0 in case of success. The parameter ```prph``` is ignored in the current version of the VHAL.
@@ -948,7 +944,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQyNzEzMyw5MzQxMDkxMTEsMTc5Mz
+eyJoaXN0b3J5IjpbLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5Mz
 Y1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5
 NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5Nz
 EwLC0xNjkxOTQyMTc1XX0=
