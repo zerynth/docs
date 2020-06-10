@@ -216,16 +216,16 @@ The `range` type represents an immutable sequence of numbers and is commonly use
 The arguments to the range constructor must be integers.
 If the stument is omitted, it defaults to 1. If the *start* arg* ument is omitted, it defaults to 0. If *step* is zero, `ValueError` is raised.
 
-For a positive step, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
+For a positive *step*, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
 
-For a negative ```step```, the contents of the range are still determined bythe formula `r[i] = start + step*i`, but the constraints are `i >= 0`and `r[i] > stop`.
+For a negative *step*, the contents of the range are still determined by the formula `r[i] = start + step*i`, but the constraints are `i >= 0`and `r[i] > stop`.
 
-A range object will be empty if `r[0]` does not meet the valueconstraint. Ranges do support negative indices, but these are interpretedas indexing from the end of the sequence determined by the positiveindices.
+A range object will be empty if `r[0]` does not meet the value constraint. Ranges do support negative indices, but these are interpreted as indexing from the end of the sequence determined by the positive indices.
 
 Ranges implement all of the common sequence operations
-except concatenation and repetition (due to the fact that range objects canonly represent sequences that follow a strict pattern and repetition andconcatenation will usually violate that pattern).
+except concatenation and repetition (due to the fact that range objects can only represent sequences that follow a strict pattern and repetition and concatenation will usually violate that pattern).
 
-The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same(small) amount of memory, no matter the size of the range it represents (as itonly stores the start,stop and step values, calculating individualitems and subranges as needed).
+The advantage of the `range()` type over a regular `list()` or`tuple()` is that a `range()` object will always take the same(small) amount of memory, no matter the size of the range it represents (as it only stores the start,stop and step values, calculating individual items and sub ranges as needed).
 
 Testing range objects for equality with `==` and `!=` comparesthem as sequences.  That is, two rangeobjects are considered equal ifthey represent the same sequence of values.  (Note that two range objects that compare equal might have different **start**, **stop** and **step** attributes, for example`range(0) == range(2, 1, 3)` or `range(0, 3, 2) == range(0, 4, 2)`.)
 
@@ -927,11 +927,11 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTE3Mzk1NTgwNSwtMTM2MT
-kwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwx
-MTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0ND
-c5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4
-OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOT
-Q3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQz
-LC0xNzE5NzU3ODUxXX0=
+NjY4NzkwfX0sImhpc3RvcnkiOls2MjY2ODI3MjMsLTEzNjE5MD
+I1MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3
+NjMzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OT
+EsLTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0
+MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0Nz
+AwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0Mywt
+MTcxOTc1Nzg1MV19
 -->
