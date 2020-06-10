@@ -355,8 +355,9 @@ Return the i-th item in *lst* with *lst* of type PTUPLE.
 Set the i-th item in *lst  *`em*```* to *item*, with *lst*```lst``` of type PTUPLE.
 
 ### Functions
-
-**PObject*psequence_new(uint8_t *type*, uint16_t  *elements*)**
+```python
+**PObject*psequence_new(uint8_t type, uint16_t  elements)**
+```
 
 Create an empty sequence of type type with space for at least *elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence *elements* are set to elements` and the sequence storage filled with zero.
 
@@ -550,8 +551,8 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5MTExOTk3LC0yODA3Mjg1NzAsMTYyMj
-QwOTU3MiwxMDkxNjM3OTE3LC0xNTgwNDMwNTUzLDgxOTkyNzUy
-NiwtMTgwMTYwMjQ5OCw3Mjk5NzY0MzQsODYyNzUzNDczLDEwNT
-IxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbMzU5MDg4ODg1LDQ4OTExMTk5NywtMjgwNz
+I4NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1
+Myw4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mj
+c1MzQ3MywxMDUyMTg0OTc0XX0=
 -->
