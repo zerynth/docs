@@ -344,7 +344,7 @@ Return the i-th item in lst with lst of type PLIST.
 
 
  **`PLIST_SET_ITEM(lst, i, item)`**
-Set the i-th item in *lst* to *item*, with  of type PLIST.
+Set the i-th item in lst, with  of type PLIST.
 
 
 **`PTUPLE_ITEM(lst, i)`**
@@ -352,13 +352,13 @@ Return the i-th item in *lst* with *lst* of type PTUPLE.
 
 
 **`PTUPLE_SET_ITEM(lst, i, item)`**
-Set the i-th item in lst  *`em*```, with *lst*```lst``` of type PTUPLE.
+Set the i-th item in *lst  *`em*```* to *item*, with *lst*```lst``` of type PTUPLE.
 
 ### Functions
 
 
-PObject*psequence_new(uint8_t*  type*, uint16_t*  elements*)
-Create an empty sequence of type ```type``` with space for at least ```elements``` elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence elementes are set to ```elements``` and the sequence storage filled with zero.
+**`PObject*psequence_new(uint8_t type, uint16_t  elements)`**
+Create an empty sequence of type type` with space for at least elements` elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence elements are set to elements` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
 
@@ -550,7 +550,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE5OTI3NTI2LDE2NzA5MTA4NTYsLTE4MD
-E2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMTg0OTc0
-XX0=
+eyJoaXN0b3J5IjpbLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xOD
+AxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3
+NF19
 -->
