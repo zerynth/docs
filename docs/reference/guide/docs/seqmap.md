@@ -138,121 +138,6 @@ The operations in the following table are defined on mutable sequence types.
 
 In the table ```s``` is an instance of a mutable sequence type, ```t``` is ararobject and ```x``` is an arbitrary object that meets any typeand value restrictions imposed by ```s``` (for example, `bytearray()` onlyaccepts integers that meet the value restriction `0 <= x <= 255`).
 
-| Operation
-
-                             | Result
-
-                                                               | Notes
-
-                   |
-| ------------------------------------- | -------------------------------------------------------------------- | ----------------------- |
-| `s[i] = x`
-
-                              | item ```i``` of ```s``` is replaced
-by ```x```
-
-                                         |                         |
-| `s[i:j] = t`
-
-                            | slice of ```s``` from ```i``` to
-```j``` is replaced by the
-contents of the iterable ```t```
-
- |                         |
-| `del s[i:j]`
-
-                            | same as `s[i:j] = []`
-
-                                                  | NOT SUPPORTED YET
-
-       |
-| `s[i:j:k] = t`
-
-                          | the elements of `s[i:j:k]`
-are replaced by those of ```t```
-
-                  | (1)
-
-                     |
-| `del s[i:j:k]`
-
-                          | removes the elements of
-`s[i:j:k]` from the list
-
-                       | NOT SUPPORTED YET
-
-       |
-| `s.append(x)`
-
-                           | appends ```x``` to the end of the
-sequence (same as
-`s[len(s):len(s)] = [x]`)
-
- |                         |
-| `s.clear()`
-
-                             | removes all items from `s`
-(same as `del s[:]`)
-
-                           | (5)
-
-                     |
-| `s.copy()`
-
-                              | creates a shallow copy of `s`
-(same as `s[:]`)
-
-                            | (5)
-
-                     |
-| `s.extend(t)` or
-`s += t`
-
-                 | extends ```s``` with the
-contents of ```t``` (for the
-most part the same as
-`s[len(s):len(s)] = t`)
-
- |                         |
-| `s \*= n`
-
-                                | updates ```s``` with its contents
-repeated ```n``` times
-
-                                          | (6)
-
-                     |
-| `s.insert(i, x)`
-
-                        | inserts ```x``` into ```s``` at the
-index given by ```i```
-(same as `s[i:i] = [x]`)
-
-                       |                         |
-| `s.pop([i])`
-
-                            | retrieves the item at ```i``` and
-also removes it from ```s```
-
-                                    | (2)
-
-                     |
-| `s.remove(x)`
-
-                           | remove the first item from
-```s``` where `s[i] == x`
-
-                                          | (3)
-
-                     |
-| `s.reverse()`
-
-                           | reverses the items of ```s``` in
-place
-
-                                                      | (4)
-
-                     |
 Notes:
 
 
@@ -1143,7 +1028,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODA3OTQ5NCwtMTMwMzcxNzkyOSw5ND
+eyJoaXN0b3J5IjpbLTEzMDg5NDAwOSwtMTMwMzcxNzkyOSw5ND
 U5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0
 MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5NDg5MTIsMT
 Q0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0
