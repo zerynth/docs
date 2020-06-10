@@ -38,7 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, *j**and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
+This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, *j*and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -216,9 +216,9 @@ The `range` type represents an immutable sequence of numbers and is commonly use
 The arguments to the range constructor must be integers.
 If the stument is omitted, it defaults to 1. If the *start* arg* ument is omitted, it defaults to 0. If *step* is zero, `ValueError` is raised.
 
-For a positive *step*, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
+For a positive st, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
 
-For a negative *step*, the contents of the range are still determined by the formula `r[i] = start + step*i`, but the constraints are `i >= 0`and `r[i] > stop`.
+For a negative *step, the contents of the range are still determined by the formula `r[i] = start + step*i`, but the constraints are `i >= 0`and `r[i] > stop`.
 
 A range object will be empty if `r[0]` does not meet the value constraint. Ranges do support negative indices, but these are interpreted as indexing from the end of the sequence determined by the positive indices.
 
@@ -256,9 +256,10 @@ multiple fragments.
 
 **`class str(object='')`**
 
-Return a [string](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) version of *object*.  If *object* is not provided, returns the empty string. Returns
+Return a [string](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) version of *object.  If *object* is not
+provided, returns the empty string. Returns
 `object.__str__()`, which is the “informal” or nicely
-printable string representation of *object*.  For string objects, this is the string itself.  If *object* does not have a `__str__()` method, then `str()` raises TypeError.
+printable string representation of *object.  For string objects, this is the string itself.  If *object does not have a `__str__()` method, then `str()` raises TypeError.
 
 ### String Methods
 
@@ -919,16 +920,16 @@ Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk4
-LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk3
+LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsxOTMyMTk0NDc0LC0xNDM2NT
-EzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAs
-NzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2OD
-gyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0x
-ODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1ND
-MzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0
-LC0xMDcwNzI1NDNdfQ==
+NjY4NzkwfX0sImhpc3RvcnkiOlstMjIwNjI3NzE1LDE5MzIxOT
+Q0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1MywyMTA3ODE2NTU1
+LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0xODUyND
+c1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5Mjks
+OTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0Nz
+A3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEy
+LDE0NDMzNTU3ODRdfQ==
 -->
