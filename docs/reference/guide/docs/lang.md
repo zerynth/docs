@@ -409,27 +409,31 @@ Dictionaries and sets must be created, managed and manipulated with the followin
 ### Macros
 
 
-PHASH_ELEMENTS(obj)`**
+**`PHASH_ELEMENTS(obj)`**
+
 Return the elements in ```obj``` with obj a PDICT, PSET or PFSET.
 
 
-PHASH_SIZE(obj)`**
+**`PHASH_SIZE(obj)`**
+
 Return the total space for itens in ```obj``` with obj a PDICT, PSET or PFSET.
 
 
-PCHECK_HASHABLE(obj)`**
+**`PCHECK_HASHABLE(obj)`**
+
 Return true if ```obj``` is hashable, i.e. an hash can be calculated for ```obj```.
 
 
-pdict_put(f, k, v)`**
+**`pdict_put(f, k, v)`**
+
 Add the hashable PObject ```k``` as a key and PObject ```v``` as value, in ```f``` of type PDICT.
 
 
-pset_put(f, k)`**
+pset_put(f, k)`
 Add the hashable PObject ```k```  in ```f``` of type PSET.
 
 
-pdict_get(f, k)`**
+**`pdict_get(f, k)`**
 Return the value associated with the hashable PObject ```k``` in ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
@@ -437,11 +441,11 @@ Return the value associated with the hashable PObject ```k``` in ```f``` of type
 Return ```k``` if the hashable PObject ```k``` is in ```f``` of type PSET or PFSET. Return NULL if ```k``` is not present.
 
 
-pdict_del(f, k)
+**`pdict_del(f, k)`**
 Remove ```k``` and its associated value from ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
-pset_del(f, k)
+**`pset_del(f, k)`**
 Remove ```k``` from ```f``` of type PSET. Return NULL if ```k``` is not present.
 
 ### Functions
@@ -557,10 +561,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDQ4MTExNiwtNzk4MzUyNzcsLTE5ND
-QxNzMyMSwxMjcxMzQxNjYxLDE5NTE2NTU0MDQsLTEzOTY2NjA4
-ODgsMTU0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcyODU3MCwxNj
-IyNDA5NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3
-NTI2LC0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMT
-A1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbMjAzMjYyNDMwLC03OTgzNTI3NywtMTk0ND
+E3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4
+OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2Mj
+I0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1
+MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMD
+UyMTg0OTc0XX0=
 -->
