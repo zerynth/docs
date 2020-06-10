@@ -178,8 +178,7 @@ Transfer the control of ```vpin``` to a peripheral identified by ```prph```. The
 Return 0 in case of success. The parameter ```prph``` is ignored in the current version of the VHAL.
 
 
-```python
-**int vhalPinAttachInterrupt(int vpin, int mode, [extCbkFn](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#c.extCbkFn) fn, uint32_t timeout)**
+int vhalPinAttachInterrupt(int vpin,int mode,[extCbkFn](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html) fn,uint32_t timeout)**
 ```
 
 Attach callback ```fn``` to ```vpin```. ```fn``` is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
@@ -946,7 +945,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODA1MDY3MCwtODQ1MjQ1NzU5LDkzND
+eyJoaXN0b3J5IjpbMTQ3NTYxNjkyNywtODQ1MjQ1NzU5LDkzND
 EwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3
 NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OT
 MsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
