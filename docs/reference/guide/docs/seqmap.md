@@ -81,7 +81,7 @@ True
 [[3], [3], [3]]
 ```
 
-What has happened is that `[[]]` is a one-element list containing an emptylist, so all three elements of `[[]] * 3` are references to this single emptylist.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
+What has happened is that `[[]]` is a one-element list containing an empty list, so all three elements of `[[]] * 3` are references to this single empty list.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
 
 ```
 >>> lists = [[] for i in range(3)]
@@ -929,7 +929,7 @@ LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsxMjMwNzYzOTEzLDM4OTY1NT
+NjY4NzkwfX0sImhpc3RvcnkiOlstNDMwNTMyNTU5LDM4OTY1NT
 g5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0xODUyNDc1NzY4LDM3
 MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5MjksOTQ1OTIwMD
 QsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1
