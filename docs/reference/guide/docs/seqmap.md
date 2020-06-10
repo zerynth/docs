@@ -102,7 +102,7 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 5. The slice of *s* from *i* to *j* with step *k* is defined as the sequence of items with index  `x = i + n*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when *j* is reached (but never including *j*).  If *i* or  *j* is greater than`len(s)`, use `len(s)`.  If *i* or *j* are omitted or `None`, they become“end” values (which end depends on the sign of *k*).  Note, *k* cannot be zero. If *k* is `None`, it is treated like `1`.
 
 
-6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have aquadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
+6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
 
 
     * if concatenating `str()` objects, you can build a list and use`str.join()` at the end.
@@ -121,15 +121,15 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 
 
 8. `index` raises `ValueError` when x is not found in s.
-When supported, the additional arguments to the index method allowefficient searching of subsections of the sequence. Passing the extraarguments is roughly equivalent to using `s[i:j].index(x)`, onlywithout copying any data and with the returned index being relative tothe start of the sequence rather than the start of the slice.
+When supported, the additional arguments to the index method allow efficient searching of subsections of the sequence. Passing the extra arguments is roughly equivalent to using `s[i:j].index(x)`, only without copying any data and with the returned index being relative to the start of the sequence rather than the start of the slice.
 
 ### Immutable Sequence Types
 
 The only feature that immutable sequence types generally implement that isnot also implemented by mutable sequence types is hashing support.
 
-This support allows immutable sequences, such as `tuple()` instances, tobe used as `dict()` keys and stored in `set()` and `frozenset()`instances.
+This support allows immutable sequences, such as `tuple()` instances, to be used as `dict()` keys and stored in `set()` and `frozenset()`instances.
 
-Attempting to hash an immutable sequence that contains unhashable values willresult in `TypeError`.
+Attempting to hash an immutable sequence that contains unhashable values will result in `TypeError`.
 
 ### Mutable Sequence Types
 
@@ -928,11 +928,11 @@ LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOls0Nzc2ODI5NzksMjEwNzgxNj
-U1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1
-MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OT
-I5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3
-NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0OD
-kxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEs
-MjAxMjQ5MTA5NV19
+NjY4NzkwfX0sImhpc3RvcnkiOlsyMTQzODgwNTI3LDIxMDc4MT
+Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
+NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
+kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
+NzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5ND
+g5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUx
+LDIwMTI0OTEwOTVdfQ==
 -->
