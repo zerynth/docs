@@ -356,7 +356,8 @@ Set the i-th item in *lst  *`em*```* to *item*, with *lst*```lst``` of type PTUP
 
 ### Functions
 
-**`PObject*psequence_new(uint8_t type, uint16_t  elements)`**
+**PObject*psequence_new(uint8_t *type*, uint16_t  *elements*)**
+
 Create an empty sequence of type type with space for at least *elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence *elements* are set to elements` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
@@ -549,8 +550,8 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NjgxOTcyMywtMjgwNzI4NTcwLDE2Mj
-I0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1
-MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMD
-UyMTg0OTc0XX0=
+eyJoaXN0b3J5IjpbNDg5MTExOTk3LC0yODA3Mjg1NzAsMTYyMj
+QwOTU3MiwxMDkxNjM3OTE3LC0xNTgwNDMwNTUzLDgxOTkyNzUy
+NiwtMTgwMTYwMjQ5OCw3Mjk5NzY0MzQsODYyNzUzNDczLDEwNT
+IxODQ5NzRdfQ==
 -->
