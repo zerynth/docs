@@ -548,18 +548,18 @@ The subsequence to search for may be any bytes-like object or an  integer in the
 
 Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in *iterable* that are not bytes-like objects or strings. The separator between elements is the contents of the bytes or bytearray object providing this method.
 
-`bytes.replace(old,new)` `bytearray.replace(old, new)`
+**`bytes.replace(old,new)` `bytearray.replace(old, new)`**
 
 Return a copy of the sequence with all occurrences of subsequence *old* replaced by *new.*
 
 NOTE: The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
 
 
-`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`
+**`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`**
 
 Return `True` if the binary data starts with the specified *prefix*, otherwise return `False`. With optional *start*, test beginning at that position. With optional *end*, stop comparing at that position.
 
-`bytes.split(sep=None,maxsplit=-1)` `bytearray.split(sep=None, maxsplit=-1)`
+**`bytes.split(sep=None,maxsplit=-1)` `bytearray.split(sep=None, maxsplit=-1)`**
 
 Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string. If *maxsplit* is given and non-negative, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not specified or is `-1`, then there is no limit on the number of splits (all possible splits are made).
 
@@ -591,7 +591,7 @@ For example:
 
 
 
-`bytes.strip([chars[,dir=0] ])` `bytearray.strip([chars[,dir=0] ])`
+**`bytes.strip([chars[,dir=0] ])` `bytearray.strip([chars[,dir=0] ])`**
 
 Return a copy of the binary sequence with the leading and trailing characters removed. The *chars* argument is a string or binary sequence specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
@@ -617,14 +617,14 @@ The following methods on bytes and bytearray objects assume the use of ASCII com
 
 
 
-`bytes.lower()` `bytearray.lower()`
+**`bytes.lower()` `bytearray.lower()`**
 
 Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart.
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
 
 
-`bytes.upper()` `bytearray.upper()`
+**`bytes.upper()` `bytearray.upper()`**
 
 Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart.
 
@@ -683,7 +683,7 @@ Non-empty sets (not frozensets) can be created by placing a comma-separated list
 The constructors for both classes work the same:
 
 
-`class set ([iterable])` `class frozenset ([iterable])`
+**`class set ([iterable])` `class frozenset ([iterable])`**
 
 Return a new set or frozenset object whose elements are taken from *iterable*.  The elements of a set must be hashable.  To represent sets of sets, the inner sets must be `frozenset()` objects.  If *iterable* is not specified, a new empty set is returned.
 
@@ -921,7 +921,7 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstNjM5NDI4NTgxLC0yMjA2Mj
+NjY4NzkwfX0sImhpc3RvcnkiOlstMzgxNDAyMjEzLC0yMjA2Mj
 c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
 LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
 MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
