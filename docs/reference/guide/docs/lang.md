@@ -454,13 +454,15 @@ Remove *k* from *f*k in f of type PSET. Return NULL if  is not present.
 ### Functions
 
 
-**`PObject *pdict_new(int size)`**
-Create an empty dictionary with enough space to hold ```size``` pairs (key,value)
+**`PObject*pdict_new(int size)`**
+
+Create an empty dictionary with enough space to hold *size* pairs (key,value)
 
 Return NULL on failure.
 
 
-### pset_new(int*  type*, int*  size*)
+**`PObject *pset_new(int type, int size)`**
+
 Create an empty set or frozenset depending on ```type```, with enough space to contain ```size``` items.
 
 Return NULL on failure.
@@ -564,10 +566,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ1NDA4MjEsLTE2MjA4NzkzMjYsLT
-E3NDQ2NjE3MiwtNzk4MzUyNzcsLTE5NDQxNzMyMSwxMjcxMzQx
-NjYxLDE5NTE2NTU0MDQsLTEzOTY2NjA4ODgsMTU0MzQ1MzgzMS
-w0ODkxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOTE2
-Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAyND
-k4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbLTgwMjkwNzksLTE2MjA4NzkzMjYsLTE3ND
+Q2NjE3MiwtNzk4MzUyNzcsLTE5NDQxNzMyMSwxMjcxMzQxNjYx
+LDE5NTE2NTU0MDQsLTEzOTY2NjA4ODgsMTU0MzQ1MzgzMSw0OD
+kxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOTE2Mzc5
+MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAyNDk4LD
+cyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
 -->
