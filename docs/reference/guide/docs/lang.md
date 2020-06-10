@@ -358,43 +358,43 @@ Set the i-th item in *lst* to *item*, with *lst* of type PTUPLE.
 ### Functions
 
 
-**`PObject*psequence_new(uint8_t type, uint16_t  elements)`**
+**`PObject*psequence_new(uint8_t type, uint16_t  elements)**
 
 Create an empty sequence of type type with space for at least *elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence *elements* are set to elements` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-**`Pobject*pstring_new(uint16_t len,uint8_t *buf)`**
+**`Pobject*pstring_new(uint16_t len,uint8_t buf**
 
 Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the string.
 
 Return NULL on failure.
 
 
-**`PObject*pbytes_new(uint16_t len,uint8_t *buf)`**
-
+**`PObject*pbytes_new(uint16_t lenuint8_t **
+*  \```b
 Create a sequence of type PBYTES with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*pshorts_new(uint16_t len,uint8_t *buf)`**
-
+**`PObject*pshorts_new(uint16_t lenuint8**
+16_t*  \```
 Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *len* words from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*ptuple_new(uint16_t len,PObject **buf)`**
-
+**`PObject*ptuple_new(uint16_t lenPObject *b**
+*  \*\``
 Create a sequence of type PTUPLE with *len* elements. If *buf* is not NULL, *len* objects from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*plist_new(uint16_t len,PObject  **buf)`**
-
+**`PObject*plist_new(uint16_t lenPObject*`**
+\*\``
 Create a sequence of type PLIST with *len* elements. If *buf* is not NULL, *len* objects from  *buf* are used to initialize the sequence. Sequence elements are set to *len*.
 
 Return NULL on failure.
@@ -557,9 +557,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQxNzMyMSwxMjcxMzQxNjYxLDE5NT
-E2NTU0MDQsLTEzOTY2NjA4ODgsMTU0MzQ1MzgzMSw0ODkxMTE5
-OTcsLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOTE2Mzc5MTcsLT
-E1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAyNDk4LDcyOTk3
-NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbLTc5ODM1Mjc3LC0xOTQ0MTczMjEsMTI3MT
+M0MTY2MSwxOTUxNjU1NDA0LC0xMzk2NjYwODg4LDE1NDM0NTM4
+MzEsNDg5MTExOTk3LC0yODA3Mjg1NzAsMTYyMjQwOTU3MiwxMD
+kxNjM3OTE3LC0xNTgwNDMwNTUzLDgxOTkyNzUyNiwtMTgwMTYw
+MjQ5OCw3Mjk5NzY0MzQsODYyNzUzNDczLDEwNTIxODQ5NzRdfQ
+==
 -->
