@@ -811,35 +811,22 @@ Otherwise, if more than a positional argument is given, each argument is inserte
 ---
 #### `#!py3 frozenset()`
 
-!!!abstract "`#!py3 frozenset(\*args)`"
+frozenset(\*args)
+Return a new frozenset initialized from an optional *args.
 
-Return a new frozenset initialized from an optional 
-
-```
-*
-```
-
-args.
-
-If no 
-
-```
-*
-```
-
-args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
+If no *args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the frozenset.
 
 
 ---
 #### `#!py3 open()`
 
-open(file, mode="rb")`"
+open(file, mode="rb")
 
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU3MTQ3OTEsLTIxNTkxMjg5MCwtMT
-c4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbLTEzNDQ1Njc1MzQsLTIwNTU3MTQ3OTEsLT
+IxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
 -->
