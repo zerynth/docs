@@ -287,17 +287,17 @@ typedef struct _vhal_adc_conf {
 
 **`int vhalInitADC(void* data)`**
 
-Must be called before any function starting with ```vhalAdc```.
+Must be called before any function starting with *vhalAdc*.
 
 
 **`int vhalAdcInit(uint32_t adc,vhalAdcConf *conf)`**
 
-Initialize the ADC identified by the peripheral index ```adc``` with values in ```conf```. Return 0 on success, negative values in case of failure.
+Initialize the ADC identified by the peripheral index *adc* with values in *conf*. Return 0 on success, negative values in case of failure.
 
 
 **`int  vhalAdcGetPeripheralForPin(int vpin)`**
 
-Return the ADC peripheral index associated with ```vpin```.
+Return the ADC peripheral index associated with vpin.
 
 
 **`int vhalAdcPrepareCapture(uint32_t adc,vhalAdcCaptureInfo *info)`**
@@ -313,7 +313,8 @@ The function suspends the current thread until the end of the conversion.
 The samples are stored in the order they are converted in info->buffer.
 
 
-### vhalAdcDone(uint32_t* adc*)
+**`int vhalAdcDone(uint32_t adc)`**
+
 Disable the ADC identified by the peripheral index ```adc```.
 
 ## DAC
@@ -941,9 +942,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzcyNDYwMjYsLTEzODA3MDc2MDQsLT
-Q0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5
-MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MS
-wtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5Mywt
-MTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMTQ2NjExMzY3MiwtMTM4MDcwNzYwNCwtND
+Q3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkx
+MTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC
+0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0x
+NjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
 -->
