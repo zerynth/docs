@@ -23,19 +23,20 @@ prepended, corresponding to the high byte of *Pin Value* (i.e. PINCLASS_DIGITAL 
 For each pin class, there exists a table containing configuration data. Such data can be accessed by the following macros:
 
 
-### PIN_CLASS_ID(vpin)
+**`PIN_CLASS_ID(vpin)`**
+
 Returns a byte representing the index of the physical pin corresponding to vpin
 
 
-### PIN_CLASS_DATA0(vpin)
+**`PIN_CLASS_DATA0(vpin)`**
 Returns a byte representing the first byte of info about vpin
 
 
-### PIN_CLASS_DATA1(vpin)
+**`PIN_CLASS_DATA1(vpin)`**
 Returns a byte representing the second byte of info about vpin
 
 
-### PIN_CLASS_DATA2(vpin)
+**`PIN_CLASS_DATA2(vpin)`**
 Returns a byte representing the third byte of info about vpin
 
 The meaning of the three bytes of info depends on the actual porting; usually they contain configuration values to correctly setup the peripheral.
@@ -921,7 +922,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMT
-QwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5
-MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMj
+EzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYx
+NzY3OTcxMCwtMTY5MTk0MjE3NV19
 -->
