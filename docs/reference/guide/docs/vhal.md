@@ -117,7 +117,7 @@ Used to configure a pin as input. An interrupt will be generated when the status
 #### GPIO Functions
 
 
-**`int vhalPinSetMode(int vpinint*mode*`**
+**`int vhalPinSetMode(int vpinintmode*`**
 
 Set the digital mode of *vpin to *mode. Valid values for *mode are the digital input and output PINMODE macros. Return 0 in case of success.
 
@@ -149,33 +149,33 @@ Get the offset into a gpio microcontroller register corresponding to vpin. The r
 
 **`void vhalPinFastSet(void *port,int pad
 
-Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to high.
+Bypass the virtual pin indirection by operating on the microcontroller register port` with offset . Set the corresponding pin to high.
 
 
 **`void vhalPinFastClear(void *port,int pad)`**
 
-Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Set the corresponding pin to low.
+Bypass the virtual pin indirection by operating on the microcontroller register port` with offset . Set the corresponding pin to low.
 
 
-**`int vhalPinFastRead(void *port,int pad)`**
+**`int vhalPinFastRead(void *port,int pad_)`**
 *)
-Bypass the virtual pin indirection by operating on the microcontroller register ```port``` with offset ```pad```. Return 0 if the in is low, non-zero if it is high.
+Bypass the virtual pin indirection by operating on the microcontroller register port` with offset *pad.* Return 0 if the in is low, non-zero if it is high.
 
 
 **`int vhalPinSetToPeripheral(int vpin, int prph, uint32_t prms)`**
 
-Transfer the control of ```vpin``` to a peripheral identified by ```prph```. The configuration parameters for ```vpin``` are passed via ```prms``` in a format depending on the microcontroller porting.
+Transfer the control of vpin``` to a peripheral identified by ```prph```. The configuration parameters for ```vpin``` are passed via ```prms``` in a format depending on the microcontroller porting.
 Return 0 in case of success. The parameter ```prph``` is ignored in the current version of the VHAL.
 
 
 
-**`int vhalPinAttachInterrupt(int vpinint*mode,extCbkFn fn, uint32_t timeout)`**
+**`int vhalPinAttachInterrupt(int vpinintmode,extCbkFn fn, uint32_t timeout)`**
 
 
 Attach callback ```fn``` to ```vpin```. ```fn``` is called from an ISR when there is a status change identified by ```mode```. ```mode``` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot ```fn``` has been attached to.
 If ```fn``` is NULL the currently attached function is removed and the interrupt disabled.
 
-**`typedef void(*extCbkFn)(int slotint*dir*`**
+**`typedef void(*extCbkFn)(int slotintdir*`**
 
 The type of ```fn``` in `vhalPinAttachInterrupt()`. ```slot``` is the slot the callback has been attached to. ```dir``` is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
 
@@ -935,9 +935,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTY5NDMxNCwxNjY3NjYxMDgzLC04ND
-UyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2
-NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MS
-wtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMzEwODU2OTg5LDExMDk2OTQzMTQsLTg0NT
+I0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3
+NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC
+0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
 
 -->
