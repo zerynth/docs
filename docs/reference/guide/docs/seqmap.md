@@ -301,19 +301,17 @@ not found.
 Return a string which is the concatenation of the strings in the iterable *iterableiterable* must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in *iterable, excluding `byte` and `byterray` objects that are treated as strings.  The separator between elements is the string providing this method.
 
 
-    str.
-
-lower()
+**`str.lower()`**
 
 Return a copy of the string with all the cased characters converted to lowercase.
 
 
-    str.replace(old,new)
+**`str.replace(old,new)`**
 
 Return a copy of the string with all occurrences of substring *old* replaced by *new.*
 
 
-    str.split(sep=None, maxsplit=-1)
+**`str.split(sep=None, maxsplit=-1)`**
 
 Return a list of the words in the string, using *sep* as the delimiter string.  If *maxsplit is given, at most *maxsplit splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit is not specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
 
@@ -332,7 +330,7 @@ For example:
 ```
 
 If *sep* is not specified, a different splitting algorithm is
-applied: runs of consecutive whitespace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing whitespace.  Consequently, splitting an empty string or a string consisting of just whitespace with a `None` separator
+applied: runs of consecutive whites pace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing white space.  Consequently, splitting an empty string or a string consisting of just white space with a `None` separator
 returns `[]`.
 
 For example:
@@ -346,7 +344,7 @@ For example:
 ['1', '2', '3']
 ```
 
-str.py3 startswith(prefix[,start[,end] ])upper()
+**`str.py3 startswith(prefix[,start[,end] ])`** **`upper()`**
 
 Return `True` if string starts with the *prefix, otherwise return `False`. With optional *starttest string beginning at that position.  With optional *end*, stop comparing string at that position.
 
@@ -925,7 +923,7 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOls4NTc0NjAzNjQsLTIyMDYyNz
+NjY4NzkwfX0sImhpc3RvcnkiOls2OTYyOTIyNTQsLTIyMDYyNz
 cxNSwxOTMyMTk0NDc0LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMs
 MjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMz
 ExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0x
