@@ -372,7 +372,7 @@ Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *le
 Return NULL on failure.
 
 
-PObject*pbytes_new(uint16_t*  len*, uint8_t*  \buf)
+**`PObject*pbytes_new(uint16_t len,uint8_t*buf)`**
 
 Create a sequence of type PBYTES with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the sequence.
 
@@ -554,7 +554,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDQ5MzMzMCwtMTM5NjY2MDg4OCwxNT
+eyJoaXN0b3J5IjpbMTk1MTY1NTQwNCwtMTM5NjY2MDg4OCwxNT
 QzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2MjI0MDk1
 NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1MjYsLT
 E4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMTg0
