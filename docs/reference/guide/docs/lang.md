@@ -463,7 +463,7 @@ Return NULL on failure.
 
 **`PObject*pset_new(int type,int size)`**
 
-Create an empty set or frozenset depending on *type*, with enough space to contain *size* items.
+Create an empty set or frozenset depending on *type, with enough space to contain *size items.
 
 Return NULL on failure.
 
@@ -566,11 +566,11 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTU4ODE4MzMsLTcyNDA0ODU2MywtMT
-YyMDg3OTMyNiwtMTc0NDY2MTcyLC03OTgzNTI3NywtMTk0NDE3
-MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4OC
-wxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2MjI0
-MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1Mj
-YsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUy
-MTg0OTc0XX0=
+eyJoaXN0b3J5IjpbLTE5MjY4NjM2NjEsLTIwOTU4ODE4MzMsLT
+cyNDA0ODU2MywtMTYyMDg3OTMyNiwtMTc0NDY2MTcyLC03OTgz
+NTI3NywtMTk0NDE3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNC
+wtMTM5NjY2MDg4OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgw
+NzI4NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMD
+U1Myw4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2
+Mjc1MzQ3M119
 -->
