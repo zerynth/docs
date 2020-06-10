@@ -472,43 +472,43 @@ Return NULL on failure.
 The following macros must be returned by functions declared with C_NATIVE to signal the result of the call and eventually rise an exception. Non builtin exception names can not be retrieved by VM system calls, so no exception macro exists; a workaround for this limitation is to pass exception names from Python and store them somewhere in a C structure to be raised when needed.
 
 
-ERR_OK
+**`ERR_OK`**
 Call successful.
 
 
-ERR_TYPE_EXC
+**`ERR_TYPE_EXC`**
 Raise TypeError.
 
 
-ERR_ZERODIV_EXC
+**`ERR_ZERODIV_EXC`**
 Raise ZeroDivisionError.
 
 
-ERR_ATTRIBUTE_EXC
+**`ERR_ATTRIBUTE_EXC`**
 Raise AttributeError.
 
 
-ERR_RUNTIME_EXC
+**`ERR_RUNTIME_EXC`**
 Raise RuntimeError.
 
 
-ERR_VALUE_EXC
+**`ERR_VALUE_EXC`**
 Raise ValueError.
 
 
-ERR_INDEX_EXC
+**`ERR_INDEX_EXC`**
 Raise IndexError.
 
 
-ERR_KEY_EXC
+**`ERR_KEY_EXC`**
 Raise KeyError.
 
 
-ERR_NOT_IMPLEMENTED_EXC
+**`ERR_NOT_IMPLEMENTED_EXC`**
 Raise NotImplementedError.
 
 
-ERR_UNSUPPORTED_EXC
+**`ERR_UNSUPPORTED_EXC`**
 Raise UnsupportedError.
 
 
@@ -566,11 +566,11 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY4NjM2NjEsLTIwOTU4ODE4MzMsLT
-cyNDA0ODU2MywtMTYyMDg3OTMyNiwtMTc0NDY2MTcyLC03OTgz
-NTI3NywtMTk0NDE3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQwNC
-wtMTM5NjY2MDg4OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgw
-NzI4NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMD
-U1Myw4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2
-Mjc1MzQ3M119
+eyJoaXN0b3J5IjpbNTAwMDA5OTYxLC0xOTI2ODYzNjYxLC03Mj
+QwNDg1NjMsLTE2MjA4NzkzMjYsLTE3NDQ2NjE3MiwtNzk4MzUy
+NzcsLTE5NDQxNzMyMSwxMjcxMzQxNjYxLDE5NTE2NTU0MDQsLT
+EzOTY2NjA4ODgsMTU0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcy
+ODU3MCwxNjIyNDA5NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NT
+MsODE5OTI3NTI2LC0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3
+NTM0NzNdfQ==
 -->
