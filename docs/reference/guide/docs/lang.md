@@ -365,83 +365,83 @@ Create an empty sequence of type type with space for at least *elements elements
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-**`Pobject*pstring_new(uint16_t len,uint8_t buf**
-
+**`Pobject*pstring_new(uint16_t lenuint8_t 
 Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the string.
 
 Return NULL on failure.
 
 
-**`PObject*pbytes_new(uint16_t lenuint8_t **
-*  \```b
+**`PObject*pbytes_new(uint16_t len,uint8_t **
+*  \```bbuf)`**
+
 Create a sequence of type PBYTES with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*pshorts_new(uint16_t lenuint8**
-16_t*  \```
+**`PObject*pshorts_new(uint16_t len,uint8**
+16_t* 
+
 Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *len* words from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
 **`PObject*ptuple_new(uint16_t lenPObject *b**
-*  \*\``
+*  \*\``*buf)`**
+
 Create a sequence of type PTUPLE with *len* elements. If *buf* is not NULL, *len* objects from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*plist_new(uint16_t lenPObject*`**
-\*\``
+**`PObject*plist_new(uint16_t lenPObject\*\``  *
 Create a sequence of type PLIST with *len* elements. If *buf* is not NULL, *len* objects from  *buf* are used to initialize the sequence. Sequence elements are set to *len*.
 
 Return NULL on failure.
 
 ## Dictionaries and Sets
 
-Some data structures in Python have functionalities similar to hash tables. In particular dictionaries are mappings from keys to values; set and frozenset are collections of items optimized to test the presence of a given item inside the set.
-Internally, the hash code of an item is calculated and used to find the item inside the structure in a fast way.
+Some data structures in Python have functionalities similar to hash tables. In particular dictionaries are mappings from keys to values; set and frozenset are collections of items optimized to test the presence of a given item inside the set.Internally, the hash code of an item is calculated and used to find the item inside the structure in a fast way.
 
 Dictionaries and sets must be created, managed and manipulated with the following functions and macros only. Set and dictionaries automatically grow as needed.
 
 ### Macros
 
 
-### PHASH_ELEMENTS(obj)
+PHASH_ELEMENTS(obj)`**
 Return the elements in ```obj``` with obj a PDICT, PSET or PFSET.
 
 
-### PHASH_SIZE(obj)
+PHASH_SIZE(obj)`**
 Return the total space for itens in ```obj``` with obj a PDICT, PSET or PFSET.
 
 
-### PCHECK_HASHABLE(obj)
+PCHECK_HASHABLE(obj)`**
 Return true if ```obj``` is hashable, i.e. an hash can be calculated for ```obj```.
 
 
-### pdict_put(f, k, v)
+pdict_put(f, k, v)`**
 Add the hashable PObject ```k``` as a key and PObject ```v``` as value, in ```f``` of type PDICT.
 
 
-### pset_put(f, k)
+pset_put(f, k)`**
 Add the hashable PObject ```k```  in ```f``` of type PSET.
 
 
-### pdict_get(f, k)
+pdict_get(f, k)`**
 Return the value associated with the hashable PObject ```k``` in ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
-### pset_get(f, k)
+### **`pset_get(f, k)`**
 Return ```k``` if the hashable PObject ```k``` is in ```f``` of type PSET or PFSET. Return NULL if ```k``` is not present.
 
 
-### pdict_del(f, k)
+pdict_del(f, k)
 Remove ```k``` and its associated value from ```f``` of type PDICT. Return NULL if ```k``` is not present.
 
 
-### pset_del(f, k)
+pset_del(f, k)
 Remove ```k``` from ```f``` of type PSET. Return NULL if ```k``` is not present.
 
 ### Functions
@@ -557,10 +557,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODM1Mjc3LC0xOTQ0MTczMjEsMTI3MT
-M0MTY2MSwxOTUxNjU1NDA0LC0xMzk2NjYwODg4LDE1NDM0NTM4
-MzEsNDg5MTExOTk3LC0yODA3Mjg1NzAsMTYyMjQwOTU3MiwxMD
-kxNjM3OTE3LC0xNTgwNDMwNTUzLDgxOTkyNzUyNiwtMTgwMTYw
-MjQ5OCw3Mjk5NzY0MzQsODYyNzUzNDczLDEwNTIxODQ5NzRdfQ
-==
+eyJoaXN0b3J5IjpbMjA0MDQ4MTExNiwtNzk4MzUyNzcsLTE5ND
+QxNzMyMSwxMjcxMzQxNjYxLDE5NTE2NTU0MDQsLTEzOTY2NjA4
+ODgsMTU0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcyODU3MCwxNj
+IyNDA5NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3
+NTI2LC0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMT
+A1MjE4NDk3NF19
 -->
