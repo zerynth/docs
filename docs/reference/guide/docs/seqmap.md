@@ -272,32 +272,31 @@ Strings also support string formatting based on C `printf` style formatting..
 
 
 
-Return the number of non-overlapping occurrences of substring *sub* in the range [*start].  Optional arguments start and end arinterpreted as in slice notation.
+Return the number of non-overlapping occurrences of substring *sub* in the range [*start].  Optional arguments start and *end* are interpreted as in slice notation.
 
 
-    str.endswith(suffix[,start[,end] ])
+   
+
+**`str.endswith(suffix[,start[,end] ])`**
 
 Return `True` if the string ends with the specified *suffix, otherwise return `False`.  With optional *start`, test beginning at that position.  With optional *end*, stop comparing at that position.
 
 
-    str.find(sub[,start[,end] ])
+**`str.find(sub[,start[,end] ])`**
 
-Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start and *`end``` are 
-interpreted as in slice notation.  Return `-1` if *sub* is not found.
+Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start and *`end``` are  interpreted as in slice notation.  Return `-1` if *sub* is not found.
 
-!!! note
-	The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
+Note: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
 
 
 
-    str.index(sub[,start[,end] ])
+**`str.index(sub[,start[,end] ])`**
 
 Like `find()`, but raise `ValueError` when the substring is
 not found.
 
 
-    str.
-join(iterable)
+**`str.join(iterable)`**
 
 Return a string which is the concatenation of the strings in the iterable *iterableiterable* must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in *iterable, excluding `byte` and `byterray` objects that are treated as strings.  The separator between elements is the string providing this method.
 
@@ -918,6 +917,7 @@ Return a new view of the dictionary’s values.
 
 
 
+
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
 RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk3
@@ -925,11 +925,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTk5MDEzODYyOCwtMjIwNj
-I3NzE1LDE5MzIxOTQ0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1
-MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3Nj
-MzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEs
-LTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
-A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
-NSwxNTMzOTQ4OTEyXX0=
+NjY4NzkwfX0sImhpc3RvcnkiOls4NTc0NjAzNjQsLTIyMDYyNz
+cxNSwxOTMyMTk0NDc0LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMs
+MjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMz
+ExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0x
+MzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOT
+AyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcwMDUs
+MTUzMzk0ODkxMl19
 -->
