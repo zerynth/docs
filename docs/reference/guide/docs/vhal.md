@@ -127,7 +127,7 @@ Used to configure a pin as input. An interrupt will be generated when the status
 #### GPIO Functions
 
 
-**`vhalPinSetMode(int vpin, int mode)`**
+**`int vhalPinSetMode(int vpin,int mode)`**
 
 Set the digital mode of ```vpin``` to ```mode```. Valid values for ```mode``` are the digital input and output PINMODE macros. Return 0 in case of success.
 
@@ -944,8 +944,8 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzM5Mzc0OTAsOTM0MTA5MTExLDE3OT
-M2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgw
-OTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OT
-cxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMTQ3NTUzOTUyMSw5MzQxMDkxMTEsMTc5Mz
+Y1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5
+NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5Nz
+EwLC0xNjkxOTQyMTc1XX0=
 -->
