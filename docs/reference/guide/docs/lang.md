@@ -353,7 +353,7 @@ Return the i-th item in *lst* with *lst* of type PTUPLE.
 
 **`PTUPLE_SET_ITEM(lst, i, item)`**
 
-Set the i-th item in *lst  *`em*```* to *item*, with *lst*```lst``` of type PTUPLE.
+Set the i-th item in *lst* to *item*, with *lst* of type PTUPLE.
 
 ### Functions
 
@@ -553,7 +553,7 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTg3NzM1NDMsMTU0MzQ1MzgzMSw0OD
+eyJoaXN0b3J5IjpbLTEzOTY2NjA4ODgsMTU0MzQ1MzgzMSw0OD
 kxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOTE2Mzc5
 MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAyNDk4LD
 cyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
