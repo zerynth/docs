@@ -248,7 +248,7 @@ typedef struct _vhal_adc_capture {
 * *pins* is an array of virtual pin names to capture from
 
 
-* *npins* is the length of pins
+* *npins* is the length of *pins*
 
 
 * *sample_size* will hold the size of a single sample
@@ -285,12 +285,12 @@ typedef struct _vhal_adc_conf {
 
 #### Functions
 
+**`int vhalInitADC(void* data)`**
 
-### vhalInitADC(void\** data*)
 Must be called before any function starting with ```vhalAdc```.
 
 
-### vhalAdcInit(uint32_t* adc*, vhalAdcConf* \```conf```)
+int vhalAdcInit(uint32_t adc*, vhalAdcConf* \```conf```)
 Initialize the ADC identified by the peripheral index ```adc``` with values in ```conf```. Return 0 on success, negative values in case of failure.
 
 
@@ -937,9 +937,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc0NjAxMzY2LC00NDcyOTM5OTIsMTEwOT
-Y5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2
-LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLT
-E0MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2
-OTE5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbLTkzMTgxMTI1MiwtNDQ3MjkzOTkyLDExMD
+k2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5
+NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC
+0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0x
+NjkxOTQyMTc1XX0=
 -->
