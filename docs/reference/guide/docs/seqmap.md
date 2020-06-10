@@ -42,102 +42,7 @@ This table lists the sequence operations sorted in ascending priority.  In theta
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
-| Operation
 
- | Result
-
- | Notes
-
- |
-| ------------------------------------- | ---------------------- | ----------------------- | ------------- | -------- |  |  |  |  |  |  |  |  |  |  |  |  |
-| `x in s`
-
-                                | `True` if an item of ```s``` is
-equal to ```x```, else `False`
-
- | (1)
-
-                     |
-| `x not in s`
-
-                            | `False` if an item of ```s```
-is equal to ```x```, else
-`True`
-
- | (1)
-
-                     |
-| `s + t`
-
-                                 | the concatenation of ```s``` and
-```t```
-
-                   | (6)(7)
-
-                  |
-| `s \* n` or
-`n \* s`
-
-                        | equivalent to adding ```s``` to
-itself ```n``` times
-
-       | (2)(7)
-
-                  |
-| `s[i]`
-
-                                  | ```i```-th item of ```s```, origin
-0
-
-                       | (3)
-
-                     |
-| `s[i:j]`
-
-                                | slice of ```s``` from ```i```
-to ```j```
-
-                         | (3)(4)
-
-                  |
-| `s[i:j:k]`
-
-                              | slice of ```s``` from ```i``` to
-```j``` with step ```k```
-
-             | (3)(5)
-
-                  |
-| `len(s)`
-
-                                | length of ```s```
-
-                                    |                         |
-| `min(s)`
-
-                                | smallest item of ```s```
-
-                             |                         |
-| `max(s)`
-
-                                | largest item of ```s```
-
-                              |                         |
-| `s.index(x[, i[, j]])`
-
-                  | index of the first occurrence
-of ```x``` in ```s``` (at or after
-```i``` and before ```j```)
-
- | (8)
-
-                     |
-| `s.count(x)`
-
-                            | total number of occurrences of
-```x``` in ```s```
-
-                                |                         |
 Sequences of the same type also support comparisons.  In particular, tuplesand lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
@@ -1225,11 +1130,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4Mz
-gxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMw
-MDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3ODQsLT
-EwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC0xNDYz
-ODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4NjA0Mz
-YyLDIxNzYxOTk3MCwxODY4NjYxMTQyLDExODUwNDU3ODgsMjAx
-NDk3NjAzNl19
+eyJoaXN0b3J5IjpbMTg1NTY1MTA2MCwtMTMwMzcxNzkyOSw5ND
+U5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0
+MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1MzM5NDg5MTIsMT
+Q0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3ODUxLDIwMTI0
+OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MSwtMTMyMjQ2OD
+AyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2NjExNDIsMTE4
+NTA0NTc4OF19
 -->
