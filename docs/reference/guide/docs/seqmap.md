@@ -440,6 +440,7 @@ The conversion flag characters are:
 | 'G'        | Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise. | (3)   |
 | 's'        | String (converts any Python object using str()).                                                                                           | (4)   |
 | '%'        | No argument is converted, results in a '%' character in the result.                                                                        |       |
+
 **Notes:**
 	1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
 
@@ -929,11 +930,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OT
-k0NDc5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMx
-Miw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMT
-EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
-NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
-IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
-NjE5OTcwXX0=
+eyJoaXN0b3J5IjpbMTE3NjMzMTE0LC0xODUyNDc1NzY4LDM3Mz
+Y4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5MjksOTQ1OTIwMDQs
+LTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1MD
+U0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNTU3
+ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1LC
+0xNDYzODgwNjAyLC0yNDEzOTI1NTEsLTEzMjI0NjgwMjAsODY4
+NjA0MzYyXX0=
 -->
