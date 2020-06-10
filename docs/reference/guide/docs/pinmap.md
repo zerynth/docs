@@ -13,21 +13,95 @@ DIO is the default attribute for digital pins `Dx` while ADC is the default for 
 Moreover, `digitalWrite` and `digitalRead` functions don’t require any attribute specification and can be always used specifying the pin name only (`Dx` or `Ax`).
 
 Let’s see some examples:
+
 | Zerynth                               | Arduino/Wiring         | Note                    |
-|---------------------------------------|------------------------|-------------------------|
-| x=digitalRead(D1)                     | x=digitalRead(D1)      |                         |
-| x=digitalRead(A1)                     | x=digitalRead(A1)      | Use Ax pin as Dx pin    |
-| x=analogRead(A1)                      | x=analogRead(A1)       |                         |
-| x=analogRead(D1.ADC)                  | x=analogRead(Ax)       | Use of ADC on Dx pin    |
-| digitalWrite(D1,HIGH)                 | digitalWrite(D1,HIGH)  |                         |
-| digitalWrite(A1,HIGH)                 | digitalWrite(A1,HIGH)  | Use of Ax pin as Dx pin |
-| pwm.write(D1.PWM,period,duty)         | analogWrite(D1, value) |                         |
-| pwm.write(A1.PWM,period,duty)         | analogWrite(D1, value) | Use of Ax as PWM pin    |
-| x=icu.capture(D1.ICU,samples,time)    | —                      |                         |
-| x=icu.capture(A1.ICU,samples,time)    | —                      |                         |
-| can.init(D30.CANRX, D31.CANTX)        | —                      | Not yet released        |
-| spi.init(D11.MOSI, D12.MISO, D13.SCK) | —                      | Not yet released        |
-| i2c.init(D14.SDA,D15.SCL)             | —                      | Not yet released        |
+|---------------------------------------|-----
+
+ | Arduino/Wiring
+
+ | Note
+
+ |
+| --------------- | ---------------------- | -------------------| | ------------- | ------------ |  |  |  |  |  |  |  |  |  |
+| `x=digitalRead(D1)                    `
+
+ | `x=digitalRead(D1)`
+
+      |                         |
+| `x=digitalRead(A1)                    `
+
+ | `x=digitalRead(A1)`
+
+      | Use Ax pin as Dx pin   
+
+ |
+| `x=analogRead(A1)                    `
+
+  | `x=analogRead(A1)`
+
+       |                         |
+| `x=analogRead(D1.ADC)                 `
+
+ | `x=analogRead(Ax)`
+
+       | Use of ADC on Dx pin   
+
+ |
+| `digitalWrite(D1,HIGH)                `
+
+ | `digitalWrite(D1,HIGH)`
+
+  |                         |
+| `digitalWrite(A1,HIGH)                `
+
+ | `digitalWrite(A1,HIGH)`
+
+  | Use of Ax pin as Dx pin
+
+ |
+| `pwm.write(D1.PWM,period,duty)        `
+
+ | `analogWrite(D1, value)`
+
+ |                         |
+| `pwm.write(A1.PWM,period,duty)        `
+
+ | `analogWrite(D1, value)`
+
+ | Use of Ax as PWM pin
+
+    |
+| `x=icu.capture(D1.ICU,samples,time)   `
+
+ | —
+
+                      |                         |
+| `x=icu.capture(A1.ICU,samples,time)   `
+
+ | —
+
+                      |                         |
+| `can.init(D30.CANRX, D31.CANTX)   `
+
+     | —
+
+                      | Not yet released
+
+        |
+| `spi.init(D11.MOSI, D12.MISO, D13.SCK)`
+
+ | —
+
+                      | Not yet released
+
+        |
+| `i2c.init(D14.SDA,D15.SCL)`
+
+             | —
+
+                      | Not yet released
+
+        |
 
 In Zerynth names are always UPPERCASE. The following PIN names are included in the Zerynth built-ins:
 
@@ -89,5 +163,5 @@ However, this pin naming is an advanced feature of the Zerynth suite and it is r
 Moreover, all the Zerynth init functions (`can.init()`, `spi.init()`, `i2c.init()`) also allow fast configuration by using short-names like (`CAN0`, `I2C0`, `SPI0`, `SERIAL0`). For example, it is possible to open the serial port 0 with default parameters by calling `streams.serial()` or opening the serial port 1 by calling `streams.serial(SERIAL1)`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODU2MTY5OV19
+eyJoaXN0b3J5IjpbMjA3NjIyOTg1NSwyMDg4NTYxNjk5XX0=
 -->
