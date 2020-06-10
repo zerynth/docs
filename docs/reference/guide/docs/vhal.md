@@ -81,38 +81,47 @@ The following macros are used to set the pin mode of operation.
 Used to configure a pin as input with no pull up/down circuitry (floating mode)
 
 
-PINMODE_INPUT_PULLUP
+**`PINMODE_INPUT_PULLUP`**
+
 Used to configure a pin as input with pull up circuitry
 
 
-PINMODE_INPUT_ANALOG
+**`PINMODE_INPUT_ANALOG`**
+
 Used to configure a pin as analog input by connecting it to an analog to digital converter
 
 
-PINMODE_INPUT_PULLDOWN
+**`PINMODE_INPUT_PULLDOWN`**
+
 Used to configure a pin as input with pull down circuitry
 
 
-PINMODE_OUTPUT_PUSHPULL
+**`PINMODE_OUTPUT_PUSHPULL`**
+
 Used to configure a pin as output. The pin will be able to both sink and source current.
 
 
-PINMODE_OUTPUT_OPENDRAIN
+**`PINMODE_OUTPUT_OPENDRAIN`**
+
 Used to configure a pin as output. The pin will be able to only sink current. This means the pin output can only be set to low.
 
 
-PINMODE_OUTPUT_HIGHDRIVE
+**`PINMODE_OUTPUT_HIGHDRIVE`**
+
 Used to configure a pin as output. The pin will be able to only sink and source a higher current. Refer to each microcontroller datasheet for details.
 
-PINMODE_EXT_FALLING
+**`PINMODE_EXT_FALLING`**
+
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from high to low.
 
 
-PINMODE_EXT_RISING
+**`PINMODE_EXT_RISING`**
+
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from low to high.
 
 
-PINMODE_EXT_BOTH
+**`PINMODE_EXT_BOTH`**
+
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from low to high or from high to low.
 
 #### GPIO Functions
@@ -923,8 +932,8 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzE2NDI4NDMsOTM0MTA5MTExLDE3OT
-M2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgw
-OTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OT
-cxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTMwNjc4MzQ3Myw5MzQxMDkxMTEsMTc5Mz
+Y1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5
+NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5Nz
+EwLC0xNjkxOTQyMTc1XX0=
 -->
