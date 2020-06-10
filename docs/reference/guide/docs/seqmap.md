@@ -38,7 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In thetable,  and ``` are sequences of the same type, *n*, *i*, *j* and *k* areintegers and  is an arbitrary object that meets any type and valuerestrictions imposed by .
+This table lists the sequence operations sorted in ascending priority.  In the table, *s* and *t* are sequences of the same type, *n*, *i*, *j* and *k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by *s*.
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -923,7 +923,7 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODU0NzgzNjIsNzY1NDg0NjI4LDExNz
+eyJoaXN0b3J5IjpbLTE5MzYxNTA3MjAsNzY1NDg0NjI4LDExNz
 YzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nzkx
 LC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5ND
 EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
