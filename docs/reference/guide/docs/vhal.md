@@ -175,11 +175,11 @@ Return 0 in case of success. The parameter *prph is ignored in the current versi
 Attach callback *fn* to `vpi*. *fn* is called from an ISR when there is a status change identified by mode`. *m```* can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot  has been attached to.
 If  is NULL the currently attached function is removed and the interrupt disabled.
 
-**`typedef void(*extCbkFn)(int slotintdir*`**
+**`typedef void(*extCbkFn)(int slot int dir)`**
 
 The type of  in `vhalPinAttachInterrupt()`. slot` is the slot the callback has been attached to. *dir* is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
 
-if timeout is provided, ```fn``` is called only the status of the pin remains stable for at least ```timeout``` units of time, effectively implenting debouncing.
+if *timeout* is provided, *fn* is called only the status of the pin remains stable for at least *timeout* units of time, effectively implenting debouncing.
 
 ## ADC
 
@@ -935,9 +935,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzI4MTU5NTAsLTQ0NzI5Mzk5MiwxMT
-A5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcw
-OTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMi
-wtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwt
-MTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbMTk0ODE5NzcxMywtNDQ3MjkzOTkyLDExMD
+k2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5
+NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC
+0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0x
+NjkxOTQyMTc1XX0=
 -->
