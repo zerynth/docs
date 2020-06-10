@@ -352,12 +352,12 @@ Return the i-th item in *lst* with *lst* of type PTUPLE.
 
 
 **`PTUPLE_SET_ITEM(lst, i, item)`**
-Set the i-th item in *lst* to ```item```, with ```lst``` of type PTUPLE.
+Set the i-th item in *lst* to *item*, with *lst* of type PTUPLE.
 
 ### Functions
 
 
-### psequence_new(uint8_t*  type*, uint16_t*  elements*)
+PObject*psequence_new(uint8_t*  type*, uint16_t*  elements*)
 Create an empty sequence of type ```type``` with space for at least ```elements``` elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence elementes are set to ```elements``` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
@@ -550,6 +550,6 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MjE3NzQyNiwtMTgwMTYwMjQ5OCw3Mj
+eyJoaXN0b3J5IjpbMTY3MDkxMDg1NiwtMTgwMTYwMjQ5OCw3Mj
 k5NzY0MzQsODYyNzUzNDczLDEwNTIxODQ5NzRdfQ==
 -->
