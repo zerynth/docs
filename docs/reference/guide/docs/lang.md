@@ -461,7 +461,7 @@ Create an empty dictionary with enough space to hold *size pairs (key,value)
 Return NULL on failure.
 
 
-**`PObject *pset_new(int type, int size)`**
+**`PObject*pset_new(int type,int size)`**
 
 Create an empty set or frozenset depending on ```type```, with enough space to contain ```size``` items.
 
@@ -566,11 +566,11 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNDA0ODU2MywtODAyOTA3OSwtMTYyMD
-g3OTMyNiwtMTc0NDY2MTcyLC03OTgzNTI3NywtMTk0NDE3MzIx
-LDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4OCwxNT
-QzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2MjI0MDk1
-NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1MjYsLT
-E4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMTg0
-OTc0XX0=
+eyJoaXN0b3J5IjpbODQzNTU5MzkzLC03MjQwNDg1NjMsLTE2Mj
+A4NzkzMjYsLTE3NDQ2NjE3MiwtNzk4MzUyNzcsLTE5NDQxNzMy
+MSwxMjcxMzQxNjYxLDE5NTE2NTU0MDQsLTEzOTY2NjA4ODgsMT
+U0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5
+NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC
+0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4
+NDk3NF19
 -->
