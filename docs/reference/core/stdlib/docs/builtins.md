@@ -790,43 +790,23 @@ If the number of positional arguments is odd, the value for the last key is None
 
 !!!abstract "`#!py3 set(\*args)`"
 
-Return a new set initialized from an optional 
-
-```
-*
-```
-
-args.
-
-If no 
-
-```
-*
-```
-
-args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
+Return a new set initialized from an optional *args.
+If no *args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the set.
 
-
----
-#### `#!py3 frozenset()`
-
 frozenset(*args)
+
 Return a new frozenset initialized from an optional *args.
 
 If no *args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the frozenset.
 
+**open(file, mode="rb")**
 
----
-#### `#!py3 open()`
---- python
-open(file, mode="rb")
----
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjI2NDU0LDE1ODk3NzY3MjIsLTIwNT
-U3MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMD
+U1NzE0NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
 -->
