@@ -434,17 +434,17 @@ Add the hashable PObject *k* in *f* of type PSET.
 
 pdict_get(f,k)`**
 
-Return the value associated with the hashable PObject *k* in *f* of type PDICT. Return NULL if k k is not present.
+Return the value associated with the hashable PObject *k* in *f* of type PDICT. Return NULL if *k* is not present.
 
 
 ### **`pset_get(f,k)`**
 
-Return  if the hashable PObject k`is in ```f``` of type PSET or PFSET. Return NULL if k is not present.
+Return  if the hashable PObject *k* is in *f* of type PSET or PFSET. Return NULL if *k* is not present.
 
 
 pdict_del(f,k)`**
 
-Remove ```k``` and its associated value from ```f``` of type PDICT. Return NULL if ```k``` is not present.
+Remove *k* and its associated value from f of type PDICT. Return NULL if ```k``` is not present.
 
 
 pset_del(f,k)`**
@@ -564,10 +564,10 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMxMzAwNDEzLC0xNzQ0NjYxNzIsLTc5OD
-M1Mjc3LC0xOTQ0MTczMjEsMTI3MTM0MTY2MSwxOTUxNjU1NDA0
-LC0xMzk2NjYwODg4LDE1NDM0NTM4MzEsNDg5MTExOTk3LC0yOD
-A3Mjg1NzAsMTYyMjQwOTU3MiwxMDkxNjM3OTE3LC0xNTgwNDMw
-NTUzLDgxOTkyNzUyNiwtMTgwMTYwMjQ5OCw3Mjk5NzY0MzQsOD
-YyNzUzNDczLDEwNTIxODQ5NzRdfQ==
+eyJoaXN0b3J5IjpbMTkwNDA1NDEwNiwtMTc0NDY2MTcyLC03OT
+gzNTI3NywtMTk0NDE3MzIxLDEyNzEzNDE2NjEsMTk1MTY1NTQw
+NCwtMTM5NjY2MDg4OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMj
+gwNzI4NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQz
+MDU1Myw4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LD
+g2Mjc1MzQ3MywxMDUyMTg0OTc0XX0=
 -->
