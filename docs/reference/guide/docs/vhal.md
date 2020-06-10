@@ -129,12 +129,12 @@ Used to configure a pin as input. An interrupt will be generated when the status
 
 **`int vhalPinSetMode(int vpin,int mode)`**
 
-Set the digital mode of ```vpin``` to ```mode```. Valid values for ```mode``` are the digital input and output PINMODE macros. Return 0 in case of success.
+Set the digital mode of *vpin* to *mode*. Valid values for *mode* are the digital input and output PINMODE macros. Return 0 in case of success.
 
 
 **`int vhalPinRead(int vpin)`**
 
-Read the digital value of ```vpin```. Return 0 if ```vpin``` is low, non-zero if ```vpin``` is high.
+Read the digital value of *vpin*. Return 0 if ```vpin``` is low, non-zero if ```vpin``` is high.
 
 
 **`int vhalPinWrite(int vpin, int value)`**
@@ -945,8 +945,8 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDM2NzY0NywtODQ1MjQ1NzU5LDkzND
-EwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3
-NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OT
-MsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbOTAyODUyNzA1LC04NDUyNDU3NTksOTM0MT
+A5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0
+MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5My
+wtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
 -->
