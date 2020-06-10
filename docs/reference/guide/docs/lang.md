@@ -356,19 +356,19 @@ Set the i-th item in *lst  *`em*```* to *item*, with *lst*```lst``` of type PTUP
 
 ### Functions
 
-**`PObject*psequence_new(uint8_t type, uint16_t  elements)`**
+PObject*psequence_new(uint8_t type, uint16_t  elements)
 Create an empty sequence of type type with space for at least *elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence *elements* are set to elements` and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-pstring_new(uint16_t*  len*, uint8_t*  \```buf```)
+Pobject*pstring_new(uint16_t  len, uint8_t  \```buf```)
 Create a sequence of type PSTRING with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the string.
 
 Return NULL on failure.
 
 
-### pbytes_new(uint16_t*  len*, uint8_t*  \```buf```)
+PObject*pbytes_new(uint16_t*  len*, uint8_t*  \```buf```)
 Create a sequence of type PBYTES with ```len``` elements. If ```buf``` is not NULL, ```len``` bytes from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
@@ -549,7 +549,8 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOT
-E2Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAy
-NDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbLTEzODgxMjU0ODcsLTI4MDcyODU3MCwxNj
+IyNDA5NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsODE5OTI3
+NTI2LC0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0NzMsMT
+A1MjE4NDk3NF19
 -->
