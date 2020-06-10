@@ -429,7 +429,7 @@ Add the hashable PObject  as a key and PObject v as value, in  of type PDICT.
 
 **`pset_put(f,k)`**
 
-Add the hashable PObject k*k* in f*f* of type PSET.
+Add the hashable PObject k in  of type PSET.
 
 
 **`pdict_get(f,k)`**
@@ -442,7 +442,7 @@ Return the value associated with the hashable PObject  in  of type PDICT. Return
 Return  if the hashable PObject k is in  of type PSET or PFSET. Return NULL if *k* is not present.
 
 
-**`pdict_del(f,k)`**
+pdict_del(f,k)`**
 
 Remove k and its associated value from  of type PDICT. Return NULL if  is not present.
 
@@ -454,9 +454,9 @@ Remove *k* from *f*k in f of type PSET. Return NULL if  is not present.
 ### Functions
 
 
-**`PObject*pdict_new(int size)`**
+**`PObject *pdict_new(int siz)`**
 
-Create an empty dictionary with enough space to hold *size* pairs (key,value)
+Create an empty dictionary with enough space to hold *size pairs (key,value)
 
 Return NULL on failure.
 
@@ -566,10 +566,11 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjkwNzksLTE2MjA4NzkzMjYsLTE3ND
-Q2NjE3MiwtNzk4MzUyNzcsLTE5NDQxNzMyMSwxMjcxMzQxNjYx
-LDE5NTE2NTU0MDQsLTEzOTY2NjA4ODgsMTU0MzQ1MzgzMSw0OD
-kxMTE5OTcsLTI4MDcyODU3MCwxNjIyNDA5NTcyLDEwOTE2Mzc5
-MTcsLTE1ODA0MzA1NTMsODE5OTI3NTI2LC0xODAxNjAyNDk4LD
-cyOTk3NjQzNCw4NjI3NTM0NzMsMTA1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbLTcyNDA0ODU2MywtODAyOTA3OSwtMTYyMD
+g3OTMyNiwtMTc0NDY2MTcyLC03OTgzNTI3NywtMTk0NDE3MzIx
+LDEyNzEzNDE2NjEsMTk1MTY1NTQwNCwtMTM5NjY2MDg4OCwxNT
+QzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4NTcwLDE2MjI0MDk1
+NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1Myw4MTk5Mjc1MjYsLT
+E4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1MzQ3MywxMDUyMTg0
+OTc0XX0=
 -->
