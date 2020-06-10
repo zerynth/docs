@@ -242,34 +242,34 @@ typedef struct _vhal_adc_capture {
 ```
 
 
-* samples is the number of samples to capture
+* *samples* is the number of samples to capture
 
 
-* pins is an array of virtual pin names to capture from
+* *pins* is an array of virtual pin names to capture from
 
 
-* npins is the length of ```pins```
+* *npins* is the length of pins
 
 
-* sample_size will hold the size of a single sample
+* *sample_size* will hold the size of a single sample
 
 
-* capture_mode is one of the ADC_CAPTURE macros
+* *capture_mode* is one of the ADC_CAPTURE macros
 
 
-* trigger_mode select the trigger type. Not yet used.
+* *trigger_mode* select the trigger type. Not yet used.
 
 
-* trigger_vpin is the virtual pin to be used as gpio trigger. Not yet used.
+* *trigger_vpin* is the virtual pin to be used as gpio trigger. Not yet used.
 
 
-* ```buffer``` is a pointer to a location of memory where captured samples will be stored.
+* *buffer* is a pointer to a location of memory where captured samples will be stored.
 
 
-* ```half_buffer``` is a pointer to the free half of ```buffer``` in continuous mode. Not yet used.
+* *half_buffer* is a pointer to the free half of *buffer* in continuous mode. Not yet used.
 
 
-* ```callback``` is a function called in continuous mode when one half of the buffer is filled. Not yet used.
+* *callback* is a function called in continuous mode when one half of the buffer is filled. Not yet used.
 
 
 **`vhalAdcConf`**
@@ -937,7 +937,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTE1MDk2LC00NDcyOTM5OTIsMTEwOT
+eyJoaXN0b3J5IjpbNzc0NjAxMzY2LC00NDcyOTM5OTIsMTEwOT
 Y5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2
 LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLT
 E0MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2
