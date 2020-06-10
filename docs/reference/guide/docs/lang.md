@@ -365,28 +365,29 @@ Create an empty sequence of type type with space for at least *elements elements
 Return a pointer to the created sequence or NULL in case of failure.
 
 
-**`Pobject*pstring_new(uint16_t len,uint8_t*buf)`**
+**`Pobject*pstring_new(uint16_t len,uint8_t *buf)`**
 
 Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the string.
 
 Return NULL on failure.
 
 
-**`PObject*pbytes_new(uint16_t len,uint8_t*buf)`**
+**`PObject*pbytes_new(uint16_t len,uint8_t *buf)`**
 
 Create a sequence of type PBYTES with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-**`PObject*pshorts_new(uint16_t len,uint8_t*buf)`**
+**`PObject*pshorts_new(uint16_t len,uint8_t *buf)`**
 
 Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *len* words from *buf* are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-### ptuple_new(uint16_t*  len*, PObject*  \*\```buf```)
+**`PObject*ptuple_new(uint16_t len, PObject  **buf)`**
+
 Create a sequence of type PTUPLE with ```len``` elements. If ```buf``` is not NULL, ```len``` objects from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
@@ -555,9 +556,9 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwMzE2NDgzLDE5NTE2NTU0MDQsLTEzOT
-Y2NjA4ODgsMTU0MzQ1MzgzMSw0ODkxMTE5OTcsLTI4MDcyODU3
-MCwxNjIyNDA5NTcyLDEwOTE2Mzc5MTcsLTE1ODA0MzA1NTMsOD
-E5OTI3NTI2LC0xODAxNjAyNDk4LDcyOTk3NjQzNCw4NjI3NTM0
-NzMsMTA1MjE4NDk3NF19
+eyJoaXN0b3J5IjpbLTIwMzUxNjM0OTksMTk1MTY1NTQwNCwtMT
+M5NjY2MDg4OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4
+NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1My
+w4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1
+MzQ3MywxMDUyMTg0OTc0XX0=
 -->
