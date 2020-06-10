@@ -394,7 +394,7 @@ A conversion specifier contains two or more characters and has the following com
 3. Conversion flags (optional), which affect the result of some conversion types.
 
 
-4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the nextelement of the tuple in *values, and the object to convert comes after the minimum field width and optional precision.
+4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the next element of the tuple in *values, and the object to convert comes after the minimum field width and optional precision.
 
 
 5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next 
@@ -921,11 +921,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsyNjA0NDQ0ODksLTIyMDYyNz
-cxNSwxOTMyMTk0NDc0LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMs
-MjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMz
-ExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0x
-MzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOT
-AyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcwMDUs
-MTUzMzk0ODkxMl19
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTQ1MzQ1NjUxNywtMjIwNj
+I3NzE1LDE5MzIxOTQ0NzQsLTE0MzY1MTM0OTIsLTEzNjE5MDI1
+MywyMTA3ODE2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3Nj
+MzMTE0LC0xODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEs
+LTEzMDM3MTc5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MT
+A5MDI2LDIwMzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAw
+NSwxNTMzOTQ4OTEyXX0=
 -->
