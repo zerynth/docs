@@ -25,7 +25,7 @@ The following scheme summarizes the available virtual pin info:
  | Pin Name
 
  |
-| --------- | ---------- | --------- | -------- |
+| ---------- | -|---------- | --|--------- | --|---------- |
 | DIGITAL
 
    | 0
@@ -46,13 +46,13 @@ The following scheme summarizes the available virtual pin info:
        |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
+  ...      |
 | ANALOG
 
     | 0
@@ -73,13 +73,13 @@ The following scheme summarizes the available virtual pin info:
        |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
+  ...      |
 | SPI
 
        | 0
@@ -109,13 +109,13 @@ The following scheme summarizes the available virtual pin info:
     |
 | …
 
-         | …
+...         | …
 
-          | …
+  | ...        | …
 
-         | …
+  ...       | …
 
-        |
+ ...       |
 | I2C
 
        | 0
@@ -136,13 +136,13 @@ The following scheme summarizes the available virtual pin info:
      |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
+  ...      |
 | PWM
 
        | 0
@@ -163,13 +163,13 @@ The following scheme summarizes the available virtual pin info:
      |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
+  ...      |
 | ICU
 
        | 0
@@ -190,13 +190,13 @@ The following scheme summarizes the available virtual pin info:
      |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
+ ...       |
 | CAN
 
        | 0
@@ -217,18 +217,14 @@ The following scheme summarizes the available virtual pin info:
    |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
-| SER
-
-       | 0
-
-          | 0x0700
+  ...      |
+| SER     | 2     | 0x0700
 
     | RX0
 
@@ -244,13 +240,13 @@ The following scheme summarizes the available virtual pin info:
       |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+...         | …
 
-        |
+| ...        |
 | DAC
 
        | 0
@@ -271,13 +267,13 @@ The following scheme summarizes the available virtual pin info:
      |
 | …
 
-         | …
+ ...        | …
 
-          | …
+ ...         | …
 
-         | …
+  ...       | …
 
-        |
+  ...      |
 | LED
 
        | 0
@@ -298,13 +294,13 @@ The following scheme summarizes the available virtual pin info:
      |
 | …
 
-         | …
+  ...       | …
 
-          | …
+  ...        | …
 
-         | …
+  ...       | …
 
-        |
+  ...      |
 | BTN
 
        | 0
@@ -323,6 +319,7 @@ The following scheme summarizes the available virtual pin info:
     | BTN1
 
      |
+
 Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with 
 
 ```
@@ -357,32 +354,17 @@ Each microcontroller peripheral is mapped to a peripheral index in the board por
 
 Imagine a microcontroller with four different USART peripherals named USART1 to USART4. In the board porting each USART is mapped to a peripheral index by creating such table:
 
-| Index
-
-     | Value
-
-      |
-| --------- | ---------- |
-| 0
-
-         | 3
-
-          |
-| 1
-
-         | 1
-
-          |
-| 2
-
-         | 4
-
-          |
+| Index | Value |
+|---------------|
+| 0          |
+| 1     | 1     |
+| 2     | 4     |
 | 3
 
          | 2
 
           |
+
 When a VHAL function is called, expecting a peripheral index for a serial peripheral, the table is used to map the passed index (e.g. 0) to the corresponding mcu peripheral (e.g. USART3). Each board porting defines this kind of tables for each supported peripheral.
 
 The following macros can be used to query the peripheral tables:
@@ -1251,5 +1233,6 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE5NDIxNzUsLTk0ODE4OTkyMF19
+eyJoaXN0b3J5IjpbLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ
+==
 -->
