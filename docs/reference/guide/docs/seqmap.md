@@ -344,12 +344,12 @@ For example:
 ['1', '2', '3']
 ```
 
-**`str.py3 startswith(prefix[,start[,end] ])`** **`upper()`**
+**`str.startswith(prefix[,start[,end] ])`** 
 
-Return `True` if string starts with the *prefix, otherwise return `False`. With optional *starttest string beginning at that position.  With optional *end*, stop comparing string at that position.
+Return `True` if string starts with the *prefix, otherwise return `False`. With optional *start test string beginning at that position.  With optional *end*, stop comparing string at that position.
 
 
-    str.strip([chars[,dir=0] ])
+**`str.strip([chars[,dir=0] ])`**
 
 Return a copy of the string with the leading and trailing characters removed. The chars* argument is a string specifying the set of characters to be removed. If omitted, the *chars argument defaults to removing whitespace. The chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
@@ -923,11 +923,11 @@ LCJlbmQiOjM4MTR9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOls2OTYyOTIyNTQsLTIyMDYyNz
-cxNSwxOTMyMTk0NDc0LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMs
-MjEwNzgxNjU1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMz
-ExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0x
-MzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOT
-AyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcwMDUs
-MTUzMzk0ODkxMl19
+NjY4NzkwfX0sImhpc3RvcnkiOlsxODkwMDU2NjI1LC0yMjA2Mj
+c3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5MiwtMTM2MTkwMjUz
+LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2Mz
+MxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwt
+MTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMD
+kwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1
+LDE1MzM5NDg5MTJdfQ==
 -->
