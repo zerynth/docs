@@ -16,6 +16,41 @@ All these levels of indirection are hidden by the VHAL using macros to access th
 
 The following scheme summarizes the available virtual pin info:
 
+| Pin Class | Pin Offset | Pin Value | Pin Name |
+|-----------|------------|-----------|----------|
+| DIGITAL   | 0          | 0x0000    | D0       |
+| DIGITAL   | 1          | 0x0001    | D1       |
+| ...       | ...        | ...       | ...      |
+| ANALOG    | 0          | 0x0100    | A0       |
+| ANALOG    | 1          | 0x0101    | A1       |
+| ...       | ...        | ...       | ...      |
+| SPI       | 0          | 0x0200    | MOSI0    |
+| SPI       | 1          | 0x0201    | MISO0    |
+| SPI       | 2          | 0x0202    | SCLK0    |
+| ...       | ...        | ...       | ...      |
+| I2C       | 0          | 0x0300    | SDA0     |
+| I2C       | 1          | 0x0301    | SCL0     |
+| ...       | ...        | ...       | ...      |
+| PWM       | 0          | 0x0400    | PWM0     |
+| PWM       | 1          | 0x0401    | PWM1     |
+| ...       | ...        | ...       | ...      |
+| ICU       | 0          | 0x0500    | ICU0     |
+| ICU       | 1          | 0x0501    | ICU1     |
+| ...       | ...        | ...       | ...      |
+| CAN       | 0          | 0x0600    | CANRX0   |
+| CAN       | 1          | 0x0601    | CANTX0   |
+| ...       | ...        | ...       | ...      |
+| SER       | 0          | 0x0700    | RX0      |
+| SER       | 1          | 0x0701    | TX0      |
+| ...       | ...        | ...       | ...      |
+| DAC       | 0          | 0x0800    | DAC0     |
+| DAC       | 1          | 0x0801    | DAC1     |
+| ...       | ...        | ...       | ...      |
+| LED       | 0          | 0x0900    | LED0     |
+| LED       | 1          | 0x0901    | LED1     |
+| ...       | ...        | ...       | ...      |
+| BTN       | 0          | 0x0A00    | BTN0     |
+| BTN       | 1          | 0x0A01    | BTN1     |
 
 Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with 
 
@@ -930,6 +965,6 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDIzNTc0MDEsLTE2MTc2Nzk3MTAsLT
+eyJoaXN0b3J5IjpbLTE0MjM0MzcwNzIsLTE2MTc2Nzk3MTAsLT
 E2OTE5NDIxNzVdfQ==
 -->
