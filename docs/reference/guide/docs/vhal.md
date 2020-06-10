@@ -307,14 +307,12 @@ Must be called before `vhalAdcRead()` to configure the conversion. Return 0 on s
 
 **`int vhalAdcRead(uint32_t adc,vhalAdcCaptureInfo *info)`**
 
-Must be called after `vhalAdcPrepareCapture()` has configured the conversion. Return 0 on success. The member *buffer* of *info* must be set to the correct size according to *samples* and sample_size.
-The function suspends the current thread until the end of the conversion.
-The samples are stored in the order they are converted in info->buffer.
+Must be called after `vhalAdcPrepareCapture()` has configured the conversion. Return 0 on success. The member *buffer* of *info* must be set to the correct size according to *samples* and *sample_size*. The function suspends the current thread until the end of the conversion. The samples are stored in the order they are converted in info->buffer.
 
 
 **`int vhalAdcDone(uint32_t adc)`**
 
-Disable the ADC identified by the peripheral index ```adc```.
+Disable the ADC identified by the peripheral index *adc*.
 
 ## DAC
 
@@ -941,9 +939,9 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDc0MTYyNiwtMTM4MDcwNzYwNCwtND
-Q3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkx
-MTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC
-0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0x
-NjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLT
+Q0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5
+MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MS
+wtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5Mywt
+MTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
 -->
