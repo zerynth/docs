@@ -379,8 +379,7 @@ The *dir* parameter controls the side of stripping:
 
 ```python
 str.
-
-`"
+```
 
 Return a copy of the string with all the cased characters converted to uppercase.
 
@@ -424,36 +423,12 @@ Python has 002 quote types.
 In this case no `*` specifiers may occur in a format (since they require a sequential parameter list).
 
 The conversion flag characters are:
-
-| Flag
-
-                                  | Meaning
-
-                                                                               |
-| ------------------------------------- | ------------------------------------------------------------------------------------- |
-| `'0'`
-
-                                   | The conversion will be zero padded for numeric values.
-
-                                |
-| `'-'`
-
-                                   | The converted value is left adjusted (overrides the `'0'`
-conversion if both are given).
-
- |
-| `' '`
-
-                                   | (a space) A blank should be left before a positive number (or empty
-string) produced by a signed conversion.
-
- |
-| `'+'`
-
-                                   | A sign character (`'+'` or `'-'`) will precede the conversion
-(overrides a “space” flag).
-
-                        |
+| Flag |                                                    Meaning                                                   |
+|:----:|:------------------------------------------------------------------------------------------------------------:|
+| '0'  | The conversion will be zero padded for numeric values.                                                       |
+| '-'  | The converted value is left adjusted (overrides the '0' conversion if both are given).                       |
+| ' '  | (a space) A blank should be left before a positive number (or empty string) produced by a signed conversion. |
+| '+'  | A sign character ('+' or '-') will precede the conversion (overrides a “space” flag).                        |
 The conversion types are (1):
 
 | Conversion
@@ -1044,11 +1019,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
-kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
-LC0xNTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxND
-QzMzU1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5
-MTA5NSwtMTQ2Mzg4MDYwMiwtMjQxMzkyNTUxLC0xMzIyNDY4MD
-IwLDg2ODYwNDM2MiwyMTc2MTk5NzAsMTg2ODY2MTE0MiwxMTg1
-MDQ1Nzg4XX0=
+eyJoaXN0b3J5IjpbODk5NDYyMTU1LDU5OTk0NDc5MSwtMTMwMz
+cxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYs
+MjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1Mz
+M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
+ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
+wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
+NjExNDJdfQ==
 -->
