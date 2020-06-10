@@ -38,7 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, n, i, j and  are sequences of the same type, *n*, *i*, *j* and *k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by .
+This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and  are sequences of the same type, **n**, **i**, **j** and **k** are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -923,12 +923,12 @@ Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzc1
-LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozODAw
+LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstNzgzNTY5ODIzLDIxMDc4MT
+NjY4NzkwfX0sImhpc3RvcnkiOlstOTczNTUwMjA1LDIxMDc4MT
 Y1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwxMTc2MzMxMTQsLTE4
 NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMzcxNz
 kyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYsMjAz
