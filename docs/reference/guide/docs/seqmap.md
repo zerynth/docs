@@ -137,6 +137,7 @@ Attempting to hash an immutable sequence that contains unhashable values willres
 The operations in the following table are defined on mutable sequence types.
 
 In the table ```s``` is an instance of a mutable sequence type, ```t``` is ararobject and ```x``` is an arbitrary object that meets any typeand value restrictions imposed by ```s``` (for example, `bytearray()` onlyaccepts integers that meet the value restriction `0 <= x <= 255`).
+
 |       Operation       |                                         Result                                        |       Notes       |
 |:---------------------:|:-------------------------------------------------------------------------------------:|:-----------------:|
 | s[i] = x              | item i of s is replaced by x                                                          |                   |
@@ -153,6 +154,7 @@ In the table ```s``` is an instance of a mutable sequence type, ```t``` is araro
 | s.pop([i])            | retrieves the item at i and also removes it from s                                    | (2)               |
 | s.remove(x)           | remove the first item from s where s[i] == x                                          | (3)               |
 | s.reverse()           | reverses the items of s in place                                                      | (4)               |
+
 Notes:
 
 
@@ -927,11 +929,11 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzczNjg4MjkyLDU5OTk0NDc5MSwtMTMwMz
-cxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4OTQxMDkwMjYs
-MjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOTQ3MDA1LDE1Mz
-M5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcyNTQzLC0xNzE5NzU3
-ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MDIsLTI0MTM5MjU1MS
-wtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3NjE5OTcwLDE4Njg2
-NjExNDJdfQ==
+eyJoaXN0b3J5IjpbLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OT
+k0NDc5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMx
+Miw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMT
+EzOTQ3MDA1LDE1MzM5NDg5MTIsMTQ0MzM1NTc4NCwtMTA3MDcy
+NTQzLC0xNzE5NzU3ODUxLDIwMTI0OTEwOTUsLTE0NjM4ODA2MD
+IsLTI0MTM5MjU1MSwtMTMyMjQ2ODAyMCw4Njg2MDQzNjIsMjE3
+NjE5OTcwXX0=
 -->
