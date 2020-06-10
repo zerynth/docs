@@ -267,12 +267,11 @@ Strings implement all of the common sequence operations, along with the addition
 Strings also support string formatting based on C `printf` style formatting..
 
 
-    str.count(sub[,start[,end] ]) 
+**`str.count(sub[,start[,end] ])`**
 
 
 
-Return the number of non-overlapping occurrences of substring *sub* in the
-range [*start].  Optional arguments start and  arinterpreted as in slice notation.
+Return the number of non-overlapping occurrences of substring *sub* in the range [*start].  Optional arguments start and  arinterpreted as in slice notation.
 
 
     str.endswith(suffix[,start[,end] ])
@@ -925,7 +924,7 @@ LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsxNDk5MDM0MTYwLC0xNDM2NT
+NjY4NzkwfX0sImhpc3RvcnkiOlsxOTMyMTk0NDc0LC0xNDM2NT
 EzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzODk2NTU4OTAs
 NzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2OD
 gyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0x
