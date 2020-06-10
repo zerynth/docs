@@ -386,14 +386,15 @@ Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *le
 Return NULL on failure.
 
 
-**`PObject*ptuple_new(uint16_t len, PObject  **buf)`**
+**`PObject*ptuple_new(uint16_t len,PObject **buf)`**
 
 Create a sequence of type PTUPLE with ```len``` elements. If ```buf``` is not NULL, ```len``` objects from ```buf``` are used to initialize the sequence.
 
 Return NULL on failure.
 
 
-### plist_new(uint16_t*  len*, PObject*  \*\```buf```)
+**`PObject*plist_new(uint16_t len,PObject  **buf)`**
+
 Create a sequence of type PLIST with ```len``` elements. If ```buf``` is not NULL, ```len``` objects from ```buf``` are used to initialize the sequence. Sequence elements are set to ```len```.
 
 Return NULL on failure.
@@ -556,9 +557,9 @@ Raise HardwareInitializationError.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzUxNjM0OTksMTk1MTY1NTQwNCwtMT
-M5NjY2MDg4OCwxNTQzNDUzODMxLDQ4OTExMTk5NywtMjgwNzI4
-NTcwLDE2MjI0MDk1NzIsMTA5MTYzNzkxNywtMTU4MDQzMDU1My
-w4MTk5Mjc1MjYsLTE4MDE2MDI0OTgsNzI5OTc2NDM0LDg2Mjc1
-MzQ3MywxMDUyMTg0OTc0XX0=
+eyJoaXN0b3J5IjpbMTI3MTM0MTY2MSwxOTUxNjU1NDA0LC0xMz
+k2NjYwODg4LDE1NDM0NTM4MzEsNDg5MTExOTk3LC0yODA3Mjg1
+NzAsMTYyMjQwOTU3MiwxMDkxNjM3OTE3LC0xNTgwNDMwNTUzLD
+gxOTkyNzUyNiwtMTgwMTYwMjQ5OCw3Mjk5NzY0MzQsODYyNzUz
+NDczLDEwNTIxODQ5NzRdfQ==
 -->
