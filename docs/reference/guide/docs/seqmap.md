@@ -38,7 +38,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, j*j* and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
+This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, *j**and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -216,7 +216,7 @@ The `range` type represents an immutable sequence of numbers and is commonly use
 The arguments to the range constructor must be integers.
 If the stument is omitted, it defaults to 1. If the *start* arg* ument is omitted, it defaults to 0. If *step* is zero, `ValueError` is raised.
 
-For a positive ```step```, the contents of a range `r` are determined by theformula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
+For a positive step, the contents of a range `r` are determined by the formula `r[i] = start + step*i` where `i >= 0` and`r[i] < stop`.
 
 For a negative ```step```, the contents of the range are still determined bythe formula `r[i] = start + step*i`, but the constraints are `i >= 0`and `r[i] > stop`.
 
@@ -922,13 +922,13 @@ Return a new view of the dictionary’s values.
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk5
-LCJlbmQiOjM4MTZ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzk4
+LCJlbmQiOjM4MTV9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTM2MTkwMjUzLC0xMDI3MD
-U5MDQ0LDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwx
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTE3Mzk1NTgwNSwtMTM2MT
+kwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NTQ4NDYyOCwx
 MTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4MjkyLDU5OTk0ND
 c5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzODE2NTMxMiw4
 OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAwNywxMTEzOT
