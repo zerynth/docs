@@ -52,15 +52,11 @@ Each microcontroller peripheral is mapped to a peripheral index in the board por
 Imagine a microcontroller with four different USART peripherals named USART1 to USART4. In the board porting each USART is mapped to a peripheral index by creating such table:
 
 | Index | Value |
-|---------------|
-| 0          |
+|--------|------|
+| 0     | 3     |
 | 1     | 1     |
 | 2     | 4     |
-| 3
-
-         | 2
-
-          |
+| 3     | 2     |
 
 When a VHAL function is called, expecting a peripheral index for a serial peripheral, the table is used to map the passed index (e.g. 0) to the corresponding mcu peripheral (e.g. USART3). Each board porting defines this kind of tables for each supported peripheral.
 
@@ -930,6 +926,6 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQ4Nzc1OTMsLTE0MjM0MzcwNzIsLT
+eyJoaXN0b3J5IjpbLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLT
 E2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
 -->
