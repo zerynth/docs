@@ -163,18 +163,18 @@ Notes:
 2. The optional argument **i** defaults to `-1`, so that by default the last item is removed and returned.
 
 
-3. `remove` raises `ValueError` when x is not found in s.
-4. The `reverse()` method modifies the sequence in place for economy ofspace when reversing a large sequence.  To remind users that it operates byside effect, it does not return the reversed sequence.
+3. `remove` raises `ValueError` when **x** is not found in **s**.
+4. The `reverse()` method modifies the sequence in place for economy of space when reversing a large sequence.  To remind users that it operates by side effect, it does not return the reversed sequence.
 
 
-5. `clear()` and `copy()` are included for consistency with theinterfaces of mutable containers that don’t support slicing operations(such as `dict()` and `set()`)
+5. `clear()` and `copy()` are included for consistency with the interfaces of mutable containers that don’t support slicing operations(such as `dict()` and `set()`)
 
 
-6. The value ```n``` is an integer. Zero and negative values of ```n``` clearthe sequence.  Items in the sequence are not copied; they are referencedmultiple times, as explained for `s * n`.
+6. The value **n** is an integer. Zero and negative values of **n** clear the sequence.  Items in the sequence are not copied; they are referenced multiple times, as explained for `s * n`.
 
 ### Lists
 
-Lists are mutable sequences, typically used to store collections ofhomogeneous items (where the precise degree of similarity will vary byapplication).
+Lists are mutable sequences, typically used to store collections of homogeneous items (where the precise degree of similarity will vary by application).
 
 Lists may be constructed in several ways:
 
@@ -191,7 +191,7 @@ Lists implement all of the common and mutable sequence operations.
 
 ### Tuples
 
-Tuples are immutable sequences, typically used to store collections ofheterogeneous data (such as the 2-tuples produced by the `enumerate()`built-in). Tuples are also used for cases where an immutable sequence of
+Tuples are immutable sequences, typically used to store collections of the terogeneous data (such as the 2-tuples produced by the `enumerate()`built-in). Tuples are also used for cases where an immutable sequence of
 homogeneous data is needed.
 
 Tuples may be constructed in a number of ways:
@@ -928,11 +928,11 @@ LCJlbmQiOjM4MTd9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTU4MDU5NTA3MSwyMTA3OD
-E2NTU1LDM4OTY1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0x
-ODUyNDc1NzY4LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MT
-c5MjksOTQ1OTIwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIw
-Mzc0NzA3NDEsLTE1MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOT
-Q4OTEyLDE0NDMzNTU3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1
-MSwyMDEyNDkxMDk1XX0=
+NjY4NzkwfX0sImhpc3RvcnkiOls2NzM1MzMzODUsMjEwNzgxNj
+U1NSwzODk2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1
+MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OT
+I5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3
+NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0OD
+kxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEs
+MjAxMjQ5MTA5NV19
 -->
