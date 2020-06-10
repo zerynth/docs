@@ -56,7 +56,7 @@ The `in` and `not in` operations have the same priorities as thecomparison opera
 | max(s)               | largest item of s                                                    |        |
 | s.index(x[, i[, j]]) | index of the first occurrence of x in s (at or after i and before j) | (8)    |
 | s.count(x)           | total number of occurrences of x in s                                |        |
-Sequences of the same type also support comparisons.  In particular, tuplesand lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
+Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
 Notes:
@@ -923,11 +923,17 @@ Return a new view of the dictionary’s values.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzYxNTA3MjAsNzY1NDg0NjI4LDExNz
-YzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5OTQ0Nzkx
-LC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1MzEyLDg5ND
-EwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDExMTM5NDcw
-MDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNzI1NDMsLT
-E3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYwMiwtMjQx
-MzkyNTUxXX0=
+eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
+N0YXJ0IjozNzc3LCJlbmQiOjM3OTQsInRleHQiOiJsZXhpY29n
+cmFwaGljYWxseSJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
+MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
+xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
+NjY4NzkwfX0sImhpc3RvcnkiOlsxOTYxMDYwODgsNzY1NDg0Nj
+I4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwzNzM2ODgyOTIsNTk5
+OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMDA0LC0xODM4MTY1Mz
+EyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0xNTA1NDMzMDA3LDEx
+MTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMzU1Nzg0LC0xMDcwNz
+I1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5NSwtMTQ2Mzg4MDYw
+MiwtMjQxMzkyNTUxXX0=
 -->
