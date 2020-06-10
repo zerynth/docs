@@ -416,13 +416,7 @@ Returns the created thread, already started. Raises
 Suspend the current thread for ```time``` expressed in ```time_units```. All the other threads are free to continue their execution.
 If ```time_unit``` is MICROS, sleep does not suspend the current thread, but starts polling the cycles counter in a loop.
 
-For high precision sleep refer to :mod:
-
-```
-`
-```
-
-hwtimers
+For high precision sleep refer to :mod:`hwtimers
 
 
 ---
@@ -846,5 +840,5 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODg4MjI4NDJdfQ==
+eyJoaXN0b3J5IjpbLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
 -->
