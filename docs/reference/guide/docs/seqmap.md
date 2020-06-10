@@ -70,7 +70,7 @@ True
 ```
 
 
-2. Values of ```n``` less than `0` are treated as `0` (which yields an emptysequence of the same type as ```s```).  Note that items in the sequence ```s```are not copied; they are referenced multiple times.  This often hauntsnew Python programmers; consider:
+2. Values of *n* less than `0` are treated as `0` (which yields an empty sequence of the same type as *s*).  Note that items in the sequence *s* are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
 ```
 >>> lists = [[]] * 3
@@ -81,7 +81,7 @@ True
 [[3], [3], [3]]
 ```
 
-What has happened is that `[[]]` is a one-element list containing an emptylist, so all three elements of `[[]] \* 3` are references to this single emptylist.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
+What has happened is that `[[]]` is a one-element list containing an emptylist, so all three elements of `[[]] * 3` are references to this single emptylist.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
 
 ```
 >>> lists = [[] for i in range(3)]
@@ -929,11 +929,11 @@ LCJlbmQiOjM3OTJ9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTc0NDgwMjUwMSwzODk2NT
-U4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2OCwz
-NzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NTkyMD
-A0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQxLC0x
-NTA1NDMzMDA3LDExMTM5NDcwMDUsMTUzMzk0ODkxMiwxNDQzMz
-U1Nzg0LC0xMDcwNzI1NDMsLTE3MTk3NTc4NTEsMjAxMjQ5MTA5
-NSwtMTQ2Mzg4MDYwMl19
+NjY4NzkwfX0sImhpc3RvcnkiOlsxMjMwNzYzOTEzLDM4OTY1NT
+g5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0xODUyNDc1NzY4LDM3
+MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5MjksOTQ1OTIwMD
+QsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEsLTE1
+MDU0MzMwMDcsMTExMzk0NzAwNSwxNTMzOTQ4OTEyLDE0NDMzNT
+U3ODQsLTEwNzA3MjU0MywtMTcxOTc1Nzg1MSwyMDEyNDkxMDk1
+LC0xNDYzODgwNjAyXX0=
 -->
