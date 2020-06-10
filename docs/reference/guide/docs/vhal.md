@@ -64,8 +64,8 @@ The following macros can be used to query the peripheral tables:
 Returns the microcontroller peripheral index given the *name* of the peripheral and the vhal index *prph_idx*. Referring to the previous table, *prph_idx* corresponds to values in the *Index* column, while the return value correspondes to the *Value* column. The parameter *name* is a string identifying the peripheral: “serial”, “spi”, “i2c”, “adc”, “pwm”, “icu”, “htm”.
 
 
-### PERIPHERAL_NUM(name)
-Returns the number of microcontroller peripherals given the peripheral ```name```.
+**`PERIPHERAL_NUM(name)`**
+Returns the number of microcontroller peripherals given the peripheral *name*.
 
 ## GPIO
 
@@ -923,7 +923,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyODQyODI0LDE3OTM2NTcwOTYsLTE3Nz
+eyJoaXN0b3J5IjpbOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3Nz
 Y2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1
 NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0Mj
 E3NV19
