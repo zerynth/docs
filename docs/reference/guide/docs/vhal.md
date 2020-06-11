@@ -600,9 +600,9 @@ Return the actual number of bytes read.
 
 **`int vhalSerialWrite(uint32_t ser,uint8_t *buf, uint32_t len)`**
 
-Write *len* bytes from buf to ```ser```. Depending on the implementation, the function may return before all bytes are actually written to ```ser```.
+Write *len* bytes from *buf* to *ser*. Depending on the implementation, the function may return before all bytes are actually written to *ser.*
 
-Return the number of bytes written to ```ser``` or to an internal buffer.
+Return the number of bytes written to *ser* or to an internal buffer.
 
 
 **`int vhalSerialAvailable(uint32_t ser)`**
@@ -612,14 +612,15 @@ Return the number of bytes available to the next `vhalSerialRead()` call.
 
 **`int vhalSerialDone(uint32_t ser)`**
 
-Deactivate ```ser```.
+Deactivate *ser*.
 
 ## I2C
 
 I2C is a multimaster and multislave bus used to exchange data between microcontrollers and peripherals. Many microcontrollers can be configured both as I2C masters or I2C slaves; in the current version, the VHAL supports only master mode.
 
 
-### vhalI2CConf()
+**`vhalI2CConf`**
+
 The following structure is used to configure the I2C bus:
 
 ```
@@ -635,10 +636,10 @@ typedef struct _vhal_i2c_conf {
 The meaning of vhalI2CConf members is:
 
 
-* ```clock```: number of Hz the I2C bus will be clocked to. Use up to 100k for slow mode, up to 400k for fast mode. Other modes are not supported yet.
+* *clock*: number of Hz the I2C bus will be clocked to. Use up to 100k for slow mode, up to 400k for fast mode. Other modes are not supported yet.
 
 
-* ```addr```: the peripheral address to communicate with.
+* *addr:* the peripheral address to communicate with.
 
 
 * ```sda```: the virtual pin that will be configured as SDA (data line).
@@ -976,7 +977,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjkwNDQ1NCwtMzEwNjE0MDAyLDE1Nz
+eyJoaXN0b3J5IjpbLTMyMjI4NzU2MCwtMzEwNjE0MDAyLDE1Nz
 Q2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1
 MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOT
 kyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5
