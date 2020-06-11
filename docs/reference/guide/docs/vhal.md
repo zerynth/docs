@@ -766,37 +766,39 @@ The meaning of vhalSpiConf members is:
 ### Macros
 
 
- SPI_MODE_LOW_FIRST
+ **`SPI_MODE_LOW_FIRST`**
  
-Low polarity (idle low), phase zero (bits captured on the first clock edge)
+Low polarity (idle low), phase zero (bits captured on the first clock edge).
 
 
- SPI_MODE_LOW_SECOND
+ **`SPI_MODE_LOW_SECOND`**
  
-Low polarity (idle low), phase one (bits captured on the second clock edge)
+Low polarity (idle low), phase one (bits captured on the second clock edge).
 
 
- SPI_MODE_HIGH_FIRST
+ **`SPI_MODE_HIGH_FIRST`**
  
-High polarity (idle high), phase zero (bits captured on the first clock edge)
+High polarity (idle high), phase zero (bits captured on the first clock edge).
 
 
-SPI_MODE_HIGH_SECOND
+**`SPI_MODE_HIGH_SECOND`**
 
-High polarity (idle high), phase one (bits captured on the second clock edge)
-
-
-SPI_BITS_8
-
-Data is transferred 8 bits at time
+High polarity (idle high), phase one (bits captured on the second clock edge).
 
 
-SPI_BITS_16()
-Data is transferred 16 bits at time
+**`SPI_BITS_8`**
+
+Data is transferred 8 bits at time.
 
 
-### SPI_BITS_32()
-Data is transferred 32 bits at time
+**`SPI_BITS_16`**
+
+Data is transferred 16 bits at time.
+
+
+**`SPI_BITS_32`**
+
+Data is transferred 32 bits at time.
 
 ### Functions
 
@@ -991,11 +993,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTY1ODc4NzMsLTE2ODI4NDQyNjAsLT
-kzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2
-NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExOD
-Q0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQs
-LTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3Nj
-Y2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1
-NjQxLC0xNTk0ODc3NTkzXX0=
+eyJoaXN0b3J5IjpbMTk2OTQ3OTkzOCwtMTY4Mjg0NDI2MCwtOT
+M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
+NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
+QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
+ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
+Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
+NDEsLTE1OTQ4Nzc1OTNdfQ==
 -->
