@@ -67,13 +67,13 @@ err_t my_c_function(int32_t nargs, PObject *self, PObject **args, PObject **res)
 where:
 
 
- **```nargs is the number of arguments passed to `my_py_function`
+* **nargs** is the number of arguments passed to `my_py_function`
 
 
-* **```self**``` is the self parameter in case `my_py_function` is a method
+* **self**` is the self parameter in case `my_py_function` is a method
 
 
-* **```args**``` is an array of PObject\*, the generic structure used by the VM to represent Python objects
+* **args** is an array of PObject\*, the generic structure used by the VM to represent Python objects
 
 
 * **res** is a pointer to a PObject containing the result of the function call
@@ -141,6 +141,6 @@ C functions callable from Python have some limitations:
 Refer to VM Guide for the available api.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2NjU4NTUyLC0xMzEyNjMyNzEyLDc4ND
-M5NTY1NF19
+eyJoaXN0b3J5IjpbLTE2OTM5NjQzMTAsLTEzMTI2MzI3MTIsNz
+g0Mzk1NjU0XX0=
 -->
