@@ -357,8 +357,9 @@ PWM peripherals are able to generate square waves on pins. Square waves are conf
 To enable PWM functions the macro VHAL_PWM must be defined.
 
 
-### vhalInitPWM(void\** data*)
-Must be called before any function starting with ```vhalPwm```.
+**`int vhalInitPWM(void* data)`**
+
+Must be called before any function starting with vhalPwm```.
 
 
 ### vhalPwmStart(int* vpin*, uint32_t* period*, uint32_t* pulse*, uint32_t* npulses*)
@@ -942,9 +943,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjA1MDg2NSwtMjE0NDExODQ0MiwtMT
-M4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0
-NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NS
-wtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0x
-NTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbNDM5NjgzNTg5LDE5NjIwNTA4NjUsLTIxND
+QxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0
+MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLT
+E3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQw
+Nzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MT
+k0MjE3NV19
 -->
