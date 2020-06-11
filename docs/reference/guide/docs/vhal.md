@@ -181,7 +181,7 @@ Return 0 in case of success. The parameter *prph is ignored in the current versi
 **`int vhalPinAttachInterrupt(int vpinintmode,extCbkFn fn, uint32_t timeout)`**
 
 
-Attach callback *fn* to *vpin*. *fn* is called from an ISR when there is a status change identified by mode. *mode* can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot _fn_ has been attached to. If _fn_ is NULL the currently attached function is removed and the interrupt disabled.
+Attach callback *fn* to *vpin*. *fn* is called from an ISR when there is a status change identified by mode. *mode* can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot *fn* has been attached to. If *fn* is NULL the currently attached function is removed and the interrupt disabled.
 
 **`typedef void(*extCbkFn)(int slot int dir)`**
 
@@ -1031,11 +1031,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTY5NTcwNSw1MjcyODU4MTQsLTE2Nj
-UxODkwMCwxMDg4Mzc3MzYxLC0xNjgyODQ0MjYwLC05MzQ1NDc3
-NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1Njk0LC
-0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0NDIsLTEz
-ODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUyND
-U3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUs
-LTUxNjg3MTc0MV19
+eyJoaXN0b3J5IjpbOTQ1MjQzODAxLDUyNzI4NTgxNCwtMTY2NT
+E4OTAwLDEwODgzNzczNjEsLTE2ODI4NDQyNjAsLTkzNDU0Nzc1
+MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2OTQsLT
+IxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4
+MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NT
+c1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwt
+NTE2ODcxNzQxXX0=
 -->
