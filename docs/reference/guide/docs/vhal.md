@@ -972,15 +972,18 @@ In most microcontrollers function to be called in response to an interrupt are s
 To change the function called on interrupt, refer to `vosInstallHandler()`.
 
 
-### vhalIrqEnablePrio(uint32_t* irqn*, uint32_t* prio*)
+**`void vhalIrqEnablePrio(uint32_t irqn,uint32_t prio)`**
+
 Enables the interrupt ```irqn``` assignign a priority of ```prio```. Priority must be passed with the PORT_PRIO_MASK macro defined in the microcontroller porting files.
 
 
-### vhalIrqDisable(uint32_t* irqn*)
+void vhalIrqDisable(uint32_t irqn)
+
 Disable interrupt ```irqn```
 
 
-### vhalIrqEnable(uint32_t* irqn*)
+void vhalIrqEnable(uint32_t irqn)
+
 Enable interrupt ```irqn``` assigning a default priority. Implemented as a macro.
 
 ## Error Codes
@@ -1014,11 +1017,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1OTkzNTkzLDEwODgzNzczNjEsLTE2OD
-I4NDQyNjAsLTkzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAw
-MTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NS
-wtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDEx
-MDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1Nz
-A5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAy
-LC0xNDA3ODU1NjQxXX0=
+eyJoaXN0b3J5IjpbNTYxMDIwMDgsMTA4ODM3NzM2MSwtMTY4Mj
+g0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAx
+MCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC
+0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEw
+OTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MD
+k2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIs
+LTE0MDc4NTU2NDFdfQ==
 -->
