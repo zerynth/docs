@@ -508,8 +508,9 @@ If *delay* is zero, the timer is deactivated and *fn* stops to be executed perio
 Return 0 on success.
 
 
-int vhalSleepMicros(uint32_t tm*, uint32_t* micros*)
-Given the peripheral index ```tm```, suspends the current thread for ```micros``` microseconds.
+**`int vhalSleepMicros(uint32_t tm,uint32_t micros)`**
+
+Given the peripheral index *tm*, suspends the current thread for *micros* microseconds.
 
 Return 0 on success.
 
@@ -957,10 +958,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUzOTU1NDIsLTE3Mzc2NDU2OTQsLT
-IxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4
-MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NT
-c1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwt
-NTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNT
-k0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbODcwMTYwMTk4LC0xNzM3NjQ1Njk0LC0yMT
+M3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0NDIsLTEzODA3
+MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUyNDU3NT
+ksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUx
+Njg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5ND
+g3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0MjE3NV19
 -->
