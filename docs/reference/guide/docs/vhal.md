@@ -884,15 +884,16 @@ Return the unique identifier represented as a hex string.
 Return the unique identifier as bytes in buf.
 
 
-### vhalNfoGetUIDLen(void)
+**`int vhalNfoGetUIDLen(void)`**
+
 Return the length in bytes of the unique identifier. The length of the corresponding hex string is exactly two times.
 
 ## FLASH
 
-Microcontrollers usually have a non volatile storage memory  (flash memory) to hold code. These memories are usually organized in sectors or blocks, each of which can be erased and written indipendently of others.
+Microcontrollers usually have a non volatile storage memory  (flash memory) to hold code. These memories are usually organized in sectors or blocks, each of which can be erased and written independently of others.
 
 
-### vhalFlashErase(void* \```addr```, uint32_t* size*)
+int vhalFlashErase(void* \```addr```, uint32_t* size*)
 Erase sector starting at ```addr``` for ```size``` bytes. If ```size``` is greater than the sector length, following sectors are erased.
 
 Return 0 on success.
@@ -1006,7 +1007,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTU5MjU1NSwxMDg4Mzc3MzYxLC0xNj
+eyJoaXN0b3J5IjpbMTEzMzUxNTUzOSwxMDg4Mzc3MzYxLC0xNj
 gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
 MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
 UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
