@@ -7,7 +7,7 @@ The Zerynth VM uses a common API to create and manage threads and synchronizatio
 
 **`VThread`**
 
-VThread is defined as a pointer to a region of memory containing a thread representation. In order to be as abstract as possible the actual type of VThread is void\*. Values of type VThread must be managed only by calling vosal functions starting with **```vosTh**```.
+VThread is defined as a pointer to a region of memory containing a thread representation. In order to be as abstract as possible the actual type of VThread is void*. Values of type VThread must be managed only by calling vosal functions starting with *vosTh*.
 
 
 **`VSemaphore`**
@@ -29,9 +29,8 @@ VMailBox is defined as a pointer to a region of memory containing a rtos mailbox
 
 VFifo is defined as a pointer to a region of memory containing a rtos fifo. In order to be as abstract as possible the actual type of VFifo is void\*. Values of type VFifo must be managed only by calling vosal function starting with **```vosFifo**```. Fifos are an optional feature and can be disabled when compiling a VM.
 
-**`typedef void(
-### (\*vsystimer_fn)(void*)` \**
-)
+**`typedef void(*vsystimer_fn)(void *)`**
+
 Type of a timer callback function.
 
 ## Variables
@@ -456,8 +455,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM4NjY3NDkxLDE3OTcxNzUzOTcsLTE4NT
-A5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgz
-LC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3Mz
-QyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbMTA5NjE5MzcyNSwxNzk3MTc1Mzk3LC0xOD
+UwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4
+MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNz
+M0MjIxMjUwXX0=
 -->
