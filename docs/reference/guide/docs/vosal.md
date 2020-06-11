@@ -111,77 +111,80 @@ Infinite amount of time, used when an infinite timeout is requested.
 ### Priority Macros
 
 
- VOS_PRIO_IDLE
+ **`VOS_PRIO_IDLE`**
  
-This priority should not be used with normal threads. Only one thread exists with this priority and it is created at startup
+This priority should not be used with normal threads. Only one thread exists with this priority and it is created at startup.
 
-VOS_PRIO_LOWEST
+**`VOS_PRIO_LOWEST`**
 
 Lowest possible thread priority.
 
 
-VOS_PRIO_LOWER
+**`VOS_PRIO_LOWER`**
 
 This priority is greater than all preceding thread priorities
 
 
-VOS_PRIO_LOW
+**`VOS_PRIO_LOW`**
 
 This priority is greater than all preceding thread priorities
 
 
-VOS_PRIO_NORMAL
+**`VOS_PRIO_NORMAL`**
 
 This priority is greater than all preceding thread priorities. It is the default priority.
 
 
-VOS_PRIO_HIGH
+**`VOS_PRIO_HIGH`**
 
 This priority is greater than all preceding thread priorities
 
 
-VOS_PRIO_HIGHER
+**`VOS_PRIO_HIGHER`**
 
 This priority is greater than all preceding thread priorities
 
-VOS_PRIO_HIGHEST
+**`VOS_PRIO_HIGHEST`**
 
 This priority is greater than all preceding thread priorities.
 
 ### Thread Status
 
 
-VTHREAD_READY
+**`VTHREAD_READY`**
 
 Status of a thread that has been created but not yet run.
 
 
-VTHREAD_RUNNING
+**`VTHREAD_RUNNING`**
 
 Status of a thread that is currently running.
 
 
-VTHREAD_INACTIVE
+**`VTHREAD_INACTIVE`**
 
 Status of a thread that has finished its lifecycle
 
 
-VTHREAD_WAITING
+**`strong text`**VTHREAD_WAITING
 
 Status of a thread that is sleeping waiting for some event to occur
 
-Return values
+## Return values
 
 
-### VRES_OK()
+VRES_OK
+
 If returned, the function execution encountered no problems.
 
 
-### VRES_TIMEOUT()
+VRES_TIMEOUT
+
 If returned, the function exited with a timeout condition.
 
 
-### VRES_RESET()
+VRES_RESET
+
 If returned, the function exited with a reset condition.
 
 ## System and Thread functions
@@ -434,6 +437,6 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTgyNTc3NywtNjM4MDM0NDcxLDEzMT
+eyJoaXN0b3J5IjpbLTkzMjQzOTIxMSwtNjM4MDM0NDcxLDEzMT
 AzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
