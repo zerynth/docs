@@ -473,19 +473,23 @@ Hardware Timers can be used to keep track of time with a greater precision with 
 To enable HTM functions the macro VHAL_HTM must be defined.
 
 
-**`typedef void (*htmFn)(uint32_t tm,voidb*args)`**
+**`typedef void (*htmFn)(uint32_t tm,voidb *args)`**
+
 Type of a hardware timer callback function.
 
 
-### vhalInitHTM(void\** data*)
-Must be called before any function starting with ```vhalHtm```.
+**`int vhalInitHTM(void* data)`**
+
+Must be called before any function starting with *vhalHtm*.
 
 
-### vhalHtmGetFreeTimer(void)
+**`int vhalHtmGetFreeTimer(void)`**
+
 Return the peripheral index of the first available hardware timer. Return value is negative in case of error.
 
 
-### vhalHtmOneShot(uint32_t* tm*, uint32_t* delay*, htmFn* fn*, void* \```args```, uint32_t* blocking*)
+int vhalHtmOneShot(uint32_t tm, uint32_t delay, htmFn fn, void* \```args```, uint32_t* blocking*)
+
 Given the peripheral index ```tm```, configure such timer to generate an interrupt after a time represented by ```delay``` (with `TIME_U`). On interrupt generation, ```fn``` is executed with arguments ```args```.
 
 If ```blocking``` is non-zero, the function blocks the current thread until ```fn``` is called.
@@ -953,10 +957,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODE0NTAxOCwxOTYyMDUwODY1LC0yMT
-Q0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5
-NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC
-0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0
-MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2OT
-E5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbLTExMTQ1Nzg2OTgsMTk2MjA1MDg2NSwtMj
+E0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2
+OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5Ni
+wtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0x
+NDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNj
+kxOTQyMTc1XX0=
 -->
