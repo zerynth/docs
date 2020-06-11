@@ -350,7 +350,7 @@ Can be used together with `onPinRise()` on the same pin.
 ## Builtin Functions
 
 
-
+---
 #### `#!py3 int()`
 
 !!!abstract "`#!py3 int(x=0, base=10)`"
@@ -416,7 +416,13 @@ Returns the created thread, already started. Raises
 Suspend the current thread for ```time``` expressed in ```time_units```. All the other threads are free to continue their execution.
 If ```time_unit``` is MICROS, sleep does not suspend the current thread, but starts polling the cycles counter in a loop.
 
-For high precision sleep refer to :mod:`hwtimers
+For high precision sleep refer to :mod:`
+
+```
+`
+```
+
+hwtimers
 
 
 ---
@@ -790,23 +796,59 @@ If the number of positional arguments is odd, the value for the last key is None
 
 !!!abstract "`#!py3 set(\*args)`"
 
-Return a new set initialized from an optional *args.
-If no *args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
+Return a new set initialized from an optional *
+
+```
+*
+```
+
+args.
+
+If no *
+
+```
+*
+```
+
+args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the set.
 
-frozenset(*args)
+frozenset(
+---
+#### `#!py3 frozenset()`
+
+!!!abstract "`#!py3 frozenset(\*args)`"
 
 Return a new frozenset initialized from an optional *args.
 
-If no *args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
+If no *
+
+```
+*
+```
+
+args.
+
+If no 
+
+```
+*
+```
+
+args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the frozenset.
 
-**open(file, mode="rb")**
+**
+---
+#### `#!py3 open()`
+
+!!!abstract "`#!py3 open(file, mode="rb")**`"
 
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMD
-U1NzE0NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
+eyJoaXN0b3J5IjpbMTk0NjkwMzg4OCwxMjY0NTc0MTAyLDE1OD
+k3NzY3MjIsLTIwNTU3MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgy
+Mjg0Ml19
 -->
