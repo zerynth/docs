@@ -2,7 +2,7 @@
 
 The Zerynth Virtual Machine can run Python scripts that are board independent allowing a high reusability of code. Zerynth supports all the most used high-level features of Python like modules, classes, multithreading, callbacks, timers and exceptions, plus some hardware-related features like interrupts, PWM, digital I/O, etc.
 
-The Zerynth VM is natively multithread and realtime. Indeed it is built on top of a RTOS (`CHIBIOS <http://www.chibios.org>`_ or `FreeRTOS <https://www.freertos.org/>`_), by wrapping its functionalities in a operative system abstraction layer (VOSAL). This means that the VM is agnostic of the underlying RTOS: porting activities are ongoing to have many VMs based on different RTOS.
+The Zerynth VM is natively multithread and realtime. Indeed it is built on top of a RTOS (CHIBI), by wrapping its functionalities in a operative system abstraction layer (VOSAL). This means that the VM is agnostic of the underlying RTOS: porting activities are ongoing to have many VMs based on different RTOS.
 
 The inner workings of the Zerynth VM are complex but can be reduced to a few components:
 
@@ -35,3 +35,6 @@ The Zerynth VM has been developed with the goal of making Python usable in the I
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjU2MzU4NjkzXX0=
+-->
