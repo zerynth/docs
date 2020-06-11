@@ -586,21 +586,21 @@ Return data bits configuration encoded in *cfg*.
 
 **`int vhalSerialInit(uint32_t ser,uint32_t baud,uint32_t cfg,uint16_t rxpin,uint16_t txpin)`**
 
-Initialize the serial peripheral identified by the peripheral index ```ser```. Baud rate is set to ```baud``` and configuration parameters are taken from ```cfg``` encoded with `SERIAL_CFG`. ```rxpin``` and ```txpin``` are configured accordingly.
+Initialize the serial peripheral identified by the peripheral index *ser*. Baud rate is set to *baud* and configuration parameters are taken from *cfg* encoded with `SERIAL_CFG`. *rxpin* and *txpin* are configured accordingly.
 
 Return 0 on success.
 
 
 **`int vhalSerialRead(uint32_t ser,uint8_t *buf,uint32_t len)`**
 
-Read ```len``` bytes from ```ser``` into ```buf``` blocking the current thread until all bytes are read.
+Read *len* bytes from *ser* into *buf* blocking the current thread until all bytes are read.
 
 Return the actual number of bytes read.
 
 
 **`int vhalSerialWrite(uint32_t ser,uint8_t *buf, uint32_t len)`**
 
-Write ```len``` bytes from ```buf``` to ```ser```. Depending on the implementation, the function may return before all bytes are actually written to ```ser```.
+Write *len* bytes from buf to ```ser```. Depending on the implementation, the function may return before all bytes are actually written to ```ser```.
 
 Return the number of bytes written to ```ser``` or to an internal buffer.
 
@@ -976,7 +976,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODg4OTU3MiwtMzEwNjE0MDAyLDE1Nz
+eyJoaXN0b3J5IjpbLTcwMjkwNDQ1NCwtMzEwNjE0MDAyLDE1Nz
 Q2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1
 MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOT
 kyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5
