@@ -490,9 +490,9 @@ Return the peripheral index of the first available hardware timer. Return value 
 
 **`int vhalHtmOneShot(uint32_t tm,uint32_t delay,htmFn fn,void *args,uint32_t blocking)`**
 
-Given the peripheral index ```tm```, configure such timer to generate an interrupt after a time represented by ```delay``` (with `TIME_U`). On interrupt generation, ```fn``` is executed with arguments ```args```.
+Given the peripheral index *tm*, configure such timer to generate an interrupt after a time represented by *delay* (with `TIME_U`). On interrupt generation, *fn* is executed with arguments *args*.
 
-If ```blocking``` is non-zero, the function blocks the current thread until ```fn``` is called.
+If *blocking* is non-zero, the function blocks the current thread until fn is called.
 If ```blocking``` is zero, the function immediately returns.
 
 If ```delay``` is zero, the timer is deactivated.
@@ -957,10 +957,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMj
-E0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2
-OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5Ni
-wtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0x
-NDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNj
-kxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbODA3MDYwOTI4LC0yMTM3MzU5NjUyLDE5Nj
+IwNTA4NjUsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5
+Mzk5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLD
+E3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEz
+MTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNz
+Y3OTcxMCwtMTY5MTk0MjE3NV19
 -->
