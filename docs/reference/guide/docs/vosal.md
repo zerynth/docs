@@ -41,13 +41,13 @@ Type of a timer callback function.
 Holds the number of seconds passed since VM startup. It is not guaranteed to be implemented in every architecture or RTOS.
 
 
-**`volatile uint32_t_systime_millis`**
-()
+**`volatile uint64_t_systime_millis`**
+
 Holds the number of milliseconds passed since VM startup. It is not guaranteed to be implemented in every architecture or RTOS.
 
 
-**`volatile uint32_t### _systime_frequency`**
-()
+**`volatile uint32_t_systime_frequency`**
+
 Holds the current frequency of the microcontroller in Hz.
 
 ## Macros
@@ -455,8 +455,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1ODk4NTEwLDE3OTcxNzUzOTcsLTE4NT
-A5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgz
-LC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3Mz
-QyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbMTg2MTkyMTE3MiwxNzk3MTc1Mzk3LC0xOD
+UwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4
+MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNz
+M0MjIxMjUwXX0=
 -->
