@@ -874,12 +874,14 @@ High polarity (idle high), phase one (bits captured on the second clock edge).
 Nfo functions retrieve the unique identifier of a microcontroller.
 
 
-uint8_t *vhalNfoGetUIDStr(void)
+**`uint8_t *vhalNfoGetUIDStr(void)`**
+
 Return the unique identifier represented as a hex string.
 
 
-### vhalNfoGetUID(uint8_t* \```buf```)
-Return the unique identifier as bytes in ```buf```
+**`int vhalNfoGetUID(uint8_t *buf)`**
+
+Return the unique identifier as bytes in buf.
 
 
 ### vhalNfoGetUIDLen(void)
@@ -1004,11 +1006,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjYwMzc2NTcsMTA4ODM3NzM2MSwtMT
-Y4Mjg0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYx
-MDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwOD
-Y1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIs
-MTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNj
-U3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1
-MDIsLTE0MDc4NTU2NDFdfQ==
+eyJoaXN0b3J5IjpbMTQyMTU5MjU1NSwxMDg4Mzc3MzYxLC0xNj
+gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
+MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
+UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
+MTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NT
+cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
+MiwtMTQwNzg1NTY0MV19
 -->
