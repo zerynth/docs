@@ -492,10 +492,9 @@ Return the peripheral index of the first available hardware timer. Return value 
 
 Given the peripheral index *tm*, configure such timer to generate an interrupt after a time represented by *delay* (with `TIME_U`). On interrupt generation, *fn* is executed with arguments *args*.
 
-If *blocking* is non-zero, the function blocks the current thread until fn is called.
-If ```blocking``` is zero, the function immediately returns.
+If *blocking* is non-zero, the function blocks the current thread until *fn* is called. If *blocking* is zero, the function immediately returns.
 
-If ```delay``` is zero, the timer is deactivated.
+If *delay* is zero, the timer is deactivated.
 
 Return 0 on success.
 
@@ -957,10 +956,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA3MDYwOTI4LC0yMTM3MzU5NjUyLDE5Nj
-IwNTA4NjUsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5
-Mzk5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLD
-E3OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEz
-MTgwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNz
-Y3OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMT
+k2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3
+MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMT
+EsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0y
+MTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNj
+E3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
 -->
