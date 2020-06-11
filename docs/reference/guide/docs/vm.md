@@ -1,4 +1,4 @@
-#The Zerynth Virtual Machine
+# The Zerynth Virtual Machine
 
 The Zerynth Virtual Machine can run Python scripts that are board independent allowing a high reusability of code. Zerynth supports all the most used high-level features of Python like modules, classes, multithreading, callbacks, timers and exceptions, plus some hardware-related features like interrupts, PWM, digital I/O, etc.
 
@@ -41,6 +41,6 @@ The Zerynth VM has been developed with the goal of making Python usable in the I
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzg5OTU4NTcsLTEyNDc2NjcyMDQsNT
-YxNTI4NjM2XX0=
+eyJoaXN0b3J5IjpbMTEzNTAzNTM2NSwtMTgzODk5NTg1NywtMT
+I0NzY2NzIwNCw1NjE1Mjg2MzZdfQ==
 -->
