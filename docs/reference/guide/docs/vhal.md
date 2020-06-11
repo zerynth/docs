@@ -445,24 +445,24 @@ Must be called before any function starting with *vhalIcu*.
 
 **`int vhalIcuStart(int vpin,uint32_t cfg,uint32_t time_window,uint32_t *buffer,uint32_t *bufsize, uint32_t *firstbit)`**
 
-Start capturing on ```vpin```. The capture will start with pin mode and trigger parameters specified in ```cfg``` by means of the `ICU_CFG` macro. Once the capture starts, it will continue until one of the following conditions verifies:
+Start capturing on *vpin*. The capture will start with pin mode and trigger parameters specified in *cfg* by means of the `ICU_CFG` macro. Once the capture starts, it will continue until one of the following conditions verifies:
 
 
-* a time equal to ```time_window``` has passed from the last captured value
+* a time equal to *time_window* has passed from the last captured value
 
 
-* a number of values equal to the integer pointed by ```bufsize``` has been captured
+* a number of values equal to the integer pointed by *bufsize* has been captured
 
 The function blocks the current thread until the end of the capture. On returning:
 
 
-* ```bufsize``` will point to the number of captured values
+* *bufsize* will point to the number of captured values
 
 
-* ```buffer``` will contain such values expressed in microseconds
+* *buffer* will contain such values expressed in microseconds
 
 
-* ```firstbit``` will point to ICU_TRIGGER_LOW if the first transition was from high to low, or to ICU_TRIGGER_HIGH if the first transition was from low to high.
+* *firstbit* will point to ICU_TRIGGER_LOW if the first transition was from high to low, or to ICU_TRIGGER_HIGH if the first transition was from low to high.
 
 Return 0 on success. On failure, a negative value.
 
@@ -953,7 +953,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODM3NDQ1OCwxOTYyMDUwODY1LC0yMT
+eyJoaXN0b3J5IjpbMTM1NTAwNDA2NiwxOTYyMDUwODY1LC0yMT
 Q0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5
 NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC
 0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0
