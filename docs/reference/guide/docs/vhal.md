@@ -993,38 +993,41 @@ VHAL functions usually return an error code. The following list of macros contai
 Error code are non positive integers. They have been encoded in such a way that negating the error code results in the corresponding virtual machine exception number.
 
 
- VHAL_OK
+ **`VHAL_OK`**
  
 Evaluates to 0. Returned on success.
 
 
-VHAL_GENERIC_ERROR
+**`VHAL_GENERIC_ERROR`**
 
 Generic peripheral error. Corresponds to PeripheralError exception.
 
 
-VHAL_INVALID_PIN
+**`VHAL_INVALID_PIN`**
 
 A virtual pin not supporting a specific peripheral is passed. Corresponds to InvalidPin exception.
 
 
- VHAL_HARDWARE_STATUS_ERROR()
+ **`VHAL_HARDWARE_STATUS_ERROR`**
+ 
 An hardware error condition happened during peripheral operations. Corresponds to InvalidHardwareStatus exception.
 
 
-### VHAL_TIMEOUT_ERROR()
+**`VHAL_TIMEOUT_ERROR`**
+
 The peripheral operation reached a timeout condition. Corresponds to TimeoutError exception.
 
 
-### VHAL_HARDWARE_INITIALIZATION_ERROR()
+**`VHAL_HARDWARE_INITIALIZATION_ERROR`**
+
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzM3MDI3MTcsMTA4ODM3NzM2MSwtMT
-Y4Mjg0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYx
-MDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwOD
-Y1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIs
-MTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNj
-U3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1
-MDIsLTE0MDc4NTU2NDFdfQ==
+eyJoaXN0b3J5IjpbLTE2NjUxODkwMCwxMDg4Mzc3MzYxLC0xNj
+gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
+MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
+UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
+MTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NT
+cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
+MiwtMTQwNzg1NTY0MV19
 -->
