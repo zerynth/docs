@@ -895,21 +895,21 @@ Microcontrollers usually have a non volatile storage memory  (flash memory) to h
 
 **`int vhalFlashErase(void *addr,uint32_t size)`**
 
-Erase sector starting at addr``` for ```size``` bytes. If ```size``` is greater than the sector length, following sectors are erased.
+Erase sector starting at addr *for* *size* bytes. If *size* is greater than the sector length, following sectors are erased.
 
 Return 0 on success.
 
 
 **`int vhalFlashWrite(void *addr,uint8_t *data,uint32_t len)`**
 
-Write ```data``` starting at ```addr``` for ```len``` bytes. In many architectures, for vhalFlashWrite to work, the sectors must be erased first.
+Write *data* starting at *addr* for *len* bytes. In many architectures, for vhalFlashWrite to work, the sectors must be erased first.
 
 Return written bytes number.
 
 
 **`void *vhalFlashAlignToSector(void *add)`**
 
-If ```addr``` points to the start of a sector, return ```addr```. Otherwise the start of the next sector is returned.
+If *addr* points to the start of a sector, return *addr*. Otherwise the start of the next sector is returned.
 
 Return NULL on error.
 
@@ -1010,7 +1010,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDM2NjgyOCwxMDg4Mzc3MzYxLC0xNj
+eyJoaXN0b3J5IjpbMjAxODE5NjI3OCwxMDg4Mzc3MzYxLC0xNj
 gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
 MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
 UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
