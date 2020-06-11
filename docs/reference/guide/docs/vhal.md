@@ -931,12 +931,14 @@ Return a random 32 bits number.
 A Real-Time Clock (RTC) might be available on-board to keep passing time with great accuracy.
 
 
-### vhalRTCInit(int* rtc*)
-Initialize the RTC identified by the peripheral index ```rtc```.
+**`int vhalRTCInit(int rtc)`**
+
+Initialize the RTC identified by the peripheral index *rtc*.
 Return 0 on success.
 
 
-### vhalRTCGetUTC(int* rtc*, vhalRTCTimeInfo\** vhal_time_info*)
+int vhalRTCGetUTC(int rtc, vhalRTCTimeInfo vhal_time_info)
+
 Fill ```vhal_time_info``` structure with time information retrieved from the RTC.
 
 ```
@@ -959,7 +961,8 @@ typedef struct _timeinfo {
 Return 0 on success.
 
 
-### vhalRTCSetUTC(int* rtc*, uint32_t* sec*, uint32_t* usec*)
+int vhalRTCSetUTC(int rtc, uint32_t sec, uint32_t usec)
+
 Set an UTC reference for RTC identified by the peripheral index ```rtc``` passing reference Unix timestamp seconds and microseconds to obtain sub-second precision.
 Return 0 on success.
 
@@ -1011,11 +1014,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDg0NjIwOSwxMDg4Mzc3MzYxLC0xNj
-gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
-MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
-UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
-MTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NT
-cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
-MiwtMTQwNzg1NTY0MV19
+eyJoaXN0b3J5IjpbNDk2MTUzOTMzLDEwODgzNzczNjEsLTE2OD
+I4NDQyNjAsLTkzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAw
+MTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NS
+wtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDEx
+MDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1Nz
+A5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAy
+LC0xNDA3ODU1NjQxXX0=
 -->
