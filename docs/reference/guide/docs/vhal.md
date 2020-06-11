@@ -851,27 +851,30 @@ Deactivate *spi.*
 ### Macros
 
 
-### QSPI_MODE_LOW_FIRST()
-Low polarity (idle low), phase zero (bits captured on the first clock edge)
+**`QSPI_MODE_LOW_FIRST`**
+
+Low polarity (idle low), phase zero (bits captured on the first clock edge).
 
 
-### QSPI_MODE_LOW_SECOND()
-Low polarity (idle low), phase one (bits captured on the second clock edge)
+**`QSPI_MODE_LOW_SECOND`**
+
+Low polarity (idle low), phase one (bits captured on the second clock edge).
 
 
-### QSPI_MODE_HIGH_FIRST()
-High polarity (idle high), phase zero (bits captured on the first clock edge)
+**`QSPI_MODE_HIGH_FIRST`**
 
+High polarity (idle high), phase zero (bits captured on the first clock edge).
 
-### QSPI_MODE_HIGH_SECOND()
-High polarity (idle high), phase one (bits captured on the second clock edge)
+**`QSPI_MODE_HIGH_SECOND`**
+
+High polarity (idle high), phase one (bits captured on the second clock edge).
 
 ## NFO
 
 Nfo functions retrieve the unique identifier of a microcontroller.
 
 
-### vhalNfoGetUIDStr(void)
+uint8_t *vhalNfoGetUIDStr(void)
 Return the unique identifier represented as a hex string.
 
 
@@ -1001,11 +1004,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODM3NzM2MSwtMTY4Mjg0NDI2MCwtOT
-M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
-NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
-QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
-ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
-Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
-NDEsLTE1OTQ4Nzc1OTNdfQ==
+eyJoaXN0b3J5IjpbLTExMjYwMzc2NTcsMTA4ODM3NzM2MSwtMT
+Y4Mjg0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYx
+MDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwOD
+Y1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIs
+MTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNj
+U3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1
+MDIsLTE0MDc4NTU2NDFdfQ==
 -->
