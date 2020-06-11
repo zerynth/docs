@@ -76,42 +76,52 @@ A GPIO pin is a generic pin that can be used as input to read its digital status
 The following macros are used to set the pin mode of operation.
 
 
-PINMODE_INPUT_PULLNONE
+**`PINMODE_INPUT_PULLNONE`**
+
 Used to configure a pin as input with no pull up/down circuitry (floating mode)
 
 
-PINMODE_INPUT_PULLUP
+**`PINMODE_INPUT_PULLUP`**
+
 Used to configure a pin as input with pull up circuitry
 
 
-PINMODE_INPUT_ANALOG
+**`PINMODE_INPUT_ANALOG`**
+
 Used to configure a pin as analog input by connecting it to an analog to digital converter
 
 
-PINMODE_INPUT_PULLDOWN
+**`PINMODE_INPUT_PULLDOWN`**
+
 Used to configure a pin as input with pull down circuitry
 
 
-PINMODE_OUTPUT_PUSHPULL
+**`PINMODE_OUTPUT_PUSHPULL`**
+
 Used to configure a pin as output. The pin will be able to both sink and source current.
 
 
-PINMODE_OUTPUT_OPENDRAIN
+**`PINMODE_OUTPUT_OPENDRAIN`**
+
 Used to configure a pin as output. The pin will be able to only sink current. This means the pin output can only be set to low.
 
 
-PINMODE_OUTPUT_HIGHDRIVE
+**`PINMODE_OUTPUT_HIGHDRIVE`**
+
 Used to configure a pin as output. The pin will be able to only sink and source a higher current. Refer to each microcontroller datasheet for details.
 
-PINMODE_EXT_FALLING
+**`PINMODE_EXT_FALLING`**
+
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from high to low.
 
 
-PINMODE_EXT_RISING
+**`PINMODE_EXT_RISING`**
+
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from low to high.
 
 
-PINMODE_EXT_BOTH
+**`PINMODE_EXT_BOTH`**
+
 Used to configure a pin as input. An interrupt will be generated when the status of the pin goes from low to high or from high to low.
 
 #### GPIO Functions
@@ -1023,11 +1033,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjUxODkwMCwxMDg4Mzc3MzYxLC0xNj
-gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
-MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
-UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
-MTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NT
-cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
-MiwtMTQwNzg1NTY0MV19
+eyJoaXN0b3J5IjpbNTI3Mjg1ODE0LC0xNjY1MTg5MDAsMTA4OD
+M3NzM2MSwtMTY4Mjg0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQw
+MDIsMTU3NDYxMDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1Mi
+wxOTYyMDUwODY1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00
+NDcyOTM5OTIsMTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOT
+ExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEs
+LTIxMzE4MDk1MDJdfQ==
 -->
