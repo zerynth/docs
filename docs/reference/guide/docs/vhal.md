@@ -656,7 +656,7 @@ int vhalInitI2C(void *data)
 Must be called before any function starting with *vhalI2C*.
 
 
-int vhalI2CInit(uint32_t* i2c*, vhalI2CConf* conf)
+int vhalI2CInit(uint32_t* i2c*, vhalI2CConf *conf)
 
 Initialize the I2C bus corresponding to the ```i2c``` peripheral index with configuration parameters taken from ```conf```.
 
@@ -986,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTk4NDI0MCwtOTM0NTQ3NzUwLC0zMT
-A2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1
-OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3Nj
-A0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkz
-NDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4Nz
-E3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1
-OTMsLTE2MTc2Nzk3MTBdfQ==
+eyJoaXN0b3J5IjpbLTE2ODI4NDQyNjAsLTkzNDU0Nzc1MCwtMz
+EwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzcz
+NTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNz
+YwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5
+MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2OD
+cxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3
+NTkzLC0xNjE3Njc5NzEwXX0=
 -->
