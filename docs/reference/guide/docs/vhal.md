@@ -937,9 +937,9 @@ Initialize the RTC identified by the peripheral index *rtc*.
 Return 0 on success.
 
 
-int vhalRTCGetUTC(int rtc, vhalRTCTimeInfo vhal_time_info)
+**`int vhalRTCGetUTC(int rtc,vhalRTCTimeInfo*vhal_time_info)`**
 
-Fill ```vhal_time_info``` structure with time information retrieved from the RTC.
+Fill *vhal_time_info* structure with time information retrieved from the RTC.
 
 ```
 typedef struct _timeinfo {
@@ -961,9 +961,9 @@ typedef struct _timeinfo {
 Return 0 on success.
 
 
-int vhalRTCSetUTC(int rtc, uint32_t sec, uint32_t usec)
+**`int vhalRTCSetUTC(int rtc,uint32_t sec,uint32_t usec)`**
 
-Set an UTC reference for RTC identified by the peripheral index ```rtc``` passing reference Unix timestamp seconds and microseconds to obtain sub-second precision.
+Set an UTC reference for RTC identified by the peripheral index *rtc* passing reference Unix timestamp seconds and microseconds to obtain sub-second precision.
 Return 0 on success.
 
 ## Interrupts
@@ -1014,7 +1014,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2MTUzOTMzLDEwODgzNzczNjEsLTE2OD
+eyJoaXN0b3J5IjpbNjQ1OTkzNTkzLDEwODgzNzczNjEsLTE2OD
 I4NDQyNjAsLTkzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAw
 MTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NS
 wtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDEx
