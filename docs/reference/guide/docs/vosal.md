@@ -189,31 +189,37 @@ If returned, the function exited with a reset condition.
 ## System and Thread functions
 
 
-### vosSysLock(void)
+vosSysLock(void)
+
 Locks the system, usually by disabling interrupts. Thread scheduling is suspended and the following code is executed atomically. It can not be used inside ISRs.
 
 
-### vosSysUnlock(void)
+vosSysUnlock(void)
+
 Unlocks the system, usually by enabling interrupts. It is used together with `vosSysLock()` to protect small critical sections. It can not be used inside ISRs.
 
 
-### vosSysLockIsr(void)
+vosSysLockIsr(void)
+
 Same as `vosSysLock()`, but must be called only inside an ISR.
 
+vosSysUnlockIsr(void)
 
-### vosSysUnlockIsr(void)
 Same as `vosSysUnlock()`, but must be called only inside an ISR.
 
 
-### vosEnterIsr(void)
+vosEnterIsr(void)
+
 Must be called when entering an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
-### vosExitIsr(void)
+
+vosExitIsr(void)
+
 Must be called when exiting an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
-### vosInstallHandler(int32_t* hpos*, vos_irq_handler* fn*)
+vos_irq_handler vosInstallHandler(int32_t* hpos*, vos_irq_handler* fn*)
 Install a new ISR ```fn``` at index ```hpos``` in the interrupt table. Previous ISR is returned.
 
 The type vos_irq_handler is:
@@ -436,6 +442,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMz
-M1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbLTExNDkxNjgxNzYsODYyNTE0ODMsLTYzOD
+AzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1
+MF19
 -->
