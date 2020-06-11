@@ -803,12 +803,12 @@ Data is transferred 32 bits at time.
 ### Functions
 
 
-vhalInitSPI(void data)
+int vhalInitSPI(void data)
 
 Must be called before any function starting with ```vhalSpi```.
 
 
-vhalSpiInit(uint32_t spi, vhalSpiConf conf)
+int vhalSpiInit(uint32_t spi, vhalSpiConf conf)
 
 Initialize the SPI bus identified by the peripheral index ```spi``` with configuration parameters taken from ```conf```.
 
@@ -825,16 +825,18 @@ vhalSpiUnlock(uint32_t spi)
 Unlock the SPI bus. To be used when multiple threads share the same bus.
 
 
-### vhalSpiSelect(uint32_t* spi*)
+vhalSpiSelect(uint32_t spi)
 
 Select the SPI peripheral connected to ```nss```.
 
 
-### vhalSpiUnselect(uint32_t* spi*)
+vhalSpiUnselect(uint32_t spi)
+
 Unselect the SPI peripheral connected to ```nss```.
 
 
-### vhalSpiExchange(uint32_t* spi*, void* \```tosend```, void* \```toread```, uint32_t* blocks*)
+int vhalSpiExchange(uint32_t spi,void tosend,void toread,uint32_t blocks)
+
 Start a SPI communication on ```spi```, exchanging a number of data frames equal to ```blocks```. Size of data frame is configured with SPI_BITS macros.
 
 Data is exchanged synchronously; bytes in ```tosend``` are written to MOSI while bytes incoming on MISO are stored in ```toread```. If ```toread``` is NULL, incoming bytes are ignored (pure write). If ```tosend``` is NULL, nothing is written (pure read). If both ```toread``` and ```tosend``` are NULL, bytes on the bus are skipped.
@@ -998,11 +1000,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODE0MjA2NjYsLTE2ODI4NDQyNjAsLT
-kzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2
-NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExOD
-Q0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQs
-LTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3Nj
-Y2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1
-NjQxLC0xNTk0ODc3NTkzXX0=
+eyJoaXN0b3J5IjpbNjIwMDcyNTE2LC0xNjgyODQ0MjYwLC05Mz
+Q1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1
+Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0ND
+IsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04
+NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2Nj
+Y2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0
+MSwtMTU5NDg3NzU5M119
 -->
