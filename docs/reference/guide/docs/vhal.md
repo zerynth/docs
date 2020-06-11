@@ -810,7 +810,7 @@ Must be called before any function starting with *vhalSpi.*
 
 **`int vhalSpiInit(uint32_t spi,vhalSpiConf *conf)`**
 
-Initialize the SPI bus identified by the peripheral index ```spi``` with configuration parameters taken from ```conf```.
+Initialize the SPI bus identified by the peripheral index *spi* with configuration parameters taken from *conf*.
 
 Return 0 on success.
 
@@ -827,19 +827,19 @@ Unlock the SPI bus. To be used when multiple threads share the same bus.
 
 **`int vhalSpiSelect(uint32_t spi)`**
 
-Select the SPI peripheral connected to ```nss```.
+Select the SPI peripheral connected to *nss*.
 
 
 **`int vhalSpiUnselect(uint32_t spi)`**
 
-Unselect the SPI peripheral connected to ```nss```.
+Unselect the SPI peripheral connected to *nss*.
 
 
 **`int vhalSpiExchange(uint32_t spi,void *tosend,void *toread,uint32_t blocks)`**
 
-Start a SPI communication on ```spi```, exchanging a number of data frames equal to ```blocks```. Size of data frame is configured with SPI_BITS macros.
+Start a SPI communication on *spi*, exchanging a number of data frames equal to *blocks*. Size of data frame is configured with SPI_BITS macros.
 
-Data is exchanged synchronously; bytes in ```tosend``` are written to MOSI while bytes incoming on MISO are stored in ```toread```. If ```toread``` is NULL, incoming bytes are ignored (pure write). If ```tosend``` is NULL, nothing is written (pure read). If both ```toread``` and ```tosend``` are NULL, bytes on the bus are skipped.
+Data is exchanged synchronously; bytes in *tosend* are written to MOSI while bytes incoming on MISO are stored in *toread.* If ```toread``` is NULL, incoming bytes are ignored (pure write). If ```tosend``` is NULL, nothing is written (pure read). If both ```toread``` and ```tosend``` are NULL, bytes on the bus are skipped.
 
 Return 0 on success.
 
@@ -1001,11 +1001,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3NjUwNjksLTE2ODI4NDQyNjAsLTkzND
-U0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2
-OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0Mi
-wtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0
-NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2Nj
-Y3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQx
-LC0xNTk0ODc3NTkzXX0=
+eyJoaXN0b3J5IjpbNTQ1Mjg5NDYxLC0xNjgyODQ0MjYwLC05Mz
+Q1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1
+Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0ND
+IsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04
+NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2Nj
+Y2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0
+MSwtMTU5NDg3NzU5M119
 -->
