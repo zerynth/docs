@@ -651,7 +651,8 @@ The meaning of vhalI2CConf members is:
 * *mode*: not used yet.
 
 
-### vhalInitI2C(void* \```data```)
+int vhalInitI2C(void *data)
+
 Must be called before any function starting with ```vhalI2C```.
 
 
@@ -977,11 +978,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQ3ODY3MDQsLTMxMDYxNDAwMiwxNT
-c0NjEwMDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIw
-NTA4NjUsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mz
-k5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3
-OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMT
-gwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3
-OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTkzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1Nz
+Q2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1
+MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOT
+kyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5
+MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxOD
+A5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5
+NzEwLC0xNjkxOTQyMTc1XX0=
 -->
