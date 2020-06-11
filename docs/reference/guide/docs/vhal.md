@@ -586,7 +586,7 @@ Return data bits configuration encoded in *cfg*.
 
 **`int vhalSerialInit(uint32_t ser,uint32_t baud,uint32_t cfg,uint16_t rxpin,uint16_t txpin)`**
 
-Initialize the serial peripheral identified by the peripheral index ```ser```. Baudrate is set to ```baud``` and configuration parameters are taken from ```cfg``` encoded with `SERIAL_CFG`. ```rxpin``` and ```txpin``` are configured accordingly.
+Initialize the serial peripheral identified by the peripheral index ```ser```. Baud rate is set to ```baud``` and configuration parameters are taken from ```cfg``` encoded with `SERIAL_CFG`. ```rxpin``` and ```txpin``` are configured accordingly.
 
 Return 0 on success.
 
@@ -598,18 +598,20 @@ Read ```len``` bytes from ```ser``` into ```buf``` blocking the current thread u
 Return the actual number of bytes read.
 
 
-int vhalSerialWrite(uint32_t ser,uint8_t *buf, uint32_t len)
+**`int vhalSerialWrite(uint32_t ser,uint8_t *buf, uint32_t len)`**
 
 Write ```len``` bytes from ```buf``` to ```ser```. Depending on the implementation, the function may return before all bytes are actually written to ```ser```.
 
 Return the number of bytes written to ```ser``` or to an internal buffer.
 
 
-### vhalSerialAvailable(uint32_t* ser*)
+**`int vhalSerialAvailable(uint32_t ser)`**
+
 Return the number of bytes available to the next `vhalSerialRead()` call.
 
 
-### vhalSerialDone(uint32_t* ser*)
+**`int vhalSerialDone(uint32_t ser)`**
+
 Deactivate ```ser```.
 
 ## I2C
@@ -974,11 +976,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDk0NzQ3NDQsLTMxMDYxNDAwMiwxNT
-c0NjEwMDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIw
-NTA4NjUsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mz
-k5MiwxMTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3
-OTM2NTcwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMT
-gwOTUwMiwtMTQwNzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3
-OTcxMCwtMTY5MTk0MjE3NV19
+eyJoaXN0b3J5IjpbLTgxODg4OTU3MiwtMzEwNjE0MDAyLDE1Nz
+Q2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1
+MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOT
+kyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5
+MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxOD
+A5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5
+NzEwLC0xNjkxOTQyMTc1XX0=
 -->
