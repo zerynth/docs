@@ -32,13 +32,13 @@ The Zerynth VM has been developed with the goal of making Python usable in the I
 
     * Compilation has been moved outside the language; by removing the compile() and eval() builtin the VM shrieked greatly in size.
     * Not so often used Python features have been removed. Closures, generators and decorators will be added in future updates in a modular way.
-    * True multi-threading with priorities has been introduced. CPython implementations use green-threads to emulate multithreaded environments without relying on any native OS capabilities, and they are managed in user space instead of kernel space, enabling them to work in environments that do not have native thread support. In Zerynth each thread is a RTOS thread with its own memory and priority. Because of the GIL, only one Zerynth thread can execute bytecode in a time quantum, but it is possible to have more than one non-Python thread running in parallel. For example, a complex driver can be structured as a VOSAL thread written in C to control hardware, with any number of Zerynth threads running bytecode.
-    * New data structures have been introduced like shorts and shortarray to hold sequences of 16 bits integers. Bigints and fixed point math are in development.
+    * True multi-threading with priorities has been introduced. CPython implementations use green-threads to emulate multi-threaded environments without relying on any native OS capabilities, and they are managed in user space instead of kernel space, enabling them to work in environments that do not have native thread support. In Zerynth each thread is a RTOS thread with its own memory and priority. Because of the GIL, only one Zerynth thread can execute bytecode in a time quantum, but it is possible to have more than one non-Python thread running in parallel. For example, a complex driver can be structured as a VOSAL thread written in C to control hardware, with any number of Zerynth threads running bytecode.
+    * New data structures have been introduced like shorts and short-array to hold sequences of 16 bits integers. BigInts and fixed point math are in development.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDYwNzQ5Niw1NjE1Mjg2MzZdfQ==
+eyJoaXN0b3J5IjpbLTEyNDc2NjcyMDQsNTYxNTI4NjM2XX0=
 -->
