@@ -974,17 +974,17 @@ To change the function called on interrupt, refer to `vosInstallHandler()`.
 
 **`void vhalIrqEnablePrio(uint32_t irqn,uint32_t prio)`**
 
-Enables the interrupt ```irqn``` assignign a priority of ```prio```. Priority must be passed with the PORT_PRIO_MASK macro defined in the microcontroller porting files.
+Enables the interrupt *irqn* assigning a priority of *prio*. Priority must be passed with the PORT_PRIO_MASK macro defined in the microcontroller porting files.
 
 
-void vhalIrqDisable(uint32_t irqn)
+**`void vhalIrqDisable(uint32_t irqn)`**
 
-Disable interrupt ```irqn```
+Disable interrupt *irqn*.
 
 
-void vhalIrqEnable(uint32_t irqn)
+**`void vhalIrqEnable(uint32_t irqn)`**
 
-Enable interrupt ```irqn``` assigning a default priority. Implemented as a macro.
+Enable interrupt *irqn* assigning a default priority. Implemented as a macro.
 
 ## Error Codes
 
@@ -993,19 +993,22 @@ VHAL functions usually return an error code. The following list of macros contai
 Error code are non positive integers. They have been encoded in such a way that negating the error code results in the corresponding virtual machine exception number.
 
 
-### VHAL_OK()
+ VHAL_OK
+ 
 Evaluates to 0. Returned on success.
 
 
-### VHAL_GENERIC_ERROR()
+VHAL_GENERIC_ERROR
+
 Generic peripheral error. Corresponds to PeripheralError exception.
 
 
-### VHAL_INVALID_PIN()
+VHAL_INVALID_PIN
+
 A virtual pin not supporting a specific peripheral is passed. Corresponds to InvalidPin exception.
 
 
-### VHAL_HARDWARE_STATUS_ERROR()
+ VHAL_HARDWARE_STATUS_ERROR()
 An hardware error condition happened during peripheral operations. Corresponds to InvalidHardwareStatus exception.
 
 
@@ -1017,11 +1020,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxMDIwMDgsMTA4ODM3NzM2MSwtMTY4Mj
-g0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAx
-MCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC
-0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEw
-OTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MD
-k2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIs
-LTE0MDc4NTU2NDFdfQ==
+eyJoaXN0b3J5IjpbLTIwNzM3MDI3MTcsMTA4ODM3NzM2MSwtMT
+Y4Mjg0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYx
+MDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwOD
+Y1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIs
+MTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNj
+U3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1
+MDIsLTE0MDc4NTU2NDFdfQ==
 -->
