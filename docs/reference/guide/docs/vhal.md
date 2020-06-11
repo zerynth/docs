@@ -163,12 +163,12 @@ Bypass the virtual pin indirection by operating on the microcontroller register 
 
 **`void vhalPinFastClear(void *port,int pad)`**
 
-Bypass the virtual pin indirection by operating on the microcontroller register po` with offset . Set the corresponding pin to low.
+Bypass the virtual pin indirection by operating on the microcontroller register *port* with offset . Set the corresponding pin to low.
 
 
-**`int vhalPinFastRead(void *port,int pad_)`**
-*)
-Bypass the virtual pin indirection by operating on the microcontroller register po` with offset pad.* Return 0 if the in is low, non-zero if it is high.
+**`int vhalPinFastRead(void *port,int pad)`**
+
+Bypass the virtual pin indirection by operating on the microcontroller register port with offset pad. Return 0 if the in is low, non-zero if it is high.
 
 
 **`int vhalPinSetToPeripheral(int vpin, int prph, uint32_t prms)`**
@@ -181,7 +181,7 @@ Return 0 in case of success. The parameter *prph is ignored in the current versi
 **`int vhalPinAttachInterrupt(int vpinintmode,extCbkFn fn, uint32_t timeout)`**
 
 
-Attach callback *fn* to `vpi*. *fn* is called from an ISR when there is a status change identified by mode`. *m```* can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot  has been attached to.
+Attach callback *`fn* to `vpi*. *fn* is called from an ISR when there is a status change identified by mode`. *m```*` can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot  has been attached to.
 If  is NULL the currently attached function is removed and the interrupt disabled.
 
 **`typedef void(*extCbkFn)(int slot int dir)`**
@@ -1032,7 +1032,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjY1NTIyMyw1MjcyODU4MTQsLTE2Nj
+eyJoaXN0b3J5IjpbMTc2NTEwNDE5NSw1MjcyODU4MTQsLTE2Nj
 UxODkwMCwxMDg4Mzc3MzYxLC0xNjgyODQ0MjYwLC05MzQ1NDc3
 NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1Njk0LC
 0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0NDIsLTEz
