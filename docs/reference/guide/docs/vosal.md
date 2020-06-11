@@ -189,21 +189,21 @@ If returned, the function exited with a reset condition.
 ## System and Thread functions
 
 
-vosSysLock(void)
+**`vosSysLock(void)`**
 
 Locks the system, usually by disabling interrupts. Thread scheduling is suspended and the following code is executed atomically. It can not be used inside ISRs.
 
 
-vosSysUnlock(void)
+**`vosSysUnlock(void)`**
 
 Unlocks the system, usually by enabling interrupts. It is used together with `vosSysLock()` to protect small critical sections. It can not be used inside ISRs.
 
 
-vosSysLockIsr(void)
+**`vosSysLockIsr(void)`**
 
 Same as `vosSysLock()`, but must be called only inside an ISR.
 
-vosSysUnlockIsr(void)
+**`vosSysUnlockIsr(void)`**
 
 Same as `vosSysUnlock()`, but must be called only inside an ISR.
 
@@ -444,7 +444,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODM5NTMyNSw4NjI1MTQ4MywtNjM4MD
-M0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUw
-XX0=
+eyJoaXN0b3J5IjpbLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzOD
+AzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1
+MF19
 -->
