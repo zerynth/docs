@@ -36,7 +36,7 @@ Type of a timer callback function.
 ## Variables
 
 
-volatile uint32_t_systime_seconds
+**`volatile uint32_t_systime_seconds`**
 Holds the number of seconds passed since VM startup. It is not guaranteed to be implemented in every architecture or RTOS.
 
 
@@ -411,5 +411,6 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbMjAzMjI3MzkwNiwxNzg2MDI3ODg0LDE3Mz
+QyMjEyNTBdfQ==
 -->
