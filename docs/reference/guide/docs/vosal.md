@@ -140,32 +140,37 @@ VOS_PRIO_HIGH
 This priority is greater than all preceding thread priorities
 
 
-### VOS_PRIO_HIGHER()
+VOS_PRIO_HIGHER
+
 This priority is greater than all preceding thread priorities
 
+VOS_PRIO_HIGHEST
 
-### VOS_PRIO_HIGHEST()
 This priority is greater than all preceding thread priorities.
 
 ### Thread Status
 
 
-### VTHREAD_READY()
+VTHREAD_READY
+
 Status of a thread that has been created but not yet run.
 
 
-### VTHREAD_RUNNING()
+VTHREAD_RUNNING
+
 Status of a thread that is currently running.
 
 
-### VTHREAD_INACTIVE()
+VTHREAD_INACTIVE
+
 Status of a thread that has finished its lifecycle
 
 
-### VTHREAD_WAITING()
+VTHREAD_WAITING
+
 Status of a thread that is sleeping waiting for some event to occur
 
-## Return values
+Return values
 
 
 ### VRES_OK()
@@ -429,6 +434,6 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3OD
-YwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbMTQwOTgyNTc3NywtNjM4MDM0NDcxLDEzMT
+AzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
