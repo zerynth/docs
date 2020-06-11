@@ -208,20 +208,20 @@ Same as `vosSysLock()`, but must be called only inside an ISR.
 Same as `vosSysUnlock()`, but must be called only inside an ISR.
 
 
-vosEnterIsr(void)
+**`vosEnterIsr(void)`**
 
 Must be called when entering an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
 
-vosExitIsr(void)
+**`vosExitIsr(void)`**
 
 Must be called when exiting an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
 **`vos_irq_handler vosInstallHandler(int32_t hpos,vos_irq_handler fn)`**
 
-Install a new ISR ```fn``` at index ```hpos``` in the interrupt table. Previous ISR is returned.
+Install a new ISR *fn* at index *hpos* in the interrupt table. Previous ISR is returned.
 
 The type vos_irq_handler is:
 
@@ -444,7 +444,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzOD
-AzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1
-MF19
+eyJoaXN0b3J5IjpbMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
+UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
+LDE3MzQyMjEyNTBdfQ==
 -->
