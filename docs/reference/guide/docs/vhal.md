@@ -653,28 +653,33 @@ The meaning of vhalI2CConf members is:
 
 int vhalInitI2C(void *data)
 
-Must be called before any function starting with ```vhalI2C```.
+Must be called before any function starting with *vhalI2C*.
 
 
-### vhalI2CInit(uint32_t* i2c*, vhalI2CConf* \```conf```)
+int vhalI2CInit(uint32_t* i2c*, vhalI2CConf* conf)
+
 Initialize the I2C bus corresponding to the ```i2c``` peripheral index with configuration parameters taken from ```conf```.
 
 Return 0 on success.
 
 
-### vhalI2CDone(uint32_t* i2c*)
+int vhalI2CDone(uint32_t* i2c*)
+
 Deactivates ```i2c```.
 
 
-### vhalI2CLock(uint32_t* i2c*)
+int vhalI2CLock(uint32_t* i2c*)
+
 Lock the I2C bus. To be used when multiple threads share the same bus.
 
 
-### vhalI2CUnlock(uint32_t* i2c*)
+int  vhalI2CUnlock(uint32_t* i2c*)
+
 Unlock the I2C bus. To be used when multiple threads share the same bus.
 
 
-### vhalI2CRead(uint32_t* i2c*, uint8_t\** buf*, uint32_t* len*, uint32_t* timeout*)
+int vhalI2CRead(uint32_t* i2c*, uint8_t\** buf*, uint32_t* len*, uint32_t* timeout*)
+
 Start reading from ```i2c``` (from configured ```addr```). Execution ends as soon as one of the following conditions verifies:
 
 
@@ -689,7 +694,8 @@ Start reading from ```i2c``` (from configured ```addr```). Execution ends as soo
 Return 0 on success.
 
 
-### vhalI2CTransmit(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint8_t* \```rx```, uint32_t* rxlen*, uint32_t* timeout*)
+int  vhalI2CTransmit(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint8_t* \```rx```, uint32_t* rxlen*, uint32_t* timeout*)
+
 Execute a two steps communication. First, ```txlen``` bytes from ```tx``` are written to the bus; second, ```rxlen``` bytes are read from the bus to ```rx```.
 
 Execution ends as soon as one of the following conditions verifies:
@@ -706,11 +712,13 @@ Execution ends as soon as one of the following conditions verifies:
 Return 0 on success.
 
 
-### vhalI2CWrite(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint32_t* timeout*)
+int vhalI2CWrite(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint32_t* timeout*)
+
 Implemented as a macro calling *vhalI2CTransmit(i2c,tx,txlen,NULL,0,timeout)*.
 
 
-### vhalI2CSetAddr(uint32_t* i2c*, uint16_t* addr*)
+int vhalI2CSetAddr(uint32_t* i2c*, uint16_t* addr*)
+
 Change the peripheral address associated with ```i2c``` in `vhalI2CInit()` to ```addr```.
 
 ## SPI
@@ -978,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1Nz
-Q2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1
-MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOT
-kyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5
-MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxOD
-A5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNjE3Njc5
-NzEwLC0xNjkxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbMTQyNTk4NDI0MCwtOTM0NTQ3NzUwLC0zMT
+A2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1
+OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3Nj
+A0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkz
+NDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4Nz
+E3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1
+OTMsLTE2MTc2Nzk3MTBdfQ==
 -->
