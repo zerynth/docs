@@ -522,64 +522,64 @@ Serial communication interfaces in microcontrollers come in many flavours: USART
 
 **`SERIAL_PARITY_NONE`**
 
-Select no parity
+Select no parity.
 
 
  **`SERIAL_PARITY_EVEN`**
  
-Select even parity
+Select even parity.
 
 
 **`SERIAL_PARITY_ODD`**
 
-Select odd parity
+Select odd parity.
 
 
 **`SERIAL_STOP_ONE`**
 
-Select 1 stop bit
+Select 1 stop bit.
 
 
 **`SERIAL_STOP_ONEHALF`**
 
-Select 1.5 stop bit
+Select 1.5 stop bit.
 
 
 **`SERIAL_STOP_TWO`**
 
-Select 2 stop bits
+Select 2 stop bits.
 
 
 **`SERIAL_BITS_8`**
 
-Select 8 bits of data
+Select 8 bits of data.
 
 
 **`SERIAL_BITS_7`**
 
-Select 7 bits of data
+Select 7 bits of data.
 
 
 **`SERIAL_CFG(parity, stop, bits, hw, other)`**
 
-Return a uint32_t representing the serial port configuration. ```hw``` and ```other``` are not yet used and must be set to 0.
+Return a uint32_t representing the serial port configuration. *hw* and *other* are not yet used and must be set to 0.
 
 
 **`SERIAL_CFG_PARITY(cfg)`**
 
-Return parity configuration encoded in ```cfg```
+Return parity configuration encoded in *cfg*
 
 
 
 **`SERIAL_CFG_STOP(cfg)`**
 
-Return stop bits configuration encoded in ```cfg```
+Return stop bits configuration encoded in *cfg*
 
 
 
 **`SERIAL_CFG_BITS(cfg)`**
 
-Return data bits configuration encoded in ```cfg```
+Return data bits configuration encoded in *cfg*
 
 ### Functions
 
@@ -971,10 +971,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDc4ODMyNCwtMTczNzY0NTY5NCwtMj
-EzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4NDQyLC0xMzgw
-NzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwtODQ1MjQ1Nz
-U5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01
-MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OT
-Q4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbLTE0NTUxODg4MjYsLTE3Mzc2NDU2OTQsLT
+IxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4
+MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NT
+c1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwt
+NTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNT
+k0ODc3NTkzLC0xNjE3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
 -->
