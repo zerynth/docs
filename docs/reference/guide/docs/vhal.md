@@ -499,7 +499,8 @@ If *delay* is zero, the timer is deactivated.
 Return 0 on success.
 
 
-### vhalHtmRecurrent(uint32_t* tm*, uint32_t* delay*, htmFn* fn*, void* \```args```)
+**`int vhalHtmRecurrent(uint32_t tm,uint32_t delay,htmFn fn,void *args)`**
+
 Given the peripheral index ```tm```, configure such timer to generate an interrupt after a time represented by ```delay``` (with `TIME_U`). On interrupt generation, ```fn``` is executed with arguments ```args``` and the timer is reconfigured to generate another interrupt after the same ```delay```.
 
 If ```delay``` is zero, the timer is deactivated and ```fn``` stops to be executed periodically.
@@ -956,10 +957,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc2NDU2OTQsLTIxMzczNTk2NTIsMT
-k2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3
-MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMT
-EsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0y
-MTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3NTkzLC0xNj
-E3Njc5NzEwLC0xNjkxOTQyMTc1XX0=
+eyJoaXN0b3J5IjpbMTkzNzIyOTYwNCwtMTczNzY0NTY5NCwtMj
+EzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4NDQyLC0xMzgw
+NzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwtODQ1MjQ1Nz
+U5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01
+MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OT
+Q4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
 -->
