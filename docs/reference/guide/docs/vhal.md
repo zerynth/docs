@@ -359,10 +359,10 @@ To enable PWM functions the macro VHAL_PWM must be defined.
 
 **`int vhalInitPWM(void* data)`**
 
-Must be called before any function starting with vhalPwm```.
+Must be called before any function starting with *vhalPwm*.
 
 
-### vhalPwmStart(int* vpin*, uint32_t* period*, uint32_t* pulse*, uint32_t* npulses*)
+int vhalPwmStart(int* vpin*, uint32_t* period*, uint32_t* pulse*, uint32_t* npulses*)
 Generate a square wave of period ```period``` and pulse ```pulse``` on ```vpin```. Timings must be expressed using `TIME_U` and both ```period``` and ```pulse``` must be expressed in the same time unit.
 
 If ```npulses``` is positive, the function blocks the current thread until a number of square waves equal to ```npulses``` is generated; afterwards, pwm is disabled and the function returns.
@@ -943,7 +943,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NjgzNTg5LDE5NjIwNTA4NjUsLTIxND
+eyJoaXN0b3J5IjpbNDcwNTIxNDA1LDE5NjIwNTA4NjUsLTIxND
 QxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0
 MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLT
 E3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQw
