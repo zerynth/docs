@@ -79,31 +79,33 @@ TIME_U(value, unit)
 Time values in VOSAL are represented as value plus time unit. This macro creates a valid time representation mixing together ```value``` (max 30 significant bits) with ```unit```. Every vosal function expecting a time must be passed the result of TIME_U
 
 
-GET_TIME_UNIT(time)
+**`GET_TIME_UNIT(time)`**
 
 Extracts the time unit from ```time```
 
 
-GET_TIME_VALUE(time)
+**`GET_TIME_VALUE(time)`**
 
 Extracts the time value from ```time```
 
 
-GET_TIME_MICROS(time)
+**`GET_TIME_MICROS(time)`**
 
 Extracts the time value from ```time``` converting it to microseconds
 
 
-TIME_IS_ZERO(time)
+**`TIME_IS_ZERO(time)`**
 
 Evaluates to true if ```time``` is zero in the corresponding time unit
 
 
-### VTIME_IMMEDIATE()
+VTIME_IMMEDIATE
+
 A unitless time value representing no time at all
 
 
-### VTIME_INFINITE()
+ VTIME_INFINITE
+ 
 Infinite amount of time, used when an infinite timeout is requested
 
 ### Priority Macros
@@ -422,6 +424,6 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MDE1OTU1NywxNzg2MDI3ODg0LDE3Mz
+eyJoaXN0b3J5IjpbLTc2ODc1MjUxNywxNzg2MDI3ODg0LDE3Mz
 QyMjEyNTBdfQ==
 -->
