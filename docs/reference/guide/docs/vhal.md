@@ -651,21 +651,21 @@ The meaning of vhalI2CConf members is:
 * *mode*: not used yet.
 
 
-int vhalInitI2C(void *data)
+**`int vhalInitI2C(void *data)`**
 
 Must be called before any function starting with *vhalI2C*.
 
 
-int vhalI2CInit(uint32_t* i2c*, vhalI2CConf *conf)
+**`int vhalI2CInit(uint32_t i2c,vhalI2CConf *conf)`**
 
-Initialize the I2C bus corresponding to the ```i2c``` peripheral index with configuration parameters taken from ```conf```.
+Initialize the I2C bus corresponding to the *i2c* peripheral index with configuration parameters taken from *conf.*
 
 Return 0 on success.
 
 
-int vhalI2CDone(uint32_t* i2c*)
+**`int vhalI2CDone(uint32_t i2c)`**
 
-Deactivates ```i2c```.
+Deactivates i2c```.
 
 
 int vhalI2CLock(uint32_t* i2c*)
@@ -986,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI4NDQyNjAsLTkzNDU0Nzc1MCwtMz
-EwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2OTQsLTIxMzcz
-NTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0MiwtMTM4MDcwNz
-YwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0NTI0NTc1OSw5
-MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2NjY3NSwtNTE2OD
-cxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQxLC0xNTk0ODc3
-NTkzLC0xNjE3Njc5NzEwXX0=
+eyJoaXN0b3J5IjpbMTI2NzI4ODE1MCwtMTY4Mjg0NDI2MCwtOT
+M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
+NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
+QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
+ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
+Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
+NDEsLTE1OTQ4Nzc1OTNdfQ==
 -->
