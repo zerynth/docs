@@ -364,13 +364,13 @@ Must be called before any function starting with *vhalPwm*.
 
 **`int vhalPwmStart(int vpin,uint32_t period,uint32_t pulse,uint32_t npulses)`**
 
-Generate a square wave of period *period* and pulse pulse``` on ```vpin```. Timings must be expressed using `TIME_U` and both ```period``` and ```pulse``` must be expressed in the same time unit.
+Generate a square wave of period *period* and pulse *pulse* on *vpin*. Timings must be expressed using `TIME_U` and both *period* and *pulse* must be expressed in the same time unit.
 
-If ```npulses``` is positive, the function blocks the current thread until a number of square waves equal to ```npulses``` is generated; afterwards, pwm is disabled and the function returns.
+If *npulses* is positive, the function blocks the current thread until a number of square waves equal to *npulses* is generated; afterwards, pwm is disabled and the function returns.
 
-If ```npulses``` is zero or less, pwm is activated and the function returns immediately.
+If *npulses* is zero or less, pwm is activated and the function returns immediately.
 
-If ```period``` is 0 or ```pulse``` is 0 or ```period``` is less than ```pulse``` pwm is deactivated regardless of ```npulses```
+If *period* is 0 or ```pulse``` is 0 or ```period``` is less than ```pulse``` pwm is deactivated regardless of ```npulses```
 
 Return 0 on success. On failure return a negative integer.
 
@@ -944,10 +944,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NzYyMTU2OSwxOTYyMDUwODY1LC0yMT
-Q0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5
-NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC
-0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0
-MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2OT
-E5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbOTQ5MDU4MTIzLDE5NjIwNTA4NjUsLTIxND
+QxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0
+MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLT
+E3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQw
+Nzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MT
+k0MjE3NV19
 -->
