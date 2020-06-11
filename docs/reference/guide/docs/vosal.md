@@ -27,7 +27,7 @@ VMailBox is defined as a pointer to a region of memory containing a rtos mailbox
 
 **`VFifo`**
 
-VFifo is defined as a pointer to a region of memory containing a rtos fifo. In order to be as abstract as possible the actual type of VFifo is void*. Values of type VFifo must be managed only by calling vosal function starting with ```vosFifo```. Fifos are an optional feature and can be disabled when compiling a VM.
+VFifo is defined as a pointer to a region of memory containing a rtos fifo. In order to be as abstract as possible the actual type of VFifo is void*. Values of type VFifo must be managed only by calling vosal function starting with **vosFifo**. Fifos are an optional feature and can be disabled when compiling a VM.
 
 **`typedef void(*vsystimer_fn)(void*)`**
 
@@ -36,11 +36,11 @@ Type of a timer callback function.
 ## Variables
 
 
-### _systime_seconds()
+**`volatile uint32_t_systime_seconds`*
 Holds the number of seconds passed since VM startup. It is not guaranteed to be implemented in every architecture or RTOS.
 
 
-### _systime_millis()
+volatile uint32_t _systime_millis()
 Holds the number of milliseconds passed since VM startup. It is not guaranteed to be implemented in every architecture or RTOS.
 
 
@@ -411,5 +411,5 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDM2MzM0NzYsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbLTQ3MjYwMDMxLDE3MzQyMjEyNTBdfQ==
 -->
