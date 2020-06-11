@@ -156,7 +156,7 @@ Get the pointer to a gpio microcontroller register corresponding to *vpin. The r
 Get the offset into a gpio microcontroller register corresponding to vpin. The return value must be used in functions like `vhalPinFastSet()` and `vhalPinFastClear()`.
 
 
-void vhalPinFastSet(void *port, int pad)
+**`void vhalPinFastSet(void *port,int pad)`**
 
 Bypass the virtual pin indirection by operating on the microcontroller register *port* with offset . Set the corresponding pin to high.
 
@@ -1032,7 +1032,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MjM2NzY5MSw1MjcyODU4MTQsLTE2Nj
+eyJoaXN0b3J5IjpbLTYxNjY1NTIyMyw1MjcyODU4MTQsLTE2Nj
 UxODkwMCwxMDg4Mzc3MzYxLC0xNjgyODQ0MjYwLC05MzQ1NDc3
 NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1Njk0LC
 0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0NDIsLTEz
