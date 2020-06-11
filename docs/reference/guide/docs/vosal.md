@@ -55,39 +55,47 @@ Holds the current frequency of the microcontroller in Hz.
 ### Time Macros
 
 
-### NANOS()
-Represent the time unit nanoseconds
+NANOS
+
+Represent the time unit nanoseconds.
 
 
-### MICROS()
-Represent the time unit microseconds
+MICROS
+
+Represent the time unit microseconds.
+
+MILLIS
+
+Represent the time unit milliseconds.
 
 
-### MILLIS()
-Represent the time unit milliseconds
+SECONDS
 
-
-### SECONDS()
 Represent the time unit seconds
 
 
-### TIME_U(value, unit)
+TIME_U(value, unit)
+
 Time values in VOSAL are represented as value plus time unit. This macro creates a valid time representation mixing together ```value``` (max 30 significant bits) with ```unit```. Every vosal function expecting a time must be passed the result of TIME_U
 
 
-### GET_TIME_UNIT(time)
+GET_TIME_UNIT(time)
+
 Extracts the time unit from ```time```
 
 
-### GET_TIME_VALUE(time)
+GET_TIME_VALUE(time)
+
 Extracts the time value from ```time```
 
 
-### GET_TIME_MICROS(time)
+GET_TIME_MICROS(time)
+
 Extracts the time value from ```time``` converting it to microseconds
 
 
-### TIME_IS_ZERO(time)
+TIME_IS_ZERO(time)
+
 Evaluates to true if ```time``` is zero in the corresponding time unit
 
 
@@ -414,6 +422,6 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyODU0NDE1MiwxNzg2MDI3ODg0LDE3Mz
+eyJoaXN0b3J5IjpbMTU0MDE1OTU1NywxNzg2MDI3ODg0LDE3Mz
 QyMjEyNTBdfQ==
 -->
