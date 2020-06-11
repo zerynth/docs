@@ -712,12 +712,12 @@ Execution ends as soon as one of the following conditions verifies:
 Return 0 on success.
 
 
-int vhalI2CWrite(uint32_t* i2c*, uint8_t\** tx*, uint32_t* txlen*, uint32_t* timeout*)
+**`int vhalI2CWrite(uint32_t i2c,uint8_t* tx,uint32_t txlen,uint32_t timeout)`**
 
 Implemented as a macro calling *vhalI2CTransmit(i2c,tx,txlen,NULL,0,timeout)*.
 
 
-int vhalI2CSetAddr(uint32_t* i2c*, uint16_t* addr*)
+int vhalI2CSetAddr(uint32_t i2c, uint16_t add*)
 
 Change the peripheral address associated with ```i2c``` in `vhalI2CInit()` to ```addr```.
 
@@ -986,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODM3MzcyMiwtMTY4Mjg0NDI2MCwtOT
-M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
-NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
-QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
-ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
-Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
-NDEsLTE1OTQ4Nzc1OTNdfQ==
+eyJoaXN0b3J5IjpbMzYwNjA3ODIsLTE2ODI4NDQyNjAsLTkzND
+U0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2
+OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0Mi
+wtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0
+NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2Nj
+Y3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQx
+LC0xNTk0ODc3NTkzXX0=
 -->
