@@ -219,7 +219,8 @@ vosExitIsr(void)
 Must be called when exiting an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
-vos_irq_handler vosInstallHandler(int32_t* hpos*, vos_irq_handler* fn*)
+**`vos_irq_handler vosInstallHandler(int32_t hpos,vos_irq_handler fn)`**
+
 Install a new ISR ```fn``` at index ```hpos``` in the interrupt table. Previous ISR is returned.
 
 The type vos_irq_handler is:
@@ -229,7 +230,8 @@ typedef void (*vos_irq_handler)(void)
 ```
 
 
-### vosSysReset(void)
+**`void vosSysReset(void)`**
+
 Soft reset the microcontroller.
 
 
@@ -442,7 +444,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDkxNjgxNzYsODYyNTE0ODMsLTYzOD
-AzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1
-MF19
+eyJoaXN0b3J5IjpbMTg2ODM5NTMyNSw4NjI1MTQ4MywtNjM4MD
+M0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUw
+XX0=
 -->
