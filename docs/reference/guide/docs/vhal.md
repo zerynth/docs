@@ -917,12 +917,13 @@ Return NULL on error.
 
 Random Number Generators are often implemented in hardware. When such MCU feature is missing, the VHAL provides a software implementation.
 
+**`int vhalRngSeed(uint32_t seed)`**
 
-### vhalRngSeed(uint32_t* seed*)
 Initialize the RNG with a seed. Must be called before using `vhalRngGenerate()`
 
 
-### vhalRngGenerate(void)
+**`unit32_t vhalRngGenerate(void)`**
+
 Return a random 32 bits number.
 
 ## RTC
@@ -1010,7 +1011,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxODE5NjI3OCwxMDg4Mzc3MzYxLC0xNj
+eyJoaXN0b3J5IjpbLTQxMDg0NjIwOSwxMDg4Mzc3MzYxLC0xNj
 gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
 MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
 UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
