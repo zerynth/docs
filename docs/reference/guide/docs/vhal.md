@@ -591,7 +591,7 @@ Initialize the serial peripheral identified by the peripheral index ```ser```. B
 Return 0 on success.
 
 
-### vhalSerialRead(uint32_t* ser*, uint8_t* \```buf```, uint32_t* len*)
+int vhalSerialRead(uint32_t* ser*, uint8_t* \```buf```, uint32_t* len*)
 Read ```len``` bytes from ```ser``` into ```buf``` blocking the current thread until all bytes are read.
 
 Return the actual number of bytes read.
@@ -972,11 +972,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNz
-M3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQx
-MTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0Mz
-E0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3
-NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNz
-g1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0
-MjE3NV19
+eyJoaXN0b3J5IjpbNDg1MzgyNzU0LC0zMTA2MTQwMDIsMTU3ND
+YxMDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUw
+ODY1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OT
+IsMTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkz
+NjU3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MD
+k1MDIsLTE0MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3
+MTAsLTE2OTE5NDIxNzVdfQ==
 -->
