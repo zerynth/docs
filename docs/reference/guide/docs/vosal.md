@@ -7,27 +7,27 @@ The Zerynth VM uses a common API to create and manage threads and synchronizatio
 
 **`VThread`**
 
-VThread is defined as a pointer to a region of memory containing a thread representation. In order to be as abstract as possible the actual type of VThread is void*. Values of type VThread must be managed only by calling vosal functions starting with *vosTh*.
+VThread is defined as a pointer to a region of memory containing a thread representation. In order to be as abstract as possible the actual type of VThread is void*. Values of type VThread must be managed only by calling vosal functions starting with **vosTh**.
 
 
 **`VSemaphore`**
 
-VSemaphore is defined as a pointer to a region of memory containing a semaphore representation. In order to be as abstract as possible the actual type of VSemaphore is void\*. Values of type VSemaphore must be managed only by calling vosal functions starting with **```vosSem**```.
+VSemaphore is defined as a pointer to a region of memory containing a semaphore representation. In order to be as abstract as possible the actual type of VSemaphore is void*. Values of type VSemaphore must be managed only by calling vosal functions starting with **vosSem**.
 
 
 **`VSysTimer`**
 
-VSysTimer is defined as a pointer to a region of memory containing a rtos timer representation. In order to be as abstract as possible the actual type of VSysTimer is void\*. Values of type VSysTimer must be managed only by calling vosal functions starting with **```vosTimer**```.
+VSysTimer is defined as a pointer to a region of memory containing a rtos timer representation. In order to be as abstract as possible the actual type of VSysTimer is void*. Values of type VSysTimer must be managed only by calling vosal functions starting with **vosTimer**.
 
 
 **`VMailBox`**
 
-VMailBox is defined as a pointer to a region of memory containing a rtos mailbox representation. In order to be as abstract as possible the actual type of VMailBox is void\*. Values of type VMailBox must be managed only by calling vosal function starting with **```vosMBox**```. Mailboxes are an optional feature and can be disabled when compiling a VM.
+VMailBox is defined as a pointer to a region of memory containing a rtos mailbox representation. In order to be as abstract as possible the actual type of VMailBox is void*. Values of type VMailBox must be managed only by calling vosal function starting with **vosMBox**. Mailboxes are an optional feature and can be disabled when compiling a VM.
 
 
 **`VFifo`**
 
-VFifo is defined as a pointer to a region of memory containing a rtos fifo. In order to be as abstract as possible the actual type of VFifo is void\*. Values of type VFifo must be managed only by calling vosal function starting with **```vosFifo**```. Fifos are an optional feature and can be disabled when compiling a VM.
+VFifo is defined as a pointer to a region of memory containing a rtos fifo. In order to be as abstract as possible the actual type of VFifo is void\*. Values of type VFifo must be managed only by calling vosal function starting with **vosFifo**. Fifos are an optional feature and can be disabled when compiling a VM.
 
 **`typedef void(*vsystimer_fn)(void *)`**
 
@@ -455,7 +455,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjE5MzcyNSwxNzk3MTc1Mzk3LC0xOD
+eyJoaXN0b3J5IjpbLTg3NTgyMDAxOSwxNzk3MTc1Mzk3LC0xOD
 UwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4
 MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNz
 M0MjIxMjUwXX0=
