@@ -678,7 +678,7 @@ Lock the I2C bus. To be used when multiple threads share the same bus.
 Unlock the I2C bus. To be used when multiple threads share the same bus.
 
 
-**`int vhalI2CRead(uint32_t i2c,uint8_t *buf,uint32_t len*,uint32_t timeout)`**
+**`int vhalI2CRead(uint32_t i2c,uint8_t* buf,uint32_t len*,uint32_t timeout)`**
 
 Start reading from ```i2c``` (from configured ```addr```). Execution ends as soon as one of the following conditions verifies:
 
@@ -986,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjExNDU5ODYsLTE2ODI4NDQyNjAsLT
-kzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2
-NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExOD
-Q0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQs
-LTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3Nj
-Y2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1
-NjQxLC0xNTk0ODc3NTkzXX0=
+eyJoaXN0b3J5IjpbMzk3MDk4MTU0LC0xNjgyODQ0MjYwLC05Mz
+Q1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1
+Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0ND
+IsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04
+NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2Nj
+Y2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0
+MSwtMTU5NDg3NzU5M119
 -->
