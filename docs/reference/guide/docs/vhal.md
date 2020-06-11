@@ -473,7 +473,7 @@ Hardware Timers can be used to keep track of time with a greater precision with 
 To enable HTM functions the macro VHAL_HTM must be defined.
 
 
-### (\*htmFn)(uint32_t* tm*, void* \```args```)
+**`typedef void (*htmFn)(uint32_t tm,voidb*args)`**
 Type of a hardware timer callback function.
 
 
@@ -953,7 +953,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTAwNDA2NiwxOTYyMDUwODY1LC0yMT
+eyJoaXN0b3J5IjpbLTc5ODE0NTAxOCwxOTYyMDUwODY1LC0yMT
 Q0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5
 NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC
 0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0
