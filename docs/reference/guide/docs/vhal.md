@@ -584,8 +584,9 @@ Return data bits configuration encoded in *cfg*.
 ### Functions
 
 
-### vhalSerialInit(uint32_t* ser*, uint32_t* baud*, uint32_t* cfg*, uint16_t* rxpin*, uint16_t* txpin*)
-Initialize the serial peripheral indentified by the peripheral index ```ser```. Baudrate is set to ```baud``` and configuration parameters are taken from ```cfg``` encoded with `SERIAL_CFG`. ```rxpin``` and ```txpin``` are configured accordingly.
+**`int vhalSerialInit(uint32_t ser,uint32_t baud,uint32_t cfg,uint16_t rxpin,uint16_t txpin)`**
+
+Initialize the serial peripheral identified by the peripheral index ```ser```. Baudrate is set to ```baud``` and configuration parameters are taken from ```cfg``` encoded with `SERIAL_CFG`. ```rxpin``` and ```txpin``` are configured accordingly.
 
 Return 0 on success.
 
@@ -971,10 +972,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDYxMDAxMCwtMTczNzY0NTY5NCwtMj
-EzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4NDQyLC0xMzgw
-NzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwtODQ1MjQ1Nz
-U5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2NjY2Njc1LC01
-MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2NDEsLTE1OT
-Q4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2OTE5NDIxNzVdfQ==
+eyJoaXN0b3J5IjpbLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNz
+M3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQx
+MTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0Mz
+E0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3
+NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNz
+g1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MTk0
+MjE3NV19
 -->
