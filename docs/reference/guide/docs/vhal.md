@@ -665,20 +665,20 @@ Return 0 on success.
 
 **`int vhalI2CDone(uint32_t i2c)`**
 
-Deactivates i2c```.
+Deactivates *i2c*.
 
 
-int vhalI2CLock(uint32_t* i2c*)
+**`int vhalI2CLock(uint32_t i2c)`**
 
 Lock the I2C bus. To be used when multiple threads share the same bus.
 
 
-int  vhalI2CUnlock(uint32_t* i2c*)
+**`int  vhalI2CUnlock(uint32_t i2c)`**
 
 Unlock the I2C bus. To be used when multiple threads share the same bus.
 
 
-int vhalI2CRead(uint32_t* i2c*, uint8_t\** buf*, uint32_t* len*, uint32_t* timeout*)
+**`int vhalI2CRead(uint32_t i2c,uint8_t *buf,uint32_t len*,uint32_t timeout)`**
 
 Start reading from ```i2c``` (from configured ```addr```). Execution ends as soon as one of the following conditions verifies:
 
@@ -986,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzI4ODE1MCwtMTY4Mjg0NDI2MCwtOT
-M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
-NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
-QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
-ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
-Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
-NDEsLTE1OTQ4Nzc1OTNdfQ==
+eyJoaXN0b3J5IjpbLTEzMjExNDU5ODYsLTE2ODI4NDQyNjAsLT
+kzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2
+NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExOD
+Q0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQs
+LTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3Nj
+Y2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1
+NjQxLC0xNTk0ODc3NTkzXX0=
 -->
