@@ -900,14 +900,15 @@ Erase sector starting at addr``` for ```size``` bytes. If ```size``` is greater 
 Return 0 on success.
 
 
-int vhalFlashWrite(void *addr, uint8_t data, uint32_t len)
+**`int vhalFlashWrite(void *addr,uint8_t *data,uint32_t len)`**
 
 Write ```data``` starting at ```addr``` for ```len``` bytes. In many architectures, for vhalFlashWrite to work, the sectors must be erased first.
 
 Return written bytes number.
 
 
-### vhalFlashAlignToSector(void* \```addr```)
+**`void *vhalFlashAlignToSector(void *add)`**
+
 If ```addr``` points to the start of a sector, return ```addr```. Otherwise the start of the next sector is returned.
 
 Return NULL on error.
@@ -1009,11 +1010,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTUwMjk5NTksMTA4ODM3NzM2MSwtMT
-Y4Mjg0NDI2MCwtOTM0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYx
-MDAxMCwtMTczNzY0NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwOD
-Y1LC0yMTQ0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIs
-MTEwOTY5NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNj
-U3MDk2LC0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1
-MDIsLTE0MDc4NTU2NDFdfQ==
+eyJoaXN0b3J5IjpbLTY0NDM2NjgyOCwxMDg4Mzc3MzYxLC0xNj
+gyODQ0MjYwLC05MzQ1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEw
+MDEwLC0xNzM3NjQ1Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4Nj
+UsLTIxNDQxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5Miwx
+MTA5Njk0MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NT
+cwOTYsLTE3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUw
+MiwtMTQwNzg1NTY0MV19
 -->
