@@ -488,7 +488,7 @@ Must be called before any function starting with *vhalHtm*.
 Return the peripheral index of the first available hardware timer. Return value is negative in case of error.
 
 
-int vhalHtmOneShot(uint32_t tm, uint32_t delay, htmFn fn, void* \```args```, uint32_t* blocking*)
+**`int vhalHtmOneShot(uint32_t tm,uint32_t delay,htmFn fn,void *args,uint32_t blocking)`**
 
 Given the peripheral index ```tm```, configure such timer to generate an interrupt after a time represented by ```delay``` (with `TIME_U`). On interrupt generation, ```fn``` is executed with arguments ```args```.
 
@@ -957,7 +957,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ1Nzg2OTgsMTk2MjA1MDg2NSwtMj
+eyJoaXN0b3J5IjpbLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMj
 E0NDExODQ0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2
 OTQzMTQsLTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5Ni
 wtMTc3NjY2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0x
