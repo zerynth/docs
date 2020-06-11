@@ -96,7 +96,7 @@ Extracts the time value from *`time`* converting it to microseconds.
 
 **`TIME_IS_ZERO(time)`**
 
-Evaluates to true if *time* is zero in the corresponding time unit
+Evaluates to true if *time* is zero in the corresponding time unit.
 
 
 **`VTIME_IMMEDIATE`**
@@ -122,12 +122,12 @@ Lowest possible thread priority.
 
 **`VOS_PRIO_LOWER`**
 
-This priority is greater than all preceding thread priorities
+This priority is greater than all preceding thread priorities.
 
 
 **`VOS_PRIO_LOW`**
 
-This priority is greater than all preceding thread priorities
+This priority is greater than all preceding thread priorities.
 
 
 **`VOS_PRIO_NORMAL`**
@@ -137,12 +137,12 @@ This priority is greater than all preceding thread priorities. It is the default
 
 **`VOS_PRIO_HIGH`**
 
-This priority is greater than all preceding thread priorities
+This priority is greater than all preceding thread priorities.
 
 
 **`VOS_PRIO_HIGHER`**
 
-This priority is greater than all preceding thread priorities
+This priority is greater than all preceding thread priorities.
 
 **`VOS_PRIO_HIGHEST`**
 
@@ -163,27 +163,26 @@ Status of a thread that is currently running.
 
 **`VTHREAD_INACTIVE`**
 
-Status of a thread that has finished its lifecycle
+Status of a thread that has finished its life cycle.
 
+**`VTHREAD_WAITING`**
 
-**`strong text`**VTHREAD_WAITING
-
-Status of a thread that is sleeping waiting for some event to occur
+Status of a thread that is sleeping waiting for some event to occur.
 
 ## Return values
 
 
-VRES_OK
+**`VRES_OK`**
 
 If returned, the function execution encountered no problems.
 
 
-VRES_TIMEOUT
+**`VRES_TIMEOUT`**
 
 If returned, the function exited with a timeout condition.
 
 
-VRES_RESET
+**`VRES_RESET`**
 
 If returned, the function exited with a reset condition.
 
@@ -437,6 +436,6 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjQzOTIxMSwtNjM4MDM0NDcxLDEzMT
-AzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMz
+M1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
 -->
