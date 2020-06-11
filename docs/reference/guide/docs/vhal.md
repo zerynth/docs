@@ -694,9 +694,9 @@ Start reading from *i2c* (from configured *addr*). Execution ends as soon as one
 Return 0 on success.
 
 
-**`int  vhalI2CTransmit(uint32_t i2c,uint8_t*tx,uint32_t txlen,uint8_t rx,uint32_t rxlen,uint32_t timeout)`**
+**`int  vhalI2CTransmit(uint32_t i2c,uint8_t* tx,uint32_t txlen,uint8_t *rx,uint32_t rxlen,uint32_t timeout)`**
 
-Execute a two steps communication. First, ```txlen``` bytes from ```tx``` are written to the bus; second, ```rxlen``` bytes are read from the bus to ```rx```.
+Execute a two steps communication. First, *txlen* bytes from *tx* are written to the bus; second, *rxlen* bytes are read from the bus to *rx*.
 
 Execution ends as soon as one of the following conditions verifies:
 
@@ -707,7 +707,7 @@ Execution ends as soon as one of the following conditions verifies:
 * an error occurs on the bus
 
 
-* the bus is inactive for a time equal to ```timeout```
+* the bus is inactive for a time equal to *timeout*
 
 Return 0 on success.
 
@@ -986,7 +986,7 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyOTcwNTIwMCwtMTY4Mjg0NDI2MCwtOT
+eyJoaXN0b3J5IjpbMTMyODM3MzcyMiwtMTY4Mjg0NDI2MCwtOT
 M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
 NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
 QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
