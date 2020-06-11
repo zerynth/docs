@@ -20,17 +20,19 @@ The inner workings of the Zerynth VM are complex but can be reduced to a few com
 
 The Zerynth VM has been developed with the goal of making Python usable in the IoT world. To do so some features of Python have been discarded because they were too resource intensive, while non-Python features have been introduced because they were more functional in the embedded setting. Here is a non comprehensive list: 
 
-    * Python Object size has been reduced as much as possible:
+ 
+
+   * Python Object size has been reduced as much as possible:
 
         * integers are signed and 31 bits wide, so that they can be represented with 4 bytes without additional overhead. 
-        * garbage collectore overhead has been brought down to 8 bytes per object (and there is still space for optimization)
+        * garbage collector overhead has been brought down to 8 bytes per object (and there is still space for optimization)
         * names are not saved as strings in the bytecode; they are converted to 16 bits integers to occupy much less space. This apparently minor change leads to a series of important consequences. First of all, Zerynth becomes a less "dynamic" language with respect to Python, since introspection is not allowed. However on the pro side, Zerynth scripts can be statically analyzed to remove unused bytecode greatly reducing memory usage. Another important consequence is that *setattr* and *getattr* can not be used with non constant arguments.
         * sequences and dictionaries can have at most 65536 elements.
         * exceptions have been transformed from full fledged classes to a name organized in an inheritance tree. So an exception can't have methods, but it is faster to raise and to handle and it just takes 4 bytes of memory.
 
-    * Compilation has been moved outside the language; by removing the compile() and eval() builtins the VM shrinked greatly in size.
+    * Compilation has been moved outside the language; by removing the compile() and eval() builtin the VM shrieked greatly in size.
     * Not so often used Python features have been removed. Closures, generators and decorators will be added in future updates in a modular way.
-    * True multithreading with priorities has been introduced. CPython implementations use green-threads to emulate multithreaded environments without relying on any native OS capabilities, and they are managed in user space instead of kernel space, enabling them to work in environments that do not have native thread support. In Zerynth each thread is a RTOS thread with its own memory and priority. Because of the GIL, only one Zerynth thread can execute bytecode in a time quantum, but it is possible to have more than one non-Python thread running in parallel. For example, a complex driver can be structured as a VOSAL thread written in C to control hardware, with any number of Zerynth threads running bytecode.
+    * True multi-threading with priorities has been introduced. CPython implementations use green-threads to emulate multithreaded environments without relying on any native OS capabilities, and they are managed in user space instead of kernel space, enabling them to work in environments that do not have native thread support. In Zerynth each thread is a RTOS thread with its own memory and priority. Because of the GIL, only one Zerynth thread can execute bytecode in a time quantum, but it is possible to have more than one non-Python thread running in parallel. For example, a complex driver can be structured as a VOSAL thread written in C to control hardware, with any number of Zerynth threads running bytecode.
     * New data structures have been introduced like shorts and shortarray to hold sequences of 16 bits integers. Bigints and fixed point math are in development.
 
 
@@ -38,5 +40,5 @@ The Zerynth VM has been developed with the goal of making Python usable in the I
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxNTI4NjM2XX0=
+eyJoaXN0b3J5IjpbLTM4NDYwNzQ5Niw1NjE1Mjg2MzZdfQ==
 -->
