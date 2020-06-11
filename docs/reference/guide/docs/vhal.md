@@ -839,14 +839,14 @@ Unselect the SPI peripheral connected to *nss*.
 
 Start a SPI communication on *spi*, exchanging a number of data frames equal to *blocks*. Size of data frame is configured with SPI_BITS macros.
 
-Data is exchanged synchronously; bytes in *tosend* are written to MOSI while bytes incoming on MISO are stored in *toread.* If ```toread``` is NULL, incoming bytes are ignored (pure write). If ```tosend``` is NULL, nothing is written (pure read). If both ```toread``` and ```tosend``` are NULL, bytes on the bus are skipped.
+Data is exchanged synchronously; bytes in *tosend* are written to MOSI while bytes incoming on MISO are stored in *toread.* If *toread* is NULL, incoming bytes are ignored (pure write). If *tosend* is NULL, nothing is written (pure read). If both *toread* and *tosend* are NULL, bytes on the bus are skipped.
 
 Return 0 on success.
 
 
 **`int vhalSpiDone(uint32_t spi)`**
 
-Deactivate ```spi```.
+Deactivate *spi.*
 
 ### Macros
 
@@ -1001,11 +1001,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1Mjg5NDYxLC0xNjgyODQ0MjYwLC05Mz
-Q1NDc3NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1
-Njk0LC0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0ND
-IsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04
-NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2Nj
-Y2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQwNzg1NTY0
-MSwtMTU5NDg3NzU5M119
+eyJoaXN0b3J5IjpbMTA4ODM3NzM2MSwtMTY4Mjg0NDI2MCwtOT
+M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
+NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
+QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
+ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
+Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
+NDEsLTE1OTQ4Nzc1OTNdfQ==
 -->
