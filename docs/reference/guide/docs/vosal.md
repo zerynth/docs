@@ -5,8 +5,8 @@ The Zerynth VM uses a common API to create and manage threads and synchronizatio
 ## Types
 
 
-**`### VThread`**
-()
+**`VThread`**
+
 VThread is defined as a pointer to a region of memory containing a thread representation. In order to be as abstract as possible the actual type of VThread is void\*. Values of type VThread must be managed only by calling vosal functions starting with **```vosTh**```.
 
 
@@ -456,7 +456,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMT
-I3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3
-MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbMzg1OTkxODQzLDE3OTcxNzUzOTcsLTE4NT
+A5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgz
+LC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3Mz
+QyMjEyNTBdfQ==
 -->
