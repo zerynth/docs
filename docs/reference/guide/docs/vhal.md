@@ -370,7 +370,7 @@ If *npulses* is positive, the function blocks the current thread until a number 
 
 If *npulses* is zero or less, pwm is activated and the function returns immediately.
 
-If *period* is 0 or ```pulse``` is 0 or ```period``` is less than ```pulse``` pwm is deactivated regardless of ```npulses```
+If *period* is 0 or *pulse* is 0 or *period* is less than *pulse* pwm is deactivated regardless of *npulses*.
 
 Return 0 on success. On failure return a negative integer.
 
@@ -397,23 +397,23 @@ To enable ICU functions the macro VHAL_ICU must be defined.
 ### Macros
 
 
-### ICU_TRIGGER_LOW()
+ICU_TRIGGER_LOW
 Set ICU trigger to the first transition from high to low
 
 
-### ICU_TRIGGER_HIGH()
+ICU_TRIGGER_HIGH
 Set ICU trigger to the first transition from low to high
 
 
-### ICU_TRIGGER_BOTH()
+ICU_TRIGGER_BOTH
 Set ICU trigger to the first transition
 
 
-### ICU_INPUT_PULLUP()
+ICU_INPUT_PULLUP
 Set pin used by ICU as input with pullup
 
 
-### ICU_INPUT_PULLDOWN()
+ICU_INPUT_PULLDOWN
 Set pin used by ICU as input with pulldown
 
 
@@ -944,10 +944,10 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5MDU4MTIzLDE5NjIwNTA4NjUsLTIxND
-QxMTg0NDIsLTEzODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0
-MzE0LC04NDUyNDU3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLT
-E3NzY2NjY2NzUsLTUxNjg3MTc0MSwtMjEzMTgwOTUwMiwtMTQw
-Nzg1NTY0MSwtMTU5NDg3NzU5MywtMTYxNzY3OTcxMCwtMTY5MT
-k0MjE3NV19
+eyJoaXN0b3J5IjpbMjA0NjA5MTgxOSwxOTYyMDUwODY1LC0yMT
+Q0MTE4NDQyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5
+NDMxNCwtODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC
+0xNzc2NjY2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0
+MDc4NTU2NDEsLTE1OTQ4Nzc1OTMsLTE2MTc2Nzk3MTAsLTE2OT
+E5NDIxNzVdfQ==
 -->
