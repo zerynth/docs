@@ -717,9 +717,9 @@ Return 0 on success.
 Implemented as a macro calling *vhalI2CTransmit(i2c,tx,txlen,NULL,0,timeout)*.
 
 
-int vhalI2CSetAddr(uint32_t i2c, uint16_t add*)
+**`int vhalI2CSetAddr(uint32_t i2c, uint16_t add)`**
 
-Change the peripheral address associated with ```i2c``` in `vhalI2CInit()` to ```addr```.
+Change the peripheral address associated with *i2c* in `vhalI2CInit()` to *addr*.
 
 ## SPI
 
@@ -746,10 +746,10 @@ typedef struct _vhal_spi_conf {
 The meaning of vhalSpiConf members is:
 
 
-* ```clock```: the number of Hz the SPI bus will be clocked to.
+* *clock*: the number of Hz the SPI bus will be clocked to.
 
 
-* ```miso```, ```mosi```, ```sclk```, ```nss```: virtual pins representing the four wires used by the bus. ```nss``` is also called *slave select* or *chip select* in datasheets.
+* *miso*, *mosi*, *sclk*, *nss*: virtual pins representing the four wires used by the bus. nss``` is also called *slave select* or *chip select* in datasheets.
 
 
 * ```mode```: configuration parameters for polarity and phase
@@ -986,11 +986,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYwNjA3ODIsLTE2ODI4NDQyNjAsLTkzND
-U0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2
-OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0Mi
-wtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0
-NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2Nj
-Y3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQx
-LC0xNTk0ODc3NTkzXX0=
+eyJoaXN0b3J5IjpbLTE0Mjg4MDMwOTAsLTE2ODI4NDQyNjAsLT
+kzNDU0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2
+NDU2OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExOD
+Q0MiwtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQs
+LTg0NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3Nj
+Y2NjY3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1
+NjQxLC0xNTk0ODc3NTkzXX0=
 -->
