@@ -805,7 +805,7 @@ Data is transferred 32 bits at time.
 
 **`int vhalInitSPI(void *data)`**
 
-Must be called before any function starting with ```vhalSpi```.
+Must be called before any function starting with *vhalSpi.*
 
 
 **`int vhalSpiInit(uint32_t spi,vhalSpiConf *conf)`**
@@ -830,12 +830,12 @@ Unlock the SPI bus. To be used when multiple threads share the same bus.
 Select the SPI peripheral connected to ```nss```.
 
 
-int vhalSpiUnselect(uint32_t spi)
+**`int vhalSpiUnselect(uint32_t spi)`**
 
 Unselect the SPI peripheral connected to ```nss```.
 
 
-int vhalSpiExchange(uint32_t spi,void tosend,void toread,uint32_t blocks)
+**`int vhalSpiExchange(uint32_t spi,void *tosend,void *toread,uint32_t blocks)`**
 
 Start a SPI communication on ```spi```, exchanging a number of data frames equal to ```blocks```. Size of data frame is configured with SPI_BITS macros.
 
@@ -844,7 +844,8 @@ Data is exchanged synchronously; bytes in ```tosend``` are written to MOSI while
 Return 0 on success.
 
 
-### vhalSpiDone(uint32_t* spi*)
+**`int vhalSpiDone(uint32_t spi)`**
+
 Deactivate ```spi```.
 
 ### Macros
@@ -1000,11 +1001,11 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDA1NzMyOSwtMTY4Mjg0NDI2MCwtOT
-M0NTQ3NzUwLC0zMTA2MTQwMDIsMTU3NDYxMDAxMCwtMTczNzY0
-NTY5NCwtMjEzNzM1OTY1MiwxOTYyMDUwODY1LC0yMTQ0MTE4ND
-QyLC0xMzgwNzA3NjA0LC00NDcyOTM5OTIsMTEwOTY5NDMxNCwt
-ODQ1MjQ1NzU5LDkzNDEwOTExMSwxNzkzNjU3MDk2LC0xNzc2Nj
-Y2Njc1LC01MTY4NzE3NDEsLTIxMzE4MDk1MDIsLTE0MDc4NTU2
-NDEsLTE1OTQ4Nzc1OTNdfQ==
+eyJoaXN0b3J5IjpbNTE3NjUwNjksLTE2ODI4NDQyNjAsLTkzND
+U0Nzc1MCwtMzEwNjE0MDAyLDE1NzQ2MTAwMTAsLTE3Mzc2NDU2
+OTQsLTIxMzczNTk2NTIsMTk2MjA1MDg2NSwtMjE0NDExODQ0Mi
+wtMTM4MDcwNzYwNCwtNDQ3MjkzOTkyLDExMDk2OTQzMTQsLTg0
+NTI0NTc1OSw5MzQxMDkxMTEsMTc5MzY1NzA5NiwtMTc3NjY2Nj
+Y3NSwtNTE2ODcxNzQxLC0yMTMxODA5NTAyLC0xNDA3ODU1NjQx
+LC0xNTk0ODc3NTkzXX0=
 -->
