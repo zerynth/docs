@@ -10,23 +10,23 @@ The Zerynth VM uses a common API to create and manage threads and synchronizatio
 VThread is defined as a pointer to a region of memory containing a thread representation. In order to be as abstract as possible the actual type of VThread is void\*. Values of type VThread must be managed only by calling vosal functions starting with **```vosTh**```.
 
 
-**`### VSemaphore`**
-()
+**`VSemaphore`**
+
 VSemaphore is defined as a pointer to a region of memory containing a semaphore representation. In order to be as abstract as possible the actual type of VSemaphore is void\*. Values of type VSemaphore must be managed only by calling vosal functions starting with **```vosSem**```.
 
 
-**`### VSysTimer`**
-()
+**`VSysTimer`**
+
 VSysTimer is defined as a pointer to a region of memory containing a rtos timer representation. In order to be as abstract as possible the actual type of VSysTimer is void\*. Values of type VSysTimer must be managed only by calling vosal functions starting with **```vosTimer**```.
 
 
-**`### VMailBox`**
-()
+**`VMailBox`**
+
 VMailBox is defined as a pointer to a region of memory containing a rtos mailbox representation. In order to be as abstract as possible the actual type of VMailBox is void\*. Values of type VMailBox must be managed only by calling vosal function starting with **```vosMBox**```. Mailboxes are an optional feature and can be disabled when compiling a VM.
 
 
-**`### VFifo`**
-()
+**`VFifo`**
+
 VFifo is defined as a pointer to a region of memory containing a rtos fifo. In order to be as abstract as possible the actual type of VFifo is void\*. Values of type VFifo must be managed only by calling vosal function starting with **```vosFifo**```. Fifos are an optional feature and can be disabled when compiling a VM.
 
 **`typedef void(
@@ -456,7 +456,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg1OTkxODQzLDE3OTcxNzUzOTcsLTE4NT
+eyJoaXN0b3J5IjpbODM4NjY3NDkxLDE3OTcxNzUzOTcsLTE4NT
 A5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgz
 LC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3Mz
 QyMjEyNTBdfQ==
