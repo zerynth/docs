@@ -430,11 +430,11 @@ Returns the amount of microseconds elapsed since *tm* creation or last reset.
 
 **`unit32_t vosTimerOneShot(VSysTimer tm,uint32_t time,vsystimer_fn fn,void *arg)`**
 
-Configure the timer *tm* such that after *time* the function *fn* is execute exactly once as *fn(*arg) inside an ISR. Must be called inside a system lock.
+Configure the timer *tm* such that after *time* the function *fn* is execute exactly once as fn*(*arg) inside an ISR. Must be called inside a system lock.
 
 **`unit32_t vosTimerRecurrent(VSysTimer tm,uint32_t time,vsystimer_fn fn, void *arg)`**
 
-Configure the timer ```tm``` such that the function ```fn``` is execute periodically with period equal to ```time```, as *fn(arg)* inside an ISR. Must be called inside a system lock.
+Configure the timer ```tm``` such that the function ```fn``` is execute periodically with period equal to ```time```, as fn*(*arg) inside an ISR. Must be called inside a system lock.
 
 
 **`void vosTimerReset(VSysTimer tm)`**
@@ -482,10 +482,10 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NjkyOTg3NywtMzM2NjUzMjI5LC04OT
-QxNzM5MjcsNTk4NTAxNjEzLDgyNjM1MTc3LDE0NTQxMDY0Mzcs
-LTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NT
-A5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgz
-LC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3Mz
-QyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbOTUwMTk2NjQ1LC0zMzY2NTMyMjksLTg5ND
+E3MzkyNyw1OTg1MDE2MTMsODI2MzUxNzcsMTQ1NDEwNjQzNywt
+Njc3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MD
+k0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMs
+LTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczND
+IyMTI1MF19
 -->
