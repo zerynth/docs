@@ -54,15 +54,15 @@ Contents:
     * [Numbers](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#numbers)
 	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id1)
     * [Bool & None](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#bool-none)
-    * Sequences
-	    * Macros
-	    * Functions
-    * Dictionaries and Sets
-	    * Macros
-	    * Functions
+    * [Sequences](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#sequences)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id2)
+	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id3)
+    * [Dictionaries and Sets](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#dictionaries-and-sets)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id4)
+	    * Functions[enter link description here](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id5)
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzIyNTE1ODQsMTg5ODcwMTQwMiwtOT
-YzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbMTg5MTM3Nzk0OCwxODk4NzAxNDAyLC05Nj
+MzOTAzMF19
 -->
