@@ -5,7 +5,7 @@ The following are a list of examples for lib.adafruit.bluefruit.
 ## Serial over BLE
 
 
-A simple example to extablish a serial connection over BLE from your board to a smartphone.
+A simple example to establish a serial connection over BLE from your board to a smartphone.
 
 
 ```main.py```
@@ -63,8 +63,7 @@ except Exception as e:
 ## BLE Heart Rate Monitor
 
 
-A simple example to set up the Bluefruit with custom services.
-The example is configured to work with a Bluefruit shield; change the chip select and irqpin if you are using a breakout.
+A simple example to set up the Bluefruit with custom services. The example is configured to work with a Bluefruit shield; change the chip select and irqpin if you are using a breakout.
 
 
 ```main.py```
@@ -126,5 +125,5 @@ except Exception as e:
     print(e)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDExMTYxMTJdfQ==
+eyJoaXN0b3J5IjpbMjU0MTI3Mzc5XX0=
 -->
