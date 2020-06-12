@@ -419,16 +419,16 @@ Returns the number of free slots in *mb*. Must be called in a system lock.
 Creates an inactive system timer.
 
 
-unit64_t vosTimerReadMillis(VSysTimer*  tm*)
+**`unit64_t vosTimerReadMillis(VSysTimer tm)`**
 
 Returns the amount of milliseconds elapsed since ```tm``` creation or last reset.
 
-unit32_t vosTimerReadMicros(VSysTimer*  tm*)
+**`unit32_t vosTimerReadMicros(VSysTimer tm)`**
 
 Returns the amount of microseconds elapsed since ```tm``` creation or last reset.
 
 
-unit32_t vosTimerOneShot(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
+**`unit32_t vosTimerOneShot(VSysTimer tm,uint32_t time,vsystimer_fn fn, void *arg)`**
 
 Configure the timer ```tm``` such that after ```time``` the function ```fn``` is execute exactly once as *fn\*(\```arg```) inside an ISR. Must be called inside a system lock.
 
@@ -482,9 +482,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDkyMzgzLC04OTQxNzM5MjcsNTk4NT
-AxNjEzLDgyNjM1MTc3LDE0NTQxMDY0MzcsLTY3NzQ1MjE0Nywx
-OTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNz
-YwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEs
-MTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbMTM5NTUyMTA5NywtODk0MTczOTI3LDU5OD
+UwMTYxMyw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcs
+MTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMj
+c2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcx
+LDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
