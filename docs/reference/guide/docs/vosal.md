@@ -327,33 +327,37 @@ Reset ```sem``` and free memory used by ```sem```.
 Signal the semaphore ```sem```. If any thread is waiting on the sempahore, one thread is woken up. If no threads are waiting, the semaphore value is increased by one.
 
 
-void  vosSemSignalCap(VSemaphore  sem*, uint32_t*  cap*)
+**`void  vosSemSignalCap(VSemaphore sem,uint32_t  cap)`**
 
 Signal the semaphore ```sem```. If any thread is waiting on the sempahore, one thread is woken up. If no threads are waiting, the semaphore value is increased by one only if it is less than ```cap```.
 
 
-void vosSemSignalIsr(VSemaphore*  sem*)
+**`void vosSemSignalIsr(VSemaphore sem)`**
 
 Same as `vosSemSignal()` but must be used only inside ISRs.
 
+**`int32_t vosSemWaitTimeout(VSemaphore sem, uint32_t  timeout)`**
 
-### vosSemWaitTimeout(VSemaphore*  sem*, uint32_t*  timeout*)
 Wait on semaphore ```sem```. If the value of ```sem``` is zero or less, the thread is suspended for a time equal to ```timeout``` (passed with `TIME_U`). If the value of ```sem``` is one or greater, it is decreased by one and the thread is not suspended. Return `VRES_OK` if the timeout is not triggered, `VRES_TIMEOUT` if it is triggered or `VRES_RESET` if `vosSemReset()` is called on ```sem```.
 
 
 ### vosSemWait(VSemaphore*  sem*)
+
 It is implemented as a macro, calling `voSemWaitTimeout()` with ```timeout``` equal to `VTIME_INFINITE`.
 
 
 ### vosSemGetValue(VSemaphore*  sem*)
+
 Return the current value of ```sem```. This function must be called inside a system lock.
 
 
 ### vosSemTryWait(VSemaphore*  sem*)
+
 Try to wait on semaphore ```sem```. Return `VRES_OK` if the semaphore has been taken, `VRES_TIMEOUT` or `VRES_RESET` if the semaphore can’t be taken without blocking.
 
 
 ### vosSemSignalWait(VSemaphore*  semS*, VSemaphore*  semW*)
+
 Atomically signal semaphore ```semS``` and wait with timeout on ```semW```. Return `VRES_OK` if the ```semW``` is taken or `VRES_RESET` if `vosSemReset()` is called on ```semW```.
 
 ## Mailboxes
@@ -456,9 +460,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njc3NTg2NTUsODI2MzUxNzcsMTQ1ND
-EwNjQzNywtNjc3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5
-NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsOD
-YyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4
-ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbMTk2NzEwOTgyNSw4MjYzNTE3NywxNDU0MT
+A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
+LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
+I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
+NCwxNzM0MjIxMjUwXX0=
 -->
