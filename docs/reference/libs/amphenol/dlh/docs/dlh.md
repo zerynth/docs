@@ -34,9 +34,8 @@ press, temp = d.get_values(unit=dlh.UNIT_PASCAL)
 ```
 
 
-**`get_values()`**
 
-!!!abstract "`#!py3 get_values(mode=MODE_SINGLE, unit=UNIT_INH20)`"
+**`get_values(mode=MODE_SINGLE, unit=UNIT_INH20)`**
 
 Return a 2-element tuple containing current pressure and temperature values.
 The acquisition mode can be specified with one of:
@@ -67,6 +66,5 @@ The unit of measure of pressure can be specified in:
 
 * `UNIT_PASCAL`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODAyMDIzNzMsLTE4NDI1NTI4OTJdfQ
-==
+eyJoaXN0b3J5IjpbMTE1Mzk4MjY5OCwtMTg0MjU1Mjg5Ml19
 -->
