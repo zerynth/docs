@@ -407,7 +407,7 @@ Same as `vosMBoxFetchTimeout()` but with infinite timeout and can be used only i
 Returns the number of messages in ```mb```. Must be called in a system lock.
 
 
-int vosMBoxFreeSlots(VMailBox mb)
+**`int vosMBoxFreeSlots(VMailBox mb)`**
 
 Returns the number of free slots in ```mb```. Must be called in a system lock.
 
@@ -469,9 +469,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjk0MTM2ODksLTg5NDE3MzkyNyw1OT
-g1MDE2MTMsODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3
-LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMT
-I3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3
-MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbMTQ4NDA5MTkyNywtODk0MTczOTI3LDU5OD
+UwMTYxMyw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcs
+MTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMj
+c2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcx
+LDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
