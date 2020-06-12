@@ -353,12 +353,12 @@ Return the current value of *sem*. This function must be called inside a system 
 
 **`int32_t vosSemTryWait(VSemaphore sem)`**
 
-Try to wait on semaphore sem. Return `VRES_OK` if the semaphore has been taken, `VRES_TIMEOUT` or `VRES_RESET` if the semaphore can’t be taken without blocking.
+Try to wait on semaphore *sem*. Return `VRES_OK` if the semaphore has been taken, `VRES_TIMEOUT` or `VRES_RESET` if the semaphore can’t be taken without blocking.
 
 
 **`int32_t vosSemSignalWait(VSemaphore semS,VSemaphore semW)`**
 
-Atomically signal semaphore ```semS``` and wait with timeout on ```semW```. Return `VRES_OK` if the ```semW``` is taken or `VRES_RESET` if `vosSemReset()` is called on ```semW```.
+Atomically signal semaphore *semS* and wait with timeout on *semW.* Return `VRES_OK` if the *semW* is taken or `VRES_RESET` if `vosSemReset()` is called on *semW*.
 
 ## Mailboxes
 
@@ -460,7 +460,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDM0NjA4MSw4MjYzNTE3NywxNDU0MT
+eyJoaXN0b3J5IjpbLTkzOTcwNDI3OSw4MjYzNTE3NywxNDU0MT
 A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
 LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
 I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
