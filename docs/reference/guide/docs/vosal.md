@@ -239,7 +239,7 @@ Soft reset the microcontroller.
 
 Create a VThread with a free workspace memory of *size* bytes. Actual memory usage is greater than *size* of an amount dependent on the underlying RTOS data structures. *prio* is the starting priority of the thread. The function run inside the thread is *fn* to which a single argument *arg* is passed. Some *data* can be associated to the created thread.
 
-After creation, the thread is not started. A call to `vosThResume()` is necessary to start the execution of ```fn```.
+After creation, the thread is not started. A call to `vosThResume()` is necessary to start the execution of *fn*.
 
 
 ### vosThDestroy(VThread*  th*)
@@ -445,7 +445,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODMwNTUxMywxNDU0MTA2NDM3LC02Nz
+eyJoaXN0b3J5IjpbMTkwODc5OTQ0NywxNDU0MTA2NDM3LC02Nz
 c0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0
 NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNj
 M4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIx
