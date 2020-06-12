@@ -365,16 +365,16 @@ Atomically signal semaphore *semS* and wait with timeout on *semW.* Return `VRES
 
 **`vMailBox vosMBoxCreate(int32_t n)`**
 
-Creates an empty VMailBox with a size of ```n``` elements.
+Creates an empty VMailBox with a size of *n* elements.
 
 
 **`vMailBox vosMBoxDestroy(VMailBox mb)`**
 
-Reset ```mb``` and free memory used by ```mb```.
+Reset *mb* and free memory used by *mb*.
 
 **`int  vosMBoxPostTimeout(VMailBox mb,void**  msg, uint32_t timeout)`**
 
-Try to insert message ```msg``` in ```mb```. If ```mb``` is full, the thread is suspended on ```mb``` for a time less than or equal to ```timeout``` (passed with `TIME_U`). If ```mb``` has at least one free slot, ```msg``` is inserted in ```mb``` and the thread is not suspended. Return one of the VRES macros.
+Try to insert message *msg* in *mb*. If *mb* is full, the thread is suspended on *mb* for a time less than or equal to *timeout* (passed with `TIME_U`). If *mb* has at least one free slot, ```msg``` is inserted in ```mb``` and the thread is not suspended. Return one of the VRES macros.
 
 
 **`int vosMBoxFetchTimeout(VMailBox mb,void* msgp,uint32_t timeout)`**
@@ -469,9 +469,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDA5MTkyNywtODk0MTczOTI3LDU5OD
-UwMTYxMyw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcs
-MTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMj
-c2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcx
-LDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbLTEzNTAxOTcyNDUsLTg5NDE3MzkyNyw1OT
+g1MDE2MTMsODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3
+LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMT
+I3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3
+MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
 -->
