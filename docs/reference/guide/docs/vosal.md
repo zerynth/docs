@@ -95,7 +95,7 @@ Extracts the time value from *time* converting it to microseconds.
 
 **`TIME_IS_ZERO(time)`**
 
-Evaluates to true if *```time*``` is zero in the corresponding time unit.
+Evaluates to true if *time* is zero in the corresponding time unit.
 
 
 **`VTIME_IMMEDIATE`**
@@ -157,8 +157,8 @@ This priority is greater than all preceding thread priorities.
 Status of a thread that has been created but not yet run.
 
 
-**`### VTHREAD_RUNNING`**
-()
+**`VTHREAD_RUNNING`**
+
 Status of a thread that is currently running.
 
 
@@ -481,7 +481,7 @@ Get current flag value for selected event.
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTA1NjcyMywtMjQ0NzY5NTYzLDk1MD
+eyJoaXN0b3J5IjpbMTI0MTE5Mjg0OSwtMjQ0NzY5NTYzLDk1MD
 E5NjY0NSwtMzM2NjUzMjI5LC04OTQxNzM5MjcsNTk4NTAxNjEz
 LDgyNjM1MTc3LDE0NTQxMDY0MzcsLTY3NzQ1MjE0NywxOTE5Nj
 cyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNzYwNTEz
