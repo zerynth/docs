@@ -221,11 +221,11 @@ Must be called when entering an ISR. Depending on the underlyng RTOS and archite
 Must be called when exiting an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
-**`vos_irq_handler vosInstallHandler(uint32_t size,int32_t prio,void *fn,void *arg,void *data)`**
+**`vos_irq_handler vosInstallHandler(int32_t hpos,vos_irq handler fn)`**
 
 Install a new ISR  *fn*  at index  *hpos*  in the interrupt table. Previous ISR is returned.
 
-The type vos_irq_handler is:
+    typedef void (*vos_irq_handler)(void)
 
 **`vos_irq_handler vosInstallHandler(uint32_t size,int32_t prio,void *fn,void *arg,void *data)`**
 
@@ -452,9 +452,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4ODI5MzQyMywxNDU0MTA2NDM3LC02Nz
-c0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0
-NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNj
-M4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIx
-MjUwXX0=
+eyJoaXN0b3J5IjpbODE1NTU1MjAxLDE0NTQxMDY0MzcsLTY3Nz
+Q1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0
+OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02Mz
+gwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEy
+NTBdfQ==
 -->
