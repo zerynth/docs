@@ -10,9 +10,9 @@ Contents:
 * [Operative System Abstraction Layer](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html)
     * [Types](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#types)
     * [Variables](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#variables)
-    * Macros
-	    * Time Macros
-	    * Priority Macros
+    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#macros)
+	    * [Time Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#time-macros)
+	    * [Priority Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#priority-macros)
 	    * Thread Status
     * Return values
     * System and Thread functions
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTY2ODMzOCwxODk4NzAxNDAyLC05Nj
-MzOTAzMF19
+eyJoaXN0b3J5IjpbNTM0NTc5NDE3LDE4OTg3MDE0MDIsLTk2Mz
+M5MDMwXX0=
 -->
