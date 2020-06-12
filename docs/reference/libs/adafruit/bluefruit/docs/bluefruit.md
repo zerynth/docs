@@ -84,10 +84,7 @@ Refer to [this](https://www.bluetooth.org/en-us/specification/assigned-numbers/g
 Returns True on success.
 
 
----
-#### `#!py3 gap_is_connected()`
-
-!!!abstract "`#!py3 gap_is_connected()`"
+**`gap_is_connected()`**
 
 Returns 1 if Bluefruit hardware is connected to a client, 0 if not connected. Returns None on failure.
 
@@ -202,5 +199,5 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1OTA1NTAwXX0=
+eyJoaXN0b3J5IjpbMTU3NjExNDkxNiwzMDU5MDU1MDBdfQ==
 -->
