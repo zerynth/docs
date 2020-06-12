@@ -20,22 +20,14 @@ Manually initializes the Bluefruit peripheral by activating the following commun
 The SPI driver is started and the Bluefruit initialization sequence is sent.
 
 
----
-#### `#!py3 hard_reset()`
-
-!!!abstract "`#!py3 hard_reset()`"
-
-Performs a factory reset. Returns True on success.
-
-
-
 **`hard_reset()`**
 
 Performs a software reset. Returns True on success.
 
+Performs a software reset. Returns True on success.
 
 
-reset()
+**`reset()`**
 
 If *name* is None, returns the current Bluefruit device name. Otherwise changes the current name to *name*.
 Returns True on success.
@@ -178,6 +170,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0Mzc4Mzg1OSwxODU3NTg5NzMsMzA1OT
-A1NTAwXX0=
+eyJoaXN0b3J5IjpbLTgzODIxNDY2LDE4NTc1ODk3MywzMDU5MD
+U1MDBdfQ==
 -->
