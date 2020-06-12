@@ -225,17 +225,9 @@ Must be called when exiting an ISR. Depending on the underlyng RTOS and architec
 
 Install a new ISR  *fn*  at index  *hpos*  in the interrupt table. Previous ISR is returned.
 
-    typedef void (*vos_irq_handler)(void)
-
-**`vos_irq_handler vosInstallHandler(uint32_t size,int32_t prio,void *fn,void *arg,void *data)`**
-
-Install a new ISR *fn*```fn``` at index *```hpos*``` in the interrupt table. Previous ISR is returned.
-
 The type vos_irq_handler is:
 
-```
-typedef void (*vos_irq_handler)(void)
-```
+    typedef void (*vos_irq_handler)(void)
 
 
 **`void### vosSysReset(void)`**
@@ -243,7 +235,8 @@ typedef void (*vos_irq_handler)(void)
 Soft reset the microcontroller.
 
 
-### vosThCreate(uint32_t*  size*, int32_t*  prio*, void*  \```fn```, void*  \```arg```, void*  \```data```)
+**`vos_irq_handler vosInstallHandler(uint32_t size,int32_t prio,void *fn,void *arg,void *data)`**
+
 Create a VThread with a free workspace memory of ```size``` bytes. Actual memory usage is greater than ```size``` of an amount dependent on the underlying RTOS data structures. ```prio``` is the starting priority of the thread. The function run inside the thread is ```fn``` to which a single argument ```arg``` is passed. Some ```data``` can be associated to the created thread.
 
 After creation, the thread is not started. A call to `vosThResume()` is necessary to start the execution of ```fn```.
@@ -452,9 +445,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE1NTU1MjAxLDE0NTQxMDY0MzcsLTY3Nz
-Q1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0
-OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02Mz
-gwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEy
-NTBdfQ==
+eyJoaXN0b3J5IjpbLTE5NDQxMDY0OTAsMTQ1NDEwNjQzNywtNj
+c3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0
+NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLT
+YzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIy
+MTI1MF19
 -->
