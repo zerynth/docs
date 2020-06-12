@@ -28,11 +28,11 @@ Contents:
 	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id1)
 	    * [Types](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#types)
     * [DAC](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#dac)
-    * PWM
-    * ICU
-	    * Macros
-	    * Functions
-    * HTM
+    * [PWM](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#pwm)
+    * [ICU](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#icu)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id2)
+	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id3)
+    * [HTM](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#htm)
     * SERIAL
 	    * Macros
 	    * Functions
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0NTEyOTYzLDE4OTg3MDE0MDIsLTk2Mz
-M5MDMwXX0=
+eyJoaXN0b3J5IjpbLTE0Mzc4OTE5ODMsMTg5ODcwMTQwMiwtOT
+YzMzkwMzBdfQ==
 -->
