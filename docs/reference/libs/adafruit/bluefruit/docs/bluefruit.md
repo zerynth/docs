@@ -157,13 +157,10 @@ Returns None on failure.
 ## BLEStream class
 
 
----
-#### `#!py3 BLEStream()`
-
-!!!abstract "`#!py3 BLEStream(fifosize=1024)`"
+**`class BLEStream(fifosize=1024)`**
 
 This class implements a serial stream on the Bluefruit peripheral. The internal implementation uses
-a fifo buffer of ```fifosize``` bytes.
+a fifo buffer of *fifosize* bytes.
 
 The BLEStream is not automatically set as the global serial stream.
 
@@ -172,6 +169,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDUwNjA3MDcsMTg1NzU4OTczLDMwNT
-kwNTUwMF19
+eyJoaXN0b3J5IjpbLTYxMzEzODkyMSwtMTUwNTA2MDcwNywxOD
+U3NTg5NzMsMzA1OTA1NTAwXX0=
 -->
