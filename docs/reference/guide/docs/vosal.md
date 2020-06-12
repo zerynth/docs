@@ -466,25 +466,25 @@ Set the event flag.
 
 Clear the event flag.
 
-int_32 vosEventWait(VEvent  event, uint32_t  timeout)
+**`int32_t vosEventWait(VEvent event,uint32_t timeout)`**
 
-Wait for the event flag to be set. Return `VRES_OK` if the flag has been set, `VRES_TIMEOUT` if it has not been set in given timeout time,
-
-
-### vosEventGetFlag(VEvent event)
-
-Get current flag value for selected event,
+Wait for the event flag to be set. Return `VRES_OK` if the flag has been set, `VRES_TIMEOUT` if it has not been set in given timeout time.
 
 
-### vosEventDestroy(VEvent event)
+**`int32_t vosEventGetFlag(VEvent event)`**
+
+Get current flag value for selected event.
+
+
+**`void vosEventDestroy(VEvent event)`**
 
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0MjczNjU4LC0yNDQ3Njk1NjMsOTUwMT
-k2NjQ1LC0zMzY2NTMyMjksLTg5NDE3MzkyNyw1OTg1MDE2MTMs
-ODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3LDE5MTk2Nz
-IwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMs
-LTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMz
-M1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbLTUxNTA1NjcyMywtMjQ0NzY5NTYzLDk1MD
+E5NjY0NSwtMzM2NjUzMjI5LC04OTQxNzM5MjcsNTk4NTAxNjEz
+LDgyNjM1MTc3LDE0NTQxMDY0MzcsLTY3NzQ1MjE0NywxOTE5Nj
+cyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNzYwNTEz
+LC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEsMTMxMD
+MzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
 -->
