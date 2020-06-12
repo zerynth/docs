@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.ams.tsl2561
+The following are a list of examples for lib.ams.tsl2561.
 
 ## Read Ambient Light from TSL2561
 
@@ -54,3 +54,6 @@ try:
 except Exception as e:
     print("Error2: ",e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc2MDkyMjI0MV19
+-->
