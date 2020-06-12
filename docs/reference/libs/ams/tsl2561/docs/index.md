@@ -1,8 +1,12 @@
 # AMS TSL2561
 
-The TSL2561 is a light-to-digital converter that transforms light intensity to a digital signal output capable of direct I²C interface. This device combines one broadband photodiode (visible plus infrared) and one infrared-responding photodiode on a single CMOS integrated circuit capable of providing a near-photopic response over an effective 20-bit dynamic range (16-bit resolution). Two integrating ADCs convert the photodiode currents to a digital output that represents the irradiance measured on each channel.
+The TSL2561 is a light-to-digital converter that transforms light intensity to a digital signal output capable of direct I²C interface. This device combines one broadband photodiode (visible plus infrared) and one infrared-responding photodiode on a single CMOS integrated circuit capable of providing a near-photopic response over an effective 20-bit dynamic range 
+(16-bit resolution). 
+Two integrating ADCs convert the photodiode currents to a digital output that represents the 
+irradiance measured on each channel.
 
-The TSL2561 is designed particularly for display panels (LCD, OLED, etc.) with the purpose of extending battery life and providing optimum viewing in several lighting conditions, but also for other applications. Some examples are street light control, security lighting, sunlight harvesting, machine vision, keyboard illumination control based upon ambient lighting conditions, and automotive instrumentation clusters.
+The TSL2561 is designed particularly for display panels (LCD, OLED, etc.) with the purpose of extending battery life and providing optimum viewing in several lighting conditions, but also for other applications. 
+Some examples are street light control, security lighting, sunlight harvesting, machine vision, keyboard illumination control based upon ambient lighting conditions, and automotive instrumentation clusters.
 
 More information at [AMS dedicated page](http://ams.com/eng/Products/Light-Sensors/Ambient-Light-Sensors/TSL2561/TSL2560-TSL2561-Datasheet)
 
@@ -39,5 +43,5 @@ Contents:
 
 * TSL2561 Module
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjU5MjM0OV19
+eyJoaXN0b3J5IjpbLTExNTc5MTUyMDcsMTAwNjU5MjM0OV19
 -->
