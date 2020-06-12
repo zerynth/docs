@@ -1,12 +1,12 @@
 # Virtual Machine
 
-The core of Zerynth is the Zerynth Virtual Machine. Zerynth VM has been developed from scratch with the goal of bringing Python to the embedded world with support for multi-thread and cross board compatibility. More info on Zerynth VM section.
+The core of Zerynth is the Zerynth Virtual Machine. Zerynth VM has been developed from scratch with the goal of bringing Python to the embedded world with support for multi-thread and cross board compatibility. More info on [Zerynth VM](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html#zerynthvm) section.
 
 Contents:
 
 
-* The Zerynth Virtual Machine
-    * Zerynth and Python
+* [The Zerynth Virtual Machine](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html)
+    * [Zerynth and Python](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html#zerynth-and-python)
 * Operative System Abstraction Layer
     * Types
     * Variables
@@ -63,5 +63,5 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTYwMTY3MywtOTYzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbMTg5ODcwMTQwMiwtOTYzMzkwMzBdfQ==
 -->
