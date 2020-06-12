@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.adafruit.bluefruit
+The following are a list of examples for lib.adafruit.bluefruit.
 
 ## Serial over BLE
 
@@ -125,3 +125,6 @@ try:
 except Exception as e:
     print(e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMDExMTYxMTJdfQ==
+-->
