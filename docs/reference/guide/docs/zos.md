@@ -42,13 +42,13 @@ Contents:
 	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id7)
 	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id8)
     * [NFO](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#nfo)
-    * FLASH
-    * RNG
-    * RTC
-    * Interrupts
-    * Error Codes
-* VM Interface
-    * PObject
+    * [FLASH](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#flash)
+    * [RNG](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#rng)
+    * [RTC](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#rtc)
+    * [Interrupts](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#interrupts)
+    * [Error Codes](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#error-codes)
+* [VM Interface](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html)
+    * [PObject](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#pobject)
 	    * Macros
 	    * Functions
     * Numbers
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxODQ1MzA0LDE4OTg3MDE0MDIsLTk2Mz
-M5MDMwXX0=
+eyJoaXN0b3J5IjpbLTg1MzQ2NDU2NiwxODk4NzAxNDAyLC05Nj
+MzOTAzMF19
 -->
