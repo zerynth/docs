@@ -49,11 +49,11 @@ Contents:
     * [Error Codes](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#error-codes)
 * [VM Interface](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html)
     * [PObject](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#pobject)
-	    * Macros
-	    * Functions
-    * Numbers
-	    * Functions
-    * Bool & None
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#macros)
+	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#functions)
+    * [Numbers](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#numbers)
+	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id1)
+    * [Bool & None](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#bool-none)
     * Sequences
 	    * Macros
 	    * Functions
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MzQ2NDU2NiwxODk4NzAxNDAyLC05Nj
-MzOTAzMF19
+eyJoaXN0b3J5IjpbLTE1MzIyNTE1ODQsMTg5ODcwMTQwMiwtOT
+YzMzkwMzBdfQ==
 -->
