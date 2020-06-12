@@ -24,17 +24,19 @@ The SPI driver is started and the Bluefruit initialization sequence is sent.
 
 Performs a software reset. Returns True on success.
 
-Performs a software reset. Returns True on success.
-
 
 **`reset()`**
+
+Performs a software reset. Returns True on success.
+
+**`gap_name(name=None)`**
 
 If *name* is None, returns the current Bluefruit device name. Otherwise changes the current name to *name*.
 Returns True on success.
 
+**`gap_adv(data)`**
 
 
-**`gap_name(name=None)`**
 
 Setup advertising data. Please refer to [this resource](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735&_ga=1.4683440.245686596.1452259520) for a list of possible values accepted by the BLE standard.
 
@@ -170,6 +172,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODIxNDY2LDE4NTc1ODk3MywzMDU5MD
-U1MDBdfQ==
+eyJoaXN0b3J5IjpbLTEyOTE0ODk2MTUsMTg1NzU4OTczLDMwNT
+kwNTUwMF19
 -->
