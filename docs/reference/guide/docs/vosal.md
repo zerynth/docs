@@ -308,18 +308,14 @@ Resume the thread *th*. *th* must be a thread just created (and never resumed be
 ## Semaphores
 
 
-### vosSemCreate(uint32_t*  n*)
+**`vSemaphore vosSemCreate(uint32_t n)`**
+
 Creates a VSemaphore with initial value ```n```
 
 
-### vosSemReset(VSemaphore*  sem*)
-Reset the semaphore ```sem```. Every thread waiting on ```sem``` is woken up and the semaphore reset signaled with 
+**`void vosSemReset(VSemaphore sem)`**
 
-```
-:macr:`VRES_RESET`
-```
-
-.
+Reset the semaphore ```sem```. Every thread waiting on ```sem``` is woken up and the semaphore reset signaled with VRES_RESET`
 
 
 ### vosSemDestroy(VSemaphore*  sem*)
@@ -457,9 +453,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5MzU0NDI3LDgyNjM1MTc3LDE0NTQxMD
-Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
-LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
-UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
-LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbLTk0NzE4OTc2OCw4MjYzNTE3NywxNDU0MT
+A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
+LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
+I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
+NCwxNzM0MjIxMjUwXX0=
 -->
