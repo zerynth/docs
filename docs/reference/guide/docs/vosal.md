@@ -356,7 +356,7 @@ Return the current value of ```sem```. This function must be called inside a sys
 Try to wait on semaphore ```sem```. Return `VRES_OK` if the semaphore has been taken, `VRES_TIMEOUT` or `VRES_RESET` if the semaphore can’t be taken without blocking.
 
 
-**`int32_t vosSemSignalWait(VSemaphore  semS, VSemaphore* semW)`**
+**`int32_t vosSemSignalWait(VSemaphore semS,VSemaphore semW)`**
 
 Atomically signal semaphore ```semS``` and wait with timeout on ```semW```. Return `VRES_OK` if the ```semW``` is taken or `VRES_RESET` if `vosSemReset()` is called on ```semW```.
 
@@ -460,7 +460,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjM3OTgwNjcsODI2MzUxNzcsMTQ1ND
+eyJoaXN0b3J5IjpbLTEwMzExODM2ODksODI2MzUxNzcsMTQ1ND
 EwNjQzNywtNjc3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5
 NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsOD
 YyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4
