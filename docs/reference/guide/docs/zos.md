@@ -33,10 +33,10 @@ Contents:
 	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id2)
 	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id3)
     * [HTM](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#htm)
-    * SERIAL
-	    * Macros
-	    * Functions
-    * I2C
+    * [SERIAL](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#serial)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id4)
+	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id5)
+    * [I2C](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#i2c)
     * SPI
 	    * Macros
 	    * Functions
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc4OTE5ODMsMTg5ODcwMTQwMiwtOT
-YzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbLTI2NzI0NTUzMiwxODk4NzAxNDAyLC05Nj
+MzOTAzMF19
 -->
