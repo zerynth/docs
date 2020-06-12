@@ -139,33 +139,24 @@ Returns the value of the characteristic identified by *handle* (as returned afte
 Returns None on failure.
 
 
-**addr()**
+**`addr()`**
 
 Returns the 48bit mac address of the device as an hex string. Returns None on failure.
 
 
----
-#### `#!py3 peer_addr()`
-
-!!!abstract "`#!py3 peer_addr()`"
+**`peer_addr()`**
 
 Returns the 48bit mac address of the client connected device as an hex string. Returns None on failure.
 
 
----
-#### `#!py3 addr()`
-
-!!!abstract "`#!py3 addr()`"
+**`addr()`**
 
 Returns the RSSI level id dBm. Returns None on failure.
 
 
----
-#### `#!py3 tx_power()`
+**`tx_power(dbm=None)`**
 
-!!!abstract "`#!py3 tx_power(dbm=None)`"
-
-If ```dbm``` is None, returns the current transmission power level. Otherwise sets the power level to ```dbm``` (in the range -40 to 4).
+If *`dbm`* is None, returns the current transmission power level. Otherwise sets the power level to *dbm* (in the range -40 to 4).
 
 Returns None on failure.
 
@@ -187,6 +178,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1ODQwMzkzLDE4NTc1ODk3MywzMDU5MD
-U1MDBdfQ==
+eyJoaXN0b3J5IjpbMTc0Mzc4Mzg1OSwxODU3NTg5NzMsMzA1OT
+A1NTAwXX0=
 -->
