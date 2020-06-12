@@ -338,22 +338,22 @@ Same as `vosSemSignal()` but must be used only inside ISRs.
 
 **`int32_t vosSemWaitTimeout(VSemaphore sem,uint32_t  timeout)`**
 
-Wait on semaphore ```sem```. If the value of ```sem``` is zero or less, the thread is suspended for a time equal to ```timeout``` (passed with `TIME_U`). If the value of ```sem``` is one or greater, it is decreased by one and the thread is not suspended. Return `VRES_OK` if the timeout is not triggered, `VRES_TIMEOUT` if it is triggered or `VRES_RESET` if `vosSemReset()` is called on ```sem```.
+Wait on semaphore *sem*. If the value of *sem* is zero or less, the thread is suspended for a time equal to *timeout* (passed with `TIME_U`). If the value of *sem* is one or greater, it is decreased by one and the thread is not suspended. Return `VRES_OK` if the timeout is not triggered, `VRES_TIMEOUT` if it is triggered or `VRES_RESET` if `vosSemReset()` is called on *sem*.
 
 
 **`int32_t vosSemWait(VSemaphore sem)`**
 
-It is implemented as a macro, calling `voSemWaitTimeout()` with ```timeout``` equal to `VTIME_INFINITE`.
+It is implemented as a macro, calling `voSemWaitTimeout()` with *timeout* equal to `VTIME_INFINITE`.
 
 
 **`int32_t vosSemGetValue(VSemaphore sem)`**
 
-Return the current value of ```sem```. This function must be called inside a system lock.
+Return the current value of *sem*. This function must be called inside a system lock.
 
 
 **`int32_t vosSemTryWait(VSemaphore sem)`**
 
-Try to wait on semaphore ```sem```. Return `VRES_OK` if the semaphore has been taken, `VRES_TIMEOUT` or `VRES_RESET` if the semaphore can’t be taken without blocking.
+Try to wait on semaphore sem. Return `VRES_OK` if the semaphore has been taken, `VRES_TIMEOUT` or `VRES_RESET` if the semaphore can’t be taken without blocking.
 
 
 **`int32_t vosSemSignalWait(VSemaphore semS,VSemaphore semW)`**
@@ -460,9 +460,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyMDkxMjk3LDgyNjM1MTc3LDE0NTQxMD
-Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
-LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
-UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
-LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbLTIwNDM0NjA4MSw4MjYzNTE3NywxNDU0MT
+A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
+LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
+I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
+NCwxNzM0MjIxMjUwXX0=
 -->
