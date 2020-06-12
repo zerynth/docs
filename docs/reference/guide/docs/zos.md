@@ -13,11 +13,11 @@ Contents:
     * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#macros)
 	    * [Time Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#time-macros)
 	    * [Priority Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#priority-macros)
-	    * Thread Status
-    * Return values
-    * System and Thread functions
-    * Semaphores
-    * Mailboxes
+	    * [Thread Status](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#thread-status)
+    * [Return values](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#return-values)
+    * [System and Thread functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#system-and-thread-functions)
+    * [Semaphores](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#semaphores)
+    * [Mailboxes](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#mailboxes)
     * System Timers
     * Events
 * Hardware Abstraction Layer
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM0NTc5NDE3LDE4OTg3MDE0MDIsLTk2Mz
-M5MDMwXX0=
+eyJoaXN0b3J5IjpbMjcxNjg2OSwxODk4NzAxNDAyLC05NjMzOT
+AzMF19
 -->
