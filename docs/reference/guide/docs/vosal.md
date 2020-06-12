@@ -247,12 +247,13 @@ After creation, the thread is not started. A call to `vosThResume()` is necessar
 Frees the memory associated to ```th```. Thread ```th``` must be terminated in order to call vosThDestroy, otherwise memory corruption ensues.
 
 
-vosThSetData(VThread  th, void *data)
+**`void vosThSetData(VThread  th,void *data)`**
 
 Attaches ```data``` to ```th```.
 
 
-### vosThGetData(VThread*  th*)
+**`void vosThGetData(VThread  th)`**
+
 Retrieves data attached to ```th```
 
 
@@ -447,9 +448,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjAzMDcyMjksMTQ1NDEwNjQzNywtNj
-c3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0
-NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLT
-YzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIy
-MTI1MF19
+eyJoaXN0b3J5IjpbNTUwNjIzNzQyLDE0NTQxMDY0MzcsLTY3Nz
+Q1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0
+OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02Mz
+gwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEy
+NTBdfQ==
 -->
