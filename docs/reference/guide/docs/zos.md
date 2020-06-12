@@ -18,10 +18,10 @@ Contents:
     * [System and Thread functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#system-and-thread-functions)
     * [Semaphores](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#semaphores)
     * [Mailboxes](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#mailboxes)
-    * System Timers
-    * Events
-* Hardware Abstraction Layer
-    * Pin Mapping
+    * [System Timers](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#system-timers)
+    * [Events](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#events)
+* [Hardware Abstraction Layer](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html)
+    * [Pin Mapping](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#pin-mapping)
     * Peripherals Mapping
 	    * GPIO
     * ADC
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcxNjg2OSwxODk4NzAxNDAyLC05NjMzOT
-AzMF19
+eyJoaXN0b3J5IjpbLTExMDIwMDEzMzMsMTg5ODcwMTQwMiwtOT
+YzMzkwMzBdfQ==
 -->
