@@ -37,11 +37,11 @@ Contents:
 	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id4)
 	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id5)
     * [I2C](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#i2c)
-    * SPI
-	    * Macros
-	    * Functions
-	    * Macros
-    * NFO
+    * [SPI](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#spi)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id6)
+	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id7)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id8)
+    * [NFO](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#nfo)
     * FLASH
     * RNG
     * RTC
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzI0NTUzMiwxODk4NzAxNDAyLC05Nj
-MzOTAzMF19
+eyJoaXN0b3J5IjpbNDkxODQ1MzA0LDE4OTg3MDE0MDIsLTk2Mz
+M5MDMwXX0=
 -->
