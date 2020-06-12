@@ -191,33 +191,32 @@ If returned, the function exited with a reset condition.
 ## System and Thread functions
 
 
-**`### vosSysLock(void)`**
+**`vosSysLock(void)`**
 
 Locks the system, usually by disabling interrupts. Thread scheduling is suspended and the following code is executed atomically. It can not be used inside ISRs.
 
 
-**`### vosSysUnlock(void)`**
+**`vosSysUnlock(void)`**
 
 Unlocks the system, usually by enabling interrupts. It is used together with `vosSysLock()` to protect small critical sections. It can not be used inside ISRs.
 
 
-**`### vosSysLockIsr(void)`**
+**`vosSysLockIsr(void)`**
 
 Same as `vosSysLock()`, but must be called only inside an ISR.
 
-**`
-### vosSysUnlockIsr(void)`**
+**`vosSysUnlockIsr(void)`**
 
 Same as `vosSysUnlock()`, but must be called only inside an ISR.
 
 
-**`### vosEnterIsr(void)`**
+**`vosEnterIsr(void)`**
 
 Must be called when entering an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
 
-**`### vosExitIsr(void)`**
+**`vosExitIsr(void)`**
 
 Must be called when exiting an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
@@ -447,8 +446,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NDEwNjQzNywtNjc3NDUyMTQ3LDE5MT
-k2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1
-MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMz
-EwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbMTg3ODcwOTgxNSwxNDU0MTA2NDM3LC02Nz
+c0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0
+NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNj
+M4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIx
+MjUwXX0=
 -->
