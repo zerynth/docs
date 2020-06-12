@@ -6,10 +6,6 @@ This module contains the Zerynth driver for Amphenol DLH pressure sensors series
 
 DLH Class
 
-
----
-
-
 ---
 #### `#!py3 DLH()`
 
@@ -79,3 +75,6 @@ The unit of measure of pressure can be specified in:
 
 
 * `UNIT_PASCAL`
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA0MDExNTExNl19
+-->
