@@ -82,31 +82,23 @@ Time values in VOSAL are represented as value plus time unit. This macro creates
 
 **`GET_TIME_UNIT(time)`**
 
-Extracts the time unit from *```time*.
+Extracts the time unit from *time* to *time*.
+
+**`GET_TIME_VALUE(time)`**
+
+Extracts the time value from *time* to *time*.
+
+**`GET_TIME_MICROS(time)`**
+
+Extracts the time value from *time* converting it to microseconds.
 
 
-**````
-
-
-### GET_TIME_VALUE(time)`**
-
-Extracts the time value from *```time*.
-
-
-**````
-
-
-### GET_TIME_MICROS(time)`**
-
-Extracts the time value from *```time`*`` converting it to microseconds.
-
-
-**`### TIME_IS_ZERO(time)`**
+**`TIME_IS_ZERO(time)`**
 
 Evaluates to true if *```time*``` is zero in the corresponding time unit.
 
 
-**`### VTIME_IMMEDIATE`**
+**VTIME_IMMEDIATE`**
 ()
 A unitless time value representing no time at all.
 
@@ -455,8 +447,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDIzNTMxMzgsMTkxOTY3MjAxMSwxNz
-k3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5
-Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMT
-c4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbODY3Mjk5Mzc0LDE5MTk2NzIwMTEsMTc5Nz
+E3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4
+ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3OD
+YwMjc4ODQsMTczNDIyMTI1MF19
 -->
