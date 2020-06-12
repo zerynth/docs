@@ -434,7 +434,7 @@ Configure the timer *tm* such that after *time* the function *fn* is execute exa
 
 **`unit32_t vosTimerRecurrent(VSysTimer tm,uint32_t time,vsystimer_fn fn, void *arg)`**
 
-Configure the timer tm``` such that the function ```fn``` is execute periodically with period equal to ```time```, as fn*(*arg) inside an ISR. Must be called inside a system lock.
+Configure the timer *tm* such that the function *fn* is execute periodically with period equal to *time*, as fn*(*arg) inside an ISR. Must be called inside a system lock.
 
 
 **`void vosTimerReset(VSysTimer tm)`**
@@ -482,7 +482,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTYzOTMwOSw5NTAxOTY2NDUsLTMzNj
+eyJoaXN0b3J5IjpbLTI0NDc2OTU2Myw5NTAxOTY2NDUsLTMzNj
 Y1MzIyOSwtODk0MTczOTI3LDU5ODUwMTYxMyw4MjYzNTE3Nywx
 NDU0MTA2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MT
 c1Mzk3LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4
