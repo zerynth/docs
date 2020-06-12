@@ -6,26 +6,13 @@ Contents:
 
 
 * The Zerynth Virtual Machine
-
-
     * Zerynth and Python
-
-
 * Operative System Abstraction Layer
-
-
     * Types
-
-
     * Variables
-
-
     * Macros
-
-
+	    * Time Macros
     * Return values
-
-
     * System and Thread functions
 
 
@@ -115,3 +102,6 @@ Contents:
 
     * Exceptions
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk2MzM5MDMwXX0=
+-->
