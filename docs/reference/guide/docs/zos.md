@@ -7,9 +7,9 @@ Contents:
 
 * [The Zerynth Virtual Machine](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html)
     * [Zerynth and Python](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html#zerynth-and-python)
-* Operative System Abstraction Layer
-    * Types
-    * Variables
+* [Operative System Abstraction Layer](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html)
+    * [Types](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#types)
+    * [Variables](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#variables)
     * Macros
 	    * Time Macros
 	    * Priority Macros
@@ -63,5 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODcwMTQwMiwtOTYzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbMTI3OTY2ODMzOCwxODk4NzAxNDAyLC05Nj
+MzOTAzMF19
 -->
