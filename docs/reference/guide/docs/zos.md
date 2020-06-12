@@ -25,20 +25,14 @@ Contents:
     * Peripherals Mapping
 	    * GPIO
     * ADC
-
-
+	    * Macros
+	    * Types
     * DAC
-
-
     * PWM
-
-
     * ICU
-
-
+	    * Macros
+	    * Functions
     * HTM
-
-
     * SERIAL
 
 
@@ -87,5 +81,5 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDI5ODk2MywtOTYzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbLTM1NTUxMDAyNSwtOTYzMzkwMzBdfQ==
 -->
