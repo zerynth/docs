@@ -310,12 +310,12 @@ Resume the thread *th*. *th* must be a thread just created (and never resumed be
 
 **`vSemaphore vosSemCreate(uint32_t n)`**
 
-Creates a VSemaphore with initial value ```n```
+Creates a VSemaphore with initial value *n*.
 
 
 **`void vosSemReset(VSemaphore sem)`**
 
-Reset the semaphore ```sem```. Every thread waiting on ```sem``` is woken up and the semaphore reset signaled with `VRES_RESET`
+Reset the semaphore *sem*. Every thread waiting on *sem* is woken up and the semaphore reset signaled with [:macr:`VRES_RESET`](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#id1).
 
 
 **`void vosSemDestroy(VSemaphore sem)`**
@@ -460,9 +460,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzExODM2ODksODI2MzUxNzcsMTQ1ND
-EwNjQzNywtNjc3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5
-NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsOD
-YyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4
-ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbMTg0NTUxMjMyNyw4MjYzNTE3NywxNDU0MT
+A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
+LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
+I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
+NCwxNzM0MjIxMjUwXX0=
 -->
