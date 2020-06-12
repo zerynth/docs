@@ -432,17 +432,17 @@ Returns the amount of microseconds elapsed since ```tm``` creation or last reset
 
 Configure the timer ```tm``` such that after ```time``` the function ```fn``` is execute exactly once as *fn\*(\```arg```) inside an ISR. Must be called inside a system lock.
 
-unit32_t vosTimerRecurrent(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
+**`unit32_t vosTimerRecurrent(VSysTimer tm,uint32_t time,vsystimer_fn fn, void *arg)`**
 
 Configure the timer ```tm``` such that the function ```fn``` is execute periodically with period equal to ```time```, as *fn(arg)* inside an ISR. Must be called inside a system lock.
 
 
-void vosTimerReset(VSysTimer*  tm*)
+**`void vosTimerReset(VSysTimer tm)`**
 
 Reset the timer. Every configured callback function is removed and any subsequent call to `vosTimerReadMillis()` or `vosTimerReadMicros()` will be relative to the time of reset. Must be called inside a system lock.
 
 
-void vosTimerDestroy(VSysTimer*  tm*)
+**`void vosTimerDestroy(VSysTimer tm)`**
 
 Reset the timer and free its memory.
 
@@ -482,7 +482,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzg2NzAyOSwtODk0MTczOTI3LDU5OD
+eyJoaXN0b3J5IjpbLTMzNjY1MzIyOSwtODk0MTczOTI3LDU5OD
 UwMTYxMyw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcs
 MTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMj
 c2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcx
