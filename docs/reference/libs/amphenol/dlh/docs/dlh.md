@@ -14,17 +14,16 @@ Creates an instance of the DLH class.
 **Arguments:**
 
     
-    * ```spidrv``` – SPI Bus used ‘( SPI0, … )’
-
-
-    * ```cs``` – GPIO to be used as Carrier Select
-
-
-    * ```d_or_g``` – specifies DLH type D (differential) or G (absolute) sensor. can be one of `TYPE_D` or `TYPE_G` constants
-
-
-    * ```clock``` – spi clock to be used
-
+spidrv – SPI Bus used ‘( SPI0, … )’
+   
+   
+cs – GPIO to be used as Carrier Select
+   
+   
+d_or_g – specifies DLH type D (differential) or G (absolute) sensor. can be one of `TYPE_D` or `TYPE_G` constants
+   
+   
+clock – spi clock to be used
 
 Temperature and pressure values can be easily obtained from the sensor:
 
@@ -73,6 +72,5 @@ The unit of measure of pressure can be specified in:
 
 * `UNIT_PASCAL`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQxNzY3OTYsLTE4NDI1NTI4OTJdfQ
-==
+eyJoaXN0b3J5IjpbMTY1MTYxODkxNCwtMTg0MjU1Mjg5Ml19
 -->
