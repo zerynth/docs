@@ -145,15 +145,15 @@ This priority is greater than all preceding thread priorities.
 This priority is greater than all preceding thread priorities.
 
 
-V**`OS_PRIO_HIGHEST`**
+**`VOS_PRIO_HIGHEST`**
 
 This priority is greater than all preceding thread priorities.
 
 ### Thread Status
 
 
-**`### VTHREAD_READY`**
-()
+**`VTHREAD_READY`**
+
 Status of a thread that has been created but not yet run.
 
 
@@ -162,13 +162,13 @@ Status of a thread that has been created but not yet run.
 Status of a thread that is currently running.
 
 
-**`### VTHREAD_INACTIVE`**
-()
+**`VTHREAD_INACTIVE`**
+
 Status of a thread that has finished its life cycle.
 
-**`
-### VTHREAD_WAITING`**
-()
+
+**`VTHREAD_WAITING`**
+
 Status of a thread that is sleeping waiting for some event to occur.
 
 ## Return values
@@ -447,7 +447,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0NTQyMTM5LDE5MTk2NzIwMTEsMTc5Nz
+eyJoaXN0b3J5IjpbNjE2NjA1NzcxLDE5MTk2NzIwMTEsMTc5Nz
 E3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4
 ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3OD
 YwMjc4ODQsMTczNDIyMTI1MF19
