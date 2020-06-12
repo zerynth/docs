@@ -379,7 +379,7 @@ Try to insert message *msg* in *mb*. If *mb* is full, the thread is suspended on
 
 **`int vosMBoxFetchTimeout(VMailBox mb,void* msgp,uint32_t timeout)`**
 
-Try to retrieve a message from ```mb``` returning a pointer to it in ```msgp```. If ```mb``` is empty, the thread is suspended on ```mb``` for a time les than or equal to ```timeout``` (passed with `TIME_U`). If ```mb``` has at least one message, ```msgp``` is assigned such message and the thread is not suspended. Return one of the VRES macros.
+Try to retrieve a message from *mb* returning a pointer to it in *msgp*. If *mb* is empty, the thread is suspended on *mb* for a time les than or equal to *timeout* (passed with `TIME_U`). If *mb* has at least one message, *msgp* is assigned such message and the thread is not suspended. Return one of the VRES macros.
 
 
 **`int vosMBoxPost(VMailBox mb,void* msg)`**
@@ -469,9 +469,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5ODMyMTExLC04OTQxNzM5MjcsNTk4NT
-AxNjEzLDgyNjM1MTc3LDE0NTQxMDY0MzcsLTY3NzQ1MjE0Nywx
-OTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNz
-YwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEs
-MTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbMTAxNDY3MjYwMywtODk0MTczOTI3LDU5OD
+UwMTYxMyw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcs
+MTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMj
+c2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcx
+LDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
