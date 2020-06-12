@@ -89,16 +89,14 @@ Returns True on success.
 Returns 1 if Bluefruit hardware is connected to a client, 0 if not connected. Returns None on failure.
 
 
----
-#### `#!py3 gatt()`
+gatt(cfg=None)
 
-!!!abstract "`#!py3 gatt(cfg=None)`"
 
-If ```cfg``` is None returns the current [GATT](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) configuration.
+If *cfg* is None returns the current [GATT](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) configuration.
 
-Otherwise BLuefruit configuration is cleared first and then changed to ```cfg```.
+Otherwise BLuefruit configuration is cleared first and then changed to *cfg*.
 
-The format of ```cfg``` is a list of lists:
+The format of *cfg* is a list of lists:
 
 ```
 cfg = [
@@ -125,8 +123,7 @@ Every list of 4 elements identifies a characteristic of the previously defined s
 
 * a permission flag: refer to [this](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-spi-breakout/ble-gatt) for reference
 
-Returns the configuration activated on the device or None on failure. After a configuration is successfully set, the return value
-contains handles modified to the actual ones choosen by the device.
+Returns the configuration activated on the device or None on failure. After a configuration is successfully set, the return value contains handles modified to the actual ones choosen by the device.
 
 
 ---
@@ -199,5 +196,5 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjExNDkxNiwzMDU5MDU1MDBdfQ==
+eyJoaXN0b3J5IjpbMTg1NzU4OTczLDMwNTkwNTUwMF19
 -->
