@@ -450,23 +450,23 @@ Reset the timer and free its memory.
 
 
 
-### vosEventCreate(void)
+**`vEvent vosEventCreate(void)`**
 
 Creates a VEvent. A VEvent manages a flag that can be set or cleared and on whose value a thread can be blocked.
 The flag is initially false.
 
 
 
-### vosEventSet(VEvent  event)
+**`void vosEventSet(VEvent event)`**
 
 Set the event flag.
 
 
-### vosEventClear(VEvent  event)
+**`void vosEventClear(VEvent  event)`**
 
 Clear the event flag.
 
-### vosEventWait(VEvent  event, uint32_t  timeout)
+int_32 vosEventWait(VEvent  event, uint32_t  timeout)
 
 Wait for the event flag to be set. Return `VRES_OK` if the flag has been set, `VRES_TIMEOUT` if it has not been set in given timeout time,
 
@@ -481,10 +481,10 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk3ODM5MTEsLTI0NDc2OTU2Myw5NT
-AxOTY2NDUsLTMzNjY1MzIyOSwtODk0MTczOTI3LDU5ODUwMTYx
-Myw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcsMTkxOT
-Y3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMjc2MDUx
-MywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcxLDEzMT
-AzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbNzI0MjczNjU4LC0yNDQ3Njk1NjMsOTUwMT
+k2NjQ1LC0zMzY2NTMyMjksLTg5NDE3MzkyNyw1OTg1MDE2MTMs
+ODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3LDE5MTk2Nz
+IwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMs
+LTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMz
+M1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
 -->
