@@ -263,12 +263,12 @@ Every created thread has a unique 32 bits id. Returns such id.
 
 **`unit32_ vosThGetStatus(VThread th)`**
 
-Returns the status of ```th```. Possible return values are all the thread status macros.
+Returns the status of *th*. Possible return values are all the thread status macros.
 
 
-**`void  vosThSetPriority(int32_t prio)`**
+**`void vosThSetPriority(int32_t prio)`**
 
-Changes the priority of the current thread. Values for ```prio``` are all the priority macros.
+Changes the priority of the current thread. Values for *prio* are all the priority macros.
 
 
 **`int32_T vosThGetPriority(void)`**
@@ -283,7 +283,7 @@ Returns the current thread.
 
 **`void  vosThSleep(time)`**
 
-Suspend the current thread for an amount of time represented by ```time```. ```time``` must be passed using `TIME_U`. The precision of vosThSleep depends on the priority of other threads with respect t the current one and to the scheduling strategy of the underlying RTOS.
+Suspend the current thread for an amount of time represented by *time*. *time* must be passed using `TIME_U`. The precision of vosThSleep depends on the priority of other threads with respect t the current one and to the scheduling strategy of the underlying RTOS.
 
 
 **`void vosThYield()`**
@@ -293,17 +293,17 @@ The current thread is suspended and the control is given to the next thread in t
 
 **`void vosThSuspend()`**
 
-The current thread is suspended until the next call to `vosThResume()`. This function must be preceded by a call to `vosSysLock()`. The implementation of vosThSuspend will remove the lock if necessary
+The current thread is suspended until the next call to `vosThResume()`. This function must be preceded by a call to `vosSysLock()`. The implementation of vosThSuspend will remove the lock if necessary.
 
 
 **`vThread vosThResume(VThread th)`**
 
-Resume the thread ```th```. ```th``` must be a thread just created (and never resumed before) or suspended by `vosThSuspend()`.
+Resume the thread *th*. *th* must be a thread just created (and never resumed before) or suspended by `vosThSuspend()`.
 
 
 **`vThread vosThResumeIsr(VThread th)`**
 
-Resume the thread ```th```. ```th``` must be a thread just created (and never resumed before) or suspended by `vosThSuspend()`. It must be used only inside an ISR.
+Resume the thread *th*. th must be a thread just created (and never resumed before) or suspended by `vosThSuspend()`. It must be used only inside an ISR.
 
 ## Semaphores
 
@@ -457,7 +457,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY4MTY0MSw4MjYzNTE3NywxNDU0MT
+eyJoaXN0b3J5IjpbMTY4MjkzOTkzOSw4MjYzNTE3NywxNDU0MT
 A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
 LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
 I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
