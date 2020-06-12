@@ -318,19 +318,20 @@ Creates a VSemaphore with initial value ```n```
 Reset the semaphore ```sem```. Every thread waiting on ```sem``` is woken up and the semaphore reset signaled with `VRES_RESET`
 
 
-### vosSemDestroy(VSemaphore*  sem*)
+void vosSemDestroy(VSemaphore*  sem*)
 Reset ```sem``` and free memory used by ```sem```.
 
+void sSemSignal(VSemaphore*  sem*)
 
-### vosSemSignal(VSemaphore*  sem*)
 Signal the semaphore ```sem```. If any thread is waiting on the sempahore, one thread is woken up. If no threads are waiting, the semaphore value is increased by one.
 
 
-### vosSemSignalCap(VSemaphore*  sem*, uint32_t*  cap*)
+void  vosSemSignalCap(VSemaphore*  sem*, uint32_t*  cap*)
+
 Signal the semaphore ```sem```. If any thread is waiting on the sempahore, one thread is woken up. If no threads are waiting, the semaphore value is increased by one only if it is less than ```cap```.
 
 
-### vosSemSignalIsr(VSemaphore*  sem*)
+void vosSemSignalIsr(VSemaphore*  sem*)
 Same as `vosSemSignal()` but must be used only inside ISRs.
 
 
@@ -453,9 +454,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMjk0MDk0LDgyNjM1MTc3LDE0NTQxMD
-Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
-LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
-UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
-LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbLTM0ODI1NzI3MSw4MjYzNTE3NywxNDU0MT
+A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
+LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
+I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
+NCwxNzM0MjIxMjUwXX0=
 -->
