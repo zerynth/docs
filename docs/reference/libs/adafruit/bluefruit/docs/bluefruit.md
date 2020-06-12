@@ -83,7 +83,7 @@ Returns True on success.
 Returns 1 if Bluefruit hardware is connected to a client, 0 if not connected. Returns None on failure.
 
 
-gatt(cfg=None)
+**`gatt(cfg=None)`**
 
 
 If *cfg* is None returns the current [GATT](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) configuration.
@@ -172,6 +172,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTE0ODk2MTUsMTg1NzU4OTczLDMwNT
+eyJoaXN0b3J5IjpbLTE1MDUwNjA3MDcsMTg1NzU4OTczLDMwNT
 kwNTUwMF19
 -->
