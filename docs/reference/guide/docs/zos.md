@@ -22,12 +22,12 @@ Contents:
     * [Events](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#events)
 * [Hardware Abstraction Layer](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html)
     * [Pin Mapping](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#pin-mapping)
-    * Peripherals Mapping
-	    * GPIO
-    * ADC
-	    * Macros
-	    * Types
-    * DAC
+    * [Peripherals Mapping](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#peripherals-mapping)
+	    * [GPIO](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#gpio)
+    * [ADC](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#adc)
+	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id1)
+	    * [Types](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#types)
+    * [DAC](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#dac)
     * PWM
     * ICU
 	    * Macros
@@ -63,6 +63,6 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDIwMDEzMzMsMTg5ODcwMTQwMiwtOT
-YzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbNTc0NTEyOTYzLDE4OTg3MDE0MDIsLTk2Mz
+M5MDMwXX0=
 -->
