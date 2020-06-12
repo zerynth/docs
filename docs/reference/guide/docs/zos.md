@@ -49,23 +49,19 @@ Contents:
     * Error Codes
 * VM Interface
     * PObject
-	    * Mac
-
-
+	    * Macros
+	    * Functions
     * Numbers
-
-
+	    * Functions
     * Bool & None
-
-
     * Sequences
-
-
+	    * Macros
+	    * Functions
     * Dictionaries and Sets
-
-
+	    * Macros
+	    * Functions
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTYzOTMxOSwtOTYzMzkwMzBdfQ==
+eyJoaXN0b3J5IjpbLTQyNTYwMTY3MywtOTYzMzkwMzBdfQ==
 -->
