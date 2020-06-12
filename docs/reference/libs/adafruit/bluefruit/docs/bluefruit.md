@@ -41,15 +41,12 @@ If *name* is None, returns the current Bluefruit device name. Otherwise changes 
 Returns True on success.
 
 
----
-#### `#!py3 gap_adv()`
 
-!!!abstract "`#!py3 gap_adv(data)`"
+**`gap_name(name=None)`**
 
-Setup advertising data. Please refer to [this resource](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735&_ga=1.4683440.245686596.1452259520) for
-a list of possible values accepted by the BLE standard.
+Setup advertising data. Please refer to [this resource](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735&_ga=1.4683440.245686596.1452259520) for a list of possible values accepted by the BLE standard.
 
-```data``` is an iterable containing blocks of data in the following format:
+*data* is an iterable containing blocks of data in the following format:
 
 
 * byte 1: length of the block (n)
@@ -60,7 +57,7 @@ a list of possible values accepted by the BLE standard.
 
 * byte 3 to n: value of the block
 
-Usually ```data``` is made of a flag block, followed by blocks advertising BLE services.
+Usually *data* is made of a flag block, followed by blocks advertising BLE services.
 
 For example the sequence [0x02, 0x01, 0x06, 0x05, 0x02, 0x0d, 0x18, 0x0a, 0x18] is an encoding of the following info:
 
@@ -205,5 +202,5 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjIzMDg5NzddfQ==
+eyJoaXN0b3J5IjpbMzA1OTA1NTAwXX0=
 -->
