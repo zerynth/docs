@@ -261,16 +261,17 @@ Retrieves data attached to ```th```
 
 Every created thread has a unique 32 bits id. Returns such id.
 
+**`unit32_ vosThGetStatus(VThread  th)`**
 
-### vosThGetStatus(VThread*  th*)
 Returns the status of ```th```. Possible return values are all the thread status macros.
 
 
-### vosThSetPriority(int32_t*  prio*)
+**`void  vosThSetPriority(int32_t  prio)`**
+
 Changes the priority of the current thread. Values for ```prio``` are all the priority macros.
 
 
-### vosThGetPriority(void)
+int32_T vosThGetPriority(void)
 Returns the priority of the current thread.
 
 
@@ -449,9 +450,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3ND
-UyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5
-MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzOD
-AzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1
-MF19
+eyJoaXN0b3J5IjpbNTIwMjg0NzQ1LDgyNjM1MTc3LDE0NTQxMD
+Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
+LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
+UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
+LDE3MzQyMjEyNTBdfQ==
 -->
