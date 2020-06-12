@@ -414,64 +414,79 @@ Returns the number of free slots in *mb*. Must be called in a system lock.
 ## System Timers
 
 
-### vosTimerCreate(void)
+**`VSisTimer vosTimerCreate(void)`**
+
 Creates an inactive system timer.
 
 
-### vosTimerReadMillis(VSysTimer*  tm*)
+unit vosTimerReadMillis(VSysTimer*  tm*)
+
 Returns the amount of milliseconds elapsed since ```tm``` creation or last reset.
 
 
 ### vosTimerReadMicros(VSysTimer*  tm*)
+
 Returns the amount of microseconds elapsed since ```tm``` creation or last reset.
 
 
 ### vosTimerOneShot(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
+
 Configure the timer ```tm``` such that after ```time``` the function ```fn``` is execute exactly once as *fn\*(\```arg```) inside an ISR. Must be called inside a system lock.
 
 
 ### vosTimerRecurrent(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
+
 Configure the timer ```tm``` such that the function ```fn``` is execute periodically with period equal to ```time```, as *fn(arg)* inside an ISR. Must be called inside a system lock.
 
 
 ### vosTimerReset(VSysTimer*  tm*)
+
 Reset the timer. Every configured callback function is removed and any subsequent call to `vosTimerReadMillis()` or `vosTimerReadMicros()` will be relative to the time of reset. Must be called inside a system lock.
 
 
 ### vosTimerDestroy(VSysTimer*  tm*)
+
 Reset the timer and free its memory.
 
 ## Events
 
 
+
 ### vosEventCreate(void)
+
 Creates a VEvent. A VEvent manages a flag that can be set or cleared and on whose value a thread can be blocked.
 The flag is initially false.
 
 
+
 ### vosEventSet(VEvent*  event*)
+
 Set the event flag.
 
 
 ### vosEventClear(VEvent*  event*)
+
 Clear the event flag.
 
 
 ### vosEventWait(VEvent*  event*, uint32_t*  timeout*)
+
 Wait for the event flag to be set. Return `VRES_OK` if the flag has been set, `VRES_TIMEOUT` if it has not been set in given timeout time,
 
 
 ### vosEventGetFlag(VEvent*  event*)
+
 Get current flag value for selected event,
 
 
 ### vosEventDestroy(VEvent*  event*)
+
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTgwMTgxOSwtODk0MTczOTI3LDU5OD
-UwMTYxMyw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcs
-MTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMj
-c2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcx
-LDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbODI5NDU5MjUsLTg5NDE3MzkyNyw1OTg1MD
+E2MTMsODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3LDE5
+MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMTI3Nj
+A1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwx
+MzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
 -->
