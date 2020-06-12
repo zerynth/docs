@@ -252,12 +252,13 @@ Frees the memory associated to ```th```. Thread ```th``` must be terminated in o
 Attaches ```data``` to ```th```.
 
 
-**`void vosThGetData(VThread  th)`**
+**`void* vosThGetData(VThread  th)`**
 
 Retrieves data attached to ```th```
 
 
-### vosThGetId(VThread*  th*)
+**`void* vosThGetId(VThread  th)`**
+
 Every created thread has a unique 32 bits id. Returns such id.
 
 
@@ -448,9 +449,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUwNjIzNzQyLDE0NTQxMDY0MzcsLTY3Nz
-Q1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0
-OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02Mz
-gwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEy
-NTBdfQ==
+eyJoaXN0b3J5IjpbODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3ND
+UyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5
+MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzOD
+AzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1
+MF19
 -->
