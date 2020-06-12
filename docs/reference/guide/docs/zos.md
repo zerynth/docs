@@ -59,10 +59,10 @@ Contents:
 	    * [Functions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id3)
     * [Dictionaries and Sets](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#dictionaries-and-sets)
 	    * [Macros](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id4)
-	    * Functions[enter link description here](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id5)
-    * Exceptions
+	    * [Function](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#id5)
+	     * [Exceptions](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___lang_lang_h.html#exceptions)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTM3Nzk0OCwxODk4NzAxNDAyLC05Nj
-MzOTAzMF19
+eyJoaXN0b3J5IjpbMzM5MTk3OTEyLDE4OTg3MDE0MDIsLTk2Mz
+M5MDMwXX0=
 -->
