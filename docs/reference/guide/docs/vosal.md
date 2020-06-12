@@ -363,43 +363,53 @@ Atomically signal semaphore *semS* and wait with timeout on *semW.* Return `VRES
 ## Mailboxes
 
 
-### vosMBoxCreate(int32_t*  n*)
+**`vMailBox vosMBoxCreate(int32_t n)`**
+
 Creates an empty VMailBox with a size of ```n``` elements.
 
 
-### vosMBoxDestroy(VMailBox*  mb*)
+**`vMailBox vosMBoxDestroy(VMailBox mb)`**
+
 Reset ```mb``` and free memory used by ```mb```.
 
 
 ### vosMBoxPostTimeout(VMailBox*  mb*, void\**  msg*, uint32_t*  timeout*)
+
 Try to insert message ```msg``` in ```mb```. If ```mb``` is full, the thread is suspended on ```mb``` for a time less than or equal to ```timeout``` (passed with `TIME_U`). If ```mb``` has at least one free slot, ```msg``` is inserted in ```mb``` and the thread is not suspended. Return one of the VRES macros.
 
 
 ### vosMBoxFetchTimeout(VMailBox*  mb*, void\*\**  msgp*, uint32_t*  timeout*)
+
 Try to retrieve a message from ```mb``` returning a pointer to it in ```msgp```. If ```mb``` is empty, the thread is suspended on ```mb``` for a time les than or equal to ```timeout``` (passed with `TIME_U`). If ```mb``` has at least one message, ```msgp``` is assigned such message and the thread is not suspended. Return one of the VRES macros.
 
 
 ### vosMBoxPost(VMailBox*  mb*, void\**  msg*)
+
 Same as `vosMBoxPostTimeout()` but with infinite timeout.
 
 
 ### vosMBoxFetch(VMailBox*  mb*, void\*\**  msgp*)
+
 Same as `vosMBoxFetchTimeout()` but with infinite timeout.
 
 
 ### vosMBoxPostIsr(VMailBox*  mb*, void\**  msg*)
+
 Same as `vosMBoxPostTimeout()` but with infinite timeout and can be used only in an ISR..
 
 
 ### vosMBoxFetchIsr(VMailBox*  mb*, void\*\**  msgp*)
+
 Same as `vosMBoxFetchTimeout()` but with infinite timeout and can be used only in an ISR.
 
 
 ### vosMBoxUsedSlots(VMailBox*  mb*)
+
 Returns the number of messages in ```mb```. Must be called in a system lock.
 
 
 ### vosMBoxFreeSlots(VMailBox*  mb*)
+
 Returns the number of free slots in ```mb```. Must be called in a system lock.
 
 ## System Timers
@@ -460,7 +470,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTcwNDI3OSw4MjYzNTE3NywxNDU0MT
+eyJoaXN0b3J5IjpbLTI1NjQxMDc1OSw4MjYzNTE3NywxNDU0MT
 A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
 LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
 I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
