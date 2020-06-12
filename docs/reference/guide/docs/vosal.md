@@ -392,22 +392,22 @@ Same as `vosMBoxPostTimeout()` but with infinite timeout.
 Same as `vosMBoxFetchTimeout()` but with infinite timeout.
 
 
-int  vosMBoxPostIsr(VMailBox mb,void*msg*)
+**`int vosMBoxPostIsr(VMailBox mb,void* msg)`**
 
 Same as `vosMBoxPostTimeout()` but with infinite timeout and can be used only in an ISR..
 
 
-int vosMBoxFetchIsr(VMailBox*  mb*, void\*\**  msgp*)
+**`int vosMBoxFetchIsr(VMailBox mb,void** msgp)`**
 
 Same as `vosMBoxFetchTimeout()` but with infinite timeout and can be used only in an ISR.
 
 
-### vosMBoxUsedSlots(VMailBox*  mb*)
+**`int vosMBoxUsedSlots(VMailBox mb)`**
 
 Returns the number of messages in ```mb```. Must be called in a system lock.
 
 
-### vosMBoxFreeSlots(VMailBox*  mb*)
+int vosMBoxFreeSlots(VMailBox mb)
 
 Returns the number of free slots in ```mb```. Must be called in a system lock.
 
@@ -469,7 +469,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTY2NzE0OTUsLTg5NDE3MzkyNyw1OT
+eyJoaXN0b3J5IjpbLTExMjk0MTM2ODksLTg5NDE3MzkyNyw1OT
 g1MDE2MTMsODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3
 LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMT
 I3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3
