@@ -80,7 +80,7 @@ Represent the time unit seconds.
 Time values in VOSAL are represented as value plus time unit. This macro creates a valid time representation mixing together *value* (max 30 significant bits) with *unit*. Every vosal function expecting a time must be passed the result of TIME_U.
 
 
-**`### GET_TIME_UNIT(time)`**
+**`GET_TIME_UNIT(time)`**
 
 Extracts the time unit from *```time*.
 
@@ -455,8 +455,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xOD
-UwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4
-MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNz
-M0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbLTE5NDIzNTMxMzgsMTkxOTY3MjAxMSwxNz
+k3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5
+Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMT
+c4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
