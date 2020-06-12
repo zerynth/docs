@@ -12,34 +12,18 @@ Contents:
     * Variables
     * Macros
 	    * Time Macros
+	    * Priority Macros
+	    * Thread Status
     * Return values
     * System and Thread functions
-
-
     * Semaphores
-
-
     * Mailboxes
-
-
     * System Timers
-
-
     * Events
-
-
 * Hardware Abstraction Layer
-
-
     * Pin Mapping
-
-
     * Peripherals Mapping
-
-
-    * GPIO
-
-
+	    * GPIO
     * ADC
 
 
@@ -103,5 +87,5 @@ Contents:
     * Exceptions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzM5MDMwXX0=
+eyJoaXN0b3J5IjpbMTI2MDI5ODk2MywtOTYzMzkwMzBdfQ==
 -->
