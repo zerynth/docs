@@ -16,9 +16,10 @@ Creates an instance of the DLH class.
     
 
  - **spidrv** – SPI Bus used ‘( SPI0, … )’   
-	 -  **cs** – GPIO to be used as Carrier Select    **d_or_g** – specifies DLH type D (differential)
+ -  **cs** – GPIO to be used as Carrier Select   
+ -  **d_or_g** – specifies DLH type D (differential)
    or G (absolute) sensor. can be one of `TYPE_D` or `TYPE_G` constants 
-   **clock** – spi clock to be used
+   - **clock** – spi clock to be used
 
 Temperature and pressure values can be easily obtained from the sensor:
 
@@ -33,8 +34,7 @@ press, temp = d.get_values(unit=dlh.UNIT_PASCAL)
 ```
 
 
----
-#### `#!py3 get_values()`
+**`get_values()`**
 
 !!!abstract "`#!py3 get_values(mode=MODE_SINGLE, unit=UNIT_INH20)`"
 
@@ -67,6 +67,6 @@ The unit of measure of pressure can be specified in:
 
 * `UNIT_PASCAL`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUzMzg5NDAsLTE4NDI1NTI4OTJdfQ
+eyJoaXN0b3J5IjpbLTE3ODAyMDIzNzMsLTE4NDI1NTI4OTJdfQ
 ==
 -->
