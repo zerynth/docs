@@ -98,13 +98,13 @@ Extracts the time value from *time* converting it to microseconds.
 Evaluates to true if *```time*``` is zero in the corresponding time unit.
 
 
-**VTIME_IMMEDIATE`**
-()
+**`VTIME_IMMEDIATE`**
+
 A unitless time value representing no time at all.
 
 
- **`### VTIME_INFINITE`**
- ()
+ **`VTIME_INFINITE`**
+ 
 Infinite amount of time, used when an infinite timeout is requested.
 
 ### Priority Macros
@@ -447,8 +447,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3Mjk5Mzc0LDE5MTk2NzIwMTEsMTc5Nz
-E3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4
-ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3OD
-YwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbLTkwODE5OTMwMSwxOTE5NjcyMDExLDE3OT
+cxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2
+ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNz
+g2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
 -->
