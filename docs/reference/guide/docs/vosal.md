@@ -271,7 +271,8 @@ Returns the status of ```th```. Possible return values are all the thread status
 Changes the priority of the current thread. Values for ```prio``` are all the priority macros.
 
 
-int32_T vosThGetPriority(void)
+**`int32_T vosThGetPriority(void)`**
+
 Returns the priority of the current thread.
 
 
@@ -450,9 +451,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwMjg0NzQ1LDgyNjM1MTc3LDE0NTQxMD
-Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
-LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
-UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
-LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbNDMyMzE4NTUsODI2MzUxNzcsMTQ1NDEwNj
+QzNywtNjc3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5Nywt
+MTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNT
+E0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQs
+MTczNDIyMTI1MF19
 -->
