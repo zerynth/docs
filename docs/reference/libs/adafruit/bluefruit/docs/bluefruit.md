@@ -126,29 +126,20 @@ Every list of 4 elements identifies a characteristic of the previously defined s
 Returns the configuration activated on the device or None on failure. After a configuration is successfully set, the return value contains handles modified to the actual ones choosen by the device.
 
 
----
-#### `#!py3 gatt_set()`
+**`gatt_set(handle,value)`**
 
-!!!abstract "`#!py3 gatt_set(handle, value)`"
-
-Sets the ```value``` of a characteristic given its ```handle``` (as returned after a successfull configuration). Value can be an integer, a string or an iterable of bytes.
+Sets the *value* of a characteristic given its *handle* (as returned after a successful configuration). Value can be an integer, a string or an iterable of bytes.
 Returns False on failure.
 
 
----
-#### `#!py3 gatt_get()`
+**`gatt_get(handle)`**
 
-!!!abstract "`#!py3 gatt_get(handle)`"
-
-Returns the value of the characteristic identified by ```handle``` (as returned after a successfull configuration).
+Returns the value of the characteristic identified by *handle* (as returned after a successful configuration).
 
 Returns None on failure.
 
 
----
-#### `#!py3 addr()`
-
-!!!abstract "`#!py3 addr()`"
+**addr()**
 
 Returns the 48bit mac address of the device as an hex string. Returns None on failure.
 
@@ -196,5 +187,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzU4OTczLDMwNTkwNTUwMF19
+eyJoaXN0b3J5IjpbODg1ODQwMzkzLDE4NTc1ODk3MywzMDU5MD
+U1MDBdfQ==
 -->
