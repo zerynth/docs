@@ -110,43 +110,43 @@ Infinite amount of time, used when an infinite timeout is requested.
 ### Priority Macros
 
 
- **`### VOS_PRIO_IDLE`**
- ()
+ **`VOS_PRIO_IDLE`**
+ 
 This priority should not be used with normal threads. Only one thread exists with this priority and it is created at startup.
 
-**`
-### VOS_PRIO_LOWEST`**
-()
+
+**`VOS_PRIO_LOWEST`**
+
 Lowest possible thread priority.
 
 
-**`### VOS_PRIO_LOWER`**
-()
+**`VOS_PRIO_LOWER`**
+
 This priority is greater than all preceding thread priorities.
 
 
-**`### VOS_PRIO_LOW`**
-()
+**`VOS_PRIO_LOW`**
+
 This priority is greater than all preceding thread priorities.
 
 
-**`### VOS_PRIO_NORMAL`**
-()
+**`VOS_PRIO_NORMAL`**
+
 This priority is greater than all preceding thread priorities. It is the default priority.
 
 
-**`### VOS_PRIO_HIGH`**
-()
+**strong text**VOS_PRIO_HIGH
+
 This priority is greater than all preceding thread priorities.
 
 
-**`### VOS_PRIO_HIGHER`**
-()
+VOS_PRIO_HIGHER
+
 This priority is greater than all preceding thread priorities.
 
 
-**`### VOS_PRIO_HIGHEST`**
-()
+VOS_PRIO_HIGHEST
+
 This priority is greater than all preceding thread priorities.
 
 ### Thread Status
@@ -447,7 +447,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODE5OTMwMSwxOTE5NjcyMDExLDE3OT
+eyJoaXN0b3J5IjpbLTU0ODA1MDA1NSwxOTE5NjcyMDExLDE3OT
 cxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2
 ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNz
 g2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
