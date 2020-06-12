@@ -135,17 +135,17 @@ This priority is greater than all preceding thread priorities.
 This priority is greater than all preceding thread priorities. It is the default priority.
 
 
-**strong text**VOS_PRIO_HIGH
+**`VOS_PRIO_HIGH`**
 
 This priority is greater than all preceding thread priorities.
 
 
-VOS_PRIO_HIGHER
+**`VOS_PRIO_HIGHER`**
 
 This priority is greater than all preceding thread priorities.
 
 
-VOS_PRIO_HIGHEST
+V**`OS_PRIO_HIGHEST`**
 
 This priority is greater than all preceding thread priorities.
 
@@ -447,8 +447,8 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODA1MDA1NSwxOTE5NjcyMDExLDE3OT
-cxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2
-ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNz
-g2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbOTg0NTQyMTM5LDE5MTk2NzIwMTEsMTc5Nz
+E3NTM5NywtMTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4
+ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3OD
+YwMjc4ODQsMTczNDIyMTI1MF19
 -->
