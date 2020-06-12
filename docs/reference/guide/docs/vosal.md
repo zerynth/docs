@@ -291,15 +291,18 @@ Suspend the current thread for an amount of time represented by ```time```. ```t
 The current thread is suspended and the control is given to the next thread in the scheduling order.
 
 
-### vosThSuspend()
+**`void vosThSuspend()`**
+
 The current thread is suspended until the next call to `vosThResume()`. This function must be preceded by a call to `vosSysLock()`. The implementation of vosThSuspend will remove the lock if necessary
 
 
-### vosThResume(VThread*  th*)
+**`vThread vosThResume(VThread  th)`**
+
 Resume the thread ```th```. ```th``` must be a thread just created (and never resumed before) or suspended by `vosThSuspend()`.
 
 
-### vosThResumeIsr(VThread*  th*)
+**`vThread vosThResumeIsr(VThread  th)`**
+
 Resume the thread ```th```. ```th``` must be a thread just created (and never resumed before) or suspended by `vosThSuspend()`. It must be used only inside an ISR.
 
 ## Semaphores
@@ -454,9 +457,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4OTQzMjA0LDgyNjM1MTc3LDE0NTQxMD
-Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
-LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
-UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
-LDE3MzQyMjEyNTBdfQ==
+eyJoaXN0b3J5IjpbMTAwMzc1ODE3Nyw4MjYzNTE3NywxNDU0MT
+A2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3
+LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4Nj
+I1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4
+NCwxNzM0MjIxMjUwXX0=
 -->
