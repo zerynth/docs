@@ -419,32 +419,30 @@ Returns the number of free slots in *mb*. Must be called in a system lock.
 Creates an inactive system timer.
 
 
-unit vosTimerReadMillis(VSysTimer*  tm*)
+unit64_t vosTimerReadMillis(VSysTimer*  tm*)
 
 Returns the amount of milliseconds elapsed since ```tm``` creation or last reset.
 
-
-### vosTimerReadMicros(VSysTimer*  tm*)
+unit32_t vosTimerReadMicros(VSysTimer*  tm*)
 
 Returns the amount of microseconds elapsed since ```tm``` creation or last reset.
 
 
-### vosTimerOneShot(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
+unit32_t vosTimerOneShot(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
 
 Configure the timer ```tm``` such that after ```time``` the function ```fn``` is execute exactly once as *fn\*(\```arg```) inside an ISR. Must be called inside a system lock.
 
-
-### vosTimerRecurrent(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
+unit32_t vosTimerRecurrent(VSysTimer*  tm*, uint32_t*  time*, vsystimer_fn*  fn*, void*  \```arg```)
 
 Configure the timer ```tm``` such that the function ```fn``` is execute periodically with period equal to ```time```, as *fn(arg)* inside an ISR. Must be called inside a system lock.
 
 
-### vosTimerReset(VSysTimer*  tm*)
+void vosTimerReset(VSysTimer*  tm*)
 
 Reset the timer. Every configured callback function is removed and any subsequent call to `vosTimerReadMillis()` or `vosTimerReadMicros()` will be relative to the time of reset. Must be called inside a system lock.
 
 
-### vosTimerDestroy(VSysTimer*  tm*)
+void vosTimerDestroy(VSysTimer*  tm*)
 
 Reset the timer and free its memory.
 
@@ -484,9 +482,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI5NDU5MjUsLTg5NDE3MzkyNyw1OTg1MD
-E2MTMsODI2MzUxNzcsMTQ1NDEwNjQzNywtNjc3NDUyMTQ3LDE5
-MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0NDQ5MywzMTI3Nj
-A1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLTYzODAzNDQ3MSwx
-MzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbLTk3NDkyMzgzLC04OTQxNzM5MjcsNTk4NT
+AxNjEzLDgyNjM1MTc3LDE0NTQxMDY0MzcsLTY3NzQ1MjE0Nywx
+OTE5NjcyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNz
+YwNTEzLC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEs
+MTMxMDMzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
 -->
