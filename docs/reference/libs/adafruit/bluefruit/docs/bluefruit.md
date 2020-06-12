@@ -12,10 +12,10 @@ Manually initializes the Bluefruit peripheral by activating the following commun
 * *spidrv* is the SPI peripheral to use (usually SPI0 for devices with an Arduino compatible layout)
 
 
-* nss is the chip select pin (usually D8)
+* *nss* is the chip select pin (usually D8)
 
 
-* ```irqpin``` is the pin used by the Bluefruit hardware to signal incoming messages (usually D7)
+* *irqpin* is the pin used by the Bluefruit hardware to signal incoming messages (usually D7)
 
 The SPI driver is started and the Bluefruit initialization sequence is sent.
 
@@ -28,20 +28,16 @@ The SPI driver is started and the Bluefruit initialization sequence is sent.
 Performs a factory reset. Returns True on success.
 
 
----
-#### `#!py3 reset()`
 
-!!!abstract "`#!py3 reset()`"
+**`hard_reset()`**
 
 Performs a software reset. Returns True on success.
 
 
----
-#### `#!py3 gap_name()`
 
-!!!abstract "`#!py3 gap_name(name=None)`"
+reset()
 
-If ```name``` is None, returns the current Bluefruit device name. Otherwise changes the current name to ```name```.
+If *name* is None, returns the current Bluefruit device name. Otherwise changes the current name to *name*.
 Returns True on success.
 
 
@@ -209,5 +205,5 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTUwNDQ1MV19
+eyJoaXN0b3J5IjpbLTE1MjIzMDg5NzddfQ==
 -->
