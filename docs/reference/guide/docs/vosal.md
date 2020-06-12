@@ -276,15 +276,18 @@ Changes the priority of the current thread. Values for ```prio``` are all the pr
 Returns the priority of the current thread.
 
 
-### vosThCurrent(void)
+**`vThread vosThCurrent(void)`**
+
 Returns the current thread.
 
 
-### vosThSleep(time)
+**`void  vosThSleep(time)`**
+
 Suspend the current thread for an amount of time represented by ```time```. ```time``` must be passed using `TIME_U`. The precision of vosThSleep depends on the priority of other threads with respect t the current one and to the scheduling strategy of the underlying RTOS.
 
 
-### vosThYield()
+**`void vosThYield()`**
+
 The current thread is suspended and the control is given to the next thread in the scheduling order.
 
 
@@ -451,9 +454,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyMzE4NTUsODI2MzUxNzcsMTQ1NDEwNj
-QzNywtNjc3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5Nywt
-MTg1MDk0NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNT
-E0ODMsLTYzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQs
-MTczNDIyMTI1MF19
+eyJoaXN0b3J5IjpbNjg4OTQzMjA0LDgyNjM1MTc3LDE0NTQxMD
+Y0MzcsLTY3NzQ1MjE0NywxOTE5NjcyMDExLDE3OTcxNzUzOTcs
+LTE4NTA5NDQ0OTMsMzEyNzYwNTEzLC0xMzU3NDk2ODgzLDg2Mj
+UxNDgzLC02MzgwMzQ0NzEsMTMxMDMzNTgzMSwxNzg2MDI3ODg0
+LDE3MzQyMjEyNTBdfQ==
 -->
