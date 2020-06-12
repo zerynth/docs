@@ -457,35 +457,34 @@ The flag is initially false.
 
 
 
-### vosEventSet(VEvent*  event*)
+### vosEventSet(VEvent  event)
 
 Set the event flag.
 
 
-### vosEventClear(VEvent*  event*)
+### vosEventClear(VEvent  event)
 
 Clear the event flag.
 
-
-### vosEventWait(VEvent*  event*, uint32_t*  timeout*)
+### vosEventWait(VEvent  event, uint32_t  timeout)
 
 Wait for the event flag to be set. Return `VRES_OK` if the flag has been set, `VRES_TIMEOUT` if it has not been set in given timeout time,
 
 
-### vosEventGetFlag(VEvent*  event*)
+### vosEventGetFlag(VEvent event)
 
 Get current flag value for selected event,
 
 
-### vosEventDestroy(VEvent*  event*)
+### vosEventDestroy(VEvent event)
 
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NDc2OTU2Myw5NTAxOTY2NDUsLTMzNj
-Y1MzIyOSwtODk0MTczOTI3LDU5ODUwMTYxMyw4MjYzNTE3Nywx
-NDU0MTA2NDM3LC02Nzc0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MT
-c1Mzk3LC0xODUwOTQ0NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4
-Myw4NjI1MTQ4MywtNjM4MDM0NDcxLDEzMTAzMzU4MzEsMTc4Nj
-AyNzg4NCwxNzM0MjIxMjUwXX0=
+eyJoaXN0b3J5IjpbLTE5Mzk3ODM5MTEsLTI0NDc2OTU2Myw5NT
+AxOTY2NDUsLTMzNjY1MzIyOSwtODk0MTczOTI3LDU5ODUwMTYx
+Myw4MjYzNTE3NywxNDU0MTA2NDM3LC02Nzc0NTIxNDcsMTkxOT
+Y3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0NDkzLDMxMjc2MDUx
+MywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNjM4MDM0NDcxLDEzMT
+AzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIxMjUwXX0=
 -->
