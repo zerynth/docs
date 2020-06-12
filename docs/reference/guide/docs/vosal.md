@@ -242,11 +242,13 @@ Create a VThread with a free workspace memory of *size* bytes. Actual memory usa
 After creation, the thread is not started. A call to `vosThResume()` is necessary to start the execution of *fn*.
 
 
-### vosThDestroy(VThread*  th*)
+**`void vosThDestroy(VThread th)`**
+
 Frees the memory associated to ```th```. Thread ```th``` must be terminated in order to call vosThDestroy, otherwise memory corruption ensues.
 
 
-### vosThSetData(VThread*  th*, void*  \```data```)
+vosThSetData(VThread  th, void *data)
+
 Attaches ```data``` to ```th```.
 
 
@@ -445,9 +447,9 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODc5OTQ0NywxNDU0MTA2NDM3LC02Nz
-c0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0
-NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNj
-M4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIx
-MjUwXX0=
+eyJoaXN0b3J5IjpbLTE4NjAzMDcyMjksMTQ1NDEwNjQzNywtNj
+c3NDUyMTQ3LDE5MTk2NzIwMTEsMTc5NzE3NTM5NywtMTg1MDk0
+NDQ5MywzMTI3NjA1MTMsLTEzNTc0OTY4ODMsODYyNTE0ODMsLT
+YzODAzNDQ3MSwxMzEwMzM1ODMxLDE3ODYwMjc4ODQsMTczNDIy
+MTI1MF19
 -->
