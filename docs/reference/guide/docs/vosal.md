@@ -221,7 +221,7 @@ Must be called when entering an ISR. Depending on the underlyng RTOS and archite
 Must be called when exiting an ISR. Depending on the underlyng RTOS and architecture it can be an empty macro.
 
 
-**`vos_irq_handler### vosInstallHandler(int32_t * hpos,*, vos_irq_handler fn)`**
+**`vos_irq_handler vosInstallHandler(uint32_t size, int32_t prio, void *fn, void *arg, void *data)`**
 * fn*)
 Install a new ISR *fn*```fn``` at index *```hpos*``` in the interrupt table. Previous ISR is returned.
 
@@ -446,7 +446,7 @@ Get current flag value for selected event,
 Destroy the event and frees its memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODcwOTgxNSwxNDU0MTA2NDM3LC02Nz
+eyJoaXN0b3J5IjpbLTE4MjA5MzY2NSwxNDU0MTA2NDM3LC02Nz
 c0NTIxNDcsMTkxOTY3MjAxMSwxNzk3MTc1Mzk3LC0xODUwOTQ0
 NDkzLDMxMjc2MDUxMywtMTM1NzQ5Njg4Myw4NjI1MTQ4MywtNj
 M4MDM0NDcxLDEzMTAzMzU4MzEsMTc4NjAyNzg4NCwxNzM0MjIx
