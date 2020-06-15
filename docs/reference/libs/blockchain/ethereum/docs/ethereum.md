@@ -163,27 +163,29 @@ Set transaction nonce.
 
  - **value** – binary representation of transaction data. Can be hexadecimal or bytes.
 
-Set transaction data to ```value```
+Set transaction data to *value*.
 
 
 **`set_chain(chain)`**
 
 
-* ```Arguments```
+**Parameters:**
 
-    
-    * ```chain``` – integer representing the network id of the Ethereum network
-
+ - **chain** – integer representing the network id of the Ethereum network.
 
 Set the network id for the transaction.
 
-to_rlp(hex)
+**`to_rlp(hex)`**
 
 
-* ```Arguments```
+**Parameters:**
 
     
-    * ```hex``` – boolean
+**
+
+ - hex
+
+** – boolean
 
 
 Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of the transaction in biney form. If ```hex``` is True, the hexadecimal representation is returned.
@@ -307,6 +309,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzQyMDEwLC0zOTE1NTE5Niw4NzMxMT
-Q0MzJdfQ==
+eyJoaXN0b3J5IjpbLTM3NTg2MjQwMCwtMzkxNTUxOTYsODczMT
+E0NDMyXX0=
 -->
