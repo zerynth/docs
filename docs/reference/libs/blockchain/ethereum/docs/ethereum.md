@@ -101,6 +101,7 @@ The resulting Transaction instance is empty and invalid. The following parameter
 Optionally, transaction data and network id can be set.
 
 
+
 **`set_receiver(address)`**
 
 **Parameters:** 
@@ -147,10 +148,9 @@ Convert *value* to big number format according to *unit* and set the resulting b
 **`set_nonce(value)`**
 
 
-* ```Arguments```
+**Parameters:**
 
-    
-    * ```value``` – transaction nonce as integer
+* **value** – transaction nonce as integer
 
 
 Set transaction nonce.
@@ -159,11 +159,9 @@ Set transaction nonce.
 **`set_data(value)`**
 
 
-* ```Arguments```
+**Parameters:**
 
-    
-    * ```value``` – binary representation of transaction data. Can be hexadecimal or bytes.
-
+ - **value** – binary representation of transaction data. Can be hexadecimal or bytes.
 
 Set transaction data to ```value```
 
@@ -309,6 +307,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5MDc5MzUsLTM5MTU1MTk2LDg3MzExND
-QzMl19
+eyJoaXN0b3J5IjpbMTg1MzQyMDEwLC0zOTE1NTE5Niw4NzMxMT
+Q0MzJdfQ==
 -->
