@@ -17,15 +17,15 @@ More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/p
 * Temperature Accuracy (Vdd=3.3V, Pressure and temperature in range): ± 1 °C
 * Temperature Resolution: 0.1 °C
 * Power Consumption (Vbat=3V): from 3 to 12 µA at 1 sample/sec and Top=25°C
-
 * I²C interface
 
 Here below, the Zerynth driver for the BOSCH BMP180.
 
 Contents:
 
-
 * BMP180 Module
+* Examples
+	* get temp press alt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1NTk4ODMxXX0=
+eyJoaXN0b3J5IjpbNDg5ODkzMjhdfQ==
 -->
