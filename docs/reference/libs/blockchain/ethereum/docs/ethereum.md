@@ -166,7 +166,7 @@ Convert ```value``` to big number format according to ```unit``` and set the res
 Set transaction nonce.
 
 
-set_data(value)`"
+**`set_data(value)`**
 
 
 * ```Arguments```
@@ -178,10 +178,7 @@ set_data(value)`"
 Set transaction data to ```value```
 
 
----
-#### `#!py3 set_chain()`
-
-!!!abstract "`#!py3 set_chain(chain)`"
+**`set_chain(chain)`**
 
 
 * ```Arguments```
@@ -192,11 +189,7 @@ Set transaction data to ```value```
 
 Set the network id for the transaction.
 
-
----
-#### `#!py3 to_rlp()`
-
-!!!abstract "`#!py3 to_rlp(hex)`"
+to_rlp(hex)
 
 
 * ```Arguments```
@@ -208,10 +201,7 @@ Set the network id for the transaction.
 Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of the transaction in biney form. If ```hex``` is True, the hexadecimal representation is returned.
 
 
----
-#### `#!py3 hash()`
-
-!!!abstract "`#!py3 hash(full=True)`"
+**`hash(full=True)`**
 
 
 * ```Arguments```
@@ -224,10 +214,7 @@ Return a hash instance (Keccak) of the transaction. To obtain the binary or stri
 If ```full``` is False, fields v,r,s of the transaction are set to default values as specified in [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
 
 
----
-#### `#!py3 sign()`
-
-!!!abstract "`#!py3 sign(pv)`"
+**`sign(pv)`**
 
 
 * ```Arguments```
@@ -332,5 +319,5 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDgxMDA2MSw4NzMxMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTM5MTU1MTk2LDg3MzExNDQzMl19
 -->
