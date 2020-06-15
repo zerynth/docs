@@ -111,14 +111,12 @@ Set the receiver address to *address*.
 
 **`set_value(value, unit=WEI)`**
 
-
-* ```Arguments```
-
+**Parameters:**
     
-    * ```value``` – value to transfer as an hexadecimal string, bytes or integer
+value – value to transfer as an hexadecimal string, bytes or integer
 
 
-    * ```unit``` – a unit constant, default WEI
+unit – a unit constant, default WEI
 
 
 Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction value.
@@ -319,5 +317,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTU1MTk2LDg3MzExNDQzMl19
+eyJoaXN0b3J5IjpbOTg1NTQyNzc4LC0zOTE1NTE5Niw4NzMxMT
+Q0MzJdfQ==
 -->
