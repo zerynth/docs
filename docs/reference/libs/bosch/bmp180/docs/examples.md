@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.bosch.bmp180
+The following are a list of examples for lib.bosch.bmp180.
 
 ## Temperature, Pressure, Altitude
 
 
-Get Temperature, Pressure, and Altitude throught the BMP180 sensor features
+Get Temperature, Pressure, and Altitude throught the BMP180 sensor features.
 
 
 ```main.py```
@@ -52,3 +52,6 @@ while True:
     print("--------------------------------------------------------")
     sleep(5000)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk2Mjg2MDIzNl19
+-->
