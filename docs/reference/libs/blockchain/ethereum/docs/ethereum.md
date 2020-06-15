@@ -4,7 +4,7 @@ This module allows the creation of transactions and makes it easy to call contra
 
 The Ethereum module is very easy to use:
 
-```
+```python
 import streams
 from blockchain.ethereum import ethereum
 
@@ -355,3 +355,6 @@ Call a previously registered function modifying the blockchain.
 
 
 Call a previously registered function not modifying the blockchain.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODczMTE0NDMyXX0=
+-->
