@@ -68,11 +68,11 @@ The following constants are defined:
 
 Function: **`get_address(pv)`**
 
-Given the private key *pv,* return the corresponding Ethereum address *pv* can be given in both binary or hex format (starting with 0x)
+Given the private key *pv,* return the corresponding Ethereum address *pv* can be given in both binary or hex format (starting with 0x).
 
 Function: **`get_checksum_address(addr)`**
 
-Given the the Ethereum address addr, return the checksummed address according to `EIP 55 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md>`_ -->
+Given the the Ethereum address *addr*, return the checksummed address according to [EIP 55].(https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
 
 ## Transaction class
 
@@ -357,5 +357,5 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzM1OTcyMiw4NzMxMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTE2Mjk1ODM5MzQsODczMTE0NDMyXX0=
 -->
