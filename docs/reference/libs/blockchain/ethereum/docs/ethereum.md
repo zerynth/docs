@@ -103,7 +103,9 @@ Optionally, transaction data and network id can be set.
 
 **`set_receiver(address)`**
 
-**Parameters:** **address** – the receiver address in hex format starting with 0x.
+**Parameters:** 
+
+**address** – the receiver address in hex format starting with 0x.
 
 
 Set the receiver address to *address*.
@@ -113,20 +115,17 @@ Set the receiver address to *address*.
 
 **Parameters:**
     
-value – value to transfer as an hexadecimal string, bytes or integer
 
+ - **value** – value to transfer as an hexadecimal string, bytes or integer    
+ - **unit** – a unit constant, default WEI
 
-unit – a unit constant, default WEI
-
-
-Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction value.
+Convert *value* to big number format according to *unit* and set the resulting big number as the transaction value.
 
 
 **`set_gas_price(value,unit=WEI)`**
 
 
-* ```Arguments```
-
+Paramet
     
     * ```value``` – gas price in hexadecimal format
 
@@ -317,6 +316,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NTQyNzc4LC0zOTE1NTE5Niw4NzMxMT
-Q0MzJdfQ==
+eyJoaXN0b3J5IjpbLTY2MTgyNDk2NCwtMzkxNTUxOTYsODczMT
+E0NDMyXX0=
 -->
