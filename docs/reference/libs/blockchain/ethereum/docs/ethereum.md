@@ -225,22 +225,17 @@ A device can interact with an already created contract placed at address `contra
 
 `key` and `address` represent device address and key needed only if paid transactions are executed.
 
-register_function(function, gas_price=None, gas_limit=None, args_type=())`"
+
+**`register_function(function,gas_price=None,gas_limit=None,args_type=())`**
 
 
-* ```Arguments```
+**Parameters:**
 
     
-    * ```function``` – function name
-
-
-    * ```gas_price``` – gas price for function execution, can be None, an tuple (value, unit) or a single integer value which will be considered in WEI unit
-
-
-    * ```gas_limit``` – gas limit for function execution, can be None, an tuple (value, unit) or a single integer value which will be considered in WEI unit
-
-
-    * ```args_type``` – a tuple specifying function arguments’ type following [Ethereum ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI), at the moment only a subset of possible types is supported: `address`, `uint<M>` where `0 < M < 256 and M % 8 == 0`
+**function** – function name
+**gas_price** – gas price for function execution, can be None, an tuple (value, unit) or a single integer value which will be considered in WEI unit
+gas_limit – gas limit for function execution, can be None, an tuple (value, unit) or a single integer value which will be considered in WEI unit
+args_type – a tuple specifying function arguments’ type following [Ethereum ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI), at the moment only a subset of possible types is supported: `address`, `uint<M>` where `0 < M < 256 and M % 8 == 0`
 
 
 Register a contract function to be called.
@@ -290,6 +285,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3NTEyNDkyLC0zOTE1NTE5Niw4NzMxMT
-Q0MzJdfQ==
+eyJoaXN0b3J5IjpbLTIwMzQ4NjQxNDQsLTM5MTU1MTk2LDg3Mz
+ExNDQzMl19
 -->
