@@ -9,14 +9,12 @@ The Ethereum modules implement basic functionalities for interacting with the Et
 
 Contents:
 
-
 * Ethereum
     * Transaction class
     * Contract class
 * RPC
 * RPC class
-
 * RLP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MjI1ODY5NF19
+eyJoaXN0b3J5IjpbNTIwMzM3NTQyXX0=
 -->
