@@ -84,20 +84,16 @@ Send the raw transaction to the get node in order to broadcast it to all nodes i
 **`simpleCall(tx,block_number,retry=10)`**
 
 
-* ```Arguments```
+**Parameters:**
 
     
-    * ```tx``` – the hexadecimal hash of a signed transaction
 
-
-    * ```block_number``` – the point in the blockchain up to which make the call
-
-
-    * ```retry``` – the number of retries
-
+ - **tx** – the hexadecimal hash of a signed transaction
+ - **block_number** – the point in the blockchain up to which make the call
+ - **retry** – the number of retries
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3NzA0Mjk0LC0zNTk0MTcyMDMsNTI4NT
-E1OTldfQ==
+eyJoaXN0b3J5IjpbLTIwNTAxMDg4MDcsLTM1OTQxNzIwMyw1Mj
+g1MTU5OV19
 -->
