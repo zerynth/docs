@@ -8,25 +8,17 @@ More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/p
 
 
 * Pressure range: 300 - 1100 hPa
-
-
 * Temperature range: -40 - +85 °C
-
-
 * Supply Voltage (Vdd): from 1.7 V to 3.6 V
-
-
 * I2C and SPI interfaces
-
-
 * Current consumption < 4uA @ 1Hz data refresh rate
 
 Here below, the Zerynth driver for the Bosch BME280.
 
 Contents:
-
-
 * BME280 Module
-
-
     * BME280 class
+Exampl
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTkxMTcyMjQwNF19
+-->
