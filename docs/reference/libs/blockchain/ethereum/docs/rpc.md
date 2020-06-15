@@ -61,22 +61,17 @@ Return the current gas price estimated by the Ethereum node. Return 0 on error.
 
 Return the Ethereum network id.
 
-**`getTransactionCount(address, block_number="latest")`**
+**`getTransactionCount(address,block_number="latest")`**
 
-Parameters:
+**Parameters:**
 
-**address** – Ethereum address
-**block_number** – the point in the blockchain up to which the transaction count is calculated
+ - **address** – Ethereum address
+ - **block_number** – the point in the blockchain up to which the transaction count is calculated
 
-
-Return the current transaction count for address ```address```. The returned value can be used as nonce for the next transaction.
-Transaction counts at specific points in time can be retrieved by specifying a different ```block_number```.
+Return the current transaction count for address *address*. The returned value can be used as nonce for the next transaction. Transaction counts at specific points in time can be retrieved by specifying a different *block_number*.
 
 
----
-#### `#!py3 sendTransaction()`
-
-!!!abstract "`#!py3 sendTransaction(tx, retry=10)`"
+**`sendTransaction(tx,retry=10)`**
 
 
 * ```Arguments```
@@ -111,5 +106,5 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjQ0NDExOCw1Mjg1MTU5OV19
+eyJoaXN0b3J5IjpbLTM1OTQxNzIwMyw1Mjg1MTU5OV19
 -->
