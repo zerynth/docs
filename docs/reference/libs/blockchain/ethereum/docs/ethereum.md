@@ -105,8 +105,7 @@ Optionally, transaction data and network id can be set.
 
 **Parameters:** 
 
-**address** – the receiver address in hex format starting with 0x.
-
+ - **address** – the receiver address in hex format starting with 0x.
 
 Set the receiver address to *address*.
 
@@ -139,10 +138,10 @@ Convert *value* to big number format according to *unit* and set the resulting b
 **Parameters:**
     
 
-**value** – gas limit in hexadecimal format
-**unit** – a unit constant, default WEI
+ - **value** – gas limit in hexadecimal format
+ -  **unit** – a unit constant, default WEI
 
-Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction gas limit.
+Convert *value* to big number format according to *unit* and set the resulting big number as the transaction gas limit.
 
 
 **`set_nonce(value)`**
@@ -310,6 +309,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzI3MjM3MDIsLTM5MTU1MTk2LDg3Mz
-ExNDQzMl19
+eyJoaXN0b3J5IjpbNTE5MDc5MzUsLTM5MTU1MTk2LDg3MzExND
+QzMl19
 -->
