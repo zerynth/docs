@@ -33,22 +33,15 @@ Initialize a RPC instance with the get node at ```host```.
 
 **Parameters:**
     
-**method** – the endpoint to call
 
-**params**– the list of parameters for the endpoint
+ - **method** – the endpoint to call
+ -  **params**– the list of parameters for the endpoint
+ -  **retry** – the number of call retries before failing
 
-
-**retry** – the number of call retries before failing
-
-
-Call endpoint ```method``` with params ```params```. Return the `result` field of the
-endpoint json response or None in case of error. Error reason can be retrieved in `self.last_error`.
+Call endpoint *method* with params *params*. Return the `result` field of the endpoint json response or None in case of error. Error reason can be retrieved in `self.last_error`.
 
 
----
-#### `#!py3 getBalance()`
-
-!!!abstract "`#!py3 getBalance(address, block_number="latest")`"
+getBalance(address, block_number="latest")
 
 
 * **Params address**
@@ -138,5 +131,5 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUyODY4NTIsNTI4NTE1OTldfQ==
+eyJoaXN0b3J5IjpbMzg3MzAyNTQsNTI4NTE1OTldfQ==
 -->
