@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.bosch.bme280
+The following are a list of examples for lib.bosch.bme280.
 
 ## Read humidity, temperature and pressure values from BME280
 
@@ -43,3 +43,6 @@ try:
 except Exception as e:
     print("Error2: ",e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk3MTE5NjUxMF19
+-->
