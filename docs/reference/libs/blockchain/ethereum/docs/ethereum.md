@@ -77,12 +77,9 @@ Given the the Ethereum address *addr*, return the checksummed address according 
 ## Transaction class
 
 
----
-#### `#!py3 Transaction()`
+**`class Transaction(chain=MAIN)`**
 
-!!!abstract "`#!py3 Transaction(chain=MAIN)`"
-
-Creates an instance of a Transaction  on the network id specified by ```chain```.
+Creates an instance of a Transaction  on the network id specified by *chain*.
 
 The resulting Transaction instance is empty and invalid. The following parameters must be at least specified by calling the appropriate setters:
 
@@ -357,5 +354,5 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk1ODM5MzQsODczMTE0NDMyXX0=
+eyJoaXN0b3J5IjpbOTQ3NDM0MjUzLDg3MzExNDQzMl19
 -->
