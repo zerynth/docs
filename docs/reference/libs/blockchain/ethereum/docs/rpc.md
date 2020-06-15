@@ -72,9 +72,7 @@ Return the current transaction count for address *address*. The returned value c
 
 
 **`sendTransaction(tx,retry=10)`**
-
-
-* ```Arguments```
+P
 
     
     * ```tx``` – the hexadecimal hash of a signed transaction
@@ -106,5 +104,6 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTQxNzIwMyw1Mjg1MTU5OV19
+eyJoaXN0b3J5IjpbNzcxNTM2MjM3LC0zNTk0MTcyMDMsNTI4NT
+E1OTldfQ==
 -->
