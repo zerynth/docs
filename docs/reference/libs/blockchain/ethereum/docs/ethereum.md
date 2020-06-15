@@ -125,21 +125,18 @@ Convert *value* to big number format according to *unit* and set the resulting b
 **`set_gas_price(value,unit=WEI)`**
 
 
-Paramet
+**Parameters:**
     
-    * ```value``` – gas price in hexadecimal format
 
+ - **value** – gas price in hexadecimal format
+ -  **unit** – a unit constant, default WEI
 
-    * ```unit``` – a unit constant, default WEI
-
-
-Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction gas price.
+Convert *value* to big number format according to *unit* and set the resulting big number as the transaction gas price.
 
 
 **`set_gas_limt(value,unit=WEI)`**
 
-
-* ```Arguments```
+P
 
     
     * ```value``` – gas limit in hexadecimal format
@@ -316,6 +313,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MTgyNDk2NCwtMzkxNTUxOTYsODczMT
-E0NDMyXX0=
+eyJoaXN0b3J5IjpbLTE5ODk3MTgyMzgsLTM5MTU1MTk2LDg3Mz
+ExNDQzMl19
 -->
