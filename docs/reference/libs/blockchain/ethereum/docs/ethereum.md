@@ -66,9 +66,9 @@ The following constants are defined:
 
 * `KOVAN`, identifier of the kovan network
 
-<!-- function::get_address(pv)
+Function: `get_address(pv)` 
 
-Given the private key ```pv```, return the corresponding Ethereum address
+Given the private key ```, return the corresponding Ethereum address
 ```pv``` can be given in both binary or hex format (starting with 0x) -->
 <!-- function::get_checksum_address(addr)
 
@@ -356,5 +356,5 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczMTE0NDMyXX0=
+eyJoaXN0b3J5IjpbMTYyMzE2NjIzMSw4NzMxMTQ0MzJdfQ==
 -->
