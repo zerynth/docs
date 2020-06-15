@@ -180,12 +180,7 @@ Set the network id for the transaction.
 
 **Parameters:**
 
-    
-**
-
- - hex
-
-** – boolean
+ - **hex** – boolean
 
 
 Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of the transaction in biney form. If ```hex``` is True, the hexadecimal representation is returned.
@@ -193,12 +188,9 @@ Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of th
 
 **`hash(full=True)`**
 
+**Parameters:**
 
-* ```Arguments```
-
-    
-    * ```full``` – boolean
-
+ - **full** – boolean
 
 Return a hash instance (Keccak) of the transaction. To obtain the binary or string hash, call the methods digest/hexdigest on the result.
 If ```full``` is False, fields v,r,s of the transaction are set to default values as specified in [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
@@ -309,6 +301,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTg2MjQwMCwtMzkxNTUxOTYsODczMT
-E0NDMyXX0=
+eyJoaXN0b3J5IjpbMjIzMTkzMzA3LC0zOTE1NTE5Niw4NzMxMT
+Q0MzJdfQ==
 -->
