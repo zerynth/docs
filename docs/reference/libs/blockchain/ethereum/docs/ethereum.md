@@ -262,13 +262,13 @@ Call a previously registered function modifying the blockchain.
 **Parameters:**
 
  - **function** – function to call
-   **args** – call arguments as a tuple
-   **rv** – return value: a tuple containing the number of expected bits and `str` or `int` to have respectively an hex string as the call
+ - **args** – call arguments as a tuple
+ -  **rv** – return value: a tuple containing the number of expected bits and `str` or `int` to have respectively an hex string as the call
    return value or an integer obtained converting returned hex to
    decimal (e.g. `(160, str)` for a call returning an address)
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2Nzc1NTY1LC0zOTE1NTE5Niw4NzMxMT
+eyJoaXN0b3J5IjpbNDg5NDI0NDk1LC0zOTE1NTE5Niw4NzMxMT
 Q0MzJdfQ==
 -->
