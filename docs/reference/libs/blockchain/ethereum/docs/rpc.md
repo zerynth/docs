@@ -52,32 +52,21 @@ Call endpoint *method* with params *params*. Return the `result` field of the en
 
 Return the current balance for address *address*. Previous balances can be retrieved by specifying a different *block_number*.
 
-getGasPrice()`"
+**`getGasPrice()`**
 
 Return the current gas price estimated by the Ethereum node. Return 0 on error.
 
 
----
-#### `#!py3 getChainId()`
+**`getChainId()`**
 
-!!!abstract "`#!py3 getChainId()`"
+Return the Ethereum network id.
 
-Return the Ethereum network id
+**`getTransactionCount(address, block_number="latest")`**
 
+Parameters:
 
----
-#### `#!py3 getTransactionCount()`
-
-!!!abstract "`#!py3 getTransactionCount(address, block_number="latest")`"
-
-
-* ```Arguments```
-
-    
-    * ```address``` – Ethereum address
-
-
-    * ```block_number``` – the point in the blockchain up to which the transaction count is calculated
+**address** – Ethereum address
+**block_number** – the point in the blockchain up to which the transaction count is calculated
 
 
 Return the current transaction count for address ```address```. The returned value can be used as nonce for the next transaction.
@@ -122,5 +111,5 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNTM5MjQxMSw1Mjg1MTU5OV19
+eyJoaXN0b3J5IjpbMTQzNjQ0NDExOCw1Mjg1MTU5OV19
 -->
