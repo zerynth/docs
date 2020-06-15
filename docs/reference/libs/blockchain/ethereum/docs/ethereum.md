@@ -136,14 +136,11 @@ Convert *value* to big number format according to *unit* and set the resulting b
 
 **`set_gas_limt(value,unit=WEI)`**
 
-P
-
+**Parameters:**
     
-    * ```value``` – gas limit in hexadecimal format
 
-
-    * ```unit``` – a unit constant, default WEI
-
+**value** – gas limit in hexadecimal format
+**unit** – a unit constant, default WEI
 
 Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction gas limit.
 
@@ -313,6 +310,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODk3MTgyMzgsLTM5MTU1MTk2LDg3Mz
+eyJoaXN0b3J5IjpbLTEwMzI3MjM3MDIsLTM5MTU1MTk2LDg3Mz
 ExNDQzMl19
 -->
