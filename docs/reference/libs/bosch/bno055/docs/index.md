@@ -3,7 +3,7 @@
 The BNO055 is an  Application Specific Sensor Nodes (ASSN) implementing an intelligent 9-axis Absolute Orientation Sensor. It eases the integration process for customers, freeing them from the complexities of multivendor solutions so they can spend more time on product innovation, including novel applications such as wearable hardware.
 
 For optimum system integration the BNO055 is equipped with digital bidirectional I2C interface; Typical applications can regard Navigation, Robotics, Fitness and well-being, Augmented reality, Context awareness, Tablets and ultra-books.
-More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/products/all_products/bno055)
+More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/products/all_products/bno055).
 
 ## Technical Details
 
@@ -24,5 +24,5 @@ Contents:
 	* [get acceleration](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html#get-acceleration)
 	* [inclination alarm](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html#inclination-alarm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQxNDc4MjVdfQ==
+eyJoaXN0b3J5IjpbLTIwNjI0NTE3ODFdfQ==
 -->
