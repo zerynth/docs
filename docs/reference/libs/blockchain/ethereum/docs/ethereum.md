@@ -72,7 +72,7 @@ Given the private key *pv,* return the corresponding Ethereum address *pv* can b
 
 Function: **`get_checksum_address(addr)`**
 
-Given the the Ethereum address *addr*, return the checksummed address according to [EIP 55].(https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
+Given the the Ethereum address *addr*, return the checksummed address according to[EIP 55](https://github.com/ethereum/EIPs/blob/mater/EIPS/eip-55.md).
 
 ## Transaction class
 
@@ -269,6 +269,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5NDI0NDk1LC0zOTE1NTE5Niw4NzMxMT
+eyJoaXN0b3J5IjpbMjk4ODUzNTYyLC0zOTE1NTE5Niw4NzMxMT
 Q0MzJdfQ==
 -->
