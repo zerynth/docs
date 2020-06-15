@@ -4,11 +4,8 @@ This module implements the driver for the Adafruit Bluefruit LE SPI products fam
 
 Data between the mcu and the Bluefruit hardware is exchanged by SPI or serial communication. However, this module has support for SPI only.
 
-**`
 ---
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init(spidrv, nss, irqpin)`**"
+init(spidrv, nss, irqpin)`**"
 
 Manually initializes the Bluefruit peripheral by activating the following communication setup:
 
@@ -216,6 +213,7 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjYyODM4ODMsLTYxMzEzODkyMSwtMT
-UwNTA2MDcwNywxODU3NTg5NzMsMzA1OTA1NTAwXX0=
+eyJoaXN0b3J5IjpbNzYwODgyNjUzLC0xODY2MjgzODgzLC02MT
+MxMzg5MjEsLTE1MDUwNjA3MDcsMTg1NzU4OTczLDMwNTkwNTUw
+MF19
 -->
