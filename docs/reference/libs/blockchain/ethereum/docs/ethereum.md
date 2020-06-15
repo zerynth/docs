@@ -109,10 +109,7 @@ Optionally, transaction data and network id can be set.
 Set the receiver address to *address*.
 
 
----
-#### `#!py3 set_value()`
-
-!!!abstract "`#!py3 set_value(value, unit=WEI)`"
+**`set_value(value, unit=WEI)`**
 
 
 * ```Arguments```
@@ -127,10 +124,7 @@ Set the receiver address to *address*.
 Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction value.
 
 
----
-#### `#!py3 set_gas_price()`
-
-!!!abstract "`#!py3 set_gas_price(value, unit=WEI)`"
+**`set_gas_price(value,unit=WEI)`**
 
 
 * ```Arguments```
@@ -145,10 +139,7 @@ Convert ```value``` to big number format according to ```unit``` and set the res
 Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction gas price.
 
 
----
-#### `#!py3 set_gas_limt()`
-
-!!!abstract "`#!py3 set_gas_limt(value, unit=WEI)`"
+**`set_gas_limt(value,unit=WEI)`**
 
 
 * ```Arguments```
@@ -163,10 +154,7 @@ Convert ```value``` to big number format according to ```unit``` and set the res
 Convert ```value``` to big number format according to ```unit``` and set the resulting big number as the transaction gas limit.
 
 
----
-#### `#!py3 set_nonce()`
-
-!!!abstract "`#!py3 set_nonce(value)`"
+**`set_nonce(value)`**
 
 
 * ```Arguments```
@@ -178,10 +166,7 @@ Convert ```value``` to big number format according to ```unit``` and set the res
 Set transaction nonce.
 
 
----
-#### `#!py3 set_data()`
-
-!!!abstract "`#!py3 set_data(value)`"
+set_data(value)`"
 
 
 * ```Arguments```
@@ -347,5 +332,5 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDQ1NTgwOCw4NzMxMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTk2NDgxMDA2MSw4NzMxMTQ0MzJdfQ==
 -->
