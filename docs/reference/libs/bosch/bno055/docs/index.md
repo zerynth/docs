@@ -9,20 +9,34 @@ More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/p
 
 
 * Supply Voltage (Vdd): from 2.4 V to 3.6 V
+
+
 * Operation Temperature (Top): from -40 °C to 85 °C
+
+
 * Triaxial 16bit gyroscope with ranges switchable from ±125°/s to ±2000°/s
+
+
 * Triaxial 14bit accelerometer with acceleration ranges ±2g/±4g/±8g/±16g
+
+
 * Geomagnetic sensor with magnetic field range typical ±1300µT (x-, y-axis) and ±2500µT (z-axis)
+
+
 * Power Consumption (Vbat=3V): max 12.3 mA (Normal Mode @100Hz output data rate)
+
+
 * I²C interface
+
 Here below, the Zerynth driver for the BOSCH BNO055.
 
 Contents:
+
 
 * [BNO055 Module](https://docs.zerynth.com/latest/official/lib.bosch.bno055/docs/official_lib.bosch.bno055_bno055.html)
 * [Examples](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html)
 	* [get acceleration](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html#get-acceleration)
 	* [inclination alarm](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html#inclination-alarm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjI0NTE3ODFdfQ==
+eyJoaXN0b3J5IjpbLTc5ODg3MDM4OSwtMjA2MjQ1MTc4MV19
 -->
