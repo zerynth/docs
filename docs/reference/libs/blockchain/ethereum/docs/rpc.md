@@ -32,15 +32,14 @@ Initialize a RPC instance with the get node at ```host```.
 **`call(method,params=(),retry=10)`**
 
 Parameters:
-
     
-        * ```method``` – the endpoint to call
+method – the endpoint to call
 
 
-    * ```params``` – the list of parameters for the endpoint
+params– the list of parameters for the endpoint
 
 
-    * ```retry``` – the number of call retries before failing
+retry – the number of call retries before failing
 
 
 Call endpoint ```method``` with params ```params```. Return the `result` field of the
@@ -140,5 +139,5 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjM5NTMyNDQsNTI4NTE1OTldfQ==
+eyJoaXN0b3J5IjpbLTM5OTQ5NzQzMCw1Mjg1MTU5OV19
 -->
