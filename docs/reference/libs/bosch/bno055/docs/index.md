@@ -20,6 +20,9 @@ Here below, the Zerynth driver for the BOSCH BNO055.
 Contents:
 
 * BNO055 Module
+* Examples
+	* get acceleration
+	* inclination alarm
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTczMTI2OF19
+eyJoaXN0b3J5IjpbLTg0NDA5NjYxNl19
 -->
