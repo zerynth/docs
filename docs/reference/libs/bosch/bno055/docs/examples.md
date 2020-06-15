@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.bosch.bno055
+The following are a list of examples for lib.bosch.bno055.
 
 ## Acceleration
 
 
-Get Acceleration as tuple value in 3-axis x,y,z from BNO055
+Get Acceleration as tuple value in 3-axis x,y,z from BNO055.
 
 
 
@@ -45,7 +45,7 @@ while True:
 ## Inclination Alarm
 
 
-Basic Example of BNO055 usage for overcoming tilt threshold alarm
+Basic Example of BNO055 usage for overcoming tilt threshold alarm.
 
 
 
@@ -86,3 +86,6 @@ while True:
         print("WARNING! inclination pack: "+ str(angle)+" degrees!")        
     sleep(1000)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTAzOTg4OTcwOF19
+-->
