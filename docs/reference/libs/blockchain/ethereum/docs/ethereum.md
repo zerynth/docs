@@ -193,17 +193,14 @@ Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of th
  - **full** – boolean
 
 Return a hash instance (Keccak) of the transaction. To obtain the binary or string hash, call the methods digest/hexdigest on the result.
-If ```full``` is False, fields v,r,s of the transaction are set to default values as specified in [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
+If *full* is False, fields v,r,s of the transaction are set to default values as specified in [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
 
 
 **`sign(pv)`**
 
+**Parameters:**
 
-* ```Arguments```
-
-    
-    * ```pv``` – private key in hexadecimal or binary format
-
+ - **pv** – private key in hexadecimal or binary format.
 
 Generate a signed transaction according to EIP-155. Once signed, the transaction can be converted to RLP and broadcasted to the Ethereum network.
 
@@ -301,6 +298,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMTkzMzA3LC0zOTE1NTE5Niw4NzMxMT
-Q0MzJdfQ==
+eyJoaXN0b3J5IjpbLTE1NDEwMzMwNzQsLTM5MTU1MTk2LDg3Mz
+ExNDQzMl19
 -->
