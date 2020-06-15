@@ -10,7 +10,6 @@ More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/p
 
 * Supply Voltage (Vdd): from 2.4 V to 3.6 V
 
-
 * Operation Temperature (Top): from -40 °C to 85 °C
 
 
@@ -34,3 +33,6 @@ Contents:
 
 
 * BNO055 Module
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDkwODgzMTc0XX0=
+-->
