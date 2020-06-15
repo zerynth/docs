@@ -41,27 +41,18 @@ Initialize a RPC instance with the get node at ```host```.
 Call endpoint *method* with params *params*. Return the `result` field of the endpoint json response or None in case of error. Error reason can be retrieved in `self.last_error`.
 
 
-getBalance(address, block_number="latest")
+**`getBalance(address, block_number="latest")`**
 
 
-* **Params address**
-
-    Ethereum address
+**Params address:** Ethereum address
 
 
-
-* **Params block_number**
-
-    the point in the blockchain up to which balance is calculated
+**Params block_number:** the point in the blockchain up to which balance is calculated
 
 
-Return the current balance for address ```address```. Previous balances can be retrieved by specifying a different ```block_number```
+Return the current balance for address *address*. Previous balances can be retrieved by specifying a different *block_number*.
 
-
----
-#### `#!py3 getGasPrice()`
-
-!!!abstract "`#!py3 getGasPrice()`"
+getGasPrice()`"
 
 Return the current gas price estimated by the Ethereum node. Return 0 on error.
 
@@ -131,5 +122,5 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg3MzAyNTQsNTI4NTE1OTldfQ==
+eyJoaXN0b3J5IjpbMTcwNTM5MjQxMSw1Mjg1MTU5OV19
 -->
