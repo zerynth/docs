@@ -72,22 +72,16 @@ Return the current transaction count for address *address*. The returned value c
 
 
 **`sendTransaction(tx,retry=10)`**
-P
 
-    
-    * ```tx``` – the hexadecimal hash of a signed transaction
+Parameters:
 
+ - **tx** – the hexadecimal hash of a signed transaction
+ -  **retry** – the number of retries
 
-    * ```retry``` – the number of retries
-
-
-Send the raw transaction to the geth node in order to broadcast it to all nodes in the network. If correct, it will be eventually added to a mined block.
+Send the raw transaction to the get node in order to broadcast it to all nodes in the network. If correct, it will be eventually added to a mined block.
 
 
----
-#### `#!py3 simpleCall()`
-
-!!!abstract "`#!py3 simpleCall(tx, block_number, retry=10)`"
+**`simpleCall(tx,block_number,retry=10)`**
 
 
 * ```Arguments```
@@ -104,6 +98,6 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNTM2MjM3LC0zNTk0MTcyMDMsNTI4NT
+eyJoaXN0b3J5IjpbNTM3NzA0Mjk0LC0zNTk0MTcyMDMsNTI4NT
 E1OTldfQ==
 -->
