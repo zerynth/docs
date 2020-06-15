@@ -29,16 +29,12 @@ Initialize a RPC instance with the get node at ```host```.
 ```host``` must also contain the port and the protocol (i.e. `https://mynode.com:8545`)
 
 
----
-#### `#!py3 call()`
+**`call(method,params=(),retry=10)`**
 
-!!!abstract "`#!py3 call(method, params=(), retry=10)`"
-
-
-* ```Arguments```
+Parameters:
 
     
-    * ```method``` – the endpoint to call
+        * ```method``` – the endpoint to call
 
 
     * ```params``` – the list of parameters for the endpoint
@@ -144,5 +140,5 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NTE1OTldfQ==
+eyJoaXN0b3J5IjpbLTEwNjM5NTMyNDQsNTI4NTE1OTldfQ==
 -->
