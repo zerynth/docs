@@ -101,16 +101,10 @@ The resulting Transaction instance is empty and invalid. The following parameter
 Optionally, transaction data and network id can be set.
 
 
----
-#### `#!py3 set_receiver()`
+**`set_receiver(address)`**
 
-!!!abstract "`#!py3 set_receiver(address)`"
-
-
-* ```Arguments```
-
-    
-    * ```address``` – the receiver address in hex format starting with 0x
+**Parameters:**
+ **address** – the receiver address in hex format starting with 0x
 
 
 Set the receiver address to ```address```
@@ -354,5 +348,5 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NDM0MjUzLDg3MzExNDQzMl19
+eyJoaXN0b3J5IjpbLTE0Njg5NzEyNzIsODczMTE0NDMyXX0=
 -->
