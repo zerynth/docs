@@ -2,7 +2,7 @@
 
 This module allows calling the JSON-RPC endpoints of a geth node.
 
-```
+```python
 from blockchain.ethereum import rpc
 
 ...
@@ -23,12 +23,9 @@ print("Chain:",eth.getChainId())
 # RPC class
 
 
----
-#### `#!py3 RPC()`
+**`class RPC(host)`**
 
-!!!abstract "`#!py3 RPC(host)`"
-
-Initialize a RPC instance with the geth node at ```host```.
+Initialize a RPC instance with the get node at ```host```.
 ```host``` must also contain the port and the protocol (i.e. `https://mynode.com:8545`)
 
 
@@ -146,3 +143,6 @@ Send the raw transaction to the geth node in order to broadcast it to all nodes 
 
 
 Executes a new message call immediately without creating a transaction on the block chain.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTI4NTE1OTldfQ==
+-->
