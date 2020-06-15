@@ -206,11 +206,7 @@ Generate a signed transaction according to EIP-155. Once signed, the transaction
 
 ## Contract class
 
-
----
-#### `#!py3 Contract()`
-
-!!!abstract "`#!py3 Contract(rpc, contract_address, key=None, address=None, chain=MAIN)`"
+**`class Contract(rpc,contract_address,key=None,address=None,chain=MAIN)`**
 
 Prepare the device to interact with an Ethereum Smart Contract.
 
@@ -229,11 +225,7 @@ A device can interact with an already created contract placed at address `contra
 
 `key` and `address` represent device address and key needed only if paid transactions are executed.
 
-
----
-#### `#!py3 register_function()`
-
-!!!abstract "`#!py3 register_function(function, gas_price=None, gas_limit=None, args_type=())`"
+register_function(function, gas_price=None, gas_limit=None, args_type=())`"
 
 
 * ```Arguments```
@@ -298,6 +290,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDEwMzMwNzQsLTM5MTU1MTk2LDg3Mz
-ExNDQzMl19
+eyJoaXN0b3J5IjpbNzA3NTEyNDkyLC0zOTE1NTE5Niw4NzMxMT
+Q0MzJdfQ==
 -->
