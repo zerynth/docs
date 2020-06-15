@@ -241,26 +241,17 @@ A device can interact with an already created contract placed at address `contra
 Register a contract function to be called.
 
 
----
-#### `#!py3 tx()`
-
-!!!abstract "`#!py3 tx(function, nonce, value, args=())`"
+**`tx(function,nonce,value,args=())`**
 
 
-* ```Arguments```
+Parameters:
 
     
-    * ```function``` – function to call
 
-
-    * ```nonce``` – transaction nonce as integer (can be obtained calling rpc.getTransactionCount)
-
-
-    * ```value``` – transaction value as a tuple (value,unit) or None
-
-
-    * ```args``` – call arguments as a tuple
-
+ - **function** – function to call
+ - **nonce** – transaction nonce as integer (can be obtained calling rpc.getTransactionCount)
+ - **value** – transaction value as a tuple (value,unit) or None
+ **args** – call arguments as a tuple
 
 Call a previously registered function modifying the blockchain.
 
@@ -285,6 +276,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTY4OTIxNjQsLTM5MTU1MTk2LDg3Mz
-ExNDQzMl19
+eyJoaXN0b3J5IjpbMTY1MTQwNTAxNiwtMzkxNTUxOTYsODczMT
+E0NDMyXX0=
 -->
