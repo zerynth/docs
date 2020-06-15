@@ -251,7 +251,7 @@ Parameters:
  - **function** – function to call
  - **nonce** – transaction nonce as integer (can be obtained calling rpc.getTransactionCount)
  - **value** – transaction value as a tuple (value,unit) or None
- **args** – call arguments as a tuple
+ - **args** – call arguments as a tuple
 
 Call a previously registered function modifying the blockchain.
 
@@ -276,6 +276,6 @@ Call a previously registered function modifying the blockchain.
 
 Call a previously registered function not modifying the blockchain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTQwNTAxNiwtMzkxNTUxOTYsODczMT
-E0NDMyXX0=
+eyJoaXN0b3J5IjpbLTIwMTcxMzcyNDMsLTM5MTU1MTk2LDg3Mz
+ExNDQzMl19
 -->
