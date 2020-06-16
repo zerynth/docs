@@ -216,7 +216,6 @@ The `TAG` value is set to the ASCII value of each key, so that key presses can b
     
     * ```x``` – x-coordinate top-left, in pixels
     * ```y``` – y-coordinate top-left, in pixels
-
     * ```r``` – clock radius
 
 
@@ -224,14 +223,8 @@ The `TAG` value is set to the ASCII value of each key, so that key presses can b
 
 
     * ```h``` – hours
-
-
     * ```m``` – minutes
-
-
     * ```s``` – seconds
-
-
     * ```ms``` – milliseconds
 
 
@@ -245,11 +238,7 @@ Adds a clock to the screen.
 
     
     * ```color``` – clear color `0-1`
-
-
     * ```stencil``` – clear stencil `0-1`
-
-
     * ```tag``` – clear tag `0-1`
 
 
@@ -263,8 +252,6 @@ Clears buffers to default values.
 
     
     * ```rgb``` – tuple for red, green and blue values (`0-255`, `0-255`, `0-255`)
-
-
     * ```a``` – alpha `0-255`
 
 
@@ -289,11 +276,7 @@ Sets the default tag when tag buffer is cleared. The initial value is `0`.
 
     
     * ```x``` – x-coordinate top-left, in pixels
-
-
     * ```y``` – y-coordinate top-left, in pixels
-
-
     * ```style``` – spinner style, one of `SPINNER_CIRCLE`, `SPINNER_LINE`, `SPINNER_CLOCK`, `SPINNER_ORBITING`
 
 
@@ -312,8 +295,6 @@ Starts the calibration procedure (needed by Resistive Displays).
 
     
     * ```ram_ptr``` – address in RAM_G to inflate the resource to
-
-
     * ```resource``` – name of the resource to inflate
 
 
@@ -334,11 +315,7 @@ Raises:
 
     
     * ```ram_ptr``` – address in RAM_G to load the resource to
-
-
     * ```options``` – load options
-
-
     * ```resource``` – name of the resource to inflate
 
 
@@ -371,14 +348,8 @@ Vertex format are useful to specify pixel coordinates beyond the `0-511` range.
 
     
     * ```handle``` – a user-defined handle to refer to the bitmap
-
-
     * ```source``` – bitmap source in RAM_G
-
-
     * ```layout``` – a tuple of `(bitmap_format, linestride)`
-
-
     * ```size``` – a tuple of `(filtering_mode, x_wrap_mode, y_wrap_mode, bitmap_width, bitmap_height)`
 
 
@@ -395,60 +366,30 @@ Allowed values for `bitmap_format` and number of bits/pixel for that format:
 
 
 * `L1` `1`
-
-
 * `L2` `2`
-
-
 * `L4` `4`
-
-
 * `L8` `8`
-
-
 * `ARGB2` `8`
-
-
 * `RGB332` `8`
-
-
 * `ARGB4` `16`
-
-
 * `ARGB1555` `16`
-
-
 * `RGB565` `16`
-
-
 * `PALETTED8` `8`
-
-
 * `PALETTED4444` `8`
-
-
 * `PALETTED565` `8`
-
-
 * `BARGRAPH`
-
-
 * `TEXT8X8`
 
 Allowed values for `filtering_mode` are:
 
 
 * `NEAREST`
-
-
 * `BILINEAR`
 
 Allowed values for `x_wrap_mode` and `y_wrap_mode` are:
 
 
 * `BORDER`
-
-
 * `REPEAT`
 
 
@@ -478,7 +419,6 @@ Ends a display list.
 
 **`swap_and_empty()`**
 
-!!!abstract "`#!py3 swap_and_empty()`"
 
 Swaps current display list and waits until all commands are executed.
 
@@ -555,6 +495,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUwNTIzOTU1LDY4OTczMzIyOSwxNTQ4MD
-Y4NDM0LDE5NTQzOTc2NDBdfQ==
+eyJoaXN0b3J5IjpbMTMzNDczMzczNCw2ODk3MzMyMjksMTU0OD
+A2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
