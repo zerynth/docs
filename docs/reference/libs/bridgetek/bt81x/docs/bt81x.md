@@ -147,12 +147,12 @@ Sets current foreground color.
 **`set_background(r,g,b)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```r``` – red `0-255`
-    * ```g``` – green `0-255`
-    * ```b``` – blue `0-255`
+    *r – red `0-255`
+    *g – green `0-255`
+    **b – blue `0-255`
 
 
 Sets current background color.
@@ -491,7 +491,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTMyNzE5NzAsMTcxODA4NDY2MywxNj
-c3OTI2MTUxLDY4OTczMzIyOSwxNTQ4MDY4NDM0LDE5NTQzOTc2
-NDBdfQ==
+eyJoaXN0b3J5IjpbMTAyOTI5NDY0LC0xMTEzMjcxOTcwLDE3MT
+gwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMyMjksMTU0ODA2ODQz
+NCwxOTU0Mzk3NjQwXX0=
 -->
