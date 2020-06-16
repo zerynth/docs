@@ -26,7 +26,7 @@ A valid private key `pkey` is also needed.
 If a private key has been generated following [Google Cloud IoT guidelines](https://cloud.google.com/iot/docs/how-tos/credentials/keys?hl=it#generating_an_es256_key)
 and is consequently stored as a pem file, the needed hex string can be extracted from the OCTET STRING field associated value obtained from
 
-```
+```python
 openssl asn1parse -in my_private.pem
 ```
 
@@ -36,7 +36,7 @@ The client is accessible through `mqtt` instance attribute and exposes all Zeryn
 custom callbacks on MQTT commands.
 The only difference concerns `mqtt.connect` method which does not require broker url and ssl context, taking them from Device configuration:
 
-```
+```python
 def timestamp_fn():
     valid_timestamp = 1509001724
     return valid_timestamp
@@ -48,29 +48,17 @@ my_device.mqtt.connect()
 my_device.mqtt.loop()
 ```
 
+**`publish_event(event)`**
 
----
-#### `#!py3 publish_event()`
-
-!!!abstract "`#!py3 publish_event(event)`"
-
-Publish a new event `event`.
-`event` must be a dictionary and will be sent as json string.
+Publish a new event `event`.`event` must be a dictionary and will be sent as json string.
 
 
----
-#### `#!py3 publish_state()`
+**`publish_state(state)`**
 
-!!!abstract "`#!py3 publish_state(state)`"
-
-Publish a new state `state`.
-`state` must be a dictionary and will be sent as json string.
+Publish a new state `state`.`state` must be a dictionary and will be sent as json string.
 
 
----
-#### `#!py3 on_config()`
-
-!!!abstract "`#!py3 on_config(config_cbk)`"
+on_config(config_cbk)`
 
 Set a callback to be called on config updates.
 
@@ -104,5 +92,5 @@ def command_cbk(command, subfolder):
 my_device.on_command(command_cbk)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc1MzI3NzFdfQ==
+eyJoaXN0b3J5IjpbLTE2MDI2NzYyODddfQ==
 -->
