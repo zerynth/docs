@@ -32,7 +32,7 @@ Perform device registration to Polaris Cloud services.
 **Arguments:**
    
 *	**device** – a connected instance of `fortebit.iot.Device`
-**email** – the device owner’s email address
+*	**email** – the device owner’s email address
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NzAwMzUzNV19
+eyJoaXN0b3J5IjpbLTE1MzI1OTcxN119
 -->
