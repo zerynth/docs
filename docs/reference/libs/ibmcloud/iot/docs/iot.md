@@ -26,26 +26,20 @@ my_device.mqtt.loop()
 ```
 
 
----
-#### `#!py3 publish()`
-
-!!!abstract "`#!py3 publish(event_id, event, format_string='json')`"
+**`publish(event_id,event,format_string='json')`**
 
 Publish `event_id` event with `event` content.
 
 `event` content has to be a dictionary when `'json'` is chosen as `format_string`, a string otherwise.
 
 
----
-#### `#!py3 on_cmd()`
-
-!!!abstract "`#!py3 on_cmd(command_id, command_cbk, format_string='json')`"
+**`on_cmd(command_id,command_cbk,format_string='json')`**
 
 Set a callback to respond to `command_id` command.
 
 `command_cbk` callback will be called passing a dictionary containing command payload when `'json'` is chosen as `format_string`, a string otherwise
 
-```
+```python
 def turn_led(cmd_content):
     if cmd_content['dir'] == 'on':
         led_on()
@@ -55,5 +49,5 @@ def turn_led(cmd_content):
 my_device.on_cmd('turn_led', turn_led)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzkzMjgyMl19
+eyJoaXN0b3J5IjpbMTc4MTgwMzkzXX0=
 -->
