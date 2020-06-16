@@ -12,28 +12,20 @@ Initializes available CapSense widgets.
 **`on_btn(callback,event=BTN0_RISE)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```callback``` – callback function
 
-
-    * ```event``` – event type
-
+ - **callback** – callback function
+ - **event** – event type
 
 Sets a callback to be called in response to a button event.
 Available events are:
 
 
 * `BTN0_RISE`: triggered on button 0 touch
-
-
 * `BTN0_FALL`: triggered when button 0 press finishes
-
-
 * `BTN1_RISE`: triggered on button 1 touch
-
-
 * `BTN1_FALL`: triggered when button 0 press finishes
 
 Callbacks are called without additional parameters.
@@ -42,13 +34,10 @@ Callbacks are called without additional parameters.
 **`on_slider(callback,event=SLIDER_LEAVE)`**
 
 
-* ```Arguments```
-
+**Arguments:**
     
-    * ```callback``` – callback function
-
-
-    * ```event``` – event type
+**callback** – callback function
+event – event type
 
 
 Sets a callback to be called in response to a slider event.
@@ -80,14 +69,11 @@ def level_callback(cur_pos):
 ```
 
 
----
-#### `#!py3 get_centroid()`
-
-!!!abstract "`#!py3 get_centroid()`"
+**`get_centroid()`**
 
 Gets current slider centroid value.
 
 Returns `None` if the slider is currently not touched.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjc3NTkxNDRdfQ==
+eyJoaXN0b3J5IjpbLTE5MTc2NzI4MjRdfQ==
 -->
