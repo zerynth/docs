@@ -328,10 +328,7 @@ Draws a spinner with a chosen style.
 Starts the calibration procedure (needed by Resistive Displays).
 
 
----
-#### `#!py3 inflate()`
-
-!!!abstract "`#!py3 inflate(ram_ptr, resource)`"
+**`inflate(ram_ptr,resource)`**
 
 
 * ```Arguments```
@@ -640,6 +637,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTA1ODgxNSwxNTQ4MDY4NDM0LDE5NT
-QzOTc2NDBdfQ==
+eyJoaXN0b3J5IjpbLTEwODI1OTIwOTMsMTU0ODA2ODQzNCwxOT
+U0Mzk3NjQwXX0=
 -->
