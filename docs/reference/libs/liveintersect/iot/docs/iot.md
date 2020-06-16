@@ -1,7 +1,8 @@
 # The Asset class
 
 
-### class Asset(baseUrl, apiKey, srNo, assetName, assetTypeCode, ssl_ctx)
+**`class Asset(baseUrl,apiKey,srNo,assetName,assetTypeCode,ssl_ctx)`**
+
 This class represents asset software which facilitates all communication to the LiveIntersect cloud.  [LiveIntersect](https://esprida.com/platform/) is a IoT enablement platform which collects and manages asset data and enables you to build IoT solutions.
 
 `baseUrl` url to LiveIntersect hosting, If you are using first implementation use [Sandbox Environment](https://sandbox.liveintersect.com)
@@ -19,7 +20,8 @@ This class represents asset software which facilitates all communication to the 
 my_Asset = li_http.Asset(https://liveintersect.com/, apiKey, srNo, assetName, assetTypeCode, ssl_ctx)
 
 
-### do_api_get(resourcePath, params=None, headers = None)
+**`do_api_get(resourcePath,params=None,headers = None)`**
+
 Performs GET resource from resourcePath using Asset credentials
 
 `resourcePath` REST resource path within LiveIntersect
@@ -29,7 +31,8 @@ Performs GET resource from resourcePath using Asset credentials
 `headers` Http headers
 
 
-### do_api_post(resourcePath, jsonObj, headers = None)
+do_api_post(resourcePath, jsonObj, headers = None)
+
 Performs POST to resourcePath using Asset credentials
 
 `resourcePath` REST resource path within LiveIntersect
@@ -71,3 +74,6 @@ Note: use get_asset_info to download attribute currently stored in the cloud.
 `attr_code` unique identifier for the attributes associated with the asset type
 
 `attr_value` Raw value of the attribute (may contain unit-symbol i.e. 45C)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1OTI5MDkwMzBdfQ==
+-->
