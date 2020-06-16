@@ -157,14 +157,9 @@ Sets current foreground color.
 
 Sets current background color.
 
-**`add_text(txt)`**
+**Parameters:**
 
-
-* ```Arguments```
-
-    
-    * ```txt``` – `Text()` object instance
-
+ - **txt** – `Text` object instance
 
 Adds a text element to the screen.
 
@@ -174,7 +169,7 @@ A call to `set_font_color()` is performed if the `Text.palette` attribute is set
 **`add_button(btn)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
     * ```btn``` – `Button()` object instance
@@ -491,7 +486,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODYxODM1MywtMTExMzI3MTk3MCwxNz
-E4MDg0NjYzLDE2Nzc5MjYxNTEsNjg5NzMzMjI5LDE1NDgwNjg0
-MzQsMTk1NDM5NzY0MF19
+eyJoaXN0b3J5IjpbMjEyMDQyNTcyNywxMjk4NjE4MzUzLC0xMT
+EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
+MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
