@@ -1,15 +1,10 @@
 # Polaris Board
 
-This module provides easy access to the Polaris board features and meaningful names
-for MCU pins and peripherals.
+This module provides easy access to the Polaris board features and meaningful names for MCU pins and peripherals.
 
+**`class main()`**
 
----
-#### `#!py3 main()`
-
-!!!abstract "`#!py3 main()`"
-
-Namespace for the ```Main``` connector signals and related peripherals:
+Namespace for the **Main** connector signals and related peripherals:
 
 
 * `PIN_VIN` - analog input for main supply voltage
@@ -359,3 +354,6 @@ Switch the green LED off.
 !!!abstract "`#!py3 ledGreenOn()`"
 
 Switch the green LED on.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTc3ODk4NDE0XX0=
+-->
