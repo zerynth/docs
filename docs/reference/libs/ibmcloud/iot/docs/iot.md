@@ -7,10 +7,7 @@ It allows to make your device act as an IBM Watson IoT Device which can be creat
 ## The Device class
 
 
----
-#### `#!py3 Device()`
-
-!!!abstract "`#!py3 Device(device_id, device_type, organization, auth_token)`"
+**`class Device(device_id,device_type,organization,auth_token)`**
 
 Create a Device instance representing an IBM Watson IoT Device.
 
@@ -21,7 +18,7 @@ The client is accessible through `mqtt` instance attribute and exposes all Zeryn
 custom callback on MQTT commands (though the Device class already exposes high-level methods to setup IBM Watson IoT specific callbacks).
 The only difference concerns mqtt.connect method which does not require broker url and ssl context, taking them from Device configuration:
 
-```
+```python
 my_device = iot.Device('my_device_id', 'my_device_type', 'my_organization', 'auth_token')
 my_device.mqtt.connect()
 ...
@@ -57,3 +54,6 @@ def turn_led(cmd_content):
 
 my_device.on_cmd('turn_led', turn_led)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg5MzkzMjgyMl19
+-->
