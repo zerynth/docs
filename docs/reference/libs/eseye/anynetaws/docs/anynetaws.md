@@ -100,7 +100,10 @@ Publish a message on a chosen topic in one of the following modes:
 3. open (`pubopen()`) a publish *channel* and publish the message checking if a *channel* is already open on chosen topic, if so the socket index on which the *channel* is already open overwrites passed one.
 
 
-pubclose(sock_index)
+---
+#### `#!py3 pubclose()`
+
+!!!abstract "`#!py3 pubclose(sock_index)`"
 
 
 * ```Arguments```
@@ -205,5 +208,6 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjMxMzcyMywtNDc3ODIzNjMxXX0=
+eyJoaXN0b3J5IjpbNzUzODA1NTczLC04MDIzMTM3MjMsLTQ3Nz
+gyMzYzMV19
 -->
