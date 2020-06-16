@@ -10,27 +10,22 @@ The Zerynth Eseye AnyNet AWS Library allows to easily connect to [AWS IoT platfo
 
     
 
- - serdrv – serial communication driver (e.g., `SERIAL0`, `SERIAL1`, …)
- - serbaud – serial communication baudrate
+ - **serdrv** – serial communication driver (e.g., `SERIAL0`, `SERIAL1`, …)
+ - **serbaud** – serial communication baudrate
 
 Initialize serial communication with the Eseye AWS AT modem.
 
 
----
-#### `#!py3 state()`
-
-!!!abstract "`#!py3 state(string_format=True)`"
+**`state(string_format=True)`**
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```string_format``` – `True` or `False` to select string or integer output format respectively
+ - **string_format** – `True` or `False` to select string or integer output format respectively
 
+Retrieve modem state, returned as an integer in the range `0`, :samp:8 or a string in the list:
 
-Retrieve modem state, returned as an integer in the range `0`,:samp:8 or a string in the list:
-
-```
+```py
 [
     'Idle',
     'Waiting Keys',
@@ -249,5 +244,5 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzgyMzYzMV19
+eyJoaXN0b3J5IjpbLTc5NDIwNTE1MywtNDc3ODIzNjMxXX0=
 -->
