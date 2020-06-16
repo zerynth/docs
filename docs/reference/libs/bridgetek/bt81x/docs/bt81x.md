@@ -512,10 +512,7 @@ Raises:
 
 
 
----
-#### `#!py3 set_timeout()`
-
-!!!abstract "`#!py3 set_timeout(timeout_millis)`"
+**`set_timeout(timeout_millis)`**
 
 
 * ```Arguments```
@@ -526,11 +523,7 @@ Raises:
 
 Sets a timeout for Co-Processor commands. Default timeout value is `4000`.
 
-
----
-#### `#!py3 tag()`
-
-!!!abstract "`#!py3 tag(n)`"
+**`tag(n)`**
 
 
 * ```Arguments```
@@ -544,11 +537,7 @@ When the graphics objects attached with the tag value are touched, if calls to `
 
 The initial tag value is specified by function `clear_tag()` and takes effect calling function `clear()`.
 
-
----
-#### `#!py3 tag_mask()`
-
-!!!abstract "`#!py3 tag_mask(mask)`"
+**`tag_mask(mask)`**
 
 
 * ```Arguments```
@@ -560,10 +549,7 @@ The initial tag value is specified by function `clear_tag()` and takes effect ca
 If called with value `0` the default value of the tag buffer is used for current display list.
 
 
----
-#### `#!py3 tag_mask()`
-
-!!!abstract "`#!py3 tag_mask(mask)`"
+**`tag_mask(mask)`**
 
 
 * ```Arguments```
@@ -575,10 +561,7 @@ If called with value `0` the default value of the tag buffer is used for current
 If called with value `0` the default value of the tag buffer is used for current display list.
 
 
----
-#### `#!py3 touch_loop()`
-
-!!!abstract "`#!py3 touch_loop(cbks)`"
+**`touch_loop(cbks)`**
 
 
 * ```Arguments```
@@ -595,6 +578,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNzYxOTUwLDE1NDgwNjg0MzQsMTk1ND
+eyJoaXN0b3J5IjpbNjg5NzMzMjI5LDE1NDgwNjg0MzQsMTk1ND
 M5NzY0MF19
 -->
