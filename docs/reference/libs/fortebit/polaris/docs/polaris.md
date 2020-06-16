@@ -8,91 +8,37 @@ Namespace for the **Main** connector signals and related peripherals:
 
 
 * `PIN_VIN` - analog input for main supply voltage
-
-
 * `PIN_IGNITION` - digital input for ignition detection (active high)
-
-
 * `PIN_SOS` - digital input for emergency button (active low)
-
-
 * `PIN_AIN1`, `PIN_RANGE_IN1` - analog input 1 and range selection pin
-
-
 * `PIN_AIN2`, `PIN_RANGE_IN2` - analog input 2 and range selection pin
-
-
 * `PIN_AIN3`, `PIN_RANGE_IN3` - analog input 3 and range selection pin
-
-
 * `PIN_AIN4`, `PIN_RANGE_IN4` - analog input 4 and range selection pin
-
-
 * `PIN_IOEXP_IN1` - control input 1 for I/O Expander
-
-
 * `PIN_IOEXP_IN2` - control input 2 for I/O Expander
-
-
 * `ADC_VIN` - ADC channel (using `PIN_VIN`)
-
-
 * `ADC_IN1` - ADC channel (using `PIN_AIN1`)
-
-
 * `ADC_IN2` - ADC channel (using `PIN_AIN2`)
-
-
 * `ADC_IN3` - ADC channel (using `PIN_AIN3`)
-
-
 * `ADC_IN4` - ADC channel (using `PIN_AIN4`)
-
-
 * `PWM_IOEXP_IN1` - PWM control input 1 for I/O Expander
-
-
 * `PWM_IOEXP_IN2` - PWM control input 2 for I/O Expander
+ 
+**`class mikrobus()`**
 
-
----
-#### `#!py3 mikrobus()`
-
-!!!abstract "`#!py3 mikrobus()`"
-
-Namespace for the ```mikroBUS``` expansion interface signals and related peripherals:
+Namespace for the **mikroBUS** expansion interface signals and related peripherals:
 
 
 * `PIN_MISO`, `PIN_MOSI`, `PIN_SCK`, `PIN_CS` - expansion SPI interface
-
-
 * `PIN_SDA`, `PIN_SCL` - expansion I2C interface
-
-
 * `PIN_TX`, `PIN_RX` - expansion UART pins
-
-
 * `PIN_RST`, `PIN_INT` - general purpose I/O pins (usually reset and interrupt)
-
-
 * `PIN_PWM` - PWM capable pin
-
-
 * `PIN_AN` - analog input pin
-
-
 * `SERIAL` - serial driver (using `PIN_RX`,\`\`PIN_TX\`\`)
-
-
 * `SPI` - SPI driver (using `PIN_MISO`, `PIN_MOSI`, `PIN_SCK`)
-
-
 * `I2C` - I2C driver (using `PIN_SDA`, `PIN_SCL`)
-
-
 * `PWM` - PWM channel (using `PIN_PWM`)
-
-
 * `ADC` - ADC channel (using `PIN_AN`)
 
 
@@ -355,5 +301,5 @@ Switch the green LED off.
 
 Switch the green LED on.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc3ODk4NDE0XX0=
+eyJoaXN0b3J5IjpbMjA2NjY3NTEyOV19
 -->
