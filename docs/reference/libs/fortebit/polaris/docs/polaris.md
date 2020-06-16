@@ -97,20 +97,14 @@ Namespace for Modem signals and related peripherals:
 
 **`init()`**
 
-Performs required initializion of Polaris pins and common functionalities.
+Performs required initialization of Polaris pins and common functionalities.
 It should be called at the start of your application.
 
-
----
-#### `#!py3 isBatteryBackup()`
-
-!!!abstract "`#!py3 isBatteryBackup()`"
+**`sBatteryBackup()`**
 
 Returns a boolean value to indicate whether the board is powered from the backup battery source.
 
-
----
-#### `#!py3 setBatteryCharger()`
+**`setBatteryCharger()`**
 
 !!!abstract "`#!py3 setBatteryCharger(enable)`"
 
@@ -238,5 +232,5 @@ Switch the green LED off.
 
 Switch the green LED on.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MjUyNTI1OF19
+eyJoaXN0b3J5IjpbLTUwNjIzNjQ0M119
 -->
