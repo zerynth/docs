@@ -140,18 +140,22 @@ In general one it can be assumed that:
 	 * address 3 is the BSSID (the MAC of the AP)
 
  * for `to_ds` 1 and `from_ds` 0:
+ 
 
-		 * address 1 is the BSSID 
-	 * address 2 is the source MAC 
-	 * address 3 is the destination MAC (outside the wifi network)
+List item
 
+ address 1 is the BSSID
+ address 2 is the source MAC  
+ address 3 is the
+ 
+   destination MAC (outside the wifi network)
  * for `to_ds` 0 and `from_ds` 1:
          * address 1 is the destination MAC
         * address 2 is the BSSID
         * address 3 is the source MAC (outside the wifi network)
 
 
-* for `to_ds` 1 and `from_ds` 1:
+ * for `to_ds` 1 and `from_ds` 1:
          * address 1 is the receiver MAC (inside the wifi WDS network)
         * address 2 is the transmitter MAC (inside the wifi WDS network)
         * address 3 is the destination MAC (outside the wifi WDS network)
@@ -177,5 +181,5 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjMzNzAxODldfQ==
+eyJoaXN0b3J5IjpbMjEzMDY0MDg5Nl19
 -->
