@@ -25,7 +25,7 @@ Initialize serial communication with the Eseye AWS AT modem.
 
 Retrieve modem state, returned as an integer in the range `0`, :samp:8 or a string in the list:
 
-```py
+```python
 [
     'Idle',
     'Waiting Keys',
@@ -39,45 +39,30 @@ Retrieve modem state, returned as an integer in the range `0`, :samp:8 or a stri
 ]
 ```
 
-
----
-#### `#!py3 qccid()`
-
-!!!abstract "`#!py3 qccid()`"
+**`qccid()`**
 
 Retrieve the ICCD of AnyNet Secure SIM.
 
 
----
-#### `#!py3 version()`
-
-!!!abstract "`#!py3 version()`"
+**`version()`**
 
 Retrieve the version of the Eseye AWS AT modem firmware.
 
 
----
-#### `#!py3 reset()`
+reset()
 
-!!!abstract "`#!py3 reset()`"
-
-Force a reload of parameters from the SIM card, forcing the modem to reset
+Force a reload of parameters from the SIM card, forcing the modem to reset.
 
 
----
-#### `#!py3 pubopen()`
-
-!!!abstract "`#!py3 pubopen(topic, sock_index)`"
+**`pubopen(topic,sock_index)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```topic``` – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
 
-
-    * ```sock_index``` – an integer representing a valid modem socket index `(0,1)`
-
+ - **topic** – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
+ - **sock_index** – an integer representing a valid modem socket index `(0,1)`
 
 Open a publish ```channel``` to topic `topic` through socket index `sock_index`.
 Eseye AWS AT modem needs a publish ```channel``` to be open before starting publishing on a selected topic.
@@ -244,5 +229,5 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDIwNTE1MywtNDc3ODIzNjMxXX0=
+eyJoaXN0b3J5IjpbMTU1NzI0NDA2NiwtNDc3ODIzNjMxXX0=
 -->
