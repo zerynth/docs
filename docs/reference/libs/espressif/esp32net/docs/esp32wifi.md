@@ -14,11 +14,10 @@ The WiFi chip is setup and can be managed using the Wi-Fi Module of the Zerynth 
 Returns the current RSSI in dBm.
 
 
-**`start_sniffer(packet_types=[],direction=0xf,channels=[],mgmt_subtypes=[],ctrl_subtypes=[],data_subtypes=[],hop_time=5000,pkt_buffer=32, max_payloads=4096)`**
+**`start_sniffer(packet_types=[],direction=0xf,channels=[],mgmt_subtypes=[],ctrl_subtypes=[],data_subtypes=[],hop_time=5000,pkt_buffer=32,max_payloads=4096)`**
 
 Start the wifi sniffer or change its configuration if already started.
-The sniffer itself is very flexible and configurable by means of type, subtype and direction filters.
-Wifi packets from [IEEE 802.11 specification](https://en.wikipedia.org/wiki/IEEE_802.11) can be of management, control or data types, each type implementing a different functionality of the standard.
+The sniffer itself is very flexible and configurable by means of type, subtype and direction filters. Wifi packets from [IEEE 802.11 specification](https://en.wikipedia.org/wiki/IEEE_802.11) can be of management, control or data types, each type implementing a different functionality of the standard.
 
 The argument `packet_types` is a list of types represented by the constants `WIFI_PKT_MGMT`, `WIFI_PKT_CTRL` and `WIFI_PKT_DATA`. If `packet_types` is empty, the sniffer is configured by default  with `WIFI_PKT_MGMT` considering only management packets.
 
@@ -26,11 +25,7 @@ For each packet type, many different subtypes are possible according to the spec
 
 
 * `mgmt_subtypes`, a list of management packet subtypes (if empty sniffs probe requests and response)
-
-
 * `ctrl_subtypes`, a list of control packet subtypes (if empty sniffs control ack)
-
-
 * `data_subtypes`, a list of data packet subtypes
 
 Subtypes are specified with the integer value of the subtypes in the packet [frame](https://www.oreilly.com/library/view/80211-wireless-networks/0596100523/ch04.html). A number of constants is provided to specify packet subtypes, reported below.
@@ -39,33 +34,17 @@ Wifi packets also have two bits indicating the “direction” of the packet, ei
 
 
 * `WIFI_DIR_TO_NULL_FROM_NULL`, for 00 direction
-
-
 * `WIFI_DIR_TO_DS_FROM_NULL`, for 10 direction, packets leaving the network
-
-
 * `WIFI_DIR_TO_NULL_FROM_DS`, for 01 direction, packets entering the network
-
-
 * `WIFI_DIR_TO_DS_FROM_DS`, for 11 direction, packets entering/leaving the network in a WDS system
 
 The sniffer can only sniff one channel at a time. To work around this limitation is possible to specify a list of `channels` in the range [1..13] and a `hop_time` in milliseconds. The sniffer will listen on each channel in `channels` for `hop_time` before jumping to the next.
 
 Sniffing packets can be a memory intensive task because both the high rate of packet traffic and the size of each packet that can reach 2Kb. It is possible to configure the sniffer memorywise by specifying the number of packets headers to retain in memory (`pkt_buffer`) and how much memory reserve to packet payloads (the actual data contained in the packet) `max_payloads`. The sniffer will keep collecting headers until `pkt_buffer` packets are buffered, discarding all the incoming packets if the buffer is full. The packet payload is buffered only if there is enough memory in the payload memory pool. It is therefore possible to sniff packet with complete headers but missing payloads if the memory pool is full but the packet buffer is not.
 
-To remove packet from the buffer and free up memory it is necessary to read them with 
+To remove packet from the buffer and free up memory it is necessary to read them with [:function:`sniff()`](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/docs/official_lib.espressif.esp32net_esp32wifi.html#id1) or [:function:`sniff_raw()`](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/docs/official_lib.espressif.esp32net_esp32wifi.html#id3).
 
-```
-:function:`sniff()`
-```
 
- or 
-
-```
-:function:`sniff_raw()`
-```
-
-.
 
 By calling this function again it is possible to reconfigure the sniffer. At each reconfiguration, the packet buffer and payload memory pool are emptied and the channel index restarted.
 
@@ -73,28 +52,13 @@ Here below the list of constants for specifying packet subtypes:
 
 
 * `WIFI_PKT_MGMT_ASSOC_REQ`, association request
-
-
 * `WIFI_PKT_MGMT_ASSOC_RES`, association response
-
-
 * `WIFI_PKT_MGMT_REASSOC_REQ`, reassociation request
-
-
 * `WIFI_PKT_MGMT_REASSOC_RES`, reassociation response
-
-
 * `WIFI_PKT_MGMT_PROBE_REQ`, probe request
-
-
 * `WIFI_PKT_MGMT_PROBE_RES`, probe response
-
-
 * `WIFI_PKT_MGMT_TIMING_ADV`, timing advertisment
-
-
 * `WIFI_PKT_MGMT_BEACON`, AP beacon
-
 
 * `WIFI_PKT_MGMT_ATIM`, announcement traffic indication
 
@@ -344,5 +308,5 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNjQ2NDg0XX0=
+eyJoaXN0b3J5IjpbMzYwMjc1MTYyXX0=
 -->
