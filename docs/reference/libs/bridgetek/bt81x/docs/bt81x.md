@@ -172,8 +172,8 @@ A call to `set_font_color()` is performed if the `Text.palette` attribute is set
 **Arguments:**
 
     
-    * ```btn``` – `Button()` object instance
 
+ - **btn** – `Button` object instance
 
 Adds a button element to the screen.
 
@@ -183,15 +183,15 @@ Calls to `set_background()`, `set_foreground()` and `set_font_color()` are perfo
 **`add_keys(x,y,w,h,font,options,s)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```x``` – x-coordinate top-left, in pixels
-   * ```y``` – y-coordinate top-left, in pixels
-    * ```w``` – width of the keys
-    * ```h``` – height of the keys
-    * ```font``` – font used in key label `0-31`
-    * ```options``` – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_CENTER` or an ASCII code
+x – x-coordinate top-left, in pixels
+y – y-coordinate top-left, in pixels
+w – width of the keys
+h – height of the keys
+font – font used in key label `0-31`
+options – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_CENTER` or an ASCII code
     * ```s``` – key labels, one character per key.
 
 
@@ -486,7 +486,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDQyNTcyNywxMjk4NjE4MzUzLC0xMT
+eyJoaXN0b3J5IjpbMjA1MjgzMzUzNywxMjk4NjE4MzUzLC0xMT
 EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
 MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
