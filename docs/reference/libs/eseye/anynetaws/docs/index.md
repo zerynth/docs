@@ -15,5 +15,12 @@ Here below, the Zerynth Library to communicate to the modem through an intuitive
 
 Contents:
 
+ - [Eseye AnyNet AWS](https://docs.zerynth.com/latest/official/lib.eseye.anynetaws/docs/index.html)
+   -   [Eseye AnyNet AWS Library](https://docs.zerynth.com/latest/official/lib.eseye.anynetaws/docs/official_lib.eseye.anynetaws_anynetaws.html)
+   -   [Examples](https://docs.zerynth.com/latest/official/lib.eseye.anynetaws/examples/examples.html)
+       -   [Get info](https://docs.zerynth.com/latest/official/lib.eseye.anynetaws/examples/examples.html#get-info)
+       -   [Publish and subscribe](https://docs.zerynth.com/latest/official/lib.eseye.anynetaws/examples/examples.html#publish-and-subscribe)
 
-* Eseye AnyNet AWS Library
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ3Njg3MTA1XX0=
+-->
