@@ -120,23 +120,15 @@ Options can be combined using a bitwise OR.
 Starts a new display list.
 
 
----
-#### `#!py3 set_font_color()`
-
-!!!abstract "`#!py3 set_font_color(r, g, b)`"
+**`set_font_color(r,g,b)`**
 
 
-* ```Arguments```
+**Arguments:**
+  
 
-    
-    * ```r``` – red `0-255`
-
-
-    * ```g``` – green `0-255`
-
-
-    * ```b``` – blue `0-255`
-
+ - **r** – red `0-255`
+ - **g** – green `0-255`
+ - **b** – blue `0-255`
 
 Sets current font color.
 
@@ -684,5 +676,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDM5NzY0MF19
+eyJoaXN0b3J5IjpbMTAzNzU0MDEzNiwxOTU0Mzk3NjQwXX0=
 -->
