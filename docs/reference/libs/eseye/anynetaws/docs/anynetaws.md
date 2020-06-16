@@ -73,31 +73,29 @@ Open a publish *channel* to topic `topic` through socket index `sock_index`. Ese
 **Arguments:**
 
     
-    * ```topic``` – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
+
+ - **topic** – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen
+   topic)
+
+Check if a publish *channel* for topic `topic` is already open on any of the available modem sockets, returning `None` if none is found, socket index otherwise.
 
 
-Check if a publish ```channel``` for topic `topic` is already open on any of the available modem sockets, returning `None` if none is found, socket index otherwise.
+**`publish(topic,payload,sock_index=0,qos=1,mode=2)`**
 
 
----
-#### `#!py3 publish()`
-
-!!!abstract "`#!py3 publish(topic, payload, sock_index=0, qos=1, mode=2)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```topic``` – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
+**topic** – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
 
 
-    * ```payload``` – a string, bytes or bytearray object to be sent
+**payload** – a string, bytes or bytearray object to be sent
 
 
-    * ```sock_index``` – an integer representing a valid modem socket index `(0,1)`
+**sock_index** – an integer representing a valid modem socket index `(0,1)`
 
 
-    * ```qos``` – an integer representing the qos level to send the mqtt message with `(1,2,3)`
+qos – an integer representing the qos level to send the mqtt message with `(1,2,3)`
 
 
     * ```mode``` – an integer representing a valid publish mode `(0,1,2)`
@@ -223,5 +221,5 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDA1ODc0NywtNDc3ODIzNjMxXX0=
+eyJoaXN0b3J5IjpbMTgyMDk0OTEzMCwtNDc3ODIzNjMxXX0=
 -->
