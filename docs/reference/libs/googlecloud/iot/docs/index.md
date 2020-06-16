@@ -6,10 +6,16 @@ It is possible, for example, to connect to Google Cloud IoT Core [MQTT](http://m
 
 Here below, the Zerynth Library to manage your devices thanks to Google Cloud IoT Core:
 
+
 Contents:
+ 
+ -   [Google Cloud IoT Core](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/docs/index.html)
+     -   [Google Cloud IoT Core Library](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/docs/official_lib.googlecloud.iot_iot.html)
+         -   [The Device class](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/docs/official_lib.googlecloud.iot_iot.html#the-device-class)
+     -   [Examples](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/examples/examples.html)
+         -   [Controlled publish period](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/examples/examples.html#controlled-publish-period)
 
 
-* Google Cloud IoT Core Library
-
-
-    * The Device class
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTExNjEwMzcwXX0=
+-->
