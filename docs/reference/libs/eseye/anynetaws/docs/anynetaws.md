@@ -140,35 +140,23 @@ Check if a subscription ```channel``` for topic `topic` is already open on any o
 **`subclose(sock_index)`**
 
 
-* ```Arguments```
+**Arguments:**
 
+ - **sock_index** – an integer representing a valid modem socket index `(0,1)`
+
+Close a subscription open on socket `sock_index`.
+
+
+**`subscribe(topic,callback,sock_index=0,mode=1)`**
+
+
+**Arguments:**
     
-    * ```sock_index``` – an integer representing a valid modem socket index `(0,1)`
+topic – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
 
-
-Close a subscription open on socket `sock_index`
-
-
----
-#### `#!py3 subscribe()`
-
-!!!abstract "`#!py3 subscribe(topic, callback, sock_index=0, mode=1)`"
-
-
-* ```Arguments```
-
-    
-    * ```topic``` – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
-
-
-    * ```callback``` – a function to be called when a message arrives on chosen topic
-
-
-    * ```sock_index``` – an integer representing a valid modem socket index `(0,1)`
-
-
-    * ```mode``` – an integer representing a valid subscription mode `(0,1)`
-
+ - **callback** – a function to be called when a message arrives on chosen topic
+ - **sock_index** – an integer representing a valid modem socket index `(0,1)`
+   **mode** – an integer representing a valid subscription mode `(0,1)`
 
 Subscribe to topic `topic` calling `callback` function whenever a new message arrives on chosen topic.
 Example callback function:
@@ -190,6 +178,6 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Mjg5MjkzMyw3NTM4MDU1NzMsLTgwMj
-MxMzcyMywtNDc3ODIzNjMxXX0=
+eyJoaXN0b3J5IjpbLTE4ODM0MTEyNzksNzUzODA1NTczLC04MD
+IzMTM3MjMsLTQ3NzgyMzYzMV19
 -->
