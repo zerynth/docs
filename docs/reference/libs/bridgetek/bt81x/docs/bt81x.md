@@ -279,10 +279,7 @@ Adds a clock to the screen.
 Clears buffers to default values.
 
 
----
-#### `#!py3 clear_color()`
-
-!!!abstract "`#!py3 clear_color(rgb=None, a=None)`"
+**`clear_color(rgb=None,a=None)`**
 
 
 * ```Arguments```
@@ -297,10 +294,7 @@ Clears buffers to default values.
 Sets the default color when colors are cleared. The initial value is `((0, 0, 0), 0)`.
 
 
----
-#### `#!py3 clear_tag()`
-
-!!!abstract "`#!py3 clear_tag(default_tag)`"
+**`clear_tag(default_tag)`**
 
 
 * ```Arguments```
@@ -653,5 +647,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbLTI4MzQ2MzM5MSwxNTQ4MDY4NDM0LDE5NT
+QzOTc2NDBdfQ==
 -->
