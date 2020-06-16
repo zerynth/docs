@@ -57,9 +57,9 @@ Class to store a color palette for font, foreground and background.
 List of attributes:
 
 
-* `font` tuple of rgb values `(r,g,b)`
-* `foreground` tuple of rgb values `(r,g,b)`
-* `background` tuple of rgb values `(r,g,b)`
+* **font** tuple of rgb values `(r,g,b)`
+* **foreground** tuple of rgb values `(r,g,b)`
+* **background** tuple of rgb values `(r,g,b)`
 
 **`class Text(x,y,font,options,text,palette=None)`**
 
@@ -67,8 +67,8 @@ Class to store a text element configuration.
 List of attributes:
 
 
-* `x` x-coordinate top-left, in pixels
-* `y` y-coordinate top-left, in pixels
+* **x**- coordinate top-left, in pixels
+* **y** -coordinate top-left, in pixels
 * `font` font to use `0-31`
 * `options` one of `OPT_CENTERX`, `OPT_CENTERY`, `OPT_CENTER`, `OPT_RIGHTX`, `OPT_FORMAT`, `OPT_FILL`
 * `text` text string
@@ -493,6 +493,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MDA0MjI2LDY4OTczMzIyOSwxNTQ4MD
+eyJoaXN0b3J5IjpbOTI1OTg0NTIzLDY4OTczMzIyOSwxNTQ4MD
 Y4NDM0LDE5NTQzOTc2NDBdfQ==
 -->
