@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.fortebit.iot
+The following are a list of examples for lib.fortebit.iot.
 
 ## MQTT
 
 
-A simple example connecting a device to the OKDO IoT cloud using the MQTT protocol
+A simple example connecting a device to the OKDO IoT cloud using the MQTT protocol.
 
 
 
@@ -105,7 +105,7 @@ except Exception as e:
 ## HTTP
 
 
-A simple example connecting a device to the OKDO IoT cloud using the HTTP protocol
+A simple example connecting a device to the OKDO IoT cloud using the HTTP protocol.
 
 
 
@@ -215,3 +215,6 @@ except Exception as e:
 
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg4NDM5MjI5OF19
+-->
