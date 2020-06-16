@@ -58,13 +58,13 @@ Publish a new event `event`.`event` must be a dictionary and will be sent as jso
 Publish a new state `state`.`state` must be a dictionary and will be sent as json string.
 
 
-on_config(config_cbk)`
+**`on_config(config_cbk)`**
 
 Set a callback to be called on config updates.
 
 `config_cbk` callback will be called passing a dictionary containing requested config as the only parameter:
 
-```
+```python
 def config_cbk(config):
     print('requested publish period:', config['publish_period'])
     return {'publish_period': config['publish_period']}
@@ -75,16 +75,13 @@ my_device.on_config(config_cbk)
 If the callback returns a dictionary, it will be immediately sent as updated device state.
 
 
----
-#### `#!py3 on_command()`
-
-!!!abstract "`#!py3 on_command(command_cbk)`"
+**`on_command(command_cbk)`**
 
 Set a callback to be called on command.
 
 `command_cbk` callback will be called passing the command payload and subfolder:
 
-```
+```python
 def command_cbk(command, subfolder):
     print('requested command payload:', command)
     print('requested command subfolder:', subfolder)
@@ -92,5 +89,5 @@ def command_cbk(command, subfolder):
 my_device.on_command(command_cbk)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDI2NzYyODddfQ==
+eyJoaXN0b3J5IjpbLTEyNTU2MjE1NjVdfQ==
 -->
