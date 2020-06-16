@@ -51,28 +51,17 @@ Initializes the chip.
 When `dc` parameter is not specified `display_conf` global variable is used.
 
 
----
-#### `#!py3 Palette()`
-
-!!!abstract "`#!py3 Palette(font, foreground, background)`"
+**`class Palette(font,foreground,background)`**
 
 Class to store a color palette for font, foreground and background.
 List of attributes:
 
 
 * `font` tuple of rgb values `(r,g,b)`
-
-
 * `foreground` tuple of rgb values `(r,g,b)`
-
-
 * `background` tuple of rgb values `(r,g,b)`
 
-
----
-#### `#!py3 Text()`
-
-!!!abstract "`#!py3 Text(x, y, font, options, text, palette=None)`"
+class Text(x, y, font, options, text, palette=None)
 
 Class to store a text element configuration.
 List of attributes:
@@ -761,5 +750,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzI5NzA1NDVdfQ==
+eyJoaXN0b3J5IjpbMTkxMzAyMjI5N119
 -->
