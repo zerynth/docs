@@ -24,37 +24,16 @@ Product page:
 * Programmable timing to adjust HSYNC and VSYNC timing, enabling interface to numerous displays
 * Support for LCD display with resolution up to SVGA (800×600) and formats with data enable (DE) mode or VSYNC/HSYNC mode
 * Support landscape and portrait orientations
-
-
 * Display enable control output to LCD panel
-
-
 * Integrated 1MByte graphics RAM, no frame buffer RAM required
-
-
 * Support playback of motion-JPEG encoded AVI videos
-
-
 * Built-in sound synthesizer
-
-
 * Audio wave playback for mono 8-bit linear PCM, 4-bit ADPCM and µ-Law coding format at sampling frequencies from 8 kHz to 48 kHz. Built-in digital filter reduces the system design complexity of external filtering
-
-
 * PWM output for display backlight dimming control
-
-
 * Supports I/O voltage from 1.8V to 3.3V
-
-
 * Built-in Power-on-reset circuit
-
-
 * -40°C to 85°C extended operating temperature range
-
-
 * Available in a compact Pb-free, VQFN-package, RoHS compliant
-
 Below, Zerynth driver documentation for Bridgetek BT81x Embedded Video Engines.
 
 Contents:
@@ -65,5 +44,5 @@ Contents:
 
     * Co-Processor Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMzM5MzA5XX0=
+eyJoaXN0b3J5IjpbLTE3MTIxMTA1NzddfQ==
 -->
