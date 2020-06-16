@@ -59,129 +59,53 @@ Here below the list of constants for specifying packet subtypes:
 * `WIFI_PKT_MGMT_PROBE_RES`, probe response
 * `WIFI_PKT_MGMT_TIMING_ADV`, timing advertisment
 * `WIFI_PKT_MGMT_BEACON`, AP beacon
-
 * `WIFI_PKT_MGMT_ATIM`, announcement traffic indication
-
-
 * `WIFI_PKT_MGMT_DISASSOC`, disassociation event
-
-
 * `WIFI_PKT_MGMT_AUTH`, authentication event
-
-
 * `WIFI_PKT_MGMT_DEAUTH`, deauthentication event
-
-
 * `WIFI_PKT_MGMT_ACTION`, action
-
-
 * `WIFI_PKT_MGMT_ACTION_NACK`, action no ack
-
-
 * `WIFI_PKT_CTRL_PSPOLL`, power saving poll
-
-
 * `WIFI_PKT_CTRL_RTS`, request to send
-
-
 * `WIFI_PKT_CTRL_CTS`, clear to send
-
-
 * `WIFI_PKT_CTRL_ACK`, ack
-
-
 * `WIFI_PKT_CTRL_CFEND`, cfp end frame
-
-
 * `WIFI_PKT_CTRL_CFEND_ACK`, cfp end frame ack
-
-
 * `WIFI_PKT_DATA_DATA`, data packet
-
-
 * `WIFI_PKT_DATA_DATA_CFACK`, data packet with cf ack
-
-
 * `WIFI_PKT_DATA_DATA_CFPOLL`, data packet with cf poll
-
-
 * `WIFI_PKT_DATA_DATA_CFPOLL_ACK`, data packet with cf poll ack
-
-
 * `WIFI_PKT_DATA_NULLDATA`, data packet with no data (usually keepalives)
-
-
 * `WIFI_PKT_DATA_NULLDATA_CFACK`, data packet with no data with cf ack
-
-
 * `WIFI_PKT_DATA_NULLDATA_CFPOLL`, data packet with no data with cf poll
-
-
 * `WIFI_PKT_DATA_NULLDATA_CFPOLL_ACK`, data packet with no data with cf poll ack
-
-
 * `WIFI_PKT_DATA_QOS`, data packet for qos
-
-
 * `WIFI_PKT_DATA_QOS_CFACK`, data packet for qos with cf ack
-
-
 * `WIFI_PKT_DATA_QOS_CFPOLL`, data packet for qos with cf poll
-
-
 * `WIFI_PKT_DATA_QOS_CFPOLL_ACK`, data packet for qos with cf poll ack
-
-
 * `WIFI_PKT_DATA_NULLQOS`, data packet with no data for qos
-
-
 * `WIFI_PKT_DATA_NULLQOS_CFPOLL`, data packet with no data for qos with cf poll
-
-
 * `WIFI_PKT_DATA_QOS_CFPOLL_ACK`, data packet with no data for qos with cf poll ack
 
-
----
-#### `#!py3 get_sniffer_stats()`
-
-!!!abstract "`#!py3 get_sniffer_stats()`"
+**`get_sniffer_stats()`**
 
 Return a tuple with sniffer statistics:
 
 
 * number of sniffed packets since last start
-
-
 * number of management packets that did not match a management subtype filter
-
-
 * number of control packets that did not match a control subtype filter
-
-
 * number of data packets that did not match a data subtype filter
-
-
 * number of packets that did not match the direction filter
-
-
 * number of packets missed due to buffer full
-
-
 * number of packets in the buffer
-
-
 * number of bytes used up in the payload memory pool
-
-
 * current sniffer channel
-
+* 
 Filters are applied in a specific order: direction filter first and then subtype filter.
 
 
----
-#### `#!py3 sniff_raw()`
-
-!!!abstract "`#!py3 sniff_raw()`"
+**`sniff_raw()`**
 
 Return a list of sniffed packets from the underlying packet buffer.
 
@@ -189,32 +113,14 @@ Each packet is itself a list with the following items:
 
 
 * an integer representing the packet type
-
-
 * an integer representing the packet subtype
-
-
 * an integer representing the to_ds bit
-
-
 * an integer representing the from_ds bit
-
-
 * an integer representing the remaining packet flags
-
-
 * an integer representing the duration_id field of the packet
-
-
 * an integer representing the sequence control field of the packet
-
-
 * a bytes of 6 elements representing the mac address 1
-
-
 * a bytes of 6 elements representing the mac address 2
-
-
 * a bytes of 6 elements representing the mac address 3
 
 
@@ -308,5 +214,5 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYwMjc1MTYyXX0=
+eyJoaXN0b3J5IjpbMTY3NzM2Mzg2NV19
 -->
