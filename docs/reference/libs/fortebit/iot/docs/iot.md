@@ -33,36 +33,23 @@ Call `send_rpc_reply()` to provide the result of the RPC request.
 Setup a connection to the Fortebit Cloud. Return *True* if successful.
 
 
----
-#### `#!py3 is_connected()`
-
-!!!abstract "`#!py3 is_connected()`"
+**`is_connected()`**
 
 Returns the status of the connection to the Fortebit Cloud (reconnections are automatic).
 
 
----
-#### `#!py3 run()`
-
-!!!abstract "`#!py3 run()`"
+**`run()`**
 
 Starts the device by executing the underlying client loop.
 
 
----
-#### `#!py3 publish_telemetry()`
-
-!!!abstract "`#!py3 publish_telemetry(values, ts)`"
+**`publish_telemetry(values,ts)`**
 
 Publish `values` (dictionary) to the device telemetry, with optional timestamp `ts` (epoch in milliseconds).
 
-Return a boolean, ```False``` if the message cannot be sent.
+Return a boolean, *False* if the message cannot be sent.
 
-
----
-#### `#!py3 publish_attributes()`
-
-!!!abstract "`#!py3 publish_attributes(attributes)`"
+**`publish_attributes(attributes)`**
 
 Publish `attributes` (dictionary) to the device ```client``` attributes.
 
@@ -99,5 +86,5 @@ a reply maximum `timeout` milliseconds (only with MqttClient).
 
 Return the result of the RPC (dictionary), ```None``` in case of errors.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3ODI0MDQ4XX0=
+eyJoaXN0b3J5IjpbMzM0Njg3OTM5XX0=
 -->
