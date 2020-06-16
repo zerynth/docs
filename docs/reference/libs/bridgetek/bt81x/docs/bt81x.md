@@ -343,23 +343,14 @@ Starts the calibration procedure (needed by Resistive Displays).
 Inflates a Zerynth resource to RAM_G (General purpose graphics RAM, bt81x main memory) for later use.
 The resource should be a valid bt81x image (zlib-compressed)
 
+Raises:
 
-* **Raises PeripheralError**
-
-    if an error occurs while inflating
-
-
-
-* **Raises TimeoutError**
-
-    if the process takes longer than set timeout (`set_timeout()`)
+-   **PeripheralError**  – if an error occurs while loading
+-   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
 
 
 
----
-#### `#!py3 load_image()`
-
-!!!abstract "`#!py3 load_image(ram_ptr, options, resource)`"
+**`load_image(ram_ptr,options,resource)`**
 
 
 * ```Arguments```
@@ -376,23 +367,13 @@ The resource should be a valid bt81x image (zlib-compressed)
 
 Inflates a Zerynth resource consisting of a PNG image to RAM_G (General purpose graphics RAM, bt81x main memory) for later use.
 
+Raises:
 
-* **Raises PeripheralError**
-
-    if an error occurs while loading
-
-
-
-* **Raises TimeoutError**
-
-    if the process takes longer than set timeout (`set_timeout()`)
+-   **PeripheralError**  – if an error occurs while loading
+-   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
 
 
-
----
-#### `#!py3 vertex_format()`
-
-!!!abstract "`#!py3 vertex_format(fmt)`"
+**`vertex_format(fmt)`**
 
 
 * ```Arguments```
@@ -406,10 +387,7 @@ Selects a vertex format for subsequent draw operations.
 Vertex format are useful to specify pixel coordinates beyond the `0-511` range.
 
 
----
-#### `#!py3 Bitmap()`
-
-!!!abstract "`#!py3 Bitmap(handle, source, layout, size)`"
+**`Bitmap(handle,source,layout,size)`**
 
 
 * ```Arguments```
@@ -637,6 +615,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI1OTIwOTMsMTU0ODA2ODQzNCwxOT
-U0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbLTU4NTY4ODYwNSwxNTQ4MDY4NDM0LDE5NT
+QzOTc2NDBdfQ==
 -->
