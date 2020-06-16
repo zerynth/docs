@@ -89,83 +89,33 @@ List of available options for the `options` command parameter:
 
 
 * `OPT_3D` 3D effect
-
-
 * `OPT_CENTER` horizontally and vertically centered style
-
-
 * `OPT_CENTERX` horizontally-centered style
-
-
 * `OPT_CENTERY` vertically-centered style
-
-
 * `OPT_FILL` breaks the text at spaces into multiple lines
-
-
 * `OPT_FLASH` fetch the data from flash memory
-
-
 * `OPT_FLAT` no 3D effect
-
-
 * `OPT_FORMAT` flag of string formatting
-
-
 * `OPT_FULLSCREEN` zoom the media to fill as much of the screen as possible
-
-
 * `OPT_MEDIAFIFO` source data from the defined media FIFO
-
-
 * `OPT_MONO` decodes the source JPEG image to L8 format, i.e., monochrome
-
-
 * `OPT_NOBACK` no background drawn
-
-
 * `OPT_NODL` no display list commands generated
-
-
 * `OPT_NOHANDS` no hands
-
-
 * `OPT_NOHM` no hour and minute hands
-
-
 * `OPT_NOPOINTER` no pointer
-
-
 * `OPT_NOSECS` no second hands
-
-
 * `OPT_NOTEAR` sync video updates to the display blanking interval, avoiding horizontal ```tearing``` artifacts
-
-
 * `OPT_NOTICKS` no ticks
-
-
 * `OPT_OVERLAY` append the video bitmap to an existing display list
-
-
 * `OPT_RGB565` decodes the source image to RGB565 format
-
-
 * `OPT_RIGHTX` right justified style
-
-
 * `OPT_SIGNED` the number is treated as a 32 bit signed integer
-
-
 * `OPT_SOUND` decode the audio data
 
 Options can be combined using a bitwise OR.
 
-
----
-#### `#!py3 dl_start()`
-
-!!!abstract "`#!py3 dl_start()`"
+**`dl_start()`**
 
 Starts a new display list.
 
@@ -734,5 +684,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDU4NzQwNDBdfQ==
+eyJoaXN0b3J5IjpbMTk1NDM5NzY0MF19
 -->
