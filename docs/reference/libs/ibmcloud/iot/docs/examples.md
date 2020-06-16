@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.ibmcloud.iot
+The following are a list of examples for lib.ibmcloud.iot.
 
 ## Controlled Publish Period
 
@@ -61,3 +61,6 @@ while True:
     sleep(publish_period)
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE5NTYxNjA3N119
+-->
