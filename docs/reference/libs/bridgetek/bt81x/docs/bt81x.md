@@ -139,7 +139,7 @@ Sets current font color.
 !!!abstract "`#!py3 set_foreground(r, g, b)`"
 
 
-* ```Arguments```
+**Arguments:**
 
     
     * ```r``` – red `0-255`
@@ -676,5 +676,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNzU0MDEzNiwxOTU0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbMjEzNjk4NzQ2MiwxOTU0Mzk3NjQwXX0=
 -->
