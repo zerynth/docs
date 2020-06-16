@@ -475,18 +475,12 @@ Allowed values for `x_wrap_mode` and `y_wrap_mode` are:
 * `REPEAT`
 
 
----
-#### `#!py3 prepare_draw()`
-
-!!!abstract "`#!py3 prepare_draw()`"
+**`prepare_draw()`**
 
 To be called before `draw()`.
 
 
----
-#### `#!py3 draw()`
-
-!!!abstract "`#!py3 draw(vertex, vertex_fmt=None)`"
+**`draw(vertex, vertex_fmt=None)`**
 
 Draws prepared image on screen.
 Can be called multiple times after a single `prepare_draw()`.
@@ -496,39 +490,25 @@ If `vertex` tuple has 2 elements the vertex format is set according to `vertex_f
 If `vertex` tuple has 4 elements `vertex_fmt` parameter is ignored and         `vertex` elements are assumed to be the image `x` and `y` top-left coordinates, image handle and cell.
 
 
----
-#### `#!py3 end()`
-
-!!!abstract "`#!py3 end()`"
+**`end()`**
 
 Ends drawing a graphics primitive.
 
 
----
-#### `#!py3 display()`
-
-!!!abstract "`#!py3 display()`"
+**`display()`**
 
 Ends a display list.
 
-
----
-#### `#!py3 swap_and_empty()`
+**`swap_and_empty()`**
 
 !!!abstract "`#!py3 swap_and_empty()`"
 
 Swaps current display list and waits until all commands are executed.
 
+Raises:
 
-* **Raises PeripheralError**
-
-    if an error occurs while executing commands
-
-
-
-* **Raises TimeoutError**
-
-    if the process takes longer than set timeout (`set_timeout()`)
+-   **PeripheralError**  – if an error occurs while loading
+-   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
 
 
 
@@ -615,6 +595,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTY4ODYwNSwxNTQ4MDY4NDM0LDE5NT
-QzOTc2NDBdfQ==
+eyJoaXN0b3J5IjpbOTIzNzYxOTUwLDE1NDgwNjg0MzQsMTk1ND
+M5NzY0MF19
 -->
