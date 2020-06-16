@@ -185,18 +185,15 @@ Calls to `set_background()`, `set_foreground()` and `set_font_color()` are perfo
 
 **Arguments:**
 
-    
-x – x-coordinate top-left, in pixels
-y – y-coordinate top-left, in pixels
-w – width of the keys
-h – height of the keys
-font – font used in key label `0-31`
-options – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_CENTER` or an ASCII code
-    * ```s``` – key labels, one character per key.
+ - **x** – x-coordinate top-left, in pixels
+ - **y** – y-coordinate top-left, in pixels
+ - **w** – width of the keys
+ - **h** – height of the keys
+ - **font** – font used in key label `0-31`
+ - **options** – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_CENTER` or an ASCII code
+ - **s** – key labels, one character per key.
 
-
-Adds a row of keys to the screen.
-If an ASCII code is specified as option, that key is drawn as ```pressed``` (in background color with any 3D effect removed).
+Adds a row of keys to the screen. If an ASCII code is specified as option, that key is drawn as pressed``` (in background color with any 3D effect removed).
 
 The `TAG` value is set to the ASCII value of each key, so that key presses can be detected with a callback on that value.
 
@@ -486,7 +483,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjgzMzUzNywxMjk4NjE4MzUzLC0xMT
+eyJoaXN0b3J5IjpbMTc1NTQwODA5MCwxMjk4NjE4MzUzLC0xMT
 EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
 MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
