@@ -275,14 +275,13 @@ Starts the calibration procedure (needed by Resistive Displays).
 **Arguments:**
 
     
-ram_ptr – address in RAM_G to inflate the resource to
-resource``` – name of the resource to inflate
 
+ - **ram_ptr** – address in RAM_G to inflate the resource to
+ -  **resource** – name of the resource to inflate
 
-Inflates a Zerynth resource to RAM_G (General purpose graphics RAM, bt81x main memory) for later use.
-The resource should be a valid bt81x image (zlib-compressed)
+Inflates a Zerynth resource to RAM_G (General purpose graphics RAM, bt81x main memory) for later use. The resource should be a valid bt81x image (zlib-compressed).
 
-Raises:
+**Raises:**
 
 -   **PeripheralError**  – if an error occurs while loading
 -   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
@@ -292,12 +291,12 @@ Raises:
 **`load_image(ram_ptr,options,resource)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```ram_ptr``` – address in RAM_G to load the resource to
-    * ```options``` – load options
-    * ```resource``` – name of the resource to inflate
+**ram_ptr** – address in RAM_G to load the resource to
+**options** – load options
+resource – name of the resource to inflate
 
 
 Inflates a Zerynth resource consisting of a PNG image to RAM_G (General purpose graphics RAM, bt81x main memory) for later use.
@@ -474,7 +473,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0ODQ2ODQzNCwxMjk4NjE4MzUzLC0xMT
+eyJoaXN0b3J5IjpbMTQ4NTEwOTI2NCwxMjk4NjE4MzUzLC0xMT
 EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
 MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
