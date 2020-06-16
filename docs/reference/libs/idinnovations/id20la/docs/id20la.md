@@ -24,12 +24,9 @@ mode to be able to decode the 10 bytes as 10 characters, refer to datasheet
 for further informations.
 
 
----
-#### `#!py3 stop()`
-
-!!!abstract "`#!py3 stop()`"
+**`stop()`**
 
 This method stops the reading from the sensor.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODEyMDMyOF19
+eyJoaXN0b3J5IjpbLTk2OTA5MjAyMV19
 -->
