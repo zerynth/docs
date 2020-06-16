@@ -1,4 +1,4 @@
-<!-- _lib.bridgetek.bt81x -->
+
 # BT81x
 
 Bridgetek BT81x series of Embedded Video Engines (EVE) utilizes an object oriented methodology for creating hi-quality human machine interfaces (HMIs). With support for display, audio, and touch, this new technology allows engineers to quickly and efficiently design HMIs and deliver robust solutions, hi-resolution displays with lower bill of material costs.
@@ -12,41 +12,17 @@ Product page:
 
 
 * BT81x functionality includes graphic control, audio control, and touch control interface
-
-
 * Support multiple widgets for simplified design implementation
-
-
 * Support Adaptive Scalable Texture Compression (ASTC) format to save considerable memory space for larger fonts and graphics images
-
-
 * Support external QSPI NOR flash to fetch graphic elements (image, font, widget etc)
-
-
 * Support 4-wire resistive touch screen (BT816)
-
-
 * Support capacitive touch screen with up to 5 touches detection (BT815)
-
-
 * Hardware engine can recognize touch tags and track touch movement. Provides notification for up to 255 touch tags.
-
-
 * Programmable interrupt controller provides interrupts to host MCU
-
-
 * Built-in 12MHz crystal oscillator with PLL providing programmable system clock up to 72MHz
-
-
 * Video RGB parallel output; configurable to support PCLK up to 60MHz and R/G/B output of 1 to 8 bits
-
-
 * Programmable timing to adjust HSYNC and VSYNC timing, enabling interface to numerous displays
-
-
 * Support for LCD display with resolution up to SVGA (800×600) and formats with data enable (DE) mode or VSYNC/HSYNC mode
-
-
 * Support landscape and portrait orientations
 
 
@@ -88,3 +64,6 @@ Contents:
 
 
     * Co-Processor Commands
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzQxMzM5MzA5XX0=
+-->
