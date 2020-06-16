@@ -53,7 +53,7 @@ Use this method to retrieve information about the current asset.  This method wi
 *returns* Api-Response JSON with JSON[“result”] being asset-information
 
 
-**`post_metric(asset, metric_code, metric_value)`**
+**`post_metric(asset,metric_code,metric_value)`**
 
 Use this method to send sensor data or telemetry data to the LiveIntersect cloud.
 
@@ -62,15 +62,14 @@ Use this method to send sensor data or telemetry data to the LiveIntersect cloud
 `metric_value` Raw value of the Metric (may contain unit-symbol i.e. 45C)
 
 
-### post_attribute(asset, attr_code, attr_value)
+**`post_attribute(asset,attr_code,attr_value)`**
+
 Use this method to configuration data to the LiveIntersect cloud.
 Note: use get_asset_info to download attribute currently stored in the cloud.
 
 `asset` LiveIntersect Asset instance
-
 `attr_code` unique identifier for the attributes associated with the asset type
-
 `attr_value` Raw value of the attribute (may contain unit-symbol i.e. 45C)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzkwMDk0ODldfQ==
+eyJoaXN0b3J5IjpbNzM1OTM1OTQyXX0=
 -->
