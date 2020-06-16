@@ -4,20 +4,16 @@ The Zerynth Google Cloud IoT Core Library can be used to ease the connection to 
 
 It allows to make your device act as a Google Cloud IoT Core Device which can be registered through Google Cloud tools or Google Cloud web dashboard.
 
-## The Device class
+## The Device class 
 
-
----
-#### `#!py3 Device()`
-
-!!!abstract "`#!py3 Device(project_id, cloud_region, registry_id, device_id, pkey, timestamp_fn, token_lifetime=60)`"
+**`class Device(project_id,cloud_region,registry_id,device_id,pkey, timestamp_fn,token_lifetime=60).`**
 
 Create a Device instance representing a Google Cloud IoT Core Device.
 
 The Device object will contain an mqtt client instance pointing to Google Cloud IoT Core MQTT broker located at `mqtt.googleapis.com`.
 The client is configured with an MQTT id composed following Google Cloud IoT Core MQTT id standards
 
-```
+```python
 projects/$project_id/locations/$cloud_region/registries/$registry_id/devices/$device_id
 ```
 
@@ -107,3 +103,6 @@ def command_cbk(command, subfolder):
 
 my_device.on_command(command_cbk)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5MTc1MzI3NzFdfQ==
+-->
