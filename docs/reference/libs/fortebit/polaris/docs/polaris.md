@@ -74,50 +74,28 @@ Namespace for on-board devices signals and peripherals:
 * `ADC_BATT` - ADC channel (using `PIN_BATT_ADC`)
 
 
----
-#### `#!py3 gnss()`
-
-!!!abstract "`#!py3 gnss()`"
+**`class gnss`**
 
 Namespace for GNSS module signals and related peripherals:
 
 
 * `PIN_STANDBY`, `PIN_RESET` - module control pins
-
-
 * `PIN_TX`, `PIN_RX` - module UART pins
-
-
 * `PIN_ANTON` - control pin (used only in the NB-IoT variant with BG96)
-
-
 * `SERIAL` - serial driver (using `PIN_RX`,\`\`PIN_TX\`\`)
 
 
----
-#### `#!py3 gsm()`
-
-!!!abstract "`#!py3 gsm()`"
+**`class gsm`**
 
 Namespace for Modem signals and related peripherals:
 
 
 * `PIN_TX`, `PIN_RX` - modem UART pins
-
-
 * `PIN_POWER`, `PIN_KILL`, `PIN_WAKE` - modem control pins
-
-
 * `PIN_STATUS`, `PIN_RING` - modem status pins
-
-
 * `SERIAL` - serial driver (using `PIN_RX`,\`\`PIN_TX\`\`)
 
-
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init()`"
+**`init()`**
 
 Performs required initializion of Polaris pins and common functionalities.
 It should be called at the start of your application.
@@ -260,5 +238,5 @@ Switch the green LED off.
 
 Switch the green LED on.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NjA1ODA5XX0=
+eyJoaXN0b3J5IjpbMTU0MjUyNTI1OF19
 -->
