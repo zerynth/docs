@@ -8,17 +8,12 @@ This module contains the Zerynth driver for ID-20LA RFID tag reader from ID Inno
 Creates in instance of the ID20LA class.
 
 
-* ```Arguments```
+**Aguments:**
 
     
-    * ```serial_port``` – Serial port to be used (RX only). (i.e. SERIAL2)
-
-
-    * ```callback``` – Callback to be called whenever a tag is read.
-
-
-    * ```read_timeout``` – Milliseconds to wait when polling sensor. (Default: 100)
-
+**serial_port** – Serial port to be used (RX only). (i.e. SERIAL2)
+**callback** – Callback to be called whenever a tag is read.
+**read_timeout** – Milliseconds to wait when polling sensor. (Default: 100)
 
 The serial communication is initialized using the specified serial port.
 The TX pin is not used since the communication is one-way only.
@@ -36,5 +31,5 @@ for further informations.
 
 This method stops the reading from the sensor.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTcwMjZdfQ==
+eyJoaXN0b3J5IjpbMTM3ODEyMDMyOF19
 -->
