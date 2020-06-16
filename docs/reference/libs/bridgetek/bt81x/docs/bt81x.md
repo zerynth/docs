@@ -133,10 +133,7 @@ Starts a new display list.
 Sets current font color.
 
 
----
-#### `#!py3 set_foreground()`
-
-!!!abstract "`#!py3 set_foreground(r, g, b)`"
+set_foreground(r, g, b)
 
 
 **Arguments:**
@@ -153,11 +150,7 @@ Sets current font color.
 
 Sets current foreground color.
 
-
----
-#### `#!py3 set_background()`
-
-!!!abstract "`#!py3 set_background(r, g, b)`"
+**`set_background(r,g,b)`**
 
 
 * ```Arguments```
@@ -174,11 +167,7 @@ Sets current foreground color.
 
 Sets current background color.
 
-
----
-#### `#!py3 add_text()`
-
-!!!abstract "`#!py3 add_text(txt)`"
+**`add_text(txt)`**
 
 
 * ```Arguments```
@@ -192,10 +181,7 @@ Adds a text element to the screen.
 A call to `set_font_color()` is performed if the `Text.palette` attribute is set.
 
 
----
-#### `#!py3 add_button()`
-
-!!!abstract "`#!py3 add_button(btn)`"
+**`add_button(btn)`**
 
 
 * ```Arguments```
@@ -209,10 +195,7 @@ Adds a button element to the screen.
 Calls to `set_background()`, `set_foreground()` and `set_font_color()` are performed if the `Text.palette.font` attribute is set.
 
 
----
-#### `#!py3 add_keys()`
-
-!!!abstract "`#!py3 add_keys(x, y, w, h, font, options, s)`"
+add_keys(x, y, w, h, font, options, s)`
 
 
 * ```Arguments```
@@ -676,5 +659,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjk4NzQ2MiwxOTU0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbLTcxMjU4MzU4MSwxOTU0Mzk3NjQwXX0=
 -->
