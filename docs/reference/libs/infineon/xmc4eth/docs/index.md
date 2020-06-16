@@ -5,6 +5,8 @@ This module implements the Zerynth driver for the Infineon XMC4000 family Ethern
 This module supports SSL/TLS.
 
 Contents:
+ -   [Infineon XMC4000 Ethernet Module](https://docs.zerynth.com/latest/official/lib.infineon.xmc4eth/docs/official_lib.infineon.xmc4eth_xmc4eth.html)
 
-
-* Infineon XMC4000 Ethernet Module
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzgzMjkwNTc5XX0=
+-->
