@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.espressif.esp32net
+The following are a list of examples for lib.espressif.esp32net.
 
 ## Wifi Connect
 
@@ -50,7 +50,7 @@ except Exception as e:
 ## Soft AP Mode
 
 
-Simple wifi driver initialization in Access Point Mode
+Simple wifi driver initialization in Access Point Mode.
 
 
 ```main.py```
@@ -99,7 +99,7 @@ except Exception as e:
 ## Sniffer
 
 
-A simple example showing the capabilities of the wifi sniffer
+A simple example showing the capabilities of the wifi sniffer.
 
 
 
@@ -255,3 +255,6 @@ except Exception as e:
     print(e)
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI1NzIzMjMyMl19
+-->
