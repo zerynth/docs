@@ -8,46 +8,29 @@ The device always send and receive data in the JSON format.
 
 ## The Device class
 
-
----
-#### `#!py3 Device()`
-
-!!!abstract "`#!py3 Device(device_token, client, ctx=None)`"
+**`class  Device(device_token,client,ctx=None)`**
 
 Create a Device instance representing a Fortebit IoT device.
 
-The device is provisioned by the `device_token`, obtained from the Fortebit dashboard upon the creation of a new device.
-The `client` parameter is a class that provides the implementation of the low level details for the connection.
-It can be one of `MqttClient` in the `mqtt_client` module, or `HttpClient` in the `http_client` module.
+The device is provisioned by the `device_token`, obtained from the Fortebit dashboard upon the creation of a new device. The `client` parameter is a class that provides the implementation of the low level details for the connection. It can be one of `MqttClient` in the `mqtt_client` module, or `HttpClient` in the `http_client` module.
 The optional `ctx` parameter is an initialized secure socket context.
 
 
----
-#### `#!py3 listen_rpc()`
+**`listen_rpc(callback)`**
 
-!!!abstract "`#!py3 listen_rpc(callback)`"
-
-Listen to incoming RPC requests that get reported to the specified `callback` function,
-called as *callback(id, method, params)*:
+Listen to incoming RPC requests that get reported to the specified `callback` function, called as *callback(id, method, params)*:
 
 
 * `id` is the request identifier (number)
-
-
 * `method` is the method identifier of the RPC (Remote Procedure Call)
-
-
 * `params` is a dictionary containing the RPC method arguments (or parameters)
 
 Call `send_rpc_reply()` to provide the result of the RPC request.
 
 
----
-#### `#!py3 connect()`
+**`connect()`**
 
-!!!abstract "`#!py3 connect()`"
-
-Setup a connection to the Fortebit Cloud. Return ```True``` if successful.
+Setup a connection to the Fortebit Cloud. Return *True* if successful.
 
 
 ---
@@ -115,3 +98,6 @@ Perform an RPC request with name `method` and arguments `params`, waiting for
 a reply maximum `timeout` milliseconds (only with MqttClient).
 
 Return the result of the RPC (dictionary), ```None``` in case of errors.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTM3ODI0MDQ4XX0=
+-->
