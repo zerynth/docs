@@ -140,9 +140,6 @@ In general one it can be assumed that:
 	 * address 3 is the BSSID (the MAC of the AP)
 
  * for `to_ds` 1 and `from_ds` 0:
- 
-
-List item
 
  address 1 is the BSSID
  address 2 is the source MAC  
@@ -181,5 +178,5 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDY0MDg5Nl19
+eyJoaXN0b3J5IjpbLTE1MTg1NjIzNzFdfQ==
 -->
