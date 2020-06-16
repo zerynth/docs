@@ -1,31 +1,20 @@
 # ESP32 Wifi Module
 
-This module implements the Zerynth driver for the Espressif ESP32 Wi-Fi chip ([Resources and Documentation](https://esp-idf.readthedocs.io/en/latest/api-reference/wifi/index.html)).
-This module supports SoftAP mode and SSL/TLS. It also support promiscuous mode for wifi packet sniffing.
+This module implements the Zerynth driver for the Espressif ESP32 Wi-Fi chip ([Resources and Documentation](https://esp-idf.readthedocs.io/en/latest/api-reference/wifi/index.html)). This module supports SoftAP mode and SSL/TLS. It also support promiscuous mode for wifi packet sniffing.
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init()`"
+**`init()`**
 
 initializes the Wi-Fi chip connected to the device.
 
 The WiFi chip is setup and can be managed using the Wi-Fi Module of the Zerynth Standard Library.
 
+**`get_rssi()`**
 
----
-#### `#!py3 get_rssi()`
-
-!!!abstract "`#!py3 get_rssi()`"
-
-Returns the current RSSI in dBm
+Returns the current RSSI in dBm.
 
 
----
-#### `#!py3 start_sniffer()`
-
-!!!abstract "`#!py3 start_sniffer(packet_types=[], direction=0xf, channels=[], mgmt_subtypes=[], ctrl_subtypes=[], data_subtypes=[], hop_time=5000, pkt_buffer=32, max_payloads=4096)`"
+**`start_sniffer(packet_types=[],direction=0xf,channels=[],mgmt_subtypes=[],ctrl_subtypes=[],data_subtypes=[],hop_time=5000,pkt_buffer=32, max_payloads=4096)`**
 
 Start the wifi sniffer or change its configuration if already started.
 The sniffer itself is very flexible and configurable by means of type, subtype and direction filters.
@@ -354,3 +343,6 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 !!!abstract "`#!py3 stop_sniffer()`"
 
 Stops the sniffer and free buffer and pool memory.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzgzNjQ2NDg0XX0=
+-->
