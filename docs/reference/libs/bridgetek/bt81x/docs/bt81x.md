@@ -10,50 +10,20 @@ List of attributes:
 
 
 * `DisplayConf.width` display width in pixels
-
-
 * `DisplayConf.height` display height in pixels
-
-
 * `DisplayConf.hcycle` number of total PCLK cycles per horizontal line scan
-
-
-* `DisplayConf.hoffset` number of PCLK cycle before pixels are scanned out
-
-
+*  `DisplayConf.hoffset` number of PCLK cycle before pixels are scanned out
 * `DisplayConf.hsync0` how many PCLK cycles for HSYNC0 during start of line
-
-
 * `DisplayConf.hsync1` how many PCLK cycles for HSYNC1 during start of line
-
-
 * `DisplayConf.vcycle` how many lines in one frame
-
-
 * `DisplayConf.voffset` how many lines taken after the start of a new frame
-
-
 * `DisplayConf.vsync0` how many lines of signal VSYNC0 takes at start of a new frame
-
-
 * `DisplayConf.vsync1`  how many lines of signal VSYNC1 takes at start of a new frame
-
-
 * `DisplayConf.pclk` main clock divider for PCLK, if 0 there is no PCLK output
-
-
 * `DisplayConf.swizzle` controls the arrangement of output RGB pins to support different LCD panels
-
-
 * `DisplayConf.pclkpol` `0` for PCLK polarity on the rising edge, 1 for falling edge
-
-
 * `DisplayConf.cspread` controls the transition of RGB signals with PCLK active clock edge
-
-
 * `DisplayConf.dither` `1` or `0` to respectively enable or disable dither
-
-
 * `DisplayConf.description` a string describing the display
 
 `display_conf` module global variable is automatically set with a `DisplayConf()` instance when importing a display module from a display vendor:
@@ -806,5 +776,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ4NzQ1NzBdfQ==
+eyJoaXN0b3J5IjpbOTE3NTEyNDM2XX0=
 -->
