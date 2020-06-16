@@ -61,42 +61,26 @@ List of attributes:
 * `foreground` tuple of rgb values `(r,g,b)`
 * `background` tuple of rgb values `(r,g,b)`
 
-class Text(x, y, font, options, text, palette=None)
+**`class Text(x,y,font,options,text,palette=None)`**
 
 Class to store a text element configuration.
 List of attributes:
 
 
 * `x` x-coordinate top-left, in pixels
-
-
 * `y` y-coordinate top-left, in pixels
-
-
 * `font` font to use `0-31`
-
-
 * `options` one of `OPT_CENTERX`, `OPT_CENTERY`, `OPT_CENTER`, `OPT_RIGHTX`, `OPT_FORMAT`, `OPT_FILL`
-
-
 * `text` text string
-
-
 * `palette` `Palette()` object instance to set colors
 
 
----
-#### `#!py3 Button()`
+**`class Button(x,y,width,height,font,options,text,palette=None)`**
 
-!!!abstract "`#!py3 Button(x, y, width, height, font, options, text, palette=None)`"
-
-Class to store a text element configuration.
-Inherits all `Text()` attributes and adds:
+Class to store a text element configuration. Inherits all `Text()` attributes and adds:
 
 
 * `width` button width in pixels
-
-
 * `height` button height in pixels
 
 ## Co-Processor Commands
@@ -750,5 +734,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzAyMjI5N119
+eyJoaXN0b3J5IjpbLTExNDU4NzQwNDBdfQ==
 -->
