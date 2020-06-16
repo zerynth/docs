@@ -8,10 +8,21 @@ Many examples are available going from a simple scanner, to beacons to a more ad
 
 Some screenshots related to the examples:
 
+
+
 Contents:
 
-
-* ESP32 BLE
+-   [ESP32 BLE](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/docs/official_lib.espressif.esp32ble_esp32ble.html)
+-   [Examples](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html)
+    -   [BLE Alerts](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-alerts)
+    -   [BLE Scanner](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-scanner)
+    -   [Eddystone Beacon](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#eddystone-beacon)
+    -   [iBeacon Beacon](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ibeacon-beacon)
+    -   [Eddystone Reader](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#eddystone-reader)
+    -   [iBeacon Reader](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ibeacon-reader)
+    -   [BLE Alerts Secure 1](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-alerts-secure-1)
+    -   [BLE Alerts Secure 2](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-alerts-secure-2)
+    -   [BLE Wifi](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-wifi)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTk3NzU0MDhdfQ==
+eyJoaXN0b3J5IjpbLTE0NzM4NDcyMDJdfQ==
 -->
