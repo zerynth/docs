@@ -328,7 +328,8 @@ Vertex format are useful to specify pixel coordinates beyond the `0-511` range.
 
  - **handle** – a user-defined handle to refer to the bitmap
  - **source** – bitmap source in RAM_G
- - **layout** – a tuple of `(bitmap_format, linestride)`**size** – a tuple of `(filtering_mode, x_wrap_mode, y_wrap_mode, bitmap_width, bitmap_height)`
+ - **layout** – a tuple of `(bitmap_format, linestride)`
+ - **size** – a tuple of `(filtering_mode, x_wrap_mode, y_wrap_mode, bitmap_width, bitmap_height)`
 
 Class to store a bitmap element and to allow subsequent bitmap draw operations.
 
@@ -399,7 +400,7 @@ Ends a display list.
 
 Swaps current display list and waits until all commands are executed.
 
-Raises:
+**Raises:**
 
 -   **PeripheralError**  – if an error occurs while loading
 -   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
@@ -408,48 +409,45 @@ Raises:
 
 **`set_timeout(timeout_millis)`**
 
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```timeout_millis``` – timeout in milliseconds
 
+ - **timeout_millis** – timeout in milliseconds
 
 Sets a timeout for Co-Processor commands. Default timeout value is `4000`.
 
 **`tag(n)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```n``` – tag value `1-255`
 
+ - **n** – tag value `1-255`
 
-Attaches the tag value to all the following graphics objects drawn on the screen, unless `tag_mask()` is used to disable it.
-When the graphics objects attached with the tag value are touched, if calls to `track()` and `touch_loop()` have been previously issued, a callback function is called.
+Attaches the tag value to all the following graphics objects drawn on the screen, unless `tag_mask()` is used to disable it. When the graphics objects attached with the tag value are touched, if calls to `track()` and `touch_loop()` have been previously issued, a callback function is called.
 
 The initial tag value is specified by function `clear_tag()` and takes effect calling function `clear()`.
 
 **`tag_mask(mask)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```mask``` – mask value `0-1`
 
+ - **mask** – mask value `0-1`
 
 If called with value `0` the default value of the tag buffer is used for current display list.
 
 
 **`tag_mask(mask)`**
 
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```mask``` – mask value `0-1`
+mask``` – mask value `0-1`
 
 
 If called with value `0` the default value of the tag buffer is used for current display list.
@@ -470,7 +468,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTYxMTE4OSwxMjk4NjE4MzUzLC0xMT
+eyJoaXN0b3J5IjpbLTMwMDkxMDY5MSwxMjk4NjE4MzUzLC0xMT
 EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
 MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
