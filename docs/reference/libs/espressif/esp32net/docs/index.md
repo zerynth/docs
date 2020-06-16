@@ -4,7 +4,7 @@ This module implements the wifi driver for ESP32. It includes support for softAP
 
 To use the module expand on the following example:
 
-```
+```python
 from espressif.esp32wifi import esp32wifi as wifi_driver
 from wireless import wifi
 
@@ -29,3 +29,6 @@ Contents:
 
 
 * ESP32 Wifi Module
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMzI5NzM4OTBdfQ==
+-->
