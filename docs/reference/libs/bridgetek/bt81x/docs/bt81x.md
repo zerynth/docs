@@ -194,23 +194,11 @@ Calls to `set_background()`, `set_foreground()` and `set_font_color()` are perfo
 
     
     * ```x``` – x-coordinate top-left, in pixels
-
-
-    * ```y``` – y-coordinate top-left, in pixels
-
-
+   * ```y``` – y-coordinate top-left, in pixels
     * ```w``` – width of the keys
-
-
     * ```h``` – height of the keys
-
-
     * ```font``` – font used in key label `0-31`
-
-
     * ```options``` – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_CENTER` or an ASCII code
-
-
     * ```s``` – key labels, one character per key.
 
 
@@ -227,10 +215,7 @@ The `TAG` value is set to the ASCII value of each key, so that key presses can b
 
     
     * ```x``` – x-coordinate top-left, in pixels
-
-
     * ```y``` – y-coordinate top-left, in pixels
-
 
     * ```r``` – clock radius
 
@@ -570,6 +555,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk1NTc5MDcsNjg5NzMzMjI5LDE1ND
-gwNjg0MzQsMTk1NDM5NzY0MF19
+eyJoaXN0b3J5IjpbODUwNTIzOTU1LDY4OTczMzIyOSwxNTQ4MD
+Y4NDM0LDE5NTQzOTc2NDBdfQ==
 -->
