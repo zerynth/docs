@@ -122,20 +122,10 @@ Each packet is itself a list with the following items:
 * a bytes of 6 elements representing the mac address 1
 * a bytes of 6 elements representing the mac address 2
 * a bytes of 6 elements representing the mac address 3
-
-
 * a bytes of 6 elements representing the mac address 4
-
-
 * an integer representing the RSSI
-
-
 * an integer representing the channel
-
-
 * an integer representing the payload size
-
-
 * a bytes of either payload size elements or zero elements (if not enough space in memory pool was available)
 
 The values of packet type and subtype match the `WIFI_PKT_` constants described above.
@@ -144,19 +134,11 @@ The semantic of addresses changes based on samp:to_ds and `from_ds` bits and mes
 In general one it can be assumed that:
 
 
-* for `to_ds` 0 and `from_ds` 0:
-
-    
-        * address 1 is the destination MAC
-
-
-        * address 2 is the source MAC
-
-
-        * address 3 is the BSSID (the MAC of the AP)
-
-
-* for `to_ds` 1 and `from_ds` 0:
+ * for `to_ds` 0 and `from_ds` 0:
+ * address 1 is the destination MAC 
+ * address 2 is the source MAC 
+ * address 3 is the BSSID (the MAC of the AP)
+ * for `to_ds` 1 and `from_ds` 0:
 
     
         * address 1 is the BSSID
@@ -214,5 +196,5 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NzM2Mzg2NV19
+eyJoaXN0b3J5IjpbLTI1NDQ2NjQzM119
 -->
