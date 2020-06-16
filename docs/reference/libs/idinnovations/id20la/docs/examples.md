@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.idinnovations.id20la
+The following are a list of examples for lib.idinnovations.id20la.
 
 ## RFID Reader
 
@@ -36,3 +36,6 @@ reader = id20la.ID20LA(SERIAL2, cb)
 print("Ready to read tags!")
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxNzUxMjAyOV19
+-->
