@@ -36,20 +36,16 @@ Callbacks are called without additional parameters.
 
 **Arguments:**
     
-**callback** – callback function
-event – event type
 
+ - **callback** – callback function
+ - **event** – event type
 
 Sets a callback to be called in response to a slider event.
 Available events are:
 
 
 * `SLIDER_ENTER`: triggered on slider touch
-
-
 * `SLIDER_LEAVE`: triggered when slider press event finishes
-
-
 * `SLIDER_LVLCHNG`: triggered while the slider is pressed, when the slider centroid value changes
 
 Slider callbacks are called with different parameters, as described below:
@@ -75,5 +71,5 @@ Gets current slider centroid value.
 
 Returns `None` if the slider is currently not touched.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc2NzI4MjRdfQ==
+eyJoaXN0b3J5IjpbLTQyMTI4OTM4XX0=
 -->
