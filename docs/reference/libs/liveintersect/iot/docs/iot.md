@@ -25,43 +25,40 @@ my_Asset = li_http.Asset(https://liveintersect.com/, apiKey, srNo, assetName, as
 Performs GET resource from resourcePath using Asset credentials
 
 `resourcePath` REST resource path within LiveIntersect
-
 `params` Http parameteres (query-string)
-
 `headers` Http headers
 
 
-do_api_post(resourcePath, jsonObj, headers = None)
+**`do_api_post(resourcePath,jsonObj,headers = None)`**
 
 Performs POST to resourcePath using Asset credentials
 
 `resourcePath` REST resource path within LiveIntersect
-
 `jsonObj` JSON payload
-
 `headers` Http headers
 
 
-### register_asset()
+**`register_asset()`**
+
 Use this method to register your device and with the LiveIntersect server.  Every asset must be registered before the cloud accepts any communication from the device.
 This method first checks if asset instance is already registered, if not new registration request will be made.
 
 
-### post_metric(asset)
+**`post_metric(asset)`**
+
 Use this method to retrieve information about the current asset.  This method will return the asset properties, configuration data (within attribute list), current telemetry data (within cloud)
 
 `asset` LiveIntersect Asset instance
 
-returns Api-Response JSON with JSON[“result”] being asset-information
+*returns* Api-Response JSON with JSON[“result”] being asset-information
 
 
-### post_metric(asset, metric_code, metric_value)
+**`post_metric(asset, metric_code, metric_value)`**
+
 Use this method to send sensor data or telemetry data to the LiveIntersect cloud.
 
 `asset` LiveIntersect Asset instance
-
 `metric_code` unique identifier for the metric associated with the asset type
-
 `metric_value` Raw value of the Metric (may contain unit-symbol i.e. 45C)
 
 
@@ -75,5 +72,5 @@ Note: use get_asset_info to download attribute currently stored in the cloud.
 
 `attr_value` Raw value of the attribute (may contain unit-symbol i.e. 45C)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI5MDkwMzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NzkwMDk0ODldfQ==
 -->
