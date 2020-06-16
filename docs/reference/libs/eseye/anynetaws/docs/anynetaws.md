@@ -109,25 +109,19 @@ Publish a message on a chosen topic in one of the following modes:
 
  - **sock_index** – an integer representing a valid modem socket index `(0,1)`
 
-Close a publish ```channel``` open on socket `sock_index`.
+Close a publish *channel* open on socket `sock_index`.
 
 
----
-#### `#!py3 subopen()`
+**`subopen(topic,sock_index)`**
 
-!!!abstract "`#!py3 subopen(topic, sock_index)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```topic``` – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
 
+ - **topic** – a string representing a valid mqtt topic (note that the modem firmware automatically appends AWS IoT Thing name to chosen topic)
+ - **sock_index** – an integer representing a valid modem socket index `(0,1)`
 
-    * ```sock_index``` – an integer representing a valid modem socket index `(0,1)`
-
-
-Open a subscription ```channel``` for topic `topic` through socket index `sock_index`.
+Open a subscription *channel* for topic `topic` through socket index `sock_index`.
 A subscription ```channel``` is open on top of an available socket represented by a socket index.
 Only one ```channel``` can be open on a single socket index, when trying to open a ```channel``` on an already used socket a `SocketUsageError` exception is raised.
 
@@ -205,6 +199,6 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MTMxNDMxNCw3NTM4MDU1NzMsLTgwMj
-MxMzcyMywtNDc3ODIzNjMxXX0=
+eyJoaXN0b3J5IjpbLTEyMTY2NzIzNjEsNzUzODA1NTczLC04MD
+IzMTM3MjMsLTQ3NzgyMzYzMV19
 -->
