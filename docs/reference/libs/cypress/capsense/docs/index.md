@@ -16,10 +16,11 @@ CapSense supports multiple interfaces (widgets) using both CSX and CSD sensing m
 
 Below, Zerynth driver documentation for Cypress CapSense.
 
+Contents:
 
 -   [Cypress CapSense Library](https://docs.zerynth.com/latest/official/lib.cypress.capsense/docs/official_lib.cypress.capsense_capsense.html)
 -   [Examples](https://docs.zerynth.com/latest/official/lib.cypress.capsense/examples/examples.html)
     -   [CapsenseEvents](https://docs.zerynth.com/latest/official/lib.cypress.capsense/examples/examples.html#capsenseevents)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUxMDY2MzVdfQ==
+eyJoaXN0b3J5IjpbLTEyNDAzMDY0MzNdfQ==
 -->
