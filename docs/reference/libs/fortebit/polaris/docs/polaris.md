@@ -2,7 +2,7 @@
 
 This module provides easy access to the Polaris board features and meaningful names for MCU pins and peripherals.
 
-**`class main()`**
+**`class main`**
 
 Namespace for the **Main** connector signals and related peripherals:
 
@@ -24,7 +24,7 @@ Namespace for the **Main** connector signals and related peripherals:
 * `PWM_IOEXP_IN1` - PWM control input 1 for I/O Expander
 * `PWM_IOEXP_IN2` - PWM control input 2 for I/O Expander
  
-**`class mikrobus()`**
+**`class mikrobus`**
 
 Namespace for the **mikroBUS** expansion interface signals and related peripherals:
 
@@ -42,76 +42,35 @@ Namespace for the **mikroBUS** expansion interface signals and related periphera
 * `ADC` - ADC channel (using `PIN_AN`)
 
 
----
-#### `#!py3 extbus()`
-
-!!!abstract "`#!py3 extbus()`"
+**`class extbus`**
 
 Namespace for the **Ext-A** expansion interface signals and related peripherals:
 
-
 * `PIN_GPIO1`, `PIN_GPIO2` - general purpose I/O pins
-
-
 * `PIN_TX`, `PIN_RX` - expansion UART pins
-
-
 * `PIN_PWM` - PWM capable pin
-
-
 * `PIN_AN1` - analog input pin
-
-
 * `PIN_DAC1`, `PIN_DAC1` - analog pins
-
-
 * `SERIAL` - serial driver (using `PIN_RX`,\`\`PIN_TX\`\`)
-
-
 * `PWM` - PWM channel (using `PIN_PWM`)
-
-
 * `ADC` - ADC channel (using `PIN_AN1`)
 
 
----
-#### `#!py3 internal()`
-
-!!!abstract "`#!py3 internal()`"
+**class internal**
 
 Namespace for on-board devices signals and peripherals:
 
 
 * `PIN_LED_RED`, `PIN_LED_GREEN` - LED control pins (active low)
-
-
 * `PIN_POWER_DIS` - main power control pin (shutdown)
-
-
 * `PIN_5V_EN` - control pin for 5V regulator
-
-
 * `PIN_BATT_EN` - backup battery status pin
-
-
 * `PIN_IOEXP_CS` - I/O Expander chip-select pin
-
-
 * `PIN_CAN_STANDBY` - control pin for CAN transceiver stand-by mode (low for normal operation)
-
-
 * `PIN_ACCEL_CS`, `PIN_ACCEL_INT` - accelerometer chip-select and interrupt pins
-
-
 * `PIN_CHARGE_PROG`, `PIN_CHARGE_STAT` - backup battery charger control and status pins
-
-
 * `PIN_BATT_ADC` - analog input for backup battery voltage
-
-
 * `SPI` - on-board SPI driver (for accelerometer and I/O Expander)
-
-
 * `ADC_BATT` - ADC channel (using `PIN_BATT_ADC`)
 
 
@@ -301,5 +260,5 @@ Switch the green LED off.
 
 Switch the green LED on.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjY3NTEyOV19
+eyJoaXN0b3J5IjpbMTM0NjA1ODA5XX0=
 -->
