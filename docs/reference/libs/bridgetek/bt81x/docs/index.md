@@ -43,9 +43,8 @@ Contents:
  * [Examples](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html)
 	 * [DisplayZerynthLogo](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html#displayzerynthlogo)
 	 * [DisplayNetworks](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html#displaynetworks)
-	 * DisplayWidgets
+	 * [DisplayWidgets](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html#displaywidgets)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzYyNzMxOTUsLTE3MTIxMTA1NzddfQ
-==
+eyJoaXN0b3J5IjpbMjEyNDAxMjE1OCwtMTcxMjExMDU3N119
 -->
