@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.liveintersect.iot
+The following are a list of examples for lib.liveintersect.iot.
 
 
 
@@ -44,3 +44,6 @@ except Exception as e:
     print(e)
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIzODM2NzAwNF19
+-->
