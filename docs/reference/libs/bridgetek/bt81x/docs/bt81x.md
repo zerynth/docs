@@ -244,24 +244,22 @@ Sets the default color when colors are cleared. The initial value is `((0, 0, 0)
 **`clear_tag(default_tag)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```default_tag``` – default tag
 
+ - **default_tag** – default tag
 
 Sets the default tag when tag buffer is cleared. The initial value is `0`.
 
 **`spinner(x,y,style,scale)`**
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```x``` – x-coordinate top-left, in pixels
-    * ```y``` – y-coordinate top-left, in pixels
-    * ```style``` – spinner style, one of `SPINNER_CIRCLE`, `SPINNER_LINE`, `SPINNER_CLOCK`, `SPINNER_ORBITING`
-
+ - **x** – x-coordinate top-left, in pixels
+ - **y** – y-coordinate top-left, in pixels
+ - **style** – spinner style, one of `SPINNER_CIRCLE`, `SPINNER_LINE`, `SPINNER_CLOCK`, `SPINNER_ORBITING`
 
 Draws a spinner with a chosen style.
 
@@ -274,11 +272,11 @@ Starts the calibration procedure (needed by Resistive Displays).
 **`inflate(ram_ptr,resource)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```ram_ptr``` – address in RAM_G to inflate the resource to
-    * ```resource``` – name of the resource to inflate
+ram_ptr – address in RAM_G to inflate the resource to
+resource``` – name of the resource to inflate
 
 
 Inflates a Zerynth resource to RAM_G (General purpose graphics RAM, bt81x main memory) for later use.
@@ -476,7 +474,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjA3NDk0LDEyOTg2MTgzNTMsLTExMT
-MyNzE5NzAsMTcxODA4NDY2MywxNjc3OTI2MTUxLDY4OTczMzIy
-OSwxNTQ4MDY4NDM0LDE5NTQzOTc2NDBdfQ==
+eyJoaXN0b3J5IjpbLTc0ODQ2ODQzNCwxMjk4NjE4MzUzLC0xMT
+EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
+MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
