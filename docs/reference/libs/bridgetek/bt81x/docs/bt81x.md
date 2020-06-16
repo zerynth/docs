@@ -3,10 +3,7 @@
 This module exports classes and functions to handle Bridgetek BT81x family of Embedded Video Engines.
 
 
----
-#### `#!py3 DisplayConf()`
-
-!!!abstract "`#!py3 DisplayConf(width, height, hcycle, hoffset, hsync0, hsync1, vcycle, voffset, vsync0, vsync1, pclk, swizzle, pclkpol, cspread, dither, description)`"
+**`class DisplayConf(width,height,hcycle,hoffset,hsync0,hsync1,vcycle, voffset,vsync0,vsync1,pclk,swizzle,pclkpol,cspread,dither,description)`**
 
 Class to store a display configuration.
 List of attributes:
@@ -808,3 +805,6 @@ Starts the touch loop to call set callbacks when touches are detected.
 Each callback function is called passing tag value, tracked value and touch point.
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NDQ4NzQ1NzBdfQ==
+-->
