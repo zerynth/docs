@@ -171,11 +171,9 @@ def my_callback(sock_index, topic, data):
 As reported, a callback function must accept three arguments.
 
 Depending on selected mode, the following actions are executed calling the `subscribe()` function:
-
-
 1. open (`subopen()`) a subscription *channel*, setting a callback, without checking if a *channel* is already open on chosen topic,
-2. open (`subopen()`) a subscription *channel*, setting a callback, checking if a *channel* is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one.
+2. open (`subopen()`) a subscription *channel*, setting a callback, checking if a *channel* is already open on chosen topic, if so the socket index on which the *channel* is already open overwrites passed one.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ2NTYzODgsNzUzODA1NTczLC04MD
+eyJoaXN0b3J5IjpbLTE0ODkyNjgxODAsNzUzODA1NTczLC04MD
 IzMTM3MjMsLTQ3NzgyMzYzMV19
 -->
