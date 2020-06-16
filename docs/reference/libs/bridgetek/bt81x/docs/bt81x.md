@@ -205,15 +205,13 @@ The `TAG` value is set to the ASCII value of each key, so that key presses can b
     
 
  - **x** – x-coordinate top-left, in pixels 
- - **y** – y-coordinate top-left, in pixels   **r** – clock radius
-
-    * ```options``` – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_NOBACK`, `OPT_NOTICKS`, `OPT_NOSECS`, `OPT_NOHANDS`, `OPT_NOHM`
-
-
-    * ```h``` – hours
-    * ```m``` – minutes
-    * ```s``` – seconds
-    * ```ms``` – milliseconds
+ - **y** – y-coordinate top-left, in pixels 
+ - **r** – clock radius
+   **options** – one of `OPT_3D` (default), `OPT_FLAT`, `OPT_NOBACK`, `OPT_NOTICKS`, `OPT_NOSECS`, `OPT_NOHANDS`, `OPT_NOHM`
+   **h** – hour
+   **m** – minutes
+**s** – seconds
+**ms** – milliseconds
 
 
 Adds a clock to the screen.
@@ -481,7 +479,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU3MDA2MTAsMTI5ODYxODM1MywtMT
-ExMzI3MTk3MCwxNzE4MDg0NjYzLDE2Nzc5MjYxNTEsNjg5NzMz
-MjI5LDE1NDgwNjg0MzQsMTk1NDM5NzY0MF19
+eyJoaXN0b3J5IjpbLTQxODA2NjEwMiwxMjk4NjE4MzUzLC0xMT
+EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
+MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
