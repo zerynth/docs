@@ -2,21 +2,14 @@
 
 This module exposes easy to use functions to handle Cypress CapSense widgets.
 
-```NOTE```: At the moment the library is tailored for use with CapSense widgets mounted on the PSoC6 WiFi-BT Pioneer Kit (i.e., two buttons and a slider). Tuning and custom configurations are not supported.
+**NOTE:** At the moment the library is tailored for use with CapSense widgets mounted on the PSoC6 WiFi-BT Pioneer Kit (i.e., two buttons and a slider). Tuning and custom configurations are not supported.
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init()`"
+**`init()`**
 
 Initializes available CapSense widgets.
 
-
----
-#### `#!py3 on_btn()`
-
-!!!abstract "`#!py3 on_btn(callback, event=BTN0_RISE)`"
+**`on_btn(callback,event=BTN0_RISE)`**
 
 
 * ```Arguments```
@@ -46,10 +39,7 @@ Available events are:
 Callbacks are called without additional parameters.
 
 
----
-#### `#!py3 on_slider()`
-
-!!!abstract "`#!py3 on_slider(callback, event=SLIDER_LEAVE)`"
+**`on_slider(callback,event=SLIDER_LEAVE)`**
 
 
 * ```Arguments```
@@ -75,7 +65,7 @@ Available events are:
 
 Slider callbacks are called with different parameters, as described below:
 
-```
+```python
 # SLIDER_ENTER
 def enter_callback(start_pos):
     print("centroid value:", start_pos)
@@ -98,3 +88,6 @@ def level_callback(cur_pos):
 Gets current slider centroid value.
 
 Returns `None` if the slider is currently not touched.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwNjc3NTkxNDRdfQ==
+-->
