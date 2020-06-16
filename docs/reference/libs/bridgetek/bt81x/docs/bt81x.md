@@ -195,7 +195,7 @@ Adds a button element to the screen.
 Calls to `set_background()`, `set_foreground()` and `set_font_color()` are performed if the `Text.palette.font` attribute is set.
 
 
-add_keys(x, y, w, h, font, options, s)`
+**`add_keys(x,y,w,h,font,options,s)`**
 
 
 * ```Arguments```
@@ -228,10 +228,7 @@ If an ASCII code is specified as option, that key is drawn as ```pressed``` (in 
 The `TAG` value is set to the ASCII value of each key, so that key presses can be detected with a callback on that value.
 
 
----
-#### `#!py3 add_clock()`
-
-!!!abstract "`#!py3 add_clock(x, y, r, options, h, m, s, ms)`"
+**`add_clock(x,y,r,options,h,m,s,ms)`**
 
 
 * ```Arguments```
@@ -264,10 +261,7 @@ The `TAG` value is set to the ASCII value of each key, so that key presses can b
 Adds a clock to the screen.
 
 
----
-#### `#!py3 clear()`
-
-!!!abstract "`#!py3 clear(color, stencil, tag)`"
+**`clear(color,stencil,tag)`**
 
 
 * ```Arguments```
@@ -659,5 +653,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjU4MzU4MSwxOTU0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
