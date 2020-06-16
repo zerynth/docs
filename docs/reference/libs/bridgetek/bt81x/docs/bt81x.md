@@ -222,11 +222,9 @@ Adds a clock to the screen.
 
 **Arguments:**
 
-    
-    * ```color``` – clear color `0-1`
-    * ```stencil``` – clear stencil `0-1`
-    * ```tag``` – clear tag `0-1`
-
+ - **color** – clear color `0-1` 
+ - **stencil** – clear stencil `0-1` 
+ - **tag** – clear tag `0-1`
 
 Clears buffers to default values.
 
@@ -479,7 +477,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5OTU1MTQ1LDEyOTg2MTgzNTMsLTExMT
-MyNzE5NzAsMTcxODA4NDY2MywxNjc3OTI2MTUxLDY4OTczMzIy
-OSwxNTQ4MDY4NDM0LDE5NTQzOTc2NDBdfQ==
+eyJoaXN0b3J5IjpbNjgzMzU5MzYsMTI5ODYxODM1MywtMTExMz
+I3MTk3MCwxNzE4MDg0NjYzLDE2Nzc5MjYxNTEsNjg5NzMzMjI5
+LDE1NDgwNjg0MzQsMTk1NDM5NzY0MF19
 -->
