@@ -220,7 +220,7 @@ Adds a clock to the screen.
 **`clear(color,stencil,tag)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
     * ```color``` – clear color `0-1`
@@ -479,7 +479,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODYyNDQ3NSwxMjk4NjE4MzUzLC0xMT
-EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
-MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbNzc5OTU1MTQ1LDEyOTg2MTgzNTMsLTExMT
+MyNzE5NzAsMTcxODA4NDY2MywxNjc3OTI2MTUxLDY4OTczMzIy
+OSwxNTQ4MDY4NDM0LDE5NTQzOTc2NDBdfQ==
 -->
