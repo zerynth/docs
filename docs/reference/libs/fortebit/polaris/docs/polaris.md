@@ -135,32 +135,21 @@ Reads the ignition status from digital input pin IGN/DIO5 (active high).
 Reads the emergency button status from digital input pin SOS/DIO6 (active low).
 
 
-* ```Returns```
-
-    An integer value to indicate whether the emergency button is switched on/off: `SOS_ON` = 1 or `SOS_OFF` = 0
+**Returns:** An integer value to indicate whether the emergency button is switched on/off: `SOS_ON` = 1 or `SOS_OFF` = 0.
 
 
 
----
-#### `#!py3 shutdown()`
-
-!!!abstract "`#!py3 shutdown()`"
+**`shutdown()`**
 
 Disables the main regulator or backup battery source, effectively power-cycling the board.
 
 
----
-#### `#!py3 readMainVoltage()`
-
-!!!abstract "`#!py3 readMainVoltage()`"
+**`readMainVoltage()`**
 
 Returns the analog measure of the main supply voltage.
 
 
----
-#### `#!py3 readMainVoltage()`
-
-!!!abstract "`#!py3 readMainVoltage()`"
+**`readMainVoltage()`**
 
 Returns the analog measure of the backup battery voltage.
 
@@ -214,5 +203,5 @@ Switch the green LED off.
 
 Switch the green LED on.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTQ2OV19
+eyJoaXN0b3J5IjpbNzY5OTg0ODU2XX0=
 -->
