@@ -51,40 +51,29 @@ Return a boolean, *False* if the message cannot be sent.
 
 **`publish_attributes(attributes)`**
 
-Publish `attributes` (dictionary) to the device ```client``` attributes.
+Publish `attributes` (dictionary) to the device *client* attributes.
 
-Return a boolean, ```False``` if the message cannot be sent.
+Return a boolean, *False* if the message cannot be sent.
 
 
----
-#### `#!py3 get_attributes()`
-
-!!!abstract "`#!py3 get_attributes(client, shared, timeout)`"
+**`get_attributes(client,shared,timeout)`**
 
 Obtain the specified `client` and/or `shared` attributes from the device.
 
-Return a dictionary, ```None``` if the data could not be received.
+Return a dictionary, *None* if the data could not be received.
 
 
----
-#### `#!py3 send_rpc_reply()`
-
-!!!abstract "`#!py3 send_rpc_reply(id, result)`"
+**`send_rpc_reply(id,result)`**
 
 Publish `result` (dictionary) as a reply to the RPC request with identifier `id`.
 
-Return a boolean, ```False``` if the message cannot be sent.
+Return a boolean, *False* if the message cannot be sent.
 
+**`do_rpc_request(method,params,timeout)`**
 
----
-#### `#!py3 do_rpc_request()`
-
-!!!abstract "`#!py3 do_rpc_request(method, params, timeout)`"
-
-Perform an RPC request with name `method` and arguments `params`, waiting for
-a reply maximum `timeout` milliseconds (only with MqttClient).
+Perform an RPC request with name `method` and arguments `params`, waiting for a reply maximum `timeout` milliseconds (only with MqttClient).
 
 Return the result of the RPC (dictionary), ```None``` in case of errors.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0Njg3OTM5XX0=
+eyJoaXN0b3J5IjpbNzc1MTU4NDY0XX0=
 -->
