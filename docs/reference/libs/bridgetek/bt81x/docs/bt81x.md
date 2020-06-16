@@ -40,11 +40,11 @@ from bridgetek.bt81x import bt81x
 **Parameters:**
 
  - **spi** – spi driver (`SPI0`, `SPI1`, `...`)
-   **cs** – chip select pin
-   **pd** – pd pin
-   **int** – interrupt pin
-   **dc** – display configuration as a `DisplayConf()` instance
-   **spi_speed** – spi speed in Hertz
+ - **cs** – chip select pin
+ -  **pd** – pd pin
+ -   **int** – interrupt pin
+ -  **dc** – display configuration as a `DisplayConf()` instance
+ - **spi_speed** – spi speed in Hertz
 
 Initializes the chip.
 
@@ -761,5 +761,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjE0NTc4Ml19
+eyJoaXN0b3J5IjpbLTE5MzI5NzA1NDVdfQ==
 -->
