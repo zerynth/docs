@@ -73,7 +73,7 @@ Return a boolean, *False* if the message cannot be sent.
 
 Perform an RPC request with name `method` and arguments `params`, waiting for a reply maximum `timeout` milliseconds (only with MqttClient).
 
-Return the result of the RPC (dictionary), ```None``` in case of errors.
+Return the result of the RPC (dictionary), *None* in case of errors.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1MTU4NDY0XX0=
+eyJoaXN0b3J5IjpbLTE0MDEyMDMyXX0=
 -->
