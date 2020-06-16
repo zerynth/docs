@@ -232,11 +232,10 @@ Clears buffers to default values.
 **`clear_color(rgb=None,a=None)`**
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```rgb``` – tuple for red, green and blue values (`0-255`, `0-255`, `0-255`)
-    * ```a``` – alpha `0-255`
+**rgb** – tuple for red, green and blue values (`0-255`, `0-255`, `0-255`)
+**a** – alpha `0-255`
 
 
 Sets the default color when colors are cleared. The initial value is `((0, 0, 0), 0)`.
@@ -477,7 +476,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzMzU5MzYsMTI5ODYxODM1MywtMTExMz
-I3MTk3MCwxNzE4MDg0NjYzLDE2Nzc5MjYxNTEsNjg5NzMzMjI5
-LDE1NDgwNjg0MzQsMTk1NDM5NzY0MF19
+eyJoaXN0b3J5IjpbMTgxNjA3NDk0LDEyOTg2MTgzNTMsLTExMT
+MyNzE5NzAsMTcxODA4NDY2MywxNjc3OTI2MTUxLDY4OTczMzIy
+OSwxNTQ4MDY4NDM0LDE5NTQzOTc2NDBdfQ==
 -->
