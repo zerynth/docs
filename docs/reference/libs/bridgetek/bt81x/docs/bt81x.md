@@ -485,8 +485,6 @@ If called with value `0` the default value of the tag buffer is used for current
 
     
     * ```cbks``` – tuple of tuples of callback and tag value for the callback to be activated on `((tag_value1, cbk1), (tag_value2, cbk2), ...)`
-
-
     * ```touch_points``` – number of multiple touch points (to be supported by used display)
 
 
@@ -495,6 +493,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDczMzczNCw2ODk3MzMyMjksMTU0OD
-A2ODQzNCwxOTU0Mzk3NjQwXX0=
+eyJoaXN0b3J5IjpbMTc2MDA0MjI2LDY4OTczMzIyOSwxNTQ4MD
+Y4NDM0LDE5NTQzOTc2NDBdfQ==
 -->
