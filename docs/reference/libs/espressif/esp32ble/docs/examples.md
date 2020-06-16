@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.espressif.esp32ble
+The following are a list of examples for lib.espressif.esp32ble.
 
 ## BLE Alerts
 
@@ -913,3 +913,6 @@ while True:
     ss.sendall("::\n")
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MzM4ODQ2NzldfQ==
+-->
