@@ -19,32 +19,20 @@ Generates the board’s own access token for Fortebit IoT cloud services.
 Check if the specified IoT device is registered to the Polaris Cloud services.
 
 **Arguments:**
+   
+*	**device** – a connected instance of `fortebit.iot.Device`
+*	**email** – the device owner’s email address
 
 
 
-    
-    * ```device``` – a connected instance of `fortebit.iot.Device`
-
-
-    * ```email``` – the device owner’s email address
-
-
-
----
-#### `#!py3 register()`
-
-!!!abstract "`#!py3 register(device, email)`"
+**`register(device,email)`**
 
 Perform device registration to Polaris Cloud services.
 
-
-* ```Arguments```
-
-    
-    * ```device``` – a connected instance of `fortebit.iot.Device`
-
-
-    * ```email``` – the device owner’s email address
+**Arguments:**
+   
+*	**device** – a connected instance of `fortebit.iot.Device`
+**email** – the device owner’s email address
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDgxODk5OV19
+eyJoaXN0b3J5IjpbLTQ5NzAwMzUzNV19
 -->
