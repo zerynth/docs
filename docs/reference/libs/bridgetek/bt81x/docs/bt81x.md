@@ -294,10 +294,10 @@ Inflates a Zerynth resource to RAM_G (General purpose graphics RAM, bt81x main m
 **Arguments:**
 
     
-**ram_ptr** – address in RAM_G to load the resource to
-**options** – load options
-resource – name of the resource to inflate
 
+ - **ram_ptr** – address in RAM_G to load the resource to
+ - **options** – load options
+ - **resource** – name of the resource to inflate
 
 Inflates a Zerynth resource consisting of a PNG image to RAM_G (General purpose graphics RAM, bt81x main memory) for later use.
 
@@ -310,11 +310,11 @@ Raises:
 **`vertex_format(fmt)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```fmt``` – format frac value, one of `0`, `1`, `2`, `3`, `4`
 
+ - **fmt** – format frac value, one of `0`, `1`, `2`, `3`, `4`
 
 Selects a vertex format for subsequent draw operations.
 
@@ -324,14 +324,11 @@ Vertex format are useful to specify pixel coordinates beyond the `0-511` range.
 **`Bitmap(handle,source,layout,size)`**
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```handle``` – a user-defined handle to refer to the bitmap
-    * ```source``` – bitmap source in RAM_G
-    * ```layout``` – a tuple of `(bitmap_format, linestride)`
-    * ```size``` – a tuple of `(filtering_mode, x_wrap_mode, y_wrap_mode, bitmap_width, bitmap_height)`
-
+ - **handle** – a user-defined handle to refer to the bitmap
+ - **source** – bitmap source in RAM_G
+ - **layout** – a tuple of `(bitmap_format, linestride)`**size** – a tuple of `(filtering_mode, x_wrap_mode, y_wrap_mode, bitmap_width, bitmap_height)`
 
 Class to store a bitmap element and to allow subsequent bitmap draw operations.
 
@@ -473,7 +470,7 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTEwOTI2NCwxMjk4NjE4MzUzLC0xMT
+eyJoaXN0b3J5IjpbLTczOTYxMTE4OSwxMjk4NjE4MzUzLC0xMT
 EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
 MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
