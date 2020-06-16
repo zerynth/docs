@@ -156,12 +156,12 @@ topic – a string representing a valid mqtt topic (note that the modem firmware
 
  - **callback** – a function to be called when a message arrives on chosen topic
  - **sock_index** – an integer representing a valid modem socket index `(0,1)`
-   **mode** – an integer representing a valid subscription mode `(0,1)`
+ - **mode** – an integer representing a valid subscription mode `(0,1)`
 
 Subscribe to topic `topic` calling `callback` function whenever a new message arrives on chosen topic.
 Example callback function:
 
-```
+```python
 def my_callback(sock_index, topic, data):
     print('> callback from', topic)
     print('> on socket ', sock_index)
@@ -173,11 +173,9 @@ As reported, a callback function must accept three arguments.
 Depending on selected mode, the following actions are executed calling the `subscribe()` function:
 
 
-1. open (`subopen()`) a subscription ```channel```, setting a callback, without checking if a ```channel``` is already open on chosen topic
-
-
-2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
+1. open (`subopen()`) a subscription *channel*, setting a callback, without checking if a *channel* is already open on chosen topic,
+2. open (`subopen()`) a subscription *channel*, setting a callback, checking if a *channel* is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODM0MTEyNzksNzUzODA1NTczLC04MD
+eyJoaXN0b3J5IjpbLTIwNTQ2NTYzODgsNzUzODA1NTczLC04MD
 IzMTM3MjMsLTQ3NzgyMzYzMV19
 -->
