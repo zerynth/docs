@@ -95,16 +95,12 @@ Check if a publish *channel* for topic `topic` is already open on any of the ava
 
 Publish a message on a chosen topic in one of the following modes:
 
+1. publish the message without opening a publish *channel*, which must be already open when calling this function,
+2. open (`pubopen()`) a publish *channel* and publish the message without checking if a publish *channel* is already open on that topic,
+3. open (`pubopen()`) a publish *channel* and publish the message checking if a *channel* is already open on chosen topic, if so the socket index on which the *channel* is already open overwrites passed one.
 
-1. publish the message without opening a publish *channel,* which must be already open when calling this function
-2. open (`pubopen()`) a publish ```channel``` and publish the message without checking if a publish ```channel``` is already open on that topic
-3. open (`pubopen()`) a publish ```channel``` and publish the message checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 
-
----
-#### `#!py3 pubclose()`
-
-!!!abstract "`#!py3 pubclose(sock_index)`"
+pubclose(sock_index)
 
 
 * ```Arguments```
@@ -209,5 +205,5 @@ Depending on selected mode, the following actions are executed calling the `subs
 
 2. open (`subopen()`) a subscription ```channel```, setting a callback, checking if a ```channel``` is already open on chosen topic, if so the socket index on which the ```channel``` is already open overwrites passed one
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzNTQ5NjA5LC00Nzc4MjM2MzFdfQ==
+eyJoaXN0b3J5IjpbLTgwMjMxMzcyMywtNDc3ODIzNjMxXX0=
 -->
