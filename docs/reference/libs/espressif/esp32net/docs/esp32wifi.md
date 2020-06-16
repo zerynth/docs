@@ -135,45 +135,26 @@ In general one it can be assumed that:
 
 
  * for `to_ds` 0 and `from_ds` 0:
- * address 1 is the destination MAC 
- * address 2 is the source MAC 
- * address 3 is the BSSID (the MAC of the AP)
+	 * address 1 is the destination MAC 
+	 * address 2 is the source MAC 
+	 * address 3 is the BSSID (the MAC of the AP)
+
  * for `to_ds` 1 and `from_ds` 0:
 
-    
-        * address 1 is the BSSID
+		 * address 1 is the BSSID 
+	 * address 2 is the source MAC 
+	 * address 3 is the destination MAC (outside the wifi network)
 
-
-        * address 2 is the source MAC
-
-
-        * address 3 is the destination MAC (outside the wifi network)
-
-
-* for `to_ds` 0 and `from_ds` 1:
-
-    
-        * address 1 is the destination MAC
-
-
+ * for `to_ds` 0 and `from_ds` 1:
+         * address 1 is the destination MAC
         * address 2 is the BSSID
-
-
         * address 3 is the source MAC (outside the wifi network)
 
 
 * for `to_ds` 1 and `from_ds` 1:
-
-    
-        * address 1 is the receiver MAC (inside the wifi WDS network)
-
-
+         * address 1 is the receiver MAC (inside the wifi WDS network)
         * address 2 is the transmitter MAC (inside the wifi WDS network)
-
-
         * address 3 is the destination MAC (outside the wifi WDS network)
-
-
         * address 4 is the source MAC (outside the wifi WDS network)
 
 Payload size is always specified in the packet tuple. However it is possible, if the memory pool for payload is exhausted, that the actual payload is not present.
@@ -196,5 +177,5 @@ The same as sniff_raw, except that the addresses are returned as hexadecimal str
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NDQ2NjQzM119
+eyJoaXN0b3J5IjpbLTEzNjMzNzAxODldfQ==
 -->
