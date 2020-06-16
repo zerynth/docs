@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.googlecloud.iot
+The following are a list of examples for lib.googlecloud.iot.
 
 ## Controlled Publish Period
 
@@ -70,3 +70,6 @@ while True:
 
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4MzYyNTI0MjRdfQ==
+-->
