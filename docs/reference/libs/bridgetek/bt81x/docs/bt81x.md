@@ -68,11 +68,11 @@ List of attributes:
 
 
 * **x**- coordinate top-left, in pixels
-* **y** -coordinate top-left, in pixels
-* `font` font to use `0-31`
-* `options` one of `OPT_CENTERX`, `OPT_CENTERY`, `OPT_CENTER`, `OPT_RIGHTX`, `OPT_FORMAT`, `OPT_FILL`
-* `text` text string
-* `palette` `Palette()` object instance to set colors
+* **y** - coordinate top-left, in pixels
+* **font**  to use `0-31`
+* **options** one of `OPT_CENTERX`, `OPT_CENTERY`, `OPT_CENTER`, `OPT_RIGHTX`, `OPT_FORMAT`, `OPT_FILL`
+* **text** string
+* **palette** `Palette()` object instance to set colors
 
 
 **`class Button(x,y,width,height,font,options,text,palette=None)`**
@@ -493,6 +493,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1OTg0NTIzLDY4OTczMzIyOSwxNTQ4MD
-Y4NDM0LDE5NTQzOTc2NDBdfQ==
+eyJoaXN0b3J5IjpbMTY3NzkyNjE1MSw2ODk3MzMyMjksMTU0OD
+A2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
