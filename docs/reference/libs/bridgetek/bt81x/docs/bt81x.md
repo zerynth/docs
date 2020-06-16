@@ -447,8 +447,8 @@ If called with value `0` the default value of the tag buffer is used for current
 **Arguments:**
 
     
-mask``` – mask value `0-1`
 
+ - **mask** – mask value `0-1`
 
 If called with value `0` the default value of the tag buffer is used for current display list.
 
@@ -456,19 +456,19 @@ If called with value `0` the default value of the tag buffer is used for current
 **`touch_loop(cbks)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```cbks``` – tuple of tuples of callback and tag value for the callback to be activated on `((tag_value1, cbk1), (tag_value2, cbk2), ...)`
-    * ```touch_points``` – number of multiple touch points (to be supported by used display)
 
+ - **cbks** – tuple of tuples of callback and tag value for the callback to be activated on `((tag_value1, cbk1), (tag_value2, cbk2), ...)`
+ - **touch_points** – number of multiple touch points (to be supported by used display)
 
 Starts the touch loop to call set callbacks when touches are detected.
 Each callback function is called passing tag value, tracked value and touch point.
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDkxMDY5MSwxMjk4NjE4MzUzLC0xMT
+eyJoaXN0b3J5IjpbMTM4ODc0MTIwNiwxMjk4NjE4MzUzLC0xMT
 EzMjcxOTcwLDE3MTgwODQ2NjMsMTY3NzkyNjE1MSw2ODk3MzMy
 MjksMTU0ODA2ODQzNCwxOTU0Mzk3NjQwXX0=
 -->
