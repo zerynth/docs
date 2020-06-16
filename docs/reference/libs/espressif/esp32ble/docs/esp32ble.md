@@ -5,7 +5,7 @@ The driver is based on ESP32 IDF 3.2 and can work on Virtual Machines compiled w
 
 To use the module expand on the following example:
 
-```py
+```python
 from espressif.esp32ble import esp32ble as bledrv
 from wireless import ble
 
@@ -19,5 +19,5 @@ while True:
     # do things here
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxNjM3OTY1XX0=
+eyJoaXN0b3J5IjpbLTExODE3NTk1OTBdfQ==
 -->
