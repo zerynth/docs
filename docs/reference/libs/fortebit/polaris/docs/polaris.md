@@ -104,51 +104,33 @@ It should be called at the start of your application.
 
 Returns a boolean value to indicate whether the board is powered from the backup battery source.
 
-**`setBatteryCharger()`**
+**`setBatteryCharger(enable)`**
 
-!!!abstract "`#!py3 setBatteryCharger(enable)`"
+
 
 Enables or disables the backup battery charger (5V required).
 
 
-* ```Note```
-
-    Do not enable the charger when the main power supply is not present
+Note: Do not enable the charger when the main power supply is not present.
 
 
 
----
-#### `#!py3 getChargerStatus()`
-
-!!!abstract "`#!py3 getChargerStatus()`"
+**`getChargerStatus()`**
 
 Returns the battery charger status (not charging, charging or fully charged).
 
 
-* ```Returns```
+**Returns:** One of these values: `CHARGE_NONE` = 0, `CHARGE_BUSY` = 1, `CHARGE_COMPLETE` = 2.
 
-    One of these values: `CHARGE_NONE` = 0, `CHARGE_BUSY` = 1, `CHARGE_COMPLETE` = 2
-
-
-
----
-#### `#!py3 getIgnitionStatus()`
-
-!!!abstract "`#!py3 getIgnitionStatus()`"
+**`getIgnitionStatus()`**
 
 Reads the ignition status from digital input pin IGN/DIO5 (active high).
 
-
-* ```Returns```
-
-    An integer value to indicate whether the ignition switch is on/off: `IGNITION_ON` = 1 or `IGNITION_OFF` = 0
+**Returns:** An integer value to indicate whether the ignition switch is on/off: `IGNITION_ON` = 1 or `IGNITION_OFF` = 0.
 
 
 
----
-#### `#!py3 getEmergencyStatus()`
-
-!!!abstract "`#!py3 getEmergencyStatus()`"
+**`getEmergencyStatus()`**
 
 Reads the emergency button status from digital input pin SOS/DIO6 (active low).
 
@@ -232,5 +214,5 @@ Switch the green LED off.
 
 Switch the green LED on.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjIzNjQ0M119
+eyJoaXN0b3J5IjpbLTcyOTQ2OV19
 -->
