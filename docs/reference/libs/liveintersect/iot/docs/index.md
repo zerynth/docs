@@ -22,10 +22,13 @@ The LiveIntersect client library provides functionality to:
 Summary:
 The Esprida LiveIntersect IoT platform support for Zerynth embedded hardware, helping businesses unlock the full potential of connected solutions, by rapid integration with sensors, actuators and could services.
 
+
 Contents:
 
-
-* The Asset class
+-   [Liveintersect  IoT](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/docs/index.html)
+    -   [The Asset class](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/docs/official_lib.liveintersect.iot_iot.html)
+    -   [Examples](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/examples/examples.html)
+        -   [Asset Simulation](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/examples/examples.html#asset-simulation)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNTEzMTExNF19
+eyJoaXN0b3J5IjpbNDA0MjQwNDk1XX0=
 -->
