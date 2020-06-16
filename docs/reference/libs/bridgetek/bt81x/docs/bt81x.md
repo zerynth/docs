@@ -305,11 +305,7 @@ Sets the default color when colors are cleared. The initial value is `((0, 0, 0)
 
 Sets the default tag when tag buffer is cleared. The initial value is `0`.
 
-
----
-#### `#!py3 spinner()`
-
-!!!abstract "`#!py3 spinner(x, y, style, scale)`"
+**`spinner(x,y,style,scale)`**
 
 
 * ```Arguments```
@@ -327,10 +323,7 @@ Sets the default tag when tag buffer is cleared. The initial value is `0`.
 Draws a spinner with a chosen style.
 
 
----
-#### `#!py3 calibrate()`
-
-!!!abstract "`#!py3 calibrate()`"
+**`calibrate()`**
 
 Starts the calibration procedure (needed by Resistive Displays).
 
@@ -647,6 +640,6 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MzQ2MzM5MSwxNTQ4MDY4NDM0LDE5NT
+eyJoaXN0b3J5IjpbMTU3OTA1ODgxNSwxNTQ4MDY4NDM0LDE5NT
 QzOTc2NDBdfQ==
 -->
