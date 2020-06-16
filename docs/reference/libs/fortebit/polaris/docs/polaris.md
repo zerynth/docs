@@ -161,41 +161,25 @@ Returns the voltage measure of an analog input pin on the **Main** connector.
 
 **Arguments:**
 
-**pin_num** – Index of the analog pin (0-3 = corresponds to AIO1-4)
-
-
-**range** – Full-scale range: ```HIGH``` (0-36V) or ```LOW``` (0-5V)
+*	**pin_num** – Index of the analog pin (0-3 = corresponds to AIO1-4)
+*	**range** – Full-scale range: *HIGH* (0-36V) or *LOW* (0-5V)
 
 
 
----
-#### `#!py3 ledRedOff()`
-
-!!!abstract "`#!py3 ledRedOff()`"
+**`ledRedOff()`**
 
 Switch the red LED off.
 
 
----
-#### `#!py3 ledRedOn()`
-
-!!!abstract "`#!py3 ledRedOn()`"
+**`ledRedOn()`**
 
 Switch the red LED on.
 
-
----
-#### `#!py3 ledGreenOff()`
-
-!!!abstract "`#!py3 ledGreenOff()`"
+**`ledGreenOff()`**
 
 Switch the green LED off.
 
-
----
-#### `#!py3 ledGreenOn()`
-
-!!!abstract "`#!py3 ledGreenOn()`"
+**`ledGreenOn()`**
 
 Switch the green LED on.
 <!--stackedit_data:
@@ -207,5 +191,5 @@ OGdRM00zSDJwIiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0Ij
 oiRnVuY3Rpb24gbmFtZSBpcyB0aGUgc2FtZSBhcyBwcmV2aW91
 cyBhbmQgc2hvdWxkIGJlIGNoZWNrZWQuIFxuKiByZWFkQmFja3
 VwVm9sdGFnZSgpIiwiY3JlYXRlZCI6MTU5MjMxODk5NDQ2M319
-LCJoaXN0b3J5IjpbLTE3NDU3MjcwOTYsNzY5OTg0ODU2XX0=
+LCJoaXN0b3J5IjpbMTM4OTM5MDczMiw3Njk5ODQ4NTZdfQ==
 -->
