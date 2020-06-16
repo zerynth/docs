@@ -146,36 +146,30 @@ In general one it can be assumed that:
 	 *	address 3 is the destination MAC (outside the wifi network)
  
  * for `to_ds` 0 and `from_ds` 1:
-	         * address 1 is the destination MAC
-	        * address 2 is the BSSID
-	        * address 3 is the source MAC (outside the wifi network)
+	*	address 1 is the destination MAC
+	*	address 2 is the BSSID
+	*	address 3 is the source MAC (outside the wifi network)
 
 
  * for `to_ds` 1 and `from_ds` 1:
-         * address 1 is the receiver MAC (inside the wifi WDS network)
-        * address 2 is the transmitter MAC (inside the wifi WDS network)
-        * address 3 is the destination MAC (outside the wifi WDS network)
-        * address 4 is the source MAC (outside the wifi WDS network)
+	*	address 1 is the receiver MAC (inside the wifi WDS network)
+	*	address 2 is the transmitter MAC (inside the wifi WDS network)
+	*	address 3 is the destination MAC (outside the wifi WDS network)
+	*	address 4 is the source MAC (outside the wifi WDS network)
 
 Payload size is always specified in the packet tuple. However it is possible, if the memory pool for payload is exhausted, that the actual payload is not present.
 
 The returned list of packets is usually as big as the number of packets in the buffer and never exceeds that amount.
 
 
----
-#### `#!py3 sniff()`
-
-!!!abstract "`#!py3 sniff()`"
+**`sniff()`**
 
 The same as sniff_raw, except that the addresses are returned as hexadecimal strings in the format AA:BB:CC:DD:EE:FF.
 
 
----
-#### `#!py3 stop_sniffer()`
-
-!!!abstract "`#!py3 stop_sniffer()`"
+**`stop_sniffer()`**
 
 Stops the sniffer and free buffer and pool memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MjI2MTY4OV19
+eyJoaXN0b3J5IjpbLTY5ODkxMjU2N119
 -->
