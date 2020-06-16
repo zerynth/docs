@@ -154,21 +154,17 @@ Returns the analog measure of the main supply voltage.
 Returns the analog measure of the backup battery voltage.
 
 
----
-#### `#!py3 readAnalogInputVoltage()`
+**`readAnalogInputVoltage(pin_num,range=HIGH)`**
 
-!!!abstract "`#!py3 readAnalogInputVoltage(pin_num, range=HIGH)`"
-
-Returns the voltage measure of an analog input pin on the ```Main``` connector.
+Returns the voltage measure of an analog input pin on the **Main** connector.
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```pin_num``` – Index of the analog pin (0-3 = corresponds to AIO1-4)
+**pin_num** – Index of the analog pin (0-3 = corresponds to AIO1-4)
 
 
-    * ```range``` – Full-scale range: ```HIGH``` (0-36V) or ```LOW``` (0-5V)
+**range** – Full-scale range: ```HIGH``` (0-36V) or ```LOW``` (0-5V)
 
 
 
@@ -211,5 +207,5 @@ OGdRM00zSDJwIiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0Ij
 oiRnVuY3Rpb24gbmFtZSBpcyB0aGUgc2FtZSBhcyBwcmV2aW91
 cyBhbmQgc2hvdWxkIGJlIGNoZWNrZWQuIFxuKiByZWFkQmFja3
 VwVm9sdGFnZSgpIiwiY3JlYXRlZCI6MTU5MjMxODk5NDQ2M319
-LCJoaXN0b3J5IjpbLTg2NTM3Mzk0NSw3Njk5ODQ4NTZdfQ==
+LCJoaXN0b3J5IjpbLTE3NDU3MjcwOTYsNzY5OTg0ODU2XX0=
 -->
