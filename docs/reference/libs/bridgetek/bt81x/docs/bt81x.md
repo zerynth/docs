@@ -28,19 +28,16 @@ List of attributes:
 
 `display_conf` module global variable is automatically set with a `DisplayConf()` instance when importing a display module from a display vendor:
 
-```
+```python
 from riverdi.displays.bt81x import ctp50
 from bridgetek.bt81x import bt81x
 ```
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init(spi, cs, pd, int, dc=None, spi_speed=3000000)`"
+**`init(spi,cs,pd,int,dc=None,spi_speed=3000000)`**
 
 
-* ```Arguments```
+**Parameters:**
 
     
     * ```spi``` – spi driver (`SPI0`, `SPI1`, `...`)
@@ -776,5 +773,5 @@ Each callback function is called passing tag value, tracked value and touch poin
 
 If a tag value of `-1` is specified for a certain callback, that callback is called for every detected tag value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3NTEyNDM2XX0=
+eyJoaXN0b3J5IjpbMTMwOTY5NjA0MV19
 -->
