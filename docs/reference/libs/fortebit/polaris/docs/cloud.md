@@ -2,11 +2,7 @@
 
 This module provides easy access to the Fortebit Cloud features.
 
-
----
-#### `#!py3 getAccessToken()`
-
-!!!abstract "`#!py3 getAccessToken(imei, uid)`"
+getAccessToken(imei, uid)`"
 
 Generates the board’s own access token for Fortebit IoT cloud services.
 
@@ -54,3 +50,6 @@ Perform device registration to Polaris Cloud services.
 
 
     * ```email``` – the device owner’s email address
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIxOTg0OTAxNF19
+-->
