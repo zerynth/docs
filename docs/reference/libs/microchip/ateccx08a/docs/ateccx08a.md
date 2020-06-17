@@ -420,18 +420,12 @@ on the device.
     
 **key_id** (*bytes*) – 2 bytes. Specifies the slot where the key is. Note that while only last four bits are used to select a slot, all the two bytes will be included in the digest message.
 
-use_tempkey(bool`) – If False the first 32 bytes of the SHA message are loaded from
-    one of the data slots. Otherwise the first 32 bytes are filled with TempKey
-    (and source_flag must be used).
+**use_tempkey** (*bool*) – If False the first 32 bytes of the SHA message are loaded from one of the data slots. Otherwise the first 32 bytes are filled with TempKey (and source_flag must be used).
+
+**include_sn** (bool) – If True, 48 bits from Configuration Zone are included in the digest message.
 
 
-    * ```include_sn``` (```bool```) – If True, 48 bits from Configuration Zone are included in the
-    digest message.
-
-
-    * ```source_flag``` (```int```) – Single bit. The value of this bit must match the value
-    in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error.
-    The flag is the fourth bit returned by info_cmd(‘State’).
+**source_flag** (*int*) – Single bit. The value of this bit must match the value in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error. The flag is the fourth bit returned by info_cmd(‘State’).
     (Default value = 0)
 
 
@@ -1157,7 +1151,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjExNDIzMSw0NTk5NTc5MDMsLTIyMj
+eyJoaXN0b3J5IjpbLTQ5Mzc5Mzk4MSw0NTk5NTc5MDMsLTIyMj
 c0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYw
 LC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
 U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
