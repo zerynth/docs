@@ -128,26 +128,22 @@ This must be done in order to avoid hitting the watchdog timeout (~1 second) whi
 Send a command and return the result data.
 
 **Note:**
-If `start_cmd_sequence()` was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
+
+If **`start_cmd_sequence()`** was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
 
 
 **Arguments:**
 
- - ***args** – All arguments are passed to `_send_cmd()` method.
+ - ***args** – All arguments are passed to **`_send_cmd()`** method.
 
 ### Commands
 
-The functions names are the lowercase command name followed by _cmd.
-Parameters are command specific.
+The functions names are the lowercase command name followed by _cmd. Parameters are command specific.
 
-A command usually return some bytes as the result of the command execution, or a status
-code.
+A command usually return some bytes as the result of the command execution, or a status code.
 
 
----
-#### `#!py3 checkmac_cmd()`
-
-!!!abstract "`#!py3 checkmac_cmd(tempkey_as_message_source: bool, tempkey_as_first_block: bool, source_flag: int, key_id: bytes, challenge: bytes, response: bytes, other_data: bytes)`"
+**`checkmac_cmd(tempkey_as_message_source:bool,tempkey_as_first_block:bool,source_flag:int,key_id:bytes, challenge:bytes,response:bytes,other_data:bytes)`**
 
 Verify a MAC calculated on another CryptoAuthentication device.
 
@@ -1502,6 +1498,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NDA3NjgxOSwyMTE3NzU5LC0xOTkxOD
+eyJoaXN0b3J5IjpbLTM2NjQ4MzQ4MCwyMTE3NzU5LC0xOTkxOD
 c2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
