@@ -127,19 +127,13 @@ This must be done in order to avoid hitting the watchdog timeout (~1 second) whi
 
 Send a command and return the result data.
 
-Note:
-
-    If `start_cmd_sequence()` was not invoked before this method, the device
-    is automatically woke up and put again in idle mode after the command execution.
-    (Default value = 50)
+**Note:**
+If `start_cmd_sequence()` was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * **\```args``` – All arguments are passed to `_send_cmd()` method.
-
-
+ - ***args** – All arguments are passed to `_send_cmd()` method.
 
 ### Commands
 
@@ -1508,6 +1502,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzcxMDY5MTQsMjExNzc1OSwtMTk5MT
-g3NjAzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbLTI0NDA3NjgxOSwyMTE3NzU5LC0xOTkxOD
+c2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
