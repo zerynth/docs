@@ -62,27 +62,17 @@ Connect to a device and start I2C protocol.
 
 Send a command packet to the device.
 
-Output packet structure:
+**Output packet structure:**
 
     [ 0x03 ][ length ][ opcode ][ p1 ][ p2 ][ …data… ][ crc ]
 
 
-    * 0x03 is a constant defined in WORD_ADDRS at the beginning of this module.
-
-
-    * length includes every bytes except the first 0x03 byte.
-
-
-    * p1 is byte of length 1. (mandatory)
-
-
-    * p2 is bytes of length 2. (mandatory)
-
-
-    * data is optional and can have arbitraty length.
-
-
-    * crc is a 2 byte checksum (calculated using `ecc508a.crc16()`).
+-	0x03 is a constant defined in WORD_ADDRS at the beginning of this module.
+-	length includes every bytes except the first 0x03 byte.
+-	p1 is byte of length 1. (mandatory)
+-	p2 is bytes of length 2. (mandatory)
+-	data is optional and can have arbitraty length.
+-	crc is a 2 byte checksum (calculated using `ecc508a.crc16()`).
 
 
 * ```Arguments```
@@ -1547,6 +1537,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg5NjU0NzksLTE5MzMwNjEzNzFdfQ
+eyJoaXN0b3J5IjpbLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ
 ==
 -->
