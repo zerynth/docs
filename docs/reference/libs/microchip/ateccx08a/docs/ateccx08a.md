@@ -7,437 +7,804 @@ Furthermore an interface to allow the use of chip-related functionalities from o
 ## Auxiliary methods
 
 
-**`crc16(data:bytes)`**
+**`---
+#### `#!py3 crc16()`
+
+!!!abstract "`#!py3 crc16(data: bytes)`**"
 
 Compute the CRC16 checksum for some bytes.
 The CRC is calculated using 0x8005 as polynomial and starting with the registry set as 0x00.
 
 
-**Arguments:** **data**(*bytes*) – bytes to be checksummed.
+** ```Arguments:** **data**(*```
 
-**Returns:** 2 bytes, representing the computed checksum.
+    
+    * ```data``` (```bytes*```) – bytes to be checksummed.
 
- **Return type:** bytes
+**Returns:**
+
+* ```Returns```
+
+    2 bytes, representing the computed checksum.
+
+
+
+* **Return type:**
+
+    bytes
 
 
 ## ATECC508A class
 
 
-**`class ATECC508A(i2c.I2C)`**
+**`class---
+#### `#!py3 ATECC508A()`
+
+!!!abstract "`#!py3 ATECC508A(i2c.I2C)`**"
 
 Class for controlling the ATECC508A chip.
 
 Members:
 
+
 * device_awake : Boolean. If True the device is running a multiple commands sequence.
 
-**`__init__(drvname,addr=DEFAULT_ADDR,clk=100000)`**
+**`
+### ateccx08a.\__init__(drvname, addr=DEFAULT_ADDR, clk=100000)`**
 
 Connect to a device and start I2C protocol.
 
 
-**`Arguments:`**
+** ```Arguments:`**```
 
     
--	**drvname** – Interface for I2C communication (e.g. I2C0)
--	**addr** (*int [0-255]*) – Address of the I2C chip. (Default value = 0x60 for ATECC508A)
--	**clk** (*int*) – Clock rate of the I2C communication in kHz. (Default value = 100000).
+-	**    * ```drvname**``` – Interface for I2C communication (e.g. I2C0)
+-	**
+
+    * ```addr**``` (*int [0-255]*) – Address of the I2C chip. (Default value = 0x60 for ATECC508A)
+-	**clk** (*int*
+
+    * ```clk``` (```int```) – Clock rate of the I2C communication in kHz. (Default value = 100000).
 
 
 ### Internal methods
 
 
-**`_send_cmd(self,opcode,param1,param2:bytes,data=bytes())`**
+**`---
+#### `#!py3 _send_cmd()`
+
+!!!abstract "`#!py3 _send_cmd(self, opcode, param1, param2: bytes, data=bytes())`**"
 
 Send a command packet to the device.
 
 **Output packet structure:**
 
-[ 0x03 ][ length ][ opcode ][ p1 ][ p2 ][ …data… ][ crc ]
+    [ 0x03 ][ length ][ opcode ][ p1 ][ p2 ][ …data… ][ crc ]
 
 
--	0x03 is a constant defined in WORD_ADDRS at the beginning of this module.
--	length includes every bytes except the first 0x03 byte.
--	p1 is byte of length 1. (mandatory)
--	p2 is bytes of length 2. (mandatory)
--	data is optional and can have arbitraty length.
--	crc is a 2 byte checksum (calculated using **`ecc508a.crc16()`**).
+-	    * 0x03 is a constant defined in WORD_ADDRS at the beginning of this module.
+-	
 
-**Arguments:**
+    * length includes every bytes except the first 0x03 byte.
+-	
+
+    * p1 is byte of length 1. (mandatory)
+-	
+
+    * p2 is bytes of length 2. (mandatory)
+-	
+
+    * data is optional and can have arbitraty length.
+-	
+
+    * crc is a 2 byte checksum (calculated using **`ecc508a.crc16()`**).
+
+
+** ```Arguments:**```
 
     
--	**opcode** (*int*) – The code representing the selected command. Check OPCODES at the beginning of this module.
--	**param1** (*int*) – The first mandatory parameter. 1 byte long.
--	**param2** (*bytes*) – The second mandatory parameter. 2 bytes long.
--	**data** (*bytes*) – Other optional data. (Default value = bytes())
+-	**opcode** (*int*    * ```opcode``` (```int```) – The code representing the selected command.
+    Check OPCODES at the beginning of this module.
+-	**param1** (*int*
+
+    * ```param1``` (```int```) – The first mandatory parameter. 1 byte long.
+-	**param2** (*
+
+    * ```param2``` (```bytes*```) – The second mandatory parameter. 2 bytes long.
+-	**data** (*
+
+    * ```data``` (```bytes*```) – Other optional data. (Default value = bytes())
 
 
 **`_read_result()`**
+---
+#### `#!py3 _read_result()`
+
+!!!abstract "`#!py3 _read_result()`"
 
 Read, verify checksum, and extract data of a packet from the device.
 
 **Input packet structure:**
 
-[ length ][ …data… ][ crc ]
+    [ length ][ …data… ][ crc ]
 
 
-**Returns:** the extracted data bytes.
+** ```Returns:**```
+
+    the extracted data bytes.
 
 
 
-**Return type:** bytes
+* **Return type:**
+
+    bytes
 
 
-**Note:** Length includes itself (1 byte), data (n bytes), and crc16 (2 bytes).
+**Note:**
+
+    Length includes itself (1 byte), data (n bytes), and crc16 (2 bytes).
 
 ### Public methods
 
 
-**`start_cmd_sequence()`**
+**`---
+#### `#!py3 start_cmd_sequence()`**
+
+!!!abstract "`#!py3 start_cmd_sequence()`"
 
 Call this function before a command sequence to wake up device from idle mode.
 
 This is done by keeping SDA low for more than 60 microseconds.
 
 **Note:**
-At this moment a 0x00 byte is written as a normal I2C transaction, ignoring the exception raised. This workaround won’t work at higher clock rates (more than ~100 kHz)!
 
 
-**`end_cmd_sequence()`**
+    At this moment a 0x00 byte is written as a normal I2C transaction, ignoring
+    the exception raised.
+    This workaround won’t work at higher clock rates (more than ~100 kHz)!
 
 
+**`---
+#### `#!py3 end_cmd_sequence()`**
+
+!!!abstract "`#!py3 end_cmd_sequence()`"
 
 Call this function at the end of a command sequence to put the device in idle mode.
 
-This must be done in order to avoid hitting the watchdog timeout (~1 second) which will put the device in idle mode no matter what.
+This must be done in order to avoid hitting the watchdog timeout (~1 second) which will 
+put the device in idle mode no matter what.
 
 
-**`send_and_read(*args)`**
+**`---
+#### `#!py3 send_and_read()`
+
+!!!abstract "`#!py3 send_and_read(\*args)`**"
 
 Send a command and return the result data.
 
 **Note:**
 
-If **`start_cmd_sequence()`** was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
+    If **`start_cmd_sequence()`** was not invoked before this method, the device
+    is automatically woke up and put again in idle mode after the command execution.
+    (Default value = 50)
 
 
-**Arguments:**
+** ```Arguments:**
 
- - ***args** – All arguments are passed to **`_send_cmd()`** method.
+ -```
+
+    
+    * **\```args**``` – All arguments are passed to **`_send_cmd()`** method.
+
+
 
 ### Commands
 
-The functions names are the lowercase command name followed by _cmd. Parameters are command specific.
+The functions names are the lowercase command name followed by _cmd. 
+Parameters are command specific.
 
-A command usually return some bytes as the result of the command execution, or a status code.
+A command usually return some bytes as the result of the command execution, or a status 
+code.
 
 
-**`checkmac_cmd(tempkey_as_message_source:bool,tempkey_as_first_block:bool,source_flag:int,key_id:bytes, challenge:bytes,response:bytes,other_data:bytes)`**
+**`---
+#### `#!py3 checkmac_cmd()`
+
+!!!abstract "`#!py3 checkmac_cmd(tempkey_as_message_source: bool, tempkey_as_first_block: bool, source_flag: int, key_id: bytes, challenge: bytes, response: bytes, other_data: bytes)`**"
 
 Verify a MAC calculated on another CryptoAuthentication device.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**tempkey_as_message_source** (*bool*) – If False the second 32 bytes of the SHA message are taken from challenge parameter, otherwise they are taken from TempKey.
--	**tempkey_as_first_block** (*bool*) – If False Slot<KeyID> in first SHA block is used, otherwise TempKey is.
--	**source_flag** (*int*) – Single bit. If *tempkey_as_message_source* or *tempkey_as_first_block* are set to True, then the value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by info_cmd(‘State’).
--	**key_id** (*bytes*) – Internal key used to generate the response. All except last four bits are ignored.
--	**challenge** (*bytes*) – 32 bytes, challenge sent to client. If tempkey_as_message_source is True, this parameter will be ignored.
--	**response** (*bytes*) – 32 bytes, response generated by the client.
--	**other_data** (*bytes*) – 13 bytes, remaining constant data needed for response calculation.
+-	**    * ```tempkey_as_message_source** (*``` (```bool*```) – If False the second 32 bytes of the SHA message
+    are taken from challenge parameter, otherwise they are taken from TempKey.
+-	**
+
+    * ```tempkey_as_first_block** (*``` (```bool*```) – If False Slot<KeyID> in first SHA block is used,
+    otherwise TempKey is.
+-	**source_flag** (*int*
+
+    * ```source_flag``` (```int```) – Single bit. If *tempkey_as_message_source* or
+    *tempkey_as_first_block* are set to True, then the value of this bit must match
+    the value in TempKey.SourceFlag or the command will return an error.
+    The flag is the fourth bit returned by info_cmd(‘State’).
+-	**key_id** (*
+
+    * ```key_id``` (```bytes*```) – Internal key used to generate the response. All except last four
+    bits are ignored.
+-	**
+
+    * ```challenge** (*``` (```bytes*```) – 32 bytes, challenge sent to client.
+    If tempkey_as_message_source is True, this parameter will be ignored.
+-	**response** (*
+
+    * ```response``` (```bytes*```) – 32 bytes, response generated by the client.
+-	**
+
+    * ```other_data** (*``` (```bytes*```) – 13 bytes, remaining constant data needed for response
+    calculation.
 
 
 
-**Returns:** True *if response* matches the computed digest, False otherwise.
+** ```Returns:**```
+
+    True *if response* matches the computed digest, False otherwise.
 
 
 
- **Return type:** bool
+* **Return type:**
+
+    bool
 
 
 
-**`read_counter_cmd(key_id)`**
+**`---
+#### `#!py3 read_counter_cmd()`
+
+!!!abstract "`#!py3 read_counter_cmd(key_id)`**"
 
 Read one of the two monotonic counters.
 
 
-**Arguments:** **key_id** (*int*) – The specified counter. Can be 0 or 1.
+** ```Arguments:** **key_id** (*int*```
 
-**Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
+    
+    * ```key_id``` (```int```) – The specified counter. Can be 0 or 1.
 
-**Return type:** bytes
+**Returns:**
+
+* ```Returns```
+
+    4 bytes representing the current value of the counter, or 1 byte representing
+    a status code.
 
 
 
-**`inc_counter_cmd(key_id)`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 inc_counter_cmd()`
+
+!!!abstract "`#!py3 inc_counter_cmd(key_id)`**"
 
 Increment one of the two monotonic counters.
 
 The maximum value that the counter may have is 2,097,151.
 Any attempt to count beyond this value will result in an error code.
 
-**Arguments:** **key_id**(*int*) – The specified counter. Can be 0 or 1.
+**
+* ```Arguments:** **key_id**(*int*```
 
-**Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
+    
+    * ```key_id``` (```int```) – The specified counter. Can be 0 or 1.
 
-**Return type:** bytes
+**Returns:**
+
+* ```Returns```
+
+    4 bytes representing the current value of the counter, or 1 byte representing
+    a status code.
 
 
 
-**`derivekey_cmd(source_flag:int,target_key:bytes,mac=bytes())`**
+* **Return type:**
 
-The device combines the current value of a key with the nonce stored in TempKey using SHA-256 and places the result into the target key slot.
+    bytes
 
-Prior to execution of this command, **`nonce_cmd()`** must have been run to create a valid nonce in TempKey.
+
+
+**`---
+#### `#!py3 derivekey_cmd()`
+
+!!!abstract "`#!py3 derivekey_cmd(source_flag: int, target_key: bytes, mac=bytes())`**"
+
+The device combines the current value of a key with the nonce stored in TempKey using 
+SHA-256 and places the result into the target key slot.
+
+Prior to execution of this command, **`nonce_cmd()`** must have been run to 
+create a valid nonce in TempKey.
 
 For full documentation check datasheet at pages 63-64.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**source_flag** (*int*) – Single bit (1 or 0). The value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by **`info_cmd()`**.
--	**target_key** (*bytes*) – 2 bytes. Key slot to be written.
--	**mac** (*bytes*) – MAC used to validate the operation. (Default value = bytes())
+-	**    * ```source_flag** (*int*``` (```int```) – Single bit (1 or 0). The value of this bit must match the value
+    in TempKey.SourceFlag or the command will return an error.
+    The flag is the fourth bit returned by **`info_cmd()`**.
+-	**.
 
 
-**Returns:** True if the operation completed successfully.
+    * ```target_key** (*``` (```bytes*```) – 2 bytes. Key slot to be written.
+-	**mac** (*
+
+    * ```mac``` (```bytes*```) – MAC used to validate the operation. (Default value = bytes())
+
+
+**
+* ```Returns:**```
+
+    True if the operation completed successfully.
 
 
 
-**Return type:** bool
+* **Return type:**
+
+    bool
 
 
 
-**`ecdh_cmd(key_id:bytes,x_comp:bytes,y_comp:bytes)`**
+
+**`---
+#### `#!py3 ecdh_cmd()`
+
+!!!abstract "`#!py3 ecdh_cmd(key_id: bytes, x_comp: bytes, y_comp: bytes)`**"
 
 Generate an ECDH master secret using stored private key and input public key.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**key_id** (*bytes*) – The private key to be used in the ECDH calculation.
--	**x_comp** (*bytes*) – The X component of the public key to be used for ECDH calculation.
--	**y_comp** (*bytes*) – The Y component of the public key to be used for ECDH calculation.
+-	**key_id** (*    * ```key_id``` (```bytes*```) – The private key to be used in the ECDH calculation.
+-	**x_comp** (*
 
-**Returns:** If any error occured, the error code. If specified by SlotConfig.ReadKey<3>, the shared secret. Otherwise the success code 0x00.
+    * ```x_comp``` (```bytes*```) – The X component of the public key to be used for ECDH calculation.
+-	**y_comp** (*
 
-**Return type:** bytes
+    * ```y_comp``` (```bytes*```) – The Y component of the public key to be used for ECDH calculation.
+
+**Returns:**
+
+* ```Returns```
+
+    If any error occured, the error code.
+    If specified by SlotConfig.ReadKey<3>, the shared secret.
+    Otherwise the success code 0x00.
+
+
+
+* **Return type:**
+
+    bytes
     
-**`gendig_cmd(self,zone:int,key_id:bytes,other_data=bytes())`**
+**`
+
+
+---
+#### `#!py3 gendig_cmd()`
+
+!!!abstract "`#!py3 gendig_cmd(self, zone: int, key_id: bytes, other_data=bytes())`**"
 
 Generate a data digest from a random or input seed and a key.
 
 See datasheet page 66-69 for full usage details.
 
 
-**Arguments:**
+** ```Arguments:**
 
- - **zone**(*int*) – Possible values are numbers between 0 and 5 (included).
+ - **zone**(*int*```
 
-If 0x00 (Config), then use key_id to specify any of the four 256-bit blocks of the Configuration zone. 
+    
+    * ```zone``` (```int```) – Possible values are numbers between 0 and 5 (included).
 
-If key_id has a value greater than three, the command will return an error.
+    If 0x00 (Config), then use key_id to specify any of the four 256-bit blocks
+    of the Configuration zone. 
 
-If 0x01 (OTP), use key_id to specify either the first or second 256-bit block of the OTP zone.
+If key_id has a value greater than three, the
+    command will return an error.
 
-If 0x02 (Data), then key_id specifies a slot in the Data zone or a transport key in the hardware array.
+    If 0x01 (OTP), use key_id to specify either the first or second 256-bit block
+    of the OTP zone.
 
-If 0x03 (Shared Nonce), then key_id specifies the location of the input value in the message generation.
+    If 0x02 (Data), then key_id specifies a slot in the Data zone or a transport
+    key in the hardware array.
 
-If 0x04 (Counter), then key_id specifies the monotonic counter ID to be included in the message generation.
+    If 0x03 (Shared Nonce), then key_id specifies the location of the input value
+    in the message generation.
 
-If 0x05 (Key Config), then key_id specifies the slot for which the configuration information is to be included in the message generation.
+    If 0x04 (Counter), then key_id specifies the monotonic counter ID to be
+    included in the message generation.
 
-
-
--	**key_id** (*bytes*) – Identification number of the key to be used, selection of which OTP block or message order for Shared Nonce mode.
-
--	**other_data** (*bytes*) – 4 bytes of data for SHA calculation when using a NoMac key, 32 bytes for “Shared Nonce” mode, otherwise ignored. (Default value = bytes())
-
-
-
-**Returns:** True if the operation completed successfully.
-
-
-
-**Return type:** bool
+    If 0x05 (Key Config), then key_id specifies the slot for which the
+    configuration information is to be included in the message generation.
 
 
 
-**`gen_private_key(self,key_slot:int,create_digest=False,other_data=bytes(3))`**
+-	**key_id** (*    * ```key_id``` (```bytes*```) – Identification number of the key to be used, selection of which OTP
+    block or message order for Shared Nonce mode.
+
+-	**
+    * ```other_data** (*``` (```bytes*```) – 4 bytes of data for SHA calculation when using a NoMac
+    key, 32 bytes for “Shared Nonce” mode, otherwise ignored.
+    (Default value = bytes())
+
+
+
+** ```Returns:**```
+
+    True if the operation completed successfully.
+
+
+
+* **Return type:**
+
+    bool
+
+
+
+**`---
+#### `#!py3 gen_private_key()`
+
+!!!abstract "`#!py3 gen_private_key(self, key_slot: int, create_digest=False, other_data=bytes(3))`**"
 
 Generate an ECC private key.
 
-**Arguments:**
+**
+* ```Arguments:**
 
--	**key_slot** (*bytes*) – Specifies the slot where the private ECC key is generated.
--	**create_digest** (*bool*) – If True the device creates a PubKey digest based on the private key in KeyID and places it in TempKey (ignored if *create_digest* is False).
--	**other_data** (*bytes*) – 3 bytes, used in the creation of the message used as input for the digest algorithm.
+-	**key_slot** (*```
 
-**Returns:** 64 bytes representing public key X and Y coordinates or 1 byte representing a status code if an error occured.
+    
+    * ```key_slot``` (```bytes*```) – Specifies the slot where the private ECC key is generated.
+-	**
 
-**Return type:** bytes
+    * ```create_digest** (*``` (```bool*```) – If True the device creates a PubKey digest based on the
+    private key in KeyID and places it in TempKey (ignored if *create_digest* is
+    False).
+-	**
+
+    * ```other_data** (*``` (```bytes*```) – 3 bytes, used in the creation of the message used as input for
+    the digest algorithm.
+
+**Returns:**
+
+* ```Returns```
+
+    64 bytes representing public key X and Y coordinates or 1 byte representing
+    a status code if an error occured.
 
 
 
-**`gen_public_key(self,key_slot:int,create_digest=False,other_data=bytes(3))`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 gen_public_key()`
+
+!!!abstract "`#!py3 gen_public_key(self, key_slot: int, create_digest=False, other_data=bytes(3))`**"
 
 Generate the ECC public key starting from a private key.
 
 
-**Arguments:**
+** ```Arguments:**
  
- - **key_slot:** (*int*) – Specifies the slot where the private ECC key is.
--	**create_digest**(*bool*) – If True the device creates a PubKey digest based on the private key in KeyID and places it in TempKey (ignored if *create_digest* is False).
--	**other_data** (*bytes*) – 3 bytes, used in the creation of the message used as input for the digest algorithm.
+ - **key_slot:** (*int*```
+
+    
+    * ```key_slot``` (```int```) – Specifies the slot where the private ECC key is.
+-	**
+
+    * ```create_digest**(*``` (```bool*```) – If True the device creates a PubKey digest based on the
+    private key in KeyID and places it in TempKey (ignored if *create_digest* is
+    False).
+-	**
+
+    * ```other_data** (*``` (```bytes*```) – 3 bytes, used in the creation of the message used as input for
+    the digest algorithm.
 
 
-**Returns:** 64 bytes representing public key X and Y coordinates or 1 byte representing a status code if an error occured.
+**
+* ```Returns:**```
 
-**Return type:** bytes
+    64 bytes representing public key X and Y coordinates or 1 byte representing
+    a status code if an error occured.
 
 
 
-**`gen_digest_cmd(self,key_id:bytes,other_data:bytes)`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 gen_digest_cmd()`
+
+!!!abstract "`#!py3 gen_digest_cmd(self, key_id: bytes, other_data: bytes)`**"
 
 Generate a digest and store it in TempKey, using key_id as public key.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
- - **key_id** (*bytes*) – Specifies the slot where the public ECC key is.
- - **other_data** (*bytes*) – 3 bytes, used in the creation of the message used as input for the digest algorithm.
+ - **key_id** (*   * ```key_id``` (```bytes*```) – Specifies the slot where the public ECC key is.
+ - **
 
-**Returns:** 64 bytes representing public key X and Y coordinates or 1 byte representing a status code if an error occured.
+    * ```other_data** (*``` (```bytes*```) – 3 bytes, used in the creation of the message used as input for
+    the digest algorithm.
 
-**Return type:** bytes
+**Returns:**
+
+* ```Returns```
+
+    64 bytes representing public key X and Y coordinates or 1 byte representing
+    a status code if an error occured.
 
 
 
-**`hmac_cmd(self,source_flag:int,key_id:bytes,include_sn:bool)`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 hmac_cmd()`
+
+!!!abstract "`#!py3 hmac_cmd(self, source_flag: int, key_id: bytes, include_sn: bool)`**"
 
 Calculate response from key and other internal data using HMAC/SHA-256.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**source_flag** (*int*) – Single bit. The value of this bit must match the value in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error. The flag is the fourth bit returned by *info_cmd(‘State’).*
--	**key_id** (*bytes*) – Specifies the slot where the key is.
-Note that while only last four bits are used to select a slot, all the two bytes will be included in the digest message.
--	**include_sn** (*bool*) – If True, 48 bits from Configuration Zone are included in the digest message.
+-	**    * ```source_flag** (*int*``` (```int```) – Single bit. The value of this bit must match the value in
+    TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error.
+    The flag is the fourth bit returned by *info_cmd(‘State’).*
+-	**key_id** (*
+
+
+    * ```key_id``` (```bytes*```) – Specifies the slot where the key is.
+    Note that while only last four bits are used to select a slot, all the two
+    bytes will be included in the digest message.
+-	**
+
+    * ```include_sn** (*``` (```bool*```) – If True, 48 bits from Configuration Zone are included in the
+    digest message.
 
 
 
-**Returns:** 32 bytes, the computed HMAC digest.
+** ```Returns:**```
+
+    32 bytes, the computed HMAC digest.
 
 
 
-**Return type:** bytes
+* **Return type:**
+
+    bytes
 
 
 
-**`info_cmd(self,mode:str,param=bytes(2))`**
+**`---
+#### `#!py3 info_cmd()`
+
+!!!abstract "`#!py3 info_cmd(self, mode: str, param=bytes(2))`**"
 
 Return device state information.
 The information read can be static or dynamic.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
 
- - **zone** (*str*) – Zone to read byte from. The value is case insensitive and can be one of *Revision, KeyValid, State, GPIO.*
--	**param** (*bytes*) – Second parameter (Default value = bytes(2))
+ - **zone** (*str*   * ```zone``` (```str```) – Zone to read byte from. The value is case insensitive and can be one of
+    *Revision, KeyValid, State, GPIO.*
+-	**param** (*
+
+
+    * ```param``` (```bytes*```) – Second parameter (Default value = bytes(2))
 
 
 
-**Returns:** 4 bytes read from the device or 1 byte status code
+** ```Returns:**```
 
-**Return type:** bytes
+    4 bytes read from the device or 1 byte status code
 
 
 
-**`lock_config_zone_cmd(self,checksum:bytes=None)`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 lock_config_zone_cmd()`
+
+!!!abstract "`#!py3 lock_config_zone_cmd(self, checksum: bytes=None)`**"
 
 Prevent further modifications to the Config zone of the device.
 
 
-**Arguments:** **checksum** (*bytes*) – 2 bytes representing a CRC summary of the zone. If set the checksum is verified from the device prior locking. (Default value = None)
+** ```Arguments:** **checksum** (*```
 
-**Returns:** Single byte 0 if the operation completed successfully.
+    
+    * ```checksum``` (```bytes*```) – 2 bytes representing a CRC summary of the zone.
+    If set the checksum is verified from the device prior locking.
+    (Default value = None)
 
-**Return type:** bytes
+**Returns:**
 
-**`lock_data_zone_cmd(checksum:bytes = None)`**
+* ```Returns```
+
+    Single byte 0 if the operation completed successfully.
+
+
+
+* **Return type:**
+
+    bytes
+
+**`
+
+---
+#### `#!py3 lock_data_zone_cmd()`
+
+!!!abstract "`#!py3 lock_data_zone_cmd(checksum: bytes = None)`**"
 
 Prevent further modifications to the Data and OTP zones of the device.
 
 
-**Arguments:** **checksum** (*bytes*) – 2 bytes representing a CRC summary of the zone. If set the checksum is verified from the device prior locking. (Default value = None)
+** ```Arguments:** **checksum** (*```
 
-**Returns:** Single byte 0 if the operation completed successfully.
+    
+    * ```checksum``` (```bytes*```) – 2 bytes representing a CRC summary of the zone.
+    If set the checksum is verified from the device prior locking.
+    (Default value = None)
 
-**Return type:** bytes
+**Returns:**
+
+* ```Returns```
+
+    Single byte 0 if the operation completed successfully.
 
 
 
-**`lock_single_slot_cmd(self,slot_number:int)`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 lock_single_slot_cmd()`
+
+!!!abstract "`#!py3 lock_single_slot_cmd(self, slot_number: int)`**"
 
 Prevent further modifications to a single slot of the device.
 
-**Arguments:** **slot_number** (*int*) – Slot ID to be locked, valid values are the numbers in range 0-15 (included).
+**
+* ```Arguments:** **slot_number** (*int*```
 
-**Returns:** Single byte 0 if the operation completed successfully.
+    
+    * ```slot_number``` (```int```) – Slot ID to be locked, valid values are the numbers in range 0-15
+    (included).
 
-**Return type:** bytes
+**Returns:**
+
+* ```Returns```
+
+    Single byte 0 if the operation completed successfully.
 
 
 
-**`mac_cmd(self,key_id:bytes,use_tempkey:bool,include_sn:bool,source_flag:int = 0,challenge:bytes =bytes())`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 mac_cmd()`
+
+!!!abstract "`#!py3 mac_cmd(self, key_id: bytes, use_tempkey: bool, include_sn: bool, source_flag: int = 0, challenge: bytes = bytes())`**"
 
 Compute a SHA-256 digest from key and other internal data using SHA-256.
 
 The normal command flow to use this command is as follows:
 
-1. Run Nonce command to load input challenge and optionally combine it with a generated random number. The result of this operation is a nonce stored internally
+1. Run Nonce command to load input challenge and optionally combine it with a 
+generated random number. The result of this operation is a nonce stored internally
 on the device.
 
-2. Optionally, run GenDig command to combine one or more stored EEPROM locations in the device with the nonce. The result is stored internally in the device. This capability permits two or more keys to be used as part of the response generation.
+2. Optionally, run GenDig command to combine one or more stored EEPROM locations 
+in the device with the nonce. The result is stored internally in the device. 
+This capability permits two or more keys to be used as part of the response 
+generation.
 
-3. Run this MAC command to combine the output of step one (and step two if desired) with an EEPROM key to generate an output response (i.e. digest).
+3. Run this MAC command to combine the output of step one (and step two if desired) 
+with an EEPROM key to generate an output response (i.e. digest).
 
-**NOTE**: *source_flag* MUST be specified if *use_tempkey* is True or a *challenge* is used.
+**```NOTE**```: *source_flag* MUST be specified if *use_tempkey* is True or a *challenge* 
+is used.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**key_id** (*bytes*) – 2 bytes. Specifies the slot where the key is. Note that while only last four bits are used to select a slot, all the two bytes will be included in the digest message.
--	**use_tempkey** (*bool*) – If False the first 32 bytes of the SHA message are loaded from one of the data slots. Otherwise the first 32 bytes are filled with TempKey (and *source_flag* must be used).
--	**include_sn** (bool) – If True, 48 bits from Configuration Zone are included in the digest message.
--	**source_flag** (*int*) – Single bit. The value of this bit must match the value in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error. The flag is the fourth bit returned by *info_cmd(‘State’)*. (Default value = 0)
--	**challenge** (*bytes*) – 32 bytes. If specified, it will be used in the input of the algorithm. (Default value = bytes())
+-	**key_id** (*    * ```key_id``` (```bytes*```) – 2 bytes. Specifies the slot where the key is.
+    Note that while only last four bits are used to select a slot, all the two
+    bytes will be included in the digest message.
+-	**
 
-**Returns:** 32 bytes, the computed SHA-256 digest.
+    * ```use_tempkey** (*``` (```bool*```) – If False the first 32 bytes of the SHA message are loaded from
+    one of the data slots. Otherwise the first 32 bytes are filled with TempKey
+    (and *source_flag* must be used).
+-	**
 
-**Return type:** bytes
+    * ```include_sn** (``` (```bool```) – If True, 48 bits from Configuration Zone are included in the
+    digest message.
+-	**source_flag** (*int*
+
+    * ```source_flag``` (```int```) – Single bit. The value of this bit must match the value
+    in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error.
+    The flag is the fourth bit returned by *info_cmd(‘State’)*.
+    (Default value = 0)
+-	**
+
+    * ```challenge** (*``` (```bytes*```) – 32 bytes. If specified, it will be used in the input
+    of the algorithm. (Default value = bytes())
+
+**Returns:**
+
+* ```Returns```
+
+    32 bytes, the computed SHA-256 digest.
 
 
 
-**`nonce_cmd(self,use_tempkey:bool,num_in:bytes,force_no_eeprom_update:bool = False)`"`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 nonce_cmd()`
+
+!!!abstract "`#!py3 nonce_cmd(self, use_tempkey: bool, num_in: bytes, force_no_eeprom_update: bool = False)`"`**
 
 Generate a 32-byte random number and an internally stored Nonce.
 
 The body used to create the nonce is stored internally in TempKey.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
     * ```use_tempkey``` (```bool```) – TempKey is used instead of the RNG in the hash calculation input
@@ -455,13 +822,22 @@ The body used to create the nonce is stored internally in TempKey.
 
 
 
-**Returns:** TempKey (32 bytes) if use_tempkey is True. Otherwise the RNG output.
+** ```Returns:**```
 
- **Return type:** bytes
+    TempKey (32 bytes) if use_tempkey is True. Otherwise the RNG output.
 
 
 
-**`nonce_passthrough_cmd(self,num_in:bytes)`**
+* **Return type:**
+
+    bytes
+
+
+
+**`---
+#### `#!py3 nonce_passthrough_cmd()`
+
+!!!abstract "`#!py3 nonce_passthrough_cmd(self, num_in: bytes)`**"
 
 Pass-through mode of the Nonce command.
 
@@ -489,7 +865,10 @@ TempKey.SourceFlag is set to Input.
 
 
 
-**`privwrite_cmd(self,encrypt_input:bool,key_id:bytes,value:bytes,mac:bytes)`**
+**`---
+#### `#!py3 privwrite_cmd()`
+
+!!!abstract "`#!py3 privwrite_cmd(self, encrypt_input: bool, key_id: bytes, value: bytes, mac: bytes)`**"
 
 Write an ECC private key into a slot in the Data zone.
 
@@ -534,7 +913,10 @@ See datasheet page 80 for full details.
 
 
 
-**`random_cmd(self,force_no_eeprom_update=False)`**
+**`---
+#### `#!py3 random_cmd()`
+
+!!!abstract "`#!py3 random_cmd(self, force_no_eeprom_update=False)`**"
 
 Generate a random number.
 The number is generated using a seed stored in the EEPROM and a hardware RNG.
@@ -562,7 +944,11 @@ The number is generated using a seed stored in the EEPROM and a hardware RNG.
     bytes
 
 
-**`read_cmd(self,zone:str,address:bytes,read_32_bytes:bool)`**
+**`
+---
+#### `#!py3 read_cmd()`
+
+!!!abstract "`#!py3 read_cmd(self, zone: str, address: bytes, read_32_bytes: bool)`**"
 
 Read bytes from the device.
 
@@ -603,7 +989,11 @@ See datasheet page 10 for zones details.
     bytes
 
 
-**`sha_start_cmd(self)`**
+**`
+---
+#### `#!py3 sha_start_cmd()`
+
+!!!abstract "`#!py3 sha_start_cmd(self)`**"
 
 Start a SHA-256 digest computation.
 This command must be run before sha_end_cmd().
@@ -621,7 +1011,10 @@ This command must be run before sha_end_cmd().
 
 
 
-**`sha_hmacstart_cmd(self,key_id:bytes)`**
+**`---
+#### `#!py3 sha_hmacstart_cmd()`
+
+!!!abstract "`#!py3 sha_hmacstart_cmd(self, key_id: bytes)`**"
 
 Start a HMAC digest computation.
 
@@ -646,7 +1039,11 @@ This command must be run before `sha_hmacend_cmd()`.
     bytes
 
 
-**`sha_update_cmd(self,message:bytes)`**
+**`
+---
+#### `#!py3 sha_update_cmd()`
+
+!!!abstract "`#!py3 sha_update_cmd(self, message: bytes)`**"
 
 Add 64 bytes in the message parameter to the SHA context.
 
@@ -672,7 +1069,10 @@ This command must be run after `sha_start_cmd()` or                `sha_hmacstar
 
 
 
-**`sha_public_cmd(self,key_id:bytes)`**
+**`---
+#### `#!py3 sha_public_cmd()`
+
+!!!abstract "`#!py3 sha_public_cmd(self, key_id: bytes)`**"
 
 Add 64 bytes of a public key stored in one of the Data zone slots to the SHA context.
 
@@ -697,7 +1097,10 @@ Add 64 bytes of a public key stored in one of the Data zone slots to the SHA con
 
 
 
-**`sha_end_cmd(message:bytes)`**
+**`---
+#### `#!py3 sha_end_cmd()`
+
+!!!abstract "`#!py3 sha_end_cmd(message: bytes)`**"
 
 Complete the SHA-256 computation and load the digest into TempKey and the output buffer.
 
@@ -726,7 +1129,10 @@ sha_update_cmd().
 
 
 
-**`sha_hmacend_cmd(message:bytes)`**
+**`---
+#### `#!py3 sha_hmacend_cmd()`
+
+!!!abstract "`#!py3 sha_hmacend_cmd(message: bytes)`**"
 
 Complete the HMAC computation and load the digest into TempKey and the output buffer.
 Up to 63 message bytes are accepted (length must be 0 through 63 inclusive).
@@ -754,7 +1160,10 @@ sha_update_cmd().
 
 
 
-**`sign_cmd(key_id:bytes,include_sn:bool,use_tempkey:bool,is_verify_invalidate:bool = False)`**
+**`---
+#### `#!py3 sign_cmd()`
+
+!!!abstract "`#!py3 sign_cmd(key_id: bytes, include_sn: bool, use_tempkey: bool, is_verify_invalidate: bool = False)`**"
 
 ECDSA signature calculation from an internal private key.
 
@@ -790,7 +1199,10 @@ ECDSA signature calculation from an internal private key.
 
 
 
-**`updateextra_cmd(update_byte:int,new_value:int)`**
+**`---
+#### `#!py3 updateextra_cmd()`
+
+!!!abstract "`#!py3 updateextra_cmd(update_byte: int, new_value: int)`**"
 
 Update bytes 84 or 85 within the Configuration zone after the Configuration zone
 has been locked.
@@ -824,7 +1236,10 @@ has been locked.
 
 
 
-**`updateextra_decr_cmd(key_id)`**
+**`---
+#### `#!py3 updateextra_decr_cmd()`
+
+!!!abstract "`#!py3 updateextra_decr_cmd(key_id)`**"
 
 Decrement the limited use counter associated with the key in slot after the
 Configuration zone has been locked.
@@ -855,7 +1270,10 @@ remaining, then the command returns an error.
 
 
 
-**`verify_external_cmd(curve_type:int,r_comp:bytes,s_comp:bytes,x_comp:bytes,y_comp:bytes)`**
+**`---
+#### `#!py3 verify_external_cmd()`
+
+!!!abstract "`#!py3 verify_external_cmd(curve_type: int, r_comp: bytes, s_comp: bytes, x_comp: bytes, y_comp: bytes)`**"
 
 Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
 message and public key.
@@ -906,7 +1324,10 @@ Nonce command.
 
 
 
-**`verify_stored_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes)`**
+**`---
+#### `#!py3 verify_stored_cmd()`
+
+!!!abstract "`#!py3 verify_stored_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)`**"
 
 Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
 message and public key.
@@ -942,7 +1363,11 @@ The contents of TempKey should contain the SHA-256 digest of the message.
     bytes
 
 
-**`verify_validate_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes,other_data:bytes,invalidate:bool=False)`**
+**`
+---
+#### `#!py3 verify_validate_cmd()`
+
+!!!abstract "`#!py3 verify_validate_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes, other_data: bytes, invalidate: bool= = False)`**"
 
 The Validate and Invalidate modes are used to validate or invalidate the public key
 stored in the EEPROM.
@@ -986,11 +1411,18 @@ It must have been generated using genkey_cmd over the key_id slot.
 
 
 
-**`verify_invalidate_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes,other_data:bytes)`**
+**`---
+#### `#!py3 verify_invalidate_cmd()`
+
+!!!abstract "`#!py3 verify_invalidate_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes, other_data: bytes)`**"
 
 Shortcut for `verify_validate_cmd()` using invalidate mode.
 
-**`verify_validate_external_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes)`**
+**`
+---
+#### `#!py3 verify_validate_external_cmd()`
+
+!!!abstract "`#!py3 verify_validate_external_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)`**"
 
 The ValidateExternal mode is used to validate the public key stored in the EEPROM at
 key_id when X.509 format certificates are to be used. The digest of the message must
@@ -1025,7 +1457,10 @@ key for that computation must be the same as key_id.
 
 
 
-**`write_cmd(zone:str,address:bytes,value:bytes,is_input_encrypted:bool,mac:bytes=bytes())`"
+**`---
+#### `#!py3 write_cmd()`
+
+!!!abstract "`#!py3 write_cmd(zone: str, address: bytes, value: bytes, is_input_encrypted: bool, mac: bytes= = bytes())`"
 
 Writes either one four byte word or an 8-word block of 32 bytes to one of the EEPROM
 zones on the device. Depending upon the value of the WriteConfig byte for this slot,
@@ -1056,7 +1491,10 @@ device.
 
 
 
-**`is_locked(zone:str)`**
+**`---
+#### `#!py3 is_locked()`
+
+!!!abstract "`#!py3 is_locked(zone: str)`**"
 
 Check if selected zone has been locked.
 
@@ -1079,7 +1517,11 @@ Check if selected zone has been locked.
     bool
 
 
-**`serial_number()`**
+**`
+---
+#### `#!py3 serial_number()`
+
+!!!abstract "`#!py3 serial_number()`**"
 
 Retrieve secure element’s 72-bit serial number.
 
@@ -1098,7 +1540,10 @@ Retrieve secure element’s 72-bit serial number.
 ## ATECC608A class
 
 
-**`class ATECC608A(i2c.I2C)`**
+**`class---
+#### `#!py3 ATECC608A()`
+
+!!!abstract "`#!py3 ATECC608A(i2c.I2C)`**"
 
 Class for controlling the ATECC608A chip.
 
@@ -1106,7 +1551,12 @@ This class inherits all ATECC508A methods.
 
 ## Zerynth HWCrypto Interface
 
-**`hwcrypto_init(i2c_drv,key_slot,i2c_addr=0x60,dev_type=DEV_ATECC508A)`**
+**`<!-- _lib.microchip.ateccx08a.hwcryptointerface -->
+
+---
+#### `#!py3 hwcrypto_init()`
+
+!!!abstract "`#!py3 hwcrypto_init(i2c_drv, key_slot, i2c_addr=0x60, dev_type=DEV_ATECC508A)`**"
 
 ```NOTE```: this function is available only when `ZERYNTH_HWCRYPTO_ATECCx08A` is set in project.yml file
 
@@ -1129,8 +1579,9 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQzODk2OCw0NTk5NTc5MDMsLTIyMj
-c0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYw
-LC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
-U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbLTE1NTkwMjgxMjIsLTE5NDQzODk2OCw0NT
+k5NTc5MDMsLTIyMjc0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQx
+NiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NT
+U2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcx
+XX0=
 -->
