@@ -176,20 +176,13 @@ Read one of the two monotonic counters.
 
 **Arguments:**
 
-key_id(int) – The specified counter. Can be 0 or 1.
+**key_id** (*int*) – The specified counter. Can be 0 or 1.
+
+**Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
 
 
 
-* ```Returns```
-
-    4 bytes representing the current value of the counter, or 1 byte representing
-    a status code.
-
-
-
-* **Return type**
-
-    bytes
+* **Return type:** bytes
 
 
 
@@ -1470,7 +1463,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTE5ODM1NCw2MTgwODE1MjEsNjk1NT
+eyJoaXN0b3J5IjpbLTEwNzc2MjI3OCw2MTgwODE1MjEsNjk1NT
 Y0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFd
 fQ==
 -->
