@@ -351,22 +351,15 @@ The information read can be static or dynamic.
 **Arguments:**
 
     
-**zone** (*str*) – Zone to read byte from. The value is case insensitive and can be one of *Revision, KeyValid, State, GPIO.*
 
-
-**param** (*bytes*) – Second parameter (Default value = bytes(2))
-
-
-
-* ```Returns```
-
-    4 bytes read from the device or 1 byte status code
+ - **zone** (*str*) – Zone to read byte from. The value is case insensitive and can be one of *Revision, KeyValid, State, GPIO.*
+-	**param** (*bytes*) – Second parameter (Default value = bytes(2))
 
 
 
-* **Return type**
+**Returns:** 4 bytes read from the device or 1 byte status code
 
-    bytes
+**Return type:** bytes
 
 
 
@@ -1209,8 +1202,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTkyNjYzMywyNTQ5ODc0OTksMTQwOD
-E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
-LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
-YxMzcxXX0=
+eyJoaXN0b3J5IjpbLTEzOTI4NDM4NjEsMjU0OTg3NDk5LDE0MD
+gxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUy
+MSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
+A2MTM3MV19
 -->
