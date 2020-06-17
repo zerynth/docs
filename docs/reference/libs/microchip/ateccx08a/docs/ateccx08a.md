@@ -43,8 +43,8 @@ Members:
 
 * device_awake : Boolean. If True the device is running a multiple commands sequence.
 
+**`__init__(drvname,addr=DEFAULT_ADDR,clk=100000)`**
 
-### ateccx08a.\__init__(drvname, addr=DEFAULT_ADDR, clk=100000)
 Connect to a device and start I2C protocol.
 
 
@@ -1555,5 +1555,5 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjMzMTEyOV19
+eyJoaXN0b3J5IjpbLTE5MzMwNjEzNzFdfQ==
 -->
