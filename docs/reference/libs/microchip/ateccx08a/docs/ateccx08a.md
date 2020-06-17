@@ -275,7 +275,7 @@ Generate an ECC private key.
 **Arguments:**
 
 -	**key_slot** (*bytes*) – Specifies the slot where the private ECC key is generated.
--	**create_digest** (*bool*) – If True the device creates a PubKey digest based on the private key in KeyID and places it in TempKey (ignored if create_digest is False).
+-	**create_digest** (*bool*) – If True the device creates a PubKey digest based on the private key in KeyID and places it in TempKey (ignored if *create_digest* is False).
 -	**other_data** (*bytes*) – 3 bytes, used in the creation of the message used as input for the digest algorithm.
 
 **Returns:** 64 bytes representing public key X and Y coordinates or 1 byte representing a status code if an error occured.
@@ -302,16 +302,11 @@ Generate the ECC public key starting from a private key.
 
 
 
-* ```Returns```
-
-    64 bytes representing public key X and Y coordinates or 1 byte representing
-    a status code if an error occured.
+**Returns:** 64 bytes representing public key X and Y coordinates or 1 byte representing a status code if an error occured.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -1247,8 +1242,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3Nzg1MjI2NCwyNTQ5ODc0OTksMTQwOD
-E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
-LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
-YxMzcxXX0=
+eyJoaXN0b3J5IjpbLTE2NzYzMTk4NDYsMjU0OTg3NDk5LDE0MD
+gxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUy
+MSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
+A2MTM3MV19
 -->
