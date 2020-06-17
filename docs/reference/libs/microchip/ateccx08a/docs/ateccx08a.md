@@ -544,23 +544,18 @@ Prevent further modifications to a single slot of the device.
 
 
 
-**`mac_cmd(self,key_id:bytes,use_tempkey:bool,include_sn:bool,source_flag:int = 0,challenge:bytes = bytes())`**
+**`mac_cmd(self,key_id:bytes,use_tempkey:bool,include_sn:bool,source_flag:int = 0,challenge:bytes =bytes())`**
 
 Compute a SHA-256 digest from key and other internal data using SHA-256.
 
 The normal command flow to use this command is as follows:
 
-1. Run Nonce command to load input challenge and optionally combine it with a
-generated random number. The result of this operation is a nonce stored internally
+1. Run Nonce command to load input challenge and optionally combine it with a generated random number. The result of this operation is a nonce stored internally
 on the device.
 
-2. Optionally, run GenDig command to combine one or more stored EEPROM locations
-in the device with the nonce. The result is stored internally in the device.
-This capability permits two or more keys to be used as part of the response
-generation.
+2. Optionally, run GenDig command to combine one or more stored EEPROM locations in the device with the nonce. The result is stored internally in the device. This capability permits two or more keys to be used as part of the response generation.
 
-3. Run this MAC command to combine the output of step one (and step two if desired)
-with an EEPROM key to generate an output response (i.e. digest).
+3. Run this MAC command to combine the output of step one (and step two if desired) with an EEPROM key to generate an output response (i.e. digest).
 
 ```NOTE```: source_flag MUST be specified if use_tempkey is True or a challenge
 is used.
@@ -606,10 +601,7 @@ is used.
 
 
 
----
-#### `#!py3 nonce_cmd()`
-
-!!!abstract "`#!py3 nonce_cmd(self, use_tempkey: bool, num_in: bytes, force_no_eeprom_update: bool = False)`"
+**`nonce_cmd(self,use_tempkey:bool,num_in:bytes,force_no_eeprom_update:bool = False)`"`**
 
 Generate a 32-byte random number and an internally stored Nonce.
 
@@ -646,10 +638,7 @@ The body used to create the nonce is stored internally in TempKey.
 
 
 
----
-#### `#!py3 nonce_passthrough_cmd()`
-
-!!!abstract "`#!py3 nonce_passthrough_cmd(self, num_in: bytes)`"
+**`nonce_passthrough_cmd(self,num_in:bytes)`**
 
 Pass-through mode of the Nonce command.
 
@@ -677,10 +666,7 @@ TempKey.SourceFlag is set to Input.
 
 
 
----
-#### `#!py3 privwrite_cmd()`
-
-!!!abstract "`#!py3 privwrite_cmd(self, encrypt_input: bool, key_id: bytes, value: bytes, mac: bytes)`"
+**`privwrite_cmd(self, encrypt_input: bool, key_id: bytes, value: bytes, mac: bytes)`**
 
 Write an ECC private key into a slot in the Data zone.
 
@@ -1391,7 +1377,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTY3MDk5NiwtNTQyNTY1MTYwLC03Nz
+eyJoaXN0b3J5IjpbMTcwNjU3NjM1MSwtNTQyNTY1MTYwLC03Nz
 gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
 OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
