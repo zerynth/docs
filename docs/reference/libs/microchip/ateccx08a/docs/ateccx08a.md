@@ -40,7 +40,6 @@ Class for controlling the ATECC508A chip.
 
 Members:
 
-
 * device_awake : Boolean. If True the device is running a multiple commands sequence.
 
 **`__init__(drvname,addr=DEFAULT_ADDR,clk=100000)`**
@@ -48,16 +47,15 @@ Members:
 Connect to a device and start I2C protocol.
 
 
-* ```Arguments```
+**`Arguments:`**
 
     
-    * ```drvname``` – Interface for I2C communication (e.g. I2C0)
+**drvname** – Interface for I2C communication (e.g. I2C0)
+
+**addr** (*int [0-255]*) – Address of the I2C chip. (Default value = 0x60 for ATECC508A)
 
 
-    * ```addr``` (*int [0-255]*) – Address of the I2C chip. (Default value = 0x60 for ATECC508A)
-
-
-    * ```clk``` (```int```) – Clock rate of the I2C communication in kHz. (Default value = 100000).
+clk(int) – Clock rate of the I2C communication in kHz. (Default value = 100000).
 
 
 ### Internal methods
@@ -1555,5 +1553,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzMwNjEzNzFdfQ==
+eyJoaXN0b3J5IjpbLTE5MzQ2NDUzODEsLTE5MzMwNjEzNzFdfQ
+==
 -->
