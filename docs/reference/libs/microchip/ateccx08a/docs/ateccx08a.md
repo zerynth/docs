@@ -370,7 +370,6 @@ Prevent further modifications to the Config zone of the device.
 
 **Arguments:**
 
-    
 **checksum** (*bytes*) – 2 bytes representing a CRC summary of the zone. If set the checksum is verified from the device prior locking. (Default value = None)
 
 
@@ -1200,8 +1199,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjc0MTQ5NSwyNTQ5ODc0OTksMTQwOD
-E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
-LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
-YxMzcxXX0=
+eyJoaXN0b3J5IjpbLTIwOTI3MTYyOTcsLTIyMjc0MTQ5NSwyNT
+Q5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkz
+MjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxOD
+c2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
