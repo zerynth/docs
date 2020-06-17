@@ -412,18 +412,15 @@ on the device.
 
 3. Run this MAC command to combine the output of step one (and step two if desired) with an EEPROM key to generate an output response (i.e. digest).
 
-**NOTE**: source_flag MUST be specified if use_tempkey is True or a challenge is used.
+**NOTE**: *source_flag* MUST be specified if *use_tempkey* is True or a *challenge* is used.
 
 
 **Arguments:**
 
     
-key_id (```bytes```) – 2 bytes. Specifies the slot where the key is.
-    Note that while only last four bits are used to select a slot, all the two
-    bytes will be included in the digest message.
+**key_id** (*bytes*) – 2 bytes. Specifies the slot where the key is. Note that while only last four bits are used to select a slot, all the two bytes will be included in the digest message.
 
-
-    * ```use_tempkey``` (```bool```) – If False the first 32 bytes of the SHA message are loaded from
+use_tempkey(bool`) – If False the first 32 bytes of the SHA message are loaded from
     one of the data slots. Otherwise the first 32 bytes are filled with TempKey
     (and source_flag must be used).
 
@@ -1160,8 +1157,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk2OTgxODEsNDU5OTU3OTAzLC0yMj
-I3NDE0OTUsMjU0OTg3NDk5LDE0MDgxOTU0MTYsLTU0MjU2NTE2
-MCwtNzc4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNz
-c1OSwtMTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbMTk5NjExNDIzMSw0NTk5NTc5MDMsLTIyMj
+c0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYw
+LC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
+U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
