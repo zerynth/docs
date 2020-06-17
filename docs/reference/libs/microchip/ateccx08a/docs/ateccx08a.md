@@ -393,17 +393,9 @@ Prevent further modifications to a single slot of the device.
 
 **Arguments:** **slot_number** (*int*) – Slot ID to be locked, valid values are the numbers in range 0-15 (included).
 
+**Returns:** Single byte 0 if the operation completed successfully.
 
-
-* ```Returns```
-
-    Single byte 0 if the operation completed successfully.
-
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -420,14 +412,13 @@ on the device.
 
 3. Run this MAC command to combine the output of step one (and step two if desired) with an EEPROM key to generate an output response (i.e. digest).
 
-```NOTE```: source_flag MUST be specified if use_tempkey is True or a challenge
-is used.
+**NOTE**: source_flag MUST be specified if use_tempkey is True or a challenge is used.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```key_id``` (```bytes```) – 2 bytes. Specifies the slot where the key is.
+key_id (```bytes```) – 2 bytes. Specifies the slot where the key is.
     Note that while only last four bits are used to select a slot, all the two
     bytes will be included in the digest message.
 
@@ -1169,7 +1160,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzgzNzE4NDMsNDU5OTU3OTAzLC0yMj
+eyJoaXN0b3J5IjpbLTE0Njk2OTgxODEsNDU5OTU3OTAzLC0yMj
 I3NDE0OTUsMjU0OTg3NDk5LDE0MDgxOTU0MTYsLTU0MjU2NTE2
 MCwtNzc4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNz
 c1OSwtMTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
