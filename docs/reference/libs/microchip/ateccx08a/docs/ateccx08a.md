@@ -234,7 +234,7 @@ Generate a data digest from a random or input seed and a key.
 See datasheet page 66-69 for full usage details.
 
 
-* ```Arguments```
+* ```Arguments
 
     
     * ```zone``` (```int```) – Possible values are numbers between 0 and 5 (included).
@@ -1281,7 +1281,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0OTg3NDk5LDE0MDgxOTU0MTYsLTU0Mj
-U2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYs
-MjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbMTc0Njc3MDU5NywyNTQ5ODc0OTksMTQwOD
+E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
+LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
+YxMzcxXX0=
 -->
