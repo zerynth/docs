@@ -4,10 +4,20 @@
 
 
 * Aggregate data from endpoint assets
+
+
 * Store and process device data
+
+
 * Hierarchical multi-tenant security model
+
+
 * Drag & drop portal development tool
+
+
 * Rules and notification engine
+
+
 * Integration framework
 
 Using the Zerynth Studio, and the LiveIntersect client library you can quickly build IoT solutions that can run on many [microcontrollers.](https://www.zerynth.com/zerynth-supported-devices/)
@@ -16,7 +26,11 @@ The LiveIntersect client library provides functionality to:
 
 
 1. Register assets (devices) to LiveIntersect Cloud
+
+
 2. Send sensor data and telemetry data (called metrics) to LiveIntersect Cloud
+
+
 3. Synchronize attribute configuration data
 
 Summary:
@@ -29,6 +43,7 @@ Contents:
     -   [The Asset class](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/docs/official_lib.liveintersect.iot_iot.html)
     -   [Examples](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/examples/examples.html)
         -   [Asset Simulation](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/examples/examples.html#asset-simulation)
+* The Asset class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA0MjQwNDk1XX0=
+eyJoaXN0b3J5IjpbNzE5Njg1MTIsNDA0MjQwNDk1XX0=
 -->
