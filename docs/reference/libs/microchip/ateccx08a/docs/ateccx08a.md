@@ -368,33 +368,18 @@ The information read can be static or dynamic.
 Prevent further modifications to the Config zone of the device.
 
 
-**Arguments:**
+**Arguments:** **checksum** (*bytes*) – 2 bytes representing a CRC summary of the zone. If set the checksum is verified from the device prior locking. (Default value = None)
 
-**checksum** (*bytes*) – 2 bytes representing a CRC summary of the zone. If set the checksum is verified from the device prior locking. (Default value = None)
+**Returns:** Single byte 0 if the operation completed successfully.
 
-
-
-* ```Returns```
-
-    Single byte 0 if the operation completed successfully.
-
-
-
-* **Return type**
-
-    bytes
-
-
+**Return type:** bytes
 
 **`lock_data_zone_cmd(checksum:bytes = None)`**
 
 Prevent further modifications to the Data and OTP zones of the device.
 
 
-* ```Arguments```
-
-    
-    * ```checksum``` (```bytes```) – 2 bytes representing a CRC summary of the zone.
+**Arguments:** **checksum**(*bytes*) – 2 bytes representing a CRC summary of the zone.
     If set the checksum is verified from the device prior locking.
     (Default value = None)
 
@@ -1199,8 +1184,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTI3MTYyOTcsLTIyMjc0MTQ5NSwyNT
-Q5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkz
-MjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxOD
-c2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbMjEyOTM4MDIxMywtMjIyNzQxNDk1LDI1ND
+k4NzQ5OSwxNDA4MTk1NDE2LC01NDI1NjUxNjAsLTc3ODMyOTMy
+OSw2MTgwODE1MjEsNjk1NTY0MDM2LDIxMTc3NTksLTE5OTE4Nz
+YwMzUsLTE5MzMwNjEzNzFdfQ==
 -->
