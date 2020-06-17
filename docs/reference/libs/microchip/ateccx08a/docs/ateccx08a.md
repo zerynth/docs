@@ -13,14 +13,8 @@ Compute the CRC16 checksum for some bytes.
 The CRC is calculated using 0x8005 as polynomial and starting with the registry set as 0x00.
 
 
-* ```Arguments```
-
-    
-    * ```data``` (```bytes```) – bytes to be checksummed.
-
-
-
-* ```Returns```
+**Arguments:** **data**(*bytes*) – bytes to be checksummed.
+**Returns:**
 
     2 bytes, representing the computed checksum.
 
@@ -1306,7 +1300,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwODE5NTQxNiwtNTQyNTY1MTYwLC03Nz
-gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
-OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbLTYwMTQ2MzE2NCwxNDA4MTk1NDE2LC01ND
+I1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEsNjk1NTY0MDM2
+LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ==
 -->
