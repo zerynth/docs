@@ -10,22 +10,16 @@ The DS1307 has a built-in power-sense circuit that detects power failures and au
 
 
 * Supply Voltage (Vcc): from 4.5 V to 5.5 V
-
-
 * Operation Temperature (Top): from 0 °C to 70 °C
-
-
 * SCL Clock Frequency (Fscl): from 0 Hz to 100 kHz
-
-
 * Active Supply Current (Icca): 1.5 mA (Fosc = 100 kHz)
 
 Here below, the Zerynth driver for the Maxim DS1307.
 
 Contents:
 
-
-* DS1307 Module
-
-
-    * DS1307 class
+-   [DS1307 Module](https://docs.zerynth.com/latest/official/lib.maxim.ds1307/docs/official_lib.maxim.ds1307_ds1307.html)
+    -   [DS1307 class](https://docs.zerynth.com/latest/official/lib.maxim.ds1307/docs/official_lib.maxim.ds1307_ds1307.html#ds1307-class)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDYzODk2ODddfQ==
+-->
