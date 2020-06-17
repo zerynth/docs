@@ -798,7 +798,7 @@ This command must be run before sha_end_cmd().
 
 
 
-sha_hmacstart_cmd(self, key_id: bytes)
+**`sha_hmacstart_cmd(self,key_id:bytes)`**
 
 Start a HMAC digest computation.
 
@@ -823,11 +823,7 @@ This command must be run before `sha_hmacend_cmd()`.
     bytes
 
 
-
----
-#### `#!py3 sha_update_cmd()`
-
-!!!abstract "`#!py3 sha_update_cmd(self, message: bytes)`"
+**`sha_update_cmd(self,message:bytes)`**
 
 Add 64 bytes in the message parameter to the SHA context.
 
@@ -853,10 +849,7 @@ This command must be run after `sha_start_cmd()` or                `sha_hmacstar
 
 
 
----
-#### `#!py3 sha_public_cmd()`
-
-!!!abstract "`#!py3 sha_public_cmd(self, key_id: bytes)`"
+**`sha_public_cmd(self,key_id:bytes)`**
 
 Add 64 bytes of a public key stored in one of the Data zone slots to the SHA context.
 
@@ -881,10 +874,7 @@ Add 64 bytes of a public key stored in one of the Data zone slots to the SHA con
 
 
 
----
-#### `#!py3 sha_end_cmd()`
-
-!!!abstract "`#!py3 sha_end_cmd(message: bytes)`"
+**`sha_end_cmd(message:bytes)`**
 
 Complete the SHA-256 computation and load the digest into TempKey and the output buffer.
 
@@ -913,10 +903,7 @@ sha_update_cmd().
 
 
 
----
-#### `#!py3 sha_hmacend_cmd()`
-
-!!!abstract "`#!py3 sha_hmacend_cmd(message: bytes)`"
+**`sha_hmacend_cmd(message:bytes)`**
 
 Complete the HMAC computation and load the digest into TempKey and the output buffer.
 Up to 63 message bytes are accepted (length must be 0 through 63 inclusive).
@@ -944,10 +931,7 @@ sha_update_cmd().
 
 
 
----
-#### `#!py3 sign_cmd()`
-
-!!!abstract "`#!py3 sign_cmd(key_id: bytes, include_sn: bool, use_tempkey: bool, is_verify_invalidate: bool = False)`"
+**sign_cmd(key_id: bytes, include_sn: bool, use_tempkey: bool, is_verify_invalidate: bool = False)**
 
 ECDSA signature calculation from an internal private key.
 
@@ -1363,7 +1347,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzM4ODU2MSwtNTQyNTY1MTYwLC03Nz
+eyJoaXN0b3J5IjpbLTk4NzI4MTY2MSwtNTQyNTY1MTYwLC03Nz
 gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
 OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
