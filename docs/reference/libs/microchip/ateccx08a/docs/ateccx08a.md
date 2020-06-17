@@ -338,7 +338,7 @@ Note that while only last four bits are used to select a slot, all the two bytes
 
 
 
-* **Return type**bytes
+**Return type:** bytes
 
 
 
@@ -348,14 +348,13 @@ Return device state information.
 The information read can be static or dynamic.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```zone``` (```str```) – Zone to read byte from. The value is case insensitive and can be one of
-    Revision, KeyValid, State, GPIO.
+**zone** (*str*) – Zone to read byte from. The value is case insensitive and can be one of *Revision, KeyValid, State, GPIO.*
 
 
-    * ```param``` (```bytes```) – Second parameter (Default value = bytes(2))
+**param** (*bytes*) – Second parameter (Default value = bytes(2))
 
 
 
@@ -1210,8 +1209,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDAxMTAxLDI1NDk4NzQ5OSwxNDA4MT
-k1NDE2LC01NDI1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEs
-Njk1NTY0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNj
-EzNzFdfQ==
+eyJoaXN0b3J5IjpbLTg3OTkyNjYzMywyNTQ5ODc0OTksMTQwOD
+E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
+LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
+YxMzcxXX0=
 -->
