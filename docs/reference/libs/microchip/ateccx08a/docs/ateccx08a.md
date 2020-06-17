@@ -340,7 +340,7 @@ Generate an ECC private key.
 
 
 
-**gen_public_key(self, key_slot: int, create_digest=False, other_data=bytes(3))**
+**`gen_public_key(self,key_slot:int,create_digest=False,other_data=bytes(3))`**
 
 Generate the ECC public key starting from a private key.
 
@@ -374,10 +374,7 @@ Generate the ECC public key starting from a private key.
 
 
 
----
-#### `#!py3 gen_digest_cmd()`
-
-!!!abstract "`#!py3 gen_digest_cmd(self, key_id: bytes, other_data: bytes)`"
+**`gen_digest_cmd(self,key_id:bytes,other_data:bytes)`**
 
 Generate a digest and store it in TempKey, using key_id as public key.
 
@@ -406,10 +403,7 @@ Generate a digest and store it in TempKey, using key_id as public key.
 
 
 
----
-#### `#!py3 hmac_cmd()`
-
-!!!abstract "`#!py3 hmac_cmd(self, source_flag: int, key_id: bytes, include_sn: bool)`"
+**`hmac_cmd(self,source_flag:int,key_id:bytes,include_sn:bool)`**
 
 Calculate response from key and other internal data using HMAC/SHA-256.
 
@@ -444,10 +438,7 @@ Calculate response from key and other internal data using HMAC/SHA-256.
 
 
 
----
-#### `#!py3 info_cmd()`
-
-!!!abstract "`#!py3 info_cmd(self, mode: str, param=bytes(2))`"
+info_cmd(self, mode: str, param=bytes(2))`"
 
 Return device state information.
 The information read can be static or dynamic.
@@ -1412,7 +1403,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU1NTIwODYsLTU0MjU2NTE2MCwtNz
-c4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwt
-MTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbMTE5NDE3MzUxMCwtNTQyNTY1MTYwLC03Nz
+gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
+OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
