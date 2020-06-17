@@ -1275,10 +1275,7 @@ Retrieve secure element’s 72-bit serial number.
 ## ATECC608A class
 
 
----
-#### `#!py3 ATECC608A()`
-
-!!!abstract "`#!py3 ATECC608A(i2c.I2C)`"
+**`class ATECC608A(i2c.I2C)`**
 
 Class for controlling the ATECC608A chip.
 
@@ -1286,12 +1283,7 @@ This class inherits all ATECC508A methods.
 
 ## Zerynth HWCrypto Interface
 
-<!-- _lib.microchip.ateccx08a.hwcryptointerface -->
-
----
-#### `#!py3 hwcrypto_init()`
-
-!!!abstract "`#!py3 hwcrypto_init(i2c_drv, key_slot, i2c_addr=0x60, dev_type=DEV_ATECC508A)`"
+**`hwcrypto_init(i2c_drv,key_slot,i2c_addr=0x60,dev_type=DEV_ATECC508A)`**
 
 ```NOTE```: this function is available only when `ZERYNTH_HWCRYPTO_ATECCx08A` is set in project.yml file
 
@@ -1314,7 +1306,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMDEyMTc2NSwtNTQyNTY1MTYwLC03Nz
+eyJoaXN0b3J5IjpbMTQwODE5NTQxNiwtNTQyNTY1MTYwLC03Nz
 gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
 OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
