@@ -391,8 +391,7 @@ Prevent further modifications to the Data and OTP zones of the device.
 
 Prevent further modifications to a single slot of the device.
 
-
-* ```Arguments```
+Arguments
 
     
     * ```slot_number``` (```int```) – Slot ID to be locked, valid values are the numbers in range 0-15
@@ -1174,8 +1173,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5OTU3OTAzLC0yMjI3NDE0OTUsMjU0OT
-g3NDk5LDE0MDgxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5
-LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3Nj
-AzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbMTkzMDg0MDA2Nyw0NTk5NTc5MDMsLTIyMj
+c0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYw
+LC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
+U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
