@@ -252,9 +252,7 @@ Generate an ECDH master secret using stored private key and input public key.
 
     bytes
     
-gendig_cmd()
-
-!!!abstract "`#!py3 gendig_cmd(self, zone: int, key_id: bytes, other_data=bytes())`"
+**`gendig_cmd(self,zone:int,key_id:bytes,other_data=bytes())`**
 
 Generate a data digest from a random or input seed and a key.
 
@@ -308,11 +306,7 @@ See datasheet page 66-69 for full usage details.
     bool
 
 
-
----
-#### `#!py3 gen_private_key()`
-
-!!!abstract "`#!py3 gen_private_key(self, key_slot: int, create_digest=False, other_data=bytes(3))`"
+**`gen_private_key(self,key_slot:int,create_digest=False,other_data=bytes(3))`**
 
 Generate an ECC private key.
 
@@ -346,10 +340,7 @@ Generate an ECC private key.
 
 
 
----
-#### `#!py3 gen_public_key()`
-
-!!!abstract "`#!py3 gen_public_key(self, key_slot: int, create_digest=False, other_data=bytes(3))`"
+**gen_public_key(self, key_slot: int, create_digest=False, other_data=bytes(3))**
 
 Generate the ECC public key starting from a private key.
 
@@ -1421,7 +1412,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwMzc1ODcsLTU0MjU2NTE2MCwtNzc4Mz
-I5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5
-MTg3NjAzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbLTEwOTU1NTIwODYsLTU0MjU2NTE2MCwtNz
+c4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwt
+MTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
 -->
