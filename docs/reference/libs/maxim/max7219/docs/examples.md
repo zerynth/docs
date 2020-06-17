@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.maxim.max7219
+The following are a list of examples for lib.maxim.max7219.
 
 ## LED Matrix
 
@@ -69,3 +69,6 @@ while True:
     display.set_column(6,1)
     sleep(500)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI4ODA5NjExMV19
+-->
