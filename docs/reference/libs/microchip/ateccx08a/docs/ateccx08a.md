@@ -58,10 +58,7 @@ Connect to a device and start I2C protocol.
 ### Internal methods
 
 
----
-#### `#!py3 _send_cmd()`
-
-!!!abstract "`#!py3 _send_cmd(self, opcode, param1, param2: bytes, data=bytes())`"
+**`_send_cmd(self,opcode,param1,param2:bytes,data=bytes())`**
 
 Send a command packet to the device.
 
@@ -1550,5 +1547,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDQwODk0MiwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbLTE2Mjg5NjU0NzksLTE5MzMwNjEzNzFdfQ
+==
 -->
