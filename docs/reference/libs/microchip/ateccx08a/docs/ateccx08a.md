@@ -161,30 +161,22 @@ Verify a MAC calculated on another CryptoAuthentication device.
 
 
 
-* ```Returns```
-
-    True if response matches the computed digest, False otherwise.
+**Returns:** True *if response* matches the computed digest, False otherwise.
 
 
 
-* **Return type**
-
-    bool
+ **Return type:** bool
 
 
 
----
-#### `#!py3 read_counter_cmd()`
-
-!!!abstract "`#!py3 read_counter_cmd(key_id)`"
+**`read_counter_cmd(key_id)`**
 
 Read one of the two monotonic counters.
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```key_id``` (```int```) – The specified counter. Can be 0 or 1.
+key_id(int) – The specified counter. Can be 0 or 1.
 
 
 
@@ -1478,6 +1470,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
-U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbMTY3NTE5ODM1NCw2MTgwODE1MjEsNjk1NT
+Y0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFd
+fQ==
 -->
