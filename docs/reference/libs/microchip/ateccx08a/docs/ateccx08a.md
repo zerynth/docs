@@ -327,24 +327,18 @@ Calculate response from key and other internal data using HMAC/SHA-256.
 **Arguments:**
 
     
-**source_flag** (*int*) – Single bit. The value of this bit must match the value in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error. The flag is the fourth bit returned by info_cmd(‘State’).
-**key_id** (*bytes*) – Specifies the slot where the key is.
-    Note that while only last four bits are used to select a slot, all the two
-    bytes will be included in the digest message.
-
-include_sn (bool) – If True, 48 bits from Configuration Zone are included in the digest message.
+-	**source_flag** (*int*) – Single bit. The value of this bit must match the value in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error. The flag is the fourth bit returned by *info_cmd(‘State’).*
+-	**key_id** (*bytes*) – Specifies the slot where the key is.
+Note that while only last four bits are used to select a slot, all the two bytes will be included in the digest message.
+-	**include_sn** (*bool*) – If True, 48 bits from Configuration Zone are included in the digest message.
 
 
 
-* ```Returns```
-
-    32 bytes, the computed HMAC digest.
+**Returns:** 32 bytes, the computed HMAC digest.
 
 
 
-* **Return type**
-
-    bytes
+* **Return type**bytes
 
 
 
@@ -1216,7 +1210,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM1NzM2NzA4LDI1NDk4NzQ5OSwxNDA4MT
+eyJoaXN0b3J5IjpbLTIyNDAxMTAxLDI1NDk4NzQ5OSwxNDA4MT
 k1NDE2LC01NDI1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEs
 Njk1NTY0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNj
 EzNzFdfQ==
