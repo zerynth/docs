@@ -190,16 +190,12 @@ Increment one of the two monotonic counters.
 
 The maximum value that the counter may have is 2,097,151.
 Any attempt to count beyond this value will result in an error code.
-A
+
+**Arguments:**
     
-    * ```key_id``` (```int```) – The specified counter. Can be 0 or 1.
+-	**key_id**(*int*) – The specified counter. Can be 0 or 1.
 
-
-
-* ```Returns```
-
-    4 bytes representing the current value of the counter, or 1 byte representing
-    a status code.
+**Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
 
 
 
@@ -1455,7 +1451,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNTE4MDMwNCwtNzc4MzI5MzI5LDYxOD
-A4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwt
-MTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbNDIwNjU0MjU0LC03NzgzMjkzMjksNjE4MD
+gxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0x
+OTMzMDYxMzcxXX0=
 -->
