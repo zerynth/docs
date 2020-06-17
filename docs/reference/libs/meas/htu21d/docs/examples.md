@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.meas.htu21d
+The following are a list of examples for lib.meas.htu21d.
 
 ## Read Humidity and Temperature values from HTU21D
 
 
-Basic example to read the current values of temperature and relative humidity from HTU21D sensor
+Basic example to read the current values of temperature and relative humidity from HTU21D sensor.
 
 
 
@@ -55,3 +55,6 @@ try:
 except Exception as e:
     print("Error2: ",e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTUxNjIxMTg1OF19
+-->
