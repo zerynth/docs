@@ -1,19 +1,27 @@
 # HTU21D Module
 
-This module contains the driver for MEAS HTU21D Relative Humidity and Temperature sensor. The HTU21D is capable of direct I2C communication and can be set on 4 different level of resolution in both temperature and humidity measurements ([datasheet](http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FHPC199_6%7FA%7Fpdf%7FEnglish%7FENG_DS_HPC199_6_A.pdf%7FCAT-HSC0004)).
+This module contains the driver for MEAS HTU21D Relative Humidity and Temperature sensor. 
+The HTU21D is capable of direct I2C communication and can be set on 4 different level of resolution in both temperature and humidity measurements ([datasheet](http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FHPC199_6%7FA%7Fpdf%7FEnglish%7FENG_DS_HPC199_6_A.pdf%7FCAT-HSC0004)).
 
 
-**`class HTU21D(i2cdrv,addr=0x40,clk=400000)`**
+**`class---
+#### `#!py3 HTU21D()`
+
+!!!abstract "`#!py3 HTU21D(i2cdrv, addr=0x40, clk=400000)`**"
 
 Creates an intance of a new HTU21D.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**i2cdrv** – I2C Bus used ‘( I2C0, … )’
--	**addr** – Slave address, default 0x40
--	**clk** – Clock speed, default 400kHz
+-	**    * ```i2cdrv**``` – I2C Bus used ‘( I2C0, … )’
+-	**
+
+    * ```addr**``` – Slave address, default 0x40
+-	**clk**
+
+    * ```clk``` – Clock speed, default 400kHz
 
 
 Example:
@@ -30,15 +38,18 @@ t,h = htu.get_temp_humid()
 ```
 
 
-**`init(res=0)`**
+**`---
+#### `#!py3 init()`
+
+!!!abstract "`#!py3 init(res=0)`**"
 
 Initialize the HTU21D setting the resolution of the sensor.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
--	**res** – set the resolution (from 0 to 3) for temperature and humidity measurements according to the table below; default 0.
+-	**res**    * ```res``` – set the resolution (from 0 to 3) for temperature and humidity measurements according to the table below; default 0.
 
 
 | res value
@@ -98,39 +109,54 @@ Initialize the HTU21D setting the resolution of the sensor.
 
             |
 
-**`get_raw_temp()`**
+**`---
+#### `#!py3 get_raw_temp()`
+
+!!!abstract "`#!py3 get_raw_temp()`**"
 
 Retrieves the current temperature data from the sensor as raw value.
 
 Returns raw_temp.
 
 
-**`get_raw_humid()`**
+**`---
+#### `#!py3 get_raw_humid()`
+
+!!!abstract "`#!py3 get_raw_humid()`**"
 
 Retrieves the current humidity data from the sensor as raw value.
 
 Returns raw_humid.
 
 
-**`get_temp()`**
+**`get_temp()`**---
+#### `#!py3 get_temp()`
+
+!!!abstract "`#!py3 get_temp()`"
 
 Retrieves the current temperature data from the sensor as calibrate value in °C.
 
 Returns temp.
 
 
-**`get_humid()`**
+**`---
+#### `#!py3 get_humid()`
+
+!!!abstract "`#!py3 get_humid()`**"
 
 Retrieves the current relative humidity data from the sensor as calibrate value in %RH.
 
 Returns humid.
 
 
-**`get_temp_humid()`**
+**`---
+#### `#!py3 get_temp_humid()`**
+
+!!!abstract "`#!py3 get_temp_humid()`"
 
 Retrieves both temperature and humidity in one call.
 
 Returns temp, humid.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzNDU3OTddfQ==
+eyJoaXN0b3J5IjpbOTA1MjcyNzEzLDg5MzQ1Nzk3XX0=
 -->
