@@ -61,7 +61,7 @@ Send a command packet to the device.
 -	p1 is byte of length 1. (mandatory)
 -	p2 is bytes of length 2. (mandatory)
 -	data is optional and can have arbitraty length.
--	crc is a 2 byte checksum (calculated using `ecc508a.crc16()`).
+-	crc is a 2 byte checksum (calculated using **`ecc508a.crc16()`**).
 
 **Arguments:**
 
@@ -1295,7 +1295,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTU5MDcwNiwxNDA4MTk1NDE2LC01ND
-I1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEsNjk1NTY0MDM2
-LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ==
+eyJoaXN0b3J5IjpbNTcyMTAyMTMwLDE0MDgxOTU0MTYsLTU0Mj
+U2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYs
+MjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
 -->
