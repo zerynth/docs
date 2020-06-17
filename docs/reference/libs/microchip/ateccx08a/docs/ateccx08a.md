@@ -14,15 +14,10 @@ The CRC is calculated using 0x8005 as polynomial and starting with the registry 
 
 
 **Arguments:** **data**(*bytes*) – bytes to be checksummed.
-**Returns:**
 
-    2 bytes, representing the computed checksum.
+**Returns:** 2 bytes, representing the computed checksum.
 
-
-
-* **Return type**
-
-    bytes
+ **Return type:** bytes
 
 
 ## ATECC508A class
@@ -58,7 +53,7 @@ Send a command packet to the device.
 
 **Output packet structure:**
 
-    [ 0x03 ][ length ][ opcode ][ p1 ][ p2 ][ …data… ][ crc ]
+[ 0x03 ][ length ][ opcode ][ p1 ][ p2 ][ …data… ][ crc ]
 
 
 -	0x03 is a constant defined in WORD_ADDRS at the beginning of this module.
@@ -1300,7 +1295,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTQ2MzE2NCwxNDA4MTk1NDE2LC01ND
+eyJoaXN0b3J5IjpbMTI3NTU5MDcwNiwxNDA4MTk1NDE2LC01ND
 I1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEsNjk1NTY0MDM2
 LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ==
 -->
