@@ -313,16 +313,9 @@ Generate a digest and store it in TempKey, using key_id as public key.
  - **key_id** (*bytes*) – Specifies the slot where the public ECC key is.
  - **other_data** (*bytes*) – 3 bytes, used in the creation of the message used as input for the digest algorithm.
 
-Returns:
+**Returns:** 64 bytes representing public key X and Y coordinates or 1 byte representing a status code if an error occured.
 
-    64 bytes representing public key X and Y coordinates or 1 byte representing
-    a status code if an error occured.
-
-
-
- - **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -331,15 +324,13 @@ Returns:
 Calculate response from key and other internal data using HMAC/SHA-256.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```source_flag``` (```int```) – Single bit. The value of this bit must match the value in
-    TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error.
-    The flag is the fourth bit returned by info_cmd(‘State’).
+**source_flag** (*int*) – Single bit. The value of this bit must match the value in TempKey.SourceFlag (1 = True, 0 = False) or the command will return an error. The flag is the fourth bit returned by info_cmd(‘State’).
 
 
-    * ```key_id``` (```bytes```) – Specifies the slot where the key is.
+**key_id** (*bytes*) – Specifies the slot where the key is.
     Note that while only last four bits are used to select a slot, all the two
     bytes will be included in the digest message.
 
@@ -1229,8 +1220,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk2NjMyMTEsMjU0OTg3NDk5LDE0MD
-gxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUy
-MSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
-A2MTM3MV19
+eyJoaXN0b3J5IjpbMzAwOTcwNTQwLDI1NDk4NzQ5OSwxNDA4MT
+k1NDE2LC01NDI1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEs
+Njk1NTY0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNj
+EzNzFdfQ==
 -->
