@@ -19,13 +19,11 @@ The I2C slave address assignment is controlled by one (model 100), two (model 10
 
 Here below, the Zerynth driver for the Maxim DS2482.
 
+
 Contents:
 
-
-* DS2482 Module - One Wire
-
-
-    * OneWireSensor class
+-   [DS2482 Module - One Wire](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html)
+    -   [OneWireSensor class](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html#onewiresensor-class)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MzcwNTg0NF19
+eyJoaXN0b3J5IjpbLTE1Njk5NDkwMzVdfQ==
 -->
