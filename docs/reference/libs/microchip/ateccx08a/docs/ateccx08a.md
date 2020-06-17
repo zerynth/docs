@@ -96,14 +96,10 @@ Read, verify checksum, and extract data of a packet from the device.
 
 
 
-* **Return type:**
-
-    bytes
+**Return type:** bytes
 
 
-Note:
-
-    Length includes itself (1 byte), data (n bytes), and crc16 (2 bytes).
+**Note:** Length includes itself (1 byte), data (n bytes), and crc16 (2 bytes).
 
 ### Public methods
 
@@ -1523,6 +1519,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTE0MTQ4NSwtMTk5MTg3NjAzNSwtMT
-kzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
+A2MTM3MV19
 -->
