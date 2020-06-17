@@ -931,7 +931,7 @@ sha_update_cmd().
 
 
 
-**sign_cmd(key_id: bytes, include_sn: bool, use_tempkey: bool, is_verify_invalidate: bool = False)**
+**`sign_cmd(key_id:bytes,include_sn:bool,use_tempkey:bool,is_verify_invalidate:bool = False)`**
 
 ECDSA signature calculation from an internal private key.
 
@@ -967,10 +967,7 @@ ECDSA signature calculation from an internal private key.
 
 
 
----
-#### `#!py3 updateextra_cmd()`
-
-!!!abstract "`#!py3 updateextra_cmd(update_byte: int, new_value: int)`"
+**`updateextra_cmd(update_byte:int,new_value:int)`**
 
 Update bytes 84 or 85 within the Configuration zone after the Configuration zone
 has been locked.
@@ -1004,10 +1001,7 @@ has been locked.
 
 
 
----
-#### `#!py3 updateextra_decr_cmd()`
-
-!!!abstract "`#!py3 updateextra_decr_cmd(key_id)`"
+**`updateextra_decr_cmd(key_id)`**
 
 Decrement the limited use counter associated with the key in slot after the
 Configuration zone has been locked.
@@ -1038,10 +1032,7 @@ remaining, then the command returns an error.
 
 
 
----
-#### `#!py3 verify_external_cmd()`
-
-!!!abstract "`#!py3 verify_external_cmd(curve_type: int, r_comp: bytes, s_comp: bytes, x_comp: bytes, y_comp: bytes)`"
+**`verify_external_cmd(curve_type:int,r_comp:bytes,s_comp:bytes,x_comp:bytes,y_comp:bytes)`**
 
 Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
 message and public key.
@@ -1092,10 +1083,7 @@ Nonce command.
 
 
 
----
-#### `#!py3 verify_stored_cmd()`
-
-!!!abstract "`#!py3 verify_stored_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)`"
+verify_stored_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)`"
 
 Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
 message and public key.
@@ -1347,7 +1335,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NzI4MTY2MSwtNTQyNTY1MTYwLC03Nz
+eyJoaXN0b3J5IjpbLTI3MDIyOTA3MCwtNTQyNTY1MTYwLC03Nz
 gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
 OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
