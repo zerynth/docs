@@ -201,7 +201,7 @@ Any attempt to count beyond this value will result in an error code.
 
 The device combines the current value of a key with the nonce stored in TempKey using SHA-256 and places the result into the target key slot.
 
-Prior to execution of this command, `nonce_cmd()` must have been run to create a valid nonce in TempKey.
+Prior to execution of this command, **`nonce_cmd()`** must have been run to create a valid nonce in TempKey.
 
 For full documentation check datasheet at pages 63-64.
 
@@ -209,13 +209,13 @@ For full documentation check datasheet at pages 63-64.
 **Arguments:**
 
     
--	**`source_flag`**(int) – Single bit (1 or 0). The value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by `info_cmd()`.
+**source_flag** (*int*) – Single bit (1 or 0). The value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by `info_cmd()`.
 
 
-    * ```target_key``` (```bytes```) – 2 bytes. Key slot to be written.
+**target_key** (*bytes*) – 2 bytes. Key slot to be written.
 
 
-    * ```mac``` (```bytes```) – MAC used to validate the operation. (Default value = bytes())
+**mac** (*bytes*) – MAC used to validate the operation. (Default value = bytes())
 
 
 
@@ -1436,7 +1436,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxOD
-A4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwt
-MTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbLTg3MDU1ODgzLC01NDI1NjUxNjAsLTc3OD
+MyOTMyOSw2MTgwODE1MjEsNjk1NTY0MDM2LDIxMTc3NTksLTE5
+OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ==
 -->
