@@ -310,22 +310,17 @@ Generate a digest and store it in TempKey, using key_id as public key.
 **Arguments:**
 
     
-    * ```key_id``` (```bytes```) – Specifies the slot where the public ECC key is.
+ - **key_id** (*bytes*) – Specifies the slot where the public ECC key is.
+ - **other_data** (*bytes*) – 3 bytes, used in the creation of the message used as input for the digest algorithm.
 
-
-    * ```other_data``` (```bytes```) – 3 bytes, used in the creation of the message used as input for
-    the digest algorithm.
-
-
-
-* ```Returns```
+Returns:
 
     64 bytes representing public key X and Y coordinates or 1 byte representing
     a status code if an error occured.
 
 
 
-* **Return type**
+ - **Return type**
 
     bytes
 
@@ -1234,8 +1229,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTc2ODIzMCwyNTQ5ODc0OTksMTQwOD
-E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
-LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
-YxMzcxXX0=
+eyJoaXN0b3J5IjpbLTE5Mzk2NjMyMTEsMjU0OTg3NDk5LDE0MD
+gxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUy
+MSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
+A2MTM3MV19
 -->
