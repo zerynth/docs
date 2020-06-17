@@ -148,14 +148,13 @@ A command usually return some bytes as the result of the command execution, or a
 Verify a MAC calculated on another CryptoAuthentication device.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```tempkey_as_message_source``` (```bool```) – If False the second 32 bytes of the SHA message
-    are taken from challenge parameter, otherwise they are taken from TempKey.
+**tempkey_as_message_source**(bool) – If False the second 32 bytes of the SHA message are taken from challenge parameter, otherwise they are taken from TempKey.
 
 
-    * ```tempkey_as_first_block``` (```bool```) – If False Slot<KeyID> in first SHA block is used,
+**tempkey_as_first_block**(bool) – If False Slot<KeyID> in first SHA block is used,
     otherwise TempKey is.
 
 
@@ -1498,6 +1497,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjQ4MzQ4MCwyMTE3NzU5LC0xOTkxOD
-c2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbNjk1NTY0MDM2LDIxMTc3NTksLTE5OTE4Nz
+YwMzUsLTE5MzMwNjEzNzFdfQ==
 -->
