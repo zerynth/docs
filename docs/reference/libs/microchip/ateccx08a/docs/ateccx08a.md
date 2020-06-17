@@ -438,7 +438,7 @@ Calculate response from key and other internal data using HMAC/SHA-256.
 
 
 
-info_cmd(self, mode: str, param=bytes(2))`"
+**`info_cmd(self,mode:str,param=bytes(2))`**
 
 Return device state information.
 The information read can be static or dynamic.
@@ -467,10 +467,7 @@ The information read can be static or dynamic.
 
 
 
----
-#### `#!py3 lock_config_zone_cmd()`
-
-!!!abstract "`#!py3 lock_config_zone_cmd(self, checksum: bytes=None)`"
+**`lock_config_zone_cmd(self,checksum:bytes=None)`**
 
 Prevent further modifications to the Config zone of the device.
 
@@ -496,10 +493,7 @@ Prevent further modifications to the Config zone of the device.
 
 
 
----
-#### `#!py3 lock_data_zone_cmd()`
-
-!!!abstract "`#!py3 lock_data_zone_cmd(checksum: bytes = None)`"
+**`lock_data_zone_cmd(checksum:bytes = None)`**
 
 Prevent further modifications to the Data and OTP zones of the device.
 
@@ -525,10 +519,7 @@ Prevent further modifications to the Data and OTP zones of the device.
 
 
 
----
-#### `#!py3 lock_single_slot_cmd()`
-
-!!!abstract "`#!py3 lock_single_slot_cmd(self, slot_number: int)`"
+**`lock_single_slot_cmd(self,slot_number:int)`**
 
 Prevent further modifications to a single slot of the device.
 
@@ -553,10 +544,7 @@ Prevent further modifications to a single slot of the device.
 
 
 
----
-#### `#!py3 mac_cmd()`
-
-!!!abstract "`#!py3 mac_cmd(self, key_id: bytes, use_tempkey: bool, include_sn: bool, source_flag: int = 0, challenge: bytes = bytes())`"
+**`mac_cmd(self,key_id:bytes,use_tempkey:bool,include_sn:bool,source_flag:int = 0,challenge:bytes = bytes())`**
 
 Compute a SHA-256 digest from key and other internal data using SHA-256.
 
@@ -1403,7 +1391,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDE3MzUxMCwtNTQyNTY1MTYwLC03Nz
+eyJoaXN0b3J5IjpbLTQzNTY3MDk5NiwtNTQyNTY1MTYwLC03Nz
 gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
 OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
