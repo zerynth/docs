@@ -234,28 +234,27 @@ Generate a data digest from a random or input seed and a key.
 See datasheet page 66-69 for full usage details.
 
 
-* ```Arguments
+**Arguments:**
 
-    
-    * ```zone``` (```int```) – Possible values are numbers between 0 and 5 (included).
+ - **zone**(*int*) – Possible values are numbers between 0 and 5 (included).
 
-    If 0x00 (Config), then use key_id to specify any of the four 256-bit blocks
-    of the Configuration zone. If key_id has a value greater than three, the
-    command will return an error.
+If 0x00 (Config), then use key_id to specify any of the four 256-bit blocks of the Configuration zone. 
 
-    If 0x01 (OTP), use key_id to specify either the first or second 256-bit block
+If key_id has a value greater than three, the command will return an error.
+
+If 0x01 (OTP), use key_id to specify either the first or second 256-bit block
     of the OTP zone.
 
-    If 0x02 (Data), then key_id specifies a slot in the Data zone or a transport
+If 0x02 (Data), then key_id specifies a slot in the Data zone or a transport
     key in the hardware array.
 
-    If 0x03 (Shared Nonce), then key_id specifies the location of the input value
+If 0x03 (Shared Nonce), then key_id specifies the location of the input value
     in the message generation.
 
-    If 0x04 (Counter), then key_id specifies the monotonic counter ID to be
+If 0x04 (Counter), then key_id specifies the monotonic counter ID to be
     included in the message generation.
 
-    If 0x05 (Key Config), then key_id specifies the slot for which the
+If 0x05 (Key Config), then key_id specifies the slot for which the
     configuration information is to be included in the message generation.
 
 
@@ -1281,7 +1280,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0Njc3MDU5NywyNTQ5ODc0OTksMTQwOD
+eyJoaXN0b3J5IjpbLTkyOTEyMjUzNiwyNTQ5ODc0OTksMTQwOD
 E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
 LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
 YxMzcxXX0=
