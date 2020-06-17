@@ -1083,7 +1083,7 @@ Nonce command.
 
 
 
-verify_stored_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)`"
+**`verify_stored_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes)`**
 
 Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
 message and public key.
@@ -1119,11 +1119,7 @@ The contents of TempKey should contain the SHA-256 digest of the message.
     bytes
 
 
-
----
-#### `#!py3 verify_validate_cmd()`
-
-!!!abstract "`#!py3 verify_validate_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes, other_data: bytes, invalidate: bool = False)`"
+**`verify_validate_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes,other_data:bytes,invalidate:bool=False)`**
 
 The Validate and Invalidate modes are used to validate or invalidate the public key
 stored in the EEPROM.
@@ -1167,18 +1163,11 @@ It must have been generated using genkey_cmd over the key_id slot.
 
 
 
----
-#### `#!py3 verify_invalidate_cmd()`
-
-!!!abstract "`#!py3 verify_invalidate_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes, other_data: bytes)`"
+**`verify_invalidate_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes,other_data:bytes)`**
 
 Shortcut for `verify_validate_cmd()` using invalidate mode.
 
-
----
-#### `#!py3 verify_validate_external_cmd()`
-
-!!!abstract "`#!py3 verify_validate_external_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)`"
+verify_validate_external_cmd(key_id: bytes, r_comp: bytes, s_comp: bytes)
 
 The ValidateExternal mode is used to validate the public key stored in the EEPROM at
 key_id when X.509 format certificates are to be used. The digest of the message must
@@ -1335,7 +1324,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MDIyOTA3MCwtNTQyNTY1MTYwLC03Nz
-gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
-OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbMTAwNTI2ODMsLTU0MjU2NTE2MCwtNzc4Mz
+I5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5
+MTg3NjAzNSwtMTkzMzA2MTM3MV19
 -->
