@@ -104,37 +104,26 @@ Read, verify checksum, and extract data of a packet from the device.
 ### Public methods
 
 
----
-#### `#!py3 start_cmd_sequence()`
-
-!!!abstract "`#!py3 start_cmd_sequence()`"
+**`start_cmd_sequence()`**
 
 Call this function before a command sequence to wake up device from idle mode.
 
 This is done by keeping SDA low for more than 60 microseconds.
 
-Note:
-
-    At this moment a 0x00 byte is written as a normal I2C transaction, ignoring
-    the exception raised.
-    This workaround won’t work at higher clock rates (more than ~100 kHz)!
+**Note:**
+At this moment a 0x00 byte is written as a normal I2C transaction, ignoring the exception raised. This workaround won’t work at higher clock rates (more than ~100 kHz)!
 
 
----
-#### `#!py3 end_cmd_sequence()`
+**`end_cmd_sequence()`**
 
-!!!abstract "`#!py3 end_cmd_sequence()`"
+
 
 Call this function at the end of a command sequence to put the device in idle mode.
 
-This must be done in order to avoid hitting the watchdog timeout (~1 second) which will
-put the device in idle mode no matter what.
+This must be done in order to avoid hitting the watchdog timeout (~1 second) which will put the device in idle mode no matter what.
 
 
----
-#### `#!py3 send_and_read()`
-
-!!!abstract "`#!py3 send_and_read(\*args)`"
+**`send_and_read(*args)`**
 
 Send a command and return the result data.
 
@@ -1519,6 +1508,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
-A2MTM3MV19
+eyJoaXN0b3J5IjpbLTEwMzcxMDY5MTQsMjExNzc1OSwtMTk5MT
+g3NjAzNSwtMTkzMzA2MTM3MV19
 -->
