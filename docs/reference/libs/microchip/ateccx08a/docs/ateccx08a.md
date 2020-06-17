@@ -174,9 +174,7 @@ Verify a MAC calculated on another CryptoAuthentication device.
 Read one of the two monotonic counters.
 
 
-**Arguments:**
-
-**key_id** (*int*) – The specified counter. Can be 0 or 1.
+**Arguments:** **key_id** (*int*) – The specified counter. Can be 0 or 1.
 
 **Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
 
@@ -191,24 +189,15 @@ Increment one of the two monotonic counters.
 The maximum value that the counter may have is 2,097,151.
 Any attempt to count beyond this value will result in an error code.
 
-**Arguments:**
-    
--	**key_id**(*int*) – The specified counter. Can be 0 or 1.
+**Arguments:** **key_id**(*int*) – The specified counter. Can be 0 or 1.
 
 **Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
 
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
----
-#### `#!py3 derivekey_cmd()`
-
-!!!abstract "`#!py3 derivekey_cmd(source_flag: int, target_key: bytes, mac=bytes())`"
+**`derivekey_cmd(source_flag:int,target_key:bytes, mac=bytes())`**
 
 The device combines the current value of a key with the nonce stored in TempKey using
 SHA-256 and places the result into the target key slot.
@@ -1451,7 +1440,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwNjU0MjU0LC03NzgzMjkzMjksNjE4MD
-gxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0x
-OTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbMTAxMjcwMTMxNSwtNzc4MzI5MzI5LDYxOD
+A4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwt
+MTkzMzA2MTM3MV19
 -->
