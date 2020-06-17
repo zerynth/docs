@@ -8,10 +8,10 @@ This module contains the driver for MEAS HTU21D Relative Humidity and Temperatur
 Creates an intance of a new HTU21D.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```i2cdrv``` – I2C Bus used ‘( I2C0, … )’
+i2cdrv``` – I2C Bus used ‘( I2C0, … )’
 
 
     * ```addr``` – Slave address, default 0x40
@@ -34,10 +34,7 @@ t,h = htu.get_temp_humid()
 ```
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init(res=0)`"
+**`init(res=0)`**
 
 Initialize the HTU21D setting the resolution of the sensor.
 
@@ -105,54 +102,39 @@ Initialize the HTU21D setting the resolution of the sensor.
 
             |
 
----
-#### `#!py3 get_raw_temp()`
-
-!!!abstract "`#!py3 get_raw_temp()`"
+**`get_raw_temp()`**
 
 Retrieves the current temperature data from the sensor as raw value.
 
-Returns raw_temp
+Returns raw_temp.
 
 
----
-#### `#!py3 get_raw_humid()`
-
-!!!abstract "`#!py3 get_raw_humid()`"
+**`get_raw_humid()`**
 
 Retrieves the current humidity data from the sensor as raw value.
 
-Returns raw_humid
+Returns raw_humid.
 
 
----
-#### `#!py3 get_temp()`
-
-!!!abstract "`#!py3 get_temp()`"
+**`get_temp()`**
 
 Retrieves the current temperature data from the sensor as calibrate value in °C.
 
-Returns temp
+Returns temp.
 
 
----
-#### `#!py3 get_humid()`
-
-!!!abstract "`#!py3 get_humid()`"
+**`get_humid()`**
 
 Retrieves the current relative humidity data from the sensor as calibrate value in %RH.
 
-Returns humid
+Returns humid.
 
 
----
-#### `#!py3 get_temp_humid()`
-
-!!!abstract "`#!py3 get_temp_humid()`"
+**`get_temp_humid()`**
 
 Retrieves both temperature and humidity in one call.
 
-Returns temp, humid
+Returns temp, humid.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MzQ5ODc5XX0=
+eyJoaXN0b3J5IjpbNjI2Mjg3NzA4XX0=
 -->
