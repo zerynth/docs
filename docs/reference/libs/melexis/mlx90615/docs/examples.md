@@ -5,7 +5,7 @@ The following are a list of examples for lib.melexis.mlx90615
 ## MLX90615
 
 
-Simple example to read values from the Melexis MLX90615 infrared thermometer
+Simple example to read values from the Melexis MLX90615 infrared thermometer.
 
 
 
@@ -44,3 +44,6 @@ while True:
 
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI3NTQ0OTY2OF19
+-->
