@@ -457,11 +457,7 @@ The body used to create the nonce is stored internally in TempKey.
 
 **Returns:** TempKey (32 bytes) if use_tempkey is True. Otherwise the RNG output.
 
-
-
-* **Return type**
-
-    bytes
+ **Return type:** bytes
 
 
 
@@ -1133,8 +1129,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIzMjg0ODIsNDU5OTU3OTAzLC0yMj
-I3NDE0OTUsMjU0OTg3NDk5LDE0MDgxOTU0MTYsLTU0MjU2NTE2
-MCwtNzc4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNz
-c1OSwtMTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
+eyJoaXN0b3J5IjpbLTE5NDQzODk2OCw0NTk5NTc5MDMsLTIyMj
+c0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYw
+LC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
+U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
