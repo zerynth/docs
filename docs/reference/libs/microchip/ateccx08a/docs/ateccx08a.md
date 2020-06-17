@@ -223,14 +223,9 @@ Generate an ECDH master secret using stored private key and input public key.
 -	**x_comp** (*bytes*) – The X component of the public key to be used for ECDH calculation.
 -	**y_comp** (*bytes*) – The Y component of the public key to be used for ECDH calculation.
 
-
 **Returns:** If any error occured, the error code. If specified by SlotConfig.ReadKey<3>, the shared secret. Otherwise the success code 0x00.
 
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
     
 **`gendig_cmd(self,zone:int,key_id:bytes,other_data=bytes())`**
 
@@ -1286,7 +1281,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQyMjQ3NSwxNDA4MTk1NDE2LC01ND
-I1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEsNjk1NTY0MDM2
-LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ==
+eyJoaXN0b3J5IjpbMjU0OTg3NDk5LDE0MDgxOTU0MTYsLTU0Mj
+U2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYs
+MjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMzA2MTM3MV19
 -->
