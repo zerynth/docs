@@ -77,22 +77,13 @@ Send a command packet to the device.
 **Arguments:**
 
     
-**opcode** (*int*) – The code representing the selected command. Check OPCODES at the beginning of this module.
+-	**opcode** (*int*) – The code representing the selected command. Check OPCODES at the beginning of this module.
+-	**param1** (*int*) – The first mandatory parameter. 1 byte long.
+-	**param2** (*bytes*) – The second mandatory parameter. 2 bytes long.
+-	**data** (*bytes*) – Other optional data. (Default value = bytes())
 
 
-**param1** (*int*) – The first mandatory parameter. 1 byte long.
-
-**param2** (*bytes*) – The second mandatory parameter. 2 bytes long.
-
-
-**data** (*bytes*) – Other optional data. (Default value = bytes())
-
-
-
----
-#### `#!py3 _read_result()`
-
-!!!abstract "`#!py3 _read_result()`"
+**`_read_result()`**
 
 Read, verify checksum, and extract data of a packet from the device.
 
@@ -1534,6 +1525,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMzY0OTkyMSwtMTk5MTg3NjAzNSwtMT
+eyJoaXN0b3J5IjpbLTgxMTQzNzQyOSwtMTk5MTg3NjAzNSwtMT
 kzMzA2MTM3MV19
 -->
