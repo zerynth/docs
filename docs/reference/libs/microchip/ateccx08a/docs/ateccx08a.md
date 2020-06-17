@@ -209,32 +209,20 @@ For full documentation check datasheet at pages 63-64.
 **Arguments:**
 
     
-**source_flag** (*int*) – Single bit (1 or 0). The value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by `info_cmd()`.
+-	**source_flag** (*int*) – Single bit (1 or 0). The value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by **`info_cmd()`**.
+-	**target_key** (*bytes*) – 2 bytes. Key slot to be written.
+-	**mac** (*bytes*) – MAC used to validate the operation. (Default value = bytes())
 
 
-**target_key** (*bytes*) – 2 bytes. Key slot to be written.
-
-
-**mac** (*bytes*) – MAC used to validate the operation. (Default value = bytes())
-
-
-
-* ```Returns```
-
-    True if the operation completed successfully.
+**Returns:** True if the operation completed successfully.
 
 
 
-* **Return type**
-
-    bool
+**Return type:** bool
 
 
 
----
-#### `#!py3 ecdh_cmd()`
-
-!!!abstract "`#!py3 ecdh_cmd(key_id: bytes, x_comp: bytes, y_comp: bytes)`"
+**`ecdh_cmd(key_id:bytes,x_comp:bytes, y_comp: bytes)`**
 
 Generate an ECDH master secret using stored private key and input public key.
 
@@ -1436,7 +1424,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDU1ODgzLC01NDI1NjUxNjAsLTc3OD
-MyOTMyOSw2MTgwODE1MjEsNjk1NTY0MDM2LDIxMTc3NTksLTE5
-OTE4NzYwMzUsLTE5MzMwNjEzNzFdfQ==
+eyJoaXN0b3J5IjpbMjExMzEwMDMzMiwtNTQyNTY1MTYwLC03Nz
+gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
+OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
