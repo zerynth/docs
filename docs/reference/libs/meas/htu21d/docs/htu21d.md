@@ -11,18 +11,14 @@ Creates an intance of a new HTU21D.
 **Arguments:**
 
     
-i2cdrv``` – I2C Bus used ‘( I2C0, … )’
-
-
-    * ```addr``` – Slave address, default 0x40
-
-
-    * ```clk``` – Clock speed, default 400kHz
+-	**i2cdrv** – I2C Bus used ‘( I2C0, … )’
+-	**addr** – Slave address, default 0x40
+-	**clk** – Clock speed, default 400kHz
 
 
 Example:
 
-```
+```py
 from meas.htu21d import htu21d
 
 ...
@@ -39,10 +35,10 @@ t,h = htu.get_temp_humid()
 Initialize the HTU21D setting the resolution of the sensor.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```res``` – set the resolution (from 0 to 3) for temperature and humidity measurements according to the table below; default 0.
+-	**res** – set the resolution (from 0 to 3) for temperature and humidity measurements according to the table below; default 0.
 
 
 | res value
@@ -136,5 +132,5 @@ Retrieves both temperature and humidity in one call.
 
 Returns temp, humid.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2Mjg3NzA4XX0=
+eyJoaXN0b3J5IjpbODkzNDU3OTddfQ==
 -->
