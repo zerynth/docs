@@ -87,18 +87,16 @@ Send a command packet to the device.
 
 Read, verify checksum, and extract data of a packet from the device.
 
-Input packet structure:
+**Input packet structure:**
 
-    [ length ][ …data… ][ crc ]
+[ length ][ …data… ][ crc ]
 
 
-* ```Returns```
-
-    the extracted data bytes.
+**Returns:** the extracted data bytes.
 
 
 
-* **Return type**
+* **Return type:**
 
     bytes
 
@@ -1525,6 +1523,6 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTQzNzQyOSwtMTk5MTg3NjAzNSwtMT
+eyJoaXN0b3J5IjpbLTkzOTE0MTQ4NSwtMTk5MTg3NjAzNSwtMT
 kzMzA2MTM3MV19
 -->
