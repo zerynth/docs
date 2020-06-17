@@ -242,30 +242,21 @@ If 0x00 (Config), then use key_id to specify any of the four 256-bit blocks of t
 
 If key_id has a value greater than three, the command will return an error.
 
-If 0x01 (OTP), use key_id to specify either the first or second 256-bit block
-    of the OTP zone.
+If 0x01 (OTP), use key_id to specify either the first or second 256-bit block of the OTP zone.
 
-If 0x02 (Data), then key_id specifies a slot in the Data zone or a transport
-    key in the hardware array.
+If 0x02 (Data), then key_id specifies a slot in the Data zone or a transport key in the hardware array.
 
-If 0x03 (Shared Nonce), then key_id specifies the location of the input value
-    in the message generation.
+If 0x03 (Shared Nonce), then key_id specifies the location of the input value in the message generation.
 
-If 0x04 (Counter), then key_id specifies the monotonic counter ID to be
-    included in the message generation.
+If 0x04 (Counter), then key_id specifies the monotonic counter ID to be included in the message generation.
 
-If 0x05 (Key Config), then key_id specifies the slot for which the
-    configuration information is to be included in the message generation.
+If 0x05 (Key Config), then key_id specifies the slot for which the configuration information is to be included in the message generation.
 
 
 
-    * ```key_id``` (```bytes```) – Identification number of the key to be used, selection of which OTP
-    block or message order for Shared Nonce mode.
+-	**key_id** (*bytes*) – Identification number of the key to be used, selection of which OTP block or message order for Shared Nonce mode.
 
-
-    * ```other_data``` (```bytes```) – 4 bytes of data for SHA calculation when using a NoMac
-    key, 32 bytes for “Shared Nonce” mode, otherwise ignored.
-    (Default value = bytes())
+-	**other_data**(*bytes*) – 4 bytes of data for SHA calculation when using a NoMac key, 32 bytes for “Shared Nonce” mode, otherwise ignored. (Default value = bytes())
 
 
 
@@ -1280,8 +1271,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyOTEyMjUzNiwyNTQ5ODc0OTksMTQwOD
-E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
-LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
-YxMzcxXX0=
+eyJoaXN0b3J5IjpbLTE5NjU0NDI5MTgsMjU0OTg3NDk5LDE0MD
+gxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUy
+MSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
+A2MTM3MV19
 -->
