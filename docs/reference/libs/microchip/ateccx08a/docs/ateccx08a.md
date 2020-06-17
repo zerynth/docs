@@ -7,10 +7,7 @@ Furthermore an interface to allow the use of chip-related functionalities from o
 ## Auxiliary methods
 
 
----
-#### `#!py3 crc16()`
-
-!!!abstract "`#!py3 crc16(data: bytes)`"
+**`crc16(data:bytes)`**
 
 Compute the CRC16 checksum for some bytes.
 The CRC is calculated using 0x8005 as polynomial and starting with the registry set as 0x00.
@@ -37,10 +34,7 @@ The CRC is calculated using 0x8005 as polynomial and starting with the registry 
 ## ATECC508A class
 
 
----
-#### `#!py3 ATECC508A()`
-
-!!!abstract "`#!py3 ATECC508A(i2c.I2C)`"
+**`class ATECC508A(i2c.I2C)`**
 
 Class for controlling the ATECC508A chip.
 
@@ -1560,3 +1554,6 @@ This class inherits all ATECC508A methods.
 
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIxMjMzMTEyOV19
+-->
