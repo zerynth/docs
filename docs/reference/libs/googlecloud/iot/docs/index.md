@@ -16,6 +16,12 @@ Contents:
          -   [Controlled publish period](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/examples/examples.html#controlled-publish-period)
 
 
+
+* Google Cloud IoT Core Library
+
+
+    * The Device class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTQwMTg1MjBdfQ==
+eyJoaXN0b3J5IjpbLTE5MTMxNzczMTMsLTEyMTQwMTg1MjBdfQ
+==
 -->
