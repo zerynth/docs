@@ -256,27 +256,23 @@ If 0x05 (Key Config), then key_id specifies the slot for which the configuration
 
 -	**key_id** (*bytes*) – Identification number of the key to be used, selection of which OTP block or message order for Shared Nonce mode.
 
--	**other_data**(*bytes*) – 4 bytes of data for SHA calculation when using a NoMac key, 32 bytes for “Shared Nonce” mode, otherwise ignored. (Default value = bytes())
+-	**other_data** (*bytes*) – 4 bytes of data for SHA calculation when using a NoMac key, 32 bytes for “Shared Nonce” mode, otherwise ignored. (Default value = bytes())
 
 
 
-* ```Returns```
-
-    True if the operation completed successfully.
+**Returns:** True if the operation completed successfully.
 
 
 
-* **Return type**
+**Return type:** bool
 
-    bool
 
 
 **`gen_private_key(self,key_slot:int,create_digest=False,other_data=bytes(3))`**
 
 Generate an ECC private key.
 
-
-* ```Arguments```
+**Arguments:**
 
     
     * ```key_slot``` (```bytes```) – Specifies the slot where the private ECC key is generated.
@@ -1271,8 +1267,8 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjU0NDI5MTgsMjU0OTg3NDk5LDE0MD
-gxOTU0MTYsLTU0MjU2NTE2MCwtNzc4MzI5MzI5LDYxODA4MTUy
-MSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5MTg3NjAzNSwtMTkzMz
-A2MTM3MV19
+eyJoaXN0b3J5IjpbMTQ1NTc0MDMzMCwyNTQ5ODc0OTksMTQwOD
+E5NTQxNiwtNTQyNTY1MTYwLC03NzgzMjkzMjksNjE4MDgxNTIx
+LDY5NTU2NDAzNiwyMTE3NzU5LC0xOTkxODc2MDM1LC0xOTMzMD
+YxMzcxXX0=
 -->
