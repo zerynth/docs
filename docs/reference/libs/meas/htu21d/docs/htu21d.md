@@ -1,13 +1,9 @@
 # HTU21D Module
 
-This module contains the driver for MEAS HTU21D Relative Humidity and Temperature sensor.
-The HTU21D is capable of direct I2C communication and can be set on 4 different level of resolution in both temperature and humidity measurements ([datasheet](http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FHPC199_6%7FA%7Fpdf%7FEnglish%7FENG_DS_HPC199_6_A.pdf%7FCAT-HSC0004)).
+This module contains the driver for MEAS HTU21D Relative Humidity and Temperature sensor. The HTU21D is capable of direct I2C communication and can be set on 4 different level of resolution in both temperature and humidity measurements ([datasheet](http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FHPC199_6%7FA%7Fpdf%7FEnglish%7FENG_DS_HPC199_6_A.pdf%7FCAT-HSC0004)).
 
 
----
-#### `#!py3 HTU21D()`
-
-!!!abstract "`#!py3 HTU21D(i2cdrv, addr=0x40, clk=400000)`"
+**`class HTU21D(i2cdrv,addr=0x40,clk=400000)`**
 
 Creates an intance of a new HTU21D.
 
@@ -157,3 +153,6 @@ Returns humid
 Retrieves both temperature and humidity in one call.
 
 Returns temp, humid
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc1MzQ5ODc5XX0=
+-->
