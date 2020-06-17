@@ -666,7 +666,7 @@ TempKey.SourceFlag is set to Input.
 
 
 
-**`privwrite_cmd(self, encrypt_input: bool, key_id: bytes, value: bytes, mac: bytes)`**
+**`privwrite_cmd(self,encrypt_input:bool,key_id:bytes,value:bytes,mac:bytes)`**
 
 Write an ECC private key into a slot in the Data zone.
 
@@ -711,10 +711,7 @@ See datasheet page 80 for full details.
 
 
 
----
-#### `#!py3 random_cmd()`
-
-!!!abstract "`#!py3 random_cmd(self, force_no_eeprom_update=False)`"
+**`random_cmd(self,force_no_eeprom_update=False)`**
 
 Generate a random number.
 The number is generated using a seed stored in the EEPROM and a hardware RNG.
@@ -742,11 +739,7 @@ The number is generated using a seed stored in the EEPROM and a hardware RNG.
     bytes
 
 
-
----
-#### `#!py3 read_cmd()`
-
-!!!abstract "`#!py3 read_cmd(self, zone: str, address: bytes, read_32_bytes: bool)`"
+**`read_cmd(self,zone:str,address:bytes,read_32_bytes:bool)`**
 
 Read bytes from the device.
 
@@ -787,11 +780,7 @@ See datasheet page 10 for zones details.
     bytes
 
 
-
----
-#### `#!py3 sha_start_cmd()`
-
-!!!abstract "`#!py3 sha_start_cmd(self)`"
+**`sha_start_cmd(self)`**
 
 Start a SHA-256 digest computation.
 This command must be run before sha_end_cmd().
@@ -809,10 +798,7 @@ This command must be run before sha_end_cmd().
 
 
 
----
-#### `#!py3 sha_hmacstart_cmd()`
-
-!!!abstract "`#!py3 sha_hmacstart_cmd(self, key_id: bytes)`"
+sha_hmacstart_cmd(self, key_id: bytes)
 
 Start a HMAC digest computation.
 
@@ -1377,7 +1363,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjU3NjM1MSwtNTQyNTY1MTYwLC03Nz
+eyJoaXN0b3J5IjpbMTM2NzM4ODU2MSwtNTQyNTY1MTYwLC03Nz
 gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
 OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
 -->
