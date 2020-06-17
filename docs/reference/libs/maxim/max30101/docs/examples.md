@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.maxim.max30101
+The following are a list of examples for lib.maxim.max30101.
 
 ## Detect Heart Rate with MAX30101
 
@@ -107,3 +107,6 @@ while True:
     print("---------------------------")
     sleep(3000)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDE0MDMzMzVdfQ==
+-->
