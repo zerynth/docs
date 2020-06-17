@@ -222,12 +222,12 @@ For full documentation check datasheet at pages 63-64.
 
 
 
-**`ecdh_cmd(key_id:bytes,x_comp:bytes, y_comp: bytes)`**
+**`ecdh_cmd(key_id:bytes,x_comp:bytes,y_comp:bytes)`**
 
 Generate an ECDH master secret using stored private key and input public key.
 
 
-* ```Arguments```
+**Arguments:**
 
     
     * ```key_id``` (```bytes```) – The private key to be used in the ECDH calculation.
@@ -251,11 +251,8 @@ Generate an ECDH master secret using stored private key and input public key.
 * **Return type**
 
     bytes
-
-
-
----
-#### `#!py3 gendig_cmd()`
+    
+gendig_cmd()
 
 !!!abstract "`#!py3 gendig_cmd(self, zone: int, key_id: bytes, other_data=bytes())`"
 
@@ -1424,7 +1421,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzEwMDMzMiwtNTQyNTY1MTYwLC03Nz
-gzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3NzU5LC0x
-OTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbNTgwMzc1ODcsLTU0MjU2NTE2MCwtNzc4Mz
+I5MzI5LDYxODA4MTUyMSw2OTU1NjQwMzYsMjExNzc1OSwtMTk5
+MTg3NjAzNSwtMTkzMzA2MTM3MV19
 -->
