@@ -46,10 +46,8 @@ Add a new action to this thing.
 Register a new event type to this Thing.
 
 
-**`evt_id`** is a string for identifying uniquely this event type.
-
-
-**description** is a human readable description for this event.
+-	**evt_id** is a string for identifying uniquely this event type.
+-	**description** is a human readable description for this event.
 
 
 **`signal_event(evt_id,inp_data=None)`**
@@ -57,15 +55,15 @@ Register a new event type to this Thing.
 Log a new event of type evt_id.
 
 
-* ```evt_id``` is a string for choosing a registered event type.
+**evt_id** is a string for choosing a registered event type.
 
 
-* ```inp_data``` is an optional argument for this event type.
+**inp_data** is an optional argument for this event type.
 
 
 **`as_dict()`**
 
 Return a dict representing this Thing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MzcwOTY4MiwtMTMwNDIwODc2MF19
+eyJoaXN0b3J5IjpbOTU5MjU5NTUwLC0xMzA0MjA4NzYwXX0=
 -->
