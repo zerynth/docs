@@ -294,33 +294,29 @@ If color oled display is enabled; draws a single pixel in the screen colored wit
 -	**encode(bool)** – flag for enabling the color encoding; default True
 
 
-```NOTE```: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
-it is necessary to encode it into a 16 bit format.
+**NOTE:** The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
 
 
----
-#### `#!py3 draw_text()`
-
-!!!abstract "`#!py3 draw_text(text, x=None, y=None, w=None, h=None, color=None, align=None, background=None, encode=True)`"
+**`draw_text(text,x=None,y=None,w=None,h=None,color=None,align=None,background=None,encode=True)`**
 
 If color oled display is enabled; prints a string inside a text box in the screen.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```text``` – string to be written in the display
+text – string to be written in the display
 
 
-    * ```x``` – x-coordinate for left high corner of the text box; default None
+x – x-coordinate for left high corner of the text box; default None
 
 
-    * ```y``` – y-coordinate for left high corner of the text box; default None
+y – y-coordinate for left high corner of the text box; default None
 
 
-    * ```w``` – width of the text box; default None
+w``` – width of the text box; default None
 
 
     * ```h``` – height of the text box; default None
@@ -397,6 +393,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDczNTA1NCwxMjI5MzA1NDUyLDg5OT
-A2NjQ3NF19
+eyJoaXN0b3J5IjpbLTE5NjE0OTU4MDcsMTIyOTMwNTQ1Miw4OT
+kwNjY0NzRdfQ==
 -->
