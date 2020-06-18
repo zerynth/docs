@@ -13,16 +13,9 @@ Creates an instance of a new HEXIWEAR.
 
     
 -	**battery_en(bool)** – Flag for enabling the battery level reading feature; default True
-
-
 -	**oled_en(bool)** – Flag for enabling the onboard color oled display; default True
-
 -	**amb_light_en(bool)** – Flag for enabling the ambient light sensor; default True
-
-
 -	**heart_rate_en(bool)** – Flag for enabling the heart rate sensor; default True
-
-
 -	**temp_humid_en(bool)** – Flag for enabling the temperature and humidity sensor; default True
 
 
@@ -53,10 +46,7 @@ gyro = hexi.get_gyroscope_data()
 ```
 
 
----
-#### `#!py3 get_battery_level()`
-
-!!!abstract "`#!py3 get_battery_level(chg_state)`"
+**`get_battery_level(chg_state)`**
 
 If battery level reading feature is enabled; retrieves the current battery level in percentage and the charging battery status if *chg=True* is provided.
 
@@ -511,5 +501,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTYzMjgzM119
+eyJoaXN0b3J5IjpbLTIxMDY0MzEyNTFdfQ==
 -->
