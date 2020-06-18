@@ -18,15 +18,14 @@ lamp.set_LED_colors(["green","green","white","red","red"])
 
 **WARNING:** To be able to communicate via HTTP or MODBUS TCP the patlite la6 must be previously configured to accept commands via these protocols. Set the “Control-system Switchover” parameter on the “Main Unit Setup” page to the “Command Control” value via the web interface.
 
+## la6HTTP class
+
 **`class la6HTTP(colors=["off,"off,"off","off","off"],buzzer="off",flash="off",address="192.168.10.1")`**
 
 Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP protocol.
 
 
-* ```Arguments```
-
-    
-    * ```colors``` – Array of 5 positions containing the colors of the led strips.
+**Arguments:** colors` – Array of 5 positions containing the colors of the led strips.
 
     | String
 
@@ -305,5 +304,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 ### clear()
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjE2OTg3OTRdfQ==
+eyJoaXN0b3J5IjpbMTI0NzY4OTAyNV19
 -->
