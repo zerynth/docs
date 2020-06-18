@@ -120,7 +120,7 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 
 
-### set_LED_colors(colors)
+**`set_LED_colors(colors)`**
 
 * ```Arguments```
 
@@ -129,7 +129,7 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 
 
-### set_buzzer(buzzer)
+**`set_buzzer(buzzer)`**
 
 * ```Arguments```
 
@@ -138,7 +138,7 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 
 
-### set_flash(flash)
+**`set_flash(flash)`**
 
 * ```Arguments```
 
@@ -147,11 +147,12 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 
 
-### clear()
+**`clear()`**
+
 LED unit and buzzer reset.
 
 
-### set_smartmode(command)
+**`set_smartmode(command)`**
 
 * ```Arguments```
 
@@ -162,7 +163,8 @@ LED unit and buzzer reset.
 ## la6MODBUS class
 
 
-### class la6MODBUS(colors=["off,"off,"off","off","off"], buzzer="off", flash="off", address="192.168.10.1", port=502)
+**`class la6MODBUS(colors=["off,"off,"off","off","off"],buzzer="off",flash="off",address="192.168.10.1",port=502)`**
+
 Create an instance of the la6MODBUS class for control patlite la6 lamp with MODBUS TCP protocol.
 
 
@@ -266,7 +268,7 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 
 
-### set_LED_colors(colors)
+set_LED_colors(colors)
 
 * ```Arguments```
 
@@ -305,5 +307,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 ### clear()
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODI1NTI5M119
+eyJoaXN0b3J5IjpbMTIxNDc0ODg2XX0=
 -->
