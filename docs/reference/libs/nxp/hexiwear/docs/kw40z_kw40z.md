@@ -1,39 +1,29 @@
 # KW40Z Module
 
-The KW40Z SoC can be used in applications as a “BlackBox” modem by simply adding
-BLE or IEEE Std. 802.15.4 connectivity to an existing embedded controller system, or
-used as a stand-alone smart wireless sensor with embedded application where no host
-controller is required. ([datasheet](http://www.nxp.com/assets/documents/data/en/data-sheets/MKW40Z160.pdf)).
+The KW40Z SoC can be used in applications as a “BlackBox” modem by simply adding BLE or IEEE Std. 802.15.4 connectivity to an existing embedded controller system, or
+used as a stand-alone smart wireless sensor with embedded application where no host controller is required. ([datasheet](http://www.nxp.com/assets/documents/data/en/data-sheets/MKW40Z160.pdf)).
 
 This module contains the driver for NXP KW40Z Bluetooth Low Energy chip mounted on the Hexiwear device and pre-loaded of the related original default application firmware.
 This application exposes all features through a specific serial communication protocol, handles all capacitive touch buttons on Hexiwear device and permits to exchange Hexiwear sensor data via bluetoooth.
 
-```NOTE```: This module works only if the **HEXIWEAR_KW40.bin** file is loaded on the nxp kw40z chip.
+**NOTE:** This module works only if the **HEXIWEAR_KW40.bin** file is loaded on the nxp kw40z chip.
 
 
-* The binary file can be found [here](https://github.com/MikroElektronika/HEXIWEAR/tree/master/SW/binaries)
+* The binary file can be found [here](https://github.com/MikroElektronika/HEXIWEAR/tree/master/SW/binaries).
+* A step-by-step tutorial for loading the binary file inside the kw40z chip can be found [here](https://mcuoneclipse.com/2016/12/07/flashing-and-restoring-the-hexiwear-firmware/).
 
 
-* A step-by-step tutorial for loading the binary file inside the kw40z chip can be found [here](https://mcuoneclipse.com/2016/12/07/flashing-and-restoring-the-hexiwear-firmware/)
-
-
----
-#### `#!py3 KW40Z_HEXI_APP()`
-
-!!!abstract "`#!py3 KW40Z_HEXI_APP(ser)`"
+**`KW40Z_HEXI_APP(ser)`**
 
 Creates an intance of a new KW40Z_HEXI_APP.
 
 
-* ```Arguments```
-
-    
-    * ```ser``` – Serial used ‘( SERIAL1, … )’
+**`Arguments:`** **ser** – Serial used ‘( SERIAL1, … )’
 
 
 Example:
 
-```
+```py
 from nxp.kw40z import kw40z
 
 ...
@@ -187,3 +177,6 @@ Retrieves the device setting informations regarding the Bluetooth status, which 
 * Link Status (```bool```): 1 device is connected, 0 device is disconnected.
 
 Returns bt_on, bt_touch, bt_link
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTk0MjU5MzQzXX0=
+-->
