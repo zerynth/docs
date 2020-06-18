@@ -94,56 +94,37 @@ If gyroscope is enabled; retrieves the current gyroscope data from the onboard s
 Returns [gyro_x, gyro_y, gyro_z] or None
 
 
----
-#### `#!py3 get_ambient_light()`
-
-!!!abstract "`#!py3 get_ambient_light()`"
+**`get_ambient_light()`**
 
 If ambient light sensor is enabled; Converts the raw sensor values to the standard SI lux equivalent.
 
 Returns lux or None
 
 
----
-#### `#!py3 get_heart_rate()`
-
-!!!abstract "`#!py3 get_heart_rate()`"
+**`get_heart_rate()`**
 
 If heart rate sensor is enabled; retrieves the current heart rate from the onboard sensor as value in bpm (beat per minute).
 
 Returns heart_rate or None
 
-
----
-#### `#!py3 get_altitude()`
-
-!!!abstract "`#!py3 get_altitude()`"
+**`get_altitude()`**
 
 If pressure sensor is enabled; calculates, from measured pressure, the current altitude data as value in meters.
 
 Returns altitude or None
 
 
----
-#### `#!py3 attach_button_up()`
-
-!!!abstract "`#!py3 attach_button_up(callback)`"
+**`attach_button_up(callback)`**
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Up on Hexiwear device is pressed.
 
 
----
-#### `#!py3 attach_button_down()`
-
-!!!abstract "`#!py3 attach_button_down(callback)`"
+**`attach_button_down(callback)`**
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Down on Hexiwear device is pressed.
 
 
----
-#### `#!py3 attach_button_left()`
-
-!!!abstract "`#!py3 attach_button_left(callback)`"
+**`attach_button_left(callback)`**
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Left on Hexiwear device is pressed.
 
@@ -475,5 +456,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTc5MjU0Nl19
+eyJoaXN0b3J5IjpbODk5MDY2NDc0XX0=
 -->
