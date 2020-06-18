@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.nordic.nrf52_ble
+The following are a list of examples for lib.nordic.nrf52_ble.
 
 ## BLE Alerts
 
@@ -554,3 +554,6 @@ while True:
 
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0MDU3NDcwODddfQ==
+-->
