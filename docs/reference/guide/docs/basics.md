@@ -81,7 +81,7 @@ If a variable is not “defined” (assigned a value), trying to use it will giv
 
 Besides numbers, Python can also manipulate strings, which can be expressed in several ways.  They can be enclosed in single quotes (`'...'`) or double quotes (`"..."`) with the same result.  `\\` can be used to escape quotes:
 
-```
+```py
 >>> 'spam eggs'  # single quotes
 'spam eggs'
 >>> 'doesn\'t'  # use \' to escape the single quote...
@@ -98,7 +98,7 @@ Besides numbers, Python can also manipulate strings, which can be expressed in s
 
 Strings can be concatenated (glued together) with the `+` operator, and repeated with `*`:
 
-```
+```py
 >>> # 3 times 'un', followed by 'ium'
 >>> 3 * 'un' + 'ium'
 'unununium'
@@ -106,14 +106,14 @@ Strings can be concatenated (glued together) with the `+` operator, and repeated
 
 Two or more *string literals* (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.
 
-```
+```py
 >>> 'Py' 'thon'
 'Python'
 ```
 
 This only works with two literals though, not with variables or expressions:
 
-```
+```py
 >>> prefix = 'Py'
 >>> prefix 'thon'  # can't concatenate a variable and a string literal
   ...
@@ -125,14 +125,14 @@ SyntaxError: invalid syntax
 
 If you want to concatenate variables or a variable and a literal, use `+`:
 
-```
+```py
 >>> prefix + 'thon'
 'Python'
 ```
 
 This feature is particularly useful when you want to break long strings:
 
-```
+```py
 >>> text = ('Put several strings within parentheses '
             'to have them joined together.')
 >>> text
@@ -141,7 +141,7 @@ This feature is particularly useful when you want to break long strings:
 
 Strings can be ```indexed``` (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
 
-```
+```py
 >>> word = 'Python'
 >>> word[0]  # character in position 0
 'P'
@@ -151,7 +151,7 @@ Strings can be ```indexed``` (subscripted), with the first character having inde
 
 Indices may also be negative numbers, to start counting from the right:
 
-```
+```py
 >>> word[-1]  # last character
 'n'
 >>> word[-2]  # second-last character
@@ -164,7 +164,7 @@ Note that since -0 is the same as 0, negative indices start from -1.
 
 In addition to indexing, ```slicing``` is also supported.  While indexing is used to obtain individual characters, ```slicing``` allows you to obtain substring:
 
-```
+```py
 >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
 'Py'
 >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
@@ -183,7 +183,7 @@ makes sure that `s[:i] + s[i:]` is always equal to `s`:
 
 Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.
 
-```
+```py
 >>> word[:2]  # character from the beginning to position 2 (excluded)
 'Py'
 >>> word[4:]  # characters from position 4 (included) to the end
@@ -194,7 +194,7 @@ Slice indices have useful defaults; an omitted first index defaults to zero, an 
 
 Python strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string results in an error:
 
-```
+```py
 >>> word[0] = 'J'
   ...
 TypeError: 'str' object does not support item assignment
@@ -205,7 +205,7 @@ TypeError: 'str' object does not support item assignment
 
 If you need a different string, you should create a new one:
 
-```
+```py
 >>> 'J' + word[1:]
 'Jython'
 >>> word[:2] + 'py'
@@ -214,7 +214,7 @@ If you need a different string, you should create a new one:
 
 The built-in function `len()` returns the length of a string:
 
-```
+```py
 >>> s = 'supercalifragilisticexpialidocious'
 >>> len(s)
 34
@@ -225,7 +225,7 @@ The built-in function `len()` returns the length of a string:
 Python knows a number of ```compound``` data types, used to group together other values.  The most versatile is the ```list```, which can be written as a list of
 comma-separated values (items) between square brackets.  Lists might contain items of different types, but usually the items all have the same type.
 
-```
+```py
 >>> squares = [1, 4, 9, 16, 25]
 >>> squares
 [1, 4, 9, 16, 25]
@@ -233,7 +233,7 @@ comma-separated values (items) between square brackets.  Lists might contain ite
 
 Like strings (and all other built-in sequence type), lists can be indexed and sliced:
 
-```
+```py
 >>> squares[0]  # indexing returns the item
 1
 >>> squares[-1]
@@ -244,21 +244,21 @@ Like strings (and all other built-in sequence type), lists can be indexed and sl
 
 All slice operations return a new list containing the requested elements.  This means that the following slice returns a new (shallow) copy of the list:
 
-```
+```py
 >>> squares[:]
 [1, 4, 9, 16, 25]
 ```
 
 Lists also support operations like concatenation:
 
-```
+```py
 >>> squares + [36, 49, 64, 81, 100]
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
 Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content:
 
-```
+```py
 >>> cubes = [1, 8, 27, 65, 125]  # something's wrong here
 >>> 4 ** 3  # the cube of 4 is 64, not 65!
 64
@@ -269,7 +269,7 @@ Unlike strings, which are immutable, lists are a mutable type, i.e. it is possib
 
 You can also add new items at the end of the list, by using the `append()` ```method``` (we will see more about methods later):
 
-```
+```py
 >>> cubes.append(216)  # add the cube of 6
 >>> cubes.append(7 ** 3)  # and the cube of 7
 >>> cubes
@@ -278,7 +278,7 @@ You can also add new items at the end of the list, by using the `append()` ```me
 
 Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:
 
-```
+```py
 >>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 >>> letters
 ['a', 'b', 'c', 'd', 'e', 'f', 'g']
@@ -298,7 +298,7 @@ Assignment to slices is also possible, and this can even change the size of the 
 
 The built-in function `len()` also applies to lists:
 
-```
+```py
 >>> letters = ['a', 'b', 'c', 'd']
 >>> len(letters)
 4
@@ -743,7 +743,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTE1MTExODMsLTM5NDgzOTEzMywtMT
-IzNDg5MDA1NiwyMDIyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEy
-MTY0MCwtMTA0ODE0MDYwNCwtMTEwMTkxNDUyOF19
+eyJoaXN0b3J5IjpbMTk2NzE3Nzc3MiwtMzk0ODM5MTMzLC0xMj
+M0ODkwMDU2LDIwMjI5MTg4MjgsMjA0MTk0MTAwLC0xOTA1MTIx
+NjQwLC0xMDQ4MTQwNjA0LC0xMTAxOTE0NTI4XX0=
 -->
