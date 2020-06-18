@@ -188,23 +188,17 @@ If bluetooth driver is enabled; disables the automatic update of all sensor valu
 If color oled display is enabled; turns on the onboard display.
 
 
-display_off()
+**`display_off()`**
 
 If color oled display is enabled; turns off the onboard display.
 
 
----
-#### `#!py3 clear_display()`
-
-!!!abstract "`#!py3 clear_display()`"
+**`clear_display()`**
 
 If color oled display is enabled; clears the onboard display.
 
 
----
-#### `#!py3 fill_screen()`
-
-!!!abstract "`#!py3 fill_screen(color, encode=True)`"
+**`fill_screen(color,encode=True)`**
 
 If color oled display is enabled; fills the entire display with color code provided as argument.
 
@@ -224,10 +218,7 @@ it is necessary to encode it into a 16 bit format.
 If a 16 bit color code is provided, the encode flag must be set to False.
 
 
----
-#### `#!py3 fill_rect()`
-
-!!!abstract "`#!py3 fill_rect(x, y, w, h, color, encode=True)`"
+**`fill_rect(x,y,w,h,color,encode=True)`**
 
 If color oled display is enabled; draws a rectangular area in the screen colored with the color code provided as argument.
 
@@ -419,5 +410,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIzMTc5NzU4LDg5OTA2NjQ3NF19
+eyJoaXN0b3J5IjpbMTMyNTkwNzkyNSw4OTkwNjY0NzRdfQ==
 -->
