@@ -128,11 +128,7 @@ If bluetooth driver is enabled; sets the callback function to be executed when C
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Left on Hexiwear device is pressed.
 
-
----
-#### `#!py3 attach_button_right()`
-
-!!!abstract "`#!py3 attach_button_right(callback)`"
+attach_button_right(callback)`"
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Right on Hexiwear device is pressed.
 
@@ -456,5 +452,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5MDY2NDc0XX0=
+eyJoaXN0b3J5IjpbMzIzOTg2ODgsODk5MDY2NDc0XX0=
 -->
