@@ -134,7 +134,7 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 **`set_flash(flash)`**
 
-**Arguments:** flash` – Flash LED unit status.
+**Arguments:** **flash** – Flash LED unit status.
 
 
 
@@ -145,10 +145,7 @@ LED unit and buzzer reset.
 
 **`set_smartmode(command)`**
 
-* ```Arguments```
-
-    
-    * ```command``` – Through this parameter composed of the digits from 1 to 15 it is possible to draw on the SmartMode LED animation functions sanctioned by the lamp manufacturer.
+**Arguments:** **command** – Through this parameter composed of the digits from 1 to 15 it is possible to draw on the SmartMode LED animation functions sanctioned by the lamp manufacturer.
 
 
 ## la6MODBUS class
@@ -158,11 +155,9 @@ LED unit and buzzer reset.
 
 Create an instance of the la6MODBUS class for control patlite la6 lamp with MODBUS TCP protocol.
 
+**Arguments:** 
 
-* ```Arguments```
-
-    
-    * ```colors``` – Array of 5 positions containing the colors of the led strips.
+-	**colors** – Array of 5 positions containing the colors of the led strips.
 
     | String
 
@@ -299,5 +294,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTY0OTgxMThdfQ==
+eyJoaXN0b3J5IjpbLTQwODI0OTYzM119
 -->
