@@ -8,16 +8,11 @@ This module contains the driver for NXP FXOS8700CQ accelerometer and magnetomete
 Creates an intance of a new FXOS8700CQ.
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```i2cdrv``` – I2C Bus used ‘( I2C0, … )’
-
-
-    * ```addr``` – Slave address, default 0x1E
-
-
-    * ```clk``` – Clock speed, default 400kHz
+-	**i2cdrv** – I2C Bus used ‘( I2C0, … )’
+-	**addr** – Slave address, default 0x1E
+-	**clk** – Clock speed, default 400kHz
 
 
 Example:
@@ -335,30 +330,21 @@ Retrieves the current accelerometer data as a tuple of X, Y, Z, raw values
 Returns [ax, ay, az]
 
 
----
-#### `#!py3 get_raw_mag()`
-
-!!!abstract "`#!py3 get_raw_mag()`"
+**`get_raw_mag()`**
 
 Retrieves the current magnetometer data as a tuple of X, Y, Z, raw values
 
 Returns [mx, my, mz]
 
 
----
-#### `#!py3 get_raw_int_temp()`
-
-!!!abstract "`#!py3 get_raw_int_temp()`"
+**`get_raw_int_temp()`**
 
 Retrieves the current internal temperature data as raw values
 
 Returns raw_t
 
 
----
-#### `#!py3 get_acc()`
-
-!!!abstract "`#!py3 get_acc(axis=None)`"
+**`get_acc(axis=None)`**
 
 Retrieves the current accelerometer data in m/s^2 as a tuple of X, Y, Z values or single axis value if axis argument is provided.
 
@@ -372,10 +358,7 @@ Retrieves the current accelerometer data in m/s^2 as a tuple of X, Y, Z values o
 Returns [acc_x, acc_y, acc_z] or acc_x or acc_y or acc_z
 
 
----
-#### `#!py3 get_mag()`
-
-!!!abstract "`#!py3 get_mag(axis=None)`"
+**`get_mag(axis=None)`**
 
 Retrieves the current magnetometer data in uT as a tuple of X, Y, Z values or single axis value if axis argument is provided.
 
@@ -389,10 +372,7 @@ Retrieves the current magnetometer data in uT as a tuple of X, Y, Z values or si
 Returns [mag_x, mag_y, mag_z] or mag_x or mag_y or mag_z
 
 
----
-#### `#!py3 get_int_temp()`
-
-!!!abstract "`#!py3 get_int_temp(unit="C")`"
+**`get_int_temp(unit="C")`**
 
 Retrieves the current device internal temperature value in Celtius, Kelvin or Fahrenheit degrees.
 
@@ -405,5 +385,5 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 Returns int_temp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzA0MzA1XX0=
+eyJoaXN0b3J5IjpbLTEwODQzMDE2MzddfQ==
 -->
