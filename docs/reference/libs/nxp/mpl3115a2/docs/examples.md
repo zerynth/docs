@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.nxp.mpl3115a2
+The following are a list of examples for lib.nxp.mpl3115a2.
 
 ## Read Pressure from MPL3115A2
 
 
-Basic example to read the pressure from MPL3115A2 sensor
+Basic example to read the pressure from MPL3115A2 sensor.
 
 
 
@@ -57,3 +57,6 @@ try:
 except Exception as e:
     print("Error2: ",e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMDUyMzc3MzVdfQ==
+-->
