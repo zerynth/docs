@@ -306,7 +306,7 @@ The built-in function `len()` also applies to lists:
 
 It is possible to nest lists (create lists containing other lists), for example:
 
-```
+```py
 >>> a = ['a', 'b', 'c']
 >>> n = [1, 2, 3]
 >>> x = [a, n]
@@ -326,7 +326,7 @@ Python knows the usual control flow statements known from other languages, with 
 
 Perhaps the most well-known statement type is the `if` statement.  For example:
 
-```
+```py
 >>> x = int(input("Please enter an integer: "))
 Please enter an integer: 42
 >>> if x < 0:
@@ -351,7 +351,7 @@ The `while` statement is in Python similar to C and other most used languages.
 
 The basic example is:
 
-```
+```py
 while True:
   a=a+1
   print(a)
@@ -361,7 +361,7 @@ This code will print 1, 2, 3….. until the execution is killed.
 
 The `True` can be replaced by any boolean expression:
 
-```
+```py
 x=0
 while x<5:
   x=x+1
@@ -382,7 +382,7 @@ iterates over the items of any sequence (a list or a string), in the order that 
 
 For example (no pun intended):
 
-```
+```py
 >>> # Measure some strings:
 ... words = ['cat', 'window', 'defenestrate']
 >>> for w in words:
@@ -400,7 +400,7 @@ make a copy.  Iterating over a sequence does not implicitly make a copy.
 
 If you do need to iterate over a sequence of numbers, the built-in function `range()` comes in handy.  It generates arithmetic progressions:
 
-```
+```py
 >>> for i in range(5):
 ...     print(i)
 ...
@@ -414,7 +414,7 @@ If you do need to iterate over a sequence of numbers, the built-in function `ran
 The given end point is never part of the generated sequence; `range(10)` generates 10 values, the legal indices for items of a sequence of length 10.  It
 is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the ‘step’):
 
-```
+```py
 range(5, 10)
    5 through 9
 
@@ -427,7 +427,7 @@ range(-10, -100, -30)
 
 To iterate over the indices of a sequence, you can combine `range()` and `len()` as follows:
 
-```
+```py
 >>> a = ['Mary', 'had', 'a', 'little', 'lamb']
 >>> for i in range(len(a)):
 ...     print(i, a[i])
@@ -446,7 +446,7 @@ The `break` statement, like in C, breaks out of the smallest enclosing `for` or 
 Loop statements may have an `else` clause; it is executed when the loop terminates through exhaustion of the list (with `for`) or when the
 condition becomes false (with `while`), but not when the loop is terminated by a `break` statement.  This is exemplified by the following loop, which searches for prime numbers:
 
-```
+```py
 >>> for n in range(2, 10):
 ...     for x in range(2, n):
 ...         if n % x == 0:
@@ -472,7 +472,7 @@ When used with a loop, the `else` clause has more in common with the `else` clau
 
 The `continue` statement, also borrowed from C, continues with the next iteration of the loop:
 
-```
+```py
 >>> for num in range(2, 10):
 ...     if num % 2 == 0:
 ...         print("Found an even number", num)
@@ -492,7 +492,7 @@ Found a number 9
 
 The `pass` statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example:
 
-```
+```py
 >>> while True:
 ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)
 ...
@@ -500,7 +500,7 @@ The `pass` statement does nothing. It can be used when a statement is required s
 
 This is commonly used for creating minimal classes:
 
-```
+```py
 >>> class MyEmptyClass:
 ...     pass
 ...
@@ -508,7 +508,7 @@ This is commonly used for creating minimal classes:
 
 Another place `pass` can be used is as a place-holder for a function or conditional body when you are working on new code, allowing you to keep thinking at a more abstract level.  The `pass` is silently ignored:
 
-```
+```py
 >>> def initlog(*args):
 ...     pass   # Remember to implement this!
 ...
@@ -518,7 +518,7 @@ Another place `pass` can be used is as a place-holder for a function or conditio
 
 We can create a function that writes the Fibonacci series to an arbitrary boundary:
 
-```
+```py
 >>> def fib(n):    # write Fibonacci series up to n
 ...     """Print a Fibonacci series up to n."""
 ...     a, b = 0, 1
@@ -581,7 +581,7 @@ object types and methods, using ```classes```, see tut-classes)The method `appen
 
 The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is defined to allow.  For example:
 
-```
+```py
 def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
     while True:
         ok = input(prompt)
@@ -613,7 +613,7 @@ This example also introduces the `in` keyword. This tests whether or not a seque
 
 The default values are evaluated at the point of function definition in the ```defining``` scope, so that
 
-```
+```py
 i = 5
 
 def f(arg=i):
@@ -647,7 +647,7 @@ This will print
 
 If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
 
-```
+```py
 def f(a, L=None):
     if L is None:
         L = []
@@ -659,7 +659,7 @@ def f(a, L=None):
 
 Functions can also be called using keyword arguments of the form `kwarg=value`.  For instance, the following function:
 
-```
+```py
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     print("-- This parrot wouldn't", action, end=' ')
     print("if you put", voltage, "volts through it.")
@@ -669,7 +669,7 @@ def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
 
 accepts one required argument (`voltage`) and three optional arguments (`state`, `action`, and `type`).  This function can be called in any of the following ways:
 
-```
+```py
 parrot(1000)                                          # 1 positional argument
 parrot(voltage=1000)                                  # 1 keyword argument
 parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
@@ -692,7 +692,7 @@ All the keyword arguments passed must match one of the arguments accepted by the
 No argument may receive a value more than once.
 Here’s an example that fails due to this restriction:
 
-```
+```py
 >>> def function(a):
 ...     pass
 ...
@@ -708,7 +708,7 @@ In Python when  a final formal parameter of the form `**name` is present, it rec
 
 Finally, a frequently used option is to specify that a function can be called with an arbitrary number of arguments.  These arguments will be wrapped up in a tuple (see tut-tuples).  Before the variable number of arguments, zero or more normal arguments may occur.
 
-```
+```py
 def write_multiple_items(file, separator, *args):
     file.write(separator.join(args))
 ```
@@ -716,7 +716,7 @@ def write_multiple_items(file, separator, *args):
 Normally, these `variadic` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the ``*args``parameter are ‘keyword-only’ arguments, meaning that they can only be used as
 keywords rather than positional arguments.
 
-```
+```py
 >>> def concat(*args, sep="/"):
 ...    return sep.join(args)
 ...
@@ -732,7 +732,7 @@ The reverse situation occurs when the arguments are already in a list or tuple b
 arguments.  For instance, the built-in `range()` function expects separate ```start``` and ```stop``` arguments.  If they are not available separately, write the
 function call with the  `*`-operator to unpack the arguments out of a list or tuple:
 
-```
+```py
 >>> list(range(3, 6))            # normal call with separate arguments
 [3, 4, 5]
 >>> args = [3, 6]
@@ -743,7 +743,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NzE3Nzc3MiwtMzk0ODM5MTMzLC0xMj
-M0ODkwMDU2LDIwMjI5MTg4MjgsMjA0MTk0MTAwLC0xOTA1MTIx
-NjQwLC0xMDQ4MTQwNjA0LC0xMTAxOTE0NTI4XX0=
+eyJoaXN0b3J5IjpbLTE5NzE0NDIzNTUsLTM5NDgzOTEzMywtMT
+IzNDg5MDA1NiwyMDIyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEy
+MTY0MCwtMTA0ODE0MDYwNCwtMTEwMTkxNDUyOF19
 -->
