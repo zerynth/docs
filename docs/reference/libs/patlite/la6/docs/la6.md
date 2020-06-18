@@ -252,7 +252,7 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 **`set_LED_colors(colors)`**
 
-* ```Arguments```
+**Arguments:**
 
     
     * ```colors``` – Array of 5 positions containing the colors of the led strips.
@@ -290,5 +290,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTY0MTE1XX0=
+eyJoaXN0b3J5IjpbMTc5MzMwMDY5N119
 -->
