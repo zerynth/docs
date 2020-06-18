@@ -10,30 +10,20 @@ A Thing is an object exposing some REST API containing properties, actionsand ev
 
 **`__init__(thing_id,name,description=None,base_url="/",timestamp_fn=None)`**
 
-**thing_id** is the unique id for a Thing
+-	**thing_id** is the unique id for a Thing.
+-	**name** is pretty name for human interfaces.
+-	**description** is a human readable description of this Thing.
+-	**base_url** is the base path, configurable for advanced purposes.
+-	**timestamp_fn** is a function to call for retrieving a timestamp string to be used in events generation.
+
+Store a webserver instance for using it later when an action is created. ..  method:: add_property(prop_id, label, prop_type, getter, setter=None, unit=None, description=None)
+
+Add a new property to this thing.
 
 
-**name** is pretty name for human interfaces
+prop_id is a string for identifying uniquely a property
 
-
-**description** is a human readable description of this Thing
-
-
-**base_url** is the base path, configurable for advanced purposes.
-
-
-**timestamp_fn** is a function to call for retrieving a timestamp string to be used in events generation.
-
-Store a webserver instance for using it later when an action is created.
-..  method:: add_property(prop_id, label, prop_type, getter, setter=None, unit=None, description=None)
-
-> Add a new property to this thing.
-
-
-* ```prop_id``` is a string for identifying uniquely a property
-
-
-* ```label``` is a pretty name for this property
+label is a pretty name for this property
 
 
 * ```prop_type``` can be one of [“integer”, “number”, “boolean”].
@@ -93,6 +83,5 @@ Log a new event of type evt_id.
 ### as_dict()
 Return a dict representing this Thing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjE2MTY5MzcsLTEzMDQyMDg3NjBdfQ
-==
+eyJoaXN0b3J5IjpbMTc4MzIzNTUyMiwtMTMwNDIwODc2MF19
 -->
