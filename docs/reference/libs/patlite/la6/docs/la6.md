@@ -25,7 +25,9 @@ lamp.set_LED_colors(["green","green","white","red","red"])
 Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP protocol.
 
 
-**Arguments:** colors` – Array of 5 positions containing the colors of the led strips.
+**Arguments:** 
+
+-	**colors** – Array of 5 positions containing the colors of the led strips.
 
     | String
 
@@ -84,8 +86,7 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
         |
 
-
-    * ```buzzer``` – Buzzer status upon initialization.
+-	**buzzer** – Buzzer status upon initialization.
 
     | Value
 
@@ -112,7 +113,7 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
      |
 
 
-    * ```flash``` – Flash LED unit status upon initialization [“off” or “on”].
+**`flash`** – Flash LED unit status upon initialization [“off” or “on”].
 
 
     * ```address``` – The IP address of the devices concerned.
@@ -304,5 +305,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 ### clear()
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzY4OTAyNV19
+eyJoaXN0b3J5IjpbLTEwNzQwNTk5NjddfQ==
 -->
