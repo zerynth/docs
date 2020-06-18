@@ -11,10 +11,7 @@ Check out the examples for a jump start.
 ## The Device class
 
 
----
-#### `#!py3 Device()`
-
-!!!abstract "`#!py3 Device(device_id, device_token, client)`"
+c**`lass Device(device_id,device_token,client)`**
 
 Create a Device instance representing an OKdo device.
 
@@ -70,3 +67,6 @@ Modify a device state. After a successful execution, the new state of the device
 a dict where each key is the name of an asset and each value the desired state.
 
 Return the message sent to the OKdo Cloud, or `None` if the message cannot be sent.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMzQ2NDMyMzRdfQ==
+-->
