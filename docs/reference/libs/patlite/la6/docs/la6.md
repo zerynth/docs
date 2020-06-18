@@ -252,37 +252,25 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 **`set_LED_colors(colors)`**
 
-**Arguments:**
-
-    
-    * ```colors``` – Array of 5 positions containing the colors of the led strips.
+**Arguments:** **colors** – Array of 5 positions containing the colors of the led strips.
 
 
 
 **`set_buzzer(buzzer)`**
 
-* ```Arguments```
-
-    
-    * ```buzzer``` – Buzzer status.
+**Arguments:**  **buzzer** – Buzzer status.
 
 
 
 **`set_flash(flash)`**
 
-* ```Arguments```
-
-    
-    * ```flash``` – Flash LED unit status.
+**Arguments:** **flash** – Flash LED unit status.
 
 
 
 **`set_smartmode(command)`**
 
-* ```Arguments```
-
-    
-    * ```command``` – Through this parameter composed of the digits from 1 to 15 it is possible to draw on the SmartMode LED animation functions sanctioned by the lamp manufacturer.
+**Arguments:** **command** – Through this parameter composed of the digits from 1 to 15 it is possible to draw on the SmartMode LED animation functions sanctioned by the lamp manufacturer.
 
 
 
@@ -290,5 +278,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzMwMDY5N119
+eyJoaXN0b3J5IjpbLTgzOTEzNTU5OV19
 -->
