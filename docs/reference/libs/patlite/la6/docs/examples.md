@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.patlite.la6
+The following are a list of examples for lib.patlite.la6.
 
 
 
@@ -268,3 +268,6 @@ while True:
 
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjEwOTU2NjA0N119
+-->
