@@ -3,9 +3,9 @@
 # Thing class
 
 
-### class Thing()
-A Thing is an object exposing some REST API containing properties, actions
-and events.
+**`class Thing`**
+
+A Thing is an object exposing some REST API containing properties, actionsand events.
 
 
 ### \__init__(thing_id, name, description=None, base_url="/", timestamp_fn=None)
@@ -92,3 +92,6 @@ Log a new event of type evt_id.
 
 ### as_dict()
 Return a dict representing this Thing.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMDQyMDg3NjBdfQ==
+-->
