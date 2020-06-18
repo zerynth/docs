@@ -24,24 +24,15 @@ Tries to init the lbee5kl1dx driver.
 
 
 
----
-#### `#!py3 auto_init()`
-
-!!!abstract "`#!py3 auto_init(country="US")`"
+**`auto_init(country="US")`**
 
 
-* ```Arguments```
-
-    
-    * ```contry``` – two-letter country code
+**Arguments:** **contry** – two-letter country code
 
 
 Tries to automatically init the lbee5kl1dx driver by looking at the device type.
 
-
-* **Raises PeripheralError**
-
-    in case of failed initialization
+**Raises PeripheralError:** in case of failed initialization
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjE0MDQ3ODRdfQ==
+eyJoaXN0b3J5IjpbMjA5Mjk5MzMxNV19
 -->
