@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.nxp.hexiwear
+The following are a list of examples for lib.nxp.hexiwear.
 
 ## Basic example of use for Hexiwear Library
 
@@ -121,8 +121,7 @@ while True:
 ## Basic example of use for kw40z on hexiwear device
 
 
-Interact with ble chip on hexiwear device to set on/off the bluetooth feature and to test the 
-bluetooth pairing
+Interact with ble chip on hexiwear device to set on/off the bluetooth feature and to test the bluetooth pairing.
 
 
 
@@ -313,3 +312,6 @@ while True:
         sleep(1000)
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2NTAyODU1M119
+-->
