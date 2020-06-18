@@ -5,7 +5,7 @@ The following are a list of examples for lib.okdo.iot.
 ## MQTT
 
 
-A simple example connecting a device to the OKDO IoT cloud using the MQTT protocol
+A simple example connecting a device to the OKDO IoT cloud using the MQTT protocol.
 
 
 
@@ -105,7 +105,7 @@ except Exception as e:
 ## HTTP
 
 
-A simple example connecting a device to the OKDO IoT cloud using the HTTP protocol
+A simple example connecting a device to the OKDO IoT cloud using the HTTP protocol.
 
 
 
@@ -191,5 +191,5 @@ except Exception as e:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDIxMDc2NF19
+eyJoaXN0b3J5IjpbLTE2MTE2MjcwMDRdfQ==
 -->
