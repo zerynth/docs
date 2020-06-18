@@ -128,57 +128,37 @@ If bluetooth driver is enabled; sets the callback function to be executed when C
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Left on Hexiwear device is pressed.
 
-attach_button_right(callback)`"
+**`attach_button_right(callback)`**
 
 If bluetooth driver is enabled; sets the callback function to be executed when Capacitive Button Right on Hexiwear device is pressed.
 
 
----
-#### `#!py3 attach_passkey()`
-
-!!!abstract "`#!py3 attach_passkey(callback)`"
+**`attach_passkey(callback)`**
 
 If bluetooth driver is enabled; sets the callback function to be executed when KW40Z receives a bluetooth pairing request.
 
 ```NOTE```: When the KW40Z receives this kind of request it generates a pairing code stored in the passkey KW40Z class attribute of bt_driver internal instance.
 
-
----
-#### `#!py3 bluetooth_on()`
-
-!!!abstract "`#!py3 bluetooth_on()`"
+**`bluetooth_on()`**
 
 If bluetooth driver is enabled; turns on the bluetooth features.
 
 
----
-#### `#!py3 bluetooth_off()`
-
-!!!abstract "`#!py3 bluetooth_off()`"
+**`bluetooth_off()`**
 
 If bluetooth driver is enabled; turns off the bluetooth features.
 
-
----
-#### `#!py3 right_capacitive_buttons_active()`
-
-!!!abstract "`#!py3 right_capacitive_buttons_active()`"
+**`right_capacitive_buttons_active()`**
 
 If bluetooth driver is enabled; turns active the right pair of capacitive buttons.
 
 
----
-#### `#!py3 right_capacitive_buttons_active()`
-
-!!!abstract "`#!py3 right_capacitive_buttons_active()`"
+**`right_capacitive_buttons_active()`**
 
 If bluetooth driver is enabled; turns active the left pair of capacitive buttons.
 
 
----
-#### `#!py3 bluetooth_info()`
-
-!!!abstract "`#!py3 bluetooth_info()`"
+**`bluetooth_info()`**
 
 If bluetooth driver is enabled; retrieves the bluetooth chip informations regarding the status, which capacitive touch buttons are active, and the “connection with other devices” status.
 
@@ -194,34 +174,21 @@ If bluetooth driver is enabled; retrieves the bluetooth chip informations regard
 Returns bt_on, bt_touch, bt_link
 
 
----
-#### `#!py3 enable_bt_upd_sensors()`
-
-!!!abstract "`#!py3 enable_bt_upd_sensors()`"
+**`enable_bt_upd_sensors()`**
 
 If bluetooth driver is enabled; enables the automatic update of all sensor values in the KW40Z bluetooth chip to be readable through any smartphone/tablet/pc bluetooth terminal (once every 5 seconds).
 
-
----
-#### `#!py3 disable_bt_upd_sensors()`
-
-!!!abstract "`#!py3 disable_bt_upd_sensors()`"
+**`disable_bt_upd_sensors()`**
 
 If bluetooth driver is enabled; disables the automatic update of all sensor values in the KW40Z bluetooth chip.
 
 
----
-#### `#!py3 display_on()`
-
-!!!abstract "`#!py3 display_on()`"
+**`display_on()`**
 
 If color oled display is enabled; turns on the onboard display.
 
 
----
-#### `#!py3 display_off()`
-
-!!!abstract "`#!py3 display_off()`"
+display_off()
 
 If color oled display is enabled; turns off the onboard display.
 
@@ -452,5 +419,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzOTg2ODgsODk5MDY2NDc0XX0=
+eyJoaXN0b3J5IjpbNzIzMTc5NzU4LDg5OTA2NjQ3NF19
 -->
