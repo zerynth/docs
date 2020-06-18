@@ -285,19 +285,13 @@ Clicking on the “Get C string” button, the tool converts your image with you
 If color oled display is enabled; draws a single pixel in the screen colored with the color code provided as argument.
 
 
-A
+**Arguments:**
 
     
-    * ```x``` – pixel x-coordinate
-
-
-    * ```y``` – pixel y-coordinate
-
-
-    * ```color``` – hex color code for the pixel
-
-
-    * **encode(bool)** – flag for enabling the color encoding; default True
+-	**x** – pixel x-coordinate
+-	**y** – pixel y-coordinate
+-	**color** – hex color code for the pixel 
+-	**encode(bool)** – flag for enabling the color encoding; default True
 
 
 ```NOTE```: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
@@ -403,6 +397,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzQyMTkxOSwxMjI5MzA1NDUyLDg5OT
+eyJoaXN0b3J5IjpbMTA3NDczNTA1NCwxMjI5MzA1NDUyLDg5OT
 A2NjQ3NF19
 -->
