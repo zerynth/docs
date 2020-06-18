@@ -254,22 +254,21 @@ If a 16 bit color code is provided, the encode flag must be set to False.
 If color oled display is enabled; draws a rectangular area in the screen colored with the color code provided as argument.
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```image``` – image to draw in the oled display converted to hex array format and passed as bytearray
-
-
-    * ```x``` – x-coordinate for left high corner of the image
+**image** – image to draw in the oled display converted to hex array format and passed as bytearray
 
 
-    * ```y``` – y-coordinate for left high corner of the image
+**x** – x-coordinate for left high corner of the image
 
 
-    * ```w``` – width of the image
+**y** – y-coordinate for left high corner of the image
 
 
-    * ```h``` – height of the image
+**w** – width of the image
+
+
+**h** – height of the image
 
 
 ```NOTE```: To obtain a converted image in hex array format, you can go and use this [online tool](http://www.digole.com/tools/PicturetoC_Hex_converter.php).
@@ -351,6 +350,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzgwMzE5NzcsLTE5NjE0OTU4MDcsMT
+eyJoaXN0b3J5IjpbLTE5MzA0ODM1MDMsLTE5NjE0OTU4MDcsMT
 IyOTMwNTQ1Miw4OTkwNjY0NzRdfQ==
 -->
