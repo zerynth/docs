@@ -89,13 +89,13 @@ Updates Hexiwear sensor data in the KW40Z chip to be readable through any smartp
 -	**aLight** – update the ambient light level value in percentage if passed as argument; default None;
 -	**temp** – update the temperature value (uint_16) if passed as argument; default None;
 -	**humid** – update the humidity value (uint_16) if passed as argument; default None;
--	**press** – update the pressure value (uint_16) if passed as argument; default None;
+-	**press** – update the pressure value (uint_16) if passed as argument; default None.
 
 
 
 **`send_alert()`**
 
-Sends alerts from Hexiwear device to the connected smartphone/tablet/pc via Bluetooth
+Sends alerts from Hexiwear device to the connected smartphone/tablet/pc via Bluetooth.
 
 **`toggle_adv_mode()`**
 
@@ -111,11 +111,11 @@ Changes active group (pair) of vertical touch sense electrodes. Sets right/left 
 
 Retrieves the device setting informations regarding the Bluetooth status, which capacitive touch buttons are active, and the connection with other devices status.
 
-* Bluetooth Status (```bool```): 1 Bluetooth is on, 0 Bluetooth is off;
-* Capacitive Touch Buttons (```bool```): 1 active right pair, 0 acive left pair;
-* Link Status (```bool```): 1 device is connected, 0 device is disconnected.
+* Bluetooth Status (*bool*): 1 Bluetooth is on, 0 Bluetooth is off;
+* Capacitive Touch Buttons (*bool*): 1 active right pair, 0 acive left pair;
+* Link Status (*bool*): 1 device is connected, 0 device is disconnected.
 
-Returns bt_on, bt_touch, bt_link
+Returns bt_on, bt_touch, bt_link.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDE0MjQ2Ml19
+eyJoaXN0b3J5IjpbMTg4MzA1MTY0OV19
 -->
