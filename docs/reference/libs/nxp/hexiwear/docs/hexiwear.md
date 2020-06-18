@@ -53,10 +53,7 @@ If battery level reading feature is enabled; retrieves the current battery level
 Returns battery_level or battery_level, charging_status or None
 
 
----
-#### `#!py3 get_pressure()`
-
-!!!abstract "`#!py3 get_pressure()`"
+get_pressure()
 
 If pressure sensor is enabled; retrieves the current pressure data from the onboard sensor as calibrate value in Pa.
 
@@ -494,5 +491,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyNDIyNV19
+eyJoaXN0b3J5IjpbLTU2ODU4XX0=
 -->
