@@ -217,7 +217,7 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
                                                  |
 
 
-    * ```buzzer``` – Buzzer status upon initialization.
+-	**buzzer** – Buzzer status upon initialization.
 
     | Value
 
@@ -244,13 +244,9 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
      |
 
 
-    * ```flash``` – Flash LED unit status upon initialization [“off” or “on”].
-
-
-    * ```address``` – The IP address of the devices concerned.
-
-
-    * ```port``` – Network port for connection in modbus protocol.
+-	**flash** – Flash LED unit status upon initialization [“off” or “on”].
+-	**address** – The IP address of the devices concerned.
+-	**port** – Network port for connection in modbus protocol.
 
 
 
@@ -294,5 +290,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODI0OTYzM119
+eyJoaXN0b3J5IjpbMTczMTY0MTE1XX0=
 -->
