@@ -367,12 +367,10 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 
 
-**Arguments:**
-    
-    * ```unit``` – select the unit of measure for internal temperature (allowed values: “C” for Celtius degrees, “K” for Kelvin degrees, “F” Fahrenheit degrees); default “C”
+**Arguments:** **unit** – select the unit of measure for internal temperature (allowed values: “C” for Celtius degrees, “K” for Kelvin degrees, “F” Fahrenheit degrees); default “C”.
 
 
-Returns int_temp
+Returns int_temp.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDY5NzE0OTddfQ==
+eyJoaXN0b3J5IjpbOTQ1NDMzMTM5XX0=
 -->
