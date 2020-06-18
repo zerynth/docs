@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.nxp.fxas21002c
+The following are a list of examples for lib.nxp.fxas21002c.
 
 ## Read Gyroscope Data from FXAS21002C
 
 
-Basic example to read the angular velocity from FXAS21002C gyroscope
+Basic example to read the angular velocity from FXAS21002C gyroscope.
 
 
 
@@ -63,3 +63,6 @@ try:
 except Exception as e:
     print("Error2: ",e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTkzNDY0OTI3MF19
+-->
