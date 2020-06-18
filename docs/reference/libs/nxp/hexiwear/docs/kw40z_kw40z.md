@@ -34,66 +34,41 @@ bt_driver.start()
 ```
 
 
----
-#### `#!py3 start()`
-
-!!!abstract "`#!py3 start()`"
+**`start()`**
 
 Starts the serial communication with the KW40Z and check the KW40Z status (check if Bluetooth is active, if there are connections with other devices, and which set of capacitive touch buttons are active)
 
 
----
-#### `#!py3 attach_button_up()`
-
-!!!abstract "`#!py3 attach_button_up(callback)`"
+**`attach_button_up(callback)`**
 
 Sets the callback function to be executed when Capacitive Button Up on Hexiwear device is pressed.
 
-
----
-#### `#!py3 attach_button_down()`
-
-!!!abstract "`#!py3 attach_button_down(callback)`"
+**`attach_button_down(callback)`**
 
 Sets the callback function to be executed when Capacitive Button Down on Hexiwear device is pressed.
 
 
----
-#### `#!py3 attach_button_left()`
-
-!!!abstract "`#!py3 attach_button_left(callback)`"
+**`attach_button_left(callback)`**
 
 Sets the callback function to be executed when Capacitive Button Left on Hexiwear device is pressed.
 
 
----
-#### `#!py3 attach_button_right()`
-
-!!!abstract "`#!py3 attach_button_right(callback)`"
+**`attach_button_right(callback)`**
 
 Sets the callback function to be executed when Capacitive Button Right on Hexiwear device is pressed.
 
 
----
-#### `#!py3 attach_alert()`
-
-!!!abstract "`#!py3 attach_alert(callback)`"
+**`attach_alert(callback)`**
 
 Sets the callback function to be executed when KW40Z receives an input alert.
 
 
----
-#### `#!py3 attach_notification()`
-
-!!!abstract "`#!py3 attach_notification(callback)`"
+**`attach_notification(callback)`**
 
 Sets the callback function to be executed when KW40Z receives a notification.
 
 
----
-#### `#!py3 attach_passkey()`
-
-!!!abstract "`#!py3 attach_passkey(callback)`"
+**attach_passkey(callback)**
 
 Sets the callback function to be executed when KW40Z receives a bluetooth pairing request.
 
@@ -178,5 +153,5 @@ Retrieves the device setting informations regarding the Bluetooth status, which 
 
 Returns bt_on, bt_touch, bt_link
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0MjU5MzQzXX0=
+eyJoaXN0b3J5IjpbLTE4NDMxMjAyMF19
 -->
