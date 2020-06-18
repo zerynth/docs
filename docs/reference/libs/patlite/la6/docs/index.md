@@ -16,6 +16,10 @@ Programmable 60 mm multi-color LED signal tower, equipped with Power over Ethern
 -   Degree of protection: IP65
 -   Protocols: MODBUS TCP and HTTP
 
+For more details see product datasheet  [https://www.patlite.it/product/index.php?Command=Index&method=Download&id=651&idx=5](https://www.patlite.it/product/index.php?Command=Index&method=Download&id=651&idx=5).
+
+Here below, the Zerynth driver for the Patlite la6 and some examples to better understand how to use it.
+
 
 Contents:
 
@@ -24,5 +28,5 @@ Contents:
         -   [PATLITE LA6 Library](https://docs.zerynth.com/latest/official/lib.patlite.la6/docs/official_lib.patlite.la6_la6.html)
         -   [Examples](https://docs.zerynth.com/latest/official/lib.patlite.la6/examples/examples.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODgwOTU5Nl19
+eyJoaXN0b3J5IjpbOTc2NTg5Mzc2XX0=
 -->
