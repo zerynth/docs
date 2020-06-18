@@ -1,13 +1,9 @@
 # FXOS8700CQ Module
 
-This module contains the driver for NXP FXOS8700CQ accelerometer and magnetometer.
-The FXOS8700CQ provides direct I2C communication and the accelerometer can be set on 3 different full-scale range and 8 different over sample rate values  ([datasheet](http://www.nxp.com/assets/documents/data/en/data-sheets/FXOS8700CQ.pdf)).
+This module contains the driver for NXP FXOS8700CQ accelerometer and magnetometer. The FXOS8700CQ provides direct I2C communication and the accelerometer can be set on 3 different full-scale range and 8 different over sample rate values  ([datasheet](http://www.nxp.com/assets/documents/data/en/data-sheets/FXOS8700CQ.pdf)).
 
 
----
-#### `#!py3 FXOS8700CQ()`
-
-!!!abstract "`#!py3 FXOS8700CQ(i2cdrv, addr=0x1E, clk=400000)`"
+**`class FXOS8700CQ(i2cdrv,addr=0x1E,clk=400000)`**
 
 Creates an intance of a new FXOS8700CQ.
 
@@ -26,7 +22,7 @@ Creates an intance of a new FXOS8700CQ.
 
 Example:
 
-```
+```py
 from nxp.fxos8700cq import fxos8700cq
 
 ...
@@ -39,10 +35,7 @@ mag = fxos.get_mag()
 ```
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init(mode=ACCMAG, odr=0, osr=0, range=RANGE4G)`"
+**`init(mode=ACCMAG,odr=0,osr=0,range=RANGE4G)`**
 
 Initialize the FXOS8700CQ setting the operating mode, the output data rate , the full-scale range and the oversample ratio.
 
@@ -335,10 +328,7 @@ Initialize the FXOS8700CQ setting the operating mode, the output data rate , the
 
      |
 
----
-#### `#!py3 get_raw_acc()`
-
-!!!abstract "`#!py3 get_raw_acc()`"
+**`get_raw_acc()`**
 
 Retrieves the current accelerometer data as a tuple of X, Y, Z, raw values
 
@@ -414,3 +404,6 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 
 Returns int_temp
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE1NzA0MzA1XX0=
+-->
