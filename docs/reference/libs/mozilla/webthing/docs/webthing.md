@@ -8,21 +8,21 @@
 A Thing is an object exposing some REST API containing properties, actionsand events.
 
 
-### \__init__(thing_id, name, description=None, base_url="/", timestamp_fn=None)
+**`__init__(thing_id,name,description=None,base_url="/",timestamp_fn=None)`**
 
-* ```thing_id``` is the unique id for a Thing
-
-
-* ```name``` is pretty name for human interfaces
+**thing_id** is the unique id for a Thing
 
 
-* ```description``` is a human readable description of this Thing
+**name** is pretty name for human interfaces
 
 
-* ```base_url``` is the base path, configurable for advanced purposes.
+**description** is a human readable description of this Thing
 
 
-* ```timestamp_fn``` is a function to call for retrieving a timestamp string to be used in events generation.
+**base_url** is the base path, configurable for advanced purposes.
+
+
+**timestamp_fn** is a function to call for retrieving a timestamp string to be used in events generation.
 
 Store a webserver instance for using it later when an action is created.
 ..  method:: add_property(prop_id, label, prop_type, getter, setter=None, unit=None, description=None)
@@ -93,5 +93,6 @@ Log a new event of type evt_id.
 ### as_dict()
 Return a dict representing this Thing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQyMDg3NjBdfQ==
+eyJoaXN0b3J5IjpbLTEzMjE2MTY5MzcsLTEzMDQyMDg3NjBdfQ
+==
 -->
