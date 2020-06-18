@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.nxp.fxos8700cq
+The following are a list of examples for lib.nxp.fxos8700cq.
 
 ## Read Accelerometer and Magnetometer data from FXOS8700CQ
 
 
-Basic example to read the accelerometer and magnetometer data from FXOS8700CQ sensor
+Basic example to read the accelerometer and magnetometer data from FXOS8700CQ sensor.
 
 
 
@@ -65,3 +65,6 @@ try:
 except Exception as e:
     print("Error2: ",e)
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNzE1MDQ4OV19
+-->
