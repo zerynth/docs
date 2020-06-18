@@ -249,11 +249,7 @@ it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
 
-
----
-#### `#!py3 draw_image()`
-
-!!!abstract "`#!py3 draw_image(image, x, y, w, h)`"
+**`draw_image(image,x,y,w,h)`**
 
 If color oled display is enabled; draws a rectangular area in the screen colored with the color code provided as argument.
 
@@ -284,10 +280,7 @@ After uploading your image, you can resize it setting the width and height field
 Clicking on the “Get C string” button, the tool converts your image with your settings to a hex string that you can copy and paste inside a bytearray in your project and privide to this function.
 
 
----
-#### `#!py3 draw_pixel()`
-
-!!!abstract "`#!py3 draw_pixel(x, y, color, encode=True)`"
+**`draw_pixel(x,y,color,encode=True)`**
 
 If color oled display is enabled; draws a single pixel in the screen colored with the color code provided as argument.
 
@@ -410,5 +403,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNTkwNzkyNSw4OTkwNjY0NzRdfQ==
+eyJoaXN0b3J5IjpbMTIyOTMwNTQ1Miw4OTkwNjY0NzRdfQ==
 -->
