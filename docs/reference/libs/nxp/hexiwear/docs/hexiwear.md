@@ -335,36 +335,22 @@ If a 16 bit color code is provided, the encode flag must be set to False.
 * background = 0x4471
 
 
----
-#### `#!py3 vibration()`
+**`vibration(ms)`**
 
-!!!abstract "`#!py3 vibration(ms)`"
-
-Turns on the vibration motor for ```ms``` milliseconds.
+Turns on the vibration motor for *ms* milliseconds.
 
 
-* ```Arguments```
-
-    
-    * ```ms``` – motor vibration duration
+**Arguments:** **ms** – motor vibration duration
 
 
-
----
-#### `#!py3 leds_on()`
-
-!!!abstract "`#!py3 leds_on()`"
+**`py3 leds_on()`**
 
 Turns on the rgb onboard led (white light).
 
-
----
-#### `#!py3 leds_off()`
-
-!!!abstract "`#!py3 leds_off()`"
+**`leds_off()`**
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTc3NDc5OCwtMTk2MTQ5NTgwNywxMj
-I5MzA1NDUyLDg5OTA2NjQ3NF19
+eyJoaXN0b3J5IjpbLTExNzgwMzE5NzcsLTE5NjE0OTU4MDcsMT
+IyOTMwNTQ1Miw4OTkwNjY0NzRdfQ==
 -->
