@@ -17,7 +17,7 @@ Comments in Python start with the hash character, `#`, and extend to the end of 
 
 Some examples:
 
-```
+```py
 # this is the first comment
 spam = 1  # and this is the second comment
           # ... and now a third!
@@ -28,11 +28,11 @@ Let’s see some simple Python operations.
 
 ### Numbers
 
-The operators `+`, `-`, `\*` and `/` work just like in most other languages; parentheses `()` can be used for grouping.
+The operators `+`, `-`, `*` and `/` work just like in most other languages; parentheses `()` can be used for grouping.
 
 For example:
 
-```
+```py
 >>> 2 + 2
 4
 >>> 50 - 5*6
@@ -47,7 +47,7 @@ The integer numbers (e.g. `2`, `4`, `20`) have type `int()`, the ones with a fra
 
 Division (`/`) always returns a float.  To do floor division and get an integer result (discarding any fractional result) you can use the `//` operator; to calculate the remainder you can use `%`:
 
-```
+```py
 >>> 17 / 3  # classic division returns a float
 5.666666666666667
 >>>
@@ -61,7 +61,7 @@ Division (`/`) always returns a float.  To do floor division and get an integer 
 
 With Python, it is possible to use the `**` operator to calculate powers
 
-```
+```py
 >>> 5 ** 2  # 5 squared
 25
 >>> 2 ** 7  # 2 to the power of 7
@@ -743,7 +743,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDgzOTEzMywtMTIzNDg5MDA1NiwyMD
-IyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEyMTY0MCwtMTA0ODE0
-MDYwNCwtMTEwMTkxNDUyOF19
+eyJoaXN0b3J5IjpbLTExNTE1MTExODMsLTM5NDgzOTEzMywtMT
+IzNDg5MDA1NiwyMDIyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEy
+MTY0MCwtMTA0ODE0MDYwNCwtMTEwMTkxNDUyOF19
 -->
