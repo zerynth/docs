@@ -113,10 +113,10 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
      |
 
 
-**`flash`** – Flash LED unit status upon initialization [“off” or “on”].
+-	**flash** – Flash LED unit status upon initialization [“off” or “on”].
 
 
-    * ```address``` – The IP address of the devices concerned.
+-	**address** – The IP address of the devices concerned.
 
 
 
@@ -305,5 +305,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 ### clear()
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQwNTk5NjddfQ==
+eyJoaXN0b3J5IjpbMTg3ODI1NTI5M119
 -->
