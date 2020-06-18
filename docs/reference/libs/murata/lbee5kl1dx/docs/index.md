@@ -14,64 +14,31 @@ Along with the integrated power amplifier, the LBEE5KL1DX also includes integrat
 
 
 * Power Supply Voltage (Vbat): from 3.35 V to 4.2 V
-
-
 * Operation Temperature (Top): from -30 °C to 70 °C
-
-
 * Frequency Range: from 2400 MHz to 2483.5 MHz
-
-
 * Transmit Power:
-
-
     * +17dBm @ 11Mbps (2.4GHz)
-
-
     * +13dBm @ 54Mbps (2.4GHz)
-
-
     * +12dBm @ 65Mbps
-
-
 * Receiver Sensitivity:
-
-
     * -89dBm @ 11Mbps (2.4GHz)
-
-
     * -75dBm @ 54Mbps (2.4GHz)
-
-
     * -73dBm @ 65Mbps (2.4GHz)
-
-
 * Transmit Mode Current:
-
-
     * 320mA @ 11Mbps
-
-
     * 270mA @ 54Mbps
-
-
     * 260mA @ 65Mbps
-
-
 * Receive Mode Current:
-
-
     * 47mA @ 11Mbps (2.4GHz)
-
-
     * 47mA @ 54Mbps (2.4GHz)
-
-
     * 47mA @ 65Mbps (2.4GHz)
 
 Here below, the Zerynth driver for the Murata LBEE5KL1DX wifi chip.
 
+
 Contents:
 
-
-* LBEE5KL1DX Module
+-   [LBEE5KL1DX Module](https://docs.zerynth.com/latest/official/lib.murata.lbee5kl1dx/docs/official_lib.murata.lbee5kl1dx_lbee5kl1dx.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMzNDA0MDgxXX0=
+-->
