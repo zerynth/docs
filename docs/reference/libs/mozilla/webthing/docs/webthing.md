@@ -22,15 +22,16 @@ Add a new property to this thing.
 
 
 -	**prop_id** is a string for identifying uniquely a property.
--	**label** is a pretty name for this property
+-	**label** is a pretty name for this property.
 -	**prop_type** can be one of [“integer”, “number”, “boolean”].
--	**getter** is a function that must return current status of this property
--	**setter** is a function that must accept new status as a parameter and set it
--	**unit** is a pretty name for the measure unit of this property
--	**description** is a human readable description of this property
+-	**getter** is a function that must return current status of this property.
+-	**setter** is a function that must accept new status as a parameter and set it.
+-	**unit** is a pretty name for the measure unit of this property.
+-	**description** is a human readable description of this property.
 
 
-### add_action(act_id, label, callback, input_type=None, description=None)
+**`add_action(act_id,label,callback,input_type=None,description=None)`**
+
 Add a new action to this thing.
 
 
@@ -72,5 +73,5 @@ Log a new event of type evt_id.
 ### as_dict()
 Return a dict representing this Thing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MjY0MzA2MSwtMTMwNDIwODc2MF19
+eyJoaXN0b3J5IjpbMTIzMjQyODYxNiwtMTMwNDIwODc2MF19
 -->
