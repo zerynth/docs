@@ -307,31 +307,15 @@ If color oled display is enabled; prints a string inside a text box in the scree
 **Arguments:**
 
     
-text – string to be written in the display
-
-
+**text** – string to be written in the display
 x – x-coordinate for left high corner of the text box; default None
-
-
 y – y-coordinate for left high corner of the text box; default None
-
-
-w``` – width of the text box; default None
-
-
-    * ```h``` – height of the text box; default None
-
-
-    * ```color``` – hex color code for the font; default None
-
-
-    * ```align``` – alignment of the text inside the text box (1 for left alignment, 2 for right alignment, 3 for center alignment); default None
-
-
-    * ```background``` – hex color code for the background; default None
-
-
-    * **encode(bool)** – flag for enabling the color encoding of the font and background color; default True
+w – width of the text box; default None
+h – height of the text box; default None
+color – hex color code for the font; default None
+align – alignment of the text inside the text box (1 for left alignment, 2 for right alignment, 3 for center alignment); default None
+background – hex color code for the background; default None
+encode(bool) – flag for enabling the color encoding of the font and background color; default True
 
 
 ```NOTE```: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
@@ -393,6 +377,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjE0OTU4MDcsMTIyOTMwNTQ1Miw4OT
-kwNjY0NzRdfQ==
+eyJoaXN0b3J5IjpbMTIyNzcwODg4MSwtMTk2MTQ5NTgwNywxMj
+I5MzA1NDUyLDg5OTA2NjQ3NF19
 -->
