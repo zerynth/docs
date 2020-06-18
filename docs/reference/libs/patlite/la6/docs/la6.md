@@ -122,28 +122,19 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 **`set_LED_colors(colors)`**
 
-**Arguments:**
-
-    
-    * ```colors``` – Array of 5 positions containing the colors of the led strips.
+**Arguments:** **colors** – Array of 5 positions containing the colors of the led strips.
 
 
 
 **`set_buzzer(buzzer)`**
 
-* ```Arguments```
-
-    
-    * ```buzzer``` – Buzzer status.
+**Arguments:** **buzzer** – Buzzer status.
 
 
 
 **`set_flash(flash)`**
 
-* ```Arguments```
-
-    
-    * ```flash``` – Flash LED unit status.
+**Arguments:** flash` – Flash LED unit status.
 
 
 
@@ -308,5 +299,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzE4ODY3OF19
+eyJoaXN0b3J5IjpbLTEwNTY0OTgxMThdfQ==
 -->
