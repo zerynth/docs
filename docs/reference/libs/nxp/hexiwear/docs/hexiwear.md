@@ -17,16 +17,9 @@ Creates an instance of a new HEXIWEAR.
 -	**amb_light_en(bool)** – Flag for enabling the ambient light sensor; default True
 -	**heart_rate_en(bool)** – Flag for enabling the heart rate sensor; default True
 -	**temp_humid_en(bool)** – Flag for enabling the temperature and humidity sensor; default True
-
-
 -	**gyro_en(bool)** – Flag for enabling the onboard gyroscope; default True
-
-
 -	**acc_magn_en(bool)** – Flag for enabling the onboard accelerometer and magnetometer; default True
-
 -	**pressure_en(bool)** – Flag for enabling the pressure sensor; default True
-
-
 -	**bt_driver_en(bool)** – Flag for enabling driver for bluetooth features; default True
 
 
@@ -501,5 +494,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDY0MzEyNTFdfQ==
+eyJoaXN0b3J5IjpbLTE5NDUyNDIyNV19
 -->
