@@ -55,15 +55,13 @@ Register a new event type to this Thing.
 Log a new event of type evt_id.
 
 
-**evt_id** is a string for choosing a registered event type.
-
-
-**inp_data** is an optional argument for this event type.
+-	**evt_id** is a string for choosing a registered event type.
+-	**inp_data** is an optional argument for this event type.
 
 
 **`as_dict()`**
 
 Return a dict representing this Thing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5MjU5NTUwLC0xMzA0MjA4NzYwXX0=
+eyJoaXN0b3J5IjpbMTczMDE4MDEzNiwtMTMwNDIwODc2MF19
 -->
