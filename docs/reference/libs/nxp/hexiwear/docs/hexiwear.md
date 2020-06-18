@@ -285,7 +285,7 @@ Clicking on the “Get C string” button, the tool converts your image with you
 If color oled display is enabled; draws a single pixel in the screen colored with the color code provided as argument.
 
 
-* ```Arguments```
+A
 
     
     * ```x``` – pixel x-coordinate
@@ -403,5 +403,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyOTMwNTQ1Miw4OTkwNjY0NzRdfQ==
+eyJoaXN0b3J5IjpbMjExNzQyMTkxOSwxMjI5MzA1NDUyLDg5OT
+A2NjQ3NF19
 -->
