@@ -35,19 +35,13 @@ mag = fxos.get_mag()
 Initialize the FXOS8700CQ setting the operating mode, the output data rate , the full-scale range and the oversample ratio.
 
 
-* ```Arguments```
 
-    
-    * ```mode``` – select the operating mode (allowed values: ACCONLY for accelerometer only, MAGONLY for magnetometer only, ACCMAG for both active), default ACCMAG
+**Arguments:**
 
-
-    * ```odr``` – set the output data rate (from 0 to 7 - refer to page 44 of the FXOS8700CQ datasheet), default 0
-
-
-    * ```osr``` – set the over sample ratio for magnetometer (from 0 to 7 - refer to page 97 of the FXOS8700CQ datasheet), default 0
-
-
-    * ```range``` – accelerometer full-scale range (allowed values RANGE2G, RANGE4G, RANGE8G), default RANGE4G
+-	**mode** – select the operating mode (allowed values: ACCONLY for accelerometer only, MAGONLY for magnetometer only, ACCMAG for both active), default ACCMAG
+-	**odr** – set the output data rate (from 0 to 7 - refer to page 44 of the FXOS8700CQ datasheet), default 0
+-	**osr** – set the over sample ratio for magnetometer (from 0 to 7 - refer to page 97 of the FXOS8700CQ datasheet), default 0
+-	**range**– accelerometer full-scale range (allowed values RANGE2G, RANGE4G, RANGE8G), default RANGE4G
 
 
 | ODR
@@ -385,5 +379,5 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 Returns int_temp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODQzMDE2MzddfQ==
+eyJoaXN0b3J5IjpbMTgxNzc2MTk3XX0=
 -->
