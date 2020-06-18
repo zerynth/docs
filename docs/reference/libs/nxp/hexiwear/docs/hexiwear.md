@@ -34,12 +34,12 @@ Creates an instance of a new HEXIWEAR.
 -	**pressure_en(bool)** – Flag for enabling the pressure sensor; default True
 
 
-    * **bt_driver_en(bool)** – Flag for enabling driver for bluetooth features; default True
+-	**bt_driver_en(bool)** – Flag for enabling driver for bluetooth features; default True
 
 
 Example:
 
-```
+```py
 from nxp.hexiwear import hexiwear
 
 ...
@@ -511,5 +511,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4Nzc0NTIwN119
+eyJoaXN0b3J5IjpbMTA3MTYzMjgzM119
 -->
