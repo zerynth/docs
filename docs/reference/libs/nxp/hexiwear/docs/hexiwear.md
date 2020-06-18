@@ -256,22 +256,14 @@ If color oled display is enabled; draws a rectangular area in the screen colored
 
 **Arguments:**
 
-**image** – image to draw in the oled display converted to hex array format and passed as bytearray
+-	**image** – image to draw in the oled display converted to hex array format and passed as bytearray
+-	**x** – x-coordinate for left high corner of the image
+-	**y** – y-coordinate for left high corner of the image
+-	**w** – width of the image
+-	**h** – height of the image
 
 
-**x** – x-coordinate for left high corner of the image
-
-
-**y** – y-coordinate for left high corner of the image
-
-
-**w** – width of the image
-
-
-**h** – height of the image
-
-
-```NOTE```: To obtain a converted image in hex array format, you can go and use this [online tool](http://www.digole.com/tools/PicturetoC_Hex_converter.php).
+**NOTE:** To obtain a converted image in hex array format, you can go and use this [online tool](http://www.digole.com/tools/PicturetoC_Hex_converter.php).
 
 After uploading your image, you can resize it setting the width and height fields; you can also choose the code format (HEX:0x recommended) and the color format
 (65K color for this display).
@@ -350,6 +342,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzA0ODM1MDMsLTE5NjE0OTU4MDcsMT
-IyOTMwNTQ1Miw4OTkwNjY0NzRdfQ==
+eyJoaXN0b3J5IjpbNTAyMTgxMzEyLC0xOTMwNDgzNTAzLC0xOT
+YxNDk1ODA3LDEyMjkzMDU0NTIsODk5MDY2NDc0XX0=
 -->
