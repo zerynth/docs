@@ -34,24 +34,26 @@ Add a new property to this thing.
 
 Add a new action to this thing.
 
-**act_id** is a string for identifying uniquely an action
-**label** is a pretty name for this action
-**input_type** can be one of [“integer”, “number”, “boolean”].
-**callback** is a function that must accept a parameter of *input_type* and use it
-**description** is a human readable description of this action
+-	**act_id** is a string for identifying uniquely an action.
+-	**label** is a pretty name for this action.
+-	**input_type** can be one of [“integer”, “number”, “boolean”].
+-	**callback** is a function that must accept a parameter of *input_type* and use it.
+-	**description** is a human readable description of this action.
 
 
-### register_event(evt_id, description)
+**`register_event(evt_id,description)`**
+
 Register a new event type to this Thing.
 
 
-* ```evt_id``` is a string for identifying uniquely this event type.
+**`evt_id`** is a string for identifying uniquely this event type.
 
 
-* ```description``` is a human readable description for this event.
+**description** is a human readable description for this event.
 
 
-### signal_event(evt_id, inp_data=None)
+**`signal_event(evt_id,inp_data=None)`**
+
 Log a new event of type evt_id.
 
 
@@ -61,8 +63,9 @@ Log a new event of type evt_id.
 * ```inp_data``` is an optional argument for this event type.
 
 
-### as_dict()
+**`as_dict()`**
+
 Return a dict representing this Thing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Njg2NzEyMiwtMTMwNDIwODc2MF19
+eyJoaXN0b3J5IjpbLTQ4MzcwOTY4MiwtMTMwNDIwODc2MF19
 -->
