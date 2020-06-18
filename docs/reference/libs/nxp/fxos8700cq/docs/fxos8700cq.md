@@ -319,23 +319,23 @@ Initialize the FXOS8700CQ setting the operating mode, the output data rate , the
 
 **`get_raw_acc()`**
 
-Retrieves the current accelerometer data as a tuple of X, Y, Z, raw values
+Retrieves the current accelerometer data as a tuple of X, Y, Z, raw values.
 
-Returns [ax, ay, az]
+Returns [ax, ay, az].
 
 
 **`get_raw_mag()`**
 
-Retrieves the current magnetometer data as a tuple of X, Y, Z, raw values
+Retrieves the current magnetometer data as a tuple of X, Y, Z, raw values.
 
-Returns [mx, my, mz]
+Returns [mx, my, mz].
 
 
 **`get_raw_int_temp()`**
 
-Retrieves the current internal temperature data as raw values
+Retrieves the current internal temperature data as raw values.
 
-Returns raw_t
+Returns raw_t.
 
 
 **`get_acc(axis=None)`**
@@ -343,13 +343,11 @@ Returns raw_t
 Retrieves the current accelerometer data in m/s^2 as a tuple of X, Y, Z values or single axis value if axis argument is provided.
 
 
-* ```Arguments```
 
-    
-    * ```axis``` – select the axis (allowed values: “x” for x-axis, “y” for y-axis, “z” for z-axis); default None for all values
+**Arguments:** **`axis`** – select the axis (allowed values: “x” for x-axis, “y” for y-axis, “z” for z-axis); default None for all values.
 
 
-Returns [acc_x, acc_y, acc_z] or acc_x or acc_y or acc_z
+Returns [acc_x, acc_y, acc_z] or acc_x or acc_y or acc_z.
 
 
 **`get_mag(axis=None)`**
@@ -357,13 +355,10 @@ Returns [acc_x, acc_y, acc_z] or acc_x or acc_y or acc_z
 Retrieves the current magnetometer data in uT as a tuple of X, Y, Z values or single axis value if axis argument is provided.
 
 
-* ```Arguments```
 
-    
-    * ```axis``` – select the axis (allowed values: “x” for x-axis, “y” for y-axis, “z” for z-axis); default None for all values
+**Arguments:** **axis** – select the axis (allowed values: “x” for x-axis, “y” for y-axis, “z” for z-axis); default None for all values..
 
-
-Returns [mag_x, mag_y, mag_z] or mag_x or mag_y or mag_z
+Returns [mag_x, mag_y, mag_z] or mag_x or mag_y or mag_z.
 
 
 **`get_int_temp(unit="C")`**
@@ -371,13 +366,13 @@ Returns [mag_x, mag_y, mag_z] or mag_x or mag_y or mag_z
 Retrieves the current device internal temperature value in Celtius, Kelvin or Fahrenheit degrees.
 
 
-* ```Arguments```
 
+**Arguments:**
     
     * ```unit``` – select the unit of measure for internal temperature (allowed values: “C” for Celtius degrees, “K” for Kelvin degrees, “F” Fahrenheit degrees); default “C”
 
 
 Returns int_temp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzc2MTk3XX0=
+eyJoaXN0b3J5IjpbLTE4NDY5NzE0OTddfQ==
 -->
