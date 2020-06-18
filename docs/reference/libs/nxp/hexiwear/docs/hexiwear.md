@@ -307,43 +307,31 @@ If color oled display is enabled; prints a string inside a text box in the scree
 **Arguments:**
 
     
-**text** – string to be written in the display
-x – x-coordinate for left high corner of the text box; default None
-y – y-coordinate for left high corner of the text box; default None
-w – width of the text box; default None
-h – height of the text box; default None
-color – hex color code for the font; default None
-align – alignment of the text inside the text box (1 for left alignment, 2 for right alignment, 3 for center alignment); default None
-background – hex color code for the background; default None
-encode(bool) – flag for enabling the color encoding of the font and background color; default True
+-	**text** – string to be written in the display
+-	**x** – x-coordinate for left high corner of the text box; default None
+-	**y** – y-coordinate for left high corner of the text box; default None
+-	**w** – width of the text box; default None
+-	**h** – height of the text box; default None
+-	**color** – hex color code for the font; default None
+-	**align** – alignment of the text inside the text box (1 for left alignment, 2 for right alignment, 3 for center alignment); default None
+-	**background** – hex color code for the background; default None
+-	**encode(bool)** – flag for enabling the color encoding of the font and background color; default True
 
 
-```NOTE```: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
+**NOTE**: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
 it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
 
-```NOTE```: If only text argument is provided, an automatic text box is created with the following values:
+**NOTE**: If only text argument is provided, an automatic text box is created with the following values:
 
 
 * x = 0
-
-
 * y = 0
-
-
 * w = min text width according to the font
-
-
 * h = max char height according to the font
-
-
 * color = 0xFFFF
-
-
 * align = 3 (centered horizontally)
-
-
 * background = 0x4471
 
 
@@ -377,6 +365,6 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNzcwODg4MSwtMTk2MTQ5NTgwNywxMj
+eyJoaXN0b3J5IjpbLTYzOTc3NDc5OCwtMTk2MTQ5NTgwNywxMj
 I5MzA1NDUyLDg5OTA2NjQ3NF19
 -->
