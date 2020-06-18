@@ -1,26 +1,22 @@
 # Examples
 
-The following are a list of examples for lib.mozilla.webthing
+The following are a list of examples for lib.mozilla.webthing.
 
 ## Simple_Thing
 
 
-In this example a simple Thing is created and will be able to control a LED.
-Properties, events and actions are exposed through the Mozilla Web of Things
-API specifications.
+In this example a simple Thing is created and will be able to control a LED. Properties, events and actions are exposed through the Mozilla Web of Things API specifications.
 
-We used a Xinabox ESP32 which has an onboard LED
+We used a Xinabox ESP32 which has an onboard LED.
 
 See https://iot.mozilla.org/wot/#web-thing-rest-api for more informations.
 
 
 ## How to run this example
 
-Edit the Wi-Fi informations at the beginning of `main.py`; compile and uplink
-the project through Zerynth Studio and open the serial monitor. 
+Edit the Wi-Fi informations at the beginning of `main.py`; compile and uplink the project through Zerynth Studio and open the serial monitor. 
 
-Your board will print out it's local IP address and an URL you can use to begin
-with. E.g.: http://192.168.1.137/xinabox.
+Your board will print out it's local IP address and an URL you can use to begin with. E.g.: http://192.168.1.137/xinabox.
 
 We'll be using `curl` command in a Linux terminal to easily test our API.
 
@@ -216,3 +212,6 @@ xinabox_thing.add_action(
 webthing.run_server(xinabox_thing)
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNzE0MjM3OTldfQ==
+-->
