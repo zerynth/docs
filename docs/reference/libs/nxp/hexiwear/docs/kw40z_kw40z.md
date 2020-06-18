@@ -82,51 +82,27 @@ Updates Hexiwear sensor data in the KW40Z chip to be readable through any smartp
 **Arguments:**
 
     
-**battery** – update the battery level value in percentage if passed as argument; default None;
-
-
-**accel** – update the acceleration values (list of 3 uint_16 elements for x,y,z axis) if passed as argument; default None;
-
-
-gyro – update the gyroscope values (list of 3 uint_16 elements for x,y,z axis) if passed as argument; default None;
-
-
-magn – update the magnetometer values (list of 3 uint_16 elements for x,y,z axis) if passed as argument; default None;
-
-
-aLight – update the ambient light level value in percentage if passed as argument; default None;
-
-
-temp – update the temperature value (uint_16) if passed as argument; default None;
-
-
-humid – update the humidity value (uint_16) if passed as argument; default None;
-
-
-press – update the pressure value (uint_16) if passed as argument; default None;
+-	**battery** – update the battery level value in percentage if passed as argument; default None;
+-	**accel** – update the acceleration values (list of 3 uint_16 elements for x,y,z axis) if passed as argument; default None;
+-	**gyro** – update the gyroscope values (list of 3 uint_16 elements for x,y,z axis) if passed as argument; default None;
+-	**magn** – update the magnetometer values (list of 3 uint_16 elements for x,y,z axis) if passed as argument; default None;
+-	**aLight** – update the ambient light level value in percentage if passed as argument; default None;
+-	**temp** – update the temperature value (uint_16) if passed as argument; default None;
+-	**humid** – update the humidity value (uint_16) if passed as argument; default None;
+-	**press** – update the pressure value (uint_16) if passed as argument; default None;
 
 
 
----
-#### `#!py3 send_alert()`
-
-!!!abstract "`#!py3 send_alert()`"
+**`send_alert()`**
 
 Sends alerts from Hexiwear device to the connected smartphone/tablet/pc via Bluetooth
 
-
----
-#### `#!py3 toggle_adv_mode()`
-
-!!!abstract "`#!py3 toggle_adv_mode()`"
+**`toggle_adv_mode()`**
 
 Changes the status of advertising process. Sets on/off the Bluetooth status.
 
 
----
-#### `#!py3 toggle_tsi_group()`
-
-!!!abstract "`#!py3 toggle_tsi_group()`"
+**`toggle_tsi_group()`**
 
 Changes active group (pair) of vertical touch sense electrodes. Sets right/left pair capacitive touch buttons.
 
@@ -149,5 +125,5 @@ Retrieves the device setting informations regarding the Bluetooth status, which 
 
 Returns bt_on, bt_touch, bt_link
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTcyOTc5MF19
+eyJoaXN0b3J5IjpbMTY1NzIxMTk3MV19
 -->
