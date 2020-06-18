@@ -53,57 +53,41 @@ If battery level reading feature is enabled; retrieves the current battery level
 Returns battery_level or battery_level, charging_status or None
 
 
-get_pressure()
+**`get_pressure()`**
 
 If pressure sensor is enabled; retrieves the current pressure data from the onboard sensor as calibrate value in Pa.
 
 Returns pressure or None
 
 
----
-#### `#!py3 get_temperature()`
-
-!!!abstract "`#!py3 get_temperature()`"
+**`get_temperature()`**
 
 If temperature and humidity sensor is enabled; retrieves the current temperature data from the onboard sensor as calibrate value in °C.
 
-Returns temperature or None
+Returns temperature or None.
 
 
----
-#### `#!py3 get_humidity()`
-
-!!!abstract "`#!py3 get_humidity()`"
+**`get_humidity()`**
 
 If temperature and humidity sensor is enabled; retrieves the current humidity data from the onboard sensor as calibrate value in %RH.
 
-Returns humidity or None
+Returns humidity or None.
 
 
----
-#### `#!py3 get_accelerometer_data()`
-
-!!!abstract "`#!py3 get_accelerometer_data()`"
+**`get_accelerometer_data()`**
 
 If accelerometer and magnetometer are enabled; retrieves the current accelerometer data from the onboard sensor in m/s^2 as a tuple of X, Y, Z values.
 
-Returns [acc_x, acc_y, acc_z] or None
+Returns [acc_x, acc_y, acc_z] or None.
 
-
----
-#### `#!py3 get_magnetometer_data()`
-
-!!!abstract "`#!py3 get_magnetometer_data()`"
+**`get_magnetometer_data()`**
 
 If accelerometer and magnetometer are enabled; retrieves the current magnetometer data from the onboard sensor in uT as a tuple of X, Y, Z values.
 
 Returns [magn_x, magn_y, magn_z] or None
 
 
----
-#### `#!py3 get_gyroscope_data()`
-
-!!!abstract "`#!py3 get_gyroscope_data()`"
+**`get_gyroscope_data()`**
 
 If gyroscope is enabled; retrieves the current gyroscope data from the onboard sensor in degrees per second as a tuple of X, Y, Z values.
 
@@ -491,5 +475,5 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODU4XX0=
+eyJoaXN0b3J5IjpbLTk2NTc5MjU0Nl19
 -->
