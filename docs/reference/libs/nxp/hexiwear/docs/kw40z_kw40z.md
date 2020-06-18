@@ -107,23 +107,15 @@ Changes the status of advertising process. Sets on/off the Bluetooth status.
 Changes active group (pair) of vertical touch sense electrodes. Sets right/left pair capacitive touch buttons.
 
 
----
-#### `#!py3 info()`
-
-!!!abstract "`#!py3 info()`"
+**`info()`**
 
 Retrieves the device setting informations regarding the Bluetooth status, which capacitive touch buttons are active, and the connection with other devices status.
 
-
 * Bluetooth Status (```bool```): 1 Bluetooth is on, 0 Bluetooth is off;
-
-
 * Capacitive Touch Buttons (```bool```): 1 active right pair, 0 acive left pair;
-
-
 * Link Status (```bool```): 1 device is connected, 0 device is disconnected.
 
 Returns bt_on, bt_touch, bt_link
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NzIxMTk3MV19
+eyJoaXN0b3J5IjpbLTc0MDE0MjQ2Ml19
 -->
