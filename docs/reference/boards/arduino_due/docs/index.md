@@ -2,9 +2,11 @@
 
 The Arduino Due is a microcontroller device based on the Atmel [SAM3X8E ARM Cortex-M3 CPU](http://www.google.com/url?q=http%3A%2F%2Fwww.atmel.com%2FImages%2FAtmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf&sa=D&sntz=1&usg=AFQjCNFO3-2W_YnmZGERtqXMAenLWJmCcA). It is the first Arduino device based on a 32-bit ARM core microcontroller. It has 54 digital input/output pins (of which 12 can be used as PWM outputs), 12 analog inputs, 4 UARTs (hardware serial ports), a 84 MHz clock, an USB OTG capable connection, 2 DAC (digital to analog), 2 TWI, a power jack, an SPI header, a JTAG header, a reset button and an erase button.
 
-```WARNING```: Unlike other Arduino devices, Arduino Due runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin could damage the device.
+!!! warning 
+	Unlike other Arduino devices, Arduino Due runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin could damage the device.
 
-```NOTE```: All the reported information are extracted from the official [Arduino DUE page](http://www.arduino.cc/en/Main/ArduinoBoardDue), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Arduino DUE page](http://www.arduino.cc/en/Main/ArduinoBoardDue), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -69,9 +71,11 @@ The device can operate on an external supply of 6 to 20 volts. If supplied with 
 
 The Arduino DUE Programming port is connected to an ATmega16U2, which provides a virtual COM port to software on a connected computer, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access:
 
 
 * ```Ubuntu``` distribution –> dialout group
@@ -95,11 +99,13 @@ Once connected on a USB port, if drivers have been correctly installed, the Ardu
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Arduino DUE is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -143,3 +149,6 @@ Flash Layout is shown in table below:
        | FOTA Record
 
      |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNzY3ODU2MTFdfQ==
+-->
