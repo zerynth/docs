@@ -10,7 +10,8 @@ This device has the predisposition in both sides for shields and expansion board
 
 * In the back side (White side in MikroE parlance) the device has four mikroBUS sockets to connect [MikroE Click Boards](https://shop.mikroe.com/click) showing one of the best features for a hardware development platform: ```modularity```.
 
-```NOTE```: Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
+!!! note
+	Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
 
 With more than 160 to choose from, and more coming out every week, it’s very simple to create a custom product by simply adding new functionality to the main device.
 
@@ -71,9 +72,11 @@ The device can operate on an external supply of 6 to 20 volts. If supplied with 
 
 The Flip & Click Programming port is connected to an ATmega16U2, which provides a virtual COM port to software on a connected computer, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 
 * ```Ubuntu``` distribution –> dialout group
@@ -149,3 +152,6 @@ Flash Layout is shown in table below:
        | FOTA Record
 
      |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY3ODUxNTkxXX0=
+-->
