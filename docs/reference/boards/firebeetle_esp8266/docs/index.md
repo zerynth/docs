@@ -98,11 +98,13 @@ Once connected to a USB port the FireBeetle ESP8266 device can be seen as a Virt
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-!!No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the FireBeetle ESP8266 device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the upload process.
+!!! note
+	No user intervention on the device is required for the upload process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -143,5 +145,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3OTM5NDI1M119
+eyJoaXN0b3J5IjpbLTEwMDY2Mzk4MDddfQ==
 -->
