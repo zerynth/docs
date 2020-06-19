@@ -100,50 +100,28 @@ Once connected to a USB port the Feather Huzzah device can be seen as a Virtual 
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Feather Huzzah device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the upload process.
+!!! note
+	No user intervention on the device is required for the upload process.
 
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Adafruit Feather Huzzah device is available for bytecode only.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x40200000    | 448Kb | VM Slot         |
+| 0x40270000    | 256Kb | Bytecode Slot 0 |
+| 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x40200000
-
-    | 448Kb
-
- | VM Slot
-
- |
-| 0x40270000
-
-    | 256Kb
-
- | Bytecode Slot 0
-
- |
-| 0x402B0000
-
-    | 320Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDUzNjA5MDldfQ==
+eyJoaXN0b3J5IjpbNjgxODQ2MTk0XX0=
 -->
