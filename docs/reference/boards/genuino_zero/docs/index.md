@@ -4,9 +4,11 @@ The Arduino/Genuino Zero is a microcontroller device based on the Atmel [SAMD21G
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
-```WARNING```: Unlike most Arduino & Genuino devices, the Zero runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+!!! warning
+	Unlike most Arduino & Genuino devices, the Zero runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
 
-```NOTE```: All the reported information are extracted from the official [Arduino/Genuino Zero page](http://www.arduino.cc/en/Main/ArduinoBoardZero), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Arduino/Genuino Zero page](http://www.arduino.cc/en/Main/ArduinoBoardZero), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -65,12 +67,9 @@ The device can operate on an external supply of 6 to 20 volts. If supplied with 
 
 The Arduino/Genuino Zero Programming port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the Arduino/Genuino Zero guide](https://www.arduino.cc/en/Guide/ArduinoZero), while ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -97,7 +96,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Ardu
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Arduino/Genuino Zero is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -143,3 +143,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY0MzAwMzk3MF19
+-->
