@@ -1,31 +1,19 @@
 # ID20LA Module
 
-This module contains the Zerynth driver for ID-20LA RFID tag reader from ID 
-Innovation. This is the ID-20LA, a very simple to use RFID reader module from 
-ID Innovations. With a built in antenna, the only holdup is the 2mm pin spacing 
-(breakout board available below). Power the module, hold up a 125kHz card, and 
-get a serial string output containing the unique ID of the card.
+This module contains the Zerynth driver for ID-20LA RFID tag reader from ID Innovation. This is the ID-20LA, a very simple to use RFID reader module from ID Innovations. With a built in antenna, the only holdup is the 2mm pin spacing (breakout board available below). Power the module, hold up a 125kHz card, and get a serial string output containing the unique ID of the card.
 
 
-**`class---
-#### `#!py3 ID20LA()`
-
-!!!abstract "`#!py3 ID20LA(serial_port, callback, read_timeout=100)`**"
+**`class ID20LA(serial_port,callback,read_timeout=100)`**
 
 Creates in instance of the ID20LA class.
 
 
-**A ```Arguments:**```
+**Aguments:**
 
     
-**    * ```serial_port**``` – Serial port to be used (RX only). (i.e. SERIAL2)
-**
-
-    * ```callback**``` – Callback to be called whenever a tag is read.
-**
-
-    * ```read_timeout**``` – Milliseconds to wait when polling sensor. (Default: 100)
-
+**serial_port** – Serial port to be used (RX only). (i.e. SERIAL2)
+**callback** – Callback to be called whenever a tag is read.
+**read_timeout** – Milliseconds to wait when polling sensor. (Default: 100)
 
 The serial communication is initialized using the specified serial port.
 The TX pin is not used since the communication is one-way only.
@@ -36,12 +24,9 @@ mode to be able to decode the 10 bytes as 10 characters, refer to datasheet
 for further informations.
 
 
-**`---
-#### `#!py3 stop()`
-
-!!!abstract "`#!py3 stop()`**"
+**`stop()`**
 
 This method stops the reading from the sensor.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTI5MjY5MjgsLTk2OTA5MjAyMV19
+eyJoaXN0b3J5IjpbLTk2OTA5MjAyMV19
 -->
