@@ -199,18 +199,16 @@ On ```Windows``` machines two set of drivers must be installed: the DFU drivers 
 
 * For the virtualized Quail the VID:PID is 0483:DF12.
 
-!!! warningIn DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.
+!!! warning
+	In DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.
 
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
 ```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -247,7 +245,8 @@ Once connected to a USB port the Quail device can be seen as a Virtual Serial po
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Quail device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the Quail device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 After virtualization, the MikroElektronika Quail is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -257,42 +256,13 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08000000    | 128Kb | VM Slot 0       |
+| 0x08020000    | 384kb | Bytecode Slot 0 |
+| 0x08080000    | 128kb | VM Slot 1       |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
- | Size
-
-   | Content
-
-         |
-| ------------- | ------ | --------------- |
-| 0x08000000
-
-    | 128Kb
-
-  | VM Slot 0
-
-       |
-| 0x08020000
-
-    | 384kb
-
-  | Bytecode Slot 0
-
- |
-| 0x08080000
-
-    | 128kb
-
-  | VM Slot 1
-
-       |
-| 0x080A0000
-
-    | 384kb
-
-  | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -301,6 +271,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTQ5OTE1LC0xODYzMjE5MDcxLDE1Nz
-AwNDM5NDksLTEyNzk2MjEwMjIsMTEwMTA2MjYzNl19
+eyJoaXN0b3J5IjpbLTk5MjI3Mzg2MiwtMTg2MzIxOTA3MSwxNT
+cwMDQzOTQ5LC0xMjc5NjIxMDIyLDExMDEwNjI2MzZdfQ==
 -->
