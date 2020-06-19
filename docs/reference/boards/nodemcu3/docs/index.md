@@ -102,39 +102,15 @@ After virtualization, the NodeMCU v3 device is ready to be programmed and the  Z
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the NodeMCU v3 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x40200000    | 448Kb | VM Slot         |
+| 0x40270000    | 256Kb | Bytecode Slot 0 |
+| 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x40200000
-
-    | 448Kb
-
- | VM Slot
-
- |
-| 0x40270000
-
-    | 256Kb
-
- | Bytecode Slot 0
-
- |
-| 0x402B0000
-
-    | 320Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjEwODk3MDZdfQ==
+eyJoaXN0b3J5IjpbMjAyODk0MTYyMV19
 -->
