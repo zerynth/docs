@@ -17,7 +17,7 @@ MikroElektronika Quail official manual is available [here](http://download.mikro
 
 The internal flash of the MikroElektronika Quail is organized into two banks of 1Mb each. Each bank has sectors of different size according to the following table:
 
-| Bank 1        |       |                 | Bank 2                                |
+| Bank 1        |       |                 | Bank 2        |       |                  |
 |---------------|-------|-----------------|---------------|-------|------------------|
 | Start address | Size  | Content         | Start address | Size  | Content          |
 | 0x8000000     | 16Kb  | Virtual Machine | 0x8100000     | 16Kb  | Bytecode Bank 7  |
@@ -192,5 +192,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM0OTQzMDksMTEwMTA2MjYzNl19
+eyJoaXN0b3J5IjpbMTQ1Njc5NzM3NSwxMTAxMDYyNjM2XX0=
 -->
