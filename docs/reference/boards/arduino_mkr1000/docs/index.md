@@ -152,7 +152,8 @@ Follow these steps to register and virtualize a Arduino/Genuino MKR1000:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the MKR1000 device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the MKR1000 device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 Zerynth scripts can be uploaded on virtualized Arduino/Genuino MKR1000 by clicking the dedicated upload button available on the **Current Project** panel of the IDE.
 Follow these steps to upload a Zerynth script on a virtualized Arduino/Genuino MKR1000:
@@ -165,35 +166,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 94Kb | VM Slot         |
+| 0x00019600    | 77Kb | Bytecode Slot 0 |
+| 0x0002CB00    | 77Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 94Kb
-
- | VM Slot
-
- |
-| 0x00019600
-
-    | 77Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002CB00
-
-    | 77Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -202,5 +180,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDcxMjA0OF19
+eyJoaXN0b3J5IjpbNDkwNDEzMjc5XX0=
 -->
