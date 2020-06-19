@@ -75,9 +75,10 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 Adafruit Feather M0 Wi-Fi should be recognized out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.0.0.0/adafruit_drivers_2.0.0.0.exe), otherwise this can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greate.
 
 !!! note
-Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the Feather M0 Wi-Fi device.
+	Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the Feather M0 Wi-Fi device.
 
-```WARNING```: Remember, when using the Zadig utility, to select “Options > List all devices” to search for the Feather M0 Wi-Fi device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
+!!! warning
+	Remember, when using the Zadig utility, to select “Options > List all devices” to search for the Feather M0 Wi-Fi device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
 
 Once connected on a USB port, if drivers have been correctly installed, the Adafruit Feather M0 Wi-Fi device is recognized by the Zerynth Studio and listed in the **Device Management Toolbar**.
 
@@ -101,7 +102,8 @@ Follow these steps to register and virtualize a Adafruit Feather M0 Wi-Fi:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Feather M0 Wi-Fi device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in Virtualization Mode again.
+!!! note
+	During these operations the Feather M0 Wi-Fi device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in Virtualization Mode again.
 
 After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar”, ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the RST on-board button when asked.
 
@@ -110,36 +112,12 @@ After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed an
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Adafruit Feather M0 Wi-Fi device is available for bytecode only.
 
 Flash Layout is shown in table below:
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 94Kb | VM Slot         |
+| 0x00019600    | 77Kb | Bytecode Slot 0 |
+| 0x0002CB00    | 77Kb | Bytecode Slot 1 |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 94Kb
-
- | VM Slot
-
- |
-| 0x00019600
-
-    | 77Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002CB00
-
-    | 77Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -148,5 +126,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQ4NDAxNjVdfQ==
+eyJoaXN0b3J5IjpbMTY2MTEzMzMzM119
 -->
