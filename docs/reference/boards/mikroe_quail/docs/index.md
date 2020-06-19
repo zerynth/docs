@@ -17,181 +17,21 @@ MikroElektronika Quail official manual is available [here](http://download.mikro
 
 The internal flash of the MikroElektronika Quail is organized into two banks of 1Mb each. Each bank has sectors of different size according to the following table:
 
-| Bank 1
-
- | Bank 2
-
- |
-| Start address
-
- | Size
-
-          | Content
-
- | Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ------ | ------- | ------------- | ---- | ------- |  |  |
-| 0x8000000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x8100000
-
-     | 16Kb
-
- | Bytecode Bank 7
-
- |
-| 0x8004000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x8104000
-
-     | 16Kb
-
- | Bytecode Bank 8
-
- |
-| 0x8008000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x8108000
-
-     | 16Kb
-
- | Bytecode Bank 9
-
- |
-| 0x800C000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x810C000
-
-     | 16Kb
-
- | Bytecode Bank 10
-
- |
-| 0x8010000
-
-     | 64Kb
-
-   | Virtual Machine
-
- | 0x8110000
-
-     | 64Kb
-
- | Bytecode Bank 11
-
- |
-| 0x8020000
-
-     | 128kb
-
-  | Bytecode Bank 0
-
- | 0x8120000
-
-     | 128kb
-
- | Bytecode Bank 12
-
- |
-| 0x8040000
-
-     | 128kb
-
-  | Bytecode Bank 1
-
- | 0x8140000
-
-     | 128kb
-
- | Bytecode Bank 13
-
- |
-| 0x8060000
-
-     | 128kb
-
-  | Bytecode Bank 2
-
- | 0x8160000
-
-     | 128kb
-
- | Bytecode Bank 14
-
- |
-| 0x8080000
-
-     | 128kb
-
-  | Bytecode Bank 3
-
- | 0x8180000
-
-     | 128kb
-
- | Bytecode Bank 15
-
- |
-| 0x80A0000
-
-     | 128kb
-
-  | Bytecode Bank 4
-
- | 0x81A0000
-
-     | 128kb
-
- | Bytecode Bank 16
-
- |
-| 0x80C0000
-
-     | 128kb
-
-  | Bytecode Bank 5
-
- | 0x81C0000
-
-     | 128kb
-
- | Bytecode Bank 17
-
- |
-| 0x80E0000
-
-     | 128kb
-
-  | Bytecode Bank 6
-
- | 0x81E0000
-
-     | 128kb
-
- | Bytecode Bank 18
-
- |
+| Bank 1        |       |                 | Bank 2                                |
+|---------------|-------|-----------------|---------------|-------|------------------|
+| Start address | Size  | Content         | Start address | Size  | Content          |
+| 0x8000000     | 16Kb  | Virtual Machine | 0x8100000     | 16Kb  | Bytecode Bank 7  |
+| 0x8004000     | 16Kb  | Virtual Machine | 0x8104000     | 16Kb  | Bytecode Bank 8  |
+| 0x8008000     | 16Kb  | Virtual Machine | 0x8108000     | 16Kb  | Bytecode Bank 9  |
+| 0x800C000     | 16Kb  | Virtual Machine | 0x810C000     | 16Kb  | Bytecode Bank 10 |
+| 0x8010000     | 64Kb  | Virtual Machine | 0x8110000     | 64Kb  | Bytecode Bank 11 |
+| 0x8020000     | 128kb | Bytecode Bank 0 | 0x8120000     | 128kb | Bytecode Bank 12 |
+| 0x8040000     | 128kb | Bytecode Bank 1 | 0x8140000     | 128kb | Bytecode Bank 13 |
+| 0x8060000     | 128kb | Bytecode Bank 2 | 0x8160000     | 128kb | Bytecode Bank 14 |
+| 0x8080000     | 128kb | Bytecode Bank 3 | 0x8180000     | 128kb | Bytecode Bank 15 |
+| 0x80A0000     | 128kb | Bytecode Bank 4 | 0x81A0000     | 128kb | Bytecode Bank 16 |
+| 0x80C0000     | 128kb | Bytecode Bank 5 | 0x81C0000     | 128kb | Bytecode Bank 17 |
+| 0x80E0000     | 128kb | Bytecode Bank 6 | 0x81E0000     | 128kb | Bytecode Bank 18 |
 ## Device Summary
 
 
@@ -352,5 +192,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMTA2MjYzNl19
+eyJoaXN0b3J5IjpbNTM0OTQzMDksMTEwMTA2MjYzNl19
 -->
