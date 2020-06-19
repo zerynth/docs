@@ -25,77 +25,18 @@ In particular, for non-BLE VMs:
 
 For BLE VMs:
 
-| Start address
+| Start address | Size   | Content                 |
+|---------------|--------|-------------------------|
+| 0x00009000    | 16Kb   | Esp32 NVS area          |
+| 0x0000D000    | 8Kb    | Esp32 OTA data          |
+| 0x0000F000    | 4Kb    | Esp32 PHY data          |
+| 0x00010000    | 1216Kb | Zerynth VM              |
+| 0x00140000    | 1216Kb | Zerynth VM (FOTA)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode        |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb  | Free for user storage   |
+| 0x00390000    | 448Kb  | Reserved                |
 
- | Size
-
-  | Content
-
-                 |
-| ------------- | ----- | ----------------------- |
-| 0x00009000
-
-    | 16Kb
-
-  | Esp32 NVS area
-
-          |
-| 0x0000D000
-
-    | 8Kb
-
-   | Esp32 OTA data
-
-          |
-| 0x0000F000
-
-    | 4Kb
-
-   | Esp32 PHY data
-
-          |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM
-
-              |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (FOTA)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode
-
-        |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
-  | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
-  | Reserved
-
-                |
 ## Device Summary
 
 
@@ -154,11 +95,7 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 The NodeMCU ESP-32S comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the NodeMCU ESP-32S should work out of the box.
 
 ```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the NodeMCU ESP-32S device is recognized by Zerynth Studio. The next steps are:
@@ -175,11 +112,13 @@ Once connected on a USB port, if drivers have been correctly installed, the Node
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the NodeMCU ESP-32S is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -280,5 +219,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODc3MDcyNV19
+eyJoaXN0b3J5IjpbLTEzNzkwNTA0MThdfQ==
 -->
