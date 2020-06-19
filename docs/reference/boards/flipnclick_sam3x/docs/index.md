@@ -77,11 +77,7 @@ The Flip & Click Programming port is connected to an ATmega16U2, which provides 
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through the ATmega16U2 microcontroller.
@@ -100,7 +96,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Flip
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Flip & Click is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
@@ -108,7 +105,9 @@ Check this video for a live demo:
 
   <div style="margin-top:10px;">
 <iframe width="100%" height="481" src="https://www.youtube.com/embed/u2pEH5dSZbo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  </div>```NOTE```: No user intervention on the device is required for the uplink process.
+  </div>
+  !!! note
+	  No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -116,42 +115,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00080000
-
-    | 256Kb
-
- | VM Slot
-
- |
-| 0x000C0000
-
-    | 125Kb
-
- | Bytecode Slot 0
-
- |
-| 0x000E0000
-
-    | 128Kb-256b
-
- | Bytecode Slot 1
-
- |
-| 0x000FFF00
-
-    | 256b
-
-       | FOTA Record
-
-     |
+| Start address | Size       | Content         |
+|---------------|------------|-----------------|
+| 0x00080000    | 256Kb      | VM Slot         |
+| 0x000C0000    | 125Kb      | Bytecode Slot 0 |
+| 0x000E0000    | 128Kb-256b | Bytecode Slot 1 |
+| 0x000FFF00    | 256b       | FOTA Record     |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3ODUxNTkxXX0=
+eyJoaXN0b3J5IjpbLTYxMjA5MzQyOV19
 -->
