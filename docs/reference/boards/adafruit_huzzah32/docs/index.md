@@ -13,151 +13,18 @@ Official reference for Adafruit Huzzah32 can be found [here](https://learn.adafr
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+| Start address | Size  | Content                 |
+|---------------|-------|-------------------------|
+| 0x00009000    | 16Kb  | Esp32 NVS area          |
+| 0x0000D000    | 8Kb   | Esp32 OTA data          |
+| 0x0000F000    | 4Kb   | Esp32 PHY data          |
+| 0x00010000    | 1Mb   | Zerynth VM              |
+| 0x00110000    | 1Mb   | Zerynth VM (FOTA)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode        |
+| 0x00290000    | 512Kb | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb | Free for user storage   |
+| 0x00390000    | 448Kb | Reserved                |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00009000
-
-    | 16Kb
-
- | Esp32 NVS area
-
- |
-| 0x0000D000
-
-    | 8Kb
-
-  | Esp32 OTA data
-
- |
-| 0x0000F000
-
-    | 4Kb
-
-  | Esp32 PHY data
-
- |
-| 0x00010000
-
-    | 1Mb
-
-  | Zerynth VM
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-  | Zerynth VM (FOTA)
-
- |
-| 0x00210000
-
-    | 512Kb
-
- | Zerynth Bytecode
-
-  |
-| 0x00290000
-
-    | 512Kb
-
- | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
- | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
- | Reserved
-
-                |
-For BLE VMs:
-
-| Start address
-
- | Size
-
-  | Content
-
-                 |
-| ------------- | ----- | ----------------------- |
-| 0x00009000
-
-    | 16Kb
-
-  | Esp32 NVS area
-
-          |
-| 0x0000D000
-
-    | 8Kb
-
-   | Esp32 OTA data
-
-          |
-| 0x0000F000
-
-    | 4Kb
-
-   | Esp32 PHY data
-
-          |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM
-
-              |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (FOTA)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode
-
-        |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
-  | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
-  | Reserved
-
-                |
 ## Device Summary
 
 
@@ -215,9 +82,11 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 
 The Adafruit Huzzah32 exposes the serial port of the ESP32 module via a CP2104 usb bridge which is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 
 * ```Ubuntu``` distribution –> dialout group
@@ -343,3 +212,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 
 * Touch detection support
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIyMjE3NzY0Nl19
+-->
