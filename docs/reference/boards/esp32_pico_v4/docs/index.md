@@ -97,11 +97,7 @@ The Esp32 Pico v4 comes with a serial-to-usb chip on board that allows programmi
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
 * **Ubuntu** distribution –> dialout group
-
-
 * **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Pico v4 device is recognized by Zerynth Studio. The next steps are:
@@ -118,11 +114,13 @@ Once connected on a USB port, if drivers have been correctly installed, the Pico
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Pico v4 is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -223,5 +221,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNzkxODU0N119
+eyJoaXN0b3J5IjpbLTE3NDEwMjg2OTNdfQ==
 -->
