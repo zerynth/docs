@@ -10,20 +10,14 @@ Manually initializes the Bluefruit peripheral by activating the following commun
 
 
 * *spidrv* is the SPI peripheral to use (usually SPI0 for devices with an Arduino compatible layout)
-
-
 * *nss* is the chip select pin (usually D8)
-
-
 * *irqpin* is the pin used by the Bluefruit hardware to signal incoming messages (usually D7)
 
 The SPI driver is started and the Bluefruit initialization sequence is sent.
 
-
 **`hard_reset()`**
 
 Performs a software reset. Returns True on success.
-
 
 **`reset()`**
 
@@ -42,49 +36,30 @@ Setup advertising data. Please refer to [this resource](https://www.bluetooth.or
 
 *data* is an iterable containing blocks of data in the following format:
 
-
 * byte 1: length of the block (n)
-
-
 * byte 2: type of the block
-
-
 * byte 3 to n: value of the block
 
 Usually *data* is made of a flag block, followed by blocks advertising BLE services.
 
 For example the sequence [0x02, 0x01, 0x06, 0x05, 0x02, 0x0d, 0x18, 0x0a, 0x18] is an encoding of the following info:
 
-
 * 0x02: length of block 1
-
-
 * 0x01: type of the block (“Flag”)
-
-
 * 0x06: value of the block
-
-
 * 0x05: length of block 2
-
-
 * 0x02: type of block (“List of 16-bit Service UUID”)
-
-
 * 0x180d, 0x180a: two 16 bit uuids. The first one is for a “Heart rate” service, the second for “Device Info” service.
 
 Refer to [this](https://www.bluetooth.org/en-us/specification/assigned-numbers/generic-access-profile) for a list of block types.
 
 Returns True on success.
 
-
 **`gap_is_connected()`**
 
 Returns 1 if Bluefruit hardware is connected to a client, 0 if not connected. Returns None on failure.
 
-
 **`gatt(cfg=None)`**
-
 
 If *cfg* is None returns the current [GATT](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) configuration.
 
@@ -107,24 +82,16 @@ Every list of 4 elements identifies a characteristic of the previously defined s
 
 
 * a handle at position 0: can be set to zero
-
-
 * a characteristic UUID: can be 16, 32 or 128 bits
-
-
 * a default value for the characteristic: can be a string, an integer or an iterable of bytes.
-
-
 * a permission flag: refer to [this](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-spi-breakout/ble-gatt) for reference
 
 Returns the configuration activated on the device or None on failure. After a configuration is successfully set, the return value contains handles modified to the actual ones choosen by the device.
-
 
 **`gatt_set(handle,value)`**
 
 Sets the *value* of a characteristic given its *handle* (as returned after a successful configuration). Value can be an integer, a string or an iterable of bytes.
 Returns False on failure.
-
 
 **`gatt_get(handle)`**
 
@@ -132,21 +99,17 @@ Returns the value of the characteristic identified by *handle* (as returned afte
 
 Returns None on failure.
 
-
 **`addr()`**
 
 Returns the 48bit mac address of the device as an hex string. Returns None on failure.
-
 
 **`peer_addr()`**
 
 Returns the 48bit mac address of the client connected device as an hex string. Returns None on failure.
 
-
 **`addr()`**
 
 Returns the RSSI level id dBm. Returns None on failure.
-
 
 **`tx_power(dbm=None)`**
 
@@ -155,7 +118,6 @@ If *`dbm`* is None, returns the current transmission power level. Otherwise sets
 Returns None on failure.
 
 ## BLEStream class
-
 
 **`class BLEStream(fifosize=1024)`**
 

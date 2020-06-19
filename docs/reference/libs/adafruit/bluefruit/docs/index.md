@@ -6,34 +6,17 @@ Adafruit Bluefruit LE SPI products family enables Bluetooth Low Energy connectiv
 
 
 * ARM Cortex M0 core running at 16MHz
-
-
 * 256KB flash memory
-
-
 * 32KB SRAM
-
-
 * Transport: SPI at 4MHz with HW IRQ
-
-
 * 5V-safe inputs
-
-
 * On-board 3.3V voltage regulation
-
-
 * Bootloader with support for safe OTA firmware updates
-
-
 * Easy AT command set to get up and running quickly
 
 Here below, the Zerynth driver for the Adafruit Bluefruit LE SPI products family and some examples to better understand how to use it.
 
 Contents:
 
-
 * Bluefruit Module
-
-
     * BLEStream class
