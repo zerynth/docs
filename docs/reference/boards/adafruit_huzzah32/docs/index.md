@@ -108,11 +108,13 @@ Once connected on a USB port, if drivers have been correctly installed, the Huzz
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Huzzah32 is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -213,5 +215,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjE3NzY0Nl19
+eyJoaXN0b3J5IjpbMzE1NzM3NjMyXX0=
 -->
