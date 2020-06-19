@@ -125,81 +125,22 @@ After virtualization, the NodeMCU ESP-32S is ready to be programmed and the  Zer
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the NodeMCU ESP-32S device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
-| Start address
-
- | Size
-
-   | Content
-
-                 |
-| ------------- | ------ | ----------------------- |
-| 0x00010000
-
-    | 1Mb
-
-    | Zerynth VM (slot 0)
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-    | Zerynth VM (slot 1)
-
-     |
-| 0x00210000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x00290000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For BLE VMs:
 
-| Start address
+| Start address | Size   | Content                   |
+|---------------|--------|---------------------------|
+| 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
+| 0x00140000    | 1216Kb | Zerynth VM (slot 1)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode (slot 0) |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                   |
-| ------------- | ------ | ------------------------- |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM (slot 0)
-
-       |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (slot 1)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For Esp32 based devices, the FOTA process is implemented mostly by using the provided system calls in the IDF framework. The selection of the next VM to be run is therefore a duty of the Espressif bootloader; the bootloader however, does not provide a failsafe mechanism to revert to the previous VM in case the currently selected one fails to start. At the moment this lack of a safety feature can not be circumvented, unless by changing the bootloader. As soon as Espressif relases a new IDF with such feature, we will release updated VMs.
 
 ## Secure Firmware
@@ -219,5 +160,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzkwNTA0MThdfQ==
+eyJoaXN0b3J5IjpbLTEwNDcyNjQzMzFdfQ==
 -->
