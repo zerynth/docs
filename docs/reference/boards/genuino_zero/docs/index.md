@@ -71,9 +71,7 @@ The Arduino/Genuino Zero Programming port is connected to EDBG, which provides a
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 * **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
-
 If the device is still not recognized or not working, the following udev rules may need to be added:
-
 ```
 #Genuino Zero Device
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2157", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -107,35 +105,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 88Kb | VM Slot         |
+| 0x00018000    | 80Kb | Bytecode Slot 0 |
+| 0x0002C000    | 80Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 88Kb
-
- | VM Slot
-
- |
-| 0x00018000
-
-    | 80Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002C000
-
-    | 80Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -144,5 +119,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzAwMzk3MF19
+eyJoaXN0b3J5IjpbMjA3MzA1Ml19
 -->
