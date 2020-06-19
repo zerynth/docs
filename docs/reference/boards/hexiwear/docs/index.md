@@ -108,43 +108,13 @@ After virtualization, the device is ready to be programmed and the Zerynth scrip
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Hexiwear device is available for bytecode only.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x00000000    | 96Kb  | VM Slot         |
+| 0x00018000    | 452Kb | Bytecode Slot 0 |
+| 0x00089000    | 472Kb | Bytecode Slot 1 |
+| 0x000FF000    | 4Kb   | FOTA Record     |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00000000
-
-    | 96Kb
-
- | VM Slot
-
- |
-| 0x00018000
-
-    | 452Kb
-
- | Bytecode Slot 0
-
- |
-| 0x00089000
-
-    | 472Kb
-
- | Bytecode Slot 1
-
- |
-| 0x000FF000
-
-    | 4Kb
-
-   | FOTA Record
-
-     |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -153,5 +123,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - NXP K64 section and Secure Firmware - NXP K64 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjY2NDkxMjFdfQ==
+eyJoaXN0b3J5IjpbNDE3ODQzMzAwXX0=
 -->
