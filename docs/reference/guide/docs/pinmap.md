@@ -2,7 +2,7 @@
 
 Zerynth allows multi-board programming. To do this in a reliable and maintainable way it has been necessary to define a pin naming strategy that allows programming native multi-board scripts.
 
-In Zerynth we decided to follow the widely accepted Arduino derived pin naming schema where **Digital pin** are named with `Dx` where *x*x is the number of the physical pin available on the board (not of the MCU pin!). Similarly, **Analog pins** are named with `Ax`.
+In Zerynth we decided to follow the widely accepted Arduino derived pin naming schema where **Digital pin** are named with `Dx` where *x* is the number of the physical pin available on the board (not of the MCU pin!). Similarly, **Analog pins** are named with `Ax`.
 
 In Zerynth, an *attribute* is added to the pin name for specifying the function we are going to use on that specific pin.
 
@@ -88,6 +88,6 @@ However, this pin naming is an advanced feature of the Zerynth suite and it is r
 Moreover, all the Zerynth init functions (`can.init()`, `spi.init()`, `i2c.init()`) also allow fast configuration by using short-names like (`CAN0`, `I2C0`, `SPI0`, `SERIAL0`). For example, it is possible to open the serial port 0 with default parameters by calling `streams.serial()` or opening the serial port 1 by calling `streams.serial(SERIAL1)`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTU5Mjc5NSwyNDUzMTY5NjksLTMxMD
-E0ODcxOSwyMDc2MjI5ODU1LDIwODg1NjE2OTldfQ==
+eyJoaXN0b3J5IjpbMjQ1MzE2OTY5LC0zMTAxNDg3MTksMjA3Nj
+IyOTg1NSwyMDg4NTYxNjk5XX0=
 -->

@@ -550,8 +550,7 @@ Return a bytes or bytearray object which is the concatenation of the binary data
 
 Return a copy of the sequence with all occurrences of subsequence *old* replaced by *new.*
 
-NOTE: !!! note
-	The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
+NOTE: The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
 
 
 **`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`**
@@ -920,11 +919,11 @@ LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlsyMDAxNTU1MDU3LC0xNTc0OT
-Q4MTM4LC05OTQwMTI4NjEsLTIyMDYyNzcxNSwxOTMyMTk0NDc0
-LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzOD
-k2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2
-OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
-kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
-LC0xNTA1NDMzMDA3XX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTU3NDk0ODEzOCwtOTk0MD
+EyODYxLC0yMjA2Mjc3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5
+MiwtMTM2MTkwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NT
+Q4NDYyOCwxMTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4Mjky
+LDU5OTk0NDc5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzOD
+E2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAw
+NywxMTEzOTQ3MDA1XX0=
 -->
