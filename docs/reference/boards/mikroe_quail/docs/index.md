@@ -6,7 +6,8 @@ Hardware-wise, Quail has 4 mikroBUS sockets for click board connectivity, along 
 
 The device needs a 5V power supply and features a [STM32F427 MCU](http://www.st.com/content/ccc/resource/technical/document/datasheet/03/b4/b2/36/4c/72/49/29/DM00071990.pdf/files/DM00071990.pdf/jcr:content/translations/en.DM00071990.pdf) running at 168MHz with 192Kb of RAM, 2Mb of flash and additional 8Mb of spi flash.
 
-```NOTE```: Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
+!!! note
+	Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
 
 ## Pin Mapping
 
@@ -350,3 +351,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTEwMTA2MjYzNl19
+-->
