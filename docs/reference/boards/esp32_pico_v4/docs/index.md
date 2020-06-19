@@ -37,6 +37,7 @@ For BLE VMs:
 | 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
 | 0x00310000    | 512Kb  | Free for user storage   |
 | 0x00390000    | 448Kb  | Reserved                |
+
 ## Device Summary
 
 
@@ -94,10 +95,11 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 
 The Esp32 Pico v4 comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the Pico v4 should work out of the box.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 
-* ```Ubuntu``` distribution –> dialout group
+* **Ubuntu** distribution –> dialout group
 
 
 * **Arch Linux** distribution –> uucp group
@@ -221,5 +223,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2Njg3NTY4XX0=
+eyJoaXN0b3J5IjpbMTQzNzkxODU0N119
 -->
