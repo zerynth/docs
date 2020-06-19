@@ -14,9 +14,10 @@ Official reference for Adafruit Feather Huzzah can be found [here](https://www.a
 
 The Adafruit Feather Huzzah device features a 4 MB (32 Mb) flash memory organized in sectors of 4k each. The flash memory address starts at 0x40200000 and can be read and written from a Zerynth program using the internal flash module.
 
-```WARNING```: If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
+!!! warning
+	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
 
-```NOTE```: The internal flash of Adafruit Feather Huzzah can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
+!!! The internal flash of Adafruit Feather Huzzah can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
 
 ## Device Summary
 
@@ -140,3 +141,6 @@ Flash Layout is shown in table below:
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNTE3MDE0N119
+-->
