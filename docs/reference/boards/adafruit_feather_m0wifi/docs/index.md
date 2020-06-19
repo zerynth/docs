@@ -6,9 +6,11 @@ The design includes a Li-Po charging circuit that allows the Adafruit Feather M0
 
 All these features make this device the preferred choice for the emerging IoT battery-powered projects in a compact form factor.
 
-```WARNING```: the Adafruit Feather M0 Wi-Fi runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+!!! warning
+	the Adafruit Feather M0 Wi-Fi runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
 
-```NOTE```: All the reported information are extracted from the official [Adafruit Feather M0 Wi-Fi page](https://www.adafruit.com/product/3010), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Adafruit Feather M0 Wi-Fi page](https://www.adafruit.com/product/3010), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -18,7 +20,8 @@ Adafruit Feather M0 Wi-Fi Official Schematic, Reference Design and Pin Mapping a
 
 The internal flash of the Adafruit Feather M0 Wi-Fi is organized as a single bank of 256k.
 
-```NOTE```: Zerynth VM preserves SAM-BA Bootloader located at Flash start.
+!!! note
+	Zerynth VM preserves SAM-BA Bootloader located at Flash start.
 
 ## Device Summary
 
@@ -71,7 +74,8 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 
 Adafruit Feather M0 Wi-Fi should be recognized out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.0.0.0/adafruit_drivers_2.0.0.0.exe), otherwise this can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greate.
 
-```NOTE```: Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the Feather M0 Wi-Fi device.
+!!! note
+Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the Feather M0 Wi-Fi device.
 
 ```WARNING```: Remember, when using the Zadig utility, to select “Options > List all devices” to search for the Feather M0 Wi-Fi device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
 
@@ -143,3 +147,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMDQ4NDAxNjVdfQ==
+-->
