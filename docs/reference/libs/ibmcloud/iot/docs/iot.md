@@ -7,10 +7,7 @@ It allows to make your device act as an IBM Watson IoT Device which can be creat
 ## The Device class
 
 
-**`class---
-#### `#!py3 Device()`
-
-!!!abstract "`#!py3 Device(device_id, device_type, organization, auth_token)`**"
+**`class Device(device_id,device_type,organization,auth_token)`**
 
 Create a Device instance representing an IBM Watson IoT Device.
 
@@ -29,20 +26,14 @@ my_device.mqtt.loop()
 ```
 
 
-**`---
-#### `#!py3 publish()`
-
-!!!abstract "`#!py3 publish(event_id, event, format_string='json')`**"
+**`publish(event_id,event,format_string='json')`**
 
 Publish `event_id` event with `event` content.
 
 `event` content has to be a dictionary when `'json'` is chosen as `format_string`, a string otherwise.
 
 
-**`---
-#### `#!py3 on_cmd()`
-
-!!!abstract "`#!py3 on_cmd(command_id, command_cbk, format_string='json')`**"
+**`on_cmd(command_id,command_cbk,format_string='json')`**
 
 Set a callback to respond to `command_id` command.
 
@@ -58,5 +49,5 @@ def turn_led(cmd_content):
 my_device.on_cmd('turn_led', turn_led)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwMDMxNjcxLDE3ODE4MDM5M119
+eyJoaXN0b3J5IjpbMTc4MTgwMzkzXX0=
 -->

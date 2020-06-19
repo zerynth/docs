@@ -4,13 +4,7 @@ The following are a list of examples for lib.melexis.mlx90615
 
 ## MLX90615
 
-
 Simple example to read values from the Melexis MLX90615 infrared thermometer.
-
-
-
-
-
 
 ```main.py```
 
