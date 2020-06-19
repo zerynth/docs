@@ -11,78 +11,18 @@ Reference for NodeMCU ESP-32S can be found [here](https://www.shenzhen2u.com/Nod
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+| Start address | Size  | Content                 |
+|---------------|-------|-------------------------|
+| 0x00009000    | 16Kb  | Esp32 NVS area          |
+| 0x0000D000    | 8Kb   | Esp32 OTA data          |
+| 0x0000F000    | 4Kb   | Esp32 PHY data          |
+| 0x00010000    | 1Mb   | Zerynth VM              |
+| 0x00110000    | 1Mb   | Zerynth VM (FOTA)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode        |
+| 0x00290000    | 512Kb | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb | Free for user storage   |
+| 0x00390000    | 448Kb | Reserved                |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00009000
-
-    | 16Kb
-
- | Esp32 NVS area
-
- |
-| 0x0000D000
-
-    | 8Kb
-
-  | Esp32 OTA data
-
- |
-| 0x0000F000
-
-    | 4Kb
-
-  | Esp32 PHY data
-
- |
-| 0x00010000
-
-    | 1Mb
-
-  | Zerynth VM
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-  | Zerynth VM (FOTA)
-
- |
-| 0x00210000
-
-    | 512Kb
-
- | Zerynth Bytecode
-
-  |
-| 0x00290000
-
-    | 512Kb
-
- | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
- | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
- | Reserved
-
-                |
 For BLE VMs:
 
 | Start address
@@ -339,3 +279,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 
 * Touch detection support
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI4ODc3MDcyNV19
+-->
