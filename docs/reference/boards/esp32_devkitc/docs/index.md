@@ -95,7 +95,8 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 
 The Esp32 DevKitC comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the DevKitC should work out of the box.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!!note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 
 * ```Ubuntu``` distribution –> dialout group
@@ -117,7 +118,8 @@ Once connected on a USB port, if drivers have been correctly installed, the DevK
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the DevKitC is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
@@ -125,7 +127,9 @@ Check this video for a live demo:
 
 <div style="margin-top:10px;">
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/nfx-hJNxdp8?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>```NOTE```: No user intervention on the device is required for the uplink process.
+</div>
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -133,42 +137,13 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                 |
-| ------------- | ------ | ----------------------- |
-| 0x00010000
-
-    | 1Mb
-
-    | Zerynth VM (slot 0)
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-    | Zerynth VM (slot 1)
-
-     |
-| 0x00210000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x00290000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For BLE VMs:
 
 | Start address
@@ -226,5 +201,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjg3ODQ5Nl19
+eyJoaXN0b3J5IjpbNzQ3MTkzMDU0XX0=
 -->
