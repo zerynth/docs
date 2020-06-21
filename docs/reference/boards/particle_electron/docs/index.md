@@ -89,16 +89,14 @@ On ```Windows``` machines the [Particle Electron USB Drivers](https://docs.parti
 
 To install the drivers on ```Windows``` plug the Electron on an USB port, unzip the downloaded package, go to the **Windows Device Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).
 
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Electron driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Electron driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -202,5 +200,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDQ2MzY0MF19
+eyJoaXN0b3J5IjpbMTEzMTMwMzkwMCwtMzU0NDYzNjQwXX0=
 -->
