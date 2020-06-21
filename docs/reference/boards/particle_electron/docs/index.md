@@ -6,7 +6,8 @@ Particle Electron uses the [STM32F205RG Cortex M3 microcontroller](http://www.st
 
 In addition to having 1Mb of internal flash memory for storing the firmware, the Electron also features 128k of Ram and 120 MHz of clock.
 
-```NOTE```: all the reported information are extracted from the official [Particle Electron reference page](http://docs.particle.io/electron/), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Particle Electron reference page](http://docs.particle.io/electron/), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -15,100 +16,23 @@ Particle Electron Official Schematic, Reference Design & Pin Mapping are availab
 ## Flash Layout
 
 The internal flash of the Particle Electron is organized into sectors of different size according to the following table:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x8000000     | 16Kb  | BootLoader      |
+| 0x8004000     | 16Kb  | DCT1            |
+| 0x8008000     | 16Kb  | DCT2            |
+| 0x800C000     | 16Kb  | EEPROM1         |
+| 0x8010000     | 64Kb  | EEPROM2         |
+| 0x8020000     | 128kb | Virtual Machine |
+| 0x8040000     | 128kb | Bytecode Bank 0 |
+| 0x8060000     | 128kb | Bytecode Bank 1 |
+| 0x8080000     | 128kb | Bytecode Bank 2 |
+| 0x80A0000     | 128kb | Bytecode Bank 3 |
+| 0x80C0000     | 128kb | Bytecode Bank 4 |
+| 0x80E0000     | 128kb | Bytecode Bank 5 |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x8000000
-
-     | 16Kb
-
- | BootLoader
-
- |
-| 0x8004000
-
-     | 16Kb
-
- | DCT1
-
-       |
-| 0x8008000
-
-     | 16Kb
-
- | DCT2
-
-       |
-| 0x800C000
-
-     | 16Kb
-
- | EEPROM1
-
-    |
-| 0x8010000
-
-     | 64Kb
-
- | EEPROM2
-
-    |
-| 0x8020000
-
-     | 128kb
-
- | Virtual Machine
-
- |
-| 0x8040000
-
-     | 128kb
-
- | Bytecode Bank 0
-
- |
-| 0x8060000
-
-     | 128kb
-
- | Bytecode Bank 1
-
- |
-| 0x8080000
-
-     | 128kb
-
- | Bytecode Bank 2
-
- |
-| 0x80A0000
-
-     | 128kb
-
- | Bytecode Bank 3
-
- |
-| 0x80C0000
-
-     | 128kb
-
- | Bytecode Bank 4
-
- |
-| 0x80E0000
-
-     | 128kb
-
- | Bytecode Bank 5
-
- |
-```WARNING```: If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes.
+!!! note
+	If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes.
 
 Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
 
@@ -277,3 +201,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM1NDQ2MzY0MF19
+-->
