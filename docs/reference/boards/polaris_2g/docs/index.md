@@ -132,7 +132,8 @@ Once connected to a USB port the Polaris device can be seen as a Virtual Serial 
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Polaris 2G device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again.
+!!! note
+	During these operations the Polaris 2G device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again.
 
 After virtualization, the Polaris 2G is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
@@ -144,5 +145,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODMwOTU5NF19
+eyJoaXN0b3J5IjpbMTA3Njc0NDc2OV19
 -->
