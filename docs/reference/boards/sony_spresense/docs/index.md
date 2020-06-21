@@ -69,12 +69,9 @@ More here on the [official documentation](https://developer.sony.com/develop/spr
 
 The Sony Spresense Main Board comes with a USB to UART bridge on board that allows programming and opening the serial monitor when the board is plugged. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Sony documentation](https://developer.sony.com/develop/spresense/developer-tools/get-started-using-arduino-ide/set-up-the-arduino-ide#_prerequisites) page. In Linux systems, the Spresense should work out of the box.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 Once connected through the Main USB port, if drivers have been correctly installed, the Spresense device is recognized by Zerynth Studio. The next steps are:
@@ -94,11 +91,13 @@ Once connected through the Main USB port, if drivers have been correctly install
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Spresense is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Extra notes
 
@@ -106,3 +105,6 @@ As reported in the previous section, Spresense Bootloader needs to be burnt on S
 
 SPI modes: when the pin `D10` is chosen as Chip Select pin, SPI modes follow the [Motorola SPI Frame Format](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0194h/I1006921.html).
 If an independent CS control is desired, please choose a different CS pin.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMTAzNTY5NThdfQ==
+-->
