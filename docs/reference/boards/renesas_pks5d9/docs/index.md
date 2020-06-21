@@ -14,124 +14,6 @@ Renesas PK-S5D9 official manual is available [here](https://www.renesas.com/us/e
 
 The internal flash of the Renesas PK-S5D9 is organized into one bank of 2Mb with 70 total sectors of different size according to the following table:
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00000000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00002000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00004000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00006000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00008000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x0000a000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x0000c000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x0000e000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00010000
-
-    | 32Kb
-
- | Reserved
-
- |
-| 0x00018000
-
-    | 32Kb
-
- | Reserved
-
- |
-| 0x00020000
-
-    | 32Kb
-
- | Virtual Machine
-
- |
-| 0x00028000
-
-    | 32Kb
-
- | Bytecode Slot 0
-
- |
-| 0x00030000
-
-    | 32Kb
-
- | Bytecode Slot 1
-
- |
-| 0x00038000
-
-    | 32Kb
-
- | Bytecode Slot 2
-
- |
-| …
-
-             | …
-
-    | …
-
-               |
-| 0x001F8000
-
-    | 32Kb
-
- | Bytecode Slot 59
 
  |
 ## Device Summary
@@ -216,3 +98,6 @@ Not all features have been included in the Renesas PK-S5D9 VMs. In particular th
 
 
 * Audio Output;
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwMDIyMjgxNDJdfQ==
+-->
