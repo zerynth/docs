@@ -43,7 +43,8 @@ The Infineon XMC4200 comes with a usb debugger chip on board that allows program
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
--   **Ubuntu**  distribution –> dialout group-   **Arch Linux**  distribution –> uucp group
+-   **Ubuntu**  distribution –> dialout group
+-   **Arch Linux**  distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the XMC4200 device is recognized by Zerynth Studio. The next steps are:
 
@@ -52,15 +53,14 @@ Once connected on a USB port, if drivers have been correctly installed, the XMC4
 -   **Create**  a Virtual Machine for the device by clicking the “Z” button for the second time;
 -   **Virtualize**  the device by clicking the “Z” button for the third time.
 
-Note
 
-No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the DevKitC is ready to be programmed and the Zerynth scripts  **uploaded**. Just  **Select**  the virtualized device from the “Device Management Toolbar” and  **click**  the dedicated “upload” button of Zerynth Studio.
 
-Note
-
-No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTgwMjMxNDBdfQ==
+eyJoaXN0b3J5IjpbLTM4NTI5NDc2XX0=
 -->
