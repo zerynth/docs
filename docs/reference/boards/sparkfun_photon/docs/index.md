@@ -101,24 +101,16 @@ Typical current consumption is 80mA with a 5V input. Deep sleep quiescent curren
 
 On ```Windows``` machines (Windows 10), the SparkFun Photon RedBoard in **Standard Mode** is automatically recognized as Virtual Serial port; otherwise [Particle USB Drivers for SparkFun Photon](https://docs.particle.io/guide/getting-started/connect/core/#installing-the-particle-driver) are required by Zerynth Studio for accessing the serial port establishing a connection with the STM32 UART.
 
-To install the drivers on ```Windows``` plug the SparkFun Photon on an USB port, download the 
+To install the drivers on ```Windows``` plug the SparkFun Photon on an USB port, download the *.exe package, and follow the installation steps to complete the operation.
 
-```
-*
-```
-
-.exe package, and follow the installation steps to complete the operation.
-
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` platforms USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -135,7 +127,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Spar
 
 To register and virtualize a Photon RedBoard, it is necessary to put the device in DFU Mode (Device Firmware Upgrade).
 
-```NOTE```: On ```Windows``` machines it is necessary to install also the SparkFun Photon DFU drivers for virtualizing the device.
+!!! note
+	On ```Windows``` machines it is necessary to install also the SparkFun Photon DFU drivers for virtualizing the device.
 
 The official **Particle Core** DFU driver and the related installation procedure are reported [here](https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518) but they also work for **SparkFun Photon RedBoard**.
 
@@ -168,7 +161,8 @@ Follow these steps to register and virtualize a Photon RedBoard:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the SparkFun Photon device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the SparkFun Photon device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 After virtualization, the SparkFun Photon is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -215,5 +209,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU4MjA2NzNdfQ==
+eyJoaXN0b3J5IjpbMTY1ODQyNDIzN119
 -->
