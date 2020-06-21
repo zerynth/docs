@@ -108,11 +108,7 @@ On **MAC OSX** and ```Linux``` platforms USB drivers are not required.
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -129,7 +125,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Part
 
 To register and virtualize a Particle Photon, it is necessary to put the Photon in DFU Mode (Device Firmware Upgrade) as reported in the official [Particle Photon Guide](https://docs.particle.io/guide/getting-started/modes/photon/).
 
-```NOTE```: On ```Windows``` machines it is necessary to install also the Photon DFU drivers for virtualizing the device.
+!!! note
+	On ```Windows``` machines it is necessary to install also the Photon DFU drivers for virtualizing the device.
 
 The official **Particle Core** DFU driver and the related installation procedure are reported [here](https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518) but they also work for **Particle Photon**.
 
@@ -162,7 +159,8 @@ Follow these steps to register and virtualize a Particle Photon:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Photon device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the Photon device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 After virtualization, the Particle Photon is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -171,36 +169,12 @@ After virtualization, the Particle Photon is ready to be programmed and the  Zer
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Particle Photon device is available for bytecode.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08020000    | 128Kb | VM Slot 0       |
+| 0x08040000    | 384kb | Bytecode Slot 0 |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
-| Start address
-
- | Size
-
-  | Content
-
-         |
-| ------------- | ----- | --------------- |
-| 0x08020000
-
-    | 128Kb
-
- | VM Slot 0
-
-       |
-| 0x08040000
-
-    | 384kb
-
- | Bytecode Slot 0
-
- |
-| 0x080A0000
-
-    | 384kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -209,5 +183,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzI5OTE2Ml19
+eyJoaXN0b3J5IjpbNjA3NDExMzcwXX0=
 -->
