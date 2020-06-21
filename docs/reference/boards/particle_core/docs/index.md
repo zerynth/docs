@@ -7,7 +7,8 @@ In addition to having 128KB of internal flash memory for storing the firmware, t
 
 This memory space (a total of 2MB) is used to store the factory reset firmware and a back up firmware. Part of the space is also available to the user who can use it to store log data, user parameters, etc.
 
-```NOTE```: All the reported information are extracted from the official [Particle Core reference page](http://docs.particle.io/core/), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Particle Core reference page](http://docs.particle.io/core/), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -18,7 +19,8 @@ Particle Core Official Schematic, Reference Design & Pin Mapping are available o
 The internal flash of the Particle Core is organized into 128 pages of 1k each starting from address 0x08000000 up to 0x8020000. The memory below 0x08005000 is reserved for Particle bootloader. The Virtual Machine starts at 0x08005000.
 The bytecode is stored in a variable position depending on the VM size.
 
-```NOTE```: The start address is shown during the uplinking operation in the log console of Zerynth Studio (romstart symbol).
+!!! note
+	The start address is shown during the uplinking operation in the log console of Zerynth Studio (romstart symbol).
 
 ## Device Summary
 
@@ -74,7 +76,8 @@ On ```Windows``` machines the [Particle Core USB Drivers](https://s3.amazonaws.c
 
 To install the drivers on ```Windows``` plug the Core on an USB port, unzip the downloaded package, go to the **Windows Device Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named spark_core).
 
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Core driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Core driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
@@ -138,3 +141,6 @@ Follow these steps to register and virtualize a Particle Core:
 ```WARNING```: Depending on the Particle Core bootloader version, it may be necessary to virtualize it twice. If after the first virtualization, the Particle Core starts blinking red (factory reset mode), wait for the factory reset to finish and repeat the operation sequence.
 
 After virtualization, the Particle Core is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY5OTc0NDg1NV19
+-->
