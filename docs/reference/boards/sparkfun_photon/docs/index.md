@@ -6,7 +6,8 @@ The P1 (P-one) is Particle’s tiny Wi-Fi module that contains both the Broadcom
 
 In addition to having 1MB of internal flash memory for storing the firmware, the SparkFun Photon also features 128KB of Ram, 1MB of extra SPI flash and 120 MHz of clock.
 
-```NOTE```: All the reported information are extracted from the official [SparkFun Photon RedBoard reference page](https://learn.sparkfun.com/tutorials/photon-redboard-hookup-guide?_ga=1.244092546.606776139.1483349376), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [SparkFun Photon RedBoard reference page](https://learn.sparkfun.com/tutorials/photon-redboard-hookup-guide?_ga=1.244092546.606776139.1483349376), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -16,99 +17,23 @@ SparkFun Photon RedBoard Official Schematic, Reference Design & Pin Mapping are 
 
 The internal flash of the SparkFun Photon RedBoard is organized into sectors of different size according to the following table:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x8000000     | 16Kb  | BootLoader      |
+| 0x8004000     | 16Kb  | DCT1            |
+| 0x8008000     | 16Kb  | DCT2            |
+| 0x800C000     | 16Kb  | EEPROM1         |
+| 0x8010000     | 64Kb  | EEPROM2         |
+| 0x8020000     | 128kb | Virtual Machine |
+| 0x8040000     | 128kb | Bytecode Bank 0 |
+| 0x8060000     | 128kb | Bytecode Bank 1 |
+| 0x8080000     | 128kb | Bytecode Bank 2 |
+| 0x80A0000     | 128kb | Bytecode Bank 3 |
+| 0x80C0000     | 128kb | Bytecode Bank 4 |
+| 0x80E0000     | 128kb | Bytecode Bank 5 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x8000000
-
-     | 16Kb
-
- | BootLoader
-
- |
-| 0x8004000
-
-     | 16Kb
-
- | DCT1
-
-       |
-| 0x8008000
-
-     | 16Kb
-
- | DCT2
-
-       |
-| 0x800C000
-
-     | 16Kb
-
- | EEPROM1
-
-    |
-| 0x8010000
-
-     | 64Kb
-
- | EEPROM2
-
-    |
-| 0x8020000
-
-     | 128kb
-
- | Virtual Machine
-
- |
-| 0x8040000
-
-     | 128kb
-
- | Bytecode Bank 0
-
- |
-| 0x8060000
-
-     | 128kb
-
- | Bytecode Bank 1
-
- |
-| 0x8080000
-
-     | 128kb
-
- | Bytecode Bank 2
-
- |
-| 0x80A0000
-
-     | 128kb
-
- | Bytecode Bank 3
-
- |
-| 0x80C0000
-
-     | 128kb
-
- | Bytecode Bank 4
-
- |
-| 0x80E0000
-
-     | 128kb
-
- | Bytecode Bank 5
-
- |
-```WARNING```: If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the chosen sector.
+!!! warning
+	If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the chosen sector.
 
 ## Device Summary
 
@@ -167,7 +92,8 @@ Power to the SparkFun Photon device is supplied via the on-board USB micro B con
 
 * If the device is powered via the USB port, VIN will output a voltage of approximately 4.8VDC due to a reverse polarity protection series schottky diode between V+ of USB and VIN.
 
-```NOTE```: When used as an output, the max load current on VIN is 1 Ampere.
+!!! note
+	When used as an output, the max load current on VIN is 1 Ampere.
 
 Typical current consumption is 80mA with a 5V input. Deep sleep quiescent current is 160uA. When powering the SparkFun Photon from the USB connector, make sure to use a quality cable to minimize voltage drops. If a high resistance cable (i.e., low current) is used, peak currents drawn from the SparkFun Photon when transmitting and receiving will result in voltage sag at the input which may cause a system brown out or intermittent operation. Likewise, the power source should be sufficient enough to source 1A of current to be on the safe side.
 
@@ -288,3 +214,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMTU4MjA2NzNdfQ==
+-->
