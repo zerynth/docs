@@ -108,12 +108,9 @@ The Pycom Expansion Board comes with the FT234XD Serial-to-usb chip on-board tha
 
 The Pycom Shields, instead, feature an USB to serial converter that should work out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://docs.pycom.io/chapter/pytrackpysense/installation/pycom.inf).
 
-!!!**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Pycom Fipy 1.0 device is recognized by Zerynth Studio. The next steps are:
@@ -145,7 +142,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Pyco
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During the Registration procedure, press the Reset on-board button when asked.
+!!! note
+	During the Registration procedure, press the Reset on-board button when asked.
 
 After virtualization, the Pycom Fipy 1.0 is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -155,80 +153,22 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                 |
-| ------------- | ------ | ----------------------- |
-| 0x00010000
-
-    | 1Mb
-
-    | Zerynth VM (slot 0)
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-    | Zerynth VM (slot 1)
-
-     |
-| 0x00210000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x00290000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For BLE VMs:
 
-| Start address
+| Start address | Size   | Content                   |
+|---------------|--------|---------------------------|
+| 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
+| 0x00140000    | 1216Kb | Zerynth VM (slot 1)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode (slot 0) |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                   |
-| ------------- | ------ | ------------------------- |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM (slot 0)
-
-       |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (slot 1)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For Esp32 based devices, the FOTA process is implemented mostly by using the provided system calls in the IDF framework. The selection of the next VM to be run is therefore a duty of the Espressif bootloader; the bootloader however, does not provide a failsafe mechanism to revert to the previous VM in case the currently selected one fails to start. At the moment this lack of a safety feature can not be circumvented, unless by changing the bootloader. As soon as Espressif relases a new IDF with such feature, we will release updated VMs.
 
 ## Secure Firmware
@@ -248,5 +188,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzcxNTI0MTddfQ==
+eyJoaXN0b3J5IjpbMTM1MDAxODY3XX0=
 -->
