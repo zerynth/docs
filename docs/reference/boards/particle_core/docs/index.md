@@ -81,12 +81,9 @@ To install the drivers on ```Windows``` plug the Core on an USB port, unzip the 
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -103,7 +100,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Core
 
 To register and virtualize the Core, it is necessary to put the Core in DFU Mode (Device Firmware Upgrade) as reported in the official [Particle Core Guide](http://docs.particle.io/core/modes/).
 
-```NOTE```: On ```Windows``` machines it is necessary to install also the Particle Core DFU drivers for virtualizing the device.
+!!! note
+	On ```Windows``` machines it is necessary to install also the Particle Core DFU drivers for virtualizing the device.
 
 The official Particle Core DFU driver and the related installation procedure are reported [here](https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518).
 
@@ -136,11 +134,13 @@ Follow these steps to register and virtualize a Particle Core:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Core device must be in **DFU Mode**. If the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the Core device must be in **DFU Mode**. If the device returns in standard mode, it is necessary to put it in DFU Mode again
 
-```WARNING```: Depending on the Particle Core bootloader version, it may be necessary to virtualize it twice. If after the first virtualization, the Particle Core starts blinking red (factory reset mode), wait for the factory reset to finish and repeat the operation sequence.
+!!! warning
+	Depending on the Particle Core bootloader version, it may be necessary to virtualize it twice. If after the first virtualization, the Particle Core starts blinking red (factory reset mode), wait for the factory reset to finish and repeat the operation sequence.
 
 After virtualization, the Particle Core is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTc0NDg1NV19
+eyJoaXN0b3J5IjpbLTEzMzEyMzQxOTVdfQ==
 -->
