@@ -109,38 +109,15 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x40200000    | 448Kb | VM Slot         |
+| 0x40270000    | 256Kb | Bytecode Slot 0 |
+| 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x40200000
-
-    | 448Kb
-
- | VM Slot
-
- |
-| 0x40270000
-
-    | 256Kb
-
- | Bytecode Slot 0
-
- |
-| 0x402B0000
-
-    | 320Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNzIyMzU2Ml19
+eyJoaXN0b3J5IjpbNDQ1MTM4OTE5XX0=
 -->
