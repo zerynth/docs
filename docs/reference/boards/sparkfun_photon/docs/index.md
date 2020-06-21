@@ -172,35 +172,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08020000    | 128Kb | VM Slot 0       |
+| 0x08040000    | 384kb | Bytecode Slot 0 |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
- | Size
-
-  | Content
-
-         |
-| ------------- | ----- | --------------- |
-| 0x08020000
-
-    | 128Kb
-
- | VM Slot 0
-
-       |
-| 0x08040000
-
-    | 384kb
-
- | Bytecode Slot 0
-
- |
-| 0x080A0000
-
-    | 384kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -209,5 +186,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODQyNDIzN119
+eyJoaXN0b3J5IjpbMTY2NzY5MDM4OV19
 -->
