@@ -17,98 +17,21 @@ ST Discovery F407VG official manual is available [here](https://www.st.com/conte
 
 The internal flash of the ST Discovery F407VG is organized into one bank of 1Mb with sectors of different size according to the following table:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x8000000     | 16Kb  | Virtual Machine |
+| 0x8004000     | 16Kb  | Virtual Machine |
+| 0x8008000     | 16Kb  | Virtual Machine |
+| 0x800C000     | 16Kb  | Virtual Machine |
+| 0x8010000     | 64Kb  | Virtual Machine |
+| 0x8020000     | 128kb | Bytecode Bank 0 |
+| 0x8040000     | 128kb | Bytecode Bank 1 |
+| 0x8060000     | 128kb | Bytecode Bank 2 |
+| 0x8080000     | 128kb | Bytecode Bank 3 |
+| 0x80A0000     | 128kb | Bytecode Bank 4 |
+| 0x80C0000     | 128kb | Bytecode Bank 5 |
+| 0x80E0000     | 128kb | Bytecode Bank 6 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x8000000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x8004000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x8008000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x800C000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x8010000
-
-     | 64Kb
-
- | Virtual Machine
-
- |
-| 0x8020000
-
-     | 128kb
-
- | Bytecode Bank 0
-
- |
-| 0x8040000
-
-     | 128kb
-
- | Bytecode Bank 1
-
- |
-| 0x8060000
-
-     | 128kb
-
- | Bytecode Bank 2
-
- |
-| 0x8080000
-
-     | 128kb
-
- | Bytecode Bank 3
-
- |
-| 0x80A0000
-
-     | 128kb
-
- | Bytecode Bank 4
-
- |
-| 0x80C0000
-
-     | 128kb
-
- | Bytecode Bank 5
-
- |
-| 0x80E0000
-
-     | 128kb
-
- | Bytecode Bank 6
-
- |
 ## Device Summary
 
 
@@ -248,3 +171,6 @@ Not all features have been included in the ST Discovery based VMs. In particular
 
 
 * CS43L22 audio DAC with integrated class D speaker driver;
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTAzMTgwNTU4XX0=
+-->
