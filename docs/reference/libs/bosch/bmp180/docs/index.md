@@ -3,7 +3,7 @@
 The BMP180 is a digital fully calibrated barometric pressure sensor of Bosch Sensortec, with a very high performance. This sensor enables applications in advanced mobile devices, such as smartphones, tablet PCs and sports devices. The ultra-low power consumption down to 3 μA makes the BMP180 one of the best sensor in terms of power saving for your mobile devices.
 
 For optimum system integration the BMP180 is equipped with digital bidirectional I2C interface; Typical applications can regard indoor navigation, GPS-enhancement (for dead-reckoning, slope detection, etc.), weather forecast, vertical velocity indication (rise/sink speed), and many more.
-More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/products/all_products/bmp180)
+More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/products/all_products/bmp180).
 
 ## Technical Details
 

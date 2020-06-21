@@ -1,6 +1,6 @@
 # Bluefruit Module
 
-This module implements the driver for the Adafruit Bluefruit LE SPI products family, based on Bluefruit firmware v0.6.7 or higher ([link](https://www.adafruit.com/products/2746)).
+This module implements the driver for the Adafruit Bluefruit LE SPI products family, based on Bluefruit firmware v0.6.7 or higher [link](https://www.adafruit.com/products/2746).
 
 Data between the mcu and the Bluefruit hardware is exchanged by SPI or serial communication. However, this module has support for SPI only.
 
@@ -67,7 +67,7 @@ Otherwise BLuefruit configuration is cleared first and then changed to *cfg*.
 
 The format of *cfg* is a list of lists:
 
-```
+```py
 cfg = [
     [0,0x180D],                     # Service with UUID 0x180D = Heart Rate
       [1,0x2a37,(0x00,0x40),0x10],  # Characteristic of last defined service

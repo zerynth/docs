@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.melexis.mlx90615
+The following are a list of examples for lib.melexis.mlx90615.
 
 ## MLX90615
 

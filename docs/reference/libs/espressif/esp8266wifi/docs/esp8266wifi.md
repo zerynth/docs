@@ -15,7 +15,7 @@ Once ended this operation without errors, the Wi-Fi chip is ready to work and it
 
 **`get_rssi()`**
 
-Returns the current RSSI in dBm
+Returns the current RSSI in dBm.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2MTQ0MzIxMzRdfQ==
 -->

@@ -1,6 +1,6 @@
 # Bluefruit
 
-Adafruit Bluefruit LE SPI products family enables Bluetooth Low Energy connectivity to anything that supports SPI communication. Thanks to the connection between the Bluefruit LE chip and the device using the common four-pin SPI interface (MISO, MOSI, SCK and CS/SSEL), it is possible to enable the solution with wireless communication features; more information at [Adafruit dedicated page](https://www.adafruit.com/products/2746)
+Adafruit Bluefruit LE SPI products family enables Bluetooth Low Energy connectivity to anything that supports SPI communication. Thanks to the connection between the Bluefruit LE chip and the device using the common four-pin SPI interface (MISO, MOSI, SCK and CS/SSEL), it is possible to enable the solution with wireless communication features; more information at [Adafruit dedicated page](https://www.adafruit.com/products/2746).
 
 ## Technical Details
 
@@ -17,6 +17,8 @@ Adafruit Bluefruit LE SPI products family enables Bluetooth Low Energy connectiv
 Here below, the Zerynth driver for the Adafruit Bluefruit LE SPI products family and some examples to better understand how to use it.
 
 Contents:
-
-* Bluefruit Module
-    * BLEStream class
+-   [Bluefruit Module](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/docs/official_lib.adafruit.bluefruit_bluefruit.html)
+     - [BLEStream class](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/docs/official_lib.adafruit.bluefruit_bluefruit.html#blestream-class)
+-   [Examples](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html)
+    -   [Serial Over BLE](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html#serial-over-ble)
+    -   [BLE Heart Rate](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html#ble-heart-rate)

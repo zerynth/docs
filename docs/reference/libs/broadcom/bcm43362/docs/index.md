@@ -4,7 +4,7 @@ The Broadcom BCM43362 single-chip device provides the highest level of integrati
 
 Along with the integrated power amplifier, the BCM43362 also includes integrated transmit and receive baluns, further reducing the overall solution cost.
 
-Host interface options include SDIO v2.0 that can operate in 4b or 1b modes, and a generic SPI mode; more information on [Broadcom Community](https://community.broadcom.com)
+Host interface options include SDIO v2.0 that can operate in 4b or 1b modes, and a generic SPI mode; more information on [Broadcom Community](https://community.broadcom.com).
 
 ## Technical Details
 

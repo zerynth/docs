@@ -11,7 +11,5 @@ This series is intended for use with non-corrosive, non-ionic working fluids suc
 Contents:
 
 
-* DLH Module
-
-
-    * The driver implements SPI communication.
+* [DLH Module](https://docs.zerynth.com/latest/official/lib.amphenol.dlh/docs/official_lib.amphenol.dlh_dlh.html)
+    * [The driver implements SPI communication.](https://docs.zerynth.com/latest/official/lib.amphenol.dlh/docs/official_lib.amphenol.dlh_dlh.html#the-driver-implements-spi-communication)

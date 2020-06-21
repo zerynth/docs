@@ -35,35 +35,15 @@ The following constants are defined:
 
 
 * `WEI`, minimum transactable unit
-
-
 * `KWEI`, 1000 WEI
-
-
 * `MWEI`, one million WEI
-
-
 * `GWEI`, one billion WEI
-
-
 * `SZABO`, 1000 GWEI
-
-
 * `FINNEY`, one million GWEI
-
-
 * `ETHER`, one billion GWEI
-
-
 * `MAIN`, identifier of the main network
-
-
 * `ROPSTEN`, identifier of the ropsten network
-
-
 * `RINKEBY`, identifier of the rinkeby network
-
-
 * `KOVAN`, identifier of the kovan network
 
 Function: **`get_address(pv)`**
@@ -85,17 +65,9 @@ The resulting Transaction instance is empty and invalid. The following parameter
 
 
 * receiver address
-
-
 * value to transfer
-
-
 * gas price
-
-
 * gas limit
-
-
 * transaction nonce
 
 Optionally, transaction data and network id can be set.
@@ -214,8 +186,6 @@ Create an instance of the Contract class to:
 
 
 * call contract functions through paid transactions (functions modifying the blockchain)
-
-
 * call contract functions through simple, gas-free calls (functions not modifying the blockchain)
 
 A device can interact with an already created contract placed at address `contract_address`.

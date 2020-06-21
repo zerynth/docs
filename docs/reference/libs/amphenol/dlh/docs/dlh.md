@@ -23,7 +23,7 @@ Creates an instance of the DLH class.
 
 Temperature and pressure values can be easily obtained from the sensor:
 
-```
+```py
 from amphenol.dlh import dlh
 
 ...
@@ -42,28 +42,16 @@ The acquisition mode can be specified with one of:
 
 
 * `MODE_SINGLE`
-
-
 * `MODE_AVG2`
-
-
 * `MODE_AVG4`
-
-
 * `MODE_AVG8`
-
-
 * `MODE_AVG16`
 
 The unit of measure of pressure can be specified in:
 
 
 * `UNIT_INH20`
-
-
 * `UNIT_CMH20`
-
-
 * `UNIT_PASCAL`
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE1Mzk4MjY5OCwtMTg0MjU1Mjg5Ml19

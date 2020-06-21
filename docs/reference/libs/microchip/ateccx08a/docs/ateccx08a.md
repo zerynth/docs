@@ -36,7 +36,7 @@ Members:
 Connect to a device and start I2C protocol.
 
 
-**`Arguments:`**
+**Arguments:**
 
     
 -	**drvname** – Interface for I2C communication (e.g. I2C0)
@@ -121,9 +121,7 @@ Send a command and return the result data.
 If **`start_cmd_sequence()`** was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
 
 
-**Arguments:**
-
- - ***args** – All arguments are passed to **`_send_cmd()`** method.
+**Arguments:** ***args** – All arguments are passed to **`_send_cmd()`** method.
 
 ### Commands
 
@@ -178,7 +176,7 @@ Increment one of the two monotonic counters.
 The maximum value that the counter may have is 2,097,151.
 Any attempt to count beyond this value will result in an error code.
 
-**Arguments:** **key_id**(*int*) – The specified counter. Can be 0 or 1.
+**Arguments:** **key_id** (*int*) – The specified counter. Can be 0 or 1.
 
 **Returns:** 4 bytes representing the current value of the counter, or 1 byte representing a status code.
 
@@ -200,7 +198,7 @@ For full documentation check datasheet at pages 63-64.
     
 -	**source_flag** (*int*) – Single bit (1 or 0). The value of this bit must match the value in TempKey.SourceFlag or the command will return an error. The flag is the fourth bit returned by **`info_cmd()`**.
 -	**target_key** (*bytes*) – 2 bytes. Key slot to be written.
--	**mac** (*bytes*) – MAC used to validate the operation. (Default value = bytes())
+-	**mac** (*bytes*) – MAC used to validate the operation. (Default value = bytes()).
 
 
 **Returns:** True if the operation completed successfully.
@@ -234,9 +232,7 @@ Generate a data digest from a random or input seed and a key.
 See datasheet page 66-69 for full usage details.
 
 
-**Arguments:**
-
- - **zone**(*int*) – Possible values are numbers between 0 and 5 (included).
+**Arguments:** **zone** (*int*) – Possible values are numbers between 0 and 5 (included).
 
 If 0x00 (Config), then use key_id to specify any of the four 256-bit blocks of the Configuration zone. 
 
@@ -440,18 +436,9 @@ The body used to create the nonce is stored internally in TempKey.
 **Arguments:**
 
     
-    * ```use_tempkey``` (```bool```) – TempKey is used instead of the RNG in the hash calculation input
-    (message). TempKey is also returned by this command.
-    TempKey must be valid prior to execution of this command and the values of the
-    remaining TempKey flags remain unchanged.
-
-
-    * ```num_in``` (```bytes```) – 20 bytes, the input parameter.
-
-
-    * ```force_no_eeprom_update``` (```bool```) – If True, the EEPROM is not updated before the RNG
-    generation (the existing EEPROM is used, not recommended).
-    (Default value = False)
+-   **use_tempkey** (**bool**) – TempKey is used instead of the RNG in the hash calculation input (message). TempKey is also returned by this command. TempKey must be valid prior to execution of this command and the values of the remaining TempKey flags remain unchanged.
+-   **num_in** (**bytes**) – 20 bytes, the input parameter.
+-   **force_no_eeprom_update** (**bool**) – If True, the EEPROM is not updated before the RNG generation (the existing EEPROM is used, not recommended). (Default value = False)
 
 
 
@@ -469,23 +456,15 @@ TempKey is loaded with NumIn. No SHA-256 calculation is performed, and
 TempKey.SourceFlag is set to Input.
 (No data is returned to the system in this mode).
 
-
-* ```Arguments```
-
-    
-    * ```num_in``` (```bytes```) – 32 bytes, input parameter.
+**Arguments:** **num_in** (**bytes**) – 32 bytes, input parameter.
 
 
 
-* ```Returns```
-
-    Single byte 0 if the operation completed successfully.
+**Returns:** Single byte 0 if the operation completed successfully.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -502,35 +481,20 @@ an ECC private key, and SlotConfig.IsSecret must be set to one.
 See datasheet page 80 for full details.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```encrypt_input``` (```bool```) – If True, the input data is encrypt using TempKey.
-    Otherwise, the input data is not encrypted - this is valid only when Data zone
-    is unlocked.
+-   **encrypt_input** (**bool**) – If True, the input data is encrypt using TempKey. Otherwise, the input data is not encrypted - this is valid only when Data zone is unlocked.
+-   **key_id** (**bytes**) – 2 bytes, slot id to be written.
+-   **value** (**bytes**) – 36 bytes integer. Information to be written to the slot, first 4 bytes should be zero.
+-   **mac** (**bytes**) – 32 bytes. Message Authentication Code to validate EEPROM Write operation.
 
 
-    * ```key_id``` (```bytes```) – 2 bytes, slot id to be written.
-
-
-    * ```value``` (```bytes```) – 36 bytes integer. Information to be written to the slot, first 4
-    bytes should be zero.
-
-
-    * ```mac``` (```bytes```) – 32 bytes. Message Authentication Code to validate EEPROM Write
-    operation.
+**Returns:** Single byte 0 if the operation completed successfully.
 
 
 
-* ```Returns```
-
-    Single byte 0 if the operation completed successfully.
-
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -540,26 +504,16 @@ Generate a random number.
 The number is generated using a seed stored in the EEPROM and a hardware RNG.
 
 
-* ```Arguments```
-
-    
-    * ```force_no_eeprom_update``` (```bool```) – If True, the EEPROM is not updated before the RNG
-    generation (the existing EEPROM is used, not recommended).
-    (Default value = False)
+**Arguments:** **force_no_eeprom_update** (**bool**) – If True, the EEPROM is not updated before the RNG generation (the existing EEPROM is used, not recommended). (Default value = False)
 
 
 
-* ```Returns```
-
-    32 bytes, output of RNG.
-    Prior to the configuration zone being locked, the RNG produces a value of
-    0xFF, 0xFF, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00 to facilitate testing.
+**Returns:** 32 bytes, output of RNG. Prior to the configuration zone being locked, the RNG produces a value of
+0xFF, 0xFF, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00 to facilitate testing.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 **`read_cmd(self,zone:str,address:bytes,read_32_bytes:bool)`**
@@ -570,37 +524,24 @@ This command can read bytes from an address of one of the memory zones
 
 See datasheet page 10 for zones details.
 
+**Arguments:**
 
-* ```Arguments```
-
-    
-    * ```zone``` (```str```) – Select the source zone. Must be one of Config, OTP or Data.
-
-
-    * ```address``` (```bytes```) – 2 bytes address of the first word to be read.
-    See datasheet page 58 for correct formats.
-
-
-    * ```read_32_bytes``` (```bool```) – If True, 32 bytes are read and returned. Otherwise
-    4 bytes are read and returned.
+* **zone** (**str**) – Select the source zone. Must be one of Config, OTP or Data.
+* **address** (**bytes**) – 2 bytes address of the first word to be read. See datasheet page 58 for correct formats.
+* **read_32_bytes** (**bool**) – If True, 32 bytes are read and returned. Otherwise 4 bytes are read and returned.
 
 
 
-* ```Returns```
+**Returns:**
 
-    A single word (4 bytes) or a 8-words block (32 bytes), depending on
-    the read_32_bytes parameter.
+A single word (4 bytes) or a 8-words block (32 bytes), depending on the read_32_bytes parameter.
 
-    The bytes can be encrypted depending on the zone and the device status.
+The bytes can be encrypted depending on the zone and the device status.
 
-    See datasheet page 81 for usage details.
-
+See datasheet page 81 for usage details.
 
 
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 **`sha_start_cmd(self)`**
@@ -609,15 +550,11 @@ Start a SHA-256 digest computation.
 This command must be run before sha_end_cmd().
 
 
-* ```Returns```
-
-    Single byte 0 if the operation completed correctly.
+**Returns:** Single byte 0 if the operation completed correctly.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -628,47 +565,32 @@ Start a HMAC digest computation.
 This command must be run before `sha_hmacend_cmd()`.
 
 
-* ```Arguments```
-
-    
-    * ```key_id``` (```bytes```) – Id of the HMAC key.
+**Arguments:** **key_id** (**bytes**) – Id of the HMAC key.
 
 
 
-* ```Returns```
-
-    Single byte 0 if the operation completed correctly.
+Returns: Single byte 0 if the operation completed correctly.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 **`sha_update_cmd(self,message:bytes)`**
 
 Add 64 bytes in the message parameter to the SHA context.
 
-This command must be run after `sha_start_cmd()` or                `sha_hmacstart_cmd()`.
+This command must be run after `sha_start_cmd()` or `sha_hmacstart_cmd()`.
 
 
-* ```Arguments```
-
-    
-    * ```message``` (```bytes```) – 64 bytes, to be added in the SHA context.
+**Arguments:** **message** (**bytes**) – 64 bytes, to be added in the SHA context.
 
 
 
-* ```Returns```
-
-    Single byte 0 if the operation completed correctly.
+**Returns:** Single byte 0 if the operation completed correctly.
 
 
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -677,23 +599,15 @@ This command must be run after `sha_start_cmd()` or                `sha_hmacstar
 Add 64 bytes of a public key stored in one of the Data zone slots to the SHA context.
 
 
-* ```Arguments```
-
-    
-    * ```key_id``` (```bytes```) – The slot id of the public key.
+**Arguments:** **key_id** (**bytes**) – The slot id of the public key.
 
 
 
-* ```Returns```
-
-    Single byte 0 if the operation completed successfully, or an error if the slot
-    contains anything other than a public key.
+**Returns:** Single byte 0 if the operation completed successfully, or an error if the slot contains anything other than a public key.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -703,54 +617,37 @@ Complete the SHA-256 computation and load the digest into TempKey and the output
 
 Up to 63 message bytes are accepted (Length must be 0 through 63 inclusive.)
 
-This command must be run after sha_start_cmd() and eventually after some
-sha_update_cmd().
+This command must be run after sha_start_cmd() and eventually after some sha_update_cmd().
 
 
-* ```Arguments```
-
-    
-    * ```message``` (```bytes```) – 0-63 bytes to be added in the SHA context before the final computation.
+**Arguments:** **message** (**bytes**) – 0-63 bytes to be added in the SHA context before the final computation.
 
 
 
-* ```Returns```
-
-    32 bytes representing the SHA256 digest.
+**Returns:** 32 bytes representing the SHA256 digest.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
 **`sha_hmacend_cmd(message:bytes)`**
 
-Complete the HMAC computation and load the digest into TempKey and the output buffer.
-Up to 63 message bytes are accepted (length must be 0 through 63 inclusive).
+Complete the HMAC computation and load the digest into TempKey and the output buffer. Up to 63 message bytes are accepted (length must be 0 through 63 inclusive).
 
-This command must be run after sha_hmacstart_cmd() and eventually after some
-sha_update_cmd().
+This command must be run after sha_hmacstart_cmd() and eventually after some sha_update_cmd().
 
 
-* ```Arguments```
-
-    
-    * ```message``` (```bytes```) – 0-63 bytes to be added in the SHA context before the final computation.
+**Arguments:** **message** (**bytes**) – 0-63 bytes to be added in the SHA context before the final computation.
 
 
 
-* ```Returns```
-
-    32 bytes representing the SHA256 digest.
+**Returns:** 32 bytes representing the SHA256 digest.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -759,34 +656,21 @@ sha_update_cmd().
 ECDSA signature calculation from an internal private key.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```key_id``` (```bytes```) – Internal private key used to generate the signature.
-
-
-    * ```include_sn``` (```bool```) – If True, 48 bits from Configuration Zone are included in the
-    digest message.
-
-
-    * ```use_tempkey``` (```bool```) – If True, the message to be signed is in TempKey.
-    Otherwise the message is internally generated (see datasheet page 86).
-
-
-    * ```is_verify_invalidate``` (```bool```) – This flag must be set to True if the command is
-    being used by verify(invalidate) (Default value = False).
+* **key_id** (**bytes**) – Internal private key used to generate the signature.
+* **include_sn** (**bool**) – If True, 48 bits from Configuration Zone are included in the digest message.
+* **use_tempkey** (**bool**) – If True, the message to be signed is in TempKey. Otherwise the message is internally generated (see datasheet page 86).
+* **is_verify_invalidate** (**bool**) – This flag must be set to True if the command is being used by verify(invalidate) (Default value = False).
 
 
 
-* ```Returns```
-
-    64 bytes representing the signature composed of R and S, or an error code.
+**Returns:** 64 bytes representing the signature composed of R and S, or an error code.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -796,193 +680,116 @@ Update bytes 84 or 85 within the Configuration zone after the Configuration zone
 has been locked.
 
 
-* ```Arguments```
+**Arguments:**
 
-    
-    * ```update_byte``` (```int```) – Select the byte to be updated, can be one of 84 or 85.
-
-
-    * ```new_value``` (```int```) – New value to be written in the selected byte.
-
-
-    * ```update_byte``` – int:
+* **update_byte** (**int**) – Select the byte to be updated, can be one of 84 or 85.
+* **new_value** (**int**) – New value to be written in the selected byte.
+* **update_byte** – int:
+* **new_value** – int:
 
 
-    * ```new_value``` – int:
+**Returns:** 0 if the operation succeded, or an error status code.
 
 
 
-* ```Returns```
-
-    0 if the operation succeded, or an error status code.
-
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
 **`updateextra_decr_cmd(key_id)`**
 
-Decrement the limited use counter associated with the key in slot after the
-Configuration zone has been locked.
+Decrement the limited use counter associated with the key in slot after the Configuration zone has been locked.
 
-If the slot indicated by the “NewValue” param does not contain a key for which limited
-use is implemented or enabled, then the command returns without taking any action.
+If the slot indicated by the “NewValue” param does not contain a key for which limited use is implemented or enabled, then the command returns without taking any action.
 
-If the indicated slot contains a limited use key, which does not have any uses
-remaining, then the command returns an error.
+If the indicated slot contains a limited use key, which does not have any uses remaining, then the command returns an error.
 
 
-* ```Arguments```
-
-    
-    * ```key_id``` (```bytes```) – 2 bytes, the slot id of the key to be decremented.
+**Arguments:** key_id (bytes) – 2 bytes, the slot id of the key to be decremented.
 
 
 
-* ```Returns```
-
-    0 if the operation succeded, or an error status code.
+**Returns:** 0 if the operation succeded, or an error status code.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
 **`verify_external_cmd(curve_type:int,r_comp:bytes,s_comp:bytes,x_comp:bytes,y_comp:bytes)`**
 
-Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
-message and public key.
+Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given message and public key.
 In this mode the public key is an external input.
-Prior to this command being run, the message should be written to TempKey using the
-Nonce command.
+Prior to this command being run, the message should be written to TempKey using the Nonce command.
 
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```curve_type``` (```int```) – Curve type to be used to verify the signature:
+* **curve_type** (**int**) – Curve type to be used to verify the signature:
 
+     * 0b100 = P256 NIST ECC key
+     * 0b111 = Not an ECC key
 
-        * 0b100 = P256 NIST ECC key
-
-
-        * 0b111 = Not an ECC key
-
-    The value in this field is encoded identically to the KeyType field in the
-    KeyConfig words within the Configuration zone.
-
-
-
-    * ```r_comp``` (```bytes```) – 32 bytes, the R component of the ECDSA signature to be verified.
-
-
-    * ```s_comp``` (```bytes```) – 32 bytes, the S component of the ECDSA signature to be verified.
-
-
-    * ```x_comp``` (```bytes```) – 32 bytes, the X component of the public key to be used.
-
-
-    * ```y_comp``` (```bytes```) – 32 bytes, the X component of the public key to be used.
+    The value in this field is encoded identically to the KeyType field in the KeyConfig words within the Configuration zone.
+* **r_comp** (**bytes**) – 32 bytes, the R component of the ECDSA signature to be verified.
+* **s_comp** (**bytes**) – 32 bytes, the S component of the ECDSA signature to be verified.
+* **x_comp** (**bytes**) – 32 bytes, the X component of the public key to be used.
+* **y_comp** (**bytes**) – 32 bytes, the X component of the public key to be used.
 
 
 
-* ```Returns```
-
-    0 if the signature match. 1 if the signature doesn’t match.
-    An error status code if an error occured.
+**Returns:** 0 if the signature match. 1 if the signature doesn’t match. An error status code if an error occured.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
 **`verify_stored_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes)`**
 
-Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given
-message and public key.
+Takes an ECDSA <R,S> signature and verifies that it is correctly generated from a given message and public key.
 
 In this mode the public key to be used is found in the KeyID EEPROM slot.
 
 The contents of TempKey should contain the SHA-256 digest of the message.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```key_id``` (```bytes```) – 2 bytes, the slot id containing the public key to be used.
-    The key type is determined by KeyConfig.KeyType.
+* **key_id** (**bytes**) – 2 bytes, the slot id containing the public key to be used. The key type is determined by KeyConfig.KeyType.
+* **r_comp** (**bytes**) – 32 bytes, the R component of the ECDSA signature to be verified.
+* **s_comp** (**bytes**) – 32 bytes, the S component of the ECDSA signature to be verified.
 
 
-    * ```r_comp``` (```bytes```) – 32 bytes, the R component of the ECDSA signature to be verified.
-
-
-    * ```s_comp``` (```bytes```) – 32 bytes, the S component of the ECDSA signature to be verified.
-
-
-
-* ```Returns```
-
-    0 if the signature match. 1 if the signature doesn’t match. An error status
-    code if something went wrong.
+Returns: 0 if the signature match. 1 if the signature doesn’t match. An error status code if something went wrong.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 **`verify_validate_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes,other_data:bytes,invalidate:bool=False)`**
 
-The Validate and Invalidate modes are used to validate or invalidate the public key
-stored in the EEPROM.
-The contents of TempKey should contain a digest of the PublicKey at key_id.
-It must have been generated using genkey_cmd over the key_id slot.
+The Validate and Invalidate modes are used to validate or invalidate the public key stored in the EEPROM.
+The contents of TempKey should contain a digest of the PublicKey at key_id. It must have been generated using genkey_cmd over the key_id slot.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```key_id``` (```bytes```) – Slot id of the key to be (in)validated.
-    The parent key to be used to perform the (in)validation is stored in
-    SlotConfig.ReadKey.SlotConfig<ParentKey>.KeyType determines the curve to be used.
+* **key_id** (**bytes**) – Slot id of the key to be (in)validated. The parent key to be used to perform the (in)validation is stored in SlotConfig.ReadKey.SlotConfig<ParentKey>.KeyType determines the curve to be used.
+* **r_comp** (**bytes**) – 32 bytes, the R component of the ECDSA signature to be verified.
+* **s_comp** (**bytes**) – 32 bytes, the S component of the ECDSA signature to be verified.
+* **other_data** (**bytes**) – 19 bytes, the bytes used to generate the message for the validation.
+* **invalidate (bool)** – If True set the mode to Invalidate instead of Validate. (Default value = False)
 
 
-    * ```r_comp``` (```bytes```) – 32 bytes, the R component of the ECDSA signature to be verified.
+**Returns:** 0 if the signature match. 1 if the signature doesn’t match. An error status code if something went wrong.
 
-
-    * ```s_comp``` (```bytes```) – 32 bytes, the S component of the ECDSA signature to be verified.
-
-
-    * ```other_data``` (```bytes```) – 19 bytes, the bytes used to generate the message for the
-    validation.
-
-
-    * ```invalidate``` (```bool```) – If True set the mode to Invalidate instead of Validate.
-    (Default value = False)
-
-
-
-* ```Returns```
-
-    0 if the signature match. 1 if the signature doesn’t match. An error status
-    code if something went wrong.
-
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
@@ -992,68 +799,37 @@ Shortcut for `verify_validate_cmd()` using invalidate mode.
 
 **`verify_validate_external_cmd(key_id:bytes,r_comp:bytes,s_comp:bytes)`**
 
-The ValidateExternal mode is used to validate the public key stored in the EEPROM at
-key_id when X.509 format certificates are to be used. The digest of the message must
-be TempKey. TempKey must have been generated using the sha_public_cmd(), and the
-key for that computation must be the same as key_id.
+The ValidateExternal mode is used to validate the public key stored in the EEPROM at key_id when X.509 format certificates are to be used. The digest of the message must
+be TempKey. TempKey must have been generated using the sha_public_cmd(), and the key for that computation must be the same as key_id.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```key_id``` (```bytes```) – The slot containing the public key to be validated which must have
-    been specified by a previous sha_public_cmd().
+* **key_id** (**bytes**) – The slot containing the public key to be validated which must have been specified by a previous sha_public_cmd().
+* **r_comp** (**bytes**) – 32 bytes, the R component of the ECDSA signature to be verified.
+* **s_comp** (**bytes**) – 32 bytes, the S component of the ECDSA signature to be verified.
 
+**Returns:** 0 if the signature match. 1 if the signature doesn’t match. An error status code if something went wrong.
 
-    * ```r_comp``` (```bytes```) – 32 bytes, the R component of the ECDSA signature to be verified.
-
-
-    * ```s_comp``` (```bytes```) – 32 bytes, the S component of the ECDSA signature to be verified.
-
-
-
-* ```Returns```
-
-    0 if the signature match. 1 if the signature doesn’t match. An error status
-    code if something went wrong.
-
-
-
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 
 **`write_cmd(zone:str,address:bytes,value:bytes,is_input_encrypted:bool,mac:bytes=bytes())`"
 
-Writes either one four byte word or an 8-word block of 32 bytes to one of the EEPROM
-zones on the device. Depending upon the value of the WriteConfig byte for this slot,
-the data may be required to be encrypted by the system prior to being sent to the
-device.
+Writes either one four byte word or an 8-word block of 32 bytes to one of the EEPROM zones on the device. Depending upon the value of the WriteConfig byte for this slot,
+the data may be required to be encrypted by the system prior to being sent to the device.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```zone``` (```str```) – Select the source zone. Must be one of Config, OTP or Data.
-
-
-    * ```address``` (```bytes```) – 2 bytes address of the first word to be written.
-    See datasheet page 58 for correct formats.
-
-
-    * ```value``` (```bytes```) – 4 or 32 bytes to be written in the specified address.
-    May be encrypted (set is_input_encrypted to True).
-
-
-    * ```is_input_encrypted``` (```bool```) – Must be set to True if the input is encrypted.
-    See datasheet page 91 for details.
-
-
-    * ```mac``` (```bytes```) – Message authentication code to validate address and data.
-    (Default value = bytes())
-
+* **zone** (**str**) – Select the source zone. Must be one of Config, OTP or Data.
+* **address** (**bytes**) – 2 bytes address of the first word to be written. See datasheet page 58 for correct formats.
+* **value** (**bytes**) – 4 or 32 bytes to be written in the specified address. May be encrypted (set is_input_encrypted to True).
+* **is_input_encrypted** (**bool**) – Must be set to True if the input is encrypted. See datasheet page 91 for details.
+* **mac** (**bytes**) – Message authentication code to validate address and data. (Default value = bytes())
 
 
 **`is_locked(zone:str)`**
@@ -1061,22 +837,15 @@ device.
 Check if selected zone has been locked.
 
 
-* ```Arguments```
-
-    
-    * ```zone``` (```str```) – Select the zone to check. Must be one of Config or Data.
+**Arguments:** **zone** (**str**) – Select the zone to check. Must be one of Config or Data.
 
 
 
-* ```Returns```
-
-    True if selected zone is locked.
+**Returns:** True if selected zone is locked.
 
 
 
-* **Return type**
-
-    bool
+**Return type:** bool
 
 
 **`serial_number()`**
@@ -1084,15 +853,11 @@ Check if selected zone has been locked.
 Retrieve secure element’s 72-bit serial number.
 
 
-* ```Returns```
-
-    Serial number.
+**Returns:** Serial number.
 
 
 
-* **Return type**
-
-    bytes
+**Return type:** bytes
 
 
 ## ATECC608A class
@@ -1108,22 +873,16 @@ This class inherits all ATECC508A methods.
 
 **`hwcrypto_init(i2c_drv,key_slot,i2c_addr=0x60,dev_type=DEV_ATECC508A)`**
 
-```NOTE```: this function is available only when `ZERYNTH_HWCRYPTO_ATECCx08A` is set in project.yml file
+**NOTE:** this function is available only when `ZERYNTH_HWCRYPTO_ATECCx08A` is set in project.yml file.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```i2c_drv``` – Interface for I2C communication. (e.g. `I2C0`)
-
-
-    * ```key_slot``` – Chosen private key slot number (can be used to sign, compute public, …)
-
-
-    * ```i2c_addr``` – Address of the I2C chip. (Default value = `0x60`)
-
-
-    * ```dev_type``` – Crypto chip type (Default = `DEV_ATECC508A`, can also be `DEV_ATECC108A` or `DEV_ATECC608A`)
+* **i2c_drv** – Interface for I2C communication. (e.g. `I2C0`)
+* **key_slot** – Chosen private key slot number (can be used to sign, compute public, …)
+* **i2c_addr** – Address of the I2C chip. (Default value = `0x60`)
+* **dev_type** – Crypto chip type (Default = `DEV_ATECC508A`, can also be `DEV_ATECC108A` or `DEV_ATECC608A`)
 
 
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.

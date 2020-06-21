@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.cypress.capsense
+The following are a list of examples for lib.cypress.capsense.
 
 ## Capsense Events
 

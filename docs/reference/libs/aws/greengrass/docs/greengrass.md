@@ -7,10 +7,7 @@ The Zerynth AWS Greengrass Library contains helper functions for IoT devices to 
 ## The DiscoveryInfo class
 
 
----
-#### `#!py3 DiscoveryInfo()`
-
-!!!abstract "`#!py3 DiscoveryInfo(raw_info)`"
+**`class DiscoveryInfo(raw_info)`**
 
 A DiscoveryInfo instance is returned by `greengrass.discover()` function.
 
@@ -18,27 +15,17 @@ It exposes the following attributes and methods:
 
 
 * `DiscoveryInfo.raw` dictionary containing raw [discovery response](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-discover-api.html#gg-discover-response-doc).
-
-
 * `DiscoveryInfo.CA()`
-
-
 * `DiscoveryInfo.connectivity()`
 
 
----
-#### `#!py3 CA()`
-
-!!!abstract "`#!py3 CA()`"
+**`CA()`**
 
 Returns Greengrass Core CA Certificate if only one Server Certificate is returned by discover call.
 Raises `GreengrassDiscoveryInfoException` if more than one certificate is returned.
 
 
----
-#### `#!py3 connectivity()`
-
-!!!abstract "`#!py3 connectivity()`"
+**`connectivity()`**
 
 Returns a tuple `(core_address, core_port)` with Greengrass Core address and port if only one Core is returned by discover call.
 Raises `GreengrassDiscoveryInfoException` if more than one Core is returned.
@@ -46,33 +33,22 @@ Raises `GreengrassDiscoveryInfoException` if more than one Core is returned.
 ## Helper Functions
 
 
----
-#### `#!py3 discover()`
-
-!!!abstract "`#!py3 discover(endpoint, thingname, clicert, pkey, cacert=None)`"
+**`discover(endpoint, thingname, clicert, pkey, cacert=None)`**
 
 
-* **param endpoint**
-
-    AWS server where to retrieve Greengrass core info
+* **param endpoint:**   AWS server where to retrieve Greengrass core info
 
 
 
-* **param thingname**
-
-    AWS IoT Core or AWS Greengrass Device name
+* **param thingname:**   AWS IoT Core or AWS Greengrass Device name
 
 
 
-* **param clicert**
-
-    client certificate
+* **param clicert:**   client certificate
 
 
 
-* **param pkey**
-
-    client private key
+* **param pkey:**   client private key
 
 
 Discover info about own group Greengrass Core.

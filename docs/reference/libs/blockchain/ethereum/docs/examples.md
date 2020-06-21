@@ -1,8 +1,8 @@
 # Examples
 
-The following are a list of examples for lib.blockchain.ethereum
+The following are a list of examples for lib.blockchain.ethereum.
 
-## # Simple Transaction
+## Simple Transaction
 
 
 Transfer value from an address to another through an Ethereum transaction.

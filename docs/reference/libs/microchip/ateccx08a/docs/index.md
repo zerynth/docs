@@ -22,8 +22,13 @@ Below, Zerynth driver documentation for Microchip ATECCx80A crypto elements.
 
 Contents:
 
-* ATECCx08A library
-    * Auxiliary methods
-    * ATECC508A class
-    * ATECC608A class
-    * Zerynth HWCrypto Interface
+* [ATECCx08A library](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html)
+    * [Auxiliary methods](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#auxiliary-methods)
+    * [ATECC508A class](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#atecc508a-class)
+       * [Internal methods](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#internal-methods)
+       * [Public methods](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#public-methods)
+       * [Commands](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#commands)
+    * [ATECC608A class](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#atecc608a-class)
+    * [Zerynth HWCrypto Interface](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/docs/official_lib.microchip.ateccx08a_ateccx08a.html#zerynth-hwcrypto-interface)
+* [Examples](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/examples/examples.html)
+    * [ping](https://docs.zerynth.com/latest/official/lib.microchip.ateccx08a/examples/examples.html#ping)
