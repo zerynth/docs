@@ -13,7 +13,7 @@ With Polaris 2G, many IoT applications can be developed related to real-time ass
 The internal flash of the Polaris 2G is organized in one block divided in 256 pages of 2Kb each.
 The flash memory address starts at 0x8000000 and can be read and written from a Zerynth program using the internal flash module.
 
-!!! wawrning
+!!! warning
 	If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash towards the virtual machine, to minimize the chance of clashes.
 
 Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
@@ -145,5 +145,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Njc0NDc2OV19
+eyJoaXN0b3J5IjpbLTEwOTI5NDE2NTBdfQ==
 -->
