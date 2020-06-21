@@ -113,7 +113,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Elec
 
 To register and virtualize an Electron, it is necessary to put the Electron in DFU Mode (Device Firmware Upgrade) as reported in the official [Particle Electron Guide](http://docs.particle.io/electron).
 
-```NOTE```: On ```Windows``` machines it is necessary to install also the Particle Electron DFU drivers for virtualizing the device.
+!!! note
+	On ```Windows``` machines it is necessary to install also the Particle Electron DFU drivers for virtualizing the device.
 
 The official **Particle Core** DFU driver and the related installation procedure are reported [here](https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518) but they also work for the **Particle Electron**.
 
@@ -146,7 +147,8 @@ Follow these steps to register and virtualize a Particle Electron:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Electron device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the Electron device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 After virtualization, the Particle Electron is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -200,5 +202,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTMwMzkwMCwtMzU0NDYzNjQwXX0=
+eyJoaXN0b3J5IjpbLTE3Mzg5MjQ2NzYsMTEzMTMwMzkwMCwtMz
+U0NDYzNjQwXX0=
 -->
