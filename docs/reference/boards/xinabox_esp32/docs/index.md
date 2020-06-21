@@ -12,150 +12,32 @@ The internal flash of the ESP32 module is organized in a single flash area with 
 
 In particular, for non-BLE VMs:
 
-| Start address
+| Start address | Size  | Content                 |
+|---------------|-------|-------------------------|
+| 0x00009000    | 16Kb  | Esp32 NVS area          |
+| 0x0000D000    | 8Kb   | Esp32 OTA data          |
+| 0x0000F000    | 4Kb   | Esp32 PHY data          |
+| 0x00010000    | 1Mb   | Zerynth VM              |
+| 0x00110000    | 1Mb   | Zerynth VM (FOTA)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode        |
+| 0x00290000    | 512Kb | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb | Free for user storage   |
+| 0x00390000    | 448Kb | Reserved                |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00009000
-
-    | 16Kb
-
- | Esp32 NVS area
-
- |
-| 0x0000D000
-
-    | 8Kb
-
-  | Esp32 OTA data
-
- |
-| 0x0000F000
-
-    | 4Kb
-
-  | Esp32 PHY data
-
- |
-| 0x00010000
-
-    | 1Mb
-
-  | Zerynth VM
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-  | Zerynth VM (FOTA)
-
- |
-| 0x00210000
-
-    | 512Kb
-
- | Zerynth Bytecode
-
-  |
-| 0x00290000
-
-    | 512Kb
-
- | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
- | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
- | Reserved
-
-                |
 For BLE VMs:
 
-| Start address
+| Start address | Size   | Content                 |
+|---------------|--------|-------------------------|
+| 0x00009000    | 16Kb   | Esp32 NVS area          |
+| 0x0000D000    | 8Kb    | Esp32 OTA data          |
+| 0x0000F000    | 4Kb    | Esp32 PHY data          |
+| 0x00010000    | 1216Kb | Zerynth VM              |
+| 0x00140000    | 1216Kb | Zerynth VM (FOTA)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode        |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb  | Free for user storage   |
+| 0x00390000    | 448Kb  | Reserved                |
 
- | Size
-
-  | Content
-
-                 |
-| ------------- | ----- | ----------------------- |
-| 0x00009000
-
-    | 16Kb
-
-  | Esp32 NVS area
-
-          |
-| 0x0000D000
-
-    | 8Kb
-
-   | Esp32 OTA data
-
-          |
-| 0x0000F000
-
-    | 4Kb
-
-   | Esp32 PHY data
-
-          |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM
-
-              |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (FOTA)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode
-
-        |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
-  | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
-  | Reserved
-
-                |
 ## Device Summary
 
 
@@ -202,14 +84,12 @@ Power to the XinaBox CW02 is supplied via the [XinaBox IP01 module](https://wiki
 
 The XinaBox IP01 programming module, connected to the CW02 core module, exposes the serial port of the ESP32 module via a FT232R FTDI which is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the XinaBox CW02 device is recognized by Zerynth Studio. The next steps are:
@@ -323,3 +203,6 @@ To be able to use zerynth secure socket on esp32 boards `native_mbedtls: true` m
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 This feature is strongly platform dependent; more information at Secure Firmware - ESP32 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwODQyNDgzMTNdfQ==
+-->
