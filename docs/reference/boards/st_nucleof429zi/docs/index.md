@@ -197,7 +197,7 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 ## Connect, Register, Virtualize and Program
 
-The ST Nucleo F429ZI Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html), while **MAC OSX** and ```Linux``` machines will recognize the device automatically.
+The ST Nucleo F429ZI Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html), while **MAC OSX** and **Linux** machines will recognize the device automatically.
 
 The St-Link is also connected to the STM32 hardware UART0.
 
@@ -215,13 +215,16 @@ Once connected on a USB port, if drivers have been correctly installed the ST Nu
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the ST Nucleo F429ZI device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
-```NOTE```: If the reset is not performed within 5 seconds the upload procedure fails.
+!!! note
+	If the reset is not performed within 5 seconds the upload procedure fails.
 
-```WARNING```: Scripts uploading and serial console connection issues on St Nucleo devices have been reported. If the upload fails also with a correctly performed reset or if the device is not able to print on the console, disconnect the device from the USB port and plug it again on another USB socket.
+!!! warning
+	Scripts uploading and serial console connection issues on St Nucleo devices have been reported. If the upload fails also with a correctly performed reset or if the device is not able to print on the console, disconnect the device from the USB port and plug it again on another USB socket.
 
 If also this procedure fails, try to update the ST Nucleo firmware available at this [link](https://developer.mbed.org/teams/ST/wiki/Nucleo-Firmware)
 
@@ -231,42 +234,13 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08000000    | 128Kb | VM Slot 0       |
+| 0x08020000    | 384kb | Bytecode Slot 0 |
+| 0x08080000    | 128kb | VM Slot 1       |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
- | Size
-
-   | Content
-
-         |
-| ------------- | ------ | --------------- |
-| 0x08000000
-
-    | 128Kb
-
-  | VM Slot 0
-
-       |
-| 0x08020000
-
-    | 384kb
-
-  | Bytecode Slot 0
-
- |
-| 0x08080000
-
-    | 128kb
-
-  | VM Slot 1
-
-       |
-| 0x080A0000
-
-    | 384kb
-
-  | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -275,5 +249,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwNDU1MTE0XX0=
+eyJoaXN0b3J5IjpbLTg1MzU0Mjg1Nl19
 -->
