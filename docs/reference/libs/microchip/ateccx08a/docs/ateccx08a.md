@@ -426,7 +426,7 @@ on the device.
 
 
 
-**`nonce_cmd(self,use_tempkey:bool,num_in:bytes,force_no_eeprom_update:bool = False)`"`**
+**`nonce_cmd(self,use_tempkey:bool,num_in:bytes,force_no_eeprom_update:bool = False)`**
 
 Generate a 32-byte random number and an internally stored Nonce.
 
@@ -816,7 +816,7 @@ be TempKey. TempKey must have been generated using the sha_public_cmd(), and the
 
 
 
-**`write_cmd(zone:str,address:bytes,value:bytes,is_input_encrypted:bool,mac:bytes=bytes())`"
+**`write_cmd(zone:str,address:bytes,value:bytes,is_input_encrypted:bool,mac:bytes=bytes())`**
 
 Writes either one four byte word or an 8-word block of 32 bytes to one of the EEPROM zones on the device. Depending upon the value of the WriteConfig byte for this slot,
 the data may be required to be encrypted by the system prior to being sent to the device.
