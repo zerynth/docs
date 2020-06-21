@@ -7,7 +7,8 @@ Particle Photon uses the [STM32F205RG Cortex M3  microcontroller](http://www.st.
 
 In addition to having 1Mb of internal flash memory for storing the firmware, the Photon also features 128k of Ram and 120 MHz of clock.
 
-```NOTE```: All the reported information are extracted from the official [Particle Photon reference page](http://docs.particle.io/photon/), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Particle Photon reference page](http://docs.particle.io/photon/), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -17,99 +18,23 @@ Particle Photon Official Schematic, Reference Design & Pin Mapping are available
 
 The internal flash of the Particle Photon is organized into sectors of different size according to the following table:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x8000000     | 16Kb  | BootLoader      |
+| 0x8004000     | 16Kb  | DCT1            |
+| 0x8008000     | 16Kb  | DCT2            |
+| 0x800C000     | 16Kb  | EEPROM1         |
+| 0x8010000     | 64Kb  | EEPROM2         |
+| 0x8020000     | 128kb | Virtual Machine |
+| 0x8040000     | 128kb | Bytecode Bank 0 |
+| 0x8060000     | 128kb | Bytecode Bank 1 |
+| 0x8080000     | 128kb | Bytecode Bank 2 |
+| 0x80A0000     | 128kb | Bytecode Bank 3 |
+| 0x80C0000     | 128kb | Bytecode Bank 4 |
+| 0x80E0000     | 128kb | Bytecode Bank 5 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x8000000
-
-     | 16Kb
-
- | BootLoader
-
- |
-| 0x8004000
-
-     | 16Kb
-
- | DCT1
-
-       |
-| 0x8008000
-
-     | 16Kb
-
- | DCT2
-
-       |
-| 0x800C000
-
-     | 16Kb
-
- | EEPROM1
-
-    |
-| 0x8010000
-
-     | 64Kb
-
- | EEPROM2
-
-    |
-| 0x8020000
-
-     | 128kb
-
- | Virtual Machine
-
- |
-| 0x8040000
-
-     | 128kb
-
- | Bytecode Bank 0
-
- |
-| 0x8060000
-
-     | 128kb
-
- | Bytecode Bank 1
-
- |
-| 0x8080000
-
-     | 128kb
-
- | Bytecode Bank 2
-
- |
-| 0x80A0000
-
-     | 128kb
-
- | Bytecode Bank 3
-
- |
-| 0x80C0000
-
-     | 128kb
-
- | Bytecode Bank 4
-
- |
-| 0x80E0000
-
-     | 128kb
-
- | Bytecode Bank 5
-
- |
-```WARNING```: If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the chosen sector.
+!!! warning
+	If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the chosen sector.
 
 ## Device Summary
 
@@ -165,7 +90,8 @@ Power to the Particle Photon device is supplied via the on-board USB micro B con
 
 * If the device is powered via the USB port, VIN will output a voltage of approximately 4.8VDC due to a reverse polarity protection series schottky diode between V+ of USB and VIN.
 
-```NOTE```: When used as an output, the max load current on VIN is 1 Ampere.
+!!! note
+	When used as an output, the max load current on VIN is 1 Ampere.
 
 Typical current consumption is 80mA with a 5V input. Deep sleep quiescent current is 160uA. When powering the Photon from the USB connector, make sure to use a quality cable to minimize voltage drops. If a high resistance cable (i.e., low current) is used, peak currents drawn from the Photon when transmitting and receiving will result in voltage sag at the input which may cause a system brown out or intermittent operation. Likewise, the power source should be sufficient enough to source 1A of current to be on the safe side.
 
@@ -175,11 +101,13 @@ On ```Windows``` machines the [Particle Photon USB Drivers](https://s3.amazonaws
 
 To install the drivers on ```Windows``` plug the Photon on an USB port, unzip the downloaded package, go to the **Window Devices Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).
 
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Photon driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Photon driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` platforms USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 
 * ```Ubuntu``` distribution –> dialout group
@@ -280,3 +208,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA5NzI5OTE2Ml19
+-->
