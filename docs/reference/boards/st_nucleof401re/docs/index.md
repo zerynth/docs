@@ -4,9 +4,11 @@ The STM32 Nucleo device provides an affordable and flexible way for users to try
 
 The Arduino connectivity support and ST Morpho headers make it easy to expand the functionality of the STM32 Nucleo device with a wide choice of specialized shields and sensors. This device does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer.
 
-```WARNING```: Unlike other Arduino-like devices, the ST Nucleo device runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin, could damage the device.
+!!! warning
+	Unlike other Arduino-like devices, the ST Nucleo device runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin, could damage the device.
 
-```NOTE```: All the reported information are extracted from the official [ST Nucelo F401RE reference page](http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF401RE-pr), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [ST Nucelo F401RE reference page](http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF401RE-pr), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -217,3 +219,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ1NzQzNTQzMl19
+-->
