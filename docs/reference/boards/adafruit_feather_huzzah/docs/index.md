@@ -8,6 +8,7 @@ To make it easy to use for portable projects, the Adafruit Feather Huzzah provid
 
 <img style="text-align: center;" src="https://raw.githubusercontent.com/zerynth/docs/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah.png">
 
+
 ## Pin Mapping
 ![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah_pin_io.png?raw=true)
 
@@ -123,7 +124,7 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk0MzUzNjMsMjMxODA4NTQ4LDE1Nz
-gxMzA5OTAsLTIxNjg1MDkyMCwtMTQ2MTIwNzg4OCw1MzE4NDc5
-OCw2ODE4NDYxOTRdfQ==
+eyJoaXN0b3J5IjpbLTEzNjI5ODU4MTgsLTE4MTk0MzUzNjMsMj
+MxODA4NTQ4LDE1NzgxMzA5OTAsLTIxNjg1MDkyMCwtMTQ2MTIw
+Nzg4OCw1MzE4NDc5OCw2ODE4NDYxOTRdfQ==
 -->
