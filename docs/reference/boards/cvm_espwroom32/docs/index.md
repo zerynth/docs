@@ -13,150 +13,31 @@ The internal flash of the ESP32 module is organized in a single flash area with 
 
 In particular, for non-BLE VMs:
 
-| Start address
+| Start address | Size  | Content                 |
+|---------------|-------|-------------------------|
+| 0x00009000    | 16Kb  | Esp32 NVS area          |
+| 0x0000D000    | 8Kb   | Esp32 OTA data          |
+| 0x0000F000    | 4Kb   | Esp32 PHY data          |
+| 0x00010000    | 1Mb   | Zerynth VM              |
+| 0x00110000    | 1Mb   | Zerynth VM (FOTA)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode        |
+| 0x00290000    | 512Kb | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb | Free for user storage   |
+| 0x00390000    | 448Kb | Reserved                |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00009000
-
-    | 16Kb
-
- | Esp32 NVS area
-
- |
-| 0x0000D000
-
-    | 8Kb
-
-  | Esp32 OTA data
-
- |
-| 0x0000F000
-
-    | 4Kb
-
-  | Esp32 PHY data
-
- |
-| 0x00010000
-
-    | 1Mb
-
-  | Zerynth VM
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-  | Zerynth VM (FOTA)
-
- |
-| 0x00210000
-
-    | 512Kb
-
- | Zerynth Bytecode
-
-  |
-| 0x00290000
-
-    | 512Kb
-
- | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
- | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
- | Reserved
-
-                |
 For BLE VMs:
+| Start address | Size   | Content                 |
+|---------------|--------|-------------------------|
+| 0x00009000    | 16Kb   | Esp32 NVS area          |
+| 0x0000D000    | 8Kb    | Esp32 OTA data          |
+| 0x0000F000    | 4Kb    | Esp32 PHY data          |
+| 0x00010000    | 1216Kb | Zerynth VM              |
+| 0x00140000    | 1216Kb | Zerynth VM (FOTA)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode        |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb  | Free for user storage   |
+| 0x00390000    | 448Kb  | Reserved                |
 
-| Start address
-
- | Size
-
-  | Content
-
-                 |
-| ------------- | ----- | ----------------------- |
-| 0x00009000
-
-    | 16Kb
-
-  | Esp32 NVS area
-
-          |
-| 0x0000D000
-
-    | 8Kb
-
-   | Esp32 OTA data
-
-          |
-| 0x0000F000
-
-    | 4Kb
-
-   | Esp32 PHY data
-
-          |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM
-
-              |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (FOTA)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode
-
-        |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
-  | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
-  | Reserved
-
-                |
 ## Device Summary
 
 
@@ -214,80 +95,22 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                 |
-| ------------- | ------ | ----------------------- |
-| 0x00010000
-
-    | 1Mb
-
-    | Zerynth VM (slot 0)
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-    | Zerynth VM (slot 1)
-
-     |
-| 0x00210000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x00290000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For BLE VMs:
 
-| Start address
+| Start address | Size   | Content                   |
+|---------------|--------|---------------------------|
+| 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
+| 0x00140000    | 1216Kb | Zerynth VM (slot 1)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode (slot 0) |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                   |
-| ------------- | ------ | ------------------------- |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM (slot 0)
-
-       |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (slot 1)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For Esp32 based devices, the FOTA process is implemented mostly by using the provided system calls in the IDF framework. The selection of the next VM to be run is therefore a duty of the Espressif bootloader; the bootloader however, does not provide a failsafe mechanism to revert to the previous VM in case the currently selected one fails to start. At the moment this lack of a safety feature can not be circumvented, unless by changing the bootloader. As soon as Espressif relases a new IDF with such feature, we will release updated VMs.
 
 ## Secure Firmware
@@ -302,3 +125,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 
 * Touch detection support
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5Njg2ODkyNTFdfQ==
+-->

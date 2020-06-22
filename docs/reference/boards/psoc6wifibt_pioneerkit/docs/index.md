@@ -70,12 +70,15 @@ But only the KitProg2 port can be used for programming purposes.
 
 Plug the device using the KitProg2 Port which allows to program the PSoC6 MCU using Cypress KitProg2 programmer.
 
-```NOTE```: to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info
+!!! note
+	to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info
 
-```NOTE```: **For Windows Platform**:
+!!! note
+	**For Windows Platform**:
 install Cypress Programmer tool, which is available for download [here](https://www.cypress.com/products/psoc-programming-solutions)
 
-```NOTE```: **For Linux Platform**:
+!!! note
+	**For Linux Platform**:
 the following udev rules may need to be added:
 
 ```
@@ -101,7 +104,8 @@ Once connected the PSoC6 WiFi-Bt Pioneer Kit device is recognized by Zerynth Stu
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the PSoC6 WiFi-Bt Pioneer Kit device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “uplink” button of Zerynth Studio.
 
@@ -111,3 +115,6 @@ Not all features have been included in the PSoC6 WiFi-Bt Pioneer Kit support. In
 
 
 * Bluetooth support
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA3MjA2ODU5MF19
+-->

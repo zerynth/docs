@@ -12,11 +12,14 @@ Official reference for Sparkfun Esp8266 Thing Dev can be found [here](https://ww
 
 The Esp8266 Thing Dev features a 512 KB (4 Mb) flash memory organized in sectors of 4k each. The flash memory address starts at 0x40200000 and can be read and written from a Zerynth program using the internal flash module.
 
-```WARNING```: If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
+!!! warning
+	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
 
-```NOTE```: The internal flash of Sparkfun Esp8266 Thing Dev can be organized in different ways. The standard VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
+!!! note
+	The internal flash of Sparkfun Esp8266 Thing Dev can be organized in different ways. The standard VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
 
-```WARNING```: As reported in [Sparkfun reviews page](https://www.sparkfun.com/products/13711#product-review-4014), the Firmware Over The Air feature is not implementable because of small flash memory size.
+!!! warning
+	As reported in [Sparkfun reviews page](https://www.sparkfun.com/products/13711#product-review-4014), the Firmware Over The Air feature is not implementable because of small flash memory size.
 
 ## Device Summary
 
@@ -70,20 +73,19 @@ Alternatively, it is possible to solder a variety of connectors into the VIN pos
 
 The device can operate on an external supply of 2.5 to 6 volts. If using more than 6V, the voltage regulator may overheat and damage the device.
 
-```NOTE```: After powering the device, make sure the ON/OFF switch is slid into the “ON” position, and you should see the “PWR” LED illuminate.
+!!! note
+	After powering the device, make sure the ON/OFF switch is slid into the “ON” position, and you should see the “PWR” LED illuminate.
 
 ## Connect, Register, Virtualize and Program
 
 The Sparkfun Esp8266 Thing Dev comes with a serial-to-usb chip on board that allows programming and opening the UART of the Esp8266 module. The FTDI FT231x is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the FT231x Module can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**. In Linux systems, the Sparkfun Esp8266 Thing Dev should work out of the box.
+!!! note
+	Drivers for the FT231x Module can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**. In Linux systems, the Sparkfun Esp8266 Thing Dev should work out of the box.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Sparkfun Esp8266 Thing Dev can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
@@ -100,12 +102,17 @@ Once connected to a USB port the Sparkfun Esp8266 Thing Dev can be seen as a Vir
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Sparkfun Esp8266 Thing Dev is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the upload process.
+!!! note
+	No user intervention on the device is required for the upload process.
 
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODc1ODExMDI0XX0=
+-->

@@ -14,9 +14,11 @@ Official reference for Adafruit Feather Huzzah can be found [here](https://www.a
 
 The Adafruit Feather Huzzah device features a 4 MB (32 Mb) flash memory organized in sectors of 4k each. The flash memory address starts at 0x40200000 and can be read and written from a Zerynth program using the internal flash module.
 
-```WARNING```: If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
+!!! warning
+	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
 
-```NOTE```: The internal flash of Adafruit Feather Huzzah can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
+!!! note
+	The internal flash of Adafruit Feather Huzzah can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
 
 ## Device Summary
 
@@ -72,9 +74,11 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 
 The Adafruit Feather Huzzah exposes the serial port of the ESP8266 module via a CP2104 usb bridge which is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 
 * ```Ubuntu``` distribution –> dialout group
@@ -96,47 +100,28 @@ Once connected to a USB port the Feather Huzzah device can be seen as a Virtual 
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Feather Huzzah device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the upload process.
+!!! note
+	No user intervention on the device is required for the upload process.
 
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Adafruit Feather Huzzah device is available for bytecode only.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x40200000    | 448Kb | VM Slot         |
+| 0x40270000    | 256Kb | Bytecode Slot 0 |
+| 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x40200000
-
-    | 448Kb
-
- | VM Slot
-
- |
-| 0x40270000
-
-    | 256Kb
-
- | Bytecode Slot 0
-
- |
-| 0x402B0000
-
-    | 320Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjgxODQ2MTk0XX0=
+-->

@@ -6,7 +6,8 @@ Hardware-wise, Quail has 4 mikroBUS sockets for click board connectivity, along 
 
 The device needs a 5V power supply and features a [STM32F427 MCU](http://www.st.com/content/ccc/resource/technical/document/datasheet/03/b4/b2/36/4c/72/49/29/DM00071990.pdf/files/DM00071990.pdf/jcr:content/translations/en.DM00071990.pdf) running at 168MHz with 192Kb of RAM, 2Mb of flash and additional 8Mb of spi flash.
 
-```NOTE```: Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
+!!! note
+	Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
 
 ## Pin Mapping
 
@@ -16,181 +17,129 @@ MikroElektronika Quail official manual is available [here](http://download.mikro
 
 The internal flash of the MikroElektronika Quail is organized into two banks of 1Mb each. Each bank has sectors of different size according to the following table:
 
-| Bank 1
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" colspan="3">Bank 1</th>
+    <th class="tg-0pky" colspan="3">Bank 2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Start address</td>
+    <td class="tg-0pky">Size</td>
+    <td class="tg-0pky">Content</td>
+    <td class="tg-0pky">Start address</td>
+    <td class="tg-0pky">Size</td>
+    <td class="tg-0pky">Content</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8000000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Virtual Machine</td>
+    <td class="tg-0pky">0x8100000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Bytecode Bank 7</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8004000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Virtual Machine</td>
+    <td class="tg-0pky">0x8104000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Bytecode Bank 8</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8008000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Virtual Machine</td>
+    <td class="tg-0pky">0x8108000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Bytecode Bank 9</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x800C000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Virtual Machine</td>
+    <td class="tg-0pky">0x810C000</td>
+    <td class="tg-0pky">16Kb</td>
+    <td class="tg-0pky">Bytecode Bank 10</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8010000</td>
+    <td class="tg-0pky">64Kb</td>
+    <td class="tg-0pky">Virtual Machine</td>
+    <td class="tg-0pky">0x8110000</td>
+    <td class="tg-0pky">64Kb</td>
+    <td class="tg-0pky">Bytecode Bank 11</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8020000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 0</td>
+    <td class="tg-0pky">0x8120000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 12</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8040000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 1</td>
+    <td class="tg-0pky">0x8140000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 13</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8060000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 2</td>
+    <td class="tg-0pky">0x8160000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 14</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x8080000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 3</td>
+    <td class="tg-0pky">0x8180000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 15</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x80A0000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 4</td>
+    <td class="tg-0pky">0x81A0000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 16</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x80C0000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 5</td>
+    <td class="tg-0pky">0x81C0000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 17</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0x80E0000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 6</td>
+    <td class="tg-0pky">0x81E0000</td>
+    <td class="tg-0pky">128kb</td>
+    <td class="tg-0pky">Bytecode Bank 18</td>
+  </tr>
+</tbody>
+</table>
 
- | Bank 2
-
- |
-| Start address
-
- | Size
-
-          | Content
-
- | Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ------ | ------- | ------------- | ---- | ------- |  |  |
-| 0x8000000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x8100000
-
-     | 16Kb
-
- | Bytecode Bank 7
-
- |
-| 0x8004000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x8104000
-
-     | 16Kb
-
- | Bytecode Bank 8
-
- |
-| 0x8008000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x8108000
-
-     | 16Kb
-
- | Bytecode Bank 9
-
- |
-| 0x800C000
-
-     | 16Kb
-
-   | Virtual Machine
-
- | 0x810C000
-
-     | 16Kb
-
- | Bytecode Bank 10
-
- |
-| 0x8010000
-
-     | 64Kb
-
-   | Virtual Machine
-
- | 0x8110000
-
-     | 64Kb
-
- | Bytecode Bank 11
-
- |
-| 0x8020000
-
-     | 128kb
-
-  | Bytecode Bank 0
-
- | 0x8120000
-
-     | 128kb
-
- | Bytecode Bank 12
-
- |
-| 0x8040000
-
-     | 128kb
-
-  | Bytecode Bank 1
-
- | 0x8140000
-
-     | 128kb
-
- | Bytecode Bank 13
-
- |
-| 0x8060000
-
-     | 128kb
-
-  | Bytecode Bank 2
-
- | 0x8160000
-
-     | 128kb
-
- | Bytecode Bank 14
-
- |
-| 0x8080000
-
-     | 128kb
-
-  | Bytecode Bank 3
-
- | 0x8180000
-
-     | 128kb
-
- | Bytecode Bank 15
-
- |
-| 0x80A0000
-
-     | 128kb
-
-  | Bytecode Bank 4
-
- | 0x81A0000
-
-     | 128kb
-
- | Bytecode Bank 16
-
- |
-| 0x80C0000
-
-     | 128kb
-
-  | Bytecode Bank 5
-
- | 0x81C0000
-
-     | 128kb
-
- | Bytecode Bank 17
-
- |
-| 0x80E0000
-
-     | 128kb
-
-  | Bytecode Bank 6
-
- | 0x81E0000
-
-     | 128kb
-
- | Bytecode Bank 18
-
- |
 ## Device Summary
 
 
@@ -241,7 +190,8 @@ If supplied with less than 7V, however, the 5V pin may supply less than five vol
 
 On ```Windows``` machines two set of drivers must be installed: the DFU drivers and the USB serial drivers. This can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greater. Use the Zadig utility once with the Quail in DFU mode (see below) and once after the device has been virtualized.
 
-```NOTE```: Remember to select “Options > List all devices” to search for the Quail device.
+!!! note
+	Remember to select “Options > List all devices” to search for the Quail device.
 
 
 * In DFU mode, the VID:PID you should see is 0483:DF11 and the Quail si recognized as “STM32 BOOTLOADER”.
@@ -249,18 +199,16 @@ On ```Windows``` machines two set of drivers must be installed: the DFU drivers 
 
 * For the virtualized Quail the VID:PID is 0483:DF12.
 
-```WARNING```: In DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.
+!!! warning
+	In DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.
 
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
 ```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
+* **Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
@@ -297,7 +245,8 @@ Once connected to a USB port the Quail device can be seen as a Virtual Serial po
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Quail device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the Quail device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 After virtualization, the MikroElektronika Quail is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -307,42 +256,13 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08000000    | 128Kb | VM Slot 0       |
+| 0x08020000    | 384kb | Bytecode Slot 0 |
+| 0x08080000    | 128kb | VM Slot 1       |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
- | Size
-
-   | Content
-
-         |
-| ------------- | ------ | --------------- |
-| 0x08000000
-
-    | 128Kb
-
-  | VM Slot 0
-
-       |
-| 0x08020000
-
-    | 384kb
-
-  | Bytecode Slot 0
-
- |
-| 0x08080000
-
-    | 128kb
-
-  | VM Slot 1
-
-       |
-| 0x080A0000
-
-    | 384kb
-
-  | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -350,3 +270,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk5MjI3Mzg2MiwtMTg2MzIxOTA3MSwxNT
+cwMDQzOTQ5LC0xMjc5NjIxMDIyLDExMDEwNjI2MzZdfQ==
+-->

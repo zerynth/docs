@@ -6,7 +6,8 @@ AZ3166 is [EMW3166](http://en.mxchip.com/product/wifi_product/40), a low power c
 
 EMW3166 integrates [STM32F412RG](http://www.st.com/resource/en/datasheet/stm32f412rg.pdf) (Cortex-M4) microcontroller of 256Kbytes SRAM and 1Mbytes on-chip flash with another 2Mbytes on-board SPI flash added. Various peripheral interfaces of analog and digital are available. The power supply voltage is 3.3V. The TCP/IP protocols and security encryption algorithm could be applied in various Wi-Fi applications. In addition, several particular firmware prepares for some typical applications easylink configuration and services for cloud interfacing.
 
-```NOTE```: All the reported information are extracted from the official [MXChip IoT DevKit AZ3166 reference page](http://mxchip.com/az3166), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [MXChip IoT DevKit AZ3166 reference page](http://mxchip.com/az3166), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -16,99 +17,23 @@ MXChip IoT DevKit AZ3166 Schematic are available on the official [MXChip officia
 
 The internal flash of the IoT DevKit AZ3166 is organized into sectors of different size according to the following table:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x8000000     | 16Kb  | Virtual Machine |
+| 0x8004000     | 16Kb  | Virtual Machine |
+| 0x8008000     | 16Kb  | Virtual Machine |
+| 0x800C000     | 16Kb  | Virtual Machine |
+| 0x8010000     | 64Kb  | Virtual Machine |
+| 0x8020000     | 128kb | Bytecode Bank 0 |
+| 0x8040000     | 128kb | Bytecode Bank 1 |
+| 0x8060000     | 128kb | Bytecode Bank 2 |
+| 0x8080000     | 128kb | Bytecode Bank 3 |
+| 0x80A0000     | 128kb | Bytecode Bank 4 |
+| 0x80C0000     | 128kb | Bytecode Bank 5 |
+| 0x80E0000     | 128kb | Bytecode Bank 6 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x8000000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x8004000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x8008000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x800C000
-
-     | 16Kb
-
- | Virtual Machine
-
- |
-| 0x8010000
-
-     | 64Kb
-
- | Virtual Machine
-
- |
-| 0x8020000
-
-     | 128kb
-
- | Bytecode Bank 0
-
- |
-| 0x8040000
-
-     | 128kb
-
- | Bytecode Bank 1
-
- |
-| 0x8060000
-
-     | 128kb
-
- | Bytecode Bank 2
-
- |
-| 0x8080000
-
-     | 128kb
-
- | Bytecode Bank 3
-
- |
-| 0x80A0000
-
-     | 128kb
-
- | Bytecode Bank 4
-
- |
-| 0x80C0000
-
-     | 128kb
-
- | Bytecode Bank 5
-
- |
-| 0x80E0000
-
-     | 128kb
-
- | Bytecode Bank 6
-
- |
-```WARNING```: If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 6) towards the virtual machine, to minimize the chance of clashes.
+!!! warning
+	If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 6) towards the virtual machine, to minimize the chance of clashes.
 
 Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
 
@@ -173,54 +98,26 @@ Once connected on a USB port, if drivers have been correctly installed the IoT D
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the IoT DevKit AZ3166 device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
-```NOTE```: If the reset is not performed within 5 seconds the upload procedure fails.
+!!! note
+	If the reset is not performed within 5 seconds the upload procedure fails.
 
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the IoT DevKit AZ3166 device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08000000    | 128Kb | VM Slot 0       |
+| 0x08020000    | 384kb | Bytecode Slot 0 |
+| 0x08080000    | 128kb | VM Slot 1       |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
-| Start address
-
- | Size
-
-  | Content
-
-         |
-| ------------- | ----- | --------------- |
-| 0x08000000
-
-    | 128Kb
-
- | VM Slot 0
-
-       |
-| 0x08020000
-
-    | 384kb
-
- | Bytecode Slot 0
-
- |
-| 0x08080000
-
-    | 128kb
-
- | VM Slot 1
-
-       |
-| 0x080A0000
-
-    | 384kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -228,3 +125,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0Nzg0MTkyNDUsLTIxMjk4Njk3ODNdfQ
+==
+-->
