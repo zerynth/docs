@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.quectel.ug96
+The following are a list of examples for lib.quectel.ug96.
 
 ## Secure Socket
 
@@ -96,7 +96,7 @@ except Exception as e:
 ## UDP Socket
 
 
-A simple project showing how to use UDP sockets with UG96
+A simple project showing how to use UDP sockets with UG96.
 
 
 

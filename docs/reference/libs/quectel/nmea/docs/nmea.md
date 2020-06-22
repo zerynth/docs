@@ -6,143 +6,78 @@ The following functionalities are implemented:
 
 
 * retrieve the current location fix if present
-
-
 * retrieve the current UTC time
 
 The driver supports reading NMEA sentences from a serial port only.
 
-Location fixes are obtained by parsing NMEA sentences of type RMC and GGA, and optionally GSA.
-Obtaining a fix or UTC time are thread safe operations.
+Location fixes are obtained by parsing NMEA sentences of type RMC and GGA, and optionally GSA. Obtaining a fix or UTC time are thread safe operations.
 
 
----
-#### `#!py3 readline()`
+**`readline(serial, buffer, timeout=5000)`**
 
-!!!abstract "`#!py3 readline(serial, buffer, timeout=5000)`"
-
-Wait for a full NMEA sentence from the specified ```serial``` interface and copy it
-to the specified ```buffer``` (bytearray), with optional ```timeout``` (in milliseconds).
+Wait for a full NMEA sentence from the specified *serial* interface and copy it to the specified *buffer* (bytearray), with optional *timeout* (in milliseconds).
 
 Returns the length of the NMEA sentence or a negative error code:
 
-
 * *-1*, if the line does not start with NMEA header (missing `'$'`)
-
-
-* *-2*, if the line has incomplete NMEA sentence (missing  `'\*'`)
-
-
+* *-2*, if the line has incomplete NMEA sentence (missing  `'*'`)
 * *-3*, if the line has invalid or mismatching NMEA checksum
 
 
----
-#### `#!py3 parseline()`
+**`parseline(buffer, length, tm, fix)`**
 
-!!!abstract "`#!py3 parseline(buffer, length, tm, fix)`"
+Parse the content of the specified line *buffer* (bytearray) up to *length* bytes and fill the two sequences *tm* and *fix* with date/time and fix data if available.
 
-Parse the content of the specified line ```buffer``` (bytearray) up to ```length``` bytes
-and fill the two sequences ```tm``` and ```fix``` with date/time and fix data if available.
+Returned value is *0* if the line does not have valid data, or a combination (sum) of:
 
-Returned value is ```0``` if the line does not have valid data, or a combination (sum) of:
-
-
-* ```4```, if the ```tm``` sequence (7 items) has been filled (from RMC sentence)
+* *4*, if the *tm* sequence (7 items) has been filled (from RMC sentence)
+* *1*, *2* or *3*, if the *fix* sequence (9 items) has been filled (from RMC, GGA or GSA respectively)
 
 
-* *1, 2 or 3*, if the ```fix``` sequence (9 items) has been filled (from RMC, GGA or GSA respectively)
-
-
----
-#### `#!py3 NMEA_Receiver()`
-
-!!!abstract "`#!py3 NMEA_Receiver()`"
+**`class NMEA_Receiver()`**
 
 This class is meant to be used as a base class to provide a uniform interface for GNSS receivers.
 
-Instances of this class are fed with NMEA sentences using the `parse` method and can be
-queried for UTC time and location data. The parser can be disabled to clear acquired data and
-to prevent further updates until it is enabled again (to avoid stale data).
+Instances of this class are fed with NMEA sentences using the `parse` method and can be queried for UTC time and location data. The parser can be disabled to clear acquired data and to prevent further updates until it is enabled again (to avoid stale data).
 
 
----
-#### `#!py3 fix()`
+**`fix()`**
 
-!!!abstract "`#!py3 fix()`"
-
-Return the current fix or ```None``` if not available.
-A fix is a tuple with the following elements:
-
+Return the current fix or *None* if not available. A fix is a tuple with the following elements:
 
 * latitude in decimal format (-89.9999 - 89.9999)
-
-
 * longitude in decimal format (-179.9999 - 179.9999)
-
-
 * altitude in meters
-
-
 * speed in Km/h
-
-
 * course over ground as degrees from true north
-
-
 * number of satellites for this fix
-
-
 * horizontal dilution of precision (0.5 - 99.9)
-
-
 * vertical dilution of precision (0.5 - 99.9)
-
-
 * positional dilution of precision (0.5 - 99.9)
-
-
 * UTC time as a tuple (yyyy,MM,dd,hh,mm,ss,microseconds)
+`
+**has_fix()`**
+
+Return *True* if a fix is available.
 
 
----
-#### `#!py3 has_fix()`
+**`utc()`**
 
-!!!abstract "`#!py3 has_fix()`"
-
-Return ```True``` if a fix is available
-
-
----
-#### `#!py3 utc()`
-
-!!!abstract "`#!py3 utc()`"
-
-Return the current UTC time or ```None``` if not available.
-A UTC time is a tuple of (yyyy,MM,dd,hh,mm,ss,microseconds).
+Return the current UTC time or *None* if not available. A UTC time is a tuple of (yyyy,MM,dd,hh,mm,ss,microseconds).
 
 UTC time can be wrong if no fix has ever been obtained.
 
 
----
-#### `#!py3 has_utc()`
+**`has_utc()`**
 
-!!!abstract "`#!py3 has_utc()`"
-
-Return ```True``` if a UTC time is available
+Return *True* if a UTC time is available.
 
 
----
-#### `#!py3 enable()`
-
-!!!abstract "`#!py3 enable(state)`"
+**`enable(state)`**
 
 Enable or disable the NMEA parser. Also clear any acquired position fix or UTC data when disabled.
 
 
----
-#### `#!py3 parse()`
+**`parse(buffer, count)`**
 
-!!!abstract "`#!py3 parse(buffer, count)`"
-
-Parse ```count``` bytes from the specified ```buffer``` (bytearray) and updates the internal state
-from valid NMEA sentences found (when enabled).
+Parse *count* bytes from the specified *buffer* (bytearray) and updates the internal state from valid NMEA sentences found (when enabled).

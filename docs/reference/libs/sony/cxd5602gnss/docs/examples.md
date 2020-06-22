@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.sony.cxd5602gnss
+The following are a list of examples for lib.sony.cxd5602gnss.
 
 ## GNSS Data example
 
