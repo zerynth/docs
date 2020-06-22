@@ -79,9 +79,8 @@ The Adafruit Feather Huzzah exposes the serial port of the ESP8266 module via a 
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-	*Ubuntu* distribution –> dialout group
-	*Arch Linux* distribution –> uucp group
+*Ubuntu* distribution –> dialout group
+*Arch Linux* distribution –> uucp group
 
 Once connected to a USB port the Feather Huzzah device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
