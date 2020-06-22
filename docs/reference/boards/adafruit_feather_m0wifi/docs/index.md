@@ -112,6 +112,7 @@ After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed an
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Adafruit Feather M0 Wi-Fi device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size | Content         |
 |---------------|------|-----------------|
 | 0x00002000    | 94Kb | VM Slot         |
@@ -126,5 +127,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTEzMzMzM119
+eyJoaXN0b3J5IjpbLTE5ODI1ODk0MSwxNjYxMTMzMzMzXX0=
 -->
