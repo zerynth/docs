@@ -5,9 +5,10 @@ The Adafruit Feather Huzzah ESP8266 is an ‘all-in-one’ ESP8266 WiFi developm
 This device wired up a high-quality SiLabs CP2104 USB-Serial chip that can upload code at a blistering 921600 baud for fast development time. It also has auto-reset so no noodling with pins and reset button pressings.
 
 To make it easy to use for portable projects, the Adafruit Feather Huzzah provides a connector for a 3.7/4.2 V Lithium polymer battery and built in battery charging circuit thought USB port. The Feather will automatically switch over to USB power when its available.
-
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah.png?raw=true)
 
 ## Pin Mapping
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah_pin_io.png?raw=true)
 
 Official reference for Adafruit Feather Huzzah can be found [here](https://www.adafruit.com/product/2821).
 
@@ -121,7 +122,7 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU3Nzk3NTgsMjMxODA4NTQ4LDE1Nz
-gxMzA5OTAsLTIxNjg1MDkyMCwtMTQ2MTIwNzg4OCw1MzE4NDc5
-OCw2ODE4NDYxOTRdfQ==
+eyJoaXN0b3J5IjpbMjAzMjUyNTA2NywyMzE4MDg1NDgsMTU3OD
+EzMDk5MCwtMjE2ODUwOTIwLC0xNDYxMjA3ODg4LDUzMTg0Nzk4
+LDY4MTg0NjE5NF19
 -->
