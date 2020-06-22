@@ -6,7 +6,10 @@ This device wired up a high-quality SiLabs CP2104 USB-Serial chip that can uploa
 
 To make it easy to use for portable projects, the Adafruit Feather Huzzah provides a connector for a 3.7/4.2 V Lithium polymer battery and built in battery charging circuit thought USB port. The Feather will automatically switch over to USB power when its available.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah.png?raw=true)
+
 ## Pin Mapping
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah_pin_io.png?raw=true)
 
 Official reference for Adafruit Feather Huzzah can be found [here](https://www.adafruit.com/product/2821).
 
@@ -78,8 +81,9 @@ The Adafruit Feather Huzzah exposes the serial port of the ESP8266 module via a 
 	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:- **Ubuntu** distribution –> dialout group - **Arch Linux** distribution –> uucp group
-
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+- **Ubuntu** distribution –> dialout group
+- **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Feather Huzzah device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -119,7 +123,7 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxODA4NTQ4LDE1NzgxMzA5OTAsLTIxNj
-g1MDkyMCwtMTQ2MTIwNzg4OCw1MzE4NDc5OCw2ODE4NDYxOTRd
-fQ==
+eyJoaXN0b3J5IjpbLTE4MTk0MzUzNjMsMjMxODA4NTQ4LDE1Nz
+gxMzA5OTAsLTIxNjg1MDkyMCwtMTQ2MTIwNzg4OCw1MzE4NDc5
+OCw2ODE4NDYxOTRdfQ==
 -->
