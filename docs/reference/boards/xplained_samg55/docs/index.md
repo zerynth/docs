@@ -13,6 +13,8 @@ One of its most important features is the Atmel Embedded Debugger (EDBG), which 
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_samg55/docs/img/SAMG55_Xplained_PRO_pin_comm.png?raw=true)
+
 Xplained Pro Sam G55 Official Schematic, Reference Design and Pin Mapping are available on the official [Microchip User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42389-SAM-G55-Xplained-Pro_User-Guide.pdf).
 
 ## Flash Layout
@@ -62,9 +64,7 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 The Xplained Pro Sam G55 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -101,6 +101,5 @@ After virtualization, the Xplained Pro Sam G55 is ready to be programmed and the
 !!! note
 	Advanced programming and debugging through EDBG are available in Device Management Advanced Mode selecting Atmel EDBG interface
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODg0NTA4MjYsLTIwNTY3NTQ1NTVdfQ
-==
+eyJoaXN0b3J5IjpbLTQ0NTgxODY3MiwtMjA1Njc1NDU1NV19
 -->
