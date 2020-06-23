@@ -10,6 +10,8 @@ This device is a very compact solution for prototyping small smart objects linke
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wemos_d1_mini/docs/img/Wemos_D1_Mini_pin_io.jpg?raw=true)
+
 Official reference for Wemos D1 Mini can be found [here](https://wiki.wemos.cc/products:d1:d1_mini).
 
 ## Flash Layout
@@ -79,9 +81,8 @@ The Wemos D1 Mini exposes the serial port of the ESP8266 module via CH340 USB to
 !!! note
 	Drivers for the CH340 Module can be downloaded [here](https://wiki.wemos.cc/downloads) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Wemos D1 Mini device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -121,5 +122,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MzM2ODc5M119
+eyJoaXN0b3J5IjpbLTE0NDI3MjQwMjRdfQ==
 -->
