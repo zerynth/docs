@@ -8,7 +8,11 @@ This device wired up a CH40\* USB-to-Serial to upload the code. It also has auto
 
 To make it easy to use for portable projects, the FireBeetle ESP8266 provides a connector for a 3.7/4.2 V Lithium polymer battery and built in battery charging circuit thought USB port. The FireBeetle ESP8266 will automatically switch over to USB power when its available.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp8266/docs/img/firebeetle_esp8266.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp8266/docs/img/firebeetle_esp8266_comm.jpg?raw=true)
 
 Official reference for DFRobot FireBeetle ESP8266 can be found [here](https://www.dfrobot.com/product-1634.html).
 
@@ -81,7 +85,7 @@ The DFRobot FireBeetle ESP8266 exposes the serial port of the ESP8266 module via
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
+**Ubuntu** distribution –> dialout group
 * **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the FireBeetle ESP8266 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
@@ -122,5 +126,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Mzk0ODQ5NCwtMTAwNjYzOTgwN119
+eyJoaXN0b3J5IjpbNzQxOTc0NjIzLC0xMDA2NjM5ODA3XX0=
 -->
