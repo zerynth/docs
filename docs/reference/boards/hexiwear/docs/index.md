@@ -11,7 +11,11 @@ For this device, a docking station is also available; The Hexiwear Docking Stati
 !!! note
 	All the reported information are extracted from the official [Hexiwear page](http://www.hexiwear.com/), visit this page for more details and updates.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexiwear/docs/img/hexiwear.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexiwear/docs/img/hexiwear_pin_io.jpg?raw=true)
 
 ## Flash Layout
 
@@ -124,5 +128,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - NXP K64 section and Secure Firmware - NXP K64 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3ODQzMzAwXX0=
+eyJoaXN0b3J5IjpbNzU1NDY2MjU5LDE5NTAyOTEzNDYsNDE3OD
+QzMzAwXX0=
 -->
