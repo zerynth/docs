@@ -2,7 +2,11 @@
 
 The CW02 is one of the development board created by XinaBox that mounts on-board the official WROOM32 module. The XinaBox CW02 contains a dual-core [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview), that has both WiFi and Bluetooth Classic/LE support, 4 MB of SPI Flash, tuned antenna.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xinabox_esp32/docs/img/xinabox_esp32.png?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xinabox_esp32/docs/img/xinabox_esp32_pin_io.jpg?raw=true)
 
 Official reference for XinaBox CW02 can be found [here](https://wiki.xinabox.cc/CW02_-_Wi-Fi_%26_Bluetooth_Core).
 
@@ -88,9 +92,7 @@ The XinaBox IP01 programming module, connected to the CW02 core module, exposes 
 	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the XinaBox CW02 device is recognized by Zerynth Studio. The next steps are:
 
@@ -148,5 +150,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 This feature is strongly platform dependent; more information at Secure Firmware - ESP32 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODk4NjM2NF19
+eyJoaXN0b3J5IjpbMTc5OTkyNDE3NiwtNTg4OTg2MzY0XX0=
 -->
