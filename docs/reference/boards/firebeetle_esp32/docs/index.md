@@ -4,7 +4,11 @@ FireBeetle Esp32 is a low-power consumption development hardware designed for In
 
 The main controller supports two power supply methods: USB and 3.7V external lithium battery. And both USB and external DC can charge the Lipo battery directly
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp32/docs/img/firebeetle_esp32.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp32/docs/img/firebeetle_esp32_pin_io.jpg?raw=true)
 
 Official reference for DFRobot FireBeetle Esp32 can be found [here](https://www.dfrobot.com/product-1590.html).
 
@@ -13,6 +17,7 @@ Official reference for DFRobot FireBeetle Esp32 can be found [here](https://www.
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -27,6 +32,7 @@ In particular, for non-BLE VMs:
 | 0x00392000    | 4Mb   | Free for user storage   |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -98,9 +104,7 @@ The device can operate on an external supply of 3 to 5 volts. If using more than
 The DFRobot FireBeetle ESP32 comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from [here](https://git.oschina.net/dfrobot/FireBeetle-ESP32/raw/master/FireBeetle-ESP32.inf). In Linux systems, the FireBeetle ESP32 should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the FireBeetle ESP32 device is recognized by Zerynth Studio. The next steps are:
 
@@ -126,6 +130,7 @@ Check this video for a live demo:
 <div style="margin-top:10px;">
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/EcVGSPHfYFc?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
+
 !!! note
 	No user intervention on the device is required for the uplink process.
 
@@ -170,5 +175,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMwMTI3MzNdfQ==
+eyJoaXN0b3J5IjpbLTE4NzQ0ODIyMzEsLTE3NTMwMTI3MzNdfQ
+==
 -->
