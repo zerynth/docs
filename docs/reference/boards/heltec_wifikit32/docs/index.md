@@ -106,7 +106,7 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 The Wi-Fi Kit 32 comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the Wi-Fi Kit 32 should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group**Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Wi-Fi Kit 32 device is recognized by Zerynth Studio. The next steps are:
 
@@ -127,7 +127,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Wi-F
 
 After virtualization, the Wi-Fi Kit 32 is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the sdevice is required for the uplink process.
+!!! note
+	No user intervention on the sdevice is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -170,5 +171,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTkwOTE5MiwtNzg0NzU4NzI5XX0=
+eyJoaXN0b3J5IjpbMTcxODE0OTg3OCwtNzg0NzU4NzI5XX0=
 -->
