@@ -10,9 +10,14 @@ This board is designed to be used with the [XMC Digital Power Explorer Kit](http
 
 <p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4200_digitalpowercc/docs/img/xmc_digitalpowerexplorer.jpg?raw=true"></p>
 
+## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4200_digitalpowercc/docs/img/xmc4200_digitalpowercc_io.jpg?raw=true)
+
 ## Flash Layout
 
 The internal flash of the XMC4200 module is organized in a single flash area with 9 sectors. The flash starts at address 0xC000000.
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0xC000000     | 16Kb  | Zerynth VM      |
@@ -46,9 +51,7 @@ The Infineon XMC4200 comes with a usb debugger chip on board that allows program
 
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
--   **Ubuntu**  distribution –> dialout group
--   **Arch Linux**  distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu**  distribution –> dialout group; **Arch Linux**  distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the XMC4200 device is recognized by Zerynth Studio. The next steps are:
 
@@ -66,5 +69,5 @@ After virtualization, the DevKitC is ready to be programmed and the Zerynth scri
 !!! note
 	No user intervention on the device is required for the uplink process.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTE5NzY0OSwtMzg1Mjk0NzZdfQ==
+eyJoaXN0b3J5IjpbMTI5NjgxMTg4NCwtMzg1Mjk0NzZdfQ==
 -->
