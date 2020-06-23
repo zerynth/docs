@@ -4,7 +4,11 @@ The [PK-S5D5](https://www.renesas.com/br/en/products/synergy/hardware/kits/tb-s5
 The board provides easy-to-access interfaces to the peripherals of the S5D5 Group MCUs for application development.
 This is an initial evaluation platform that you can use to determine which kit is appropriate for further development of your product.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_tbs5d5/docs/img/renesas_tbs5d5.jpg?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_tbs5d5/docs/img/renesas_tbs5d5_pin_io.jpg?raw=true)
 
 Renesas TB-S5D5 user manual is available [here](https://www.renesas.com/br/en/doc/products/renesas-synergy/doc/r12um0015eu0102-synergy-tb-s5d5.pdf)
 
@@ -115,5 +119,5 @@ Not all features have been included in the Renesas PK-S5D9 VMs. In particular th
 
 * Audio Output;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MjI0ODk1NF19
+eyJoaXN0b3J5IjpbOTIxMjQ3Mjk3XX0=
 -->
