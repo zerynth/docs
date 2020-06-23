@@ -2,9 +2,11 @@
 
 The Esp32 EVB device is one of the development board created by Olimex to evaluate the ESP-WROOM-32 module. Based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview), Olimex ESP32 EVB features 100Mb Ethernet Interface, Bluetooth LE, WiFi, Remote control IR, and CAN connectivity. The device can operate with single LiPo backup battery like UPS as it has an internal LiPo battery charger and a step-up converter. Two relays are also available to switch power appliances on and off.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32evb/docs/img/olimex_esp32evb.jpg?raw=true)
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32evb/docs/img/olimex_esp32evb.jpg?raw=true"></p>
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32evb/docs/img/Olimex_ESP32_EVB_pin_comm.jpg?raw=true)
 
 Official reference for Olimex Esp32 EVB can be found [here](https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware).
 
@@ -28,6 +30,7 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -98,9 +101,7 @@ The Olimex Esp32 EVB comes with a serial-to-usb chip on board that allows progra
 	Drivers for the CH340 Module can be downloaded [here](https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware)  in “Software” section and are needed for **Windows and Mac platforms**. In Linux systems, the Olimex Esp32 EVB should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Olimex Esp32 EVB device is recognized by Zerynth Studio. The next steps are:
 
@@ -129,6 +130,7 @@ After virtualization, the Olimex Esp32 EVB is ready to be programmed and the  Ze
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Olimex Esp32 EVB device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content                   |
 |---------------|-------|---------------------------|
 | 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
@@ -164,5 +166,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAzOTE1MiwtNzE1OTI1MjUwXX0=
+eyJoaXN0b3J5IjpbLTQ1MzQ4NzYyMywtNzE1OTI1MjUwXX0=
 -->
