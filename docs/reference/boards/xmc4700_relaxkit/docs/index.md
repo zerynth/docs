@@ -2,9 +2,13 @@
 
 Infineon XMC4700/4800 Relax Kit is equipped with the ARM Cortex-M4 based XMC4700 microcontroller (MCU) from Infineon Technologies. These kits are designed to evaluate the capabilities of the XMC4700 MCU. The Relax Kits feature an Ethernet-enabled communication option.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4700_relaxkit/docs/img/xmc4700_relaxkit.jpg?raw=true"></p>
+
 _XMC4700 Relax Kit. Copyright Infineon_
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4700_relaxkit/docs/img/xmc4700_relaxkit_io.jpg?raw=true)
 
 Official reference for Infineon XMC4700 Relax Kit can be found  [here](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc47_relax_v1/).
 
@@ -53,9 +57,7 @@ Power to the XMC4700 is supplied via one of the two on-board USB Micro B connect
 The Infineon XMC4700 comes with a usb debugger chip on board that allows programming and opening the UART of the module.  **Drivers are needed**  (Linux, Mac or Windows) and can be downloaded from the official  [JLink software](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)  page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
--   **Ubuntu**  distribution –> dialout group
--   **Arch Linux**  distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu**  distribution –> dialout group; **Arch Linux**  distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the XMC4700 device is recognized by Zerynth Studio. The next steps are:
 
@@ -72,5 +74,5 @@ After virtualization, the DevKitC is ready to be programmed and the Zerynth scri
 !!! note
 	No user intervention on the device is required for the uplink process.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDcyODQ4Nl19
+eyJoaXN0b3J5IjpbMTQ4MTQ1NDA2NF19
 -->
