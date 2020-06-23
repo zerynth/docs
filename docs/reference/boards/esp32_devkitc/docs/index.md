@@ -2,7 +2,11 @@
 
 The ESP32 DevKitC is one of the development board created by Espressif to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_devkitc/docs/img/esp32devkitc.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_devkitc/docs/img/esp32devkitcpin.jpg?raw=true)
 
 Official reference for ESP32 DevKitC can be found [here](http://espressif.com/en/products/hardware/esp32-devkitc/overview).
 
@@ -171,5 +175,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTQwMDM4Nl19
+eyJoaXN0b3J5IjpbMTUyMzA0ODIzN119
 -->
