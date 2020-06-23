@@ -4,7 +4,11 @@ The ESP32 Pico v4 is a mini development board produced by Espressif. The core of
 
 Comparing to other ESP32 chips, the ESP32-PICO-D4 integrates several peripheral components in one single package, that otherwise would need to be installed separately. This includes a 40 MHz crystal oscillator, 4 MB flash, filter capacitors and RF matching links in.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_pico_v4/docs/img/esp32-pico-kit-v4.jpg?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_pico_v4/docs/img/esp32_pico_v4_pin_io.jpg?raw=true)
 
 Official reference for ESP32 Pico v4 can be found [here](http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html#overview).
 
@@ -13,6 +17,7 @@ Official reference for ESP32 Pico v4 can be found [here](http://esp-idf.readthed
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -26,6 +31,7 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -96,9 +102,7 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 The Esp32 Pico v4 comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the Pico v4 should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Pico v4 device is recognized by Zerynth Studio. The next steps are:
 
@@ -127,6 +131,7 @@ After virtualization, the Pico v4 is ready to be programmed and the  Zerynth scr
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the DevKitC device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content                   |
 |---------------|-------|---------------------------|
 | 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
@@ -162,5 +167,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3MzQ1NDZdfQ==
+eyJoaXN0b3J5IjpbLTE3MzQzMTI3NjcsNTY4Mjc2OTkwXX0=
 -->
