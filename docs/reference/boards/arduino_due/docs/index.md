@@ -1,7 +1,7 @@
 # Arduino DUE
 
 The Arduino Due is a microcontroller device based on the Atmel [SAM3X8E ARM Cortex-M3 CPU](http://www.google.com/url?q=http%3A%2F%2Fwww.atmel.com%2FImages%2FAtmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf&sa=D&sntz=1&usg=AFQjCNFO3-2W_YnmZGERtqXMAenLWJmCcA). It is the first Arduino device based on a 32-bit ARM core microcontroller. It has 54 digital input/output pins (of which 12 can be used as PWM outputs), 12 analog inputs, 4 UARTs (hardware serial ports), a 84 MHz clock, an USB OTG capable connection, 2 DAC (digital to analog), 2 TWI, a power jack, an SPI header, a JTAG header, a reset button and an erase button.
-
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/arduino_due/docs/img/ArduinoDue.jpg?raw=true"></p>
 !!! warning 
 	Unlike other Arduino devices, Arduino Due runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin could damage the device.
 
@@ -10,6 +10,7 @@ The Arduino Due is a microcontroller device based on the Atmel [SAM3X8E ARM Cort
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/arduino_due/docs/img/Arduino_DUE_pin_io.png?raw=true)
 Arduino Official Schematic, Reference Design and Pin Mapping are available on the official [Arduino DUE reference page](http://www.arduino.cc/en/Main/ArduinoBoardDue).
 
 ## Flash Layout
@@ -75,13 +76,7 @@ The Arduino DUE Programming port is connected to an ATmega16U2, which provides a
 	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through the ATmega16U2 microcontroller.
 
@@ -120,5 +115,5 @@ Flash Layout is shown in table below:
 | 0x000E0000    | 128Kb-256b | Bytecode Slot 1 |
 | 0x000FFF00    | 256b       | FOTA Record     |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDAwMzY5MjldfQ==
+eyJoaXN0b3J5IjpbMTgyNjc0MTA2OF19
 -->
