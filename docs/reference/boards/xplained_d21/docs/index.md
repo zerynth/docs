@@ -4,10 +4,14 @@ The Xplained Pro Sam D21 is a microcontroller device based on the Atmel [SAMD21J
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_d21/docs/img/XplainedProSamD21.png?raw=true"></p>
+
 !!! note
 	All the reported information are extracted from the official [Xplained Pro Sam D21 page](http://www.atmel.com/tools/ATSAMD21-XPRO.aspx), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_d21/docs/img/SAMD21_Xplained_PRO_pin_comm.png?raw=true)
 
 Xplained Pro Sam D21 Official Schematic, Reference Design and Pin Mapping are available on the official [Atmel User Guide](http://www.atmel.com/Images/Atmel-42220-SAMD21-Xplained-Pro_User-Guide.pdf).
 
@@ -67,9 +71,7 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 The Xplained Pro Sam D21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -123,5 +125,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMjM5NjUzOF19
+eyJoaXN0b3J5IjpbLTY0ODY2Nzk2NF19
 -->
