@@ -4,6 +4,8 @@ Infineon XMC4400 Enterprise Kit is equipped with the ARM Cortex-M4 based
 [XMC4400 microcontroller (MCU)](https://studio.segger.com/packages/XMC4000/CMSIS/Documents/xmc4400_rm_v1.5_2014_04.pdf) from Infineon Technologies. These kits are
 designed to evaluate the capabilities of the XMC4400 MCU.
 
+<p style="text"></p>
+
 ## Pin Mapping
 
 Official reference for Infineon XMC4400 Enterprise Kit can be found
@@ -107,5 +109,5 @@ After virtualization, the DevKitC is ready to be programmed and the Zerynth scri
 !!! note
 	No user intervention on the device is required for the uplink process.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzYyMzczNF19
+eyJoaXN0b3J5IjpbLTIwODQ5ODA2MzIsMTA1MzYyMzczNF19
 -->
