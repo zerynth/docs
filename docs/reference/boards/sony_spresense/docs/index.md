@@ -16,6 +16,8 @@ The Spresense consists of two boards:
 
 * [Extension board](https://developer.sony.com/develop/spresense/developer-tools/introduction#_extension_board)
 
+<p style="text-align:center;"><img></p>
+
 ## Pin Mapping
 
 Official reference for Sony Spresense can be found [here](https://developer.sony.com/develop/spresense).
@@ -106,5 +108,5 @@ As reported in the previous section, Spresense Bootloader needs to be burnt on S
 SPI modes: when the pin `D10` is chosen as Chip Select pin, SPI modes follow the [Motorola SPI Frame Format](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0194h/I1006921.html).
 If an independent CS control is desired, please choose a different CS pin.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTAzNTY5NThdfQ==
+eyJoaXN0b3J5IjpbMzk4NDQyMzI3XX0=
 -->
