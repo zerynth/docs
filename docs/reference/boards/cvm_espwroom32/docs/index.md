@@ -2,6 +2,8 @@
 
 The ESP-WROOM32 developed by Espressif is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
+![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/boards/cvm_espwroom32/docs/img/espwroom32.jpg?raw=true)
+
 ## Pin Mapping
 
 The ESP-WROOM32 module is supported as a Zerynth customizable Virtual Machine, therefore the pinmap must be defined by the user.
@@ -26,6 +28,7 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -126,5 +129,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg2ODkyNTFdfQ==
+eyJoaXN0b3J5IjpbNzg5MDkwNDM5XX0=
 -->
