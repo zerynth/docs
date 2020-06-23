@@ -3,10 +3,14 @@
 Wemos D1 Mini is a mini Wi-Fi device based on ESP8266EX chip.
 This device is a very compact solution for prototyping small smart objects linked to the World Wide Web thanks to the Espressif ESP8266 Wi-Fi functionalities. The Wemos D1 Mini features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wi-fi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wemos_d1_mini/docs/img/wemos_d1_mini.png?raw=true"></p>
+
 !!! note
 	All the reported information are extracted from the official [Wemos D1 Mini reference page](https://wiki.wemos.cc/products:d1:d1_mini), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wemos_d1_mini/docs/img/Wemos_D1_Mini_pin_io.jpg?raw=true)
 
 Official reference for Wemos D1 Mini can be found [here](https://wiki.wemos.cc/products:d1:d1_mini).
 
@@ -77,9 +81,8 @@ The Wemos D1 Mini exposes the serial port of the ESP8266 module via CH340 USB to
 !!! note
 	Drivers for the CH340 Module can be downloaded [here](https://wiki.wemos.cc/downloads) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Wemos D1 Mini device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -119,5 +122,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1MTM4OTE5XX0=
+eyJoaXN0b3J5IjpbLTE0NDI3MjQwMjRdfQ==
 -->
