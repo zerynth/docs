@@ -4,7 +4,11 @@ The Huzzah32 is one of the development board created by Adafruit that mounts on-
 
 Adafruit Huzza32 contains a dual-core ESP32 chip, 4 MB of SPI Flash, tuned antenna, and The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) has both WiFi and Bluetooth Classic/LE support.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruit_huzzah32.png?raw=true">
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruithuzzah32pin.jpg?raw=true)
 
 Official reference for Adafruit Huzzah32 can be found [here](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/overview).
 
@@ -13,6 +17,7 @@ Official reference for Adafruit Huzzah32 can be found [here](https://learn.adafr
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -86,13 +91,7 @@ The Adafruit Huzzah32 exposes the serial port of the ESP32 module via a CP2104 u
 	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu**` distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Huzzah32 device is recognized by Zerynth Studio. The next steps are:
 
@@ -130,6 +129,7 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1  |
 
 For BLE VMs:
+
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
 | 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
@@ -156,5 +156,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NzU1NjUyOCwzMTU3Mzc2MzJdfQ==
+eyJoaXN0b3J5IjpbLTEyMDk2OTMyOTAsOTYzOTM2MDgxLDMxNT
+czNzYzMl19
 -->
