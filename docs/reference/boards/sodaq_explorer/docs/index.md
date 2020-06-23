@@ -2,10 +2,14 @@
 
 The ExpLoRer is a development/evaluation tool based on the Atmel [SAMD21J18A ARM Cortex-M0+ CPU](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf). intended for the evaluation of Microchip wireless modules in a Research and Development laboratory environment. It is not a Finished Appliance. Manufacturers who integrate ExpLoRer in a Finished Appliance product must take responsibility to follow regulatory guidelines, for example for CE marking.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sodaq_explorer/docs/img/SodaqExplorer.png?raw=true"></p>
+
 !!! note
 	All the reported information are extracted from the official [SODAQ ExpLoRer page](https://support.sodaq.com/Boards/ExpLoRer/) , visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sodaq_explorer/docs/img/SODAQ_ExpLoRer_pin_comm.jpg?raw=true)
 
 SODAQ ExpLoRer Official Schematic, Reference Design and Pin Mapping are available on the official [SODAQ ExpLoRer page](https://support.sodaq.com/sodaq-one/explorer).
 
@@ -79,9 +83,7 @@ Connect any 3.3v – 5.2v power to the solar connector, this source will charge 
 To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -124,6 +126,7 @@ After virtualization, the SODAQ ExpLoRer is ready to be programmed and the Zeryn
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the SODAQ ExpLoRer device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size | Content         |
 |---------------|------|-----------------|
 | 0x00002000    | 94Kb | VM Slot         |
@@ -145,5 +148,5 @@ Not all features have been included in the SODAQ ExpLoRer support. In particular
 
 * Bluetooth support;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTUyODIzOF19
+eyJoaXN0b3J5IjpbMjgzMzc2OTczLDEwNDk1MjgyMzhdfQ==
 -->
