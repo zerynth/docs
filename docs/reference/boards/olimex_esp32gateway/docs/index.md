@@ -2,7 +2,11 @@
 
 The Esp32 Gateway device is one of the development board created by Olimex to evaluate the ESP-WROOM-32 module. Based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview), Olimex ESP32 Gateway features 100Mb Ethernet Interface, Bluetooth LE, WiFi.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32gateway/docs/img/olimex_esp32gateway.jpg?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32gateway/docs/img/Olimex_ESP32_gateway_pin_comm.jpg?raw=true)
 
 Official reference for Olimex Esp32 Gateway can be found [here](https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware).
 
@@ -96,9 +100,7 @@ The Olimex Esp32 Gateway comes with a serial-to-usb chip on board that allows pr
 	Drivers for the CH340 Module can be downloaded [here](https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware)  in “Software” section and are needed for **Windows and Mac platforms**. In Linux systems, the Olimex Esp32 Gateway should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Olimex Esp32 Gateway device is recognized by Zerynth Studio. The next steps are:
 
@@ -163,5 +165,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTYxMDU4OV19
+eyJoaXN0b3J5IjpbNjQ1NzQzMjY4LC0yNTE2MTA1ODldfQ==
 -->
