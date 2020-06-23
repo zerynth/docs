@@ -2,7 +2,7 @@
 
 NodeMCU is an open source IoT platform including a firmware which runs on the ESP8266 with the Espressif Non-OS SDK, and hardware based on the ESP-12 module. The device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu2/docs/img/nodemcu2.jpg?raw=true)
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu2/docs/img/nodemcu2.jpg?raw=true"></p>
 
 ## Pin Mapping
 
@@ -118,5 +118,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzg4NzQwMCwxOTM1NDU0MTc4XX0=
+eyJoaXN0b3J5IjpbNDc1MjE5Nzg0LDE5MzU0NTQxNzhdfQ==
 -->
