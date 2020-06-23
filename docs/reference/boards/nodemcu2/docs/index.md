@@ -2,7 +2,11 @@
 
 NodeMCU is an open source IoT platform including a firmware which runs on the ESP8266 with the Espressif Non-OS SDK, and hardware based on the ESP-12 module. The device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu2/docs/img/nodemcu2.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu2/docs/img/nodemcu2pin.jpg?raw=true)
 
 Official reference for NodeMCU can be found [here](http://nodemcu.com/index_en.html).
 
@@ -74,9 +78,7 @@ The NodeMCU v2 exposes the serial port of the ESP8266 module via a CP2102 usb br
 	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) and are needed for **Windows and Mac platforms**.
 
 !!! bote
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the NodeMCU v2 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -116,5 +118,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTQ1NDE3OF19
+eyJoaXN0b3J5IjpbMTEyMzg4NzQwMCwxOTM1NDU0MTc4XX0=
 -->
