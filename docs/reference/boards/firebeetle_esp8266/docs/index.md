@@ -84,9 +84,7 @@ The DFRobot FireBeetle ESP8266 exposes the serial port of the ESP8266 module via
 	Drivers for the CH340 Module can be downloaded [here](https://github.com/Arduinolibrary/DFRobot_FireBeetle_ESP8266_DFR0489/raw/master/CH340%20Driver.zip) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-**Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the FireBeetle ESP8266 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -126,5 +124,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxOTc0NjIzLC0xMDA2NjM5ODA3XX0=
+eyJoaXN0b3J5IjpbOTE5NTc0Njk0LC0xMDA2NjM5ODA3XX0=
 -->
