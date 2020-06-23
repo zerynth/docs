@@ -2,6 +2,8 @@
 
 The ExpLoRer is a development/evaluation tool based on the Atmel [SAMD21J18A ARM Cortex-M0+ CPU](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf). intended for the evaluation of Microchip wireless modules in a Research and Development laboratory environment. It is not a Finished Appliance. Manufacturers who integrate ExpLoRer in a Finished Appliance product must take responsibility to follow regulatory guidelines, for example for CE marking.
 
+<p style="text-align:center;"><img src=""></p>
+
 !!! note
 	All the reported information are extracted from the official [SODAQ ExpLoRer page](https://support.sodaq.com/Boards/ExpLoRer/) , visit this page for more details and updates.
 
@@ -145,5 +147,5 @@ Not all features have been included in the SODAQ ExpLoRer support. In particular
 
 * Bluetooth support;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTUyODIzOF19
+eyJoaXN0b3J5IjpbLTg3MDE0NTM0OCwxMDQ5NTI4MjM4XX0=
 -->
