@@ -2,12 +2,14 @@
 
 The [ST Microelectronics Nucleo F746ZG](https://www.st.com/en/evaluation-tools/nucleo-f746zg.html) boards provide an affordable and flexible way for users to try out new concepts and build prototypes by choosing from the various combinations of performance and power consumption features, provided by the STM32 microcontroller.
 
-<p style="text"></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof746zg/docs/img/nucleof746zg.jpg?raw=true"></p>
 
 The ST Zio connector, which extends the Arduino™ Uno V3 connectivity, and the ST morpho headers provide an easy means of expanding the functionality of the Nucleo open development platform with a wide choice of specialized shields.
 The STM32 Nucleo-144 board does not require any separate probe as it integrates the ST-LINK debugger/programmer.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof746zg/docs/img/st_nucleof746zg_pin_comm.jpg?raw=true)
 
 ## Flash Layout
 
@@ -83,12 +85,10 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 The ST Nucleo F746ZG Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, Windows machines requires drivers that can be downloaded from the [ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html) while MAC OSX and Linux machines will recognize the device automatically.
 
-On **MAC OSX** and ```Linux``` USB drivers are not required.
+On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -124,5 +124,5 @@ Not all features have been included in the ST Nucleo F746ZG support. In particul
 
 * USB;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzNjgzMTc2LC0xMTU3NDE0NDc0XX0=
+eyJoaXN0b3J5IjpbLTIxMDcyNDI1OCwtMTE1NzQxNDQ3NF19
 -->
