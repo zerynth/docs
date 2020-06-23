@@ -4,7 +4,11 @@ The AWS Hexagon v1 is one of the development board created by Tekt Industries th
 
 AWS Hexagon v1 contains a dual-core ESP32 chip, 4 MB of SPI Flash, tuned antenna, and The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) has both WiFi and Bluetooth Classic/LE support.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexagon_v1/docs/img/hexagon_v1.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexagon_v1/docs/img/hexagon_v1_pin_io.jpg?raw=true)
 
 ## Flash Layout
 
@@ -99,9 +103,7 @@ The AWS Hexagon v1 exposes the serial port of the ESP32 module via a CP2104 usb 
 	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Hexagon device is recognized by Zerynth Studio. The next steps are:
 
@@ -139,6 +141,7 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
+
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
 | 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
@@ -165,5 +168,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDk5OTM0NTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NTkzNjAxNTgsLTE2NDk5OTM0NTRdfQ
+==
 -->
