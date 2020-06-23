@@ -4,7 +4,7 @@ The Arduino/Genuino Zero is a microcontroller device based on the Atmel [SAMD21G
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/genuino_zero/docs/img/ArduinoZero.jpg?raw=true)
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/genuino_zero/docs/img/ArduinoZero.jpg?raw=true"></p>
 
 !!! warning
 	Unlike most Arduino & Genuino devices, the Zero runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
@@ -122,5 +122,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1NTI0NzYsMjA3MzA1Ml19
+eyJoaXN0b3J5IjpbLTEzNjQxOTQ3NzAsMjA3MzA1Ml19
 -->
