@@ -10,7 +10,7 @@ The board supports operating voltages from 1.8 V to 3.3 V for the PSoC 6 MCU. Mo
 
 ## Pin Mapping
 
-![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/boards/psoc6wifibt_pioneerkit/docs/img/psoc6wifibt_pioneerkit_pin_io.png?raw=true)
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/psoc6wifibt_pioneerkit/docs/img/psoc6wifibt_pioneerkit_pin_io.png?raw=true)
 
 Official reference for PSoC6 WiFi-Bt Pioneer Kit can be found [here](https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt).
 
@@ -84,7 +84,6 @@ install Cypress Programmer tool, which is available for download [here](https://
 !!! note
 	**For Linux Platform**:
 the following udev rules may need to be added:
-
 ```
 # Match KP2 PID/VID
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="f148", ENV{CY_KP2_PID_VID}="f148:04b4"
@@ -120,5 +119,5 @@ Not all features have been included in the PSoC6 WiFi-Bt Pioneer Kit support. In
 
 * Bluetooth support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjQ5NTk5NF19
+eyJoaXN0b3J5IjpbLTEyMjA0MzQ2NDNdfQ==
 -->
