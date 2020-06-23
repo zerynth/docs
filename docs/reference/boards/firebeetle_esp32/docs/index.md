@@ -4,6 +4,8 @@ FireBeetle Esp32 is a low-power consumption development hardware designed for In
 
 The main controller supports two power supply methods: USB and 3.7V external lithium battery. And both USB and external DC can charge the Lipo battery directly
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp32/docs/img/firebeetle_esp32.png?raw=true)
+
 ## Pin Mapping
 
 Official reference for DFRobot FireBeetle Esp32 can be found [here](https://www.dfrobot.com/product-1590.html).
@@ -170,5 +172,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMwMTI3MzNdfQ==
+eyJoaXN0b3J5IjpbMTc4ODA3MDY1NywtMTc1MzAxMjczM119
 -->
