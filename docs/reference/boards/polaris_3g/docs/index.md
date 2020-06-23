@@ -6,6 +6,8 @@ The Polaris 3G hardware includes a powerful 32-bit ARM Cortex-M4 controller with
 
 With Polaris 3G, many IoT applications can be developed related to real-time asset tracking, geo-fencing, sensors logging, battery monitoring, remote controlling, and others. It works right out of the box as vehicle tracker; the only requirement is a SIM card.
 
+
+
 ## Pin Mapping
 
 ## Flash Layout
@@ -145,5 +147,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5OTg3NzU2XX0=
+eyJoaXN0b3J5IjpbLTE0Nzk3NTk4NjRdfQ==
 -->
