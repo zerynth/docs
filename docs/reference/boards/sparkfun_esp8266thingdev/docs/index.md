@@ -4,7 +4,11 @@ The SparkFun ESP8266 Thing Dev is a development board that has been solely desig
 
 The ESP8266 Thing Development device breaks out all of the module’s pins, and the USB-to-serial converter means you don’t need any peripheral components to program the chip. The device features 512 KB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_esp8266thingdev/docs/img/sparkfun_esp8266thingdev.jpg?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_esp8266thingdev/docs/img/sparkfun_esp8266thingdev_comm.jpg?raw=true)
 
 Official reference for Sparkfun Esp8266 Thing Dev can be found [here](https://www.sparkfun.com/products/13711).
 
@@ -84,9 +88,7 @@ The Sparkfun Esp8266 Thing Dev comes with a serial-to-usb chip on board that all
 	Drivers for the FT231x Module can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**. In Linux systems, the Sparkfun Esp8266 Thing Dev should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Sparkfun Esp8266 Thing Dev can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -114,5 +116,5 @@ After virtualization, the Sparkfun Esp8266 Thing Dev is ready to be programmed a
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1ODExMDI0XX0=
+eyJoaXN0b3J5IjpbMTI3NTEwNDE0OCw4NzU4MTEwMjRdfQ==
 -->
