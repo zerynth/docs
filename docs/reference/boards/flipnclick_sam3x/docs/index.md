@@ -13,6 +13,8 @@ This device has the predisposition in both sides for shields and expansion board
 !!! note
 	Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclick.jpg?raw=true)
+
 With more than 160 to choose from, and more coming out every week, it’s very simple to create a custom product by simply adding new functionality to the main device.
 
 ## Pin Mapping
@@ -122,5 +124,5 @@ Flash Layout is shown in table below:
 | 0x000E0000    | 128Kb-256b | Bytecode Slot 1 |
 | 0x000FFF00    | 256b       | FOTA Record     |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjA5MzQyOV19
+eyJoaXN0b3J5IjpbMTQ4MjE1NDU5Nl19
 -->
