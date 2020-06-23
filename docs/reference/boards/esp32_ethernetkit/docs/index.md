@@ -6,7 +6,11 @@ ESP32-Ethernet-Kit is an [ESP32 microcontroller](https://espressif.com/en/produc
 
 It consists of two development boards, the Ethernet board and the PoE board. The Ethernet board contains Bluetooth / Wi-Fi dual-mode ESP32-WROVER-B module and IP101GRI, a Single Port 10/100 Fast Ethernet Transceiver (PHY). The PoE board provides power over Ethernet functionality. The Ethernet board can work independently, without the PoE board installed.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_ethernetkit/docs/img/esp32_ethernetkit.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_ethernetkit/docs/img/esp32_ethernetkit_comm.jpg?raw=true)
 
 Official reference for ESP32 EthernetKit can be found [here](https://docs.espressif.com/projects/esp-idf/en/latest/hw-reference/get-started-ethernet-kit.html).
 
@@ -15,6 +19,7 @@ Official reference for ESP32 EthernetKit can be found [here](https://docs.espres
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -28,6 +33,7 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -112,13 +118,7 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 The Esp32 EthernetKit comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the DevKitC should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the DevKitC device is recognized by Zerynth Studio. The next steps are:
 
@@ -156,6 +156,7 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
+
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
 | 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
@@ -185,5 +186,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * WROVER’s SPI flash module;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTcyMDAyXX0=
+eyJoaXN0b3J5IjpbNTQyNzQ0NDYyLC0yMjE3MjAwMl19
 -->
