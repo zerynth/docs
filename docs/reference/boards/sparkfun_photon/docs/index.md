@@ -4,6 +4,8 @@ The SparkFun Photon RedBoard is a complete Wi-Fi enabled development platform fo
 
 The P1 (P-one) is Particle’s tiny Wi-Fi module that contains both the Broadcom BCM43362 Wi-Fi chip and a reprogrammable [STM32F205RGY6 32-bit ARM Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/bc/21/42/43/b0/f3/4d/d3/CD00237391.pdf/files/CD00237391.pdf/jcr:content/translations/en.CD00237391.pdf).
 
+
+
 In addition to having 1MB of internal flash memory for storing the firmware, the SparkFun Photon also features 128KB of Ram, 1MB of extra SPI flash and 120 MHz of clock.
 
 !!! note
@@ -186,5 +188,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NzY5MDM4OV19
+eyJoaXN0b3J5IjpbMTY0OTgwNTY4MSwxNjY3NjkwMzg5XX0=
 -->
