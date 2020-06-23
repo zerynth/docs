@@ -3,7 +3,11 @@
 Wi-Fi Kit 32 is a classic IoT dev-board designed and produced by Heltec Automation (TM). It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wi-Fi, Bluetooth, Ethernet and Low Power support all in a single chip; Li-Po battery management system, 0.96″ OLED are also included.
 It is one of the best choice for smart solutions, smart farms, smart home, and IoT makers.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/heltec_wifikit32/docs/img/heltec_wifikit32.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/heltec_wifikit32/docs/img/heltec_wifikit32_pin_io.jpg?raw=true)
 
 Official reference for Heltec Wi-Fi Kit 32 can be found [here](https://heltec.org/project/wifi-kit-32/).
 
@@ -12,6 +16,7 @@ Official reference for Heltec Wi-Fi Kit 32 can be found [here](https://heltec.or
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -26,6 +31,7 @@ In particular, for non-BLE VMs:
 | 0x00392000    | 4Mb   | Free for user storage   |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -100,9 +106,7 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 The Wi-Fi Kit 32 comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the Wi-Fi Kit 32 should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group**Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Wi-Fi Kit 32 device is recognized by Zerynth Studio. The next steps are:
 
@@ -166,5 +170,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NDc1ODcyOV19
+eyJoaXN0b3J5IjpbLTMxMTkwOTE5MiwtNzg0NzU4NzI5XX0=
 -->
