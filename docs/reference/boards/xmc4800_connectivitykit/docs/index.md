@@ -2,6 +2,7 @@
 
 Infineon XMC4800 connectivity Kit is equipped with the ARM Cortex-M4 based  [XMC4800 microcontroller (MCU)](https://www.infineon.com/dgdl/Infineon-ReferenceManual_XMC4700_XMC4800-UM-v01_03-EN.pdf?fileId=5546d462518ffd850151904eb90c0044)  from Infineon Technologies. These kits are designed to evaluate the capabilities of the XMC4800 MCU. The connectivity Kits feature an Ethernet-enabled communication option.
 
+<p style="text-align;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4800_connectivitykit/docs/img/xmc4800_connectivitykit.jpg?raw=true"></p>
 
 _XMC4800 Connectivity Kit. Copyright Infineon_
 
@@ -81,5 +82,5 @@ Not all features have been included in the XMC4800 Connectivity Kit support. In 
 > -   CAN
 > -   Ethercat
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4ODg5NTYyXX0=
+eyJoaXN0b3J5IjpbLTE0MDU0MDg3MDddfQ==
 -->
