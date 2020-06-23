@@ -111,9 +111,7 @@ To install the drivers on ```Windows``` plug the Photon on an USB port, unzip th
 On **MAC OSX** and ```Linux``` platforms USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -173,6 +171,7 @@ After virtualization, the Particle Photon is ready to be programmed and the  Zer
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Particle Photon device is available for bytecode.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x08020000    | 128Kb | VM Slot 0       |
@@ -187,5 +186,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDY1MzI0OCw2MDc0MTEzNzBdfQ==
+eyJoaXN0b3J5IjpbLTE3OTQ2NTM1MzksNjA3NDExMzcwXX0=
 -->
