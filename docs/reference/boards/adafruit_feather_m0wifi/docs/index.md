@@ -11,9 +11,11 @@ All these features make this device the preferred choice for the emerging IoT ba
 
 !!! note
 	All the reported information are extracted from the official [Adafruit Feather M0 Wi-Fi page](https://www.adafruit.com/product/3010), visit this page for more details and updates.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_m0wifi/docs/img/Adafruit_Feather_M0WiFi.jpg?raw=true">
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_m0wifi/docs/img/Adafruit_Feather_M0WiFi_pin_io.png?raw=true)
 Adafruit Feather M0 Wi-Fi Official Schematic, Reference Design and Pin Mapping are available on the official [Adafruit Feather M0 Wi-Fi reference page](https://learn.adafruit.com/adafruit-feather-m0-wifi-atwinc1500/).
 
 ## Flash Layout
@@ -112,6 +114,7 @@ After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed an
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Adafruit Feather M0 Wi-Fi device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size | Content         |
 |---------------|------|-----------------|
 | 0x00002000    | 94Kb | VM Slot         |
@@ -126,5 +129,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTEzMzMzM119
+eyJoaXN0b3J5IjpbLTYwNDQxMDkwNSwtMTk4MjU4OTQxLDE2Nj
+ExMzMzMzNdfQ==
 -->
