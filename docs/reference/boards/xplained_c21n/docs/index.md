@@ -11,6 +11,8 @@ One of its most important features is the Atmel Embedded Debugger (EDBG), which 
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_c21n/docs/img/SAMC21N_Xplained_PRO_pin_comm.jpg?raw=true)
+
 Xplained Pro Sam C21N Official Schematic, Reference Design and Pin Mapping are available on the official [Atmel User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/70005318A.pdf).
 
 ## Flash Layout
@@ -63,9 +65,7 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 The Xplained Pro Sam C21N debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -104,6 +104,7 @@ After virtualization, the Xplained Pro Sam C21N is ready to be programmed and th
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Xplained Pro Sam C21 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size | Content         |
 |---------------|------|-----------------|
 | 0x00002000    | 88Kb | VM Slot         |
@@ -126,5 +127,5 @@ Not all features have been included in the Xplained Pro SamC21 support. In parti
 
 * Powersave firmware;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxNzc1MTI3XX0=
+eyJoaXN0b3J5IjpbLTU4NDYzMDAyMl19
 -->
