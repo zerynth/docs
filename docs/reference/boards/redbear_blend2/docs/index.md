@@ -4,6 +4,10 @@ The RedBear Blend 2 is a microcontroller board based on the Nordic [NRF52832 Cor
 
 It is a “full-size” Arduino compatible board which supports most shields. It has on board a Cortex-M3 MCU that supports DAPLink, slot for Apple MFi coprocessor and two Grove connectors.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/redbear_blend2/docs/img/RedBearBlend2.jpg?raw=true)
+
+<p style="text-align"></p>
+
 ## Pin Mapping
 
 ## Flash Layout
@@ -83,3 +87,6 @@ Follow these steps to uplink a Zerynth script on a virtualized RedBear Blend 2:
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 After virtualization, the device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5NDY0Njk1NTFdfQ==
+-->
