@@ -6,7 +6,11 @@ The IO offers a 240 MHz, 32-bit processor with 4Mb of flash memory. The IO accep
 
 The oddWires IoT-Bus System is based on a low-cost, open design that includes multiple main boards including a minimalist, breadboard-friendly form factor (IO).
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/oddwires_io/docs/img/oddwires_io_board.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/oddwires_io/docs/img/oddwires_io_pin_comm.jpg?raw=true)
 
 Official reference for oddWires IO can be found [here](https://www.oddwires.com/iot-bus-io-esp32-processor-with-wifi-and-bluetooth/).
 
@@ -100,9 +104,7 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 The oddWires IO comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the oddWires IO should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the oddWires IO device is recognized by Zerynth Studio. The next steps are:
 
@@ -131,6 +133,7 @@ After virtualization, the oddWires IO is ready to be programmed and the  Zerynth
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the oddWires IO device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content                   |
 |---------------|-------|---------------------------|
 | 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
@@ -139,7 +142,6 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
-
 
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
@@ -167,5 +169,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Mjk3NDAwNV19
+eyJoaXN0b3J5IjpbLTY3ODc4NzA0MCwxMTcyOTc0MDA1XX0=
 -->
