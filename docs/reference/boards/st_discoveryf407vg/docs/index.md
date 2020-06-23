@@ -9,6 +9,8 @@ STM32F407xx family is based on the high-performance ARM®Cortex®-M4 32-bit RISC
 
 The device needs a 5V power supply and features a [STM32F407VG MCU](https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f4-series/stm32f407-417/stm32f407vg.html) running at 168 MHz with 192Kb of RAM, 1Mb of flash.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_discoveryf407vg/docs/img/st_discoveryf407vg.jpg?raw=true"></p>
+
 ## Pin Mapping
 
 ST Discovery F407VG official manual is available [here](https://www.st.com/content/ccc/resource/technical/document/user_manual/70/fe/4a/3f/e7/e1/4f/7d/DM00039084.pdf/files/DM00039084.pdf/jcr:content/translations/en.DM00039084.pdf)
@@ -146,5 +148,5 @@ Not all features have been included in the ST Discovery based VMs. In particular
 
 * CS43L22 audio DAC with integrated class D speaker driver;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjQ0MTc1NV19
+eyJoaXN0b3J5IjpbNDU0NTQ3MzAxLC0zODI0NDE3NTVdfQ==
 -->
