@@ -13,6 +13,8 @@ The device needs a 5V power supply and features a [STM32F407VG MCU](https://www.
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_discoveryf407vg/docs/img/st_discoveryf407vg_pin_io.jpg?raw=true)
+
 ST Discovery F407VG official manual is available [here](https://www.st.com/content/ccc/resource/technical/document/user_manual/70/fe/4a/3f/e7/e1/4f/7d/DM00039084.pdf/files/DM00039084.pdf/jcr:content/translations/en.DM00039084.pdf)
 
 ## Flash Layout
@@ -148,5 +150,5 @@ Not all features have been included in the ST Discovery based VMs. In particular
 
 * CS43L22 audio DAC with integrated class D speaker driver;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0NTQ3MzAxLC0zODI0NDE3NTVdfQ==
+eyJoaXN0b3J5IjpbODIyMTk0NzYyLC0zODI0NDE3NTVdfQ==
 -->
