@@ -4,9 +4,11 @@ Infineon XMC4400 Enterprise Kit is equipped with the ARM Cortex-M4 based
 [XMC4400 microcontroller (MCU)](https://studio.segger.com/packages/XMC4000/CMSIS/Documents/xmc4400_rm_v1.5_2014_04.pdf) from Infineon Technologies. These kits are
 designed to evaluate the capabilities of the XMC4400 MCU.
 
-<p style="text"></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4400_enterprisekit/docs/img/xmc4400_enterprisekit.jpg?raw=true"></p>
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4400_enterprisekit/docs/img/xmc4400_enterprisekit_io.jpg?raw=true)
 
 Official reference for Infineon XMC4400 Enterprise Kit can be found
 [here](https://www.infineon.com/dgdl/Board_Users_Manual_CPU_Board_XMC4400_General_Purpose_R1%200.pdf?fileId=db3a30433cd75ebf013cf698a0992d5e).
@@ -82,9 +84,7 @@ programming and opening the UART of the module.
 page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the
 XMC4400 device is recognized by Zerynth Studio. The next steps are:
@@ -109,5 +109,5 @@ After virtualization, the DevKitC is ready to be programmed and the Zerynth scri
 !!! note
 	No user intervention on the device is required for the uplink process.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODQ5ODA2MzIsMTA1MzYyMzczNF19
+eyJoaXN0b3J5IjpbLTE1NjA5MTY0NDAsMTA1MzYyMzczNF19
 -->
