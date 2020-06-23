@@ -8,6 +8,8 @@ _XMC4800 Connectivity Kit. Copyright Infineon_
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4800_connectivitykit/docs/img/xmc4800_connectivitykit_io.jpg?raw=true)
+
 Official reference for Infineon XMC4800 connectivity Kit can be found  [here](https://www.infineon.com/cms/en/product/promopages/connectivitykit/).
 
 ## Flash Layout
@@ -55,9 +57,7 @@ Power to the XMC4800 is supplied via one of the two on-board USB Micro B connect
 The Infineon XMC4800 comes with a usb debugger chip on board that allows programming and opening the UART of the module.  **Drivers are needed**  (Linux, Mac or Windows) and can be downloaded from the official  [JLink software](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)  page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
--   **Ubuntu**  distribution –> dialout group
--   **Arch Linux**  distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu**  distribution –> dialout group; **Arch Linux**  distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the XMC4800 device is recognized by Zerynth Studio. The next steps are:
 
@@ -82,5 +82,5 @@ Not all features have been included in the XMC4800 Connectivity Kit support. In 
 > -   CAN
 > -   Ethercat
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDU0MDg3MDddfQ==
+eyJoaXN0b3J5IjpbOTM0NTM1NjA3XX0=
 -->
