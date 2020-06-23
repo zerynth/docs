@@ -19,6 +19,8 @@ With more than 160 to choose from, and more coming out every week, it’s very s
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclickpin.jpg?raw=true)
+
 MikroElektronika Flip & Click official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/flip-n-click/flip-n-click-manual-v100.pdf)
 
 ## Flash Layout
@@ -78,9 +80,7 @@ The Flip & Click Programming port is connected to an ATmega16U2, which provides 
 	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through the ATmega16U2 microcontroller.
 
@@ -124,5 +124,5 @@ Flash Layout is shown in table below:
 | 0x000E0000    | 128Kb-256b | Bytecode Slot 1 |
 | 0x000FFF00    | 256b       | FOTA Record     |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MjE1NDU5Nl19
+eyJoaXN0b3J5IjpbMTQ0MTQzOTY1NV19
 -->
