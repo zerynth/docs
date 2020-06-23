@@ -3,6 +3,8 @@
 Wemos ESP32 OLED is a classic IoT dev-board designed and produced by Wemos. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wi-Fi, Bluetooth, Ethernet and Low Power support all in a single chip; Li-Po battery management system, 0.96″ OLED are also included.
 It is one of the best choice for smart solutions, smart farms, smart home, and IoT makers.
 
+<p style="text-align:center;"><img src></p>
+
 ## Pin Mapping
 
 ## Flash Layout
@@ -162,5 +164,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0ODg1ODZdfQ==
+eyJoaXN0b3J5IjpbLTU1NzE4NzY2M119
 -->
