@@ -65,8 +65,7 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 The Xplained Pro Sam C21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group;
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -105,6 +104,7 @@ After virtualization, the Xplained Pro Sam C21 is ready to be programmed and the
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Xplained Pro Sam C21 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size | Content         |
 |---------------|------|-----------------|
 | 0x00002000    | 88Kb | VM Slot         |
@@ -127,5 +127,5 @@ Not all features have been included in the Xplained Pro SamC21 support. In parti
 
         * Powersave firmware;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjU2NzA1MCw5NTc3OTQxMzRdfQ==
+eyJoaXN0b3J5IjpbLTczNDYyMzIyOCw5NTc3OTQxMzRdfQ==
 -->
