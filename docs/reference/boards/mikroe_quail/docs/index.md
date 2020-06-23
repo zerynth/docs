@@ -8,11 +8,12 @@ The device needs a 5V power supply and features a [STM32F427 MCU](http://www.st.
 
 !!! note
 	Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
-![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/quail_board.png?raw=true)
 
-<p >
+<p style="text-align;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/quail_board.png?raw=true"></p>
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/Mikroelektronika_Quail.jpg?raw=true)
 
 MikroElektronika Quail official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/quail/quail-board-manual-v100.pdf)
 
@@ -210,9 +211,8 @@ On ```Windows``` machines two set of drivers must be installed: the DFU drivers 
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -274,6 +274,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU0ODMxMTU0LC0xODYzMjE5MDcxLDE1Nz
-AwNDM5NDksLTEyNzk2MjEwMjIsMTEwMTA2MjYzNl19
+eyJoaXN0b3J5IjpbMTg2NTA4MDkxOCwtMTg2MzIxOTA3MSwxNT
+cwMDQzOTQ5LC0xMjc5NjIxMDIyLDExMDEwNjI2MzZdfQ==
 -->
