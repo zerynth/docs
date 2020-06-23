@@ -5,7 +5,11 @@ WiPy v3.0 is a low-power consumption development hardware designed for Internet 
 !!! warning
 	To be programmed, the Pycom WiPy 3.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards))
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/pycom_wipy_v3/docs/img/Pycom_WiPy_3.0.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/pycom_wipy_v3/docs/img/Pycom_WiPy_3.0_pin_io.jpg?raw=true)
 
 Official reference for Pycom WiPy 3.0 can be found [here](https://pycom.io/hardware/wipy-3-0-specs/).
 
@@ -14,6 +18,7 @@ Official reference for Pycom WiPy 3.0 can be found [here](https://pycom.io/hardw
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -107,9 +112,7 @@ The Pycom Expansion Board comes with the FT234XD Serial-to-usb chip on-board tha
 The Pycom Shields, instead, feature an USB to serial converter that should work out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://docs.pycom.io/chapter/pytrackpysense/installation/pycom.inf).
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Pycom WiPy 3.0 device is recognized by Zerynth Studio. The next steps are:
 
@@ -186,5 +189,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwODg5MTg5XX0=
+eyJoaXN0b3J5IjpbLTYxODE1MTY5NV19
 -->
