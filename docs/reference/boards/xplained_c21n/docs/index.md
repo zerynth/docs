@@ -4,6 +4,8 @@ The Xplained Pro Sam C21N is a microcontroller device based on the Atmel [SAMC21
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_c21n/docs/img/XplainedProSamC21N.jpg?raw=true"></p>
+
 !!! note
 	All the reported information are extracted from the official [Xplained Pro Sam C21N page](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro), visit this page for more details and updates.
 
@@ -124,5 +126,5 @@ Not all features have been included in the Xplained Pro SamC21 support. In parti
 
 * Powersave firmware;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM0ODg4MDJdfQ==
+eyJoaXN0b3J5IjpbNjIxNzc1MTI3XX0=
 -->
