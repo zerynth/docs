@@ -3,16 +3,13 @@
 ## MFX class
 
 
----
-#### `#!py3 MFX()`
-
-!!!abstract "`#!py3 MFX()`"
+**`class MFX`**
 
 Creates an intance of the MFX class.
 
 Example:
 
-```
+```py
 from stm.mfx import MFX
 
 ...
@@ -27,47 +24,27 @@ port_expander.digitalWrite(0,HIGH)
 ```
 
 
----
-#### `#!py3 pinMode()`
+**`pinMode(pin, mode)`**
 
-!!!abstract "`#!py3 pinMode(pin, mode)`"
-
-Select a mode for a pin.
-Valid ```pin``` values are from `0` to `15` included.
-Available modes are:
+Select a mode for a pin. Valid *pin* values are from `0` to `15` included. Available modes are:
 
 
 * `INPUT`
-
-
 * `INPUT_PULLUP`
-
-
 * `INPUT_PULLDOWN`
-
-
 * `OUTPUT`
 
 
----
-#### `#!py3 digitalRead()`
+**`digitalRead(pin)`**
 
-!!!abstract "`#!py3 digitalRead(pin)`"
-
-Returns the state of pin ```pin```. The state can be `0` or `1`.
+Returns the state of pin *pin*. The state can be `0` or `1`.
 
 
----
-#### `#!py3 digitalWrite()`
+**`digitalWrite(pin, val)`**
 
-!!!abstract "`#!py3 digitalWrite(pin, val)`"
-
-Set pin ```pin``` to value ```val```. Value can be `0` or `1`.
+Set pin *pin* to value *val*. Value can be `0` or `1`.
 
 
----
-#### `#!py3 pinToggle()`
-
-!!!abstract "`#!py3 pinToggle(pin)`"
+**`pinToggle(pin)`**
 
 Toggle the value of the pin ```pin```.

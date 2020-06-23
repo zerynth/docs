@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.stm.iis3dwb
+The following are a list of examples for lib.stm.iis3dwb.
 
 ## Read Vibrometer and Temperature data from IIS3DWB
 

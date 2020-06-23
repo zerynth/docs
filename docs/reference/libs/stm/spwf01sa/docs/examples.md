@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.stm.spwf01sa
+The following are a list of examples for lib.stm.spwf01sa.
 
 ## Find and Set Baud
 

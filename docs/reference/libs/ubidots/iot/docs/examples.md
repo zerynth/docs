@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.ubidots.iot
+The following are a list of examples for lib.ubidots.iot.
 
 ## Controlled Publish Period
 

@@ -42,9 +42,10 @@ Supported satellites are:
 * `SAT_GALILEO`: Galileo
 
 
-**Raises:** **UnsupportedError** - when cycle is not a multiple of 1000.
+**Raises:** 
 
-**Raises:** **IOError** - when initialization fails.
+* **UnsupportedError** - when cycle is not a multiple of 1000.
+* **IOError** - when initialization fails.
 
 
 
@@ -73,9 +74,7 @@ Waits for updated GNSS data to become available.
 
 Reads GNSS data. To be called after `wait()` to be sure of reading updated data.
 
-Returns a `GNSSData()` object filled according to selected filters.
-Available filters are:
-
+Returns a `GNSSData()` object filled according to selected filters. Available filters are:
 
 * `FILTER_TIMESTAMP`: fills `GNSSData.timestamp`
 * `FILTER_RECEIVER_SATS`: fills `GNSSData.receiver.sats`

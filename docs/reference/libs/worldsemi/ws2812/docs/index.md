@@ -8,14 +8,8 @@ They can be used individually, chained into longer strings or assembled into sti
 
 
 * Power Supply Voltage (Vdd): from 4.5 V to 5.5 V
-
-
 * Input Voltage (Vi): from -0.5V to Vdd+0.5 V
-
-
 * Operation Temperature: from -25 °C to 80 °C
-
-
 * Data Transmission Rate: 400 Kbps (duty ratio 50%)
 
 **LED Characteristic Parameter**
@@ -62,7 +56,8 @@ Here below, the Zerynth driver for the Worldsemi WS2812 led strips and some exam
 Contents:
 
 
-* WS2812 RGB Led Module
-
-
-    * LedStrip class
+* [WS2812 RGB Led Module](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/docs/official_lib.worldsemi.ws2812_ledstrips.html)
+  * [LedStrip class](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/docs/official_lib.worldsemi.ws2812_ledstrips.html#ledstrip-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html)
+  * [LED Strips](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html#led-strips)
+  * [LED Strips Advanced](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html#led-strips-advanced)

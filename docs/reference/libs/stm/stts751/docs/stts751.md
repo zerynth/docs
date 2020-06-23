@@ -5,47 +5,35 @@ This module contains the driver for STMicroelectronics STTS751 temperature senso
 Its highlight is that it outputs its measurement in a 9-bit to 12-bit (configurable) resolution. ([datasheet](https://www.st.com/resource/en/datasheet/stts751.pdf)).
 
 
----
-#### `#!py3 STTS751()`
-
-!!!abstract "`#!py3 STTS751(drvsel, address=0x48, clk=400000)`"
+**`class STTS751(drvsel, address=0x48, clk=400000)`**
 
 Creates an intance of a new STTS751.
 
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```drvsel``` – I2C Bus used ( I2C0 )
-
-
-    * ```address``` – Slave address, default 0x48
-
-
-    * ```clk``` – Clock speed, default 400kHz
+* **drvsel** – I2C Bus used ( I2C0 )
+* **address** – Slave address, default 0x48
+* **clk** – Clock speed, default 400kHz
 
 
 Example:
 
-```
+```py
 from stm.stts751 import stts751
 
 temp_sens = stts751.STTS751( I2C0 )
 temp = temp_sens.get_temp()
 ```
 
-
----
-#### `#!py3 enable()`
-
-!!!abstract "`#!py3 enable(odr=ODR_AVAILABLE["ODR_125mHz"], resolution=STTS751_RES_12)`"
+**`enable(odr=ODR_AVAILABLE["ODR_125mHz"], resolution=STTS751_RES_12)`**
 
 Sets the device’s configuration registers.
 
 **Parameters:**
 
 
-* ```odr``` : sets the Output Data Rate of the device. Available values are:
+* **odr** : sets the Output Data Rate of the device. Available values are:
 
 | Value
 
@@ -140,7 +128,7 @@ Sets the device’s configuration registers.
 
  |
 
-* ```resolution``` : sets the Resolution in bit of the conversion. Available values are:
+* **resolution** : sets the Resolution in bit of the conversion. Available values are:
 
 | Value
 
@@ -191,20 +179,13 @@ Sets the device’s configuration registers.
 Returns True if configuration is successful, False otherwise.
 
 
----
-#### `#!py3 disable()`
-
-!!!abstract "`#!py3 disable()`"
+**`disable()`**
 
 Disables the sensor.
 
 Returns True if configuration is successful, False otherwise.
 
-
----
-#### `#!py3 get_status()`
-
-!!!abstract "`#!py3 get_status()`"
+**`get_status()`**
 
 Retrieves the sensor flag status.
 
@@ -237,71 +218,46 @@ Returns a dictionary with following key/value pairs:
 
    |
 
----
-#### `#!py3 get_sensor_id()`
-
-!!!abstract "`#!py3 get_sensor_id()`"
+**`get_sensor_id()`**
 
 Retrieves product_id, manufacturer_id, revision_id in one call.
 
-Returns product_id, manufacturer_id, revision_id
+Returns product_id, manufacturer_id, revision_id.
 
 
----
-#### `#!py3 get_temp()`
-
-!!!abstract "`#!py3 get_temp(raw=False)`"
+**`get_temp(raw=False)`**
 
 Retrieves temperature in one call; if raw flag is enabled, returns raw register values.
 
-Returns temp
+Returns temp.
 
 
----
-#### `#!py3 set_low_temp_threshold()`
-
-!!!abstract "`#!py3 set_low_temp_threshold(level)`"
+**`set_low_temp_threshold(level)`**
 
 Sets the low temperature threshold. When real temperature goes down the low temperature level, if interrupt is enabled, the sensor send an interrupt signal in its interrupt pin.
 
 
----
-#### `#!py3 set_high_temp_threshold()`
-
-!!!abstract "`#!py3 set_high_temp_threshold(level)`"
+**`set_high_temp_threshold(level)`**
 
 Sets the high temperature threshold. When real temperature goes up the high temperature level, if interrupt is enabled, the sensor send an interrupt signal in its interrupt pin.
 
 
----
-#### `#!py3 set_event_interrupt()`
-
-!!!abstract "`#!py3 set_event_interrupt(enable)`"
+**`set_event_interrupt(enable)`**
 
 Enables the interrupt pin. Available values for ‘enable’ flag are ‘True’ or ‘False’.
 
 
----
-#### `#!py3 set_therm_limit()`
-
-!!!abstract "`#!py3 set_therm_limit(level)`"
+**`set_therm_limit(level)`**
 
 Sets the Thermal threshold. Whenever the temperature exceeds the value of the therm limit, the Addr/Therm output will be asserted (low)
 Available ‘level’ values are from -127 to 127 range.
 
 
----
-#### `#!py3 set_therm_hysteresis_limit()`
+**`set_therm_hysteresis_limit(level)`**
 
-!!!abstract "`#!py3 set_therm_hysteresis_limit(level)`"
-
-Sets the Thermal hysteresis threshold. Once Therm output has asserted, it will not de-assert until the temperature has fallen below the respective therm limit minus the therm hysteresis value.
-Available ‘level’ values are from -127 to 127 range.
+Sets the Thermal hysteresis threshold. Once Therm output has asserted, it will not de-assert until the temperature has fallen below the respective therm limit minus the therm hysteresis value. Available ‘level’ values are from -127 to 127 range.
 
 
----
-#### `#!py3 set_timeout()`
-
-!!!abstract "`#!py3 set_timeout(enable)`"
+**`set_timeout(enable)`**
 
 Enables the timeout for the sensor readings (from 25 to 35 ms). Available values for ‘enable’ flag are ‘True’ or ‘False’.

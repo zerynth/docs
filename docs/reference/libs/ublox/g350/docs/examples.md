@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.ublox.g350
+The following are a list of examples for lib.ublox.g350.
 
 ## GSM HTTP
 
 
-Simple http request via cellular network (based on Particle Electron)
+Simple http request via cellular network (based on Particle Electron).
 
 
 ```main.py```

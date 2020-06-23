@@ -10,20 +10,10 @@ User guides and platform information are available on the [CC3000’s Wiki](http
 
 
 * Supply Voltage (Vdd): from 2.9 V to 4.8 V
-
-
 * Operation Temperature (Top): from -20 °C to 70 °C
-
-
 * Wireless Network Processor: IEEE 802.11 b/g (2.4 GHz)
-
-
 * TX Power: +18.0 dBm at 11 Mbps, CCK
-
-
 * RX Sensitivity: –88 dBm, 8% PER, 11 Mbps
-
-
 * Host Interface: SPI at 16MHz
 
 Here below, the Zerynth driver for the Texas Instruments CC3000.
@@ -31,7 +21,5 @@ Here below, the Zerynth driver for the Texas Instruments CC3000.
 Contents:
 
 
-* CC3000 Module
-
-
-* CC3000 Tiny
+* [CC3000 Module](https://docs.zerynth.com/latest/official/lib.texas.cc3000/docs/official_lib.texas.cc3000_cc3000.html)
+* [CC3000 Tiny](https://docs.zerynth.com/latest/official/lib.texas.cc3000/docs/official_lib.texas.cc3000_cc3000_tiny.html)
