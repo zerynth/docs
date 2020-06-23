@@ -3,6 +3,8 @@
 The Particle Core is a complete Wi-Fi enabled development platform for creating connected devices with ease. The Particle Core is small, low power, and does all the heavy WiFi lifting.
 Particle Core v1.0 uses the [STM32F103CB Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/33/d4/6f/1d/df/0b/4c/6d/CD00161566.pdf/files/CD00161566.pdf/jcr:content/translations/en.CD00161566.pdf).
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_core/docs/img/ParticleCore.jpg?raw=true)
+
 In addition to having 128KB of internal flash memory for storing the firmware, the Core also features an external SPI based flash memory chip - SST25VF016B.
 
 This memory space (a total of 2MB) is used to store the factory reset firmware and a back up firmware. Part of the space is also available to the user who can use it to store log data, user parameters, etc.
@@ -11,6 +13,8 @@ This memory space (a total of 2MB) is used to store the factory reset firmware a
 	All the reported information are extracted from the official [Particle Core reference page](http://docs.particle.io/core/), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_core/docs/img/Particle_core_pin_io.png?raw=true)
 
 Particle Core Official Schematic, Reference Design & Pin Mapping are available on the [official Particle Core datasheet page](https://docs.particle.io/datasheets/core-datasheet/).
 
@@ -82,9 +86,7 @@ To install the drivers on ```Windows``` plug the Core on an USB port, unzip the 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -142,5 +144,5 @@ Follow these steps to register and virtualize a Particle Core:
 
 After virtualization, the Particle Core is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzEyMzQxOTVdfQ==
+eyJoaXN0b3J5IjpbLTg1MjY3NjI5MiwtMTMzMTIzNDE5NV19
 -->
