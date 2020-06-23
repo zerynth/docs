@@ -104,9 +104,7 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 The oddWires Proteus comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the oddWires Proteus should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu**` distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu**` distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the oddWires Proteus device is recognized by Zerynth Studio. The next steps are:
 
@@ -171,5 +169,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODU4MjQxOCwxODk1Njg5NzYzXX0=
+eyJoaXN0b3J5IjpbNjU3ODM2MDk3LDE4OTU2ODk3NjNdfQ==
 -->
