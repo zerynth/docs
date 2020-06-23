@@ -4,6 +4,8 @@ The Particle Electron is a GSM enabled development platform for creating connect
 Particle Electron combines a powerful ARM Cortex M3 micro-controller with a 3G/2G gsm module from UBlox (U260 or G350).
 Particle Electron uses the [STM32F205RG Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/bc/21/42/43/b0/f3/4d/d3/CD00237391.pdf/files/CD00237391.pdf/jcr:content/translations/en.CD00237391.pdf).
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_electron/docs/img/ParticleElectron.jpg?raw=true)
+
 In addition to having 1Mb of internal flash memory for storing the firmware, the Electron also features 128k of Ram and 120 MHz of clock.
 
 !!! note
@@ -11,11 +13,14 @@ In addition to having 1Mb of internal flash memory for storing the firmware, the
 
 ## Pin Mapping
 
+![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_electron/docs/img/ParticleElectronPin.png?raw=true)
+
 Particle Electron Official Schematic, Reference Design & Pin Mapping are available on the [official Particle Electron datasheet page](https://docs.particle.io/datasheets/electron-datasheet/).
 
 ## Flash Layout
 
 The internal flash of the Particle Electron is organized into sectors of different size according to the following table:
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x8000000     | 16Kb  | BootLoader      |
@@ -92,12 +97,10 @@ To install the drivers on ```Windows``` plug the Electron on an USB port, unzip 
 !!! note
 	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Electron driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
-On **MAC OSX** and ```Linux``` USB drivers are not required.
+On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -173,6 +176,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NzAxMTA5MiwtMTczODkyNDY3NiwxMT
-MxMzAzOTAwLC0zNTQ0NjM2NDBdfQ==
+eyJoaXN0b3J5IjpbMTIzMjg0NjI2MSwxMDc3MDExMDkyLC0xNz
+M4OTI0Njc2LDExMzEzMDM5MDAsLTM1NDQ2MzY0MF19
 -->
