@@ -4,7 +4,11 @@ The SeeedStudio Wio Link is an ESP8266 SoC based open-source Wi-Fi development b
 
 The Wio Link features 4MB of flash memory, Tensilica microcontroller (80MHz of system clock), around 50k of usable RAM and an Espressif ESP8266 chip Wi-fi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wio_link/docs/img/WioLink.png?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wio_link/docs/img/wio_link_pin_comm.jpg?raw=true)
 
 Official reference for Wio Link can be found [here](http://wiki.seeed.cc/Wio_Link/).
 
@@ -76,9 +80,7 @@ The Wio Link exposes the serial port of the ESP8266 module via a CP2102 usb brid
 	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Wio Link device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -118,5 +120,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDYwNzMyMl19
+eyJoaXN0b3J5IjpbLTExMzk4NTAxMjcsLTM3MDYwNzMyMl19
 -->
