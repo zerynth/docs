@@ -6,7 +6,11 @@ It facilitates development exploiting all features of the nRF52840 SoC. It inclu
 
 It comes with an on-board SEGGER J-Link debugger allowing programming and debugging both the on-board SoC and external SoCs through the debug out header.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nordic_pca10056/docs/img/nordic_nrf52840_dk.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nordic_pca10056/docs/img/nordic_nrf52840_dk_pin_comm.jpg?raw=true)
 
 Official reference for Nordic nRF52840 DK can be found [here](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK).
 
@@ -78,9 +82,7 @@ The Nordic nRF52840 DK can be programmed through the on-board SEGGER J-Link debu
 page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port, the Nordic nRF52840 DK device is recognized by Zerynth Studio. The board can be virtualized by clicking the related Studio button without requiring any other user intervention.
 
@@ -103,5 +105,5 @@ Follow these steps to uplink a Zerynth script on a virtualized nRF52840 DK:
 
 After virtualization, the device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3MDM2NzMzXX0=
+eyJoaXN0b3J5IjpbLTY5MjQyOTUwMV19
 -->
