@@ -6,9 +6,11 @@ The Polaris 3G hardware includes a powerful 32-bit ARM Cortex-M4 controller with
 
 With Polaris 3G, many IoT applications can be developed related to real-time asset tracking, geo-fencing, sensors logging, battery monitoring, remote controlling, and others. It works right out of the box as vehicle tracker; the only requirement is a SIM card.
 
-
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_3g/docs/img/polaris_3g.png?raw=true)
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_3g/docs/img/polaris_3g_pin_comm.jpg?raw=true)
 
 ## Flash Layout
 
@@ -96,12 +98,10 @@ On ```Windows``` machines two set of drivers may be installed: the DFU drivers a
 !!! note
 	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
-On **MAC OSX** and ```Linux``` USB drivers are not required.
+On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -147,5 +147,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzk3NTk4NjRdfQ==
+eyJoaXN0b3J5IjpbNDk5NjgwODkyXX0=
 -->
