@@ -156,6 +156,7 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
+
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
 | 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
@@ -185,5 +186,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * WROVER’s SPI flash module;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDMxMjc2NCwtMjIxNzIwMDJdfQ==
+eyJoaXN0b3J5IjpbNTQyNzQ0NDYyLC0yMjE3MjAwMl19
 -->
