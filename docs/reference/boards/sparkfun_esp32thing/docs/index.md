@@ -2,6 +2,8 @@
 
 The Esp32 Thing device is one of the development board created by Sparkfun to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
+<p style="text-align:center;"><img src=""></p>
+
 ## Pin Mapping
 
 Official reference for Sparkfun ESP32 Thing can be found [here](https://www.sparkfun.com/products/13907).
@@ -187,5 +189,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDk1MDYyMDddfQ==
+eyJoaXN0b3J5IjpbMTAwMzQ2ODIwN119
 -->
