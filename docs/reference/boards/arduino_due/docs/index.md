@@ -117,5 +117,5 @@ Flash Layout is shown in table below:
 | 0x000E0000    | 128Kb-256b | Bytecode Slot 1 |
 | 0x000FFF00    | 256b       | FOTA Record     |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjc0MTA2OF19
+eyJoaXN0b3J5IjpbLTE2NjE5MzUzODQsMTgyNjc0MTA2OF19
 -->
