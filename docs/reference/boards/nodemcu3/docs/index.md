@@ -2,7 +2,11 @@
 
 NodeMCU v3 is a development board which runs on the ESP8266 with the Espressif Non-OS SDK, and hardware based on the ESP-12 module. The device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu3/docs/img/nodemcu3.jpg?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu3/docs/img/nodemcu3_comm.jpg?raw=true)
 
 ## Flash Layout
 
@@ -72,9 +76,7 @@ The NodeMCU v3 exposes the serial port of the ESP8266 module via CH340 USB to UA
 	Drivers for the CH340 Module can be downloaded [here](https://wiki.wemos.cc/downloads) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the NodeMCU v3 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -95,13 +97,15 @@ Once connected to a USB port the NodeMCU v3 device can be seen as a Virtual Seri
 
 After virtualization, the NodeMCU v3 device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the upload process.
+!!! note
+	No user intervention on the device is required for the upload process.
 
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the NodeMCU v3 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x40200000    | 448Kb | VM Slot         |
@@ -112,5 +116,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODk0MTYyMV19
+eyJoaXN0b3J5IjpbMTU4ODgwODExNiwyMDI4OTQxNjIxXX0=
 -->
