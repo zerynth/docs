@@ -100,9 +100,7 @@ To install the drivers on ```Windows``` plug the Electron on an USB port, unzip 
 On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -178,6 +176,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTUyMjUwODgsMTA3NzAxMTA5MiwtMT
-czODkyNDY3NiwxMTMxMzAzOTAwLC0zNTQ0NjM2NDBdfQ==
+eyJoaXN0b3J5IjpbMTIzMjg0NjI2MSwxMDc3MDExMDkyLC0xNz
+M4OTI0Njc2LDExMzEzMDM5MDAsLTM1NDQ2MzY0MF19
 -->
