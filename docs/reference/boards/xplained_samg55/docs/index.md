@@ -6,6 +6,8 @@ The SAM G55 Xplained Pro features 2 UARTs, a 120 MHz clock, 3 TWIs, 1 SPI and a 
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_samg55/docs/img/ATSAMG55-XPRO.JPG?raw=true"></p>
+
 !!! note
 	All the reported information are extracted from the official [Xplained Pro Sam G55 page](http://www.microchip.com/developmenttools/ProductDetails/PartNo/atsamg55-xpro), visit this page for more details and updates.
 
@@ -99,5 +101,6 @@ After virtualization, the Xplained Pro Sam G55 is ready to be programmed and the
 !!! note
 	Advanced programming and debugging through EDBG are available in Device Management Advanced Mode selecting Atmel EDBG interface
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTY3NTQ1NTVdfQ==
+eyJoaXN0b3J5IjpbLTExODg0NTA4MjYsLTIwNTY3NTQ1NTVdfQ
+==
 -->
