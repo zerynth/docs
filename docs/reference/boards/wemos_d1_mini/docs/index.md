@@ -3,6 +3,8 @@
 Wemos D1 Mini is a mini Wi-Fi device based on ESP8266EX chip.
 This device is a very compact solution for prototyping small smart objects linked to the World Wide Web thanks to the Espressif ESP8266 Wi-Fi functionalities. The Wemos D1 Mini features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wi-fi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wemos_d1_mini/docs/img/wemos_d1_mini.png?raw=true"></p>
+
 !!! note
 	All the reported information are extracted from the official [Wemos D1 Mini reference page](https://wiki.wemos.cc/products:d1:d1_mini), visit this page for more details and updates.
 
@@ -119,5 +121,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1MTM4OTE5XX0=
+eyJoaXN0b3J5IjpbMTc4MzM2ODc5M119
 -->
