@@ -4,6 +4,8 @@ The Arduino/Genuino Zero is a microcontroller device based on the Atmel [SAMD21G
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/genuino_zero/docs/img/ArduinoZero.jpg?raw=true"></p>
+
 !!! warning
 	Unlike most Arduino & Genuino devices, the Zero runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
 
@@ -11,6 +13,8 @@ One of its most important features is the Atmel Embedded Debugger (EDBG), which 
 	All the reported information are extracted from the official [Arduino/Genuino Zero page](http://www.arduino.cc/en/Main/ArduinoBoardZero), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/genuino_zero/docs/img/ArduinoZeroPin.png?raw=true)
 
 Arduino/Genuino Zero Official Schematic, Reference Design and Pin Mapping are available on the official [Arduino/Genuino Zero reference page](http://www.arduino.cc/en/Main/ArduinoBoardZero).
 
@@ -68,9 +72,8 @@ The device can operate on an external supply of 6 to 20 volts. If supplied with 
 The Arduino/Genuino Zero Programming port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the Arduino/Genuino Zero guide](https://www.arduino.cc/en/Guide/ArduinoZero), while ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+* 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 ```
 #Genuino Zero Device
@@ -119,5 +122,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MzA1Ml19
+eyJoaXN0b3J5IjpbLTEzNjQxOTQ3NzAsMjA3MzA1Ml19
 -->
