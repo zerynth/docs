@@ -132,6 +132,7 @@ Check this video for a live demo:
 <div style="margin-top:10px;">
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/nfx-hJNxdp8?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
+
 !!! note
 	No user intervention on the device is required for the uplink process.
 
@@ -149,6 +150,7 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
+
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
 | 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
@@ -175,5 +177,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzA0ODIzN119
+eyJoaXN0b3J5IjpbMTk2OTk2OTQ4MV19
 -->
