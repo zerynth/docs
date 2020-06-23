@@ -8,13 +8,8 @@ It aims to provide the best tool for fast development of touchscreen user interf
 
 ## Pin Mapping
 
-Official reference for Riverdi IoT Display can be found 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/riverdi_tft50_iotxxx/docs/img/riverdi_tft50_iotxxx_pin_comm.jpg?raw=true)
 
-```
-`here <>`_
-```
-
-.
 
 ## Flash Layout
 
@@ -35,6 +30,7 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -108,9 +104,7 @@ The Riverdi IoT Display comes with a serial-to-usb chip on board that allows pro
 The FT232H FTDI USB to UART chip should be supported natively by all platforms. If serial port is not correctly seen, VCP (Virtual COM port) drivers can be downloaded from [here](https://www.ftdichip.com/Drivers/VCP.htm)
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Riverdi IoT Display is recognized by Zerynth Studio. The next steps are:
 
@@ -166,5 +160,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2Mjc2NDM0OF19
+eyJoaXN0b3J5IjpbLTExNDkzMzk2ODZdfQ==
 -->
