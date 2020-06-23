@@ -115,6 +115,7 @@ After virtualization, the IoT DevKit AZ3166 device is ready to be programmed and
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the IoT DevKit AZ3166 device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x08000000    | 128Kb | VM Slot 0       |
@@ -130,6 +131,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTMxODc1MiwtMTQ3ODQxOTI0NSwtMj
-EyOTg2OTc4M119
+eyJoaXN0b3J5IjpbNTMyNzM2NzgyLC0xNDc4NDE5MjQ1LC0yMT
+I5ODY5NzgzXX0=
 -->
