@@ -22,6 +22,8 @@ All these features make this device the preferred choice for the emerging IoT ba
 The USB port can be used to supply power (5V) to the device.
 The Arduino/Genuino MKR1000 is able to run with or without the Li-Po battery connected and has limited power consumption.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/arduino_mkr1000/docs/img/mkr1000.jpg?raw=true)
+
 !!! warning
 	Unlike most Arduino & Genuino devices, the MKR1000 runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
 
@@ -29,6 +31,8 @@ The Arduino/Genuino MKR1000 is able to run with or without the Li-Po battery con
 	All the reported information are extracted from the official [Arduino/Genuino MKR1000 page](http://www.arduino.cc/en/Main/ArduinoMKR1000), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/arduino_mkr1000/docs/img/Arduino_MKR1000_pin_io.png?raw=true)
 
 Arduino/Genuino MKR1000 Official Schematic, Reference Design and Pin Mapping are available on the official [Arduino/Genuino MKR1000 reference page](http://www.arduino.cc/en/Main/ArduinoMKR1000).
 
@@ -180,5 +184,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkwNDEzMjc5XX0=
+eyJoaXN0b3J5IjpbMzM2NzIyNzcsNDkwNDEzMjc5XX0=
 -->
