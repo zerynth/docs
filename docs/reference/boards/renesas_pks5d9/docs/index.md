@@ -6,9 +6,11 @@ The PK-S5D9 includes four header connectors for direct access to the I/O pins in
 The PK-S5D9 incorporates a 2.4-in. QVGA (240 x 320) TFT display with capacitive touch screen.As a promotion kit, the PK-S5D9 is designed to demonstrate the main features of the Synergy Platform using the S5D9 Group MCUs.
 This is an initial evaluation platform that you can use to determine which kit is appropriate for further development of your product.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_pks5d9/docs/img/Ftdi.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_pks5d9/docs/img/renesas_pks5d9.jpg?raw=true"></p>
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_pks5d9/docs/img/renesas_pks5d9_pin_io.jpg?raw=true)
 
 Renesas PK-S5D9 official manual is available [here](https://www.renesas.com/us/en/doc/products/renesas-synergy/doc/r12um0009eu0101-synergy-pk-s5d9.pdf)
 
@@ -119,5 +121,5 @@ Not all features have been included in the Renesas PK-S5D9 VMs. In particular th
 
 * Audio Output;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNzgzMjQ1MiwtNDk5NjM2NTYxXX0=
+eyJoaXN0b3J5IjpbMTA1ODcwMjU4LC00OTk2MzY1NjFdfQ==
 -->
