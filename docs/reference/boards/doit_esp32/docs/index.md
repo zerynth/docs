@@ -15,6 +15,7 @@ More info about DOIT Esp32 DevKit v1 can be found [here](https://github.com/Smar
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -168,5 +169,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTYwMTk3MiwtMTk2OTE1Nzc1XX0=
+eyJoaXN0b3J5IjpbLTE5MTk0NjgwNjYsLTU2OTYwMTk3MiwtMT
+k2OTE1Nzc1XX0=
 -->
