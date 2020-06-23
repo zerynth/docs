@@ -71,9 +71,7 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 The Xplained Pro Sam D21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -127,5 +125,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2OTMwNjQyNV19
+eyJoaXN0b3J5IjpbLTY0ODY2Nzk2NF19
 -->
