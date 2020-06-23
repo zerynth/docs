@@ -2,7 +2,11 @@
 
 The NodeMCU ESP-32S is one of the development board created by NodeMcu to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
+![](https://github.com/zerynth/docs/blob/vojislavgvozdic/docs/reference/boards/nodemcu_esp32/docs/img/nodemcu_esp32.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/vojislavgvozdic/docs/reference/boards/nodemcu_esp32/docs/img/nodemcu_esp32_pin.jpg?raw=true)
 
 Reference for NodeMCU ESP-32S can be found [here](https://www.shenzhen2u.com/NodeMCU-32S).
 
@@ -11,6 +15,7 @@ Reference for NodeMCU ESP-32S can be found [here](https://www.shenzhen2u.com/Nod
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -94,9 +99,8 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 
 The NodeMCU ESP-32S comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the NodeMCU ESP-32S should work out of the box.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the NodeMCU ESP-32S device is recognized by Zerynth Studio. The next steps are:
 
@@ -125,6 +129,7 @@ After virtualization, the NodeMCU ESP-32S is ready to be programmed and the  Zer
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the NodeMCU ESP-32S device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content                   |
 |---------------|-------|---------------------------|
 | 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
@@ -160,5 +165,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDcyNjQzMzFdfQ==
+eyJoaXN0b3J5IjpbMTU5MDAxMjI5NSw5MTg0NjM0ODAsLTEwND
+cyNjQzMzFdfQ==
 -->
