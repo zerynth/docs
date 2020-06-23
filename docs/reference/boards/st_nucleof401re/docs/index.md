@@ -4,7 +4,7 @@ The STM32 Nucleo device provides an affordable and flexible way for users to try
 
 The Arduino connectivity support and ST Morpho headers make it easy to expand the functionality of the STM32 Nucleo device with a wide choice of specialized shields and sensors. This device does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer.
 
-<p style="text-align:center;"><img src=""></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof401re/docs/img/StNucleo.jpg?raw=true"></p>
 
 !!! warning
 	Unlike other Arduino-like devices, the ST Nucleo device runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin, could damage the device.
@@ -13,6 +13,8 @@ The Arduino connectivity support and ST Morpho headers make it easy to expand th
 	All the reported information are extracted from the official [ST Nucelo F401RE reference page](http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF401RE-pr), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof401re/docs/img/ST_nucleof401re_pin_io.jpg?raw=true)
 
 ST Nucleo Official Schematic, Reference Design and Pin Mapping are available on the official [ST Nucelo F401RE datasheet page](http://www.st.com/content/ccc/resource/technical/document/data_brief/c8/3c/30/f7/d6/08/4a/26/DM00105918.pdf/files/DM00105918.pdf/jcr:content/translations/en.DM00105918.pdf)
 
@@ -93,7 +95,7 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 ## Connect, Register, Virtualize and Program
 
-The ST Nucleo Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](https://developer.mbed.org/teams/ST/wiki/ST-Link-Driver), while **MAC OSX** and ```Linux``` machines will recognize the device automatically.
+The ST Nucleo Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](https://developer.mbed.org/teams/ST/wiki/ST-Link-Driver), while **MAC OSX** and **Linux** machines will recognize the device automatically.
 
 The St-Link is also connected to the STM32 hardware UART0 also connected with pins RX0 and TX0 available on the Arduino headers.
 
@@ -145,5 +147,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODE3NjMzXX0=
+eyJoaXN0b3J5IjpbLTEwMjQzMjI2MTFdfQ==
 -->
