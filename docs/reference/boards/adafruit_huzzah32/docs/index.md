@@ -4,7 +4,11 @@ The Huzzah32 is one of the development board created by Adafruit that mounts on-
 
 Adafruit Huzza32 contains a dual-core ESP32 chip, 4 MB of SPI Flash, tuned antenna, and The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) has both WiFi and Bluetooth Classic/LE support.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruit_huzzah32.png?raw=true">
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruithuzzah32pin.jpg?raw=true)
 
 Official reference for Adafruit Huzzah32 can be found [here](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/overview).
 
@@ -13,6 +17,7 @@ Official reference for Adafruit Huzzah32 can be found [here](https://learn.adafr
 The internal flash of the ESP32 module is organized in a single flash area with pages of 4096 bytes each. The flash starts at address 0x00000, but many areas are reserved for Esp32 IDF SDK and Zerynth VM. There exist two different layouts based on the presence of BLE support.
 
 In particular, for non-BLE VMs:
+
 | Start address | Size  | Content                 |
 |---------------|-------|-------------------------|
 | 0x00009000    | 16Kb  | Esp32 NVS area          |
@@ -151,5 +156,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzOTM2MDgxLDMxNTczNzYzMl19
+eyJoaXN0b3J5IjpbLTEyMDk2OTMyOTAsOTYzOTM2MDgxLDMxNT
+czNzYzMl19
 -->
