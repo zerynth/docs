@@ -11,8 +11,10 @@ All these features make this device the preferred choice for the emerging IoT ba
 
 !!! note
 	All the reported information are extracted from the official [Adafruit Feather M0 Wi-Fi page](https://www.adafruit.com/product/3010), visit this page for more details and updates.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_m0wifi/docs/img/Adafruit_Feather_M0WiFi.jpg?raw=true">
 
 ## Pin Mapping
+
 
 Adafruit Feather M0 Wi-Fi Official Schematic, Reference Design and Pin Mapping are available on the official [Adafruit Feather M0 Wi-Fi reference page](https://learn.adafruit.com/adafruit-feather-m0-wifi-atwinc1500/).
 
@@ -127,5 +129,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODI1ODk0MSwxNjYxMTMzMzMzXX0=
+eyJoaXN0b3J5IjpbMTAwOTg3NTIwMiwtMTk4MjU4OTQxLDE2Nj
+ExMzMzMzNdfQ==
 -->
