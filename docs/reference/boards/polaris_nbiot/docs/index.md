@@ -6,7 +6,11 @@ The Polaris NB-IoT hardware includes a powerful 32-bit ARM Cortex-M4 controller 
 
 With Polaris NB-IoT, many IoT applications can be developed related to real-time asset tracking, geo-fencing, sensors logging, battery monitoring, remote controlling, and others. It works right out of the box as vehicle tracker; the only requirement is a SIM card.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_nbiot/docs/img/polaris_3g.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_nbiot/docs/img/polaris_nbiot_pin_comm.jpg?raw=true)
 
 ## Flash Layout
 
@@ -145,5 +149,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzODI1MDA2XX0=
+eyJoaXN0b3J5IjpbLTE3MzcwNjc3NDddfQ==
 -->
