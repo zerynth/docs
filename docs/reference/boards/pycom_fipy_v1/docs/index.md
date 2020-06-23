@@ -7,6 +7,8 @@ Pycom Fipy 1.0 features a Dual-Core [ESP32 microcontroller](https://espressif.co
 !!! warning
 	To be programmed, the Pycom Fipy 1.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards))
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/pycom_fipy_v1/docs/img/Pycom_Fipy_v1.0.png?raw=true)
+
 ## Pin Mapping
 
 Official reference for Pycom Fipy 1.0 can be found [here](https://pycom.io/hardware/fipy_specs/).
@@ -188,5 +190,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDAxODY3XX0=
+eyJoaXN0b3J5IjpbLTg5MDUxOTUwNV19
 -->
