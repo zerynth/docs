@@ -2,11 +2,11 @@
 
 The NodeMCU ESP-32S is one of the development board created by NodeMcu to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu2/docs/img/nodemcu2.jpg?raw=true)
+![](https://github.com/zerynth/docs/blob/vojislavgvozdic/docs/reference/boards/nodemcu_esp32/docs/img/nodemcu_esp32.jpg?raw=true)
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu2/docs/img/nodemcu2pin.jpg?raw=true)
+![](https://github.com/zerynth/docs/blob/vojislavgvozdic/docs/reference/boards/nodemcu_esp32/docs/img/nodemcu_esp32_pin.jpg?raw=true)
 
 Reference for NodeMCU ESP-32S can be found [here](https://www.shenzhen2u.com/NodeMCU-32S).
 
@@ -165,5 +165,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4NDYzNDgwLC0xMDQ3MjY0MzMxXX0=
+eyJoaXN0b3J5IjpbMTU5MDAxMjI5NSw5MTg0NjM0ODAsLTEwND
+cyNjQzMzFdfQ==
 -->
