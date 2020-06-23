@@ -11,6 +11,8 @@ Pycom Fipy 1.0 features a Dual-Core [ESP32 microcontroller](https://espressif.co
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/pycom_fipy_v1/docs/img/Pycom_FiPy_v1.0_pin_io.jpg?raw=true)
+
 Official reference for Pycom Fipy 1.0 can be found [here](https://pycom.io/hardware/fipy_specs/).
 
 ## Flash Layout
@@ -33,6 +35,7 @@ In particular, for non-BLE VMs:
 | 0x00392000    | 4Mb   | Free for user storage   |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
@@ -111,9 +114,7 @@ The Pycom Expansion Board comes with the FT234XD Serial-to-usb chip on-board tha
 The Pycom Shields, instead, feature an USB to serial converter that should work out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://docs.pycom.io/chapter/pytrackpysense/installation/pycom.inf).
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Pycom Fipy 1.0 device is recognized by Zerynth Studio. The next steps are:
 
@@ -190,5 +191,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MDUxOTUwNV19
+eyJoaXN0b3J5IjpbLTE2MTIzMTU1ODFdfQ==
 -->
