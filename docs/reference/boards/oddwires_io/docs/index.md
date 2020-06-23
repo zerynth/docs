@@ -6,7 +6,11 @@ The IO offers a 240 MHz, 32-bit processor with 4Mb of flash memory. The IO accep
 
 The oddWires IoT-Bus System is based on a low-cost, open design that includes multiple main boards including a minimalist, breadboard-friendly form factor (IO).
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/oddwires_io/docs/img/oddwires_io_board.jpg?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/oddwires_io/docs/img/oddwires_io_pin_comm.jpg?raw=true)
 
 Official reference for oddWires IO can be found [here](https://www.oddwires.com/iot-bus-io-esp32-processor-with-wifi-and-bluetooth/).
 
@@ -167,5 +171,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Mjk3NDAwNV19
+eyJoaXN0b3J5IjpbMTcwNDYxMzM4NywxMTcyOTc0MDA1XX0=
 -->
