@@ -9,7 +9,11 @@ The device needs a 5V power supply and features a [STM32F427 MCU](http://www.st.
 !!! note
 	Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
 
+<p style="text-align;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/quail_board.png?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/Mikroelektronika_Quail.jpg?raw=true)
 
 MikroElektronika Quail official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/quail/quail-board-manual-v100.pdf)
 
@@ -202,17 +206,19 @@ On ```Windows``` machines two set of drivers must be installed: the DFU drivers 
 !!! warning
 	In DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/zadig_dfu.png?raw=true)
+
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/zadig_usb.png?raw=true)
+
 !!! note
 	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
 On **MAC OSX** and ```Linux``` USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 If the device is still not recognized or not working, the following udev rules may need to be added:
-
 ```
 #MikroElektronica Quail Device
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -271,6 +277,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjI3Mzg2MiwtMTg2MzIxOTA3MSwxNT
+eyJoaXN0b3J5IjpbMTg3MDY1NDYxNywtMTg2MzIxOTA3MSwxNT
 cwMDQzOTQ5LC0xMjc5NjIxMDIyLDExMDEwNjI2MzZdfQ==
 -->
