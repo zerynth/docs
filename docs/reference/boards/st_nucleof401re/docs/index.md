@@ -4,6 +4,8 @@ The STM32 Nucleo device provides an affordable and flexible way for users to try
 
 The Arduino connectivity support and ST Morpho headers make it easy to expand the functionality of the STM32 Nucleo device with a wide choice of specialized shields and sensors. This device does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer.
 
+<p style="text-align:center;"><img src=""></p>
+
 !!! warning
 	Unlike other Arduino-like devices, the ST Nucleo device runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin, could damage the device.
 
@@ -143,5 +145,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3Njk1OTgzXX0=
+eyJoaXN0b3J5IjpbMTUyODE3NjMzXX0=
 -->
