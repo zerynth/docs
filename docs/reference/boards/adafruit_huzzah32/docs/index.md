@@ -4,7 +4,7 @@ The Huzzah32 is one of the development board created by Adafruit that mounts on-
 
 Adafruit Huzza32 contains a dual-core ESP32 chip, 4 MB of SPI Flash, tuned antenna, and The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) has both WiFi and Bluetooth Classic/LE support.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruit_huzzah32.png?raw=true">
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruit_huzzah32.png?raw=true"></p>
 
 ## Pin Mapping
 
@@ -156,6 +156,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDk2OTMyOTAsOTYzOTM2MDgxLDMxNT
-czNzYzMl19
+eyJoaXN0b3J5IjpbLTIwOTIxODE4OTksLTEyMDk2OTMyOTAsOT
+YzOTM2MDgxLDMxNTczNzYzMl19
 -->
