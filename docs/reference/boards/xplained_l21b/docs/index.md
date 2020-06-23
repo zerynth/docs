@@ -8,12 +8,14 @@ The Xplained Pro extension kits offers additional peripherals to extend the feat
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
-<p style="text-align:center;"><img src=""></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_l21b/docs/img/XplainedProSamL21.jpg?raw=true"></p>
 
 !!! note
 	All the reported information are extracted from the official [Xplained Pro Sam L21 page](http://www.microchip.com/developmenttools/productdetails.aspx?partno=atsaml21-xpro-b&utm_source=MicroSolutions&utm_medium=Link&utm_term=FY18Q1&utm_content=DevTools&utm_campaign=Article), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_l21b/docs/img/xplained_l21b_pin_io.jpg?raw=true)
 
 Xplained Pro Sam L21 Official Schematic, Reference Design and Pin Mapping are available on the official [Atmel User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42405-SAML21-Xplained-Pro_User-Guide.pdf).
 
@@ -75,9 +77,7 @@ The SAM L21 Xplained Pro has a backup battery for use with the SAM L21 backup mo
 The Xplained Pro Sam L21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -116,11 +116,12 @@ After virtualization, the Xplained Pro Sam L21 is ready to be programmed and the
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Xplained Pro Sam L21 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size | Content         |
 |---------------|------|-----------------|
 | 0x00002000    | 88Kb | VM Slot         |
 | 0x00018000    | 80Kb | Bytecode Slot 0 |
 | 0x0002C000    | 80Kb | Bytecode Slot 1 |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4ODE2NTQ3XX0=
+eyJoaXN0b3J5IjpbMTIxMTAxNTI5MF19
 -->
