@@ -5,6 +5,8 @@ Thanks to WT8266-DK V2, the user can simulate serial devices to access WiFi netw
 
 The WT8266-DK V2 device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wt8266_s2/docs/img/wt8266_s2.jpg?raw=true"></p>
+
 ## Pin Mapping
 
 Official reference for Wireless Tag WT8266-DK V2 can be found [here](http://www.wireless-tag.com/index.php/product/dis/94.html).
@@ -130,5 +132,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODExMTg2OF19
+eyJoaXN0b3J5IjpbLTE4NTY0NjUyMjYsLTg5ODExMTg2OF19
 -->
