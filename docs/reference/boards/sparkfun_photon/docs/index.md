@@ -4,12 +4,16 @@ The SparkFun Photon RedBoard is a complete Wi-Fi enabled development platform fo
 
 The P1 (P-one) is Particle’s tiny Wi-Fi module that contains both the Broadcom BCM43362 Wi-Fi chip and a reprogrammable [STM32F205RGY6 32-bit ARM Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/bc/21/42/43/b0/f3/4d/d3/CD00237391.pdf/files/CD00237391.pdf/jcr:content/translations/en.CD00237391.pdf).
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_photon/docs/img/SparkfunPhoton.jpg?raw=true"></p>
+
 In addition to having 1MB of internal flash memory for storing the firmware, the SparkFun Photon also features 128KB of Ram, 1MB of extra SPI flash and 120 MHz of clock.
 
 !!! note
 	All the reported information are extracted from the official [SparkFun Photon RedBoard reference page](https://learn.sparkfun.com/tutorials/photon-redboard-hookup-guide?_ga=1.244092546.606776139.1483349376), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_photon/docs/img/Sparkfun_Photon_Redboard_pin_comm.png?raw=true)
 
 SparkFun Photon RedBoard Official Schematic, Reference Design & Pin Mapping are available on the [official SparkFun Photon datasheet page](https://cdn.sparkfun.com/datasheets/IoT/sparkfun-photon-redboard-v10.pdf).
 
@@ -109,9 +113,7 @@ To install the drivers on ```Windows``` plug the SparkFun Photon on an USB port,
 On **MAC OSX** and ```Linux``` platforms USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-* **Ubuntu** distribution –> dialout group
-* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -186,5 +188,5 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NzY5MDM4OV19
+eyJoaXN0b3J5IjpbMTQ0Mzk3Njg0MCwxNjY3NjkwMzg5XX0=
 -->
