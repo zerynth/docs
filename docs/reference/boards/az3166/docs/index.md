@@ -6,7 +6,7 @@ AZ3166 is [EMW3166](http://en.mxchip.com/product/wifi_product/40), a low power c
 
 EMW3166 integrates [STM32F412RG](http://www.st.com/resource/en/datasheet/stm32f412rg.pdf) (Cortex-M4) microcontroller of 256Kbytes SRAM and 1Mbytes on-chip flash with another 2Mbytes on-board SPI flash added. Various peripheral interfaces of analog and digital are available. The power supply voltage is 3.3V. The TCP/IP protocols and security encryption algorithm could be applied in various Wi-Fi applications. In addition, several particular firmware prepares for some typical applications easylink configuration and services for cloud interfacing.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/az3166/docs/img/az3166.jpg?raw=true)
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/az3166/docs/img/az3166.jpg?raw=true"></p>
 
 !!! note
 	All the reported information are extracted from the official [MXChip IoT DevKit AZ3166 reference page](http://mxchip.com/az3166), visit this page for more details and updates.
@@ -131,6 +131,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMyNzM2NzgyLC0xNDc4NDE5MjQ1LC0yMT
-I5ODY5NzgzXX0=
+eyJoaXN0b3J5IjpbLTE3NjkwNDY0MjYsNTMyNzM2NzgyLC0xND
+c4NDE5MjQ1LC0yMTI5ODY5NzgzXX0=
 -->
