@@ -355,10 +355,7 @@ Returns a random integer. If ```a``` and ```b``` are given, the random integer i
 Creates a range object.
 
 
----
-#### `#!py3 bytearray()`
-
-!!!abstract "`#!py3 bytearray()`"
+`bytearray()`
 
 Return a new array of bytes. A bytearray is a mutable
 sequence of integers in the range 0 <= x < 256.  It has most of the usual
@@ -378,11 +375,7 @@ initialized with null bytes.
 
 Without an argument, an array of size 0 is created.
 
-
----
-#### `#!py3 bytes()`
-
-!!!abstract "`#!py3 bytes()`"
+`bytes()`
 
 Return a new “bytes” object, which is an immutable sequence of integers in
 the range `0 <= x < 256`.  `bytes()` is an immutable version of
@@ -391,11 +384,7 @@ indexing and slicing behavior.
 
 Accordingly, constructor arguments are interpreted as for `bytearray()`.
 
-
----
-#### `#!py3 shortarray()`
-
-!!!abstract "`#!py3 shortarray()`"
+`shortarray()`
 
 Return a new array of shorts. A shortarray is a mutable
 sequence of integers in the range 0 <= x < 65536.  It has most of the usual
@@ -415,11 +404,7 @@ If the conversion is not possible, an exception is raised.
 
 Without an argument, an array of size 0 is created.
 
-
----
-#### `#!py3 shorts()`
-
-!!!abstract "`#!py3 shorts()`"
+`shorts()`
 
 Return a new shorts object, which is an immutable sequence of integers in
 the range `0 <= x < 65536`.  `shorts()` is an immutable version of
@@ -429,10 +414,7 @@ indexing and slicing behavior.
 Accordingly, constructor arguments are interpreted as for `shortarray()`.
 
 
----
-#### `#!py3 enumerate()`
-
-!!!abstract "`#!py3 enumerate(iterable, start=0)`"
+`enumerate(iterable, start=0)`
 
 Return an enumerate object. ```iterable``` must be a sequence, an
 iterator, or some other object which supports iteration.
@@ -456,10 +438,7 @@ for idx, val in enumerate(ints):
 In this version of the VM, enumerate works only for primitive iterable types, not yet for instances with `__next__` and `__iter__` methods.
 
 
----
-#### `#!py3 reversed()`
-
-!!!abstract "`#!py3 reversed(seq)`"
+`reversed(seq)`
 
 Return a reverse iterator.  ```seq``` must be an object which has
 a `__reversed__()` method or supports the sequence protocol (the
@@ -468,11 +447,7 @@ arguments starting at `0`).
 
 In this version of the VM, reversed works only for primitive iterable types, not yet for instances with `__next__` and `__iter__` methods.
 
-
----
-#### `#!py3 ord()`
-
-!!!abstract "`#!py3 ord(c)`"
+`ord(c)`
 
 Given a string representing one character, return an integer
 representing that character.  For example, `ord('a')` returns the integer `97`.
@@ -503,10 +478,7 @@ x = 58
 ```
 
 
----
-#### `#!py3 chr()`
-
-!!!abstract "`#!py3 chr(i)`"
+`chr(i)`
 
 Return the string representing a character whose byte representation is the integer
 ```i```.  For example, `chr(97)` returns the string `'a'`. This is the
@@ -750,7 +722,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk4MTkyOTUsLTE0ODg5ODEwMjAsMT
-k0NjkwMzg4OCwxMjY0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3
-MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbMjY4OTgxMDMxLC0xNDg4OTgxMDIwLDE5ND
+Y5MDM4ODgsMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0
+NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
 -->
