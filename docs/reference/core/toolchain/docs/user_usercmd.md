@@ -109,7 +109,7 @@ the user profile is retrieved and displayed. The user profile consists of the fo
 
     * Website
 
-# \* Subscription Info
+<p># * Subscription Info</p>
 
 #     \* Subscription type
 #     \* Date of subscription expiration
@@ -154,5 +154,5 @@ where `options` is a list of one or more of the following options:
 
 * `--website website` update the Website field
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2ODQ1Nl19
+eyJoaXN0b3J5IjpbNDEwNTkzNTE3XX0=
 -->
