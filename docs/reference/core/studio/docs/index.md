@@ -95,6 +95,7 @@ Zerynth Studio gives the possibility to configure the connected devices in more 
 This feature is particularly useful when the device needs to be registered, virtualized and programmed using a JTAG/SWD probe. To access the advanced device management mode the corresponding option must be selected in the device management widget.
 
 <p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm1.png?raw=true"></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm2.png?raw=true"></p>
 
 Once in advanced mode, new device configurations can be created and filled with the following details:
 
@@ -401,6 +402,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjUxNjg4ODMsLTIxOTg4MDUwMiwxMD
-g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
+eyJoaXN0b3J5IjpbLTY3OTYzMDA4OCwtMjE5ODgwNTAyLDEwOD
+Y3MjEyMDksLTg1NjAwODcwMF19
 -->
