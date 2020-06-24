@@ -207,7 +207,8 @@ The result of a correct registration is a device with the registration firmware 
 
 The option `--skip_burn` avoid flashing the device with the registering firmware (it must be made manually!); it can be helpful in contexts where the device is not recognized correctly.
 
-```NOTE```: Devices with multiple modes can be registered one at a time only!
+!!! note
+	Devices with multiple modes can be registered one at a time only!
 
 ## Device Registration by UID
 
@@ -391,5 +392,5 @@ ztc device db remove device_name
 
 removes the device `device_name` from the configured devices.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1NzEyNzQ1XX0=
+eyJoaXN0b3J5IjpbMzI3MjI5NzMwXX0=
 -->
