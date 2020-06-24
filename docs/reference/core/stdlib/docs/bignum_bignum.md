@@ -54,58 +54,37 @@ Return a new big number instance equal to the difference of the current instance
 Subtracts to the current instance the big number ```b```. Return `None`
 
 
----
-#### `#!py3 mul()`
-
-!!!abstract "`#!py3 mul(b)`"
+`mul(b)`
 
 Return a new big number instance equal to the multiplication of the current instance and ```b```.
 
 
----
-#### `#!py3 imul()`
-
-!!!abstract "`#!py3 imul(b)`"
+`imul(b)`
 
 Multiply the current instance for the big number ```b```. Return `None`
 
 
----
-#### `#!py3 div()`
-
-!!!abstract "`#!py3 div(b)`"
+`div(b)`
 
 Return a new big number instance equal to the division of the current instance by ```b```.
 
 
----
-#### `#!py3 idiv()`
-
-!!!abstract "`#!py3 idiv(b)`"
+`idiv(b)`
 
 Divides the current instance for the big number ```b```. Return `None`
 
 
----
-#### `#!py3 mod()`
-
-!!!abstract "`#!py3 mod(b)`"
+`mod(b)`
 
 Return a new big number instance equal to the remainder of the division of the current instance by ```b```.
 
 
----
-#### `#!py3 imod()`
-
-!!!abstract "`#!py3 imod(b)`"
+`imod(b)`
 
 Set the current instance to the remainder of the division by ```b```. Return `None`
 
 
----
-#### `#!py3 divmod()`
-
-!!!abstract "`#!py3 divmod(b)`"
+`divmod(b)`
 
 Return a tuple (q,r) of new big number instances representing the quotient ```q``` and the remainder ```r``` of the division of the current instance by ```b```.
 
@@ -134,13 +113,10 @@ Return True if the current instance is greater than or equal to the big number `
 Return 1 if the current instance is a positive number, -1 if the current instance is a negative number, 0 if it is equal to zero.
 
 
----
-#### `#!py3 to_base()`
-
-!!!abstract "`#!py3 to_base(base)`"
+`to_base(base)`
 
 Return a string representation of the big number in base ```base```. Allowed values for ```base``` are in the range 2..64.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc0MTM4NzcyLDY4NDI2MjExMiwtMjA3OD
+eyJoaXN0b3J5IjpbMjQ5ODAyODg3LDY4NDI2MjExMiwtMjA3OD
 Q1Mzg1OSw2ODQyNjIxMTJdfQ==
 -->
