@@ -298,11 +298,15 @@ All projects known to Zerynth Studio are listed in the projects browser panel. P
 Zerynth Studio integrates an **Example browser** from which code examples can be cloned into projects.
 Examples are organized in a tree where different branches are usually labelled with the package namespace that provides them.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_studio_examples.jpg?raw=true)
+
 In the Getting Started section a dedicated tutorial on how to use examples is available.
 
 ### Library Manager
 
 Zerynth Studio can be extended with new libraries from our community of users; these features are managed from the Library Manager panel, accessible by clicking the “puzzle” icon on the Left Panel
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_package_manager.jpg?raw=true"></p>
 
 To search and install a library:
 
@@ -322,6 +326,8 @@ In the Getting Started section a dedicated tutorial on how to search, install an
 ### News Feed
 
 Zerynth Studio is also a tool to stay connected with the **Zerynth community**. The “News Feed” tab displays the latest news available in the community forum about packages, updates, releases and bug fixes.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_news.jpg?raw=true)
 
 ### Console List
 
@@ -425,6 +431,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDQzNTI2NiwtMjE5ODgwNTAyLDEwOD
-Y3MjEyMDksLTg1NjAwODcwMF19
+eyJoaXN0b3J5IjpbLTE3Nzg4MDEzNDAsLTIxOTg4MDUwMiwxMD
+g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
 -->
