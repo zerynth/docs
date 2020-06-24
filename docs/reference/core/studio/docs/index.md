@@ -108,6 +108,11 @@ Once in advanced mode, new device configurations can be created and filled with 
 
 * probe: most used JTAG/SWD probes are supported and can be selected
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm3.png?raw=true)
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm4.png?raw=true)
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm5.png?raw=true)
 In advanced mode, the behaviour of the “Z” button, console button and uplink button are modified:
 
 
@@ -129,11 +134,19 @@ Zerynth Studio integrates the powerful [gdbgui](https://gdbgui.com/) as a [GDB](
 
 Clicking the Debug Session button, current project is uplinked via JTAG/SWD and a gdbgui window is open.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-start.png?raw=true)
+
 Inside gdbgui it is possible to place breakpoints on and inside C functions to control execution flow, inspect MCU memory and C variable values.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-gdb.png?raw=true)
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-breakpoints.png?raw=true)
 
 ### Zerynth Account Profile Section
 
 Zerynth Studio provides all Zerynth Account Profile information in the Profile Section that can be accessed by clicking the profile icon at the top right of the screen.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/profile_section.png?raw=true)
 
 The Profile Section is divided into five main area:
 
@@ -187,6 +200,7 @@ In this section the Zerynth User can monitor the status his Zerynth Premium asse
 !!! note
 	The difference between Starter and Premium is related to the Zerynth Virtual Machine features:
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/vm_comp_table.png?raw=true)
 
 * a Starter VM is a basic virtual machine.
 
@@ -196,6 +210,7 @@ In this section the Zerynth User can monitor the status his Zerynth Premium asse
 #### Purchase History Section
 
 By clicking the orange “Purchase History” button, the Purchase History table is displayed.
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/history.png?raw=true)
 
 Through this table the user can retrieve all the information about the owned assets ordered by date with description and creation date; the receipt number is also indicated for purchased assets.
 
@@ -206,6 +221,8 @@ Zerynth Studio integrates a code editor based on the powerful [Ace](https://ace.
 The topmost part of the editor is reserved for tabs. Each tab displays a single project file and files belonging to different projects can be kept open at the same time.
 
 At the bottom of the editor, a status bar displays information about the currently opened file together with a series of menus to alter the editor font and theme. The rightmost menu contains the useful editor commands.
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_studio_shortcut.jpg?raw=true"></p>
 
 Keyboard shortcuts are available:
 
@@ -252,10 +269,14 @@ The topmost icon selects the currently open project and the folder tree is shown
 
 The user can open more than one project and can switch from a project to another by selecting it from the project top bar.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/opened_project_bar.jpg?raw=true)
+
 Project related commands can be accessed both from the system menu and from the dropdowns in the top right corner of the project view.
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/current_project_panel.png?raw=true)
 
 !!! note
 	**Drag and Drop** feature is available for the project view
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/drug_and_drop.png?raw=true"></p>
 
 ### Projects Browser
 
@@ -270,16 +291,22 @@ All projects known to Zerynth Studio are listed in the projects browser panel. P
 
 * folder with a book icon: project has been published as a library package
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/project_browser.jpg?raw=true"></p>
+
 ### Examples Browser
 
 Zerynth Studio integrates an **Example browser** from which code examples can be cloned into projects.
 Examples are organized in a tree where different branches are usually labelled with the package namespace that provides them.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_studio_examples.jpg?raw=true)
 
 In the Getting Started section a dedicated tutorial on how to use examples is available.
 
 ### Library Manager
 
 Zerynth Studio can be extended with new libraries from our community of users; these features are managed from the Library Manager panel, accessible by clicking the “puzzle” icon on the Left Panel
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_package_manager.jpg?raw=true"></p>
 
 To search and install a library:
 
@@ -300,13 +327,18 @@ In the Getting Started section a dedicated tutorial on how to search, install an
 
 Zerynth Studio is also a tool to stay connected with the **Zerynth community**. The “News Feed” tab displays the latest news available in the community forum about packages, updates, releases and bug fixes.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_news.jpg?raw=true)
+
 ### Console List
 
 Each device output can be monitored through a dedicated serial console and each console lives in its own window. The console list panel is useful rapidly focus or close an opened console.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-consoles.png?raw=true"></p>
+
 ### ADM connected devices
 
 Devices present in the ADM database are shown in this panel. For each device, information about its status is displayed. If the device supports FOTA updates, the FOTA process can be performed directly from the provided buttons. More information on the ADM and FOTA updates can be found here and here.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_admpanel.png?raw=true"></p>
 
 ### Custom Virtual Machines
 
@@ -321,6 +353,8 @@ Custom Virtual Machines can be created and managed directly from Zerynth Studio.
 
 3. by importing the custom VM from a Github repository (import from Github)
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_cvm1.png?raw=true"></p>
+
 By selecting option 1 a popup dialog is displayed asking for some info:
 
 
@@ -331,6 +365,8 @@ By selecting option 1 a popup dialog is displayed asking for some info:
 
 
 * the customizable VM to use as a starting point
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_cvm2.png?raw=true"></p>
 
 Once created, the custom VM will appear in the panel with a series of buttons (in order from left to right):
 
@@ -374,10 +410,14 @@ The quick search bar has some advanced features. It is possible to prefix the se
 
 Finally, by typing `:ztc` followed by a ZTC command, the specified command is executed and the output is shown in the System Log.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-quicksearch.png?raw=true"></p>
+
 ## Preferences Menu
 
 In the Zerynth Studio Preferences Menu, following options are available:
 
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/preferences_menu.png?raw=true"></p>
 
 * ```Profile```: Opens the Profile Section;
 
@@ -402,6 +442,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTYzMDA4OCwtMjE5ODgwNTAyLDEwOD
+eyJoaXN0b3J5IjpbLTU0MzA5MzA5NSwtMjE5ODgwNTAyLDEwOD
 Y3MjEyMDksLTg1NjAwODcwMF19
 -->
