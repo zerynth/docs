@@ -333,9 +333,12 @@ Zerynth Studio is also a tool to stay connected with the **Zerynth community**. 
 
 Each device output can be monitored through a dedicated serial console and each console lives in its own window. The console list panel is useful rapidly focus or close an opened console.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-consoles.png?raw=true"></p>
+
 ### ADM connected devices
 
 Devices present in the ADM database are shown in this panel. For each device, information about its status is displayed. If the device supports FOTA updates, the FOTA process can be performed directly from the provided buttons. More information on the ADM and FOTA updates can be found here and here.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_admpanel.png?raw=true"></p>
 
 ### Custom Virtual Machines
 
@@ -431,6 +434,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzg4MDEzNDAsLTIxOTg4MDUwMiwxMD
+eyJoaXN0b3J5IjpbLTE5Nzc4Njc4NjgsLTIxOTg4MDUwMiwxMD
 g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
 -->
