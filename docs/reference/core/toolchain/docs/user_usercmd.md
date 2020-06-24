@@ -111,10 +111,7 @@ the user profile is retrieved and displayed. The user profile consists of the fo
 
 <p># * Subscription Info</p>
 
-#     \* Subscription type
-#     \* Date of subscription expiration
-#     \* List of roles
-#     \* List of active repositories
+#* Subscription type #* Date of subscription expiration #* List of roles #* List of active repositories
 
 
 * Asset and Purchase History list
@@ -154,5 +151,5 @@ where `options` is a list of one or more of the following options:
 
 * `--website website` update the Website field
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwNTkzNTE3XX0=
+eyJoaXN0b3J5IjpbLTEyNjAwMDc1MzVdfQ==
 -->
