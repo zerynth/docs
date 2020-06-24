@@ -73,7 +73,8 @@ Once a device has been connected, the buttons to the right of the device list al
 
 When a serial console is opened, the port parameters are automatically configured to the defaults of the selected device. The baud rate for a device is displayed during bytecode upload. To open a serial port configured with a non default baudrate, a serial terminal like Putty should be used. It is important to close the serial terminal before trying to uplink or open a Zerynth serial console, because concurrent serial port usage from different programs is not allowed.
 
-```NOTE```: The Zerynth Studio serial console also has scroll lock  and clear all console functions accessible from the top right corner of the console
+!!! note
+	The Zerynth Studio serial console also has scroll lock  and clear all console functions accessible from the top right corner of the console
 
 The Getting Started section has a dedicated tutorial on how to manage devices.
 
@@ -382,3 +383,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 * **Redeem Licenses**: Open up a dialog where redeemable codes can be turned into virtual machine licenses.
 
 ```NOTE```: the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDQ1MzEwODEzXX0=
+-->
