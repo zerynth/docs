@@ -12,26 +12,16 @@ Please note, SW03 and all other xChips is currently only supported in Zerynth St
 
 
 * I2C interface
-
-
 * Fully Compensated Internal
-
-
 * Temperature Operating Range: -40°C to 85°C
-
-
 * Absolute Pressure Operating Range: 20 kPa to 110 kPa
-
-
 * Precision ADC resulting in 0.1 meter of effective resolution
-
-
 * Direct reading
 
 Contents:
 
 
-* SW03 Module
-
-
-    * SW03 class
+* [SW03 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/docs/official_lib.xinabox.sw03_sw03.html)
+    * [SW03 class](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/docs/official_lib.xinabox.sw03_sw03.html#sw03-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/examples/examples.html)
+    * [environmental data](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/examples/examples.html#environmental-data)

@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.sl01
+The following are a list of examples for lib.xinabox.sl01.
 
 ## LUX Measurement
 

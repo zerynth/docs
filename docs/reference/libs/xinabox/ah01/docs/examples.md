@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.ah01
+The following are a list of examples for lib.xinabox.ah01.
 
 ## Ping example
 

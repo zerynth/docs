@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.oc03
+The following are a list of examples for lib.xinabox.oc03.
 
 ## Toggle relay on OC03
 

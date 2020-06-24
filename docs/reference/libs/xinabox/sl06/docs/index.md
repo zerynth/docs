@@ -10,69 +10,34 @@ Please note, SL06 and all other xChips is currently only supported in Zerynth St
 
 
 * Ambient Light and RGB Color Sensing
-
-
     * Ambient Light and RGB Color Sensing
-
-
     * UV and IR blocking filters
-
-
     * Programmable gain and integration time
-
-
     * Very high sensitivity – Ideally suited for operation behind dark glass
-
-
 * Proximity Sensing
-
-
     * Trimmed to provide consistent reading
-
-
     * Ambient light rejection
-
-
     * Offset compensation
-
-
     * Programmable driver for IR LED current
-
-
     * Saturation indicator bit
-
-
 * Complex Gesture Sensing
-
-
     * Four separate diodes sensitive to different directions
-
-
     * Ambient light rejection
-
-
     * Offset compensation
-
-
     * Programmable driver for IR LED current
-
-
     * 32 dataset storage FIFO
-
-
     * Interrupt driven I2C-bus communication
-
-
 * I2C-bus Fast Mode Compatible Interface
-
-
     * Data Rates up to 400 kHz
 
 <!-- The text you write here will appear in the first doc page. (This is just a comment, will not be rendered) -->
 Contents:
 
 
-* SL06 Module
-
-
-    * SL06 class
+* [SL06 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/docs/official_lib.xinabox.sl06_sl06.html)
+    * [SL06 class](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/docs/official_lib.xinabox.sl06_sl06.html#sl06-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html)
+    * [ambient light](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#ambient-light)
+    * [colour](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#colour)
+    * [gesture](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#gesture)
+    * [proximity](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#proximity)

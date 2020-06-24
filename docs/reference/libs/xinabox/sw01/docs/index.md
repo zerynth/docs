@@ -16,35 +16,19 @@ Please note, SW01 and all other xChips is currently only supported in Zerynth St
 
 
 * Operating Range:
-
-
     1. Temperature: -40 to 85°C
-
-
     2. Relative Humidity: 0 to 100%
-
-
     3. Pressure: 300 to 1100 hPa
-
-
 * Humidity Sensor and Pressure Sensor can be Independently Enabled/ Disabled.
-
-
 * 3 Power Modes:
-
-
     1. Sleep Mode.
-
-
     2. Normal Mode.
-
-
     3. Forced Mode.
 
 Contents:
 
 
-* SW01 Module
-
-
-    * SW01 class
+* [SW01 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/docs/official_lib.xinabox.sw01_sw01.html)
+    * [SW01 class](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/docs/official_lib.xinabox.sw01_sw01.html#sw01-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/examples/examples.html)
+    * [environmental data](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/examples/examples.html#environmental-data)

@@ -10,29 +10,17 @@ Please note, SH01 and all other xChips is currently only supported in Zerynth St
 
 
 * Based on CAP1296 From Microchip Technology
-
-
 * Multiple Button Pattern Detection
-
-
 * Power Button Support
-
-
 * Press and Hold Feature for Volume-like Applications
-
-
 * I2C
-
-
 * Operating Ambient Temperature Range: -40 to 125 °C
-
-
 * Storage Temperature Range: -55 to 150 °C
 
 Contents:
 
 
-* SH01 Module
-
-
-    * SH01 class
+* [SH01 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/docs/official_lib.xinabox.sh01_sh01.html)
+    * [SH01 class](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/docs/official_lib.xinabox.sh01_sh01.html#sh01-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/examples/examples.html)
+    * [touch button](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/examples/examples.html#touch-button)

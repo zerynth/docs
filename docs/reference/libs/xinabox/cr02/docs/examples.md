@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.cr02
+The following are a list of examples for lib.xinabox.cr02.
 
 ## Temperature to The Things Network
 

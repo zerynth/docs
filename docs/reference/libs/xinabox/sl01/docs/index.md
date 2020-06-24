@@ -35,10 +35,9 @@ Please note, SL01 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* SL01 Module
-
-
-    * VEML6075 class
-
-
-    * TSL4531 class
+* [SL01 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sl01/docs/official_lib.xinabox.sl01_sl01.html)
+    * [VEML6075 class](https://docs.zerynth.com/latest/official/lib.xinabox.sl01/docs/official_lib.xinabox.sl01_sl01.html#veml6075-class)
+    * [TSL4531 class](https://docs.zerynth.com/latest/official/lib.xinabox.sl01/docs/official_lib.xinabox.sl01_sl01.html#tsl4531-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sl01/examples/examples.html)
+    * [lux measurements](https://docs.zerynth.com/latest/official/lib.xinabox.sl01/examples/examples.html#lux-measurements)
+    * [uv measurements](https://docs.zerynth.com/latest/official/lib.xinabox.sl01/examples/examples.html#uv-measurements)
