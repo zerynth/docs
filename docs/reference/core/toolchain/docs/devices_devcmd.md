@@ -36,13 +36,7 @@ When a new device is connected, some steps must be taken in order to make it abl
 3. The device must be registered in order to create virtual machines for it (`chipid` and `remote_id` are obtained in this step)
 
 
-4. The device must be :ref:
-
-```
-`
-```
-
-virtualized <ztc-cmd-device-virtualize>, namely a suited virtual machine must be loaded on the device microcontroller
+4. The device must be :ref:`virtualized <ztc-cmd-device-virtualize>, namely a suited virtual machine must be loaded on the device microcontroller
 
 Sometimes the device automatic recognition is not enough to gather all the device parameters or to allow the usage of JTAG/SWD probes. In such cases additional commands have been introduced in order to manually specify the additional parameters. A separate database of devices with advanced configurations is maintained.
 
@@ -120,7 +114,8 @@ Raw peripheral data can be obtained by running:
 ztc device discover
 ```
 
-```NOTE```: In Linux peripheral data is obtained by calling into libudev functions. In Windows the WMI interface is used. In Mac calls to ioreg are used.
+!!! note
+	In Linux peripheral data is obtained by calling into libudev functions. In Windows the WMI interface is used. In Mac calls to ioreg are used.
 
 Raw peripheral data are not so useful apart from checking the effective presence of a device. To obtain more useful data the option `-- matchdb` must be provided. Such option adds another step of device discovery on top of raw peripheral data that is matched against the list of supported devices and the list of already known devices.
 
@@ -147,13 +142,7 @@ A `--matchdb` discovery returns a different set of more high level information:
 
 * `classname`, the Python class in charge of managing the device
 
-All the above information is needed to make a device usable in the ZTC. The information provided helps in distinguishing different devices with different behaviours. A device without an `alias` is a device that is not yet usable, therefore an alias must be set. A device without `chipid` and `remote_id` is a device that has not been :ref:
-
-```
-`
-```
-
-registered <ztc-cmd-device-register> yet and can not be virtualized yet.
+All the above information is needed to make a device usable in the ZTC. The information provided helps in distinguishing different devices with different behaviours. A device without an `alias` is a device that is not yet usable, therefore an alias must be set. A device without `chipid` and `remote_id` is a device that has not been :ref:`registered <ztc-cmd-device-register> yet and can not be virtualized yet.
 
 To complicate the matter, there are additional cases that can be spotted during discovery:
 
@@ -401,3 +390,6 @@ ztc device db remove device_name
 ```
 
 removes the device `device_name` from the configured devices.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTk1NzEyNzQ1XX0=
+-->
