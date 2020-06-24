@@ -482,14 +482,10 @@ x = 58
 
 Return the string representing a character whose byte representation is the integer
 ```i```.  For example, `chr(97)` returns the string `'a'`. This is the
-inverse of `ord()`. `ValueError` will be raised if ```i``` is
-outside the valid range.
+inverse of `ord()`. `ValueError` will be raised if ```i``` is outside the valid range.
 
 
----
-#### `#!py3 isinstance()`
-
-!!!abstract "`#!py3 isinstance(object, class)`"
+`isinstance(object, class)`
 
 Return true if the ```object``` argument is an instance of the ```class```
 argument, or of a (direct, indirect) subclass thereof.  If ```object``` is not
@@ -716,7 +712,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODIyMzU3LC0xNDg4OTgxMDIwLDE5ND
-Y5MDM4ODgsMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0
-NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
+eyJoaXN0b3J5IjpbLTEzOTc2NjAxNDMsLTE0ODg5ODEwMjAsMT
+k0NjkwMzg4OCwxMjY0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3
+MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
 -->
