@@ -532,7 +532,7 @@ def all(iterable):
 ```
 
 
-`any(iterable)`"
+`any(iterable)`
 
 Return `True` if any element of the ```iterable``` is true.  If the iterable
 is empty, return `False`.  Equivalent to:
@@ -593,14 +593,12 @@ Returns the “informal” or nicely printable string representation of ```objec
 the string itself. For primitive types like list, tuples, dicts a standard representation is returned. For all other types, the method __str__ is called.
 
 
----
-#### `#!py3 dict()`
+ `dict()`
 
-!!!abstract "`#!py3 dict(\*args)`"
+`dict(\*args)`
 
 Return a new dictionary initialized from an optional 
 
-```
 *
 ```
 
@@ -675,8 +673,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE1MTIwMzUzLC0xMzk3NjYwMTQzLC0xND
-g4OTgxMDIwLDE5NDY5MDM4ODgsMTI2NDU3NDEwMiwxNTg5Nzc2
-NzIyLC0yMDU1NzE0NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4ND
-JdfQ==
+eyJoaXN0b3J5IjpbLTEwMjQ0ODM3MTksODE1MTIwMzUzLC0xMz
+k3NjYwMTQzLC0xNDg4OTgxMDIwLDE5NDY5MDM4ODgsMTI2NDU3
+NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0NzkxLC0yMTU5MTI4OT
+AsLTE3ODg4MjI4NDJdfQ==
 -->
