@@ -31,7 +31,8 @@ providing a valid email, a nick name and a password. Social login is also availa
 
 Once a correct login/registration is performed, the browser will display an authentication token. Such token can be copied and pasted to the ZTC prompt.
 
-```WARNING```: multiple logins with different methods (manual or social) are allowed provided that the email linked to the social OAuth service is the same as the one used in the manual login.
+!!! warning
+	multiple logins with different methods (manual or social) are allowed provided that the email linked to the social OAuth service is the same as the one used in the manual login.
 
 Non interactive mode is started by typing:
 
@@ -41,7 +42,8 @@ ztc login --token authentication_token
 
 The `authentication_token` can be obtained by manually opening the login/registration [page](https://backend.zerynth.com/v1/sso)
 
-```WARNING```: For manual registrations, email address confirmation is needed. An email will be sent at the provided address with instructions.
+!!! warning
+	For manual registrations, email address confirmation is needed. An email will be sent at the provided address with instructions.
 
 ## Reset Password
 
@@ -53,7 +55,8 @@ ztc reset email
 
 where `email` is the email address used in the manual registration flow. An email with instruction will be sent to such address in order to allow a password change.
 
-```NOTE```: on password change, all active sessions of the user will be invalidated and a new token must be retrieved.
+!!! note
+	on password change, all active sessions of the user will be invalidated and a new token must be retrieved.
 
 ## Logout
 
@@ -63,7 +66,8 @@ Delete current session with the following command
 ztc logout
 ```
 
-```NOTE```: it will be necessary to login again.
+!!! note
+	it will be necessary to login again.
 
 ## Get/Set Profile Info
 
@@ -149,3 +153,6 @@ where `options` is a list of one or more of the following options:
 
 
 * `--website website` update the Website field
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODk2ODQ1Nl19
+-->
