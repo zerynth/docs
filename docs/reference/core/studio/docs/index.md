@@ -4,6 +4,8 @@ Zerynth Studio is an integrated development environment (IDE) that runs on Windo
 
 Through Zerynth Studio all the supported boards can be managed and  programs can be developed in Python 3 or hybrid C/Python. Projects developed with Zerynth Studio can be saved locally or pushed as private git repository to the Zerynth backend.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_studio.png?raw=true)
+
 Zerynth Studio includes:
 
 
@@ -44,6 +46,8 @@ The Zerynth Studio interface is divided into functional areas:
 ## The Toolbar
 
 The Toolbar is placed at the top of the Zerynth Studio window just under the system menubar.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-toolbar.png?raw=true)
 
 It contains two separate sections; on the left side there is the list of opened projects with the current one highlighted. Buttons to compile, uplink and debug the current project lie just to the right of it. At the center of the toolbar there is the device management widget, whereas to the right of the screen, an account button allows accessing the user profile and assets.
 
@@ -388,5 +392,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjcyMTIwOSwtODU2MDA4NzAwXX0=
+eyJoaXN0b3J5IjpbLTIxOTg4MDUwMiwxMDg2NzIxMjA5LC04NT
+YwMDg3MDBdfQ==
 -->
