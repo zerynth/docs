@@ -78,9 +78,11 @@ Once a device has been connected, the buttons to the right of the device list al
 
 * **Device information and PinMap**: the central buttons can be used to retrieve device information (expecially the serial port and/or the mounted volume) and to show the device pinmap. Please refer to the Programming Guide section for more details on how pin names and functionalities are organized in Zerynth.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/select_device.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zredeem.png?raw=true"></p>
 
 When a serial console is opened, the port parameters are automatically configured to the defaults of the selected device. The baud rate for a device is displayed during bytecode upload. To open a serial port configured with a non default baudrate, a serial terminal like Putty should be used. It is important to close the serial terminal before trying to uplink or open a Zerynth serial console, because concurrent serial port usage from different programs is not allowed.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_serial_console.jpg?raw=true)
 
 !!! note
 	The Zerynth Studio serial console also has scroll lock  and clear all console functions accessible from the top right corner of the console
@@ -91,6 +93,8 @@ The Getting Started section has a dedicated tutorial on how to manage devices.
 
 Zerynth Studio gives the possibility to configure the connected devices in more details, overriding the automatic discovery process.
 This feature is particularly useful when the device needs to be registered, virtualized and programmed using a JTAG/SWD probe. To access the advanced device management mode the corresponding option must be selected in the device management widget.
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm1.png?raw=true"></p>
 
 Once in advanced mode, new device configurations can be created and filled with the following details:
 
@@ -397,6 +401,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzExNTM1MjMsLTIxOTg4MDUwMiwxMD
+eyJoaXN0b3J5IjpbLTE5MjUxNjg4ODMsLTIxOTg4MDUwMiwxMD
 g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
 -->
