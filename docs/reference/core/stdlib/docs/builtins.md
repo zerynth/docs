@@ -9,50 +9,21 @@ The explicit name `__builtins__` must be used when there is a need to modify a b
 Zerynth VM defines the following Python builtin constants:
 
 
----
-#### `#!py3 False()`
-
-!!!abstract "`#!py3 False()`"
+`False()`
 
 The false value of the `bool()` type. Assignments to `False`
-are illegal and raise a 
+are illegal and raise a :exc:`SyntaxError`.
 
-```
-:exc:`SyntaxError`
-```
-
-.
-
-
----
-#### `#!py3 True()`
-
-!!!abstract "`#!py3 True()`"
+`True()`
 
 The true value of the `bool()` type. Assignments to `True`
-are illegal and raise a 
-
-```
-:exc:`SyntaxError`
-```
-
-.
+are illegal and raise a :exc:`SyntaxError`.
 
 
----
-#### `#!py3 None()`
-
-!!!abstract "`#!py3 None()`"
+`None()`
 
 The sole value of the type `NoneType`.  `None` is frequently used to
-represent the absence of a value, as when default arguments are not passed to a
-function. Assignments to `None` are illegal and raise a 
-
-```
-:exc:`SyntaxError`
-```
-
-.
+represent the absence of a value, as when default arguments are not passed to a function. Assignments to `None` are illegal and raise a :exc:`SyntaxError`.
 
 Zerynth VM recognizes a set of pre-defined uppercase names representing constants:
 
@@ -848,7 +819,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjkwMzg4OCwxMjY0NTc0MTAyLDE1OD
-k3NzY3MjIsLTIwNTU3MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgy
-Mjg0Ml19
+eyJoaXN0b3J5IjpbLTM2NTYzMTk0NiwxOTQ2OTAzODg4LDEyNj
+Q1NzQxMDIsMTU4OTc3NjcyMiwtMjA1NTcxNDc5MSwtMjE1OTEy
+ODkwLC0xNzg4ODIyODQyXX0=
 -->
