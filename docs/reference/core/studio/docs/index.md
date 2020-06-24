@@ -4,6 +4,8 @@ Zerynth Studio is an integrated development environment (IDE) that runs on Windo
 
 Through Zerynth Studio all the supported boards can be managed and  programs can be developed in Python 3 or hybrid C/Python. Projects developed with Zerynth Studio can be saved locally or pushed as private git repository to the Zerynth backend.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_studio.png?raw=true)
+
 Zerynth Studio includes:
 
 
@@ -45,13 +47,18 @@ The Zerynth Studio interface is divided into functional areas:
 
 The Toolbar is placed at the top of the Zerynth Studio window just under the system menubar.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-toolbar.png?raw=true)
+
 It contains two separate sections; on the left side there is the list of opened projects with the current one highlighted. Buttons to compile, uplink and debug the current project lie just to the right of it. At the center of the toolbar there is the device management widget, whereas to the right of the screen, an account button allows accessing the user profile and assets.
 
 ### Device Management Widget
 
 Zerynth Studio automatically recognizes connected devices, being them development boards, usb to serial converters or board programming tools. The connected devices are listed in the device management widget. The currently selected device will be used as a target device by the compiler and the uplinker.
 
-```NOTE```: Project Debugging is available only coupled with Advanced Device Management
+!!!
+	Project Debugging is available only coupled with Advanced Device Management
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/select_device.jpg?raw=true"></p>
 
 By clicking “Choose target devices…” in the dropdown, it is possible to add a target device not physically connected the the development machine. This way, projects can be verified for such target, but obviously not uplinked.
 
@@ -71,9 +78,14 @@ Once a device has been connected, the buttons to the right of the device list al
 
 * **Device information and PinMap**: the central buttons can be used to retrieve device information (expecially the serial port and/or the mounted volume) and to show the device pinmap. Please refer to the Programming Guide section for more details on how pin names and functionalities are organized in Zerynth.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zredeem.png?raw=true"></p>
+
 When a serial console is opened, the port parameters are automatically configured to the defaults of the selected device. The baud rate for a device is displayed during bytecode upload. To open a serial port configured with a non default baudrate, a serial terminal like Putty should be used. It is important to close the serial terminal before trying to uplink or open a Zerynth serial console, because concurrent serial port usage from different programs is not allowed.
 
-```NOTE```: The Zerynth Studio serial console also has scroll lock  and clear all console functions accessible from the top right corner of the console
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_serial_console.jpg?raw=true)
+
+!!! note
+	The Zerynth Studio serial console also has scroll lock  and clear all console functions accessible from the top right corner of the console
 
 The Getting Started section has a dedicated tutorial on how to manage devices.
 
@@ -81,6 +93,9 @@ The Getting Started section has a dedicated tutorial on how to manage devices.
 
 Zerynth Studio gives the possibility to configure the connected devices in more details, overriding the automatic discovery process.
 This feature is particularly useful when the device needs to be registered, virtualized and programmed using a JTAG/SWD probe. To access the advanced device management mode the corresponding option must be selected in the device management widget.
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm1.png?raw=true"></p>
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm2.png?raw=true"></p>
 
 Once in advanced mode, new device configurations can be created and filled with the following details:
 
@@ -169,7 +184,8 @@ In this section the Zerynth User can monitor the status his Zerynth Premium asse
 
 * VMs - ChibiOS: the table shows, as above, the status of the available and consumed Zerynth Premium VMs with ChibiOS.
 
-```NOTE```: The difference between Starter and Premium is related to the Zerynth Virtual Machine features:
+!!! note
+	The difference between Starter and Premium is related to the Zerynth Virtual Machine features:
 
 
 * a Starter VM is a basic virtual machine.
@@ -238,7 +254,8 @@ The user can open more than one project and can switch from a project to another
 
 Project related commands can be accessed both from the system menu and from the dropdowns in the top right corner of the project view.
 
-```NOTE```: **Drag and Drop** feature is available for the project view
+!!! note
+	**Drag and Drop** feature is available for the project view
 
 ### Projects Browser
 
@@ -346,7 +363,8 @@ A the bottom of the Zerynth Studio main window a footer bar displays two types o
 
 * On the rightmost part, a busy indicator appears during operations that takes some time to complete, like compiling, uplinking or updating the system
 
-```NOTE```: When new versions of Zerynth Studio or of the Zerynth Toolchain are released, a manual restart of the Studio is required. The update process is non-disruptive and the previous working version of Zerynth Studio is preserved so that it can be started in case the new version has failed updating correctly.
+!!! note
+	When new versions of Zerynth Studio or of the Zerynth Toolchain are released, a manual restart of the Studio is required. The update process is non-disruptive and the previous working version of Zerynth Studio is preserved so that it can be started in case the new version has failed updating correctly.
 
 ## Quick Search
 
@@ -381,4 +399,9 @@ In the Zerynth Studio Preferences Menu, following options are available:
 
 * **Redeem Licenses**: Open up a dialog where redeemable codes can be turned into virtual machine licenses.
 
-```NOTE```: the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
+!!! note
+	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY3OTYzMDA4OCwtMjE5ODgwNTAyLDEwOD
+Y3MjEyMDksLTg1NjAwODcwMF19
+-->
