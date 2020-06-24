@@ -597,64 +597,22 @@ the string itself. For primitive types like list, tuples, dicts a standard repre
 
 `dict(\*args)`
 
-Return a new dictionary initialized from an optional 
-
-*
-```
-
-args.
-
-If no 
-
-```
-*
-```
-
-args is given, an empty dictionary is created. If a single positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.
+Return a new dictionary initialized from an optional *args. If no *args is given, an empty dictionary is created. If a single positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.
 Otherwise, if more than a positional argument is given, each pair of arguments is inserted in the dictionary with the first argument of the pair being the key and the second argument the value.
 If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
 If the number of positional arguments is odd, the value for the last key is None.
 
 
----
-#### `#!py3 set()`
+ `set()` `set(\*args)`
 
-!!!abstract "`#!py3 set(\*args)`"
-
-Return a new set initialized from an optional *
-
-```
-*
-```
-
-args.
-
-If no *
-
-```
-*
-```
-
-args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
+Return a new set initialized from an optional *args. If no *args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the set.
 
-frozenset(
----
-#### `#!py3 frozenset()`
+`frozenset()`
 
-!!!abstract "`#!py3 frozenset(\*args)`"
+`frozenset(\*args)`
 
-Return a new frozenset initialized from an optional *args.
-
-If no *
-
-```
-*
-```
-
-args.
-
-If no 
+Return a new frozenset initialized from an optional *args. If no *args.If no 
 
 ```
 *
@@ -673,8 +631,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ0ODM3MTksODE1MTIwMzUzLC0xMz
-k3NjYwMTQzLC0xNDg4OTgxMDIwLDE5NDY5MDM4ODgsMTI2NDU3
-NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0NzkxLC0yMTU5MTI4OT
-AsLTE3ODg4MjI4NDJdfQ==
+eyJoaXN0b3J5IjpbMTQ3NDk2Njg2Myw4MTUxMjAzNTMsLTEzOT
+c2NjAxNDMsLTE0ODg5ODEwMjAsMTk0NjkwMzg4OCwxMjY0NTc0
+MTAyLDE1ODk3NzY3MjIsLTIwNTU3MTQ3OTEsLTIxNTkxMjg5MC
+wtMTc4ODgyMjg0Ml19
 -->
