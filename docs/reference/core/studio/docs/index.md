@@ -269,10 +269,14 @@ The topmost icon selects the currently open project and the folder tree is shown
 
 The user can open more than one project and can switch from a project to another by selecting it from the project top bar.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/opened_project_bar.jpg?raw=true)
+
 Project related commands can be accessed both from the system menu and from the dropdowns in the top right corner of the project view.
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/current_project_panel.png?raw=true)
 
 !!! note
 	**Drag and Drop** feature is available for the project view
+	
 
 ### Projects Browser
 
@@ -419,6 +423,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzMjgwMDgxLC0yMTk4ODA1MDIsMTA4Nj
-cyMTIwOSwtODU2MDA4NzAwXX0=
+eyJoaXN0b3J5IjpbMTY3MjA2NjY1OCwtMjE5ODgwNTAyLDEwOD
+Y3MjEyMDksLTg1NjAwODcwMF19
 -->
