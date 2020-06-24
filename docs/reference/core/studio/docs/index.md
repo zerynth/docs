@@ -108,6 +108,9 @@ Once in advanced mode, new device configurations can be created and filled with 
 
 * probe: most used JTAG/SWD probes are supported and can be selected
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm3.png?raw=true)
+
+![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm4.png?raw=true)
 In advanced mode, the behaviour of the “Z” button, console button and uplink button are modified:
 
 
@@ -402,6 +405,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTYzMDA4OCwtMjE5ODgwNTAyLDEwOD
-Y3MjEyMDksLTg1NjAwODcwMF19
+eyJoaXN0b3J5IjpbLTE1MDE5MTE2ODQsLTIxOTg4MDUwMiwxMD
+g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
 -->
