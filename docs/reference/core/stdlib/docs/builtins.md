@@ -482,13 +482,7 @@ x = 58
 
 Return the string representing a character whose byte representation is the integer
 ```i```.  For example, `chr(97)` returns the string `'a'`. This is the
-inverse of `ord()`. 
-
-```
-:exc:`ValueError`
-```
-
- will be raised if ```i``` is
+inverse of `ord()`. `ValueError` will be raised if ```i``` is
 outside the valid range.
 
 
@@ -722,7 +716,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4OTgxMDMxLC0xNDg4OTgxMDIwLDE5ND
+eyJoaXN0b3J5IjpbMTkxODIyMzU3LC0xNDg4OTgxMDIwLDE5ND
 Y5MDM4ODgsMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0
 NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
 -->
