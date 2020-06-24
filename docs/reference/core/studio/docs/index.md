@@ -240,7 +240,8 @@ The user can open more than one project and can switch from a project to another
 
 Project related commands can be accessed both from the system menu and from the dropdowns in the top right corner of the project view.
 
-```NOTE```: **Drag and Drop** feature is available for the project view
+!!! note
+	**Drag and Drop** feature is available for the project view
 
 ### Projects Browser
 
@@ -348,7 +349,8 @@ A the bottom of the Zerynth Studio main window a footer bar displays two types o
 
 * On the rightmost part, a busy indicator appears during operations that takes some time to complete, like compiling, uplinking or updating the system
 
-```NOTE```: When new versions of Zerynth Studio or of the Zerynth Toolchain are released, a manual restart of the Studio is required. The update process is non-disruptive and the previous working version of Zerynth Studio is preserved so that it can be started in case the new version has failed updating correctly.
+!!! note
+	When new versions of Zerynth Studio or of the Zerynth Toolchain are released, a manual restart of the Studio is required. The update process is non-disruptive and the previous working version of Zerynth Studio is preserved so that it can be started in case the new version has failed updating correctly.
 
 ## Quick Search
 
@@ -383,7 +385,8 @@ In the Zerynth Studio Preferences Menu, following options are available:
 
 * **Redeem Licenses**: Open up a dialog where redeemable codes can be turned into virtual machine licenses.
 
-```NOTE```: the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
+!!! note
+	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjAwODcwMF19
+eyJoaXN0b3J5IjpbMTA4NjcyMTIwOSwtODU2MDA4NzAwXX0=
 -->
