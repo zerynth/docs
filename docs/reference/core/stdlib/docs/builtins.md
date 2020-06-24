@@ -489,23 +489,13 @@ inverse of `ord()`. `ValueError` will be raised if ```i``` is outside the valid 
 
 Return true if the ```object``` argument is an instance of the ```class```
 argument, or of a (direct, indirect) subclass thereof.  If ```object``` is not
-an object of the given type, the function always returns false.  If ```class``` is not a class,
-a 
-
-```
-:exc:`TypeError`
-```
-
- exception is raised.
+an object of the given type, the function always returns false.  If ```class``` is not a class, a `TypeError` exception is raised.
 
 In this version of the VM, isinstance is still not compliant with the Python one.
 It is suggested to use isinstance to determine the hierarchy of instances and to use `type()` for primitive types.
 
 
----
-#### `#!py3 print()`
-
-!!!abstract "`#!py3 print(\*args, sep=" ", end="\\n", stream=None)`"
+`print(\*args, sep=" ", end="\\n", stream=None)`
 
 Print ```objects``` to the stream ```stream```, separated by ```sep``` and followed
 by ```end```.  ```sep```, ```end``` and ```stream```, if present, must be given as keyword
@@ -522,19 +512,13 @@ is not present or `None`, `__default_stream` will be used.
 Whether output is buffered is usually determined by ```stream```.
 
 
----
-#### `#!py3 abs()`
-
-!!!abstract "`#!py3 abs(x)`"
+`abs(x)`
 
 Return the absolute value of a number.  The argument may be an
 integer or a floating point number.
 
 
----
-#### `#!py3 all()`
-
-!!!abstract "`#!py3 all(iterable)`"
+`all(iterable)`
 
 Return `True` if all elements of the ```iterable``` are true (or if the iterable
 is empty).  Equivalent to:
@@ -548,10 +532,7 @@ def all(iterable):
 ```
 
 
----
-#### `#!py3 any()`
-
-!!!abstract "`#!py3 any(iterable)`"
+`any(iterable)`"
 
 Return `True` if any element of the ```iterable``` is true.  If the iterable
 is empty, return `False`.  Equivalent to:
@@ -565,27 +546,18 @@ def any(iterable):
 ```
 
 
----
-#### `#!py3 sum()`
-
-!!!abstract "`#!py3 sum(iterable, )`"
+`sum(iterable, )`
 
 Sums ```start``` and the items of an ```iterable``` from left to right and returns the
 total.  ```start``` defaults to `0`.
 
 
----
-#### `#!py3 max()`
-
-!!!abstract "`#!py3 max(\*args)`"
+`max(\*args)`
 
 Return the largest item in args.
 
 
----
-#### `#!py3 min()`
-
-!!!abstract "`#!py3 min(\*args)`"
+`min(\*args)`
 
 Return the smallest item in args.
 
@@ -712,7 +684,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTc2NjAxNDMsLTE0ODg5ODEwMjAsMT
-k0NjkwMzg4OCwxMjY0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3
-MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbMTkzNjM2ODM0MywtMTM5NzY2MDE0MywtMT
+Q4ODk4MTAyMCwxOTQ2OTAzODg4LDEyNjQ1NzQxMDIsMTU4OTc3
+NjcyMiwtMjA1NTcxNDc5MSwtMjE1OTEyODkwLC0xNzg4ODIyOD
+QyXX0=
 -->
