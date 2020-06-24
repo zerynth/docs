@@ -276,7 +276,7 @@ Project related commands can be accessed both from the system menu and from the 
 
 !!! note
 	**Drag and Drop** feature is available for the project view
-	
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/drug_and_drop.png?raw=true"></p>
 
 ### Projects Browser
 
@@ -290,6 +290,8 @@ All projects known to Zerynth Studio are listed in the projects browser panel. P
 
 
 * folder with a book icon: project has been published as a library package
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/project_browser.jpg?raw=true"></p>
 
 ### Examples Browser
 
@@ -423,6 +425,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjA2NjY1OCwtMjE5ODgwNTAyLDEwOD
+eyJoaXN0b3J5IjpbMTA3NDQzNTI2NiwtMjE5ODgwNTAyLDEwOD
 Y3MjEyMDksLTg1NjAwODcwMF19
 -->
