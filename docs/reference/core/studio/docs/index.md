@@ -410,10 +410,14 @@ The quick search bar has some advanced features. It is possible to prefix the se
 
 Finally, by typing `:ztc` followed by a ZTC command, the specified command is executed and the output is shown in the System Log.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-quicksearch.png?raw=true"></p>
+
 ## Preferences Menu
 
 In the Zerynth Studio Preferences Menu, following options are available:
 
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/preferences_menu.png?raw=true"></p>
 
 * ```Profile```: Opens the Profile Section;
 
@@ -438,6 +442,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTg0NTQ3OSwtMjE5ODgwNTAyLDEwOD
+eyJoaXN0b3J5IjpbLTU0MzA5MzA5NSwtMjE5ODgwNTAyLDEwOD
 Y3MjEyMDksLTg1NjAwODcwMF19
 -->
