@@ -210,6 +210,7 @@ In this section the Zerynth User can monitor the status his Zerynth Premium asse
 #### Purchase History Section
 
 By clicking the orange “Purchase History” button, the Purchase History table is displayed.
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/history.png?raw=true)
 
 Through this table the user can retrieve all the information about the owned assets ordered by date with description and creation date; the receipt number is also indicated for purchased assets.
 
@@ -220,6 +221,8 @@ Zerynth Studio integrates a code editor based on the powerful [Ace](https://ace.
 The topmost part of the editor is reserved for tabs. Each tab displays a single project file and files belonging to different projects can be kept open at the same time.
 
 At the bottom of the editor, a status bar displays information about the currently opened file together with a series of menus to alter the editor font and theme. The rightmost menu contains the useful editor commands.
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_studio_shortcut.jpg?raw=true"></p>
 
 Keyboard shortcuts are available:
 
@@ -416,6 +419,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYzNjcxMzksLTIxOTg4MDUwMiwxMD
-g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
+eyJoaXN0b3J5IjpbNDMzMjgwMDgxLC0yMTk4ODA1MDIsMTA4Nj
+cyMTIwOSwtODU2MDA4NzAwXX0=
 -->
