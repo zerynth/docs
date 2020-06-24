@@ -353,6 +353,8 @@ Custom Virtual Machines can be created and managed directly from Zerynth Studio.
 
 3. by importing the custom VM from a Github repository (import from Github)
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_cvm1.png?raw=true"></p>
+
 By selecting option 1 a popup dialog is displayed asking for some info:
 
 
@@ -363,6 +365,8 @@ By selecting option 1 a popup dialog is displayed asking for some info:
 
 
 * the customizable VM to use as a starting point
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_cvm2.png?raw=true"></p>
 
 Once created, the custom VM will appear in the panel with a series of buttons (in order from left to right):
 
@@ -434,6 +438,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzc4Njc4NjgsLTIxOTg4MDUwMiwxMD
-g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
+eyJoaXN0b3J5IjpbLTg4NTg0NTQ3OSwtMjE5ODgwNTAyLDEwOD
+Y3MjEyMDksLTg1NjAwODcwMF19
 -->
