@@ -562,20 +562,14 @@ Return the largest item in args.
 Return the smallest item in args.
 
 
----
-#### `#!py3 len()`
-
-!!!abstract "`#!py3 len(s)`"
+`len(s)`"
 
 Return the length (the number of items) of an object.  The argument may be a
 sequence (such as a string, bytes, tuple, list, or range) or a collection
 (such as a dictionary, set, or frozen set), or any instance defining the method `__len__`.
 
 
----
-#### `#!py3 hex()`
-
-!!!abstract "`#!py3 hex(x, prefix="0x")`"
+`hex(x, prefix="0x")`
 
 Convert an integer number to a lowercase hexadecimal string
 prefixed with ```prefix``` (if not given “0x” is used), for example:
@@ -591,10 +585,7 @@ See also `int()` for converting a hexadecimal string to an
 integer using a base of 16.
 
 
----
-#### `#!py3 str()`
-
-!!!abstract "`#!py3 str(x="")`"
+`str(x="")`
 
 Return a string version of ```x```.  If ```x``` is not
 provided, returns the empty string.
@@ -684,8 +675,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjM2ODM0MywtMTM5NzY2MDE0MywtMT
-Q4ODk4MTAyMCwxOTQ2OTAzODg4LDEyNjQ1NzQxMDIsMTU4OTc3
-NjcyMiwtMjA1NTcxNDc5MSwtMjE1OTEyODkwLC0xNzg4ODIyOD
-QyXX0=
+eyJoaXN0b3J5IjpbODE1MTIwMzUzLC0xMzk3NjYwMTQzLC0xND
+g4OTgxMDIwLDE5NDY5MDM4ODgsMTI2NDU3NDEwMiwxNTg5Nzc2
+NzIyLC0yMDU1NzE0NzkxLC0yMTU5MTI4OTAsLTE3ODg4MjI4ND
+JdfQ==
 -->
