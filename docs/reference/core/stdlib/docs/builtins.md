@@ -342,39 +342,15 @@ Returns the created thread, already started. Raises :exc:`RuntimeError` if no mo
 Suspend the current thread for ```time``` expressed in ```time_units```. All the other threads are free to continue their execution.
 If ```time_unit``` is MICROS, sleep does not suspend the current thread, but starts polling the cycles counter in a loop.
 
-For high precision sleep refer to :mod:`
-
-```
-`
-```
-
-hwtimers
+For high precision sleep refer to :mod:`hwtimers
 
 
----
-#### `#!py3 random()`
-
-!!!abstract "`#!py3 random()`"
-
-
----
-#### `#!py3 random()`
-
-!!!abstract "`#!py3 random(a, b)`"
+`random()` `random(a, b)`
 
 Returns a random integer. If ```a``` and ```b``` are given, the random integer is contained in the range [a,b]. If the board has a builtin Random Number Generator, it is used.
 
 
----
-#### `#!py3 range()`
-
-!!!abstract "`#!py3 range(stop)`"
-
-
----
-#### `#!py3 range()`
-
-!!!abstract "`#!py3 range(start, stop, )`"
+`range(stop)` `range(start, stop, )`
 
 Creates a range object.
 
@@ -774,7 +750,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjEwMTQ3NSwtMTQ4ODk4MTAyMCwxOT
-Q2OTAzODg4LDEyNjQ1NzQxMDIsMTU4OTc3NjcyMiwtMjA1NTcx
-NDc5MSwtMjE1OTEyODkwLC0xNzg4ODIyODQyXX0=
+eyJoaXN0b3J5IjpbLTE4Mjk4MTkyOTUsLTE0ODg5ODEwMjAsMT
+k0NjkwMzg4OCwxMjY0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3
+MTQ3OTEsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
 -->
