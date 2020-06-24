@@ -170,7 +170,8 @@ In this section the Zerynth User can monitor the status his Zerynth Premium asse
 
 * VMs - ChibiOS: the table shows, as above, the status of the available and consumed Zerynth Premium VMs with ChibiOS.
 
-```NOTE```: The difference between Starter and Premium is related to the Zerynth Virtual Machine features:
+!!! note
+	The difference between Starter and Premium is related to the Zerynth Virtual Machine features:
 
 
 * a Starter VM is a basic virtual machine.
@@ -384,5 +385,5 @@ In the Zerynth Studio Preferences Menu, following options are available:
 
 ```NOTE```: the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1MzEwODEzXX0=
+eyJoaXN0b3J5IjpbLTg1NjAwODcwMF19
 -->
