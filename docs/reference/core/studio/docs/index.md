@@ -140,9 +140,13 @@ Inside gdbgui it is possible to place breakpoints on and inside C functions to c
 
 ![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-gdb.png?raw=true)
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-breakpoints.png?raw=true)
+
 ### Zerynth Account Profile Section
 
 Zerynth Studio provides all Zerynth Account Profile information in the Profile Section that can be accessed by clicking the profile icon at the top right of the screen.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/profile_section.png?raw=true)
 
 The Profile Section is divided into five main area:
 
@@ -196,6 +200,7 @@ In this section the Zerynth User can monitor the status his Zerynth Premium asse
 !!! note
 	The difference between Starter and Premium is related to the Zerynth Virtual Machine features:
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/vm_comp_table.png?raw=true)
 
 * a Starter VM is a basic virtual machine.
 
@@ -411,6 +416,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDM2MjA3MCwtMjE5ODgwNTAyLDEwOD
-Y3MjEyMDksLTg1NjAwODcwMF19
+eyJoaXN0b3J5IjpbLTIwOTYzNjcxMzksLTIxOTg4MDUwMiwxMD
+g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
 -->
