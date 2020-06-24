@@ -267,9 +267,7 @@ pwm.write(D3.PWM,400,10,MICROS)
 ```
 
 
-`onPinRise()`
-
-!!!abstract "`#!py3 onPinRise(pin, fun, \*args, debounce=0, time_unit=MILLIS)`"
+`onPinRise(pin, fun, \*args, debounce=0, time_unit=MILLIS)`
 
 Executes ```fun``` with arguments `\*args` everytime ```pin``` goes from `LOW` to `HIGH`.
 If ```fun``` is `None` the corresponding interrupt is disabled.
@@ -283,10 +281,7 @@ Therefore ```fun``` should contains fast code.
 ```debounce``` and ```time_unit``` are used to define a timeout such that ```fun``` is called only if ```pin``` stays high for all the duration of the timeout.
 
 
----
-#### `#!py3 onPinFall()`
-
-!!!abstract "`#!py3 onPinFall(pin, fun, \*args, debounce=0, time_unit=MILLIS)`"
+`onPinFall(pin, fun, \*args, debounce=0, time_unit=MILLIS)`
 
 Executes ```fun``` with arguments `\*args` everytime ```pin``` goes from `HIGH` to `LOW`.
 If ```fun``` is `None` the corresponding interrupt is disabled.
@@ -300,11 +295,7 @@ Can be used together with `onPinRise()` on the same pin.
 
 ## Builtin Functions
 
-
----
-#### `#!py3 int()`
-
-!!!abstract "`#!py3 int(x=0, base=10)`"
+`int(x=0, base=10)`
 
 Return an integer object constructed from a number or string ```x```, or return
 `0` if no arguments are given.  If ```x``` is a floating point number, it is
@@ -324,10 +315,7 @@ means to interpret exactly as a code literal, so that the actual base is 2,
 `int('010')` is, as well as `int('010', 8)`.
 
 
----
-#### `#!py3 type()`
-
-!!!abstract "`#!py3 type(x)`"
+`type(x)`
 
 Return an integer representing the type of x.
 The following are the builtin constants returned by type():
@@ -339,10 +327,7 @@ PNONE, PEXCEPTION, PNATIVE, PSYSOBJ, PDRIVER, PTHREAD
 ```
 
 
----
-#### `#!py3 thread()`
-
-!!!abstract "`#!py3 thread(fun, \*args, prio=PRIO_NORMAL, size=-1)`"
+`thread(fun, \*args, prio=PRIO_NORMAL, size=-1)`"
 
 Function ```fun``` is launched in a new thread using args as its parameters.
 ```fun``` must be a normal function or a methods, other callables are not supported yet.
@@ -350,19 +335,9 @@ Function ```fun``` is launched in a new thread using args as its parameters.
 ```prio``` sets the thread priority and accepts one of `PRIO_LOWEST`, `PRIO_LOWER`, `PRIO_LOW`, `PRIO_NORMAL`, `PRIO_HIGH`, `PRIO_HIGHER`, `PRIO_HIGHEST`.
 ```size``` is the memory in bytes , reserved for the thread inner workings. Negative values select the VM default size.
 
-Returns the created thread, already started. Raises 
+Returns the created thread, already started. Raises :exc:`RuntimeError` if no more threads can be created.
 
-```
-:exc:`RuntimeError`
-```
-
- if no more threads can be created.
-
-
----
-#### `#!py3 sleep()`
-
-!!!abstract "`#!py3 sleep(time, time_unit=MILLIS)`"
+`sleep(time, time_unit=MILLIS)`
 
 Suspend the current thread for ```time``` expressed in ```time_units```. All the other threads are free to continue their execution.
 If ```time_unit``` is MICROS, sleep does not suspend the current thread, but starts polling the cycles counter in a loop.
@@ -799,7 +774,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODg5ODEwMjAsMTk0NjkwMzg4OCwxMj
-Y0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3MTQ3OTEsLTIxNTkx
-Mjg5MCwtMTc4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbMTM3MjEwMTQ3NSwtMTQ4ODk4MTAyMCwxOT
+Q2OTAzODg4LDEyNjQ1NzQxMDIsMTU4OTc3NjcyMiwtMjA1NTcx
+NDc5MSwtMjE1OTEyODkwLC0xNzg4ODIyODQyXX0=
 -->
