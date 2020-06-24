@@ -110,7 +110,9 @@ Once in advanced mode, new device configurations can be created and filled with 
 
 ![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm3.png?raw=true)
 
-![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm4.png?raw=true)
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm4.png?raw=true)
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zerynth_advdm5.png?raw=true)
 In advanced mode, the behaviour of the “Z” button, console button and uplink button are modified:
 
 
@@ -132,7 +134,11 @@ Zerynth Studio integrates the powerful [gdbgui](https://gdbgui.com/) as a [GDB](
 
 Clicking the Debug Session button, current project is uplinked via JTAG/SWD and a gdbgui window is open.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-start.png?raw=true)
+
 Inside gdbgui it is possible to place breakpoints on and inside C functions to control execution flow, inspect MCU memory and C variable values.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/zstudio-debug-session-gdb.png?raw=true)
 
 ### Zerynth Account Profile Section
 
@@ -405,6 +411,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDE5MTE2ODQsLTIxOTg4MDUwMiwxMD
-g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
+eyJoaXN0b3J5IjpbMTg0NDM2MjA3MCwtMjE5ODgwNTAyLDEwOD
+Y3MjEyMDksLTg1NjAwODcwMF19
 -->
