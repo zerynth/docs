@@ -55,7 +55,10 @@ It contains two separate sections; on the left side there is the list of opened 
 
 Zerynth Studio automatically recognizes connected devices, being them development boards, usb to serial converters or board programming tools. The connected devices are listed in the device management widget. The currently selected device will be used as a target device by the compiler and the uplinker.
 
-```NOTE```: Project Debugging is available only coupled with Advanced Device Management
+!!!
+	Project Debugging is available only coupled with Advanced Device Management
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/select_device.jpg?raw=true"></p>
 
 By clicking “Choose target devices…” in the dropdown, it is possible to add a target device not physically connected the the development machine. This way, projects can be verified for such target, but obviously not uplinked.
 
@@ -74,6 +77,8 @@ Once a device has been connected, the buttons to the right of the device list al
 
 
 * **Device information and PinMap**: the central buttons can be used to retrieve device information (expecially the serial port and/or the mounted volume) and to show the device pinmap. Please refer to the Programming Guide section for more details on how pin names and functionalities are organized in Zerynth.
+
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/core/studio/docs/img/select_device.jpg?raw=true"></p>
 
 When a serial console is opened, the port parameters are automatically configured to the defaults of the selected device. The baud rate for a device is displayed during bytecode upload. To open a serial port configured with a non default baudrate, a serial terminal like Putty should be used. It is important to close the serial terminal before trying to uplink or open a Zerynth serial console, because concurrent serial port usage from different programs is not allowed.
 
@@ -392,6 +397,6 @@ In the Zerynth Studio Preferences Menu, following options are available:
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTg4MDUwMiwxMDg2NzIxMjA5LC04NT
-YwMDg3MDBdfQ==
+eyJoaXN0b3J5IjpbLTIxMzExNTM1MjMsLTIxOTg4MDUwMiwxMD
+g2NzIxMjA5LC04NTYwMDg3MDBdfQ==
 -->
