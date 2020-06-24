@@ -152,42 +152,25 @@ Zerynth VM extends Python with builtins functions to handle the General Purpose 
 These functions resembles the ones used by Arduino, but are more flexible.
 
 
----
-#### `#!py3 pinMode()`
-
-!!!abstract "`#!py3 pinMode(pin, mode)`"
+`pinMode(pin, mode)`
 
 Sets the pin ```pin``` in mode ```mode```. Allowed values for ```mode``` are `INPUT, OUTPUT, INPUT_PULLUP, INPUT_PULLDOWN, OUTPUT_PUSHPULL, OUTPUT_OPENDRAIN, INPUT_ANALOG`
 
 
----
-#### `#!py3 digitalRead()`
-
-!!!abstract "`#!py3 digitalRead(pin)`"
+`digitalRead(pin)`
 
 Returns the state of the pin ```pin```. The state can be `LOW` or `HIGH`
 
 
----
-#### `#!py3 digitalWrite()`
-
-!!!abstract "`#!py3 digitalWrite(pin, val)`"
+`digitalWrite(pin, val)`
 
 Sets the pin ```pin``` to the value ```val```. If val is zero, ```pin``` is set to `LOW`, otherwise to `HIGH`
 
-
----
-#### `#!py3 pinToggle()`
-
-!!!abstract "`#!py3 pinToggle(pin)`"
+`pinToggle(pin)`
 
 Sets the pin ```pin``` to the value opposite to the current pin value. If value is zero, ```pin``` is set to `HIGH`, otherwise to `LOW`
 
-
----
-#### `#!py3 analogRead()`
-
-!!!abstract "`#!py3 analogRead(pin, samples=1)`"
+`analogRead(pin, samples=1)`
 
 Reads analog values from ```pin``` that must be one of the Ax pins. If ```samples``` is 1 or not given, returns the integer value read from ```pin```.
 If ```samples``` is greater than 1, returns a tuple of integers of size ```samples```.
@@ -225,10 +208,8 @@ x = adc.read(A3)
 ```
 
 
----
-#### `#!py3 analogWrite()`
 
-!!!abstract "`#!py3 analogWrite(pin, period, pulse, time_unit=MILLIS, npulses=0)`"
+`analogWrite(pin, period, pulse, time_unit=MILLIS, npulses=0)`
 
 Activate PWM (Pulse Width Modulation) on pin ```pin``` (must be one of the PWMx pins). The state of ```pin``` is periodically switched between `LOW` and `HIGH` according to parameters:
 
@@ -286,8 +267,7 @@ pwm.write(D3.PWM,400,10,MICROS)
 ```
 
 
----
-#### `#!py3 onPinRise()`
+`onPinRise()`
 
 !!!abstract "`#!py3 onPinRise(pin, fun, \*args, debounce=0, time_unit=MILLIS)`"
 
@@ -819,7 +799,7 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTYzMTk0NiwxOTQ2OTAzODg4LDEyNj
-Q1NzQxMDIsMTU4OTc3NjcyMiwtMjA1NTcxNDc5MSwtMjE1OTEy
-ODkwLC0xNzg4ODIyODQyXX0=
+eyJoaXN0b3J5IjpbLTE0ODg5ODEwMjAsMTk0NjkwMzg4OCwxMj
+Y0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3MTQ3OTEsLTIxNTkx
+Mjg5MCwtMTc4ODgyMjg0Ml19
 -->
