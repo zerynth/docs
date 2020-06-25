@@ -17,7 +17,7 @@ If ```connection``` is given, the initial connection step is skipped and ```conn
 
 ```get``` returns a `Response()` instance.
 
-Exceptions can be raised: :exc:`HTTPConnectionError` when the HTTP server can’t be contacted; :exc:`IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 If the parameter ```stream_callback``` is given, the HTTP body data will be retrieved in chunk s of ```stream_chunk``` size and passed as arguments to ```stream_callback``` one by one. If ```stream_callback``` is used, the content of `Response()` instance is the last chunk.
 
@@ -37,25 +37,10 @@ If ```json``` is provided (always as dictionary), json data will send in the bod
 
 ```post``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
----
-#### `#!py3 put()`
-
-!!!abstract "`#!py3 put(url, data=None, json=None, headers=None, ctx=None)`"
+`put(url, data=None, json=None, headers=None, ctx=None)`
 
 Implements the PUT method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -66,7 +51,8 @@ other headers are set to defaults if not given: for example “Connection: close
 If ```data``` is provided (always as dictionary), each pair (key, value) will be form-encoded and send in the body of the request with {“content-type”:”application/x-www-form-urlencoded”} appended in the headers.
 If ```json``` is provided (always as dictionary), json data will send in the body of the request with {“content-type”:”application/json”} appended in the headers.
 
-```NOTE```: if both (```data``` and ```json```) dict are provided, json data are ignored and post request is performed with urlencoded data.
+!!! note
+	if both (```data``` and ```json```) dict are provided, json data are ignored and post request is performed with urlencoded data.
 
 ```put``` returns a `Response()` instance.
 
@@ -279,5 +265,5 @@ the connection used to communicate with the server, or None if it has been close
 
 Returns a string representing the content section of the HTTP response
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTkyOTcyOV19
+eyJoaXN0b3J5IjpbLTYzODIxNTY4NF19
 -->
