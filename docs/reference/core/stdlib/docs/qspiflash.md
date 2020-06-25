@@ -117,17 +117,19 @@ my_flash[addr] = data
 ```
 
 
-`erase_sector(addr)
+`erase_sector(addr)`
+
 Erase a whole sector passing the ```addr``` address of any byte contained in it.
 All sector bytes set to 0xff.
 
 
-### erase_block(addr)
+`erase_block(addr)`
 Erase a memory block passing the ```addr``` address of any byte contained in it.
 All block bytes set to 0xff.
 
 
-### read_data(addr, n=1)
+`read_data(addr, n=1)`
+
 Read ```n``` bytes of data starting from address ```addr```.
 
 Reading is also allowed via bracket notation. The following is valid syntax:
@@ -137,21 +139,21 @@ my_data = my_flash[addr:addr+n]
 ```
 
 
-### chip_erase()
+`chip_erase()`
 Erase the whole memory.
 All memory bytes set to 0xff.
 
 
-### done()
+`done()`
 Close the QspiFlash peripheral.
 
 
-### wakeup()
+`wakeup()`
 Wake Up the QspiFlash peripheral from sleep mode.
 
 
-### sleep()
+`sleep()`
 Put the QspiFlash peripheral in sleep mode.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTAwMTU0MThdfQ==
+eyJoaXN0b3J5IjpbLTk0NzA1MDcxMF19
 -->
