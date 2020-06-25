@@ -11,34 +11,18 @@ Implements the GET method of the HTTP protocol. A tcp connection is made to the 
 If ```params``` is given as a dictionary, each pair (key, value) is appended to the requested url, properly encoded and sent.
 
 If ```headers``` is given as a dictionary, each pair (key, value) is appropriately sent as a HTTP request header. Mandatory headers are transparently handled: “Host:” is always derived by parsing ```url```;
-other headers are set to defaults if not given: for example “Connection: close” is sent if no value for “Connection” is specified in ```headers```. To request a permanent connection,
-```headers``` must contain the pair {“Connection”:”Keep-Alive”}.
+other headers are set to defaults if not given: for example “Connection: close” is sent if no value for “Connection” is specified in ```headers```. To request a permanent connection, ```headers``` must contain the pair {“Connection”:”Keep-Alive”}.
 
 If ```connection``` is given, the initial connection step is skipped and ```connection``` is used for communication. This feature allows the reuse of a connection to a HTTP server opened with a “Keep-Alive” header.
 
 ```get``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: :exc:`HTTPConnectionError` when the HTTP server can’t be contacted; :exc:`IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 If the parameter ```stream_callback``` is given, the HTTP body data will be retrieved in chunk s of ```stream_chunk``` size and passed as arguments to ```stream_callback``` one by one. If ```stream_callback``` is used, the content of `Response()` instance is the last chunk.
 
 
----
-#### `#!py3 post()`
-
-!!!abstract "`#!py3 post(url, data=None, json=None, headers=None, ctx=None)`"
+`post(url, data=None, json=None, headers=None, ctx=None)`
 
 Implements the POST method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -295,5 +279,5 @@ the connection used to communicate with the server, or None if it has been close
 
 Returns a string representing the content section of the HTTP response
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxODg2MDEyXX0=
+eyJoaXN0b3J5IjpbLTk0OTkyOTcyOV19
 -->
