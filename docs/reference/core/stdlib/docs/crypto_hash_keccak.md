@@ -43,18 +43,18 @@ This class allows the generation of Keccak hashes. It is thread safe. By default
 This behaviour can be changed by passing a different value for ```hashtype```
 
 
-### update(data)
+`update(data)`
 Update the sha object with the string ```data```. Repeated calls are equivalent to a single call with the concatenation of all
 the arguments: m.update(a); m.update(b) is equivalent to m.update(a+b).
 
 
-### digest()
+`digest()`
 Return the digest of the strings passed to the update method so far. This is a byte object with length depending on
 the Keccak variant.
 
 
-### hexdigest()
+`hexdigest()`
 Like digest except the digest is returned as a string containing only hexadecimal digits.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY4MzM4NDFdfQ==
+eyJoaXN0b3J5IjpbNTQ4MTM0ODM4XX0=
 -->
