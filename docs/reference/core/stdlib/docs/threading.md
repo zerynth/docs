@@ -79,15 +79,11 @@ object’s `run()` method to be invoked in a separate thread
 of control.
 
 This method will raise a `RuntimeError` if called more than once
-on the same thread object.
-
+on the same thread object. 
 ```prio``` and ```size``` are used to set the thread priority and the stack size.
 
 
----
-#### `#!py3 run()`
-
-!!!abstract "`#!py3 run()`"
+`run()`
 
 Method representing the thread’s activity.
 
@@ -97,10 +93,7 @@ the ```target``` argument, if any, with sequential arguments taken
 from the ```args``` argument.
 
 
----
-#### `#!py3 join()`
-
-!!!abstract "`#!py3 join(timeout=-1)`"
+`join(timeout=-1)`
 
 Wait until the thread terminates. This blocks the calling thread until
 the thread whose `join()` method is called terminates – either
@@ -120,10 +113,7 @@ block until the thread terminates.
 A thread can be `join()`ed many times.
 
 
----
-#### `#!py3 is_alive()`
-
-!!!abstract "`#!py3 is_alive()`"
+`is_alive()`
 
 Return whether the thread is alive.
 
@@ -131,20 +121,14 @@ This method returns `True` just before the `run()` method
 starts until just after the `run()` method terminates.
 
 
----
-#### `#!py3 name()`
-
-!!!abstract "`#!py3 name()`"
+`name()`
 
 A string used for identification purposes only. It has no semantics.
 Multiple threads may be given the same name.  The initial name is set by
 the constructor.
 
 
----
-#### `#!py3 ident()`
-
-!!!abstract "`#!py3 ident()`"
+`ident()`
 
 The ‘thread identifier’ of this thread or `None` if the thread has not
 been started.  This is a non negative integer. Thread identifiers may be recycled
@@ -154,10 +138,7 @@ available even after the thread has exited.
 ### Lock class
 
 
----
-#### `#!py3 Lock()`
-
-!!!abstract "`#!py3 Lock()`"
+`Lock()`
 
 A Lock object can be in two states: ```locked``` or ```unlocked```. When a Lock object is created it starts ```unlocked```.
 
@@ -207,10 +188,7 @@ thread(threadfun,"World")
 Both threads in the example will compete to call `print(msg)`. The Lock object ensure that while one thread is printing on the serial port, the other one is blocked, waiting for the message to be printed.
 
 
----
-#### `#!py3 acquire()`
-
-!!!abstract "`#!py3 acquire(blocking=True, timeout=-1)`"
+`acquire(blocking=True, timeout=-1)`
 
 Acquire a lock, blocking or non-blocking.
 
@@ -231,10 +209,7 @@ The return value is `True` if the lock is acquired successfully,
 `False` if not (for example if the ```timeout``` expired).
 
 
----
-#### `#!py3 release()`
-
-!!!abstract "`#!py3 release()`"
+`release()`
 
 Release a lock.  This can be called from any thread, not only the thread
 which has acquired the lock.
@@ -246,10 +221,7 @@ to proceed.
 ### Semaphore class
 
 
----
-#### `#!py3 Semaphore()`
-
-!!!abstract "`#!py3 Semaphore(value=1)`"
+`Semaphore(value=1)`
 
 This class implements semaphore objects.  A semaphore manages a counter
 representing the number of `release()` calls minus the number of
@@ -258,14 +230,7 @@ blocks if necessary until it can return without making the counter negative.
 If not given, ```value``` defaults to 1.
 
 The optional argument gives the initial ```value``` for the internal counter; it
-defaults to `1`. If the ```value``` given is less than 0, 
-
-```
-:exc:`ValueError`
-```
-
- is
-raised.
+defaults to `1`. If the ```value``` given is less than 0, `ValueError`israised.
 
 
 ---
@@ -564,5 +529,5 @@ calling thread has not acquired the lock when this method is called, a
 
  is raised.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDY2NjI1NzJdfQ==
+eyJoaXN0b3J5IjpbMTU4MjM4MjE3NV19
 -->
