@@ -152,20 +152,14 @@ It is the bytearray containing the byte version of the content section of a HTTP
 A dictionary with all the response headers
 
 
----
-#### `#!py3 connection()`
-
-!!!abstract "`connection()`"
+`connection()`
 
 the connection used to communicate with the server, or None if it has been closed.
 
 
----
-#### `#!py3 text()`
-
-!!!abstract "`#!py3 text()`"
+`text()`
 
 Returns a string representing the content section of the HTTP response
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE5MDk4MzhdfQ==
+eyJoaXN0b3J5IjpbLTg5MTk0MTM5XX0=
 -->
