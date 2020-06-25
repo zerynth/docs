@@ -84,7 +84,7 @@ To initialize a custom external memory qspi flash several params must be passed 
 
 
 
-### get_geometry()
+`get_geometry()`
 Return a tuple holding flash geometry:
 
 
@@ -103,7 +103,8 @@ Return a tuple holding flash geometry:
 * ```page_size```, Page size of the qspi flash
 
 
-### write_data(addr, data)
+`write_data(addr, data)`
+
 Write data ```data``` starting from address ```addr```.
 ```data``` can be a bytearray or a list of integers less than 256.
 
@@ -116,7 +117,7 @@ my_flash[addr] = data
 ```
 
 
-### erase_sector(addr)
+`erase_sector(addr)
 Erase a whole sector passing the ```addr``` address of any byte contained in it.
 All sector bytes set to 0xff.
 
@@ -151,3 +152,6 @@ Wake Up the QspiFlash peripheral from sleep mode.
 
 ### sleep()
 Put the QspiFlash peripheral in sleep mode.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzOTAwMTU0MThdfQ==
+-->
