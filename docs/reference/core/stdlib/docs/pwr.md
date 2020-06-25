@@ -15,7 +15,8 @@ There exists two methods of reducing power consumption:
 The first method is implemented internally by the VM using, when possibile, a tickless version of the underlying RTOS.
 The second method rests on the programmer.
 
-```NOTE```: During a low power mode the VM stops taking into account the passing of time! Semaphores, locks, suspended threads and software timers will behave as if low power mode was never entered.
+!!! note
+	During a low power mode the VM stops taking into account the passing of time! Semaphores, locks, suspended threads and software timers will behave as if low power mode was never entered.
 
 Power management is a very platform specific feature of each microcontroller, therefore each function of this module is subject to the mcu limitations.
 For reference:
@@ -214,3 +215,6 @@ For low power modes timeouts:
     * The time spent in STANDBY mode is not returned by `go_to_sleep()` (always return 0)
 
 The special purpose memory for low power mode status is the RTC memory (400 bytes available).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU1MTc5ODI4XX0=
+-->
