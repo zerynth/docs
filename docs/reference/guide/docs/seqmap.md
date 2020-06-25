@@ -30,7 +30,7 @@ Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic sequence types: lists, tuples, and range objects.Additional sequence types tailored for processing ofbinary data [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) are described in dedicated sections.
+There are three basic sequence types: lists, tuples, and range objects.Additional sequence types tailored for processing ofbinary data [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#textseq) are described in dedicated sections.
 
 ### Common Sequence Operations
 
@@ -432,7 +432,8 @@ The conversion flag characters are:
 
 Note:
 
-1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
+	!!! note
+	1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
 2. Hexadecimal conversion does not produce the “0x” prefix.
 3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.The precision determines the number of digits after the decimal point and defaults to 6.
 4. If precision is `N`, the output is truncated to `N` characters.
@@ -551,7 +552,8 @@ Return a bytes or bytearray object which is the concatenation of the binary data
 
 Return a copy of the sequence with all occurrences of subsequence *old* replaced by *new.*
 
-NOTE: The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
+NOTE: !!! note
+	The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
 
 
 **`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`**
@@ -690,23 +692,23 @@ Instances of `set()` and `frozenset()` provide the following
 operations:
 
 
-`len(s)`
+`    len(s)`
 
 Return the cardinality of set *s*.
 
 
-`x in s`
+`    x in s`
 
 Test *x* for membership in *s*.
 
 
-`x not in s`
+`    x not in s`
 
 Test *x* for non-membership in *s*.
 
 
 
-`isdisjoint(other)`
+`    isdisjoint(other)`
 
 Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
@@ -716,7 +718,7 @@ Return `True` if the set has no elements in common with *other*.  Sets are disjo
 
 Test whether every element in the set is in *other.*
 
-`set < other`
+`    set < other`
 
 Test whether the set is a proper subset of *other*, that is,
 `set <= other and set != other`.
@@ -893,7 +895,9 @@ Update the dictionary with the key/value pairs from *other*, overwriting existin
 `update()` accepts another dictionary object.
 
 
-**`values()`** Return a new view of the dictionary’s values.
+**`values()`** 
+
+Return a new view of the dictionary’s values.
 
 
 
@@ -913,16 +917,16 @@ Update the dictionary with the key/value pairs from *other*, overwriting existin
 
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzgy
-LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozODU2
+LCJlbmQiOjM4NzN9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstMTU3NDk0ODEzOCwtOTk0MD
-EyODYxLC0yMjA2Mjc3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5
-MiwtMTM2MTkwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NT
-Q4NDYyOCwxMTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4Mjky
-LDU5OTk0NDc5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzOD
-E2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAw
-NywxMTEzOTQ3MDA1XX0=
+NjY4NzkwfX0sImhpc3RvcnkiOls2NDQyNjEzNzUsLTE1NzQ5ND
+gxMzgsLTk5NDAxMjg2MSwtMjIwNjI3NzE1LDE5MzIxOTQ0NzQs
+LTE0MzY1MTM0OTIsLTEzNjE5MDI1MywyMTA3ODE2NTU1LDM4OT
+Y1NTg5MCw3NjU0ODQ2MjgsMTE3NjMzMTE0LC0xODUyNDc1NzY4
+LDM3MzY4ODI5Miw1OTk5NDQ3OTEsLTEzMDM3MTc5MjksOTQ1OT
+IwMDQsLTE4MzgxNjUzMTIsODk0MTA5MDI2LDIwMzc0NzA3NDEs
+LTE1MDU0MzMwMDddfQ==
 -->
