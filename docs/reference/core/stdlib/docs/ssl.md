@@ -668,9 +668,11 @@ ateccx08a.hwcrypto_init(I2C0, 0) # select private key stored in slot 0
 
 Returns a tuple to be passed as parameter during secure socket creation.
 
-```NOTE```: ```cacert```, ```clicert``` and ```pkey``` can be bytes, bytearray, strings or instances of classes that have a ```size``` and ```read``` method, allowing to pass as parameters open files or resources.
+!!! note
+	```cacert```, ```clicert``` and ```pkey``` can be bytes, bytearray, strings or instances of classes that have a ```size``` and ```read``` method, allowing to pass as parameters open files or resources.
 
-```NOTE```: ```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
+!!! note
+	```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzk5ODU2MV19
+eyJoaXN0b3J5IjpbLTE4MzY0MTIxNjFdfQ==
 -->
