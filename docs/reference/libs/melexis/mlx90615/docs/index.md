@@ -10,26 +10,12 @@ The infrared thermometer comes factory calibrated with a digital SMBus output gi
 
 
 * Supply Voltage (Vdd): from 2.6 V to 3.4 V
-
-
 * Operation Temperature (Top): from -20 °C to 85 °C
-
-
 * SCL Clock Frequency (Fscl): 100 kHz
-
-
 * Supply Current (Idd): from 1.3 mA to 1.5 mA
-
-
 * Read Sample Time: 14 us (stardard mode), 1.5 us (overdrive mode)
-
-
 * Measurement Resolution: 0.02 °C
-
-
 * Power saving mode
-
-
 * Customizable PWM output for continuous reading
 
 Here below, the Zerynth driver for the Melexis MLX90615 and some examples to better understand how to use it.
@@ -41,10 +27,6 @@ Contents:
     -   [Technical Details](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/docs/index.html#technical-details)
         -   [MLX90615 Module](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/docs/official_lib.melexis.mlx90615_mlx90615.html)
         -   [Examples](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/examples/examples.html)
-* MLX90615 Module
-
-
-    * MLX90615 class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYyMTE4NzAzLC0xMTAzNjQ5NTM1XX0=
+eyJoaXN0b3J5IjpbLTExMDM2NDk1MzVdfQ==
 -->

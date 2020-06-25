@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.sh01
+The following are a list of examples for lib.xinabox.sh01.
 
 ## Capacitive Touch Detection
 

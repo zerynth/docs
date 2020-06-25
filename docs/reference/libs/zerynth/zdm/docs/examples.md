@@ -1,13 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.zdm
+The following are a list of examples for lib.zerynth.zdm.
 
 ## Simple ZDM
 
 
-In this example you can see how to create a ZDM device and connect it to the Zerynth Device Manager and send
-periodically data.
-It simulates a weather sensor that sends temperature and pressure values to the ZDM periodically.
+In this example you can see how to create a ZDM device and connect it to the Zerynth Device Manager and send periodically data. It simulates a weather sensor that sends temperature and pressure values to the ZDM periodically.
 
 You can use this example to test ZDM Webhooks and Ubidots integration.
 
@@ -100,11 +98,9 @@ except Exception as e:
 ## ZDM Jobs
 
 
-A basic example showing ZDM Jobs and how to handle them.
-Write your own jobs, then add them in the jobs dictionary with a custom key.
+A basic example showing ZDM Jobs and how to handle them. Write your own jobs, then add them in the jobs dictionary with a custom key.
 
-Once your device is connected to the ZDM, you can send it job commands using the key you defined and your device
-will execute functions remotely.
+Once your device is connected to the ZDM, you can send it job commands using the key you defined and your device will execute functions remotely.
 
 
 ```main.py```
@@ -181,12 +177,9 @@ except Exception as e:
 ## FOTA Updates
 
 
-Connect your device to ZDM and start updating the firmware seamlessly.
-In this example you can see how to create a ZDM device and connect it to the Zerynth Device Manager.
+Connect your device to ZDM and start updating the firmware seamlessly. In this example you can see how to create a ZDM device and connect it to the Zerynth Device Manager.
 
-In this example, a FOTA callback function is defined, which is called during the FOTA update steps.
-The FOTA callback allows you to accept or refuse a FOTA from your devices using the return value.
-If the callback returns True the device will accept the FOTA update requests, if the callback return False
+In this example, a FOTA callback function is defined, which is called during the FOTA update steps. The FOTA callback allows you to accept or refuse a FOTA from your devices using the return value. If the callback returns True the device will accept the FOTA update requests, if the callback return False
 the device will refuse it.
 
 Try to edit the function e do your tests using ZDM FOTA commands.
@@ -255,11 +248,9 @@ except Exception as e:
 ## ZDM_events
 
 
-ZDM_events example show you how to send events from your device.
-You could use events to let the device notify a specific status or condition with a message,
-for example when a variable reach a threshold value.
+ZDM_events example show you how to send events from your device. You could use events to let the device notify a specific status or condition with a message, for example when a variable reach a threshold value.
 
-This example creates a ZDM Device instance that starts a loop and sends an example event every 10 seconds
+This example creates a ZDM Device instance that starts a loop and sends an example event every 10 seconds.
 
 
 ```main.py```
@@ -320,13 +311,9 @@ except Exception as e:
 ## ZDM_Advanced
 
 
-This is an advanced example aimed at showing all the ZDM functionalities integrated in an embedded firmware.
-The example simulates the use of the ZDM in an industrial IOT scenario where industrial machines are
-monitored via sensors interfaced with zerynth powered boards
+This is an advanced example aimed at showing all the ZDM functionalities integrated in an embedded firmware. The example simulates the use of the ZDM in an industrial IOT scenario where industrial machines are monitored via sensors interfaced with zerynth powered boards
 
-In this example we simulate the acquisition of 3 variables from 2 industrial machines (a CNC and an industrial pump). 
-The setup also includes two relays used to control a Red and a Green light indicators placed near the machine.
-The lights are used to notify the operator on remote alarms sent directly by the ZDM as jobs.
+In this example we simulate the acquisition of 3 variables from 2 industrial machines (a CNC and an industrial pump). The setup also includes two relays used to control a Red and a Green light indicators placed near the machine. The lights are used to notify the operator on remote alarms sent directly by the ZDM as jobs.
 
 
 ```main.py```

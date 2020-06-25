@@ -1,12 +1,12 @@
 # MODBUS Library
 
-To talk with a slave device an object of type ModbusTCP or ModbusSerial must be        initialized, depending on what kind of communication is needed.
+To talk with a slave device an object of type ModbusTCP or ModbusSerial must be initialized, depending on what kind of communication is needed.
 
 If serial communication is used, a device object that implements write, read and close methods is needed:
 
 Example:
 
-```
+```py
 import gpio
 import streams
 import mcu
@@ -60,407 +60,262 @@ When a connection with a slave device has been established, coils and registers 
 ## ModbusTCP class
 
 
----
-#### `#!py3 ModbusTCP()`
-
-!!!abstract "`#!py3 ModbusTCP(identifier)`"
+**`class ModbusTCP(identifier)`**
 
 Create an instance of the ModbusTCP class which allow modbus communication with slave device using TCP.
 
 
-* ```Arguments```
+**Arguments: identifier** – The slave device identifier, used in the header of every packet.
+
+
+
+**`read_coils(address, n)`**
+
+
+**Arguments:**
 
     
-    * ```identifier``` – The slave device identifier, used in the header of every packet.
+* **address** – The starting address
+* **n** – the number of coils to read from address
 
 
+Read the status of **n** coils, starting from **address**.
 
----
-#### `#!py3 read_coils()`
-
-!!!abstract "`#!py3 read_coils(address, n)`"
+**Returns:** a python list containing the values of the coils.
 
 
-* ```Arguments```
-
-    
-    * ```address``` – The starting address
+**`read_input(address, n)`**
 
 
-    * ```n``` – the number of coils to read from address
-
-
-Read the status of ```n``` coils, starting from ```address```.
-
-Returns:
-
-    a python list containing the values of the coils.
-
-
----
-#### `#!py3 read_input()`
-
-!!!abstract "`#!py3 read_input(address, n)`"
-
-
-* ```Arguments```
+**Arguments**
 
     
-    * ```address``` – The starting address
+* **address** – The starting address
+* **n** – the number of input register to read, starting from **address**
 
 
-    * ```n``` – the number of input register to read, starting from ```address```
+**Returns:** a python list containing the values of the input registers.
 
 
-Returns:
-
-    a python list containing the values of the input registers
+**`read_holding(address, n)`**
 
 
----
-#### `#!py3 read_holding()`
-
-!!!abstract "`#!py3 read_holding(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – The starting address
+    
+* **address** – The starting address
+* **n** – the number of holding register to read, starting from **address**
 
 
-    * ```n``` – the number of holding register to read, starting from ```address```
+**Returns:** a python list containing the values of the holding registers.
 
 
-Returns:
-
-    a python list containing the values of the holding registers
+**`read_discrete(address, n)`**
 
 
----
-#### `#!py3 read_discrete()`
-
-!!!abstract "`#!py3 read_discrete(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – The starting address
+* **address** – The starting address
+* **n** – the number of discrete register to read, starting from **address**
 
 
-    * ```n``` – the number of discrete register to read, starting from ```address```
+**Returns:** a python list containing the values of the discrete registers.
 
 
-Returns:
-
-    a python list containing the values of the discrete registers
+**`write_coil(address, n)`**
 
 
----
-#### `#!py3 write_coil()`
-
-!!!abstract "`#!py3 write_coil(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the coil
+* **address** – the address of the coil
+* **value** – the new value
 
 
-    * ```value``` – the new value
+**Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
 
-Returns:
-
-    1 if the write has been successfull. Otherwhise an exception will be thrown
+**`write_register(address, n)`**
 
 
----
-#### `#!py3 write_register()`
-
-!!!abstract "`#!py3 write_register(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the register
+* **address** – the address of the register
+* **value** – the new value
 
 
-    * ```value``` – the new value
+**Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
 
-Returns:
-
-    1 if the write has been successfull. Otherwhise an exception will be thrown
+**`write_multiple_coils(address, n, values)`
 
 
----
-#### `#!py3 write_multiple_coils()`
-
-!!!abstract "`#!py3 write_multiple_coils(address, n, values)`"
-
-
-* ```Arguments```
-
-    
-    * ```address``` – the address of the first coil
+**Arguments:**
+   
+* **address** – the address of the first coil
+* **n** – the number of coils
+* **value** – a python list containing the new values
 
 
-    * ```n``` – the number of coils
+**Returns:** the number of coils written.
 
 
-    * ```value``` – a python list containing the new values
+**`write_multiple_registers(address, n, values)`**
 
 
-Returns:
-
-    the number of coils written
-
-
----
-#### `#!py3 write_multiple_registers()`
-
-!!!abstract "`#!py3 write_multiple_registers(address, n, values)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the first holding register
+* **address** – the address of the first holding register
+* **n** – the number of registers
+* **value** – a python list containing the new values
 
 
-    * ```n``` – the number of registers
+**Returns:** the number of holding registers written
 
 
-    * ```value``` – a python list containing the new values
+**`connect(address, )`**
 
 
-Returns:
-
-    the number of holding registers written
-
-
----
-#### `#!py3 connect()`
-
-!!!abstract "`#!py3 connect(address, )`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the ip address of the slave device
-
-
-    * ```port``` – port on which the slave device is listening to
+* **address** – the ip address of the slave device
+* **port** – port on which the slave device is listening to
 
 
 
----
-#### `#!py3 close()`
+**`close()`**
 
-!!!abstract "`#!py3 close()`"
-
-close the connection with the slave device
+Close the connection with the slave device.
 
 ## ModbusSerial class
 
 
----
-#### `#!py3 ModbusSerial()`
-
-!!!abstract "`#!py3 ModbusSerial(identifier, serial_device)`"
+**`class ModbusSerial(identifier, serial_device)`**
 
 Create an instance of the ModbusSerial class which allow modbus communication with slave device using RTU.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```identifier``` – The slave device identifier
-
-
-    * ```serial_device``` – an object representing the device. It must implement read, write and close methods to         communicate with the serial port. See ```rs485``` in the example folder.
-
-
-    * ```receive_sleep``` – timeout on the receiving function;
+* **identifier** – The slave device identifier
+* **serial_device** – an object representing the device. It must implement read, write and close methods to communicate with the serial port. See ```rs485``` in the example folder.
+* **receive_sleep** – timeout on the receiving function;
 
 
 
----
-#### `#!py3 read_coils()`
-
-!!!abstract "`#!py3 read_coils(address, n)`"
+**`read_coils(address, n)`**
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – The starting address
+* **address** – The starting address
+* **n** – the number of coils to read from address
 
 
-    * ```n``` – the number of coils to read from address
+Read the status of **n** coils, starting from **address**.
+
+**Returns:** a python list containing the values of the coils.
 
 
-Read the status of ```n``` coils, starting from ```address```.
-
-Returns:
-
-    a python list containing the values of the coils.
+**`read_input(address, n)`**
 
 
----
-#### `#!py3 read_input()`
-
-!!!abstract "`#!py3 read_input(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – The starting address
+* **address** – The starting address
+* **n** – the number of input register to read, starting from **address**
 
 
-    * ```n``` – the number of input register to read, starting from ```address```
+**Returns:** a python list containing the values of the input registers.
 
 
-Returns:
-
-    a python list containing the values of the input registers
+**`read_holding(address, n)`**
 
 
----
-#### `#!py3 read_holding()`
-
-!!!abstract "`#!py3 read_holding(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – The starting address
+* **address** – The starting address
+* **n** – the number of holding register to read, starting from **address**
 
 
-    * ```n``` – the number of holding register to read, starting from ```address```
+**Returns:** a python list containing the values of the holding registers.
 
 
-Returns:
-
-    a python list containing the values of the holding registers
+**`read_discrete(address, n)`**
 
 
----
-#### `#!py3 read_discrete()`
-
-!!!abstract "`#!py3 read_discrete(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – The starting address
+* **address** – The starting address
+* **n** – the number of discrete register to read, starting from **address**
 
 
-    * ```n``` – the number of discrete register to read, starting from ```address```
+**Returns:** a python list containing the values of the discrete registers.
 
 
-Returns:
-
-    a python list containing the values of the discrete registers
+**`write_coil(address, n)`**
 
 
----
-#### `#!py3 write_coil()`
-
-!!!abstract "`#!py3 write_coil(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the coil
+* **address** – the address of the coil
+* **value** – the new value
 
 
-    * ```value``` – the new value
+**Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
 
-Returns:
+**`write_register(address, n)`**
 
-    1 if the write has been successfull. Otherwhise an exception will be thrown
-
-
----
-#### `#!py3 write_register()`
-
-!!!abstract "`#!py3 write_register(address, n)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the register
+* **address** – the address of the register
+* **value** – the new value
 
 
-    * ```value``` – the new value
+**Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
 
-Returns:
-
-    1 if the write has been successfull. Otherwhise an exception will be thrown
+**`write_multiple_coils(address, n, values)`**
 
 
----
-#### `#!py3 write_multiple_coils()`
-
-!!!abstract "`#!py3 write_multiple_coils(address, n, values)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the first coil
+* **address** – the address of the first coil
+* **n** – the number of coils
+* **value** – a python list containing the new values
 
 
-    * ```n``` – the number of coils
+**Returns:** the number of coils written.
 
 
-    * ```value``` – a python list containing the new values
+**`write_multiple_registers(address, n, values)`**
 
 
-Returns:
-
-    the number of coils written
-
-
----
-#### `#!py3 write_multiple_registers()`
-
-!!!abstract "`#!py3 write_multiple_registers(address, n, values)`"
-
-
-* ```Arguments```
+**Arguments:**
 
     
-    * ```address``` – the address of the first holding register
+* **address** – the address of the first holding register
+* **n** – the number of registers
+* **value** – a python list containing the new values
 
 
-    * ```n``` – the number of registers
+**Returns:** the number of holding registers written.
 
 
-    * ```value``` – a python list containing the new values
-
-
-Returns:
-
-    the number of holding registers written
-
-
----
-#### `#!py3 close()`
-
-!!!abstract "`#!py3 close()`"
+**`close()`**
 
 Close the serial port by calling the close function implemented by the device class.

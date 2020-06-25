@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.aws.iot
+The following are a list of examples for lib.aws.iot.
 
 ## Controlled Publish Period
 

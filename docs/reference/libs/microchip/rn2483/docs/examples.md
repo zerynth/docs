@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.microchip.rn2483
+The following are a list of examples for lib.microchip.rn2483.
 
 ## EUI
 
 
-Get EUI from RN2483 for registration to LoRaWAN server
+Get EUI from RN2483 for registration to LoRaWAN server.
 
 
 
@@ -25,7 +25,7 @@ print("DEVEUI: ", rn2483.get_hweui(SERIAL1, D16))
 ## LoRa Ping
 
 
-Basic example of LoRa usage with RN2483
+Basic example of LoRa usage with RN2483.
 
 
 
@@ -58,7 +58,7 @@ while True:
 ## Custom EUI
 
 
-Join a LoRaWAN network using the over-the-air activation with a custom EUI
+Join a LoRaWAN network using the over-the-air activation with a custom EUI.
 
 
 

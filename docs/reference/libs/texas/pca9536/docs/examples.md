@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.texas.pca9536
+The following are a list of examples for lib.texas.pca9536.
 
 ## Toggle outputs on OC01
 
@@ -77,8 +77,7 @@ while True:
 This is an advanced example utilizing BME280, PCA9536 and the WolkAbout IoT Platform.
 
 BME280 data consisting of ambient temperature, humidity and pressure is sent to WolkAbout Platform.
-OC01 outputs can be controlled from within the dashboad. 
-Upload the `CW02-SW01-OC01-deviceTemplate.json` to WolkAbout IoT Platfrom.
+OC01 outputs can be controlled from within the dashboad.  Upload the `CW02-SW01-OC01-deviceTemplate.json` to WolkAbout IoT Platfrom.
 
 
 

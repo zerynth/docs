@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.lwmqtt
+The following are a list of examples for lib.zerynth.lwmqtt.
 
 ## LWMQTT at mosquitto.org
 

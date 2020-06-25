@@ -15,23 +15,11 @@ More information at [STMicroelectronics dedicated page](https://www.st.com/en/me
 
 
 * Wide supply voltage, 1.71 V to 3.6 V
-
-
 * Ultra-low power consumption
-
-
 * ±2g/±4g/±8g/±16g full-scale 3D Accelerometer
-
-
 * ±125/±250/±500/±1000/±2000/±4000 dps full-scale 3D Gyroscope
-
-
 * I2C/SPI digital output interface
-
-
 * 16-bit data output
-
-
 * Extended temperature range from -40 to +105 °C
 
 Below, Zerynth driver documentation for STM ISM330DHCX chip.
@@ -39,4 +27,6 @@ Below, Zerynth driver documentation for STM ISM330DHCX chip.
 Contents:
 
 
-* ISM330DHCX Module
+* [ISM330DHCX Module](https://docs.zerynth.com/latest/official/lib.stm.ism330dhcx/docs/official_lib.stm.ism330dhcx_ism330dhcx.html)
+* [Examples](https://docs.zerynth.com/latest/official/lib.stm.ism330dhcx/examples/examples.html)
+    * [get data](https://docs.zerynth.com/latest/official/lib.stm.ism330dhcx/examples/examples.html#get-data)

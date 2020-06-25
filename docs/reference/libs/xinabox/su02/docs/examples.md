@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.su02
+The following are a list of examples for lib.xinabox.su02.S
 
 ## Read Input State
 

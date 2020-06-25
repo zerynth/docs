@@ -14,7 +14,8 @@ Here below, the Zerynth Library for Servo Motors and some examples to better und
 Contents:
 
 
-* Servo Library
-
-
-    * Servo class
+* [Servo Library](https://docs.zerynth.com/latest/official/lib.zerynth.servo/docs/official_lib.zerynth.servo_servo.html)
+    * [Servo class](https://docs.zerynth.com/latest/official/lib.zerynth.servo/docs/official_lib.zerynth.servo_servo.html#servo-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.servo/examples/examples.html)
+    * [Servo Motor Basics](https://docs.zerynth.com/latest/official/lib.zerynth.servo/examples/examples.html#servo-motor-basics)
+    * [Servo Motor Animation](https://docs.zerynth.com/latest/official/lib.zerynth.servo/examples/examples.html#servo-motor-animation)

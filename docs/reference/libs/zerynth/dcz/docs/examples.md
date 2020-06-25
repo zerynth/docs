@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.dcz
+The following are a list of examples for lib.zerynth.dcz.
 
 ## DCZ
 
 
-An example illustrating the usage of device configuration zones
+An example illustrating the usage of device configuration zones.
 
 
 
@@ -81,14 +81,13 @@ except Exception as e:
 ## DCZ for AWS
 
 
-Simple automatic provisioning of AWS things managed with a DCZ.
-For the esample to work, a properly configured AWS Account must be present:
+Simple automatic provisioning of AWS things managed with a DCZ. For the esample to work, a properly configured AWS Account must be present:
 
 * IAM credentials of a user with access to IoT Core
 * an IoT Policy to enable device connection and publishing
 
 
-```
+```py
 # example device policy
 {
   "Version": "2012-10-17",

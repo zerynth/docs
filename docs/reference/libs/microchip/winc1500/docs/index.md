@@ -11,14 +11,8 @@ The WINC1500 has 4 Mb of flash memory which can be used for system software.
 
 
 * Operating Voltage Range: from 3.0 V to 4.2 V
-
-
 * Operating Temperature Range: from -40 °C to 85 °C
-
-
 * Frequency Range: from 2412 MHz to 2472 MHz
-
-
 * Power Consumption: 70 mA (RX Mode) to 172 mA (TX Mode)
 
 Below, Zerynth driver documentation for Microchip WINC1500 wifi chip.
@@ -26,4 +20,4 @@ Below, Zerynth driver documentation for Microchip WINC1500 wifi chip.
 Contents:
 
 
-* WINC1500 Module
+* [WINC1500 Module](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/official_lib.microchip.winc1500_winc1500.html)

@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.aws.greengrass
+The following are a list of examples for lib.aws.greengrass.
 
 ## Discover and Publish
 

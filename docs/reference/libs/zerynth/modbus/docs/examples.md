@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.modbus
+The following are a list of examples for lib.zerynth.modbus.
 
 
 

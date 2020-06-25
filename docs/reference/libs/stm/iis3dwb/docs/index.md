@@ -15,26 +15,12 @@ More information at [STMicroelectronics dedicated page](https://www.st.com/en/me
 
 
 * Wide supply voltage, 2.1 V to 3.6 V
-
-
 * Ultra-low power consumption
-
-
 * ±2g/±4g/±8g/±16g full-scale 3D Accelerometer
-
-
 * Ultra-wide and flat frequency response range: from dc to 6 kHz (±3 dB point)
-
-
 * Ultra-low noise density: down to 75 µg/√Hz in 3-axis mode / 60 µg/√Hz in single-axis mode
-
-
 * I2C/SPI digital output interface
-
-
 * 16-bit data output
-
-
 * Extended temperature range from -40 to +105 °C
 
 Below, Zerynth driver documentation for STM IIS3DWB chip.
@@ -42,4 +28,6 @@ Below, Zerynth driver documentation for STM IIS3DWB chip.
 Contents:
 
 
-* IIS3DWB Module
+* [IIS3DWB Module](https://docs.zerynth.com/latest/official/lib.stm.iis3dwb/docs/official_lib.stm.iis3dwb_iis3dwb.html)
+* [Example](https://docs.zerynth.com/latest/official/lib.stm.iis3dwb/examples/examples.html)
+     * [get data](https://docs.zerynth.com/latest/official/lib.stm.iis3dwb/examples/examples.html#get-data)

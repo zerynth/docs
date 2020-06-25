@@ -7,7 +7,7 @@ For WIFI security, only WPA2 is currently supported.
 
 Usage example:
 
-```
+```py
 import streams
 from wireless import wifi
 from stm.spwf01sa import spwf01sa

@@ -9,28 +9,28 @@ Python supports a concept of iteration over containers.  This is implemented usi
 One method needs to be defined for container objects to provide iteration support:
 
 
-**container.\__iter__()**
+**`container.\__iter__()`**
 
 Return an iterator object.  The object is required to support the iterator protocol described below.
 
  iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
 
 
- **iterator.\__iter__()**
+ **`iterator.\__iter__()`**
  
 Return the iterator object itself.  This is required to allow both containersand iterators to be used with the `for` and `in` statements.
 
 
-**iterator.\__next__()**
+**`iterator.\__next__()`**
 
 Return the next item from the container.  If there are no further items, raise the `StopIteration` exception.
 
-Once an iterator’s `__next__()` method raises`StopIteration`, it must continue to do so on subsequent calls.
+Once an iterator’s `__next__()` method raises `StopIteration`, it must continue to do so on subsequent calls.
 Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic sequence types: lists, tuples, and range objects.Additional sequence types tailored for processing ofbinary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#textseq) aredescribed in dedicated sections.
+There are three basic sequence types: lists, tuples, and range objects.Additional sequence types tailored for processing ofbinary data [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) are described in dedicated sections.
 
 ### Common Sequence Operations
 
@@ -38,7 +38,7 @@ The operations in the following table are supported by most sequence types,both 
 
 This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, *j*and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
 
-The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
+The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition) operations have the same priority as the corresponding numeric operations.
 
 | Operation            | Result                                                               | Notes  |
 |----------------------|----------------------------------------------------------------------|--------|
@@ -62,7 +62,7 @@ Notes:
 
 1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences(such as `str()`, `bytes()` and `bytearray()`) also use them for subsequence testing:
 
-```
+```py
 >>> "gg" in "eggs"
 True
 ```
@@ -70,7 +70,7 @@ True
 
 2. Values of **n** less than `0` are treated as `0` (which yields an empty sequence of the same type as **s**).  Note that items in the sequence *s* are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
-```
+```py
 >>> lists = [[]] * 3
 >>> lists
 [[], [], []]
@@ -81,7 +81,7 @@ True
 
 What has happened is that `[[]]` is a one-element list containing an empty list, so all three elements of `[[]] * 3` are references to this single empty list.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
 
-```
+```py
 >>> lists = [[] for i in range(3)]
 >>> lists[0].append(3)
 >>> lists[1].append(5)
@@ -318,7 +318,7 @@ If *sep* is given, consecutive delimiters are not grouped together and are deeme
 
 For example:
 
-```
+```py
 >>> '1,2,3'.split(',')
 ['1', '2', '3']
 >>> '1,2,3'.split(',', maxsplit=1)
@@ -333,7 +333,7 @@ returns `[]`.
 
 For example:
 
-```
+```py
 >>> '1 2 3'.split()
 ['1', '2', '3']
 >>> '1 2 3'.split(maxsplit=1)
@@ -351,7 +351,7 @@ Return `True` if string starts with the *prefix, otherwise return `False`. With 
 
 Return a copy of the string with the leading and trailing characters removed. The chars* argument is a string specifying the set of characters to be removed. If omitted, the *chars argument defaults to removing whitespace. The chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
-```
+```py
 >>> '   spacious   '.strip()
 'spacious'
 >>> 'www.example.com'.strip('cmowz.')
@@ -430,8 +430,9 @@ The conversion flag characters are:
 | 's'        | String (converts any Python object using str()).                                                                                           | (4)   |
 | '%'        | No argument is converted, results in a '%' character in the result.                                                                        |       |
 
-	!!! note
-	1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
+Note:
+
+1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
 2. Hexadecimal conversion does not produce the “0x” prefix.
 3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.The precision determines the number of digits after the decimal point and defaults to 6.
 4. If precision is `N`, the output is truncated to `N` characters.
@@ -503,14 +504,14 @@ of the result may depend on the order of operands.
 NOTE: Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as their arguments, just as the methods on strings accept bytes as their 
 arguments.  For example, you can write:
 
-```
+```py
 a = "abc"
 b = a.replace(b"a", "f")
 ```
 
 and:
 
-```
+```py
 a = b"abc"
 b = a.replace("a", b"f")
 ```
@@ -550,8 +551,7 @@ Return a bytes or bytearray object which is the concatenation of the binary data
 
 Return a copy of the sequence with all occurrences of subsequence *old* replaced by *new.*
 
-!!! note
-	The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
+NOTE: The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
 
 
 **`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`**
@@ -566,7 +566,7 @@ If *sep* is given, consecutive delimiters are not grouped together and are deeme
 
 For example:
 
-```
+```py
 >>> b'1,2,3'.split(b',')
 [b'1', b'2', b'3']
 >>> b'1,2,3'.split(b',', maxsplit=1)
@@ -579,7 +579,7 @@ If sep is not specified, a different splitting algorithm is applied: runs of con
 
 For example:
 
-```
+```py
 >>> b'1 2 3'.split()
 [b'1', b'2', b'3']
 >>> b'1 2 3'.split(maxsplit=1)
@@ -594,7 +594,7 @@ For example:
 
 Return a copy of the binary sequence with the leading and trailing characters removed. The *chars* argument is a string or binary sequence specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
-```
+```py
 >>> b'   spacious   '.strip()
 b'spacious'
 >>> b'www.example.com'.strip(b'cmowz.')
@@ -690,23 +690,23 @@ Instances of `set()` and `frozenset()` provide the following
 operations:
 
 
-    len(s)
+`len(s)`
 
 Return the cardinality of set *s*.
 
 
-    x in s
+`x in s`
 
 Test *x* for membership in *s*.
 
 
-    x not in s
+`x not in s`
 
 Test *x* for non-membership in *s*.
 
 
 
-    isdisjoint(other)
+`isdisjoint(other)`
 
 Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
@@ -716,7 +716,7 @@ Return `True` if the set has no elements in common with *other*.  Sets are disjo
 
 Test whether every element in the set is in *other.*
 
-    set < other
+`set < other`
 
 Test whether the set is a proper subset of *other*, that is,
 `set <= other and set != other`.
@@ -893,9 +893,7 @@ Update the dictionary with the key/value pairs from *other*, overwriting existin
 `update()` accepts another dictionary object.
 
 
-**`values()`**
-
-Return a new view of the dictionary’s values.
+**`values()`** Return a new view of the dictionary’s values.
 
 
 
@@ -920,11 +918,11 @@ LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
 t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
 MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
 xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstOTA2MjMzMTkxLC0xNTc0OT
-Q4MTM4LC05OTQwMTI4NjEsLTIyMDYyNzcxNSwxOTMyMTk0NDc0
-LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzOD
-k2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2
-OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
-kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
-LC0xNTA1NDMzMDA3XX0=
+NjY4NzkwfX0sImhpc3RvcnkiOlstMTU3NDk0ODEzOCwtOTk0MD
+EyODYxLC0yMjA2Mjc3MTUsMTkzMjE5NDQ3NCwtMTQzNjUxMzQ5
+MiwtMTM2MTkwMjUzLDIxMDc4MTY1NTUsMzg5NjU1ODkwLDc2NT
+Q4NDYyOCwxMTc2MzMxMTQsLTE4NTI0NzU3NjgsMzczNjg4Mjky
+LDU5OTk0NDc5MSwtMTMwMzcxNzkyOSw5NDU5MjAwNCwtMTgzOD
+E2NTMxMiw4OTQxMDkwMjYsMjAzNzQ3MDc0MSwtMTUwNTQzMzAw
+NywxMTEzOTQ3MDA1XX0=
 -->

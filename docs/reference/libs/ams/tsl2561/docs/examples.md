@@ -5,7 +5,7 @@ The following are a list of examples for lib.ams.tsl2561.
 ## Read Ambient Light from TSL2561
 
 
-Basic example to read the illuminance from TSL2561 sensor
+Basic example to read the illuminance from TSL2561 sensor.
 
 
 

@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.genann
+The following are a list of examples for lib.zerynth.genann.
 
 ## Hello XOR
 
 
-Solve the XOR problem with a pre-trained ANN
+Solve the XOR problem with a pre-trained ANN.
 
 
 

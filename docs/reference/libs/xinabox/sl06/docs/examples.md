@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.sl06
+The following are a list of examples for lib.xinabox.sl06.
 
 ## Ambient Light Detection
 

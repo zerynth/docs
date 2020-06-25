@@ -9,17 +9,9 @@ More information at [Maxim dedicated page](https://www.maximintegrated.com/en/pr
 
 
 * Supply Voltage (Vdd): from 4.0 V to 5.5 V
-
-
 * Operation Temperature (Top): from 0 °C to 70 °C
-
-
 * Operating Supply Current: 330 mA
-
-
 * Continue Power Dissipation (Ta 85 °C): ~1W
-
-
 * SPI interface
 
 Here below, the Zerynth driver for the Maxim MAX729.
@@ -27,13 +19,11 @@ Here below, the Zerynth driver for the Maxim MAX729.
 
  Contents:
  
- -   [
-
-* MAX7219 Module](https://docs.zerynth.com/latest/official/lib.maxim.max7219/docs/official_lib.maxim.max7219_max7219.html)
+ -   [MAX7219 Module](https://docs.zerynth.com/latest/official/lib.maxim.max7219/docs/official_lib.maxim.max7219_max7219.html)
  -   [Examples](https://docs.zerynth.com/latest/official/lib.maxim.max7219/examples/examples.html)
      -   [led matrix](https://docs.zerynth.com/latest/official/lib.maxim.max7219/examples/examples.html#led-matrix)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTcwOTAwLC05NjcwOTM4MzhdfQ==
+eyJoaXN0b3J5IjpbLTk2NzA5MzgzOF19
 -->

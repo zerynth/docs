@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.siemens.s7
+The following are a list of examples for lib.siemens.s7.
 
 ## DB write and read
 

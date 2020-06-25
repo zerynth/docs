@@ -185,7 +185,7 @@ Attach callback *fn* to *vpin*. *fn* is called from an ISR when there is a statu
 
 **`typedef void(*extCbkFn)(int slot int dir)`**
 
-The type of  in `vhalPinAttachInterrupt()`. slot` is the slot the callback has been attached to. *dir* is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
+The type of  in `vhalPinAttachInterrupt()`. slot is the slot the callback has been attached to. *dir* is 0 if the callback has been called on a falling edge, non-zero on a rising edge.
 
 if *timeout* is provided, *fn* is called only the status of the pin remains stable for at least *timeout* units of time, effectively implenting debouncing.
 
@@ -284,7 +284,7 @@ typedef struct _vhal_adc_capture {
 
 A structure used to initialize the ADC.
 
-```
+```c
 typedef struct _vhal_adc_conf {
   uint32_t samples_per_second;
   uint32_t resolution;
@@ -631,7 +631,7 @@ I2C is a multimaster and multislave bus used to exchange data between microcontr
 
 The following structure is used to configure the I2C bus:
 
-```
+```c
 typedef struct _vhal_i2c_conf {
   uint32_t clock;
   uint16_t addr;
@@ -738,7 +738,7 @@ Serial Peripheral Interface is one of the most used communication standards in e
 
 The following structure is used to configure the SPI bus:
 
-```
+```c
 typedef struct _vhal_spi_conf {
   uint32_t clock;
   uint16_t miso;
@@ -950,7 +950,7 @@ Return 0 on success.
 
 Fill *vhal_time_info* structure with time information retrieved from the RTC.
 
-```
+```c
 typedef struct _timeinfo {
     uint32_t tv_seconds;
     uint32_t tv_microseconds;

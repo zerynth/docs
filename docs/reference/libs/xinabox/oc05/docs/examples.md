@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.oc05
+The following are a list of examples for lib.xinabox.oc05.
 
 ## Servo Position
 

@@ -2,9 +2,9 @@
 
 This module implements the Zerynth driver for the STM32 F4 family Ethernet.
 
-This module supports SSL/TLS
+This module supports SSL/TLS.
 
 Contents:
 
 
-* STM32F4 Native Ethernet Module
+* [STM32F4 Native Ethernet Module](https://docs.zerynth.com/latest/official/lib.stm.f4eth/docs/official_lib.stm.f4eth_f4eth.html)
