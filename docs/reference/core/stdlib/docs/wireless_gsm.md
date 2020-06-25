@@ -209,10 +209,7 @@ Parameter `unread` selects unread SMS only if set to True. `maxsms` defines the 
 SMS with index greater than or equal to `offset`. If the device stores many SMS, it is suggested to read them in chunks by incrementing `offset`.
 
 
----
-#### `#!py3 send_sms()`
-
-!!!abstract "`send_sms(num, txt)`"
+`send_sms(num, txt)`
 
 Try to send the SMS with text `txt` to receiver `num`.
 
@@ -221,36 +218,24 @@ If the returned integer is negative, it has not been possible to send the SMS. A
 the underlying drivers fails while sending the SMS.
 
 
----
-#### `#!py3 delete_sms()`
-
-!!!abstract "`#!py3 delete_sms(index)`"
+`delete_sms(index)`
 
 Delete the SMS identified by `index`. The value of `index` to use must be taken from the result of list_sms.
 
 
----
-#### `#!py3 pending_sms()`
-
-!!!abstract "`#!py3 pending_sms()`"
+`pending_sms()`
 
 Return the number of SMS received since startup. It is not necessarily equal to the number of unread SMS.
 
 
----
-#### `#!py3 get_smsc()`
-
-!!!abstract "`#!py3 get_smsc()`"
+`get_smsc()`
 
 Return a string representing the Short Message Service Center
 
 
----
-#### `#!py3 set_smsc()`
-
-!!!abstract "`#!py3 set_smsc(smsc)`"
+`set_smsc(smsc)`
 
 Set the Short Message Service Center to the value of `smsc`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTA3NTU3NF19
+eyJoaXN0b3J5IjpbLTMyMjUxMTE5OV19
 -->
