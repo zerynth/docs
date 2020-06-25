@@ -56,25 +56,10 @@ If ```json``` is provided (always as dictionary), json data will send in the bod
 
 ```put``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
----
-#### `#!py3 patch()`
-
-!!!abstract "`#!py3 patch(url, data=None, headers=None, ctx=None)`"
+`patch(url, data=None, headers=None, ctx=None)`
 
 Implements the PATCH method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -85,29 +70,15 @@ other headers are set to defaults if not given: for example “Connection: close
 If ```data``` is provided (always as dictionary), each pair (key, value) will be form-encoded and send in the body of the request with {“content-type”:”application/x-www-form-urlencoded”} appended in the headers.
 If ```json``` is provided (always as dictionary), json data will send in the body of the request with {“content-type”:”application/json”} appended in the headers.
 
-```NOTE```: if both (```data``` and ```json```) dict are provided, json data are ignored and post request is performed with urlencoded data.
+!!! note
+	if both (```data``` and ```json```) dict are provided, json data are ignored and post request is performed with urlencoded data.
 
 ```patch``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
----
-#### `#!py3 delete()`
-
-!!!abstract "`#!py3 delete(url, headers=None, ctx=None)`"
+`delete(url, headers=None, ctx=None)`
 
 Implements the DELETE method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -117,25 +88,10 @@ other headers are set to defaults if not given: for example “Connection: close
 
 ```delete``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
----
-#### `#!py3 head()`
-
-!!!abstract "`#!py3 head(url, headers=None, ctx=None)`"
+`head(url, headers=None, ctx=None)`
 
 Implements the HEAD method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -265,5 +221,5 @@ the connection used to communicate with the server, or None if it has been close
 
 Returns a string representing the content section of the HTTP response
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODIxNTY4NF19
+eyJoaXN0b3J5IjpbLTEyMDg1ODI1MDFdfQ==
 -->
