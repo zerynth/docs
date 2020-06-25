@@ -49,8 +49,6 @@ DAC is started. It is necessary to start the driver before writing any value.
 ```data``` is output on selected pin.
 
 ```data``` parameter can be:
-
-
 * a single integer value:
 
 ```
@@ -127,5 +125,5 @@ Each ```value``` in the list must be an integer between ```lowflex``` and ```hig
 
 ```lowflex``` and ```highflex``` default values are set to the correct values for Sam3X mcu.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTM3NTEyN119
+eyJoaXN0b3J5IjpbLTY4NjA5MjI3NV19
 -->
