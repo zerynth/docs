@@ -874,7 +874,8 @@ This class inherits all ATECC508A methods.
 
 **`hwcrypto_init(i2c_drv,key_slot,i2c_addr=0x60,dev_type=DEV_ATECC508A)`**
 
-**NOTE:** this function is available only when `ZERYNTH_HWCRYPTO_ATECCx08A` is set in project.yml file.
+!!! note
+	 this function is available only when `ZERYNTH_HWCRYPTO_ATECCx08A` is set in project.yml file.
 
 
 **Arguments:**
@@ -889,7 +890,7 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTgzMjY4MSwtMTk0NDM4OTY4LDQ1OT
+eyJoaXN0b3J5IjpbLTY1OTg3NjgwNCwtMTk0NDM4OTY4LDQ1OT
 k1NzkwMywtMjIyNzQxNDk1LDI1NDk4NzQ5OSwxNDA4MTk1NDE2
 LC01NDI1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEsNjk1NT
 Y0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFd
