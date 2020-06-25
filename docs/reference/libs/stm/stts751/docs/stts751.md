@@ -35,98 +35,20 @@ Sets the device’s configuration registers.
 
 * **odr** : sets the Output Data Rate of the device. Available values are:
 
-| Value
-
- | Output Data Rate
-
- | Constant Name
-
- |
-| ----- | ---------------- | ------------- |
-| 0x00
-
-  | 62,5 Mhz
-
-         | ODR_AVAILABLE[“ODR_62mHz5”]
-
- |
-| 0x01
-
-  | 125 MHz
-
-          | ODR_AVAILABLE[“ODR_125mHz”]
-
- |
-| 0x02
-
-  | 250 MHz
-
-          | ODR_AVAILABLE[“ODR_250mHz”]
-
- |
-| 0x03
-
-  | 500 MHz
-
-          | ODR_AVAILABLE[“ODR_500mHz”]
-
- |
-| 0x04
-
-  | 1 Hz
-
-             | ODR_AVAILABLE[“ODR_1Hz”]
-
-    |
-| 0x05
-
-  | 2 Hz
-
-             | ODR_AVAILABLE[“ODR_2Hz”]
-
-    |
-| 0x06
-
-  | 4 Hz
-
-             | ODR_AVAILABLE[“ODR_4Hz”]
-
-    |
-| 0x07
-
-  | 8 Hz
-
-             | ODR_AVAILABLE[“ODR_8Hz”]
-
-    |
-| 0x08
-
-  | 16 Hz
-
-            | ODR_AVAILABLE[“ODR_16Hz”]
-
-   |
-| 0x09
-
-  | 32 Hz
-
-            | ODR_AVAILABLE[“ODR_32Hz”]
-
-   |
-| 0x80
-
-  | OFF
-
-              | ODR_AVAILABLE[“ODR_OFF”]
-
-    |
-| 0x90
-
-  | ONE SHOT
-
-         | ODR_AVAILABLE[“ODR_ONE_SHOT”]
-
- |
+| Value | Output Data Rate | Constant Name                 |
+|-------|------------------|-------------------------------|
+| 0x00  | 62,5 Mhz         | ODR_AVAILABLE[“ODR_62mHz5”]   |
+| 0x01  | 125 MHz          | ODR_AVAILABLE[“ODR_125mHz”]   |
+| 0x02  | 250 MHz          | ODR_AVAILABLE[“ODR_250mHz”]   |
+| 0x03  | 500 MHz          | ODR_AVAILABLE[“ODR_500mHz”]   |
+| 0x04  | 1 Hz             | ODR_AVAILABLE[“ODR_1Hz”]      |
+| 0x05  | 2 Hz             | ODR_AVAILABLE[“ODR_2Hz”]      |
+| 0x06  | 4 Hz             | ODR_AVAILABLE[“ODR_4Hz”]      |
+| 0x07  | 8 Hz             | ODR_AVAILABLE[“ODR_8Hz”]      |
+| 0x08  | 16 Hz            | ODR_AVAILABLE[“ODR_16Hz”]     |
+| 0x09  | 32 Hz            | ODR_AVAILABLE[“ODR_32Hz”]     |
+| 0x80  | OFF              | ODR_AVAILABLE[“ODR_OFF”]      |
+| 0x90  | ONE SHOT         | ODR_AVAILABLE[“ODR_ONE_SHOT”] |
 
 * **resolution** : sets the Resolution in bit of the conversion. Available values are:
 
@@ -261,3 +183,6 @@ Sets the Thermal hysteresis threshold. Once Therm output has asserted, it will n
 **`set_timeout(enable)`**
 
 Enables the timeout for the sensor readings (from 25 to 35 ms). Available values for ‘enable’ flag are ‘True’ or ‘False’.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjU0Mjg5MTM4XX0=
+-->
