@@ -6,7 +6,8 @@ stored in files or from network connections, among other sources.  It uses
 Format Strings as compact descriptions of the layout of the C
 structs and the intended conversion to/from Python values.
 
-```NOTE```: By default, the result of packing a given C struct includes pad bytes in
+!!! note
+	By default, the result of packing a given C struct includes pad bytes in
 order to maintain proper alignment for the C types involved; similarly,
 alignment is taken into account when unpacking.  This behavior is chosen so
 that the bytes of a packed struct correspond exactly to the layout in memory
@@ -22,33 +23,33 @@ argument.  This refers to objects of class bytearray.
 The module defines the following exception and functions:
 
 
-### pack(fmt, v1, v2, ...)
+`pack(fmt, v1, v2, ...)`
 Return a bytes object containing the values ```v1```, ```v2```, … packed according
 to the format string ```fmt```.  The arguments must match the values required by
 the format exactly.
 
 
-### pack_into(fmt, buffer, offset, v1, v2, ...)
+`pack_into(fmt, buffer, offset, v1, v2, ...)`
 Pack the values ```v1```, ```v2```, … according to the format string ```fmt``` and
 write the packed bytes into the writable buffer ```buffer``` starting at
 position ```offset```.  Note that ```offset``` is a required argument.
 
 
-### unpack(fmt, buffer)
+`unpack(fmt, buffer)`
 Unpack from the buffer ```buffer``` (presumably packed by `pack(fmt, ...)`)
 according to the format string ```fmt```.  The result is a tuple even if it
 contains exactly one item.  The buffer’s size in bytes must match the
 size required by the format, as reflected by `calcsize()`.
 
 
-### unpack_from(fmt, buffer, offset=0)
+`unpack_from(fmt, buffer, offset=0)`
 Unpack from ```buffer``` starting at position ```offset```, according to the format
 string ```fmt```.  The result is a tuple even if it contains exactly one
 item.  The buffer’s size in bytes, minus ```offset```, must be at least
 the size required by the format, as reflected by `calcsize()`.
 
 
-### calcsize(fmt)
+`calcsize(fmt)`
 Return the size of the struct (and hence of the bytes object produced by
 `pack(fmt, ...)`) corresponding to the format string ```fmt```.
 
@@ -499,8 +500,8 @@ A basic example of packing/unpacking three integers:
 ```
 >>> from struct import *
 >>> pack('hhl', 1, 2, 3)
-b'     '
->>> unpack('hhl', b'     ')
+b''
+>>> unpack('hhl', b'')
 (1, 2, 3)
 >>> calcsize('hhl')
 8
@@ -524,7 +525,7 @@ needed to satisfy alignment requirements is different:
 
 ```
 >>> pack('ci', b'*', 0x12131415)
-b'*   '
+b'*'
 >>> pack('ic', 0x12131415, b'*')
 b'*'
 >>> calcsize('ci')
@@ -538,8 +539,11 @@ longs are aligned on 4-byte boundaries:
 
 ```
 >>> pack('llh0l', 1, 2, 3)
-b'         '
+b''
 ```
 
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjY1MTE3NDIwXX0=
+-->
