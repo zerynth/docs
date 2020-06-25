@@ -6,20 +6,35 @@ This module contains the Zerynth driver for Amphenol DLH pressure sensors series
 
 DLH Class
 
-**`class DLH(spidrv, cs, d_or_g, clock=2000000)`**
+**`class
+---
+
+
+---
+#### `#!py3 DLH()`
+
+!!!abstract "`#!py3 DLH(spidrv, cs, d_or_g, clock=2000000)`**"
 
 Creates an instance of the DLH class.
 
 
-**Arguments:**
+** ```Arguments:**```
 
     
 
- - **spidrv** – SPI Bus used ‘( SPI0, … )’   
- -  **cs** – GPIO to be used as Carrier Select   
- -  **d_or_g** – specifies DLH type D (differential)
+ - **    * ```spidrv**``` – SPI Bus used ‘( SPI0, … )’   
+ -  **cs**
+
+
+    * ```cs``` – GPIO to be used as Carrier Select   
+
+
+ -  ** * ```d_or_g**``` – specifies DLH type D (differential)
    or G (absolute) sensor. can be one of `TYPE_D` or `TYPE_G` constants 
-   - **clock** – spi clock to be used
+
+
+   - ** ```clock**``` – spi clock to be used
+
 
 Temperature and pressure values can be easily obtained from the sensor:
 
@@ -35,24 +50,40 @@ press, temp = d.get_values(unit=dlh.UNIT_PASCAL)
 
 
 
-**`get_values(mode=MODE_SINGLE, unit=UNIT_INH20)`**
+**`---
+#### `#!py3 get_values()`
+
+!!!abstract "`#!py3 get_values(mode=MODE_SINGLE, unit=UNIT_INH20)`**"
 
 Return a 2-element tuple containing current pressure and temperature values.
 The acquisition mode can be specified with one of:
 
 
 * `MODE_SINGLE`
+
+
 * `MODE_AVG2`
+
+
 * `MODE_AVG4`
+
+
 * `MODE_AVG8`
+
+
 * `MODE_AVG16`
 
 The unit of measure of pressure can be specified in:
 
 
 * `UNIT_INH20`
+
+
 * `UNIT_CMH20`
+
+
 * `UNIT_PASCAL`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Mzk4MjY5OCwtMTg0MjU1Mjg5Ml19
+eyJoaXN0b3J5IjpbLTE4NjY4NDM3OTEsMTE1Mzk4MjY5OCwtMT
+g0MjU1Mjg5Ml19
 -->
