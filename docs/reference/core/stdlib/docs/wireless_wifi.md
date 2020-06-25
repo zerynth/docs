@@ -157,40 +157,34 @@ The result is a tuple where every element represents a device connected and incl
 	Not guaranteed to be supported by every wifi driver!
 
 
----
-#### `#!py3 softap_off()`
-
-!!!abstract "`#!py3 softap_off()`"
+`softap_off()`
 
 Try to turn off the Access Point operating mode.
 
 An exception can be raised if the Access Point disabling is not successful.
 
-```NOTE```: Not guaranteed to be supported by every wifi driver!
+!!! note
+	Not guaranteed to be supported by every wifi driver!
 
 
----
-#### `#!py3 station_on()`
-
-!!!abstract "`#!py3 station_on()`"
+`station_on()`
 
 Try to turn on the Station operating mode.
 
 An exception can be raised if the Station enabling is not successful.
 
-```NOTE```: Not guaranteed to be supported by every wifi driver!
+!!! note
+	Not guaranteed to be supported by every wifi driver!
 
 
----
-#### `#!py3 station_off()`
-
-!!!abstract "`#!py3 station_off()`"
+`station_off()`
 
 Try to turn off the Station operating mode.
 
 An exception can be raised if the Station disabling is not successful.
 
-```NOTE```: Not guaranteed to be supported by every wifi driver!
+!!! note
+	Not guaranteed to be supported by every wifi driver!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzgyODY5MzFdfQ==
+eyJoaXN0b3J5IjpbMTE5NTk4NDE5OF19
 -->
