@@ -421,10 +421,7 @@ The return value is `True` unless a given ```timeout``` expired, in which
 case it is `False`.
 
 
----
-#### `#!py3 wait_for()`
-
-!!!abstract "`#!py3 wait_for(predicate, timeout=-1)`"
+`wait_for(predicate, timeout=-1)`
 
 Wait until a condition evaluates to True.  ```predicate``` should be a
 callable which result will be interpreted as a boolean value.
@@ -448,20 +445,10 @@ held when called and is re-acquired on return.  The predicate is evaluated
 with the lock held.
 
 
----
-#### `#!py3 notify()`
-
-!!!abstract "`#!py3 notify(n=1)`"
+`notify(n=1)`
 
 By default, wake up one thread waiting on this condition, if any.  If the
-calling thread has not acquired the lock when this method is called, a
-
-
-```
-:exc:`RuntimeError`
-```
-
- is raised.
+calling thread has not acquired the lock when this method is called, a `RuntimeError` is raised.
 
 This method wakes up at most ```n``` of the threads waiting for the condition
 variable; it is a no-op if no threads are waiting.
@@ -469,26 +456,18 @@ variable; it is a no-op if no threads are waiting.
 The current implementation wakes up exactly ```n``` threads, if at least ```n```
 threads are waiting.
 
-Note: an awakened thread does not actually return from its `wait()`
+!!! note
+	an awakened thread does not actually return from its `wait()`
 call until it can reacquire the lock.  Since `notify()` does not
 release the lock, its caller should.
 
 
----
-#### `#!py3 notify_all()`
-
-!!!abstract "`#!py3 notify_all()`"
+`notify_all()`
 
 Wake up all threads waiting on this condition.  This method acts like
 `notify()`, but wakes up all waiting threads instead of one. If the
 calling thread has not acquired the lock when this method is called, a
-
-
-```
-:exc:`RuntimeError`
-```
-
- is raised.
+`RuntimeError` is raised.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3ODYzMTYxNV19
+eyJoaXN0b3J5IjpbMTY3MzIxMzM4NF19
 -->
