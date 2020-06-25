@@ -223,7 +223,8 @@ any non-zero value will be `True` when unpacking.
 
 ### Examples
 
-```NOTE```: All examples assume a native byte order, size, and alignment with a
+!!! none
+	All examples assume a native byte order, size, and alignment with a
 big-endian machine.
 
 A basic example of packing/unpacking three integers:
@@ -276,5 +277,5 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzMyMjA3M119
+eyJoaXN0b3J5IjpbLTEyMjY2MTA2XX0=
 -->
