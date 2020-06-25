@@ -34,26 +34,17 @@ my_dac.write([100,200,900,800],1000,MILLIS,circular=True)
 ## The DAC class
 
 
----
-#### `#!py3 DAC()`
-
-!!!abstract "`#!py3 DAC(pin)`"
+`DAC(pin)`
 
 Creates a DAC instance on ```pin``` pin (look at board pinmap to see which pins are enabled for using the DAC peripheral).
 
 
----
-#### `#!py3 start()`
-
-!!!abstract "`#!py3 start()`"
+`start()`
 
 DAC is started. It is necessary to start the driver before writing any value.
 
 
----
-#### `#!py3 write()`
-
-!!!abstract "`#!py3 write(data, timestep, timeunit, circular=False)`"
+`write(data, timestep, timeunit, circular=False)`
 
 ```data``` is output on selected pin.
 
@@ -135,3 +126,6 @@ output_voltage = board_voltage * (value/4096)
 Each ```value``` in the list must be an integer between ```lowflex``` and ```highflex``` in order to avoid a TypeError exception.
 
 ```lowflex``` and ```highflex``` default values are set to the correct values for Sam3X mcu.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTYyOTM3NTEyN119
+-->
