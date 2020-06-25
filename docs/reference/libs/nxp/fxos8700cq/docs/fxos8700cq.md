@@ -43,107 +43,17 @@ Initialize the FXOS8700CQ setting the operating mode, the output data rate , the
 -	**osr** – set the over sample ratio for magnetometer (from 0 to 7 - refer to page 97 of the FXOS8700CQ datasheet), default 0
 -	**range**– accelerometer full-scale range (allowed values RANGE2G, RANGE4G, RANGE8G), default RANGE4G
 
+| ODR | ACC/MAG Mode | Data Ready ACC/MAG | Hybrid Mode | Data Ready Hybrid |
+|-----|--------------|--------------------|-------------|-------------------|
+| 0   | 800 Hz       | 1.25 ms            | 400 Hz      | 2.5 ms            |
+| 1   | 400 Hz       | 2.5 ms             | 200 Hz      | 5 ms              |
+| 2   | 200 Hz       | 5 ms               | 100 Hz      | 10 ms             |
+| 3   | 100 Hz       | 10 ms              | 50 Hz       | 20 ms             |
+| 4   | 50 Hz        | 20 ms              | 25 Hz       | 80 ms             |
+| 5   | 12.5 Hz      | 80 ms              | 6.25 Hz     | 160 ms            |
+| 6   | 6.25 Hz      | 160 ms             | 3.125 Hz    | 320 ms            |
+| 7   | 1.56 Hz      | 640 ms             | 0.7813      | 1280 ms           |
 
-| ODR
-
- | ACC/MAG Mode
-
- | Data Ready ACC/MAG
-
- | Hybrid Mode
-
- | Data Ready Hybrid
-
- |
-| --- | ------------ | ------------------ | ----------- | ----------------- |
-| 0
-
-   | 800 Hz
-
-       | 1.25 ms
-
-            | 400 Hz
-
-      | 2.5 ms
-
-            |
-| 1
-
-   | 400 Hz
-
-       | 2.5 ms
-
-             | 200 Hz
-
-      | 5 ms
-
-              |
-| 2
-
-   | 200 Hz
-
-       | 5 ms
-
-               | 100 Hz
-
-      | 10 ms
-
-             |
-| 3
-
-   | 100 Hz
-
-       | 10 ms
-
-              | 50 Hz
-
-       | 20 ms
-
-             |
-| 4
-
-   | 50 Hz
-
-        | 20 ms
-
-              | 25 Hz
-
-       | 80 ms
-
-             |
-| 5
-
-   | 12.5 Hz
-
-      | 80 ms
-
-              | 6.25 Hz
-
-     | 160 ms
-
-            |
-| 6
-
-   | 6.25 Hz
-
-      | 160 ms
-
-             | 3.125 Hz
-
-    | 320 ms
-
-            |
-| 7
-
-   | 1.56 Hz
-
-      | 640 ms
-
-             | 0.7813
-
-      | 1280 ms
-
-           |
 | ODR
 
  | OSR=0
@@ -372,5 +282,5 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 Returns int_temp.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1NDMzMTM5XX0=
+eyJoaXN0b3J5IjpbMjAxMjU3MjgwOSw5NDU0MzMxMzldfQ==
 -->
