@@ -92,37 +92,25 @@ its arguments to type `float()`.  Use `\*\*` or the built-in
 Return the square root of ```x```.
 
 
----
-#### `#!py3 isnan()`
-
-!!!abstract "`#!py3 isnan(x)`"
+`isnan(x)`
 
 Return `True` if ```x``` is a NaN (not a number), and `False` otherwise.
 
 
----
-#### `#!py3 isinf()`
-
-!!!abstract "`#!py3 isinf(x)`"
+`isinf(x)`
 
 Return `True` if ```x``` is a positive or negative infinity, and
 `False` otherwise.
 
 
----
-#### `#!py3 floor()`
-
-!!!abstract "`#!py3 floor(x)`"
+`floor(x)`
 
 Return the floor of ```x```, the largest integer less than or equal to ```x```.
 
 
----
-#### `#!py3 ceil()`
-
-!!!abstract "`#!py3 ceil(x)`"
+`ceil(x)`
 
 Return the ceiling of ```x```, the smallest integer greater than or equal to ```x```.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTUxOTk0Ml19
+eyJoaXN0b3J5IjpbLTQ5ODcwMjE5XX0=
 -->
