@@ -23,77 +23,147 @@ print("Chain:",eth.getChainId())
 # RPC class
 
 
-**`class RPC(host)`**
+**`class---
+#### `#!py3 RPC()`
 
-Initialize a RPC instance with the get node at ```host```.
+!!!abstract "`#!py3 RPC(host)`**"
+
+Initialize a RPC instance with the geth node at ```host```.
 ```host``` must also contain the port and the protocol (i.e. `https://mynode.com:8545`)
 
 
-**`call(method,params=(),retry=10)`**
+**`---
+#### `#!py3 call()`
+
+!!!abstract "`#!py3 call(method, params=(), retry=10)`**
 
 **Parameters:**
     
 
- - **method** – the endpoint to call
- -  **params**– the list of parameters for the endpoint
- -  **retry** – the number of call retries before failing
-
-Call endpoint *method* with params *params*. Return the `result` field of the endpoint json response or None in case of error. Error reason can be retrieved in `self.last_error`.
+ - **"
 
 
-**`getBalance(address, block_number="latest")`**
+* ```Arguments```
+
+    
+    * ```method**``` – the endpoint to call
+ -  **
+
+    * ```params**``` – the list of parameters for the endpoint
+ -  **
+
+    * ```retry**``` – the number of call retries before failing
 
 
-**Params address:** Ethereum address
+Call endpoint *```method*``` with params *```params*```. Return the `result` field of the 
+endpoint json response or None in case of error. Error reason can be retrieved in `self.last_error`.
 
 
-**Params block_number:** the point in the blockchain up to which balance is calculated
+**`---
+#### `#!py3 getBalance()`
+
+!!!abstract "`#!py3 getBalance(address, block_number="latest")`**"
 
 
-Return the current balance for address *address*. Previous balances can be retrieved by specifying a different *block_number*.
+* **Params address:**
 
-**`getGasPrice()`**
+    Ethereum address
+
+
+
+* **Params block_number:**
+
+    the point in the blockchain up to which balance is calculated
+
+
+Return the current balance for address *```address*```. Previous balances can be retrieved by specifying a different *```block_number*.
+
+**`getGasPrice()`**```
+
+
+---
+#### `#!py3 getGasPrice()`
+
+!!!abstract "`#!py3 getGasPrice()`"
 
 Return the current gas price estimated by the Ethereum node. Return 0 on error.
 
 
-**`getChainId()`**
+**`getChainId()`**---
+#### `#!py3 getChainId()`
+
+!!!abstract "`#!py3 getChainId()`"
 
 Return the Ethereum network id.
 
-**`getTransactionCount(address,block_number="latest")`**
+
+**`---
+#### `#!py3 getTransactionCount()`
+
+!!!abstract "`#!py3 getTransactionCount(address, block_number="latest")`**"
+
 
 **Parameters:**
 
- - **address** – Ethereum address
- - **block_number** – the point in the blockchain up to which the transaction count is calculated
+ - ** ```Arguments```
 
-Return the current transaction count for address *address*. The returned value can be used as nonce for the next transaction. Transaction counts at specific points in time can be retrieved by specifying a different *block_number*.
+    
+    * ```address**``` – Ethereum address
+ - **
+
+    * ```block_number**``` – the point in the blockchain up to which the transaction count is calculated
 
 
-**`sendTransaction(tx,retry=10)`**
+Return the current transaction count for address *```address*```. The returned value can be used as nonce for the next transaction. 
+Transaction counts at specific points in time can be retrieved by specifying a different *```block_number*```.
+
+
+**`---
+#### `#!py3 sendTransaction()`
+
+!!!abstract "`#!py3 sendTransaction(tx, retry=10)`**
 
 Parameters:
 
- - **tx** – the hexadecimal hash of a signed transaction
- -  **retry** – the number of retries
-
-Send the raw transaction to the get node in order to broadcast it to all nodes in the network. If correct, it will be eventually added to a mined block.
+ - **tx**"
 
 
-**`simpleCall(tx,block_number,retry=10)`**
+* ```Arguments```
+
+    
+    * ```tx``` – the hexadecimal hash of a signed transaction
+ -  **
+
+    * ```retry**``` – the number of retries
+
+
+Send the raw transaction to the geth node in order to broadcast it to all nodes in the network. If correct, it will be eventually added to a mined block.
+
+
+**`---
+#### `#!py3 simpleCall()`
+
+!!!abstract "`#!py3 simpleCall(tx, block_number, retry=10)`**"
 
 
 **Parameters:**
 
     
 
- - **tx** – the hexadecimal hash of a signed transaction
- - **block_number** – the point in the blockchain up to which make the call
- - **retry** – the number of retries
+ - **tx** ```Arguments```
+
+    
+    * ```tx``` – the hexadecimal hash of a signed transaction
+ - **
+
+    * ```block_number**``` – the point in the blockchain up to which make the call
+ - **
+
+    * ```retry**``` – the number of retries
+
 
 Executes a new message call immediately without creating a transaction on the block chain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTAxMDg4MDcsLTM1OTQxNzIwMyw1Mj
-g1MTU5OV19
+eyJoaXN0b3J5IjpbMTIzMzYwODg5NSwtMjA1MDEwODgwNywtMz
+U5NDE3MjAzLDUyODUxNTk5XX0=
 -->
