@@ -6,7 +6,8 @@ used as a stand-alone smart wireless sensor with embedded application where no h
 This module contains the driver for NXP KW40Z Bluetooth Low Energy chip mounted on the Hexiwear device and pre-loaded of the related original default application firmware.
 This application exposes all features through a specific serial communication protocol, handles all capacitive touch buttons on Hexiwear device and permits to exchange Hexiwear sensor data via bluetoooth.
 
-**NOTE:** This module works only if the **HEXIWEAR_KW40.bin** file is loaded on the nxp kw40z chip.
+!!! note
+	This module works only if the **HEXIWEAR_KW40.bin** file is loaded on the nxp kw40z chip.
 
 
 * The binary file can be found [here](https://github.com/MikroElektronika/HEXIWEAR/tree/master/SW/binaries).
@@ -72,7 +73,8 @@ Sets the callback function to be executed when KW40Z receives a notification.
 
 Sets the callback function to be executed when KW40Z receives a bluetooth pairing request.
 
-**NOTE:** When the KW40Z receives this kind of request it generates a pairing code stored in the passkey class attribute.
+!!! note
+	When the KW40Z receives this kind of request it generates a pairing code stored in the passkey class attribute.
 
 **`upd_sensors(battery=None,accel=None,gyro=None,magn=None,aLight=None,temp=None,humid=None,press=None)`**
 
@@ -117,5 +119,5 @@ Retrieves the device setting informations regarding the Bluetooth status, which 
 
 Returns bt_on, bt_touch, bt_link.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzA1MTY0OV19
+eyJoaXN0b3J5IjpbMTc4MzQ2NDQ4MSwxODgzMDUxNjQ5XX0=
 -->
