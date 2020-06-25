@@ -106,7 +106,8 @@ dc = dcz.DCZ([0x310000,0x311000],{"json":json,"cbor":cbor})
 
 After creation, the DCZ instance contain a `latest_version` field containing the highest available version of the stored DCZs.
 
-**NOTE**: All methods expecting an optional version number will operate the `latest_version` if no version is given, otherwise they will operate on the DCZ slot correspondent to the given version modulo the replication number.
+!!! note
+	All methods expecting an optional version number will operate the `latest_version` if no version is given, otherwise they will operate on the DCZ slot correspondent to the given version modulo the replication number.
 
 
 **`finalize()`**
@@ -224,3 +225,6 @@ Return the list of resource names.
 **`next_version()`**
 
 Return the next version greater than all current versions.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MTY1MzA2MTddfQ==
+-->
