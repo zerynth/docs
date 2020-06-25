@@ -589,18 +589,13 @@ The following CA certificates are available with the __lookup primitive:
 ## The sslsocket class
 
 
----
-#### `#!py3 sslsocket()`
-
-!!!abstract "`#!py3 sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`"
+`sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`
 
 This class represents a secure socket based on SSL/TLS protocol. It inherits from socket.socket
 
 Raise `IOError` exceptions if socket creation goes wrong.
 
 The parameter ```ctx``` is the SSL context to use for the socket. See 
-
-```
 :function:`create_ssl_context`
 ```
 
@@ -690,3 +685,6 @@ Returns a tuple to be passed as parameter during secure socket creation.
 ```NOTE```: ```cacert```, ```clicert``` and ```pkey``` can be bytes, bytearray, strings or instances of classes that have a ```size``` and ```read``` method, allowing to pass as parameters open files or resources.
 
 ```NOTE```: ```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIzODQ1NzQxN119
+-->
