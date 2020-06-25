@@ -14,43 +14,12 @@ They can be used individually, chained into longer strings or assembled into sti
 
 **LED Characteristic Parameter**
 
-| Emitting Color
+| Emitting Color | Wavelenght (nm) | Current (mA) | Voltage (V) |
+|----------------|-----------------|--------------|-------------|
+| Red            | 620-630         | 20           | 1.8-2.2     |
+| Green          | 515-530         | 20           | 3.0-3.2     |
+| Blue           | 465-475         | 20           | 3.2-3.4     |
 
- | Wavelenght (nm)
-
- | Current (mA)
-
- | Voltage (V)
-
- |
-| -------------- | --------------- | ------------ | ----------- |
-| Red
-
-            | 620-630
-
-         | 20
-
-           | 1.8-2.2
-
-     |
-| Green
-
-          | 515-530
-
-         | 20
-
-           | 3.0-3.2
-
-     |
-| Blue
-
-           | 465-475
-
-         | 20
-
-           | 3.2-3.4
-
-     |
 Here below, the Zerynth driver for the Worldsemi WS2812 led strips and some examples to better understand how to use them.
 
 Contents:
@@ -61,3 +30,6 @@ Contents:
 * [Examples](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html)
   * [LED Strips](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html#led-strips)
   * [LED Strips Advanced](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html#led-strips-advanced)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3MDU3MTkxNV19
+-->
