@@ -595,11 +595,7 @@ This class represents a secure socket based on SSL/TLS protocol. It inherits fro
 
 Raise `IOError` exceptions if socket creation goes wrong.
 
-The parameter ```ctx``` is the SSL context to use for the socket. See 
-:function:`create_ssl_context`
-```
-
- for details.
+The parameter ```ctx``` is the SSL context to use for the socket. See `create_ssl_context` for details.
 
 Sockets can be used like this:
 
@@ -629,10 +625,7 @@ sock.sendall("Hello World!")
 
 <!-- _stdlib.ssl.create_ssl_context -->
 
----
-#### `#!py3 create_ssl_context()`
-
-!!!abstract "`#!py3 create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`"
+`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`
 
 This function generates an SSL context with the following data:
 
@@ -686,5 +679,5 @@ Returns a tuple to be passed as parameter during secure socket creation.
 
 ```NOTE```: ```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODQ1NzQxN119
+eyJoaXN0b3J5IjpbODcwMzYxOTMzXX0=
 -->
