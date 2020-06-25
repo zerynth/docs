@@ -4,10 +4,7 @@ This module implements functions to easily handle the intricacies of the HTTP pr
 To use ```requests``` a net driver must have been properly configured and started.
 
 
----
-#### `#!py3 get()`
-
-!!!abstract "`#!py3 get(url, params=None, headers=None, connection=None, stream_callback=None, stream_chunk=512)`"
+`get(url, params=None, headers=None, connection=None, stream_callback=None, stream_chunk=512)`
 
 Implements the GET method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -17,8 +14,7 @@ If ```headers``` is given as a dictionary, each pair (key, value) is appropriate
 other headers are set to defaults if not given: for example “Connection: close” is sent if no value for “Connection” is specified in ```headers```. To request a permanent connection,
 ```headers``` must contain the pair {“Connection”:”Keep-Alive”}.
 
-If ```connection``` is given, the initial connection step is skipped and ```connection``` is used for communication. This feature allows the reuse of a
-connection to a HTTP server opened with a “Keep-Alive” header.
+If ```connection``` is given, the initial connection step is skipped and ```connection``` is used for communication. This feature allows the reuse of a connection to a HTTP server opened with a “Keep-Alive” header.
 
 ```get``` returns a `Response()` instance.
 
@@ -298,3 +294,6 @@ the connection used to communicate with the server, or None if it has been close
 !!!abstract "`#!py3 text()`"
 
 Returns a string representing the content section of the HTTP response
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQxODg2MDEyXX0=
+-->
