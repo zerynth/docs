@@ -18,7 +18,7 @@ present.  For example:
 import urlparse
 o = urlparse(‘[http://www.cwi.nl:80/%7Eguido/Python.html](http://www.cwi.nl:80/%7Eguido/Python.html)’)
 
-#result is (‘http’, ‘www.cwi.nl:80’, ‘/%7Eguido/Python.html’, ‘’, ‘’)
+<p># result is (‘http’, ‘www.cwi.nl:80’, ‘/%7Eguido/Python.html’, ‘’, ‘’)</p>
 
 Following the syntax specifications in [**RFC 1808**](https://tools.ietf.org/html/rfc1808.html), urlparse recognizes
 a netloc only if it is properly introduced by ‘//’.  Otherwise the
@@ -94,5 +94,5 @@ Each pair (key, value) is encoded by ```quote_via``` function.
 By default, `quote_plus()` is used to quote the values.
 An alternate function that can be passed as quote_via is `quote()`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY4NjQ1NTNdfQ==
+eyJoaXN0b3J5IjpbMTg0MTM0MTQyNl19
 -->
