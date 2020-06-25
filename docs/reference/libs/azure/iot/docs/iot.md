@@ -7,7 +7,10 @@ It allows to make your device act as a Microsoft Azure Iot Hub Device which can 
 ## The Device class
 
 
-**`class Device(hub_id, device_id, api_version, key, timestamp_fn, token_lifetime=60)`**
+**`class---
+#### `#!py3 Device()`
+
+!!!abstract "`#!py3 Device(hub_id, device_id, api_version, key, timestamp_fn, token_lifetime=60)`**"
 
 Create a Device instance representing a Microsoft Azure Iot Hub Device.
 
@@ -37,7 +40,10 @@ my_device.mqtt.loop()
 ```
 
 
-**`on_bound(bound_cbk)`**
+**`---
+#### `#!py3 on_bound()`
+
+!!!abstract "`#!py3 on_bound(bound_cbk)`**"
 
 Set a callback to be called on cloud to device messages.
 
@@ -52,7 +58,10 @@ my_device.on_bound(bound_callback)
 ```
 
 
-**`on_method(method_name, method_cbk)`**
+**`---
+#### `#!py3 on_method()`
+
+!!!abstract "`#!py3 on_method(method_name, method_cbk)`**"
 
 Set a callback to respond to a direct method call.
 
@@ -71,7 +80,10 @@ my_device.on_method('get', send_something)
 `method_cbk` callback must return a tuple containing response status and a dictionary or None as response payload.
 
 
-**`on_twin_update(twin_cbk)`**
+**`---
+#### `#!py3 on_twin_update()`
+
+!!!abstract "`#!py3 on_twin_update(twin_cbk)`**"
 
 Set a callback to respond to cloud twin updates.
 
@@ -88,7 +100,10 @@ my_device.on_twin_update(twin_callback)
 It is possible for `twin_cbk` to return a dictionary which will be immediately sent as reported twin.
 
 
-**`report_twin(reported, wait_confirm=True, timeout=1000)`**
+**`---
+#### `#!py3 report_twin()`
+
+!!!abstract "`#!py3 report_twin(reported, wait_confirm=True, timeout=1000)`**"
 
 Report `reported` twin.
 
@@ -98,7 +113,10 @@ It is possible to not wait for cloud confirmation setting `wait_confirm` to fals
 An integer status code is returned after cloud confirmation.
 
 
-**`get_twin(timeout=1000)`**
+**`---
+#### `#!py3 get_twin()`
+
+!!!abstract "`#!py3 get_twin(timeout=1000)`**"
 
 Get current twin containing desired and reported fields.
 It is possible set a custom `timeout` (`-1` to wait forever) for the process which could lead to `TimeoutException`.
@@ -106,8 +124,14 @@ It is possible set a custom `timeout` (`-1` to wait forever) for the process whi
 An integer status code is returned after cloud response along with received `twin` JSON-parsed dictionary.
 
 
-**`publish_event(event, properties)`**
+**`---
+#### `#!py3 publish_event()`
+
+!!!abstract "`#!py3 publish_event(event, properties)`**"
 
 Publish a new event `event` with custom `properties`.
 `event` must be a dictionary and will be sent as json string.
 `properties` must be a dictionary and will be sent as an url-encoded property bag.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI3NzE3OTM0OF19
+-->
