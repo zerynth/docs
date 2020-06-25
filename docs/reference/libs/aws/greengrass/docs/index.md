@@ -11,8 +11,17 @@ The Zerynth AWS Greengrass Library extends Zerynth AWS IoT Core Library with fun
 Contents:
 
 
--   [Amazon Web Services Greengrass Library](https://docs.zerynth.com/latest/official/lib.aws.greengrass/docs/official_lib.aws.greengrass_greengrass.html)
+-   [* Amazon Web Services Greengrass Library](https://docs.zerynth.com/latest/official/lib.aws.greengrass/docs/official_lib.aws.greengrass_greengrass.html)
     -   [The DiscoveryInfo class](https://docs.zerynth.com/latest/official/lib.aws.greengrass/docs/official_lib.aws.greengrass_greengrass.html#the-discoveryinfo-class)
     -   [Helper Functions](https://docs.zerynth.com/latest/official/lib.aws.greengrass/docs/official_lib.aws.greengrass_greengrass.html#helper-functions)
 -   [Examples](https://docs.zerynth.com/latest/official/lib.aws.greengrass/examples/examples.html)
      -   [Discover and publish](https://docs.zerynth.com/latest/official/lib.aws.greengrass/examples/examples.html#discover-and-publish)
+
+
+    * The DiscoveryInfo class
+
+
+    * Helper Functions
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI5NDA1MzM5Ml19
+-->
