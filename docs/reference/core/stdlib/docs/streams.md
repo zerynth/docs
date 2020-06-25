@@ -172,13 +172,10 @@ Move the current position to ```offset``` bytes with respect to ```whence```.
 ## The ResourceStream class
 
 
----
-#### `#!py3 ResourceStream()`
-
-!!!abstract "`#!py3 ResourceStream(name)`"
+`ResourceStream(name)`
 
 This class implements a stream that has a flash saved resource as a source of data.
 It inherits all of its methods from `FileStream()`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcxNTM0NTgzXX0=
+eyJoaXN0b3J5IjpbLTIwNzI0Mzg1OF19
 -->
