@@ -26,7 +26,7 @@ lamp.set_LED_colors(["green","green","white","red","red"])
 Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP protocol.
 
 
-**Arguments:** **colors** – Array of 5 positions containing the colors of the led strips.
+**Arguments:**  **colors** – Array of 5 positions containing the colors of the led strips.
 
 |  String |   Color  |
 |:-------:|:--------:|
@@ -43,30 +43,11 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 
 -	**buzzer** – Buzzer status upon initialization.
 
-    | Value
-
-       | Effect
-
-       |
-    | ------- | -------- |
-    | off
-
-         | Turned off
-
-     |
-    | on
-
-          | Turned on
-
-      |
-    | 2-11
-
-        | audio effects set by
-    set by the lamp
-    manufacturer
-
-     |
-
+| Value | Effect                                            |
+|-------|---------------------------------------------------|
+| off   | Turned off                                        |
+| on    | Turned on                                         |
+| 2-11  | audio effects set by set by the lamp manufacturer |
 
 -	**flash** – Flash LED unit status upon initialization [“off” or “on”].
 
@@ -114,89 +95,27 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 -	**colors** – Array of 5 positions containing the colors of the led strips.
 
-    | String
-
-      | Color
-
-                                                 |
-    | ------- | ------------------------------------------------- |
-    | off
-
-         | off
-
-                                                   |
-    | red
-
-         | Red
-
-                                                   |
-    | amber
-
-       | Amber
-
-                                                 |
-    | lemon
-
-       | Lemon
-
-                                                 |
-    | green
-
-       | Green
-
-                                                 |
-    | skyblue
-
-     | Sky Blue
-
-                                              |
-    | blue
-
-        | Blue
-
-                                                  |
-    | purple
-
-      | Purple
-
-                                                |
-    | pink
-
-        | Pink
-
-                                                  |
-    | white
-
-       | White
-
-                                                 |
+  | String  | Color    |
+|---------|----------|
+| off     | off      |
+| red     | Red      |
+| amber   | Amber    |
+| lemon   | Lemon    |
+| green   | Green    |
+| skyblue | Sky Blue |
+| blue    | Blue     |
+| purple  | Purple   |
+| pink    | Pink     |
+| white   | White    |
 
 
 -	**buzzer** – Buzzer status upon initialization.
 
-    | Value
-
-       | Effect
-
-                                                |
-    | ------- | ------------------------------------------------- |
-    | off
-
-         | Turned off
-
-                                            |
-    | on
-
-          | Turned on
-
-                                             |
-    | 2-11
-
-        | audio effects set by
-    set by the lamp
-    manufacturer
-
-     |
+ | Value |                       Effect                      |
+|:-----:|:-------------------------------------------------:|
+| off   | Turned off                                        |
+| on    | Turned on                                         |
+| 2-11  | audio effects set by set by the lamp manufacturer |
 
 
 -	**flash** – Flash LED unit status upon initialization [“off” or “on”].
@@ -233,5 +152,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjk0MTg0NywtODM5MTM1NTk5XX0=
+eyJoaXN0b3J5IjpbLTExNjEwMzgzNTcsLTgzOTEzNTU5OV19
 -->
