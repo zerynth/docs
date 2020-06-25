@@ -22,18 +22,12 @@ This module defines the following constants:
 * WIFI_WPA2  = 3; Wifi Network secured with WPA2
 
 
----
-#### `#!py3 gethostbyname()`
-
-!!!abstract "`#!py3 gethostbyname(hostname)`"
+`gethostbyname(hostname)`
 
 Translate a host name to IPv4 address format. The IPv4 address is returned as a string, such as “192.168.0.5”.
 
 
----
-#### `#!py3 select()`
-
-!!!abstract "`#!py3 select(rlist, wlist, xlist, timeout=None)`"
+`select(rlist, wlist, xlist, timeout=None)`
 
 This is equivalent to the Unix ```select``` system call.
 The first three arguments are sequences of socket instances.
@@ -57,10 +51,7 @@ first three arguments.  When the time-out is reached without a socket
 becoming ready, three empty lists are returned.
 
 
----
-#### `#!py3 scan()`
-
-!!!abstract "`#!py3 scan(duration=5000)`"
+`scan(duration=5000)`
 
 Return the list of available wifi networks as a tuple of tuples: (SSID, network_security, RSSI, BSSID).
 
@@ -69,10 +60,7 @@ The format of RSSI depends on the specific wifi driver loaded.
 ```duration``` is the maximum time in milliseconds the scan can last.
 
 
----
-#### `#!py3 link()`
-
-!!!abstract "`#!py3 link(ssid, security, password="")`"
+`link(ssid, security, password="")`
 
 Try to establish a link with the Access Point handling the wifi network identified by ```ssid```. ```security``` must be one
 of the WIFI constants, and ```password``` is needed if ```security``` is different from WIFI_OPEN
@@ -80,26 +68,17 @@ of the WIFI constants, and ```password``` is needed if ```security``` is differe
 An exception can be raised if the link is not successful.
 
 
----
-#### `#!py3 unlink()`
-
-!!!abstract "`#!py3 unlink()`"
+`unlink()`
 
 Disconnect from the currently linked wifi network.
 
 
----
-#### `#!py3 is_linked()`
-
-!!!abstract "`#!py3 is_linked()`"
+`is_linked()`
 
 Return True if linked to the Access Point
 
 
----
-#### `#!py3 set_link_info()`
-
-!!!abstract "`#!py3 set_link_info(ip, mask, gw, dns)`"
+`set_link_info(ip, mask, gw, dns)`
 
 Set desired wifi interface parameters:
 
@@ -118,10 +97,7 @@ Set desired wifi interface parameters:
 If 0.0.0.0 is given, a default address will be used.
 
 
----
-#### `#!py3 link_info()`
-
-!!!abstract "`#!py3 link_info()`"
+`link_info()`
 
 Return information on the currently established AP link.
 
@@ -143,36 +119,29 @@ The result is a tuple where the elements are, in order:
 * The MAC address of the wifi interface as a sequence of 6 bytes
 
 
----
-#### `#!py3 softap_init()`
-
-!!!abstract "`#!py3 softap_init(ssid, sec, password="", max_conn=4)`"
+`softap_init(ssid, sec, password="", max_conn=4)`
 
 Try to activate the Access Point operating mode exposing a wifi network identified by ```ssid```. ```security``` must be one
 of the WIFI constants, and ```password``` is needed if ```security``` is different from WIFI_OPEN; ```max_conn``` represents the maximum number of connections available (default is 4)
 
 An exception can be raised if the activation is not successful.
 
-```NOTE```: Not guaranteed to be supported by every wifi driver!
+!!! note
+	Not guaranteed to be supported by every wifi driver!
 
 
----
-#### `#!py3 softap_config()`
-
-!!!abstract "`#!py3 softap_config(ip="192.168.0.1", gw="192.168.0.1", net="255.255.255.0")`"
+`softap_config(ip="192.168.0.1", gw="192.168.0.1", net="255.255.255.0")`
 
 Try to configure the Access Point setting the IP address, the Gateway address and the Netmask address.
 Default values are: “192.168.0.1” as IP address, “192.168.0.1” as Gateway address, “255.255.255.0” as Netmask address.
 
 An exception can be raised if the configuration is not successful.
 
-```NOTE```: Not guaranteed to be supported by every wifi driver!
+!!! note
+	Not guaranteed to be supported by every wifi driver!
 
 
----
-#### `#!py3 softap_get_info()`
-
-!!!abstract "`#!py3 softap_get_info()`"
+`softap_get_info()`
 
 Return information on the current devices connected to the Access Point.
 
@@ -184,7 +153,8 @@ The result is a tuple where every element represents a device connected and incl
 
 * The MAC address of the wifi interface as a sequence of 6 bytes
 
-```NOTE```: Not guaranteed to be supported by every wifi driver!
+!!! note
+	Not guaranteed to be supported by every wifi driver!
 
 
 ---
@@ -221,3 +191,6 @@ Try to turn off the Station operating mode.
 An exception can be raised if the Station disabling is not successful.
 
 ```NOTE```: Not guaranteed to be supported by every wifi driver!
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2MzgyODY5MzFdfQ==
+-->
