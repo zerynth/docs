@@ -10,8 +10,14 @@ After the initial configuration is set, the MCW1001A can access the MRF24WB0 802
 
 
 * Supply Voltage (Vdd): from 3.0 V to 5.5 V
+
+
 * Operation Temperature (Top): from -40 °C to 125 °C
+
+
 * Supply Current (Idd): from 1.3 mA to 1.5 mA (Fosc 32 MHz)
+
+
 * UART Interface: up to 230 Kbaud
 
 Here below, the Zerynth driver for the Microchip MCW1001A.
@@ -20,3 +26,6 @@ Contents:
 
 
 * [MCW1001A Module](https://docs.zerynth.com/latest/official/lib.microchip.mcw1001a/docs/official_lib.microchip.mcw1001a_mcw1001a.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTMxNDYzODExXX0=
+-->
