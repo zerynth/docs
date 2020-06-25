@@ -5,20 +5,14 @@ This module loads the Pulse Width Modulation (pwm) driver of the embedded device
 When imported, automatically sets the system pwm driver to the default one.
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init(drvname)`"
+`init(drvname)`
 
 Loads the pwm driver identified by ```drvname```
 
 Returns the previous driver without disabling it.
 
 
----
-#### `#!py3 write()`
-
-!!!abstract "`#!py3 write(pin, period, pulse, time_unit=MILLIS, npulses=0)`"
+`write(pin, period, pulse, time_unit=MILLIS, npulses=0)`
 
 Activate PWM (Pulse Width Modulation) on pin ```pin``` (must be one of the PWMx pins, expressed as Dx.PWM). The state of ```pin``` is periodically switched between `LOW` and `HIGH` according to parameters:
 
@@ -80,3 +74,6 @@ pwm.write(D5.PWM,1000,100,npulses=5)
 Available time units are: NANOS, MICROS, MILLIS, SECONDS. The precision, or even the correcteness, of a pwm period/pulse configuration
 when expressed in nanoseconds may greatly vary between microcontrollers. Indeed it depends on the clock of the peripheral implementing
 the pwm signal. For example, an MCU running at 100 MHz can, in teory, generate a pwm signal as precise as 10 ns.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjE0MTU2ODgwMl19
+-->
