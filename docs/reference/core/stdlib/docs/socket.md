@@ -133,16 +133,13 @@ Unlike send(), this method continues to send data from bytes until either all da
 ```None``` is returned on success. On error, an exception is raised, and there is no way to determine how much data, if any, was successfully sent.
 
 
-`sendto(buffer, address, flags=0)`"
+`sendto(buffer, address, flags=0)`
 
 Send data to the socket. The socket should not be connected to a remote socket, since the destination socket is specified by address.
 Return the number of bytes sent
 
 
----
-#### `#!py3 settimeout()`
-
-!!!abstract "`#!py3 settimeout(timeout)`"
+`settimeout(timeout)`
 
 Set a timeout on blocking socket operations. The ```timeout``` argument can be a nonnegative integer number expressing milliseconds, or ```None```.
 If a non-zero value is given, subsequent socket operations will raise a timeout exception if the timeout period value has elapsed before the operation has completed.
@@ -150,10 +147,7 @@ If zero is given, the socket is put in non-blocking mode.
 If None is given, the socket is put in blocking mode.
 
 
----
-#### `#!py3 bind()`
-
-!!!abstract "`#!py3 bind(address)`"
+`bind(address)`
 
 Binds the socket to ```address```. ```address``` can be:
 
@@ -168,19 +162,13 @@ A udp socket needs to be bound before any input/output operation. After binding,
 every packet incoming to ```address```.
 
 
----
-#### `#!py3 listen()`
-
-!!!abstract "`#!py3 listen(maxlog=2)`"
+`listen(maxlog=2)`
 
 Enables listening on the underlying tcp socket. A tcp socket in listening state can be used as a server socket to accept incoming connection.
 ```maxlog``` specifies the maximum number of waiting connections.
 
 
----
-#### `#!py3 accept()`
-
-!!!abstract "`#!py3 accept()`"
+`accept()`
 
 Blocks until an incoming connection is made on the underlying tcp socket.
 
@@ -220,5 +208,5 @@ while True:
     client.close()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjg5NjY4MzhdfQ==
+eyJoaXN0b3J5IjpbNjYwNDAxOTA3XX0=
 -->
