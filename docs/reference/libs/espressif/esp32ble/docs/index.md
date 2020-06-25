@@ -13,7 +13,7 @@ Some screenshots related to the examples:
 ![](https://github.com/zerynth/docs/blob/test/docs/reference/libs/espressif/esp32ble/docs/img/esp32blealert1.jpg?raw=true)
 
 
-
+![](https://github.com/zerynth/docs/blob/test/docs/reference/libs/espressif/esp32ble/docs/img/esp32blealert2.jpg?raw=true)
 
 Contents:
 
@@ -29,5 +29,5 @@ Contents:
     -   [BLE Alerts Secure 2](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-alerts-secure-2)
     -   [BLE Wifi](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#ble-wifi)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODc3NTc2MSwtMTQ3Mzg0NzIwMl19
+eyJoaXN0b3J5IjpbMTkzNTU0MzU1OSwtMTQ3Mzg0NzIwMl19
 -->
