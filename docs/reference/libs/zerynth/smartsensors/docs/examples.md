@@ -1,17 +1,13 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.smartsensors
+The following are a list of examples for lib.zerynth.smartsensors.
 
 ## Basic Analog Sensor 
 
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-This examples shows the basic use of the analogSensor module of the smartSensors library.
-In the example ADC4 is used for instancing an analogSensors running the automatic calculation of min, Max, average, trend and derivative.
-Calculated data are printed on the console through a function that is called by the library every-time a new sample is acquired.
+This examples shows the basic use of the analogSensor module of the smartSensors library. In the example ADC4 is used for instancing an analogSensors running the automatic calculation of min, Max, average, trend and derivative. Calculated data are printed on the console through a function that is called by the library every-time a new sample is acquired.
 
 The sampling rate and the parameter calculation window size (expressed in samples) are set through the startSampling function integrated n the library that automates the entire acquisition and calculation process.
 
@@ -72,14 +68,10 @@ a.startSampling(1000,4)
 ## Advanced Analog Sensor
 
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-This examples shows an advanced use of the analogSensor module where a sensor is created attaching it to and ADC and another virtual sensor is created attaching in to the "average" output of the first analog sensor. 
-In the example ADC4 is used for instancing an analogSensors running the automatic calculation of min, Max, average, trend and derivative.
-Calculated data are printed on the console through a function.
-Moreover another sensor is created taking as input the "average" calculated by the first "real" sensor. This trick is used to calculate the Derivative of the average monitoring it through another function in order to notify the user is the derivative of the average is passing a threshold.
+This examples shows an advanced use of the analogSensor module where a sensor is created attaching it to and ADC and another virtual sensor is created attaching in to the "average" output of the first analog sensor.  In the example ADC4 is used for instancing an analogSensors running the automatic calculation of min, Max, average, trend and derivative.
+Calculated data are printed on the console through a function. Moreover another sensor is created taking as input the "average" calculated by the first "real" sensor. This trick is used to calculate the Derivative of the average monitoring it through another function in order to notify the user is the derivative of the average is passing a threshold.
 
 In the example the sensorPool module is also used. please refer to the sensorPoll example and documentation for more details.
 
@@ -148,12 +140,9 @@ pool.startSampling([1000,1000],[5,5],["raw","raw"])
 ```
 ## Smoothing Analog Data with Moving Average
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-In this example the average method is used for smoothing analogical data acquired through the ADC running a moving average filter.
-Note that at program starts the average results "None" because the filter window is not yet completely filled and the library verify it avoiding to results wrong data calculation. This feature is very useful in programs where the sampling and analysis routine is stopped and restarted periodically avoiding wrong calculation due to inconsistent incoming data.
+In this example the average method is used for smoothing analogical data acquired through the ADC running a moving average filter. Note that at program starts the average results "None" because the filter window is not yet completely filled and the library verify it avoiding to results wrong data calculation. This feature is very useful in programs where the sampling and analysis routine is stopped and restarted periodically avoiding wrong calculation due to inconsistent incoming data.
 
 tags: [Smart Sensors Lib, analogSensors, Zerynth Shield, sensorPool]
 groups:[Smart Sensors Library, Zerynth Shield Driver]
@@ -198,13 +187,11 @@ s.startSampling(1000,10)
 ## Debounce Digital Sensor Input
 
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
 In this example the digitalSensors module is used to monitor a DIO and trigger a function only when a state change longer than 500 millisec is detected. This example is very useful for the design of user interfaces where button are included. In this case it is very common to have false detections due to noise or movements and also to have undesired double detection due to a longer press of the button that could be detected by the software as double click.
 
-This example is very useful for improving the usability of the Zerynth Shield Touch sensor 
+This example is very useful for improving the usability of the Zerynth Shield Touch sensor.
 
 tags: [digitalSensors, Zerynth Shield, Touch, Button ]
 groups:[Smart Sensors Library, Zerynth Shield Driver]  
@@ -252,11 +239,9 @@ d.onRiseAndFall(500,2000,changeState)
 ```
 ## Smart Sensor Pool
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-This examples shows the basic use of the sensorPool, a module of the library used to create set of heterogeneous sensors to be managed in parallel simplifying the acquisition and calculation routines 
+This examples shows the basic use of the sensorPool, a module of the library used to create set of heterogeneous sensors to be managed in parallel simplifying the acquisition and calculation routines. 
 
 tags: [Smart Sensors Lib, analogSensors, digitalSensors, sensorPool]
 groups:[Smart Sensors Library]

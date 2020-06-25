@@ -13,25 +13,17 @@ Here below, the Zerynth Libraries for Generic Sensors class with Analog/Digital 
 Contents:
 
 
-* Generic Sensor Library
-
-
-    * The Sensor class
-
-
-* Analog Sensor Library
-
-
-    * AnalogSensor class
-
-
-* Digital Sensor Library
-
-
-    * DigitalSensor class
-
-
-* Pool Sensor Library
-
-
-    * SensorPool class
+* [Generic Sensor Library](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensors.html)
+    * [The Sensor class](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensors.html#the-sensor-class)
+* [Analog Sensor Library](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_analogSensors.html)
+    * [AnalogSensor class](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_analogSensors.html#analogsensor-class)
+* [Digital Sensor Library](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html)
+    * [DigitalSensor class](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html#digitalsensor-class)
+* [Pool Sensor Library](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensorPool.html)
+    * [SensorPool class]https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensorPool.html#sensorpool-class()
+* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html)
+    * [Analog Sensor Basics](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#analog-sensor-basics)
+    * [Analog Sensor Advanced](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#analog-sensor-advanced)
+    * [Analog Sensor Data Smoothing](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#analog-sensor-data-smoothing)
+    * [Digital Sensor Debounce](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#digital-sensor-debounce)
+    * [Smart Sensor Pool](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#smart-sensor-pool)   

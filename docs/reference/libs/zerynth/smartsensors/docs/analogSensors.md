@@ -7,16 +7,17 @@ This module contains class definitions for analog sensors. AnalogSensor class is
 ## AnalogSensor class
 
 
-### class AnalogSensor(pin)
-This is the class for sensing analog quantities
+**`class AnalogSensor(pin)`**
 
-Pin can be both a real device pin and a tuple containing an analog sensor object
-and a string for a window parameter to read.
+This is the class for sensing analog quantities.
+
+Pin can be both a real device pin and a tuple containing an analog sensor object and a string for a window parameter to read.
+
 Example:
 
-```
+```py
 lightSensor = AnalogSensor(A4)
 sensorOnAverage = AnalogSensor((lightSensor,'currentAverage'))
 ```
 
-the above code instantiates a light sensor on a device pin and another sensor that takes as input the lightSensor average.
+The code above, instantiates a light sensor on a device pin and another sensor that takes as input the lightSensor average.

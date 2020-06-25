@@ -18,14 +18,12 @@ Check this video for a live demo:
 
 Create a Thing instance representing an AWS IoT Thing.
 
-The Thing object will contain an mqtt client instance pointing to AWS IoT MQTT broker located at `endpoint` endpoint.
-The client is configured with `mqtt_id` as MQTT id and is able to connect securely through AWS authorized `pkey` private key and `clicert` certificate (an optional `cacert` CA Certificate can also be passed).
+The Thing object will contain an mqtt client instance pointing to AWS IoT MQTT broker located at `endpoint` endpoint. The client is configured with `mqtt_id` as MQTT id and is able to connect securely through AWS authorized `pkey` private key and `clicert` certificate (an optional `cacert` CA Certificate can also be passed).
 
 Refer to Zerynth SSL Context creation for admitted `pkey` values.
 
 The client is accessible through `mqtt` instance attribute and exposes all Zerynth MQTT Client methods so that it is possible, for example, to setup
-custom callback on MQTT commands.
-The only difference concerns mqtt.connect method which does not require broker url and ssl context, taking them from Thing configuration:
+custom callback on MQTT commands. The only difference concerns mqtt.connect method which does not require broker url and ssl context, taking them from Thing configuration:
 
 ```py
 my_thing = iot.Thing('my_ep_id.iot.my_region.amazonaws.com', 'my_thing_id', clicert, pkey)

@@ -37,7 +37,7 @@ There is no need to manually create instances of this class, they are returned b
 
 Retrieves data about the job. In particular the fields `version`, `status` and `document` are associated to the job instance after a successful `describe`.
 
-This method is ```blocking```. Control is not released until the job description is retrieved. Moreover, it is not safe to call the method from different threads.
+This method is *blocking*. Control is not released until the job description is retrieved. Moreover, it is not safe to call the method from different threads.
 
 Return True on success, False otherwise.
 

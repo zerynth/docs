@@ -1,11 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.zadm
+The following are a list of examples for lib.zerynth.zadm.
 
 ## Simple ADM
 
 
-A basic example showing RPC calls, events and mobile notifications using th Zerynth ADM
+A basic example showing RPC calls, events and mobile notifications using th Zerynth ADM.
 
 
 ```main.py```
@@ -80,7 +80,7 @@ except Exception as e:
 ## FOTA updates
 
 
-A basic example showing how to perform FOTA updates via the Zerynth ADM
+A basic example showing how to perform FOTA updates via the Zerynth ADM.
 
 
 ```main.py```

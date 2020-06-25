@@ -2,7 +2,7 @@
 
 The Zerynth AWS Greengrass Library contains helper functions for IoT devices to retrieve info about an [AWS Greengrass Core](https://aws.amazon.com/greengrass/).
 
-```NOTE```: to connect to an AWS Greengrass Core after info retrieval use Zerynth AWS IoT Core Library
+**NOTE**: to connect to an AWS Greengrass Core after info retrieval use Zerynth AWS IoT Core Library
 
 ## The DiscoveryInfo class
 
@@ -21,14 +21,12 @@ It exposes the following attributes and methods:
 
 **`CA()`**
 
-Returns Greengrass Core CA Certificate if only one Server Certificate is returned by discover call.
-Raises `GreengrassDiscoveryInfoException` if more than one certificate is returned.
+Returns Greengrass Core CA Certificate if only one Server Certificate is returned by discover call. Raises `GreengrassDiscoveryInfoException` if more than one certificate is returned.
 
 
 **`connectivity()`**
 
-Returns a tuple `(core_address, core_port)` with Greengrass Core address and port if only one Core is returned by discover call.
-Raises `GreengrassDiscoveryInfoException` if more than one Core is returned.
+Returns a tuple `(core_address, core_port)` with Greengrass Core address and port if only one Core is returned by discover call. Raises `GreengrassDiscoveryInfoException` if more than one Core is returned.
 
 ## Helper Functions
 
@@ -37,19 +35,9 @@ Raises `GreengrassDiscoveryInfoException` if more than one Core is returned.
 
 
 * **param endpoint:**   AWS server where to retrieve Greengrass core info
-
-
-
 * **param thingname:**   AWS IoT Core or AWS Greengrass Device name
-
-
-
 * **param clicert:**   client certificate
-
-
-
 * **param pkey:**   client private key
 
 
-Discover info about own group Greengrass Core.
-Returns a `DiscoveryInfo()` object.
+Discover info about own group Greengrass Core. Returns a `DiscoveryInfo()` object.

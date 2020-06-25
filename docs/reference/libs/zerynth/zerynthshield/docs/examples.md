@@ -1,12 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.zerynthshield
+The following are a list of examples for lib.zerynth.zerynthshield.
 
 ## Zerynth Shield Basics
 
 
-Zerynth Shield defines pin names in a board indipendent manner. This way you can upload the same script on different boards
-without changing anything. In this example raw values from sensors are read and printed to console.
+Zerynth Shield defines pin names in a board indipendent manner. This way you can upload the same script on different boards without changing anything. In this example raw values from sensors are read and printed to console.
 
 
 ```main.py```
@@ -44,12 +43,9 @@ while True:
 ## Electrect Microphone Peak Detector 
 
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-In this example the analogSensors module is used to acquire data from the Electrect Microphone embedded in the Zerynth Shield but an be also used with any other analog sensor connected to an analog pin.
-The analogSensors integrated routines are used to calculate the min-Max difference and then trigger a function if a threshold is passed.
+In this example the analogSensors module is used to acquire data from the Electrect Microphone embedded in the Zerynth Shield but an be also used with any other analog sensor connected to an analog pin. The analogSensors integrated routines are used to calculate the min-Max difference and then trigger a function if a threshold is passed.
 Use this sensor to start to develop your knock triggered smart device.  
 
 tags: [Smart Sensors Lib, analogSensors, Zerynth Shield, Electrect Microphone, Sound]
@@ -116,7 +112,7 @@ while True:
 ## Temperature Sampling
 
 
-This examples use the Analog Sensors features of the Smart Sensors library for implementing a temperature logger using the Zerynth Shield integrated temperature sensor
+This examples use the Analog Sensors features of the Smart Sensors library for implementing a temperature logger using the Zerynth Shield integrated temperature sensor.
 
 tags: [Zerynth Shield, Touch, Button, Digital Sensor]
 groups:[Zerynth Shield Driver]  
@@ -153,7 +149,7 @@ zerynthshield.temperature.startSampling(30000,20,"norm")
 ```
 ## Light Controlled PWM
 
-this examples shows how to use the Zerynth Shield Light sensors to drive a LED through a PWM implementing a light with luminosity feedback.
+This examples shows how to use the Zerynth Shield Light sensors to drive a LED through a PWM implementing a light with luminosity feedback.
 
   
 
@@ -201,12 +197,9 @@ zerynthshield.light.startSampling(200,None,"norm")
 ```
 ## Shield Pool
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-In this example a sensor pool of analog sensors is created to acquire data from the Light and Temperature sensors of the Zerynth Shield. The examples shows how to set a calibration function for the temperature sensor while leaving raw the data coming from the light sensor.
-Both normalized ans raw sensors are included in a sensorPool and the acquisition triggered simultaneously.
+In this example a sensor pool of analog sensors is created to acquire data from the Light and Temperature sensors of the Zerynth Shield. The examples shows how to set a calibration function for the temperature sensor while leaving raw the data coming from the light sensor. Both normalized ans raw sensors are included in a sensorPool and the acquisition triggered simultaneously.
 
 tags: [Smart Sensors Lib, analogSensors, Zerynth Shield, sensorPool]
 groups:[Smart Sensors Library, Zerynth Shield Driver]    
@@ -245,13 +238,9 @@ pool.startSampling([1000,1000],[None,None],["raw","norm"])
 ```
 ## Touch Smart Detector  
 
-The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors.
-Common operations like calculating min, max, average and trends are completely automated by the smartSensors library.
-Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
+The smartSensors library is a ready to use set of functions that are very useful for managing analog and digital sensors. Common operations like calculating min, max, average and trends are completely automated by the smartSensors library. Moreover the smartSensors lib allows user to define calibration functions for analog sensors and to use callback to schedule sampling and acquisition operations.
 
-The Zerynth Shield Library onDoubleTouch method allows to monitor a digital input to be considered as button or touch sensor. 
-The methods allow the definition of a set of functions to be called when a single, a double or a long touch is detected.
-The functions also allow to adjust the detecting parameter s in term of time ranges and constrains.
+The Zerynth Shield Library onDoubleTouch method allows to monitor a digital input to be considered as button or touch sensor.  The methods allow the definition of a set of functions to be called when a single, a double or a long touch is detected. The functions also allow to adjust the detecting parameter s in term of time ranges and constrains.
 
 tags: [Zerynth Shield, Touch, Button, Digital Sensor]
 groups:[Zerynth Shield Driver]    

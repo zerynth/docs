@@ -1,13 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.mqtt
+The following are a list of examples for lib.zerynth.mqtt.
 
 ## MQTT at mosquitto.org
 
 
-This simple example shows how to connect to an mqtt broker using Zerynth mqtt module
-and how to start publishing data on a channel and receiving data 
-from other sources publishing on different ones.
+This simple example shows how to connect to an mqtt broker using Zerynth mqtt module and how to start publishing data on a channel and receiving data  from other sources publishing on different ones.
 
 
 ```main.py```
