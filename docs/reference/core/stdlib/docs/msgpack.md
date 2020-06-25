@@ -38,15 +38,12 @@ Returns a bytearray containing the msgpack representation of ```obj```.
 Raises `MsgPackError` when ```obj``` contains non serializable objects.
 
 
----
-#### `#!py3 unpack()`
-
-!!!abstract "`#!py3 unpack(data, offs=0)`"
+`unpack(data, offs=0)`
 
 Returns an object represented in msgpack format inside the byte sequence ```data``` starting from offset ```offs```.
 
 Not every valid msgpack representation can be converted to python objects by ```unpack```.
 For example, 64-bit msgpack integers and msgpack ext types. In that case, `MsgUnpackError` is raised.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTEyMzY3OF19
+eyJoaXN0b3J5IjpbLTI1OTgyNzQxXX0=
 -->
