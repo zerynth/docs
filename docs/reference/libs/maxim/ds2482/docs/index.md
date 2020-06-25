@@ -12,9 +12,17 @@ The I2C slave address assignment is controlled by one (model 100), two (model 10
 
 
 * Supply Voltage (Vcc): from 2.9 V to 5.5 V
+
+
 * Operation Temperature (Top): from -40 °C to 85 °C
+
+
 * SCL Clock Frequency (Fscl): from 0 Hz to 400 kHz
+
+
 * Operating Current (Icc): 0.75 mA
+
+
 * Read Sample Time: 14 us (stardard mode), 1.5 us (overdrive mode)
 
 Here below, the Zerynth driver for the Maxim DS2482.
@@ -22,8 +30,12 @@ Here below, the Zerynth driver for the Maxim DS2482.
 
 Contents:
 
--   [DS2482 Module - One Wire](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html)
+-   [
+* DS2482 Module - One Wire](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html)
     -   [OneWireSensor class](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html#onewiresensor-class)
+
+
+    * OneWireSensor class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk5NDkwMzVdfQ==
+eyJoaXN0b3J5IjpbMzYzMTkyNDc4LC0xNTY5OTQ5MDM1XX0=
 -->
