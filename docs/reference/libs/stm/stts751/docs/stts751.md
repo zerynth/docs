@@ -52,52 +52,13 @@ Sets the device’s configuration registers.
 
 * **resolution** : sets the Resolution in bit of the conversion. Available values are:
 
-| Value
+| Value | N bit | Costant Name   | in °C/LSB     |
+|-------|-------|----------------|---------------|
+| 0x08  | 9     | STTS751_RES_9  | 0.5 °C/LSB    |
+| 0x00  | 10    | STTS751_RES_10 | 0.25 °C/LSB   |
+| 0x04  | 11    | STTS751_RES_11 | 0.125 °C/LSB  |
+| 0x0c  | 12    | STTS751_RES_12 | 0.0625 °C/LSB |
 
- | N bit
-
-            | Costant Name
-
-                  | in °C/LSB
-
- |
-| ----- | ---------------- | ----------------------------- | --------- |
-| 0x08
-
-  | 9
-
-                | STTS751_RES_9
-
-                 | 0.5 °C/LSB
-
- |
-| 0x00
-
-  | 10
-
-               | STTS751_RES_10
-
-                | 0.25 °C/LSB
-
- |
-| 0x04
-
-  | 11
-
-               | STTS751_RES_11
-
-                | 0.125 °C/LSB
-
- |
-| 0x0c
-
-  | 12
-
-               | STTS751_RES_12
-
-                | 0.0625 °C/LSB
-
- |
 Returns True if configuration is successful, False otherwise.
 
 
@@ -113,32 +74,12 @@ Retrieves the sensor flag status.
 
 Returns a dictionary with following key/value pairs:
 
-| Key
-
-   | Note
-
-             |
-| ----- | ---------------- |
-| busy
-
-  | If True, Sensor is Busy
-
- |
-| t_low
-
- | If True, Temp under threshold
-
- |
-| t_high
-
- | If True, Temp over threshold
-
-  |
-| therm
-
-  | If True, High internal Temp
-
-   |
+| Key    | Note                          |
+|--------|-------------------------------|
+| busy   | If True, Sensor is Busy       |
+| t_low  | If True, Temp under threshold |
+| t_high | If True, Temp over threshold  |
+| therm  | If True, High internal Temp   |
 
 **`get_sensor_id()`**
 
@@ -184,5 +125,5 @@ Sets the Thermal hysteresis threshold. Once Therm output has asserted, it will n
 
 Enables the timeout for the sensor readings (from 25 to 35 ms). Available values for ‘enable’ flag are ‘True’ or ‘False’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0Mjg5MTM4XX0=
+eyJoaXN0b3J5IjpbLTUyMDc5NTQwXX0=
 -->
