@@ -230,13 +230,10 @@ blocks if necessary until it can return without making the counter negative.
 If not given, ```value``` defaults to 1.
 
 The optional argument gives the initial ```value``` for the internal counter; it
-defaults to `1`. If the ```value``` given is less than 0, `ValueError`israised.
+defaults to `1`. If the ```value``` given is less than 0, `ValueError`is raised.
 
 
----
-#### `#!py3 acquire()`
-
-!!!abstract "`#!py3 acquire(blocking=True, timeout=-1)`"
+`acquire(blocking=True, timeout=-1)`
 
 Acquire a semaphore.
 
@@ -259,10 +256,7 @@ most ```timeout``` milliseconds.  If acquire does not complete successfully in
 that interval, return false.  Return true otherwise.
 
 
----
-#### `#!py3 release()`
-
-!!!abstract "`#!py3 release()`"
+`release()`
 
 Release a semaphore, incrementing the internal counter by one.  When it
 was zero on entry and another thread is waiting for it to become larger
@@ -271,10 +265,7 @@ than zero again, wake up that thread.
 ### Event class
 
 
----
-#### `#!py3 Event()`
-
-!!!abstract "`#!py3 Event()`"
+`Event()`
 
 Class implementing event objects.  An event manages a flag that can be set to
 true with the `set()` method and reset to false with the
@@ -282,38 +273,26 @@ true with the `set()` method and reset to false with the
 The flag is initially false.
 
 
----
-#### `#!py3 set()`
-
-!!!abstract "`#!py3 set()`"
+`set()`
 
 Set the internal flag to true. All threads waiting for it to become true
 are awakened. Threads that call `wait()` once the flag is true will
 not block at all.
 
 
----
-#### `#!py3 is_set()`
-
-!!!abstract "`#!py3 is_set()`"
+`is_set()`
 
 Return true if and only if the internal flag is true.
 
 
----
-#### `#!py3 clear()`
-
-!!!abstract "`#!py3 clear()`"
+`clear()`
 
 Reset the internal flag to false. Subsequently, threads calling
 `wait()` will block until `set()` is called to set the internal
 flag to true again.
 
 
----
-#### `#!py3 wait()`
-
-!!!abstract "`#!py3 wait(timeout=-1)`"
+`wait(timeout=-1)`
 
 Block until the internal flag is true.  If the internal flag is true on
 entry, return immediately.  Otherwise, block until another thread calls
@@ -402,10 +381,7 @@ but this is not guaranteed for every VM.
 ### Condition class
 
 
----
-#### `#!py3 Condition()`
-
-!!!abstract "`#!py3 Condition(lock=None)`"
+`Condition(lock=None)`
 
 This class implements condition variable objects.  A condition variable
 allows one or more threads to wait until they are notified by another thread.
@@ -415,37 +391,22 @@ and it is used as the underlying lock.  Otherwise,
 a new `Lock()` object is created and used as the underlying lock.
 
 
----
-#### `#!py3 acquire()`
-
-!!!abstract "`#!py3 acquire(blocking=True, timeout=-1)`"
+`acquire(blocking=True, timeout=-1)`
 
 Acquire the underlying lock. This method calls the corresponding method on
 the underlying lock; the return value is whatever that method returns.
 
 
----
-#### `#!py3 release()`
-
-!!!abstract "`#!py3 release()`"
+`release()`
 
 Release the underlying lock. This method calls the corresponding method on
 the underlying lock; there is no return value.
 
 
----
-#### `#!py3 wait()`
-
-!!!abstract "`#!py3 wait(timeout=-1)`"
+`wait(timeout=-1)`
 
 Wait until notified or until a timeout occurs. If the calling thread has
-not acquired the lock when this method is called, a 
-
-```
-:exc:`RuntimeError`
-```
-
- is
+not acquired the lock when this method is called, a `RuntimeError` is
 raised.
 
 This method releases the underlying lock, and then blocks until it is
@@ -529,5 +490,5 @@ calling thread has not acquired the lock when this method is called, a
 
  is raised.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MjM4MjE3NV19
+eyJoaXN0b3J5IjpbMTU3ODYzMTYxNV19
 -->
