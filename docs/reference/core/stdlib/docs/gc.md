@@ -3,10 +3,7 @@
 This module allows the interaction with the garbage collector from Zerynth programs.
 
 
----
-#### `#!py3 info()`
-
-!!!abstract "`#!py3 info()`"
+`info()`
 
 Returns a tuple of integers:
 
@@ -32,25 +29,19 @@ Returns a tuple of integers:
 7. Milliseconds since last collection
 
 
----
-#### `#!py3 collect()`
-
-!!!abstract "`#!py3 collect()`"
+`collect()`
 
 Starts a collection
 
 
----
-#### `#!py3 enable()`
-
-!!!abstract "`#!py3 enable(period=500)`"
+`enable(period=500)`
 
 Activates the garbage collector with a GC Period of ```period``` milliseconds
 
 
----
-#### `#!py3 disable()`
-
-!!!abstract "`#!py3 disable()`"
+`disable()`
 
 Disable garbage collector
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMxNTU2NzAyMV19
+-->
