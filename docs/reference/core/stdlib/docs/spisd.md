@@ -28,10 +28,7 @@ Address conventions:
 ## SpiSD class
 
 
----
-#### `#!py3 SpiSD()`
-
-!!!abstract "`#!py3 SpiSD(drvname, cs, clock=1000000)`"
+`SpiSD(drvname, cs, clock=1000000)`
 
 Initialize an SD card specifying its:
 
@@ -47,43 +44,28 @@ Initialize an SD card specifying its:
 The instance attribute ```hc``` is set to 1 if the card is recognized as an SDHC, to 0 otherwise.
 
 
----
-#### `#!py3 single_block_read()`
-
-!!!abstract "`#!py3 single_block_read(addr)`"
+`single_block_read(addr)`
 
 Read a single block at address ```addr```, following SDSC or SDHC address convention depending on used card.
 
 
----
-#### `#!py3 multiple_blocks_read()`
-
-!!!abstract "`#!py3 multiple_blocks_read(addr, n)`"
+`multiple_blocks_read(addr, n)`
 
 Read n blocks starting from address ```addr```, following SDSC or SDHC address convention depending on used card.
 
 
----
-#### `#!py3 read_data()`
-
-!!!abstract "`#!py3 read_data(addr, n)`"
+`read_data(addr, n)`
 
 Read n blocks starting from address ```addr```, SDHC address convention is used.
 
 
----
-#### `#!py3 single_block_write()`
-
-!!!abstract "`#!py3 single_block_write(addr, data)`"
+`single_block_write(addr, data)`
 
 Write a single block at address ```addr```, following SDSC or SDHC address convention depending on used card.
 ```data``` must be a 512-byte long bytearray.
 
 
----
-#### `#!py3 multiple_blocks_write()`
-
-!!!abstract "`#!py3 multiple_blocks_write(addr, data)`"
+`multiple_blocks_write(addr, data)`
 
 Write ```data``` starting from address ```addr```, following SDSC or SDHC address convention depending on used card.
 
@@ -103,19 +85,16 @@ block_2 = bytearray(0x200)
 ```
 
 
----
-#### `#!py3 write_data()`
-
-!!!abstract "`#!py3 write_data(addr, data)`"
+`write_data(addr, data)`
 
 Write ```data``` starting from address ```addr```, SDHC address convention is used.
 
 ```data``` format is defined as in `multiple_blocks_write()` .
 
 
----
-#### `#!py3 read_cid()`
-
-!!!abstract "`#!py3 read_cid()`"
+`read_cid()`
 
 Read 16-byte long cid register value.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwMjYxNjc4NzFdfQ==
+-->
