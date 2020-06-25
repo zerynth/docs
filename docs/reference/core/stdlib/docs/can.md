@@ -9,11 +9,7 @@ Frames are received by all devices, including by the transmitting device.
 
 ## The Can class
 
-
----
-#### `#!py3 Can()`
-
-!!!abstract "`#!py3 Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`"
+`Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`
 
 This class implements CAN controller functionalities.
 
@@ -276,3 +272,6 @@ Resume transmitting messages to the bus.
 
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODIyMDc3NjA3XX0=
+-->
