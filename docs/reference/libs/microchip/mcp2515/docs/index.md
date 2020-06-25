@@ -12,19 +12,35 @@ More Info in [Microchip dedicated page](http://www.microchip.com/wwwproducts/en/
 
 
 * Implements CAN V2.0B at 1 Mb/s
+
+
 * 0 to 8-byte length in the data field
+
+
 * Receive Buffers, Masks and Filters
+
+
 * Standard and extended data and remote frames
+
+
 * 5 mA active current (typical)
+
+
 * Supply Voltage (Vdd): from 2.7 V to 5.5 V
+
+
 * Temperature range: -40°C to +125°C
 
 Here below, the Zerynth driver for the Microchip MCP2515.
 
 Contents:
 
+
 * [MCP2515 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/docs/official_lib.microchip.mcp2515_mcp2515.html)
 * [Examples](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/examples/examples.html)
    * [can loopback](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/examples/examples.html#can-loopback)
    * [can communication](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/examples/examples.html#can-communication)
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTM4MDE5MDUyXX0=
+-->
