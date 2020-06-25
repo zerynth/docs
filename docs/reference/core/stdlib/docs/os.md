@@ -106,44 +106,29 @@ Return type can be string or bytes depending on chosen mode.
 An empty string or an empty bytes object indicate end of file.
 
 
----
-#### `#!py3 write()`
-
-!!!abstract "`#!py3 write(to_w, sync = False)`"
+`write(to_w, sync = False)`
 
 Write to_w object (string or bytes) to the stream and return the number of characters written.
 
 ```sync``` parameter allows to write changes to disk immediately, without waiting `close()` call.
 
 
----
-#### `#!py3 close()`
-
-!!!abstract "`#!py3 close()`"
+`close()`
 
 Close file stream.
 
 
----
-#### `#!py3 size()`
-
-!!!abstract "`#!py3 size()`"
+`size()`
 
 Return file size.
 
 
----
-#### `#!py3 tell()`
-
-!!!abstract "`#!py3 tell()`"
+`tell()`
 
 Return the current stream position.
 
 
----
-#### `#!py3 seek()`
-
-!!!abstract "`#!py3 seek(offset, whence=0)`"
+`seek(offset, whence=0)`
 
 Move the current position to ```offset``` bytes with respect to ```whence```.
 
@@ -159,22 +144,16 @@ Move the current position to ```offset``` bytes with respect to ```whence```.
 * 2: end of file
 
 
----
-#### `#!py3 truncate()`
-
-!!!abstract "`#!py3 truncate()`"
+`truncate()`
 
 Resize the stream to the given size in bytes (or the current position if size is not specified).
 The current stream position isn’t changed.
 
 
----
-#### `#!py3 readline()`
-
-!!!abstract "`#!py3 readline()`"
+`readline()`
 
 Read until newline or EOF and return a single str.
 If the stream is already at EOF, an empty string is returned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0ODEwMjQ1Nl19
+eyJoaXN0b3J5IjpbMTQ0MDY3MzgzMF19
 -->
