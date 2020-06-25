@@ -101,25 +101,10 @@ other headers are set to defaults if not given: for example “Connection: close
 
 ```head``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
----
-#### `#!py3 options()`
-
-!!!abstract "`#!py3 options(url, headers=None, ctx=None)`"
+`options(url, headers=None, ctx=None)`
 
 Implements the OPTIONS method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -129,25 +114,10 @@ other headers are set to defaults if not given: for example “Connection: close
 
 ```options``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
----
-#### `#!py3 upload()`
-
-!!!abstract "`#!py3 upload(url, fd, ctx=None, mime_type="application/octet-stream", method="POST")`"
+`upload(url, fd, ctx=None, mime_type="application/octet-stream", method="POST")`
 
 Upload a file identified by ```fd``` to ```url```. ```fd``` must provide methods read and size.
 
@@ -157,51 +127,27 @@ The type of the file contents and the HTTP method (POST pr PUT) can be customize
 
 ```upload``` returns a `Response()` instance.
 
-Exceptions can be raised: 
-
-```
-:exc:`HTTPConnectionError`
-```
-
- when the HTTP server can’t be contacted; 
-
-```
-:exc:`IOError`
-```
-
- when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, file, etc..)
+Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, file, etc..)
 
 
----
-#### `#!py3 Response()`
-
-!!!abstract "`#!py3 Response()`"
+`Response()`
 
 This class represent the result of a HTTP request.
 
 It contains the following members:
 
 
----
-#### `#!py3 status()`
-
-!!!abstract "`#!py3 status()`"
+`status()`
 
 Contains the HTTP response code
 
 
----
-#### `#!py3 content()`
-
-!!!abstract "`#!py3 content()`"
+`content()`
 
 It is the bytearray containing the byte version of the content section of a HTTP response
 
 
----
-#### `#!py3 headers()`
-
-!!!abstract "`#!py3 headers()`"
+`headers()`
 
 A dictionary with all the response headers
 
@@ -209,7 +155,7 @@ A dictionary with all the response headers
 ---
 #### `#!py3 connection()`
 
-!!!abstract "`#!py3 connection()`"
+!!!abstract "`connection()`"
 
 the connection used to communicate with the server, or None if it has been closed.
 
@@ -221,5 +167,5 @@ the connection used to communicate with the server, or None if it has been close
 
 Returns a string representing the content section of the HTTP response
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDg1ODI1MDFdfQ==
+eyJoaXN0b3J5IjpbLTE1NzE5MDk4MzhdfQ==
 -->
