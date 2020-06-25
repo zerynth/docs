@@ -52,10 +52,7 @@ through `ident`.
 ### Thread class
 
 
----
-#### `#!py3 Thread()`
-
-!!!abstract "`#!py3 Thread(target=None, name=None, args=())`"
+`Thread(target=None, name=None, args=())`
 
 This constructor should always be called with keyword arguments.  Arguments
 are:
@@ -73,10 +70,7 @@ base class constructor (`Thread.__init__()`) before doing anything else to
 the thread.
 
 
----
-#### `#!py3 start()`
-
-!!!abstract "`#!py3 start(prio = PRIO_NORMAL, size=512)`"
+`start(prio = PRIO_NORMAL, size=512)`
 
 Start the thread’s activity.
 
@@ -84,13 +78,7 @@ It must be called at most once per thread object.  It arranges for the
 object’s `run()` method to be invoked in a separate thread
 of control.
 
-This method will raise a 
-
-```
-:exc:`RuntimeError`
-```
-
- if called more than once
+This method will raise a `RuntimeError` if called more than once
 on the same thread object.
 
 ```prio``` and ```size``` are used to set the thread priority and the stack size.
@@ -575,3 +563,6 @@ calling thread has not acquired the lock when this method is called, a
 ```
 
  is raised.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NDY2NjI1NzJdfQ==
+-->
