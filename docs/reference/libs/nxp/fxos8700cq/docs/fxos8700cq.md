@@ -54,6 +54,7 @@ Initialize the FXOS8700CQ setting the operating mode, the output data rate , the
 | 6   | 6.25 Hz      | 160 ms             | 3.125 Hz    | 320 ms            |
 | 7   | 1.56 Hz      | 640 ms             | 0.7813      | 1280 ms           |
 
+
 | ODR
 
  | OSR=0
@@ -282,5 +283,5 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 Returns int_temp.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjU3MjgwOSw5NDU0MzMxMzldfQ==
+eyJoaXN0b3J5IjpbLTE3Mzc1MjY3Nyw5NDU0MzMxMzldfQ==
 -->
