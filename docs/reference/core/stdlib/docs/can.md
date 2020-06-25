@@ -67,11 +67,7 @@ The synchronization jump width ```sjw``` can be specified in any case.
 
 
 
-
----
-#### `#!py3 add_filter()`
-
-!!!abstract "`#!py3 add_filter(id, mask)`"
+`add_filter(id, mask)`
 
 Add a message acceptance filter for this CAN controller. A received message is accepted if:
 
@@ -95,11 +91,7 @@ The returned value is a number that uniquely identifies the filter and can be us
     the index of the filter added.
 
 
-
----
-#### `#!py3 del_filter()`
-
-!!!abstract "`#!py3 del_filter(filter)`"
+`del_filter(filter)`
 
 Remove a previously added message acceptance filter.
 
@@ -111,10 +103,7 @@ Remove a previously added message acceptance filter.
 
 
 
----
-#### `#!py3 transmit()`
-
-!!!abstract "`#!py3 transmit(id, dlc, data=None, timeout=-1)`"
+`transmit(id, dlc, data=None, timeout=-1)`
 
 Send a message to the CAN bus output mailboxes.
 
@@ -273,5 +262,5 @@ Resume transmitting messages to the bus.
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyMDc3NjA3XX0=
+eyJoaXN0b3J5IjpbMjg3MzkzOTI2XX0=
 -->
