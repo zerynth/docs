@@ -6,22 +6,49 @@ L76, the extremely compact GNSS module, is a concurrent GNSS receiver with multi
 
 
 * Compact size, 10.1mm × 9.7mm × 2.5mm
+
+
 * Multi-GNSS engine for GPS, GLONASS, BeiDou, Galileo and QZSS
+
+
 * EASY™, an advanced AGPS technology without external memory
+
+
 * Ultra low tracking power consumption, 18mA
+
+
 * AlwaysLocate™, an intelligent algorithm for power saving
+
+
 * LOCUS, an embedded logger solution with no need for host and external flash
+
+
 * High sensitivity, -165dBm @Tracking, -148dBm @Acquisition
+
+
 * 99 acquisition/ 33 tracking channels and 210 PRN channels
+
+
 * Support DGPS, SBAS (WAAS/ EGNOS/ MSAS/ GAGAN)
+
+
 * Anti-Jamming, Multi-tone Active Interference Canceller
+
+
 * Balloon mode, for high altitude up to 80km
+
+
 * PPS VS. NMEA can be used for time service
 
 Contents:
 
 
 * [L76 Module](https://docs.zerynth.com/latest/official/lib.quectel.l76/docs/official_lib.quectel.l76_l76.html)
+
+
     * [NMEA](https://docs.zerynth.com/latest/official/lib.quectel.l76/docs/official_lib.quectel.l76_l76.html#nmea)
 * [Examples](https://docs.zerynth.com/latest/official/lib.quectel.l76/examples/examples.html)
     * [Fix GPS](https://docs.zerynth.com/latest/official/lib.quectel.l76/examples/examples.html#fix-gps)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwMTk0MDc1MzJdfQ==
+-->
