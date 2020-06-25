@@ -2,7 +2,8 @@
 
 This module exposes easy to use functions to handle Cypress CapSense widgets.
 
-**NOTE:** At the moment the library is tailored for use with CapSense widgets mounted on the PSoC6 WiFi-BT Pioneer Kit (i.e., two buttons and a slider). Tuning and custom configurations are not supported.
+!!! note
+	At the moment the library is tailored for use with CapSense widgets mounted on the PSoC6 WiFi-BT Pioneer Kit (i.e., two buttons and a slider). Tuning and custom configurations are not supported.
 
 
 **`init()`**
@@ -71,5 +72,5 @@ Gets current slider centroid value.
 
 Returns `None` if the slider is currently not touched.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTI4OTM4XX0=
+eyJoaXN0b3J5IjpbMTY4NDcwMDU2OSwtNDIxMjg5MzhdfQ==
 -->
