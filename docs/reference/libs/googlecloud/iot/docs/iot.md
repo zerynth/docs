@@ -6,7 +6,11 @@ It allows to make your device act as a Google Cloud IoT Core Device which can be
 
 ## The Device class 
 
-**`class Device(project_id,cloud_region,registry_id,device_id,pkey, timestamp_fn,token_lifetime=60).`**
+
+**`class---
+#### `#!py3 Device()`
+
+!!!abstract "`#!py3 Device(project_id, cloud_region, registry_id, device_id, pkey, timestamp_fn, token_lifetime=60).`**`"
 
 Create a Device instance representing a Google Cloud IoT Core Device.
 
@@ -48,17 +52,29 @@ my_device.mqtt.connect()
 my_device.mqtt.loop()
 ```
 
-**`publish_event(event)`**
+**`
+---
+#### `#!py3 publish_event()`
 
-Publish a new event `event`.`event` must be a dictionary and will be sent as json string.
+!!!abstract "`#!py3 publish_event(event)`**"
+
+Publish a new event `event`.
+`event` must be a dictionary and will be sent as json string.
 
 
-**`publish_state(state)`**
+**`---
+#### `#!py3 publish_state()`
 
-Publish a new state `state`.`state` must be a dictionary and will be sent as json string.
+!!!abstract "`#!py3 publish_state(state)`**"
+
+Publish a new state `state`.
+`state` must be a dictionary and will be sent as json string.
 
 
-**`on_config(config_cbk)`**
+**`---
+#### `#!py3 on_config()`
+
+!!!abstract "`#!py3 on_config(config_cbk)`**"
 
 Set a callback to be called on config updates.
 
@@ -75,7 +91,10 @@ my_device.on_config(config_cbk)
 If the callback returns a dictionary, it will be immediately sent as updated device state.
 
 
-**`on_command(command_cbk)`**
+**`---
+#### `#!py3 on_command()`
+
+!!!abstract "`#!py3 on_command(command_cbk)`**"
 
 Set a callback to be called on command.
 
@@ -89,5 +108,5 @@ def command_cbk(command, subfolder):
 my_device.on_command(command_cbk)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTU2MjE1NjVdfQ==
+eyJoaXN0b3J5IjpbLTMzMTgwMjcxNCwtMTI1NTYyMTU2NV19
 -->
