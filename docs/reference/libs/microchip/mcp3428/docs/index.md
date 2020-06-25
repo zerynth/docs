@@ -13,11 +13,23 @@ and I2C address selection options. More information at Microchip dedicated pages
 
 
 * 16-bit resolution
+
+
 * 2 (MCP3426, MCP3427) or 4 (MCP3428) differential input channels
+
+
 * On-Board Voltage Reference
+
+
 * On-Board PGA, gains of 1, 2, 4 or 8
+
+
 * Programmable Date Rate
+
+
 * Supply Voltage (Vdd): from 2.7 V to 5.5 V
+
+
 * Temperature range: -40°C to +125°C
 
 Here below, the Zerynth driver for the Microchip MCP3426/3427/3428.
@@ -26,6 +38,11 @@ Contents:
 
 
 * [MCP3426/3427/3428 Module](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/docs/official_lib.microchip.mcp3208_mcp3208.html)
+
+
     * [MCP3428 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/docs/official_lib.microchip.mcp3208_mcp3208.html#mcp3208-class)
 * [Examples](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/examples/examples.html)
     * [thumbstick](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/examples/examples.html#thumbstick)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgwMzk5NDk1OV19
+-->
