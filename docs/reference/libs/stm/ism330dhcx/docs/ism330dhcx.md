@@ -64,52 +64,13 @@ Sets the device’s configuration registers for accelerometer.
 
 * **fs** : sets the Device Full Scale. Available values are:
 
-| Value
+| Value | Full Scale | Costant Name               | in mg/LSB    |
+|-------|------------|----------------------------|--------------|
+| 0x00  | ±2g        | ISM330DHCX_ACC_SENS_FS_2G  | 0.061 mg/LSB |
+| 0x01  | ±4g        | ISM330DHCX_ACC_SENS_FS_4G  | 0.122 mg/LSB |
+| 0x02  | ±8g        | ISM330DHCX_ACC_SENS_FS_8G  | 0.244 mg/LSB |
+| 0x03  | ±16g       | ISM330DHCX_ACC_SENS_FS_16G | 0.488 mg/LSB |
 
- | Full Scale
-
-       | Costant Name
-
-          | in mg/LSB
-
- |
-| ----- | ---------------- | --------------------- | --------- |
-| 0x00
-
-  | ±2g
-
-              | ISM330DHCX_ACC_SENS_FS_2G
-
- | 0.061 mg/LSB
-
- |
-| 0x01
-
-  | ±4g
-
-              | ISM330DHCX_ACC_SENS_FS_4G
-
- | 0.122 mg/LSB
-
- |
-| 0x02
-
-  | ±8g
-
-              | ISM330DHCX_ACC_SENS_FS_8G
-
- | 0.244 mg/LSB
-
- |
-| 0x03
-
-  | ±16g
-
-             | ISM330DHCX_ACC_SENS_FS_16G
-
- | 0.488 mg/LSB
-
- |
 Returns True if configuration is successful, False otherwise.
 
 
@@ -129,158 +90,31 @@ Sets the device’s configuration registers for gyroscope.
 
 * **odr** : sets the Output Data Rate of the device. Available values are:
 
-| Value
-
- | Output Data Rate
-
- | Constant Name
-
-              |
-| ----- | ---------------- | -------------------------- |
-| 0x00
-
-  | OFF
-
-              | ISM330DHCX_ODR_OFF
-
-         |
-| 0x01
-
-  | 12.5 Hz
-
-          | ISM330DHCX_ODR_12Hz5
-
-       |
-| 0x02
-
-  | 26 Hz
-
-            | ISM330DHCX_ODR_26Hz
-
-        |
-| 0x03
-
-  | 52 Hz
-
-            | ISM330DHCX_ODR_52Hz
-
-        |
-| 0x04
-
-  | 104 Hz
-
-           | ISM330DHCX_ODR_104Hz
-
-       |
-| 0x05
-
-  | 208 Hz
-
-           | ISM330DHCX_ODR_208Hz
-
-       |
-| 0x06
-
-  | 417 Hz
-
-           | ISM330DHCX_ODR_417Hz
-
-       |
-| 0x07
-
-  | 833 Hz
-
-           | ISM330DHCX_ODR_833Hz
-
-       |
-| 0x08
-
-  | 1.667 KHz
-
-        | ISM330DHCX_ODR_1667Hz
-
-      |
-| 0x09
-
-  | 3.333 KHz
-
-        | ISM330DHCX_ODR_3333Hz
-
-      |
-| 0x0A
-
-  | 6.667 KHz
-
-        | ISM330DHCX_ODR_6667Hz
-
-      |
+| Value | Output Data Rate | Constant Name         |
+|-------|------------------|-----------------------|
+| 0x00  | OFF              | ISM330DHCX_ODR_OFF    |
+| 0x01  | 12.5 Hz          | ISM330DHCX_ODR_12Hz5  |
+| 0x02  | 26 Hz            | ISM330DHCX_ODR_26Hz   |
+| 0x03  | 52 Hz            | ISM330DHCX_ODR_52Hz   |
+| 0x04  | 104 Hz           | ISM330DHCX_ODR_104Hz  |
+| 0x05  | 208 Hz           | ISM330DHCX_ODR_208Hz  |
+| 0x06  | 417 Hz           | ISM330DHCX_ODR_417Hz  |
+| 0x07  | 833 Hz           | ISM330DHCX_ODR_833Hz  |
+| 0x08  | 1.667 KHz        | ISM330DHCX_ODR_1667Hz |
+| 0x09  | 3.333 KHz        | ISM330DHCX_ODR_3333Hz |
+| 0x0A  | 6.667 KHz        | ISM330DHCX_ODR_6667Hz |
 
 * **fs** : sets the Device Full Scale. Available values are:
 
-| Value
+| Value | Full Scale |           Costant Name          |    in mdps/LSB   |
+|:-----:|:----------:|:-------------------------------:|:----------------:|
+| 0x00  | ±125 dps   | ISM330DHCX_GYRO_SENS_FS_125DPS  | 4.375 mdps/LSB   |
+| 0x01  | ±250 dps   | ISM330DHCX_GYRO_SENS_FS_250DPS  | 8.750 mdps/LSB   |
+| 0x02  | ±500 dps   | ISM330DHCX_GYRO_SENS_FS_500DPS  | 17.500 mdps/LSB  |
+| 0x03  | ±1000 dps  | ISM330DHCX_GYRO_SENS_FS_1000DPS | 35.000 mdps/LSB  |
+| 0x04  | ±2000 dps  | ISM330DHCX_GYRO_SENS_FS_2000DPS | 70.000 mdps/LSB  |
+| 0x05  | ±4000 dps  | ISM330DHCX_GYRO_SENS_FS_4000DPS | 140.000 mdps/LSB |
 
- | Full Scale
-
-       | Costant Name
-
-               | in mdps/LSB
-
-  |
-| ----- | ---------------- | -------------------------- | ------------ |
-| 0x00
-
-  | ±125 dps
-
-         | ISM330DHCX_GYRO_SENS_FS_125DPS
-
- | 4.375 mdps/LSB
-
- |
-| 0x01
-
-  | ±250 dps
-
-         | ISM330DHCX_GYRO_SENS_FS_250DPS
-
- | 8.750 mdps/LSB
-
- |
-| 0x02
-
-  | ±500 dps
-
-         | ISM330DHCX_GYRO_SENS_FS_500DPS
-
- | 17.500 mdps/LSB
-
- |
-| 0x03
-
-  | ±1000 dps
-
-        | ISM330DHCX_GYRO_SENS_FS_1000DPS
-
- | 35.000 mdps/LSB
-
- |
-| 0x04
-
-  | ±2000 dps
-
-        | ISM330DHCX_GYRO_SENS_FS_2000DPS
-
- | 70.000 mdps/LSB
-
- |
-| 0x05
-
-  | ±4000 dps
-
-        | ISM330DHCX_GYRO_SENS_FS_4000DPS
-
- | 140.000 mdps/LSB
-
- |
 Returns True if configuration is successful, False otherwise.
 
 
@@ -359,5 +193,5 @@ Enables the interrupt pins. When data from sensor selected will be ready, the re
 
 Returns True if configuration is successful, False otherwise.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTU5MjcyMTldfQ==
+eyJoaXN0b3J5IjpbODIwMjU0MDk5XX0=
 -->
