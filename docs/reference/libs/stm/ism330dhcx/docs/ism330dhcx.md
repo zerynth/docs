@@ -47,98 +47,20 @@ Sets the device’s configuration registers for accelerometer.
 
 * **odr** : sets the Output Data Rate of the device. Available values are:
 
-| Value
-
- | Output Data Rate
-
- | Constant Name
-
- |
-| ----- | ---------------- | ------------- |
-| 0x00
-
-  | OFF
-
-              | ISM330DHCX_ODR_OFF
-
- |
-| 0x01
-
-  | 12.5 Hz
-
-          | ISM330DHCX_ODR_12Hz5
-
- |
-| 0x02
-
-  | 26 Hz
-
-            | ISM330DHCX_ODR_26Hz
-
-  |
-| 0x03
-
-  | 52 Hz
-
-            | ISM330DHCX_ODR_52Hz
-
-  |
-| 0x04
-
-  | 104 Hz
-
-           | ISM330DHCX_ODR_104Hz
-
- |
-| 0x05
-
-  | 208 Hz
-
-           | ISM330DHCX_ODR_208Hz
-
- |
-| 0x06
-
-  | 417 Hz
-
-           | ISM330DHCX_ODR_417Hz
-
- |
-| 0x07
-
-  | 833 Hz
-
-           | ISM330DHCX_ODR_833Hz
-
- |
-| 0x08
-
-  | 1.667 KHz
-
-        | ISM330DHCX_ODR_1667Hz
-
- |
-| 0x09
-
-  | 3.333 KHz
-
-        | ISM330DHCX_ODR_3333Hz
-
- |
-| 0x0A
-
-  | 6.667 KHz
-
-        | ISM330DHCX_ODR_6667Hz
-
- |
-| 0x0B
-
-  | 6.5 Hz
-
-           | ISM330DHCX_ODR_6Hz5
-
-   |
+| Value | Output Data Rate | Constant Name         |
+|-------|------------------|-----------------------|
+| 0x00  | OFF              | ISM330DHCX_ODR_OFF    |
+| 0x01  | 12.5 Hz          | ISM330DHCX_ODR_12Hz5  |
+| 0x02  | 26 Hz            | ISM330DHCX_ODR_26Hz   |
+| 0x03  | 52 Hz            | ISM330DHCX_ODR_52Hz   |
+| 0x04  | 104 Hz           | ISM330DHCX_ODR_104Hz  |
+| 0x05  | 208 Hz           | ISM330DHCX_ODR_208Hz  |
+| 0x06  | 417 Hz           | ISM330DHCX_ODR_417Hz  |
+| 0x07  | 833 Hz           | ISM330DHCX_ODR_833Hz  |
+| 0x08  | 1.667 KHz        | ISM330DHCX_ODR_1667Hz |
+| 0x09  | 3.333 KHz        | ISM330DHCX_ODR_3333Hz |
+| 0x0A  | 6.667 KHz        | ISM330DHCX_ODR_6667Hz |
+| 0x0B  | 6.5 Hz           | ISM330DHCX_ODR_6Hz5   |
 
 * **fs** : sets the Device Full Scale. Available values are:
 
@@ -436,3 +358,6 @@ Enables the interrupt pins. When data from sensor selected will be ready, the re
 
 
 Returns True if configuration is successful, False otherwise.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4MTU5MjcyMTldfQ==
+-->
