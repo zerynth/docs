@@ -220,38 +220,26 @@ Abort any pending `receive()` calls, that will raise a ```TimeoutError```, and p
 to be received, raising ```ConnectionAbortedError```, until resumed.
 
 
----
-#### `#!py3 abort_transmit()`
-
-!!!abstract "`#!py3 abort_transmit()`"
+`abort_transmit()`
 
 Abort any pending `transmit()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be transmitted, raising ```ConnectionAbortedError```, until resumed.
 
 
----
-#### `#!py3 resume_receive()`
-
-!!!abstract "`#!py3 resume_receive()`"
+`resume_receive()`
 
 Resume receiving messages from the bus.
 
 
----
-#### `#!py3 resume_transmit()`
-
-!!!abstract "`#!py3 resume_transmit()`"
+`resume_transmit()`
 
 Resume transmitting messages to the bus.
 
 
----
-#### `#!py3 done()`
-
-!!!abstract "`#!py3 done()`"
+`done()`
 
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIyMTAxMTAyLDI4NzM5MzkyNl19
+eyJoaXN0b3J5IjpbMTMzNTg3MDQzNCwyODczOTM5MjZdfQ==
 -->
