@@ -124,10 +124,7 @@ Send a message to the CAN bus output mailboxes.
 
 
 
----
-#### `#!py3 receive()`
-
-!!!abstract "`#!py3 receive(data=None, timeout=-1)`"
+`receive(data=None, timeout=-1)`
 
 Receive a message from the CAN bus input mailboxes.
 
@@ -160,10 +157,7 @@ If a ```data``` bytearray is provided it is used to store received data, otherwi
 
 
 
----
-#### `#!py3 get_errors()`
-
-!!!abstract "`#!py3 get_errors()`"
+`get_errors()`
 
 Get the accumulated error information.
 
@@ -220,10 +214,7 @@ Get the accumulated error information.
 
 
 
----
-#### `#!py3 abort_receive()`
-
-!!!abstract "`#!py3 abort_receive()`"
+`abort_receive()`
 
 Abort any pending `receive()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be received, raising ```ConnectionAbortedError```, until resumed.
@@ -262,5 +253,5 @@ Resume transmitting messages to the bus.
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg3MzkzOTI2XX0=
+eyJoaXN0b3J5IjpbOTIyMTAxMTAyLDI4NzM5MzkyNl19
 -->
