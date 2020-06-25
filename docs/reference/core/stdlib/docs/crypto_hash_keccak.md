@@ -38,7 +38,7 @@ The class supports 4 variants of Keccak, selectable in the constructor with one 
 ## The Keccak class
 
 
-### class Keccak(hashtype=KECCAK256)
+`class Keccak(hashtype=KECCAK256)`
 This class allows the generation of Keccak hashes. It is thread safe. By default, it calculates the Keccak-256 variant.
 This behaviour can be changed by passing a different value for ```hashtype```
 
@@ -55,3 +55,6 @@ the Keccak variant.
 
 ### hexdigest()
 Like digest except the digest is returned as a string containing only hexadecimal digits.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5OTY4MzM4NDFdfQ==
+-->
