@@ -10,8 +10,14 @@ The RN2483 is the first LoRa module to pass LoRa Alliance Certification testing.
 
 
 * Supply Voltage (Vdd): from 2.1 V to 3.6 V
+
+
 * Operation Temperature (Top): from -40 °C to 85 °C
+
+
 * Low-power Consumption
+
+
 * Programmable RF Communication Bit Rate up to 300 kbps with FSK modulation, 5468 bps with LoRa Technology modulation
 
 Here below, the Zerynth driver for the Microchip RN2483 and some examples to better understand how to use it.
@@ -24,3 +30,6 @@ Contents:
   * [get eui](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html#get-eui)
   * [ping](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html#ping)
   * [custom eui](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html#custom-euiS)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMxMzIzNDkwNl19
+-->
