@@ -69,62 +69,14 @@ rules used by the C compiler).
 Alternatively, the first character of the format string can be used to indicate
 the byte order, size and alignment of the packed data, according to the
 following table:
+| Character | Byte order             | Size     | Alignment |
+|-----------|------------------------|----------|-----------|
+| @         | native                 | native   | native    |
+| =         | native                 | standard | none      |
+| <         | little-endian          | standard | none      |
+| >         | big-endian             | standard | none      |
+| !         | network (= big-endian) | standard | none      |
 
-| Character
-
- | Byte order
-
- | Size
-
- | Alignment
-
- |
-| --------------- | ---------------------- | ------------------- | --------- |  |  |  |  |  |  |  |
-| `@`
-
-               | native
-
-                 | native
-
-              | native
-
-    |
-| `=`
-
-               | native
-
-                 | standard
-
-            | none
-
-      |
-| `<`
-
-               | little-endian
-
-          | standard
-
-            | none
-
-      |
-| `>`
-
-               | big-endian
-
-             | standard
-
-            | none
-
-      |
-| `!`
-
-               | network (= big-endian)
-
- | standard
-
-            | none
-
-      |
 If the first character is not one of these, `'@'` is assumed.
 
 Native byte order is big-endian or little-endian, depending on the host
@@ -165,233 +117,31 @@ refers to the size of the packed value in bytes when using standard size; that
 is, when the format string starts with one of `'<'`, `'>'`, `'!'` or
 `'='`.  When using native size, the size of the packed value is
 platform-dependent.
+| Format | C Type             | Python type       | Standard size | Notes    |
+|--------|--------------------|-------------------|---------------|----------|
+| x      | pad byte           | no value          |               |          |
+| c      | char               | bytes of length 1 | 1             |          |
+| b      | signed char        | integer           | 1             | (1),(3)  |
+| B      | unsigned char      | integer           | 1             | (3)      |
+| ?      | _Bool              | bool              | 1             | (1)      |
+| h      | short              | integer           | 2             | (3)      |
+| H      | unsigned short     | integer           | 2             | (3)      |
+| i      | int                | integer           | 4             | (3)      |
+| I      | unsigned int       | integer           | 4             | (3)      |
+| l      | long               | integer           | 4             | (3)      |
+| L      | unsigned long      | integer           | 4             | (3)      |
+| q      | long long          | integer           | 8             | (2), (3) |
+| Q      | unsigned long long | integer           | 8             | (2), (3) |
+| n      | ssize_t            | integer           |               | (4)      |
+| N      | size_t             | integer           |               | (4)      |
+| e      | (7)                | float             | 2             | (5)      |
+| f      | float              | float             | 4             | (5)      |
+| d      | double             | float             | 8             | (5)      |
+| s      | char[]             | bytes             |               |          |
+| p      | char[]             | bytes             |               |          |
+| P      | void *             | integer           |               | (6)      |
 
-| Format
-
-          | C Type
-
-                 | Python type
-
-         | Standard size
-
- | Notes
-
- |
-| --------------- | ---------------------- | ------------------- | ------------- | ----- |
-| `x`
-
-               | pad byte
-
-               | no value
-
-            |               |       |
-| `c`
-
-               | `char`
-
-                   | bytes of length 1
-
-   | 1
-
-             |       |
-| `b`
-
-               | `signed char`
-
-            | integer
-
-             | 1
-
-             | (1),(3)
-
- |
-| `B`
-
-               | `unsigned char`
-
-          | integer
-
-             | 1
-
-             | (3)
-
-     |
-| `?`
-
-               | `_Bool`
-
-                  | bool
-
-                | 1
-
-             | (1)
-
-     |
-| `h`
-
-               | `short`
-
-                  | integer
-
-             | 2
-
-             | (3)
-
-     |
-| `H`
-
-               | `unsigned short`
-
-         | integer
-
-             | 2
-
-             | (3)
-
-     |
-| `i`
-
-               | `int`
-
-                    | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `I`
-
-               | `unsigned int`
-
-           | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `l`
-
-               | `long`
-
-                   | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `L`
-
-               | `unsigned long`
-
-          | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `q`
-
-               | `long long`
-
-              | integer
-
-             | 8
-
-             | (2), (3)
-
- |
-| `Q`
-
-               | `unsigned long
-long`
-
-     | integer
-
-             | 8
-
-             | (2), (3)
-
- |
-| `n`
-
-               | `ssize_t`
-
-                | integer
-
-             |               | (4)
-
-      |
-| `N`
-
-               | `size_t`
-
-                 | integer
-
-             |               | (4)
-
-      |
-| `e`
-
-               | (7)
-
-                    | float
-
-               | 2
-
-             | (5)
-
-      |
-| `f`
-
-               | `float`
-
-                  | float
-
-               | 4
-
-             | (5)
-
-      |
-| `d`
-
-               | `double`
-
-                 | float
-
-               | 8
-
-             | (5)
-
-      |
-| `s`
-
-               | `char[]`
-
-                 | bytes
-
-               |               |          |
-| `p`
-
-               | `char[]`
-
-                 | bytes
-
-               |               |          |
-| `P`
-
-               | `void \*`
-
-                 | integer
-
-             |               | (6)
-
-      |
 Notes:
-
 
 1. The `'?'` conversion code corresponds to the `_Bool` type defined by
 C99. If this type is not available, it is simulated using a `char`. In
@@ -545,5 +295,5 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY1MTE3NDIwXX0=
+eyJoaXN0b3J5IjpbNzg0NzYxNTI5XX0=
 -->
