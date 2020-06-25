@@ -65,7 +65,8 @@ Sets the length of the window (n) used to evaluate a set of useful parameters. N
 
 Manually sets _samplingTime private attribute.
 
-**WARNING**: **Use carefully** setObservationWindow method.
+!!! warning
+	**Use carefully** setObservationWindow method.
 
 This attribute is automatically set when startSampling method is called.
 
@@ -81,7 +82,8 @@ The buffer is a list of _observationWindowN elements if the window evaluation pr
 
 Returns last but one read sample: stored in the buffer list (see currentSample).
 
-**NOTE**: Not available if evaluation process is skipped.
+!!! note
+	Not available if evaluation process is skipped.
 
 
 **`getRaw()`**
@@ -98,7 +100,8 @@ Main acquisition method for normalized data.
 
 Appends a function to the list of those to be executed when _getValue is called.
 
-**NOTE**: *_getValue* is called both in sampling and manual acquisition mode.
+!!! note
+	*_getValue* is called both in sampling and manual acquisition mode.
 
 Example:
 
@@ -200,3 +203,6 @@ Sleeps for *time* milliseconds and returns self to allow a compact code:
 ```py
 mySensor.doEverySample(out).startSampling(…).wait(5000).stopSampling()
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3OTI4NDE0MjNdfQ==
+-->
