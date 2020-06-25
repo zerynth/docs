@@ -55,179 +55,16 @@ Initialize the FXOS8700CQ setting the operating mode, the output data rate , the
 | 7   | 1.56 Hz      | 640 ms             | 0.7813      | 1280 ms           |
 
 
-| ODR
-
- | OSR=0
-
-        | OSR=1
-
-              | OSR=2
-
-       | OSR=3
-
-             | OSR=4
-
- | OSR=5
-
- | OSR=6
-
- | OSR=7
-
- |
-| --- | ------------ | ------------------ | ----------- | ----------------- | ----- | ----- | ----- | ----- |
-| 1.56 Hz
-
- | 16
-
-           | 16
-
-                 | 32
-
-          | 64
-
-                | 128
-
-   | 256
-
-   | 512
-
-   | 1024
-
-  |
-| 6.25 Hz
-
- | 4
-
-            | 4
-
-                  | 8
-
-           | 16
-
-                | 32
-
-    | 64
-
-    | 128
-
-   | 256
-
-   |
-| 12.5 Hz
-
- | 2
-
-            | 2
-
-                  | 4
-
-           | 8
-
-                 | 16
-
-    | 32
-
-    | 64
-
-    | 128
-
-   |
-| 50 Hz
-
-   | 2
-
-            | 2
-
-                  | 2
-
-           | 2
-
-                 | 4
-
-     | 8
-
-     | 16
-
-    | 32
-
-    |
-| 100 Hz
-
-  | 2
-
-            | 2
-
-                  | 2
-
-           | 2
-
-                 | 2
-
-     | 4
-
-     | 8
-
-     | 16
-
-    |
-| 200 Hz
-
-  | 2
-
-            | 2
-
-                  | 2
-
-           | 2
-
-                 | 2
-
-     | 2
-
-     | 4
-
-     | 8
-
-     |
-| 400 Hz
-
-  | 2
-
-            | 2
-
-                  | 2
-
-           | 2
-
-                 | 2
-
-     | 2
-
-     | 2
-
-     | 4
-
-     |
-| 800 Hz
-
-  | 2
-
-            | 2
-
-                  | 2
-
-           | 2
-
-                 | 2
-
-     | 2
-
-     | 2
-
-     | 2
-
-     |
-
+|   ODR   | OSR=0 | OSR=1 | OSR=2 | OSR=3 | OSR=4 | OSR=5 | OSR=6 | OSR=7 |
+|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 1.56 Hz | 16    | 16    | 32    | 64    | 128   | 256   | 512   | 1024  |
+| 6.25 Hz | 4     | 4     | 8     | 16    | 32    | 64    | 128   | 256   |
+| 12.5 Hz | 2     | 2     | 4     | 8     | 16    | 32    | 64    | 128   |
+| 50 Hz   | 2     | 2     | 2     | 2     | 4     | 8     | 16    | 32    |
+| 100 Hz  | 2     | 2     | 2     | 2     | 2     | 4     | 8     | 16    |
+| 200 Hz  | 2     | 2     | 2     | 2     | 2     | 2     | 4     | 8     |
+| 400 Hz  | 2     | 2     | 2     | 2     | 2     | 2     | 2     | 4     |
+| 800 Hz  | 2     | 2     | 2     | 2     | 2     | 2     | 2     | 2     |
 **`get_raw_acc()`**
 
 Retrieves the current accelerometer data as a tuple of X, Y, Z, raw values.
@@ -283,5 +120,5 @@ Retrieves the current device internal temperature value in Celtius, Kelvin or Fa
 
 Returns int_temp.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc1MjY3Nyw5NDU0MzMxMzldfQ==
+eyJoaXN0b3J5IjpbLTc1OTAxMDY3OSw5NDU0MzMxMzldfQ==
 -->
