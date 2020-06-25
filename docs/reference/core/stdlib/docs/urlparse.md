@@ -4,10 +4,7 @@ This module defines a standard interface to break Uniform Resource Locator (URL)
 strings up in components (addressing scheme, network location, path etc.)
 
 
----
-#### `#!py3 parse()`
-
-!!!abstract "`#!py3 parse(url)`"
+`parse(url)`
 
 Returns a tuple (```scheme```, ```netloc```, ```path```, ```query```, ```fragment```) derived from ```url```.
 
@@ -21,7 +18,7 @@ present.  For example:
 import urlparse
 o = urlparse(‘[http://www.cwi.nl:80/%7Eguido/Python.html](http://www.cwi.nl:80/%7Eguido/Python.html)’)
 
-# result is (‘http’, ‘www.cwi.nl:80’, ‘/%7Eguido/Python.html’, ‘’, ‘’)
+#result is (‘http’, ‘www.cwi.nl:80’, ‘/%7Eguido/Python.html’, ‘’, ‘’)
 
 Following the syntax specifications in [**RFC 1808**](https://tools.ietf.org/html/rfc1808.html), urlparse recognizes
 a netloc only if it is properly introduced by ‘//’.  Otherwise the
@@ -96,3 +93,6 @@ Tranforms data dictionary in a urlencoded query string and returns the query str
 Each pair (key, value) is encoded by ```quote_via``` function.
 By default, `quote_plus()` is used to quote the values.
 An alternate function that can be passed as quote_via is `quote()`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MDY4NjQ1NTNdfQ==
+-->
