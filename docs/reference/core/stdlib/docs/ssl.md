@@ -632,14 +632,7 @@ This function generates an SSL context with the following data:
 
 * ```cacert``` is the CA certificate that will be used to authenticate the other end of the TLS connection
 
-
-* 
-
-```
-**
-```
-
-clicert\* is the certificate that the server expects to receive from the client in a two-way TLS authentication
+* ```clicert``` is the certificate that the server expects to receive from the client in a two-way TLS authentication
 
 
 * ```pkey``` is the private key matching ```clicert```. It can be an empty string to use a hardware stored private key. To enable the use of hardware keys a hardware cryptographic interface must be started. For example, with an `ATECC508A` (ATECCx08A interface):
@@ -679,5 +672,5 @@ Returns a tuple to be passed as parameter during secure socket creation.
 
 ```NOTE```: ```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwMzYxOTMzXX0=
+eyJoaXN0b3J5IjpbLTQxNzk5ODU2MV19
 -->
