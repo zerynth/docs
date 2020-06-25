@@ -31,20 +31,14 @@ IPv4 addresses can be passed to functions and methods in the following forms:
 if a port is required but not given, it is set to zero.
 
 
----
-#### `#!py3 ip_to_tuple()`
-
-!!!abstract "`#!py3 ip_to_tuple()`"
+`ip_to_tuple()`
 
 Return a tuple of four integers from a ip address of the form “x.y.z.w”.
 
 ## The socket class
 
 
----
-#### `#!py3 socket()`
-
-!!!abstract "`#!py3 socket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, fileno=None)`"
+`socket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, fileno=None)`
 
 This class represents a BSD socket.
 
@@ -77,18 +71,12 @@ sock.sendall("Hello World!")
 ```
 
 
----
-#### `#!py3 fileno()`
-
-!!!abstract "`#!py3 fileno()`"
+`fileno()`
 
 Return an integer identifying the underlying socket number.
 
 
----
-#### `#!py3 connect()`
-
-!!!abstract "`#!py3 connect(address)`"
+`connect(address)`
 
 Tries to connect the underlying socket (tcp or udp) to ```address```.
 A tcp socket must be connected to be used successfully. Udp sockets are connectionless and everytime a datagram
@@ -97,68 +85,47 @@ it can be used with methods like `recv()` and `send()` without specifying a rece
 When an udp socket is connected to ```address```, datagram packets coming from addresses different from ```address``` are ignored.
 
 
----
-#### `#!py3 close()`
-
-!!!abstract "`#!py3 close()`"
+`close()`
 
 Closes the underlying socket. No more input/output operations are possible.
 
 
----
-#### `#!py3 recv()`
-
-!!!abstract "`#!py3 recv(bufsize, flags=0)`"
+`recv(bufsize, flags=0)`
 
 Reads at most ```bufsize``` bytes from the underlying socket. It blocks until ```bufsize``` bytes are received or an error occurs.
 
 Returns a bytearray containing the received bytes.
 
 
----
-#### `#!py3 recv_into()`
-
-!!!abstract "`#!py3 recv_into(buffer, bufsize=-1, flags=0)`"
+`recv_into(buffer, bufsize=-1, flags=0)`
 
 Reads at most ```bufsize``` bytes from the underlying socket into ```buffer```. It blocks until ```bufsize``` bytes are received or an error occurs.
 
 Returns the number of received bytes.
 
 
----
-#### `#!py3 recvfrom()`
-
-!!!abstract "`#!py3 recvfrom(bufsize, flags=0)`"
+`recvfrom(bufsize, flags=0)`
 
 Reads at most ```bufsize``` bytes from the underlying udp socket. It blocks until a datagram is received.
 
 Returns a tuple (```data```, ```address```) where ```data``` is a bytearray containing the received bytes and ```address``` is the net address of the sender.
 
 
----
-#### `#!py3 recvfrom_into()`
-
-!!!abstract "`#!py3 recvfrom_into(buffer, bufsize=-1, flags=0)`"
+`recvfrom_into(buffer, bufsize=-1, flags=0)`
 
 Reads at most ```bufsize``` bytes from the underlying udp socket into ```buffer```. It blocks until a datagram is received. If ```bufsize``` is not given or is less than 0, ```bufsize``` is set to len(buffer).
 
 Returns a tuple (```rd```, ```address```) where ```rd``` is the number of bytes received and ```address``` is the net address of the sender.
 
 
----
-#### `#!py3 send()`
-
-!!!abstract "`#!py3 send(buffer, flags=0)`"
+`send(buffer, flags=0)`
 
 Send data to the socket. The socket must be connected to a remote socket.
 
 Returns the number of bytes sent. Applications are responsible for checking that all data has been sent; if only some of the data was transmitted, the application needs to attempt delivery of the remaining data.
 
 
----
-#### `#!py3 sendall()`
-
-!!!abstract "`#!py3 sendall(buffer, flags=0)`"
+`sendall(buffer, flags=0)`
 
 Send all data to the socket. The socket must be connected to a remote socket.
 
@@ -166,10 +133,7 @@ Unlike send(), this method continues to send data from bytes until either all da
 ```None``` is returned on success. On error, an exception is raised, and there is no way to determine how much data, if any, was successfully sent.
 
 
----
-#### `#!py3 sendto()`
-
-!!!abstract "`#!py3 sendto(buffer, address, flags=0)`"
+`sendto(buffer, address, flags=0)`"
 
 Send data to the socket. The socket should not be connected to a remote socket, since the destination socket is specified by address.
 Return the number of bytes sent
@@ -255,3 +219,6 @@ while True:
     client.sendall("Hello!")
     client.close()
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4Mjg5NjY4MzhdfQ==
+-->
