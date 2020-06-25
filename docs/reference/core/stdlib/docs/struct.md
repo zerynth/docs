@@ -204,13 +204,7 @@ of bytes.  As a special case, `'0s'` means a single, empty string (while
 When packing a value `x` using one of the integer formats (`'b'`,
 `'B'`, `'h'`, `'H'`, `'i'`, `'I'`, `'l'`, `'L'`,
 `'q'`, `'Q'`), if `x` is outside the valid range for that format
-then 
-
-```
-:exc:`struct.error`
-```
-
- is raised.
+then `struct.error` is raised.
 
 The `'p'` format character encodes a “Pascal string”, meaning a short
 variable-length string stored in a *fixed number of bytes*, given by the count.
@@ -223,20 +217,7 @@ are used.  Note that for `unpack()`, the `'p'` format character consumes
 `count` bytes, but that the string returned can never contain more than 255
 bytes.
 
-For the `'?'` format character, the return value is either 
-
-```
-:const:`True`
-```
-
- or
-
-
-```
-:const:`False`
-```
-
-. When packing, the truth value of the argument object is used.
+For the `'?'` format character, the return value is either `True` or `False`. When packing, the truth value of the argument object is used.
 Either 0 or 1 in the native or standard bool representation will be packed, and
 any non-zero value will be `True` when unpacking.
 
@@ -295,5 +276,5 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0NzYxNTI5XX0=
+eyJoaXN0b3J5IjpbMTgxMzMyMjA3M119
 -->
