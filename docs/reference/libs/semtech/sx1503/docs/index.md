@@ -7,9 +7,17 @@ More information at [Semtech dedicated page](http://www.semtech.com/io-expanders
 
 
 * 16 channels of I/Os
+
+
 * 1.2 V to 5.5 V independent operating voltage for all supply rails
+
+
 * 400 kHz I2C interface
+
+
 * Ultra low current consumption of typ. 1 uA
+
+
 * Temperature range: -40 - +85 °C
 
 Here below, the Zerynth driver for the Semtech SX1503.
@@ -18,4 +26,9 @@ Contents:
 
 
 * [SX1503 Module](https://docs.zerynth.com/latest/official/lib.semtech.sx1503/docs/official_lib.semtech.sx1503_sx1503.html)
+
+
     * [SX1503 class](https://docs.zerynth.com/latest/official/lib.semtech.sx1503/docs/official_lib.semtech.sx1503_sx1503.html#sx1503-class)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTI0NzEyMjEyXX0=
+-->
