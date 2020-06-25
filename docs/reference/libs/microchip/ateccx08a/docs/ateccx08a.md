@@ -88,7 +88,8 @@ Read, verify checksum, and extract data of a packet from the device.
 **Return type:** bytes
 
 
-**Note:** Length includes itself (1 byte), data (n bytes), and crc16 (2 bytes).
+!!! note
+	Length includes itself (1 byte), data (n bytes), and crc16 (2 bytes).
 
 ### Public methods
 
@@ -99,8 +100,8 @@ Call this function before a command sequence to wake up device from idle mode.
 
 This is done by keeping SDA low for more than 60 microseconds.
 
-**Note:**
-At this moment a 0x00 byte is written as a normal I2C transaction, ignoring the exception raised. This workaround won’t work at higher clock rates (more than ~100 kHz)!
+!!! note
+	At this moment a 0x00 byte is written as a normal I2C transaction, ignoring the exception raised. This workaround won’t work at higher clock rates (more than ~100 kHz)!
 
 
 **`end_cmd_sequence()`**
@@ -116,9 +117,8 @@ This must be done in order to avoid hitting the watchdog timeout (~1 second) whi
 
 Send a command and return the result data.
 
-**Note:**
-
-If **`start_cmd_sequence()`** was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
+!!! note
+	If **`start_cmd_sequence()`** was not invoked before this method, the device is automatically woke up and put again in idle mode after the command execution. (Default value = 50)
 
 
 **Arguments:** ***args** – All arguments are passed to **`_send_cmd()`** method.
@@ -408,7 +408,8 @@ on the device.
 
 3. Run this MAC command to combine the output of step one (and step two if desired) with an EEPROM key to generate an output response (i.e. digest).
 
-**NOTE**: *source_flag* MUST be specified if *use_tempkey* is True or a *challenge* is used.
+!!! note
+	 *source_flag* MUST be specified if *use_tempkey* is True or a *challenge* is used.
 
 
 **Arguments:**
@@ -888,8 +889,9 @@ This class inherits all ATECC508A methods.
 Init and enable the use of the crypto chip from other Zerynth libraries through Zerynth HWCrypto C interface.
 C interface based on [Microchip Cryptoauth Lib](https://github.com/MicrochipTech/cryptoauthlib).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQzODk2OCw0NTk5NTc5MDMsLTIyMj
-c0MTQ5NSwyNTQ5ODc0OTksMTQwODE5NTQxNiwtNTQyNTY1MTYw
-LC03NzgzMjkzMjksNjE4MDgxNTIxLDY5NTU2NDAzNiwyMTE3Nz
-U5LC0xOTkxODc2MDM1LC0xOTMzMDYxMzcxXX0=
+eyJoaXN0b3J5IjpbLTIyOTgzMjY4MSwtMTk0NDM4OTY4LDQ1OT
+k1NzkwMywtMjIyNzQxNDk1LDI1NDk4NzQ5OSwxNDA4MTk1NDE2
+LC01NDI1NjUxNjAsLTc3ODMyOTMyOSw2MTgwODE1MjEsNjk1NT
+Y0MDM2LDIxMTc3NTksLTE5OTE4NzYwMzUsLTE5MzMwNjEzNzFd
+fQ==
 -->
