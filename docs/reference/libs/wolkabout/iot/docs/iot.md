@@ -211,7 +211,8 @@ Publish the current actuator status to the platform.
 
 Callback method to handle inbound messages.
 
-**NOTE**: Pass this method to the implementation of `ConnectivityService` interface.
+!!! note
+	Pass this method to the implementation of `ConnectivityService` interface.
 
 
 * `message`: The message received from the platform.
@@ -296,3 +297,6 @@ This interface must be implemented to provide information about the current conf
 **`get_configuration()`**
 
 Reads current device configuration and returns it as a dictionary with device configuration reference as the key, and device configuration value as the value.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ5NzY4Njg2XX0=
+-->
