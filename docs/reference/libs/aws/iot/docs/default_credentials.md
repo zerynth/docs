@@ -5,14 +5,23 @@ The Zerynth AWS IoT Default Credentials module is useful to achieve a zero-time 
 It makes it really simple to load connection credentials, which could be stored on flash or in a secure element, by means of a single call to the `load()` function.
 
 
-**`load()`**
+**`---
+#### `#!py3 load()`
+
+!!!abstract "`#!py3 load()`**"
 
 This function returns:
 
 
 * AWS IoT endpoint for the device to connect to;
+
+
 * device Mqtt ID;
+
+
 * client certificate to be sent to AWS;
+
+
 * device private key.
 
 Endpoint and Mqtt ID are retrieved from the `thing.conf.json` configuration file which has to be put in the project and filled like this:
@@ -29,6 +38,8 @@ On the other hand the private key can be retrieved from different sources depend
 
 
 * without `ZERYNTH_HWCRYPTO_ATECCx08A`, the private key is taken from `private.pem.key` file put in the project and stored on flash (unsafe for production purposes)
+
+
 * with `ZERYNTH_HWCRYPTO_ATECCx08A`, the private key is stored inside a secure element, returned private key is an empty string and the `thing.conf.json` needs extra configuration fields:
 
 ```py
@@ -39,3 +50,6 @@ On the other hand the private key can be retrieved from different sources depend
     "crypto_slot": 2 # slot of the secure element where the private key is stored
 }
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzAzMDM4NjI3XX0=
+-->
