@@ -5,7 +5,8 @@ Microchip’s WINC1500 is an IEEE 802.11 b/g/n IoT network controller. It brings
 The WINC1500 features a fully integrated Power Amplifier, LNA, Switch and Power Management. The WINC1500 provides internal Flash memory as well as multiple peripheral interfaces including UART and SPI. The only external clock source needed for the WINC1500 is a high-speed crystal or oscillator (26 MHz). The WINC1500 is available in a QFN package or as a certified module.
 The WINC1500 has 4 Mb of flash memory which can be used for system software.
 
-```NOTE```: All the reported information are extracted from the official [Microchip WINC1500 page](https://www.microchip.com/wwwproducts/en/ATWINC1500), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Microchip WINC1500 page](https://www.microchip.com/wwwproducts/en/ATWINC1500), visit this page for more details and updates.
 
 ## Technical Details
 
@@ -21,3 +22,6 @@ Contents:
 
 
 * [WINC1500 Module](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/official_lib.microchip.winc1500_winc1500.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1OTYyNTU5MjNdfQ==
+-->
