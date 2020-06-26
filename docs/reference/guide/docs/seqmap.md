@@ -54,6 +54,7 @@ The `in` and `not in` operations have the same priorities as thecomparison opera
 | max(s)               | largest item of s                                                    |        |
 | s.index(x[, i[, j]]) | index of the first occurrence of x in s (at or after i and before j) | (8)    |
 | s.count(x)           | total number of occurrences of x in s                                |        |
+
 Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
@@ -134,6 +135,7 @@ Attempting to hash an immutable sequence that contains unhashable values will re
 The operations in the following table are defined on mutable sequence types.
 
 In the table **s** is an instance of a mutable sequence type, **t** is arbitrary object and **x** is an arbitrary object that meets any type and value restrictions imposed by  **s** (for example, `bytearray()` only accepts integers that meet the value restriction `0 <= x <= 255`).
+
 
 |       Operation       |                                         Result                                        |       Notes       |
 |:---------------------:|:-------------------------------------------------------------------------------------:|:-----------------:|
@@ -414,6 +416,7 @@ Python has 002 quote types.
 In this case no `*` specifiers may occur in a format (since they require a sequential parameter list).
 
 The conversion flag characters are:
+
 | Conversion |                                                                   Meaning                                                                  | Notes |
 |:----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:-----:|
 | 'd'        | Signed integer decimal.                                                                                                                    |       |
@@ -896,35 +899,3 @@ Update the dictionary with the key/value pairs from *other*, overwriting existin
 **`values()`**
 
 Return a new view of the dictionary’s values.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--stackedit_data:
-eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzgy
-LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
-t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
-MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
-xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstOTA2MjMzMTkxLC0xNTc0OT
-Q4MTM4LC05OTQwMTI4NjEsLTIyMDYyNzcxNSwxOTMyMTk0NDc0
-LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzOD
-k2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2
-OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
-kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
-LC0xNTA1NDMzMDA3XX0=
--->
