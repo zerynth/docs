@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.quectel.bg96
+The following are a list of examples for lib.quectel.bg96.
 
 ## Secure Socket
 

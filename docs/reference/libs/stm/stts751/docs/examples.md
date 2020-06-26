@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.stm.stts751
+The following are a list of examples for lib.stm.stts751.
 
 ## Read temperature values from STTS751
 

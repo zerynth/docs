@@ -10,10 +10,9 @@ Please note, CR02 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* CR02_LoRaWAN Module
+* [CR02_LoRaWAN Module](https://docs.zerynth.com/latest/official/lib.xinabox.cr02/docs/official_lib.xinabox.cr02_cr02_lorawan.html)
+    * [Using CR02_LoRaWAN Module](https://docs.zerynth.com/latest/official/lib.xinabox.cr02/docs/official_lib.xinabox.cr02_cr02_lorawan.html#using-cr02-lorawan-module)
+    * [CR02_TTN class](https://docs.zerynth.com/latest/official/lib.xinabox.cr02/docs/official_lib.xinabox.cr02_cr02_lorawan.html#cr02-ttn-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.cr02/examples/examples.html)
+    * [ttn temperature](https://docs.zerynth.com/latest/official/lib.xinabox.cr02/examples/examples.html#ttn-temperature)
 
-
-    * Using CR02_LoRaWAN Module
-
-
-    * CR02_TTN class

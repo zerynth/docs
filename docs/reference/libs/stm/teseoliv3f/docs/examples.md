@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.stm.teseoliv3f
+The following are a list of examples for lib.stm.teseoliv3f.
 
 ## Fix
 

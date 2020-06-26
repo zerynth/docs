@@ -8,29 +8,17 @@ More information at [MAXIM dedicated page](https://www.maximintegrated.com/en/pr
 
 
 * Supply Voltage (Vdd): from 1.7 V to 2.0 V
-
-
 * Operating Temperature Range: from -40 °C to 85 °C
-
-
 * Current Consumption: 1100 uA max
-
-
 * Power Dissipation: 440 mW max
-
-
 * I²C interface
 
 Here below, the Zerynth driver for the MAXIM MAX30101.
 
 Contents:
 
--   [
-* MAX30101 Module](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html)
-  
-
-
-  -  * [MAX30101 Class](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#max30101-class)
+-   [MAX30101 Module](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html)
+    -   [MAX30101 Class](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#max30101-class)
         -   [FIFO configuration](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#fifo-configuration)
         -   [Interrupt configuration](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#interrupt-configuration)
         -   [Mode configuration](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#mode-configuration)
@@ -39,5 +27,5 @@ Contents:
 -   [Examples](https://docs.zerynth.com/latest/official/lib.maxim.max30101/examples/examples.html)
     -   [heart beat](https://docs.zerynth.com/latest/official/lib.maxim.max30101/examples/examples.html#heart-beat)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2NDE5NjAxLC05ODU3NzQyNjFdfQ==
+eyJoaXN0b3J5IjpbLTk4NTc3NDI2MV19
 -->

@@ -16,7 +16,8 @@ lamp=la6.la6MODBUS()
 lamp.set_LED_colors(["green","green","white","red","red"])
 ```
 
-**WARNING:** To be able to communicate via HTTP or MODBUS TCP the patlite la6 must be previously configured to accept commands via these protocols. Set the “Control-system Switchover” parameter on the “Main Unit Setup” page to the “Command Control” value via the web interface.
+!!! warning
+	To be able to communicate via HTTP or MODBUS TCP the patlite la6 must be previously configured to accept commands via these protocols. Set the “Control-system Switchover” parameter on the “Main Unit Setup” page to the “Command Control” value via the web interface.
 
 ## la6HTTP class
 
@@ -25,93 +26,28 @@ lamp.set_LED_colors(["green","green","white","red","red"])
 Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP protocol.
 
 
-**Arguments:** 
+**Arguments:**  **colors** – Array of 5 positions containing the colors of the led strips.
 
--	**colors** – Array of 5 positions containing the colors of the led strips.
-
-    | String
-
-     | Color
-
-     |
-    | ------ | ----- |
-    | off
-
-        | off
-
-       |
-    | red
-
-        | Red
-
-       |
-    | amber
-
-      | Amber
-
-     |
-    | lemon
-
-      | Lemon
-
-     |
-    | green
-
-      | Green
-
-     |
-    | skyblue
-
-     | Sky Blue
-
-     |
-    | blue
-
-        | Blue
-
-         |
-    | purple
-
-      | Purple
-
-       |
-    | pink
-
-        | Pink
-
-         |
-    | white
-
-       | White
-
-        |
+|  String |   Color  |
+|:-------:|:--------:|
+| off     | off      |
+| red     | Red      |
+| amber   | Amber    |
+| lemon   | Lemon    |
+| green   | Green    |
+| skyblue | Sky Blue |
+| blue    | Blue     |
+| purple  | Purple   |
+| pink    | Pink     |
+| white   | White    |
 
 -	**buzzer** – Buzzer status upon initialization.
 
-    | Value
-
-       | Effect
-
-       |
-    | ------- | -------- |
-    | off
-
-         | Turned off
-
-     |
-    | on
-
-          | Turned on
-
-      |
-    | 2-11
-
-        | audio effects set by
-    set by the lamp
-    manufacturer
-
-     |
-
+| Value | Effect                                            |
+|-------|---------------------------------------------------|
+| off   | Turned off                                        |
+| on    | Turned on                                         |
+| 2-11  | audio effects set by set by the lamp manufacturer |
 
 -	**flash** – Flash LED unit status upon initialization [“off” or “on”].
 
@@ -159,89 +95,27 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 -	**colors** – Array of 5 positions containing the colors of the led strips.
 
-    | String
-
-      | Color
-
-                                                 |
-    | ------- | ------------------------------------------------- |
-    | off
-
-         | off
-
-                                                   |
-    | red
-
-         | Red
-
-                                                   |
-    | amber
-
-       | Amber
-
-                                                 |
-    | lemon
-
-       | Lemon
-
-                                                 |
-    | green
-
-       | Green
-
-                                                 |
-    | skyblue
-
-     | Sky Blue
-
-                                              |
-    | blue
-
-        | Blue
-
-                                                  |
-    | purple
-
-      | Purple
-
-                                                |
-    | pink
-
-        | Pink
-
-                                                  |
-    | white
-
-       | White
-
-                                                 |
+  | String  | Color    |
+|---------|----------|
+| off     | off      |
+| red     | Red      |
+| amber   | Amber    |
+| lemon   | Lemon    |
+| green   | Green    |
+| skyblue | Sky Blue |
+| blue    | Blue     |
+| purple  | Purple   |
+| pink    | Pink     |
+| white   | White    |
 
 
 -	**buzzer** – Buzzer status upon initialization.
 
-    | Value
-
-       | Effect
-
-                                                |
-    | ------- | ------------------------------------------------- |
-    | off
-
-         | Turned off
-
-                                            |
-    | on
-
-          | Turned on
-
-                                             |
-    | 2-11
-
-        | audio effects set by
-    set by the lamp
-    manufacturer
-
-     |
+ | Value |                       Effect                      |
+|:-----:|:-------------------------------------------------:|
+| off   | Turned off                                        |
+| on    | Turned on                                         |
+| 2-11  | audio effects set by set by the lamp manufacturer |
 
 
 -	**flash** – Flash LED unit status upon initialization [“off” or “on”].
@@ -278,5 +152,5 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 
 LED unit and buzzer reset.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzOTEzNTU5OV19
+eyJoaXN0b3J5IjpbLTExNjEwMzgzNTcsLTgzOTEzNTU5OV19
 -->

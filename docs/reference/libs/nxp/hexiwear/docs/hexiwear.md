@@ -212,7 +212,8 @@ If color oled display is enabled; fills the entire display with color code provi
     * **encode(bool)** – flag for enabling the color encoding; default True
 
 
-```NOTE```: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
+!!! note
+	The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
 it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
@@ -244,7 +245,8 @@ If color oled display is enabled; draws a rectangular area in the screen colored
     * **encode(bool)** – flag for enabling the color encoding; default True
 
 
-```NOTE```: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
+!!! note
+	The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
 it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
@@ -263,7 +265,8 @@ If color oled display is enabled; draws a rectangular area in the screen colored
 -	**h** – height of the image
 
 
-**NOTE:** To obtain a converted image in hex array format, you can go and use this [online tool](http://www.digole.com/tools/PicturetoC_Hex_converter.php).
+!!! note
+	To obtain a converted image in hex array format, you can go and use this [online tool](http://www.digole.com/tools/PicturetoC_Hex_converter.php).
 
 After uploading your image, you can resize it setting the width and height fields; you can also choose the code format (HEX:0x recommended) and the color format
 (65K color for this display).
@@ -309,12 +312,14 @@ If color oled display is enabled; prints a string inside a text box in the scree
 -	**encode(bool)** – flag for enabling the color encoding of the font and background color; default True
 
 
-**NOTE**: The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
+!!! note
+	The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided
 it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
 
-**NOTE**: If only text argument is provided, an automatic text box is created with the following values:
+!!! note
+	If only text argument is provided, an automatic text box is created with the following values:
 
 
 * x = 0
@@ -342,6 +347,7 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyMTgxMzEyLC0xOTMwNDgzNTAzLC0xOT
-YxNDk1ODA3LDEyMjkzMDU0NTIsODk5MDY2NDc0XX0=
+eyJoaXN0b3J5IjpbMTI5Nzk0OTI1MSw1MDIxODEzMTIsLTE5Mz
+A0ODM1MDMsLTE5NjE0OTU4MDcsMTIyOTMwNTQ1Miw4OTkwNjY0
+NzRdfQ==
 -->

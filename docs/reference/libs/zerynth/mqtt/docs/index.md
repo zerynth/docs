@@ -11,10 +11,8 @@ This publish/subscribe messaging pattern requires a message broker. The broker i
 So a client must connect to a broker in order to:
 
 
-* ```publish``` messages specifying a topic so that other clients that have subscribed to that topic will be able to receive those messages;
-
-
-* receive messages ```subscribing``` to a specific topic.
+* **publish** messages specifying a topic so that other clients that have subscribed to that topic will be able to receive those messages;
+* receive messages **subscribing** to a specific topic.
 
 To clarify this behaviour imagine a home network of temperature sensors and controllers where each temperature sensor publishes sampled data on ‘home/nameOfRoom’ channel and the home temperature controller subscribes to all channels to achieve a smart heating.
 
@@ -23,10 +21,8 @@ Here below, the Zerynth Library for MQTT connectivity protocol and some examples
 Contents:
 
 
-* MQTT Library
-
-
-    * MQTTMessage class
-
-
-    * Client class
+* [MQTT Library](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/docs/official_lib.zerynth.mqtt_mqtt.html)
+    * [MQTTMessage class](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/docs/official_lib.zerynth.mqtt_mqtt.html#mqttmessage-class)
+    * [Client class](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/docs/official_lib.zerynth.mqtt_mqtt.html#client-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/examples/examples.html)
+    * [MQTT at mosquitto org](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/examples/examples.html#mqtt-at-mosquitto-org)

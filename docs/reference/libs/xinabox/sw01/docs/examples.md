@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.xinabox.sw01
+The following are a list of examples for lib.xinabox.sw01.
 
 ## Environmental Data Measurement
 

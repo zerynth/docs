@@ -9,11 +9,7 @@ Frames are received by all devices, including by the transmitting device.
 
 ## The Can class
 
-
----
-#### `#!py3 Can()`
-
-!!!abstract "`#!py3 Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`"
+`Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`
 
 This class implements CAN controller functionalities.
 
@@ -71,11 +67,7 @@ The synchronization jump width ```sjw``` can be specified in any case.
 
 
 
-
----
-#### `#!py3 add_filter()`
-
-!!!abstract "`#!py3 add_filter(id, mask)`"
+`add_filter(id, mask)`
 
 Add a message acceptance filter for this CAN controller. A received message is accepted if:
 
@@ -99,11 +91,7 @@ The returned value is a number that uniquely identifies the filter and can be us
     the index of the filter added.
 
 
-
----
-#### `#!py3 del_filter()`
-
-!!!abstract "`#!py3 del_filter(filter)`"
+`del_filter(filter)`
 
 Remove a previously added message acceptance filter.
 
@@ -115,10 +103,7 @@ Remove a previously added message acceptance filter.
 
 
 
----
-#### `#!py3 transmit()`
-
-!!!abstract "`#!py3 transmit(id, dlc, data=None, timeout=-1)`"
+`transmit(id, dlc, data=None, timeout=-1)`
 
 Send a message to the CAN bus output mailboxes.
 
@@ -139,10 +124,7 @@ Send a message to the CAN bus output mailboxes.
 
 
 
----
-#### `#!py3 receive()`
-
-!!!abstract "`#!py3 receive(data=None, timeout=-1)`"
+`receive(data=None, timeout=-1)`
 
 Receive a message from the CAN bus input mailboxes.
 
@@ -175,10 +157,7 @@ If a ```data``` bytearray is provided it is used to store received data, otherwi
 
 
 
----
-#### `#!py3 get_errors()`
-
-!!!abstract "`#!py3 get_errors()`"
+`get_errors()`
 
 Get the accumulated error information.
 
@@ -235,44 +214,32 @@ Get the accumulated error information.
 
 
 
----
-#### `#!py3 abort_receive()`
-
-!!!abstract "`#!py3 abort_receive()`"
+`abort_receive()`
 
 Abort any pending `receive()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be received, raising ```ConnectionAbortedError```, until resumed.
 
 
----
-#### `#!py3 abort_transmit()`
-
-!!!abstract "`#!py3 abort_transmit()`"
+`abort_transmit()`
 
 Abort any pending `transmit()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be transmitted, raising ```ConnectionAbortedError```, until resumed.
 
 
----
-#### `#!py3 resume_receive()`
-
-!!!abstract "`#!py3 resume_receive()`"
+`resume_receive()`
 
 Resume receiving messages from the bus.
 
 
----
-#### `#!py3 resume_transmit()`
-
-!!!abstract "`#!py3 resume_transmit()`"
+`resume_transmit()`
 
 Resume transmitting messages to the bus.
 
 
----
-#### `#!py3 done()`
-
-!!!abstract "`#!py3 done()`"
+`done()`
 
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMzNTg3MDQzNCwyODczOTM5MjZdfQ==
+-->

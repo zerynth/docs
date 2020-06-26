@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.microchip.mcp3208
+The following are a list of examples for lib.microchip.mcp3208.
 
 ## Thumbstick controller with MCP3204/3208
 

@@ -9,32 +9,18 @@ Teseo-LIV3F provides also the Autonomous Assisted GNSS able to predict satellite
 
 
 * Simultaneously multiconstellation
-
-
 * -163 dBm navigation sensitivity
-
-
 * 1.5 m CEP accuracy positioning
-
-
 * 16 Mbit embedded Flash for data logging and FW upgrade
-
-
 * 2.1 V to 4.3 V supply voltage range
-
-
 * Tiny LCC 18 pin package (9.7x10.1)
-
-
 * Operating temperature (-40°, 85°C)
-
-
 * Free FW configuration
-
-
 * 17 μW standby current and 75 mW tracking power consumption
 
 Contents:
 
 
-* TeseoLiv3F Module
+* [TeseoLiv3F Module](https://docs.zerynth.com/latest/official/lib.stm.teseoliv3f/docs/official_lib.stm.teseoliv3f_teseoliv3f.html)
+* [Examples](https://docs.zerynth.com/latest/official/lib.stm.teseoliv3f/examples/examples.html)
+     * [Fix GPS](https://docs.zerynth.com/latest/official/lib.stm.teseoliv3f/examples/examples.html#fix-gps)

@@ -5,7 +5,7 @@ This module supports SSL/TLS
 
 To use it:
 
-```
+```py
 import streams
 from stm.f4eth import f4eth as eth
 
@@ -18,11 +18,7 @@ eth.link()
 print(eth.link_info())
 ```
 
-
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init()`"
+**`init()`**
 
 Initializes the Ethernet chip connected to the device.
 

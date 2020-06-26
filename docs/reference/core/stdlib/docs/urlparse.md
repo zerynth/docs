@@ -4,10 +4,7 @@ This module defines a standard interface to break Uniform Resource Locator (URL)
 strings up in components (addressing scheme, network location, path etc.)
 
 
----
-#### `#!py3 parse()`
-
-!!!abstract "`#!py3 parse(url)`"
+`parse(url)`
 
 Returns a tuple (```scheme```, ```netloc```, ```path```, ```query```, ```fragment```) derived from ```url```.
 
@@ -21,7 +18,7 @@ present.  For example:
 import urlparse
 o = urlparse(‘[http://www.cwi.nl:80/%7Eguido/Python.html](http://www.cwi.nl:80/%7Eguido/Python.html)’)
 
-# result is (‘http’, ‘www.cwi.nl:80’, ‘/%7Eguido/Python.html’, ‘’, ‘’)
+<p># result is (‘http’, ‘www.cwi.nl:80’, ‘/%7Eguido/Python.html’, ‘’, ‘’)</p>
 
 Following the syntax specifications in [**RFC 1808**](https://tools.ietf.org/html/rfc1808.html), urlparse recognizes
 a netloc only if it is properly introduced by ‘//’.  Otherwise the
@@ -29,19 +26,13 @@ input is presumed to be a relative URL and thus to start with
 a path component.
 
 
----
-#### `#!py3 parse_netloc()`
-
-!!!abstract "`#!py3 parse_netloc(netloc)`"
+`parse_netloc(netloc)`
 
 Given ```netloc``` as parsed by `parse()`, breaks it in its component returning a tuple (```user```, ```password```, ```host```, ```port```).
 Each component of the returned tuple is a string.
 
 
----
-#### `#!py3 quote()`
-
-!!!abstract "`#!py3 quote(s)`"
+`quote(s)`
 
 Return the urlencoded version of ```s```.
 
@@ -62,37 +53,28 @@ Safe bytes are:
 * the following symbols: $-_.+!\*’()
 
 
----
-#### `#!py3 quote_plus()`
-
-!!!abstract "`#!py3 quote_plus(s)`"
+`quote_plus(s)`
 
 Like `quote()`, but also escapes `+` symbol.
 
 
----
-#### `#!py3 unquote()`
-
-!!!abstract "`#!py3 unquote(s)`"
+`unquote(s)`
 
 If ```s``` is urlencoded, returns ```s``` with every `+` substituted with a space and every `%xx` substituted with the corresponding character.
 
 
----
-#### `#!py3 parse_qs()`
-
-!!!abstract "`#!py3 parse_qs(qs)`"
+`parse_qs(qs)`
 
 Parses a query string ```qs``` and returns a dictionary containing the association between keys and values of ```qs```.
 Values are urldecoded by `unquote()`.
 
 
----
-#### `#!py3 urlencode()`
-
-!!!abstract "`#!py3 urlencode(data)`"
+`urlencode(data)`
 
 Tranforms data dictionary in a urlencoded query string and returns the query string.
 Each pair (key, value) is encoded by ```quote_via``` function.
 By default, `quote_plus()` is used to quote the values.
 An alternate function that can be passed as quote_via is `quote()`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI1MDc1MTE3Ml19
+-->

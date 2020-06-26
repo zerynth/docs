@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.stm.ism330dhcx
+The following are a list of examples for lib.stm.ism330dhcx.
 
 ## Read Accelerometer, Gyroscope and Temperature data from ISM330DHCX
 

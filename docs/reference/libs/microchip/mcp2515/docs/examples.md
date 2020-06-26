@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.microchip.mcp2515
+The following are a list of examples for lib.microchip.mcp2515.
 
 ## CAN Loopback Example
 

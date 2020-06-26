@@ -2,7 +2,8 @@
 
 The integration between the Zerynth Toolchain and AWS command line tool allows to easily manage AWS resources while working on your embedded project.
 
-```NOTE```: The Zerynth Toolchain assumes [AWS command line tool](https://aws.amazon.com/cli) to be available and [configured](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) to handle AWS resources.
+!!! note
+	The Zerynth Toolchain assumes [AWS command line tool](https://aws.amazon.com/cli) to be available and [configured](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) to handle AWS resources.
 
 Since AWS Platform provides several services, this page wil report the documentation of each ztc-aws-integrated command in a proper section depending on referred AWS service:
 
@@ -161,7 +162,8 @@ ztc aws iot-cleanup project_path
 
 Deletes AWS IoT Things bound to Zerynth project placed at `project_path` and attached keys and certificates.
 
-```WARNING```: clean up process acts both ```locally``` and ```remotely```
+!!! warning
+	Clean up process acts both ```locally``` and ```remotely```
 
 ### Initiate a FOTA update via AWS IoT Jobs
 
@@ -183,3 +185,6 @@ Will perform the following operations:
 * Create an AWS IoT Job for the specified `thing-name`.
 
 The AWS IoT endpoint must be able to read from the S3 bucket so an S3 read role named `s3-read-role` must be assigned to the endpoint. Such role must be used in the creation of the Job and therefore its name must be passed to this command. The Thing will receive a pre-signed https S3 url to download the new firmware; such url will be valid for a duration of one hour. It is possible to increase or decrease the duration validity using the `--duration` followed by the number of seconds the link will remain valid.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzOTQ0MDk1NjFdfQ==
+-->

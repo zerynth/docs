@@ -123,6 +123,11 @@ ztc link vmuid_new project.vbo --bc 1 --vm 1 --file project.vbe
 ztc link vmuid_new project.vbo --bc 1 --vm 1 --otavm --file project.vbe
 ```
 
-```NOTE```: It is not possible to generate a FOTA update of the VM only!
+!!! note
+	It is not possible to generate a FOTA update of the VM only!
 
-```NOTE```: To generate a Zerynth ADM compatible FOTA bytecode update, add option `-J` before the link command. The resulting file will be JSON and not binary.
+!!! note
+	To generate a Zerynth ADM compatible FOTA bytecode update, add option `-J` before the link command. The resulting file will be JSON and not binary.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTEzMTY4MTQ1Nl19
+-->

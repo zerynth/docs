@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.solomon.ssd1306
+The following are a list of examples for lib.solomon.ssd1306.
 
 ## Draw a fading image
 
@@ -76,7 +76,7 @@ while True:
 ## Draw text on oled Display
 
 
-Print a string inside a text box on b/w oled display with different alignments
+Print a string inside a text box on b/w oled display with different alignments.
 
 
 

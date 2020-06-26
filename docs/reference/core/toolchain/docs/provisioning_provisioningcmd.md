@@ -43,7 +43,8 @@ Available command options are:
 
 * `--output path`, to specify a path to store scanned device address and type. If a folder is given, retrieved info is saved to `scanned_crypto.json` file.
 
-```WARNING```: It is mandatory for the following commands to correctly execute to flash the Configurator firmware first.
+!!! note
+	It is mandatory for the following commands to correctly execute to flash the Configurator firmware first.
 
 ## Read Crypto Element Configuration
 
@@ -159,3 +160,6 @@ ztc provisioning store-certificate device_alias certificate_type certificate
 
 Stores a compressed certificate to the crypto element plugged to device with alias `alias`.
 Certificate is retrieved from file `certificate` and is expected to be in pem format.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ4Nzg0MjI1NV19
+-->

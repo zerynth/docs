@@ -14,49 +14,28 @@ Please note, OC03 and all other xChips is currently only supported in Zerynth St
 
 
 * 400-kHz Fast I2C Bus
-
-
 * Three Hardware Address Pins Allow up to Eight I2C Addresses
-
-
 * Internal Power-On Reset
-
-
 * No Glitch on Power Up
-
-
 * Latched Outputs With High-Current Drive
 
 ### TLP241A
 
 
 * Normally Open
-
-
 * OFF-state output terminal voltage: 40 V (min)
-
-
 * Trigger LED current: 3 mA (max)
-
-
 * ON-state current: 2 A (max)
-
-
 * ON-state resistance:
-
-
     1. 100 mΩ (max, t < 1 s)
-
-
     2. 150 mΩ (max, Continuous)
-
-
 * Isolation voltage: 5000 Vrms (min)
 
 Contents:
 
 
-* OC03 Module
-
-
-    * OC03 class
+* [OC03 Module](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/docs/official_lib.xinabox.oc03_oc03.html)
+    * [OC03 class](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/docs/official_lib.xinabox.oc03_oc03.html#oc03-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/examples/examples.html)
+    * [toggle output](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/examples/examples.html#toggle-output)
+    * [remote relay control weather monitor wolkabout](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/examples/examples.html#remote-relay-control-weather-monitor-wolkabout)

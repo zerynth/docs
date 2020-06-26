@@ -1,12 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.worldsemi.ws2812
+The following are a list of examples for lib.worldsemi.ws2812.
 
 ## WS2812 RGB LEDs strip Basics and Animations
 
 
-A simple example that shows how a button is used to change the colour of a WS2812 RGB
-LEDs strip — or NeoPixel in Adafruit parlance — and how a simple fade-like animation is played on the LEDs
+A simple example that shows how a button is used to change the colour of a WS2812 RGB LEDs strip — or NeoPixel in Adafruit parlance — and how a simple fade-like animation is played on the LEDs.
 
 
 ```main.py```
@@ -59,8 +58,7 @@ while True:
 
 An advanced example showing some awesome features of Zerynth and the ledstrip module to drive WS2812 RGB Led strip — or NeoPixel in Adafruit parlance.
 
-A complex animation (a pulsating background and two "snakes" moving in opposing
-directions) is performed with indipendent layers animated by threads. Before any ledstrip
+A complex animation (a pulsating background and two "snakes" moving in opposing directions) is performed with indipendent layers animated by threads. Before any ledstrip
 update (the on() function) the layers are merged together to obtain the correct animation frame.
 
 To avoid conflicts between threads, a lock is needed during layer modification phase.

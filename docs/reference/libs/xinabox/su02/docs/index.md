@@ -10,21 +10,15 @@ Please note, SU02 and all other xChips is currently only supported in Zerynth St
 
 
 * I2C-Compatible 2-Wire Interface Which Supports Standard (100 kHz), Fast (400 kHz), and High Speed (3.4 MHz) modes
-
-
 * Out-of-Range Alert Function
-
-
 * Automatic Power-Down Mode While Not Converting
-
-
 * 4 hardware selectable I2C addresses
 
 <!-- The text you write here will appear in the first doc page. (This is just a comment, will not be rendered) -->
 Contents:
 
 
-* SU02 Module
-
-
-    * SU02 class
+* [SU02 Module](https://docs.zerynth.com/latest/official/lib.xinabox.su02/docs/official_lib.xinabox.su02_su02.html)
+    * [SU02 class](https://docs.zerynth.com/latest/official/lib.xinabox.su02/docs/official_lib.xinabox.su02_su02.html#su02-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.su02/examples/examples.html)
+    * [read input](https://docs.zerynth.com/latest/official/lib.xinabox.su02/examples/examples.html#read-input)

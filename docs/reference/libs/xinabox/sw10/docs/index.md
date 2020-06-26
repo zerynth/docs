@@ -10,27 +10,17 @@ Please note, SW10 and all other xChips is currently only supported in Zerynth St
 
 
 * I2C-bus interface with up to 8 devices on the same bus
-
-
 * Temperature range from -55°C to +125°C
-
-
 * Frequency range 20 Hz to 400 kHz with bus fault time-out to prevent hanging up the bus
-
-
 * Programmable temperature threshold and hysteresis set points
-
-
 * Supply current of 1.0 µA in shutdown mode for power conservation
-
-
 * Stand-alone operation as thermostat at power-up
 
 <!-- The text you write here will appear in the first doc page. (This is just a comment, will not be rendered) -->
 Contents:
 
 
-* SW10 Module
-
-
-    * SW10 class
+* [SW10 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sw10/docs/official_lib.xinabox.sw10_sw10.html)
+    * [SW10 class](https://docs.zerynth.com/latest/official/lib.xinabox.sw10/docs/official_lib.xinabox.sw10_sw10.html#sw10-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sw10/examples/examples.html)
+    * [ambient temperature](https://docs.zerynth.com/latest/official/lib.xinabox.sw10/examples/examples.html#ambient-temperature)

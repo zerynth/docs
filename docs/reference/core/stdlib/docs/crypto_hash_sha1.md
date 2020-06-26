@@ -11,18 +11,21 @@ The module is based on the C library [cifra](https://github.com/ctz/cifra).
 ## The SHA1 class
 
 
-### class SHA1()
+`class SHA1()`
 This class allows the generation of SHA1 hashes. It is thread safe.
 
 
-### update(data)
+`update(data)`
 Update the sha object with the string ```data```. Repeated calls are equivalent to a single call with the concatenation of all
 the arguments: m.update(a); m.update(b) is equivalent to m.update(a+b).
 
 
-### digest()
+`digest()`
 Return the digest of the strings passed to the update method so far. This is a 20-byte bytes object.
 
 
-### hexdigest()
+`hexdigest()`
 Like digest except the digest is returned as a string of length 40, containing only hexadecimal digits.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzQ5ODMwMzA4XX0=
+-->

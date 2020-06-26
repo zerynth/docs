@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.bridgetek.bt81x
+The following are a list of examples for lib.bridgetek.bt81x.
 
 ## Display Zerynth Logo 
 

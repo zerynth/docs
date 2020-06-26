@@ -11,11 +11,7 @@ The default value section is a set of values separated by commas, where each val
 
 
 * d - duration
-
-
 * o - octave
-
-
 * b - beat, tempo
 
 The data section consists of a set of character strings separated by commas, where each string contains a duration, pitch, octave and optional dotting (which increases the duration of the note by one half).
@@ -25,4 +21,6 @@ Here below, the Zerynth Library for RTTTL melody player and some examples to bet
 Contents:
 
 
-* RTTTL Library
+* [RTTTL Library](https://docs.zerynth.com/latest/official/lib.zerynth.rtttl/docs/official_lib.zerynth.rtttl_rtttl.html)
+* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.rtttl/examples/examples.html)
+    * [RTTTL Basics](https://docs.zerynth.com/latest/official/lib.zerynth.rtttl/examples/examples.html#rtttl-basics)

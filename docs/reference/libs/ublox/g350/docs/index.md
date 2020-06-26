@@ -4,23 +4,15 @@ The Ublox SARA-G3 series of GSM/GPRS modules feature extremely low power consump
 
 SARA-G350 is full-feature GSM/GPRS module with a comprehensive feature set, including an extensive set of internet protocols (TCP, UDP, HTTP, FTP and SMTP). It has fully integrated access to u-blox GNSS positioning chips and modules, along with embedded A-GNSS (AssistNow Online and AssistNow Offline) functionality.
 
-SARA-G350 is the quad-band version for global connectivity; more information at [Ublox dedicated page](https://www.u-blox.com/en/product/sara-g3-series)
+SARA-G350 is the quad-band version for global connectivity; more information at [Ublox dedicated page](https://www.u-blox.com/en/product/sara-g3-series).
 
 ## Technical Details
 
 
 * Supply Voltage (Vcc): from 3.0 V to 4.5 V
-
-
 * Operation Temperature (Top): from -40 °C to 85 °C
-
-
 * Active Current: 250 mA (max)
-
-
 * Standby Current: 0.90 mA (max)
-
-
 * Protocols: Embedded TCP/IP, UDP/IP, HTTP/FTP, SSL and TLS 1.2 support
 
 Here below, the Zerynth driver for the Ublox G350 and some examples to better understand how to use it.
@@ -28,4 +20,7 @@ Here below, the Zerynth driver for the Ublox G350 and some examples to better un
 Contents:
 
 
-* G350 Module
+* [G350 Module](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/index.html)
+    * [Technical Details](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/index.html#technical-details)
+        * [G350 Module](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/official_lib.ublox.g350_g350.html)
+        * [Examples](https://docs.zerynth.com/latest/official/lib.ublox.g350/examples/examples.html)

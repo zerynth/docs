@@ -589,22 +589,13 @@ The following CA certificates are available with the __lookup primitive:
 ## The sslsocket class
 
 
----
-#### `#!py3 sslsocket()`
-
-!!!abstract "`#!py3 sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`"
+`sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`
 
 This class represents a secure socket based on SSL/TLS protocol. It inherits from socket.socket
 
 Raise `IOError` exceptions if socket creation goes wrong.
 
-The parameter ```ctx``` is the SSL context to use for the socket. See 
-
-```
-:function:`create_ssl_context`
-```
-
- for details.
+The parameter ```ctx``` is the SSL context to use for the socket. See `create_ssl_context` for details.
 
 Sockets can be used like this:
 
@@ -634,24 +625,14 @@ sock.sendall("Hello World!")
 
 <!-- _stdlib.ssl.create_ssl_context -->
 
----
-#### `#!py3 create_ssl_context()`
-
-!!!abstract "`#!py3 create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`"
+`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`
 
 This function generates an SSL context with the following data:
 
 
 * ```cacert``` is the CA certificate that will be used to authenticate the other end of the TLS connection
 
-
-* 
-
-```
-**
-```
-
-clicert\* is the certificate that the server expects to receive from the client in a two-way TLS authentication
+* ```clicert``` is the certificate that the server expects to receive from the client in a two-way TLS authentication
 
 
 * ```pkey``` is the private key matching ```clicert```. It can be an empty string to use a hardware stored private key. To enable the use of hardware keys a hardware cryptographic interface must be started. For example, with an `ATECC508A` (ATECCx08A interface):
@@ -687,6 +668,11 @@ ateccx08a.hwcrypto_init(I2C0, 0) # select private key stored in slot 0
 
 Returns a tuple to be passed as parameter during secure socket creation.
 
-```NOTE```: ```cacert```, ```clicert``` and ```pkey``` can be bytes, bytearray, strings or instances of classes that have a ```size``` and ```read``` method, allowing to pass as parameters open files or resources.
+!!! note
+	```cacert```, ```clicert``` and ```pkey``` can be bytes, bytearray, strings or instances of classes that have a ```size``` and ```read``` method, allowing to pass as parameters open files or resources.
 
-```NOTE```: ```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
+!!! note
+	```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4MzY0MTIxNjFdfQ==
+-->

@@ -1,4 +1,4 @@
-<!-- _lib.cypress.capsense -->
+
 # Cypress CapSense
 
 CapSense is a Cypress capacitive sensing solution.
@@ -11,21 +11,16 @@ CapSense supports multiple interfaces (widgets) using both CSX and CSD sensing m
 
 
 * supports Self-Capacitance (CSD) and Mutual-Capacitance (CSX) sensing methods;
-
-
 * supports various Widgets, such as Buttons, Matrix Buttons, Sliders, Touchpads, and Proximity Sensors;
-
-
 * provides ultra-low power consumption and liquid-tolerant capacitive sensing technology.
 
 Below, Zerynth driver documentation for Cypress CapSense.
 
 Contents:
 
--   [
-* Cypress CapSense Library](https://docs.zerynth.com/latest/official/lib.cypress.capsense/docs/official_lib.cypress.capsense_capsense.html)
+-   [Cypress CapSense Library](https://docs.zerynth.com/latest/official/lib.cypress.capsense/docs/official_lib.cypress.capsense_capsense.html)
 -   [Examples](https://docs.zerynth.com/latest/official/lib.cypress.capsense/examples/examples.html)
     -   [CapsenseEvents](https://docs.zerynth.com/latest/official/lib.cypress.capsense/examples/examples.html#capsenseevents)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODU4NDc4MywtMTI0MDMwNjQzM119
+eyJoaXN0b3J5IjpbLTEyNDAzMDY0MzNdfQ==
 -->

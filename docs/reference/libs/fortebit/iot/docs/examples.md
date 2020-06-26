@@ -4,12 +4,11 @@ The following are a list of examples for lib.fortebit.iot.
 
 ## MQTT
 
-
+```python
+MQTT
+====
 A simple example connecting a device to the OKDO IoT cloud using the MQTT protocol.
-
-
-
-```main.py```
+```
 
 ```python
 ################################################################################
@@ -216,5 +215,5 @@ except Exception as e:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDM5MjI5OF19
+eyJoaXN0b3J5IjpbLTE3NzI3ODE4MjIsMTg4NDM5MjI5OF19
 -->

@@ -5,7 +5,7 @@ The following are a list of examples for lib.maxim.max7219.
 ## LED Matrix
 
 
-Basic Example of MAX7219 usage for drawing maxi numbers on a 8x8 led matrix display
+Basic Example of MAX7219 usage for drawing maxi numbers on a 8x8 led matrix display.
 
 
 

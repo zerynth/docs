@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.microchip.ateccx08a
+The following are a list of examples for lib.microchip.ateccx08a.
 
 ## Ping example
 

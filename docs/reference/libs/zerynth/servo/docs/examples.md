@@ -1,12 +1,11 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.servo
+The following are a list of examples for lib.zerynth.servo.
 
 ## Servo basics
 
 
-Basic example of use of the servo library.
-It is possible to control a servo motor by setting the position as pulse width (microseconds) or in degrees.
+Basic example of use of the servo library. It is possible to control a servo motor by setting the position as pulse width (microseconds) or in degrees.
 
 
 
@@ -60,9 +59,7 @@ while True:
 ## Servo Motor Animation
 
 
-Example of use of the Animator library for controlling a servo motor.
-The libreary allows definign an animation composed of points to be reached at certain times.
-The animator calls the servo moveToDegree fucntion in parallel to the program workflow execution withouth requiring any time monitoring routine
+Example of use of the Animator library for controlling a servo motor. The libreary allows definign an animation composed of points to be reached at certain times. The animator calls the servo moveToDegree fucntion in parallel to the program workflow execution withouth requiring any time monitoring routine
 
 
 

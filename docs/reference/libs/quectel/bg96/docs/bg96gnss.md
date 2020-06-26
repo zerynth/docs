@@ -5,10 +5,7 @@ on its dedicated UART port ([Product page](https://www.quectel.com/product/bg96g
 
 The following functionalities are implemented:
 
-
 * retrieve the current location fix if present
-
-
 * retrieve the current UTC time
 
 The driver starts a background thread continuously tracking the last available location fix.
@@ -19,26 +16,21 @@ Location fixes are obtained by parsing NMEA sentences of type RMC and GGA.
 Obtaining a fix or UTC time are thread safe operations.
 
 
----
-#### `#!py3 BG96_GNSS()`
-
-!!!abstract "`#!py3 BG96_GNSS(ifc, baud=9600)`"
+**`class BG96_GNSS(ifc, baud=9600)`**
 
 Create an instance of the BG96_GNSS class.
 
 
-* ```Arguments```
+**Arguments:**
 
     
-    * ```ifc``` – serial interface to use (for example `SERIAL1`, `SERIAL2`, etc…)
-
-
-    * ```baud``` – serial port baudrate
+* **ifc** – serial interface to use (for example `SERIAL1`, `SERIAL2`, etc…)
+* **baud** – serial port baudrate
 
 
 Example:
 
-```
+```py
 from quectel.bg96gnss import bg96gnss
 
 ...
@@ -51,63 +43,37 @@ pres = mpl.get_pres()
 ```
 
 
----
-#### `#!py3 start()`
-
-!!!abstract "`#!py3 start()`"
+**`start()`**
 
 Start the BG96 GNSS and the receiver thread.
 
 
-* ```Arguments```
+**Arguments:** **use_uart** – 1 if BG96’s UART3 must be used, 0 otherwise
 
-    
-    * ```use_uart``` – 1 if BG96’s UART3 must be used, 0 otherwise
-
-
-
-* ```Returns```
-
-    ```True``` if receiver thread has been started, ```False``` if already active.
+**Returns:** **True** if receiver thread has been started, *False* if already active.
 
 
 
----
-#### `#!py3 stop()`
-
-!!!abstract "`#!py3 stop()`"
+**`stop()`**
 
 Stop the BG96 GNSS and terminates the receiver thread.
 It can be restarted by calling start.
 
-
-* ```Returns```
-
-    ```True``` if receiver thread has been stopped, ```False``` if already inactive.
+**Returns:** **True** if receiver thread has been stopped, *False* if already inactive.
 
 
 
----
-#### `#!py3 pause()`
+**`pause()`**
 
-!!!abstract "`#!py3 pause()`"
-
-Pause the BG96 GNSS by putting it into standby mode.
-It can be restarted by calling resume.
+Pause the BG96 GNSS by putting it into standby mode. It can be restarted by calling resume.
 
 
----
-#### `#!py3 resume()`
-
-!!!abstract "`#!py3 resume()`"
+**resume()`**
 
 Wake up the BG96_GNSS from standby mode.
 
 
----
-#### `#!py3 set_rate()`
-
-!!!abstract "`#!py3 set_rate(rate=1000)`"
+**`set_rate(rate=1000)`**
 
 Set the frequency for location fix (100-10000 milliseconds is the available range).
 
@@ -116,67 +82,35 @@ Set the frequency for location fix (100-10000 milliseconds is the available rang
 Additional methods from the base class `nmea.NMEA_Receiver`.
 
 
----
-#### `#!py3 fix()`
+**`fix()`**
 
-!!!abstract "`#!py3 fix()`"
-
-Return the current fix or ```None``` if not available.
-A fix is a tuple with the following elements:
+Return the current fix or *None* if not available. A fix is a tuple with the following elements:
 
 
 * latitude in decimal format (-89.9999 - 89.9999)
-
-
 * longitude in decimal format (-179.9999 - 179.9999)
-
-
 * altitude in meters
-
-
 * speed in Km/h
-
-
 * course over ground as degrees from true north
-
-
 * number of satellites for this fix
-
-
 * horizontal dilution of precision (0.5 - 99.9)
-
-
 * vertical dilution of precision (0.5 - 99.9)
-
-
 * positional dilution of precision (0.5 - 99.9)
-
-
 * UTC time as a tuple (yyyy,MM,dd,hh,mm,ss,microseconds)
 
 
----
-#### `#!py3 has_fix()`
+**`has_fix()`**
 
-!!!abstract "`#!py3 has_fix()`"
-
-Return ```True``` if a fix is available
+Return *True* if a fix is available.
 
 
----
-#### `#!py3 utc()`
+**`utc()`**
 
-!!!abstract "`#!py3 utc()`"
-
-Return the current UTC time or ```None``` if not available.
-A UTC time is a tuple of (yyyy,MM,dd,hh,mm,ss,microseconds).
+Return the current UTC time or *None* if not available. A UTC time is a tuple of (yyyy,MM,dd,hh,mm,ss,microseconds).
 
 UTC time can be wrong if no fix has ever been obtained.
 
 
----
-#### `#!py3 has_utc()`
+**`has_utc()`**
 
-!!!abstract "`#!py3 has_utc()`"
-
-Return ```True``` if a UTC time is available
+Return *True* if a UTC time is available.

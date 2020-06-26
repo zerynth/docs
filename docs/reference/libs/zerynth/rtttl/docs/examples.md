@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.zerynth.rtttl
+The following are a list of examples for lib.zerynth.rtttl.
 
 ## RTTTL Library Basics
 

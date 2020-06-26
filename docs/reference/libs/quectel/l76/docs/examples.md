@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.quectel.l76
+The following are a list of examples for lib.quectel.l76.
 
 ## Fix
 
