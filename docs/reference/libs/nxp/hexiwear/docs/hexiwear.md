@@ -348,8 +348,3 @@ Turns on the rgb onboard led (white light).
 **`leds_off()`**
 
 Turns off the rgb onboard led.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDI4OTA4NywxMjk3OTQ5MjUxLDUwMj
-E4MTMxMiwtMTkzMDQ4MzUwMywtMTk2MTQ5NTgwNywxMjI5MzA1
-NDUyLDg5OTA2NjQ3NF19
--->
