@@ -2,7 +2,8 @@
 
 The ZTC is launched by typing ```ztc``` in a console.
 
-```NOTE```: In Windows and Mac installations, the `PATH` environmental variable is automatically updated in such a way that ```ztc``` is globally available for the user. In Linux installations, due to the many different shells, the `PATH` must be set manually to the following path: `<installation-dir>/ztc/linux64`.
+!!! note
+	In Windows and Mac installations, the `PATH` environmental variable is automatically updated in such a way that ```ztc``` is globally available for the user. In Linux installations, due to the many different shells, the `PATH` must be set manually to the following path: `<installation-dir>/ztc/linux64`.
 
 ```ztc``` takes commands and options as arguments:
 
@@ -114,3 +115,6 @@ zerynth2
 ```
 
 Every successful ZTC installation or update is kept in a separate directory (`dist/version`) so that in case of corrupted installation, the previous working ZTC can be used.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMxMzI5MDI2MF19
+-->

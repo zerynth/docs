@@ -22,11 +22,17 @@ All these features make this device the preferred choice for the emerging IoT ba
 The USB port can be used to supply power (5V) to the device.
 The Arduino/Genuino MKR1000 is able to run with or without the Li-Po battery connected and has limited power consumption.
 
-**Warning:** Unlike most Arduino & Genuino devices, the MKR1000 runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/arduino_mkr1000/docs/img/mkr1000.jpg?raw=true)
 
-```NOTE```: All the reported information are extracted from the official [Arduino/Genuino MKR1000 page](http://www.arduino.cc/en/Main/ArduinoMKR1000), visit this page for more details and updates.
+!!! warning
+	Unlike most Arduino & Genuino devices, the MKR1000 runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+
+!!! note
+	All the reported information are extracted from the official [Arduino/Genuino MKR1000 page](http://www.arduino.cc/en/Main/ArduinoMKR1000), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/arduino_mkr1000/docs/img/Arduino_MKR1000_pin_io.png?raw=true)
 
 Arduino/Genuino MKR1000 Official Schematic, Reference Design and Pin Mapping are available on the official [Arduino/Genuino MKR1000 reference page](http://www.arduino.cc/en/Main/ArduinoMKR1000).
 
@@ -34,7 +40,8 @@ Arduino/Genuino MKR1000 Official Schematic, Reference Design and Pin Mapping are
 
 The internal flash of the Arduino/Genuino MKR1000 is organized as a single bank of 256k.
 
-```NOTE```: Zerynth VM preserves SAM-BA Bootloader located at Flash start.
+!!! note
+	Zerynth VM preserves SAM-BA Bootloader located at Flash start.
 
 ## Device Summary
 
@@ -114,15 +121,18 @@ This flashing is caused by the following conditions maintained for a long time (
 
 * A fully charged battery is put through another unnecessary charging cycle. This is done disconnecting and reconnecting either VIN or the battery itself while VIN is connected.
 
-```NOTE```: All the reported information are extracted from the official [Arduino/Genuino MKR1000 page](http://www.arduino.cc/en/Main/ArduinoMKR1000), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official [Arduino/Genuino MKR1000 page](http://www.arduino.cc/en/Main/ArduinoMKR1000), visit this page for more details and updates.
 
 ## Connect, Register, Virtualize and Program
 
 To recognize the device, Windows machines require drivers that can be downloaded from [the Arduino/Genuino MKR1000 guide](https://www.arduino.cc/en/Guide/MKR1000), otherwise this can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greater; OSX and Linux machines will recognize the device automatically.
 
-```NOTE```: Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the MKR1000 device.
+!!! note
+	Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the MKR1000 device.
 
-```WARNING```: Remember, when using the Zadig utility, to select “Options > List all devices” to search for the MKR1000 device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
+!!! warning
+	Remember, when using the Zadig utility, to select “Options > List all devices” to search for the MKR1000 device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
 
 Once connected on a USB port, if drivers have been correctly installed, the Arduino/Genuino MKR1000 device is recognized by the Zerynth Studio and listed in the **Device Management Toolbar**.
 
@@ -146,7 +156,8 @@ Follow these steps to register and virtualize a Arduino/Genuino MKR1000:
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the MKR1000 device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the MKR1000 device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 Zerynth scripts can be uploaded on virtualized Arduino/Genuino MKR1000 by clicking the dedicated upload button available on the **Current Project** panel of the IDE.
 Follow these steps to upload a Zerynth script on a virtualized Arduino/Genuino MKR1000:
@@ -159,35 +170,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 94Kb | VM Slot         |
+| 0x00019600    | 77Kb | Bytecode Slot 0 |
+| 0x0002CB00    | 77Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 94Kb
-
- | VM Slot
-
- |
-| 0x00019600
-
-    | 77Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002CB00
-
-    | 77Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -195,3 +183,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzM2NzIyNzcsNDkwNDEzMjc5XX0=
+-->

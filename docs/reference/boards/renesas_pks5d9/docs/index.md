@@ -6,7 +6,11 @@ The PK-S5D9 includes four header connectors for direct access to the I/O pins in
 The PK-S5D9 incorporates a 2.4-in. QVGA (240 x 320) TFT display with capacitive touch screen.As a promotion kit, the PK-S5D9 is designed to demonstrate the main features of the Synergy Platform using the S5D9 Group MCUs.
 This is an initial evaluation platform that you can use to determine which kit is appropriate for further development of your product.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_pks5d9/docs/img/renesas_pks5d9.jpg?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/renesas_pks5d9/docs/img/renesas_pks5d9_pin_io.jpg?raw=true)
 
 Renesas PK-S5D9 official manual is available [here](https://www.renesas.com/us/en/doc/products/renesas-synergy/doc/r12um0009eu0101-synergy-pk-s5d9.pdf)
 
@@ -14,126 +18,25 @@ Renesas PK-S5D9 official manual is available [here](https://www.renesas.com/us/e
 
 The internal flash of the Renesas PK-S5D9 is organized into one bank of 2Mb with 70 total sectors of different size according to the following table:
 
-| Start address
+| Start address | Size | Content          |
+|---------------|------|------------------|
+| 0x00000000    | 8Kb  | Reserved         |
+| 0x00002000    | 8Kb  | Reserved         |
+| 0x00004000    | 8Kb  | Reserved         |
+| 0x00006000    | 8Kb  | Reserved         |
+| 0x00008000    | 8Kb  | Reserved         |
+| 0x0000a000    | 8Kb  | Reserved         |
+| 0x0000c000    | 8Kb  | Reserved         |
+| 0x0000e000    | 8Kb  | Reserved         |
+| 0x00010000    | 32Kb | Reserved         |
+| 0x00018000    | 32Kb | Reserved         |
+| 0x00020000    | 32Kb | Virtual Machine  |
+| 0x00028000    | 32Kb | Bytecode Slot 0  |
+| 0x00030000    | 32Kb | Bytecode Slot 1  |
+| 0x00038000    | 32Kb | Bytecode Slot 2  |
+| ...           | ...  | ...              |
+| 0x001F8000    | 32Kb | Bytecode Slot 59 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00000000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00002000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00004000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00006000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00008000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x0000a000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x0000c000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x0000e000
-
-    | 8Kb
-
-  | Reserved
-
- |
-| 0x00010000
-
-    | 32Kb
-
- | Reserved
-
- |
-| 0x00018000
-
-    | 32Kb
-
- | Reserved
-
- |
-| 0x00020000
-
-    | 32Kb
-
- | Virtual Machine
-
- |
-| 0x00028000
-
-    | 32Kb
-
- | Bytecode Slot 0
-
- |
-| 0x00030000
-
-    | 32Kb
-
- | Bytecode Slot 1
-
- |
-| 0x00038000
-
-    | 32Kb
-
- | Bytecode Slot 2
-
- |
-| …
-
-             | …
-
-    | …
-
-               |
-| 0x001F8000
-
-    | 32Kb
-
- | Bytecode Slot 59
-
- |
 ## Device Summary
 
 
@@ -191,7 +94,8 @@ Once both the FTDI and the Debug Port are connected on USB ports, the PK-S5D9 is
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the PK-S5D9 device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
@@ -216,3 +120,6 @@ Not all features have been included in the Renesas PK-S5D9 VMs. In particular th
 
 
 * Audio Output;
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA1ODcwMjU4LC00OTk2MzY1NjFdfQ==
+-->

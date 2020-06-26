@@ -7,10 +7,7 @@ Refer to BLE examples for usage.
 ## Module Functions
 
 
----
-#### `#!py3 eddy_encode_tlm()`
-
-!!!abstract "`#!py3 eddy_encode_tlm(battery, temperature, count, time)`"
+`eddy_encode_tlm(battery, temperature, count, time)`
 
 Return a bytearray representing an encoded Eddystone payload of type tlm (not encrypted).
 
@@ -29,10 +26,7 @@ According to the specifications:
 * `time` is the time in seconds since beacon power up
 
 
----
-#### `#!py3 eddy_encode_uid()`
-
-!!!abstract "`#!py3 eddy_encode_uid(namespace, instance, txpower)`"
+`eddy_encode_uid(namespace, instance, txpower)`
 
 Return a bytearray representing an encoded Eddystone payload of type uid (not encrypted).
 
@@ -47,11 +41,7 @@ According to the specifications:
 
 * `txpower` is the power calibration measurement of the beacon (used to calculate distances)
 
-
----
-#### `#!py3 eddy_encode_url()`
-
-!!!abstract "`#!py3 eddy_encode_url(url, txpower)`"
+`eddy_encode_url(url, txpower)`
 
 Return a bytearray representing an encoded Eddystone payload of type url (not encrypted).
 
@@ -64,10 +54,7 @@ According to the specifications:
 * `txpower` is the power calibration measurement of the beacon (used to calculate distances)
 
 
----
-#### `#!py3 eddy_decode_type()`
-
-!!!abstract "`#!py3 eddy_decode_type(packet)`"
+`eddy_decode_type(packet)`
 
 Given `packet` as a bytes or bytearray return the type of the Eddystone packet or raises `ValueError` if it is not an Eddystone packet.
 
@@ -83,10 +70,7 @@ Return values are:
 * `EDDY_URL` for url packets
 
 
----
-#### `#!py3 eddy_decode()`
-
-!!!abstract "`#!py3 eddy_decode(packet)`"
+`eddy_decode(packet)`
 
 Given `packet` as a bytes or bytearray return a tuple with the packet decoded fields or raises `ValueError` in case `packet` is not Eddystone.
 
@@ -102,10 +86,7 @@ Return values are:
 * a tuple with battery, temperature, count and time for tlm packets
 
 
----
-#### `#!py3 ibeacon_encode()`
-
-!!!abstract "`#!py3 ibeacon_encode(uuid, major, minor, txpower, manufacturer=0x4c00)`"
+`ibeacon_encode(uuid, major, minor, txpower, manufacturer=0x4c00)`
 
 Return a bytearray representing an encoded iBeacon payload.
 
@@ -127,11 +108,11 @@ According to the specifications:
 * `manufacturer` is set to Apple, but can be changed if needed
 
 
----
-#### `#!py3 ibeacon_decode()`
-
-!!!abstract "`#!py3 ibeacon_decode(packet)`"
+`ibeacon_decode(packet)`
 
 Given `packet` as a bytes or bytearray return a tuple with the packet decoded fields or raises `ValueError` in case `packet` is not iBeacon.
 
 Return value is a tuple with uuid, major, minor and txpower
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMjczMTI5ODNdfQ==
+-->

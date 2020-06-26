@@ -10,17 +10,18 @@ safely sent by email, used as parts of URLs, or included as part of an HTTP
 POST request.
 
 
----
-#### `#!py3 standard_b64encode()`
+`standard_b64encode()`
 
-!!!abstract "`#!py3 standard_b64encode(s)`"
+`standard_b64encode(s)`
 
 Encode ```s``` (either bytes, bytearray or string) using the standard Base64 alphabet and return the encoded object as bytes.
 
 
----
-#### `#!py3 standard_b64decode()`
+ `standard_b64decode()`
 
-!!!abstract "`#!py3 standard_b64decode(s)`"
+`standard_b64decode(s)`
 
 Decode ```s``` (either bytes, bytearray or string) using the standard Base64 alphabet and return the decoded object as bytes.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjE5MzU0NDU4XX0=
+-->

@@ -23,7 +23,7 @@ A minimal example of C function calling from Python follows.
 
 In Python:
 
-```py
+```
 # main.py
 
 @c_native("my_c_function",["my_c_source.c"],[])
@@ -37,7 +37,7 @@ def my_py_function(a,b):
 
 In C:
 
-```c
+```
     // my_c_source.c
 
     //include zerynth header
@@ -60,7 +60,7 @@ C function called `my_c_function` implemented in the file `my_c_source.c` in the
 
 In `my_c_source.c` the function `my_c_function` is implemented. The macro `C_NATIVE(my_c_function)` expands to:
 
-```c
+```
 err_t my_c_function(int32_t nargs, PObject *self, PObject **args, PObject **res)
 ```
 
@@ -70,10 +70,10 @@ where:
 * **nargs** is the number of arguments passed to `my_py_function`
 
 
-* **self**`  is the self parameter in case ` my_py_function` is a method
+* **self**` is the self parameter in case `my_py_function` is a method
 
 
-* **args** is an array of PObject*, the generic structure used by the VM to represent Python objects
+* **args** is an array of PObject\*, the generic structure used by the VM to represent Python objects
 
 
 * **res** is a pointer to a PObject containing the result of the function call
@@ -92,28 +92,28 @@ For more details on the low level VM functions and macros available for hybrid p
 Some utility macros are added on top of the VM defined macro by the header `zerynth.h`.
 
 
-   ### `C_NATIVE(fn)`
+   ### C_NATIVE(fn)
 
 Used to define the implementation of a C function callable from Python. It equals to:
 
-```c
+```
 err_t fn(int nargs, PObject *self, PObject **args, PObject **res)
 ```
 
 
-   ### `C_NATIVE_UNWARN`
+   ### C_NATIVE_UNWARN()
 
 Silences C warnings about unused `C_NATIVE` arguments in the body of a C function callable from Python
 
 
-   ### `debug(...)`
+   ### debug(...)
 
 If the user defines `ZERYNTH_DEBUG` before including `zerynth.h`, this macro behaves like a printf, writing to the default serial port of the virtual machine. Otherwise it does nothing.
 
 The printf funcionalities are limited to the following placeholders: `%s` `%i` `%I` `%d` `%D` `%u` `%U` `%x` `%X` `%p` `%c` `%%`.
 
 
-   ### `printf(...)`
+   ### printf(...)
 
 If the user defines `ZERYNTH_PRINTF` before including `zerynth.h`, this macro behaves like a printf, writing to the default serial port of the virtual machine. Otherwise it does nothing.
 
@@ -129,14 +129,14 @@ C functions callable from Python have some limitations:
 
 * C standard library function are not available. Only the following subset can be used:
 
- 
-     * `memcpy`, `memset`, `memmove`, `memcmp`, `memchr`
+> 
+>     * `memcpy`, `memset`, `memmove`, `memcmp`, `memchr`
 
 
-     * `malloc`, `free` (implemented as macros calling the garbage collector allocator)
+>     * `malloc`, `free` (implemented as macros calling the garbage collector allocator)
 
 
-     * `strlen`
+>     * `strlen`
 
 Refer to VM Guide for the available api.
 

@@ -25,20 +25,13 @@ obtain the same result with almost no code and a staggering precision (in the or
 The icu module is a general interface with such mcu hardware.
 
 
----
-#### `#!py3 init()`
-
-!!!abstract "`#!py3 init(drvname)`"
+`init(drvname)`
 
 Loads the icu driver identified by ```drvname```
 
 Returns the previous driver without disabling it.
 
-
----
-#### `#!py3 capture()`
-
-!!!abstract "`#!py3 capture(pin, trigger, max_samples, time_window=1000, time_unit=MILLIS, pull=LOW, bits=-1)`"
+`capture(pin, trigger, max_samples, time_window=1000, time_unit=MILLIS, pull=LOW, bits=-1)`
 
 Activates the Input Capture Unit on ```pin``` and starts capturing the signal with the following constraints:
 
@@ -111,3 +104,6 @@ x,y = icu.capture(D3.ICU,BOTH_EDGES,10,18,bits=1)
 ```
 
 Some boards have restrictions on how icu pins can be used, refer to the single board documentation for details.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTczOTA3NTY3NV19
+-->

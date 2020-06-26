@@ -6,7 +6,8 @@ stored in files or from network connections, among other sources.  It uses
 Format Strings as compact descriptions of the layout of the C
 structs and the intended conversion to/from Python values.
 
-```NOTE```: By default, the result of packing a given C struct includes pad bytes in
+!!! note
+	By default, the result of packing a given C struct includes pad bytes in
 order to maintain proper alignment for the C types involved; similarly,
 alignment is taken into account when unpacking.  This behavior is chosen so
 that the bytes of a packed struct correspond exactly to the layout in memory
@@ -22,33 +23,33 @@ argument.  This refers to objects of class bytearray.
 The module defines the following exception and functions:
 
 
-### pack(fmt, v1, v2, ...)
+`pack(fmt, v1, v2, ...)`
 Return a bytes object containing the values ```v1```, ```v2```, … packed according
 to the format string ```fmt```.  The arguments must match the values required by
 the format exactly.
 
 
-### pack_into(fmt, buffer, offset, v1, v2, ...)
+`pack_into(fmt, buffer, offset, v1, v2, ...)`
 Pack the values ```v1```, ```v2```, … according to the format string ```fmt``` and
 write the packed bytes into the writable buffer ```buffer``` starting at
 position ```offset```.  Note that ```offset``` is a required argument.
 
 
-### unpack(fmt, buffer)
+`unpack(fmt, buffer)`
 Unpack from the buffer ```buffer``` (presumably packed by `pack(fmt, ...)`)
 according to the format string ```fmt```.  The result is a tuple even if it
 contains exactly one item.  The buffer’s size in bytes must match the
 size required by the format, as reflected by `calcsize()`.
 
 
-### unpack_from(fmt, buffer, offset=0)
+`unpack_from(fmt, buffer, offset=0)`
 Unpack from ```buffer``` starting at position ```offset```, according to the format
 string ```fmt```.  The result is a tuple even if it contains exactly one
 item.  The buffer’s size in bytes, minus ```offset```, must be at least
 the size required by the format, as reflected by `calcsize()`.
 
 
-### calcsize(fmt)
+`calcsize(fmt)`
 Return the size of the struct (and hence of the bytes object produced by
 `pack(fmt, ...)`) corresponding to the format string ```fmt```.
 
@@ -68,62 +69,14 @@ rules used by the C compiler).
 Alternatively, the first character of the format string can be used to indicate
 the byte order, size and alignment of the packed data, according to the
 following table:
+| Character | Byte order             | Size     | Alignment |
+|-----------|------------------------|----------|-----------|
+| @         | native                 | native   | native    |
+| =         | native                 | standard | none      |
+| <         | little-endian          | standard | none      |
+| >         | big-endian             | standard | none      |
+| !         | network (= big-endian) | standard | none      |
 
-| Character
-
- | Byte order
-
- | Size
-
- | Alignment
-
- |
-| --------------- | ---------------------- | ------------------- | --------- |  |  |  |  |  |  |  |
-| `@`
-
-               | native
-
-                 | native
-
-              | native
-
-    |
-| `=`
-
-               | native
-
-                 | standard
-
-            | none
-
-      |
-| `<`
-
-               | little-endian
-
-          | standard
-
-            | none
-
-      |
-| `>`
-
-               | big-endian
-
-             | standard
-
-            | none
-
-      |
-| `!`
-
-               | network (= big-endian)
-
- | standard
-
-            | none
-
-      |
 If the first character is not one of these, `'@'` is assumed.
 
 Native byte order is big-endian or little-endian, depending on the host
@@ -164,233 +117,31 @@ refers to the size of the packed value in bytes when using standard size; that
 is, when the format string starts with one of `'<'`, `'>'`, `'!'` or
 `'='`.  When using native size, the size of the packed value is
 platform-dependent.
+| Format | C Type             | Python type       | Standard size | Notes    |
+|--------|--------------------|-------------------|---------------|----------|
+| x      | pad byte           | no value          |               |          |
+| c      | char               | bytes of length 1 | 1             |          |
+| b      | signed char        | integer           | 1             | (1),(3)  |
+| B      | unsigned char      | integer           | 1             | (3)      |
+| ?      | _Bool              | bool              | 1             | (1)      |
+| h      | short              | integer           | 2             | (3)      |
+| H      | unsigned short     | integer           | 2             | (3)      |
+| i      | int                | integer           | 4             | (3)      |
+| I      | unsigned int       | integer           | 4             | (3)      |
+| l      | long               | integer           | 4             | (3)      |
+| L      | unsigned long      | integer           | 4             | (3)      |
+| q      | long long          | integer           | 8             | (2), (3) |
+| Q      | unsigned long long | integer           | 8             | (2), (3) |
+| n      | ssize_t            | integer           |               | (4)      |
+| N      | size_t             | integer           |               | (4)      |
+| e      | (7)                | float             | 2             | (5)      |
+| f      | float              | float             | 4             | (5)      |
+| d      | double             | float             | 8             | (5)      |
+| s      | char[]             | bytes             |               |          |
+| p      | char[]             | bytes             |               |          |
+| P      | void *             | integer           |               | (6)      |
 
-| Format
-
-          | C Type
-
-                 | Python type
-
-         | Standard size
-
- | Notes
-
- |
-| --------------- | ---------------------- | ------------------- | ------------- | ----- |
-| `x`
-
-               | pad byte
-
-               | no value
-
-            |               |       |
-| `c`
-
-               | `char`
-
-                   | bytes of length 1
-
-   | 1
-
-             |       |
-| `b`
-
-               | `signed char`
-
-            | integer
-
-             | 1
-
-             | (1),(3)
-
- |
-| `B`
-
-               | `unsigned char`
-
-          | integer
-
-             | 1
-
-             | (3)
-
-     |
-| `?`
-
-               | `_Bool`
-
-                  | bool
-
-                | 1
-
-             | (1)
-
-     |
-| `h`
-
-               | `short`
-
-                  | integer
-
-             | 2
-
-             | (3)
-
-     |
-| `H`
-
-               | `unsigned short`
-
-         | integer
-
-             | 2
-
-             | (3)
-
-     |
-| `i`
-
-               | `int`
-
-                    | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `I`
-
-               | `unsigned int`
-
-           | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `l`
-
-               | `long`
-
-                   | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `L`
-
-               | `unsigned long`
-
-          | integer
-
-             | 4
-
-             | (3)
-
-     |
-| `q`
-
-               | `long long`
-
-              | integer
-
-             | 8
-
-             | (2), (3)
-
- |
-| `Q`
-
-               | `unsigned long
-long`
-
-     | integer
-
-             | 8
-
-             | (2), (3)
-
- |
-| `n`
-
-               | `ssize_t`
-
-                | integer
-
-             |               | (4)
-
-      |
-| `N`
-
-               | `size_t`
-
-                 | integer
-
-             |               | (4)
-
-      |
-| `e`
-
-               | (7)
-
-                    | float
-
-               | 2
-
-             | (5)
-
-      |
-| `f`
-
-               | `float`
-
-                  | float
-
-               | 4
-
-             | (5)
-
-      |
-| `d`
-
-               | `double`
-
-                 | float
-
-               | 8
-
-             | (5)
-
-      |
-| `s`
-
-               | `char[]`
-
-                 | bytes
-
-               |               |          |
-| `p`
-
-               | `char[]`
-
-                 | bytes
-
-               |               |          |
-| `P`
-
-               | `void \*`
-
-                 | integer
-
-             |               | (6)
-
-      |
 Notes:
-
 
 1. The `'?'` conversion code corresponds to the `_Bool` type defined by
 C99. If this type is not available, it is simulated using a `char`. In
@@ -453,13 +204,7 @@ of bytes.  As a special case, `'0s'` means a single, empty string (while
 When packing a value `x` using one of the integer formats (`'b'`,
 `'B'`, `'h'`, `'H'`, `'i'`, `'I'`, `'l'`, `'L'`,
 `'q'`, `'Q'`), if `x` is outside the valid range for that format
-then 
-
-```
-:exc:`struct.error`
-```
-
- is raised.
+then `struct.error` is raised.
 
 The `'p'` format character encodes a “Pascal string”, meaning a short
 variable-length string stored in a *fixed number of bytes*, given by the count.
@@ -472,26 +217,14 @@ are used.  Note that for `unpack()`, the `'p'` format character consumes
 `count` bytes, but that the string returned can never contain more than 255
 bytes.
 
-For the `'?'` format character, the return value is either 
-
-```
-:const:`True`
-```
-
- or
-
-
-```
-:const:`False`
-```
-
-. When packing, the truth value of the argument object is used.
+For the `'?'` format character, the return value is either `True` or `False`. When packing, the truth value of the argument object is used.
 Either 0 or 1 in the native or standard bool representation will be packed, and
 any non-zero value will be `True` when unpacking.
 
 ### Examples
 
-```NOTE```: All examples assume a native byte order, size, and alignment with a
+!!! none
+	All examples assume a native byte order, size, and alignment with a
 big-endian machine.
 
 A basic example of packing/unpacking three integers:
@@ -499,8 +232,8 @@ A basic example of packing/unpacking three integers:
 ```
 >>> from struct import *
 >>> pack('hhl', 1, 2, 3)
-b'     '
->>> unpack('hhl', b'     ')
+b''
+>>> unpack('hhl', b'')
 (1, 2, 3)
 >>> calcsize('hhl')
 8
@@ -524,7 +257,7 @@ needed to satisfy alignment requirements is different:
 
 ```
 >>> pack('ci', b'*', 0x12131415)
-b'*   '
+b'*'
 >>> pack('ic', 0x12131415, b'*')
 b'*'
 >>> calcsize('ci')
@@ -538,8 +271,11 @@ longs are aligned on 4-byte boundaries:
 
 ```
 >>> pack('llh0l', 1, 2, 3)
-b'         '
+b''
 ```
 
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMjY2MTA2XX0=
+-->

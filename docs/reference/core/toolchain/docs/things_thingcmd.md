@@ -151,19 +151,7 @@ The properties are specified with the following options:
 * `--name name`, changes the device name
 
 
-* :option:
-
-```
-`
-```
-
-–description desc 
-
-```
-`
-```
-
-, changes the device description
+* :option: –description desc, changes the device description
 
 
 * `--location loc`, changes the device location
@@ -328,3 +316,6 @@ The displayed information is:
 
 
 * `last_ota`, the timestamp of last successful FOTA update
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTEwNzI2NzA4OV19
+-->

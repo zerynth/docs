@@ -9,17 +9,14 @@ This module enables the access to low level microcontroller functionalities like
 * soft reset
 
 
----
-#### `#!py3 reset()`
-
-!!!abstract "`#!py3 reset()`"
+`reset()`
 
 Restart the microcontroller.
 
 
----
-#### `#!py3 uid()`
-
-!!!abstract "`#!py3 uid()`"
+`uid()`
 
 Return a bytes object containing the unique id of the mcu
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMDg3NDc4MDBdfQ==
+-->

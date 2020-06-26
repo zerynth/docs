@@ -6,7 +6,8 @@ To easily interact with AnyNet Secure SIM exploiting its AWS IoT readiness, an M
 
 The modem can be found on the [AnyNet 2G Click Board](https://www.mikroe.com/anynet-2g-click) as a result of the partnership between [MikroElektronica](https://www.mikroe.com/) and [Eseye](https://www.eseye.com/).
 
-**NOTE:** When using [AnyNet 2G Click Board](https://www.mikroe.com/anynet-2g-click) be sure to have sufficient power supply and a sufficiently good antenna according to 2G network signal strength for the zone of usage.
+!!! note
+	 When using [AnyNet 2G Click Board](https://www.mikroe.com/anynet-2g-click) be sure to have sufficient power supply and a sufficiently good antenna according to 2G network signal strength for the zone of usage.
 
 Here below, the Zerynth Library to communicate to the modem through an intuitive Python interface.
 
@@ -19,5 +20,5 @@ Contents:
        -   [Publish and subscribe](https://docs.zerynth.com/latest/official/lib.eseye.anynetaws/examples/examples.html#publish-and-subscribe)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzIxMDc3MV19
+eyJoaXN0b3J5IjpbLTEyNzE4OTIxNDgsMTQwNzIxMDc3MV19
 -->

@@ -6,14 +6,19 @@ The Polaris 3G hardware includes a powerful 32-bit ARM Cortex-M4 controller with
 
 With Polaris 3G, many IoT applications can be developed related to real-time asset tracking, geo-fencing, sensors logging, battery monitoring, remote controlling, and others. It works right out of the box as vehicle tracker; the only requirement is a SIM card.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_3g/docs/img/polaris_3g.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_3g/docs/img/polaris_3g_pin_comm.jpg?raw=true)
 
 ## Flash Layout
 
 The internal flash of the Polaris 3G is organized in one block divided in 256 pages of 2Kb each.
 The flash memory address starts at 0x8000000 and can be read and written from a Zerynth program using the internal flash module.
 
-```WARNING```: If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash towards the virtual machine, to minimize the chance of clashes.
+!!! warning
+	If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash towards the virtual machine, to minimize the chance of clashes.
 
 Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
 
@@ -68,15 +73,18 @@ Since writing to a sector entails erasing it first, the write operation can be s
 
 On the Polaris 3G the power supply is provided by an external Source: VIN (8V-36V) or through the JST connector for a 3.7/4.2 V backup battery. The power source is selected automatically and when both power supply are provided, the main source can be used to enable charging the backup battery.
 
-```NOTE```: Polaris 3G can be programmed through USB connector or through ST-Link debugger connected to the related JTAG connector.
+!!! note
+	Polaris 3G can be programmed through USB connector or through ST-Link debugger connected to the related JTAG connector.
 
-```WARNING```: When the device is connected to the PC by USB or by ST-LINK debugger, VUSB and Vcc are not connected as Power supply. External Power Supply or Battery Power Supply must be always provided.
+!!! warning
+	When the device is connected to the PC by USB or by ST-LINK debugger, VUSB and Vcc are not connected as Power supply. External Power Supply or Battery Power Supply must be always provided.
 
 ## Connect, Register, Virtualize and Program
 
 On ```Windows``` machines two set of drivers may be installed: the DFU drivers and the USB serial drivers. This can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greater. Use the Zadig utility once with the Polaris 3G in DFU mode (see below) and once after the device has been virtualized.
 
-```NOTE```: Remember to select “Options > List all devices” to search for the Polaris 3G device.
+!!! note
+	Remember to select “Options > List all devices” to search for the Polaris 3G device.
 
 
 * In DFU mode, the VID:PID you should see is 0483:5740 and the Polaris 3G si recognized as “STM32 BOOTLOADER”.
@@ -84,19 +92,16 @@ On ```Windows``` machines two set of drivers may be installed: the DFU drivers a
 
 * For the virtualized Polaris 3G (DFU MODE) the VID:PID is 0483:DF12.
 
-```WARNING```: In DFU mode any driver is ok, except Usb CDC; for the virtualized Polaris the only valid driver is Usb CDC.
+!!! warning
+	In DFU mode any driver is ok, except Usb CDC; for the virtualized Polaris the only valid driver is Usb CDC.
 
-```NOTE```: It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
+!!! note
+	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
-On **MAC OSX** and ```Linux``` USB drivers are not required.
+On **MAC OSX** and **Linux** USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -129,7 +134,8 @@ Once connected to a USB port the Polaris device can be seen as a Virtual Serial 
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the Polaris 3G device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again.
+!!! note
+	During these operations the Polaris 3G device must be in ```DFU``` mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again.
 
 After virtualization, the Polaris 3G is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
@@ -140,3 +146,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDk5NjgwODkyXX0=
+-->

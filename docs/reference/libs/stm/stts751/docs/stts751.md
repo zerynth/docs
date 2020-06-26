@@ -35,147 +35,30 @@ Sets the device’s configuration registers.
 
 * **odr** : sets the Output Data Rate of the device. Available values are:
 
-| Value
-
- | Output Data Rate
-
- | Constant Name
-
- |
-| ----- | ---------------- | ------------- |
-| 0x00
-
-  | 62,5 Mhz
-
-         | ODR_AVAILABLE[“ODR_62mHz5”]
-
- |
-| 0x01
-
-  | 125 MHz
-
-          | ODR_AVAILABLE[“ODR_125mHz”]
-
- |
-| 0x02
-
-  | 250 MHz
-
-          | ODR_AVAILABLE[“ODR_250mHz”]
-
- |
-| 0x03
-
-  | 500 MHz
-
-          | ODR_AVAILABLE[“ODR_500mHz”]
-
- |
-| 0x04
-
-  | 1 Hz
-
-             | ODR_AVAILABLE[“ODR_1Hz”]
-
-    |
-| 0x05
-
-  | 2 Hz
-
-             | ODR_AVAILABLE[“ODR_2Hz”]
-
-    |
-| 0x06
-
-  | 4 Hz
-
-             | ODR_AVAILABLE[“ODR_4Hz”]
-
-    |
-| 0x07
-
-  | 8 Hz
-
-             | ODR_AVAILABLE[“ODR_8Hz”]
-
-    |
-| 0x08
-
-  | 16 Hz
-
-            | ODR_AVAILABLE[“ODR_16Hz”]
-
-   |
-| 0x09
-
-  | 32 Hz
-
-            | ODR_AVAILABLE[“ODR_32Hz”]
-
-   |
-| 0x80
-
-  | OFF
-
-              | ODR_AVAILABLE[“ODR_OFF”]
-
-    |
-| 0x90
-
-  | ONE SHOT
-
-         | ODR_AVAILABLE[“ODR_ONE_SHOT”]
-
- |
+| Value | Output Data Rate | Constant Name                 |
+|-------|------------------|-------------------------------|
+| 0x00  | 62,5 Mhz         | ODR_AVAILABLE[“ODR_62mHz5”]   |
+| 0x01  | 125 MHz          | ODR_AVAILABLE[“ODR_125mHz”]   |
+| 0x02  | 250 MHz          | ODR_AVAILABLE[“ODR_250mHz”]   |
+| 0x03  | 500 MHz          | ODR_AVAILABLE[“ODR_500mHz”]   |
+| 0x04  | 1 Hz             | ODR_AVAILABLE[“ODR_1Hz”]      |
+| 0x05  | 2 Hz             | ODR_AVAILABLE[“ODR_2Hz”]      |
+| 0x06  | 4 Hz             | ODR_AVAILABLE[“ODR_4Hz”]      |
+| 0x07  | 8 Hz             | ODR_AVAILABLE[“ODR_8Hz”]      |
+| 0x08  | 16 Hz            | ODR_AVAILABLE[“ODR_16Hz”]     |
+| 0x09  | 32 Hz            | ODR_AVAILABLE[“ODR_32Hz”]     |
+| 0x80  | OFF              | ODR_AVAILABLE[“ODR_OFF”]      |
+| 0x90  | ONE SHOT         | ODR_AVAILABLE[“ODR_ONE_SHOT”] |
 
 * **resolution** : sets the Resolution in bit of the conversion. Available values are:
 
-| Value
+| Value | N bit | Costant Name   | in °C/LSB     |
+|-------|-------|----------------|---------------|
+| 0x08  | 9     | STTS751_RES_9  | 0.5 °C/LSB    |
+| 0x00  | 10    | STTS751_RES_10 | 0.25 °C/LSB   |
+| 0x04  | 11    | STTS751_RES_11 | 0.125 °C/LSB  |
+| 0x0c  | 12    | STTS751_RES_12 | 0.0625 °C/LSB |
 
- | N bit
-
-            | Costant Name
-
-                  | in °C/LSB
-
- |
-| ----- | ---------------- | ----------------------------- | --------- |
-| 0x08
-
-  | 9
-
-                | STTS751_RES_9
-
-                 | 0.5 °C/LSB
-
- |
-| 0x00
-
-  | 10
-
-               | STTS751_RES_10
-
-                | 0.25 °C/LSB
-
- |
-| 0x04
-
-  | 11
-
-               | STTS751_RES_11
-
-                | 0.125 °C/LSB
-
- |
-| 0x0c
-
-  | 12
-
-               | STTS751_RES_12
-
-                | 0.0625 °C/LSB
-
- |
 Returns True if configuration is successful, False otherwise.
 
 
@@ -191,32 +74,12 @@ Retrieves the sensor flag status.
 
 Returns a dictionary with following key/value pairs:
 
-| Key
-
-   | Note
-
-             |
-| ----- | ---------------- |
-| busy
-
-  | If True, Sensor is Busy
-
- |
-| t_low
-
- | If True, Temp under threshold
-
- |
-| t_high
-
- | If True, Temp over threshold
-
-  |
-| therm
-
-  | If True, High internal Temp
-
-   |
+| Key    | Note                          |
+|--------|-------------------------------|
+| busy   | If True, Sensor is Busy       |
+| t_low  | If True, Temp under threshold |
+| t_high | If True, Temp over threshold  |
+| therm  | If True, High internal Temp   |
 
 **`get_sensor_id()`**
 
@@ -261,3 +124,6 @@ Sets the Thermal hysteresis threshold. Once Therm output has asserted, it will n
 **`set_timeout(enable)`**
 
 Enables the timeout for the sensor readings (from 25 to 35 ms). Available values for ‘enable’ flag are ‘True’ or ‘False’.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTUyMDc5NTQwXX0=
+-->

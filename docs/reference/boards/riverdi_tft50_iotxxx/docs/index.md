@@ -4,15 +4,12 @@ Riverdi IoT Display RiTFT-50-IOT-xxx is a complete HMI solution equipped with Br
 
 It aims to provide the best tool for fast development of touchscreen user interfaces. The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) allows easy usage of Wi-Fi and Bluetooth, while the BT81x graphics controller simplifies the process of creating user interfaces. The module has a built-in USB bridge for programming the display directly from the PC.
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/riverdi_tft50_iotxxx/docs/img/riverdi_tft50_iotxxx.jpg?raw=true)
+
 ## Pin Mapping
 
-Official reference for Riverdi IoT Display can be found 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/riverdi_tft50_iotxxx/docs/img/riverdi_tft50_iotxxx_pin_comm.jpg?raw=true)
 
-```
-`here <>`_
-```
-
-.
 
 ## Flash Layout
 
@@ -20,150 +17,32 @@ The internal flash of the ESP32 module is organized in a single flash area with 
 
 In particular, for non-BLE VMs:
 
-| Start address
+| Start address | Size  | Content                 |
+|---------------|-------|-------------------------|
+| 0x00009000    | 16Kb  | Esp32 NVS area          |
+| 0x0000D000    | 8Kb   | Esp32 OTA data          |
+| 0x0000F000    | 4Kb   | Esp32 PHY data          |
+| 0x00010000    | 1Mb   | Zerynth VM              |
+| 0x00110000    | 1Mb   | Zerynth VM (FOTA)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode        |
+| 0x00290000    | 512Kb | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb | Free for user storage   |
+| 0x00390000    | 448Kb | Reserved                |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00009000
-
-    | 16Kb
-
- | Esp32 NVS area
-
- |
-| 0x0000D000
-
-    | 8Kb
-
-  | Esp32 OTA data
-
- |
-| 0x0000F000
-
-    | 4Kb
-
-  | Esp32 PHY data
-
- |
-| 0x00010000
-
-    | 1Mb
-
-  | Zerynth VM
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-  | Zerynth VM (FOTA)
-
- |
-| 0x00210000
-
-    | 512Kb
-
- | Zerynth Bytecode
-
-  |
-| 0x00290000
-
-    | 512Kb
-
- | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
- | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
- | Reserved
-
-                |
 For BLE VMs:
 
-| Start address
+| Start address | Size   | Content                 |
+|---------------|--------|-------------------------|
+| 0x00009000    | 16Kb   | Esp32 NVS area          |
+| 0x0000D000    | 8Kb    | Esp32 OTA data          |
+| 0x0000F000    | 4Kb    | Esp32 PHY data          |
+| 0x00010000    | 1216Kb | Zerynth VM              |
+| 0x00140000    | 1216Kb | Zerynth VM (FOTA)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode        |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb  | Free for user storage   |
+| 0x00390000    | 448Kb  | Reserved                |
 
- | Size
-
-  | Content
-
-                 |
-| ------------- | ----- | ----------------------- |
-| 0x00009000
-
-    | 16Kb
-
-  | Esp32 NVS area
-
-          |
-| 0x0000D000
-
-    | 8Kb
-
-   | Esp32 OTA data
-
-          |
-| 0x0000F000
-
-    | 4Kb
-
-   | Esp32 PHY data
-
-          |
-| 0x00010000
-
-    | 1216Kb
-
- | Zerynth VM
-
-              |
-| 0x00140000
-
-    | 1216Kb
-
- | Zerynth VM (FOTA)
-
-       |
-| 0x00270000
-
-    | 320Kb
-
-  | Zerynth Bytecode
-
-        |
-| 0x002C0000
-
-    | 320Kb
-
-  | Zerynth Bytecode (FOTA)
-
- |
-| 0x00310000
-
-    | 512Kb
-
-  | Free for user storage
-
-   |
-| 0x00390000
-
-    | 448Kb
-
-  | Reserved
-
-                |
 ## Device Summary
 
 
@@ -224,13 +103,8 @@ The Riverdi IoT Display comes with a serial-to-usb chip on board that allows pro
 
 The FT232H FTDI USB to UART chip should be supported natively by all platforms. If serial port is not correctly seen, VCP (Virtual COM port) drivers can be downloaded from [here](https://www.ftdichip.com/Drivers/VCP.htm)
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the Riverdi IoT Display is recognized by Zerynth Studio. The next steps are:
 
@@ -246,11 +120,13 @@ Once connected on a USB port, if drivers have been correctly installed, the Rive
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Riverdi IoT Display is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the uplink process.
+!!! note
+	No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -258,42 +134,13 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
- | Size
-
-   | Content
-
-                 |
-| ------------- | ------ | ----------------------- |
-| 0x00010000
-
-    | 1Mb
-
-    | Zerynth VM (slot 0)
-
-     |
-| 0x00110000
-
-    | 1Mb
-
-    | Zerynth VM (slot 1)
-
-     |
-| 0x00210000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 0)
-
- |
-| 0x00290000
-
-    | 512Kb
-
-  | Zerynth Bytecode (slot 1)
-
- |
 For Esp32 based devices, the FOTA process is implemented mostly by using the provided system calls in the IDF framework. The selection of the next VM to be run is therefore a duty of the Espressif bootloader; the bootloader however, does not provide a failsafe mechanism to revert to the previous VM in case the currently selected one fails to start. At the moment this lack of a safety feature can not be circumvented, unless by changing the bootloader. As soon as Espressif relases a new IDF with such feature, we will release updated VMs.
 
 ## Secure Firmware
@@ -312,3 +159,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 
 * Touch detection support
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExNDkzMzk2ODZdfQ==
+-->

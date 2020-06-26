@@ -4,7 +4,11 @@ The SeeedStudio Wio Link is an ESP8266 SoC based open-source Wi-Fi development b
 
 The Wio Link features 4MB of flash memory, Tensilica microcontroller (80MHz of system clock), around 50k of usable RAM and an Espressif ESP8266 chip Wi-fi Transceiver.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wio_link/docs/img/WioLink.png?raw=true"></p>
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wio_link/docs/img/wio_link_pin_comm.jpg?raw=true)
 
 Official reference for Wio Link can be found [here](http://wiki.seeed.cc/Wio_Link/).
 
@@ -12,9 +16,11 @@ Official reference for Wio Link can be found [here](http://wiki.seeed.cc/Wio_Lin
 
 The Wio Link device features a 4 MB (32 Mb) flash memory organized in sectors of 4k each. The flash memory address starts at 0x40200000 and can be read and written from a Zerynth program using the internal flash module.
 
-```WARNING```: If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
+!!! warning
+	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
 
-```NOTE```: The internal flash of Wio Link can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
+!!! note
+	The internal flash of Wio Link can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
 
 ## Device Summary
 
@@ -70,15 +76,11 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 
 The Wio Link exposes the serial port of the ESP8266 module via a CP2102 usb bridge which is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the Wio Link device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -94,11 +96,13 @@ Once connected to a USB port the Wio Link device can be seen as a Virtual Serial
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Wio Link device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
-```NOTE```: No user intervention on the device is required for the upload process.
+!!! note
+	No user intervention on the device is required for the upload process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -106,35 +110,15 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x40200000    | 448Kb | VM Slot         |
+| 0x40270000    | 256Kb | Bytecode Slot 0 |
+| 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x40200000
-
-    | 448Kb
-
- | VM Slot
-
- |
-| 0x40270000
-
-    | 256Kb
-
- | Bytecode Slot 0
-
- |
-| 0x402B0000
-
-    | 320Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMzk4NTAxMjcsLTM3MDYwNzMyMl19
+-->

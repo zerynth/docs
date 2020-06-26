@@ -58,10 +58,7 @@ To interact with the example, download a BLE monitor app (for example [this one]
 ## Module Functions
 
 
----
-#### `#!py3 gap()`
-
-!!!abstract "`#!py3 gap(name, appearance=0, security=(SECURITY_MODE_1, SECURITY_LEVEL_1), connection=(400, 650, 0, 4000))`"
+`gap(name, appearance=0, security=(SECURITY_MODE_1, SECURITY_LEVEL_1), connection=(400, 650, 0, 4000))`
 
 Set parameters for the the Generic Access Profile:
 
@@ -104,10 +101,7 @@ Security features can be not completely supported by the underlying BLE driver. 
     * Level 2 - Authenticated pairing with data signing
 
 
----
-#### `#!py3 security()`
-
-!!!abstract "`#!py3 security(capabilities=CAP_NONE, bonding=AUTH_NO_BOND, scheme=AUTH_SC, key_size=16, initiator=KEY_ENC|KEY_ID, responder=KEY_ENC|KEY_ID, oob=0, passkey=0)`"
+`security(capabilities=CAP_NONE, bonding=AUTH_NO_BOND, scheme=AUTH_SC, key_size=16, initiator=KEY_ENC|KEY_ID, responder=KEY_ENC|KEY_ID, oob=0, passkey=0)`
 
 Set security parameters:
 
@@ -166,44 +160,29 @@ Set security parameters:
 * `passkey` is an integer representing the passkey to be displayed for `CAP_DISPLAY_ONLY` devices
 
 
----
-#### `#!py3 bonded()`
-
-!!!abstract "`#!py3 bonded()`"
+`bonded()`
 
 Returns the list of addresses of the currently bonded devices.
 Each address is a bytes sequence of length 6
 
 
----
-#### `#!py3 remove_bonded()`
-
-!!!abstract "`#!py3 remove_bonded(addr)`"
+`remove_bonded(addr)`
 
 Removes the bonding with the device with address `addr`.
 
 
----
-#### `#!py3 confirm_passkey()`
-
-!!!abstract "`#!py3 confirm_passkey(confirmed)`"
+`confirm_passkey(confirmed)`
 
 For devices with `CAP_DISPLAY_YES_NO` the user must confirm the passkey. If `confirmed` is not zero, the passkey is confirmed and
 the secure connection performed. Otherwise the secure connection is aborted.
 
 
----
-#### `#!py3 add_service()`
-
-!!!abstract "`#!py3 add_service(service)`"
+`add_service(service)`
 
 Adds `service` to the service list. `service` must be an instance of the `Service()` class.
 
 
----
-#### `#!py3 add_callback()`
-
-!!!abstract "`#!py3 add_callback(evt, callback)`"
+`add_callback(evt, callback)`
 
 Add callback to the callback list. It will be triggered by event `evt`.
 
@@ -285,10 +264,7 @@ ble.add_callback(ble.EVT_CONNECTED,connected)
 ```
 
 
----
-#### `#!py3 advertising()`
-
-!!!abstract "`#!py3 advertising(interval, timeout=0, payload="", scan_rsp="", mode=ADV_CONN_UND)`"
+`advertising(interval, timeout=0, payload="", scan_rsp="", mode=ADV_CONN_UND)`
 
 Set advertising parameters:
 
@@ -308,26 +284,17 @@ Set advertising parameters:
 * `mode` is an integer determining the type of advertising: `ADV_CONN_UND`, `ADV_UNCN_UND`, `ADV_SCAN_UND` are supported.
 
 
----
-#### `#!py3 start_advertising()`
-
-!!!abstract "`#!py3 start_advertising()`"
+`start_advertising()`
 
 Start advertising according to parameters set by `advertising()`
 
 
----
-#### `#!py3 stop_advertising()`
-
-!!!abstract "`#!py3 stop_advertising()`"
+`stop_advertising()`
 
 Stop advertising immediately
 
 
----
-#### `#!py3 scanning()`
-
-!!!abstract "`#!py3 scanning(interval=10, window=10, duplicates=0, filter=SCAN_FILTER_ALL, addr=SCAN_ADDR_PUBLIC, active=0)`"
+`scanning(interval=10, window=10, duplicates=0, filter=SCAN_FILTER_ALL, addr=SCAN_ADDR_PUBLIC, active=0)`
 
 Set options for scanning.
 
@@ -350,45 +317,30 @@ Set options for scanning.
 * `active` selects active scanning if not zero
 
 
----
-#### `#!py3 start_scanning()`
-
-!!!abstract "`#!py3 start_scanning(duration=1000)`"
+`start_scanning(duration=1000)`
 
 Start scanning for advertising packets for ```duration``` milliseconds. Each scanned packet is retrieved int the `EVT_SCAN_REPORT` GAP event.
 
 
----
-#### `#!py3 stop_scanning()`
-
-!!!abstract "`#!py3 stop_scanning()`"
+`stop_scanning()`
 
 Stop scanning for advertising packets
 
 
----
-#### `#!py3 start()`
-
-!!!abstract "`#!py3 start()`"
+`start()`
 
 Initializes and start the BLE stack.
 Must be called after the configuration of GAP, GATT, advertising, scanning and security
 
 
----
-#### `#!py3 btos()`
-
-!!!abstract "`#!py3 btos(addr)`"
+`btos(addr)`
 
 Converts a BLE address from a sequence of bytes to a string. It can also be used with longer sequences like entire packets.
 
 ## Service class
 
 
----
-#### `#!py3 Service()`
-
-!!!abstract "`#!py3 Service(uuid, base_uuid=None)`"
+`Service(uuid, base_uuid=None)`
 
 This class abstracts a GATT Service. Services are defined by providing a `uuid`. BLE uuids are 128 bit sequences, but a shorter 16 bit  version can be used in case of standard BLE services.
 The list of standard uuids can be found [here](https://www.bluetooth.com/specifications/gatt/services). For custom uuids it is possible to specify all 128 bits passing a bytes or bytearray object to `base_uuid`.
@@ -412,10 +364,7 @@ s = ble.Service(0xA001,bytes([0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,
 ```
 
 
----
-#### `#!py3 add_characteristic()`
-
-!!!abstract "`#!py3 add_characteristic(ch)`"
+`add_characteristic(ch)`
 
 Add `ch` to the list of characteristic contained in the service. `ch` must be an instance of `Characteristic()`.
 `ch` is modified by setting `ch.service` to the service uuid.
@@ -423,10 +372,7 @@ Add `ch` to the list of characteristic contained in the service. `ch` must be an
 ## Characteristic class
 
 
----
-#### `#!py3 Characteristic()`
-
-!!!abstract "`#!py3 Characteristic(uuid, permission, size, descriptor, type=NUMBER)`"
+`Characteristic(uuid, permission, size, descriptor, type=NUMBER)`
 
 This class abstracts a GATT Characteristic. Characteristics are defined by providing:
 
@@ -469,28 +415,19 @@ c = ble.Characteristic(0x2A19,ble.NOTIFY | ble.READ,1,"Battery Level",ble.NUMBER
 Once created, a characteristic must be added to a service to be usable
 
 
----
-#### `#!py3 set_value()`
-
-!!!abstract "`#!py3 set_value(value)`"
+`set_value(value)`
 
 Update the characteristic value to `value`. `value` is converted to bytes sequence according to the characteristic size and type.
 
 If connected, the NOTIFY permission is given and the central has enabled notifications, the updated value is notified to the central.
 
 
----
-#### `#!py3 get_value()`
-
-!!!abstract "`#!py3 get_value()`"
+`get_value()`
 
 Return the value of the characteristic converted to a Python object according to size and type.
 
 
----
-#### `#!py3 set_callback()`
-
-!!!abstract "`#!py3 set_callback(fn)`"
+`set_callback(fn)`
 
 Characteristics with WRITE permission can be changed by the central. A callback can be used to be notified of such change.
 `fn` is called on every WRITE event and accepts two positional arguments; the first one is a status flag, the second one is the updated characteristic value.
@@ -513,3 +450,6 @@ c.set_callback(led_toggle)
 ```
 
 The `status` argument of the callback is set to a combination of `READ`, `NOTIFY`, `WRITE` events.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTIyODQ4NTkwXX0=
+-->

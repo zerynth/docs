@@ -35,68 +35,14 @@ t,h = htu.get_temp_humid()
 Initialize the HTU21D setting the resolution of the sensor.
 
 
-**Arguments:**
+**Parameters:** **res** – set the resolution (from 0 to 3) for temperature and humidity measurements according to the table below; default 0.
 
-    
--	**res** – set the resolution (from 0 to 3) for temperature and humidity measurements according to the table below; default 0.
-
-
-| res value
-
- | Humid Resolution
-
- | Temp Resolution
-
- | Meas. Time Humid
-
- | Meas. Time Temp
-
- |
-| --------- | ---------------- | --------------- | ---------------- | --------------- |
-| 0
-
-         | 12 bits
-
-          | 14 bits
-
-         | 16 ms
-
-            | 50 ms
-
-           |
-| 1
-
-         | 8 bits
-
-           | 12 bits
-
-         | 3 ms
-
-             | 13 ms
-
-           |
-| 2
-
-         | 10 bits
-
-          | 13 bits
-
-         | 5 ms
-
-             | 25 ms
-
-           |
-| 3
-
-         | 11 bits
-
-          | 11 bits
-
-         | 8 ms
-
-             | 7 ms
-
-            |
+| res value | Humid Resolution | Temp Resolution | Meas. Time Humid | Meas. Time Temp |
+|-----------|------------------|-----------------|------------------|-----------------|
+| 0         | 12 bits          | 14 bits         | 16 ms            | 50 ms           |
+| 1         | 8 bits           | 12 bits         | 3 ms             | 13 ms           |
+| 2         | 10 bits          | 13 bits         | 5 ms             | 25 ms           |
+| 3         | 11 bits          | 11 bits         | 8 ms             | 7 ms            |
 
 **`get_raw_temp()`**
 
@@ -132,5 +78,5 @@ Retrieves both temperature and humidity in one call.
 
 Returns temp, humid.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzNDU3OTddfQ==
+eyJoaXN0b3J5IjpbLTE1Njg5MTY2NjQsODkzNDU3OTddfQ==
 -->

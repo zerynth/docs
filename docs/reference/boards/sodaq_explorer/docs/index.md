@@ -2,9 +2,14 @@
 
 The ExpLoRer is a development/evaluation tool based on the Atmel [SAMD21J18A ARM Cortex-M0+ CPU](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf). intended for the evaluation of Microchip wireless modules in a Research and Development laboratory environment. It is not a Finished Appliance. Manufacturers who integrate ExpLoRer in a Finished Appliance product must take responsibility to follow regulatory guidelines, for example for CE marking.
 
-```NOTE```: All the reported information are extracted from the official [SODAQ ExpLoRer page](https://support.sodaq.com/Boards/ExpLoRer/) , visit this page for more details and updates.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sodaq_explorer/docs/img/SodaqExplorer.png?raw=true"></p>
+
+!!! note
+	All the reported information are extracted from the official [SODAQ ExpLoRer page](https://support.sodaq.com/Boards/ExpLoRer/) , visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sodaq_explorer/docs/img/SODAQ_ExpLoRer_pin_comm.jpg?raw=true)
 
 SODAQ ExpLoRer Official Schematic, Reference Design and Pin Mapping are available on the official [SODAQ ExpLoRer page](https://support.sodaq.com/sodaq-one/explorer).
 
@@ -70,19 +75,15 @@ The ExpLoRer can only run on one battery at the same time, move the jumper to co
 
 Connect any 3.3v – 5.2v power to the solar connector, this source will charge to battery.
 
-```NOTE```: Do not short circuit the Li-Ion coin cell or any of the pins of the ExpLoRer because of risk of heat, smoke, and fire.
+!!! note
+	Do not short circuit the Li-Ion coin cell or any of the pins of the ExpLoRer because of risk of heat, smoke, and fire.
 
 ## Connect, Register, Virtualize and Program
 
 To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -115,7 +116,8 @@ Once connected on a USB port the SODAQ ExpLoRer device is recognized by Zerynth 
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: During these operations the MKR1000 device must be in Virtualization Mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+!!! note
+	During these operations the MKR1000 device must be in Virtualization Mode. if the device returns in standard mode, it is necessary to put it in DFU Mode again
 
 After virtualization, the SODAQ ExpLoRer is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -125,35 +127,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 94Kb | VM Slot         |
+| 0x00019600    | 77Kb | Bytecode Slot 0 |
+| 0x0002CB00    | 77Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 94Kb
-
- | VM Slot
-
- |
-| 0x00019600
-
-    | 77Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002CB00
-
-    | 77Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -168,3 +147,6 @@ Not all features have been included in the SODAQ ExpLoRer support. In particular
 
 
 * Bluetooth support;
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjgzMzc2OTczLDEwNDk1MjgyMzhdfQ==
+-->

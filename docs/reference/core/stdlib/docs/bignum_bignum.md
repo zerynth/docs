@@ -8,9 +8,7 @@ modified to be compatible with Zerynth memory manager.
 
 
 
-#### `#!py3 BigNum()`
-
-!!!abstract "`#!py3 BigNum(val=0)`"
+`BigNum(val=0)`
 
 This class represents a big integer number with arbitrary precision. A big number instance can be initialized with
 a value ```val```. ```val``` can be a standard integer or a string representing the number. The string is accepted if it is in base 16
@@ -36,90 +34,57 @@ while True:
 ```
 
 
----
-#### `#!py3 add()`
-
-!!!abstract "`#!py3 add(b)`"
+`add(b)`
 
 Return a new big number instance equal to the addition of the current instance and ```b```.
 
 
----
-#### `#!py3 iadd()`
-
-!!!abstract "`#!py3 iadd(b)`"
+`iadd(b)`
 
 Add to the current instance the big number ```b```. Return `None`
 
 
----
-#### `#!py3 sub()`
-
-!!!abstract "`#!py3 sub(b)`"
+`sub(b)`
 
 Return a new big number instance equal to the difference of the current instance and ```b```.
 
 
----
-#### `#!py3 isub()`
-
-!!!abstract "`#!py3 isub(b)`"
+`isub(b)`
 
 Subtracts to the current instance the big number ```b```. Return `None`
 
 
----
-#### `#!py3 mul()`
-
-!!!abstract "`#!py3 mul(b)`"
+`mul(b)`
 
 Return a new big number instance equal to the multiplication of the current instance and ```b```.
 
 
----
-#### `#!py3 imul()`
-
-!!!abstract "`#!py3 imul(b)`"
+`imul(b)`
 
 Multiply the current instance for the big number ```b```. Return `None`
 
 
----
-#### `#!py3 div()`
-
-!!!abstract "`#!py3 div(b)`"
+`div(b)`
 
 Return a new big number instance equal to the division of the current instance by ```b```.
 
 
----
-#### `#!py3 idiv()`
-
-!!!abstract "`#!py3 idiv(b)`"
+`idiv(b)`
 
 Divides the current instance for the big number ```b```. Return `None`
 
 
----
-#### `#!py3 mod()`
-
-!!!abstract "`#!py3 mod(b)`"
+`mod(b)`
 
 Return a new big number instance equal to the remainder of the division of the current instance by ```b```.
 
 
----
-#### `#!py3 imod()`
-
-!!!abstract "`#!py3 imod(b)`"
+`imod(b)`
 
 Set the current instance to the remainder of the division by ```b```. Return `None`
 
 
----
-#### `#!py3 divmod()`
-
-!!!abstract "`#!py3 divmod(b)`"
+`divmod(b)`
 
 Return a tuple (q,r) of new big number instances representing the quotient ```q``` and the remainder ```r``` of the division of the current instance by ```b```.
 
@@ -148,13 +113,10 @@ Return True if the current instance is greater than or equal to the big number `
 Return 1 if the current instance is a positive number, -1 if the current instance is a negative number, 0 if it is equal to zero.
 
 
----
-#### `#!py3 to_base()`
-
-!!!abstract "`#!py3 to_base(base)`"
+`to_base(base)`
 
 Return a string representation of the big number in base ```base```. Allowed values for ```base``` are in the range 2..64.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg0MjYyMTEyLC0yMDc4NDUzODU5LDY4ND
-I2MjExMl19
+eyJoaXN0b3J5IjpbMjQ5ODAyODg3LDY4NDI2MjExMiwtMjA3OD
+Q1Mzg1OSw2ODQyNjIxMTJdfQ==
 -->

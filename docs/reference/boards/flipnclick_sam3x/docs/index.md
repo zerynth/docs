@@ -10,11 +10,16 @@ This device has the predisposition in both sides for shields and expansion board
 
 * In the back side (White side in MikroE parlance) the device has four mikroBUS sockets to connect [MikroE Click Boards](https://shop.mikroe.com/click) showing one of the best features for a hardware development platform: ```modularity```.
 
-```NOTE```: Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
+!!! note
+	Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclick.jpg?raw=true)
 
 With more than 160 to choose from, and more coming out every week, it’s very simple to create a custom product by simply adding new functionality to the main device.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclickpin.jpg?raw=true)
 
 MikroElektronika Flip & Click official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/flip-n-click/flip-n-click-manual-v100.pdf)
 
@@ -71,15 +76,11 @@ The device can operate on an external supply of 6 to 20 volts. If supplied with 
 
 The Flip & Click Programming port is connected to an ATmega16U2, which provides a virtual COM port to software on a connected computer, allowing for a seamless virtualization of the device.
 
-```NOTE```: Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
+!!! note
+	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through the ATmega16U2 microcontroller.
 
@@ -97,7 +98,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Flip
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Flip & Click is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
 
@@ -105,7 +107,9 @@ Check this video for a live demo:
 
   <div style="margin-top:10px;">
 <iframe width="100%" height="481" src="https://www.youtube.com/embed/u2pEH5dSZbo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  </div>```NOTE```: No user intervention on the device is required for the uplink process.
+  </div>
+  !!! note
+	  No user intervention on the device is required for the uplink process.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -113,39 +117,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00080000
-
-    | 256Kb
-
- | VM Slot
-
- |
-| 0x000C0000
-
-    | 125Kb
-
- | Bytecode Slot 0
-
- |
-| 0x000E0000
-
-    | 128Kb-256b
-
- | Bytecode Slot 1
-
- |
-| 0x000FFF00
-
-    | 256b
-
-       | FOTA Record
-
-     |
+| Start address | Size       | Content         |
+|---------------|------------|-----------------|
+| 0x00080000    | 256Kb      | VM Slot         |
+| 0x000C0000    | 125Kb      | Bytecode Slot 0 |
+| 0x000E0000    | 128Kb-256b | Bytecode Slot 1 |
+| 0x000FFF00    | 256b       | FOTA Record     |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ0MTQzOTY1NV19
+-->

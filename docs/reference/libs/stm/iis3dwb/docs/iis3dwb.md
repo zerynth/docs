@@ -47,77 +47,20 @@ Sets the device’s configuration registers for accelerometer.
 
 * **odr**: sets the Output Data Rate of the device. Available values are:
 
-| Value
-
- | Output Data Rate
-
- | Constant Name
-
- |
-| ----- | ---------------- | ------------- |
-| 0x00
-
-  | OFF
-
-              | IIS3DWB_ODR_OFF
-
- |
-| 0x05
-
-  | 26.7 KHz
-
-         | IIS3DWB_ODR_26k7Hz
-
- |
+| Value | Output Data Rate | Constant Name      |
+|-------|------------------|--------------------|
+| 0x00  | OFF              | IIS3DWB_ODR_OFF    |
+| 0x05  | 26.7 KHz         | IIS3DWB_ODR_26k7Hz |
 
 * **fs** : sets the Device Full Scale. Available values are:
 
-| Value
+| Value | Full Scale | Costant Name            | in mg/LSB    |
+|-------|------------|-------------------------|--------------|
+| 0x00  | ±2g        | IIS3DWB_ACC_SENS_FS_2G  | 0.061 mg/LSB |
+| 0x01  | ±4g        | IIS3DWB_ACC_SENS_FS_4G  | 0.122 mg/LSB |
+| 0x02  | ±8g        | IIS3DWB_ACC_SENS_FS_8G  | 0.244 mg/LSB |
+| 0x03  | ±16g       | IIS3DWB_ACC_SENS_FS_16G | 0.488 mg/LSB |
 
- | Full Scale
-
-       | Costant Name
-
-       | in mg/LSB
-
- |
-| ----- | ---------------- | ------------------ | --------- |
-| 0x00
-
-  | ±2g
-
-              | IIS3DWB_ACC_SENS_FS_2G
-
- | 0.061 mg/LSB
-
- |
-| 0x01
-
-  | ±4g
-
-              | IIS3DWB_ACC_SENS_FS_4G
-
- | 0.122 mg/LSB
-
- |
-| 0x02
-
-  | ±8g
-
-              | IIS3DWB_ACC_SENS_FS_8G
-
- | 0.244 mg/LSB
-
- |
-| 0x03
-
-  | ±16g
-
-             | IIS3DWB_ACC_SENS_FS_16G
-
- | 0.488 mg/LSB
-
- |
 Returns True if configuration is successful, False otherwise.
 
 
@@ -178,3 +121,6 @@ Enables the interrupt pins. When data from sensor will be ready, the related int
 
 
 Returns True if configuration is successful, False otherwise.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc2NDUyODYyNV19
+-->

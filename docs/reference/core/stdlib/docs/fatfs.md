@@ -5,10 +5,7 @@ This module implements Zerynth binding to [FatFS C library](http://elm-chan.org/
 ## Driver
 
 
----
-#### `#!py3 mount()`
-
-!!!abstract "`#!py3 mount(path, args)`"
+`mount(path, args)`
 
 Register/unregister a file system object to the fatFs module.
 There is no activity of the physical drive in this function: physical mount process will be attempted during first file access.
@@ -121,3 +118,6 @@ and a list of low-level functions implemented in the filesystem module.
 
 
 >     * to_b_mode
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg5OTMzOTUzNl19
+-->

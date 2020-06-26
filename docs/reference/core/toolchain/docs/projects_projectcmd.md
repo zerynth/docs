@@ -204,7 +204,8 @@ All files specified in `docs.json` are processed:
 
 By default the documentation is generated in a temporary directory, but it can also be generated in a user specified directory by adding the option `--to doc_path` to the command. The option `--open` can be added to fire up the system browser and show the built documentation at the end of the command.
 
-```NOTE```: a `docs/__toc.rst` file is always generated containing the table of contents for the project documentation. It MUST be included in `docs/index.rst` in order to correctly build the documentation.
+!!! note
+	a `docs/__toc.rst` file is always generated containing the table of contents for the project documentation. It MUST be included in `docs/index.rst` in order to correctly build the documentation.
 
 ## Configure
 
@@ -215,3 +216,6 @@ ztc project config path -D ZERYNTH_SSL 1 -X ZERYNTH_SSL_ECDSA
 ```
 
 configures some project variables that turn on and off advanced features for the project at `path`. In particular the `-D` option adds a new variable with its corresponding value to the project configuration, whereas the `-X` option remove a variable. Both options can be repeated multiple times.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMDU0Mzg3NTddfQ==
+-->

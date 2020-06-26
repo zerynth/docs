@@ -10,7 +10,8 @@ received, available levels are:
 * 1 - at least once
 * 2 - exactly once
 
-**NOTE**: Resource clearly explaining the QoS feature: [mqtt-quality-of-service-levels](http://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels).
+!!! note
+	Resource clearly explaining the QoS feature: [mqtt-quality-of-service-levels](http://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels).
 
 Back to the implementation Zerynth mqtt.Client class provides methods to:
 
@@ -204,3 +205,6 @@ Non blocking loop method that starts a thread to handle incoming packets.
 
 
 * *on_message* is an optional argument to set a generic callback on messages with qos equal to 0, 1 or 2
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc2NjE1MTEwMl19
+-->

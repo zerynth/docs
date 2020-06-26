@@ -8,9 +8,14 @@ The Xplained Pro extension kits offers additional peripherals to extend the feat
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
-```NOTE```: All the reported information are extracted from the official [Xplained Pro Sam L21 page](http://www.microchip.com/developmenttools/productdetails.aspx?partno=atsaml21-xpro-b&utm_source=MicroSolutions&utm_medium=Link&utm_term=FY18Q1&utm_content=DevTools&utm_campaign=Article), visit this page for more details and updates.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_l21b/docs/img/XplainedProSamL21.jpg?raw=true"></p>
+
+!!! note
+	All the reported information are extracted from the official [Xplained Pro Sam L21 page](http://www.microchip.com/developmenttools/productdetails.aspx?partno=atsaml21-xpro-b&utm_source=MicroSolutions&utm_medium=Link&utm_term=FY18Q1&utm_content=DevTools&utm_campaign=Article), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_l21b/docs/img/xplained_l21b_pin_io.jpg?raw=true)
 
 Xplained Pro Sam L21 Official Schematic, Reference Design and Pin Mapping are available on the official [Atmel User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42405-SAML21-Xplained-Pro_User-Guide.pdf).
 
@@ -64,19 +69,15 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 The SAM L21 Xplained Pro has a backup battery for use with the SAM L21 backup module. The battery can be connected to the device by placing a jumper over pin 1-2 on the 3-pin VBAT SELECT header. By default the jumper is placed over pin 2-3 to select the board power supply. This configuration is selected to avoid draining the battery and can be used during development.
 
-```NOTE```: External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
+!!! note
+	External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
 
 ## Connect, Register, Virtualize and Program
 
 The Xplained Pro Sam L21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -105,7 +106,8 @@ Once connected on a USB port the Xplained Pro Sam L21 device is recognized by Ze
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Xplained Pro Sam L21 is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -115,32 +117,11 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
-
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 88Kb
-
- | VM Slot
-
- |
-| 0x00018000
-
-    | 80Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002C000
-
-    | 80Kb
-
- | Bytecode Slot 1
-
- |
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 88Kb | VM Slot         |
+| 0x00018000    | 80Kb | Bytecode Slot 0 |
+| 0x0002C000    | 80Kb | Bytecode Slot 1 |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIxMTAxNTI5MF19
+-->

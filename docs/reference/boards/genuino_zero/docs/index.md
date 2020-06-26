@@ -4,11 +4,17 @@ The Arduino/Genuino Zero is a microcontroller device based on the Atmel [SAMD21G
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
-```WARNING```: Unlike most Arduino & Genuino devices, the Zero runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/genuino_zero/docs/img/ArduinoZero.jpg?raw=true"></p>
 
-```NOTE```: All the reported information are extracted from the official [Arduino/Genuino Zero page](http://www.arduino.cc/en/Main/ArduinoBoardZero), visit this page for more details and updates.
+!!! warning
+	Unlike most Arduino & Genuino devices, the Zero runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+
+!!! note
+	All the reported information are extracted from the official [Arduino/Genuino Zero page](http://www.arduino.cc/en/Main/ArduinoBoardZero), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/genuino_zero/docs/img/ArduinoZeroPin.png?raw=true)
 
 Arduino/Genuino Zero Official Schematic, Reference Design and Pin Mapping are available on the official [Arduino/Genuino Zero reference page](http://www.arduino.cc/en/Main/ArduinoBoardZero).
 
@@ -65,16 +71,10 @@ The device can operate on an external supply of 6 to 20 volts. If supplied with 
 
 The Arduino/Genuino Zero Programming port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the Arduino/Genuino Zero guide](https://www.arduino.cc/en/Guide/ArduinoZero), while ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
-
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+* 
 If the device is still not recognized or not working, the following udev rules may need to be added:
-
 ```
 #Genuino Zero Device
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2157", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -97,7 +97,8 @@ Once connected on a USB port, if drivers have been correctly installed, the Ardu
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Arduino/Genuino Zero is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
@@ -107,35 +108,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-| Start address
+| Start address | Size | Content         |
+|---------------|------|-----------------|
+| 0x00002000    | 88Kb | VM Slot         |
+| 0x00018000    | 80Kb | Bytecode Slot 0 |
+| 0x0002C000    | 80Kb | Bytecode Slot 1 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x00002000
-
-    | 88Kb
-
- | VM Slot
-
- |
-| 0x00018000
-
-    | 80Kb
-
- | Bytecode Slot 0
-
- |
-| 0x0002C000
-
-    | 80Kb
-
- | Bytecode Slot 1
-
- |
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
@@ -143,3 +121,6 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNjQxOTQ3NzAsMjA3MzA1Ml19
+-->

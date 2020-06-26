@@ -2,80 +2,32 @@
 
 The [ST Microelectronics Nucleo F746ZG](https://www.st.com/en/evaluation-tools/nucleo-f746zg.html) boards provide an affordable and flexible way for users to try out new concepts and build prototypes by choosing from the various combinations of performance and power consumption features, provided by the STM32 microcontroller.
 
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof746zg/docs/img/nucleof746zg.jpg?raw=true"></p>
+
 The ST Zio connector, which extends the Arduino™ Uno V3 connectivity, and the ST morpho headers provide an easy means of expanding the functionality of the Nucleo open development platform with a wide choice of specialized shields.
 The STM32 Nucleo-144 board does not require any separate probe as it integrates the ST-LINK debugger/programmer.
 
 ## Pin Mapping
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof746zg/docs/img/st_nucleof746zg_pin_comm.jpg?raw=true)
+
 ## Flash Layout
 
 The internal flash of the is ST Nucleo F746ZG is organized into sectors of different size according to the following table:
 
-| Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x8000000     | 32Kb  | Virtual Machine |
+| 0x8008000     | 32Kb  | Virtual Machine |
+| 0x8010000     | 32Kb  | Virtual Machine |
+| 0x8018000     | 32Kb  | Virtual Machine |
+| 0x8020000     | 128Kb | Bytecode Bank 0 |
+| 0x8040000     | 256kb | Bytecode Bank 1 |
+| 0x8080000     | 256kb | Bytecode Bank 2 |
+| 0x80C0000     | 256kb | Bytecode Bank 3 |
 
- | Size
-
- | Content
-
- |
-| ------------- | ---- | ------- |
-| 0x8000000
-
-     | 32Kb
-
- | Virtual Machine
-
- |
-| 0x8008000
-
-     | 32Kb
-
- | Virtual Machine
-
- |
-| 0x8010000
-
-     | 32Kb
-
- | Virtual Machine
-
- |
-| 0x8018000
-
-     | 32Kb
-
- | Virtual Machine
-
- |
-| 0x8020000
-
-     | 128Kb
-
- | Bytecode Bank 0
-
- |
-| 0x8040000
-
-     | 256kb
-
- | Bytecode Bank 1
-
- |
-| 0x8080000
-
-     | 256kb
-
- | Bytecode Bank 2
-
- |
-| 0x80C0000
-
-     | 256kb
-
- | Bytecode Bank 3
-
- |
-```WARNING```: If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 3) towards the virtual machine, to minimize the chance of clashes.
+!!! warning
+	If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 3) towards the virtual machine, to minimize the chance of clashes.
 
 Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
 
@@ -117,7 +69,8 @@ On the ST Nucleo F746ZG, the power supply is provided either by the host PC thro
 
 The ST-LINK/V2-1 supports USB power management allowing to request more than 100 mA current to the host PC. All parts of the STM32 Nucleo device and shield can be powered from the ST-LINK USB connector CN1 (U5V or VBUS).
 
-```WARNING```: Depending on the type of power supply choosen, the jumper JP3 must be correclty selected:
+!!! warning
+	Depending on the type of power supply choosen, the jumper JP3 must be correclty selected:
 
 
 * JP3 between pin 1 and pin 2 for E5V power supply;
@@ -132,15 +85,10 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 The ST Nucleo F746ZG Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, Windows machines requires drivers that can be downloaded from the [ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html) while MAC OSX and Linux machines will recognize the device automatically.
 
-On **MAC OSX** and ```Linux``` USB drivers are not required.
+On **MAC OSX** and **Linux** USB drivers are not required.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -175,3 +123,6 @@ Not all features have been included in the ST Nucleo F746ZG support. In particul
 
 
 * USB;
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMDcyNDI1OCwtMTE1NzQxNDQ3NF19
+-->

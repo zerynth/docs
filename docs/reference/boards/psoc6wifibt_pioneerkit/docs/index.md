@@ -6,7 +6,11 @@ The PSoC 6 WiFi-BT Pioneer board features a [PSoC 6 MCU](https://www.cypress.com
 
 The board supports operating voltages from 1.8 V to 3.3 V for the PSoC 6 MCU. More info can be found [here](https://www.cypress.com/file/407731/download).
 
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/psoc6wifibt_pioneerkit/docs/img/psoc6wifibt_pioneerkit.png?raw=true)
+
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/psoc6wifibt_pioneerkit/docs/img/psoc6wifibt_pioneerkit_pin_io.png?raw=true)
 
 Official reference for PSoC6 WiFi-Bt Pioneer Kit can be found [here](https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt).
 
@@ -70,14 +74,16 @@ But only the KitProg2 port can be used for programming purposes.
 
 Plug the device using the KitProg2 Port which allows to program the PSoC6 MCU using Cypress KitProg2 programmer.
 
-```NOTE```: to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info
+!!! note
+	to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info
 
-```NOTE```: **For Windows Platform**:
+!!! note
+	**For Windows Platform**:
 install Cypress Programmer tool, which is available for download [here](https://www.cypress.com/products/psoc-programming-solutions)
 
-```NOTE```: **For Linux Platform**:
+!!! note
+	**For Linux Platform**:
 the following udev rules may need to be added:
-
 ```
 # Match KP2 PID/VID
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="f148", ENV{CY_KP2_PID_VID}="f148:04b4"
@@ -101,7 +107,8 @@ Once connected the PSoC6 WiFi-Bt Pioneer Kit device is recognized by Zerynth Stu
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the PSoC6 WiFi-Bt Pioneer Kit device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “uplink” button of Zerynth Studio.
 
@@ -111,3 +118,6 @@ Not all features have been included in the PSoC6 WiFi-Bt Pioneer Kit support. In
 
 
 * Bluetooth support
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMjA0MzQ2NDNdfQ==
+-->

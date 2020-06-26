@@ -6,9 +6,14 @@ The SAM G55 Xplained Pro features 2 UARTs, a 120 MHz clock, 3 TWIs, 1 SPI and a 
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port.
 
-```NOTE```: All the reported information are extracted from the official [Xplained Pro Sam G55 page](http://www.microchip.com/developmenttools/ProductDetails/PartNo/atsamg55-xpro), visit this page for more details and updates.
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_samg55/docs/img/ATSAMG55-XPRO.JPG?raw=true"></p>
+
+!!! note
+	All the reported information are extracted from the official [Xplained Pro Sam G55 page](http://www.microchip.com/developmenttools/ProductDetails/PartNo/atsamg55-xpro), visit this page for more details and updates.
 
 ## Pin Mapping
+
+![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_samg55/docs/img/SAMG55_Xplained_PRO_pin_comm.png?raw=true)
 
 Xplained Pro Sam G55 Official Schematic, Reference Design and Pin Mapping are available on the official [Microchip User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42389-SAM-G55-Xplained-Pro_User-Guide.pdf).
 
@@ -51,19 +56,15 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 * maximum is 2A due to the input protection maximum current specification
 
-```NOTE```: External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
+!!! note
+	External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
 
 ## Connect, Register, Virtualize and Program
 
 The Xplained Pro Sam G55 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
 
-```NOTE```: **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
-
-* ```Ubuntu``` distribution –> dialout group
-
-
-* **Arch Linux** distribution –> uucp group
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
@@ -92,8 +93,13 @@ Once connected on a USB port the Xplained Pro Sam G55 device is recognized by Ze
 
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
-```NOTE```: No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Xplained Pro Sam G55 is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
 
-```NOTE```: Advanced programming and debugging through EDBG are available in Device Management Advanced Mode selecting Atmel EDBG interface
+!!! note
+	Advanced programming and debugging through EDBG are available in Device Management Advanced Mode selecting Atmel EDBG interface
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ0NTgxODY3MiwtMjA1Njc1NDU1NV19
+-->
