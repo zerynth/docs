@@ -54,7 +54,8 @@ Resets sampling parameters.
 
 Sets the length of the window (n) used to evaluate a set of useful parameters. Needed to evaluate those parameters during manual acquisition (calling getRaw/getNormalized functions), in sampling mode (entered by startSampling call) the length is given as a parameter of startSampling method.
 
-**NOTE**: **self._samplingTime** can be found set in:
+!!! note
+	**self._samplingTime** can be found set in:
 
 
 * sampling mode: setObservationWindow should not have been called
@@ -204,5 +205,5 @@ Sleeps for *time* milliseconds and returns self to allow a compact code:
 mySensor.doEverySample(out).startSampling(…).wait(5000).stopSampling()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTI4NDE0MjNdfQ==
+eyJoaXN0b3J5IjpbMTkyODE5NzQyOCwtMTc5Mjg0MTQyM119
 -->

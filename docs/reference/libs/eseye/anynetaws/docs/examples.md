@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.eseye.anynetaws
+The following are a list of examples for lib.eseye.anynetaws.
 
 ## Get Info
 

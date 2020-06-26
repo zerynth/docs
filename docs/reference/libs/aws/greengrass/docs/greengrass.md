@@ -3,7 +3,10 @@
 The Zerynth AWS Greengrass Library contains helper functions for IoT devices to retrieve info about an [AWS Greengrass Core](https://aws.amazon.com/greengrass/).
 
 !!! note
-  to connect to an AWS Greengrass Core after info retrieval use Zerynth AWS IoT Core Library
+    dev-voja
+	to connect to an AWS Greengrass Core after info retrieval use Zerynth AWS IoT Core Library
+
+
 
 ## The DiscoveryInfo class
 
@@ -42,3 +45,6 @@ Returns a tuple `(core_address, core_port)` with Greengrass Core address and por
 
 
 Discover info about own group Greengrass Core. Returns a `DiscoveryInfo()` object.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwODQwNTcxMjJdfQ==
+-->

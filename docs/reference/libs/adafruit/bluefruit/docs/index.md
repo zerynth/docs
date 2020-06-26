@@ -17,8 +17,8 @@ Adafruit Bluefruit LE SPI products family enables Bluetooth Low Energy connectiv
 Here below, the Zerynth driver for the Adafruit Bluefruit LE SPI products family and some examples to better understand how to use it.
 
 Contents:
--   [Bluefruit Module](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/docs/official_lib.adafruit.bluefruit_bluefruit.html)
-     - [BLEStream class](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/docs/official_lib.adafruit.bluefruit_bluefruit.html#blestream-class)
--   [Examples](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html)
-    -   [Serial Over BLE](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html#serial-over-ble)
-    -   [BLE Heart Rate](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html#ble-heart-rate)
+* [Bluefruit Module](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/docs/official_lib.adafruit.bluefruit_bluefruit.html)
+     *[BLEStream class](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/docs/official_lib.adafruit.bluefruit_bluefruit.html#blestream-class)
+* [Examples](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html)
+     *[Serial Over BLE](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html#serial-over-ble)
+     *[BLE Heart Rate](https://docs.zerynth.com/latest/official/lib.adafruit.bluefruit/examples/examples.html#ble-heart-rate)

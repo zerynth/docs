@@ -21,9 +21,9 @@ More information at [AMS dedicated page](http://ams.com/eng/Products/Light-Senso
 Here below, the Zerynth driver for the AMS TSL2561.
 
 Contents:
--   [TSL2561 Module](https://docs.zerynth.com/latest/official/lib.ams.tsl2561/docs/official_lib.ams.tsl2561_tsl2561.html)
--   [Examples](https://docs.zerynth.com/latest/official/lib.ams.tsl2561/examples/examples.html)
-    -   [ambient light](https://docs.zerynth.com/latest/official/lib.ams.tsl2561/examples/examples.html#ambient-light)
+* [TSL2561 Module](https://docs.zerynth.com/latest/official/lib.ams.tsl2561/docs/official_lib.ams.tsl2561_tsl2561.html)
+* [Examples](https://docs.zerynth.com/latest/official/lib.ams.tsl2561/examples/examples.html)
+    * [ambient light](https://docs.zerynth.com/latest/official/lib.ams.tsl2561/examples/examples.html#ambient-light)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTAwNjU5MjM0OV19

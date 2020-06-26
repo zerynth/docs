@@ -70,7 +70,8 @@ There is the possibility to also set a *long_fn* which is executed is the *max_t
 * long_fn: the function called if the signal state change is longer than max time
 
 
-### onFallAndRise(min_time, max_time, to_do, long_fn = None)
+**`onFallAndRise(min_time, max_time, to_do, long_fn = None)`**
+
 Sets *to_do* as the function to be executed when the value of the pin changes from 1 to 0 ( onFall ) and again from 0 to 1 ( andRise ).
 The value must stay LOW at least *min_time* (make sure the transition is voluntary, not due to noise) and less than *max_time*.
 

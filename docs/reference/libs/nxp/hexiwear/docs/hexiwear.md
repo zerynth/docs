@@ -137,7 +137,8 @@ If bluetooth driver is enabled; sets the callback function to be executed when C
 
 If bluetooth driver is enabled; sets the callback function to be executed when KW40Z receives a bluetooth pairing request.
 
-```NOTE```: When the KW40Z receives this kind of request it generates a pairing code stored in the passkey KW40Z class attribute of bt_driver internal instance.
+!!! note
+	When the KW40Z receives this kind of request it generates a pairing code stored in the passkey KW40Z class attribute of bt_driver internal instance.
 
 **`bluetooth_on()`**
 
@@ -347,8 +348,3 @@ Turns on the rgb onboard led (white light).
 **`leds_off()`**
 
 Turns off the rgb onboard led.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Nzk0OTI1MSw1MDIxODEzMTIsLTE5Mz
-A0ODM1MDMsLTE5NjE0OTU4MDcsMTIyOTMwNTQ1Miw4OTkwNjY0
-NzRdfQ==
--->

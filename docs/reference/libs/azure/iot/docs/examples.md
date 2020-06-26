@@ -1,6 +1,6 @@
 # Examples
 
-The following are a list of examples for lib.azure.iot
+The following are a list of examples for lib.azure.iot.
 
 ## Controlled Publish Period
 
