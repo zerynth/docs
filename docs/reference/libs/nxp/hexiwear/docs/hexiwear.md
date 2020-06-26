@@ -288,7 +288,8 @@ If color oled display is enabled; draws a single pixel in the screen colored wit
 -	**encode(bool)** – flag for enabling the color encoding; default True
 
 
-**NOTE:** The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided it is necessary to encode it into a 16 bit format.
+!!! note
+	The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
 
