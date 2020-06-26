@@ -1,4 +1,5 @@
-### class extbus()
+**`class extbus`**
+
 Namespace for Ext interface signals and peripherals:
 
 

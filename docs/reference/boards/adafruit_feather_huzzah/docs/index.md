@@ -6,7 +6,7 @@ This device wired up a high-quality SiLabs CP2104 USB-Serial chip that can uploa
 
 To make it easy to use for portable projects, the Adafruit Feather Huzzah provides a connector for a 3.7/4.2 V Lithium polymer battery and built in battery charging circuit thought USB port. The Feather will automatically switch over to USB power when its available.
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/zerynth/docs/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah.png">
+<p style="text-align:center;"><img src="https://raw.githubusercontent.com/zerynth/docs/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah.png"></p>
 
 
 ## Pin Mapping
@@ -122,8 +122,8 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTU2NTE5NzUsLTU5NTU0MDQ0Miw5MD
-QwNTM4NTIsLTEzNjI5ODU4MTgsLTE4MTk0MzUzNjMsMjMxODA4
-NTQ4LDE1NzgxMzA5OTAsLTIxNjg1MDkyMCwtMTQ2MTIwNzg4OC
-w1MzE4NDc5OCw2ODE4NDYxOTRdfQ==
+eyJoaXN0b3J5IjpbLTU5NTU0MDQ0Miw5MDQwNTM4NTIsLTEzNj
+I5ODU4MTgsLTE4MTk0MzUzNjMsMjMxODA4NTQ4LDE1NzgxMzA5
+OTAsLTIxNjg1MDkyMCwtMTQ2MTIwNzg4OCw1MzE4NDc5OCw2OD
+E4NDYxOTRdfQ==
 -->

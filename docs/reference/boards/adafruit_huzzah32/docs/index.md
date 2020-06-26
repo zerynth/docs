@@ -156,6 +156,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 * Touch detection support
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTIxODE4OTksLTEyMDk2OTMyOTAsOT
-YzOTM2MDgxLDMxNTczNzYzMl19
+eyJoaXN0b3J5IjpbLTEyMDk2OTMyOTAsOTYzOTM2MDgxLDMxNT
+czNzYzMl19
 -->

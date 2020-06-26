@@ -7,7 +7,7 @@ It allows configuring and retrieving data from the GNSS module mounted on the So
 **`init(start_mode=STMOD_HOT, sat_set=SAT_GPS|SAT_GLONASS, cycle=1000)`**
 
 
-Arguments:
+**Arguments:**
     
 * **start_mode** – start mode
 * **sat_set** – set of GNSS satellites

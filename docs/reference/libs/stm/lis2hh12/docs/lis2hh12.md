@@ -3,7 +3,7 @@
 This module contains the driver for STMicroelectronics LIS2HH12 3-axis accelerometer.
 
 
-**`class LIS2HH12()`**
+**`class LIS2HH12`**
 
 Class which provides a simple interface to LIS2HH12 features.
 

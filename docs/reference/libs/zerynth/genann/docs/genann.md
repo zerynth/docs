@@ -7,7 +7,7 @@ This module is a Python wrapper around the genann library hosted [here](https://
 ## ANN Class
 
 
-**`class ANN()`**
+**`class ANN`**
 
 This class is an implementations of the interface with the gennann C library. Each istance of this class implements a separate neural network. The class is not thread safe,
 multiple network must be protected by locks when executed.

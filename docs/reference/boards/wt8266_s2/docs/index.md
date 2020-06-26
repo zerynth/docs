@@ -5,11 +5,7 @@ Thanks to WT8266-DK V2, the user can simulate serial devices to access WiFi netw
 
 The WT8266-DK V2 device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wt8266_s2/docs/img/wt8266_s2.jpg?raw=true"></p>
-
 ## Pin Mapping
-
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wt8266_s2/docs/img/wt8266_s2_pin_io.png?raw=true)
 
 Official reference for Wireless Tag WT8266-DK V2 can be found [here](http://www.wireless-tag.com/index.php/product/dis/94.html).
 
@@ -81,7 +77,9 @@ The Wireless Tag WT8266-DK V2 exposes the serial port of the ESP8266 module via 
 	Drivers for the bridge can be downloaded [here](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+* **Ubuntu** distribution –> dialout group
+* **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port the WT8266-DK V2 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
@@ -122,7 +120,6 @@ After virtualization, the WT8266-DK V2 device is ready to be programmed and the 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the WT8266-DK V2 device is available for bytecode only.
 
 Flash Layout is shown in table below:
-
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x40200000    | 448Kb | VM Slot         |
@@ -133,6 +130,5 @@ Flash Layout is shown in table below:
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTE2ODk5MCwtMTg1NjQ2NTIyNiwtOD
-k4MTExODY4XX0=
+eyJoaXN0b3J5IjpbLTg5ODExMTg2OF19
 -->

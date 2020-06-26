@@ -70,7 +70,7 @@ With Python, it is possible to use the `**` operator to calculate powers
 
 The equal sign (`=`) is used to assign a value to a variable.
 
-```py
+```
 >>> width = 20
 >>> height = 5 * 9
 ```
@@ -627,7 +627,7 @@ will print `5`.
 
 **Important warning:** The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.  For example, the following function accumulates the arguments passed to it on subsequent calls:
 
-```py
+```
 def f(a, L=[]):
     L.append(a)
     return L
@@ -639,7 +639,7 @@ print(f(3))
 
 This will print
 
-```py
+```
 [1]
 [1, 2]
 [1, 2, 3]

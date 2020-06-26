@@ -34,7 +34,7 @@ Returned value is *0* if the line does not have valid data, or a combination (su
 * *1*, *2* or *3*, if the *fix* sequence (9 items) has been filled (from RMC, GGA or GSA respectively)
 
 
-**`class NMEA_Receiver()`**
+**`class NMEA_Receiver`**
 
 This class is meant to be used as a base class to provide a uniform interface for GNSS receivers.
 

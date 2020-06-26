@@ -444,4 +444,8 @@ In the Zerynth Studio Preferences Menu, following options are available:
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTU0MzA5MzA5NSwtMjE5ODgwNTAyLDEwOD
 Y3MjEyMDksLTg1NjAwODcwMF19
+<<<<<<< HEAD
 -->
+=======
+-->
+>>>>>>> origin/dev-voja

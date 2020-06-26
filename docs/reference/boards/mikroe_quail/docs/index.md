@@ -277,7 +277,6 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODg0NzE3MiwxODcwNjU0NjE3LC0xOD
-YzMjE5MDcxLDE1NzAwNDM5NDksLTEyNzk2MjEwMjIsMTEwMTA2
-MjYzNl19
+eyJoaXN0b3J5IjpbMTg3MDY1NDYxNywtMTg2MzIxOTA3MSwxNT
+cwMDQzOTQ5LC0xMjc5NjIxMDIyLDExMDEwNjI2MzZdfQ==
 -->

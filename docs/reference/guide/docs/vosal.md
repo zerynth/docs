@@ -227,7 +227,7 @@ Install a new ISR  *fn*  at index  *hpos*  in the interrupt table. Previous ISR 
 
 The type vos_irq_handler is:
 
-`typedef void (*vos_irq_handler)(void)`
+    typedef void (*vos_irq_handler)(void)
 
 
 **`void vosSysReset(void)`**
