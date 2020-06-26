@@ -137,7 +137,8 @@ If bluetooth driver is enabled; sets the callback function to be executed when C
 
 If bluetooth driver is enabled; sets the callback function to be executed when KW40Z receives a bluetooth pairing request.
 
-```NOTE```: When the KW40Z receives this kind of request it generates a pairing code stored in the passkey KW40Z class attribute of bt_driver internal instance.
+!!! note
+	When the KW40Z receives this kind of request it generates a pairing code stored in the passkey KW40Z class attribute of bt_driver internal instance.
 
 **`bluetooth_on()`**
 
@@ -288,7 +289,8 @@ If color oled display is enabled; draws a single pixel in the screen colored wit
 -	**encode(bool)** – flag for enabling the color encoding; default True
 
 
-**NOTE:** The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided it is necessary to encode it into a 16 bit format.
+!!! note
+	The onboard color oled is a 65K color display, so if a stadard hex color code (24 bit) is provided it is necessary to encode it into a 16 bit format.
 
 If a 16 bit color code is provided, the encode flag must be set to False.
 
@@ -347,7 +349,7 @@ Turns on the rgb onboard led (white light).
 
 Turns off the rgb onboard led.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Nzk0OTI1MSw1MDIxODEzMTIsLTE5Mz
-A0ODM1MDMsLTE5NjE0OTU4MDcsMTIyOTMwNTQ1Miw4OTkwNjY0
-NzRdfQ==
+eyJoaXN0b3J5IjpbMTA4MDI4OTA4NywxMjk3OTQ5MjUxLDUwMj
+E4MTMxMiwtMTkzMDQ4MzUwMywtMTk2MTQ5NTgwNywxMjI5MzA1
+NDUyLDg5OTA2NjQ3NF19
 -->
