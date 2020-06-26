@@ -13,6 +13,7 @@ DIO is the default attribute for digital pins `Dx` while ADC is the default for 
 Moreover, `digitalWrite` and `digitalRead` functions don’t require any attribute specification and can be always used specifying the pin name only (`Dx` or `Ax`).
 
 Let’s see some examples:
+
 | Zerynth                               | Arduino/Wiring         | Note                    |
 |---------------------------------------|------------------------|-------------------------|
 | x=digitalRead(D1)                     | x=digitalRead(D1)      |                         |
@@ -86,8 +87,3 @@ while True:
 However, this pin naming is an advanced feature of the Zerynth suite and it is required only for specific uses and for functionalities directly related to board wiring and setups like the ICU and the PWM. In most frequent cases where Analog and Digital basic functionalities are used, the Zerynth defaults will automatically set the correct methods for the selected pin.
 
 Moreover, all the Zerynth init functions (`can.init()`, `spi.init()`, `i2c.init()`) also allow fast configuration by using short-names like (`CAN0`, `I2C0`, `SPI0`, `SERIAL0`). For example, it is possible to open the serial port 0 with default parameters by calling `streams.serial()` or opening the serial port 1 by calling `streams.serial(SERIAL1)`
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTEwOTcwMywyNDUzMTY5NjksLTMxMD
-E0ODcxOSwyMDc2MjI5ODU1LDIwODg1NjE2OTldfQ==
--->
