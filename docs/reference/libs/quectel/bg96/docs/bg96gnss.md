@@ -68,7 +68,7 @@ It can be restarted by calling start.
 Pause the BG96 GNSS by putting it into standby mode. It can be restarted by calling resume.
 
 
-**resume()`**
+**`resume()`**
 
 Wake up the BG96_GNSS from standby mode.
 

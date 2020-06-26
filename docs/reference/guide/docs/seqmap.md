@@ -9,19 +9,19 @@ Python supports a concept of iteration over containers.  This is implemented usi
 One method needs to be defined for container objects to provide iteration support:
 
 
-**container.\__iter__()**
+**`container.\__iter__()`**
 
 Return an iterator object.  The object is required to support the iterator protocol described below.
 
  iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
 
 
- **iterator.\__iter__()**
+ **`iterator.\__iter__()`**
  
 Return the iterator object itself.  This is required to allow both containersand iterators to be used with the `for` and `in` statements.
 
 
-**iterator.\__next__()**
+**`iterator.\__next__()`**
 
 Return the next item from the container.  If there are no further items, raise the `StopIteration` exception.
 
@@ -57,12 +57,12 @@ The `in` and `not in` operations have the same priorities as thecomparison opera
 Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
-Notes:
+**Notes:**
 
 
 1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences(such as `str()`, `bytes()` and `bytearray()`) also use them for subsequence testing:
 
-```
+```py
 >>> "gg" in "eggs"
 True
 ```
@@ -70,7 +70,7 @@ True
 
 2. Values of **n** less than `0` are treated as `0` (which yields an empty sequence of the same type as **s**).  Note that items in the sequence *s* are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
-```
+```py
 >>> lists = [[]] * 3
 >>> lists
 [[], [], []]
@@ -81,7 +81,7 @@ True
 
 What has happened is that `[[]]` is a one-element list containing an empty list, so all three elements of `[[]] * 3` are references to this single empty list.  Modifying any of the elements of `lists` modifies this single list.You can create a list of different lists this way:
 
-```
+```py
 >>> lists = [[] for i in range(3)]
 >>> lists[0].append(3)
 >>> lists[1].append(5)

@@ -20,7 +20,7 @@ Contents:
 * [Digital Sensor Library](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html)
     * [DigitalSensor class](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html#digitalsensor-class)
 * [Pool Sensor Library](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensorPool.html)
-    * [SensorPool class]https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensorPool.html#sensorpool-class()
+    * [SensorPool class](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_sensorPool.html#sensorpool-class
 * [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html)
     * [Analog Sensor Basics](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#analog-sensor-basics)
     * [Analog Sensor Advanced](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/examples/examples.html#analog-sensor-advanced)
