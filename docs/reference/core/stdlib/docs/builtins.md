@@ -608,20 +608,20 @@ If the number of positional arguments is odd, the value for the last key is None
 Return a new set initialized from an optional *args. If no *args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the set.
 
-`frozenset()`
+**`frozenset()`**
 
-`frozenset(\*args)`
+**`frozenset(\*args)`**
 
 Return a new frozenset initialized from an optional *args. If no *args. If no *args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the frozenset.
 
-`open(file, mode="rb")`
+**`open(file, mode="rb")`**
 
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTM2Njc0MTIsMjAzNDYwNDQzNiw4MT
+eyJoaXN0b3J5IjpbLTEyODk5Mjc4OTIsMjAzNDYwNDQzNiw4MT
 UxMjAzNTMsLTEzOTc2NjAxNDMsLTE0ODg5ODEwMjAsMTk0Njkw
 Mzg4OCwxMjY0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3MTQ3OT
 EsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
