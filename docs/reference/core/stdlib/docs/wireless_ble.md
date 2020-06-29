@@ -12,7 +12,7 @@ Official BLE specifications can be found [here](https://www.bluetooth.com/specif
 
 A minimal example follows:
 
-```
+```py
 import streams
 # import a BLE driver: in this example we use NRF52
 from nordic.nrf52_ble import nrf52_ble as bledrv
@@ -58,7 +58,7 @@ To interact with the example, download a BLE monitor app (for example [this one]
 ## Module Functions
 
 
-`gap(name, appearance=0, security=(SECURITY_MODE_1, SECURITY_LEVEL_1), connection=(400, 650, 0, 4000))`
+**`gap(name, appearance=0, security=(SECURITY_MODE_1, SECURITY_LEVEL_1), connection=(400, 650, 0, 4000))`**
 
 Set parameters for the the Generic Access Profile:
 
@@ -101,7 +101,7 @@ Security features can be not completely supported by the underlying BLE driver. 
     * Level 2 - Authenticated pairing with data signing
 
 
-`security(capabilities=CAP_NONE, bonding=AUTH_NO_BOND, scheme=AUTH_SC, key_size=16, initiator=KEY_ENC|KEY_ID, responder=KEY_ENC|KEY_ID, oob=0, passkey=0)`
+**`security(capabilities=CAP_NONE, bonding=AUTH_NO_BOND, scheme=AUTH_SC, key_size=16, initiator=KEY_ENC|KEY_ID, responder=KEY_ENC|KEY_ID, oob=0, passkey=0)`**
 
 Set security parameters:
 
@@ -160,29 +160,29 @@ Set security parameters:
 * `passkey` is an integer representing the passkey to be displayed for `CAP_DISPLAY_ONLY` devices
 
 
-`bonded()`
+**`bonded()`**
 
 Returns the list of addresses of the currently bonded devices.
 Each address is a bytes sequence of length 6
 
 
-`remove_bonded(addr)`
+**`remove_bonded(addr)`**
 
 Removes the bonding with the device with address `addr`.
 
 
-`confirm_passkey(confirmed)`
+**`confirm_passkey(confirmed)`**
 
 For devices with `CAP_DISPLAY_YES_NO` the user must confirm the passkey. If `confirmed` is not zero, the passkey is confirmed and
 the secure connection performed. Otherwise the secure connection is aborted.
 
 
-`add_service(service)`
+**`add_service(service)`**
 
 Adds `service` to the service list. `service` must be an instance of the `Service()` class.
 
 
-`add_callback(evt, callback)`
+**`add_callback(evt, callback)`**
 
 Add callback to the callback list. It will be triggered by event `evt`.
 
@@ -254,7 +254,7 @@ Regarding scan report events, the meaning of the scan tuple is:
 
 An example of a callback:
 
-```
+```py
 from wireless import ble
 
 def connected(addr):
@@ -264,7 +264,7 @@ ble.add_callback(ble.EVT_CONNECTED,connected)
 ```
 
 
-`advertising(interval, timeout=0, payload="", scan_rsp="", mode=ADV_CONN_UND)`
+**`advertising(interval, timeout=0, payload="", scan_rsp="", mode=ADV_CONN_UND)`**
 
 Set advertising parameters:
 
@@ -284,12 +284,12 @@ Set advertising parameters:
 * `mode` is an integer determining the type of advertising: `ADV_CONN_UND`, `ADV_UNCN_UND`, `ADV_SCAN_UND` are supported.
 
 
-`start_advertising()`
+**`start_advertising()`**
 
 Start advertising according to parameters set by `advertising()`
 
 
-`stop_advertising()`
+**`stop_advertising()`**
 
 Stop advertising immediately
 
@@ -317,30 +317,30 @@ Set options for scanning.
 * `active` selects active scanning if not zero
 
 
-`start_scanning(duration=1000)`
+**`start_scanning(duration=1000)`**
 
 Start scanning for advertising packets for ```duration``` milliseconds. Each scanned packet is retrieved int the `EVT_SCAN_REPORT` GAP event.
 
 
-`stop_scanning()`
+**`stop_scanning()`**
 
 Stop scanning for advertising packets
 
 
-`start()`
+**`start()`**
 
 Initializes and start the BLE stack.
 Must be called after the configuration of GAP, GATT, advertising, scanning and security
 
 
-`btos(addr)`
+**`btos(addr)`**
 
 Converts a BLE address from a sequence of bytes to a string. It can also be used with longer sequences like entire packets.
 
 ## Service class
 
 
-`Service(uuid, base_uuid=None)`
+**`Service(uuid, base_uuid=None)`**
 
 This class abstracts a GATT Service. Services are defined by providing a `uuid`. BLE uuids are 128 bit sequences, but a shorter 16 bit  version can be used in case of standard BLE services.
 The list of standard uuids can be found [here](https://www.bluetooth.com/specifications/gatt/services). For custom uuids it is possible to specify all 128 bits passing a bytes or bytearray object to `base_uuid`.
@@ -348,14 +348,14 @@ The list of standard uuids can be found [here](https://www.bluetooth.com/specifi
 
 To create a standard service:
 
-```
+```py
 from wireless import ble
 s = ble.Service(0x180D) # Heart Rate Service id is 0x180D
 ```
 
 To create a custom service
 
-```
+```py
 from wireless import ble
 s = ble.Service(0xA001,bytes([0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x00,0x00,0x0F,0x10]))
 
@@ -405,7 +405,7 @@ This class abstracts a GATT Characteristic. Characteristics are defined by provi
 
 To create a characteristic:
 
-```
+```py
 from wireless import ble
 c = ble.Characteristic(0x2A19,ble.NOTIFY | ble.READ,1,"Battery Level",ble.NUMBER)
 
@@ -415,7 +415,7 @@ c = ble.Characteristic(0x2A19,ble.NOTIFY | ble.READ,1,"Battery Level",ble.NUMBER
 Once created, a characteristic must be added to a service to be usable
 
 
-`set_value(value)`
+`set_value(value)`**
 
 Update the characteristic value to `value`. `value` is converted to bytes sequence according to the characteristic size and type.
 
@@ -451,5 +451,5 @@ c.set_callback(led_toggle)
 
 The `status` argument of the callback is set to a combination of `READ`, `NOTIFY`, `WRITE` events.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyODQ4NTkwXX0=
+eyJoaXN0b3J5IjpbLTEyMDMyMzMwMDEsNTIyODQ4NTkwXX0=
 -->
