@@ -24,8 +24,8 @@ the arguments: m.update(a); m.update(b) is equivalent to m.update(a+b).
 Return the digest of the strings passed to the update method so far. This is a 20-byte bytes object.
 
 
-`hexdigest()`
-Like digest except **the digest is returned as a string of length 40, containing only hexadecimal digits.
+**`hexdigest()`**
+Like digest except the digest is returned as a string of length 40, containing only hexadecimal digits.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2MjAwNDg0LDM0OTgzMDMwOF19
+eyJoaXN0b3J5IjpbLTEwODQwNjg3NjQsMzQ5ODMwMzA4XX0=
 -->
