@@ -19,7 +19,7 @@ programming with jtag probes or custom uploaders for this process to work correc
 
 The `dcz.yml` file is composed of various sections:
 
-```
+```py
 # Zerynth Device Configuration Map
 #
 # this file declares a set of resources to be loaded on the device
@@ -185,7 +185,7 @@ The optional `dcz` section provides information to be used together with the DCZ
 When producing small to medium batches of IoT devices, it is useful to have an automatic mean of provisioning and flashing. This feature is provided
 by the mass programming command documented below. A mass programming configuration file is needed to describe the device parameters:
 
-```
+```py
 ############################
 # Mass Programming Section
 #
@@ -228,7 +228,7 @@ config:
 
 The command:
 
-```
+```py
 ztc massprog start path
 ```
 
@@ -236,3 +236,6 @@ will start a register-virtualize-uplink process in a single command using inform
 If the project specified in `massprog.yml` contains a `dcz.yml` file, resources will be provisioned and flashed to the device together with the VM and the firmware.
 
 The ```massprog``` may take the additional `--clean` option that forces a firmware compilation and link.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MTQzNzkzNTBdfQ==
+-->
