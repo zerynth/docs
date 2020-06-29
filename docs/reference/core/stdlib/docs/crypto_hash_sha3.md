@@ -25,7 +25,7 @@ The class supports 4 variants of SHA3, selectable in the constructor with one of
 ## The SHA3 class
 
 
-`class SHA3(hashtype=SHA256)`
+**`class SHA3(hashtype=SHA256)`**
 This class allows the generation of SHA3 hashes. It is thread safe. By default, it calculates the SHA256 variant
 of SHA3. This behaviour can be changed by passing a different value for ```hashtype```
 
@@ -43,5 +43,6 @@ the SHA3 variant.
 **`hexdigest()`**
 Like digest except the digest is returned as a string containing only hexadecimal digits.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTQxNDQ1MCwtMTc2NDg5NTM3NF19
+eyJoaXN0b3J5IjpbLTE2ODcwMTEyNzgsLTE3NjQ4OTUzNzRdfQ
+==
 -->
