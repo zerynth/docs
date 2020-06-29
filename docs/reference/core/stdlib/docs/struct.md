@@ -97,7 +97,9 @@ appropriate choice of `'<'` or `'>'`.
 
 **Notes:**
 
-1. Padding is only automatically added between successive structure members. No padding is added at the beginning or the end of the encoded struct.
+
+1. Padding is only automatically added between successive structure members. 
+No padding is added at the beginning or the end of the encoded struct.
 
 2. No padding is added when using non-native size and alignment, e.g.
 with ‘<’, ‘>’, ‘=’, and ‘!’.
