@@ -415,26 +415,26 @@ c = ble.Characteristic(0x2A19,ble.NOTIFY | ble.READ,1,"Battery Level",ble.NUMBER
 Once created, a characteristic must be added to a service to be usable
 
 
-`set_value(value)`**
+**`set_value(value)`**
 
 Update the characteristic value to `value`. `value` is converted to bytes sequence according to the characteristic size and type.
 
 If connected, the NOTIFY permission is given and the central has enabled notifications, the updated value is notified to the central.
 
 
-`get_value()`
+**`get_value()`**
 
 Return the value of the characteristic converted to a Python object according to size and type.
 
 
-`set_callback(fn)`
+**`set_callback(fn)`**
 
 Characteristics with WRITE permission can be changed by the central. A callback can be used to be notified of such change.
 `fn` is called on every WRITE event and accepts two positional arguments; the first one is a status flag, the second one is the updated characteristic value.
 
 For example:
 
-```
+```py
 from wireless import ble
 
 def led_toggle(status,value):
@@ -451,5 +451,5 @@ c.set_callback(led_toggle)
 
 The `status` argument of the callback is set to a combination of `READ`, `NOTIFY`, `WRITE` events.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDMyMzMwMDEsNTIyODQ4NTkwXX0=
+eyJoaXN0b3J5IjpbLTY0NTE4MTIwMiw1MjI4NDg1OTBdfQ==
 -->
