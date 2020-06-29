@@ -7,7 +7,7 @@ The ZTC is launched by typing ```ztc``` in a console.
 
 ```ztc``` takes commands and options as arguments:
 
-```
+```py
 ztc [g_options] [command] [l_options]
 ```
 
@@ -96,7 +96,7 @@ Untagged messages are not colored and not prefixed. The result of a command  gen
 
 The ZTC is organized on disk in a set of directories stored under `~/zerynth2` for Linux and Mac or under `C:Usersusernamezerynth2` for Windows. The following directory tree is created:
 
-```
+```py
 zerynth2
 |
 |--cfg    # configuration files, device database, clone of online package database
@@ -116,5 +116,5 @@ zerynth2
 
 Every successful ZTC installation or update is kept in a separate directory (`dist/version`) so that in case of corrupted installation, the previous working ZTC can be used.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzI5MDI2MF19
+eyJoaXN0b3J5IjpbMTY3OTY4ODUzOCwtMzEzMjkwMjYwXX0=
 -->
