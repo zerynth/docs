@@ -67,7 +67,7 @@ Otherwise BLuefruit configuration is cleared first and then changed to *cfg*.
 
 The format of *cfg* is a list of lists:
 
-```py
+```python
 cfg = [
     [0,0x180D],                     # Service with UUID 0x180D = Heart Rate
       [1,0x2a37,(0x00,0x40),0x10],  # Characteristic of last defined service
@@ -131,6 +131,6 @@ not connected (namely, the Bluefruit peripheral is not paired with a BLE client)
 
 Also, due to the features of the Bluefruit firmware, read methods use a polling mechanism to check for incoming data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzEzODkyMSwtMTUwNTA2MDcwNywxOD
-U3NTg5NzMsMzA1OTA1NTAwXX0=
+eyJoaXN0b3J5IjpbLTc3Mzk1NDc5NiwtNjEzMTM4OTIxLC0xNT
+A1MDYwNzA3LDE4NTc1ODk3MywzMDU5MDU1MDBdfQ==
 -->
