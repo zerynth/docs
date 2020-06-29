@@ -7,7 +7,7 @@ Refer to BLE examples for usage.
 ## Module Functions
 
 
-`eddy_encode_tlm(battery, temperature, count, time)`
+**`eddy_encode_tlm(battery, temperature, count, time)`**
 
 Return a bytearray representing an encoded Eddystone payload of type tlm (not encrypted).
 
@@ -26,7 +26,7 @@ According to the specifications:
 * `time` is the time in seconds since beacon power up
 
 
-`eddy_encode_uid(namespace, instance, txpower)`
+**`eddy_encode_uid(namespace, instance, txpower)`**
 
 Return a bytearray representing an encoded Eddystone payload of type uid (not encrypted).
 
@@ -41,7 +41,7 @@ According to the specifications:
 
 * `txpower` is the power calibration measurement of the beacon (used to calculate distances)
 
-`eddy_encode_url(url, txpower)`
+**`eddy_encode_url(url, txpower)`**
 
 Return a bytearray representing an encoded Eddystone payload of type url (not encrypted).
 
@@ -54,7 +54,7 @@ According to the specifications:
 * `txpower` is the power calibration measurement of the beacon (used to calculate distances)
 
 
-`eddy_decode_type(packet)`
+**`eddy_decode_type(packet)`**
 
 Given `packet` as a bytes or bytearray return the type of the Eddystone packet or raises `ValueError` if it is not an Eddystone packet.
 
@@ -86,7 +86,7 @@ Return values are:
 * a tuple with battery, temperature, count and time for tlm packets
 
 
-`ibeacon_encode(uuid, major, minor, txpower, manufacturer=0x4c00)`
+**`ibeacon_encode(uuid, major, minor, txpower, manufacturer=0x4c00)`**
 
 Return a bytearray representing an encoded iBeacon payload.
 
@@ -108,11 +108,11 @@ According to the specifications:
 * `manufacturer` is set to Apple, but can be changed if needed
 
 
-`ibeacon_decode(packet)`
+**`ibeacon_decode(packet)`**
 
 Given `packet` as a bytes or bytearray return a tuple with the packet decoded fields or raises `ValueError` in case `packet` is not iBeacon.
 
 Return value is a tuple with uuid, major, minor and txpower
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjczMTI5ODNdfQ==
+eyJoaXN0b3J5IjpbMTcwMzkzNTk3NywtMjEyNzMxMjk4M119
 -->
