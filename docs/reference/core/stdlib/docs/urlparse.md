@@ -69,12 +69,12 @@ Parses a query string ```qs``` and returns a dictionary containing the associati
 Values are urldecoded by `unquote()`.
 
 
-`urlencode(data)`**
+**`urlencode(data)`**
 
 Tranforms data dictionary in a urlencoded query string and returns the query string.
 Each pair (key, value) is encoded by ```quote_via``` function.
 By default, `quote_plus()` is used to quote the values.
 An alternate function that can be passed as quote_via is `quote()`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkwMDQ1MjUyLDEyNTA3NTExNzJdfQ==
+eyJoaXN0b3J5IjpbNjI2NjIwMjkyLDEyNTA3NTExNzJdfQ==
 -->
