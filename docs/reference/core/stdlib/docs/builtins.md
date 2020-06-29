@@ -9,18 +9,18 @@ The explicit name `__builtins__` must be used when there is a need to modify a b
 Zerynth VM defines the following Python builtin constants:
 
 
-`False()`
+**`False()`**
 
 The false value of the `bool()` type. Assignments to `False`
 are illegal and raise a :exc:`SyntaxError`.
 
-`True()`
+**`True()`**
 
 The true value of the `bool()` type. Assignments to `True`
 are illegal and raise a :exc:`SyntaxError`.
 
 
-`None()`
+**`None()`**
 
 The sole value of the type `NoneType`.  `None` is frequently used to
 represent the absence of a value, as when default arguments are not passed to a function. Assignments to `None` are illegal and raise a :exc:`SyntaxError`.
@@ -79,7 +79,7 @@ However, in the embedded world, resources are precious and keeping class definit
 
 Zerynth VM exceptions are therefore implemented as error codes with optional static error messages organized as a tree:
 
-```
+``` python
 Exception
   +-- StopIteration
   +-- ArithmeticError
@@ -112,7 +112,7 @@ Exception
 This way, the inheritance mechanism of classes is mantained and trasposed to the exception matching mechanism transparently.
 The following is valid Zerynth code:
 
-```
+``` py
 try:
     # raise ZeroDivisionError
     x = 1/0
@@ -123,7 +123,7 @@ except ArithmeticError as e:
 The main difference between Zerynth exceptions and Python exceptions is in the way new exceptions are created and used.
 To create a user defined exception in Zerynth you need to use the following code:
 
-```
+``` python
 new_exception(MyExceptionName, MyExceptionParent, MyErrorMessage)
 ```
 
@@ -152,25 +152,25 @@ Zerynth VM extends Python with builtins functions to handle the General Purpose 
 These functions resembles the ones used by Arduino, but are more flexible.
 
 
-`pinMode(pin, mode)`
+**`pinMode(pin, mode)`**
 
 Sets the pin ```pin``` in mode ```mode```. Allowed values for ```mode``` are `INPUT, OUTPUT, INPUT_PULLUP, INPUT_PULLDOWN, OUTPUT_PUSHPULL, OUTPUT_OPENDRAIN, INPUT_ANALOG`
 
 
-`digitalRead(pin)`
+**`digitalRead(pin)`**
 
 Returns the state of the pin ```pin```. The state can be `LOW` or `HIGH`
 
 
-`digitalWrite(pin, val)`
+**`digitalWrite(pin, val)`**
 
 Sets the pin ```pin``` to the value ```val```. If val is zero, ```pin``` is set to `LOW`, otherwise to `HIGH`
 
-`pinToggle(pin)`
+**`pinToggle(pin)`**
 
 Sets the pin ```pin``` to the value opposite to the current pin value. If value is zero, ```pin``` is set to `HIGH`, otherwise to `LOW`
 
-`analogRead(pin, samples=1)`
+`analogRead(pin, samples=1)`**
 
 Reads analog values from ```pin``` that must be one of the Ax pins. If ```samples``` is 1 or not given, returns the integer value read from ```pin```.
 If ```samples``` is greater than 1, returns a tuple of integers of size ```samples```.
@@ -621,8 +621,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNDYwNDQzNiw4MTUxMjAzNTMsLTEzOT
-c2NjAxNDMsLTE0ODg5ODEwMjAsMTk0NjkwMzg4OCwxMjY0NTc0
-MTAyLDE1ODk3NzY3MjIsLTIwNTU3MTQ3OTEsLTIxNTkxMjg5MC
-wtMTc4ODgyMjg0Ml19
+eyJoaXN0b3J5IjpbMTAxNjU2NjY1NywyMDM0NjA0NDM2LDgxNT
+EyMDM1MywtMTM5NzY2MDE0MywtMTQ4ODk4MTAyMCwxOTQ2OTAz
+ODg4LDEyNjQ1NzQxMDIsMTU4OTc3NjcyMiwtMjA1NTcxNDc5MS
+wtMjE1OTEyODkwLC0xNzg4ODIyODQyXX0=
 -->
