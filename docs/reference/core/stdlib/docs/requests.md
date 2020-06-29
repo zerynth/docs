@@ -4,7 +4,7 @@ This module implements functions to easily handle the intricacies of the HTTP pr
 To use ```requests``` a net driver must have been properly configured and started.
 
 
-`get(url, params=None, headers=None, connection=None, stream_callback=None, stream_chunk=512)`
+**`get(url, params=None, headers=None, connection=None, stream_callback=None, stream_chunk=512)`**
 
 Implements the GET method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -22,7 +22,7 @@ Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be 
 If the parameter ```stream_callback``` is given, the HTTP body data will be retrieved in chunk s of ```stream_chunk``` size and passed as arguments to ```stream_callback``` one by one. If ```stream_callback``` is used, the content of `Response()` instance is the last chunk.
 
 
-`post(url, data=None, json=None, headers=None, ctx=None)`
+**`post(url, data=None, json=None, headers=None, ctx=None)`**
 
 Implements the POST method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -40,7 +40,7 @@ If ```json``` is provided (always as dictionary), json data will send in the bod
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
-`put(url, data=None, json=None, headers=None, ctx=None)`
+**`put(url, data=None, json=None, headers=None, ctx=None)`**
 
 Implements the PUT method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -59,7 +59,7 @@ If ```json``` is provided (always as dictionary), json data will send in the bod
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
-`patch(url, data=None, headers=None, ctx=None)`
+**`patch(url, data=None, headers=None, ctx=None)`**
 
 Implements the PATCH method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -78,7 +78,7 @@ If ```json``` is provided (always as dictionary), json data will send in the bod
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
-`delete(url, headers=None, ctx=None)`
+**`delete(url, headers=None, ctx=None)`**
 
 Implements the DELETE method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -91,7 +91,7 @@ other headers are set to defaults if not given: for example “Connection: close
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
-`head(url, headers=None, ctx=None)`
+**`head(url, headers=None, ctx=None)`**
 
 Implements the HEAD method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -104,7 +104,7 @@ other headers are set to defaults if not given: for example “Connection: close
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
-`options(url, headers=None, ctx=None)`
+**`options(url, headers=None, ctx=None)`**
 
 Implements the OPTIONS method of the HTTP protocol. A tcp connection is made to the host:port given in the url using the default net driver.
 
@@ -117,7 +117,7 @@ other headers are set to defaults if not given: for example “Connection: close
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, etc..)
 
 
-`upload(url, fd, ctx=None, mime_type="application/octet-stream", method="POST")`
+**`upload(url, fd, ctx=None, mime_type="application/octet-stream", method="POST")`**
 
 Upload a file identified by ```fd``` to ```url```. ```fd``` must provide methods read and size.
 
@@ -130,36 +130,36 @@ The type of the file contents and the HTTP method (POST pr PUT) can be customize
 Exceptions can be raised: `HTTPConnectionError` when the HTTP server can’t be contacted; `IOError` when the source of error lies at the socket level (i.e. closed sockets, invalid sockets, file, etc..)
 
 
-`Response()`
+**`Response()`**
 
 This class represent the result of a HTTP request.
 
 It contains the following members:
 
 
-`status()`
+**`status()`**
 
 Contains the HTTP response code
 
 
-`content()`
+**`content()`**
 
 It is the bytearray containing the byte version of the content section of a HTTP response
 
 
-`headers()`
+**`headers()`**
 
 A dictionary with all the response headers
 
 
-`connection()`
+**`connection()`**
 
 the connection used to communicate with the server, or None if it has been closed.
 
 
-`text()`
+**`text()`**
 
 Returns a string representing the content section of the HTTP response
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTQ1ODA3ODI5OSwtODkxOTQxMzldfQ==
 -->
