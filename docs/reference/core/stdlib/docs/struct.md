@@ -23,33 +23,33 @@ argument.  This refers to objects of class bytearray.
 The module defines the following exception and functions:
 
 
-`pack(fmt, v1, v2, ...)`
+**`pack(fmt, v1, v2, ...)`**
 Return a bytes object containing the values ```v1```, ```v2```, … packed according
 to the format string ```fmt```.  The arguments must match the values required by
 the format exactly.
 
 
-`pack_into(fmt, buffer, offset, v1, v2, ...)`
+**`pack_into(fmt, buffer, offset, v1, v2, ...)`**
 Pack the values ```v1```, ```v2```, … according to the format string ```fmt``` and
 write the packed bytes into the writable buffer ```buffer``` starting at
 position ```offset```.  Note that ```offset``` is a required argument.
 
 
-`unpack(fmt, buffer)`
+**`unpack(fmt, buffer)`**
 Unpack from the buffer ```buffer``` (presumably packed by `pack(fmt, ...)`)
 according to the format string ```fmt```.  The result is a tuple even if it
 contains exactly one item.  The buffer’s size in bytes must match the
 size required by the format, as reflected by `calcsize()`.
 
 
-`unpack_from(fmt, buffer, offset=0)`
+**`unpack_from(fmt, buffer, offset=0)`**
 Unpack from ```buffer``` starting at position ```offset```, according to the format
 string ```fmt```.  The result is a tuple even if it contains exactly one
 item.  The buffer’s size in bytes, minus ```offset```, must be at least
 the size required by the format, as reflected by `calcsize()`.
 
 
-`calcsize(fmt)`
+**`calcsize(fmt)`**
 Return the size of the struct (and hence of the bytes object produced by
 `pack(fmt, ...)`) corresponding to the format string ```fmt```.
 
@@ -95,12 +95,15 @@ the size and alignment of the latter is standardized.
 There is no way to indicate non-native byte order (force byte-swapping); use the
 appropriate choice of `'<'` or `'>'`.
 
-!!! Note
-	1. Padding is only automatically added between successive structure members.
+**Notes:**
+1. Padding is only automatically added between successive structure members.
+
 No padding is added at the beginning or the end of the encoded struct
-	2. No padding is added when using non-native size and alignment, e.g.
+2. No padding is added when using non-native size and alignment, e.g.
 with ‘<’, ‘>’, ‘=’, and ‘!’.
-	3. To align the end of a structure to the alignment requirement of a
+
+
+3. To align the end of a structure to the alignment requirement of a
 particular type, end the format with the code for that type with a repeat
 count of zero.  See Examples.
 
@@ -110,8 +113,8 @@ Format characters have the following meaning; the conversion between C and
 Python values should be obvious given their types.  The ‘Standard size’ column
 refers to the size of the packed value in bytes when using standard size; that
 is, when the format string starts with one of `'<'`, `'>'`, `'!'` or
-`'='`.  When using native size, the size of the packed value is
-platform-dependent.
+`'='`.  When using native size, the size of the packed value is platform-dependent.
+
 
 | Format | C Type             | Python type       | Standard size | Notes    |
 |--------|--------------------|-------------------|---------------|----------|
@@ -137,7 +140,7 @@ platform-dependent.
 | p      | char[]             | bytes             |               |          |
 | P      | void *             | integer           |               | (6)      |
 
-Notes:
+**Notes:**
 
 1. The `'?'` conversion code corresponds to the `_Bool` type defined by
 C99. If this type is not available, it is simulated using a `char`. In
@@ -273,6 +276,6 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxNTQ0NDIyLDE1MjA3NDQ4MDIsOTcwMz
-k2ODIyLC0xMjM3NzczNjkwLC0xMjI2NjEwNl19
+eyJoaXN0b3J5IjpbLTQ3NDU3NjA4NiwxNTIwNzQ0ODAyLDk3MD
+M5NjgyMiwtMTIzNzc3MzY5MCwtMTIyNjYxMDZdfQ==
 -->
