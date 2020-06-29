@@ -95,9 +95,7 @@ the size and alignment of the latter is standardized.
 There is no way to indicate non-native byte order (force byte-swapping); use the
 appropriate choice of `'<'` or `'>'`.
 
-Notes:
-
-
+!!! Note
 1. Padding is only automatically added between successive structure members.
 No padding is added at the beginning or the end of the encoded struct.
 
@@ -279,6 +277,6 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcwMzk2ODIyLC0xMjM3NzczNjkwLC0xMj
-I2NjEwNl19
+eyJoaXN0b3J5IjpbMTUyMDc0NDgwMiw5NzAzOTY4MjIsLTEyMz
+c3NzM2OTAsLTEyMjY2MTA2XX0=
 -->
