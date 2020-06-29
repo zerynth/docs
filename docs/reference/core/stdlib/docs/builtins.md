@@ -170,7 +170,7 @@ Sets the pin ```pin``` to the value ```val```. If val is zero, ```pin``` is set 
 
 Sets the pin ```pin``` to the value opposite to the current pin value. If value is zero, ```pin``` is set to `HIGH`, otherwise to `LOW`
 
-`analogRead(pin, samples=1)`**
+**`analogRead(pin, samples=1)`**
 
 Reads analog values from ```pin``` that must be one of the Ax pins. If ```samples``` is 1 or not given, returns the integer value read from ```pin```.
 If ```samples``` is greater than 1, returns a tuple of integers of size ```samples```.
@@ -178,7 +178,7 @@ The maximum value returned by analogRead depends on the analog resolution of the
 
 analogRead works by calling the adc driver (Analog to Digital Converter) that must be imported and configured:
 
-```
+``` py
 # import the adc driver
 import adc
 
@@ -188,7 +188,7 @@ x = analogRead(A3)
 
 analogRead also accepts lists or tuples of pins and returns the corresponding tuple of tuples of samples:
 
-```
+```py
 import adc
 
 x = analogRead([A4,A3,A5],6)
@@ -200,7 +200,7 @@ The number of sequentials pins that can be read in a single analogRead call depe
 
 The analogRead function is provided as a builtin to ease the passage from the Arduino Wiring to Zerynth. However the preferred way to read an analog pin in Zerynth is:
 
-```
+```py
 # import the adc driver
 import adc
 
@@ -209,7 +209,7 @@ x = adc.read(A3)
 
 
 
-`analogWrite(pin, period, pulse, time_unit=MILLIS, npulses=0)`
+**`analogWrite(pin, period, pulse, time_unit=MILLIS, npulses=0)`**
 
 Activate PWM (Pulse Width Modulation) on pin ```pin``` (must be one of the PWMx pins). The state of ```pin``` is periodically switched between `LOW` and `HIGH` according to parameters:
 
@@ -236,7 +236,7 @@ _____|                 |________|                 |____ LOW
 
 Here are some examples:
 
-```
+```py
 #Remember to import the pwm module
 import pwm
 
@@ -259,7 +259,7 @@ the actual number of pulses produced may be greater than ```npulses``` by one or
 
 The analogWrite function is provided as a builtin to ease the passage from the Arduino Wiring to Zerynth. However the preferred way to use pwm in Zerynth is:
 
-```
+```py
 # import the pwm driver
 import pwm
 
@@ -295,7 +295,7 @@ Can be used together with `onPinRise()` on the same pin.
 
 ## Builtin Functions
 
-`int(x=0, base=10)`
+**`int(x=0, base=10)`**
 
 Return an integer object constructed from a number or string ```x```, or return
 `0` if no arguments are given.  If ```x``` is a floating point number, it is
@@ -315,7 +315,7 @@ means to interpret exactly as a code literal, so that the actual base is 2,
 `int('010')` is, as well as `int('010', 8)`.
 
 
-`type(x)`
+**`type(x)`**
 
 Return an integer representing the type of x.
 The following are the builtin constants returned by type():
@@ -327,7 +327,7 @@ PNONE, PEXCEPTION, PNATIVE, PSYSOBJ, PDRIVER, PTHREAD
 ```
 
 
-`thread(fun, \*args, prio=PRIO_NORMAL, size=-1)`"
+**`thread(fun, \*args, prio=PRIO_NORMAL, size=-1)`**
 
 Function ```fun``` is launched in a new thread using args as its parameters.
 ```fun``` must be a normal function or a methods, other callables are not supported yet.
@@ -337,7 +337,7 @@ Function ```fun``` is launched in a new thread using args as its parameters.
 
 Returns the created thread, already started. Raises :exc:`RuntimeError` if no more threads can be created.
 
-`sleep(time, time_unit=MILLIS)`
+**`sleep(time, time_unit=MILLIS)`**
 
 Suspend the current thread for ```time``` expressed in ```time_units```. All the other threads are free to continue their execution.
 If ```time_unit``` is MICROS, sleep does not suspend the current thread, but starts polling the cycles counter in a loop.
@@ -350,12 +350,12 @@ For high precision sleep refer to :mod:`hwtimers
 Returns a random integer. If ```a``` and ```b``` are given, the random integer is contained in the range [a,b]. If the board has a builtin Random Number Generator, it is used.
 
 
-`range(stop)` `range(start, stop, )`
+**`range(stop)` `range(start, stop, )`**
 
 Creates a range object.
 
 
-`bytearray()`
+**`bytearray()`**
 
 Return a new array of bytes. A bytearray is a mutable
 sequence of integers in the range 0 <= x < 256.  It has most of the usual
@@ -375,7 +375,7 @@ initialized with null bytes.
 
 Without an argument, an array of size 0 is created.
 
-`bytes()`
+**`bytes()`**
 
 Return a new “bytes” object, which is an immutable sequence of integers in
 the range `0 <= x < 256`.  `bytes()` is an immutable version of
@@ -384,7 +384,7 @@ indexing and slicing behavior.
 
 Accordingly, constructor arguments are interpreted as for `bytearray()`.
 
-`shortarray()`
+**`shortarray()`**
 
 Return a new array of shorts. A shortarray is a mutable
 sequence of integers in the range 0 <= x < 65536.  It has most of the usual
@@ -404,7 +404,7 @@ If the conversion is not possible, an exception is raised.
 
 Without an argument, an array of size 0 is created.
 
-`shorts()`
+**`shorts()`**
 
 Return a new shorts object, which is an immutable sequence of integers in
 the range `0 <= x < 65536`.  `shorts()` is an immutable version of
@@ -621,8 +621,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjU2NjY1NywyMDM0NjA0NDM2LDgxNT
-EyMDM1MywtMTM5NzY2MDE0MywtMTQ4ODk4MTAyMCwxOTQ2OTAz
-ODg4LDEyNjQ1NzQxMDIsMTU4OTc3NjcyMiwtMjA1NTcxNDc5MS
-wtMjE1OTEyODkwLC0xNzg4ODIyODQyXX0=
+eyJoaXN0b3J5IjpbNDM2ODc3ODM4LDIwMzQ2MDQ0MzYsODE1MT
+IwMzUzLC0xMzk3NjYwMTQzLC0xNDg4OTgxMDIwLDE5NDY5MDM4
+ODgsMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0NzkxLC
+0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
 -->
