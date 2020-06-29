@@ -9,21 +9,21 @@ concatenation of the strings fed to it so far.
 ## The MD5 class
 
 
-`class MD5()`
+**`class MD5()`**
 This class allows the generation of MD5 hashes. It is thread safe.
 
 
-`update(data)`
+**`update(data)`**
 Update the md5 object with the string ```data```. Repeated calls are equivalent to a single call with the concatenation of all
 the arguments: m.update(a); m.update(b) is equivalent to m.update(a+b).
 
 
-`digest()`
+**`digest()`**
 Return the digest of the strings passed to the update method so far. This is a 16-byte bytes object.
 
 
-`hexdigest()`
+**`hexdigest()`**
 Like digest except the digest is returned as a string of length 32, containing only hexadecimal digits.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyMzAwNzUwXX0=
+eyJoaXN0b3J5IjpbNjU3MjI5Nzc0LDQzMjMwMDc1MF19
 -->
