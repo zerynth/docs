@@ -113,10 +113,10 @@ Return True if the current instance is greater than or equal to the big number `
 Return 1 if the current instance is a positive number, -1 if the current instance is a negative number, 0 if it is equal to zero.
 
 
-`to_base(base)`
+**`to_base(base)`**
 
 Return a string representation of the big number in base ```base```. Allowed values for ```base``` are in the range 2..64.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDM0NjkwNDMsMjQ5ODAyODg3LDY4ND
-I2MjExMiwtMjA3ODQ1Mzg1OSw2ODQyNjIxMTJdfQ==
+eyJoaXN0b3J5IjpbMTU0MjM0NjQ0NSwyNDk4MDI4ODcsNjg0Mj
+YyMTEyLC0yMDc4NDUzODU5LDY4NDI2MjExMl19
 -->
