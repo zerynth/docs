@@ -61,15 +61,12 @@ my_dac.write(666)
 ```py
 my_dac.write([555,666,777],500,MILLIS)
 # one sample every 500 MILLISeconds
-```* a list of values to be output every ```timestep``` 
-
-```
-*
 ```
 
-timeunit\*econds, restarting from the beginning as soon as the end of the list is reached, until write method is called again:
 
-```
+* a list of values to be output every ```timestep``` timeunit*econds, restarting from the beginning as soon as the end of the list is reached, until write method is called again:
+
+```p
 my_dac.write([555,666,777],500,MILLIS,circular=True)
 ```
 
@@ -104,5 +101,5 @@ Each ```value``` in the list must be an integer between ```lowflex``` and ```hig
 
 ```lowflex``` and ```highflex``` default values are set to the correct values for Sam3X mcu.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0ODQwNjM4LDY4MzI3ODA5N119
+eyJoaXN0b3J5IjpbLTIwNDI3MjM0NTQsNjgzMjc4MDk3XX0=
 -->
