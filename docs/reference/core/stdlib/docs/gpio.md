@@ -63,21 +63,21 @@ Set the value of pin to `value`. If the module is configured with one or more po
 pin is set by calling into the port expander driver.
 
 
-### get(pin)
+**`get(pin)` **
 Return the value of pin. If the module is configured with one or more port expanders, the value of
 pin is returned by calling into the port expander driver.
 
 
-### mode(pin, pinmode)
+**`mode(pin, pinmode)` **
 Set the mode of pin to `pinmode`. If the module is configured with one or more port expanders, the mode of
 pin is set by calling into the port expander driver.
 For available modes please check  here.
 
 
-### add_expander(id, pdriver, pinmap)
+**`add_expander(id, pdriver, pinmap)` **
 Add `pdriver` and `pinmap` as expander `id` to the list of available expanders.
 `pdriver` must be a port expander driver, `pinmap` must be a dictionary mapping pin names
 to the port expander internal representation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODczNjA3NzRdfQ==
+eyJoaXN0b3J5IjpbMzkwNDI5MzIzXX0=
 -->
