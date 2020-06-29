@@ -98,12 +98,8 @@ appropriate choice of `'<'` or `'>'`.
 !!! Note
 1. Padding is only automatically added between successive structure members.
 No padding is added at the beginning or the end of the encoded struct.
-
-
 2. No padding is added when using non-native size and alignment, e.g.
 with ‘<’, ‘>’, ‘=’, and ‘!’.
-
-
 3. To align the end of a structure to the alignment requirement of a
 particular type, end the format with the code for that type with a repeat
 count of zero.  See Examples.
