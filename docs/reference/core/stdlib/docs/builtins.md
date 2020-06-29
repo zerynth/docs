@@ -414,7 +414,7 @@ indexing and slicing behavior.
 Accordingly, constructor arguments are interpreted as for `shortarray()`.
 
 
-`enumerate(iterable, start=0)`
+**`enumerate(iterable, start=0)`**
 
 Return an enumerate object. ```iterable``` must be a sequence, an
 iterator, or some other object which supports iteration.
@@ -424,7 +424,7 @@ defaults to 0) and the values obtained from iterating over ```iterable```.
 
 It is normally used in `for` loops:
 
-```
+```py
 ints = [10,20,30]
 for idx, val in enumerate(ints):
     print(idx, val)
@@ -438,7 +438,7 @@ for idx, val in enumerate(ints):
 In this version of the VM, enumerate works only for primitive iterable types, not yet for instances with `__next__` and `__iter__` methods.
 
 
-`reversed(seq)`
+**`reversed(seq)`**
 
 Return a reverse iterator.  ```seq``` must be an object which has
 a `__reversed__()` method or supports the sequence protocol (the
@@ -447,7 +447,7 @@ arguments starting at `0`).
 
 In this version of the VM, reversed works only for primitive iterable types, not yet for instances with `__next__` and `__iter__` methods.
 
-`ord(c)`
+**`ord(c)`**
 
 Given a string representing one character, return an integer
 representing that character.  For example, `ord('a')` returns the integer `97`.
@@ -456,7 +456,7 @@ This is the inverse of `chr()`.
 When ```c``` is a literal string, the compiler macro __ORD(c) can be used to reduce code size.
 For example:
 
-```
+```py
 x = ord(":")
 ```
 
@@ -466,26 +466,26 @@ In the embedded world, this is time and resource consuming.
 The operation `ord(":")` can be executed during compilation because the result is known before the execution of
 the Zerynth program. To enable this feature use the following code:
 
-```
+```py
 x = __ORD(":")
 ```
 
 Now, no string is created and no function is called, because the compiler knows that you want to assign to `x`
 the result of `ord(":")` (which is 58). The compiler transforms our program to a faster and equivalent version:
 
-```
+```py
 x = 58
 ```
 
 
-`chr(i)`
+**`chr(i)`**
 
 Return the string representing a character whose byte representation is the integer
 ```i```.  For example, `chr(97)` returns the string `'a'`. This is the
 inverse of `ord()`. `ValueError` will be raised if ```i``` is outside the valid range.
 
 
-`isinstance(object, class)`
+**`isinstance(object, class)`**
 
 Return true if the ```object``` argument is an instance of the ```class```
 argument, or of a (direct, indirect) subclass thereof.  If ```object``` is not
@@ -495,7 +495,7 @@ In this version of the VM, isinstance is still not compliant with the Python one
 It is suggested to use isinstance to determine the hierarchy of instances and to use `type()` for primitive types.
 
 
-`print(\*args, sep=" ", end="\\n", stream=None)`
+**`print(\*args, sep=" ", end="\\n", stream=None)`**
 
 Print ```objects``` to the stream ```stream```, separated by ```sep``` and followed
 by ```end```.  ```sep```, ```end``` and ```stream```, if present, must be given as keyword
@@ -512,18 +512,18 @@ is not present or `None`, `__default_stream` will be used.
 Whether output is buffered is usually determined by ```stream```.
 
 
-`abs(x)`
+**`abs(x)`**
 
 Return the absolute value of a number.  The argument may be an
 integer or a floating point number.
 
 
-`all(iterable)`
+**`all(iterable)`**
 
 Return `True` if all elements of the ```iterable``` are true (or if the iterable
 is empty).  Equivalent to:
 
-```
+```py
 def all(iterable):
     for element in iterable:
         if not element:
@@ -532,12 +532,12 @@ def all(iterable):
 ```
 
 
-`any(iterable)`
+**`any(iterable)`**
 
 Return `True` if any element of the ```iterable``` is true.  If the iterable
 is empty, return `False`.  Equivalent to:
 
-```
+```py
 def any(iterable):
     for element in iterable:
         if element:
@@ -546,30 +546,30 @@ def any(iterable):
 ```
 
 
-`sum(iterable, )`
+**`sum(iterable, )`**
 
 Sums ```start``` and the items of an ```iterable``` from left to right and returns the
 total.  ```start``` defaults to `0`.
 
 
-`max(\*args)`
+**`max(\*args)`**
 
 Return the largest item in args.
 
 
-`min(\*args)`
+**`min(\*args)`**
 
 Return the smallest item in args.
 
 
-`len(s)`"
+**`len(s)`**
 
 Return the length (the number of items) of an object.  The argument may be a
 sequence (such as a string, bytes, tuple, list, or range) or a collection
 (such as a dictionary, set, or frozen set), or any instance defining the method `__len__`.
 
 
-`hex(x, prefix="0x")`
+**`hex(x, prefix="0x")`**
 
 Convert an integer number to a lowercase hexadecimal string
 prefixed with ```prefix``` (if not given “0x” is used), for example:
@@ -585,7 +585,7 @@ See also `int()` for converting a hexadecimal string to an
 integer using a base of 16.
 
 
-`str(x="")`
+**`str(x="")`**
 
 Return a string version of ```x```.  If ```x``` is not
 provided, returns the empty string.
@@ -593,9 +593,9 @@ Returns the “informal” or nicely printable string representation of ```objec
 the string itself. For primitive types like list, tuples, dicts a standard representation is returned. For all other types, the method __str__ is called.
 
 
- `dict()`
+**`dict()`**
 
-`dict(\*args)`
+**`dict(\*args)`**
 
 Return a new dictionary initialized from an optional *args. If no *args is given, an empty dictionary is created. If a single positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.
 Otherwise, if more than a positional argument is given, each pair of arguments is inserted in the dictionary with the first argument of the pair being the key and the second argument the value.
@@ -603,7 +603,7 @@ If a key occurs more than once, the last value for that key becomes the correspo
 If the number of positional arguments is odd, the value for the last key is None.
 
 
- `set()` `set(\*args)`
+ **`set()` `set(\*args)`**
 
 Return a new set initialized from an optional *args. If no *args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the set.
@@ -621,8 +621,8 @@ Return an object similar to a stream with read and write methods. The object cla
 
 If ```file``` starts with “resource://”, open returns a ResourceStream of a flash saved resource.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2ODc3ODM4LDIwMzQ2MDQ0MzYsODE1MT
-IwMzUzLC0xMzk3NjYwMTQzLC0xNDg4OTgxMDIwLDE5NDY5MDM4
-ODgsMTI2NDU3NDEwMiwxNTg5Nzc2NzIyLC0yMDU1NzE0NzkxLC
-0yMTU5MTI4OTAsLTE3ODg4MjI4NDJdfQ==
+eyJoaXN0b3J5IjpbLTEzNTM2Njc0MTIsMjAzNDYwNDQzNiw4MT
+UxMjAzNTMsLTEzOTc2NjAxNDMsLTE0ODg5ODEwMjAsMTk0Njkw
+Mzg4OCwxMjY0NTc0MTAyLDE1ODk3NzY3MjIsLTIwNTU3MTQ3OT
+EsLTIxNTkxMjg5MCwtMTc4ODgyMjg0Ml19
 -->
