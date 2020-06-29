@@ -96,11 +96,11 @@ There is no way to indicate non-native byte order (force byte-swapping); use the
 appropriate choice of `'<'` or `'>'`.
 
 **Notes:**
-1. Padding is only automatically added between successive structure members. No padding is added at the beginning or the end of the encoded struct
-.
+
+1. Padding is only automatically added between successive structure members. No padding is added at the beginning or the end of the encoded struct.
+
 2. No padding is added when using non-native size and alignment, e.g.
 with ‘<’, ‘>’, ‘=’, and ‘!’.
-
 
 3. To align the end of a structure to the alignment requirement of a
 particular type, end the format with the code for that type with a repeat
@@ -112,6 +112,7 @@ Format characters have the following meaning; the conversion between C and
 Python values should be obvious given their types.  The ‘Standard size’ column
 refers to the size of the packed value in bytes when using standard size; that
 is, when the format string starts with one of `'<'`, `'>'`, `'!'` or
+
 `'='`.  When using native size, the size of the packed value is platform-dependent.
 
 
@@ -274,7 +275,4 @@ b''
 
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2MTU1NjE2LDE1MjA3NDQ4MDIsOTcwMz
-k2ODIyLC0xMjM3NzczNjkwLC0xMjI2NjEwNl19
--->
+
