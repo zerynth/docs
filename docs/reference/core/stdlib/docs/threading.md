@@ -457,17 +457,15 @@ The current implementation wakes up exactly ```n``` threads, if at least ```n```
 threads are waiting.
 
 !!! note
-	an awakened thread does not actually return from its `wait()`
-call until it can reacquire the lock.  Since `notify()` does not
-release the lock, its caller should.
+	an awakened thread does not actually return from its `wait()` call until it can reacquire the lock.  Since `notify()` does not release the lock, its caller should.
 
 
-`notify_all()`
+**`notify_all()`**
 
 Wake up all threads waiting on this condition.  This method acts like
 `notify()`, but wakes up all waiting threads instead of one. If the
 calling thread has not acquired the lock when this method is called, a
 `RuntimeError` is raised.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODY0NDIwMiwxNjczMjEzMzg0XX0=
+eyJoaXN0b3J5IjpbMTk3ODEyMjg3OCwxNjczMjEzMzg0XX0=
 -->
