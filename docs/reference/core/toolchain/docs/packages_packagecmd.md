@@ -42,7 +42,7 @@ The ZTC mantains a local databases of installed packages and refers to the onlin
 
 The available versions of the full Zerynth suite can be retrieved with the command:
 
-```
+```py
 ztc package versions
 ```
 
@@ -53,7 +53,7 @@ Details about patches for each version are also contained in the database.
 
 The list of official packages for a specific version of Zerynth can be retrieved with the command:
 
-```
+```py
 ztc package available version
 ```
 
@@ -63,7 +63,7 @@ The command returns info on every official Zerynth package.
 
 As soon as a new major release of Zerynth is available, it can be installed by triggering it with the following command:
 
-```
+```py
 ztc package trigger_update
 ```
 
@@ -73,7 +73,7 @@ The next time the Zerynth installer is started, it will try to install the new v
 
 Community packages can be installed and updated with the following command:
 
-```
+```py
 ztc package install fullname version
 ```
 
@@ -86,7 +86,7 @@ allowing the ZTC to interact with the user’s Github repositories where the pac
 
 Retrieve an authorization token with the following command:
 
-```
+```py
 ztc package authorize
 ```
 
@@ -119,7 +119,7 @@ In order to convert a project into a publishable library, a json file with the l
 
 An example of such file:
 
-```
+```py
 {
     "title": "DS1307 Real Time Clock",
     "description": "Foo's DS1307 RTC Driver ... ",
@@ -137,7 +137,7 @@ The library can be published in two ways: manual and automatic. In the manual pr
 
 The command:
 
-```
+```py
 ztc package publish reponame json_file
 ```
 
@@ -145,7 +145,7 @@ will publish the library with the manual procedure. It just informs the Zerynth 
 
 The command:
 
-```
+```py
 ztc package publish reponame json_file --automatic project_dir
 ```
 
@@ -174,7 +174,7 @@ will publish the library with the automatic procedure. The following operations 
 
 The resulting library will be importable as:
 
-```
+```py
 from community.github_username.repo_name import ...
 ```
 
@@ -207,7 +207,7 @@ Libraries can bedistributed with a set of examples stored under an `examples` fo
 
 Moreover, for the examples to be displayed in the Zerynth Studio example panel, a file `order.txt` must be placed in the `examples` folder. It contains information about the example positioning in the example tree:
 
-```
+```py
 ; order.txt of the lib.adafruit.neopixel package
 ; comments starts with ";"
 ; inner tree nodes labels start with a number of "#" corresponding to their level
@@ -235,6 +235,9 @@ Moreover, for the examples to be displayed in the Zerynth Studio example panel, 
 
 The list of currently installed official and community packages (of type lib) can be retrieved with:
 
-```
+```py
 ztc package installed
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjAyMzY3NTkxMl19
+-->
