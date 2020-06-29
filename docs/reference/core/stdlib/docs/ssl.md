@@ -625,7 +625,7 @@ sock.sendall("Hello World!")
 
 <!-- _stdlib.ssl.create_ssl_context -->
 
-`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`**
+**`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`**
 
 This function generates an SSL context with the following data:
 
@@ -637,7 +637,7 @@ This function generates an SSL context with the following data:
 
 * ```pkey``` is the private key matching ```clicert```. It can be an empty string to use a hardware stored private key. To enable the use of hardware keys a hardware cryptographic interface must be started. For example, with an `ATECC508A` (ATECCx08A interface):
 
-```
+```py
 from microchip.ateccx08a import ateccx08a
 # ...
 ateccx08a.hwcrypto_init(I2C0, 0) # select private key stored in slot 0
@@ -674,5 +674,5 @@ Returns a tuple to be passed as parameter during secure socket creation.
 !!! note
 	```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjk4NTk4OCwtMTgzNjQxMjE2MV19
+eyJoaXN0b3J5IjpbMTY2NTExMzE2NSwtMTgzNjQxMjE2MV19
 -->
