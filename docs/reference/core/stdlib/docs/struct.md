@@ -69,6 +69,7 @@ rules used by the C compiler).
 Alternatively, the first character of the format string can be used to indicate
 the byte order, size and alignment of the packed data, according to the
 following table:
+
 | Character | Byte order             | Size     | Alignment |
 |-----------|------------------------|----------|-----------|
 | @         | native                 | native   | native    |
@@ -117,6 +118,7 @@ refers to the size of the packed value in bytes when using standard size; that
 is, when the format string starts with one of `'<'`, `'>'`, `'!'` or
 `'='`.  When using native size, the size of the packed value is
 platform-dependent.
+
 | Format | C Type             | Python type       | Standard size | Notes    |
 |--------|--------------------|-------------------|---------------|----------|
 | x      | pad byte           | no value          |               |          |
@@ -277,5 +279,5 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY2MTA2XX0=
+eyJoaXN0b3J5IjpbLTEyMzc3NzM2OTAsLTEyMjY2MTA2XX0=
 -->
