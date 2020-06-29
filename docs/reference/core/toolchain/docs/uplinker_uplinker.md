@@ -8,7 +8,7 @@ If not, they go on executing a previously loaded bytecode or just wait forever.
 
 The command:
 
-```
+```py
 ztc uplink alias bytecode
 ```
 
@@ -41,7 +41,7 @@ It is possible to perform an uplink against a configured device by specifying th
 
 The command:
 
-```
+```py
 ztc uplink_raw target bytecode --spec port:the_port
 ```
 
@@ -53,7 +53,7 @@ It is possible to perform an uplink against a configured device by using a probe
 
 The command:
 
-```
+```py
 ztc uplink_by_probe target probe linked_bytecode
 ```
 
@@ -64,7 +64,7 @@ It is possible to change the address where the bytecode will be flashed by speci
 
 The command:
 
-```
+```py
 ztc link vmuid bytecode
 ```
 
@@ -107,7 +107,7 @@ Generating firmware for FOTA updates can be tricky. The following information is
 
 For example, assuming a project has been compiled to the bytecode file `project.vbo` and `vmslot=0` and `bcslot=0`, the following commands can be given:
 
-```
+```py
 # generate bytecode capable of running on slot 1 with VM in slot 0
 # the resulting file can be used for a FOTA update of the bytecode
 ztc link vmuid project.vbo --bc 1 --file project.vbe
@@ -129,5 +129,5 @@ ztc link vmuid_new project.vbo --bc 1 --vm 1 --otavm --file project.vbe
 !!! note
 	To generate a Zerynth ADM compatible FOTA bytecode update, add option `-J` before the link command. The resulting file will be JSON and not binary.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTY4MTQ1Nl19
+eyJoaXN0b3J5IjpbMTExNTI5MzIxMywxMTMxNjgxNDU2XX0=
 -->

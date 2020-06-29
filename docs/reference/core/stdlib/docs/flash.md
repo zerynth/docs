@@ -5,7 +5,7 @@ This module contains class definitions to read and write the MCU internal flash
 ## The FlashFileStream class
 
 
-`FlashFileStream(start_address, size)`
+**`FlashFileStream(start_address, size)`**
 
 This class creates an in memory buffer of size ```size``` bytes that is filled with the content
 of the internal flash starting from address ```start_address```
@@ -15,31 +15,31 @@ to the internal flash a call to flush() is needed.
 
 The memory buffer can also be accessed via bracket notation. The following is valid syntax:
 
-```
+```py
 f = flash.FlashFileStream(0x0800000,512)
 f[0] = 1
 x = f[10:20]
 ```
 
 
-`write(buf)`
+**`write(buf)`**
 
 Writes the content of ```buf``` at the current file position, checking for overflow.
 
 
-`read_int()`
+**`read_int()`**
 
 Read 4 bytes at the current position and return the corresponding 32 bit integer.
 
 
-`flush()`
+**`flush()`**
 
 Write the memory buffer to flash. It can be VERY slow because the sector(s) of flash interested by the write operation must be erased first.
 
 
-`close()`
+**`close()`**
 
 Free memory buffer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTM5MzI5Nl19
+eyJoaXN0b3J5IjpbMTAyMzM3Mjg3MSwtODk5MzkzMjk2XX0=
 -->

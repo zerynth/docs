@@ -19,7 +19,7 @@ The ```login``` command enables the user to retrieve an authentication token. Th
 
 The ```login``` can be issued in interactive and non interactive mode. Interactive mode is started by typing:
 
-```
+```py
 ztc login
 ```
 
@@ -36,7 +36,7 @@ Once a correct login/registration is performed, the browser will display an auth
 
 Non interactive mode is started by typing:
 
-```
+```py
 ztc login --token authentication_token
 ```
 
@@ -49,7 +49,7 @@ The `authentication_token` can be obtained by manually opening the login/registr
 
 If a manual registration has been performed, it is possible to change the password by issuing a password reset:
 
-```
+```py
 ztc reset email
 ```
 
@@ -62,7 +62,7 @@ where `email` is the email address used in the manual registration flow. An emai
 
 Delete current session with the following command
 
-```
+```py
 ztc logout
 ```
 
@@ -73,7 +73,7 @@ ztc logout
 
 By issuing the command:
 
-```
+```py
 ztc profile
 ```
 
@@ -124,7 +124,7 @@ the user profile is retrieved and displayed. The user profile consists of the fo
 
 The profile  command can be used to change mutable generic info with the following syntax:
 
-```
+```py
 ztc profile --set options
 ```
 
@@ -151,5 +151,6 @@ where `options` is a list of one or more of the following options:
 
 * `--website website` update the Website field
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjAwMDc1MzVdfQ==
+eyJoaXN0b3J5IjpbLTE3NTk4NjQyNzEsLTEyNjAwMDc1MzVdfQ
+==
 -->

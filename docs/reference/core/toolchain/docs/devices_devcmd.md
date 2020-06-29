@@ -110,7 +110,7 @@ Device discovery is performed by interrogating the operative system database for
 
 Raw peripheral data can be obtained by running:
 
-```
+```py
 ztc device discover
 ```
 
@@ -162,7 +162,7 @@ Finally, the ```discover``` command can be run in continuous mode by specifying 
 Before usage a device must be configured. The configuration consists in linking a physical device identified by its `uid` to a logical device identified by its `alias` and `target` attributes. Additional attributes can be optionally set.
 The configuration command is:
 
-```
+```py
 ztc device alias put uid alias target
 ```
 
@@ -186,7 +186,7 @@ Additional options can be given to set other device attributes:
 
 Aliases can be also removed from the known device list with the command:
 
-```
+```py
 ztc device alias del alias
 ```
 
@@ -197,7 +197,7 @@ The process is almost completely automated, it may simply require the user to pu
 
 Device registration is performed by issuing the command:
 
-```
+```py
 ztc device register alias
 ```
 
@@ -216,7 +216,7 @@ If the microcontroller unique identifier is already known (i.e. obtained with a 
 
 Device registration is performed by issuing the command:
 
-```
+```py
 ztc device register_by_uid chipid target
 ```
 
@@ -241,7 +241,7 @@ The above parameters must be specified using the `--spec` option followed by the
 
 Device registration is performed by issuing the command:
 
-```
+```py
 ztc device register_raw target --spec port:the_port --spec disk:the_disk --spec probe:the_probe
 ```
 
@@ -252,7 +252,7 @@ It is necessary to provide at least one device parameter and the registration wi
 Device virtualization consists in flashing a Zerynth virtual machine on a registered device. One or more virtual machines for a device can be obtained with specific ZTC commands.
 Virtualization is started by:
 
-```
+```py
 ztc device virtualize alias vmuid
 ```
 
@@ -268,7 +268,7 @@ Sometimes it is useful to manually provide the device parameters for virtualizat
 
 Virtualization is started by:
 
-```
+```py
 ztc device virtualize vmuid --spec port:the_port --spec disk:the_disk --spec  probe:the_probe
 ```
 
@@ -282,7 +282,7 @@ Each virtual machine provides a default serial port where the output of the prog
 
 The command:
 
-```
+```py
 ztc device open alias
 ```
 
@@ -296,7 +296,7 @@ it is sometime useful to directly specify the serial port on the command line.
 
 The command:
 
-```
+```py
 ztc device open port
 ```
 
@@ -306,7 +306,7 @@ tries to open `port` with the correct parameters for the device. Output from the
 
 Different versions of the ZTC may have a different set of supported devices. To find the device supported by the current installation type:
 
-```
+```py
 ztc device supported
 ```
 
@@ -318,7 +318,7 @@ Erase completely the flash memory of the device (all data stored will be deleted
 
 This operation is performed by issuing the command:
 
-```
+```py
 ztc device erase_flash alias
 ```
 
@@ -329,7 +329,7 @@ where `alias` is the device alias previously set (or just the initial part of it
 Some devices provide custom actions to be executed (e.g., burn proprietary bootloaders, put the device in a specific mode).
 These actions are performed by issuing the command:
 
-```
+```py
 ztc device custom_action alias action
 ```
 
@@ -340,7 +340,7 @@ where `alias` is the device alias previously set (or just the initial part of it
 Manual device configurations can be saved in a local database in order to avoid retyping device parameters every time.
 The command:
 
-```
+```py
 ztc device db list
 ```
 
@@ -376,7 +376,7 @@ If the device `name` is not present in the database, a new device is created; ot
 
 The command:
 
-```
+```py
 ztc device db put target device_name --spec port:the_port --spec disk:the_disk --spec probe:the_probe --spec chipid:the_chipid --spec remote_uid:the_remote_uid
 ```
 
@@ -386,11 +386,11 @@ inserts or modifies the configured device `device_name` in the database. The giv
 
 The command:
 
-```
+```py
 ztc device db remove device_name
 ```
 
 removes the device `device_name` from the configured devices.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI3MjI5NzMwXX0=
+eyJoaXN0b3J5IjpbLTQ0OTE0NTI0NiwzMjcyMjk3MzBdfQ==
 -->

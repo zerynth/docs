@@ -51,7 +51,7 @@ Bytes are stored in ```buffer``` up to ```buffer``` size or less.
 Returns the number of bytes read or 0 when the underlying connection is lost.
 
 
-`write(buffer)`
+**`write(buffer)`**
 
 Writes the content of buffer to the stream.
 
@@ -59,7 +59,7 @@ Writes the content of buffer to the stream.
 
 Returns the number of bytes actually written to the stream (can be less than the elements in ```buffer```)
 
-`read(size=1)`
+**`read(size=1)`**
 
 Reads at most ```size``` bytes from the stream and returns a bytearray with the actual bytes read.
 
@@ -68,7 +68,7 @@ Reads at most ```size``` bytes from the stream and returns a bytearray with the 
 If ```read``` returns an empty bytearray the underlying stream can be considered disconnected.
 
 
-`readline(sep="\\n", buffer=None, size=0, ofs=0)`
+**`readline(sep="\\n", buffer=None, size=0, ofs=0)`**
 
 Reads bytes from the stream until ```sep``` is encountered (an end-of-line byte (“\\n”) is default).
 
@@ -81,7 +81,7 @@ If ```readline``` returns an empty bytearray the underlying stream can be consid
 ## The serial class
 
 
-`serial(drivername=SERIAL0, baud=115200, stopbits=STOPBIT_1, parity=PARITY_NONE, bitsize=BITSIZE_8, set_default=True, rxsize=0, txsize=0)`
+**`serial(drivername=SERIAL0, baud=115200, stopbits=STOPBIT_1, parity=PARITY_NONE, bitsize=BITSIZE_8, set_default=True, rxsize=0, txsize=0)`**
 
 This class implements a stream that can be used to connect to a serial port.
 It inhertis all of its methods from `stream()`.
@@ -99,7 +99,7 @@ Not all of the additional parameters are always supported by the underlying devi
 
 This is the code needed to print something on the default serial port:
 
-```
+```py
 # import the streams module
 import streams
 
@@ -112,25 +112,25 @@ print("Hello World!")
 ```
 
 
-`available()`
+**`available()`**
 
 Returns the number of characters that can be read without blocking.
 
 
-`close()`
+**`close()`**
 
 Close the stream linked to the underlying serial port.
 
 ## The SocketStream class
 
 
-`SocketStream(sock)`
+**`SocketStream(sock)`**
 
 This class implements a stream that has a socket as a source of data.
 It inhertis all of its methods from `stream()`.
 
 
-`write(buffer)`
+**`write(buffer)`**
 
 Writes the content of buffer to the stream.
 
@@ -139,14 +139,14 @@ Writes the content of buffer to the stream.
 Returns the number of bytes actually written to the stream (can be less than the elements in ```buffer```)
 
 
-`close()`
+**`close()`**
 
 Close the underlying socket.
 
 ## The FileStream class
 
 
-`FileStream(name, mode="rb")`
+**`FileStream(name, mode="rb")`**
 
 This class implements a stream that has a file as a source of data.
 It inherits all of its methods from `stream()`.
@@ -154,7 +154,7 @@ It inherits all of its methods from `stream()`.
 It is just a stub at the moment. It is used by `ResourceStream()` only.
 
 
-`seek(offset, whence=SEEK_SET)`
+**`seek(offset, whence=SEEK_SET)`**
 
 Move the current position to ```offset``` bytes with respect to ```whence```.
 
@@ -172,10 +172,10 @@ Move the current position to ```offset``` bytes with respect to ```whence```.
 ## The ResourceStream class
 
 
-`ResourceStream(name)`
+**`ResourceStream(name)`**
 
 This class implements a stream that has a flash saved resource as a source of data.
 It inherits all of its methods from `FileStream()`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzI0Mzg1OF19
+eyJoaXN0b3J5IjpbLTE3Mjc1MDAzLC0yMDcyNDM4NThdfQ==
 -->

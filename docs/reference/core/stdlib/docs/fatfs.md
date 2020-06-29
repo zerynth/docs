@@ -5,7 +5,7 @@ This module implements Zerynth binding to [FatFS C library](http://elm-chan.org/
 ## Driver
 
 
-`mount(path, args)`
+**`mount(path, args)`**
 
 Register/unregister a file system object to the fatFs module.
 There is no activity of the physical drive in this function: physical mount process will be attempted during first file access.
@@ -15,7 +15,7 @@ Required arguments are:
 
 * path string, following FatFS path convention:
 
-```
+```py
 path = "0:/" # to mount your drive as volume 0
 
 generic_file_path = "0:/my/file/path"
@@ -24,7 +24,7 @@ generic_file_path = "0:/my/file/path"
 
 * args dictionary containing disk initialization parameters:
 
-```
+```py
 # correct format for SD Card read through SPI protocol
 args = {"drv": SPI0, "cs": D25, "clock": 1000000}
 
@@ -119,5 +119,5 @@ and a list of low-level functions implemented in the filesystem module.
 
 >     * to_b_mode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5OTMzOTUzNl19
+eyJoaXN0b3J5IjpbLTE0MTAxNzY4MCwxODk5MzM5NTM2XX0=
 -->

@@ -28,7 +28,7 @@ Address conventions:
 ## SpiSD class
 
 
-`SpiSD(drvname, cs, clock=1000000)`
+**`SpiSD(drvname, cs, clock=1000000)`**
 
 Initialize an SD card specifying its:
 
@@ -44,28 +44,28 @@ Initialize an SD card specifying its:
 The instance attribute ```hc``` is set to 1 if the card is recognized as an SDHC, to 0 otherwise.
 
 
-`single_block_read(addr)`
+**`single_block_read(addr)`**
 
 Read a single block at address ```addr```, following SDSC or SDHC address convention depending on used card.
 
 
-`multiple_blocks_read(addr, n)`
+**`multiple_blocks_read(addr, n)`**
 
 Read n blocks starting from address ```addr```, following SDSC or SDHC address convention depending on used card.
 
 
-`read_data(addr, n)`
+**`read_data(addr, n)`**
 
 Read n blocks starting from address ```addr```, SDHC address convention is used.
 
 
-`single_block_write(addr, data)`
+**`single_block_write(addr, data)`**
 
 Write a single block at address ```addr```, following SDSC or SDHC address convention depending on used card.
 ```data``` must be a 512-byte long bytearray.
 
 
-`multiple_blocks_write(addr, data)`
+**`multiple_blocks_write(addr, data)`**
 
 Write ```data``` starting from address ```addr```, following SDSC or SDHC address convention depending on used card.
 
@@ -77,7 +77,7 @@ Two formats allowed for ```data```:
 
 * list of 512-byte long bytearrays, where each bytearray inside data list contains data for a single block:
 
-```
+```py
 block_1 = bytearray(0x200)
 block_2 = bytearray(0x200)
 ...
@@ -85,16 +85,16 @@ block_2 = bytearray(0x200)
 ```
 
 
-`write_data(addr, data)`
+**`write_data(addr, data)`**
 
 Write ```data``` starting from address ```addr```, SDHC address convention is used.
 
 ```data``` format is defined as in `multiple_blocks_write()` .
 
 
-`read_cid()`
+**`read_cid()`**
 
 Read 16-byte long cid register value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjYxNjc4NzFdfQ==
+eyJoaXN0b3J5IjpbMTk0MDk2NzU2MiwtMjAyNjE2Nzg3MV19
 -->

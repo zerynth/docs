@@ -15,22 +15,22 @@ The following constants are defined:
 * `e`  2.71828182
 
 
-`tan(x)`
+**`tan(x)`**
 
 Return the tangent of ```x``` radians.
 
 
-`cos(x)`
+**`cos(x)`**
 
 Return the cosine of ```x``` radians.
 
 
-`sin(x)`
+**`sin(x)`**
 
 Return the sine of ```x``` radians.
 
 
-`atan2(y, x)`
+**`atan2(y, x)`**
 
 Return `atan(y / x)`, in radians. The result is between `-pi` and `pi`.
 The vector in the plane from the origin to point `(x, y)` makes this angle
@@ -40,37 +40,37 @@ For example, `atan(1)` and `atan2(1, 1)` are both `pi/4`, but `atan2(-1,
 -1)` is `-3\*pi/4`.
 
 
-`atan(x)`
+**`atan(x)`**
 
 Return the arc tangent of ```x```, in radians.
 
 
-`acos(x)`
+**`acos(x)`**
 
 Return the arc cosine of ```x```, in radians.
 
 
-`asin(x)`
+**`asin(x)`**
 
 Return the arc sine of ```x```, in radians.
 
 
-`degress(rad)`
+**`degress(rad)`**
 
 Converts ```rad``` from radians to degrees.
 
 
-`radians(degree)`
+**`radians(degree)`**
 
 Converts ```degree``` from degrees to radians.
 
 
-`exp(x)`
+**`exp(x)`**
 
 Return `e\*\*x`.
 
 
-`log(x, )`
+**`log(x, )`**
 
 With one argument or with ```base``` non positive, return the natural logarithm of ```x``` (to base ```e```).
 
@@ -78,7 +78,7 @@ With two arguments, return the logarithm of ```x``` to the given ```base```,
 calculated as `log(x)/log(base)`.
 
 
-`pow(x, y)`
+**`pow(x, y)`**
 
 Return `x` raised to the power `y`.
 
@@ -87,30 +87,30 @@ its arguments to type `float()`.  Use `\*\*` or the built-in
 `pow()` function for computing exact integer powers.
 
 
-`sqrt(x)`
+**`sqrt(x)`**
 
 Return the square root of ```x```.
 
 
-`isnan(x)`
+**`isnan(x)`**
 
 Return `True` if ```x``` is a NaN (not a number), and `False` otherwise.
 
 
-`isinf(x)`
+**`isinf(x)`**
 
 Return `True` if ```x``` is a positive or negative infinity, and
 `False` otherwise.
 
 
-`floor(x)`
+**`floor(x)`**
 
 Return the floor of ```x```, the largest integer less than or equal to ```x```.
 
 
-`ceil(x)`
+**`ceil(x)`**
 
 Return the ceiling of ```x```, the smallest integer greater than or equal to ```x```.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODcwMjE5XX0=
+eyJoaXN0b3J5IjpbMjEzODgzNjM3LC00OTg3MDIxOV19
 -->

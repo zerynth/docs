@@ -9,7 +9,7 @@ Frames are received by all devices, including by the transmitting device.
 
 ## The Can class
 
-`Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`
+**`Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`**
 
 This class implements CAN controller functionalities.
 
@@ -24,7 +24,7 @@ When the sample point is used, the bit timing arguments must be zero and they ar
 The synchronization jump width ```sjw``` can be specified in any case.
 
 
-* ```Arguments```
+* **```Arguments```**
 
     
     * ```drvname``` – peripheral driver identifier (one of CAN0, CAN1, etc…)
@@ -67,16 +67,16 @@ The synchronization jump width ```sjw``` can be specified in any case.
 
 
 
-`add_filter(id, mask)`
+**`add_filter(id, mask)`**
 
 Add a message acceptance filter for this CAN controller. A received message is accepted if:
 
-`(received_id ^ id) & mask == 0`
+**`(received_id ^ id) & mask == 0`**
 
 The returned value is a number that uniquely identifies the filter and can be used to remove the filter at a later time.
 
 
-* ```Arguments```
+* **```Arguments```**
 
     
     * ```id``` – contains the message identifier (11-bit for standard frames, 29-bit for extended frames),             plus the ID Extension (IDE) flag `FRAME_EXT_FLAG` and the Remote Transmission Request (RTR) flag `FRAME_RTR_FLAG`.
@@ -108,7 +108,7 @@ Remove a previously added message acceptance filter.
 Send a message to the CAN bus output mailboxes.
 
 
-* ```Arguments```
+* **```Arguments```**
 
     
     * ```id``` – contains the message identifier (11-bit for standard frames, 29-bit for extended frames),             plus the ID Extension (IDE) flag `FRAME_EXT_FLAG` and the Remote Transmission Request (RTR) flag `FRAME_RTR_FLAG`.
@@ -124,14 +124,14 @@ Send a message to the CAN bus output mailboxes.
 
 
 
-`receive(data=None, timeout=-1)`
+**`receive(data=None, timeout=-1)`**
 
 Receive a message from the CAN bus input mailboxes.
 
 If a ```data``` bytearray is provided it is used to store received data, otherwise a new buffer is created.
 
 
-* ```Arguments```
+* **```Arguments```**
 
     
     * ```data``` – a bytes or bytearray object to receive message data or ```None```
@@ -141,7 +141,7 @@ If a ```data``` bytearray is provided it is used to store received data, otherwi
 
 
 
-* ```Returns```
+* **```Returns```**
 
     a tuple of the form (id,dlc,data), where:
 
@@ -157,12 +157,12 @@ If a ```data``` bytearray is provided it is used to store received data, otherwi
 
 
 
-`get_errors()`
+**`get_errors()`**
 
 Get the accumulated error information.
 
 
-* ```Returns```
+* **```Returns```**
 
     a tuple of the form (flags,rx_count,tx_count), where:
 
@@ -214,32 +214,33 @@ Get the accumulated error information.
 
 
 
-`abort_receive()`
+**`abort_receive()`**
 
 Abort any pending `receive()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be received, raising ```ConnectionAbortedError```, until resumed.
 
 
-`abort_transmit()`
+**`abort_transmit()`**
 
 Abort any pending `transmit()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be transmitted, raising ```ConnectionAbortedError```, until resumed.
 
 
-`resume_receive()`
+**`resume_receive()`**
 
 Resume receiving messages from the bus.
 
 
-`resume_transmit()`
+**`resume_transmit()`**
 
 Resume transmitting messages to the bus.
 
 
-`done()`
+**`done()`**
 
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTg3MDQzNCwyODczOTM5MjZdfQ==
+eyJoaXN0b3J5IjpbMjgxODM2NTE0LDEzMzU4NzA0MzQsMjg3Mz
+kzOTI2XX0=
 -->
