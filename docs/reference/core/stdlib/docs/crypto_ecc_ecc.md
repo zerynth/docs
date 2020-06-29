@@ -40,7 +40,7 @@ The module defines the following constants defining curves:
 * `SECP256K1`
 
 
-`make_keys(curve)`
+**`make_keys(curve)`**
 
 Return a tuple of two elements. The first element is a byte object
 containing the uncompressed representation of the generated public key. The
@@ -52,13 +52,13 @@ VM. For real world usage and enhanced security the random number generator
 must be of cryptographic quality (generally implemented in hardware).
 
 
-`check_public_key(curve, pbkey)`
+**`check_public_key(curve, pbkey)`**
 
 Return `True` if ```pbkey``` (in uncompressed format) is a valid public
 key for ```curve```.
 
 
-`derive_public_key(curve, pvkey)`
+**`derive_public_key(curve, pvkey)`**
 
 Return a byte object containing the uncompressed representation of the
 public key matching ```pvkey``` for curve ```curve```.
@@ -66,23 +66,23 @@ public key matching ```pvkey``` for curve ```curve```.
 Raise `ValueError` if derivation is not possible.
 
 
-`compress_key(curve, key)`
+**`compress_key(curve, key)`**
 
 Return a compressed representation of ```key```.
 
 
-`decompress_key(curve, key)`
+**`decompress_key(curve, key)`**
 
 Return a uncompressed representation of ```key```.
 
 
-`verify(curve, message, signature, pbkey)`
+**`verify(curve, message, signature, pbkey)`**
 
 Return `True` if ```signature``` is a valid signature for message
 ```message``` given ```curve``` and a public key ```pbkey```.
 
 
-`sign(curve, message, pvkey, deterministic = False, recoverable = False)`
+**`sign(curve, message, pvkey, deterministic = False, recoverable = False)`**
 
 Return the signature of ```message``` with ```pvkey``` for curve ```curve```. Usually
 the message to sign is not the entire message but a hash of it. The
@@ -91,5 +91,5 @@ according to [RFC6979](https://tools.ietf.org/html/rfc6979) . If given, the ```d
 instance of a hash class from module `crypto.hash`. Deterministic signatures are not dependent on a good
 random number generator for their security and can therefore be used in hardware without such capabilities. If ```recoverable``` is given and True, the returned object is a tuple such that the first element is the recovery id and the second element is the signature. The recovery id is a parameter that can be used to derive the public key from a just a valid signature. For more info refer to [this paper](https://www.secg.org/sec1-v2.pdf).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4Mjc2MzA5MV19
+eyJoaXN0b3J5IjpbLTExNDgxMjkyNjEsMTE4Mjc2MzA5MV19
 -->
