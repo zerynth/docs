@@ -231,7 +231,7 @@ big-endian machine.
 
 A basic example of packing/unpacking three integers:
 
-```
+```python
 >>> from struct import *
 >>> pack('hhl', 1, 2, 3)
 b''
@@ -244,7 +244,7 @@ b''
 Unpacked fields can be named by assigning them to variables or by wrapping
 the result in a named tuple:
 
-```
+```python
 >>> record = b'raymond   2'
 >>> name, serialnum, school, gradelevel = unpack('<10sHHb', record)
 
@@ -257,7 +257,7 @@ Student(name=b'raymond   ', serialnum=4658, school=264, gradelevel=8)
 The ordering of format characters may have an impact on size since the padding
 needed to satisfy alignment requirements is different:
 
-```
+```python
 >>> pack('ci', b'*', 0x12131415)
 b'*'
 >>> pack('ic', 0x12131415, b'*')
@@ -271,7 +271,7 @@ b'*'
 The following format `'llh0l'` specifies two pad bytes at the end, assuming
 longs are aligned on 4-byte boundaries:
 
-```
+```python
 >>> pack('llh0l', 1, 2, 3)
 b''
 ```
@@ -279,5 +279,6 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzc3NzM2OTAsLTEyMjY2MTA2XX0=
+eyJoaXN0b3J5IjpbOTcwMzk2ODIyLC0xMjM3NzczNjkwLC0xMj
+I2NjEwNl19
 -->
