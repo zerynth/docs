@@ -96,15 +96,11 @@ There is no way to indicate non-native byte order (force byte-swapping); use the
 appropriate choice of `'<'` or `'>'`.
 
 !!! Note
-1. Padding is only automatically added between successive structure members.
-No padding is added at the beginning or the end of the encoded struct.
-
-
-2. No padding is added when using non-native size and alignment, e.g.
+	1. Padding is only automatically added between successive structure members.
+No padding is added at the beginning or the end of the encoded struct
+	2. No padding is added when using non-native size and alignment, e.g.
 with ‘<’, ‘>’, ‘=’, and ‘!’.
-
-
-3. To align the end of a structure to the alignment requirement of a
+	3. To align the end of a structure to the alignment requirement of a
 particular type, end the format with the code for that type with a repeat
 count of zero.  See Examples.
 
@@ -277,6 +273,6 @@ b''
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDc0NDgwMiw5NzAzOTY4MjIsLTEyMz
-c3NzM2OTAsLTEyMjY2MTA2XX0=
+eyJoaXN0b3J5IjpbOTkxNTQ0NDIyLDE1MjA3NDQ4MDIsOTcwMz
+k2ODIyLC0xMjM3NzczNjkwLC0xMjI2NjEwNl19
 -->
