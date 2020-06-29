@@ -6,7 +6,7 @@ The Zerynth Toolchain allows to easily provision cryto elements by means of the 
 
 The command:
 
-```
+```py
 ztc provisioning uplink-config-firmware device_alias
 ```
 
@@ -34,7 +34,7 @@ Available command options are:
 
 The command:
 
-```
+```py
 ztc provisioning crypto-scan device_alias
 ```
 
@@ -50,7 +50,7 @@ Available command options are:
 
 The command:
 
-```
+```py
 ztc provisioning read-config device_alias
 ```
 
@@ -65,7 +65,7 @@ Available command options are:
 
 The command:
 
-```
+```py
 ztc provisioning get-public device_alias private_slot
 ```
 
@@ -83,7 +83,7 @@ Available command options are:
 
 The command:
 
-```
+```py
 ztc provisioning write-config device_alias configuration_file
 ```
 
@@ -92,7 +92,7 @@ Configuration can be a YAML or a binary file.
 
 An example YAML configuration file can be copied to `configuration_file` path if `get` is passed as `device_alias`:
 
-```
+```py
 ztc provisioning write-config get 'my_configuration.yaml'
 ```
 
@@ -107,7 +107,7 @@ Available command options are:
 
 The command:
 
-```
+```py
 ztc provisioning get-csr device_alias private_slot subject
 ```
 
@@ -123,7 +123,7 @@ Available command options are:
 
 The command:
 
-```
+```py
 ztc provisioning locked device_alias
 ```
 
@@ -133,7 +133,7 @@ Outputs the lock state of the crypto element plugged to device with alias `alias
 
 The command:
 
-```
+```py
 ztc provisioning serial-number device_alias
 ```
 
@@ -143,7 +143,7 @@ Outputs the serial number of the crypto element plugged to device with alias `al
 
 The command:
 
-```
+```py
 ztc provisioning store-public device_alias slot public_key
 ```
 
@@ -154,12 +154,12 @@ Public key is retrieved from file `public_key` and is expected to be in pem form
 
 The command:
 
-```
+```py
 ztc provisioning store-certificate device_alias certificate_type certificate
 ```
 
 Stores a compressed certificate to the crypto element plugged to device with alias `alias`.
 Certificate is retrieved from file `certificate` and is expected to be in pem format.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Nzg0MjI1NV19
+eyJoaXN0b3J5IjpbLTEzODkwMDU3NjIsLTQ4Nzg0MjI1NV19
 -->
