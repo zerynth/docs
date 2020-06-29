@@ -25,7 +25,7 @@ The maximum value returned by analogRead depends on the analog resolution of the
 
 ```read``` also accepts lists or tuples of pins and returns the corresponding tuple of tuples of samples:
 
-```
+``` python
 import adc
 
 x = adc.read([A4,A3,A5],6)
@@ -35,5 +35,5 @@ this piece of code sets ```x``` to ((…),(…),(…)) where each inner tuple co
 To use less memory, the inner tuples can be `bytes()`, or `shorts()` or normal tuples, depending on the hardware resolution of the adc unit.
 The number of sequentials pins that can be read in a single call depends on the specific board.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTEyNzk3NF19
+eyJoaXN0b3J5IjpbNjAzNzE4NDgsMTAzNTEyNzk3NF19
 -->
