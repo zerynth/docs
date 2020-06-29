@@ -4,7 +4,7 @@ This module loads the Analog to Digital Converter (adc) driver of the embedded d
 
 When imported, automatically sets the system adc driver to  the default one.
 
-```init(drvname, samples_per_second=800000)```
+**`init(drvname, samples_per_second=800000)`**
 
 Loads the adc driver identified by ```drvname``` and sets it up to read ```samples_per_second``` samples per second. The default is a sampling frequency of 0.8 MHz,
 valid values are dependent on the board.
@@ -35,5 +35,5 @@ this piece of code sets ```x``` to ((…),(…),(…)) where each inner tuple co
 To use less memory, the inner tuples can be `bytes()`, or `shorts()` or normal tuples, depending on the hardware resolution of the adc unit.
 The number of sequentials pins that can be read in a single call depends on the specific board.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzNzE4NDgsMTAzNTEyNzk3NF19
+eyJoaXN0b3J5IjpbLTY0OTQyNzQ0OCwxMDM1MTI3OTc0XX0=
 -->
