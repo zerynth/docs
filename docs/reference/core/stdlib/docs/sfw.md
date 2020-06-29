@@ -69,18 +69,18 @@ Each microcontroller family has its own watchdog peculiarities, described in the
 This module provides the following functions for watchdog usage:
 
 
-`watchdog(time0, timeout)`
+**`watchdog(time0, timeout)`**
 
 Enable the watchdog. If `time0` is zero, the watchdog is configured in normal mode; if it is greater than zero, the watchdog is configured in windowed mode (if supported) in such a way that a kick in the first `time0` milliseconds resets the device.
 `timeout` configures the number of milliseconds the whole watchdog window lasts. Once started, the watchdog CAN’T be stopped!
 
 
-`kick()`
+**`kick()`**
 
 Refresh the watchdog, resetting its time window.
 
 
-`watchdog_triggered()`
+**`watchdog_triggered()`**
 
 Return `True` if the microcontroller has been reset by the watchdog, `False` otherwise.
 
@@ -119,5 +119,5 @@ Starting from version r2.2.0, the watchdog for ESP32 devices is implemented usin
 The RTC watchod is enabled by the bootloader and set to 30 seconds by default. This allows to recover from a faulty firmware that does not have time to configure
 the watchdog at startup. However, when using a secure firmware VM it is mandatory to configure the watchdog in the first 30 seconds of execution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk0NTQ3MjRdfQ==
+eyJoaXN0b3J5IjpbMTExODAxMDE3MiwtMTU5OTQ1NDcyNF19
 -->
