@@ -8,7 +8,7 @@ This means higher accuracy, specially with high speed signals.
 
 Example:
 
-```
+```py
 import streams
 import adc # for analogRead
 
@@ -34,31 +34,31 @@ my_dac.write([100,200,900,800],1000,MILLIS,circular=True)
 ## The DAC class
 
 
-`DAC(pin)`
+**`DAC(pin)`**
 
 Creates a DAC instance on ```pin``` pin (look at board pinmap to see which pins are enabled for using the DAC peripheral).
 
 
-`start()`
+**`start()`**
 
 DAC is started. It is necessary to start the driver before writing any value.
 
 
-`write(data, timestep, timeunit, circular=False)`
+**`write(data, timestep, timeunit, circular=False)`**
 
 ```data``` is output on selected pin.
 
 ```data``` parameter can be:
 * a single integer value:
 
-```
+```py
 my_dac.write(666)
 ```
 
 
 * a list of values to be output every ```timestep``` *timeunit\*econds until the end of the list is reached and last value is kept on output:
 
-```
+```py
 my_dac.write([555,666,777],500,MILLIS)
 # one sample every 500 MILLISeconds
 ```
@@ -107,5 +107,5 @@ Each ```value``` in the list must be an integer between ```lowflex``` and ```hig
 
 ```lowflex``` and ```highflex``` default values are set to the correct values for Sam3X mcu.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzMjc4MDk3XX0=
+eyJoaXN0b3J5IjpbMTkyNTU0MDA0MCw2ODMyNzgwOTddfQ==
 -->
