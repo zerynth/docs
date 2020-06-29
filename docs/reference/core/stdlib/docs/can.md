@@ -236,11 +236,11 @@ Resume receiving messages from the bus.
 Resume transmitting messages to the bus.
 
 
-`done()`
+**`done()`**
 
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDIyMDI1NCwxMzM1ODcwNDM0LDI4Nz
-M5MzkyNl19
+eyJoaXN0b3J5IjpbMjgxODM2NTE0LDEzMzU4NzA0MzQsMjg3Mz
+kzOTI2XX0=
 -->
