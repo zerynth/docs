@@ -15,7 +15,7 @@ The action that can be executed on Zerynth Linter is:
 This command is used to check a Python source code against Python Enhancement Proposals 8 (pep8)
 coding convention from the command line with this syntax:
 
-```
+```py
 Syntax:   ./ztc linter pep8 data --file --json
 Example:  ./ztc linter pep8 script.py --file --json
 ```
@@ -35,3 +35,6 @@ This command take as input the following arguments:
 
     
     * Missing required input data
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5NjkwMTg2MzddfQ==
+-->
