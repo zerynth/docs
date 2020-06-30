@@ -22,44 +22,18 @@ The NodeMCU v3 device features a 4 MB (32 Mb) flash memory organized in sectors 
 
 
 * Microcontroller: Tensilica 32-bit RISC CPU Xtensa LX106
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 16
-
-
 * Analog Input Pins (ADC): 1
-
-
 * UARTs: 1
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 64 KB
-
-
 * Clock Speed: 80 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -80,16 +54,9 @@ The NodeMCU v3 exposes the serial port of the ESP8266 module via CH340 USB to UA
 
 Once connected to a USB port the NodeMCU v3 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the NodeMCU v3 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

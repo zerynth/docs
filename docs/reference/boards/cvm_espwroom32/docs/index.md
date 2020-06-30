@@ -45,47 +45,19 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 28
-
-
 * Analog Input Pins (ADC): 8
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 3
-
-
 * SPIs: 2
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 520 KB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Connect, Register, Virtualize and Program

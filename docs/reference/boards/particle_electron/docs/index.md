@@ -45,41 +45,17 @@ Since writing to a sector entails erasing it first, the write operation can be s
 
 
 * Microcontroller: ARM 32-bit Cortex™-M3 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 3.6-6V
-
-
 * Digital I/O Pins (DIO): 28
-
-
 * Analog Input Pins (ADC): 14
-
-
 * Analog Outputs Pins (DAC): 1
-
-
 * UARTs: 5
-
-
 * SPIs: 2
-
-
 * I2Cs: 1
-
-
 * CANs: 1
-
-
 * Flash Memory: 1Mb
-
-
 * SRAM: 128 KB
-
-
 * Clock Speed: 120Mhz
 
 ## Power
@@ -125,29 +101,13 @@ Follow these steps to register and virtualize a Particle Electron:
 
 
 * ```Put``` the Electron in **DFU Mode** (Device Firmware Upgrade):
-
-
     * Hold down BOTH buttons (reset and setup);
-
-
     * Release only the reset button, while holding down the setup button;
-
-
     * Wait for the LED to start flashing flashing magenta, then yellow;
-
-
     * Release the setup button; the device is now in DFU Mode (yellow blinking led);
-
-
 * ```Select``` the Electron on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

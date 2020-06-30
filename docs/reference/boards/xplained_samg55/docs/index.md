@@ -25,23 +25,11 @@ The internal flash of the Xplained Pro Sam G55 is organized as a single bank of 
 
 
 * Microcontroller: ATSAMG55J19
-
-
 * Operating Voltage: 3.3V
-
-
 * UARTs: 3
-
-
 * SPIs: 1
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 512 KB
-
-
 * Clock Speed: 120 MHz
 
 ## Power
@@ -52,8 +40,6 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 
 * minimum 1A to be able to provide enough current for connected USB devices and the     device itself.
-
-
 * maximum is 2A due to the input protection maximum current specification
 
 !!! note
@@ -81,16 +67,9 @@ EDBG is also connected to the SAMG55 hardware UART. Serial on pins RX0 and TX0 p
 
 Once connected on a USB port the Xplained Pro Sam G55 device is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Xplained Pro Sam G55 on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

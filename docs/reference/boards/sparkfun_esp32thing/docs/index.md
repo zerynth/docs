@@ -46,44 +46,18 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 3.7-6V
-
-
 * Digital I/O Pins (DIO): 28
-
-
 * Analog Input Pins (ADC): 4
-
-
 * UARTs: 3
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 520 KB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -111,16 +85,9 @@ The Sparkfun ESP32 Thing comes with a serial-to-usb chip on board that allows pr
 
 Once connected on a USB port, if drivers have been correctly installed, the Sparkfun ESP32 Thing device is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Sparkfun ESP32 Thing on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

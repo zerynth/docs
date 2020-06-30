@@ -50,47 +50,19 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 26
-
-
 * Analog Input Pins (ADC): 16
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 3
-
-
 * SPIs: 2
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 520 KB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -108,16 +80,9 @@ The oddWires Proteus comes with a serial-to-usb chip on board that allows progra
 
 Once connected on a USB port, if drivers have been correctly installed, the oddWires Proteus device is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the oddWires Proteus on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

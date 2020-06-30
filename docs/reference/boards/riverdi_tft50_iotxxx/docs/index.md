@@ -47,50 +47,20 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * 5” TFT display 800×480 resolution driven by BT815 graphics controller
-
-
 * Digital I/O Pins (DIO): 28
-
-
 * Analog Input Pins (ADC): 8
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 2
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 520 KB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -108,16 +78,9 @@ The FT232H FTDI USB to UART chip should be supported natively by all platforms. 
 
 Once connected on a USB port, if drivers have been correctly installed, the Riverdi IoT Display is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Riverdi IoT Display on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

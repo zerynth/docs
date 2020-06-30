@@ -51,47 +51,19 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 5.5 to 3.3 V
-
-
 * Digital I/O Pins (DIO): 31
-
-
 * Analog Input Pins (ADC): 7
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 3
-
-
 * SPIs: 2
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 8 MB
-
-
 * SRAM: 4MB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -116,31 +88,14 @@ The Pycom Shields, instead, feature an USB to serial converter that should work 
 
 Once connected on a USB port, if drivers have been correctly installed, the Pycom WiPy 3.0 device is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Pycom WiPy 3.0 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Put``` the Pycom WiPy 3.0 in **Download Mode** (Boot mode):
-
-
     * ```Open``` the Serial Monitor;
-
-
     * ```Connect``` a jumper between GND and D0;
-
-
     * ```Press``` Reset on-board button; ESP32 SDK messages must appear on the serial monitor, confirming that the device is in “Download mode”;
-
-
     * ```Remove``` the jumper and ```Close``` the serial monitor;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

@@ -42,32 +42,14 @@ chance of clashes.
 
 
 * XMC4400 Microcontroller based on ARM® Cortex®-M4, 512Kb Flash
-
-
 * On-Board Debugger
-
-
 * Power over USB
-
-
 * ESD and reverse current protection
-
-
 * 1 x user button and 3 x user LEDs of which an RGB one
-
-
 * Real Time Clock crystal
-
-
 * Battery holder for an RTC backup battery
-
-
 * Ethernet PHY and RJ45 Jack
-
-
 * 3 Satellite Connectors
-
-
 * 1 potentiometer
 
 ## Power
@@ -89,16 +71,9 @@ page.
 Once connected on a USB port, if drivers have been correctly installed, the
 XMC4400 device is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the XMC4400 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

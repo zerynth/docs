@@ -44,44 +44,18 @@ The internal flash of the Particle Photon is organized into sectors of different
 
 
 * Microcontroller: ARM 32-bit Cortex™-M3 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 3.6-6V
-
-
 * Digital I/O Pins (DIO): 18
-
-
 * Analog Input Pins (ADC): 5
-
-
 * Analog Outputs Pins (DAC): 1
-
-
 * UARTs: 1
-
-
 * SPIs: 2
-
-
 * I2Cs: 1
-
-
 * CANs: 1
-
-
 * Flash Memory: 1Mb
-
-
 * SRAM: 128 KB
-
-
 * Clock Speed: 120Mhz
-
-
 * Size (LxW mm): 36.58 X 20.32
 
 ## Power
@@ -90,8 +64,6 @@ Power to the Particle Photon device is supplied via the on-board USB micro B con
 
 
 * If power is supplied directly to the VIN pin, the voltage should be regulated between 3.6VDC and 5.5VDC.
-
-
 * If the device is powered via the USB port, VIN will output a voltage of approximately 4.8VDC due to a reverse polarity protection series schottky diode between V+ of USB and VIN.
 
 !!! note
@@ -134,31 +106,14 @@ The official **Particle Core** DFU driver and the related installation procedure
 
 Follow these steps to register and virtualize a Particle Photon:
 
-
 * ```Put``` the Photon in **DFU Mode** (Device Firmware Upgrade):
-
-
     * Hold down BOTH buttons (reset and setup);
-
-
     * Release only the reset button, while holding down the setup button;
-
-
     * Wait for the LED to start flashing magenta, then yellow;
-
-
     * Release the setup button; the device is now in DFU Mode (yellow blinking led);
-
-
 * ```Select``` the Photon on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

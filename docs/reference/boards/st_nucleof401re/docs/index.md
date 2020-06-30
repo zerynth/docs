@@ -41,44 +41,18 @@ Since writing to a sector entails erasing it first, the write operation can be s
 
 
 * Microcontroller: STM32F401RET6 ARM®32-bit Cortex®-M4 CPU
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 50
-
-
 * Analog Input Pins (ADC): 16
-
-
 * Analog Outputs Pins (DAC): 0
-
-
 * UARTs: 3
-
-
 * SPIs: 3
-
-
 * I2Cs: 3
-
-
 * CANs: 0
-
-
 * Flash Memory: 512 KB
-
-
 * SRAM: 96 KB
-
-
 * Clock Speed: 84 MHz
-
-
 * Size (LxW mm):82.5 x 70.0
 
 ## Power
@@ -101,16 +75,9 @@ The St-Link is also connected to the STM32 hardware UART0 also connected with pi
 
 Once connected on a USB port, if drivers have been correctly installed the ST Nucleo device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
 * ```Select``` the ST Nucleo on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

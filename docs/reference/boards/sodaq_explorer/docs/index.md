@@ -21,47 +21,19 @@ The internal flash of the SODAQ ExpLoRer is organized as a single bank of 256k.
 
 
 * Microcontroller: SAMD21 Cortex-M0+ 32bit low power ARM MCU
-
-
 * Operating Voltage: 3.3V
-
-
 * I/O Pins: 20
-
-
 * Analog Output Pin: 10-bit DAC
-
-
 * DC Current per I/O pin: 7 mA
-
-
 * LoRa: Microchip RN2483 module
-
-
 * Bluetooth: Microchip RN4871 Module
-
-
 * Cyptochip: ATECC508A
-
-
 * Temperature sensor: MCP9700AT
-
-
 * SPIs: 1
-
-
 * I2Cs: 2
-
-
 * UARTs: 1
-
-
 * Flash Memory: 256 KB and 4 MB (External Flash)
-
-
 * SRAM: 32 KB
-
-
 * Clock Speed: 48 MHz
 
 ## Power
@@ -100,20 +72,10 @@ Once connected on a USB port the SODAQ ExpLoRer device is recognized by Zerynth 
 
 
 * ```Put``` the SODAQ ExpLoRer in **Virtualization Mode**;
-
-    
-        * Double click on the RST button;
-
-
+    * Double click on the RST button;
 * ```Select``` the SODAQ ExpLoRer Virtualizable on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

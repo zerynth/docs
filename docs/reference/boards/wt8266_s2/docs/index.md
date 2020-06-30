@@ -23,44 +23,18 @@ The Wireless Tag WT8266-DK V2 device features a 4 MB (32 Mb) flash memory organi
 
 
 * Microcontroller: Tensilica 32-bit RISC CPU Xtensa LX106
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 11
-
-
 * Analog Input Pins (ADC): 1
-
-
 * UARTs: 1
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 64 KB
-
-
 * Clock Speed: 80 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -85,29 +59,13 @@ Once connected to a USB port the WT8266-DK V2 device can be seen as a Virtual Se
 
 
 * ```Put``` the WT8266-DK V2 in **Download Mode**:
-
-
     * Hold down BOTH buttons (Reset and Download);
-
-
     * Release only the Reset button, while holding down the Download button;
-
-
     * Wait for the onboard LED2 turning on while all other leds turn off;
-
-
     * Release the Download button; the device is now in Download Mode;
-
-
 * ```Select``` the WT8266-DK V2 on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

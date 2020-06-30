@@ -29,44 +29,18 @@ The Esp8266 Thing Dev features a 512 KB (4 Mb) flash memory organized in sectors
 
 
 * Microcontroller: Tensilica 32-bit RISC CPU Xtensa LX106
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 2.5-6V
-
-
 * Digital I/O Pins (DIO): 11
-
-
 * Analog Input Pins (ADC): 1
-
-
 * UARTs: 2
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 512 KB
-
-
 * SRAM: 64 KB
-
-
 * Clock Speed: 80 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -92,16 +66,9 @@ The Sparkfun Esp8266 Thing Dev comes with a serial-to-usb chip on board that all
 
 Once connected to a USB port the Sparkfun Esp8266 Thing Dev can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Sparkfun Esp8266 Thing Dev on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

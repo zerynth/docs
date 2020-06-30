@@ -27,32 +27,14 @@ The internal flash of the Xplained Pro Sam L21 is organized as a single bank of 
 
 
 * Microcontroller: ATSAML21J18B
-
-
 * Operating Voltage: 3.3V
-
-
 * Digital I/O Pins (DIO): 43
-
-
 * Analog Input Pins (ADC): 19
-
-
 * UARTs: 3
-
-
 * SPIs: 2
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 256 KB
-
-
 * SRAM: 32 KB
-
-
 * Clock Speed: 48 MHz
 
 ## Power
@@ -63,8 +45,6 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 
 * minimum 1A to be able to provide enough current for connected USB devices and the     device itself.
-
-
 * maximum is 2A due to the input protection maximum current specification
 
 The SAM L21 Xplained Pro has a backup battery for use with the SAM L21 backup module. The battery can be connected to the device by placing a jumper over pin 1-2 on the 3-pin VBAT SELECT header. By default the jumper is placed over pin 2-3 to select the board power supply. This configuration is selected to avoid draining the battery and can be used during development.
@@ -96,14 +76,8 @@ Once connected on a USB port the Xplained Pro Sam L21 device is recognized by Ze
 
 
 * ```Select``` the Xplained Pro Sam L21 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

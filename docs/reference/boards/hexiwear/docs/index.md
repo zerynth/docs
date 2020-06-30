@@ -28,32 +28,14 @@ The Hexiwear device features a 1 MB flash memory organized in 2 blocks (512 KB e
 
 
 * Microcontroller: NXP Kinetis K64F MCU
-
-
 * Operating Voltage: 3.3V
-
-
 * Digital I/O Pins (DIO): 76
-
-
 * Analog Input Pins (ADC): 8
-
-
 * UARTs: 6
-
-
 * SPIs: 3
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 1 MB
-
-
 * SRAM: 256 KB
-
-
 * Clock Speed: 120 MHz
 
 ## Power
@@ -62,11 +44,7 @@ The Hexiwear provides an on-board 5 to 3.3 V regulator and can be powered in thr
 
 
 * Throught an Embedded 19 mAh 2C Li-Po battery;
-
-
 * Throught the USB Micro B connector on Hexiwear Docking Station (charging on-board battery features enabled);
-
-
 * Throught the USB Micro B connector on Hexiwear (charging on-board battery features enabled);
 
 ## Connect, Virtualize and Program
@@ -75,11 +53,7 @@ The Hexiwear Docking Station has an on-board DAP Link circuitry that exposes thr
 
 
 * A serial port over USB
-
-
 * A mass storage device for drag-n-drop programming flash memory
-
-
 * A DAP compliant debug channel
 
 DAP Link should be supported natively by all platforms.
@@ -90,16 +64,9 @@ Once connected to a USB port, the Hexiwear Device is recognized by Zerynth Studi
 
 Once connected to a USB port the Hexiwear device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Hexiwear on the **Device Management Toolbar** (Disambiguate operation may be required);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

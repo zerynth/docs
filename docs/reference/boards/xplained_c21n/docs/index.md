@@ -23,26 +23,12 @@ The internal flash of the Xplained Pro Sam C21N is organized as a single bank of
 
 
 * Microcontroller: ATSAMC21N18
-
-
 * Operating Voltage: 3.3V or 5.0V
-
-
 * USARTs: 4
-
-
 * SPIs: 3
-
-
 * I2Cs: 2
-
-
 * Flash Memory: 256 KB
-
-
 * SRAM: 32 KB
-
-
 * Clock Speed: 48 MHz
 
 ## Power
@@ -53,8 +39,6 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 
 * minimum 1A to be able to provide enough current for connected USB devices and the     device itself.
-
-
 * maximum is 2A due to the input protection maximum current specification
 
 !!! note
@@ -82,16 +66,9 @@ EDBG is also connected to the SAMC21N hardware UART. Serial on pins RX0 and TX0 
 
 Once connected on a USB port the Xplained Pro Sam C21N device is recognized by Zerynth Studio. The next steps are:
 
-
 * ```Select``` the Xplained Pro Sam C21N on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note
@@ -123,8 +100,6 @@ Not all features have been included in the Xplained Pro SamC21 support. In parti
 
 
 * ICU;
-
-
 * Powersave firmware;
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTU4NDYzMDAyMl19

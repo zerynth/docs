@@ -19,38 +19,16 @@ The internal flash of the NRF52832 is organized as a single bank of 512Kb, with 
 
 
 * Microcontroller: NRF52832
-
-
 * Operating Voltage: 3.3V
-
-
 * Digital I/O Pins (DIO): 12
-
-
 * Analog Input Pins (ADC): 6
-
-
 * Analog Outputs Pins (DAC): 0
-
-
 * UARTs: 1
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 512 Kb
-
-
 * SRAM: 64 Kb
-
-
 * Clock Speed: 64 MHz
-
-
 * Size (LxW mm): 18.0 x 21.0
 
 ## Power
@@ -63,11 +41,7 @@ The RedBear Nano 2 can be programmed through the companion DAP Link adapter that
 
 
 * A serial port over USB
-
-
 * A mass storage device for drag-n-drop programming flash memory
-
-
 * A DAP compliant debug channel
 
 DAP Link should be supported natively by all platforms.
@@ -75,16 +49,9 @@ Once connected to a USB port, the RedBear Nano 2 + DAP Link board is recognized 
 
 Follow these steps to uplink a Zerynth script on a virtualized RedBear Nano 2:
 
-
 * ```Select``` the Nano 2 on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 After virtualization, the device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.

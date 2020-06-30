@@ -22,38 +22,16 @@ The internal flash of the nRF52840 is organized as a single bank of 1 MB, with p
 
 
 * Microcontroller: nRF52840
-
-
 * Operating Voltage: 3.3V
-
-
 * Digital I/O Pins (DIO): 48
-
-
 * Analog Input Pins (ADC): 6
-
-
 * Analog Outputs Pins (DAC): 0
-
-
 * UARTs: 1
-
-
 * SPIs: 2
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 1 MB
-
-
 * SRAM: 256 kB
-
-
 * Clock Speed: 64 MHz
-
-
 * Size (LxW mm): 18.0 x 21.0
 
 ## Power
@@ -70,11 +48,7 @@ The Nordic nRF52840 DK can be programmed through the on-board SEGGER J-Link debu
 
 
 * A serial port over USB
-
-
 * A mass storage device for drag-n-drop programming flash memory
-
-
 * A SEGGER J-Link debug channel
 
 **Drivers are needed** (Linux, Mac or Windows) and can be downloaded from the official
@@ -88,16 +62,9 @@ Once connected to a USB port, the Nordic nRF52840 DK device is recognized by Zer
 
 Follow these steps to uplink a Zerynth script on a virtualized nRF52840 DK:
 
-
 * ```Select``` nRF52840 DK on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

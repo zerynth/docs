@@ -50,47 +50,19 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 28
-
-
 * Analog Input Pins (ADC): 8
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 3
-
-
 * SPIs: 2
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 4 MB
-
-
 * SRAM: 520 KB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## PoE Board
@@ -101,8 +73,6 @@ The PoE board has the following features:
 
 
 * Support for IEEE 802.3at
-
-
 * Power output: 5 V, 1.4 A
 
 To take advantage of the PoE functionality the RJ45 Port of the Ethernet board should be connected with an Ethernet cable to a switch that supports PoE. When the Ethernet board detects 5 V power output from the PoE board, the USB power will be automatically cut off.
@@ -118,26 +88,21 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 The Esp32 EthernetKit comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the DevKitC should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+	* **Ubuntu** distribution –> dialout group 
+	* **Arch Linux** distribution –> uucp group
 
 Once connected on a USB port, if drivers have been correctly installed, the DevKitC device is recognized by Zerynth Studio. The next steps are:
 
-
-* ```Select``` the DevKitC on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the DevKitC on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
 	No user intervention on the device is required for registration and virtualization process
 
-After virtualization, the DevKitC is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+After virtualization, the DevKitC is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 !!! note
 	No user intervention on the device is required for the uplink process.
@@ -182,8 +147,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 
 * Touch detection support;
-
-
 * WROVER’s SPI flash module;
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTQyNzQ0NDYyLC0yMjE3MjAwMl19

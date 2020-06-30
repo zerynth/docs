@@ -4,16 +4,12 @@ Spresense is a compact development board based on Sony’s power-efficient multi
 
 
 * **Integrated GPS** - The embedded GNSS with support for GPS, QZSS and GLONASS enables applications where tracking is required.
-
-
 * **Multicore microcontroller** - Spresense is powered by Sony’s CXD5602 microcontroller (ARM® Cortex®-M4F × 6 cores), with a clock speed of 156 MHz.
 
 The Spresense consists of two boards:
 
 
 * [Main board](https://developer.sony.com/develop/spresense/developer-tools/introduction#_main_board)
-
-
 * [Extension board](https://developer.sony.com/develop/spresense/developer-tools/introduction#_extension_board)
 
 <p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sony_spresense/docs/img/sonyspresense.jpg?raw=true"></p>
@@ -29,35 +25,17 @@ Official reference for Sony Spresense can be found [here](https://developer.sony
 
 
 * Sony’s CXD5602 Processor (ARM Cortex-M4F)
-
-
 * 8 MB Flash memory
-
-
 * PCB with small footprint
-
-
 * Dedicated camera connector
-
-
 * GNSS (GPS) antenna
-
-
 * Pins and LEDs
 
 > 
 > * Multiple GPIO (UART, SPI, I2C, I2S)
-
-
 > * 2 ADC channels
-
-
 > * Application LED x 4 (Green)
-
-
 > * Power LED (Blue)
-
-
 > * USB serial port
 
 ## Power
@@ -81,17 +59,9 @@ Once connected through the Main USB port, if drivers have been correctly install
 
 
 * ```Select``` the Spresense on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Burn``` the Spresense Bootloader clicking the “Info” button, then “Burn Bootloader”;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

@@ -39,32 +39,14 @@ The internal flash of the Renesas TB-S5D5 is organized into one bank of 1Mb with
 
 
 * Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 5V
-
-
 * Digital I/O Pins (DIO): 116
-
-
 * Analog Input Pins (ADC): 13
-
-
 * SPIs: 3
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 2Mb
-
-
 * SRAM: 640 Kb
-
-
 * Clock Speed: 120MHz
 
 ## Power
@@ -80,17 +62,10 @@ The Renesas PK-S5D9 needs an FTDI USB to Serial converter connected to the SERIA
 
 Once both the FTDI and the Debug Port are connected on USB ports, the TB-S5D5 is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
 * ```Select``` the Renesas PK-S5D9 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+ ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note
 	No user intervention on the device is required for registration and virtualization process
@@ -101,19 +76,10 @@ After virtualization, the PK-S5D9 device is ready to be programmed and the  Zery
 
 Not all features have been included in the Renesas PK-S5D9 VMs. In particular the following are missing but will be added in the near future:
 
-
 * CDC Driver to program the board without an FTDI device;
-
-
 * LCD Screen Drivers;
-
-
 * Ethernet Driver;
-
-
 * CAN;
-
-
 * Capacitive Touch Interface driver;
 
 

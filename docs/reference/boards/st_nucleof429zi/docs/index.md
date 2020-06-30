@@ -150,35 +150,15 @@ The internal flash of the ST Nucleo F429ZI is organized into two banks of 1Mb ea
 
 
 * Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 105
-
-
 * Analog Input Pins (ADC): 19
-
-
 * UARTs: 6
-
-
 * SPIs: 5
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 2Mb
-
-
 * SRAM: 192 KB + 64Kb CCM
-
-
 * Clock Speed: 180MHz
 
 ## Power
@@ -192,11 +172,7 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 
 * JP3 between pin 1 and pin 2 for E5V power supply;
-
-
 * JP3 between pin 3 and pin 4 for U5V power supply (ST-Link VBUS);
-
-
 * JP3 between pin 5 and pin 6 for VIN-5V power supply.
 
 ## Connect, Register, Virtualize and Program
@@ -207,16 +183,9 @@ The St-Link is also connected to the STM32 hardware UART0.
 
 Once connected on a USB port, if drivers have been correctly installed the ST Nucleo F429ZI device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
 * ```Select``` the ST Nucleo F429ZI on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

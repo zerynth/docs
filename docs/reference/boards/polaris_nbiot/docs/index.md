@@ -26,47 +26,19 @@ Since writing to a sector entails erasing it first, the write operation can be s
 
 
 * Microcontroller: STM32L452 ARM®32-bit Cortex®-M4 CPU
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 8-36V
-
-
 * Digital I/O Pins (DIO): 69
-
-
 * Analog Input Pins (ADC): 11
-
-
 * UARTs: 4
-
-
 * USB: 1
-
-
 * SPIs: 2
-
-
 * I2Cs: 1
-
-
 * SD Card Slot: 1
-
-
 * SIM Card Slot: 1
-
-
 * MikroBus Click Slot: 1
-
-
 * Flash Memory: 512 KB
-
-
 * SRAM: 160 KB
-
-
 * Clock Speed: 80 MHz
 
 ## Power
@@ -88,8 +60,6 @@ On ```Windows``` machines two set of drivers may be installed: the DFU drivers a
 
 
 * In DFU mode, the VID:PID you should see is 0483:5740 and the Polaris NB-IoT si recognized as “STM32 BOOTLOADER”.
-
-
 * For the virtualized Polaris NB-IoT (DFU MODE) the VID:PID is 0483:DF12.
 
 !!! warning
@@ -113,25 +83,12 @@ SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df12", MODE="0666
 
 Once connected to a USB port the Polaris device can be seen as a Virtual Serial port or as a DFU device depending on its virtualized/virtualizable status and it is automatically recognized by Zerynth Studio. The next steps are:
 
-
 * ```Put``` the Polaris in **DFU Mode** (Device Firmware Upgrade):
-
-
     * Click on “Device Info” button;
-
-
     * Wait until “Device Management Toolbar” blinks yellow;
-
-
 * ```Select``` the Polaris on the **Device Management Toolbar** (Disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

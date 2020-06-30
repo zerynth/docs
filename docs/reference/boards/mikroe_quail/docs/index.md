@@ -148,38 +148,16 @@ The internal flash of the MikroElektronika Quail is organized into two banks of 
 
 
 * Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 66
-
-
 * Analog Input Pins (ADC): 10
-
-
 * UARTs: 5
-
-
 * SPIs: 2
-
-
 * I2Cs: 2
-
-
 * Flash Memory: 2Mb
-
-
 * SRAM: 192 KB + 64Kb CCM
-
-
 * Clock Speed: 168Mhz
-
-
 * Size (LxW mm): 97 x 72
 
 ## Power
@@ -199,8 +177,6 @@ On ```Windows``` machines two set of drivers must be installed: the DFU drivers 
 
 
 * In DFU mode, the VID:PID you should see is 0483:DF11 and the Quail si recognized as “STM32 BOOTLOADER”.
-
-
 * For the virtualized Quail the VID:PID is 0483:DF12.
 
 !!! warning
@@ -218,7 +194,9 @@ On **MAC OSX** and ```Linux``` USB drivers are not required.
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+
 If the device is still not recognized or not working, the following udev rules may need to be added:
+
 ```
 #MikroElektronica Quail Device
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -229,26 +207,12 @@ Once connected to a USB port the Quail device can be seen as a Virtual Serial po
 
 
 * ```Put``` the Quail in **DFU Mode** (Device Firmware Upgrade):
-
-
     * Hold down BOTH on-board buttons (reset and boot);
-
-
     * Release only the reset button, while holding down the boot button;
-
-
     * After a second, release the boot button; the Quail is now in DFU mode;
-
-
 * ```Select``` the Quail on the **Device Management Toolbar**;
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note

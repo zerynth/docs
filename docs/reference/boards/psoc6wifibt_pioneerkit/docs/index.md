@@ -26,41 +26,17 @@ Addresses from 0x10002200 are used to store bytecode and can be read and written
 
 
 * Main Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Secondary Microcontroller: ARM 32-bit Cortex™-M0+ Core
-
-
 * KitProg2 on-board debugger
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 5V
-
-
 * Digital I/O Pins (DIO): 101
-
-
 * Analog Input Pins (ADC): 8
-
-
 * UARTs: 4
-
-
 * SPIs: 4
-
-
 * I2Cs: 4
-
-
 * Flash Memory: 1 MB
-
-
 * SRAM: 280 KB
-
-
 * Clock Speed: 100MHz
 
 ## Power
@@ -84,6 +60,7 @@ install Cypress Programmer tool, which is available for download [here](https://
 !!! note
 	**For Linux Platform**:
 the following udev rules may need to be added:
+
 ```
 # Match KP2 PID/VID
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="f148", ENV{CY_KP2_PID_VID}="f148:04b4"
@@ -95,16 +72,9 @@ The KitProg2 is connected to the PSoC6 `SERIAL0`.
 
 Once connected the PSoC6 WiFi-Bt Pioneer Kit device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
 * ```Select``` the PSoC6 WiFi-Bt Pioneer Kit on the **Device Management Toolbar** (disambiguate if necessary);
-
-
 * ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
 * ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
 * ```Virtualize``` the device by clicking the “Z” button for the third time.
 
 !!! note
