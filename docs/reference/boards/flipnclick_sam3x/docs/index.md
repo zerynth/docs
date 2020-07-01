@@ -6,9 +6,7 @@ This device has the predisposition in both sides for shields and expansion board
 
 
 * In the front side (Blue side in MikroElektronica parlance), it features the Arduino Uno standard pinout with additional SPI pins;
-
-
-* In the back side (White side in MikroE parlance) the device has four mikroBUS sockets to connect [MikroE Click Boards](https://shop.mikroe.com/click) showing one of the best features for a hardware development platform: ```modularity```.
+* In the back side (White side in MikroE parlance) the device has four mikroBUS sockets to connect [MikroE Click Boards](https://shop.mikroe.com/click) showing one of the best features for a hardware development platform: **modularity**.
 
 !!! note
 	Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
@@ -21,7 +19,7 @@ With more than 160 to choose from, and more coming out every week, it’s very s
 
 ![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclickpin.jpg?raw=true)
 
-MikroElektronika Flip & Click official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/flip-n-click/flip-n-click-manual-v100.pdf)
+MikroElektronika Flip & Click official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/flip-n-click/flip-n-click-manual-v100.pdf).
 
 ## Flash Layout
 
@@ -31,38 +29,16 @@ The internal flash of the Flip & Click Sam3X is organized into two banks of 256k
 
 
 * Microcontroller: AT91SAM3X8E
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 49
-
-
 * Analog Input Pins (ADC): 5
-
-
 * UARTs: 4
-
-
 * SPIs: 1
-
-
 * I2Cs: 2
-
-
 * Flash Memory: 512 KB
-
-
 * SRAM: 96 KB
-
-
 * Clock Speed: 84 MHz
-
-
 * Slots for Clicks: 4
 
 ## Power
@@ -80,32 +56,23 @@ The Flip & Click Programming port is connected to an ATmega16U2, which provides 
 	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through the ATmega16U2 microcontroller.
 
 Once connected on a USB port, if drivers have been correctly installed, the Flip & Click device is recognized by Zerynth Studio. The next steps are:
 
-
-* ```Select``` the Flip & Click on the **Device Management Toolbar**;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Flip & Click on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
-
-After virtualization, the Flip & Click is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+	No user device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 Check this video for a live demo:
 
-  <div style="margin-top:10px;">
+  <div stylSe="margin-top:10px;">
 <iframe width="100%" height="481" src="https://www.youtube.com/embed/u2pEH5dSZbo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
   !!! note

@@ -15,7 +15,7 @@ EMW3166 integrates [STM32F412RG](http://www.st.com/resource/en/datasheet/stm32f4
 
 ![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/az3166/docs/img/az3166_pin_io.jpg?raw=true)
 
-MXChip IoT DevKit AZ3166 Schematic are available on the official [MXChip official page](http://www.mxchip.com/public/microsoft/AZ3166-SCH.pdf)
+MXChip IoT DevKit AZ3166 Schematic are available on the official [MXChip official page](http://www.mxchip.com/public/microsoft/AZ3166-SCH.pdf).
 
 ## Flash Layout
 
@@ -43,37 +43,16 @@ Since writing to a sector entails erasing it first, the write operation can be s
 
 ## Device Summary
 
-
 * Microcontroller: STM32F412RG ARM®32-bit Cortex®-M4 CPU
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 31
-
-
 * Analog Input Pins (ADC): 2
-
-
 * UARTs: 2
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 1 MB
-
-
 * SRAM: 256 KB
-
-
 * Clock Speed: 100 MHz
 
 ## Power
@@ -84,28 +63,21 @@ The device can operate on an external supply voltage of 3.3 to 5.5 volts. If usi
 
 ## Connect, Register, Virtualize and Program
 
-The IoT DevKit AZ3166 Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST-Link download page](http://www.st.com/en/development-tools/stsw-link009.html), while **MAC OSX** and ```Linux``` machines will recognize the device automatically.
+The IoT DevKit AZ3166 Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, **Windows** machines requires drivers that can be downloaded from [the ST-Link download page](http://www.st.com/en/development-tools/stsw-link009.html), while **MAC OSX** and **Linux** machines will recognize the device automatically.
 
 The St-Link is also connected to the STM32 hardware UART0.
 
 Once connected on a USB port, if drivers have been correctly installed the IoT DevKit AZ3166 device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
-* ```Select``` the IoT DevKit AZ3166 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the IoT DevKit AZ3166 on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the IoT DevKit AZ3166 device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the IoT DevKit AZ3166 device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! note
 	If the reset is not performed within 5 seconds the upload procedure fails.
@@ -123,13 +95,16 @@ Flash Layout is shown in table below:
 | 0x08080000    | 128kb | VM Slot 1       |
 | 0x080A0000    | 384kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the IoT DevKit AZ3166 device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
+
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3NjkwNDY0MjYsNTMyNzM2NzgyLC0xND
 c4NDE5MjQ1LC0yMTI5ODY5NzgzXX0=

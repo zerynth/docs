@@ -37,6 +37,9 @@ The internal flash of the Particle Photon is organized into sectors of different
 | 0x80C0000     | 128kb | Bytecode Bank 4 |
 | 0x80E0000     | 128kb | Bytecode Bank 5 |
 
+!!! important
+    To avoid deleting the Photon configuration it is recommended not to write in sectors between 0x8004000 and 0x8020000.
+
 !!! warning
 	If internal flash is used in a Zerynth program, it is recommended to start from pages at the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the chosen sector.
 
@@ -44,44 +47,18 @@ The internal flash of the Particle Photon is organized into sectors of different
 
 
 * Microcontroller: ARM 32-bit Cortex™-M3 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 3.6-6V
-
-
 * Digital I/O Pins (DIO): 18
-
-
 * Analog Input Pins (ADC): 5
-
-
 * Analog Outputs Pins (DAC): 1
-
-
 * UARTs: 1
-
-
 * SPIs: 2
-
-
 * I2Cs: 1
-
-
 * CANs: 1
-
-
 * Flash Memory: 1Mb
-
-
 * SRAM: 128 KB
-
-
 * Clock Speed: 120Mhz
-
-
 * Size (LxW mm): 36.58 X 20.32
 
 ## Power
@@ -90,8 +67,6 @@ Power to the Particle Photon device is supplied via the on-board USB micro B con
 
 
 * If power is supplied directly to the VIN pin, the voltage should be regulated between 3.6VDC and 5.5VDC.
-
-
 * If the device is powered via the USB port, VIN will output a voltage of approximately 4.8VDC due to a reverse polarity protection series schottky diode between V+ of USB and VIN.
 
 !!! note
@@ -101,21 +76,21 @@ Typical current consumption is 80mA with a 5V input. Deep sleep quiescent curren
 
 ## Connect, Register, Virtualize and Program
 
-On ```Windows``` machines the [Particle Photon USB Drivers](https://s3.amazonaws.com/spark-website/Spark.zip) are required by Zerynth Studio for accessing the  serial port establishing a connection with the STM32 UART.
+On **Windows** machines the [Particle Photon USB Drivers](https://s3.amazonaws.com/spark-website/Spark.zip) are required by Zerynth Studio for accessing the  serial port establishing a connection with the STM32 UART.
 
-To install the drivers on ```Windows``` plug the Photon on an USB port, unzip the downloaded package, go to the **Window Devices Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).
+To install the drivers on **Windows** plug the Photon on an USB port, unzip the downloaded package, go to the **Window Devices Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).
 
 !!! note
 	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Photon driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
-On **MAC OSX** and ```Linux``` platforms USB drivers are not required.
+On **MAC OSX** and **Linux** platforms USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```
+```bash
 #Particle Photon
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d006", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
 SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d006", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -128,43 +103,29 @@ Once connected on a USB port, if drivers have been correctly installed, the Part
 To register and virtualize a Particle Photon, it is necessary to put the Photon in DFU Mode (Device Firmware Upgrade) as reported in the official [Particle Photon Guide](https://docs.particle.io/guide/getting-started/modes/photon/).
 
 !!! note
-	On ```Windows``` machines it is necessary to install also the Photon DFU drivers for virtualizing the device.
+	On **Windows** machines it is necessary to install also the Photon DFU drivers for virtualizing the device.
 
 The official **Particle Core** DFU driver and the related installation procedure are reported [here](https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518) but they also work for **Particle Photon**.
 
 Follow these steps to register and virtualize a Particle Photon:
 
-
-* ```Put``` the Photon in **DFU Mode** (Device Firmware Upgrade):
-
-
+* **Put** the Photon in **DFU Mode** (Device Firmware Upgrade):
     * Hold down BOTH buttons (reset and setup);
-
-
     * Release only the reset button, while holding down the setup button;
-
-
     * Wait for the LED to start flashing magenta, then yellow;
-
-
     * Release the setup button; the device is now in DFU Mode (yellow blinking led);
-
-
-* ```Select``` the Photon on the **Device Management Toolbar**;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Photon on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	During these operations the Photon device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+	During these operations the Photon device must be in **DFU Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again.
 
-After virtualization, the Particle Photon is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the Particle Photon is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
+
+!!! imortant
+    To exploit the Wi-Fi chip functionalities of the Particle Photon, the [lib.broadcom.bcm43362 library](https://docs.zerynth.com/latest/official/lib.broadcom.bcm43362/docs/index.html#broadcom-bcm43362) must be installed and imported on the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -178,13 +139,16 @@ Flash Layout is shown in table below:
 | 0x08040000    | 384kb | Bytecode Slot 0 |
 | 0x080A0000    | 384kb | Bytecode Slot 1 |
 
+!!!important
+   OTA Record (small segment of memory where the current and desired state of the firmware is store) for the Particle Photon device is allocated in 16kb DCT1 (see Flash Layout) sector at 0x08006000 address.
+
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3OTQ2NTM1MzksNjA3NDExMzcwXX0=
 -->

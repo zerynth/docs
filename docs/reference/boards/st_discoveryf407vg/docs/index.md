@@ -40,35 +40,15 @@ The internal flash of the ST Discovery F407VG is organized into one bank of 1Mb 
 
 
 * Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 5V
-
-
 * Digital I/O Pins (DIO): 80
-
-
 * Analog Input Pins (ADC): 14
-
-
 * UARTs: 7
-
-
 * SPIs: 3
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 1Mb
-
-
 * SRAM: 128 KB + 64Kb CCM
-
-
 * Clock Speed: 168MHz
 
 ## Power
@@ -79,34 +59,25 @@ The D1 and D2 diodes protect the 5V and 3V pins from external power supplies:
 
 
 * 5V and 3V can be used as output power supplies when another application board is connected to pins P1 and P2; in this case, the 5V and 3V pins deliver a 5V or 3V power supply and power consumption must be lower than 100 mA.
-
-
 * 5V can also be used as input power supplies e.g. when the USB connector is not connected to the PC. In this case, the STM32F4DISCOVERY board must be powered by a power supply unit or by auxiliary equipment complying with standard EN-60950-1: 2006+A11/2009, and must be Safety Extra Low Voltage (SELV) with limited power capability.
 
 ## Connect, Register, Virtualize and Program
 
-The ST Discovery F407VG Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html), while **MAC OSX** and ```Linux``` machines will recognize the device automatically.
+The ST Discovery F407VG Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, **Windows** machines requires drivers that can be downloaded from [the ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html), while **MAC OSX** and **Linux** machines will recognize the device automatically.
 
 The St-Link is also connected to the STM32 hardware UART0.
 
 Once connected on a USB port, if drivers have been correctly installed the ST Discovery F407VG device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
-* ```Select``` the ST Discovery F407VG on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the ST Discovery F407VG on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the ST Discovery F407VG device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the ST Discovery F407VG device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! note
 	If the reset is not performed within 5 seconds the upload procedure fails.
@@ -135,19 +106,14 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
 
 ## Missing features
 
 Not all features have been included in the ST Discovery based VMs. In particular the following are missing but will be added in the near future:
 
-
 * LIS302DL or LIS3DSH ST MEMS 3-axis accelerometer driver;
-
-
 * MP45DT02 ST-MEMS audio sensor omni-directional digital microphone driver;
-
-
 * CS43L22 audio DAC with integrated class D speaker driver;
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODIyMTk0NzYyLC0zODI0NDE3NTVdfQ==

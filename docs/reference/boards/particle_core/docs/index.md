@@ -30,44 +30,18 @@ The bytecode is stored in a variable position depending on the VM size.
 
 
 * Microcontroller: ARM 32-bit Cortex™-M3 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 3.6-6V
-
-
 * Digital I/O Pins (DIO): 18
-
-
 * Analog Input Pins (ADC): 8
-
-
 * Analog Outputs Pins (DAC): 0
-
-
 * UARTs: 1
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * CANs: 0
-
-
 * Flash Memory: 128KB
-
-
 * SRAM: 20 KB
-
-
 * Clock Speed: 72Mhz
-
-
 * Size (LxW mm): 37.33 X 20.32
 
 ## Power
@@ -76,21 +50,21 @@ The entire Particle Core, including all of the on device peripherals, runs at 3.
 
 ## Connect, Register, Virtualize and Program
 
-On ```Windows``` machines the [Particle Core USB Drivers](https://s3.amazonaws.com/spark-website/Spark.zip) are required by the Zerynth Studio for accessing the Core serial port establishing a connection with the STM32 UART.
+On **Windows** machines the [Particle Core USB Drivers](https://s3.amazonaws.com/spark-website/Spark.zip) are required by the Zerynth Studio for accessing the Core serial port establishing a connection with the STM32 UART.
 
-To install the drivers on ```Windows``` plug the Core on an USB port, unzip the downloaded package, go to the **Windows Device Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named spark_core).
+To install the drivers on **Windows** plug the Core on an USB port, unzip the downloaded package, go to the **Windows Device Manager** and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named spark_core).
 
 !!! note
 	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Core driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
 
-On **MAC OSX** and ```Linux``` USB drivers are not required.
+On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```
+```bash
 #Particle Core
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="607f", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
 SUBSYSTEMS=="tty", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="607f", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -103,46 +77,33 @@ Once connected on a USB port, if drivers have been correctly installed, the Core
 To register and virtualize the Core, it is necessary to put the Core in DFU Mode (Device Firmware Upgrade) as reported in the official [Particle Core Guide](http://docs.particle.io/core/modes/).
 
 !!! note
-	On ```Windows``` machines it is necessary to install also the Particle Core DFU drivers for virtualizing the device.
+	On **Windows** machines it is necessary to install also the Particle Core DFU drivers for virtualizing the device.
 
 The official Particle Core DFU driver and the related installation procedure are reported [here](https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518).
 
 Follow these steps to register and virtualize a Particle Core:
 
 
-* ```Put``` the Core in **DFU Mode** (Device Firmware Upgrade):
-
-
+* **Put** the Core in **DFU Mode** (Device Firmware Upgrade):
     * Hold down BOTH buttons (reset and mode);
-
-
     * Release only the reset button, while holding down the mode button;
-
-
     * Wait for the LED to start flashing yellow;
-
-
     * Release the mode button; the device is now in DFU Mode (yellow blinking led);
-
-
-* ```Select``` the Core on the **Device Management Toolbar**;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Core on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	During these operations the Core device must be in **DFU Mode**. If the device returns in standard mode, it is necessary to put it in DFU Mode again
+	During these operations the Core device must be in **DFU Mode**. If the device returns in standard mode, it is necessary to put it in DFU Mode again.
 
 !!! warning
 	Depending on the Particle Core bootloader version, it may be necessary to virtualize it twice. If after the first virtualization, the Particle Core starts blinking red (factory reset mode), wait for the factory reset to finish and repeat the operation sequence.
 
-After virtualization, the Particle Core is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the Particle Core is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
+
+!!! important
+    To exploit the Wi-Fi chip functionalities of the Particle Core, the [lib.texas.cc3000 library](https://docs.zerynth.com/latest/official/lib.texas.cc3000/docs/index.html#texas-cc3000) must be installed and imported on the Zerynth script.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTg1MjY3NjI5MiwtMTMzMTIzNDE5NV19
 -->

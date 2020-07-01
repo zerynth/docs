@@ -51,47 +51,19 @@ For BLE VMs:
 
 
 * Microcontroller: Tensilica 32-bit Single-/Dual-core CPU Xtensa LX6
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 5.5 to 3.3 V
-
-
 * Digital I/O Pins (DIO): 31
-
-
 * Analog Input Pins (ADC): 7
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 3
-
-
 * SPIs: 2
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 8 MB
-
-
 * SRAM: 4MB
-
-
 * Clock Speed: 240 Mhz
-
-
 * Wi-Fi: IEEE 802.11 b/g/n/e/i:
-
-
     * Integrated TR switch, balun, LNA, power amplifier and matching network
-
-
     * WEP or WPA/WPA2 authentication, or open networks
 
 ## Power
@@ -112,41 +84,30 @@ The Pycom Expansion Board comes with the FT234XD Serial-to-usb chip on-board tha
 The Pycom Shields, instead, feature an USB to serial converter that should work out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://docs.pycom.io/chapter/pytrackpysense/installation/pycom.inf).
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 Once connected on a USB port, if drivers have been correctly installed, the Pycom WiPy 3.0 device is recognized by Zerynth Studio. The next steps are:
 
-
-* ```Select``` the Pycom WiPy 3.0 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Put``` the Pycom WiPy 3.0 in **Download Mode** (Boot mode):
-
-
-    * ```Open``` the Serial Monitor;
-
-
-    * ```Connect``` a jumper between GND and D0;
-
-
-    * ```Press``` Reset on-board button; ESP32 SDK messages must appear on the serial monitor, confirming that the device is in “Download mode”;
-
-
-    * ```Remove``` the jumper and ```Close``` the serial monitor;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Pycom WiPy 3.0 on the **Device Management Toolbar** (disambiguate if necessary);
+* **Put** the Pycom WiPy 3.0 in **Download Mode** (Boot mode):
+    * **Open** the Serial Monitor;
+    * **Connect** a jumper between GND and D0;
+    * **Press** Reset on-board button; ESP32 SDK messages must appear on the serial monitor, confirming that the device is in “Download mode”;
+    * **Remove** the jumper and **Close** the serial monitor;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
 	During the Registration procedure, press the Reset on-board button when asked.
 
-After virtualization, the Pycom WiPy 3.0 is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+!!! important
+    To put the Pycom device in “Download Mode”, a jumper between GND and D0 pin must be connected. GND and D0 pins are available in 2 different ways according to the expansion board or shield used to program the Pycom device: **Pycom Expansion Board** –> GND and D0 pins are available on its parallel headers (see Pin Mapping section); **PySense and PyTrack Shields** –> GND and D0 are available on their External IO 2x5 Header (pin 1 and pin 5).
+
+After virtualization, the Pycom WiPy 3.0 is ready to be programmed and the Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
+
+!!! important
+    To exploit the Wi-Fi chip functionalities of the Pycom WiPy 3.0, the [lib.espressif.esp32net library](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/docs/index.html#esp32wifi) must be installed and imported on the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 

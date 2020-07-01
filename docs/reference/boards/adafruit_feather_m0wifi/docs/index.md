@@ -30,41 +30,17 @@ The internal flash of the Adafruit Feather M0 Wi-Fi is organized as a single ban
 
 
 * Microcontroller: SAMD21 Cortex-M0+ 32bit low power ARM MCU
-
-
 * Power Supply (USB/VIN): 5V
-
-
 * Supported Battery: Li-Po single cell, 3.7V, 700mAh minimum
-
-
 * Operating Voltage: 3.3V
-
-
 * Digital I/O Pins (DIO): 14
-
-
 * Analog Input Pins (ADC): 6
-
-
 * UARTs: 2
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 256 KB
-
-
 * SRAM: 32 KB
-
-
 * Clock Speed: 48 MHz
-
-
 * Size (LxW mm): 61.5 x 25.0
 
 ## Power
@@ -78,7 +54,7 @@ The device can operate on an external supply of 2.5 to 6 volts. If using more th
 Adafruit Feather M0 Wi-Fi should be recognized out of the box for Windows 8/10/+, Mac and Linux platforms; for Windows 7 platform, drivers must be installed and can be found [here](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.0.0.0/adafruit_drivers_2.0.0.0.exe), otherwise this can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greate.
 
 !!! note
-	Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the Feather M0 Wi-Fi device.
+	Drivers must be installed for both **Standard** and **Virtualization Mode** of the Feather M0 Wi-Fi device.
 
 !!! warning
 	Remember, when using the Zadig utility, to select “Options > List all devices” to search for the Feather M0 Wi-Fi device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
@@ -88,27 +64,20 @@ Once connected on a USB port, if drivers have been correctly installed, the Adaf
 Follow these steps to register and virtualize a Adafruit Feather M0 Wi-Fi:
 
 
-* ```Put``` the Feather M0 Wi-Fi in **Virtualization Mode**:
-
-
+* **Put** the Feather M0 Wi-Fi in **Virtualization Mode**:
     * Double click on the RST button;
-
-
-* ```Select``` the Adafruit Feather M0 Wi-Fi Virtualizable on the **Device Management Toolbar**;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Adafruit Feather M0 Wi-Fi Virtualizable on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
 	During these operations the Feather M0 Wi-Fi device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in Virtualization Mode again.
 
-After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar”, ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the RST on-board button when asked.
+After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar”, **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the RST on-board button when asked.
+
+!!! important
+    To exploit the Wi-Fi chip functionalities of the Adafruit Feather M0 Wi-Fi, the [lib.microchip.winc1500 library](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/index.html#microchip-winc1500) must be installed and imported in the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -128,7 +97,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
+Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-samd21) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExMTg2ODQwMTUsLTYwNDQxMDkwNSwtMT
 k4MjU4OTQxLDE2NjExMzMzMzNdfQ==

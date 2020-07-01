@@ -23,44 +23,18 @@ The internal flash of Arduino Due is organized into two banks of 256k each. Each
 
 
 * Microcontroller: AT91SAM3X8E
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 54
-
-
 * Analog Input Pins (ADC): 12
-
-
 * Analog Outputs Pins (DAC): 2
-
-
 * UARTs: 4
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * CAN: 2
-
-
 * Flash Memory: 512 KB
-
-
 * SRAM: 96 KB
-
-
 * Clock Speed: 84 MHz
-
-
 * Size (LxW mm): 101.52 x 53.3
 
 ## Power
@@ -78,28 +52,21 @@ The Arduino DUE Programming port is connected to an ATmega16U2, which provides a
 	Drivers for the FTDI can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through the ATmega16U2 microcontroller.
 
 Once connected on a USB port, if drivers have been correctly installed, the Arduino DUE device is recognized by Zerynth Studio. The next steps are:
 
-
-* ```Select``` the Arduino DUE on the **Device Management Toolbar**;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Arduino DUE on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
 	No user intervention on the device is required for registration and virtualization process
 
-After virtualization, the Arduino DUE is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+After virtualization, the Arduino DUE is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 !!! note
 	No user intervention on the device is required for the uplink process.

@@ -4,13 +4,8 @@ The Arduino/Genuino MKR1000 is based on the Atmel (Microchip Technology) [ATSAMW
 
 The ATSAMW25 is composed of three main blocks:
 
-
 * SAMD21 Cortex-M0+ 32bit low power ARM MCU
-
-
 * WINC1500 low power 2.4GHz IEEE® 802.11 b/g/n Wi-Fi
-
-
 * ECC508 CryptoAuthentication
 
 The ATSAMW25 includes also a single 1x1 stream PCB Antenna.
@@ -47,41 +42,17 @@ The internal flash of the Arduino/Genuino MKR1000 is organized as a single bank 
 
 
 * Microcontroller: SAMD21 Cortex-M0+ 32bit low power ARM MCU
-
-
 * Power Supply (USB/VIN): 5V
-
-
 * Supported Battery: Li-Po single cell, 3.7V, 700mAh minimum
-
-
 * Operating Voltage: 3.3V
-
-
 * Digital I/O Pins (DIO): 14
-
-
 * Analog Input Pins (ADC): 7
-
-
 * UARTs: 1
-
-
 * SPIs: 1
-
-
 * I2Cs: 1
-
-
 * Flash Memory: 256 KB
-
-
 * SRAM: 32 KB
-
-
 * Clock Speed: 48 MHz
-
-
 * Size (LxW mm): 61.5 x 25.0
 
 ## Power
@@ -95,13 +66,13 @@ If you want to connect a battery to your MKR1000 be sure to search one with fema
 Polarity: looking at the device connector pins, polarity is Left = Positive, Right = GND.
 Download [here the Connector datasheet](http://www.jst-mfg.com/product/pdf/eng/ePH.pdf). On the MKR1000, connector is a Male 2pin JST PH Type.
 
-```Vin```:
+**Vin**:
 This pin can be used to power the device with a regulated 5V source. If the power is fed through this pin, the USB power source is disconnected. This is the only way you can supply 5v (range is 5V to maximum 6V) to the device not using USB. This pin is an INPUT.
 
-```5V```:
+**5V**:
 This pin outputs 5V from the the device when powered from the USB connector or from the VIN pin of the device. It is unregulated and the voltage is taken directly from the inputs. As an OUTPUT, it should not be used as an input pin to power the device.
 
-```VCC```:
+**VCC**:
 This pin outputs 3.3V through the on-board voltage regulator. This voltage is the same regardless the power source used (USB, Vin and Battery).
 
 **LED ON**:
@@ -114,11 +85,7 @@ This flashing is caused by the following conditions maintained for a long time (
 
 
 * No battery is connected to JST connector.
-
-
 * Overdischarged/damaged battery is connected. It can’t be recharged.
-
-
 * A fully charged battery is put through another unnecessary charging cycle. This is done disconnecting and reconnecting either VIN or the battery itself while VIN is connected.
 
 !!! note
@@ -129,40 +96,32 @@ This flashing is caused by the following conditions maintained for a long time (
 To recognize the device, Windows machines require drivers that can be downloaded from [the Arduino/Genuino MKR1000 guide](https://www.arduino.cc/en/Guide/MKR1000), otherwise this can be done by using the [Zadig utility](http://zadig.akeo.ie/) version 2.2 or greater; OSX and Linux machines will recognize the device automatically.
 
 !!! note
-	Drivers must be installed for both ```Standard``` and **Virtualization Mode** of the MKR1000 device.
+	Drivers must be installed for both **Standard** and **Virtualization Mode** of the MKR1000 device.
 
 !!! warning
-	Remember, when using the Zadig utility, to select “Options > List all devices” to search for the MKR1000 device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode
+	Remember, when using the Zadig utility, to select “Options > List all devices” to search for the MKR1000 device. Select the Usb CDC driver for the standard mode and any other for the virtualization mode.
 
 Once connected on a USB port, if drivers have been correctly installed, the Arduino/Genuino MKR1000 device is recognized by the Zerynth Studio and listed in the **Device Management Toolbar**.
 
 Follow these steps to register and virtualize a Arduino/Genuino MKR1000:
 
-
-* ```Put``` the MKR1000 in **Virtualization Mode**:
-
-
+* **Put** the MKR1000 in **Virtualization Mode**:
     * Double click on the RST button;
-
-
-* ```Select``` the MKR1000 Virtualizable on the **Device Management Toolbar**;
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the MKR1000 Virtualizable on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	During these operations the MKR1000 device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again
+	During these operations the MKR1000 device must be in **Virtualization Mode**. if the device returns in standard mode, it is necessary to put it in DFU Mode again.
 
 Zerynth scripts can be uploaded on virtualized Arduino/Genuino MKR1000 by clicking the dedicated upload button available on the **Current Project** panel of the IDE.
 Follow these steps to upload a Zerynth script on a virtualized Arduino/Genuino MKR1000:
 
-After virtualization, the Arduino/Genuino MKR1000 is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar”, ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the RST on-board button when asked.
+After virtualization, the Arduino/Genuino MKR1000 is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar”, **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the RST on-board button when asked.
+
+!!! important
+    To exploit the Wi-Fi chip functionalities of the Arduino/Genuino MKR1000, the [lib.microchip.winc1500 library](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/index.html#microchip-winc1500) must be installed and imported in the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -182,7 +141,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - Microchip SAMD21 section and Secure Firmware - Microchip SAMD21 section.
+Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-samd21) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMzM2NzIyNzcsNDkwNDEzMjc5XX0=
 -->

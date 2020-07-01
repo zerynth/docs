@@ -26,41 +26,17 @@ Addresses from 0x10002200 are used to store bytecode and can be read and written
 
 
 * Main Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Secondary Microcontroller: ARM 32-bit Cortex™-M0+ Core
-
-
 * KitProg2 on-board debugger
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 5V
-
-
 * Digital I/O Pins (DIO): 101
-
-
 * Analog Input Pins (ADC): 8
-
-
 * UARTs: 4
-
-
 * SPIs: 4
-
-
 * I2Cs: 4
-
-
 * Flash Memory: 1 MB
-
-
 * SRAM: 280 KB
-
-
 * Clock Speed: 100MHz
 
 ## Power
@@ -75,16 +51,15 @@ But only the KitProg2 port can be used for programming purposes.
 Plug the device using the KitProg2 Port which allows to program the PSoC6 MCU using Cypress KitProg2 programmer.
 
 !!! note
-	to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info
+	to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info.
 
 !!! note
-	**For Windows Platform**:
-install Cypress Programmer tool, which is available for download [here](https://www.cypress.com/products/psoc-programming-solutions)
+	**For Windows Platform**: install Cypress Programmer tool, which is available for download [here](https://www.cypress.com/products/psoc-programming-solutions).
 
 !!! note
-	**For Linux Platform**:
-the following udev rules may need to be added:
-```
+	**For Linux Platform**: the following udev rules may need to be added:
+
+```bash
 # Match KP2 PID/VID
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="f148", ENV{CY_KP2_PID_VID}="f148:04b4"
 # Match KP2 CMSIS-DAP
@@ -95,22 +70,18 @@ The KitProg2 is connected to the PSoC6 `SERIAL0`.
 
 Once connected the PSoC6 WiFi-Bt Pioneer Kit device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
-* ```Select``` the PSoC6 WiFi-Bt Pioneer Kit on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the PSoC6 WiFi-Bt Pioneer Kit on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the PSoC6 WiFi-Bt Pioneer Kit device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “uplink” button of Zerynth Studio.
+After virtualization, the PSoC6 WiFi-Bt Pioneer Kit device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “uplink” button of Zerynth Studio.
+
+!!!important
+   To exploit the board WiFi capabilities, the [lib.murata.lbee5kl1dx library](https://docs.zerynth.com/latest/official/lib.murata.lbee5kl1dx/docs/index.html#lib-murata-lbee5kl1dx) must be imported inside your Zerynth script.
 
 ## Missing features
 

@@ -35,32 +35,14 @@ Since writing to a sector entails erasing it first, the write operation can be s
 
 
 * Microcontroller: STM32F746 ARM®32-bit Cortex®-M7 CPU
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 84
-
-
 * Analog Input Pins (ADC): 9
-
-
 * UARTs: 4
-
-
 * SPIs: 2
-
-
 * I2Cs: 2
-
-
 * Flash Memory: 1024 KB
-
-
 * SRAM: 320 KB
 
 ## Power
@@ -74,11 +56,7 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 
 * JP3 between pin 1 and pin 2 for E5V power supply;
-
-
 * JP3 between pin 3 and pin 4 for U5V power supply (ST-Link VBUS);
-
-
 * JP3 between pin 5 and pin 6 for VIN-5V power supply.
 
 ## Connect, Register, Virtualize and Program
@@ -88,26 +66,19 @@ The ST Nucleo F746ZG Programming port is connected to the ST-Link uploader creat
 On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```
+```bash
 #ST Nucleo F746ZG Device
 SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
 ```
 
-
-* ```Select``` the ST Nucleo F746ZG on the **Device Management Toolbar** (Disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the ST Nucleo F746ZG on the **Device Management Toolbar** (Disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 After virtualization, the ST Nucleo F746ZG device is ready to be programmed and the Zerynth scripts uploaded. Just Select the virtualized device from the “Device Management Toolbar” and click the dedicated “upload” button of Zerynth Studio and reset the device by pressing the Reset on-board button when asked.
 
@@ -117,11 +88,7 @@ Not all features have been included in the ST Nucleo F746ZG support. In particul
 
 
 * ICU;
-
-
 * Ethernet;
-
-
 * USB;
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIxMDcyNDI1OCwtMTE1NzQxNDQ3NF19

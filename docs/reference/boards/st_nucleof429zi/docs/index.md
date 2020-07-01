@@ -150,35 +150,15 @@ The internal flash of the ST Nucleo F429ZI is organized into two banks of 1Mb ea
 
 
 * Microcontroller: ARM 32-bit Cortex™-M4 CPU Core
-
-
 * Operating Voltage: 3.3V
-
-
 * Input Voltage: 7-12V
-
-
 * Digital I/O Pins (DIO): 105
-
-
 * Analog Input Pins (ADC): 19
-
-
 * UARTs: 6
-
-
 * SPIs: 5
-
-
 * I2Cs: 3
-
-
 * Flash Memory: 2Mb
-
-
 * SRAM: 192 KB + 64Kb CCM
-
-
 * Clock Speed: 180MHz
 
 ## Power
@@ -192,43 +172,32 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 
 * JP3 between pin 1 and pin 2 for E5V power supply;
-
-
 * JP3 between pin 3 and pin 4 for U5V power supply (ST-Link VBUS);
-
-
 * JP3 between pin 5 and pin 6 for VIN-5V power supply.
 
 ## Connect, Register, Virtualize and Program
 
-The ST Nucleo F429ZI Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html), while **MAC OSX** and **Linux** machines will recognize the device automatically.
+The ST Nucleo F429ZI Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, **Windows** machines requires drivers that can be downloaded from [the ST Nucleo download page](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html), while **MAC OSX** and **Linux** machines will recognize the device automatically.
 
 The St-Link is also connected to the STM32 hardware UART0.
 
 Once connected on a USB port, if drivers have been correctly installed the ST Nucleo F429ZI device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-
-* ```Select``` the ST Nucleo F429ZI on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the ST Nucleo F429ZI on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	  No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the ST Nucleo F429ZI device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the ST Nucleo F429ZI device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! note
-	If the reset is not performed within 5 seconds the upload procedure fails.
+	  If the reset is not performed within 5 seconds the upload procedure fails.
 
 !!! warning
-	Scripts uploading and serial console connection issues on St Nucleo devices have been reported. If the upload fails also with a correctly performed reset or if the device is not able to print on the console, disconnect the device from the USB port and plug it again on another USB socket.
+	  Scripts uploading and serial console connection issues on St Nucleo devices have been reported. If the upload fails also with a correctly performed reset or if the device is not able to print on the console, disconnect the device from the USB port and plug it again on another USB socket.
 
 If also this procedure fails, try to update the ST Nucleo firmware available at this [link](https://developer.mbed.org/teams/ST/wiki/Nucleo-Firmware)
 
@@ -245,13 +214,16 @@ Flash Layout is shown in table below:
 | 0x08080000    | 128kb | VM Slot 1       |
 | 0x080A0000    | 384kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the ST Nucleo F429ZI device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
+
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEwMTA1NDU3MjcsLTg1MzU0Mjg1Nl19
 -->

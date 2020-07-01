@@ -15,8 +15,7 @@ Official reference for Infineon XMC4400 Enterprise Kit can be found
 
 ## Flash Layout
 
-The internal flash of the XMC4400 module is organized in a single flash area
-with 16 sectors. The flash starts at address 0xC000000.
+The internal flash of the XMC4400 module is organized in a single flash area with 16 sectors. The flash starts at address 0xC000000.
 
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
@@ -32,79 +31,45 @@ with 16 sectors. The flash starts at address 0xC000000.
 | 0xC040000     | 256Kb | Bytecode Bank 1 |
 
 !!! note
-	If flash memory must be used in a Zerynth program, it is recommended
-to begin using it from secure addresses towards the end the bytecode (start
-address of the bytecode can be found in the log console of Zerynth Studio
-during the uplink operation), leaving a minimum safe place to minimize the
-chance of clashes.
+	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the uplink operation), leaving a minimum safe place to minimize the chance of clashes.
 
 ## Device Summary
 
 
 * XMC4400 Microcontroller based on ARM® Cortex®-M4, 512Kb Flash
-
-
 * On-Board Debugger
-
-
 * Power over USB
-
-
 * ESD and reverse current protection
-
-
 * 1 x user button and 3 x user LEDs of which an RGB one
-
-
 * Real Time Clock crystal
-
-
 * Battery holder for an RTC backup battery
-
-
 * Ethernet PHY and RJ45 Jack
-
-
 * 3 Satellite Connectors
-
-
 * 1 potentiometer
 
 ## Power
 
-Power to the XMC4400 is supplied via one of the two on-board USB Micro B connectors.
-However there is a current limit that can be drawn from the host PC through USB. If the board is used to drive other satellite cards and the total system current reuired exceeds 500 mA, then the xmc4400 needs to be powered by a satellite cards, which can support external power supply.
+Power to the XMC4400 is supplied via one of the two on-board USB Micro B connectors. However there is a current limit that can be drawn from the host PC through USB. If the board is used to drive other satellite cards and the total system current reuired exceeds 500 mA, then the xmc4400 needs to be powered by a satellite cards, which can support external power supply.
 
 ## Connect, Register, Virtualize and Program
 
-The Infineon XMC4400 comes with a usb debugger chip on board that allows
-programming and opening the UART of the module.
-**Drivers are needed** (Linux, Mac or Windows) and can be downloaded from the official
-[JLink software](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
-page.
+The Infineon XMC4400 comes with a usb debugger chip on board that allows programming and opening the UART of the module.
+**Drivers are needed** (Linux, Mac or Windows) and can be downloaded from the official [JLink software](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack) page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
-Once connected on a USB port, if drivers have been correctly installed, the
-XMC4400 device is recognized by Zerynth Studio. The next steps are:
+Once connected on a USB port, if drivers have been correctly installed, the XMC4400 device is recognized by Zerynth Studio. The next steps are:
 
-
-* ```Select``` the XMC4400 on the **Device Management Toolbar** (disambiguate if necessary);
-
-
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-
-
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-
-
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the XMC4400 on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the DevKitC is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+After virtualization, the DevKitC is ready to be programmed and the Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 !!! note
 	No user intervention on the device is required for the uplink process.
