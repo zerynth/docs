@@ -78,9 +78,9 @@ After virtualization, the DevKitC is ready to be programmed and the Zerynth scri
 
 Not all features have been included in the XMC4800 Connectivity Kit support. In particular the following are missing:
 
-> -   CDC USB Serial Driver
-> -   CAN
-> -   Ethercat
+* CDC USB Serial Driver
+* CAN
+* Ethercat
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTM0NTM1NjA3XX0=
 -->

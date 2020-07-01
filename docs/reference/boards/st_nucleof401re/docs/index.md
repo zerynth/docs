@@ -6,6 +6,9 @@ The Arduino connectivity support and ST Morpho headers make it easy to expand th
 
 <p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof401re/docs/img/StNucleo.jpg?raw=true"></p>
 
+!!! important
+    ST Nucleo uploader requires a firmware upgrade to properly work with Zerynth and with other serial terminal. ST-Link firmware can be upgraded following the [ST official procedure](https://os.mbed.com/teams/ST/wiki/Nucleo-Firmware).
+
 !!! warning
 	Unlike other Arduino-like devices, the ST Nucleo device runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin, could damage the device.
 
@@ -35,7 +38,7 @@ The internal flash of the ST Nucleo F401RE is organized into sectors of differen
 
 !!! warning
 	If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 2) towards the virtual machine, to minimize the chance of clashes.
-Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
+    Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
 
 ## Device Summary
 
@@ -69,21 +72,21 @@ The ST-LINK/V2-1 supports USB power management allowing to request more than 100
 
 ## Connect, Register, Virtualize and Program
 
-The ST Nucleo Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, ```Windows``` machines requires drivers that can be downloaded from [the ST Nucleo download page](https://developer.mbed.org/teams/ST/wiki/ST-Link-Driver), while **MAC OSX** and **Linux** machines will recognize the device automatically.
+The ST Nucleo Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, **Windows** machines requires drivers that can be downloaded from [the ST Nucleo download page](https://developer.mbed.org/teams/ST/wiki/ST-Link-Driver), while **MAC OSX** and **Linux** machines will recognize the device automatically.
 
 The St-Link is also connected to the STM32 hardware UART0 also connected with pins RX0 and TX0 available on the Arduino headers.
 
 Once connected on a USB port, if drivers have been correctly installed the ST Nucleo device is recognized by Zerynth Studio and listed in the **Device Management Toolbar**. The next steps are:
 
-* ```Select``` the ST Nucleo on the **Device Management Toolbar**;
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the ST Nucleo on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the ST Nucleo device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the ST Nucleo device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! note
 	If the reset is not performed within 5 seconds the upload procedure fails.
@@ -106,13 +109,17 @@ Flash Layout is shown in table below:
 | 0x08040000    | 128kb | VM Slot 1       |
 | 0x08060000    | 128kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the ST Nucleo device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
+
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - STM32F section and Secure Firmware - STM32F section.
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEwMjQzMjI2MTFdfQ==
 -->

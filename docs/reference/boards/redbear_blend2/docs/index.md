@@ -48,12 +48,15 @@ Once connected to a USB port, the RedBear Blend 2 board is recognized by Zerynth
 
 Follow these steps to uplink a Zerynth script on a virtualized RedBear Blend 2:
 
-* ```Select``` the Blend 2 on the **Device Management Toolbar**;
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Blend 2 on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
-After virtualization, the device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
+
+!!! Important
+    To exploit the BLE chip functionalities of the Blend 2, the [lib.nordic.nrf52_ble library]() must be installed and imported on the Zerynth script. Moreover, in the creation phase, a VM with BLE support must be selected.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI5NDE4MDYyN119
 -->

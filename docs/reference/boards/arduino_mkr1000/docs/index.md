@@ -120,6 +120,9 @@ Follow these steps to upload a Zerynth script on a virtualized Arduino/Genuino M
 
 After virtualization, the Arduino/Genuino MKR1000 is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar”, **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the RST on-board button when asked.
 
+!!! important
+    To exploit the Wi-Fi chip functionalities of the Arduino/Genuino MKR1000, the [lib.microchip.winc1500 library](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/index.html#microchip-winc1500) must be installed and imported in the Zerynth script.
+
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Arduino/Genuino MKR1000 device is available for bytecode only.

@@ -95,6 +95,9 @@ Flash Layout is shown in table below:
 | 0x08080000    | 128kb | VM Slot 1       |
 | 0x080A0000    | 384kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the IoT DevKit AZ3166 device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
+
 ## Power Management and Secure Firmware
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state.

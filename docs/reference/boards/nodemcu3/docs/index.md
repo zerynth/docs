@@ -50,22 +50,25 @@ The NodeMCU v3 exposes the serial port of the ESP8266 module via CH340 USB to UA
 	Drivers for the CH340 Module can be downloaded [here](https://wiki.wemos.cc/downloads) and are needed for **Windows and Mac platforms**.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 Once connected to a USB port the NodeMCU v3 device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
-* ```Select``` the NodeMCU v3 on the **Device Management Toolbar** (disambiguate if necessary);
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the NodeMCU v3 on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the NodeMCU v3 device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+After virtualization, the NodeMCU v3 device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 !!! note
 	No user intervention on the device is required for the upload process.
+
+!!! important
+    To exploit the Wi-Fi chip functionalities of the NodeMCU v3, the [lib.espressif.esp8266wifi library](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/index.html#esp8266wifi) must be installed (some example code is provided).
 
 ## Firmware Over the Air update (FOTA)
 
@@ -79,9 +82,12 @@ Flash Layout is shown in table below:
 | 0x40270000    | 256Kb | Bytecode Slot 0 |
 | 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the NodeMCU v3 is allocated in the RTC memory.
+
 ## Power Management
 
-Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
+Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTU4ODgwODExNiwyMDI4OTQxNjIxXX0=
 -->

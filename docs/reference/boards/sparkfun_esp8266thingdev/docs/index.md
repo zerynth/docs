@@ -62,26 +62,29 @@ The Sparkfun Esp8266 Thing Dev comes with a serial-to-usb chip on board that all
 	Drivers for the FT231x Module can be downloaded [here](http://www.ftdichip.com/Drivers/VCP.htm) and are needed for **Windows and Mac platforms**. In Linux systems, the Sparkfun Esp8266 Thing Dev should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 Once connected to a USB port the Sparkfun Esp8266 Thing Dev can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
-* ```Select``` the Sparkfun Esp8266 Thing Dev on the **Device Management Toolbar** (disambiguate if necessary);
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Sparkfun Esp8266 Thing Dev on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
 	No user intervention on the device is required for registration and virtualization process
 
-After virtualization, the Sparkfun Esp8266 Thing Dev is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+After virtualization, the Sparkfun Esp8266 Thing Dev is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 !!! note
 	No user intervention on the device is required for the upload process.
 
+!!! important
+    To exploit the Wi-Fi chip functionalities of the Sparkfun Esp8266 Thing Dev, the [lib.espressif.esp8266wifi library](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/index.html#esp8266wifi) must be installed (some example code is provided).
+
 ## Power Management
 
-Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in Power Management - ESP8266 section.
+Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI3NTEwNDE0OCw4NzU4MTEwMjRdfQ==
 -->

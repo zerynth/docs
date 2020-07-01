@@ -56,21 +56,26 @@ The Nordic nRF52840 DK can be programmed through the on-board SEGGER J-Link debu
 page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+	* **Ubuntu** distribution –> dialout group
+	* **Arch Linux** distribution –> uucp group
 
 Once connected to a USB port, the Nordic nRF52840 DK device is recognized by Zerynth Studio. The board can be virtualized by clicking the related Studio button without requiring any other user intervention.
 
 Follow these steps to uplink a Zerynth script on a virtualized nRF52840 DK:
 
-* ```Select``` nRF52840 DK on the **Device Management Toolbar** (disambiguate if necessary);
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** nRF52840 DK on the **Device Management Toolbar** (disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the device is ready to be programmed and the  Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio.
+After virtualization, the device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
+
+!!! important
+    To exploit the BLE chip functionalities of nRF52 DK, the lib.nordic.nrf52_ble library must be installed and imported on the Zerynth script. Moreover, in the creation phase, a VM with BLE support must be selected.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTY5MjQyOTUwMV19
 -->

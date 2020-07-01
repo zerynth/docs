@@ -46,14 +46,14 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 ## Connect, Register, Virtualize and Program
 
-The Xplained Pro Sam C21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all ```Windows``` (automatic driver software installation), ```OSX``` and ```Linux``` machines will recognize the device as a COM port automatically.
+The Xplained Pro Sam C21 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all **Windows** (automatic driver software installation), **OSX** and **Linux** machines will recognize the device as a COM port automatically.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```
+```bash
 # Check SUBSYSTEM
 SUBSYSTEMS=="hidraw", KERNEL=="hidraw*", MODE="0666", GROUP="dialout"
 
@@ -66,15 +66,15 @@ EDBG is also connected to the SAMC21 hardware UART. Serial on pins RX0 and TX0 p
 
 Once connected on a USB port the Xplained Pro Sam C21 device is recognized by Zerynth Studio. The next steps are:
 
-* ```Select``` the Xplained Pro Sam C21 on the **Device Management Toolbar**;
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Xplained Pro Sam C21 on the **Device Management Toolbar**;
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the Xplained Pro Sam C21 is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar” and ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset on-board button when asked.
+After virtualization, the Xplained Pro Sam C21 is ready to be programmed and the Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **rese** the device by pressing the Reset on-board button when asked.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -99,10 +99,8 @@ This feature is strongly platform dependent; more information at Secure Firmware
 Not all features have been included in the Xplained Pro SamC21 support. In particular the following are missing:
 
 
-* ICU;
-
-
-        * Powersave firmware;
+* ICU
+* Powersave firmware
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTczNDYyMzIyOCw5NTc3OTQxMzRdfQ==
 -->

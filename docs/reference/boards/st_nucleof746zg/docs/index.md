@@ -66,19 +66,19 @@ The ST Nucleo F746ZG Programming port is connected to the ST-Link uploader creat
 On **MAC OSX** and **Linux** USB drivers are not required.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```
+```bash
 #ST Nucleo F746ZG Device
 SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
 ```
 
-* ```Select``` the ST Nucleo F746ZG on the **Device Management Toolbar** (Disambiguate if necessary);
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the ST Nucleo F746ZG on the **Device Management Toolbar** (Disambiguate if necessary);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 After virtualization, the ST Nucleo F746ZG device is ready to be programmed and the Zerynth scripts uploaded. Just Select the virtualized device from the “Device Management Toolbar” and click the dedicated “upload” button of Zerynth Studio and reset the device by pressing the Reset on-board button when asked.
 

@@ -22,7 +22,7 @@ For this device, a docking station is also available; The Hexiwear Docking Stati
 The Hexiwear device features a 1 MB flash memory organized in 2 blocks (512 KB each) consisting of 4 KB sectors. The flash memory address starts at 0x00000000 and can be read and written from a Zerynth program using the internal flash module.
 
 !!! warning
-	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the ```uplink``` operation), leaving a minimum safe place to minimize the chance of clashes.
+	If flash memory must be used in a Zerynth program, it is recommended to begin using it from secure addresses towards the end the bytecode (start address of the bytecode can be found in the log console of Zerynth Studio during the **uplink** operation), leaving a minimum safe place to minimize the chance of clashes.
 
 ## Device Summary
 
@@ -64,15 +64,15 @@ Once connected to a USB port, the Hexiwear Device is recognized by Zerynth Studi
 
 Once connected to a USB port the Hexiwear device can be seen as a Virtual Serial port and it is automatically recognized by Zerynth Studio. The next steps are:
 
-* ```Select``` the Hexiwear on the **Device Management Toolbar** (Disambiguate operation may be required);
-* ```Register``` the device by clicking the “Z” button from the Zerynth Studio;
-* ```Create``` a Virtual Machine for the device by clicking the “Z” button for the second time;
-* ```Virtualize``` the device by clicking the “Z” button for the third time.
+* **Select** the Hexiwear on the **Device Management Toolbar** (Disambiguate operation may be required);
+* **Register** the device by clicking the “Z” button from the Zerynth Studio;
+* **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
+* **Virtualize** the device by clicking the “Z” button for the third time.
 
 !!! note
-	No user intervention on the device is required for registration and virtualization process
+	No user intervention on the device is required for registration and virtualization process.
 
-After virtualization, the device is ready to be programmed and the Zerynth scripts ```uploaded```. Just ```Select``` the virtualized device from the “Device Management Toolbar”, ```click``` the dedicated “upload” button of Zerynth Studio and ```reset``` the device by pressing the Reset button on Hexiwear Docking Station when asked.
+After virtualization, the device is ready to be programmed and the Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar”, **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset button on Hexiwear Docking Station when asked.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -93,7 +93,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at Power Management - NXP K64 section and Secure Firmware - NXP K64 section.
+Both these features are strongly platform dependent; more information at [Power Management - NXP K64 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-nxpk64) and [Secure Firmware - NXP K64 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-nxpk64).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNzU1NDY2MjU5LDE5NTAyOTEzNDYsNDE3OD
 QzMzAwXX0=
