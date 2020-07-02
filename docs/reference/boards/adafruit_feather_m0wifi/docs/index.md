@@ -16,8 +16,7 @@ All these features make this device the preferred choice for the emerging IoT ba
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_m0wifi/docs/img/Adafruit_Feather_M0WiFi_pin_io.png?raw=true)
-Adafruit Feather M0 Wi-Fi Official Schematic, Reference Design and Pin Mapping are available on the official [Adafruit Feather M0 Wi-Fi reference page](https://learn.adafruit.com/adafruit-feather-m0-wifi-atwinc1500/).
+<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_m0wifi/docs/img/Adafruit_Feather_M0WiFi_pin_io.png?raw=true">
 
 ## Flash Layout
 
