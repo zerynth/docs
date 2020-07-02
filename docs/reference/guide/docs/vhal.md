@@ -24,19 +24,19 @@ For each pin class, there exists a table containing configuration data. Such dat
 
 **`PIN_CLASS_ID(vpin)`**
 
-Returns a byte representing the index of the physical pin corresponding to vpin
+Returns a byte representing the index of the physical pin corresponding to vpin.
 
 
 **`PIN_CLASS_DATA0(vpin)`**
-Returns a byte representing the first byte of info about vpin
+Returns a byte representing the first byte of info about vpin.
 
 
 **`PIN_CLASS_DATA1(vpin)`**
-Returns a byte representing the second byte of info about vpin
+Returns a byte representing the second byte of info about vpin.
 
 
 **`PIN_CLASS_DATA2(vpin)`**
-Returns a byte representing the third byte of info about vpin
+Returns a byte representing the third byte of info about vpin.
 
 The meaning of the three bytes of info depends on the actual porting; usually they contain configuration values to correctly setup the peripheral.
 
@@ -77,22 +77,22 @@ The following macros are used to set the pin mode of operation.
 
 **`PINMODE_INPUT_PULLNONE`**
 
-Used to configure a pin as input with no pull up/down circuitry (floating mode)
+Used to configure a pin as input with no pull up/down circuitry (floating mode).
 
 
 **`PINMODE_INPUT_PULLUP`**
 
-Used to configure a pin as input with pull up circuitry
+Used to configure a pin as input with pull up circuitry.
 
 
 **`PINMODE_INPUT_ANALOG`**
 
-Used to configure a pin as analog input by connecting it to an analog to digital converter
+Used to configure a pin as analog input by connecting it to an analog to digital converter.
 
 
 **`PINMODE_INPUT_PULLDOWN`**
 
-Used to configure a pin as input with pull down circuitry
+Used to configure a pin as input with pull down circuitry.
 
 
 **`PINMODE_OUTPUT_PUSHPULL`**
@@ -138,12 +138,12 @@ Read the digital value of *vpin. Return 0 if *vpin is low, non-zero if *vpin is 
 
 **`int vhalPinWrite(int vpin, int value)`**
 
-Set the digital value of *vpin to *value. If value* is zero, *vpin is set to low, otherwise is set to high. Return 0 in case of success.
+Set the digital value of *vpin* to *value*. If *value* is zero, *vpin* is set to low, otherwise is set to high. Return 0 in case of success.
 
 
 **`int  vhalPinToggle(int vpin)`**
 
-Invert the digital value of *vpin. If *vpin is high it is set to low, if *vpin is low it is set to high. Return 0 in case of success.
+Invert the digital value of *vpin. If *vpin is high it is set to low, if *vpin* is low it is set to high. Return 0 in case of success.
 
 
 **`void* PinGetPort(int vpin)`**
@@ -173,8 +173,7 @@ Bypass the virtual pin indirection by operating on the microcontroller register 
 
 **`int vhalPinSetToPeripheral(int vpin, int prph, uint32_t prms)`**
 
-Transfer the control of vp to a peripheral identified by *prph.* The configuration parameters for *vpin are passed via *prms in a format depending on the microcontroller porting.
-Return 0 in case of success. The parameter *prph is ignored in the current version of the VHAL.
+Transfer the control of vp to a peripheral identified by *prph*. The configuration parameters for *vpin* are passed via *prms* in a format depending on the microcontroller porting. Return 0 in case of success. The parameter *prph* is ignored in the current version of the VHAL.
 
 
 

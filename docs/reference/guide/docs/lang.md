@@ -4,11 +4,11 @@ C functions called from Python can create and handle Python entities like lists,
 
 ## PObject
 
-The VM treats every Python object as a pointer to a *```PObject*``` structure. There exist two types of PObjects: tagged and untagged. Tagged PObjects contains all the object information encoded in the 4 bytes of the pointer. Untagged objects are pointers to actual C structures. As a consequence, tagged PObjects are not allocated on the heap but reside on the stack of a frame of execution.
+The VM treats every Python object as a pointer to a **PObject** structure. There exist two types of PObjects: tagged and untagged. Tagged PObjects contains all the object information encoded in the 4 bytes of the pointer. Untagged objects are pointers to actual C structures. As a consequence, tagged PObjects are not allocated on the heap but reside on the stack of a frame of execution.
 
 To better understand tagged PObjects imagine the case of integers: representing integers by allocating a PObject structure in memory is both a waste of ram and of computational power. Therefore small signed integers up to 31 bits are represented as [tagged pointers](https://en.wikipedia.org/wiki/Tagged_pointer). This “trick” is possible because a PObject pointer is 4 bytes (32 bits) and due to architecture constraints a valid PObject pointer is at least aligned to 2 or 4. In practical terms it means that the least significant bit of a valid PObject pointer is always 0: by “tagging” the PObject pointer, namely changing its lsb to 1, the VM is able to distinguish between concrete PObjects residing on the heap (untagged, lsb=0) and tagged PObjects (lsb=1). The representation of the number 42 as a tagged PObject follows:
 
-```
+```py
 MSB                                                         LSB
 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1
@@ -18,7 +18,7 @@ MSB                                                         LSB
 
 Instead, an untagged PObject is a valid pointer to a C structure organized like this:
 
-```
+```py
 GCH:  B0 B1 B2 B3 B4 B5 B6 B7
 DATA: .....
 ```
@@ -28,181 +28,147 @@ where GCH is an 8 byte header holding both garbage collection info and type/size
 ### Macros
 
 
-   ### IS_TAGGED(obj)
+**`S_TAGGED(obj)`**
 
-Check if *obj*```obj``` is tagged or untagged.
-
-
- 
-
-   ### PTYPE(obj)
-
-Extract type info from *obj*```obj``` (both tagged or untagged)
+Check if *obj* is tagged or untagged.
 
 
-   ### PHEADERTYPE(obj)
+**`PTYPE(obj)`**
 
-Extract type info from *obj*```obj``` (untagged only)
+Extract type info from *obj* (both tagged or untagged)
 
+**`PHEADERTYPE(obj)`**
 
-   ### PSMALLINT
-()
+Extract type info from *obj* (untagged only)
+
+**`PSMALLINT`**
+
 Type of a PObject representing a small integer (30 bits signed). Tagged.
 
+**`PINTEGER`**
 
-   ### PINTEGER
-()
 Type of a PObject representing an integer up to int64_t. Untagged.
 
+**`PFLOAT`**
 
-   ### PFLOAT
-()
 Type of a PObject representing a 64 bits float. Untagged.
 
+**`PBOOL`**
 
-    ### PBOOL
-()
 Type of a PObject representing a boolean. Tagged.
 
+**`PSTRING`**
 
-   ### PSTRING
-()
 Type of a PObject representing a string. Untagged.
 
+**`PBYTES`**
 
-   ### PBYTES
-()
 Type of a PObject representing a byte immutable sequence. Untagged.
 
+**`PBYTEARRAY`**
 
-   ### PBYTEARRAY
-()
 Type of a PObject representing a byte mutable sequence. Tagged.
 
+**`PSHORTS`**
 
-   ### PSHORTS
-()
 Type of a PObject representing a 16 bits unsigned integer immutable sequence. Untagged.
-
    
-### PSHORTARRAY
-()
+**`PSHORTARRAY`**
+
 Type of a PObject representing a 16 bits unsigned integer mutable sequence. Untagged.
 
+**`PLIST`**
 
-   ### PLIST
-()
 Type of a PObject representing a mutable sequence of PObjects. Untagged.
 
+**`PTUPLE`**
 
-   ### PTUPLE
-()
 Type of a PObject representing an immutable sequence of PObjects. Untagged.
 
+**`PRANGE`**
 
-   ### PRANGE
-()
 Type of a PObject representing a range. Untagged.
 
+**`PFSET`**
 
-   ### PFSET
-()
 Type of a PObject representing an immutable set. Untagged.
 
+**`PSET`**
 
-   ### PSET
-()
 Type of a PObject representing a mutable set. Untagged.
 
+**`PDICT`**
 
-   ### PDICT
-()
 Type of a PObject representing a dictionary. Untagged.
 
+**`PFUNCTION`**
 
-   ### PFUNCTION
-()
 Type of a PObject representing a function. Untagged.
 
+**`PMETHOD`**
 
-   ### PMETHOD
-()
 Type of a PObject representing a method. Untagged.
 
+**`PCLASS`**
 
-    ### PCLASS
-()
 Type of a PObject representing a class. Untagged.
 
+**`PINSTANCE`**
 
-   ### PINSTANCE
-()
 Type of a PObject representing an instance. Untagged.
 
+**`PMODULE`**
 
-   ### PMODULE
-()
 Type of a PObject representing a module. Untagged.
 
+**`PBUFFER`**
 
-   ### PBUFFER
-()
 Type of a PObject representing a buffer. Untagged.
 
+**`PSLICE`**
 
-   ### PSLICE
-()
 Type of a PObject representing a slice. Untagged.
 
+**`PITERATOR`**
 
-   ### PITERATOR
-()
 Type of a PObject representing an iterator over a sequence. Untagged.
 
+**`PFRAME`**
 
-   ### PFRAME
-()
 Type of a PObject representing an execution frame. Untagged.
 
+**`PCELL`**
 
-   ### PCELL
-()
 Type of a PObject representing a cell. Tagged.
 
+**`PNONE`**
 
-   ### PNONE
-()
 Type of a PObject representing None. Tagged.
 
+**`PEXCEPTION`**
 
-   ### PEXCEPTION
-()
 Type of a PObject representing an exception. Tagged.
 
+**`PNATIVE`**
 
-   ### PNATIVE
-()
 Type of a PObject representing a native function. Tagged.
 
+**`PSYSOBJ`**
 
-   ### PSYSOBJ
-()
 Type of a PObject representing a system object. Untagged.
 
+**`PDRIVER`**
 
-   ### PDRIVER
-()
 Type of a PObject representing a driver. Tagged.
 
+**`PTHREAD`**
 
-   ### PTHREAD
-()
 Type of a PObject representing a Python thread. Untagged.
 
 ### Functions
 
 
-    int parse_py_args(const char *fmt, int nargs, PObject **args, ...)
+**`int parse_py_args(const char *fmt, int nargs, PObject **args, ...)`**
 
 Given an array of PObject pointers *args*, with *nargs* elements, try to convert such elements to C structures according to a format string *fmt*. *fmt* is conceptually similar to the format string of printf.
 
@@ -212,36 +178,20 @@ The variadic arguments (vararg) are usually pointers to store the converted valu
 
 
 * “l”: the nth argument must be of type PINTEGER. One vararg required of type int64_t* to store the converted value.
-
-
 * “L”: the nth argument is an optional PINTEGER. Two varargs are required, one of type int64_t holding the default value, and one of type int64_t* holding the converted value.
-
-
 * “i”: the nth argument must be of type PINTEGER. One vararg required of type int32_t* to store the converted value.
-
-
 * “I”: the nth argument is an optional PINTEGER. Two varargs are required, one of type int32_t holding the default value, and one of type int32_t* holding the converted value.
-
-
 * “s”: the nth argument must be of type PSTRING or PBYTES or PBYTEARRAY. Two varargs are required; the first of type uint8_t** to hold the byte sequence, the second of type int32_t* to hold the number of elements of the sequence.
-
-
 * “S”: the nth argument must be of type PSTRING or PBYTES or PBYTEARRAY. Three varargs are required; the first of type uint_8* holding a default byte sequence, the second of type uint8_t** to hold the byte sequence, the third of type int32_t* to hold the number of elements of the sequence.
-
-
 * “b” and “B”: same as “s” and “S” with the difference that the last vararg holds the maximum amount of elements storable in the sequence.
-
-
 * “f”: the nth argument must be of type PFLOAT. One vararg required of type double* to store the converted value.
-
-
 * “F”: the nth argument is an optional PFLOAT. Two varargs are required, one of type double holding the default value, and one of type double* holding the converted value.
 
 Return the number of converted objects. If the return value is less than the length of `fmt`, a conversion error has occurred.
 
 The following code illustrates the use of parse_py_args:
 
-```
+```py
 int32_t a;
 double b;
 uint8_t *c;
@@ -282,11 +232,13 @@ Return the float value contained in *x*, an untagged PObject of type PFLOAT.
 ### Functions
 
 
- **`pinteger_new(int64_t x)`**
-Return a PINTEGER object with value *x*
+**`pinteger_new(int64_t x)`**
+
+Return a PINTEGER object with value *x*.
 
 **`pfloat_new(double x)`**
-Return a PFLOAT object with value *x*
+
+Return a PFLOAT object with value *x*.
 
 ## Bool & None
 
@@ -294,19 +246,23 @@ Python has some special values of boolean type, True and False, and a special va
 
 
 **`IS_BOOL(x)`**
-Return true if *x* is a PObject of type PBOOL
+
+Return true if *x* is a PObject of type PBOOL.
 
 
 **`PBOOL_TRUE`**
-Return a tagged PObject of type PBOOL and value True
+
+Return a tagged PObject of type PBOOL and value True.
 
 
 **`PBOOL_FALSE`**
-Return a tagged PObject of type PBOOL and value False
+
+Return a tagged PObject of type PBOOL and value False.
 
 
 **`MAKE_NONE`**
-Return a tagged PObject of type PNONE and value None
+
+Return a tagged PObject of type PNONE and value None.
 
 ## Sequences
 
@@ -316,85 +272,91 @@ Python provides many objects representing sequences of items. Zerynth supports l
 
 
 **`PSEQUENCE_ELEMENTS(seq)`**
+
 Return the elements of *seq*.
 
 
 **`PSEQUENCE_ELEMENTS_SET(seq, n)`**
+
 Set the number of elements of *seq* to *n*.
 
-
 **`PSEQUENCE_SIZE(seq)`**
+
 Return the maximum number of elements storable in *seq*.
 
 
 **`PSEQUENCE_BYTES(seq)`**
+
 Return a uint8_t pointer to the bytes stored in *seq*.
 
 
 **`PSEQUENCE_SHORTS(seq)`**
+
 Return a uint16_t pointer to the integers stored in *seq.*
 
 
 **`PSEQUENCE_OBJECTS(seq)`**
-Return a PObject\*\* to the PObjects stored in *seq*.
+
+Return a PObject** to the PObjects stored in *seq*.
 
 
 **`PLIST_ITEM(lst, i)`**
+
 Return the i-th item in lst with lst of type PLIST.
 
 
- **`PLIST_SET_ITEM(lst, i, item)`**
+**`PLIST_SET_ITEM(lst, i, item)`**
+
 Set the i-th item in lst, with  of type PLIST.
 
 
 **`PTUPLE_ITEM(lst, i)`**
+
 Return the i-th item in *lst* with *lst* of type PTUPLE.
 
 
 **`PTUPLE_SET_ITEM(lst, i, item)`**
+
 
 Set the i-th item in *lst* to *item*, with *lst* of type PTUPLE.
 
 ### Functions
 
 
-**`PObject*psequence_new(uint8_t type, uint16_t  elements)**
 
-Create an empty sequence of type type with space for at least *elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence *elements* are set to elements` and the sequence storage filled with zero.
+**`PObject *psequence_new(uint8_t type, uint16_t elements)`**
+
+Create an empty sequence of type type with space for at least elements elements. If the requested sequence is mutable, sequence elements are set to 0; if it is immutable, sequence elementes are set to elements and the sequence storage filled with zero.
 
 Return a pointer to the created sequence or NULL in case of failure.
 
+**`PObject *pstring_new(uint16_t len, uint8_t *buf)`**
 
-**`Pobject*pstring_new(uint16_t lenuint8_
-Create a sequence of type PSTRING with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the string.
-
-Return NULL on failure.
-
-
-**`PObject*pbytes_new(uint16_t len,uint8_t **
-*  \```bbuf)`**
-
-Create a sequence of type PBYTES with *len* elements. If *buf* is not NULL, *len* bytes from *buf* are used to initialize the sequence.
+Create a sequence of type PSTRING with len elements. If buf is not NULL, len bytes from buf are used to initialize the string.
 
 Return NULL on failure.
 
+**`PObject *pbytes_new(uint16_t len, uint8_t *buf)`**
 
-**`PObject*pshorts_new(uint16_t len,uint8**
-16_t* 
-Create a sequence of type PSHORTS with *len* elements. If *buf* is not NULL, *len* words from *buf* are used to initialize the sequence.
-
-Return NULL on failure.
-
-
-**`PObject*ptuple_new(uint16_t lenPObject *  \*\``*buf)`**
-
-Create a sequence of type PTUPLE with *len* elements. If *buf* is not NULL, *len* objects from *buf* are used to initialize the sequence.
+Create a sequence of type PBYTES with len elements. If buf is not NULL, len bytes from buf are used to initialize the sequence.
 
 Return NULL on failure.
 
+**`PObject *pshorts_new(uint16_t len, uint16_t *buf)`**
 
-**`PObject*plist_new(uint16_t lenPObject\*\``  *
-Create a sequence of type PLIST with *len* elements. If *buf* is not NULL, *len* objects from  *buf* are used to initialize the sequence. Sequence elements are set to *len*.
+Create a sequence of type PSHORTS with len elements. If buf is not NULL, len words from buf are used to initialize the sequence.
+
+Return NULL on failure.
+
+**`PObject *ptuple_new(uint16_t len, PObject **buf)`**
+
+Create a sequence of type PTUPLE with len elements. If buf is not NULL, len objects from buf are used to initialize the sequence.
+
+Return NULL on failure.
+
+**`PObject *plist_new(uint16_t len, PObject **buf)`**
+
+Create a sequence of type PLIST with len elements. If buf is not NULL, len objects from buf are used to initialize the sequence. Sequence elements are set to len.
 
 Return NULL on failure.
 
@@ -442,7 +404,7 @@ Return the value associated with the hashable PObject  in  of type PDICT. Return
 Return  if the hashable PObject k is in  of type PSET or PFSET. Return NULL if *k* is not present.
 
 
-pdict_del(f,k)`**
+**`pdict_del(f,k)`**
 
 Remove k and its associated value from  of type PDICT. Return NULL if  is not present.
 
@@ -454,7 +416,7 @@ Remove *k* from *f*k in f of type PSET. Return NULL if  is not present.
 ### Functions
 
 
-**`PObject *pdict_new(int siz)`**
+**`PObject*pdict_new(int size)`**
 
 Create an empty dictionary with enough space to hold *size pairs (key,value)
 
