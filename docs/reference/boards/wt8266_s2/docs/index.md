@@ -80,11 +80,13 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x40200000    | 448Kb | VM Slot         |
 | 0x40270000    | 256Kb | Bytecode Slot 0 |
 | 0x402B0000    | 320Kb | Bytecode Slot 1 |
+
 
 ## Power Management
 
