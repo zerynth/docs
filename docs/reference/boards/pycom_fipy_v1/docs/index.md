@@ -31,6 +31,7 @@ In particular, for non-BLE VMs:
 | 0x00392000    | 4Mb   | Free for user storage   |
 
 For BLE VMs:
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |
