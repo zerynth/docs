@@ -75,18 +75,19 @@ Once both the FTDI and the Debug Port are connected on USB ports, the PK-S5D9 is
 After virtualization, the PK-S5D9 device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio.
 
 !!! important
-A microcnotroller serial port (UART) is not available over the ST-Link interface (mini USB - J19); to visualize serial messages or debug messages over the Zerynth console and to program the device **a second USB cable must be connected to the SERIAL0 by the use of an FTDI USB to Serial**.
+    A microcnotroller serial port (UART) is not available over the ST-Link interface (mini USB - J19); to visualize serial messages or debug messages over the Zerynth console and to program the device **a second USB cable must be connected to the SERIAL0 by the use of an FTDI USB to Serial**.
 
 ## Missing features
 
 Not all features have been included in the Renesas PK-S5D9 VMs. In particular the following are missing but will be added in the near future:
 
-* CDC Driver to program the board without an FTDI device;
-* LCD Screen Drivers;
-* Ethernet Driver;
-* CAN;
-* Capacitive Touch Interface driver;
-* Audio Output;
+* CDC Driver to program the board without an FTDI device
+* LCD Screen Drivers
+* Ethernet Driver
+* CAN
+* Capacitive Touch Interface driver
+* Audio Output
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTA1ODcwMjU4LC00OTk2MzY1NjFdfQ==
 -->

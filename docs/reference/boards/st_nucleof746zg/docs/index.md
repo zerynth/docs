@@ -68,12 +68,12 @@ On **MAC OSX** and **Linux** USB drivers are not required.
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
-If the device is still not recognized or not working, the following udev rules may need to be added:
+    If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```bash
-#ST Nucleo F746ZG Device
-SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-```
+    ```bash
+    #ST Nucleo F746ZG Device
+    SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    ```
 
 * **Select** the ST Nucleo F746ZG on the **Device Management Toolbar** (Disambiguate if necessary);
 * **Register** the device by clicking the “Z” button from the Zerynth Studio;
@@ -87,9 +87,10 @@ After virtualization, the ST Nucleo F746ZG device is ready to be programmed and 
 Not all features have been included in the ST Nucleo F746ZG support. In particular the following are missing:
 
 
-* ICU;
-* Ethernet;
-* USB;
+* ICU
+* Ethernet
+* USB
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIxMDcyNDI1OCwtMTE1NzQxNDQ3NF19
 -->

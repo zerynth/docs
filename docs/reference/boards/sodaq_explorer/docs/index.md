@@ -73,7 +73,7 @@ Once connected on a USB port the SODAQ ExpLoRer device is recognized by Zerynth 
 
 * **Put** the SODAQ ExpLoRer in **Virtualization Mode**;
     * Double click on the RST button;
-* **Select``` the SODAQ ExpLoRer Virtualizable on the **Device Management Toolbar**;
+* **Select** the SODAQ ExpLoRer Virtualizable on the **Device Management Toolbar**;
 * **Register** the device by clicking the “Z” button from the Zerynth Studio;
 * **Create** a Virtual Machine for the device by clicking the “Z” button for the second time;
 * **Virtualize** the device by clicking the “Z” button for the third time.
