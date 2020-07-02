@@ -79,6 +79,7 @@ After virtualization, the WT8266-DK V2 device is ready to be programmed and the 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the WT8266-DK V2 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x40200000    | 448Kb | VM Slot         |
