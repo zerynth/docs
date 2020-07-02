@@ -88,15 +88,15 @@ On **MAC OSX** and **Linux** platforms USB drivers are not required.
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
-If the device is still not recognized or not working, the following udev rules may need to be added:
+    If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```bash
-#SparkFun Photon
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="c008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="c008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-```
+    ```bash
+    #SparkFun Photon
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="c008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="c008", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    ```
 
 Once connected on a USB port, if drivers have been correctly installed, the SparkFun Photon RedBoard can be seen as Virtual Serial port and it is automatically recognized by Zerynth Studio and listed in the **Device Management Toolbar** as “SparkFun Photon RedBoard DFU Mode” if the device is in DFU Mode, otherwise as “SparkFun Photon RedBoard”.
 

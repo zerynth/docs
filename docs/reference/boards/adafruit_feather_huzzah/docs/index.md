@@ -88,6 +88,9 @@ Flash Layout is shown in table below:
 | 0x40270000    | 256Kb | Bytecode Slot 0 |
 | 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the Feather Huzzah device is allocated in the RTC memory.
+
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).

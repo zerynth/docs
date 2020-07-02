@@ -56,9 +56,7 @@ The Nordic nRF52840 DK can be programmed through the on-board SEGGER J-Link debu
 page.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-	* **Ubuntu** distribution –> dialout group
-	* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 Once connected to a USB port, the Nordic nRF52840 DK device is recognized by Zerynth Studio. The board can be virtualized by clicking the related Studio button without requiring any other user intervention.
 

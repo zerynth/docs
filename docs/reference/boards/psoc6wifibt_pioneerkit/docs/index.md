@@ -51,7 +51,7 @@ But only the KitProg2 port can be used for programming purposes.
 Plug the device using the KitProg2 Port which allows to program the PSoC6 MCU using Cypress KitProg2 programmer.
 
 !!! note
-	to successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info.
+	To successfully program the device, KitProg2 should be put in CMSIS-DAP mode clicking on the MODE SELECT button (only LED4 is turned on within this mode), please refer to the [official KitProg2 documentation](https://www.cypress.com/file/225961/download) for more info.
 
 !!! note
 	**For Windows Platform**: install Cypress Programmer tool, which is available for download [here](https://www.cypress.com/products/psoc-programming-solutions).
@@ -59,12 +59,12 @@ Plug the device using the KitProg2 Port which allows to program the PSoC6 MCU us
 !!! note
 	**For Linux Platform**: the following udev rules may need to be added:
 
-```bash
-# Match KP2 PID/VID
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="f148", ENV{CY_KP2_PID_VID}="f148:04b4"
-# Match KP2 CMSIS-DAP
-SUBSYSTEMS=="usb", ATTRS{interface}=="KitProg2 CMSIS-DAP", ENV{CY_KP2_PID_VID}=="f148:04b4", MODE="0666"
-```
+    ```bash
+    # Match KP2 PID/VID
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="f148", ENV{CY_KP2_PID_VID}="f148:04b4"
+    # Match KP2 CMSIS-DAP
+    SUBSYSTEMS=="usb", ATTRS{interface}=="KitProg2 CMSIS-DAP", ENV{CY_KP2_PID_VID}=="f148:04b4", MODE="0666"
+    ```
 
 The KitProg2 is connected to the PSoC6 `SERIAL0`.
 

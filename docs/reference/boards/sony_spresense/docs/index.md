@@ -30,13 +30,11 @@ Official reference for Sony Spresense can be found [here](https://developer.sony
 * Dedicated camera connector
 * GNSS (GPS) antenna
 * Pins and LEDs
-
-> 
-> * Multiple GPIO (UART, SPI, I2C, I2S)
-> * 2 ADC channels
-> * Application LED x 4 (Green)
-> * Power LED (Blue)
-> * USB serial port
+    * Multiple GPIO (UART, SPI, I2C, I2S)
+    * 2 ADC channels
+    * Application LED x 4 (Green)
+    * Power LED (Blue)
+    * USB serial port
 
 ## Power
 

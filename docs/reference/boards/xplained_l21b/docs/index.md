@@ -59,16 +59,16 @@ The Xplained Pro Sam L21 debug port is connected to EDBG, which provides a virtu
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
-If the device is still not recognized or not working, the following udev rules may need to be added:
+    If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```bash
-# Check SUBSYSTEM
-SUBSYSTEMS=="hidraw", KERNEL=="hidraw*", MODE="0666", GROUP="dialout"
+    ```bash
+    # Check SUBSYSTEM
+    SUBSYSTEMS=="hidraw", KERNEL=="hidraw*", MODE="0666", GROUP="dialout"
 
-# Xplained Pro SamL21 Device
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2111", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-SUBSYSTEMS=="tty", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2111", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-```
+    # Xplained Pro SamL21 Device
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2111", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    SUBSYSTEMS=="tty", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2111", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    ```
 
 EDBG is also connected to the SAML21 hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the device through Atmel EDBG.
 
@@ -96,6 +96,8 @@ Flash Layout is shown in table below:
 | 0x00002000    | 88Kb | VM Slot         |
 | 0x00018000    | 80Kb | Bytecode Slot 0 |
 | 0x0002C000    | 80Kb | Bytecode Slot 1 |
+
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTIxMTAxNTI5MF19
 -->
