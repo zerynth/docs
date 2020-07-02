@@ -9,7 +9,7 @@ All these features make this device the preferred choice for the emerging IoT ba
 <p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_m0wifi/docs/img/Adafruit_Feather_M0WiFi.jpg?raw=true"></p>
 
 !!! warning
-	the Adafruit Feather M0 Wi-Fi runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
+	The Adafruit Feather M0 Wi-Fi runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
 
 !!! note
 	All the reported information are extracted from the official [Adafruit Feather M0 Wi-Fi page](https://www.adafruit.com/product/3010), visit this page for more details and updates.
@@ -100,7 +100,3 @@ Power Management feature allows to optimize power consumption by putting the dev
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
 Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-samd21) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTg2ODQwMTUsLTYwNDQxMDkwNSwtMT
-k4MjU4OTQxLDE2NjExMzMzMzNdfQ==
--->
