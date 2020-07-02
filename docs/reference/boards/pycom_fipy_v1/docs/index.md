@@ -30,7 +30,9 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 | 0x00392000    | 4Mb   | Free for user storage   |
 
+
 For BLE VMs:
+
 
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
