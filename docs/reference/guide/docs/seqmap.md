@@ -30,7 +30,7 @@ Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic sequence types: lists, tuples, and range objects.Additional sequence types tailored for processing ofbinary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html?highlight=mutable%20sequence%20types#textseq) aredescribed in dedicated sections.
+There are three basic sequence types: lists, tuples, and range objects. Additional sequence types tailored for processing of [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) are described in dedicated sections.
 
 ### Common Sequence Operations
 
