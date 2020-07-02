@@ -57,16 +57,16 @@ To recognize the device, all **Windows** (automatic driver software installation
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
-If the device is still not recognized or not working, the following udev rules may need to be added:
+    If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```bash
-# Check SUBSYSTEM
-SUBSYSTEMS=="hidraw", KERNEL=="hidraw*", MODE="0666", GROUP="dialout"
+    ```bash
+    # Check SUBSYSTEM
+    SUBSYSTEMS=="hidraw", KERNEL=="hidraw*", MODE="0666", GROUP="dialout"
 
-# SODAQ ExpLoRer Device
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="824e", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-SUBSYSTEMS=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="824e", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-```
+    # SODAQ ExpLoRer Device
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="824e", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    SUBSYSTEMS=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="824e", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    ```
 
 Once connected on a USB port the SODAQ ExpLoRer device is recognized by Zerynth Studio. The next steps are:
 

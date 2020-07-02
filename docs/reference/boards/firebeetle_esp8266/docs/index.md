@@ -26,9 +26,6 @@ The DFRobot FireBeetle ESP8266 device features a 4 MB (32 Mb) flash memory organ
 !!! note
 	The internal flash of DFRobot FireBeetle ESP8266 can be organized in different ways. The standard VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
 
-!!! important
-    To exploit the Wi-Fi chip functionalities of the FireBeetle ESP8266, the [lib.espressif.esp8266wifi](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/index.html#esp8266wifi) library must be installed (some example code is provided).
-
 ## Device Summary
 
 
@@ -78,6 +75,9 @@ After virtualization, the FireBeetle ESP8266 device is ready to be programmed an
 !!! note
 	No user intervention on the device is required for the upload process.
 
+!!! important
+	To exploit the Wi-Fi chip functionalities of the FireBeetle ESP8266, the [lib.espressif.esp8266wifi library](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/index.html#esp8266wifi) must be installed (some example code is provided).
+
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the DFRobot FireBeetle ESP8266 device is available for bytecode only.
@@ -90,9 +90,13 @@ Flash Layout is shown in table below:
 | 0x40270000    | 256Kb | Bytecode Slot 0 |
 | 0x402B0000    | 320Kb | Bytecode Slot 1 |
 
+!!! important
+    FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the FireBeetle ESP8266 device is allocated in the RTC memory.
+
 ## Power Management
 
 Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266).
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTE5NTc0Njk0LC0xMDA2NjM5ODA3XX0=
 -->

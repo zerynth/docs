@@ -72,9 +72,7 @@ The device can operate on an external supply of 6 to 20 volts. If using more tha
 The NodeMCU ESP-32S comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html) page. In Linux systems, the NodeMCU ESP-32S should work out of the box.
 
 !!! note
-	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: 
-	* **Ubuntu** distribution –> dialout group
-	* **Arch Linux** distribution –> uucp group
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 Once connected on a USB port, if drivers have been correctly installed, the NodeMCU ESP-32S device is recognized by Zerynth Studio. The next steps are:
 
@@ -121,7 +119,7 @@ Secure Firmware feature allows to detect and recover from malfunctions and, when
 
 This feature is strongly platform dependent; more information at [Secure Firmware - ESP32 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-esp32).
 
-## zerynth secure socket
+## Zerynth secure socket
 
 To be able to use zerynth secure socket on esp32 boards `native_mbedtls: true` must be used instead of `zerynth_ssl: true` in the `project.yml` file.
 

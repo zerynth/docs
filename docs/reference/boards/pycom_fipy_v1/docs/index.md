@@ -5,7 +5,7 @@ FiPy 1.0 is a low-power consumption development hardware designed for Internet o
 Pycom Fipy 1.0 features a Dual-Core [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview), which supports Wi-Fi &Bluetooth dual-mode communication.
 
 !!! warning
-	To be programmed, the Pycom Fipy 1.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards))
+	To be programmed, the Pycom Fipy 1.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards)).
 
 ## Pin Mapping
 
@@ -119,6 +119,7 @@ Flash Layout is shown in table below:
 | 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
+
 For BLE VMs:
 
 | Start address | Size   | Content                   |
@@ -128,15 +129,16 @@ For BLE VMs:
 | 0x00270000    | 320Kb  | Zerynth Bytecode (slot 0) |
 | 0x002C0000    | 320Kb  | Zerynth Bytecode (slot 1) |
 
+
 For Esp32 based devices, the FOTA process is implemented mostly by using the provided system calls in the IDF framework. The selection of the next VM to be run is therefore a duty of the Espressif bootloader; the bootloader however, does not provide a failsafe mechanism to revert to the previous VM in case the currently selected one fails to start. At the moment this lack of a safety feature can not be circumvented, unless by changing the bootloader. As soon as Espressif relases a new IDF with such feature, we will release updated VMs.
 
 ## Secure Firmware
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-This feature is strongly platform dependent; more information at Secure Firmware - ESP32 section.
+This feature is strongly platform dependent; more information at [Secure Firmware - ESP32 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-esp32).
 
-## zerynth secure socket
+## Zerynth secure socket
 
 To be able to use zerynth secure socket on esp32 boards `native_mbedtls: true` must be used instead of `zerynth_ssl: true` in the `project.yml` file.
 
@@ -146,6 +148,7 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 
 
 * Touch detection support
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTM1MDAxODY3XX0=
 -->

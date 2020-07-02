@@ -28,6 +28,7 @@ In particular, for non-BLE VMs:
 | 0x00310000    | 512Kb | Free for user storage   |
 | 0x00390000    | 448Kb | Reserved                |
 
+
 For BLE VMs:
 
 | Start address | Size   | Content                 |
@@ -41,6 +42,7 @@ For BLE VMs:
 | 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
 | 0x00310000    | 512Kb  | Free for user storage   |
 | 0x00390000    | 448Kb  | Reserved                |
+
 
 ## Device Summary
 
