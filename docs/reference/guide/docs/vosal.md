@@ -225,9 +225,7 @@ Must be called when exiting an ISR. Depending on the underlyng RTOS and architec
 
 Install a new ISR  *fn*  at index  *hpos*  in the interrupt table. Previous ISR is returned.
 
-The type vos_irq_handler is:
-
-    typedef void (*vos_irq_handler)(void)
+The type vos_irq_handler is: `typedef void (*vos_irq_handler)(void)`.
 
 
 **`void vosSysReset(void)`**

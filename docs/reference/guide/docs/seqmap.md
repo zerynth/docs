@@ -9,7 +9,7 @@ Python supports a concept of iteration over containers.  This is implemented usi
 One method needs to be defined for container objects to provide iteration support:
 
 
-**`container.\__iter__()`**
+**`container.__iter__()`**
 
 Return an iterator object.  The object is required to support the iterator protocol described below.
 
@@ -36,7 +36,7 @@ There are three basic sequence types: lists, tuples, and range objects.Additiona
 
 The operations in the following table are supported by most sequence types,both mutable and immutable.
 
-This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n*n*, **ii*, *j*and *k*k* are integers and  is an arbitrary object that meets any type and value restrictions imposed by **s**.
+This table lists the sequence operations sorted in ascending priority.  In the table, **n**, **i**, **j** and are sequences of the same type, **n**, **i**, **j** and **k** are integers and is an arbitrary object that meets any type and value restrictions imposed by **s**.
 
 The `in` and `not in` operations have the same priorities as thecomparison operations. The `+` (concatenation) and `*` (repetition)operations have the same priority as the corresponding numeric operations.
 
@@ -69,7 +69,7 @@ True
 ```
 
 
-2. Values of **n** less than `0` are treated as `0` (which yields an empty sequence of the same type as **s**).  Note that items in the sequence *s* are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
+2. Values of **n** less than `0` are treated as `0` (which yields an empty sequence of the same type as **s**).  Note that items in the sequence **s** are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
 ```py
 >>> lists = [[]] * 3
@@ -95,10 +95,10 @@ What has happened is that `[[]]` is a one-element list containing an empty list,
 3. If **i** or **j** is negative, the index is relative to the end of the string:`len(s) + i` or `len(s) + j` is substituted.  But note that `-0` isstill `0`.
 
 
-4. The slice of **s** from **i** to  is defined as the sequence of items with index **k** such that `i <= k < j`.  If **i** or **j**```i``` or  is greater than `len(s)`, use`len(s)`.  If **i** is omitted or`None`, use `0`.  If **j** is omitted or `None`, use `len(s)`.  If **i** is greater than or equal to **j*,* the slice is empty.
+4. The slice of **s** from **i** to  is defined as the sequence of items with index **k** such that `i <= k < j`.  If **i** or **j**,**i** or  is greater than `len(s)`, use`len(s)`.  If **i** is comitted or `None`, use `0`.  If **j** is omitted or `None`, use `len(s)`.  If **i** is greater than or equal to **j**, the slice is empty.
 
 
-5. The slice of **s** from **i** to **j** with step **k** is defined as the sequence of items with index  `x = i + n*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when **j** is reached (but never including ***j*).  If **i** or  **j**```j```).  If  is greater than`len(s)`, use `len(s)`.  If **i** or **j** are omitted or `None`, they become“end” values (which end depends on the sign of **k**).  Note, **k** cannot be zero. If ` is `None`, it is treated like `1`.
+5. The slice of **s** from **i** to **j** with step **k** is defined as the sequence of items with index  `x = i + n*k` such that `0 <= n < (j-i)/k`.  In other words,the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when **j** is reached (but never including **j**).  If **i** or  **j**).  If  is greater than`len(s)`, use `len(s)`.  If **i** or **j** are omitted or `None`, they become“end” values (which end depends on the sign of **k**).  Note, **k** cannot be zero. If ` is `None`, it is treated like `1`.
 
 
 6. Concatenating immutable sequences always results in a new object.  This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
@@ -284,17 +284,14 @@ Return `True` if the string ends with the specified *suffix, otherwise return `F
 
 **`str.find(sub[,start[,end] ])`**
 
-Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`.  Optional arguments *start and *`end``` are  interpreted as in slice notation.  Return `-1` if *sub* is not found.
+Return the lowest index in the string where substring *sub* is found within the slice `s[start:end]`. Optional arguments *start* and *end* are interpreted as in slice notation. Return `-1` if *sub* is not found.
 
-Note: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
-
-
+!!! Note
+    The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the`in` operator.
 
 **`str.index(sub[,start[,end] ])`**
 
-Like `find()`, but raise `ValueError` when the substring is
-not found.
-
+Like `find()`, but raise `ValueError` when the substring is not found.
 
 **`str.join(iterable)`**
 
@@ -315,12 +312,11 @@ Return a copy of the string with all occurrences of substring *old* replaced by 
 
 Return a list of the words in the string, using *sep* as the delimiter string.  If *maxsplit is given, at most *maxsplit splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit is not specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
 
-If *sep* is given, consecutive delimiters are not grouped together and are deemed to delimit empty strings (for example, `'1,,2'.split(',')` returns `['1', '', '2']`).  The ```sep``` argument may consist of multiple characters
-(for example, `'1<>2<>3'.split('<>')` returns `['1', '2', '3']`). Splitting an empty string with a specified separator returns `['']`.
+If *sep* is given, consecutive delimiters are not grouped together and are deemed to delimit empty strings (for example, `'1,,2'.split(',')` returns `['1', '', '2']`).  The *sep* argument may consist of multiple characters (for example, `'1<>2<>3'.split('<>')` returns `['1', '2', '3']`). Splitting an empty string with a specified separator returns `['']`.
 
 For example:
 
-```
+```py
 >>> '1,2,3'.split(',')
 ['1', '2', '3']
 >>> '1,2,3'.split(',', maxsplit=1)
@@ -329,13 +325,11 @@ For example:
 ['1', '2', '', '3', '']
 ```
 
-If *sep* is not specified, a different splitting algorithm is
-applied: runs of consecutive whites pace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing white space.  Consequently, splitting an empty string or a string consisting of just white space with a `None` separator
-returns `[]`.
+If *sep* is not specified, a different splitting algorithm is applied: runs of consecutive whites pace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing white space.  Consequently, splitting an empty string or a string consisting of just white space with a `None` separator returns `[]`.
 
 For example:
 
-```
+```py
 >>> '1 2 3'.split()
 ['1', '2', '3']
 >>> '1 2 3'.split(maxsplit=1)
@@ -346,14 +340,14 @@ For example:
 
 **`str.startswith(prefix[,start[,end] ])`** 
 
-Return `True` if string starts with the *prefix, otherwise return `False`. With optional *start test string beginning at that position.  With optional *end*, stop comparing string at that position.
+Return `True` if string starts with the *prefix*, otherwise return `False`. With optional *start* test string beginning at that position.  With optional *end*, stop comparing string at that position.
 
 
 **`str.strip([chars[,dir=0] ])`**
 
-Return a copy of the string with the leading and trailing characters removed. The chars* argument is a string specifying the set of characters to be removed. If omitted, the *chars argument defaults to removing whitespace. The chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
+Return a copy of the string with the leading and trailing characters removed. The *chars* argument is a string specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
-```
+```py
 >>> '   spacious   '.strip()
 'spacious'
 >>> 'www.example.com'.strip('cmowz.')
@@ -363,13 +357,9 @@ Return a copy of the string with the leading and trailing characters removed. Th
 The *dir* parameter controls the side of stripping:
 
 
-* dir=0, strip *chars from left and right side of *str*
-
-
-* dir>0, strip *chars from left side of *str*
-
-
-* dir<0, strip *chars from right side of *str*
+* dir=0, strip *chars* from left and right side of *str*
+* dir>0, strip *chars* from left side of *str*
+* dir<0, strip *chars* from right side of *str*
 
 
 **`upper()`**
@@ -380,32 +370,23 @@ Return a copy of the string with all the cased characters converted to uppercase
 
 String objects have one unique built-in operation: the `%` operator (modulo). This is also known as the string *formatting* or interpolation* operator. Given `format % values` (where *format is a string), `%` conversion specifications in *format are replaced with zero or more elements of *valuesThe effect is similar to using the `sprintf()` in the C language.
 
-If *format requires a single argument, *values may be a single non-tuple object. Otherwise, *values must be a tuple or list with exactly the number of items specified by the *format* string, or a single dictionary.
+If *format* requires a single argument, *values* may be a single non-tuple object. Otherwise, *values* must be a tuple or list with exactly the number of items specified by the *format* string, or a single dictionary.
 
 A conversion specifier contains two or more characters and has the following components, which must occur in this order:
 
 
 1. The `'%'` character, which marks the start of the specifier.
-
-
 2. Mapping key (optional), consisting of a parenthesised sequence of characters (for example, `(somename)`).
-
-
 3. Conversion flags (optional), which affect the result of some conversion types.
-
-
-4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the next element of the tuple in *values, and the object to convert comes after the minimum field width and optional precision.
-
-
-5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next 
-element of the tuple in *values, and the value to convert comes after the
-precision.
+4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the next element of the tuple in *values*, and the object to convert comes after the minimum field width and optional precision.
+5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next element of the tuple in *values*, and the value to convert comes after the precision.
 
 
 6. Conversion type.
 
-When the right argument is a dictionary (or other mapping type), then the formats in the string *must include a parenthesized mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key
-selects the value to be formatted from the mapping.  For example:
+When the right argument is a dictionary (or other mapping type), then the formats in the string *must* include a parenthesized mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key selects the value to be formatted from the mapping.  
+
+For example:
 
 ```python
 >>> print('%(language)s has %(number)03d quote types.' %
@@ -433,11 +414,11 @@ The conversion flag characters are:
 | 's'        | String (converts any Python object using str()).                                                                                           | (4)   |
 | '%'        | No argument is converted, results in a '%' character in the result.                                                                        |       |
 
-	!!! note
+!!! note
 	1. Not all Python conversion types and conversion flags are supported by Zerynth. Refer to Python documentation for the (few) differences.
-2. Hexadecimal conversion does not produce the “0x” prefix.
-3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.The precision determines the number of digits after the decimal point and defaults to 6.
-4. If precision is `N`, the output is truncated to `N` characters.
+    2. Hexadecimal conversion does not produce the “0x” prefix.
+    3. In Zerynth “g” and “e” modifiers, together with their uppercase versions are equivalent to “f” or “F”.The precision determines the number of digits after the decimal point and defaults to 6.
+    4. If precision is `N`, the output is truncated to `N` characters.
 
 ## Binary Sequence Types
 
@@ -451,11 +432,7 @@ Firstly, the syntax for bytes literals is largely the same as that for string li
 
 
 * Single quotes: `b'still allows embedded "double" quotes'`
-
-
-* Double quotes: `b"still allows embedded 'single' quotes"`.
-
-
+* Double quotes: `b"still allows embedded 'single' quotes".`
 * Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
 
 Only ASCII characters are permitted in bytes literals. Any binary values over 127 must be entered into bytes literals using the appropriate escape sequence.
@@ -467,8 +444,6 @@ In addition to the literal forms, bytes objects can be created in a number of ot
 
 
 * A zero-filled bytes object of a specified length: `bytes(10)`
-
-
 * From an iterable of integers: `bytes([1,2,3])`
 
 Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimalnumbers are a commonly used format for describing binary data.
@@ -481,39 +456,33 @@ Since bytes objects are sequences of integers (akin to a tuple), for a bytes obj
 
 
 * Creating an empty instance: `bytearray()`
-
-
 * Creating a zero-filled instance with a given length: `bytearray(10)`
-
-
 * From an iterable of integers: `bytearray([1,2,3])`
 
-As bytearray objects are mutable, they support the
-mutable sequence operations in addition to the
-common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#bytes-methods).
+As bytearray objects are mutable, they support the mutable sequence operations in addition to the common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#bytes-methods).
 
-Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal 
-numbers are a commonly used format for describing binary data.
+Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data.
 
 Since bytearray objects are sequences of integers (akin to a list), for a bytearray object *b*, `b[0]` will be an integer, while `b[0:1]` will be a bytearray object of length 1.  (This contrasts with text strings, where both indexing and slicing will produce a string of length 1.)
 
 ### Bytes and Bytearray Operations
 
-Both bytes and bytearray objects support the common
-sequence operations. They interoperate not just with operands of the same type, but with any bytes-like object. Due to this flexibility, they can be freely mixed in operations without causing errors. However, the return type
-of the result may depend on the order of operands.
+Both bytes and bytearray objects support the common sequence operations. They interoperate not just with operands of the same type, but with any bytes-like object. Due to this flexibility, they can be freely mixed in operations without causing errors. However, the return type of the result may depend on the order of operands.
 
-NOTE: Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as their arguments, just as the methods on strings accept bytes as their 
-arguments.  For example, you can write:
+!!! note
+    Contrary to Python, in Zerynth the methods on bytes and bytearray objects accept strings as their arguments, just as the methods on strings accept bytes as their arguments.  
+    
+For example, you can write:
 
-```
+```py
 a = "abc"
 b = a.replace(b"a", "f")
 ```
 
-and:
+and: 
 
-```
+
+```py
 a = b"abc"
 b = a.replace("a", b"f")
 ```
@@ -544,7 +513,7 @@ Like `find()`, but raise `ValueError` when the subsequence is not found.
 The subsequence to search for may be any bytes-like object or an  integer in the range 0 to 255.
 
 
-**`bytes.join(iterable)` `bytearray.join(iterable)`**
+**`bytes.join(iterable)`** **`bytearray.join(iterable)`**
 
 
 Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in *iterable* that are not bytes-like objects or strings. The separator between elements is the contents of the bytes or bytearray object providing this method.
@@ -561,7 +530,7 @@ Return a copy of the sequence with all occurrences of subsequence *old* replaced
 
 Return `True` if the binary data starts with the specified *prefix*, otherwise return `False`. With optional *start*, test beginning at that position. With optional *end*, stop comparing at that position.
 
-**`bytes.split(sep=None,maxsplit=-1)` `bytearray.split(sep=None, maxsplit=-1)`**
+**`bytes.split(sep=None,maxsplit=-1)`** **`bytearray.split(sep=None, maxsplit=-1)`**
 
 Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string. If *maxsplit* is given and non-negative, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements).  If *maxsplit* is not specified or is `-1`, then there is no limit on the number of splits (all possible splits are made).
 
@@ -569,7 +538,7 @@ If *sep* is given, consecutive delimiters are not grouped together and are deeme
 
 For example:
 
-```
+```py
 >>> b'1,2,3'.split(b',')
 [b'1', b'2', b'3']
 >>> b'1,2,3'.split(b',', maxsplit=1)
@@ -582,7 +551,7 @@ If sep is not specified, a different splitting algorithm is applied: runs of con
 
 For example:
 
-```
+```py
 >>> b'1 2 3'.split()
 [b'1', b'2', b'3']
 >>> b'1 2 3'.split(maxsplit=1)
@@ -597,7 +566,7 @@ For example:
 
 Return a copy of the binary sequence with the leading and trailing characters removed. The *chars* argument is a string or binary sequence specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
 
-```
+```py
 >>> b'   spacious   '.strip()
 b'spacious'
 >>> b'www.example.com'.strip(b'cmowz.')
@@ -608,25 +577,21 @@ The *dir* parameter controls the side of stripping:
 
 
 * dir=0, strip *chars* from left and right side of *str*
-
-
 * dir>0, strip *chars* from left side of *str*
-
-
 * dir<0, strip *chars* from right side of *str*
 
 The following methods on bytes and bytearray objects assume the use of ASCII compatible binary formats and should not be applied to arbitrary binary data. Note that all of the bytearray methods in this section do *not* operate in place, and instead produce new objects.
 
 
 
-**`bytes.lower()` `bytearray.lower()`**
+**`bytes.lower()`** **`bytearray.lower()`**
 
 Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart.
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
 
 
-**`bytes.upper()` `bytearray.upper()`**
+**`bytes.upper()`** **`bytearray.upper()`**
 
 Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart.
 
@@ -643,8 +608,6 @@ Shorts and shortsarray can’t be specified with literals, but only using one of
 
 
 * A zero-filled bytes object of a specified length: `shorts(10)`
-
-
 * From an iterable of integers: `shorts([1,2,3])`
 
 Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal numbers are a commonly used format for describing binary data.
@@ -655,8 +618,6 @@ Shortarray objects are mutable sequences of 16 bits integers. Shorts and shortsa
 
 
 * A zero-filled bytes object of a specified length: `shortarray(10)`
-
-
 * From an iterable of integers: `shortarray([1,2,3])`
 
 Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal numbers are a commonly used format for describing binary data.
@@ -667,8 +628,6 @@ Shorts and shortarryas support only a limited set of methods:
 
 
 * `count` and `index` with the same syntax and semantics of the corresponding methods for bytes
-
-
 * common methods for mutable objects (only for shortarrays).
 
 ## Set Types
@@ -685,12 +644,11 @@ Non-empty sets (not frozensets) can be created by placing a comma-separated list
 The constructors for both classes work the same:
 
 
-**`class set ([iterable])` `class frozenset ([iterable])`**
+**`class set ([iterable])`** **`class frozenset ([iterable])`**
 
 Return a new set or frozenset object whose elements are taken from *iterable*.  The elements of a set must be hashable.  To represent sets of sets, the inner sets must be `frozenset()` objects.  If *iterable* is not specified, a new empty set is returned.
 
-Instances of `set()` and `frozenset()` provide the following
-operations:
+Instances of `set()` and `frozenset()` provide the following operations:
 
 
     len(s)
@@ -714,7 +672,7 @@ Test *x* for non-membership in *s*.
 Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
 
-**`issubset(other)` `set <= other`**
+**`issubset(other)`** **`set <= other`**
 
 
 Test whether every element in the set is in *other.*
@@ -732,23 +690,23 @@ Test whether every element in  *other*  is in the set.
 
 Test whether the set is a proper superset of  *other*, that is,  `set  >=  other  and  set  !=  other`.
 
-**`union(other,...)` `set | other | ...`**
+**`union(other,...)`** **`set | other | ...`**
 
 Return a new set with elements from the set and all others.
 
-**`intersection(other,...)` `set & other & ...`**
+**`intersection(other,...)`** **`set & other & ...`**
 
 Return a new set with elements from the set and all others.
 
 
 
-**`difference(other,...)` `set - other - ...`**
+**`difference(other,...)`** **`set - other - ...`**
 
 Return a new set with elements common to the set and all others.
 
 
 
-**`symmetric_difference(other)` `set ^ other`**
+**`symmetric_difference(other)`** **`set ^ other`**
 
 Return a new set with elements in either the set or *other* but not both.
 
@@ -761,23 +719,23 @@ The following table lists operations available for `set()` that do not apply to 
 
 
 
-**`update(other,...)` `set |= other | ...`**
+**`update(other,...)`** **`set |= other | ...`**
 
 Update the set, adding elements from all others.
 
-**`intersection_update(other, ...)` `set &= other & ...`**
+**`intersection_update(other, ...)`** **`set &= other & ...`**
 
 Update the set, keeping only elements found in it and all others.
 
 
 
-**`difference_update(other, ...)` `set -= other | ...`**
+**`difference_update(other, ...)`** **`set -= other | ...`**
 
 Update the set, removing elements found in others.
 
 
 
-**`symmetric_difference_update(other)` `set ^= other`**
+**`symmetric_difference_update(other)`** **`set ^= other`**
 
 Update the set, keeping only elements found in either set, but not in both.
 
@@ -789,8 +747,7 @@ Add element *elem* to the set.
 
 **`remove(elem)`**
 
-Remove element *elem* from the set.  Raises `KeyError`
- if *elem* is not contained in the set.
+Remove element *elem* from the set.  Raises `KeyError` if *elem* is not contained in the set.
 
 
 **`discard(elem)`**
@@ -800,8 +757,7 @@ Remove element *elem* from the set if it is present.
 
 **`pop()`**
 
-Remove and return an arbitrary element from the set.  Raises
-`KeyError` if the set is empty.
+Remove and return an arbitrary element from the set. Raises `KeyError` if the set is empty.
 
 **`clear()`**
 
@@ -814,88 +770,95 @@ Mappings are mutable objects.  There is currently only one standard mapping type
 
 A dictionary’s keys are *almost* arbitrary values.  Values that are not hashable, that is, values containing lists, dictionaries or other mutable types (that are compared by value rather than by object identity) may not be used as keys.  Numeric types used for keys obey the normal rules for numeric comparison: if two numbers compare equal (such as `1` and `1.0`) then they can be used interchangeably to index the same dictionary entry.  (Note however, that since computers store floating-point numbers as approximations it is usually unwise to use them as dictionary keys.)
 
-Dictionaries can be created by placing a comma-separated list of `key: value` pairs within braces, for example: `{'jack': 4098, 'sjoerd': 4127}` or `{4098:
-'jack', 4127: 'sjoerd'}`, or by the `dict()` constructor.
+Dictionaries can be created by placing a comma-separated list of `key: value` pairs within braces, for example: `{'jack': 4098, 'sjoerd': 4127}` or `{4098:'jack', 4127: 'sjoerd'}`, or by the `dict()` constructor.
 
 
 **`class dict(*args)`**
 
-If no positional argument is given, an empty dictionary is created. If a positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.  Otherwise,the positional argument must be an iterable object.  Each item in the iterable must itself be an iterable with exactly two objects.  The first object of each item becomes a key in the new dictionary, and the
-second object the corresponding value.  If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
+If no positional argument is given, an empty dictionary is created. If a positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.  Otherwise,the positional argument must be an iterable object.  Each item in the iterable must itself be an iterable with exactly two objects.  The first object of each item becomes a key in the new dictionary, and the second object the corresponding value.  If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
 
 These are the operations that dictionaries support:
 
-
 **`len(d)`**
-
 Return the number of items in the dictionary *d*.
 
-
 **`d[key]`**
+Return the item of *d* with key *key*. Raises a `KeyError` if key is not in the map.
 
-Return the item of *d* with key *key*.  Raises a `KeyError`
- if *key* is not in the map.
-
-
-**`d[key] = value()`**
-
+**`d[key] = value`**
 Set `d[key]` to *value*.
 
-
 **`del d[key]`**
-
-Remove `d[key]` from *d.*  Raises a `KeyError` if *key* is not in the map.
-
+Remove `d[key]` from *d*. Raises a `KeyError` if *key* is not in the map.
 
 **`key in d`**
+Return True if *d* has a key *key*, else `False`.
 
-Return `True` if *d* has a key *key*, else `False`.
-
-**`strong text`**key not in d
-
+**`key not in d`**
 Equivalent to `not key in d`.
 
-
 **`clear()`**
-
 Remove all items from the dictionary.
 
 **`copy()`**
-
 Return a shallow copy of the dictionary.
 
 **`items()`**
-
 Return a new view of the dictionary’s items (`(key, value)` pairs).
 
-
 **`keys()`**
+Return a new view of the dictionary’s keys. See the documentation of view objects.
 
-Return a new view of the dictionary’s keys.  See the documentation of view objects.
-
-
-**`pop()`**
-
-
-
-If *key* is in the dictionary, remove it and return its value, else return *default*.  If *default* is not given and *key* is not in the dictionary, a  `KeyError` is raised.
-
+**`pop(key[, default])`**
+If *key* is in the dictionary, remove it and return its value, else return *default*. If *default* is not given and *key* is not in the dictionary, a `KeyError` is raised.
 
 **`popitem()`**
-
 Remove and return an arbitrary `(key, value)` pair from the dictionary.
 
-`popitem()` is useful to destructively iterate over a dictionary, as often used in set algorithms.  If the dictionary is empty, calling `popitem()` raises a `KeyError`.
+`popitem()` is useful to destructively iterate over a dictionary, as often used in set algorithms. If the dictionary is empty, calling `popitem()` raises a `KeyError`.
 
-
-
-**`update()`**
-
-Update the dictionary with the key/value pairs from *other*, overwriting existing keys.  Return `None`.
+**`update([other])`**
+Update the dictionary with the key/value pairs from other, overwriting existing keys. Return `None`.
 
 `update()` accepts another dictionary object.
 
-
 **`values()`**
-
 Return a new view of the dictionary’s values.
+<<<<<<< HEAD
+=======
+
+<<<<<<< Updated upstream
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--stackedit_data:
+eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
+RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzgy
+LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
+t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
+MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
+xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
+NjY4NzkwfX0sImhpc3RvcnkiOlstOTA2MjMzMTkxLC0xNTc0OT
+Q4MTM4LC05OTQwMTI4NjEsLTIyMDYyNzcxNSwxOTMyMTk0NDc0
+LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzOD
+k2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2
+OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
+kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
+LC0xNTA1NDMzMDA3XX0=
+-->
+=======
+>>>>>>> Stashed changes
+>>>>>>> origin/dev-sladja

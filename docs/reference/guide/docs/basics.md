@@ -70,7 +70,7 @@ With Python, it is possible to use the `**` operator to calculate powers
 
 The equal sign (`=`) is used to assign a value to a variable.
 
-```
+```py
 >>> width = 20
 >>> height = 5 * 9
 ```
@@ -139,7 +139,7 @@ This feature is particularly useful when you want to break long strings:
 'Put several strings within parentheses to have them joined together.'
 ```
 
-Strings can be ```indexed``` (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
+Strings can be *indexed* (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
 
 ```py
 >>> word = 'Python'
@@ -162,7 +162,7 @@ Indices may also be negative numbers, to start counting from the right:
 
 Note that since -0 is the same as 0, negative indices start from -1.
 
-In addition to indexing, ```slicing``` is also supported.  While indexing is used to obtain individual characters, ```slicing``` allows you to obtain substring:
+In addition to indexing, *slicing* is also supported.  While indexing is used to obtain individual characters, *slicing* allows you to obtain substring:
 
 ```py
 >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
@@ -174,7 +174,7 @@ In addition to indexing, ```slicing``` is also supported.  While indexing is use
 Note how the start is always included, and the end always excluded.  This
 makes sure that `s[:i] + s[i:]` is always equal to `s`:
 
-```
+```py
 >>> word[:2] + word[2:]
 'Python'
 >>> word[:4] + word[4:]
@@ -222,8 +222,7 @@ The built-in function `len()` returns the length of a string:
 
 ### Lists
 
-Python knows a number of ```compound``` data types, used to group together other values.  The most versatile is the ```list```, which can be written as a list of
-comma-separated values (items) between square brackets.  Lists might contain items of different types, but usually the items all have the same type.
+Python knows a number of *compound* data types, used to group together other values.  The most versatile is the *list*, which can be written as a list of comma-separated values (items) between square brackets.  Lists might contain items of different types, but usually the items all have the same type.
 
 ```py
 >>> squares = [1, 4, 9, 16, 25]
@@ -267,7 +266,7 @@ Unlike strings, which are immutable, lists are a mutable type, i.e. it is possib
 [1, 8, 27, 64, 125]
 ```
 
-You can also add new items at the end of the list, by using the `append()` ```method``` (we will see more about methods later):
+You can also add new items at the end of the list, by using the `append()` *method* (we will see more about methods later):
 
 ```py
 >>> cubes.append(216)  # add the cube of 6
@@ -376,9 +375,7 @@ while x<5:
 
 ### `for` Statements
 
-The `for` statement in Python differs a bit from what you may be used to in C or Pascal.  Rather than always iterating over an arithmetic progression
-of numbers (like in Pascal), or giving the user the ability to define both the iteration step and halting condition (as C), Python’s `for` statement
-iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence.
+The `for` statement in Python differs a bit from what you may be used to in C or Pascal.  Rather than always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration step and halting condition (as C), Python’s `for` statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence.
 
 For example (no pun intended):
 
@@ -393,8 +390,7 @@ window 6
 defenestrate 12
 ```
 
-If you need to modify the sequence you are iterating over while inside the loop (for example to duplicate selected items), it is recommended that you first
-make a copy.  Iterating over a sequence does not implicitly make a copy.
+If you need to modify the sequence you are iterating over while inside the loop (for example to duplicate selected items), it is recommended that you first make a copy.  Iterating over a sequence does not implicitly make a copy.
 
 ### The `range()` Function
 
@@ -411,8 +407,7 @@ If you do need to iterate over a sequence of numbers, the built-in function `ran
 4
 ```
 
-The given end point is never part of the generated sequence; `range(10)` generates 10 values, the legal indices for items of a sequence of length 10.  It
-is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the ‘step’):
+The given end point is never part of the generated sequence; `range(10)` generates 10 values, the legal indices for items of a sequence of length 10.  It is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the ‘step’):
 
 ```py
 range(5, 10)
@@ -443,8 +438,7 @@ To iterate over the indices of a sequence, you can combine `range()` and `len()`
 
 The `break` statement, like in C, breaks out of the smallest enclosing `for` or `while` loop.
 
-Loop statements may have an `else` clause; it is executed when the loop terminates through exhaustion of the list (with `for`) or when the
-condition becomes false (with `while`), but not when the loop is terminated by a `break` statement.  This is exemplified by the following loop, which searches for prime numbers:
+Loop statements may have an `else` clause; it is executed when the loop terminates through exhaustion of the list (with `for`) or when the condition becomes false (with `while`), but not when the loop is terminated by a `break` statement.  This is exemplified by the following loop, which searches for prime numbers:
 
 ```py
 >>> for n in range(2, 10):
@@ -466,7 +460,7 @@ condition becomes false (with `while`), but not when the loop is terminated by a
 9 equals 3 * 3
 ```
 
-(Yes, this is the correct code.  Look closely: the `else` clause belongs to the `for` loop, ```not``` the `if` statement.)
+(Yes, this is the correct code.  Look closely: the `else` clause belongs to the `for` loop, *not* the `if` statement.)
 
 When used with a loop, the `else` clause has more in common with the `else` clause of a `try` statement than it does that of `if` statements: a `try` statement’s `else` clause runs when no exception occurs, and a loop’s `else` clause runs when no `break` occurs. For more on the `try` statement and exceptions, see tut-handling.
 
@@ -532,25 +526,18 @@ We can create a function that writes the Fibonacci series to an arbitrary bounda
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
 ```
 
-The keyword `def` introduces a function *definition*.  It must be followed by the function name and the parenthesized list of formal parameters.
-The statements that form the body of the function start at the next line, and must be indented.
+The keyword `def` introduces a function *definition*.  It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.
 
 The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or *docstring*. There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.
 
 The *execution* of a function introduces a new symbol table used for the local variables of the function.  More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables cannot be directly assigned a value within a function (unless named in a `global` statement), although they may be referenced.
 
-The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are
-passed using *call by value* (where the ```value``` is always an object ```reference```, not the value of the object). 
-
-```
-[#]_
-```
-
- When a function calls another function, a new local symbol table is created for that call.
+The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using *call by value* (where the *value* is always an object *reference*, not the value of the object). 
+[#](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/quickpython.html#id6) When a function calls another function, a new local symbol table is created for that call.
 
 It is simple to write a function that returns a list of the numbers of the Fibonacci series, instead of printing it:
 
-```
+```py
 >>> def fib2(n): # return Fibonacci series up to n
 ...     """Return a list containing the Fibonacci series up to n."""
 ...     result = []
@@ -572,10 +559,7 @@ This example, as usual, demonstrates some new Python features:
 the end of a function also returns `None`.
 
 
-* The statement `result.append(a)` calls a ```method``` of the list object `result`.  A method is a function that ‘belongs’ to an object and is named
-`obj.methodname`, where `obj` is some object (this may be an expression), and `methodname` is the name of a method that is defined by the object’s type.
-Different types define different methods.  Methods of different types may have the same name without causing ambiguity.  (It is possible to define your own
-object types and methods, using ```classes```, see tut-classes)The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list.  In this example it is equivalent to `result = result + [a]`, but more efficient.
+* The statement `result.append(a)` calls a ```method``` of the list object `result`.  A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object (this may be an expression), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity.  (It is possible to define your own object types and methods, using *classes*, see tut-classes)The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list.  In this example it is equivalent to `result = result + [a]`, but more efficient.
 
 ### Default Argument Values
 
@@ -600,18 +584,14 @@ This function can be called in several ways:
 
 * giving only the mandatory argument:
 `ask_ok('Do you really want to quit?')`
-
-
 * giving one of the optional arguments:
 `ask_ok('OK to overwrite the file?', 2)`
-
-
 * or even giving all arguments:
 `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
 
 This example also introduces the `in` keyword. This tests whether or not a sequence contains a certain value.
 
-The default values are evaluated at the point of function definition in the ```defining``` scope, so that
+The default values are evaluated at the point of function definition in the *defining* scope, so that
 
 ```py
 i = 5
@@ -627,7 +607,7 @@ will print `5`.
 
 **Important warning:** The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.  For example, the following function accumulates the arguments passed to it on subsequent calls:
 
-```
+```py
 def f(a, L=[]):
     L.append(a)
     return L
@@ -639,7 +619,7 @@ print(f(3))
 
 This will print
 
-```
+```py
 [1]
 [1, 2]
 [1, 2, 3]
@@ -680,7 +660,7 @@ parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 
 but all the following calls would be invalid:
 
-```
+```py
 parrot()                     # required argument missing
 parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument
 parrot(110, voltage=220)     # duplicate value for the same argument
@@ -713,8 +693,7 @@ def write_multiple_items(file, separator, *args):
     file.write(separator.join(args))
 ```
 
-Normally, these `variadic` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the ``*args``parameter are ‘keyword-only’ arguments, meaning that they can only be used as
-keywords rather than positional arguments.
+Normally, these `variadic` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the ``*args``parameter are ‘keyword-only’ arguments, meaning that they can only be used as keywords rather than positional arguments.
 
 ```py
 >>> def concat(*args, sep="/"):
@@ -728,9 +707,7 @@ keywords rather than positional arguments.
 
 ### Unpacking Argument Lists
 
-The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional
-arguments.  For instance, the built-in `range()` function expects separate ```start``` and ```stop``` arguments.  If they are not available separately, write the
-function call with the  `*`-operator to unpack the arguments out of a list or tuple:
+The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional arguments.  For instance, the built-in `range()` function expects separate *start* and *stop* arguments.  If they are not available separately, write the function call with the  `*` -operator to unpack the arguments out of a list or tuple:
 
 ```py
 >>> list(range(3, 6))            # normal call with separate arguments
@@ -740,7 +717,7 @@ function call with the  `*`-operator to unpack the arguments out of a list or tu
 [3, 4, 5]
 ```
 
-In Python, dictionaries can deliver keyword arguments with the `**`-operator. However this syntax is not yet supported in Zerynth.
+In Python, dictionaries can deliver keyword arguments with the `**` -operator. However this syntax is not yet supported in Zerynth.
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5NzE0NDIzNTUsLTM5NDgzOTEzMywtMT

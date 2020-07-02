@@ -74,7 +74,7 @@ This naming approach is required for allowing the Zerynth compiler to check for 
 
 For example, the following script can be compiled for the ST Nucleo but will rise an error at compiling time if compiled for an Arduino DUE
 
-```
+```py
 import pwm
 
 pwm.write(D0.PWM, 100,50)
