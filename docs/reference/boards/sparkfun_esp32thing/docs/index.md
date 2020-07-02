@@ -104,35 +104,12 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-Start address
-
-Size
-
-Content
-
-0x00010000
-
-1Mb
-
-Zerynth VM (slot 0)
-
-0x00110000
-
-1Mb
-
-Zerynth VM (slot 1)
-
-0x00210000
-
-512Kb
-
-Zerynth Bytecode (slot 0)
-
-0x00290000
-
-512Kb
-
-Zerynth Bytecode (slot 1)
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
 
