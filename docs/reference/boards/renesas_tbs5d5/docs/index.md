@@ -79,14 +79,13 @@ After virtualization, the PK-S5D9 device is ready to be programmed and the  Zery
 
 Not all features have been included in the Renesas PK-S5D9 VMs. In particular the following are missing but will be added in the near future:
 
-* CDC Driver to program the board without an FTDI device;
-* LCD Screen Drivers;
-* Ethernet Driver;
-* CAN;
-* Capacitive Touch Interface driver;
+* CDC Driver to program the board without an FTDI device
+* LCD Screen Drivers
+* Ethernet Driver
+* CAN
+* Capacitive Touch Interface driver
+* Audio Output
 
-
-* Audio Output;
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTIxMjQ3Mjk3XX0=
 -->

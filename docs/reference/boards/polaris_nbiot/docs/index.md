@@ -76,13 +76,13 @@ On **MAC OSX** and **Linux** USB drivers are not required.
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
-If the device is still not recognized or not working, the following udev rules may need to be added:
+    If the device is still not recognized or not working, the following udev rules may need to be added:
 
-```bash
-#Polaris NB-IoT Device
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df12", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
-```
+    ```bash
+    #Polaris NB-IoT Device
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    SUBSYSTEMS=="tty", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df12", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+    ```
 
 Once connected to a USB port the Polaris device can be seen as a Virtual Serial port or as a DFU device depending on its virtualized/virtualizable status and it is automatically recognized by Zerynth Studio. The next steps are:
 
