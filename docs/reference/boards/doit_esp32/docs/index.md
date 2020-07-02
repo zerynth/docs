@@ -104,6 +104,7 @@ Flash Layout is shown in table below:
 | 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
+
 | Start address | Size   | Content                   |
 |---------------|--------|---------------------------|
 | 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
