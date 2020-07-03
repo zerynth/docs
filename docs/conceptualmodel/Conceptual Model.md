@@ -40,7 +40,7 @@ You are at the end of the IOT development journey, if you need more help on fina
 
   
 
-If you are interested in ready to use vertical IOT solutions, you can check the **Zerynth 4ZeroBox** and the **Zerynth IoT Tracker** solutions. The Zerynth 4ZeroBox is a ready to use industrial unit that allows to easily interface modern and legacy industrial machines to the cloud, thus building the “digital twin” of the Industry 4.0 paradigms. The 4ZeroBox can be connected to the Zerynth Device Manager and collected data visualized thanks to our **Grafana** and **Microsoft PowerBi** integrations. The 4ZeroBox has been already used in various industrial use-cases you can find documented here.
+If you are interested in ready to use vertical IOT solutions, you can check the **Zerynth 4ZeroBox** and the **Zerynth IoT Tracker** solutions. The Zerynth 4ZeroBox is a ready to use industrial unit that allows to easily interface modern and legacy industrial machines to the cloud, thus building the “digital twin” of the Industry 4.0 paradigms. The 4ZeroBox can be connected to the Zerynth Device Manager and collected data visualized thanks to our **Grafana** and **Microsoft PowerBi** integrations. The 4ZeroBox has been already used in various industrial use-cases you can find documented **[here](https://www.zerynth.com/use-cases/)**.
 
   
 
