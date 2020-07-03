@@ -478,11 +478,3 @@ Get current flag value for selected event.
 
 Destroy the event and frees its memory.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MTE5Mjg0OSwtMjQ0NzY5NTYzLDk1MD
-E5NjY0NSwtMzM2NjUzMjI5LC04OTQxNzM5MjcsNTk4NTAxNjEz
-LDgyNjM1MTc3LDE0NTQxMDY0MzcsLTY3NzQ1MjE0NywxOTE5Nj
-cyMDExLDE3OTcxNzUzOTcsLTE4NTA5NDQ0OTMsMzEyNzYwNTEz
-LC0xMzU3NDk2ODgzLDg2MjUxNDgzLC02MzgwMzQ0NzEsMTMxMD
-MzNTgzMSwxNzg2MDI3ODg0LDE3MzQyMjEyNTBdfQ==
--->

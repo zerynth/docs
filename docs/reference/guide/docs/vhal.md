@@ -26,16 +26,16 @@ For each pin class, there exists a table containing configuration data. Such dat
 
 Returns a byte representing the index of the physical pin corresponding to vpin.
 
-
 **`PIN_CLASS_DATA0(vpin)`**
+
 Returns a byte representing the first byte of info about vpin.
 
-
 **`PIN_CLASS_DATA1(vpin)`**
+
 Returns a byte representing the second byte of info about vpin.
 
-
 **`PIN_CLASS_DATA2(vpin)`**
+
 Returns a byte representing the third byte of info about vpin.
 
 The meaning of the three bytes of info depends on the actual porting; usually they contain configuration values to correctly setup the peripheral.
@@ -57,13 +57,12 @@ When a VHAL function is called, expecting a peripheral index for a serial periph
 
 The following macros can be used to query the peripheral tables:
 
-
 **`GET_PERIPHERAL_ID(name,prph_idx)`**
 
 Returns the microcontroller peripheral index given the *name* of the peripheral and the vhal index *prph_idx*. Referring to the previous table, *prph_idx* corresponds to values in the *Index* column, while the return value correspondes to the *Value* column. The parameter *name* is a string identifying the peripheral: “serial”, “spi”, “i2c”, “adc”, “pwm”, “icu”, “htm”.
 
-
 **`PERIPHERAL_NUM(name)`**
+
 Returns the number of microcontroller peripherals given the peripheral *name*.
 
 ## GPIO
@@ -73,7 +72,6 @@ A GPIO pin is a generic pin that can be used as input to read its digital status
 ### Macros
 
 The following macros are used to set the pin mode of operation.
-
 
 **`PINMODE_INPUT_PULLNONE`**
 
@@ -175,10 +173,7 @@ Bypass the virtual pin indirection by operating on the microcontroller register 
 
 Transfer the control of vp to a peripheral identified by *prph*. The configuration parameters for *vpin* are passed via *prms* in a format depending on the microcontroller porting. Return 0 in case of success. The parameter *prph* is ignored in the current version of the VHAL.
 
-
-
 **`int vhalPinAttachInterrupt(int vpinintmode,extCbkFn fn, uint32_t timeout)`**
-
 
 Attach callback *fn* to *vpin*. *fn* is called from an ISR when there is a status change identified by mode. *mode* can be one of the PINMODE_EXT macros. Return a non negative integer identifying the slot *fn* has been attached to. If *fn* is NULL the currently attached function is removed and the interrupt disabled.
 
@@ -195,17 +190,9 @@ The VHAL aims at supporting the following features when available:
 
 
 1. Single pin, single sample conversion
-
-
 2. Single pin, multiple samples conversion
-
-
 3. Multiple pin conversion
-
-
 4. Continuous conversion
-
-
 5. Conversion triggers
 
 The current version of VHAL supports features from 1 to 3.
@@ -216,10 +203,12 @@ To enable ADC functions the macro VHAL_ADC must be defined.
 
 
 **`ADC_CAPTURE_SINGLE`**
+
 Select non continuous conversion mode
 
 
 **`ADC_CAPTURE_CONTINUOUS`**
+
 Select continuous conversion mode
 
 ### Types
@@ -228,12 +217,11 @@ Select continuous conversion mode
 
 The type of the ADC callback for continuous mode. Not used in current version of VHAL.
 
-
 **`vhalAdcCaptureInfo`**
 
 A structure containing the parameters needed to configure the ADC for the conversion:
 
-```
+```c
 typedef struct _vhal_adc_capture {
   uint32_t samples;
   uint16_t *pins;
@@ -248,34 +236,15 @@ typedef struct _vhal_adc_capture {
 } vhalAdcCaptureInfo;
 ```
 
-
 * *samples* is the number of samples to capture
-
-
 * *pins* is an array of virtual pin names to capture from
-
-
 * *npins* is the length of *pins*
-
-
 * *sample_size* will hold the size of a single sample
-
-
 * *capture_mode* is one of the ADC_CAPTURE macros
-
-
 * *trigger_mode* select the trigger type. Not yet used.
-
-
 * *trigger_vpin* is the virtual pin to be used as gpio trigger. Not yet used.
-
-
 * *buffer* is a pointer to a location of memory where captured samples will be stored.
-
-
 * *half_buffer* is a pointer to the free half of *buffer* in continuous mode. Not yet used.
-
-
 * *callback* is a function called in continuous mode when one half of the buffer is filled. Not yet used.
 
 
@@ -283,7 +252,7 @@ typedef struct _vhal_adc_capture {
 
 A structure used to initialize the ADC.
 
-```
+```c
 typedef struct _vhal_adc_conf {
   uint32_t samples_per_second;
   uint32_t resolution;
@@ -328,11 +297,7 @@ The VHAL aims at supporting the following features when available:
 
 
 1. Single pin, software triggered conversion
-
-
 2. Single pin, timed triggered conversion
-
-
 3. Multiple pin conversion
 
 To enable DAC functions the macro VHAL_DAC must be defined.
@@ -456,19 +421,13 @@ Start capturing on *vpin*. The capture will start with pin mode and trigger para
 
 
 * a time equal to *time_window* has passed from the last captured value
-
-
 * a number of values equal to the integer pointed by *bufsize* has been captured
 
 The function blocks the current thread until the end of the capture. On returning:
 
 
 * *bufsize* will point to the number of captured values
-
-
 * *buffer* will contain such values expressed in microseconds
-
-
 * *firstbit* will point to ICU_TRIGGER_LOW if the first transition was from high to low, or to ICU_TRIGGER_HIGH if the first transition was from low to high.
 
 Return 0 on success. On failure, a negative value.
@@ -532,7 +491,7 @@ Serial communication interfaces in microcontrollers come in many flavours: USART
 Select no parity.
 
 
- **`SERIAL_PARITY_EVEN`**
+**`SERIAL_PARITY_EVEN`**
  
 Select even parity.
 
@@ -630,7 +589,7 @@ I2C is a multimaster and multislave bus used to exchange data between microcontr
 
 The following structure is used to configure the I2C bus:
 
-```
+```c
 typedef struct _vhal_i2c_conf {
   uint32_t clock;
   uint16_t addr;
@@ -644,17 +603,9 @@ The meaning of vhalI2CConf members is:
 
 
 * *clock*: number of Hz the I2C bus will be clocked to. Use up to 100k for slow mode, up to 400k for fast mode. Other modes are not supported yet.
-
-
 * *addr:* the peripheral address to communicate with.
-
-
 * *sda*: the virtual pin that will be configured as SDA (data line).
-
-
 * *scl:* the virtual pin that will be configured as SCL (clock line).
-
-
 * *mode*: not used yet.
 
 
@@ -691,11 +642,7 @@ Start reading from *i2c* (from configured *addr*). Execution ends as soon as one
 
 
 * after a message of *len* bytes has been read and transferred to *buf*
-
-
 * an error occurs on the bus
-
-
 * the bus is inactive for a time equal to *timeout*
 
 Return 0 on success.
@@ -709,11 +656,7 @@ Execution ends as soon as one of the following conditions verifies:
 
 
 * both write and read steps are executed without errors
-
-
 * an error occurs on the bus
-
-
 * the bus is inactive for a time equal to *timeout*
 
 Return 0 on success.
@@ -737,7 +680,7 @@ Serial Peripheral Interface is one of the most used communication standards in e
 
 The following structure is used to configure the SPI bus:
 
-```
+```c
 typedef struct _vhal_spi_conf {
   uint32_t clock;
   uint16_t miso;
@@ -755,36 +698,26 @@ The meaning of vhalSpiConf members is:
 
 
 * *clock*: the number of Hz the SPI bus will be clocked to.
-
-
 * *miso*, *mosi*, *sclk*, *nss*: virtual pins representing the four wires used by the bus. *nss* is also called *slave select* or *chip select* in datasheets.
-
-
 * *mode*: configuration parameters for polarity and phase
-
-
 * *bits*: number of data bits
-
-
 * *master*: not used yet
-
-
 **msbfirst*: if non-zero, data is transferred with the most significant bits first.
 
 ### Macros
 
 
- **`SPI_MODE_LOW_FIRST`**
+**`SPI_MODE_LOW_FIRST`**
  
 Low polarity (idle low), phase zero (bits captured on the first clock edge).
 
 
- **`SPI_MODE_LOW_SECOND`**
+**`SPI_MODE_LOW_SECOND`**
  
 Low polarity (idle low), phase one (bits captured on the second clock edge).
 
 
- **`SPI_MODE_HIGH_FIRST`**
+**`SPI_MODE_HIGH_FIRST`**
  
 High polarity (idle high), phase zero (bits captured on the first clock edge).
 
@@ -949,7 +882,7 @@ Return 0 on success.
 
 Fill *vhal_time_info* structure with time information retrieved from the RTC.
 
-```
+```c
 typedef struct _timeinfo {
     uint32_t tv_seconds;
     uint32_t tv_microseconds;
@@ -1001,7 +934,7 @@ VHAL functions usually return an error code. The following list of macros contai
 Error code are non positive integers. They have been encoded in such a way that negating the error code results in the corresponding virtual machine exception number.
 
 
- **`VHAL_OK`**
+**`VHAL_OK`**
  
 Evaluates to 0. Returned on success.
 
@@ -1016,7 +949,7 @@ Generic peripheral error. Corresponds to PeripheralError exception.
 A virtual pin not supporting a specific peripheral is passed. Corresponds to InvalidPin exception.
 
 
- **`VHAL_HARDWARE_STATUS_ERROR`**
+**`VHAL_HARDWARE_STATUS_ERROR`**
  
 An hardware error condition happened during peripheral operations. Corresponds to InvalidHardwareStatus exception.
 
@@ -1029,13 +962,3 @@ The peripheral operation reached a timeout condition. Corresponds to TimeoutErro
 **`VHAL_HARDWARE_INITIALIZATION_ERROR`**
 
 A peripheral error happened during initialization. Corresponds to HardwareInitializationError exception.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTQxNDU3Nyw1MjcyODU4MTQsLTE2Nj
-UxODkwMCwxMDg4Mzc3MzYxLC0xNjgyODQ0MjYwLC05MzQ1NDc3
-NTAsLTMxMDYxNDAwMiwxNTc0NjEwMDEwLC0xNzM3NjQ1Njk0LC
-0yMTM3MzU5NjUyLDE5NjIwNTA4NjUsLTIxNDQxMTg0NDIsLTEz
-ODA3MDc2MDQsLTQ0NzI5Mzk5MiwxMTA5Njk0MzE0LC04NDUyND
-U3NTksOTM0MTA5MTExLDE3OTM2NTcwOTYsLTE3NzY2NjY2NzUs
-LTUxNjg3MTc0MV19
--->
