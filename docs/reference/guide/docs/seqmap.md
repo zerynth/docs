@@ -762,46 +762,4 @@ Update the dictionary with the key/value pairs from other, overwriting existing 
 `update()` accepts another dictionary object.
 
 **`values()`**
-
 Return a new view of the dictionary’s values.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< Updated upstream
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--stackedit_data:
-eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzgy
-LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
-t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
-MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
-xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstOTA2MjMzMTkxLC0xNTc0OT
-Q4MTM4LC05OTQwMTI4NjEsLTIyMDYyNzcxNSwxOTMyMTk0NDc0
-LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzOD
-k2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2
-OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
-kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
-LC0xNTA1NDMzMDA3XX0=
--->
-=======
->>>>>>> Stashed changes
->>>>>>> origin/dev-sladja
-=======
->>>>>>> origin/dev-sladja
