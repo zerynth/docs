@@ -40,15 +40,9 @@ You are at the end of the IOT development journey, if you need more help on fina
 
   
 
-If you are interested in ready to use vertical IOT solutions, you can check the **Zerynth 4ZeroBox** and the **Zerynth IoT Tracker** solutions. The Zerynth 4ZeroBox is a ready to use industrial unit that allows to easily interface modern and legacy industrial machines to the cloud, thus building the “digital twin” of the Industry 4.0 paradigms. The 4ZeroBox can be connected to the Zerynth Device Manager and collected data visualized thanks to our **Grafana** and **Microsoft PowerBi** integrations. The 4ZeroBox has been already used in various industrial use-cases you can find documented **[here](https://www.zerynth.com/use-cases/)**.
+If you are interested in ready to use vertical IOT solutions, you can check the **Zerynth 4ZeroBox** and the **Zerynth IoT Tracker** solutions. The Zerynth 4ZeroBox is a ready to use industrial unit that allows to easily interface modern and legacy industrial machines to the cloud, thus building the “digital twin” of the Industry 4.0 paradigms. The 4ZeroBox can be connected to the Zerynth Device Manager and collected data visualized thanks to our **[Grafana](https://www.zerynth.com/blog/connect-zerynth-device-manager-with-grafana-iot-data-visualization/)** and **[Microsoft PowerBi](https://www.zerynth.com/blog/iot-tutorial-learn-how-to-connect-power-bi-to-the-zerynth-device-manager/)** integrations. The 4ZeroBox has been already used in various industrial use-cases you can find documented **[here](https://www.zerynth.com/use-cases/)**.
 
   
 
 The Zerynth IOT tracker is an industrial grade vehicle tracker featured with a narrow band IOT modem with worldwide network coverage. The Zerynth IOT tracker allows an easy development of an asset tracking project with almost zero coding. Thanks to the native integration with the ZDM and the ready to use generic firmware it is possible to send asset positions and parameters to any third party cloud in a few simple steps.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMjMzNjM3OSwxOTQ3MDQ3NjYxLDI5ND
-MwMjc0MCw3Nzg4MzQ0NzMsLTE0MTU4MTYsLTIwOTE3MDQ1MzUs
-MjA3ODEwNTI5MCwyMDc4MTA1MjkwLDQwNzYzMTk0MCwtOTQzNT
-I2NzU0LDY1Njg3MDk5Nyw0NzIyNjg3NDgsLTE1NjQwNDEwMiwt
-MjEyMjA5NzkyNiw3MzA5OTgxMTZdfQ==
--->
+
