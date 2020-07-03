@@ -587,8 +587,7 @@ A *set* object is an unordered collection of distinct hashable objects. Common u
 
 Like other collections, sets support `x in set`, `len(set)`, and `for x in set`.  Being an unordered collection, sets do not record element position or order of insertion.  Accordingly, sets do not support indexing, slicing, or other sequence-like behavior.
 
-There are currently two built-in set types, `set()` and `frozenset()`. The `set()` type is mutable — the contents can be changed using methods like `add()` and `remove()`.  Since it is mutable, it has no hash value and cannot be used as either a dictionary key or as an element of
-another set.  The `frozenset()` type is immutable and hashable — its contents cannot be altered after it is created; it can therefore be used as a dictionary key or as an element of another set.
+There are currently two built-in set types, `set()` and `frozenset()`. The `set()` type is mutable — the contents can be changed using methods like `add()` and `remove()`.  Since it is mutable, it has no hash value and cannot be used as either a dictionary key or as an element of another set.  The `frozenset()` type is immutable and hashable — its contents cannot be altered after it is created; it can therefore be used as a dictionary key or as an element of another set.
 
 Non-empty sets (not frozensets) can be created by placing a comma-separated list of elements within braces, for example: `{'jack', 'sjoerd'}`, in addition to the `set()` constructor.
 
