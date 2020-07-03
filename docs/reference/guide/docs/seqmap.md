@@ -707,47 +707,61 @@ If no positional argument is given, an empty dictionary is created. If a positio
 These are the operations that dictionaries support:
 
 **`len(d)`**
+
 Return the number of items in the dictionary *d*.
 
 **`d[key]`**
+
 Return the item of *d* with key *key*. Raises a `KeyError` if key is not in the map.
 
 **`d[key] = value`**
+
 Set `d[key]` to *value*.
 
 **`del d[key]`**
+
 Remove `d[key]` from *d*. Raises a `KeyError` if *key* is not in the map.
 
 **`key in d`**
+
 Return True if *d* has a key *key*, else `False`.
 
 **`key not in d`**
+
 Equivalent to `not key in d`.
 
 **`clear()`**
+
 Remove all items from the dictionary.
 
 **`copy()`**
+
 Return a shallow copy of the dictionary.
 
 **`items()`**
+
 Return a new view of the dictionary’s items (`(key, value)` pairs).
 
 **`keys()`**
+
 Return a new view of the dictionary’s keys. See the documentation of view objects.
 
 **`pop(key[, default])`**
+
 If *key* is in the dictionary, remove it and return its value, else return *default*. If *default* is not given and *key* is not in the dictionary, a `KeyError` is raised.
 
 **`popitem()`**
+
 Remove and return an arbitrary `(key, value)` pair from the dictionary.
 
 `popitem()` is useful to destructively iterate over a dictionary, as often used in set algorithms. If the dictionary is empty, calling `popitem()` raises a `KeyError`.
 
 **`update([other])`**
+
 Update the dictionary with the key/value pairs from other, overwriting existing keys. Return `None`.
 
 `update()` accepts another dictionary object.
 
 **`values()`**
+
 Return a new view of the dictionary’s values.
