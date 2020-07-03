@@ -87,7 +87,3 @@ However, this pin naming is an advanced feature of the Zerynth suite and it is r
 
 Moreover, all the Zerynth init functions (`can.init()`, `spi.init()`, `i2c.init()`) also allow fast configuration by using short-names like (`CAN0`, `I2C0`, `SPI0`, `SERIAL0`). For example, it is possible to open the serial port 0 with default parameters by calling `streams.serial()` or opening the serial port 1 by calling `streams.serial(SERIAL1)`
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTEwOTcwMywyNDUzMTY5NjksLTMxMD
-E0ODcxOSwyMDc2MjI5ODU1LDIwODg1NjE2OTldfQ==
--->

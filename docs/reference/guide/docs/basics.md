@@ -719,8 +719,3 @@ The reverse situation occurs when the arguments are already in a list or tuple b
 
 In Python, dictionaries can deliver keyword arguments with the `**` -operator. However this syntax is not yet supported in Zerynth.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzE0NDIzNTUsLTM5NDgzOTEzMywtMT
-IzNDg5MDA1NiwyMDIyOTE4ODI4LDIwNDE5NDEwMCwtMTkwNTEy
-MTY0MCwtMTA0ODE0MDYwNCwtMTEwMTkxNDUyOF19
--->

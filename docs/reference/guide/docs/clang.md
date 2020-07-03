@@ -122,7 +122,3 @@ C functions callable from Python have some limitations:
 
 Refer to [VM Guide](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html#zerynthvm) for the available api.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM5NjQzMTAsLTEzMTI2MzI3MTIsNz
-g0Mzk1NjU0XX0=
--->

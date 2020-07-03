@@ -13,10 +13,10 @@ One method needs to be defined for container objects to provide iteration suppor
 
 Return an iterator object.  The object is required to support the iterator protocol described below.
 
- iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
+iterator objects themselves are required to support the following two methods, which together form the *iterator protocol*:
 
 
- **`iterator.\__iter__()`**
+**`iterator.\__iter__()`**
  
 Return the iterator object itself.  This is required to allow both containersand iterators to be used with the `for` and `in` statements.
 
@@ -58,16 +58,14 @@ The `in` and `not in` operations have the same priorities as thecomparison opera
 Sequences of the same type also support comparisons.  In particular, tuples and lists are compared lexicographically by comparing corresponding elements.This means that to compare equal, every element must compare equal and the
 two sequences must be of the same type and have the same length.
 
-**Notes:**
-
+Notes:
 
 1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences(such as `str()`, `bytes()` and `bytearray()`) also use them for subsequence testing:
 
 ```py
->>> "gg" in "eggs"
+ >>> "gg" in "eggs"
 True
 ```
-
 
 2. Values of **n** less than `0` are treated as `0` (which yields an empty sequence of the same type as **s**).  Note that items in the sequence **s** are not copied; they are referenced multiple times.  This often haunts new Python programmers; consider:
 
@@ -158,18 +156,10 @@ Notes:
 
 
 1. **t** must have the same length as the slice it is replacing.
-
-
 2. The optional argument **i** defaults to `-1`, so that by default the last item is removed and returned.
-
-
 3. `remove` raises `ValueError` when **x** is not found in **s**.
 4. The `reverse()` method modifies the sequence in place for economy of space when reversing a large sequence.  To remind users that it operates by side effect, it does not return the reversed sequence.
-
-
 5. `clear()` and `copy()` are included for consistency with the interfaces of mutable containers that don’t support slicing operations(such as `dict()` and `set()`)
-
-
 6. The value **n** is an integer. Zero and negative values of **n** clear the sequence.  Items in the sequence are not copied; they are referenced multiple times, as explained for `s * n`.
 
 ### Lists
@@ -178,13 +168,8 @@ Lists are mutable sequences, typically used to store collections of homogeneous 
 
 Lists may be constructed in several ways:
 
-
 * Using a pair of square brackets to denote the empty list: `[]`
-
-
 * Using square brackets, separating items with commas: `[a]`, `[a, b, c]`
-
-
 * Using a list comprehension: `[x for x in iterable]`
 
 Lists implement all of the common and mutable sequence operations.
@@ -195,13 +180,8 @@ Tuples are immutable sequences, typically used to store collections of heterogen
 
 Tuples may be constructed in a number of ways:
 
-
 * Using a pair of parentheses to denote the empty tuple: `()`
-
-
 * Using a trailing comma for a singleton tuple: `a,` or `(a,)`
-
-
 * Separating items with commas: `a, b, c` or `(a, b, c)`
 
 Tuples implement all of the common sequence
@@ -235,11 +215,7 @@ Textual data in Python is handled with strin.. Strings are immutable [sequences]
 
 
 * Single quotes: `'allows embedded "double" quotes'`
-
-
 * Double quotes: `"allows embedded 'single' quotes"`.
-
-
 * Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
 
 Triple quoted strings may span multiple lines - all associated white space will be included in the string literal.
@@ -267,20 +243,13 @@ Strings implement all of the common sequence operations, along with the addition
 
 Strings also support string formatting based on C `printf` style formatting..
 
-
 **`str.count(sub[,start[,end] ])`**
 
-
-
 Return the number of non-overlapping occurrences of substring *sub* in the range [*start].  Optional arguments start and *end* are interpreted as in slice notation.
-
-
-   
 
 **`str.endswith(suffix[,start[,end] ])`**
 
 Return `True` if the string ends with the specified *suffix, otherwise return `False`.  With optional *start`, test beginning at that position.  With optional *end*, stop comparing at that position.
-
 
 **`str.find(sub[,start[,end] ])`**
 
@@ -297,16 +266,13 @@ Like `find()`, but raise `ValueError` when the substring is not found.
 
 Return a string which is the concatenation of the strings in the iterable *iterableiterable* must be a builtin sequence or builtin map. A `TypeError`will be raised if there are any non-string values in *iterable, excluding `byte` and `byterray` objects that are treated as strings.  The separator between elements is the string providing this method.
 
-
 **`str.lower()`**
 
 Return a copy of the string with all the cased characters converted to lowercase.
 
-
 **`str.replace(old,new)`**
 
 Return a copy of the string with all occurrences of substring *old* replaced by *new.*
-
 
 **`str.split(sep=None, maxsplit=-1)`**
 
@@ -374,14 +340,11 @@ If *format* requires a single argument, *values* may be a single non-tuple objec
 
 A conversion specifier contains two or more characters and has the following components, which must occur in this order:
 
-
 1. The `'%'` character, which marks the start of the specifier.
 2. Mapping key (optional), consisting of a parenthesised sequence of characters (for example, `(somename)`).
 3. Conversion flags (optional), which affect the result of some conversion types.
 4. Minimum field width (optional).  If specified as an `'*'` (asterisk), the actual width is read from the next element of the tuple in *values*, and the object to convert comes after the minimum field width and optional precision.
 5. Precision (optional), given as a `'.'` (dot) followed by the precision.  If specified as `'*'` (an asterisk), the actual precision is read from the next element of the tuple in *values*, and the value to convert comes after the precision.
-
-
 6. Conversion type.
 
 When the right argument is a dictionary (or other mapping type), then the formats in the string *must* include a parenthesized mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key selects the value to be formatted from the mapping.  
@@ -430,7 +393,6 @@ Bytes objects are immutable sequences of single bytes. Bytes are very similar to
 
 Firstly, the syntax for bytes literals is largely the same as that for string literals, except that a `b` prefix is added:
 
-
 * Single quotes: `b'still allows embedded "double" quotes'`
 * Double quotes: `b"still allows embedded 'single' quotes".`
 * Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
@@ -442,7 +404,6 @@ elements and can be usefully manipulated with some text-oriented algorithms, thi
 
 In addition to the literal forms, bytes objects can be created in a number of other ways:
 
-
 * A zero-filled bytes object of a specified length: `bytes(10)`
 * From an iterable of integers: `bytes([1,2,3])`
 
@@ -453,7 +414,6 @@ Since bytes objects are sequences of integers (akin to a tuple), for a bytes obj
 ### Bytearray Objects
 
 `bytearray()` objects are a mutable counterpart to `bytes()` objects. There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
-
 
 * Creating an empty instance: `bytearray()`
 * Creating a zero-filled instance with a given length: `bytearray(10)`
@@ -503,8 +463,8 @@ Return the lowest index in the data where the subsequence *sub* is found, such t
 
 The subsequence to search for may be any bytes-like object or an integer in the range 0 to 255.
 
-NOTE: The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the `in` operator.
-
+!!!note
+   The `find()` method should be used only if you need to know the position of *sub*.  To check if *sub* is a substring or not, use the `in` operator.
 
 **`bytes.index(sub[, start[, end] ])` `bytearray.index(sub[, start[, end] ])`**
 
@@ -515,7 +475,6 @@ The subsequence to search for may be any bytes-like object or an  integer in the
 
 **`bytes.join(iterable)`** **`bytearray.join(iterable)`**
 
-
 Return a bytes or bytearray object which is the concatenation of the binary data sequences in the iterable *iterable*.  A `TypeError` will be raised if there are any values in *iterable* that are not bytes-like objects or strings. The separator between elements is the contents of the bytes or bytearray object providing this method.
 
 **`bytes.replace(old,new)` `bytearray.replace(old, new)`**
@@ -524,7 +483,6 @@ Return a copy of the sequence with all occurrences of subsequence *old* replaced
 
 !!! note
 	The bytearray version of this method does *not* operate in place - it always produces a new object, even if no changes were made.
-
 
 **`bytes.startswith(prefix[,start[,end] ])` `bytearray.startswith(prefix[,start[,end] ])`**
 
@@ -560,8 +518,6 @@ For example:
 [b'1', b'2', b'3']
 ```
 
-
-
 **`bytes.strip([chars[,dir=0] ])` `bytearray.strip([chars[,dir=0] ])`**
 
 Return a copy of the binary sequence with the leading and trailing characters removed. The *chars* argument is a string or binary sequence specifying the set of characters to be removed. If omitted, the *chars* argument defaults to removing whitespace. The *chars* argument is not a prefix or suffix; rather, all combinations of its values are stripped:
@@ -582,14 +538,11 @@ The *dir* parameter controls the side of stripping:
 
 The following methods on bytes and bytearray objects assume the use of ASCII compatible binary formats and should not be applied to arbitrary binary data. Note that all of the bytearray methods in this section do *not* operate in place, and instead produce new objects.
 
-
-
 **`bytes.lower()`** **`bytearray.lower()`**
 
 Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart.
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
-
 
 **`bytes.upper()`** **`bytearray.upper()`**
 
@@ -606,7 +559,6 @@ value in the sequence restricted such that `0 <= x < 65536` (attempts to violate
 Shorts objects are immutable sequences of 16 bits integers.
 Shorts and shortsarray can’t be specified with literals, but only using one of the following ways:
 
-
 * A zero-filled bytes object of a specified length: `shorts(10)`
 * From an iterable of integers: `shorts([1,2,3])`
 
@@ -615,7 +567,6 @@ Since 4 hexadecimal digits correspond precisely to a 16 bit integer, hexadecimal
 Since shorts objects are sequences of integers (akin to a tuple), for a shorts object *b*, `b[0]` will be an integer, while `b[0:1]` will be a shorts object of length 1.
 
 Shortarray objects are mutable sequences of 16 bits integers. Shorts and shortsarray can’t be specified with literals, but only using one of the following ways:
-
 
 * A zero-filled bytes object of a specified length: `shortarray(10)`
 * From an iterable of integers: `shortarray([1,2,3])`
@@ -643,37 +594,29 @@ Non-empty sets (not frozensets) can be created by placing a comma-separated list
 
 The constructors for both classes work the same:
 
-
 **`class set ([iterable])`** **`class frozenset ([iterable])`**
 
 Return a new set or frozenset object whose elements are taken from *iterable*.  The elements of a set must be hashable.  To represent sets of sets, the inner sets must be `frozenset()` objects.  If *iterable* is not specified, a new empty set is returned.
 
 Instances of `set()` and `frozenset()` provide the following operations:
 
-
     len(s)
 
 Return the cardinality of set *s*.
-
 
     x in s
 
 Test *x* for membership in *s*.
 
-
     x not in s
 
 Test *x* for non-membership in *s*.
-
-
 
     isdisjoint(other)
 
 Return `True` if the set has no elements in common with *other*.  Sets are disjoint if and only if their intersection is the empty set.
 
-
 **`issubset(other)`** **`set <= other`**
-
 
 Test whether every element in the set is in *other.*
 
@@ -698,26 +641,19 @@ Return a new set with elements from the set and all others.
 
 Return a new set with elements from the set and all others.
 
-
-
 **`difference(other,...)`** **`set - other - ...`**
 
 Return a new set with elements common to the set and all others.
-
-
 
 **`symmetric_difference(other)`** **`set ^ other`**
 
 Return a new set with elements in either the set or *other* but not both.
 
-
-  **`copy()`**
+**`copy()`**
 
 Return a new set with a shallow copy of *s*.
 
 The following table lists operations available for `set()` that do not apply to immutable instances of `frozenset()`:
-
-
 
 **`update(other,...)`** **`set |= other | ...`**
 
@@ -727,33 +663,25 @@ Update the set, adding elements from all others.
 
 Update the set, keeping only elements found in it and all others.
 
-
-
 **`difference_update(other, ...)`** **`set -= other | ...`**
 
 Update the set, removing elements found in others.
-
-
 
 **`symmetric_difference_update(other)`** **`set ^= other`**
 
 Update the set, keeping only elements found in either set, but not in both.
 
-
-  **`add(elem)`**
+**`add(elem)`**
 
 Add element *elem* to the set.
-
 
 **`remove(elem)`**
 
 Remove element *elem* from the set.  Raises `KeyError` if *elem* is not contained in the set.
 
-
 **`discard(elem)`**
 
 Remove element *elem* from the set if it is present.
-
 
 **`pop()`**
 
@@ -771,7 +699,6 @@ Mappings are mutable objects.  There is currently only one standard mapping type
 A dictionary’s keys are *almost* arbitrary values.  Values that are not hashable, that is, values containing lists, dictionaries or other mutable types (that are compared by value rather than by object identity) may not be used as keys.  Numeric types used for keys obey the normal rules for numeric comparison: if two numbers compare equal (such as `1` and `1.0`) then they can be used interchangeably to index the same dictionary entry.  (Note however, that since computers store floating-point numbers as approximations it is usually unwise to use them as dictionary keys.)
 
 Dictionaries can be created by placing a comma-separated list of `key: value` pairs within braces, for example: `{'jack': 4098, 'sjoerd': 4127}` or `{4098:'jack', 4127: 'sjoerd'}`, or by the `dict()` constructor.
-
 
 **`class dict(*args)`**
 
@@ -824,38 +751,3 @@ Update the dictionary with the key/value pairs from other, overwriting existing 
 
 **`values()`**
 Return a new view of the dictionary’s values.
-
-<<<<<<< Updated upstream
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--stackedit_data:
-eyJkaXNjdXNzaW9ucyI6eyJHRTI3OWROems3SDBtMUN1Ijp7In
-RleHQiOiJsZXhpY29ncmFwaGljYWxseSIsInN0YXJ0IjozNzgy
-LCJlbmQiOjM3OTl9fSwiY29tbWVudHMiOnsiSjFJcWNOS0hSMG
-t6bGVkMiI6eyJkaXNjdXNzaW9uSWQiOiJHRTI3OWROems3SDBt
-MUN1Iiwic3ViIjoiZ2g6NjYzNTQ4NTQiLCJ0ZXh0IjoiKmluIG
-xleGljb2dyYXBoaWMgb3JkZXIiLCJjcmVhdGVkIjoxNTkxNzc5
-NjY4NzkwfX0sImhpc3RvcnkiOlstOTA2MjMzMTkxLC0xNTc0OT
-Q4MTM4LC05OTQwMTI4NjEsLTIyMDYyNzcxNSwxOTMyMTk0NDc0
-LC0xNDM2NTEzNDkyLC0xMzYxOTAyNTMsMjEwNzgxNjU1NSwzOD
-k2NTU4OTAsNzY1NDg0NjI4LDExNzYzMzExNCwtMTg1MjQ3NTc2
-OCwzNzM2ODgyOTIsNTk5OTQ0NzkxLC0xMzAzNzE3OTI5LDk0NT
-kyMDA0LC0xODM4MTY1MzEyLDg5NDEwOTAyNiwyMDM3NDcwNzQx
-LC0xNTA1NDMzMDA3XX0=
--->
-=======
->>>>>>> Stashed changes
