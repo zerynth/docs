@@ -31,7 +31,7 @@ The development of an IOT project is not finished with device firmware creation.
 
   
 
-IOT Device Management and Data collection is provided in Zerynth thanks to the **[Zerynth Device Manager](https://www.zerynth.com/zdm/)**. ZDM is a data and device management system that allows to easily connect IOT devices to a cloud allowing an easy and intuitive management and aggregation of the data and a seamless management of IOT devices updates and security. ZDM is one of the few device managers available on the market that can be installed on premises on request. ZDM collects and stores your IOT data while also allowing a seamless forwarding of any other cloud (Azure, AWS, IBM, Google IOT) or backend service via Webhook or REST API.
+IOT Device Management and Data collection is provided in Zerynth thanks to the **[Zerynth Device Manager](https://www.zerynth.com/zdm/)**. ZDM is a data and device management system that allows to easily connect IOT devices to a cloud allowing an easy and intuitive management and aggregation of the data and a seamless management of IOT devices updates and security. ZDM is one of the few device managers available on the market that can be installed on premises on request. ZDM collects and stores your IOT data while also allowing a seamless forward to any other cloud (Azure, AWS, IBM, Google IOT) or backend service via Webhook or REST API.
 
   
 <p style="text-align: left;"><img src="https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm-docs-image.png"></p>
