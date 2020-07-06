@@ -36,7 +36,7 @@ IOT Device Management and Data collection is provided in Zerynth thanks to the *
   
 <p style="text-align: left;"><img src="https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm-docs-image.png"></p>
 
-You are at the end of the IOT development journey, if you need more help on finalizing your project or in converting your IOT prototype in an industrial project just check our R&D services.
+You are at the end of the IOT development journey, if you need more help on finalizing your project or in converting your IOT prototype in an industrial project just check our **[R&D]**(https://www.zerynth.com/services/) services.
 
   
 
