@@ -11,7 +11,7 @@ The development of IOT projects is a very long journey. Typically an IOT project
 
 ![](https://github.com/zerynth/docs/blob/test/docs/images/zerynth-devices.jpg?raw=true)
 
-Once you have identified your IOT hardware it is time to develop the firmware for your embedded devices. The **[Zerynth OS (ZOS)](https://www.zerynth.com/zos/)** is a tiny real-time operating system that runs on a variety of 32bit microcontrollers allowing code portability within IOT platforms. It means that if you develop your firmware for Zerynth OS you can easily load it on all the Zerynth supported devices in a few clicks. The ZOS includes Python Virtual Machines that allow developing IOT firmware in Python, or C and Python. For example, you can develop a motor control library in C in order to be very fast in the control cycle while developing the cloud connection code in Python in order to easily write and maintain the code.
+Once you have identified your IOT hardware it is time to develop the firmware for your embedded devices. The **[Zerynth OS (ZOS)](https://www.zerynth.com/zos/)** is a tiny real-time operating system that runs on a variety of 32bit microcontrollers allowing code portability within IOT platforms. It means that if you develop your firmware for Zerynth OS you can easily load it on all the Zerynth supported devices in a few clicks. The ZOS includes a Python Virtual Machine that allow developing IOT firmware in Python, or C and Python. For example, you can develop a motor control library in C in order to be very fast in the control cycle while developing the cloud connection code in Python in order to easily write and maintain the code.
 
   
 
