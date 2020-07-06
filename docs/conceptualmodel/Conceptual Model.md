@@ -15,7 +15,7 @@ Once you have identified your IOT hardware it is time to develop the firmware fo
 
   
 
-To develop for ZOS and to be able to manage your board’s firmware upload you need to install the Zerynth SDK. Z-SDK is a cross platform (Windows, Linux and MAC) toolkit that includes **[Zerynth Studio](https://www.zerynth.com/zos/)**, **The Zerynth Tool Chain** and various board programming tools, libraries and drivers.
+To develop for ZOS and to be able to manage your board’s firmware upload you need to install the <a href="https://www.zerynth.com/zsdk/" target="_blank">**Zerynth SDK**</a>. Z-SDK is a cross platform (Windows, Linux and MAC) toolkit that includes **[Zerynth Studio](https://www.zerynth.com/zos/)**, **The Zerynth Tool Chain** and various board programming tools, libraries and drivers.
 
   
 
