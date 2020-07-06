@@ -23,7 +23,7 @@ Zerynth Studio is our IDE. It is a lightweight code editor fully integrated with
 
   
 
-We also have released various third party IDE plugins that allow programming Zerynth firmwares from Visual Studio Code, Sublime Text and PyCharm.
+We also have released various third party IDE plugins that allow programming Zerynth firmwares from [Visual Studio Code](https://testzdoc.zerynth.com/gettingstarted/Getting%20Started/#third-party-ide-plugins), Sublime Text and PyCharm.
 
   
 
