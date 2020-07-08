@@ -5,7 +5,7 @@ The Particle Photon is a complete Wi-Fi enabled development platform for creatin
 Particle Photon combines a powerful ARM Cortex M3 micro-controller with a Broadcom Wi-Fi chip in a tiny thumbnail-sized module called the PØ (P-zero).
 Particle Photon uses the [STM32F205RG Cortex M3  microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/bc/21/42/43/b0/f3/4d/d3/CD00237391.pdf/files/CD00237391.pdf/jcr:content/translations/en.CD00237391.pdf).
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_photon/docs/img/ParticlePhoton.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/ParticlePhoton.jpg"></p>
 
 In addition to having 1Mb of internal flash memory for storing the firmware, the Photon also features 128k of Ram and 120 MHz of clock.
 
@@ -14,7 +14,7 @@ In addition to having 1Mb of internal flash memory for storing the firmware, the
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_photon/docs/img/particle_photon_pin_io.png?raw=true)
+![](img/particle_photon_pin_io.png)
 
 Particle Photon Official Schematic, Reference Design & Pin Mapping are available on the [official Particle Photon datasheet page](https://docs.particle.io/datasheets/photon-datasheet/).
 
