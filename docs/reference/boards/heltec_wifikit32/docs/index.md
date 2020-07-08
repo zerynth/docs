@@ -3,11 +3,12 @@
 Wi-Fi Kit 32 is a classic IoT dev-board designed and produced by Heltec Automation (TM). It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wi-Fi, Bluetooth, Ethernet and Low Power support all in a single chip; Li-Po battery management system, 0.96″ OLED are also included.
 It is one of the best choice for smart solutions, smart farms, smart home, and IoT makers.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/heltec_wifikit32/docs/img/heltec_wifikit32.png?raw=true)
+
+<p style="text-align:center;"><img src="img/heltec_wifikit32.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/heltec_wifikit32/docs/img/heltec_wifikit32_pin_io.jpg?raw=true)
+![](img/heltec_wifikit32_pin_io.jpg)
 
 Official reference for Heltec Wi-Fi Kit 32 can be found [here](https://heltec.org/project/wifi-kit-32/).
 
