@@ -2,11 +2,11 @@
 
 The DOIT Esp32 DevKit v1 is one of the development board created by DOIT to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/doit_esp32/docs/img/doitesp32.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/doitesp32.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/doit_esp32/docs/img/doitesp32pin.jpg?raw=true)
+![](img/doitesp32pin.jpg)
 
 More info about DOIT Esp32 DevKit v1 can be found [here](https://github.com/SmartArduino/SZDOITWiKi/wiki/ESP8266---ESP32).
 
