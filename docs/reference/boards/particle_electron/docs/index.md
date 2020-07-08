@@ -4,7 +4,8 @@ The Particle Electron is a GSM enabled development platform for creating connect
 Particle Electron combines a powerful ARM Cortex M3 micro-controller with a 3G/2G gsm module from UBlox (U260 or G350).
 Particle Electron uses the [STM32F205RG Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/bc/21/42/43/b0/f3/4d/d3/CD00237391.pdf/files/CD00237391.pdf/jcr:content/translations/en.CD00237391.pdf).
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_electron/docs/img/ParticleElectron.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/ParticleElectron.jpg"></p>
 
 In addition to having 1Mb of internal flash memory for storing the firmware, the Electron also features 128k of Ram and 120 MHz of clock.
 
@@ -13,7 +14,7 @@ In addition to having 1Mb of internal flash memory for storing the firmware, the
 
 ## Pin Mapping
 
-![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_electron/docs/img/ParticleElectronPin.png?raw=true)
+![](img/ParticleElectronPin.png)
 
 Particle Electron Official Schematic, Reference Design & Pin Mapping are available on the [official Particle Electron datasheet page](https://docs.particle.io/datasheets/electron-datasheet/).
 
