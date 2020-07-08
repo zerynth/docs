@@ -4,12 +4,15 @@ Polaris 2G provided by Fortebit is a professional GPS/GLONASS vehicle tracker an
 
 The Polaris 2G hardware includes a powerful 32-bit ARM Cortex-M4 controller with low-power features ([STM32L452](https://www.st.com/en/microcontrollers-microprocessors/stm32l452re.html)), a GSM/GPRS modem for wireless connectivity, a GPS/GLONASS receiver with Assisted-GPS,on-board accelerometer and SD card socket, mikroBus™ expansion slot, plenty of I/O, and a wide operating temperature range of -35°C to +80°C.
 
+<p style="text-align:center;"><img src="img/polaris_2g.png"></p>
+
 With Polaris 2G, many IoT applications can be developed related to real-time asset tracking, geo-fencing, sensors logging, battery monitoring, remote controlling, and others. It works right out of the box as vehicle tracker; the only requirement is a SIM card.
 
 !!! important
     Polaris 2G belongs to Polaris family of board by Fortebit. The lib.fortebit.polaris library is available and can be imported to abstract your Zerynth project from a specific Polaris board.
 
 ## Pin Mapping
+![](img/polaris_2g_pin_comm.jpg)
 
 ## Flash Layout
 
