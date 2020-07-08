@@ -2,7 +2,7 @@
 
 The ESP-WROOM32 developed by Espressif is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
-![enter image description here](https://github.com/zerynth/docs/blob/test/docs/reference/boards/cvm_espwroom32/docs/img/espwroom32.jpg?raw=true)
+<p style="text-align:center;"><img src="img/espwroom32.jpg"></p>
 
 ## Pin Mapping
 
