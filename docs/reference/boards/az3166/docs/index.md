@@ -6,14 +6,14 @@ AZ3166 is [EMW3166](http://en.mxchip.com/product/wifi_product/40), a low power c
 
 EMW3166 integrates [STM32F412RG](http://www.st.com/resource/en/datasheet/stm32f412rg.pdf) (Cortex-M4) microcontroller of 256Kbytes SRAM and 1Mbytes on-chip flash with another 2Mbytes on-board SPI flash added. Various peripheral interfaces of analog and digital are available. The power supply voltage is 3.3V. The TCP/IP protocols and security encryption algorithm could be applied in various Wi-Fi applications. In addition, several particular firmware prepares for some typical applications easylink configuration and services for cloud interfacing.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/az3166/docs/img/az3166.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/az3166.jpg"></p>
 
 !!! note
 	All the reported information are extracted from the official [MXChip IoT DevKit AZ3166 reference page](http://mxchip.com/az3166), visit this page for more details and updates.
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/az3166/docs/img/az3166_pin_io.jpg?raw=true)
+![](img/az3166_pin_io.jpg)
 
 MXChip IoT DevKit AZ3166 Schematic are available on the official [MXChip official page](http://www.mxchip.com/public/microsoft/AZ3166-SCH.pdf).
 
