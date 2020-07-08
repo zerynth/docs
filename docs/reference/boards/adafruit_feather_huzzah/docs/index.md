@@ -6,11 +6,11 @@ This device wired up a high-quality SiLabs CP2104 USB-Serial chip that can uploa
 
 To make it easy to use for portable projects, the Adafruit Feather Huzzah provides a connector for a 3.7/4.2 V Lithium polymer battery and built in battery charging circuit thought USB port. The Feather will automatically switch over to USB power when its available.
 
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/zerynth/docs/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah.png"></p>
+<p style="text-align:center;"><img src="/img/adafruit_feather_huzzah.png"></p>
 
 
 ## Pin Mapping
-![](/img/adafruit_feather_huzzah_pin_io.png)
+![](./img/adafruit_feather_huzzah_pin_io.png)
 
 Official reference for Adafruit Feather Huzzah can be found [here](https://www.adafruit.com/product/2821).
 
