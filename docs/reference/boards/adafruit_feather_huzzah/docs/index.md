@@ -10,7 +10,7 @@ To make it easy to use for portable projects, the Adafruit Feather Huzzah provid
 
 
 ## Pin Mapping
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_feather_huzzah/docs/img/adafruit_feather_huzzah_pin_io.png?raw=true)
+![](/img/adafruit_feather_huzzah_pin_io.png)
 
 Official reference for Adafruit Feather Huzzah can be found [here](https://www.adafruit.com/product/2821).
 
