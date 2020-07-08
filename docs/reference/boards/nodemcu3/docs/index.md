@@ -2,11 +2,11 @@
 
 NodeMCU v3 is a development board which runs on the ESP8266 with the Espressif Non-OS SDK, and hardware based on the ESP-12 module. The device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu3/docs/img/nodemcu3.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/nodemcu3.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nodemcu3/docs/img/nodemcu3_comm.jpg?raw=true)
+![](img/nodemcu3_comm.jpg)
 
 ## Flash Layout
 
