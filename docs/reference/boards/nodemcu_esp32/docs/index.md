@@ -2,11 +2,12 @@
 
 The NodeMCU ESP-32S is one of the development board created by NodeMcu to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
-![](https://github.com/zerynth/docs/blob/vojislavgvozdic/docs/reference/boards/nodemcu_esp32/docs/img/nodemcu_esp32.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/nodemcu_esp32.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/vojislavgvozdic/docs/reference/boards/nodemcu_esp32/docs/img/nodemcu_esp32_pin.jpg?raw=true)
+![](img/nodemcu_esp32_pin.jpg)
 
 Reference for NodeMCU ESP-32S can be found [here](https://www.shenzhen2u.com/NodeMCU-32S).
 
