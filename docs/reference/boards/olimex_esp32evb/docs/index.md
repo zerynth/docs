@@ -2,11 +2,11 @@
 
 The Esp32 EVB device is one of the development board created by Olimex to evaluate the ESP-WROOM-32 module. Based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview), Olimex ESP32 EVB features 100Mb Ethernet Interface, Bluetooth LE, WiFi, Remote control IR, and CAN connectivity. The device can operate with single LiPo backup battery like UPS as it has an internal LiPo battery charger and a step-up converter. Two relays are also available to switch power appliances on and off.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32evb/docs/img/olimex_esp32evb.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/olimex_esp32evb.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/olimex_esp32evb/docs/img/Olimex_ESP32_EVB_pin_comm.jpg?raw=true)
+![](img/Olimex_ESP32_EVB_pin_comm.jpg)
 
 Official reference for Olimex Esp32 EVB can be found [here](https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware).
 
