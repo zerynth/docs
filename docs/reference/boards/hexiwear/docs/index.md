@@ -11,11 +11,12 @@ For this device, a docking station is also available; The Hexiwear Docking Stati
 !!! note
 	All the reported information are extracted from the official [Hexiwear page](http://www.hexiwear.com/), visit this page for more details and updates.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexiwear/docs/img/hexiwear.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/hexiwear.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexiwear/docs/img/hexiwear_pin_io.jpg?raw=true)
+![](img/hexiwear_pin_io.jpg)
 
 ## Flash Layout
 
