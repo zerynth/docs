@@ -3,7 +3,8 @@
 The Particle Core is a complete Wi-Fi enabled development platform for creating connected devices with ease. The Particle Core is small, low power, and does all the heavy WiFi lifting.
 Particle Core v1.0 uses the [STM32F103CB Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/33/d4/6f/1d/df/0b/4c/6d/CD00161566.pdf/files/CD00161566.pdf/jcr:content/translations/en.CD00161566.pdf).
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_core/docs/img/ParticleCore.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/ParticleCore.jpg"></p>
 
 In addition to having 128KB of internal flash memory for storing the firmware, the Core also features an external SPI based flash memory chip - SST25VF016B.
 
@@ -14,7 +15,7 @@ This memory space (a total of 2MB) is used to store the factory reset firmware a
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/particle_core/docs/img/Particle_core_pin_io.png?raw=true)
+![](img/Particle_core_pin_io.png)
 
 Particle Core Official Schematic, Reference Design & Pin Mapping are available on the [official Particle Core datasheet page](https://docs.particle.io/datasheets/core-datasheet/).
 
