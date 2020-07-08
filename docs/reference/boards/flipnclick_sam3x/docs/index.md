@@ -11,13 +11,14 @@ This device has the predisposition in both sides for shields and expansion board
 !!! note
 	Clicks are bite-sized add-on boards with a standardized mikroBUS connector that make prototyping as elegant and enjoyable as it gets. Each one carries a single sensor, transceiver, display, encoder, connection port or any other sort of chip or module.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclick.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/flipnclick.jpg"></p>
 
 With more than 160 to choose from, and more coming out every week, it’s very simple to create a custom product by simply adding new functionality to the main device.
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/flipnclick_sam3x/docs/img/flipnclickpin.jpg?raw=true)
+![](img/flipnclickpin.jpg)
 
 MikroElektronika Flip & Click official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/flip-n-click/flip-n-click-manual-v100.pdf).
 
