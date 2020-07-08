@@ -4,11 +4,11 @@ The ESP32 Pico v4 is a mini development board produced by Espressif. The core of
 
 Comparing to other ESP32 chips, the ESP32-PICO-D4 integrates several peripheral components in one single package, that otherwise would need to be installed separately. This includes a 40 MHz crystal oscillator, 4 MB flash, filter capacitors and RF matching links in.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_pico_v4/docs/img/esp32-pico-kit-v4.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/esp32-pico-kit-v4.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_pico_v4/docs/img/esp32_pico_v4_pin_io.jpg?raw=true)
+![](img/esp32_pico_v4_pin_io.jpg)
 
 Official reference for ESP32 Pico v4 can be found [here](http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html#overview).
 
