@@ -6,7 +6,7 @@ The design includes a Li-Po charging circuit that allows the Adafruit Feather M0
 
 All these features make this device the preferred choice for the emerging IoT battery-powered projects in a compact form factor.
 
-<p style="text-align:center;"><img src="./img/Adafruit_Feather_M0WiFi.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/Adafruit_Feather_M0WiFi.jpg?raw=true"></p>
 
 !!! warning
 	The Adafruit Feather M0 Wi-Fi runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the device.
@@ -18,7 +18,7 @@ All these features make this device the preferred choice for the emerging IoT ba
 
 ## Pin Mapping
 
-![](./img/Adafruit_Feather_M0WiFi_pin_io.png)
+![](img/Adafruit_Feather_M0WiFi_pin_io.png)
 Adafruit Feather M0 Wi-Fi Official Schematic, Reference Design and Pin Mapping are available on the official [Adafruit Feather M0 Wi-Fi reference page](https://learn.adafruit.com/adafruit-feather-m0-wifi-atwinc1500/).
 
 ## Flash Layout
