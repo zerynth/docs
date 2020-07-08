@@ -9,11 +9,11 @@ The device needs a 5V power supply and features a [STM32F427 MCU](http://www.st.
 !!! note
 	Quail is produced by [MikroElektronika](http://www.mikroe.com/quail/), but the idea and design of the device was done by [MikroBUS.NET](https://mikrobusnet.org), a team of software and hardware professionals from France
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/quail_board.png?raw=true"></p>
+<p style="text-align:center;"><img src="img/quail_board.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/Mikroelektronika_Quail.jpg?raw=true)
+![](img/Mikroelektronika_Quail.jpg)
 
 MikroElektronika Quail official manual is available [here](http://download.mikroe.com/documents/starter-boards/other/quail/quail-board-manual-v100.pdf)
 
