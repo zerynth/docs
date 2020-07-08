@@ -9,11 +9,12 @@ With Polaris 3G, many IoT applications can be developed related to real-time ass
 !!! important
     Polaris 3G belongs to Polaris family of board by Fortebit. The lib.fortebit.polaris library is available and can be imported to abstract your Zerynth project from a specific Polaris board.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_3g/docs/img/polaris_3g.png?raw=true)
+
+<p style="text-align:center;"><img src="img/polaris_3g.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/polaris_3g/docs/img/polaris_3g_pin_comm.jpg?raw=true)
+![](img/polaris_3g_pin_comm.jpg)
 
 ## Flash Layout
 
