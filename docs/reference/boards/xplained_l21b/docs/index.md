@@ -8,14 +8,14 @@ The Xplained Pro extension kits offers additional peripherals to extend the feat
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port that can be used for device and bootloader programming.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_l21b/docs/img/XplainedProSamL21.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/XplainedProSamL21.jpg"></p>
 
 !!! note
 	All the reported information are extracted from the official [Xplained Pro Sam L21 page](http://www.microchip.com/developmenttools/productdetails.aspx?partno=atsaml21-xpro-b&utm_source=MicroSolutions&utm_medium=Link&utm_term=FY18Q1&utm_content=DevTools&utm_campaign=Article), visit this page for more details and updates.
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xplained_l21b/docs/img/xplained_l21b_pin_io.jpg?raw=true)
+![](img/xplained_l21b_pin_io.jpg)
 
 Xplained Pro Sam L21 Official Schematic, Reference Design and Pin Mapping are available on the official [Atmel User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42405-SAML21-Xplained-Pro_User-Guide.pdf).
 
