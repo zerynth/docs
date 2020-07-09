@@ -2,14 +2,14 @@
 
 The ExpLoRer is a development/evaluation tool based on the Atmel [SAMD21J18A ARM Cortex-M0+ CPU](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf). intended for the evaluation of Microchip wireless modules in a Research and Development laboratory environment. It is not a Finished Appliance. Manufacturers who integrate ExpLoRer in a Finished Appliance product must take responsibility to follow regulatory guidelines, for example for CE marking.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sodaq_explorer/docs/img/SodaqExplorer.png?raw=true"></p>
+<p style="text-align:center;"><img src="img/SodaqExplorer.png"></p>
 
 !!! note
 	All the reported information are extracted from the official [SODAQ ExpLoRer page](https://support.sodaq.com/Boards/ExpLoRer/) , visit this page for more details and updates.
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sodaq_explorer/docs/img/SODAQ_ExpLoRer_pin_comm.jpg?raw=true)
+![](img/SODAQ_ExpLoRer_pin_comm.jpg)
 
 SODAQ ExpLoRer Official Schematic, Reference Design and Pin Mapping are available on the official [SODAQ ExpLoRer page](https://support.sodaq.com/sodaq-one/explorer).
 
