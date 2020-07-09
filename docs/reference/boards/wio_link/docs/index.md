@@ -4,11 +4,11 @@ The SeeedStudio Wio Link is an ESP8266 SoC based open-source Wi-Fi development b
 
 The Wio Link features 4MB of flash memory, Tensilica microcontroller (80MHz of system clock), around 50k of usable RAM and an Espressif ESP8266 chip Wi-fi Transceiver.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wio_link/docs/img/WioLink.png?raw=true"></p>
+<p style="text-align:center;"><img src="img/WioLink.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wio_link/docs/img/wio_link_pin_comm.jpg?raw=true)
+![](img/wio_link_pin_comm.jpg)
 
 Official reference for Wio Link can be found [here](http://wiki.seeed.cc/Wio_Link/).
 
