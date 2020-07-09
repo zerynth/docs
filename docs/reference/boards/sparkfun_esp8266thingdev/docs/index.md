@@ -4,11 +4,11 @@ The SparkFun ESP8266 Thing Dev is a development board that has been solely desig
 
 The ESP8266 Thing Development device breaks out all of the module’s pins, and the USB-to-serial converter means you don’t need any peripheral components to program the chip. The device features 512 KB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_esp8266thingdev/docs/img/sparkfun_esp8266thingdev.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/sparkfun_esp8266thingdev.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_esp8266thingdev/docs/img/sparkfun_esp8266thingdev_comm.jpg?raw=true)
+![](img/sparkfun_esp8266thingdev_comm.jpg)
 
 Official reference for Sparkfun Esp8266 Thing Dev can be found [here](https://www.sparkfun.com/products/13711).
 
