@@ -8,11 +8,12 @@ This device wired up a CH40* USB-to-Serial to upload the code. It also has auto-
 
 To make it easy to use for portable projects, the FireBeetle ESP8266 provides a connector for a 3.7/4.2 V Lithium polymer battery and built in battery charging circuit thought USB port. The FireBeetle ESP8266 will automatically switch over to USB power when its available.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp8266/docs/img/firebeetle_esp8266.png?raw=true)
+
+<p style="text-align:center;"><img src="img/firebeetle_esp8266.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/firebeetle_esp8266/docs/img/firebeetle_esp8266_comm.jpg?raw=true)
+![](img/firebeetle_esp8266_comm.jpg)
 
 Official reference for DFRobot FireBeetle ESP8266 can be found [here](https://www.dfrobot.com/product-1634.html).
 

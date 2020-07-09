@@ -5,17 +5,17 @@ This module loads the Real-Time Clock (rtc) driver of the embedded device when a
 When imported, automatically sets the system rtc driver to the default one.
 
 
-`init(drvname)`
+**`init(drvname)`**
 
 Loads the rtc driver identified by ```drvname```
 
 Returns the previous driver without disabling it.
 
 
-`set_utc(seconds, microseconds=0)`
+**`set_utc(seconds, microseconds=0)`**
 
 
-* ```Arguments```
+* **```Arguments```**
 
     
     * ```seconds``` – integer Unix timestamp containing the total number of seconds from the 1st of January 1970 at UTC
@@ -27,7 +27,7 @@ Returns the previous driver without disabling it.
 Sets a Coordinated Universal Time (UTC) reference for the rtc.
 
 
-`TimeInfo()`
+**`TimeInfo()`**
 
 Class containing useful time information to be filled by the `get_utc()` function.
 List of attributes:
@@ -63,7 +63,7 @@ List of attributes:
 * `Timeinfo.tm_yday`: days since January 1 (0-365)
 
 
-`get_utc(verbosity=2)`
+**`get_utc(verbosity=2)`**
 
 When called with verbosity parameter set to `2`, returns a `TimeInfo()` object filled with info derived from the rtc.
 Only `Timeinfo.tv_seconds` and `Timeinfo.tv_microseconds` are guaranteed to be filled correctly.
@@ -83,5 +83,5 @@ When synchronized, ESP32 will perform timekeeping using built-in timers:
 
 * FRC1 timer is used to provide time at microsecond accuracy when ESP32 is running.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQwNjQ4ODY5XX0=
+eyJoaXN0b3J5IjpbMjE3NjIwODM3LDQ0MDY0ODg2OV19
 -->

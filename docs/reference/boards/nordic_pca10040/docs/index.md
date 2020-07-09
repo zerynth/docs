@@ -6,11 +6,12 @@ It facilitates development exploiting all features of the nRF52832 SoC. It inclu
 
 It comes with an on-board SEGGER J-Link debugger allowing programming and debugging both the on-board SoC and external SoCs through the debug out header.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nordic_pca10040/docs/img/nordic_nrf52_dk.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/nordic_nrf52_dk.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/nordic_pca10040/docs/img/nordic_nrf52_dk_pin_comm.jpg?raw=true)
+![](img/nordic_nrf52_dk_pin_comm.jpg)
 
 Official reference for Nordic nRF52 DK can be found [here](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52-DK).
 

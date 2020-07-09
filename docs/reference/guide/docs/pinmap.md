@@ -13,6 +13,7 @@ DIO is the default attribute for digital pins `Dx` while ADC is the default for 
 Moreover, `digitalWrite` and `digitalRead` functions don’t require any attribute specification and can be always used specifying the pin name only (`Dx` or `Ax`).
 
 Let’s see some examples:
+
 | Zerynth                               | Arduino/Wiring         | Note                    |
 |---------------------------------------|------------------------|-------------------------|
 | x=digitalRead(D1)                     | x=digitalRead(D1)      |                         |

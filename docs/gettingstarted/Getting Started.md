@@ -10,7 +10,7 @@ The Zerynth SDK is the gateway to our platform and includes:
 To install the ZSDK download the latest Zerynth Release according to your platform from the [Zerynth Download page](https://www.zerynth.com/zsdk/). 
 
 !!! note
-	Zerynth works only for 64-bit platform
+	Zerynth works only on 64-bit platform
 
 Start Zerynth Installation and agree to the Term of Service
 

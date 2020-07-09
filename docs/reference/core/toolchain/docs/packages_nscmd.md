@@ -7,7 +7,7 @@ A namespace is owned by a single user that can publish under it. A namespace can
 
 The command:
 
-```
+```py
 ztc namespace create name
 ```
 
@@ -22,8 +22,11 @@ This feature is not implemented yet.
 
 The command:
 
-```
+```py
 ztc namespace list
 ```
 
 retrieves the list of the user namespaces.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTI2MTcyNjE2N119
+-->

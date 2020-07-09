@@ -6,8 +6,13 @@ Pycom Fipy 1.0 features a Dual-Core [ESP32 microcontroller](https://espressif.co
 
 !!! warning
 	To be programmed, the Pycom Fipy 1.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards)).
+	
+	
+<p style="text-align:center;"><img src="img/Pycom_Fipy_v1.0.png"></p>
 
 ## Pin Mapping
+
+![](img/Pycom_FiPy_v1.0_pin_io.jpg)
 
 Official reference for Pycom Fipy 1.0 can be found [here](https://pycom.io/hardware/fipy_specs/).
 
@@ -30,7 +35,10 @@ In particular, for non-BLE VMs:
 | 0x00390000    | 448Kb | Reserved                |
 | 0x00392000    | 4Mb   | Free for user storage   |
 
+
 For BLE VMs:
+
+
 | Start address | Size   | Content                 |
 |---------------|--------|-------------------------|
 | 0x00009000    | 16Kb   | Esp32 NVS area          |

@@ -6,11 +6,12 @@ ESP32-Ethernet-Kit is an [ESP32 microcontroller](https://espressif.com/en/produc
 
 It consists of two development boards, the Ethernet board and the PoE board. The Ethernet board contains Bluetooth / Wi-Fi dual-mode ESP32-WROVER-B module and IP101GRI, a Single Port 10/100 Fast Ethernet Transceiver (PHY). The PoE board provides power over Ethernet functionality. The Ethernet board can work independently, without the PoE board installed.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_ethernetkit/docs/img/esp32_ethernetkit.png?raw=true)
+
+<p style="text-align:center;"><img src="img/esp32_ethernetkit.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_ethernetkit/docs/img/esp32_ethernetkit_comm.jpg?raw=true)
+![](img/esp32_ethernetkit_comm.jpg)
 
 Official reference for ESP32 EthernetKit can be found [here](https://docs.espressif.com/projects/esp-idf/en/latest/hw-reference/get-started-ethernet-kit.html).
 

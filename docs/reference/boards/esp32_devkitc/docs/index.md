@@ -2,11 +2,11 @@
 
 The ESP32 DevKitC is one of the development board created by Espressif to evaluate the ESP-WROOM-32 module. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wifi, Bluetooth, Ethernet and Low Power support all in a single chip.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_devkitc/docs/img/esp32devkitc.jpg?raw=true)
+![](img/esp32devkitc.jpg)
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/esp32_devkitc/docs/img/esp32devkitcpin.jpg?raw=true)
+![](img/esp32devkitcpin.jpg)
 
 Official reference for ESP32 DevKitC can be found [here](http://espressif.com/en/products/hardware/esp32-devkitc/overview).
 

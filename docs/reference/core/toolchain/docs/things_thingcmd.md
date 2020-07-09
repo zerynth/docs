@@ -65,7 +65,7 @@ instance must be created on the ADM and the assigned credentials used in the scr
 
 The command:
 
-```
+```py
 ztc thing add name
 ```
 
@@ -97,7 +97,7 @@ Each Zerynth user can create an unlimited number of connected devices instances,
 
 The command:
 
-```
+```py
 ztc thing info uid
 ```
 
@@ -139,7 +139,7 @@ The information retrieved consists of:
 
 The command:
 
-```
+```py
 ztc thing config uid
 ```
 
@@ -169,7 +169,7 @@ The properties are specified with the following options:
 
 The command:
 
-```
+```py
 ztc thing config list
 ```
 
@@ -185,7 +185,7 @@ retrieves the list of connected devices. Options can be specified to filter the 
 
 The command:
 
-```
+```py
 ztc thing group add name
 ```
 
@@ -196,7 +196,7 @@ Devices can be added to the group with the config command.
 
 The command:
 
-```
+```py
 ztc thing group config uid --add dev0_uid --remove dev1_uid
 ```
 
@@ -208,7 +208,7 @@ The options `--add` and `--remove` can be repeated multiple times in the same co
 
 The command:
 
-```
+```py
 ztc thing group list
 ```
 
@@ -222,7 +222,7 @@ able to receive and send messages to the connected device in response to user in
 
 The command:
 
-```
+```py
 ztc thing template add name
 ```
 
@@ -232,7 +232,7 @@ creates a new empty template named `name`. A template is identified by a generat
 
 A newly created template is empty. Files and subfolders can be added to the template with the following command:
 
-```
+```py
 ztc thing template upload uid path
 ```
 
@@ -245,7 +245,7 @@ that can be uploaded. If the upload is successfull, the files previously associa
 
 The command:
 
-```
+```py
 ztc thing template list
 ```
 
@@ -255,7 +255,7 @@ retrieves all the created templates. The option `--from n` skips the first `n` t
 
 The command:
 
-```
+```py
 ztc ota prepare device firmware
 ```
 
@@ -266,7 +266,7 @@ To correctly prepare a FOTA update refer to the link <ztc-cmd-link> command.
 
 The command:
 
-```
+```py
 ztc ota start device
 ```
 
@@ -276,7 +276,7 @@ signals the ADM to start the previously prepared FOTA update for device `device`
 
 The command:
 
-```
+```py
 ztc ota stop device
 ```
 
@@ -286,7 +286,7 @@ signals the ADM to stop the previously prepared or started FOTA update for devic
 
 The command:
 
-```
+```py
 ztc ota check device
 ```
 
@@ -317,5 +317,5 @@ The displayed information is:
 
 * `last_ota`, the timestamp of last successful FOTA update
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzI2NzA4OV19
+eyJoaXN0b3J5IjpbNjIyMjkwNzczLDExMDcyNjcwODldfQ==
 -->

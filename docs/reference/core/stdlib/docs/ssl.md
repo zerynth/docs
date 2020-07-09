@@ -40,7 +40,7 @@ No TLS connection is secure without athentication! Therefore, at least a CA cert
 Since there are many certification authorities, shipping all CA certificates inside a microcontroller is not feasible. Zerynth provides the useful `__lookup` macro that can be used to retrieve a single CA certificate
 and store it directly in the firmware:
 
-```
+```py
 cacert0 = __lookup(SSL_CACERT_COMODO_TRUSTED_SERVICES_ROOT)
 cacert1 = __lookup(SSL_CACERT_DIGICERT_TRUSTED_ROOT_G4)
 
@@ -50,7 +50,7 @@ cacert1 = __lookup(SSL_CACERT_DIGICERT_TRUSTED_ROOT_G4)
 
 To check the TLS feature available in a particular network driver, refer to the following example (based on ESP32):
 
-```
+```py
 import json
 # import the wifi interface
 from wireless import wifi
@@ -293,7 +293,7 @@ The following CA certificates are available with the __lookup primitive:
 * *Microsec e-Szigno Root CA* : `SSL_CACERT_MICROSEC_E_SZIGNO_ROOT_CA`
 
 
-* ```Certigna``` : `SSL_CACERT_CERTIGNA`
+* **```Certigna```** : `SSL_CACERT_CERTIGNA`
 
 
 * *Deutsche Telekom Root CA 2* : `SSL_CACERT_DEUTSCHE_TELEKOM_ROOT_CA_2`
@@ -440,7 +440,7 @@ The following CA certificates are available with the __lookup primitive:
 * *D-TRUST Root Class 3 CA 2 EV 2009* : `SSL_CACERT_D_TRUST_ROOT_CLASS_3_CA_2_EV_2009`
 
 
-* ```PSCProcert``` : `SSL_CACERT_PSCPROCERT`
+* **```PSCProcert```** : `SSL_CACERT_PSCPROCERT`
 
 
 * *China Internet Network Information Center EV Certificates Root* : `SSL_CACERT_CHINA_INTERNET_NETWORK_INFORMATION_CENTER_EV_CERTIFICATES_ROOT`
@@ -458,7 +458,7 @@ The following CA certificates are available with the __lookup primitive:
 * *CA Disig Root R2* : `SSL_CACERT_CA_DISIG_ROOT_R2`
 
 
-* ```ACCVRAIZ1``` : `SSL_CACERT_ACCVRAIZ1`
+* **```ACCVRAIZ1```** : `SSL_CACERT_ACCVRAIZ1`
 
 
 * *TWCA Global Root CA* : `SSL_CACERT_TWCA_GLOBAL_ROOT_CA`
@@ -500,7 +500,7 @@ The following CA certificates are available with the __lookup primitive:
 * *DigiCert Trusted Root G4* : `SSL_CACERT_DIGICERT_TRUSTED_ROOT_G4`
 
 
-* ```WoSign``` : `SSL_CACERT_WOSIGN`
+* **```WoSign```** : `SSL_CACERT_WOSIGN`
 
 
 * *WoSign China* : `SSL_CACERT_WOSIGN_CHINA`
@@ -589,7 +589,7 @@ The following CA certificates are available with the __lookup primitive:
 ## The sslsocket class
 
 
-`sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`
+**`sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`**
 
 This class represents a secure socket based on SSL/TLS protocol. It inherits from socket.socket
 
@@ -599,7 +599,7 @@ The parameter ```ctx``` is the SSL context to use for the socket. See `create_ss
 
 Sockets can be used like this:
 
-```
+```py
 # import the ssl module
 import ssl
 # import a module to access a net driver (wifi, eth,...)
@@ -625,7 +625,7 @@ sock.sendall("Hello World!")
 
 <!-- _stdlib.ssl.create_ssl_context -->
 
-`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`
+**`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`**
 
 This function generates an SSL context with the following data:
 
@@ -637,7 +637,7 @@ This function generates an SSL context with the following data:
 
 * ```pkey``` is the private key matching ```clicert```. It can be an empty string to use a hardware stored private key. To enable the use of hardware keys a hardware cryptographic interface must be started. For example, with an `ATECC508A` (ATECCx08A interface):
 
-```
+```py
 from microchip.ateccx08a import ateccx08a
 # ...
 ateccx08a.hwcrypto_init(I2C0, 0) # select private key stored in slot 0
@@ -674,5 +674,5 @@ Returns a tuple to be passed as parameter during secure socket creation.
 !!! note
 	```cacert```, ```clicert``` and ```pkey``` must be in PEM format and null-terminated (they must end with a 0 byte).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY0MTIxNjFdfQ==
+eyJoaXN0b3J5IjpbMTY2NTExMzE2NSwtMTgzNjQxMjE2MV19
 -->

@@ -31,7 +31,7 @@ IPv4 addresses can be passed to functions and methods in the following forms:
 if a port is required but not given, it is set to zero.
 
 
-`ip_to_tuple()`
+**`ip_to_tuple()`**
 
 Return a tuple of four integers from a ip address of the form “x.y.z.w”.
 
@@ -46,7 +46,7 @@ Raise `__builtins__.IOError` exceptions if socket creation goes wrong.
 
 Sockets can be used like this:
 
-```
+```py
 # import the socket module
 import socket
 # import a module to access a net driver (wifi, eth,...)
@@ -71,12 +71,12 @@ sock.sendall("Hello World!")
 ```
 
 
-`fileno()`
+**`fileno()`**
 
 Return an integer identifying the underlying socket number.
 
 
-`connect(address)`
+**`connect(address)`**
 
 Tries to connect the underlying socket (tcp or udp) to ```address```.
 A tcp socket must be connected to be used successfully. Udp sockets are connectionless and everytime a datagram
@@ -85,47 +85,47 @@ it can be used with methods like `recv()` and `send()` without specifying a rece
 When an udp socket is connected to ```address```, datagram packets coming from addresses different from ```address``` are ignored.
 
 
-`close()`
+**`close()`**
 
 Closes the underlying socket. No more input/output operations are possible.
 
 
-`recv(bufsize, flags=0)`
+**`recv(bufsize, flags=0)`**
 
 Reads at most ```bufsize``` bytes from the underlying socket. It blocks until ```bufsize``` bytes are received or an error occurs.
 
 Returns a bytearray containing the received bytes.
 
 
-`recv_into(buffer, bufsize=-1, flags=0)`
+**`recv_into(buffer, bufsize=-1, flags=0)`**
 
 Reads at most ```bufsize``` bytes from the underlying socket into ```buffer```. It blocks until ```bufsize``` bytes are received or an error occurs.
 
 Returns the number of received bytes.
 
 
-`recvfrom(bufsize, flags=0)`
+**`recvfrom(bufsize, flags=0)`**
 
 Reads at most ```bufsize``` bytes from the underlying udp socket. It blocks until a datagram is received.
 
 Returns a tuple (```data```, ```address```) where ```data``` is a bytearray containing the received bytes and ```address``` is the net address of the sender.
 
 
-`recvfrom_into(buffer, bufsize=-1, flags=0)`
+**`recvfrom_into(buffer, bufsize=-1, flags=0)`**
 
 Reads at most ```bufsize``` bytes from the underlying udp socket into ```buffer```. It blocks until a datagram is received. If ```bufsize``` is not given or is less than 0, ```bufsize``` is set to len(buffer).
 
 Returns a tuple (```rd```, ```address```) where ```rd``` is the number of bytes received and ```address``` is the net address of the sender.
 
 
-`send(buffer, flags=0)`
+**`send(buffer, flags=0)`**
 
 Send data to the socket. The socket must be connected to a remote socket.
 
 Returns the number of bytes sent. Applications are responsible for checking that all data has been sent; if only some of the data was transmitted, the application needs to attempt delivery of the remaining data.
 
 
-`sendall(buffer, flags=0)`
+**`sendall(buffer, flags=0)`**
 
 Send all data to the socket. The socket must be connected to a remote socket.
 
@@ -133,13 +133,13 @@ Unlike send(), this method continues to send data from bytes until either all da
 ```None``` is returned on success. On error, an exception is raised, and there is no way to determine how much data, if any, was successfully sent.
 
 
-`sendto(buffer, address, flags=0)`
+**`sendto(buffer, address, flags=0)`**
 
 Send data to the socket. The socket should not be connected to a remote socket, since the destination socket is specified by address.
 Return the number of bytes sent
 
 
-`settimeout(timeout)`
+**`settimeout(timeout)`**
 
 Set a timeout on blocking socket operations. The ```timeout``` argument can be a nonnegative integer number expressing milliseconds, or ```None```.
 If a non-zero value is given, subsequent socket operations will raise a timeout exception if the timeout period value has elapsed before the operation has completed.
@@ -147,7 +147,7 @@ If zero is given, the socket is put in non-blocking mode.
 If None is given, the socket is put in blocking mode.
 
 
-`bind(address)`
+**`bind(address)`**
 
 Binds the socket to ```address```. ```address``` can be:
 
@@ -162,13 +162,13 @@ A udp socket needs to be bound before any input/output operation. After binding,
 every packet incoming to ```address```.
 
 
-`listen(maxlog=2)`
+**`listen(maxlog=2)`**
 
 Enables listening on the underlying tcp socket. A tcp socket in listening state can be used as a server socket to accept incoming connection.
 ```maxlog``` specifies the maximum number of waiting connections.
 
 
-`accept()`
+**`accept()`**
 
 Blocks until an incoming connection is made on the underlying tcp socket.
 
@@ -177,7 +177,7 @@ Returns a tuple (```sock```, ```address```) where ```sock``` is a socket stream 
 
 Here is an example of tcp server socket:
 
-```
+```py
 # import the socket module
 import socket
 # import a module to access a net driver (wifi, eth,...)
@@ -208,5 +208,5 @@ while True:
     client.close()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwNDAxOTA3XX0=
+eyJoaXN0b3J5IjpbLTIwMDM0OTA0NjMsNjYwNDAxOTA3XX0=
 -->

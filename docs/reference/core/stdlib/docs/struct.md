@@ -23,33 +23,33 @@ argument.  This refers to objects of class bytearray.
 The module defines the following exception and functions:
 
 
-`pack(fmt, v1, v2, ...)`
+**`pack(fmt, v1, v2, ...)`**
 Return a bytes object containing the values ```v1```, ```v2```, … packed according
 to the format string ```fmt```.  The arguments must match the values required by
 the format exactly.
 
 
-`pack_into(fmt, buffer, offset, v1, v2, ...)`
+**`pack_into(fmt, buffer, offset, v1, v2, ...)`**
 Pack the values ```v1```, ```v2```, … according to the format string ```fmt``` and
 write the packed bytes into the writable buffer ```buffer``` starting at
 position ```offset```.  Note that ```offset``` is a required argument.
 
 
-`unpack(fmt, buffer)`
+**`unpack(fmt, buffer)`**
 Unpack from the buffer ```buffer``` (presumably packed by `pack(fmt, ...)`)
 according to the format string ```fmt```.  The result is a tuple even if it
 contains exactly one item.  The buffer’s size in bytes must match the
 size required by the format, as reflected by `calcsize()`.
 
 
-`unpack_from(fmt, buffer, offset=0)`
+**`unpack_from(fmt, buffer, offset=0)`**
 Unpack from ```buffer``` starting at position ```offset```, according to the format
 string ```fmt```.  The result is a tuple even if it contains exactly one
 item.  The buffer’s size in bytes, minus ```offset```, must be at least
 the size required by the format, as reflected by `calcsize()`.
 
 
-`calcsize(fmt)`
+**`calcsize(fmt)`**
 Return the size of the struct (and hence of the bytes object produced by
 `pack(fmt, ...)`) corresponding to the format string ```fmt```.
 
@@ -69,6 +69,7 @@ rules used by the C compiler).
 Alternatively, the first character of the format string can be used to indicate
 the byte order, size and alignment of the packed data, according to the
 following table:
+
 | Character | Byte order             | Size     | Alignment |
 |-----------|------------------------|----------|-----------|
 | @         | native                 | native   | native    |
@@ -94,16 +95,14 @@ the size and alignment of the latter is standardized.
 There is no way to indicate non-native byte order (force byte-swapping); use the
 appropriate choice of `'<'` or `'>'`.
 
-Notes:
+**Notes:**
 
 
-1. Padding is only automatically added between successive structure members.
+1. Padding is only automatically added between successive structure members. 
 No padding is added at the beginning or the end of the encoded struct.
-
 
 2. No padding is added when using non-native size and alignment, e.g.
 with ‘<’, ‘>’, ‘=’, and ‘!’.
-
 
 3. To align the end of a structure to the alignment requirement of a
 particular type, end the format with the code for that type with a repeat
@@ -115,8 +114,10 @@ Format characters have the following meaning; the conversion between C and
 Python values should be obvious given their types.  The ‘Standard size’ column
 refers to the size of the packed value in bytes when using standard size; that
 is, when the format string starts with one of `'<'`, `'>'`, `'!'` or
-`'='`.  When using native size, the size of the packed value is
-platform-dependent.
+
+`'='`.  When using native size, the size of the packed value is platform-dependent.
+
+
 | Format | C Type             | Python type       | Standard size | Notes    |
 |--------|--------------------|-------------------|---------------|----------|
 | x      | pad byte           | no value          |               |          |
@@ -141,7 +142,7 @@ platform-dependent.
 | p      | char[]             | bytes             |               |          |
 | P      | void *             | integer           |               | (6)      |
 
-Notes:
+**Notes:**
 
 1. The `'?'` conversion code corresponds to the `_Bool` type defined by
 C99. If this type is not available, it is simulated using a `char`. In
@@ -229,7 +230,7 @@ big-endian machine.
 
 A basic example of packing/unpacking three integers:
 
-```
+```python
 >>> from struct import *
 >>> pack('hhl', 1, 2, 3)
 b''
@@ -242,7 +243,7 @@ b''
 Unpacked fields can be named by assigning them to variables or by wrapping
 the result in a named tuple:
 
-```
+```python
 >>> record = b'raymond   2'
 >>> name, serialnum, school, gradelevel = unpack('<10sHHb', record)
 
@@ -255,7 +256,7 @@ Student(name=b'raymond   ', serialnum=4658, school=264, gradelevel=8)
 The ordering of format characters may have an impact on size since the padding
 needed to satisfy alignment requirements is different:
 
-```
+```python
 >>> pack('ci', b'*', 0x12131415)
 b'*'
 >>> pack('ic', 0x12131415, b'*')
@@ -269,13 +270,11 @@ b'*'
 The following format `'llh0l'` specifies two pad bytes at the end, assuming
 longs are aligned on 4-byte boundaries:
 
-```
+```python
 >>> pack('llh0l', 1, 2, 3)
 b''
 ```
 
 This only works when native size and alignment are in effect; standard size and
 alignment does not enforce any alignment.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY2MTA2XX0=
--->
+

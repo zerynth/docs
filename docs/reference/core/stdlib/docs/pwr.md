@@ -76,7 +76,7 @@ The following constants are defined:
 * `PWR_WATCHDOG`, to indicate watchdog triggered reset as the exit reason from a low power mode
 
 
-`go_to_sleep(timeout, mode)`
+**`go_to_sleep(timeout, mode)`**
 
 Enter a low power mode specified by `mode` (one of `PWR_STANDBY`, `PWR_STOP` or `PWR_SLEEP`).
 `timeout` (in milliseconds) is used to exit the low power mode after the specified timeout.
@@ -85,23 +85,23 @@ The time to enter (and exit) a low power mode is platform dependent and can be s
 Return the time in milliseconds spent in low power mode.
 
 
-`wakeup_reason()`
+**`wakeup_reason()`**
 
 Return the reason of exit from low power mode. It is useful to change the program behaviour based on low power mode exit reason.
 
 
-`get_status_size()`
+**`get_status_size()`**
 
 Return the size in bytes of the space available to safely store data before entering a very low power mode (STANDBY).
 If zero is returned, the target microcontroller doesn’t have a special purpose memory for saving the program state between low power modes.
 
 
-`set_status_byte(pos, val)`
+**`set_status_byte(pos, val)`**
 
 Save `val` to the position `pos` in the special purpose memory. If `pos` is out of the memory boundaries, an exception is raised.
 
 
-`get_status_byte(pos)`
+**`get_status_byte(pos)`**
 
 Retrieve the byte at position `pos` in the special purpose memory. If `pos` is out of the memory boundaries, an exception is raised.
 
@@ -201,5 +201,6 @@ For low power modes timeouts:
 
 The special purpose memory for low power mode status is the RTC memory (400 bytes available).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3MDcwNDg4LDE1NTE3OTgyOF19
+eyJoaXN0b3J5IjpbOTA4MzA5NDY0LDQ1NzA3MDQ4OCwxNTUxNz
+k4MjhdfQ==
 -->

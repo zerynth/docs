@@ -4,12 +4,12 @@ The RedBear Nano 2 is a microcontroller board based on the Nordic [NRF52832 Cort
 
 It is a tiny board based on the MB-N2 module by RedBear with an U.FL connector for externak NFC antenna.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/redbear_nano2/docs/img/RedBearNano2.jpg?raw=true"></p>
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/redbear_nano2/docs/img/RedBearNano2DapLink.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/RedBearNano2.jpg"></p>
+<p style="text-align:center;"><img src="img/RedBearNano2DapLink.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/redbear_nano2/docs/img/RedBearNano2Pin.png?raw=true)
+![](img/RedBearNano2Pin.png)
 
 ## Flash Layout
 

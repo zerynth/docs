@@ -6,7 +6,7 @@ A method to convert the timestamp from ntc to a human readable format is availab
 ## NTPClient class
 
 
-`NTPClient(conn_ifc, )`
+**`NTPClient(conn_ifc, )`**
 
 Create an instance of the NTPClient class which allow communication with the NTPServer.
 
@@ -23,7 +23,7 @@ If no server is provided, a default one will be used.
 
 
 
-`get_time()`
+**`get_time()`**
 
 Retrieve the amount of second passed since January 1st 1900 from the NTP Server.
 
@@ -31,5 +31,5 @@ Returns:
 
     The amount of second passed since January 1st 1900.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njc0MDczMDFdfQ==
+eyJoaXN0b3J5IjpbMTM0MTMyODQ0MywtMTg2NzQwNzMwMV19
 -->

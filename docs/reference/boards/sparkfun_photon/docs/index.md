@@ -4,7 +4,7 @@ The SparkFun Photon RedBoard is a complete Wi-Fi enabled development platform fo
 
 The P1 (P-one) is Particle’s tiny Wi-Fi module that contains both the Broadcom BCM43362 Wi-Fi chip and a reprogrammable [STM32F205RGY6 32-bit ARM Cortex M3 microcontroller](http://www.st.com/content/ccc/resource/technical/document/datasheet/bc/21/42/43/b0/f3/4d/d3/CD00237391.pdf/files/CD00237391.pdf/jcr:content/translations/en.CD00237391.pdf).
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_photon/docs/img/SparkfunPhoton.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/SparkfunPhoton.jpg"></p>
 
 In addition to having 1MB of internal flash memory for storing the firmware, the SparkFun Photon also features 128KB of Ram, 1MB of extra SPI flash and 120 MHz of clock.
 
@@ -13,7 +13,7 @@ In addition to having 1MB of internal flash memory for storing the firmware, the
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sparkfun_photon/docs/img/Sparkfun_Photon_Redboard_pin_comm.png?raw=true)
+![](img/Sparkfun_Photon_Redboard_pin_comm.png)
 
 SparkFun Photon RedBoard Official Schematic, Reference Design & Pin Mapping are available on the [official SparkFun Photon datasheet page](https://cdn.sparkfun.com/datasheets/IoT/sparkfun-photon-redboard-v10.pdf).
 

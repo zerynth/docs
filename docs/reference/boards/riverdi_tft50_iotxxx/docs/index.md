@@ -4,11 +4,11 @@ Riverdi IoT Display RiTFT-50-IOT-xxx is a complete HMI solution equipped with Br
 
 It aims to provide the best tool for fast development of touchscreen user interfaces. The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) allows easy usage of Wi-Fi and Bluetooth, while the BT81x graphics controller simplifies the process of creating user interfaces. The module has a built-in USB bridge for programming the display directly from the PC.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/riverdi_tft50_iotxxx/docs/img/riverdi_tft50_iotxxx.jpg?raw=true)
+![](img/riverdi_tft50_iotxxx.jpg)
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/riverdi_tft50_iotxxx/docs/img/riverdi_tft50_iotxxx_pin_comm.jpg?raw=true)
+![](img/riverdi_tft50_iotxxx_pin_comm.jpg)
 
 
 ## Flash Layout

@@ -4,11 +4,11 @@ The RedBear Blend 2 is a microcontroller board based on the Nordic [NRF52832 Cor
 
 It is a “full-size” Arduino compatible board which supports most shields. It has on board a Cortex-M3 MCU that supports DAPLink, slot for Apple MFi coprocessor and two Grove connectors.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/redbear_blend2/docs/img/RedBearBlend2.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/RedBearBlend2.jpg></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/redbear_blend2/docs/img/RedBearBlend2Pin.png?raw=true)
+![](img/RedBearBlend2Pin.png)
 
 ## Flash Layout
 

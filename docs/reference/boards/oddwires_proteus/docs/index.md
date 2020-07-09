@@ -6,11 +6,12 @@ The Proteus offers a 240 MHz, 32-bit processor with 4Mb of flash memory. The Pro
 
 The oddWires IoT-Bus System is based on a low-cost, open design that includes multiple main boards including a minimalist, breadboard-friendly form factor.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/oddwires_proteus/docs/img/oddwires_proteus.jpg?raw=true)
+
+<p style="text-align:center;"><img src="img/oddwires_proteus.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/oddwires_proteus/docs/img/oddwires_proteus_pin_comm.jpg?raw=true)
+![](img/oddwires_proteus_pin_comm.jpg)
 
 Official reference for oddWires Proteus can be found [here](https://www.oddwires.com/proteus-iot-bus-esp32-microprocessor-wi-fi-and-bluetooth-with-prototype-board-form-factor/).
 

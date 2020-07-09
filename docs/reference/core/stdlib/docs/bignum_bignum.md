@@ -18,7 +18,7 @@ BigNum instances are compatible with streams and, if printed, are automatically 
 
 BigNum instances are easy to use:
 
-```
+``` python
 from bignum import bignum as bg
 import streams
 
@@ -34,57 +34,57 @@ while True:
 ```
 
 
-`add(b)`
+**`add(b)`**
 
 Return a new big number instance equal to the addition of the current instance and ```b```.
 
 
-`iadd(b)`
+**`iadd(b)`**
 
 Add to the current instance the big number ```b```. Return `None`
 
 
-`sub(b)`
+**`sub(b)`**
 
 Return a new big number instance equal to the difference of the current instance and ```b```.
 
 
-`isub(b)`
+**`isub(b)`**
 
 Subtracts to the current instance the big number ```b```. Return `None`
 
 
-`mul(b)`
+**`mul(b)`**
 
 Return a new big number instance equal to the multiplication of the current instance and ```b```.
 
 
-`imul(b)`
+**`imul(b)`**
 
 Multiply the current instance for the big number ```b```. Return `None`
 
 
-`div(b)`
+**`div(b)`**
 
 Return a new big number instance equal to the division of the current instance by ```b```.
 
 
-`idiv(b)`
+**`idiv(b)`**
 
 Divides the current instance for the big number ```b```. Return `None`
 
 
-`mod(b)`
+**`mod(b)`**
 
 Return a new big number instance equal to the remainder of the division of the current instance by ```b```.
 
 
-`imod(b)`
+**`imod(b)`**
 
 Set the current instance to the remainder of the division by ```b```. Return `None`
 
 
-`divmod(b)`
+**`divmod(b)`**
 
 Return a tuple (q,r) of new big number instances representing the quotient ```q``` and the remainder ```r``` of the division of the current instance by ```b```.
 
@@ -113,10 +113,10 @@ Return True if the current instance is greater than or equal to the big number `
 Return 1 if the current instance is a positive number, -1 if the current instance is a negative number, 0 if it is equal to zero.
 
 
-`to_base(base)`
+**`to_base(base)`**
 
 Return a string representation of the big number in base ```base```. Allowed values for ```base``` are in the range 2..64.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5ODAyODg3LDY4NDI2MjExMiwtMjA3OD
-Q1Mzg1OSw2ODQyNjIxMTJdfQ==
+eyJoaXN0b3J5IjpbMTU0MjM0NjQ0NSwyNDk4MDI4ODcsNjg0Mj
+YyMTEyLC0yMDc4NDUzODU5LDY4NDI2MjExMl19
 -->

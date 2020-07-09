@@ -27,6 +27,8 @@ nav:
 -   INTEGRATE: [integrate/Integrate.md]
 -   REFERENCE:
     - {Index: reference.md}
+    -   Zerynth Hardware:
+        - 4zp/4ZeroBox.md
     -   Programming Guide:
         - reference/guide/docs/index.md
         - reference/guide/docs/basics.md

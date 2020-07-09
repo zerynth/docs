@@ -6,11 +6,12 @@ The PSoC 6 WiFi-BT Pioneer board features a [PSoC 6 MCU](https://www.cypress.com
 
 The board supports operating voltages from 1.8 V to 3.3 V for the PSoC 6 MCU. More info can be found [here](https://www.cypress.com/file/407731/download).
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/psoc6wifibt_pioneerkit/docs/img/psoc6wifibt_pioneerkit.png?raw=true)
+
+<p style="text-align:center;"><img src="img/psoc6wifibt_pioneerkit.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/psoc6wifibt_pioneerkit/docs/img/psoc6wifibt_pioneerkit_pin_io.png?raw=true)
+![](img/psoc6wifibt_pioneerkit_pin_io.png)
 
 Official reference for PSoC6 WiFi-Bt Pioneer Kit can be found [here](https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt).
 

@@ -8,8 +8,11 @@ With Polaris 2G, many IoT applications can be developed related to real-time ass
 
 !!! important
     Polaris 2G belongs to Polaris family of board by Fortebit. The lib.fortebit.polaris library is available and can be imported to abstract your Zerynth project from a specific Polaris board.
+    
+<p style="text-align:center;"><img src="img/polaris_2g.png"></p>
 
 ## Pin Mapping
+![](img/polaris_2g_pin_comm.jpg)
 
 ## Flash Layout
 

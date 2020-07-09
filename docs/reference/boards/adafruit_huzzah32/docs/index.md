@@ -4,11 +4,11 @@ The Huzzah32 is one of the development board created by Adafruit that mounts on-
 
 Adafruit Huzza32 contains a dual-core ESP32 chip, 4 MB of SPI Flash, tuned antenna, and The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) has both WiFi and Bluetooth Classic/LE support.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruit_huzzah32.png?raw=true"></p>
+<p style="text-align:center;"><img src="img/adafruit_huzzah32.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/adafruit_huzzah32/docs/img/adafruithuzzah32pin.jpg?raw=true)
+![](img/adafruithuzzah32pin.jpg)
 
 Official reference for Adafruit Huzzah32 can be found [here](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/overview).
 

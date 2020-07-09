@@ -11,8 +11,11 @@ Currently only ES256 encoding algorithm using prime256v1 curve is supported.
 `key` must be an ECDSA private key in hex format.
 If a private key is, for example, stored as a pem file, the needed hex string can be extracted from the OCTET STRING field associated value obtained from
 
-```
+```py
 openssl asn1parse -in my_private.pem
 ```
 
 command (since pem is a base64 encoded, plus header, [DER](https://tools.ietf.org/html/rfc5915)).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNTYzNDYyNTBdfQ==
+-->

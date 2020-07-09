@@ -52,7 +52,7 @@ through `ident`.
 ### Thread class
 
 
-`Thread(target=None, name=None, args=())`
+**`Thread(target=None, name=None, args=())`**
 
 This constructor should always be called with keyword arguments.  Arguments
 are:
@@ -70,7 +70,7 @@ base class constructor (`Thread.__init__()`) before doing anything else to
 the thread.
 
 
-`start(prio = PRIO_NORMAL, size=512)`
+**`start(prio = PRIO_NORMAL, size=512)`**
 
 Start the thread’s activity.
 
@@ -83,7 +83,7 @@ on the same thread object.
 ```prio``` and ```size``` are used to set the thread priority and the stack size.
 
 
-`run()`
+**`run()`**
 
 Method representing the thread’s activity.
 
@@ -93,7 +93,7 @@ the ```target``` argument, if any, with sequential arguments taken
 from the ```args``` argument.
 
 
-`join(timeout=-1)`
+**`join(timeout=-1)`**
 
 Wait until the thread terminates. This blocks the calling thread until
 the thread whose `join()` method is called terminates – either
@@ -113,7 +113,7 @@ block until the thread terminates.
 A thread can be `join()`ed many times.
 
 
-`is_alive()`
+**`is_alive()`**
 
 Return whether the thread is alive.
 
@@ -121,14 +121,14 @@ This method returns `True` just before the `run()` method
 starts until just after the `run()` method terminates.
 
 
-`name()`
+**`name()`**
 
 A string used for identification purposes only. It has no semantics.
 Multiple threads may be given the same name.  The initial name is set by
 the constructor.
 
 
-`ident()`
+**`ident()`**
 
 The ‘thread identifier’ of this thread or `None` if the thread has not
 been started.  This is a non negative integer. Thread identifiers may be recycled
@@ -138,7 +138,7 @@ available even after the thread has exited.
 ### Lock class
 
 
-`Lock()`
+**`Lock()`**
 
 A Lock object can be in two states: ```locked``` or ```unlocked```. When a Lock object is created it starts ```unlocked```.
 
@@ -160,7 +160,7 @@ A thread can also try to ```unlock``` a Lock object that it had previously ```lo
 
 Lock object are tipically used to gain exclusive access to a resource:
 
-```
+```py
 import streams
 import threading
 
@@ -188,7 +188,7 @@ thread(threadfun,"World")
 Both threads in the example will compete to call `print(msg)`. The Lock object ensure that while one thread is printing on the serial port, the other one is blocked, waiting for the message to be printed.
 
 
-`acquire(blocking=True, timeout=-1)`
+**`acquire(blocking=True, timeout=-1)`**
 
 Acquire a lock, blocking or non-blocking.
 
@@ -209,7 +209,7 @@ The return value is `True` if the lock is acquired successfully,
 `False` if not (for example if the ```timeout``` expired).
 
 
-`release()`
+**`release()`**
 
 Release a lock.  This can be called from any thread, not only the thread
 which has acquired the lock.
@@ -221,7 +221,7 @@ to proceed.
 ### Semaphore class
 
 
-`Semaphore(value=1)`
+**`Semaphore(value=1)`**
 
 This class implements semaphore objects.  A semaphore manages a counter
 representing the number of `release()` calls minus the number of
@@ -233,7 +233,7 @@ The optional argument gives the initial ```value``` for the internal counter; it
 defaults to `1`. If the ```value``` given is less than 0, `ValueError`is raised.
 
 
-`acquire(blocking=True, timeout=-1)`
+**`acquire(blocking=True, timeout=-1)`**
 
 Acquire a semaphore.
 
@@ -256,7 +256,7 @@ most ```timeout``` milliseconds.  If acquire does not complete successfully in
 that interval, return false.  Return true otherwise.
 
 
-`release()`
+**`release()`**
 
 Release a semaphore, incrementing the internal counter by one.  When it
 was zero on entry and another thread is waiting for it to become larger
@@ -265,7 +265,7 @@ than zero again, wake up that thread.
 ### Event class
 
 
-`Event()`
+**`Event()`**
 
 Class implementing event objects.  An event manages a flag that can be set to
 true with the `set()` method and reset to false with the
@@ -273,26 +273,26 @@ true with the `set()` method and reset to false with the
 The flag is initially false.
 
 
-`set()`
+**`set()`**
 
 Set the internal flag to true. All threads waiting for it to become true
 are awakened. Threads that call `wait()` once the flag is true will
 not block at all.
 
 
-`is_set()`
+**`is_set()`**
 
 Return true if and only if the internal flag is true.
 
 
-`clear()`
+**`clear()`**
 
 Reset the internal flag to false. Subsequently, threads calling
 `wait()` will block until `set()` is called to set the internal
 flag to true again.
 
 
-`wait(timeout=-1)`
+**`wait(timeout=-1)`**
 
 Block until the internal flag is true.  If the internal flag is true on
 entry, return immediately.  Otherwise, block until another thread calls
@@ -340,7 +340,7 @@ the state in such a way that it could possibly be a desired state for one
 of the waiters.  For example, the following code is a generic
 producer-consumer situation with unlimited buffer capacity:
 
-```
+```py
 # Consume one item
 cv.acquire()
 while not an_item_is_available():
@@ -362,7 +362,7 @@ no longer hold true.  This is inherent to multi-threaded programming.  The
 `wait_for()` method can be used to automate the condition
 checking, and eases the computation of timeouts:
 
-```
+```py
 # Consume an item
 cv.acquire()
 cv.wait_for(an_item_is_available)
@@ -381,7 +381,7 @@ but this is not guaranteed for every VM.
 ### Condition class
 
 
-`Condition(lock=None)`
+**`Condition(lock=None)`**
 
 This class implements condition variable objects.  A condition variable
 allows one or more threads to wait until they are notified by another thread.
@@ -391,19 +391,19 @@ and it is used as the underlying lock.  Otherwise,
 a new `Lock()` object is created and used as the underlying lock.
 
 
-`acquire(blocking=True, timeout=-1)`
+**`acquire(blocking=True, timeout=-1)`**
 
 Acquire the underlying lock. This method calls the corresponding method on
 the underlying lock; the return value is whatever that method returns.
 
 
-`release()`
+**`release()`**
 
 Release the underlying lock. This method calls the corresponding method on
 the underlying lock; there is no return value.
 
 
-`wait(timeout=-1)`
+**`wait(timeout=-1)`**
 
 Wait until notified or until a timeout occurs. If the calling thread has
 not acquired the lock when this method is called, a `RuntimeError` is
@@ -421,7 +421,7 @@ The return value is `True` unless a given ```timeout``` expired, in which
 case it is `False`.
 
 
-`wait_for(predicate, timeout=-1)`
+**`wait_for(predicate, timeout=-1)`**
 
 Wait until a condition evaluates to True.  ```predicate``` should be a
 callable which result will be interpreted as a boolean value.
@@ -435,7 +435,7 @@ the last return value of the predicate and will evaluate to
 Ignoring the timeout feature, calling this method is roughly equivalent to
 writing:
 
-```
+```py
 while not predicate():
     cv.wait()
 ```
@@ -445,7 +445,7 @@ held when called and is re-acquired on return.  The predicate is evaluated
 with the lock held.
 
 
-`notify(n=1)`
+**`notify(n=1)`**
 
 By default, wake up one thread waiting on this condition, if any.  If the
 calling thread has not acquired the lock when this method is called, a `RuntimeError` is raised.
@@ -457,17 +457,15 @@ The current implementation wakes up exactly ```n``` threads, if at least ```n```
 threads are waiting.
 
 !!! note
-	an awakened thread does not actually return from its `wait()`
-call until it can reacquire the lock.  Since `notify()` does not
-release the lock, its caller should.
+	an awakened thread does not actually return from its `wait()` call until it can reacquire the lock.  Since `notify()` does not release the lock, its caller should.
 
 
-`notify_all()`
+**`notify_all()`**
 
 Wake up all threads waiting on this condition.  This method acts like
 `notify()`, but wakes up all waiting threads instead of one. If the
 calling thread has not acquired the lock when this method is called, a
 `RuntimeError` is raised.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MzIxMzM4NF19
+eyJoaXN0b3J5IjpbMTk3ODEyMjg3OCwxNjczMjEzMzg0XX0=
 -->

@@ -5,7 +5,11 @@ Thanks to WT8266-DK V2, the user can simulate serial devices to access WiFi netw
 
 The WT8266-DK V2 device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
+<p style="text-align:center;"><img src="img/wt8266_s2.jpg"></p>
+
 ## Pin Mapping
+
+![](img/wt8266_s2_pin_io.png)
 
 Official reference for Wireless Tag WT8266-DK V2 can be found [here](http://www.wireless-tag.com/index.php/product/dis/94.html).
 
@@ -79,11 +83,14 @@ After virtualization, the WT8266-DK V2 device is ready to be programmed and the 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the WT8266-DK V2 device is available for bytecode only.
 
 Flash Layout is shown in table below:
+
+
 | Start address | Size  | Content         |
 |---------------|-------|-----------------|
 | 0x40200000    | 448Kb | VM Slot         |
 | 0x40270000    | 256Kb | Bytecode Slot 0 |
 | 0x402B0000    | 320Kb | Bytecode Slot 1 |
+
 
 ## Power Management
 

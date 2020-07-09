@@ -4,7 +4,7 @@ The STM32 Nucleo device provides an affordable and flexible way for users to try
 
 The Arduino connectivity support and ST Morpho headers make it easy to expand the functionality of the STM32 Nucleo device with a wide choice of specialized shields and sensors. This device does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof401re/docs/img/StNucleo.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/StNucleo.jpg"></p>
 
 !!! important
     ST Nucleo uploader requires a firmware upgrade to properly work with Zerynth and with other serial terminal. ST-Link firmware can be upgraded following the [ST official procedure](https://os.mbed.com/teams/ST/wiki/Nucleo-Firmware).
@@ -17,7 +17,7 @@ The Arduino connectivity support and ST Morpho headers make it easy to expand th
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof401re/docs/img/ST_nucleof401re_pin_io.jpg?raw=true)
+![](img/ST_nucleof401re_pin_io.jpg)
 
 ST Nucleo Official Schematic, Reference Design and Pin Mapping are available on the official [ST Nucelo F401RE datasheet page](http://www.st.com/content/ccc/resource/technical/document/data_brief/c8/3c/30/f7/d6/08/4a/26/DM00105918.pdf/files/DM00105918.pdf/jcr:content/translations/en.DM00105918.pdf)
 

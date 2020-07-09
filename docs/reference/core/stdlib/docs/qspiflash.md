@@ -8,7 +8,7 @@ This peripheral is available only for stm32l4 family chip and for Polaris device
 To initialize a custom external memory qspi flash several params must be passed to the init method:
 
 
-* ```Arguments```
+* **```Arguments```**
 
     
     * ```d0``` – D0 pin of the Qspi peripheral
@@ -84,7 +84,8 @@ To initialize a custom external memory qspi flash several params must be passed 
 
 
 
-`get_geometry()`
+**`get_geometry()`**
+
 Return a tuple holding flash geometry:
 
 
@@ -103,7 +104,7 @@ Return a tuple holding flash geometry:
 * ```page_size```, Page size of the qspi flash
 
 
-`write_data(addr, data)`
+**`write_data(addr, data)`**
 
 Write data ```data``` starting from address ```addr```.
 ```data``` can be a bytearray or a list of integers less than 256.
@@ -112,23 +113,24 @@ Write data ```data``` starting from address ```addr```.
 
 Writing is also allowed via bracket notation. The following is valid syntax:
 
-```
+```python
 my_flash[addr] = data
 ```
 
 
-`erase_sector(addr)`
+**`erase_sector(addr)`**
 
 Erase a whole sector passing the ```addr``` address of any byte contained in it.
 All sector bytes set to 0xff.
 
 
-`erase_block(addr)`
+**`erase_block(addr)`**
+
 Erase a memory block passing the ```addr``` address of any byte contained in it.
 All block bytes set to 0xff.
 
 
-`read_data(addr, n=1)`
+**`read_data(addr, n=1)`**
 
 Read ```n``` bytes of data starting from address ```addr```.
 
@@ -139,21 +141,22 @@ my_data = my_flash[addr:addr+n]
 ```
 
 
-`chip_erase()`
+**
+`chip_erase()`**
 Erase the whole memory.
 All memory bytes set to 0xff.
 
 
-`done()`
+**`done()`**
 Close the QspiFlash peripheral.
 
 
-`wakeup()`
+**`wakeup()`**
 Wake Up the QspiFlash peripheral from sleep mode.
 
 
-`sleep()`
+**`sleep()`**
 Put the QspiFlash peripheral in sleep mode.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NzA1MDcxMF19
+eyJoaXN0b3J5IjpbMTc1MDczNTQ3NiwtOTQ3MDUwNzEwXX0=
 -->

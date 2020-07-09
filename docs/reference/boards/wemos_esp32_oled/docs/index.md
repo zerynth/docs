@@ -3,11 +3,11 @@
 Wemos ESP32 OLED is a classic IoT dev-board designed and produced by Wemos. It is based on the [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) that boasts Wi-Fi, Bluetooth, Ethernet and Low Power support all in a single chip; Li-Po battery management system, 0.96″ OLED are also included.
 It is one of the best choice for smart solutions, smart farms, smart home, and IoT makers.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/wemos_esp32_oled/docs/img/wemos_esp32_oled.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/wemos_esp32_oled.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/wemos_esp32_oled/docs/img/wemos_esp32_oled_pin_io.jpg?raw=true)
+![](img/wemos_esp32_oled_pin_io.jpg)
 
 ## Flash Layout
 

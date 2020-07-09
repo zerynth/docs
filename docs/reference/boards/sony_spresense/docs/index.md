@@ -12,12 +12,12 @@ The Spresense consists of two boards:
 * [Main board](https://developer.sony.com/develop/spresense/developer-tools/introduction#_main_board)
 * [Extension board](https://developer.sony.com/develop/spresense/developer-tools/introduction#_extension_board)
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sony_spresense/docs/img/sonyspresense.jpg?raw=true"></p>
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/sony_spresense/docs/img/spresenseextension.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/sonyspresense.jpg"></p>
+<p style="text-align:center;"><img src="img/spresenseextension.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/sony_spresense/docs/img/sony_spresense_pin_io.jpg?raw=true)
+![](img/sony_spresense_pin_io.jpg)
 
 Official reference for Sony Spresense can be found [here](https://developer.sony.com/develop/spresense).
 

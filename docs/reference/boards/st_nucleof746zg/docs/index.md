@@ -2,14 +2,14 @@
 
 The [ST Microelectronics Nucleo F746ZG](https://www.st.com/en/evaluation-tools/nucleo-f746zg.html) boards provide an affordable and flexible way for users to try out new concepts and build prototypes by choosing from the various combinations of performance and power consumption features, provided by the STM32 microcontroller.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof746zg/docs/img/nucleof746zg.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/nucleof746zg.jpg"></p>
 
 The ST Zio connector, which extends the Arduino™ Uno V3 connectivity, and the ST morpho headers provide an easy means of expanding the functionality of the Nucleo open development platform with a wide choice of specialized shields.
 The STM32 Nucleo-144 board does not require any separate probe as it integrates the ST-LINK debugger/programmer.
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof746zg/docs/img/st_nucleof746zg_pin_comm.jpg?raw=true)
+![](img/st_nucleof746zg_pin_comm.jpg)
 
 ## Flash Layout
 

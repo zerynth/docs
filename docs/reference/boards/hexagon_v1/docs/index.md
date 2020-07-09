@@ -4,11 +4,12 @@ The AWS Hexagon v1 is one of the development board created by Tekt Industries th
 
 AWS Hexagon v1 contains a dual-core ESP32 chip, 4 MB of SPI Flash, tuned antenna, and The [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview) has both WiFi and Bluetooth Classic/LE support.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexagon_v1/docs/img/hexagon_v1.png?raw=true)
+
+<p style="text-align:center"><img src="img/hexagon_v1.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/hexagon_v1/docs/img/hexagon_v1_pin_io.jpg?raw=true)
+![](img/hexagon_v1_pin_io.jpg)
 
 ## Flash Layout
 

@@ -5,11 +5,12 @@ WiPy v3.0 is a low-power consumption development hardware designed for Internet 
 !!! warning
 	To be programmed, the Pycom WiPy 3.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards))
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/pycom_wipy_v3/docs/img/Pycom_WiPy_3.0.png?raw=true)
+
+<p style="text-align:center;"><img src="img/Pycom_WiPy_3.0.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/pycom_wipy_v3/docs/img/Pycom_WiPy_3.0_pin_io.jpg?raw=true)
+![](img/Pycom_WiPy_3.0_pin_io.jpg)
 
 Official reference for Pycom WiPy 3.0 can be found [here](https://pycom.io/hardware/wipy-3-0-specs/).
 
