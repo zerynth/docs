@@ -8,7 +8,7 @@ Pycom Fipy 1.0 features a Dual-Core [ESP32 microcontroller](https://espressif.co
 	To be programmed, the Pycom Fipy 1.0 device needs the related expansion board or shields that expose its serial port (expansion board and shields available can be found [here](https://pycom.io/hardware/#eboards)).
 	
 	
-<p style="text-align:center;"><img src="Pycom_Fipy_v1.0.png"></p>
+<p style="text-align:center;"><img src="img/Pycom_Fipy_v1.0.png"></p>
 
 ## Pin Mapping
 
