@@ -42,6 +42,4 @@ The 4ZeroBox includes a Zerynth® Virtual Machine Premium License, thus it is pr
 ### API
 
 Our services expose some RESTful API for developing external tools and platforms and integrate them with the 4ZeroPlatform. The full documentation can be found [here](https://docs.4zeroplatform.com/api/).
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjAzMDU4XX0=
--->
+

@@ -51,9 +51,8 @@ Zerynth main features are:
 -   Real-Time: Zerynth integrates the RTOS of your choice with multithreading support;
 -   Connectivity: Zerynth allows an easy integration with top Cloud services and Firmware Over-The-Air updates.
 
-**Warning**
-
-The 4ZeroPlatform Configurator depends on **the latest version** of Zerynth Studio, the IDE provided by Zerynth. You can download from [here](https://www.zerynth.com/zerynth-studio/) and install Zerynth following the [Installation guide](https://docs.zerynth.com/latest/official/core.zerynth.docs/installationguide/docs/index.html).
+!!! warning
+    The 4ZeroPlatform Configurator depends on **the latest version** of Zerynth Studio, the IDE provided by Zerynth. You can download from [here](https://www.zerynth.com/zerynth-studio/) and install Zerynth following the [Installation guide](https://docs.zerynth.com/latest/official/core.zerynth.docs/installationguide/docs/index.html).
 
 Once Installed Zerynth Studio, following page will apprear:
 
@@ -64,16 +63,13 @@ In sequence, both operation must be excecuted before proceeding to program the 4
 -   **Driver Installation**: 4ZeroBox comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. The CH340 USB to UART chip is also connected to the boot pins of the module, allowing for a seamless virtualization of the device. Drivers for the CH340 Module are needed for Windows and Mac OS platforms;
 -   **Zerynth Studio Configuration**: This operation installs all packages needed to auto-recognize the 4ZeroBox inside the Zerynth Studio (device, libraries, etc.) with examples ready to publish data in the 4Zeroplatform.
 
-**Important**
+!!! important
+    To install the driver, press the button related to your OS, start the download, extract the archive and run the executable file inside it:
+    -   CH341SER/SETUP.EXE for Windows
+    -   CH341SER_MAC/CH34x_Install_V1.4.pkg for Mac OS
 
-To install the driver, press the button related to your OS, start the download, extract the archive and run the executable file inside it:
-
--   CH341SER/SETUP.EXE for Windows
--   CH341SER_MAC/CH34x_Install_V1.4.pkg for Mac OS
-
-**Note**
-
-**Linux users**: while devices drivers are already included in the kernel, the read/write access to the serial port must be granted to your user. You must add your user to the group `dialout`, or `uucp` depending on your distribution.
+!!! note:
+    **Linux users**: while devices drivers are already included in the kernel, the read/write access to the serial port must be granted to your user. You must add your user to the group `dialout`, or `uucp` depending on your distribution.
 
 This command should do the trick: `bash -c 'sudo usermod -a -G $(grep -o "^\(uucp\|dialout\)" /etc/group) ${USER}'`
 
@@ -85,9 +81,8 @@ After Driver installation, click on **Configure Zerynth Studio** to apply new li
 
 ![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/studio_patch_complete.png)
 
-**Important**
-
-Configuration of Zerynth Studio must be done every time there is a new release or new patch of it.
+!!! important
+    Configuration of Zerynth Studio must be done every time there is a new release or new patch of it.
 
 **Configure your device**
 
@@ -122,24 +117,23 @@ On the left column, you can click on the _light bulb_ icon to open available exa
 
 Double-click on the example provided within the **fourzeromanager** library clone it (more informations about cloning an example and uplinking it can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.docs/gettingstarted/docs/index.html#clone-an-example-and-start-with-zerynth-python-scripts)) and edit the line 129 with a valid Wi-Fi configuration to be like that:
 
-    try:
+```py
+try:
     fzbox.net_connect("Your WiFi name", "your-wifi-password")
-    except Exception as e:
-    mcu.reset()`
+except Exception as e:
+    mcu.reset()
+```
 
 you’ll be able to send your first data online.
 
-**Note**
+!!! note
+    These data are random for now – to connect a real sensor and send data refer to the 4ZeroBox documentation: [4ZeroBox](https://www.zerynth.com/blog/docs/4zeroplatform/4zerobox/). Also, the full 4ZeroManager library for connecting, registering new RPCs, and sending data is available here: [4ZeroManager](https://www.zerynth.com/blog/docs/4zeroplatform/4zeromanager/).
 
-These data are random for now – to connect a real sensor and send data refer to the 4ZeroBox documentation: [4ZeroBox](https://www.zerynth.com/blog/docs/4zeroplatform/4zerobox/). Also, the full 4ZeroManager library for connecting, registering new RPCs, and sending data is available here: [4ZeroManager](https://www.zerynth.com/blog/docs/4zeroplatform/4zeromanager/).
+!!! important 
+    To devolop new applications for the 4ZeroBox, a **project.yml** file must be present inside the project folder (can be copied from the examples available in TOI libraries). In project.yml file, peripherals and functionalities can be enabled or disabled according to what your application need making your script optimized and saving resources. More info [here](https://www.zerynth.com/blog/docs/4zeroplatform/4zerobox/#library)
 
-**Important**
-
-To devolop new applications for the 4ZeroBox, a **project.yml** file must be present inside the project folder (can be copied from the examples available in TOI libraries). In project.yml file, peripherals and functionalities can be enabled or disabled according to what your application need making your script optimized and saving resources. More info [here](https://www.zerynth.com/blog/docs/4zeroplatform/4zerobox/#library)
-
-**Warning**
-
-Remember that to make more safe each application, a recovery mechanism from unexpected behavior based on microcontroller watchdog is enabled for all available Zerynth Virtual Machines of the 4ZeroBox. More info on Zerynth Secure Firmware can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#secure-firmware)
+!!! warning
+    Remember that to make more safe each application, a recovery mechanism from unexpected behavior based on microcontroller watchdog is enabled for all available Zerynth Virtual Machines of the 4ZeroBox. More info on Zerynth Secure Firmware can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#secure-firmware)
 
 ### 4ZeroManager
 
@@ -177,16 +171,11 @@ Clicking the FOTA button will ask you for a folder containing a valid Zerynth pr
 
 ![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/device_details_2.png)
 
-**Important**
-
-FOTA functionalities are available only on desktop version of the 4ZeroPlatform Configurator
+!!! important
+    FOTA functionalities are available only on desktop version of the 4ZeroPlatform Configurator.
 
 #### Webhooks and MQTT Endpoints
 
 Setting an URL in the _Webhook_ section will make it possible to send data received from the device to any valid HTTP endpoint.
 
 The token is something similar to a password, you can choose one or click on **Generate** to set a random one. Check this token on your server to be sure the data you are receiving are from us!
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjgxMTQxNSwtMjg1OTcwNTE5LC01Nz
-U5NDU2MzYsMjkyODE0MDg4XX0=
--->
