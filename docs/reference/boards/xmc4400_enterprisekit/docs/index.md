@@ -4,11 +4,11 @@ Infineon XMC4400 Enterprise Kit is equipped with the ARM Cortex-M4 based
 [XMC4400 microcontroller (MCU)](https://studio.segger.com/packages/XMC4000/CMSIS/Documents/xmc4400_rm_v1.5_2014_04.pdf) from Infineon Technologies. These kits are
 designed to evaluate the capabilities of the XMC4400 MCU.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4400_enterprisekit/docs/img/xmc4400_enterprisekit.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/xmc4400_enterprisekit.jpg"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4400_enterprisekit/docs/img/xmc4400_enterprisekit_io.jpg?raw=true)
+![](img/xmc4400_enterprisekit_io.jpg)
 
 Official reference for Infineon XMC4400 Enterprise Kit can be found
 [here](https://www.infineon.com/dgdl/Board_Users_Manual_CPU_Board_XMC4400_General_Purpose_R1%200.pdf?fileId=db3a30433cd75ebf013cf698a0992d5e).
