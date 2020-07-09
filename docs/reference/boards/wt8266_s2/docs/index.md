@@ -5,7 +5,11 @@ Thanks to WT8266-DK V2, the user can simulate serial devices to access WiFi netw
 
 The WT8266-DK V2 device features 4MB of flash memory, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
 
+<p style="text-align:center;"><img src="img/wt8266_s2.jpg"></p>
+
 ## Pin Mapping
+
+![](img/wt8266_s2_pin_io.png)
 
 Official reference for Wireless Tag WT8266-DK V2 can be found [here](http://www.wireless-tag.com/index.php/product/dis/94.html).
 
