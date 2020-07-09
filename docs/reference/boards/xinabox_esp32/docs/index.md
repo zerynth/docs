@@ -2,11 +2,11 @@
 
 The CW02 is one of the development board created by XinaBox that mounts on-board the official WROOM32 module. The XinaBox CW02 contains a dual-core [ESP32 microcontroller](https://espressif.com/en/products/hardware/esp32/overview), that has both WiFi and Bluetooth Classic/LE support, 4 MB of SPI Flash, tuned antenna.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xinabox_esp32/docs/img/xinabox_esp32.png?raw=true"></p>
+<p style="text-align:center;"><img src="img/xinabox_esp32.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xinabox_esp32/docs/img/xinabox_esp32_pin_io.jpg?raw=true)
+![](img/xinabox_esp32_pin_io.jpg)
 
 Official reference for XinaBox CW02 can be found [here](https://wiki.xinabox.cc/CW02_-_Wi-Fi_%26_Bluetooth_Core).
 
