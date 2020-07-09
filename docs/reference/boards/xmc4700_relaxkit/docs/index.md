@@ -2,13 +2,13 @@
 
 Infineon XMC4700/4800 Relax Kit is equipped with the ARM Cortex-M4 based XMC4700 microcontroller (MCU) from Infineon Technologies. These kits are designed to evaluate the capabilities of the XMC4700 MCU. The Relax Kits feature an Ethernet-enabled communication option.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4700_relaxkit/docs/img/xmc4700_relaxkit.jpg?raw=true"></p>
+<p style="text-align:center;"><img src="img/xmc4700_relaxkit.jpg"></p>
 
 _XMC4700 Relax Kit. Copyright Infineon_
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/xmc4700_relaxkit/docs/img/xmc4700_relaxkit_io.jpg?raw=true)
+![](img/xmc4700_relaxkit_io.jpg)
 
 Official reference for Infineon XMC4700 Relax Kit can be found  [here](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc47_relax_v1/).
 
