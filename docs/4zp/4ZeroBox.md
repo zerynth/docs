@@ -272,7 +272,7 @@ This method set the conversion parameters of a channel of the current ADC. It is
 -   **voltage** – Set the voltage of the current. (D=220)
 -   **offset** – Set an offset for the read data. (D=0)
 
-**set_led(color)**
+**`set_led(color)`**
 
 Set the LED status to a custom color.
 
@@ -443,14 +443,14 @@ Initialize network driver. Optionally a static ip address, subnet mask, gateway 
 -   **static_gateway** – Static gateway address. (D=None)
 -   **static_dns** – Static DNS server address. (D=None)
 
-**`net_connect() – Ethernet`**
+**`net_connect()`** – Ethernet
 
 Connect to the network using the Ethernet interface. This method is enabled at compilation time using the `NETWORK_ETH` flag.
 
 !!! warning
     Use only one of `NETWORK_ETH`, `NETWORK_WIFI`.
 
-**net_connect(ssid, password, keying=net.WIFI_WPA2) – Wi-Fi**
+**`net_connect(ssid, password, keying=net.WIFI_WPA2)`** – Wi-Fi
 
 Connect to the network using the Wi-Fi interface. This method is enabled at compilation time using the `NETWORK_WIFI` flag.
 
