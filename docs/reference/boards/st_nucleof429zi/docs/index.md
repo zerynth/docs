@@ -6,11 +6,11 @@ The ST Zio connector and the ST morpho headers provide an easy means of expandin
 
 The device needs a 5V power supply and features a [STM32F429 MCU](http://www.st.com/content/ccc/resource/technical/document/datasheet/03/b4/b2/36/4c/72/49/29/DM00071990.pdf/files/DM00071990.pdf/jcr:content/translations/en.DM00071990.pdf) running at 180MHz with 192Kb of RAM, 2Mb of flash.
 
-<p style="text-align:center;"><img src="https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof429zi/docs/img/st_nucleof429zi.png?raw=true"></p>
+<p style="text-align:center;"><img src="img/st_nucleof429zi.png"></p>
 
 ## Pin Mapping
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/st_nucleof429zi/docs/img/st_nucleof429zi_pin_io.jpg?raw=true)
+![](img/st_nucleof429zi_pin_io.jpg)
 
 ST Nucleo F429ZI official manual is available [here](http://www.st.com/content/ccc/resource/technical/document/data_brief/group0/7b/df/1d/e9/64/55/43/8d/DM00247910/files/DM00247910.pdf/jcr:content/translations/en.DM00247910.pdf)
 
