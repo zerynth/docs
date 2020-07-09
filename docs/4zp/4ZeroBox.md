@@ -61,20 +61,15 @@ When programming, power to the 4ZeroBox is supplied via the on-board USB Micro B
 
 When not programming, external power supply it’s possible from 24 VDC, setting the JP1 jumper to E5V position. There is also a JST connector for LiPo 3.7/4.2V batteries with charger circuit integrated.
 
-**Note**
-
-The jumper JP1 select from USB or external 24 VDC power supply, but the switch to battery is done automatically.
+!!! note
+    The jumper JP1 select from USB or external 24 VDC power supply, but the switch to battery is done automatically.
 
 ### Connect, Register, Virtualize and Program
 
 The 4ZeroBox comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. The CH340 USB to UART chip is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-**Note**
-
-**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
--   **Ubuntu** distribution –> dialout group
--   **Arch Linux** distribution –> uucp group
+!!! note
+    **For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access: **Ubuntu** distribution –> dialout group; **Arch Linux** distribution –> uucp group.
 
 Once connected on a USB port, if drivers have been correctly installed, the 4ZeroBox device is recognized by Zerynth Studio. The next steps are:
 
@@ -136,7 +131,8 @@ This documentations refers to the Zerynth library used in programming a 4ZeroBox
 
 This module exports a `FourZeroBox` class containing all the available methods for controlling onboard devices of a 4ZeroBox (e.g. leds, relays, I2C, …).
 
-**Warning**: this library is using the Zerynth _conditional compilation_ feature. This means that some of the methods documented below must be explicitly enabled in a separate configuration file called `project.yml`.
+!!! warning
+    This library is using the Zerynth _conditional compilation_ feature. This means that some of the methods documented below must be explicitly enabled in a separate configuration file called `project.yml`.
 
 A default configuration file is included within the examples, structured like this:
 
@@ -195,7 +191,7 @@ Initialize it with:
 
 **Constructor**
 
-```
+```py
 __init__(i2c_clk=400000, spi_clk=1000000)
 
 ```
@@ -207,7 +203,7 @@ Initialize the class specifying what features must be enabled and configuring th
 -   **i2c_clk** – Clock for connected I2C devices, in Hz. (D=400000)
 -   **spi_clk** – Clock for connected SPI devices, in Hz. (D=1000000)
 
-**config_adc_010_420(ch, pga, sps)**
+**`config_adc_010_420(ch, pga, sps)`**
 
 This method configure one of the four 0-10V/4-20mA ADC channels (chosen using the `ch` parameter).
 
@@ -217,7 +213,7 @@ This method configure one of the four 0-10V/4-20mA ADC channels (chosen using th
 -   **pga** – Set the PGA Gain.
 -   **sps** – Set the samples-per-second data rate.
 
-**set_conversion_010_420(ch, y_min, y_max, offset=0, under_x=None, over_x=None)**
+**`set_conversion_010_420(ch, y_min, y_max, offset=0, under_x=None, over_x=None)`**
 
 Set the conversion method to be applied for the data read from the 0-10V/4-20mA ADC. The conversion scale can be configured using the `y_min` and `y_max` parameters, and optionally it can also be set an `offset` and tresholds for the input data.
 
@@ -230,7 +226,7 @@ Set the conversion method to be applied for the data read from the 0-10V/4-20mA 
 -   **under_x** – Optionally set a minimum treshold. (D=None)
 -   **over_x** – Optionally set a maximum treshold. (D=None)
 
-**config_adc_resistive(ch, pga, sps)**
+**`config_adc_resistive(ch, pga, sps)`**
 
 This method configure one of the four resistive ADC channels (chosen using the `ch` parameter).
 
@@ -240,7 +236,7 @@ This method configure one of the four resistive ADC channels (chosen using the `
 -   **pga** – Set the PGA Gain.
 -   **sps** – Set the samples-per-second data rate.
 
-**set_conversion_resistive(ch, v_min, ref_table, delta, offset=0, out_of_range=None)**
+**`set_conversion_resistive(ch, v_min, ref_table, delta, offset=0, out_of_range=None)`**
 
 Set the conversion method to be applied for the data read from the resistive ADC. The conversion table can be configured using the `v_min`, `ref_table` and `delta` parameters. `out_of_range` is the value returned when the conversion exceed the bounds of the lookup table, defaults to None.
 
@@ -253,7 +249,7 @@ Set the conversion method to be applied for the data read from the resistive ADC
 -   **offset** – Optionally set an offset to be applied. (D=0)
 -   **out_of_range** – Value returned if a value can’t be found on the table. (D=None)
 
-**config_adc_current(ch, pga, sps)**
+**`config_adc_current(ch, pga, sps)`**
 
 This method configure one of the three current ADC channels.
 
@@ -263,7 +259,7 @@ This method configure one of the three current ADC channels.
 -   **pga** – Set the PGA Gain.
 -   **sps** – Set the samples-per-second data rate.
 
-**set_conversion_current(ch, n_samples=400, ncoil=1, ratio=2000, voltage=220, offset=0)**
+**`set_conversion_current(ch, n_samples=400, ncoil=1, ratio=2000, voltage=220, offset=0)`**
 
 This method set the conversion parameters of a channel of the current ADC. It is possible to configure the numbr of samples that must be acquired, the number of coils done around the sensor, the ratio of the external sensor, and an offset.
 
@@ -296,11 +292,11 @@ Set the LED status to a custom color.
 | C    | Cyan    |
 | W    | White   |
 
-**clear_led()**
+**`clear_led()`**
 
 Clear LED status.
 
-**pulse(color, duration)**
+**`pulse(color, duration)`**
 
 Turn on the LED with the chosen color, then turn it off after the specified amount of time.
 
@@ -309,7 +305,7 @@ Turn on the LED with the chosen color, then turn it off after the specified amou
 -   **color** – Char representing a color. See `set_led` for a list.
 -   **duration** – Amount of time in milliseconds.
 
-**reverse_pulse(color, duration)**
+**`reverse_pulse(color, duration)`**
 
 Wait the specified amount of time, the turn the LED on with the selected color.
 
@@ -318,19 +314,19 @@ Wait the specified amount of time, the turn the LED on with the selected color.
 -   **color** – Char representing a color. See `set_led` for a list.
 -   **duration** – Amount of time in milliseconds.
 
-**error_sys()**
+**`error_sys()`**
 
 Set the LED status to a system error.
 
-**error_connect()**
+**`error_connect()`**
 
 Set the LED status to a net connection error.
 
-**error_cloud()**
+**`error_cloud()`**
 
 Set the LED status to a cloud connection error.
 
-**error_custom()**
+**`error_custom()`**
 
 Set the LED status to a custom error, specifying color, duration, and the numer of pulses.
 
@@ -340,15 +336,15 @@ Set the LED status to a custom error, specifying color, duration, and the numer 
 -   **duration** – Amount of time in milliseconds for each pulse.
 -   **n_pulses** – Number of performed pulses.
 
-**shut_down()**
+**`shut_down()`**
 
 Turn off every external peripheral of the board. This includes the the three ADC, etc.
 
-**power_on()**
+**`power_on()`**
 
 Turn back on the external peripherals, such as ADCs.
 
-**relay_on(n_rel)**
+**`relay_on(n_rel)`**
 
 Switch the selected relay ON, COM contact is closed on NO contact.
 
@@ -356,7 +352,7 @@ Switch the selected relay ON, COM contact is closed on NO contact.
 
 -   **n_rel** – Relay to be turned on, possible values are 1 or 2.
 
-**relay_off(n_rel)**
+**`relay_off(n_rel)`**
 
 Switch the selected relay OFF, COM contact is closed on NC contact.
 
@@ -364,7 +360,7 @@ Switch the selected relay OFF, COM contact is closed on NC contact.
 
 -   **n_rel** – Relay to be turned off, possible values are 1 or 2.
 
-**sink_on(n_snk)**
+**`sink_on(n_snk)`**
 
 Switch the selected sink ON, Sink channel is shorted to GND.
 
@@ -372,7 +368,7 @@ Switch the selected sink ON, Sink channel is shorted to GND.
 
 -   **n_snk** – Sink to be turned on, possible values are 1 or 2.
 
-**sink_off(n_snk)**
+**`sink_off(n_snk)`**
 
 Switch the selected sink OFF, Sink channel is shorted to GND.
 
@@ -380,7 +376,7 @@ Switch the selected sink OFF, Sink channel is shorted to GND.
 
 -   **n_snk** – Sink to be turned off, possible values are 1 or 2.
 
-**get_opto(n_opto)**
+**`get_opto(n_opto)`**
 
 Get the value read from the selected opto.
 
@@ -388,15 +384,15 @@ Get the value read from the selected opto.
 
 -   **n_opto** – Opto to read data from. Possible values are 1 or 2.
 
-**get_battery_status()**
+**`get_battery_status()`**
 
 If alimented by a battery, return the current status as string that can be one of “charged”, “charging”, or “discharging”.
 
-**get_power_source()**
+**`get_power_source()`**
 
 Get a string representing the alimentation source for the box. The returned string can be one of “external” or “battery”.
 
-**read_010(ch, raw=False, electric_value=False)**
+**`read_010(ch, raw=False, electric_value=False)`**
 
 Read value from the 0-10V ADC. It is possible to get the raw data from the ADC, or the electric value of the read signal.
 
@@ -406,7 +402,7 @@ Read value from the 0-10V ADC. It is possible to get the raw data from the ADC, 
 -   **raw** – If set, the raw data of the ADC is returned. (D=False)
 -   **electric_value** – If set, the electric value is returned. (D=False)
 
-**read_420(ch, raw=False, electric_value=False)**
+**`read_420(ch, raw=False, electric_value=False)`**
 
 Read value from the 4-20mA ADC. It is possible to get the raw data from the ADC, or the electric value of the read signal, or by default it is converted with the rules defined using `set_conversion_010_420` method.
 
@@ -416,7 +412,7 @@ Read value from the 4-20mA ADC. It is possible to get the raw data from the ADC,
 -   **raw** – If set, the raw data of the ADC is returned. (D=False)
 -   **electric_value** – If set, the electric value is returned. (D=False)
 
-**read_resistive(ch, raw=False, electric_value=False)**
+**`read_resistive(ch, raw=False, electric_value=False)`**
 
 Read value from the resistive ADC. It is possible to get the raw data from the ADC, or the electric value of the read signal, or by default it is converted with the rules defined using `set_conversion_resistive` method.
 
@@ -426,7 +422,7 @@ Read value from the resistive ADC. It is possible to get the raw data from the A
 -   **raw** – If set, the raw data of the ADC is returned. (D=False)
 -   **electric_value** – If set, the electric value is returned. (D=False)
 
-**read_power(ch, raw=False, electric_value=False)**
+**`read_power(ch, raw=False, electric_value=False)`**
 
 Read value from the power ADC. It is possible to get the raw data from the ADC, or the electric value of the read signal, or by default it is converted with the rules defined using `set_conversion_current` method.
 
@@ -436,7 +432,7 @@ Read value from the power ADC. It is possible to get the raw data from the ADC, 
 -   **raw** – If set, the raw data of the ADC is returned. (D=False)
 -   **electric_value** – If set, the electric value is returned. (D=False)
 
-**net_init(static_ip=None, static_mask=None, static_gateway=None, static_dns=None)**
+**`net_init(static_ip=None, static_mask=None, static_gateway=None, static_dns=None)`**
 
 Initialize network driver. Optionally a static ip address, subnet mask, gateway address, and a DNS server address can be configured, otherwise they are obtained using DHCP.
 
@@ -447,17 +443,19 @@ Initialize network driver. Optionally a static ip address, subnet mask, gateway 
 -   **static_gateway** – Static gateway address. (D=None)
 -   **static_dns** – Static DNS server address. (D=None)
 
-**net_connect() – Ethernet**
+**`net_connect() – Ethernet`**
 
 Connect to the network using the Ethernet interface. This method is enabled at compilation time using the `NETWORK_ETH` flag.
 
-**Warning**: use only one of `NETWORK_ETH`, `NETWORK_WIFI`.
+!!! warning
+    Use only one of `NETWORK_ETH`, `NETWORK_WIFI`.
 
 **net_connect(ssid, password, keying=net.WIFI_WPA2) – Wi-Fi**
 
 Connect to the network using the Wi-Fi interface. This method is enabled at compilation time using the `NETWORK_WIFI` flag.
 
-**Warning**: use only one of `NETWORK_ETH`, `NETWORK_WIFI`.
+!!! warning
+    Use only one of `NETWORK_ETH`, `NETWORK_WIFI`.
 
 **Parameters:**
 
@@ -465,11 +463,11 @@ Connect to the network using the Wi-Fi interface. This method is enabled at comp
 -   **password** – Password of the Wi-Fi network.
 -   **keying** – Encryption type. (D=net.WIFI_WPA2)
 
-**get_rssi()**
+**`get_rssi()`**
 
 Get RSSI of the current wireless connection.
 
-**read_rs485(timeout=3000)**
+**`read_rs485(timeout=3000)`**
 
 Read from the RS485 peripheral (it must be enabled in the class constructor). After the timeout expires, None is returned.
 
@@ -477,7 +475,7 @@ Read from the RS485 peripheral (it must be enabled in the class constructor). Af
 
 -   **timeout** – Maximum timeout to wait for a message in milliseconds. (D=3000)
 
-**write_rs485(msg)**
+**`write_rs485(msg)`**
 
 Write to the RS485 peripheral (it must be enabled in the class constructor).
 
@@ -485,7 +483,7 @@ Write to the RS485 peripheral (it must be enabled in the class constructor).
 
 -   **msg** – Message to be sent.
 
-**read_rs232(timeout=3000)**
+**`read_rs232(timeout=3000)`**
 
 Read from the RS232 peripheral (it must be enabled in the class constructor). After the timeout expires, None is returned.
 
@@ -493,7 +491,7 @@ Read from the RS232 peripheral (it must be enabled in the class constructor). Af
 
 -   **timeout** – Maximum timeout to wait for a message in milliseconds. (D=3000)
 
-**write_rs232(msg)**
+**`write_rs232(msg)`**
 
 Write to the RS232 peripheral (it must be enabled in the class constructor).
 
@@ -501,7 +499,7 @@ Write to the RS232 peripheral (it must be enabled in the class constructor).
 
 -   **msg** – Message to be sent.
 
-**can_init(idmode, speed, clock)**
+**`can_init(idmode, speed, clock)`**
 
 Initialize the CAN interface.
 
@@ -511,7 +509,7 @@ Initialize the CAN interface.
 -   **speed** – Set the speed of the CAN communication.
 -   **clock** – Set the clock of the CAN Communication.
 
-**set_can_mode(mode)**
+**`set_can_mode(mode)`**
 
 Set CAN to the specified mode.
 
@@ -519,7 +517,7 @@ Set CAN to the specified mode.
 
 -   **mode** – The mode to be set. One of (“NORMAL”, “SLEEP”, “LOOPBACK”, “LISTENONLY”, “CONFIG”, “POWERUP”, “ONE_SHOT”).
 
-**can_init_mask(num, data, ext)**
+**`can_init_mask(num, data, ext)`**
 
 Init masks.
 
@@ -529,7 +527,7 @@ Init masks.
 -   **data** – Data mask.
 -   **ext** – 0 for standard ID, 1 for Extended ID.
 
-**can_init_filter(num, data, ext)**
+**`can_init_filter(num, data, ext)`**
 
 Init filters.
 
@@ -539,7 +537,7 @@ Init filters.
 -   **data** – Data filter.
 -   **ext** – 0 for standard ID, 1 for Extended ID.
 
-**can_send(canid, data, ext=None)**
+**`can_send(canid, data, ext=None)`**
 
 Sends CAN messages.
 
@@ -549,11 +547,11 @@ Sends CAN messages.
 -   **data** – Data to be sent (list of 8 bytes).
 -   **ext** – 0 for standard ID, 1 for Extended ID (D=None, auto detected)
 
-**can_receive()**
+**`can_receive()`**
 
 Receives CAN messages returning CAN id value and related data message.
 
-**sd_init(mode)**
+**`sd_init(mode)`**
 
 Initialize a SD card, using the SPI slot or the SD slot.
 
@@ -561,7 +559,7 @@ Initialize a SD card, using the SPI slot or the SD slot.
 
 -   **mode** – One of “SD”, “SPI”.
 
-**flash_load(start_address, tot_size, rjson=False)**
+**`flash_load(start_address, tot_size, rjson=False)`**
 
 Load a file from the internal flash memory.
 
@@ -571,7 +569,7 @@ Load a file from the internal flash memory.
 -   **tot_size** – The size of the file to be read.
 -   **r_json** – If set, the file is parsed as a JSON and a dict return. (D=False)
 
-**flash_write_buff(start_address, tot_size, buff, seek=None)**
+**`flash_write_buff(start_address, tot_size, buff, seek=None)`**
 
 Write a buffer in the internal flash memory, at the specified address.
 
@@ -582,7 +580,7 @@ Write a buffer in the internal flash memory, at the specified address.
 -   **buff** – Buffer of data to be written.
 -   **seek** – Optional seek destionation to be done before writing. (D=None)
 
-**flash_read_buff(start_address, tot_size)**
+**`flash_read_buff(start_address, tot_size)`**
 
 Return a buffer of data read at the specified start address.
 
@@ -590,9 +588,3 @@ Return a buffer of data read at the specified start address.
 
 -   **start_address** – Initial address to read from.
 -   **tot_size** – Total size of data to be read.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE5Nzk4Njk2LDY3OTQzMTU1NSw5Mzk3Mj
-A2MzAsMTQzNzQ1MzcwOCwxMTQwODI1MjU4LC0xNzE4OTQxOSwx
-NTgzNTg3MTIyLDEzMTIyODk2NzAsLTE5NjQzMzA4MTksLTIwMj
-UyMzMyMzUsLTExNDYyMzc5NTJdfQ==
--->

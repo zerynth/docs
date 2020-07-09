@@ -77,17 +77,17 @@ Optionally, some configuration variables such as the project and the device name
 -   **thingname** – Name of the device, must match the one in 4ZeroPlatform. (D=None)
 -   **rpc** – Dict containing RPC names as keys and the functions to be called as values. (D=None)
 
-**config()**
+**`config()`**
 
 This method should be called after the class initialization, it registers a hander to be called for every MQTT message, and sends to the cloud the informations needed for a future FOTA update.
 
-**connect()**
+**`connect()`**
 
 Wait for a connection to the MQTT server, then subscribe to the device channel.
 
 This method should be called after config() .
 
-**publish(topic=None, data=None)**
+**`publish(topic=None, data=None)`**
 
 Publish to the device MQTT topic some data.
 
@@ -97,7 +97,3 @@ This method should be used when defining its own RPC methods, for sending result
 
 -   **topic** – Optional, the destination topic. (D=None)
 -   **data** – Data to be sent. (D=None)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzkxMzUzMDUsLTgwMTQ1OTAxMSwtMT
-I2MzMyMDE3NiwtMTgzODQ4OTkyMiwxNTQwMjkwOTk2XX0=
--->
