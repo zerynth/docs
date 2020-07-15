@@ -3,10 +3,10 @@
 A machine-to-cloud interface that can be plugged into old and modern industrial machines.
 
 <p align="center"
-><img src="https://github.com/zerynth/testdoc/blob/vojislavgvozdic-patch-1/docs/images/4zerobox-400x339.png?raw=true"></p>
+><img src="img/4zerobox-400x339.png></p>
 
 ### Pin mapping
-![enter image description here](https://github.com/zerynth/testdoc/blob/vojislavgvozdic-patch-1/docs/images/4zerobox_Pinmap.jpg?raw=true)
+![](img/4zerobox_Pinmap.jpg)
 
 ### Interrupts
 
