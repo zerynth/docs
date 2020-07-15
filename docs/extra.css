@@ -12,7 +12,7 @@ article {
 }
 .md-typeset h1{
 margin:0 0 2rem;
-color:var(--md-default-fg-color) !important;
+color:var(--md-default-fg-color);
 font-weight:500 !important;
 font-size:1.5625rem !important;
 line-height:1.3;
