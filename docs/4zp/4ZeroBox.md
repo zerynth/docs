@@ -2,7 +2,7 @@
 
 A machine-to-cloud interface that can be plugged into old and modern industrial machines.
 
-<p style="text-align:center;"><img src="img/4zerobox-400x339.png></p>
+![](img/4zerobox-400x339.png)
 
 ### Pin mapping
 ![](img/4zerobox_Pinmap.jpg)
