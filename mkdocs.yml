@@ -112,7 +112,7 @@ nav:
         - reference/core/stdlib/docs/fota.md
         - reference/core/stdlib/docs/examples.md
     - Command Line Interface:
-        - ZTC:
+        - Zerynth Toolchain:
           - reference/core/toolchain/docs/index.md
           - reference/core/toolchain/docs/ztc.md
           - reference/core/toolchain/docs/user_usercmd.md
@@ -127,7 +127,7 @@ nav:
           - reference/core/toolchain/docs/aws_awscmd.md
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
-        - ZDM: []
+        - Zerynth Device Manager: []
     - Supported Devices:
       - reference/boards/adafruit_feather_huzzah/docs/index.md
       - reference/boards/adafruit_feather_m0wifi/docs/index.md
