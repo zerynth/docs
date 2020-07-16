@@ -20,7 +20,7 @@ markdown_extensions:
 - pymdownx.tilde
 nav:
 - Welcome: index.md
-- CONCEPTUAL MODEL:
+- Conceptual Model:
   - conceptualmodel/Conceptual Model.md
   - conceptualmodel/Zerynth Components.md
 - Getting Started:
