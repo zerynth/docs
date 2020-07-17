@@ -28,7 +28,8 @@ nav:
 - Develop:
   - develop/Develop.md
 - Deploy and Manage:
-  - deploy/Deploy and Manage.md
+  - Index: deploy/index.md
+  - ZDM Web Interface: deploy/webInterface.md
 - Integrate:
   - integrate/Integrate.md
 - Reference:
