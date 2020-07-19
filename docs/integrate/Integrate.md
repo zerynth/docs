@@ -12,25 +12,30 @@ Zerynth Device can connect directly to various external services:
 
 ### **Microsoft Azure Integration**
 
-[https://docs.zerynth.com/latest/o_azure.html](https://docs.zerynth.com/latest/o_azure.html)
+<a style="font-size: 15px; margin-right: 0px;" href="/latest/reference/libs/azure/iot/docs/" class="md-button md-button--primary">
+            Learn more
+          </a>
 
   
 
 ### **IBM Cloud Integration**
 
-[https://docs.zerynth.com/latest/o_ibmcloud.html](https://docs.zerynth.com/latest/o_ibmcloud.html)
+<a style="font-size: 15px; margin-right: 0px;" href="/latest/reference/libs/ibmcloud/iot/docs/" class="md-button md-button--primary">
+            Learn more
+          </a>
 
   
 
 ### **Google Cloud Integration**
 
-[https://docs.zerynth.com/latest/o_googlecloud.html](https://docs.zerynth.com/latest/o_googlecloud.html)
+<a style="font-size: 15px; margin-right: 0px;" href="/latest/reference/libs/googlecloud/iot/docs/" class="md-button md-button--primary">
+            Learn more
+          </a>
 
   
 
 ### **Ethereum Blockchain**
 
-[https://docs.zerynth.com/latest/o_blockchain.html](https://docs.zerynth.com/latest/o_blockchain.html)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwOTgzODY2LDczMDk5ODExNl19
--->
+<a style="font-size: 15px; margin-right: 0px;" href="/latest/reference/libs/blockchain/ethereum/docs/" class="md-button md-button--primary">
+            Learn more
+          </a>
