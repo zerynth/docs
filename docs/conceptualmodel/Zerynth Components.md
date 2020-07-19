@@ -20,7 +20,7 @@ Zerynth Device Manager (ZDM) is a device and data management service that makes 
 
 4ZeroBox, a versatile data acquisition unit, programmable in hybrid Python/C thanks to the Zerynth OS. 4ZeroBox is ideal as a machine-to-cloud interface to plug into old and modern industrial machines.
 
-<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/4zp/4ZeroBox/" class="md-button md-button--primary">
+<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/latest/4zp/4ZeroBox/" class="md-button md-button--primary">
             Learn more
           </a>
 
