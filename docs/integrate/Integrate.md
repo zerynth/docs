@@ -2,7 +2,7 @@ Zerynth Device can connect directly to various external services:
 
   
 
-### **Amazon Web Services Integration**
+### [/latest/reference/core/toolchain/docs/aws_awscmd/](**Amazon Web Services Integration**)
 
 [https://docs.zerynth.com/latest/o_aws.html](https://docs.zerynth.com/latest/o_aws.html)
 
