@@ -128,7 +128,7 @@ nav:
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
         - Zerynth Device Manager: /latest/deploy/Deploy%20and%20Manage/
-    - Supported Devices:
+    - Supported Devices: reference/boards/supported_boards.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
       - reference/boards/adafruit_feather_m0wifi/docs/index.md
       - reference/boards/adafruit_huzzah32/docs/index.md
