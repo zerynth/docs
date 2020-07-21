@@ -5,9 +5,9 @@ Zerynth offers developers, system integrators, and businesses a way to enable Io
 
 Zerynth includes various tools, software and hardware units. The entry point to the Zerynth journey is not fixed, it depends on the user's needs and goals.
 
-<p align="center">
+<div align="center">
   <img src="/img/zerynth-platform.png">
-</p>
+</div>
 
 The development of IOT projects is a very long journey. Typically an IOT project requires a hardware platform, used as reference for the development of the IOT device. Zerynth can help you in this phase, thanks to the <a href="https://www.zerynth.com/powered-by-zerynth/" target="_blank">**Zerynth Hardware**</a> and the <a href="https://www.zerynth.com/powered-by-zerynth/" target="_blank">**Zerynth Powered Devices**</a>. Zerynth hardware are Zerynth officially commercialized devices that are fully integrated with the Zerynth suite, providing users a seamless IOT development experience. Zerynth Powered Devices are third party hardware units that natively include the Zerynth OS, thus making it ready for being programmed and managed with the Zerynth suite. Zerynth also supports many other boards. A comprehensive list of all the supported boards, sensors, peripherals and libraries can be found <a href="https://testzdoc.zerynth.com/reference/boards/adafruit_feather_huzzah/docs/" target="_blank">**here**</a>.
 
