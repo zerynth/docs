@@ -163,7 +163,7 @@ Packages import syntax is very simple:
 
 The import autocomplete feature of Zerynth Studio makes the task of importing modules even easier: as soon as “from” or “import” is typed in the code editor, the autocomplete box lists all the matching modules.
 
-The [Zerynth Programming Guide](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/index.html#zerynthprog) and various programming examples are also provided.
+The [Zerynth Programming Guide](/latest/reference/guide/docs/) and various programming examples are also provided.
 
 For both the Official Library and the Community Library, a complete documentation is available and if the package contains usage examples, they can be found under the examples tab.
 
@@ -235,8 +235,8 @@ The third step is a recap of what is going to happen during the publishing; read
 In the last step the selected Github repository is cloned, the project to be published is copied in and the changes are committed and pushed back to the master branch. Also, a new Github release is created with version and description given in step 2. As soon as the Zerynth backend discovers the new release, the library will be made available to all the Zerynth users.
 
 !!! important
-	In order for the users of your library to have a better programming experience, we strongly suggest to add examples and documentation. Please refer [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_packages_packagecmd.html#ztc-cmd-package-publish) for more details.
+	In order for the users of your library to have a better programming experience, we strongly suggest to add examples and documentation. Please refer [here](/latest/reference/core/toolchain/docs/packages_packagecmd/#publishing-a-community-library) for more details.
 
 ### Creating Custom Virtual Machines
 
-Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zstudio-custom-vms) and [here](https://docs.zerynth.com/latest/official/core.zerynth.toolchain/docs/official_core.zerynth.toolchain_virtualmachines_vmcmd.html#ztc-cmd-vm-custom).
+Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](/latest/develop/Develop/) and [here](/latest/reference/core/toolchain/docs/virtualmachines_vmcmd/#custom-virtual-machines).
