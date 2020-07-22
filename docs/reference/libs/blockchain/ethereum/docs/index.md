@@ -17,7 +17,7 @@ Contents:
 * [RLP](/latest/reference/libs/blockchain/ethereum/docs/rlp/)
 * [Examples](/latest/reference/libs/blockchain/ethereum/docs/examples/)
 	* [Simple Transaction](/latest/reference/libs/blockchain/ethereum/docs/examples/#simple-transaction)
-	* [DiceGame](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/examples/examples.html#dicegame)
+	* [DiceGame](/latest/reference/libs/blockchain/ethereum/docs/examples/#dicegame)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExMDA4MTkzNTQsNTIwMzM3NTQyXX0=
 -->
