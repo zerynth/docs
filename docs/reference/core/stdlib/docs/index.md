@@ -13,6 +13,8 @@ The Zerynth standard library is composed of many modules ranging from hardware i
 -   [Bignum](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/bignum_bignum/ "Bignum")
 -   [Data Structures](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fifo/ "Data Structures")
 -   [Serialization](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/base64/ "Serialization")
+-   [Storage](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/flash/ "Storage")
+-   [Peripherals](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/mcu/ "Peripherals")
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA1NDk0MF19
+eyJoaXN0b3J5IjpbMjExNjAxNDQ3N119
 -->
