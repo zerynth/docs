@@ -23,9 +23,9 @@ Here below, the Zerynth driver for the BOSCH BMP180.
 
 Contents:
 
-* [BMP180 Module](https://docs.zerynth.com/latest/official/lib.bosch.bmp180/docs/official_lib.bosch.bmp180_bmp180.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.bosch.bmp180/examples/examples.html)
-	* [get temp press alt](https://docs.zerynth.com/latest/official/lib.bosch.bmp180/examples/examples.html#get-temp-pres-alt)
+* [BMP180 Module](/latest/reference/libs/bosch/bmp180/docs/bmp180/)
+* [Examples](/latest/reference/libs/bosch/bmp180/docs/examples/)
+	* [get temp press alt](/latest/reference/libs/bosch/bmp180/docs/examples/#temperature-pressure-altitude)
 
 
 <!--stackedit_data:
