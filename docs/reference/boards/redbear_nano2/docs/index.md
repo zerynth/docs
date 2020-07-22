@@ -57,7 +57,7 @@ Follow these steps to uplink a Zerynth script on a virtualized RedBear Nano 2:
 After virtualization, the device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! important
-    To exploit the BLE chip functionalities of the Nano 2, the [lib.nordic.nrf52_ble library]() must be installed and imported on the Zerynth script. Moreover, in the creation phase, a VM with BLE support must be selected.
+    To exploit the BLE chip functionalities of the Nano 2, the [lib.nordic.nrf52_ble library](/latest/reference/libs/nordic/nrf52_ble/docs/) must be installed and imported on the Zerynth script. Moreover, in the creation phase, a VM with BLE support must be selected.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTM2NDg5NTc1NV19
 -->
