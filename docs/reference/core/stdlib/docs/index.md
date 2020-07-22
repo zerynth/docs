@@ -18,6 +18,10 @@ The Zerynth standard library is composed of many modules ranging from hardware i
 -   [Networking](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/socket/ "Networking")
 -  [Connectivity](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/eth/ "Connectivity")
 -  [Security](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/ssl/ "Security")
+-   [Power Management](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/pwr/ "Power Management")
+-   [Secure Firmware](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/sfw/ "Secure Firmware")
+-   [Firmware Over the Air update (FOTA)](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fota/ "Firmware Over the Air update (FOTA)")
+-   [Examples](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/examples/ "Examples")
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTAzMDU5LC01MjM3MjExMTZdfQ==
+eyJoaXN0b3J5IjpbMTE2MjA3MzIyMywtNTIzNzIxMTE2XX0=
 -->
