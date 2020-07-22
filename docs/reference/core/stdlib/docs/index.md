@@ -11,8 +11,8 @@ The Zerynth standard library is composed of many modules ranging from hardware i
 -   [Math](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/math/ "Math")
 -   [Software Timers](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/timers/ "Software Timers")
 -   [Bignum](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/bignum_bignum/ "Bignum")
--   [Data Structures]([https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fifo/](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fifo/) "Bignum")
--   [Serialization]([https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fifo/]([https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/base64/](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/base64/)) "Bignum")
+-   [Data Structures](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fifo/ "Data Structures")
+-   [Data Structures](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/fifo/ "Data Structures")
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDM5NjY5MF19
+eyJoaXN0b3J5IjpbLTg1MTY0NjM5M119
 -->
