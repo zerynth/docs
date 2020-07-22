@@ -11,7 +11,7 @@ A machine-to-cloud interface that can be plugged into old and modern industrial 
 
 It’s possible to use interrupts to register callback functions to be called when a certain pin change status from HIGH to LOW (pin _fall_) or from LOW to HIGH (pin _rise_).
 
-Pins that can be used in this way are D16 (MikroBUS Slot1), D34 and D39 (MikroBUS Slot1 or J4). Refer to the [official Zerynth example](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/examples/examples.html#core-zerynth-stdlib-interrupts) to learn how to use them.
+Pins that can be used in this way are D16 (MikroBUS Slot1), D34 and D39 (MikroBUS Slot1 or J4). Refer to the [official Zerynth example](/latest/reference/core/stdlib/docs/examples/#interrupt-basics) to learn how to use them.
 
 ### Flash Layout
 
