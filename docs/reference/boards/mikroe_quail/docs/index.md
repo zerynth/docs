@@ -180,10 +180,10 @@ On **Windows** machines two set of drivers must be installed: the DFU drivers an
 !!! warning
 	  In DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/zadig_dfu.png?raw=true)
+![](img/zadig_dfu.png)
 
 
-![](https://github.com/zerynth/docs/blob/test/docs/reference/boards/mikroe_quail/docs/img/zadig_usb.png?raw=true)
+![](img/zadig_usb.png)
 
 !!! note
   	It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in [this guide](http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/).
@@ -240,7 +240,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-stm32fxx-families) and [Secure Firmware - STM32F section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-stm32fxx-families).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTg3MDY1NDYxNywtMTg2MzIxOTA3MSwxNT
 cwMDQzOTQ5LC0xMjc5NjIxMDIyLDExMDEwNjI2MzZdfQ==
