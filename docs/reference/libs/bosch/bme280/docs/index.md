@@ -17,10 +17,10 @@ Here below, the Zerynth driver for the Bosch BME280.
 
 Contents:
 
-* [BME280 Module](https://docs.zerynth.com/latest/official/lib.bosch.bme280/docs/official_lib.bosch.bme280_bme280.html)
-   * [BME280 class](https://docs.zerynth.com/latest/official/lib.bosch.bme280/docs/official_lib.bosch.bme280_bme280.html#bme280-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.bosch.bme280/examples/examples.html)
-	* [get values](https://docs.zerynth.com/latest/official/lib.bosch.bme280/examples/examples.html#get-values)
+* [BME280 Module](m/latest/reference/libs/bosch/bme280/docs/bme280/)
+   * [BME280 class](/latest/reference/libs/bosch/bme280/docs/bme280/#bme280-class)
+* [Examples](/latest/reference/libs/bosch/bme280/docs/examples/)
+	* [get values](/latest/reference/libs/bosch/bme280/docs/examples/)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTExMjE3NjIyXX0=
