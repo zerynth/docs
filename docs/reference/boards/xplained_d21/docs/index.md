@@ -97,7 +97,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-samd21) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
+Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-microchip-samd21) and [Secure Firmware - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-microchip-samd21).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTY0ODY2Nzk2NF19
 -->
