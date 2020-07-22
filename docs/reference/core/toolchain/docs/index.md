@@ -50,19 +50,19 @@ A typical workflow consists in:
 
 Contents:
 
--   [Synopsis](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/ztc/ "Synopsis")
--   [Account related commands](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/user_usercmd/ "Account related commands")
--   [Projects](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/projects_projectcmd/ "Projects")
--   [Devices](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/devices_devcmd/ "Devices")
--   [Compiler](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/compiler_compilercmd/ "Compiler")
--   [Uplink](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/uplinker_uplinker/ "Uplink")
--   [Device Configuration and Mass Programming](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/uplinker_massprog/ "Device Configuration and Mass Programming")
--   [Virtual Machines](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/virtualmachines_vmcmd/ "Virtual Machines")
--   [Packages](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/packages_packagecmd/ "Packages")
--   [Connected Devices](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/things_thingcmd/ "Connected Devices")
--   [Amazon Web Services](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/aws_awscmd/ "Amazon Web Services")
--   [Miscellanea](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/misc_misccmd/ "Miscellanea")
--   [Provisioning](https://newtestdocs.zerynth.com/latest/reference/core/toolchain/docs/provisioning_provisioningcmd/ "Provisioning")
+-   [Synopsis](/latest/reference/core/toolchain/docs/ztc/ "Synopsis")
+-   [Account related commands](/latest/reference/core/toolchain/docs/user_usercmd/ "Account related commands")
+-   [Projects](/latest/reference/core/toolchain/docs/projects_projectcmd/ "Projects")
+-   [Devices](/latest/reference/core/toolchain/docs/devices_devcmd/ "Devices")
+-   [Compiler](/latest/reference/core/toolchain/docs/compiler_compilercmd/ "Compiler")
+-   [Uplink](/latest/reference/core/toolchain/docs/uplinker_uplinker/ "Uplink")
+-   [Device Configuration and Mass Programming](/latest/reference/core/toolchain/docs/uplinker_massprog/ "Device Configuration and Mass Programming")
+-   [Virtual Machines](/latest/reference/core/toolchain/docs/virtualmachines_vmcmd/ "Virtual Machines")
+-   [Packages](/latest/reference/core/toolchain/docs/packages_packagecmd/ "Packages")
+-   [Connected Devices](/latest/reference/core/toolchain/docs/things_thingcmd/ "Connected Devices")
+-   [Amazon Web Services](/latest/reference/core/toolchain/docs/aws_awscmd/ "Amazon Web Services")
+-   [Miscellanea](/latest/reference/core/toolchain/docs/misc_misccmd/ "Miscellanea")
+-   [Provisioning](/latest/reference/core/toolchain/docs/provisioning_provisioningcmd/ "Provisioning")
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTU3MDUxOTczNV19
 -->
