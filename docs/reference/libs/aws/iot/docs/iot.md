@@ -7,7 +7,7 @@ It allows to make your device act as an AWS IoT Thing which can be registered th
 Check this video for a live demo:
 
 <div style="margin-top:10px;">
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/IZzZF3DGWkY?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/IZzZF3DGWkY?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
 
 
 
