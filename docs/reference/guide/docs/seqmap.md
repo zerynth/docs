@@ -30,7 +30,7 @@ Implementations that do not obey this property are deemed broken.
 
 ## Sequence Types
 
-There are three basic sequence types: lists, tuples, and range objects. Additional sequence types tailored for processing of [binary data](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#binaryseq) and [text strings](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) are described in dedicated sections.
+There are three basic sequence types: lists, tuples, and range objects. Additional sequence types tailored for processing of [binary data](/latest/reference/guide/docs/seqmap/#binary-sequence-types) and [text strings](/latest/reference/guide/docs/seqmap/#strings) are described in dedicated sections.
 
 ### Common Sequence Operations
 
@@ -232,7 +232,7 @@ multiple fragments.
 
 **`class str(object='')`**
 
-Return a [string](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#textseq) version of *object.  If *object* is not
+Return a [string](/latest/reference/guide/docs/seqmap/#strings) version of *object.  If *object* is not
 provided, returns the empty string. Returns
 `object.__str__()`, which is the “informal” or nicely
 printable string representation of *object.  For string objects, this is the string itself.  If *object does not have a `__str__()` method, then `str()` raises TypeError.
@@ -419,7 +419,7 @@ Since bytes objects are sequences of integers (akin to a tuple), for a bytes obj
 * Creating a zero-filled instance with a given length: `bytearray(10)`
 * From an iterable of integers: `bytearray([1,2,3])`
 
-As bytearray objects are mutable, they support the mutable sequence operations in addition to the common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/seq_map.html#bytes-methods).
+As bytearray objects are mutable, they support the mutable sequence operations in addition to the common bytes and bytearray operations described in [Bytes and Bytearray Operations](/latest/reference/guide/docs/seqmap/#bytes-and-bytearray-operations).
 
 Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data.
 
