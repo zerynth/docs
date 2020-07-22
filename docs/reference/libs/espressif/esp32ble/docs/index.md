@@ -23,7 +23,7 @@ Contents:
     -   [BLE Scanner](/latest/reference/libs/espressif/esp32ble/docs/examples/#ble-scanner)
     -   [Eddystone Beacon](/latest/reference/libs/espressif/esp32ble/docs/examples/#eddystone-beacon)
     -   [iBeacon Beacon](/latest/reference/libs/espressif/esp32ble/docs/examples/#ibeacon)
-    -   [Eddystone Reader](https://docs.zerynth.com/latest/official/lib.espressif.esp32ble/examples/examples.html#eddystone-reader)
+    -   [Eddystone Reader](/latest/reference/libs/espressif/esp32ble/docs/examples/#eddystone-reader)
     -   [iBeacon Reader](/latest/reference/libs/espressif/esp32ble/docs/examples/#ibeacon-reader)
     -   [BLE Alerts Secure 1](/latest/reference/libs/espressif/esp32ble/docs/examples/#ble-alerts-with-security-1)
     -   [BLE Alerts Secure 2](/latest/reference/libs/espressif/esp32ble/docs/examples/#ble-alerts-with-security-2)
