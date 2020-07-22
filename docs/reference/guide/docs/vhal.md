@@ -17,7 +17,7 @@ All these levels of indirection are hidden by the VHAL using macros to access th
 The following scheme summarizes the available virtual pin info:
 
 
-Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with [PINCLASS_](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vhal_h.html#id9) prepended, corresponding to the high byte of *Pin Value* (i.e. PINCLASS_DIGITAL is 0x00, PINCLASS_ANALOG is 0x01, etc…).
+Where *Pin Name* is a C Macro corresponding to *Pin Value*. For each string in *Pin Class* there exists a C macro with [PINCLASS_](/latest/reference/guide/docs/vhal/) prepended, corresponding to the high byte of *Pin Value* (i.e. PINCLASS_DIGITAL is 0x00, PINCLASS_ANALOG is 0x01, etc…).
 
 For each pin class, there exists a table containing configuration data. Such data can be accessed by the following macros:
 
