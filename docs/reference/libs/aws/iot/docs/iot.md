@@ -13,9 +13,12 @@ Check this video for a live demo:
 
 ## The Thing class
 
+
 ##### class Thing
 
+
 ```#!py3 class Thing(endpoint, mqtt_id, clicert, pkey, thingname=None, cacert=None)```
+
 
 Create a Thing instance representing an AWS IoT Thing.
 
@@ -28,7 +31,7 @@ custom callback on MQTT commands. The only difference concerns mqtt.connect meth
 
 ```python
 my_thing = iot.Thing('my_ep_id.iot.my_region.amazonaws.com', 'my_thing_id', clicert, pkey)
-my_thing.mqtt.connect()
+my_thing.mqtt.connect()...
 ...
 my_thing.mqtt.loop()
 ```
