@@ -125,7 +125,7 @@ Follow these steps to register and virtualize a Particle Photon:
 After virtualization, the Particle Photon is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! important
-    To exploit the Wi-Fi chip functionalities of the Particle Photon, the [lib.broadcom.bcm43362 library](https://docs.zerynth.com/latest/official/lib.broadcom.bcm43362/docs/index.html#broadcom-bcm43362) must be installed and imported on the Zerynth script.
+    To exploit the Wi-Fi chip functionalities of the Particle Photon, the [lib.broadcom.bcm43362 library](/latest/reference/libs/broadcom/bcm43362/docs/) must be installed and imported on the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -148,7 +148,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
+Both these features are strongly platform dependent; more information at [Power Management - STM32F section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-stm32fxx-families) and [Secure Firmware - STM32F section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-stm32fxx-families).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3OTQ2NTM1MzksNjA3NDExMzcwXX0=
 -->
