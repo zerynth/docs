@@ -143,7 +143,7 @@ If *`dbm`* is None, returns the current transmission power level. Otherwise sets
 
 Returns None on failure.
 
-##### class BLEStream
+## class BLEStream
 
 ```#!py3 class BLEStream(fifosize=1024)```
 
