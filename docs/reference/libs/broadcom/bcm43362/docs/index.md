@@ -18,9 +18,9 @@ Here below, the Zerynth driver for the Broadcom BCM43362 wifi chip.
 
 Contents:
 
- - [Broadcom BCM43362](https://docs.zerynth.com/latest/official/lib.broadcom.bcm43362/docs/index.html)
-	 - [Technical Details](https://docs.zerynth.com/latest/official/lib.broadcom.bcm43362/docs/index.html#technical-details)
-		 - [BCM43362 Module](https://docs.zerynth.com/latest/official/lib.broadcom.bcm43362/docs/official_lib.broadcom.bcm43362_bcm43362.html)
+ - [Broadcom BCM43362](/latest/reference/libs/broadcom/bcm43362/docs/)
+	 - [Technical Details](/latest/reference/libs/broadcom/bcm43362/docs/)
+		 - [BCM43362 Module](/latest/reference/libs/broadcom/bcm43362/docs/bcm43362/)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDEyODg2MjAwXX0=
