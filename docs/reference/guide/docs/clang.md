@@ -120,5 +120,5 @@ C functions callable from Python have some limitations:
    * `malloc`, `free` (implemented as macros calling the garbage collector allocator)
    * `strlen`
 
-Refer to [VM Guide](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html#zerynthvm) for the available api.
+Refer to [VM Guide](/latest/reference/guide/docs/vm/) for the available api.
 

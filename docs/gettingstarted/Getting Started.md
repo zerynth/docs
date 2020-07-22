@@ -30,14 +30,14 @@ To start the installation, according to your platform, you can:
 
 Once the installation has started, the window below will appear and you are asked to agree to the “License and Service Terms” to continue the operation
 
-![welcome to zerynth screen](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/welcome%20to%20zerynth.jpg)
+![welcome to zerynth screen](img/welcome%20to%20zerynth.jpg)
 
 !!! note
 	To read all the agreement conditions, you can click on provided links
 
 Then, after accepting the agreement conditions, you can choose between two options to complete the installation: online and offline.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/online%20ofline%20zerynth%20zdm.jpg)
+![](img/online%20ofline%20zerynth%20zdm.jpg)
 
 The online installation is recommended. The Offline Installation meets the needs of educational and training courses, workshops, or places with network and internet issues. It enables you to download an offline package repository and share it with other people, to facilitate and speed up the installation operations.
 
@@ -45,7 +45,7 @@ If you choose the online installation, you can select which version of Zerynth S
 
   
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/select%20version.jpg)
+![](img/select%20version.jpg)
 
 If you choose the Offline Installation you need to have downloaded also the offline package repository in advance related to your platform (Windows, Mac, Linux), from the [Zerynth Download page](https://www.zerynth.com/zsdk/).
 
@@ -59,13 +59,13 @@ By clicking “Install” none of the available architectures will be downloaded
 
 By choosing the “Expert Mode” you will be able to select the architectures you wish to download right now, but you will still be prompted to install the needed dependencies if you connect a board with an architecture not included in the already downloaded ones.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/select%20architecture.jpg)
+![](img/select%20architecture.jpg)
 
 ## Unpack and Install all The Zerynth Packages
 
 Now the system unpacks and installs all the required packages creating a working instance on your local machine; you have to wait a few minutes to complete the Zerynth installation.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/instaling%20zerynth.jpg)
+![](img/instaling%20zerynth.jpg)
 
 Launch Zerynth Studio and you’ll be ready to work.
 
@@ -112,7 +112,7 @@ Download the VSCode project template for your platform from here:
 
   
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/getting%20started%20zdm%203.png)
+![](img/getting%20started%20zdm%203.png)
 
   
 
@@ -134,7 +134,7 @@ Press CTRL+SHIFT+B and select the ZTC command to launch.
 
   
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/getting%20started%20zdm%201.png)
+![](img/getting%20started%20zdm%201.png)
 
   
 
@@ -175,13 +175,8 @@ The following ZTC commands are available:
 
   
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/getting%20started%20zdm%202.png)
+![](img/getting%20started%20zdm%202.png)
 
   
 
 To add other commands or customize them you can follow this guide: [https://code.visualstudio.com/docs/editor/tasks#vscode](https://code.visualstudio.com/docs/editor/tasks#vscode)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MzcyNjcyLDI1ODg4Mzk3LC0xODc3OT
-kzNzg2LDE1MjgyOTI5ODcsLTEwMDc3MzQzNjIsLTE4MjQ0NTA2
-MDYsMjcyNjYzNTIzLC0yNjI2MDYxMjZdfQ==
--->

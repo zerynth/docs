@@ -104,7 +104,7 @@ Follow these steps to register and virtualize a Particle Core:
 After virtualization, the Particle Core is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! important
-    To exploit the Wi-Fi chip functionalities of the Particle Core, the [lib.texas.cc3000 library](https://docs.zerynth.com/latest/official/lib.texas.cc3000/docs/index.html#texas-cc3000) must be installed and imported on the Zerynth script.
+    To exploit the Wi-Fi chip functionalities of the Particle Core, the [lib.texas.cc3000 library](/latest/reference/libs/texas/cc3000/docs/#ti-cc3000) must be installed and imported on the Zerynth script.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTg1MjY3NjI5MiwtMTMzMTIzNDE5NV19
 -->

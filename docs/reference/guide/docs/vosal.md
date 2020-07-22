@@ -313,7 +313,7 @@ Creates a VSemaphore with initial value *n*.
 
 **`void vosSemReset(VSemaphore sem)`**
 
-Reset the semaphore *sem*. Every thread waiting on *sem* is woken up and the semaphore reset signaled with [:macr:`VRES_RESET`](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib___common_vosal_h.html#id1).
+Reset the semaphore *sem*. Every thread waiting on *sem* is woken up and the semaphore reset signaled with [:macr:`VRES_RESET`](/latest/reference/guide/docs/vosal/).
 
 
 **`void vosSemDestroy(VSemaphore sem)`**

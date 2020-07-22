@@ -93,10 +93,4 @@ Flash Layout is shown in table below:
 
 ## Power Management
 
-Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTU0MDQ0Miw5MDQwNTM4NTIsLTEzNj
-I5ODU4MTgsLTE4MTk0MzUzNjMsMjMxODA4NTQ4LDE1NzgxMzA5
-OTAsLTIxNjg1MDkyMCwtMTQ2MTIwNzg4OCw1MzE4NDc5OCw2OD
-E4NDYxOTRdfQ==
--->
+Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-microchip-samd21) and [Secure Firmware - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-microchip-samd21).
