@@ -94,7 +94,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - NXP K64 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-nxpk64) and [Secure Firmware - NXP K64 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-nxpk64).
+Both these features are strongly platform dependent; more information at [Power Management - NXP K64 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-nxp-k64-families) and [Secure Firmware - NXP K64 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-nxp-k64-families).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNzU1NDY2MjU5LDE5NTAyOTEzNDYsNDE3OD
 QzMzAwXX0=
