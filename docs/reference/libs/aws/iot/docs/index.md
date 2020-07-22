@@ -9,7 +9,7 @@ Here below, the Zerynth Library to manage your devices thanks to AWS IoT platfor
 Contents:
 
 
-* [Amazon Web Services IoT Library](https://docs.zerynth.com/latest/official/lib.aws.iot/docs/official_lib.aws.iot_iot.html)
+* [Amazon Web Services IoT Library](/latest/reference/libs/aws/iot/docs/iot/)
     * [The Thing class](https://docs.zerynth.com/latest/official/lib.aws.iot/docs/official_lib.aws.iot_iot.html#the-thing-class)
 * [Amazon Web Services IoT Jobs Library](https://docs.zerynth.com/latest/official/lib.aws.iot/docs/official_lib.aws.iot_jobs.html)
     * [Jobs class](https://docs.zerynth.com/latest/official/lib.aws.iot/docs/official_lib.aws.iot_jobs.html#jobs-class)
