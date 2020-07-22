@@ -121,7 +121,7 @@ Follow these steps to upload a Zerynth script on a virtualized Arduino/Genuino M
 After virtualization, the Arduino/Genuino MKR1000 is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar”, **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the RST on-board button when asked.
 
 !!! important
-    To exploit the Wi-Fi chip functionalities of the Arduino/Genuino MKR1000, the [lib.microchip.winc1500 library](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/index.html#microchip-winc1500) must be installed and imported in the Zerynth script.
+    To exploit the Wi-Fi chip functionalities of the Arduino/Genuino MKR1000, the [lib.microchip.winc1500 library](/latest/reference/libs/microchip/winc1500/docs/) must be installed and imported in the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -141,7 +141,4 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-samd21) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2NzIyNzcsNDkwNDEzMjc5XX0=
--->
+Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-microchip-samd21) and [Secure Firmware - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-microchip-samd21).
