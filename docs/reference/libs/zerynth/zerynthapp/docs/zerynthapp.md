@@ -152,27 +152,32 @@ This simple script connects to the local Wifi network, configures and runs a Zer
 
 ## The ZerynthApp class
 
+##### class ZerynthApp
 
-**`class ZerynthApp(uid, token, ip=None, address="things.zerynth.com", log=False)`**
+```#!py3 class ZerynthApp(uid, token, ip=None, address="things.zerynth.com", log=False)```
 
 Creates a ZerynthApp instance or the device with uid `uid` and token `token`. If *log* is True, some debug messages are printed. If *ip* is given, it tries to connect to the ADM instance hosted at ip (default ip is 178.22.65.123). If *address* is given, it tries to connect to the ADM instance hosted ad address url (default address is “things.zerynth.com”).
 
+###### ZerynthApp.on
 
-**`on(method, fn)`**
+```#!py3 on(method, fn)```
 
 Associates the method name *method* to the callable *fn*. Everytime the ZerynthApp instance receives a request for *method* from the mobile app, the callable *fn* is executed (possibly with arguments).
 
+###### ZerynthApp.event
 
-**`event(payload)`**
+```#!py3 event(payload)```
 
 Sends an event with payload *payload* to the mobile app.
 
+###### ZerynthApp.notify
 
-**`notify(title, text)`**
+```#!py3 notify(title, text)```
 
 Sends a push notification to connected apps with title *title* and text *text*.
 
+###### ZerynthApp.run
 
-**`run()`**
+```#!py3 run()```
 
 Starts the ZerynthApp instance on a separate thread and returns immediately.

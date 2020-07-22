@@ -17,8 +17,9 @@ eth.auto_init()
 eth.link()
 print(eth.link_info())
 ```
+###### init
 
-**`init()`**
+```#!py3 init()```
 
 Initializes the Ethernet chip connected to the device.
 

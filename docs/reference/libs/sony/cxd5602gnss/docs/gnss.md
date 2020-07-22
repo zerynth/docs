@@ -3,8 +3,9 @@
 This module implements the Zerynth driver for the Sony CXD5602 GNSS.
 It allows configuring and retrieving data from the GNSS module mounted on the Sony Spresense board.
 
+###### init
 
-**`init(start_mode=STMOD_HOT, sat_set=SAT_GPS|SAT_GLONASS, cycle=1000)`**
+```#!py3 init(start_mode=STMOD_HOT, sat_set=SAT_GPS|SAT_GLONASS, cycle=1000)```
 
 
 **Arguments:**
@@ -48,8 +49,9 @@ Supported satellites are:
 * **IOError** - when initialization fails.
 
 
+###### deinit
 
-**`deinit()`**
+```#!py3 deinit()```
 
 Stops and de-initializes the GNSS system.
 
@@ -57,16 +59,18 @@ Stops and de-initializes the GNSS system.
 **Raises:** **IOError** - when de-initialization fails.
 
 
+###### wait
 
-**`wait()`**
+```#!py3 wait()```
 
 Waits for updated GNSS data to become available.
 
 
 **Raises:** **IOError** - when the operation fails.
 
+###### read
 
-**`read(read_filter=FILTER_RECEIVER_POSITION | FILTER_RECEIVER_DATETIME)`**
+```#!py3 read(read_filter=FILTER_RECEIVER_POSITION | FILTER_RECEIVER_DATETIME)```
 
 
 **Arguments:** **read_filter** – bitmap to filter data to be read to save RAM.
@@ -88,8 +92,9 @@ Returns a `GNSSData()` object filled according to selected filters. Available fi
 **Raises:** **IOError** - when read fails, for example if `read()` is called immediately after `init()` without waiting proper initialization time calling `wait()` function.
 
 
+##### class GNSSData
 
-**`class GNSSData`**
+```#!py3 class GNSSData()```
 
 Class to store GNSS data retrieved by `read()` calls.
 
@@ -102,8 +107,9 @@ List of attributes:
 * `GNSSData.receiver`: `Receiver()` instance
 * `GNSSData.sats`: tuple of `SatelliteData()` instances
 
+##### class Receiver
 
-**`class Receiver`**
+```#!py3 class Receiver()```
 
 Class to store Receiver info retrieved by `read()` calls.
 
@@ -116,8 +122,9 @@ List of attributes:
 * `Receiver.position`: `ReceiverPosition()` instance
 * `Receiver.datetime`: `ReceiverDatetime()` instance
 
+##### class ReceiverSats
 
-**`class ReceiverSats`**
+```#!py3 class ReceiverSats()```
 
 Class to store Receiver Satellites info retrieved by `read()` calls.
 
@@ -135,8 +142,9 @@ List of attributes:
 * `ReceiverSats.pos_svtype`: used sv system to calculate position, bitfield
 * `ReceiverSats.vel_svtype`: used sv system to calculate velocity, bitfield
 
+##### class ReceiverPosition
 
-**`class ReceiverPosition`**
+```#!py3 class ReceiverPosition()```
 
 Class to store Receiver Position info retrieved by `read()` calls.
 
@@ -162,16 +170,18 @@ List of attributes:
 * `ReceiverPosition.direction`: direction `[degree]`
 * `ReceiverPosition.precision`: `ReceiverPositionPrecision()` instance
 
+##### class ReceiverPositionPrecision
 
-**`class ReceiverPositionPrecision`**
+```#!py3 class ReceiverPositionPrecision()```
 
 
 * `ReceiverPositionPrecision.pos_dop`: `DOP()` instance
 * `ReceiverPositionPrecision.vel_idx`: `DOP()` instance
 * `ReceiverPositionPrecision.pos_accuracy`: `Variance()` instance
 
+###### class DOP
 
-**`class DOP`**
+```#!py3 class DOP()```
 
 Class to store Dilution of Precision.
 
@@ -186,8 +196,9 @@ Class to store Dilution of Precision.
 * `Dop.mindop`: Stdev of semi-minor axis
 * `Dop.oridop`: orientation of semi-major axis `[deg]`
 
+##### class Variance
 
-**`class Variance`**
+```#!py3 class Variance()```
 
 Class to store Variance.
 
@@ -197,8 +208,9 @@ Class to store Variance.
 
 ## Utils
 
+###### double_to_dmf
 
-**`double_to_dmf(x)`**
+```#!py3 double_to_dmf(x)```
 
 
 **Arguments:** **x** – double to convert.

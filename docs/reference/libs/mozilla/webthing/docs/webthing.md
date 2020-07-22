@@ -2,13 +2,15 @@
 
 # Thing class
 
+##### class Thing
 
-**`class Thing`**
+```#!py3 class Thing()```
 
 A Thing is an object exposing some REST API containing properties, actionsand events.
 
+###### Thing.__init__
 
-**`__init__(thing_id,name,description=None,base_url="/",timestamp_fn=None)`**
+```#!py3 __init__(thing_id,name,description=None,base_url="/",timestamp_fn=None)```
 
 -	**thing_id** is the unique id for a Thing.
 -	**name** is pretty name for human interfaces.
@@ -29,8 +31,9 @@ Add a new property to this thing.
 -	**unit** is a pretty name for the measure unit of this property.
 -	**description** is a human readable description of this property.
 
+###### Thing.add_action
 
-**`add_action(act_id,label,callback,input_type=None,description=None)`**
+```#!py3 add_action(act_id,label,callback,input_type=None,description=None)```
 
 Add a new action to this thing.
 
@@ -40,8 +43,9 @@ Add a new action to this thing.
 -	**callback** is a function that must accept a parameter of *input_type* and use it.
 -	**description** is a human readable description of this action.
 
+###### Thing.register_event
 
-**`register_event(evt_id,description)`**
+```#!py3 register_event(evt_id,description)```
 
 Register a new event type to this Thing.
 
@@ -49,8 +53,9 @@ Register a new event type to this Thing.
 -	**evt_id** is a string for identifying uniquely this event type.
 -	**description** is a human readable description for this event.
 
+###### Thing.signal_event
 
-**`signal_event(evt_id,inp_data=None)`**
+```#!py3 signal_event(evt_id,inp_data=None)```
 
 Log a new event of type evt_id.
 
@@ -58,8 +63,9 @@ Log a new event of type evt_id.
 -	**evt_id** is a string for choosing a registered event type.
 -	**inp_data** is an optional argument for this event type.
 
+###### Thing.as_dict
 
-**`as_dict()`**
+```#!py3 as_dict()```
 
 Return a dict representing this Thing.
 <!--stackedit_data:

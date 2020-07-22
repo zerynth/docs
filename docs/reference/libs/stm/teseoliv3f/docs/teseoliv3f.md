@@ -13,8 +13,9 @@ The driver support serial mode only.
 
 Location fixes are obtained by parsing NMEA sentences of type RMC and GGA. Obtaining a fix or UTC time are thread safe operations.
 
+##### class Teseo
 
-**`class Teseo(ifc, mode=SERIAL, baud=9600, clock=400000, addr=0x00)`**
+```#!py3 class Teseo(ifc, mode=SERIAL, baud=9600, clock=400000, addr=0x00)```
 
 Creates an intance of TeseoLiv3F.
 
@@ -43,8 +44,9 @@ alt = mpl.get_alt()
 pres = mpl.get_pres()
 ```
 
+###### Teseo.start
 
-**`start(rstpin=None, rstval=0)`**
+```#!py3 start(rstpin=None, rstval=0)```
 
 Start the TeseoLiv3F.
 
@@ -56,18 +58,21 @@ Start the TeseoLiv3F.
 * **rstval** – the value to move `rstpin` to
 
 
+###### Teseo.stop
 
-**`stop()`**
+```#!py3 stop()```
 
 Stop the TeseoLiv3F by putting it into backup mode. It can be restarted only by setting the FORCE_ON pin to high. Refer to the Teseo Liv3F documentation for details [here](https://www.st.com/resource/en/datasheet/teseo-liv3f.pdf).
 
+###### Teseo.pause
 
-**`pause()`**
+```#!py3 pause()```
 
 Stop the Teseo Liv3F by putting it into standby mode. It can be restarted by calling resume. Refer to the Teseo Liv3F documentation for details [here](https://www.st.com/resource/en/datasheet/teseo-liv3f.pdf).
 
+###### Teseo.resume
 
-**`resume()`**
+```#!py3 resume()```
 
 Wake up the Teseo Liv3F from standby mode. Refer to the Teseo Liv3F documentation for details [here](https://www.st.com/resource/en/datasheet/teseo-liv3f.pdf).
 
@@ -75,8 +80,9 @@ Wake up the Teseo Liv3F from standby mode. Refer to the Teseo Liv3F documentatio
 
 Set the frequency for location fix (100-10000 milliseconds is the available range).
 
+###### Teseo.fix
 
-**`fix()**`
+```#!py3 fix()```
 
 Return the current fix or None if no fix is available.
 A fix is a tuple with the following elements:
@@ -93,19 +99,23 @@ A fix is a tuple with the following elements:
 * positional dilution of precision (0.5 - 99.9)
 * UTC time as a tuple (yyyy,MM,dd,hh,mm,ss,microseconds)
 
+###### Teseo.has_fix
 
-**`has_fix()`**
+```#!py3 has_fix()```
 
 Return True if a fix is available.
 
+###### Teseo.utc
 
-**`utc()`**
+```#!py3 utc()```
 
 Return the current UTC time or None if no UTC time is available.
 A UTC time is a tuple of (yyyy,MM,dd,hh,mm,ss,microseconds).
 
 UTC time can be wrong if no fix has ever been obtained.
 
-**`has_utc()`**
+###### Teseo.has_utc
+
+```#!py3 has_utc()```
 
 Return True if a UTC time is available.

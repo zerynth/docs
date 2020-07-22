@@ -2,8 +2,9 @@
 
 This module provides uniform access to Polaris on-board GNSS receiver, which may vary on different board variants.
 
+###### GNSS
 
-**`GNSS()`**
+```#!py3 GNSS()```
 
 Creates an instance of the correct GNSS receiver class for the current Polaris target board variant.
 

@@ -2,8 +2,9 @@
 
 This module contains the driver for NXP FXOS8700CQ accelerometer and magnetometer. The FXOS8700CQ provides direct I2C communication and the accelerometer can be set on 3 different full-scale range and 8 different over sample rate values  ([datasheet](http://www.nxp.com/assets/documents/data/en/data-sheets/FXOS8700CQ.pdf)).
 
+##### class FXOS8700CQ
 
-**`class FXOS8700CQ(i2cdrv,addr=0x1E,clk=400000)`**
+```#!py3 class FXOS8700CQ(i2cdrv,addr=0x1E,clk=400000)```
 
 Creates an intance of a new FXOS8700CQ.
 
@@ -29,8 +30,9 @@ acc = fxos.get_acc()
 mag = fxos.get_mag()
 ```
 
+###### FXOS8700CQ.init
 
-**`init(mode=ACCMAG,odr=0,osr=0,range=RANGE4G)`**
+```#!py3 init(mode=ACCMAG,odr=0,osr=0,range=RANGE4G)```
 
 Initialize the FXOS8700CQ setting the operating mode, the output data rate , the full-scale range and the oversample ratio.
 
@@ -65,28 +67,34 @@ Initialize the FXOS8700CQ setting the operating mode, the output data rate , the
 | 200 Hz  | 2     | 2     | 2     | 2     | 2     | 2     | 4     | 8     |
 | 400 Hz  | 2     | 2     | 2     | 2     | 2     | 2     | 2     | 4     |
 | 800 Hz  | 2     | 2     | 2     | 2     | 2     | 2     | 2     | 2     |
-**`get_raw_acc()`**
+
+###### FXOS8700CQ.get_raw_acc
+
+```#!py3 get_raw_acc()```
 
 Retrieves the current accelerometer data as a tuple of X, Y, Z, raw values.
 
 Returns [ax, ay, az].
 
+###### FXOS8700CQ.get_raw_mag
 
-**`get_raw_mag()`**
+```#!py3 get_raw_mag()```
 
 Retrieves the current magnetometer data as a tuple of X, Y, Z, raw values.
 
 Returns [mx, my, mz].
 
+###### FXOS8700CQ.get_raw_int_temp
 
-**`get_raw_int_temp()`**
+```#!py3 get_raw_int_temp()```
 
 Retrieves the current internal temperature data as raw values.
 
 Returns raw_t.
 
+###### FXOS8700CQ.get_acc
 
-**`get_acc(axis=None)`**
+```#!py3 get_acc(axis=None)```
 
 Retrieves the current accelerometer data in m/s^2 as a tuple of X, Y, Z values or single axis value if axis argument is provided.
 
@@ -97,8 +105,9 @@ Retrieves the current accelerometer data in m/s^2 as a tuple of X, Y, Z values o
 
 Returns [acc_x, acc_y, acc_z] or acc_x or acc_y or acc_z.
 
+###### FXOS8700CQ.get_mag
 
-**`get_mag(axis=None)`**
+```#!py3 get_mag(axis=None)```
 
 Retrieves the current magnetometer data in uT as a tuple of X, Y, Z values or single axis value if axis argument is provided.
 
@@ -108,8 +117,9 @@ Retrieves the current magnetometer data in uT as a tuple of X, Y, Z values or si
 
 Returns [mag_x, mag_y, mag_z] or mag_x or mag_y or mag_z.
 
+###### FXOS8700CQ.get_int_temp
 
-**`get_int_temp(unit="C")`**
+```#!py3 get_int_temp(unit="C")```
 
 Retrieves the current device internal temperature value in Celtius, Kelvin or Fahrenheit degrees.
 

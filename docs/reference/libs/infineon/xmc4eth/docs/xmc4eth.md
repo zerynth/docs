@@ -4,8 +4,9 @@ This module implements the Zerynth driver for the Infineon XMC4000 family Ethern
 
 This module supports SSL/TLS.
 
+###### init
 
-**`init()`**
+```#!py3 init()```
 
 Initializes the Ethernet chip connected to the device.
 <!--stackedit_data:

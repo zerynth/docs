@@ -2,19 +2,23 @@
 
 This module implements the Zerynth driver for the Espressif ESP32 Wi-Fi chip ([Resources and Documentation](https://esp-idf.readthedocs.io/en/latest/api-reference/wifi/index.html)). This module supports SoftAP mode and SSL/TLS. It also support promiscuous mode for wifi packet sniffing.
 
+###### init
 
-**`init()`**
+```#!py3 init()```
 
 initializes the Wi-Fi chip connected to the device.
 
 The WiFi chip is setup and can be managed using the Wi-Fi Module of the Zerynth Standard Library.
 
-**`get_rssi()`**
+###### get_rssi
+
+```#!py3 get_rssi()```
 
 Returns the current RSSI in dBm.
 
+###### start_sniffer
 
-**`start_sniffer(packet_types=[],direction=0xf,channels=[],mgmt_subtypes=[],ctrl_subtypes=[],data_subtypes=[],hop_time=5000,pkt_buffer=32,max_payloads=4096)`**
+```#!py3 start_sniffer(packet_types=[],direction=0xf,channels=[],mgmt_subtypes=[],ctrl_subtypes=[],data_subtypes=[],hop_time=5000,pkt_buffer=32,max_payloads=4096)```
 
 Start the wifi sniffer or change its configuration if already started.
 The sniffer itself is very flexible and configurable by means of type, subtype and direction filters. Wifi packets from [IEEE 802.11 specification](https://en.wikipedia.org/wiki/IEEE_802.11) can be of management, control or data types, each type implementing a different functionality of the standard.
@@ -87,7 +91,9 @@ Here below the list of constants for specifying packet subtypes:
 * `WIFI_PKT_DATA_NULLQOS_CFPOLL`, data packet with no data for qos with cf poll
 * `WIFI_PKT_DATA_QOS_CFPOLL_ACK`, data packet with no data for qos with cf poll ack
 
-**`get_sniffer_stats()`**
+###### get_sniffer_stats
+
+```#!py3 get_sniffer_stats()```
 
 Return a tuple with sniffer statistics:
 
@@ -104,8 +110,9 @@ Return a tuple with sniffer statistics:
 * 
 Filters are applied in a specific order: direction filter first and then subtype filter.
 
+###### sniff_raw
 
-**`sniff_raw()`**
+```#!py3 sniff_raw()```
 
 Return a list of sniffed packets from the underlying packet buffer.
 

@@ -2,8 +2,9 @@
 
 This module exports classes and functions to handle Bridgetek BT81x family of Embedded Video Engines.
 
+##### class DisplayConf
 
-**`class DisplayConf(width,height,hcycle,hoffset,hsync0,hsync1,vcycle, voffset,vsync0,vsync1,pclk,swizzle,pclkpol,cspread,dither,description)`**
+```#!py3 class DisplayConf(width,height,hcycle,hoffset,hsync0,hsync1,vcycle, voffset,vsync0,vsync1,pclk,swizzle,pclkpol,cspread,dither,description)```
 
 Class to store a display configuration.
 List of attributes:
@@ -33,8 +34,9 @@ from riverdi.displays.bt81x import ctp50
 from bridgetek.bt81x import bt81x
 ```
 
+###### DisplayConf.init
 
-**`init(spi,cs,pd,int,dc=None,spi_speed=3000000)`**
+```#!py3 init(spi,cs,pd,int,dc=None,spi_speed=3000000)```
 
 
 **Parameters:**
@@ -50,8 +52,9 @@ Initializes the chip.
 
 When `dc` parameter is not specified `display_conf` global variable is used.
 
+##### class Palette
 
-**`class Palette(font,foreground,background)`**
+```#!py3 class Palette(font,foreground,background)```
 
 Class to store a color palette for font, foreground and background.
 List of attributes:
@@ -61,7 +64,9 @@ List of attributes:
 * **foreground** tuple of rgb values `(r,g,b)`
 * **background** tuple of rgb values `(r,g,b)`
 
-**`class Text(x,y,font,options,text,palette=None)`**
+##### class Text
+
+```#!py3 class Text(x,y,font,options,text,palette=None)```
 
 Class to store a text element configuration.
 List of attributes:
@@ -74,8 +79,9 @@ List of attributes:
 * **text** string
 * **palette** `Palette()` object instance to set colors
 
+##### class Button
 
-**`class Button(x,y,width,height,font,options,text,palette=None)`**
+```#!py3 class Button(x,y,width,height,font,options,text,palette=None)```
 
 Class to store a text element configuration. Inherits all `Text()` attributes and adds:
 
@@ -115,12 +121,15 @@ List of available options for the `options` command parameter:
 
 Options can be combined using a bitwise OR.
 
-**`dl_start()`**
+###### dl_start
+
+```#!py3 dl_start()```
 
 Starts a new display list.
 
+###### set_font_color
 
-**`set_font_color(r,g,b)`**
+```#!py3 set_font_color(r,g,b)```
 
 
 **Arguments:**
@@ -144,7 +153,9 @@ set_foreground(r, g, b)
 
 Sets current foreground color.
 
-**`set_background(r,g,b)`**
+###### set_background
+
+```#!py3 set_background(r,g,b)```
 
 
 **Arguments:**
@@ -165,8 +176,9 @@ Adds a text element to the screen.
 
 A call to `set_font_color()` is performed if the `Text.palette` attribute is set.
 
+###### add_button
 
-**`add_button(btn)`**
+```#!py3 add_button(btn)```
 
 
 **Arguments:**
@@ -179,8 +191,9 @@ Adds a button element to the screen.
 
 Calls to `set_background()`, `set_foreground()` and `set_font_color()` are performed if the `Text.palette.font` attribute is set.
 
+###### add_keys
 
-**`add_keys(x,y,w,h,font,options,s)`**
+```#!py3 add_keys(x,y,w,h,font,options,s)```
 
 
 **Arguments:**
@@ -197,8 +210,9 @@ Adds a row of keys to the screen. If an ASCII code is specified as option, that 
 
 The `TAG` value is set to the ASCII value of each key, so that key presses can be detected with a callback on that value.
 
+###### add_clock
 
-**`add_clock(x,y,r,options,h,m,s,ms)`**
+```#!py3 add_clock(x,y,r,options,h,m,s,ms)```
 
 
 **Arguments:**
@@ -216,8 +230,9 @@ The `TAG` value is set to the ASCII value of each key, so that key presses can b
 
 Adds a clock to the screen.
 
+###### clear
 
-**`clear(color,stencil,tag)`**
+```#!py3 clear(color,stencil,tag)```
 
 
 **Arguments:**
@@ -228,8 +243,9 @@ Adds a clock to the screen.
 
 Clears buffers to default values.
 
+###### clear_color
 
-**`clear_color(rgb=None,a=None)`**
+```#!py3 clear_color(rgb=None,a=None)```
 
 
 **Arguments:**
@@ -240,8 +256,9 @@ Clears buffers to default values.
 
 Sets the default color when colors are cleared. The initial value is `((0, 0, 0), 0)`.
 
+###### clear_tag
 
-**`clear_tag(default_tag)`**
+```#!py3 clear_tag(default_tag)```
 
 
 **Arguments:**
@@ -252,7 +269,9 @@ Sets the default color when colors are cleared. The initial value is `((0, 0, 0)
 
 Sets the default tag when tag buffer is cleared. The initial value is `0`.
 
-**`spinner(x,y,style,scale)`**
+###### spinner
+
+```#!py3 spinner(x,y,style,scale)```
 
 
 **Arguments:**
@@ -263,13 +282,15 @@ Sets the default tag when tag buffer is cleared. The initial value is `0`.
 
 Draws a spinner with a chosen style.
 
+###### calibrate
 
-**`calibrate()`**
+```#!py3 calibrate()```
 
 Starts the calibration procedure (needed by Resistive Displays).
 
+###### inflate
 
-**`inflate(ram_ptr,resource)`**
+```#!py3 inflate(ram_ptr,resource)```
 
 
 **Arguments:**
@@ -287,8 +308,9 @@ Inflates a Zerynth resource to RAM_G (General purpose graphics RAM, bt81x main m
 -   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
 
 
+###### load_image
 
-**`load_image(ram_ptr,options,resource)`**
+```#!py3 load_image(ram_ptr,options,resource)```
 
 
 **Arguments:**
@@ -306,8 +328,9 @@ Raises:
 -   **PeripheralError**  – if an error occurs while loading
 -   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
 
+###### vertex_format
 
-**`vertex_format(fmt)`**
+```#!py3 vertex_format(fmt)```
 
 
 **Arguments:**
@@ -320,8 +343,9 @@ Selects a vertex format for subsequent draw operations.
 
 Vertex format are useful to specify pixel coordinates beyond the `0-511` range.
 
+###### Bitmap
 
-**`Bitmap(handle,source,layout,size)`**
+```#!py3 Bitmap(handle,source,layout,size)```
 
 
 **Arguments:**
@@ -370,13 +394,15 @@ Allowed values for `x_wrap_mode` and `y_wrap_mode` are:
 * `BORDER`
 * `REPEAT`
 
+###### prepare_draw
 
-**`prepare_draw()`**
+```#!py3 prepare_draw()```
 
 To be called before `draw()`.
 
+###### draw
 
-**`draw(vertex, vertex_fmt=None)`**
+```#!py3 draw(vertex, vertex_fmt=None)```
 
 Draws prepared image on screen.
 Can be called multiple times after a single `prepare_draw()`.
@@ -385,17 +411,21 @@ If `vertex` tuple has 2 elements the vertex format is set according to `vertex_f
 
 If `vertex` tuple has 4 elements `vertex_fmt` parameter is ignored and         `vertex` elements are assumed to be the image `x` and `y` top-left coordinates, image handle and cell.
 
+###### end
 
-**`end()`**
+```#!py3 end()```
 
 Ends drawing a graphics primitive.
 
+###### display
 
-**`display()`**
+```#!py3 display()```
 
 Ends a display list.
 
-**`swap_and_empty()`**
+###### swap_and_empty
+
+```#!py3 swap_and_empty()```
 
 
 Swaps current display list and waits until all commands are executed.
@@ -406,8 +436,9 @@ Swaps current display list and waits until all commands are executed.
 -   **TimeoutError**  – if the process takes longer than set timeout ([`set_timeout()`](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#bt81x.set_timeout "bt81x.set_timeout"))
 
 
+###### set_timeout
 
-**`set_timeout(timeout_millis)`**
+```#!py3 set_timeout(timeout_millis)```
 
 **Arguments:**
 
@@ -417,7 +448,9 @@ Swaps current display list and waits until all commands are executed.
 
 Sets a timeout for Co-Processor commands. Default timeout value is `4000`.
 
-**`tag(n)`**
+###### tag
+
+```#!py3 tag(n)```
 
 
 **Arguments:**
@@ -430,7 +463,9 @@ Attaches the tag value to all the following graphics objects drawn on the screen
 
 The initial tag value is specified by function `clear_tag()` and takes effect calling function `clear()`.
 
-**`tag_mask(mask)`**
+###### tag_mask
+
+```#!py3 tag_mask(mask)```
 
 
 **Arguments:**
@@ -441,8 +476,9 @@ The initial tag value is specified by function `clear_tag()` and takes effect ca
 
 If called with value `0` the default value of the tag buffer is used for current display list.
 
+###### tag_mask
 
-**`tag_mask(mask)`**
+```#!py3 tag_mask(mask)```
 
 **Arguments:**
 
@@ -452,8 +488,9 @@ If called with value `0` the default value of the tag buffer is used for current
 
 If called with value `0` the default value of the tag buffer is used for current display list.
 
+###### touch_loop
 
-**`touch_loop(cbks)`**
+```#!py3 touch_loop(cbks)```
 
 
 **Arguments:**

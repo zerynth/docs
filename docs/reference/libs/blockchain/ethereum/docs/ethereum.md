@@ -46,18 +46,23 @@ The following constants are defined:
 * `RINKEBY`, identifier of the rinkeby network
 * `KOVAN`, identifier of the kovan network
 
-Function: **`get_address(pv)`**
+###### get_address
+
+```#!py3 get_address(pv)```
 
 Given the private key *pv,* return the corresponding Ethereum address *pv* can be given in both binary or hex format (starting with 0x).
 
-Function: **`get_checksum_address(addr)`**
+###### get_checksum_address
+
+```#!py3 get_checksum_address(addr)```
 
 Given the the Ethereum address *addr*, return the checksummed address according to [EIP 55](https://github.com/ethereum/EIPs/blob/mater/EIPS/eip-55.md).
 
 ## Transaction class
 
+##### class Transaction
 
-**`class Transaction(chain=MAIN)`**
+```#!py3 class Transaction(chain=MAIN)```
 
 Creates an instance of a Transaction  on the network id specified by *chain*.
 
@@ -73,8 +78,9 @@ The resulting Transaction instance is empty and invalid. The following parameter
 Optionally, transaction data and network id can be set.
 
 
+###### Transaction.set_receiver
 
-**`set_receiver(address)`**
+```#!py3 set_receiver(address)```
 
 **Parameters:** 
 
@@ -82,8 +88,9 @@ Optionally, transaction data and network id can be set.
 
 Set the receiver address to *address*.
 
+###### Transaction.set_value
 
-**`set_value(value, unit=WEI)`**
+```#!py3 set_value(value, unit=WEI)```
 
 **Parameters:**
     
@@ -93,8 +100,9 @@ Set the receiver address to *address*.
 
 Convert *value* to big number format according to *unit* and set the resulting big number as the transaction value.
 
+###### Transaction.set_gas_price
 
-**`set_gas_price(value,unit=WEI)`**
+```#!py3 set_gas_price(value,unit=WEI)```
 
 
 **Parameters:**
@@ -105,8 +113,9 @@ Convert *value* to big number format according to *unit* and set the resulting b
 
 Convert *value* to big number format according to *unit* and set the resulting big number as the transaction gas price.
 
+###### Transaction.set_gas_limt
 
-**`set_gas_limt(value,unit=WEI)`**
+```#!py3 set_gas_limt(value,unit=WEI)```
 
 **Parameters:**
     
@@ -116,8 +125,9 @@ Convert *value* to big number format according to *unit* and set the resulting b
 
 Convert *value* to big number format according to *unit* and set the resulting big number as the transaction gas limit.
 
+###### Transaction.set_nonce
 
-**`set_nonce(value)`**
+```#!py3 set_nonce(value)```
 
 
 **Parameters:**
@@ -127,8 +137,9 @@ Convert *value* to big number format according to *unit* and set the resulting b
 
 Set transaction nonce.
 
+###### Transaction.set_data
 
-**`set_data(value)`**
+```#!py3 set_data(value)```
 
 
 **Parameters:**
@@ -137,8 +148,9 @@ Set transaction nonce.
 
 Set transaction data to *value*.
 
+###### Transaction.set_chain
 
-**`set_chain(chain)`**
+```#!py3 set_chain(chain)```
 
 
 **Parameters:**
@@ -147,7 +159,9 @@ Set transaction data to *value*.
 
 Set the network id for the transaction.
 
-**`to_rlp(hex)`**
+###### Transaction.to_rlp
+
+```#!py3 to_rlp(hex)```
 
 
 **Parameters:**
@@ -157,8 +171,9 @@ Set the network id for the transaction.
 
 Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of the transaction in biney form. If ```hex``` is True, the hexadecimal representation is returned.
 
+###### Transaction.hash
 
-**`hash(full=True)`**
+```#!py3 hash(full=True)```
 
 **Parameters:**
 
@@ -167,8 +182,9 @@ Return the [RLP](https://github.com/ethereum/wiki/wiki/RLP) representation of th
 Return a hash instance (Keccak) of the transaction. To obtain the binary or string hash, call the methods digest/hexdigest on the result.
 If *full* is False, fields v,r,s of the transaction are set to default values as specified in [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
 
+###### Transaction.sign
 
-**`sign(pv)`**
+```#!py3 sign(pv)```
 
 **Parameters:**
 
@@ -178,7 +194,9 @@ Generate a signed transaction according to EIP-155. Once signed, the transaction
 
 ## Contract class
 
-**`class Contract(rpc,contract_address,key=None,address=None,chain=MAIN)`**
+##### class Contract
+
+```#!py3 class Contract(rpc,contract_address,key=None,address=None,chain=MAIN)```
 
 Prepare the device to interact with an Ethereum Smart Contract.
 
@@ -192,15 +210,13 @@ A device can interact with an already created contract placed at address `contra
 
 `rpc` must be a valid RPC instance.
 `chain` is the optional network id.
-
 `key` and `address` represent device address and key needed only if paid transactions are executed.
 
+###### Contract.register_function
 
-**`register_function(function,gas_price=None,gas_limit=None,args_type=())`**
-
+```#!py3 register_function(function,gas_price=None,gas_limit=None,args_type=())```
 
 **Parameters:**
-
     
 
  - **function** – function name
@@ -208,11 +224,12 @@ A device can interact with an already created contract placed at address `contra
  - **gas_limit** – gas limit for function execution, can be None, an tuple (value, unit) or a single integer value which will be considered in WEI unit
  - **args_type** – a tuple specifying function arguments’ type following [Ethereum ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI), at the moment only a subset of possible types is supported: `address`, `uint<M>` where `0 < M < 256 and M % 8 == 0`
 
+
+###### Contract.tx
+
+```#!py3 tx(function,nonce,value,args=())```
+
 Register a contract function to be called.
-
-
-**`tx(function,nonce,value,args=())`**
-
 
 Parameters:
 
@@ -223,11 +240,12 @@ Parameters:
  - **value** – transaction value as a tuple (value,unit) or None
  - **args** – call arguments as a tuple
 
+
+###### Contract.call
+
+```#!py3 call(function,args=(),rv=None)```
+
 Call a previously registered function modifying the blockchain.
-
-
-**`call(function,args=(),rv=None)`**
-
 
 **Parameters:**
 

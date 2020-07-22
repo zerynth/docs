@@ -3,7 +3,9 @@
 This module implements the Zerynth driver for the Espressif ESP32 Ethernet ([Resources and Documentation](https://esp-idf.readthedocs.io/en/latest/api-reference/wifi/index.html)).
 This module supports SSL/TLS.
 
-**`init()`**
+###### init
+
+```#!py3 init()```
 
 
 Initializes the Ethernet chip connected to the device.

@@ -4,8 +4,9 @@ This module contains the driver for STMicroelectronics IIS3DWB 3-axis digital vi
 
 In the IIS3DWB, the sensing elements of the accelerometer are implemented on the same silicon die, thus guaranteeing superior stability and robustness. ([datasheet](https://www.st.com/resource/en/datasheet/iis3dwb.pdf)).
 
+##### class IIS3DWB
 
-**`class IIS3DWB(spidrv, pin_cs, clk=5000000)`**
+```#!py3 class IIS3DWB(spidrv, pin_cs, clk=5000000)```
 
 Class which provides a simple interface to IIS3DWB features.
 
@@ -32,13 +33,15 @@ vibro = iis3dwb.IIS3DWB(SPI0, D10)
 acc = vibro.get_acc_data()
 ```
 
+###### IIS3DWB.reset
 
-**`reset()`**
+```#!py3 reset()```
 
 Reset the device using the internal register flag.
 
+###### IIS3DWB.enable
 
-**`enable(odr=IIS3DWB_ODR_26k7Hz, fs=0)`**
+```#!py3 enable(odr=IIS3DWB_ODR_26k7Hz, fs=0)```
 
 Sets the device’s configuration registers for accelerometer.
 
@@ -63,19 +66,23 @@ Sets the device’s configuration registers for accelerometer.
 
 Returns True if configuration is successful, False otherwise.
 
+###### IIS3DWB.disable
 
-**`disable()`**
+```#!py3 disable()```
 
 Disables the accelerator sensor.
 
 Returns True if configuration is successful, False otherwise.
 
+###### IIS3DWB.whoami
 
-**`whoami()`**
+```#!py3 whoami()```
 
 Value of the *IIS3DWB_WHO_AM_I* register (0x6B).
 
-**`get_acc_data(ms2=True, raw=False)`**
+###### IIS3DWB.get_acc_data
+
+```#!py3 get_acc_data(ms2=True, raw=False)```
 
 Retrieves accelerometer data in one call.
 
@@ -89,15 +96,17 @@ Retrieves accelerometer data in one call.
 
 Returns acc_x, acc_y, acc_z.
 
+###### IIS3DWB.get_temp
 
-**`get_temp()`**
+```#!py3 get_temp()```
 
 Retrieves temperature in one call; if raw flag is enabled, returns raw register values.
 
 Returns temp.
 
+###### IIS3DWB.get_fast
 
-**`get_fast()`**
+```#!py3 get_fast()```
 
 Retrieves all data sensors in one call in fast way (c-code acquisition).
 
@@ -107,8 +116,9 @@ Retrieves all data sensors in one call in fast way (c-code acquisition).
 
 Returns temp, acc_x, acc_y, acc_z.
 
+###### IIS3DWB.set_event_interrupt
 
-**`set_event_interrupt(pin_int, enable)`**
+```#!py3 set_event_interrupt(pin_int, enable)```
 
 Enables the interrupt pins. When data from sensor will be ready, the related interrupt pin configured will be set to high.
 

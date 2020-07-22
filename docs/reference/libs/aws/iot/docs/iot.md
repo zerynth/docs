@@ -13,8 +13,9 @@ Check this video for a live demo:
 
 ## The Thing class
 
+##### class Thing
 
-**`class Thing(endpoint, mqtt_id, clicert, pkey, thingname=None, cacert=None)`**
+```#!py3 class Thing(endpoint, mqtt_id, clicert, pkey, thingname=None, cacert=None)```
 
 Create a Thing instance representing an AWS IoT Thing.
 
@@ -25,7 +26,7 @@ Refer to Zerynth SSL Context creation for admitted `pkey` values.
 The client is accessible through `mqtt` instance attribute and exposes all Zerynth MQTT Client methods so that it is possible, for example, to setup
 custom callback on MQTT commands. The only difference concerns mqtt.connect method which does not require broker url and ssl context, taking them from Thing configuration:
 
-```py
+```python
 my_thing = iot.Thing('my_ep_id.iot.my_region.amazonaws.com', 'my_thing_id', clicert, pkey)
 my_thing.mqtt.connect()
 ...
@@ -34,25 +35,27 @@ my_thing.mqtt.loop()
 
 A `thingname` different from chosen MQTT id can be specified, otherwise `mqtt_id` will be assumed also as Thing name.
 
+###### Thing.update_shadow
 
-**`update_shadow(state)`**
+```#!py3 update_shadow(state)```
 
 Update thing shadow with reported `state` state.
 
 `state` must be a dictionary containing only custom state keys and values:
 
-```py
+```python
 my_thing.update_shadow({'publish_period': 1000})
 ```
 
+###### Thing.on_shadow_request
 
-**`on_shadow_request(shadow_cbk)`**
+```#!py3 on_shadow_request(shadow_cbk)```
 
 Set a callback to be called on shadow update requests.
 
 `shadow_cbk` callback will be called with a dictionary containing requested state as the only parameter:
 
-```py
+```python
 def shadow_callback(requested):
     print('requested publish period:', requested['publish_period'])
 

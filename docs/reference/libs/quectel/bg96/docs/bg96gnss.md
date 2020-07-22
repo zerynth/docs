@@ -15,8 +15,9 @@ The driver support serial mode only.
 Location fixes are obtained by parsing NMEA sentences of type RMC and GGA.
 Obtaining a fix or UTC time are thread safe operations.
 
+##### class BG96_GNSS
 
-**`class BG96_GNSS(ifc, baud=9600)`**
+```#!py3 class BG96_GNSS(ifc, baud=9600)```
 
 Create an instance of the BG96_GNSS class.
 
@@ -42,8 +43,9 @@ alt = mpl.get_alt()
 pres = mpl.get_pres()
 ```
 
+###### BG96_GNSS.start
 
-**`start()`**
+```#!py3 start()```
 
 Start the BG96 GNSS and the receiver thread.
 
@@ -53,8 +55,9 @@ Start the BG96 GNSS and the receiver thread.
 **Returns:** **True** if receiver thread has been started, *False* if already active.
 
 
+###### BG96_GNSS.stop
 
-**`stop()`**
+```#!py3 stop()```
 
 Stop the BG96 GNSS and terminates the receiver thread.
 It can be restarted by calling start.
@@ -62,18 +65,21 @@ It can be restarted by calling start.
 **Returns:** **True** if receiver thread has been stopped, *False* if already inactive.
 
 
+###### BG96_GNSS.pause
 
-**`pause()`**
+```#!py3 pause()```
 
 Pause the BG96 GNSS by putting it into standby mode. It can be restarted by calling resume.
 
+###### BG96_GNSS.resume
 
-**`resume()`**
+```#!py3 resume()```
 
 Wake up the BG96_GNSS from standby mode.
 
+###### BG96_GNSS.set_rate
 
-**`set_rate(rate=1000)`**
+```#!py3 set_rate(rate=1000)```
 
 Set the frequency for location fix (100-10000 milliseconds is the available range).
 
@@ -81,8 +87,9 @@ Set the frequency for location fix (100-10000 milliseconds is the available rang
 
 Additional methods from the base class `nmea.NMEA_Receiver`.
 
+###### BG96_GNSS.fix
 
-**`fix()`**
+```#!py3 fix()```
 
 Return the current fix or *None* if not available. A fix is a tuple with the following elements:
 
@@ -98,19 +105,22 @@ Return the current fix or *None* if not available. A fix is a tuple with the fol
 * positional dilution of precision (0.5 - 99.9)
 * UTC time as a tuple (yyyy,MM,dd,hh,mm,ss,microseconds)
 
+###### BG96_GNSS.has_fix
 
-**`has_fix()`**
+```#!py3 has_fix()```
 
 Return *True* if a fix is available.
 
+###### BG96_GNSS.utc
 
-**`utc()`**
+```#!py3 utc()```
 
 Return the current UTC time or *None* if not available. A UTC time is a tuple of (yyyy,MM,dd,hh,mm,ss,microseconds).
 
 UTC time can be wrong if no fix has ever been obtained.
 
+###### BG96_GNSS.has_utc
 
-**`has_utc()`**
+```#!py3 has_utc()```
 
 Return *True* if a UTC time is available.

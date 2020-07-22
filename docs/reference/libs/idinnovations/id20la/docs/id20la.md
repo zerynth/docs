@@ -2,8 +2,9 @@
 
 This module contains the Zerynth driver for ID-20LA RFID tag reader from ID Innovation. This is the ID-20LA, a very simple to use RFID reader module from ID Innovations. With a built in antenna, the only holdup is the 2mm pin spacing (breakout board available below). Power the module, hold up a 125kHz card, and get a serial string output containing the unique ID of the card.
 
+##### class ID20LA
 
-**`class ID20LA(serial_port,callback,read_timeout=100)`**
+```#!py3 class ID20LA(serial_port,callback,read_timeout=100)```
 
 Creates in instance of the ID20LA class.
 
@@ -23,8 +24,9 @@ bytearray read from the tag. It is suggested to put the ID-20LA in ASCII
 mode to be able to decode the 10 bytes as 10 characters, refer to datasheet
 for further informations.
 
+###### ID20LA.stop
 
-**`stop()`**
+```#!py3 stop()```
 
 This method stops the reading from the sensor.
 <!--stackedit_data:

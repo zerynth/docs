@@ -2,8 +2,9 @@
 
 The Zerynth Eseye AnyNet AWS Library allows to easily connect to [AWS IoT platform](https://aws.amazon.com/iot-platform/) thanks to Eseye AnyNet AWS AT modem.
 
+###### init
 
-**`init(serdrv,serbaud=9600)`**
+```#!py3 init(serdrv,serbaud=9600)```
 
 
 **Arguments:**
@@ -15,8 +16,9 @@ The Zerynth Eseye AnyNet AWS Library allows to easily connect to [AWS IoT platfo
 
 Initialize serial communication with the Eseye AWS AT modem.
 
+###### state
 
-**`state(string_format=True)`**
+```#!py3 state(string_format=True)```
 
 
 **Arguments:**
@@ -39,12 +41,15 @@ Retrieve modem state, returned as an integer in the range `0`, :samp:8 or a stri
 ]
 ```
 
-**`qccid()`**
+###### qccid
+
+```#!py3 qccid()```
 
 Retrieve the ICCD of AnyNet Secure SIM.
 
+###### version
 
-**`version()`**
+```#!py3 version()```
 
 Retrieve the version of the Eseye AWS AT modem firmware.
 
@@ -53,8 +58,9 @@ reset()
 
 Force a reload of parameters from the SIM card, forcing the modem to reset.
 
+###### pubopen
 
-**`pubopen(topic,sock_index)`**
+```#!py3 pubopen(topic,sock_index)```
 
 
 **Arguments:**
@@ -66,8 +72,9 @@ Force a reload of parameters from the SIM card, forcing the modem to reset.
 
 Open a publish *channel* to topic `topic` through socket index `sock_index`. Eseye AWS AT modem needs a publish *channel* to be open before starting publishing on a selected topic. A publish *channel* is open on top of an available socket represented by a socket index. Only one *channel* can be open on a single socket index, when trying to open a *channel* on an already used socket a `SocketUsageError` exception is raised.
 
+###### pubopen_index
 
-**`pubopen_index(topic)`**
+```#!py3 pubopen_index(topic)```
 
 
 **Arguments:**
@@ -79,8 +86,9 @@ Open a publish *channel* to topic `topic` through socket index `sock_index`. Ese
 
 Check if a publish *channel* for topic `topic` is already open on any of the available modem sockets, returning `None` if none is found, socket index otherwise.
 
+###### publish
 
-**`publish(topic,payload,sock_index=0,qos=1,mode=2)`**
+```#!py3 publish(topic,payload,sock_index=0,qos=1,mode=2)```
 
 
 **Arguments:**
@@ -99,8 +107,9 @@ Publish a message on a chosen topic in one of the following modes:
 2. open (`pubopen()`) a publish *channel* and publish the message without checking if a publish *channel* is already open on that topic,
 3. open (`pubopen()`) a publish *channel* and publish the message checking if a *channel* is already open on chosen topic, if so the socket index on which the *channel* is already open overwrites passed one.
 
+###### pubclose
 
-**`pubclose(sock_index)`**
+```#!py3 pubclose(sock_index)```
 
 
 **Arguments:**
@@ -111,8 +120,9 @@ Publish a message on a chosen topic in one of the following modes:
 
 Close a publish *channel* open on socket `sock_index`.
 
+###### subopen
 
-**`subopen(topic,sock_index)`**
+```#!py3 subopen(topic,sock_index)```
 
 **Arguments:**
 
@@ -126,8 +136,9 @@ Only one *channel* can be open on a single socket index, when trying to open a *
 
 Refer to `subscribe()` function to associate a callback function to chosen subscription.
 
+###### subopen_index
 
-**`subopen_index(topic)`**
+```#!py3 subopen_index(topic)```
 
 
 **Arguments:**
@@ -136,8 +147,9 @@ Refer to `subscribe()` function to associate a callback function to chosen subsc
 
 Check if a subscription ```channel``` for topic `topic` is already open on any of the available modem sockets, returning `None` if none is found, socket index otherwise.
 
+###### subclose
 
-**`subclose(sock_index)`**
+```#!py3 subclose(sock_index)```
 
 
 **Arguments:**
@@ -146,8 +158,9 @@ Check if a subscription ```channel``` for topic `topic` is already open on any o
 
 Close a subscription open on socket `sock_index`.
 
+###### subscribe
 
-**`subscribe(topic,callback,sock_index=0,mode=1)`**
+```#!py3 subscribe(topic,callback,sock_index=0,mode=1)```
 
 
 **Arguments:**

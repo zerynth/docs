@@ -2,7 +2,9 @@
 
 This module provides easy access to the Fortebit Cloud features.
 
-**`getAccessToken(imei,uid)`**
+###### getAccessToken
+
+```#!py3 getAccessToken(imei,uid)```
 
 Generates the board’s own access token for Fortebit IoT cloud services.
 
@@ -13,8 +15,9 @@ Generates the board’s own access token for Fortebit IoT cloud services.
 *	**uid** – The MCU unique identifier (as a 3 integers sequence)
 
 
+###### isRegistered
 
-**`isRegistered(device,email)`**
+```#!py3 isRegistered(device,email)```
 
 Check if the specified IoT device is registered to the Polaris Cloud services.
 
@@ -24,8 +27,9 @@ Check if the specified IoT device is registered to the Polaris Cloud services.
 *	**email** – the device owner’s email address
 
 
+###### register
 
-**`register(device,email)`**
+```#!py3 register(device,email)```
 
 Perform device registration to Polaris Cloud services.
 

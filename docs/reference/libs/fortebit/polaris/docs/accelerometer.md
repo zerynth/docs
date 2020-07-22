@@ -2,8 +2,9 @@
 
 This module provides easy access to Polaris on-board accelerometer.
 
+###### Accelerometer
 
-**`Accelerometer()`**
+```#!py3 Accelerometer()```
 
 Creates an instance of the on-board accelerometer device class (`stm.lis2hh12.LIS2HH12`).
 

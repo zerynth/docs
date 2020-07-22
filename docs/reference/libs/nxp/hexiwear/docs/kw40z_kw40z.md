@@ -13,8 +13,9 @@ This application exposes all features through a specific serial communication pr
 * The binary file can be found [here](https://github.com/MikroElektronika/HEXIWEAR/tree/master/SW/binaries).
 * A step-by-step tutorial for loading the binary file inside the kw40z chip can be found [here](https://mcuoneclipse.com/2016/12/07/flashing-and-restoring-the-hexiwear-firmware/).
 
+###### KW40Z_HEXI_APP
 
-**`KW40Z_HEXI_APP(ser)`**
+```#!py3 KW40Z_HEXI_APP(ser)```
 
 Creates an intance of a new KW40Z_HEXI_APP.
 
@@ -34,49 +35,59 @@ bt_driver.start()
 ...
 ```
 
+###### start
 
-**`start()`**
+```#!py3 start()```
 
 Starts the serial communication with the KW40Z and check the KW40Z status (check if Bluetooth is active, if there are connections with other devices, and which set of capacitive touch buttons are active)
 
+###### attach_button_up
 
-**`attach_button_up(callback)`**
+```#!py3 attach_button_up(callback)```
 
 Sets the callback function to be executed when Capacitive Button Up on Hexiwear device is pressed.
+###### attach_button_down
 
-**`attach_button_down(callback)`**
+```#!py3 attach_button_down(callback)```
 
 Sets the callback function to be executed when Capacitive Button Down on Hexiwear device is pressed.
 
+###### attach_button_left
 
-**`attach_button_left(callback)`**
+```#!py3 attach_button_left(callback)```
 
 Sets the callback function to be executed when Capacitive Button Left on Hexiwear device is pressed.
 
+###### attach_button_right
 
-**`attach_button_right(callback)`**
+```#!py3 attach_button_right(callback)```
 
 Sets the callback function to be executed when Capacitive Button Right on Hexiwear device is pressed.
 
+###### attach_alert
 
-**`attach_alert(callback)`**
+```#!py3 attach_alert(callback)```
 
 Sets the callback function to be executed when KW40Z receives an input alert.
 
+###### attach_notification
 
-**`attach_notification(callback)`**
+```#!py3 attach_notification(callback)```
 
 Sets the callback function to be executed when KW40Z receives a notification.
 
+###### attach_passkey
 
-**`attach_passkey(callback)`**
+```#!py3 attach_passkey(callback)```
 
 Sets the callback function to be executed when KW40Z receives a bluetooth pairing request.
 
 !!! note
 	When the KW40Z receives this kind of request it generates a pairing code stored in the passkey class attribute.
 
-**`upd_sensors(battery=None,accel=None,gyro=None,magn=None,aLight=None,temp=None,humid=None,press=None)`**
+###### upd_sensors
+
+```#!py3 upd_sensors(battery=None,accel=None,gyro=None,magn=None,aLight=None,temp=None,humid=None,press=None)```
 
 Updates Hexiwear sensor data in the KW40Z chip to be readable through any smartphone/tablet/pc bluetooth terminal.
 
@@ -94,22 +105,27 @@ Updates Hexiwear sensor data in the KW40Z chip to be readable through any smartp
 -	**press** – update the pressure value (uint_16) if passed as argument; default None.
 
 
+###### send_alert
 
-**`send_alert()`**
+```#!py3 send_alert()```
 
 Sends alerts from Hexiwear device to the connected smartphone/tablet/pc via Bluetooth.
 
-**`toggle_adv_mode()`**
+###### toggle_adv_mode
+
+```#!py3 toggle_adv_mode()```
 
 Changes the status of advertising process. Sets on/off the Bluetooth status.
 
+###### toggle_tsi_group
 
-**`toggle_tsi_group()`**
+```#!py3 toggle_tsi_group()```
 
 Changes active group (pair) of vertical touch sense electrodes. Sets right/left pair capacitive touch buttons.
 
+###### info
 
-**`info()`**
+```#!py3 info()```
 
 Retrieves the device setting informations regarding the Bluetooth status, which capacitive touch buttons are active, and the connection with other devices status.
 

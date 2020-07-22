@@ -2,8 +2,9 @@
 
 This module provides easy access to Polaris on-board serial Flash memory.
 
+###### QSpiFlash
 
-**`QSpiFlash()`**
+```#!py3 QSpiFlash()```
 
 Creates an instance of the Quad-SPI Flash device class.
 

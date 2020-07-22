@@ -83,8 +83,9 @@ the following criteria should be taken into consideration:
 
 ## DCZ class
 
+##### class DCZ
 
-**`class DCZ(mapping, serializers={})`**
+```#!py3 class DCZ(mapping, serializers={})```
 
 Create an instance of the DCZ class providing the following arguments:
 
@@ -109,15 +110,17 @@ After creation, the DCZ instance contain a `latest_version` field containing the
 !!! note
 	All methods expecting an optional version number will operate the `latest_version` if no version is given, otherwise they will operate on the DCZ slot correspondent to the given version modulo the replication number.
 
+###### DCZ.finalize
 
-**`finalize()`**
+```#!py3 finalize()```
 
 This method scans all the DCZs and all the resources. For each DCZ it calculates the checksum and checks it against the one in the DCZ. If they do not match the DCZ is marked as invalid. For each resource of valid DCZs that is marked as requiring encryption, the resource is read (in binary format), encrypted, stored back to its address and marked as encrypted.
 
 This method is suggested to be run at end of line testing for each device that requires encrypted resources.
 
+###### DCZ.load_resource
 
-**`load_resource(resource, version=None, check=False, deserialize=True, decrypt=True)`**
+```#!py3 load_resource(resource, version=None, check=False, deserialize=True, decrypt=True)```
 
 This is the method of choice to retrieve resources. It scans the DCZ identified by `version` and all its entries to find the one with the same name
 specified by the parameter `resource`. If the `check` parameter is `True`, the `DCZChecksumError` is raised if the entry checksum in the DCZ is not the same as the calculated checksum of the resource data.
@@ -139,8 +142,9 @@ If no resource with name `resource` can be found, `DCZNoResourceError` is raised
 
 Return a tuple with the resource address and the DCZ address
 
+###### DCZ.get_header
 
-**`get_header(version=None)`**
+```#!py3 get_header(version=None)```
 
 Return a list containing the DCZ header:
 
@@ -151,8 +155,9 @@ Return a list containing the DCZ header:
 * checksum
 * replication number
 
+###### DCZ.get_entry
 
-**`get_entry(i, version=None)`**
+```#!py3 get_entry(i, version=None)```
 
 Return the **ith** entry in the DCZ indentified by `version`
 
@@ -169,21 +174,25 @@ An entry is a list with:
 * the index of the entry in the DCZ
 * the index of the DCZ
 
+###### DCZ.load_entry
 
-**`load_entry(entry)`**
+```#!py3 load_entry(entry)```
 
 Return the raw binary data of the resource in `entry` as present on the flash (without decryption). An `entry` retrieved with [:method:`get_entry`](https://docs.zerynth.com/latest/official/lib.zerynth.dcz/docs/official_lib.zerynth.dcz_dcz.html#id1) must be given in order to identify the resource.
 
 This method is exposed for custom usage of DCZ, but [:method:`load_resource`](https://docs.zerynth.com/latest/official/lib.zerynth.dcz/docs/official_lib.zerynth.dcz_dcz.html#id3) is recommended.
 
-**`save_entry(entry, bin, new_version=None)`**
+###### DCZ.save_entry
+
+```#!py3 save_entry(entry, bin, new_version=None)```
 
 Save data in `bin` as is (no encryption step) to the resource pointed by `entry` and update the corresponding DCZ. If `new_version` is given the corresponding DCZ will be updated and its version number set to `new_version`. If not given, the corresponding DCZ will be the one identified by `entry`.
 
 Return the saved resource address and the address of the modified DCZ.
 
+###### DCZ.search_entry
 
-**`search_entry(resource, version=None)`**
+```#!py3 search_entry(resource, version=None)```
 
 Search for a resource named `resource` in all DCZ and return a tuple with:
 
@@ -196,33 +205,39 @@ Search for a resource named `resource` in all DCZ and return a tuple with:
 
 If no resource exists, `DCZNoResourceError` is raised.
 
+###### DCZ.check_dcz
 
-**`check_dcz(version=None)`**
+```#!py3 check_dcz(version=None)```
 
 Return True if the DCZ identified by `version` is valid. It reads the DCZ from memory, calculates the checksum and check it against the stored one.
 
+###### DCZ.is_valid_dcz
 
-**`is_valid_dcz(version=None)`**
+```#!py3 is_valid_dcz(version=None)```
 
 Return True if the DCZ identified by `version` is valid. It looks up validity from the checks done after init.
 
+###### DCZ.dump
 
-**`dump(version=None, entries=False)`**
+```#!py3 dump(version=None, entries=False)```
 
 Print information about DCZs. If `version` is not given, all DCZs are printed, otherwise only the specific `version`. If `entries` is given, additional information about each entry is given.
 
+###### DCZ.versions
 
-**`versions()`**
+```#!py3 versions()```
 
 Return the list of DCZ versions.
 
+###### DCZ.resources
 
-**`resources()`**
+```#!py3 resources()```
 
 Return the list of resource names.
 
+###### DCZ.next_version
 
-**`next_version()`**
+```#!py3 next_version()```
 
 Return the next version greater than all current versions.
 <!--stackedit_data:

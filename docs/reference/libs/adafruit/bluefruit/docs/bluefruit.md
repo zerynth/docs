@@ -4,7 +4,9 @@ This module implements the driver for the Adafruit Bluefruit LE SPI products fam
 
 Data between the mcu and the Bluefruit hardware is exchanged by SPI or serial communication. However, this module has support for SPI only.
 
-**`init(spidrv,nss,irqpin)`**
+###### init
+
+```#!py3 init(spidrv,nss,irqpin)```
 
 Manually initializes the Bluefruit peripheral by activating the following communication setup:
 
@@ -15,20 +17,28 @@ Manually initializes the Bluefruit peripheral by activating the following commun
 
 The SPI driver is started and the Bluefruit initialization sequence is sent.
 
-**`hard_reset()`**
+###### hard_reset
+
+```#!py3 hard_reset()```
 
 Performs a software reset. Returns True on success.
 
-**`reset()`**
+###### reset
+
+```#!py3 reset()```
 
 Performs a software reset. Returns True on success.
 
-**`gap_name(name=None)`**
+###### gap_name
+
+```#!py3 gap_name(name=None)```
 
 If *name* is None, returns the current Bluefruit device name. Otherwise changes the current name to *name*.
 Returns True on success.
 
-**`gap_adv(data)`**
+###### gap_adv
+
+```#!py3 gap_adv(data)```
 
 
 
@@ -55,11 +65,15 @@ Refer to [this](https://www.bluetooth.org/en-us/specification/assigned-numbers/g
 
 Returns True on success.
 
-**`gap_is_connected()`**
+###### gap_is_connected
+
+```#!py3 gap_is_connected()```
 
 Returns 1 if Bluefruit hardware is connected to a client, 0 if not connected. Returns None on failure.
 
-**`gatt(cfg=None)`**
+###### gatt
+
+```#!py3 gatt(cfg=None)```
 
 If *cfg* is None returns the current [GATT](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt) configuration.
 
@@ -88,38 +102,50 @@ Every list of 4 elements identifies a characteristic of the previously defined s
 
 Returns the configuration activated on the device or None on failure. After a configuration is successfully set, the return value contains handles modified to the actual ones choosen by the device.
 
-**`gatt_set(handle,value)`**
+###### gatt_set
+
+```#!py3 gatt_set(handle,value)```
 
 Sets the *value* of a characteristic given its *handle* (as returned after a successful configuration). Value can be an integer, a string or an iterable of bytes.
 Returns False on failure.
 
-**`gatt_get(handle)`**
+###### gatt_get
+
+```#!py3 gatt_get(handle)```
 
 Returns the value of the characteristic identified by *handle* (as returned after a successful configuration).
 
 Returns None on failure.
 
-**`addr()`**
+###### addr
+
+```#!py3 addr()```
 
 Returns the 48bit mac address of the device as an hex string. Returns None on failure.
 
-**`peer_addr()`**
+###### peer_addr
+
+```#!py3 peer_addr()```
 
 Returns the 48bit mac address of the client connected device as an hex string. Returns None on failure.
 
-**`addr()`**
+###### addr
+
+```#!py3 addr()```
 
 Returns the RSSI level id dBm. Returns None on failure.
 
-**`tx_power(dbm=None)`**
+###### tx_power
+
+```#!py3 tx_power(dbm=None)```
 
 If *`dbm`* is None, returns the current transmission power level. Otherwise sets the power level to *dbm* (in the range -40 to 4).
 
 Returns None on failure.
 
-## BLEStream class
+##### class BLEStream
 
-**`class BLEStream(fifosize=1024)`**
+```#!py3 class BLEStream(fifosize=1024)```
 
 This class implements a serial stream on the Bluefruit peripheral. The internal implementation uses
 a fifo buffer of *fifosize* bytes.

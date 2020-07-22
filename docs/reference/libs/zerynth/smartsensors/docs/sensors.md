@@ -39,18 +39,21 @@ And the following attributes to control the process of evaluation of the paramet
 
 ## The Sensor class
 
+##### class Sensor
 
-**`class Sensor()`**
+```#!py3 class Sensor()```
 
 This is the base class for generic sensors connected to pins.
 
+###### Sensor._resetSamplingParams
 
-**`_resetSamplingParams()`**
+```#!py3 _resetSamplingParams()```
 
 Resets sampling parameters.
 
+###### Sensor.setObservationWindow
 
-**`setObservationWindow(n)`**
+```#!py3 setObservationWindow(n)```
 
 Sets the length of the window (n) used to evaluate a set of useful parameters. Needed to evaluate those parameters during manual acquisition (calling getRaw/getNormalized functions), in sampling mode (entered by startSampling call) the length is given as a parameter of startSampling method.
 
@@ -61,8 +64,9 @@ Sets the length of the window (n) used to evaluate a set of useful parameters. N
 * sampling mode: setObservationWindow should not have been called
 * get mode: self._samplingTime has been manually set because samplingTime dependent parameters (like trend and derivatived) are necessary in a non-sampling mode (should be very rare)
 
+###### Sensor.setSamplingTime
 
-**`setSamplingTime(time)`**
+```#!py3 setSamplingTime(time)```
 
 Manually sets _samplingTime private attribute.
 
@@ -71,33 +75,38 @@ Manually sets _samplingTime private attribute.
 
 This attribute is automatically set when startSampling method is called.
 
+###### Sensor.currentSample
 
-**`currentSample()`**
+```#!py3 currentSample()```
 
 Returns last read sample: stored as the last element of the buffer list.
 
 The buffer is a list of _observationWindowN elements if the window evaluation process is not skipped, as a private attribute otherwise.
 
+###### Sensor.previousSample
 
-**`previousSample()`**
+```#!py3 previousSample()```
 
 Returns last but one read sample: stored in the buffer list (see currentSample).
 
 !!! note
 	Not available if evaluation process is skipped.
 
+###### Sensor.getRaw
 
-**`getRaw()`**
+```#!py3 getRaw()```
 
 Main acquisition method for raw data.
 
+###### Sensor.getNormalized
 
-**`getNormalized()`**
+```#!py3 getNormalized()```
 
 Main acquisition method for normalized data.
 
+###### Sensor.doEverySample
 
-**`doEverySample(to_do)`**
+```#!py3 doEverySample(to_do)```
 
 Appends a function to the list of those to be executed when _getValue is called.
 
@@ -123,13 +132,15 @@ Returns self to allow a compact code:
 mySensor.doEverySample(out).addCheck(...).startSampling(...)
 ```
 
+###### Sensor.resetSampleActions
 
-**`resetSampleActions()`**
+```#!py3 resetSampleActions()```
 
 Resets _everySampleActions list.
 
+###### Sensor.addCheck
 
-**`addCheck(condition, to_do)`**
+```#!py3 addCheck(condition, to_do)```
 
 Appends a condition to those to be checked every time _getValue is called and a function to the list of those to be executed when their conditions are verified.
 
@@ -156,13 +167,15 @@ def succeed(obj):
 
 Returns self to allow a compact code (see doEverySample).
 
+###### Sensor.resetCheck
 
-**`resetCheck()`**
+```#!py3 resetCheck()```
 
 Resets _checkFunctions and _checkConditions lists.
 
+###### Sensor.setNormFunc
 
-**`setNormFunc(fn)`**
+```#!py3 setNormFunc(fn)```
 
 Sets a normalization function. A normalization function takes the last raw acquired value and the current sensor object as parameters.
 
@@ -177,16 +190,18 @@ It is recommended to use only *static* parameters stored in current object like 
 
 Returns self to allow a compact code (see doEverySample).
 
+###### Sensor.startSampling
 
-**`startSampling(time, observation_window, get_type, time_unit)`**
+```#!py3 startSampling(time, observation_window, get_type, time_unit)```
 
 Starts reading samples every _samplingTime. Length of _observationWindowN to evaluate window parameters, type of acquisition and time_unit characterize the acquisition itself.
 If no observation_window is passed the evaluation of window parameters is skipped.
 
 Returns self to allow a compact code (see doEverySample).
 
+###### Sensor.stopSampling
 
-**`stopSampling()`**
+```#!py3 stopSampling()```
 
 Depending on mode:
 
@@ -196,8 +211,9 @@ Depending on mode:
 
 Returns self to allow a compact code (see doEverySample).
 
+###### Sensor.wait
 
-**`wait(time)`**
+```#!py3 wait(time)```
 
 Sleeps for *time* milliseconds and returns self to allow a compact code:
 

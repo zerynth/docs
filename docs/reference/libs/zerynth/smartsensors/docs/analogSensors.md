@@ -6,8 +6,9 @@ This module contains class definitions for analog sensors. AnalogSensor class is
 
 ## AnalogSensor class
 
+##### class AnalogSensor
 
-**`class AnalogSensor(pin)`**
+```#!py3 class AnalogSensor(pin)```
 
 This is the class for sensing analog quantities.
 

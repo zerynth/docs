@@ -6,8 +6,9 @@ It allows to make your device act as an Ubidots Device which can be created thro
 
 ## The Device class
 
+##### class Device
 
-**`class Device(device_label, user_type, api_token)`**
+```#!py3 class Device(device_label, user_type, api_token)```
 
 Create a Device instance representing an Ubidots Device.
 
@@ -23,8 +24,9 @@ my_device.mqtt.connect()
 my_device.mqtt.loop()
 ```
 
+###### Device.publish
 
-**`publish(data, variable=None)`**
+```#!py3 publish(data, variable=None)```
 
 Publish `data` dictionary to device or device variable `variable`.
 Data dictionary should follow [valid Ubidots data format](https://ubidots.com/docs/api/mqtt.html#publish).

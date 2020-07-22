@@ -6,7 +6,8 @@ This module contains class definitions for pool of sensors. SensorPool class tak
 ## SensorPool class
 
 
+##### class SensorPool
 
-**`class SensorPool(sensors)`**
+```#!py3 class SensorPool(sensors)```
 
 This is the class for handling pool of sensors passed as a list.

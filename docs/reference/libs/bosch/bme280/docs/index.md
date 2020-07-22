@@ -16,6 +16,7 @@ More information at [Bosch dedicated page](https://www.bosch-sensortec.com/bst/p
 Here below, the Zerynth driver for the Bosch BME280.
 
 Contents:
+
 * [BME280 Module](https://docs.zerynth.com/latest/official/lib.bosch.bme280/docs/official_lib.bosch.bme280_bme280.html)
    * [BME280 class](https://docs.zerynth.com/latest/official/lib.bosch.bme280/docs/official_lib.bosch.bme280_bme280.html#bme280-class)
 * [Examples](https://docs.zerynth.com/latest/official/lib.bosch.bme280/examples/examples.html)

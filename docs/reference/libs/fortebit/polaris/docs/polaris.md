@@ -2,7 +2,9 @@
 
 This module provides easy access to the Polaris board features and meaningful names for MCU pins and peripherals.
 
-**`class main`**
+##### class main
+
+```#!py3 class main()```
 
 Namespace for the **Main** connector signals and related peripherals:
 
@@ -23,8 +25,10 @@ Namespace for the **Main** connector signals and related peripherals:
 * `ADC_IN4` - ADC channel (using `PIN_AIN4`)
 * `PWM_IOEXP_IN1` - PWM control input 1 for I/O Expander
 * `PWM_IOEXP_IN2` - PWM control input 2 for I/O Expander
+
+##### class mikrobus
  
-**`class mikrobus`**
+```#!py3 class mikrobus()```
 
 Namespace for the **mikroBUS** expansion interface signals and related peripherals:
 
@@ -41,8 +45,9 @@ Namespace for the **mikroBUS** expansion interface signals and related periphera
 * `PWM` - PWM channel (using `PIN_PWM`)
 * `ADC` - ADC channel (using `PIN_AN`)
 
+##### class extbus
 
-**`class extbus`**
+```#!py3 class extbus()```
 
 Namespace for the **Ext-A** expansion interface signals and related peripherals:
 
@@ -73,8 +78,9 @@ Namespace for on-board devices signals and peripherals:
 * `SPI` - on-board SPI driver (for accelerometer and I/O Expander)
 * `ADC_BATT` - ADC channel (using `PIN_BATT_ADC`)
 
+##### class gnss
 
-**`class gnss`**
+```#!py3 class gnss()```
 
 Namespace for GNSS module signals and related peripherals:
 
@@ -84,8 +90,9 @@ Namespace for GNSS module signals and related peripherals:
 * `PIN_ANTON` - control pin (used only in the NB-IoT variant with BG96)
 * `SERIAL` - serial driver (using `PIN_RX`,\`\`PIN_TX\`\`)
 
+##### class gsm
 
-**`class gsm`**
+```#!py3 class gsm()```
 
 Namespace for Modem signals and related peripherals:
 
@@ -95,16 +102,22 @@ Namespace for Modem signals and related peripherals:
 * `PIN_STATUS`, `PIN_RING` - modem status pins
 * `SERIAL` - serial driver (using `PIN_RX`,\`\`PIN_TX\`\`)
 
-**`init()`**
+###### init
+
+```#!py3 init()```
 
 Performs required initialization of Polaris pins and common functionalities.
 It should be called at the start of your application.
 
-**`sBatteryBackup()`**
+###### sBatteryBackup
+
+```#!py3 sBatteryBackup()```
 
 Returns a boolean value to indicate whether the board is powered from the backup battery source.
 
-**`setBatteryCharger(enable)`**
+###### setBatteryCharger
+
+```#!py3 setBatteryCharger(enable)```
 
 
 
@@ -114,23 +127,27 @@ Enables or disables the backup battery charger (5V required).
 Note: Do not enable the charger when the main power supply is not present.
 
 
+###### getChargerStatus
 
-**`getChargerStatus()`**
+```#!py3 getChargerStatus()```
 
 Returns the battery charger status (not charging, charging or fully charged).
 
 
 **Returns:** One of these values: `CHARGE_NONE` = 0, `CHARGE_BUSY` = 1, `CHARGE_COMPLETE` = 2.
 
-**`getIgnitionStatus()`**
+###### getIgnitionStatus
+
+```#!py3 getIgnitionStatus()```
 
 Reads the ignition status from digital input pin IGN/DIO5 (active high).
 
 **Returns:** An integer value to indicate whether the ignition switch is on/off: `IGNITION_ON` = 1 or `IGNITION_OFF` = 0.
 
 
+###### getEmergencyStatus
 
-**`getEmergencyStatus()`**
+```#!py3 getEmergencyStatus()```
 
 Reads the emergency button status from digital input pin SOS/DIO6 (active low).
 
@@ -138,23 +155,27 @@ Reads the emergency button status from digital input pin SOS/DIO6 (active low).
 **Returns:** An integer value to indicate whether the emergency button is switched on/off: `SOS_ON` = 1 or `SOS_OFF` = 0.
 
 
+###### shutdown
 
-**`shutdown()`**
+```#!py3 shutdown()```
 
 Disables the main regulator or backup battery source, effectively power-cycling the board.
 
+###### readMainVoltage
 
-**`readMainVoltage()`**
+```#!py3 readMainVoltage()```
 
 Returns the analog measure of the main supply voltage.
 
+###### readMainVoltage
 
-**`readMainVoltage()`**
+```#!py3 readMainVoltage()```
 
 Returns the analog measure of the backup battery voltage.
 
+###### readAnalogInputVoltage
 
-**`readAnalogInputVoltage(pin_num,range=HIGH)`**
+```#!py3 readAnalogInputVoltage(pin_num,range=HIGH)```
 
 Returns the voltage measure of an analog input pin on the **Main** connector.
 
@@ -165,21 +186,27 @@ Returns the voltage measure of an analog input pin on the **Main** connector.
 *	**range** – Full-scale range: *HIGH* (0-36V) or *LOW* (0-5V)
 
 
+###### ledRedOff
 
-**`ledRedOff()`**
+```#!py3 ledRedOff()```
 
 Switch the red LED off.
 
+###### ledRedOn
 
-**`ledRedOn()`**
+```#!py3 ledRedOn()```
 
 Switch the red LED on.
 
-**`ledGreenOff()`**
+###### ledGreenOff
+
+```#!py3 ledGreenOff()```
 
 Switch the green LED off.
 
-**`ledGreenOn()`**
+###### ledGreenOn
+
+```#!py3 ledGreenOn()```
 
 Switch the green LED on.
 <!--stackedit_data:

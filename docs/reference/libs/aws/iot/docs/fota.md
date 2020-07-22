@@ -20,7 +20,7 @@ The FOTA flow is quite simple:
 
 The entire flow can be managed as in the following example:
 
-```py
+```python
 from aws.iot import fota as awsfota
 from aws.iot import jobs
 
@@ -47,28 +47,33 @@ while True:
     awsfota.handle_fota_jobs(myjobs)
 ```
 
+###### update
 
-**`update(document)`**
+```#!py3 update(document)```
 
 Given a correct job `document`, performs the FOTA update by downloading the correct firmware from the signed S3 bucket url and checking if the download was correct against the firmware CRC. Return True if the process finishes correctly.
 
+###### test
 
-**`test(document)`**
+```#!py3 test(document)```
 
 Must be called after a successful update to test the new firmware providing the job `document`. Once called, a device reset is necessary.
 
+###### confirm
 
-**`confirm()`**
+```#!py3 confirm()```
 
 Makes the new firmware final. Must be called by the new firmware upon reset after the old firmware called test. Failing to confirm the new firmware will reboot the old firmware on reset.
 
+###### reset
 
-**`reset()`**
+```#!py3 reset()```
 
 Reset the device.
 
+###### handle_fota_jobs
 
-**`handle_fota_jobs(jobs, force=False, disconnect_mqtt=True, auto_reset=True, job_cbk=None)`**
+```#!py3 handle_fota_jobs(jobs, force=False, disconnect_mqtt=True, auto_reset=True, job_cbk=None)```
 
 The entire FOTA flow can be implemented by adding this function to an AWS ready firmware.
 
