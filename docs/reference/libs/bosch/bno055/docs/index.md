@@ -19,10 +19,10 @@ Here below, the Zerynth driver for the BOSCH BNO055.
 
 Contents:
 
-* [BNO055 Module](https://docs.zerynth.com/latest/official/lib.bosch.bno055/docs/official_lib.bosch.bno055_bno055.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html)
-	* [get acceleration](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html#get-acceleration)
-	* [inclination alarm](https://docs.zerynth.com/latest/official/lib.bosch.bno055/examples/examples.html#inclination-alarm)
+* [BNO055 Module](/latest/reference/libs/bosch/bno055/docs/bno055/)
+* [Examples](/latest/reference/libs/bosch/bno055/docs/examples/)
+	* [get acceleration](/latest/reference/libs/bosch/bno055/docs/examples/#acceleration)
+	* [inclination alarm](/latest/reference/libs/bosch/bno055/docs/examples/#inclination-alarm)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwNjI0NTE3ODFdfQ==
 -->
