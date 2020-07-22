@@ -5,49 +5,58 @@ A fifo queue behaves in such a way that the first element inserted in the queue 
 
 ## Fifo class
 
+##### class Fifo
 
-**`Fifo(size=16, only_bytes=False)`**
+```#!py3 class Fifo(size=16, only_bytes=False)```
 
 Create a Fifo instance with ```size``` “places” for items.
 If ```only_bytes``` is True, the Fifo will use a bytearray to store bytes; if False it will use a list.
 
+###### Fifo.is_full
 
-**`is_full()`**
+```#!py3 is_full()```
 
 Return True if the fifo is full
 
+###### Fifo.is_empty
 
-**`is_empty()`**
+```#!py3 is_empty()```
 
 Return True if the fifo is empty
 
+###### Fifo.put
 
-**`put(obj)`**
+```#!py3 put(obj)```
 
 Insert ```obj``` into the fifo queue. Raise ```FifoFullError``` if the fifo is full.
 
+###### Fifo.get
 
-**`get()`**
+```#!py3 get()```
 
 Get an object out of the fifo queue. Raise ```FifoEmptyError``` if the fifo is empty.
 
+###### Fifo.peek
 
-**`peek()`**
+```#!py3 peek()```
 
 Return the object at the head of the fifo queu without removing it. Raise ```FifoEmptyError``` if the fifo is empty.
 
+###### Fifo.put_all
 
-**`put_all(objs)`**
+```#!py3 put_all(objs)```
 
 Put every item of ```objs``` into the fifo queue.
 
+###### Fifo.elements
 
-**`elements()`**
+```#!py3 elements()```
 
 Return the number of items in the queue.
 
+###### Fifo.clear
 
-**`clear()`**
+```#!py3 clear()```
 
 Clear the fifo by removing all elements
 <!--stackedit_data:

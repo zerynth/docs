@@ -4,15 +4,17 @@ This module loads the Pulse Width Modulation (pwm) driver of the embedded device
 
 When imported, automatically sets the system pwm driver to the default one.
 
+###### init
 
-**`init(drvname)`**
+```#!py3 init(drvname)```
 
 Loads the pwm driver identified by ```drvname```
 
 Returns the previous driver without disabling it.
 
+###### write
 
-**`write(pin, period, pulse, time_unit=MILLIS, npulses=0)`**
+```#!py3 write(pin, period, pulse, time_unit=MILLIS, npulses=0)```
 
 Activate PWM (Pulse Width Modulation) on pin ```pin``` (must be one of the PWMx pins, expressed as Dx.PWM). The state of ```pin``` is periodically switched between `LOW` and `HIGH` according to parameters:
 

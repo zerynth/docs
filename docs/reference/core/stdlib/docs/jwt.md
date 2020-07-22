@@ -2,8 +2,10 @@
 
 This module allows handling [JSON Web Tokens](https://tools.ietf.org/html/rfc7519) from Zerynth programs.
 
+###### encode
 
-### encode(payload, key)
+```#!py3 encode(payload, key)```
+
 Encode a JWT for target `payload` signed with `key`.
 
 Currently only ES256 encoding algorithm using prime256v1 curve is supported.

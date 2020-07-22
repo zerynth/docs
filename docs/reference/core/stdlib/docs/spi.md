@@ -82,8 +82,9 @@ to the master while it is receiving data from the master. Therefore, spi operati
 
 ## The Spi class
 
+##### class Spi
 
-**`Spi(nss, drvname=SPI0, clock=12000000, bits=SPI_8_BITS, mode=SPI_MODE_LOW_FIRST)`**
+```#!py3 class Spi(nss, drvname=SPI0, clock=12000000, bits=SPI_8_BITS, mode=SPI_MODE_LOW_FIRST)```
 
 This is the base class implementing spi master functionalities. Spi slave is not yet supported.
 
@@ -130,50 +131,59 @@ s0.done()
 s1.done()
 ```
 
+###### SPI.write
 
-**`write(data)`**
+```#!py3 write(data)```
 
 ```data``` is written to MOSI, bits on MISO are ignored.
 
+###### SPI.read
 
-**`read(n)`**
+```#!py3 read(n)```
 
 Returns a sequence of ```n``` bytes read from MISO. MOSI is ignored.
 
+###### SPI.skip
 
-**`skip(n)`**
+```#!py3 skip(n)```
 
 Ignores the next ```n``` bytes transmitted over MISO.
 
+###### SPI.exchange
 
-**`exchange(data)`**
+```#!py3 exchange(data)```
 
 ```data``` is written to MOSI, and a sequence of bytes read from MISO is returned.
 
+###### SPI.select
 
-**`select()`**
+```#!py3 select()```
 
 The slave is selected, all the other slaves are unselected.
 A slave must be selected before starting a transmission.
 If necessary the spi bus is configured and started.
 
+###### SPI.unselect
 
-**`unselect()`**
+```#!py3 unselect()```
 
 All slaves are unselected.
 
+###### SPI.lock
 
-**`lock()`**
+```#!py3 lock()```
 
 Locks the driver. It is useful when the same spi bus is used by multiple Spi instances and/or multiple threads to avoid interferences.
 
+###### SPI.unlock
 
-**`unlock()`**
+```#!py3 unlock()```
 
 Unlocks the driver. It is useful when the same spi bus is used by multiple Spi instances and/or multiple threads to avoid interferences.
 
+###### SPI.done
 
-**`done()`**
+```#!py3 done()```
 
 Stops the spi driver
 <!--stackedit_data:

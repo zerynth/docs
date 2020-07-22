@@ -22,34 +22,44 @@ argument.  This refers to objects of class bytearray.
 
 The module defines the following exception and functions:
 
+###### pack
 
-**`pack(fmt, v1, v2, ...)`**
+```#!py3 pack(fmt, v1, v2, ...)```
+
 Return a bytes object containing the values ```v1```, ```v2```, … packed according
 to the format string ```fmt```.  The arguments must match the values required by
 the format exactly.
 
+###### pack_into
 
-**`pack_into(fmt, buffer, offset, v1, v2, ...)`**
+```#!py3 pack_into(fmt, buffer, offset, v1, v2, ...)```
+
 Pack the values ```v1```, ```v2```, … according to the format string ```fmt``` and
 write the packed bytes into the writable buffer ```buffer``` starting at
 position ```offset```.  Note that ```offset``` is a required argument.
 
+###### unpack
 
-**`unpack(fmt, buffer)`**
+```#!py3 unpack(fmt, buffer)```
+
 Unpack from the buffer ```buffer``` (presumably packed by `pack(fmt, ...)`)
 according to the format string ```fmt```.  The result is a tuple even if it
 contains exactly one item.  The buffer’s size in bytes must match the
 size required by the format, as reflected by `calcsize()`.
 
+###### unpack_from
 
-**`unpack_from(fmt, buffer, offset=0)`**
+```#!py3 unpack_from(fmt, buffer, offset=0)```
+
 Unpack from ```buffer``` starting at position ```offset```, according to the format
 string ```fmt```.  The result is a tuple even if it contains exactly one
 item.  The buffer’s size in bytes, minus ```offset```, must be at least
 the size required by the format, as reflected by `calcsize()`.
 
+###### calcsize
 
-**`calcsize(fmt)`**
+```#!py3 calcsize(fmt)```
+
 Return the size of the struct (and hence of the bytes object produced by
 `pack(fmt, ...)`) corresponding to the format string ```fmt```.
 

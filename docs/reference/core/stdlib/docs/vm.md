@@ -2,8 +2,9 @@
 
 This module enables inspecting the running VM and controlling some runtime options.
 
+###### info
 
-**`info()`**
+```#!py3 info()```
 
 Return info about the running Virtual Machine. The result is a tuple with 9 elements:
 
@@ -34,8 +35,9 @@ Return info about the running Virtual Machine. The result is a tuple with 9 elem
 
 * The bytecode size
 
+###### set_option
 
-**`set_option(opt, value)`**
+```#!py3 set_option(opt, value)```
 
 Set the VM Option `opt` to `value`. The following constants are avaiable for `opt`:
 
@@ -53,13 +55,15 @@ Set the VM Option `opt` to `value`. The following constants are avaiable for `op
 
 The functionalities for Hard Fault are not consistent across different microcontrollers due to different behaviours/capabilities of the underlying SDK.
 
+###### get_option
 
-**`get_option(opt)`**
+```#!py3 get_option(opt)```
 
 Retrieve the value of `opt`. Refer to `set_option()` for a description of `opt`.
 
+###### encrypt
 
-**`encrypt(bin, nonce=0)`**
+```#!py3 encrypt(bin, nonce=0)```
 
 Return an encrypted copy of `bin`. The encrypted data is secured with a key which is unique per device and can only be
 decrypted by the same device that performed the encryption. To increase the key space, an integer `nonce` can be given
@@ -67,8 +71,9 @@ that must be passed also for decryption.
 
 Raise `ValueError` if len(bin)<8
 
+###### decrypt
 
-**`decrypt(bin, nonce=0)`**
+```#!py3 decrypt(bin, nonce=0)```
 
 Return a decrypted copy of `bin`. To increase the key space, an integer `nonce` can be given
 that must be the same one given for encryption.

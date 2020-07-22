@@ -30,8 +30,9 @@ IPv4 addresses can be passed to functions and methods in the following forms:
 
 if a port is required but not given, it is set to zero.
 
+###### ip_to_tuple
 
-**`ip_to_tuple()`**
+```#!py3 ip_to_tuple()```
 
 Return a tuple of four integers from a ip address of the form “x.y.z.w”.
 
@@ -70,13 +71,15 @@ sock.connect(("192.168.1.10",5555))
 sock.sendall("Hello World!")
 ```
 
+###### fileno
 
-**`fileno()`**
+```#!py3 fileno()```
 
 Return an integer identifying the underlying socket number.
 
+###### connect
 
-**`connect(address)`**
+```#!py3 connect(address)```
 
 Tries to connect the underlying socket (tcp or udp) to ```address```.
 A tcp socket must be connected to be used successfully. Udp sockets are connectionless and everytime a datagram
@@ -84,70 +87,80 @@ is sent, the receiver address must be specified (`sendto()`). However if an udp 
 it can be used with methods like `recv()` and `send()` without specifying a receiver address.
 When an udp socket is connected to ```address```, datagram packets coming from addresses different from ```address``` are ignored.
 
+###### close
 
-**`close()`**
+```#!py3 close()```
 
 Closes the underlying socket. No more input/output operations are possible.
 
+###### recv
 
-**`recv(bufsize, flags=0)`**
+```#!py3 recv(bufsize, flags=0)```
 
 Reads at most ```bufsize``` bytes from the underlying socket. It blocks until ```bufsize``` bytes are received or an error occurs.
 
 Returns a bytearray containing the received bytes.
 
+###### recv_into
 
-**`recv_into(buffer, bufsize=-1, flags=0)`**
+```#!py3 recv_into(buffer, bufsize=-1, flags=0)```
 
 Reads at most ```bufsize``` bytes from the underlying socket into ```buffer```. It blocks until ```bufsize``` bytes are received or an error occurs.
 
 Returns the number of received bytes.
 
+###### recvfrom
 
-**`recvfrom(bufsize, flags=0)`**
+```#!py3 recvfrom(bufsize, flags=0)```
 
 Reads at most ```bufsize``` bytes from the underlying udp socket. It blocks until a datagram is received.
 
 Returns a tuple (```data```, ```address```) where ```data``` is a bytearray containing the received bytes and ```address``` is the net address of the sender.
 
+###### recvfrom_into
 
-**`recvfrom_into(buffer, bufsize=-1, flags=0)`**
+```#!py3 recvfrom_into(buffer, bufsize=-1, flags=0)```
 
 Reads at most ```bufsize``` bytes from the underlying udp socket into ```buffer```. It blocks until a datagram is received. If ```bufsize``` is not given or is less than 0, ```bufsize``` is set to len(buffer).
 
 Returns a tuple (```rd```, ```address```) where ```rd``` is the number of bytes received and ```address``` is the net address of the sender.
 
+###### send
 
-**`send(buffer, flags=0)`**
+```#!py3 send(buffer, flags=0)```
 
 Send data to the socket. The socket must be connected to a remote socket.
 
 Returns the number of bytes sent. Applications are responsible for checking that all data has been sent; if only some of the data was transmitted, the application needs to attempt delivery of the remaining data.
 
+###### sendall
 
-**`sendall(buffer, flags=0)`**
+```#!py3 sendall(buffer, flags=0)```
 
 Send all data to the socket. The socket must be connected to a remote socket.
 
 Unlike send(), this method continues to send data from bytes until either all data has been sent or an error occurs.
 ```None``` is returned on success. On error, an exception is raised, and there is no way to determine how much data, if any, was successfully sent.
 
+###### sendto
 
-**`sendto(buffer, address, flags=0)`**
+```#!py3 sendto(buffer, address, flags=0)```
 
 Send data to the socket. The socket should not be connected to a remote socket, since the destination socket is specified by address.
 Return the number of bytes sent
 
+###### settimeout
 
-**`settimeout(timeout)`**
+```#!py3 settimeout(timeout)```
 
 Set a timeout on blocking socket operations. The ```timeout``` argument can be a nonnegative integer number expressing milliseconds, or ```None```.
 If a non-zero value is given, subsequent socket operations will raise a timeout exception if the timeout period value has elapsed before the operation has completed.
 If zero is given, the socket is put in non-blocking mode.
 If None is given, the socket is put in blocking mode.
 
+###### bind
 
-**`bind(address)`**
+```#!py3 bind(address)```
 
 Binds the socket to ```address```. ```address``` can be:
 
@@ -161,14 +174,16 @@ A tcp socket needs binding when it is used to accept incoming connection (e.g. a
 A udp socket needs to be bound before any input/output operation. After binding, the udp socket will receive
 every packet incoming to ```address```.
 
+###### listen
 
-**`listen(maxlog=2)`**
+```#!py3 listen(maxlog=2)```
 
 Enables listening on the underlying tcp socket. A tcp socket in listening state can be used as a server socket to accept incoming connection.
 ```maxlog``` specifies the maximum number of waiting connections.
 
+###### accept
 
-**`accept()`**
+```#!py3 accept()```
 
 Blocks until an incoming connection is made on the underlying tcp socket.
 

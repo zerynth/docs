@@ -31,15 +31,17 @@ The supported formats are shown in the table below.
 | map 16          | 11011110               | 0xde                |
 | negative fixint | 111xxxxx               | 0xe0 - 0xff         |
 
+###### pack
 
-**`pack(obj)`**
+```#!py3 pack(obj)```
 
 Returns a bytearray containing the msgpack representation of ```obj```.
 
 Raises `MsgPackError` when ```obj``` contains non serializable objects.
 
+###### unpack
 
-**`unpack(data, offs=0)`**
+```#!py3 unpack(data, offs=0)```
 
 Returns an object represented in msgpack format inside the byte sequence ```data``` starting from offset ```offs```.
 

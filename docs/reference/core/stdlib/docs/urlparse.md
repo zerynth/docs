@@ -3,8 +3,9 @@
 This module defines a standard interface to break Uniform Resource Locator (URL)
 strings up in components (addressing scheme, network location, path etc.)
 
+###### parse
 
-**`parse(url)`**
+```#!py3 parse(url)```
 
 Returns a tuple (```scheme```, ```netloc```, ```path```, ```query```, ```fragment```) derived from ```url```.
 
@@ -25,14 +26,16 @@ a netloc only if it is properly introduced by ‘//’.  Otherwise the
 input is presumed to be a relative URL and thus to start with
 a path component.
 
+###### parse_netloc
 
-**`parse_netloc(netloc)`**
+```#!py3 parse_netloc(netloc)```
 
 Given ```netloc``` as parsed by `parse()`, breaks it in its component returning a tuple (```user```, ```password```, ```host```, ```port```).
 Each component of the returned tuple is a string.
 
+###### quote
 
-**`quote(s)`**
+```#!py3 quote(s)```
 
 Return the urlencoded version of ```s```.
 
@@ -52,24 +55,28 @@ Safe bytes are:
 
 * the following symbols: $-_.+!\*’()
 
+###### quote_plus
 
-**`quote_plus(s)`**
+```#!py3 quote_plus(s)```
 
 Like `quote()`, but also escapes `+` symbol.
 
+###### unquote
 
-**`unquote(s)`**
+```#!py3 unquote(s)```
 
 If ```s``` is urlencoded, returns ```s``` with every `+` substituted with a space and every `%xx` substituted with the corresponding character.
 
+###### parse_qs
 
-**`parse_qs(qs)`**
+```#!py3 parse_qs(qs)```
 
 Parses a query string ```qs``` and returns a dictionary containing the association between keys and values of ```qs```.
 Values are urldecoded by `unquote()`.
 
+###### urlencode
 
-**`urlencode(data)`**
+```#!py3 urlencode(data)```
 
 Tranforms data dictionary in a urlencoded query string and returns the query string.
 Each pair (key, value) is encoded by ```quote_via``` function.

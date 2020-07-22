@@ -4,15 +4,17 @@ This module loads the Real-Time Clock (rtc) driver of the embedded device when a
 
 When imported, automatically sets the system rtc driver to the default one.
 
+###### init
 
-**`init(drvname)`**
+```#!py3 init(drvname)```
 
 Loads the rtc driver identified by ```drvname```
 
 Returns the previous driver without disabling it.
 
+###### set_utc
 
-**`set_utc(seconds, microseconds=0)`**
+```#!py3 set_utc(seconds, microseconds=0)```
 
 
 * **```Arguments```**
@@ -26,8 +28,9 @@ Returns the previous driver without disabling it.
 
 Sets a Coordinated Universal Time (UTC) reference for the rtc.
 
+###### TimeInfo
 
-**`TimeInfo()`**
+```#!py3 TimeInfo()```
 
 Class containing useful time information to be filled by the `get_utc()` function.
 List of attributes:
@@ -62,8 +65,9 @@ List of attributes:
 
 * `Timeinfo.tm_yday`: days since January 1 (0-365)
 
+###### get_utc
 
-**`get_utc(verbosity=2)`**
+```#!py3 get_utc(verbosity=2)```
 
 When called with verbosity parameter set to `2`, returns a `TimeInfo()` object filled with info derived from the rtc.
 Only `Timeinfo.tv_seconds` and `Timeinfo.tv_microseconds` are guaranteed to be filled correctly.

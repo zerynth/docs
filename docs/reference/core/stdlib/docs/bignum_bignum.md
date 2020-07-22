@@ -33,58 +33,69 @@ while True:
     sleep(1000)
 ```
 
+###### add
 
-**`add(b)`**
+```#!py3 add(b)```
 
 Return a new big number instance equal to the addition of the current instance and ```b```.
 
+###### iadd
 
-**`iadd(b)`**
+```#!py3 iadd(b)```
 
 Add to the current instance the big number ```b```. Return `None`
 
+###### sub
 
-**`sub(b)`**
+```#!py3 sub(b)```
 
 Return a new big number instance equal to the difference of the current instance and ```b```.
 
+###### isub
 
-**`isub(b)`**
+```#!py3 isub(b)```
 
 Subtracts to the current instance the big number ```b```. Return `None`
 
+###### mul
 
-**`mul(b)`**
+```#!py3 mul(b)```
 
 Return a new big number instance equal to the multiplication of the current instance and ```b```.
 
+###### imul
 
-**`imul(b)`**
+```#!py3 imul(b)```
 
 Multiply the current instance for the big number ```b```. Return `None`
 
+###### div
 
-**`div(b)`**
+```#!py3 div(b)```
 
 Return a new big number instance equal to the division of the current instance by ```b```.
 
+###### idiv
 
-**`idiv(b)`**
+```#!py3 idiv(b)```
 
 Divides the current instance for the big number ```b```. Return `None`
 
+###### mod
 
-**`mod(b)`**
+```#!py3 mod(b)```
 
 Return a new big number instance equal to the remainder of the division of the current instance by ```b```.
 
+###### imod
 
-**`imod(b)`**
+```#!py3 imod(b)```
 
 Set the current instance to the remainder of the division by ```b```. Return `None`
 
+###### divmod
 
-**`divmod(b)`**
+```#!py3 divmod(b)```
 
 Return a tuple (q,r) of new big number instances representing the quotient ```q``` and the remainder ```r``` of the division of the current instance by ```b```.
 
@@ -112,8 +123,9 @@ Return True if the current instance is greater than or equal to the big number `
 
 Return 1 if the current instance is a positive number, -1 if the current instance is a negative number, 0 if it is equal to zero.
 
+###### to_base
 
-**`to_base(base)`**
+```#!py3 to_base(base)```
 
 Return a string representation of the big number in base ```base```. Allowed values for ```base``` are in the range 2..64.
 <!--stackedit_data:

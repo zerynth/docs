@@ -6,8 +6,9 @@ Refer to BLE examples for usage.
 
 ## Module Functions
 
+###### eddy_encode_tlm
 
-**`eddy_encode_tlm(battery, temperature, count, time)`**
+```#!py3 eddy_encode_tlm(battery, temperature, count, time)```
 
 Return a bytearray representing an encoded Eddystone payload of type tlm (not encrypted).
 
@@ -25,8 +26,9 @@ According to the specifications:
 
 * `time` is the time in seconds since beacon power up
 
+###### eddy_encode_uid
 
-**`eddy_encode_uid(namespace, instance, txpower)`**
+```#!py3 eddy_encode_uid(namespace, instance, txpower)```
 
 Return a bytearray representing an encoded Eddystone payload of type uid (not encrypted).
 
@@ -40,8 +42,9 @@ According to the specifications:
 
 
 * `txpower` is the power calibration measurement of the beacon (used to calculate distances)
+###### eddy_encode_url
 
-**`eddy_encode_url(url, txpower)`**
+```#!py3 eddy_encode_url(url, txpower)```
 
 Return a bytearray representing an encoded Eddystone payload of type url (not encrypted).
 
@@ -53,8 +56,9 @@ According to the specifications:
 
 * `txpower` is the power calibration measurement of the beacon (used to calculate distances)
 
+###### eddy_decode_type
 
-**`eddy_decode_type(packet)`**
+```#!py3 eddy_decode_type(packet)```
 
 Given `packet` as a bytes or bytearray return the type of the Eddystone packet or raises `ValueError` if it is not an Eddystone packet.
 
@@ -85,8 +89,9 @@ Return values are:
 
 * a tuple with battery, temperature, count and time for tlm packets
 
+###### ibeacon_encode
 
-**`ibeacon_encode(uuid, major, minor, txpower, manufacturer=0x4c00)`**
+```#!py3 ibeacon_encode(uuid, major, minor, txpower, manufacturer=0x4c00)```
 
 Return a bytearray representing an encoded iBeacon payload.
 
@@ -107,8 +112,9 @@ According to the specifications:
 
 * `manufacturer` is set to Apple, but can be changed if needed
 
+###### ibeacon_decode
 
-**`ibeacon_decode(packet)`**
+```#!py3 ibeacon_decode(packet)```
 
 Given `packet` as a bytes or bytearray return a tuple with the packet decoded fields or raises `ValueError` in case `packet` is not iBeacon.
 

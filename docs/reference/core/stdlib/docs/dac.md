@@ -33,18 +33,21 @@ my_dac.write([100,200,900,800],1000,MILLIS,circular=True)
 
 ## The DAC class
 
+##### class DAC
 
-**`DAC(pin)`**
+```#!py3 class DAC(pin)```
 
 Creates a DAC instance on ```pin``` pin (look at board pinmap to see which pins are enabled for using the DAC peripheral).
 
+###### DAC.start
 
-**`start()`**
+```#!py3 start()```
 
 DAC is started. It is necessary to start the driver before writing any value.
 
+###### DAC.write
 
-**`write(data, timestep, timeunit, circular=False)`**
+```#!py3 write(data, timestep, timeunit, circular=False)```
 
 ```data``` is output on selected pin.
 
@@ -70,23 +73,27 @@ my_dac.write([555,666,777],500,MILLIS)
 my_dac.write([555,666,777],500,MILLIS,circular=True)
 ```
 
+###### DAC.stop
 
-**`stop()`**
+```#!py3 stop()```
 
 dac is stopped and low level configuration disabled.
 
+###### DAC.lock
 
-**`lock()`**
+```#!py3 lock()```
 
 Locks the driver. It is useful when the same dac object is used by multiple threads to avoid interferences.
 
+###### DAC.unlock
 
-**`unlock()`**
+```#!py3 unlock()```
 
 Unlocks the driver. It is useful when the same dac object is used by multiple threads to avoid interferences.
 
+###### DAC.remap
 
-**`remap(values, lowflex=660, highflex=3415)`**
+```#!py3 remap(values, lowflex=660, highflex=3415)```
 
 Some DAC chips have a limited voltage range (i.e. Sam3X by Atmel maps from ~3.3/6 V to ~3.3\*(5/6) V) and remap given output values according to their operative ranges.
 This helper function allows the user to obtain the voltage value he would expect from a proportional DAC.

@@ -83,8 +83,9 @@ To initialize a custom external memory qspi flash several params must be passed 
     * ```sr1_sus``` – Suspend status of the flash mamory status register1
 
 
+###### get_geometry
 
-**`get_geometry()`**
+```#!py3 get_geometry()```
 
 Return a tuple holding flash geometry:
 
@@ -103,8 +104,9 @@ Return a tuple holding flash geometry:
 
 * ```page_size```, Page size of the qspi flash
 
+###### write_data
 
-**`write_data(addr, data)`**
+```#!py3 write_data(addr, data)```
 
 Write data ```data``` starting from address ```addr```.
 ```data``` can be a bytearray or a list of integers less than 256.
@@ -117,20 +119,23 @@ Writing is also allowed via bracket notation. The following is valid syntax:
 my_flash[addr] = data
 ```
 
+###### erase_sector
 
-**`erase_sector(addr)`**
+```#!py3 erase_sector(addr)```
 
 Erase a whole sector passing the ```addr``` address of any byte contained in it.
 All sector bytes set to 0xff.
 
+###### erase_block
 
-**`erase_block(addr)`**
+```#!py3 erase_block(addr)```
 
 Erase a memory block passing the ```addr``` address of any byte contained in it.
 All block bytes set to 0xff.
 
+###### read_data
 
-**`read_data(addr, n=1)`**
+```#!py3 read_data(addr, n=1)```
 
 Read ```n``` bytes of data starting from address ```addr```.
 
@@ -146,16 +151,19 @@ my_data = my_flash[addr:addr+n]
 Erase the whole memory.
 All memory bytes set to 0xff.
 
+###### done
 
-**`done()`**
+```#!py3 done()```
 Close the QspiFlash peripheral.
 
+###### wakeup
 
-**`wakeup()`**
+```#!py3 wakeup()```
 Wake Up the QspiFlash peripheral from sleep mode.
 
+###### sleep
 
-**`sleep()`**
+```#!py3 sleep()```
 Put the QspiFlash peripheral in sleep mode.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTc1MDczNTQ3NiwtOTQ3MDUwNzEwXX0=
