@@ -72,7 +72,7 @@ After virtualization, the Wio Link device is ready to be programmed and the  Zer
 	No user intervention on the device is required for the upload process.
 
 !!! important 
-    To exploit the Wi-Fi chip functionalities of the Wio Link, the [lib.espressif.esp8266wifi library](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/index.html#esp8266wifi) must be installed (some example code is provided).
+    To exploit the Wi-Fi chip functionalities of the Wio Link, the [lib.espressif.esp8266wifi library](/latest/reference/libs/espressif/esp8266wifi/docs/) must be installed (some example code is provided).
 
 ## Firmware Over the Air update (FOTA)
 
@@ -91,7 +91,7 @@ Flash Layout is shown in table below:
 
 ## Power Management
 
-Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266).
+Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-esp8266).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExMzk4NTAxMjcsLTM3MDYwNzMyMl19
 -->
