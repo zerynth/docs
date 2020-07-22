@@ -15,6 +15,7 @@ The Zerynth standard library is composed of many modules ranging from hardware i
 -   [Serialization](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/base64/ "Serialization")
 -   [Storage](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/flash/ "Storage")
 -   [Peripherals](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/mcu/ "Peripherals")
+-   [Networking](https://newtestdocs.zerynth.com/latest/reference/core/stdlib/docs/socket/ "Networking")
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjAxNDQ3N119
+eyJoaXN0b3J5IjpbLTUyMzcyMTExNl19
 -->
