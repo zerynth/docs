@@ -79,7 +79,7 @@ Follow these steps to register and virtualize a Adafruit Feather M0 Wi-Fi:
 After virtualization, the Adafruit Feather M0 Wi-Fi is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar”, **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the RST on-board button when asked.
 
 !!! important
-    To exploit the Wi-Fi chip functionalities of the Adafruit Feather M0 Wi-Fi, the [lib.microchip.winc1500 library](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/index.html#microchip-winc1500) must be installed and imported in the Zerynth script.
+    To exploit the Wi-Fi chip functionalities of the Adafruit Feather M0 Wi-Fi, the [lib.microchip.winc1500 library](/latest/reference/libs/microchip/winc1500/docs/) must be installed and imported in the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -99,4 +99,4 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-samd21) and [Secure Firmware - Microchip SAMD21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
+Both these features are strongly platform dependent; more information at [Power Management - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-microchip-samd21) and [Secure Firmware - Microchip SAMD21 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-microchip-samd21).
