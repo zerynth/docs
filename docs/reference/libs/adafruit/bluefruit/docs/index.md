@@ -17,6 +17,7 @@ Adafruit Bluefruit LE SPI products family enables Bluetooth Low Energy connectiv
 Here below, the Zerynth driver for the Adafruit Bluefruit LE SPI products family and some examples to better understand how to use it.
 
 Contents:
+
 * [Bluefruit Module](/latest/reference/libs/adafruit/bluefruit/docs/bluefruit/)
 
 * [BLEStream class](/latest/reference/libs/adafruit/bluefruit/docs/bluefruit/#class-blestream)
