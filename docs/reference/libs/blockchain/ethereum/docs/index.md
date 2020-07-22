@@ -9,14 +9,14 @@ The Ethereum modules implement basic functionalities for interacting with the Et
 
 Contents:
 
-* [Ethereum](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/docs/official_lib.blockchain.ethereum_ethereum.html)
-    * [Transaction class](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/docs/official_lib.blockchain.ethereum_ethereum.html#transaction-class)
-    * [Contract class](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/docs/official_lib.blockchain.ethereum_ethereum.html#contract-class)
-* [RPC](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/docs/official_lib.blockchain.ethereum_rpc.html%29)
-* [RPC class](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/docs/official_lib.blockchain.ethereum_rpc.html#rpc-class)
-* [RLP](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/docs/official_lib.blockchain.ethereum_rlp.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/examples/examples.html)
-	* [Simple Transaction](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/examples/examples.html#simple-transaction)
+* [Ethereum](/latest/reference/libs/blockchain/ethereum/docs/)
+    * [Transaction class](/latest/reference/libs/blockchain/ethereum/docs/ethereum/#transaction-class)
+    * [Contract class](/latest/reference/libs/blockchain/ethereum/docs/ethereum/#contract-class)
+* [RPC](/latest/reference/libs/blockchain/ethereum/docs/rpc/)
+* [RPC class](/latest/reference/libs/blockchain/ethereum/docs/rpc/#rpc-class)
+* [RLP](/latest/reference/libs/blockchain/ethereum/docs/rlp/)
+* [Examples](/latest/reference/libs/blockchain/ethereum/docs/examples/)
+	* [Simple Transaction](/latest/reference/libs/blockchain/ethereum/docs/examples/#simple-transaction)
 	* [DiceGame](https://docs.zerynth.com/latest/official/lib.blockchain.ethereum/examples/examples.html#dicegame)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExMDA4MTkzNTQsNTIwMzM3NTQyXX0=
