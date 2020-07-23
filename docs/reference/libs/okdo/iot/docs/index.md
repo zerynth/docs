@@ -7,11 +7,11 @@ OKdo IoT Cloud provides connectivity endpoints for MQTT, HTTP and UDP protocols.
 
 Contents:
 
--   [OKdo IoT Library](https://docs.zerynth.com/latest/official/lib.okdo.iot/docs/official_lib.okdo.iot_iot.html)
-    -   [The Device class](https://docs.zerynth.com/latest/official/lib.okdo.iot/docs/official_lib.okdo.iot_iot.html#the-device-class)
--   [Examples](https://docs.zerynth.com/latest/official/lib.okdo.iot/examples/examples.html)
-    -   [Mqtt](https://docs.zerynth.com/latest/official/lib.okdo.iot/examples/examples.html#mqtt)
-    -   [Http](https://docs.zerynth.com/latest/official/lib.okdo.iot/examples/examples.html#http)
+-   [OKdo IoT Library](/latest/reference/libs/okdo/iot/docs/iot/)
+    -   [The Device class](/latest/reference/libs/okdo/iot/docs/iot/#the-device-class)
+-   [Examples](/latest/reference/libs/okdo/iot/docs/examples/)
+    -   [Mqtt](/latest/reference/libs/okdo/iot/docs/examples/#mqtt)
+    -   [Http](/latest/reference/libs/okdo/iot/docs/examples/#http)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjA3MzY3NDgyNF19
 -->
