@@ -20,7 +20,11 @@ markdown_extensions:
 - pymdownx.tilde
 nav:
 - Welcome: index.md
+<<<<<<< HEAD
 - Conceptual Model:
+=======
+- CONCEPTUAL MODEL:
+>>>>>>> feature/webinterface
   - conceptualmodel/Conceptual Model.md
   - conceptualmodel/Zerynth Components.md
 - Getting Started:
@@ -28,7 +32,12 @@ nav:
 - Develop:
   - develop/Develop.md
 - Deploy and Manage:
+<<<<<<< HEAD
   - deploy/Deploy and Manage.md
+=======
+  - Index: deploy/index.md
+  - ZDM Web Interface: deploy/webInterface.md
+>>>>>>> feature/webinterface
 - Integrate:
   - integrate/Integrate.md
 - Reference:
@@ -112,7 +121,11 @@ nav:
         - reference/core/stdlib/docs/fota.md
         - reference/core/stdlib/docs/examples.md
     - Command Line Interface:
+<<<<<<< HEAD
         - Zerynth Toolchain:
+=======
+        - ZTC:
+>>>>>>> feature/webinterface
           - reference/core/toolchain/docs/index.md
           - reference/core/toolchain/docs/ztc.md
           - reference/core/toolchain/docs/user_usercmd.md
@@ -127,6 +140,7 @@ nav:
           - reference/core/toolchain/docs/aws_awscmd.md
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
+<<<<<<< HEAD
         - ZDM CLI:
           - reference/core/zdmcli/docs/index.md
           - reference/core/zdmcli/docs/account_cmd.md
@@ -138,6 +152,10 @@ nav:
           - reference/core/zdmcli/docs/fota_cmd.md
     - Supported Devices:
       - reference/boards/Supported_Devices.md
+=======
+        - ZDM: []
+    - Supported Devices:
+>>>>>>> feature/webinterface
       - reference/boards/adafruit_feather_huzzah/docs/index.md
       - reference/boards/adafruit_feather_m0wifi/docs/index.md
       - reference/boards/adafruit_huzzah32/docs/index.md
@@ -660,8 +678,10 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+
             - ZDM-Client Python Library:
               - reference/core/zdmclient/docs/index.md
+
             - zerynthapp:
               - reference/libs/zerynth/zerynthapp/docs/index.md
               - reference/libs/zerynth/zerynthapp/docs/zerynthapp.md
