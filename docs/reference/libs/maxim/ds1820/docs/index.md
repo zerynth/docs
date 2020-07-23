@@ -17,7 +17,7 @@ Here below, the Zerynth driver for the Maxim DS1820.
 
 Contents:
 
--   [DS1820 Module](https://docs.zerynth.com/latest/official/lib.maxim.ds1820/docs/official_lib.maxim.ds1820_ds1820.html)
+-   [DS1820 Module](/latest/reference/libs/maxim/ds1820/docs/ds1820/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTUzOTkzNjkyMV19
 -->
