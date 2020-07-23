@@ -10,10 +10,10 @@ ZDM allows you also to visualize data on Ubidots through a Webhook.
 To create a new export gate use the command:
 
 ```bash
-zdm gate export create name type frequency workspace_id email
+zdm gate export create NAME TYPE FREQUENCY WORKSPACE_ID EMAIL [OPTIONS]
 ```
 
-where ```name``` is the name that you want to give to your new webhook, ```type``` is your export type (json, csv), ```frequency``` is the export frequency [daily, weekly] ````workspace_id``` is the uid of the workspace you want to receive data from and ```email``` is the email to receive the link to download the export
+where ```NAME``` is the name that you want to give to your new webhook, ```TYPE``` is your export type (json, csv), ```FREQUENCY``` is the export frequency [daily, weekly] ````WORKSPACE_ID``` is the uid of the workspace you want to receive data from and ```EMAIL``` is the email to receive the link to download the export
 
 You also have the possibility to add filters on data using the following options:
 
@@ -27,10 +27,10 @@ You also have the possibility to add filters on data using the following options
 To see a list of your export gates use the command:
 
 ```bash
-zdm gate export all workspace_id
+zdm gate export all WORKSPACE_ID [OPTIONS]
 ```
 
-where workspace_id is the uid of the workspace
+where ```WORKSPACE_ID``` is the uid of the workspace
 
 You also have the possibility to add filters on gates using the following options:
 
@@ -41,10 +41,11 @@ You also have the possibility to add filters on gates using the following option
 To update an export gate use the command:
 
 ```bash
-zdm gate export update gate_id
+zdm gate export update GATE_ID [OPTIONS]
 ```
 
 you can change gate’s configuration using the following options: 
+
 * ```--name``` to change the gate name 
 * ```--cron``` to change the gate period (cron string hour day) 
 * ```--dump_type``` to change the dump format (json, csv) 
@@ -58,10 +59,10 @@ you can change gate’s configuration using the following options:
 To create a new webhook use the command:
 
 ```bash
-zdm gate webhook create name url token period workspace_id
+zdm gate webhook create NAME URL TOKEN PERIOD WORKSPACE_ID [OPTIONS]
 ```
 
-where ```name``` is the name that you want to give to your new webhook, ```url``` is your webhook url, ```token``` is the authentication token for your webhook (if needed) and ```workspace_id``` is the uid of the workspace you want to receive data from
+where ```NAME``` is the name that you want to give to your new webhook, ```URL``` is your webhook url, ```TOKEn``` is the authentication token for your webhook (if needed) and ```WORKSPACE_ID``` is the uid of the workspace you want to receive data from
 
 You also have the possibility to add filters on data using the following options:
 
@@ -74,10 +75,10 @@ You also have the possibility to add filters on data using the following options
 To see a list of your webhooks use the command:
 
 ```bash
-zdm gate webhook all workspace_id
+zdm gate webhook all WORKSPACE_ID [OPTIONS]
 ```
 
-where ```workspace_id``` is the uid of the workspace
+where ```WORKSPACE_ID``` is the uid of the workspace
 
 You also have the possibility to add filters on gates using the following options:
 
@@ -88,7 +89,7 @@ You also have the possibility to add filters on gates using the following option
 To update a webhook use the command:
 
 ```bash
-zdm gate webhook update gate_id
+zdm gate webhook update GATE_ID [OPTIONS]
 ```
 
 you can change gate’s configuration using the following options: 
@@ -106,17 +107,17 @@ you can change gate’s configuration using the following options:
 To create a new alarm gate (notifications about opened and closed conditions by devices) use the command:
 
 ```bash
-zdm gate alarm create name workspace_id threshold email tag(s)
+zdm gate alarm create NAME WORKSPACE_ID THRESHOLD EMAIL TAG(S)
 ```
 
-where ```name``` is the name of the gate, ```workspace_id``` is the uid of the workspace in which you want to monitor condition, ```threshold``` is a int representing the minimum duration of a condition to be notified, ```email``` is the email where you want to receive notifications, ```tag(s)``` is a list of tags to filter on conditions labels
+where ```NAME``` is the name of the gate, ```WORKSPACE_ID``` is the uid of the workspace in which you want to monitor condition, ```THRESHOLD``` is a int representing the minimum duration of a condition to be notified, ```EMAIL``` is the email where you want to receive notifications, ```TAG(S)``` is a list of tags to filter on conditions labels
 
 ### Update alarm gate
 
 To update an alarm gate use the command:
 
 ```bash
-zdm gate alarm update gate_id
+zdm gate alarm update GATE_ID [OPTIONS]
 ```
 
 you can change gate’s configuration using the following options:
@@ -130,9 +131,9 @@ you can change gate’s configuration using the following options:
 To see a list of your alarm gates use the command:
 
 ```bash
-zdm gate alarm all workspace_id
+zdm gate alarm all WORKSPACE_ID [OPTIONS]
 ```
-where ```workspace_id``` is the uid of the workspace
+where ```WORKSPACE_ID``` is the uid of the workspace
 
 You also have the possibility to add filters on gates using the following options:
 

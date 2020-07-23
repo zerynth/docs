@@ -11,10 +11,10 @@ List of device commands:
 To call remotely a function defined in your firmware, use the command:
 
 ```bash
-zdm job schedule job uid
+zdm job schedule JOB UID [OPTIONS]
 ```
 
-where ```job``` is the function name and ```uid``` is the device uid.
+where ```JOB``` is the function name and ```UID``` is the device uid.
 
 If your function expects parameters to work, you can use the command option --arg
 
@@ -23,8 +23,8 @@ If your function expects parameters to work, you can use the command option --ar
 If you want to check the status of a job you scheduled, type the command:
 
 ```bash
-zdm job check job uid
+zdm job check JOB UID
 ```
 
-where ```job``` is the job name and ```uid``` is the device uid you want to check, you will see if your device sent a response to the job.
+where ```JOB``` is the job name and ```UID``` is the device uid you want to check, you will see if your device sent a response to the job.
 

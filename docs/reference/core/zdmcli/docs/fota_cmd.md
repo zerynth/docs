@@ -6,10 +6,10 @@ The ZDM allows you to enable FOTA (over the air firmware updates) on your device
 The command compiles and uploads the firmware for a device into ZDM.
 
 ```bash
-zdm fota prepare [Firmware project path] [DeviceId] [Version]
+zdm fota prepare PROJECT-PATH DEVICEID VERSION
 ```
 
-```version``` is a string identifying the version of the firmware (e.g., "1.0").
+```VERSION``` is a string identifying the version of the firmware (e.g., "1.0").
 
 ## Start a FOTA
 
@@ -20,18 +20,18 @@ If the FOTA operation is finished, you can see if the device has accepted or ref
 To start a fota, type the command: 
 
 ```bash
-zdm fota schedule fw_version device_id
+zdm fota schedule FW_VERSION DEVICE_ID
 ```
 
-where ```fw_version``` is the firmware version associated to the device's workspace uid and ```device_id``` is the device you want to send the command to.
+where ```FW_VERSION``` is the firmware version associated to the device's workspace uid and ```DEVICE_ID``` is the device you want to send the command to.
 
 ## Check FOTA status
 
 To check the status of a FOTA you started, to know if the device finished the task or if an error occurred, type the following command:
 
 ```bash
-zdm fota check device_uid
+zdm fota check DEVICE_UID
 ```
 
-where ```device_uid``` is the uid of the device you want to check.
+where ```DEVICE_UID``` is the uid of the device you want to check.
 
