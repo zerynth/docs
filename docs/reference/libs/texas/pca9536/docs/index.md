@@ -16,8 +16,8 @@ PCA9536 is a 4-bit bidirectional I/O expander utilizing I2C and designed for 2.3
 Contents:
 
 
-* [PCA9536 Module](https://docs.zerynth.com/latest/official/lib.texas.pca9536/docs/official_lib.texas.pca9536_pca9536.html)
-    * [PCA9536 class](https://docs.zerynth.com/latest/official/lib.texas.pca9536/docs/official_lib.texas.pca9536_pca9536.html#pca9536-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.texas.pca9536/examples/examples.html)
-    * [toggle outputs](https://docs.zerynth.com/latest/official/lib.texas.pca9536/examples/examples.html#toggle-outputs)
-    * [remote control wolkabout weather monitor](https://docs.zerynth.com/latest/official/lib.texas.pca9536/examples/examples.html#remote-control-wolkabout-weather-monitor)
+* [PCA9536 Module](/latest/reference/libs/texas/pca9536/docs/pca9536/)
+    * [PCA9536 class](/latest/reference/libs/texas/pca9536/docs/pca9536/#pca9536-class)
+* [Examples](/latest/reference/libs/texas/pca9536/docs/examples/)
+    * [toggle outputs](/latest/reference/libs/texas/pca9536/docs/examples/#toggle-outputs-on-oc01)
+    * [remote control wolkabout weather monitor](/latest/reference/libs/texas/pca9536/docs/examples/#control-oc01-xchip-pca9536-remotely)
