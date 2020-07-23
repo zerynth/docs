@@ -27,6 +27,6 @@ Below, Zerynth driver documentation for STM ISM330DHCX chip.
 Contents:
 
 
-* [ISM330DHCX Module](https://docs.zerynth.com/latest/official/lib.stm.ism330dhcx/docs/official_lib.stm.ism330dhcx_ism330dhcx.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.stm.ism330dhcx/examples/examples.html)
-    * [get data](https://docs.zerynth.com/latest/official/lib.stm.ism330dhcx/examples/examples.html#get-data)
+* [ISM330DHCX Module](/latest/reference/libs/stm/ism330dhcx/docs/ism330dhcx/)
+* [Examples](/latest/reference/libs/stm/ism330dhcx/docs/examples/)
+    * [get data](/latest/reference/libs/stm/ism330dhcx/docs/examples/#read-accelerometer-gyroscope-and-temperature-data-from-ism330dhcx)
