@@ -178,9 +178,9 @@ An entry is a list with:
 
 ```#!py3 load_entry(entry)```
 
-Return the raw binary data of the resource in `entry` as present on the flash (without decryption). An `entry` retrieved with [:method:`get_entry`](https://docs.zerynth.com/latest/official/lib.zerynth.dcz/docs/official_lib.zerynth.dcz_dcz.html#id1) must be given in order to identify the resource.
+Return the raw binary data of the resource in `entry` as present on the flash (without decryption). An `entry` retrieved with [:method:`get_entry`](/latest/reference/libs/zerynth/dcz/docs/dcz/#dczget_entry) must be given in order to identify the resource.
 
-This method is exposed for custom usage of DCZ, but [:method:`load_resource`](https://docs.zerynth.com/latest/official/lib.zerynth.dcz/docs/official_lib.zerynth.dcz_dcz.html#id3) is recommended.
+This method is exposed for custom usage of DCZ, but [:method:`load_resource`](/latest/reference/libs/zerynth/dcz/docs/dcz/#dczload_resource) is recommended.
 
 ###### DCZ.save_entry
 
