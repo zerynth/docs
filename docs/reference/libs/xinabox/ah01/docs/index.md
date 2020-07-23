@@ -23,13 +23,13 @@ Below, Zerynth driver documentation for Microchip ATECCx80A crypto elements.
 Contents:
 
 
-* [ATECCx08A library](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html)
-    * [Auxiliary methods](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#auxiliary-methods)
-    * [ATECC508A class]https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#atecc508a-class)
-        * [Internal methods](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#internal-methods)
-        * [Public methods](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#public-methods)
-        * [Commands](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#commands)
-    * [ATECC608A class](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#atecc608a-class)
-    * [Zerynth HWCrypto Interface](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/docs/official_lib.xinabox.ah01_ah01.html#zerynth-hwcrypto-interface)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/examples/examples.html
-    * [ping](https://docs.zerynth.com/latest/official/lib.xinabox.ah01/examples/examples.html#ping)
+* [ATECCx08A library](/latest/reference/libs/xinabox/ah01/docs/ah01/)
+    * [Auxiliary methods](/latest/reference/libs/xinabox/ah01/docs/ah01/#auxiliary-methods)
+    * [ATECC508A class](/latest/reference/libs/xinabox/ah01/docs/ah01/#atecc508a-class)
+        * [Internal methods](/latest/reference/libs/xinabox/ah01/docs/ah01/#internal-methods)
+        * [Public methods](/latest/reference/libs/xinabox/ah01/docs/ah01/#public-methods)
+        * [Commands](/latest/reference/libs/xinabox/ah01/docs/ah01/#commands)
+    * [ATECC608A class](/latest/reference/libs/xinabox/ah01/docs/ah01/#atecc508a-class)
+    * [Zerynth HWCrypto Interface](/latest/reference/libs/xinabox/ah01/docs/ah01/#zerynth-hwcrypto-interface)
+* [Examples](/latest/reference/libs/xinabox/ah01/docs/examples/)
+    * [ping](/latest/reference/libs/xinabox/ah01/docs/examples/#ping-example)
