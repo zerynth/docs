@@ -25,10 +25,10 @@ The Esprida LiveIntersect IoT platform support for Zerynth embedded hardware, he
 
 Contents:
 
--   [Liveintersect  IoT](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/docs/index.html)
-    -   [The Asset class](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/docs/official_lib.liveintersect.iot_iot.html)
-    -   [Examples](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/examples/examples.html)
-        -   [Asset Simulation](https://docs.zerynth.com/latest/official/lib.liveintersect.iot/examples/examples.html#asset-simulation)
+-   [Liveintersect  IoT](/latest/reference/libs/liveintersect/iot/docs/)
+    -   [The Asset class](/latest/reference/libs/liveintersect/iot/docs/iot/)
+    -   [Examples](/latest/reference/libs/liveintersect/iot/docs/examples/)
+        -   [Asset Simulation](/latest/reference/libs/liveintersect/iot/docs/examples/#examples)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDA0MjQwNDk1XX0=
 -->
