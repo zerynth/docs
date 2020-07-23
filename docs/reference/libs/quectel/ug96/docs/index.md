@@ -7,8 +7,8 @@ The driver must be used together with the standard library [GSM Module](https://
 Contents:
 
 
-* [UG96 Module](https://docs.zerynth.com/latest/official/lib.quectel.ug96/docs/official_lib.quectel.ug96_ug96.html)
-    * [Network Time](https://docs.zerynth.com/latest/official/lib.quectel.ug96/docs/official_lib.quectel.ug96_ug96.html#network-time)
-* [Examples](https://docs.zerynth.com/latest/official/lib.quectel.ug96/examples/examples.html)
-    * [Secure Socket](https://docs.zerynth.com/latest/official/lib.quectel.ug96/examples/examples.html#secure-socket)
-    * [UDP Socket](https://docs.zerynth.com/latest/official/lib.quectel.ug96/examples/examples.html#udp-socket)
+* [UG96 Module](/latest/reference/libs/quectel/ug96/docs/ug96/)
+    * [Network Time](/latest/reference/libs/quectel/ug96/docs/ug96/#network-time)
+* [Examples](/latest/reference/libs/quectel/ug96/docs/examples/)
+    * [Secure Socket](/latest/reference/libs/quectel/ug96/docs/examples/#secure-socket)
+    * [UDP Socket](/latest/reference/libs/quectel/ug96/docs/examples/#udp-socket)
