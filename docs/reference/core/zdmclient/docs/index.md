@@ -1,4 +1,4 @@
-# Zerynth Device Manager Client
+# Zerynth Device Manager Client Python Library
 
 Zerynth Device Manager can be used for orchestrating both MCU (micro-controller) and CPU (micro-processor) based devices. 
 

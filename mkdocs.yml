@@ -127,9 +127,15 @@ nav:
           - reference/core/toolchain/docs/aws_awscmd.md
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
-
         - ZDM CLI:
           - reference/core/zdmcli/docs/index.md
+          - reference/core/zdmcli/docs/account_cmd.md
+          - reference/core/zdmcli/docs/workspace_cmd.md
+          - reference/core/zdmcli/docs/fleet_cmd.md
+          - reference/core/zdmcli/docs/device_cmd.md
+          - reference/core/zdmcli/docs/gate_cmd.md
+          - reference/core/zdmcli/docs/job_cmd.md
+          - reference/core/zdmcli/docs/fota_cmd.md
     - Supported Devices:
       - reference/boards/Supported_Devices.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
@@ -654,6 +660,8 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+            - ZDM-Client Python Library:
+              - reference/core/zdmclient/docs/index.md
             - zerynthapp:
               - reference/libs/zerynth/zerynthapp/docs/index.md
               - reference/libs/zerynth/zerynthapp/docs/zerynthapp.md
