@@ -1,6 +1,6 @@
 # Zerynth ADM Library
 
-The Zerynth ADM library can be used yo ease the connection to the [Zerynth ADM sandbox](https://docs.zerynth.com/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm). It takes care of connecting to the ADM and listening for incoming messages. Moreover it seamlessly enables RPC calls and mobile integration. For Virtual Machines supporting FOTA updates, the Zerynth ADM also performs the FOTA process automatically when requested.
+The Zerynth ADM library can be used yo ease the connection to the [Zerynth ADM sandbox](/latest/reference/libs/zerynth/zadm/docs/zadm/). It takes care of connecting to the ADM and listening for incoming messages. Moreover it seamlessly enables RPC calls and mobile integration. For Virtual Machines supporting FOTA updates, the Zerynth ADM also performs the FOTA process automatically when requested.
 
 ## Zerynth ADM Step by Step
 
