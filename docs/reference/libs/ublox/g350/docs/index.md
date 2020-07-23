@@ -20,7 +20,7 @@ Here below, the Zerynth driver for the Ublox G350 and some examples to better un
 Contents:
 
 
-* [G350 Module](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/index.html)
-    * [Technical Details](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/index.html#technical-details)
-        * [G350 Module](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/official_lib.ublox.g350_g350.html)
-        * [Examples](https://docs.zerynth.com/latest/official/lib.ublox.g350/examples/examples.html)
+* [G350 Module](/latest/reference/libs/ublox/g350/docs/g350/)
+    * [Technical Details](/latest/reference/libs/ublox/g350/docs/#technical-details)
+        * [G350 Module](/latest/reference/libs/ublox/g350/docs/g350/)
+        * [Examples](/latest/reference/libs/ublox/g350/docs/examples/)
