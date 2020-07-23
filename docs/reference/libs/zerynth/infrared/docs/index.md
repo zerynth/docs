@@ -14,13 +14,13 @@ Here below, the Zerynth Library for Infra Red functionalities and some examples 
 Contents:
 
 
-* [Infra Red Library](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/docs/official_lib.zerynth.infrared_infrared.html)
-    * [IRPacket class](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/docs/official_lib.zerynth.infrared_infrared.html#irpacket-class)
-    * [IRReceiver class](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/docs/official_lib.zerynth.infrared_infrared.html#irreceiver-class)
-    * [IRSender class](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/docs/official_lib.zerynth.infrared_infrared.html#irsender-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/examples/examples.html)
-    * [IR Send Raw Data](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/examples/examples.html#ir-send-raw-data)
-    * [IR Capture Decode and Send](https://docs.zerynth.com/latest/official/lib.zerynth.infrared/examples/examples.html#ir-capture-decode-and-send)
+* [Infra Red Library](/latest/reference/libs/zerynth/infrared/docs/infrared/)
+    * [IRPacket class](/latest/reference/libs/zerynth/infrared/docs/infrared/#irpacket-class)
+    * [IRReceiver class](/latest/reference/libs/zerynth/infrared/docs/infrared/#irreceiver-class)
+    * [IRSender class](/latest/reference/libs/zerynth/infrared/docs/infrared/#irsender-class)
+* [Examples](/latest/reference/libs/zerynth/infrared/docs/examples/)
+    * [IR Send Raw Data](/latest/reference/libs/zerynth/infrared/docs/examples/#ir-send-raw)
+    * [IR Capture Decode and Send](/latest/reference/libs/zerynth/infrared/docs/examples/#ir-capture-decode-and-send)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTI4NTEyOTYxXX0=
 -->
