@@ -127,7 +127,9 @@ nav:
           - reference/core/toolchain/docs/aws_awscmd.md
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
-        - Zerynth Device Manager: /latest/deploy/Deploy%20and%20Manage/
+
+        - ZDM CLI:
+          - reference/core/zdmcli/docs/index.md
     - Supported Devices:
       - reference/boards/Supported_Devices.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
