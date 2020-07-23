@@ -24,7 +24,7 @@ Here below, the Zerynth driver for the Microchip MCP3204/3208.
 Contents:
 
 
-* [MCP3204/3208 Module](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/docs/official_lib.microchip.mcp3208_mcp3208.html)
-    * [MCP3208 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/docs/official_lib.microchip.mcp3208_mcp3208.html#mcp3208-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/examples/examples.html)
-    * [thumbstick](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/examples/examples.html#thumbstick)
+* [MCP3204/3208 Module](/latest/reference/libs/microchip/mcp3208/docs/mcp3208/)
+    * [MCP3208 class](/latest/reference/libs/microchip/mcp3208/docs/mcp3208/#mcp3208-class)
+* [Examples](/latest/reference/libs/microchip/mcp3208/docs/examples/)
+    * [thumbstick](/latest/reference/libs/microchip/mcp3208/docs/examples/#thumbstick-controller-with-mcp32043208)
