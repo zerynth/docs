@@ -21,7 +21,7 @@ L76, the extremely compact GNSS module, is a concurrent GNSS receiver with multi
 Contents:
 
 
-* [L76 Module](https://docs.zerynth.com/latest/official/lib.quectel.l76/docs/official_lib.quectel.l76_l76.html)
-    * [NMEA](https://docs.zerynth.com/latest/official/lib.quectel.l76/docs/official_lib.quectel.l76_l76.html#nmea)
-* [Examples](https://docs.zerynth.com/latest/official/lib.quectel.l76/examples/examples.html)
-    * [Fix GPS](https://docs.zerynth.com/latest/official/lib.quectel.l76/examples/examples.html#fix-gps)
+* [L76 Module](/latest/reference/libs/quectel/l76/docs/l76/)
+    * [NMEA](/latest/reference/libs/quectel/l76/docs/l76/#nmea)
+* [Examples](/latest/reference/libs/quectel/l76/docs/examples/)
+    * [Fix GPS](/latest/reference/libs/quectel/l76/docs/examples/#fix)
