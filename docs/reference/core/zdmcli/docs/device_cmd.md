@@ -3,15 +3,11 @@ A Device is the smallest entity you can find in the ZDM.
 It is represented by the physical IOT device connected with the ZDM via MQTT.
 
 ## Create
-Create a new device.
+Create a new device with a `NAME`.
 
 ```bash
-zdm device create NAME
+zdm device create  [OPTIONS]  NAME
 ```
-
-Where:
-
-* `NAME` is the name you want to give to your device
 
 Options:
 
@@ -19,15 +15,12 @@ Options:
 
 
 ## Get
-Get a single device.
+Get a single device by `ID`.
 
 ```bash
 zdm device get ID
 ```
 
-Where:
-
-* `ID` is the id of the device
 
 ## List
 List all the device.
@@ -37,15 +30,12 @@ zdm device all
 ```
 
 ## Update
-Update a device.
+Update a device bu `ID`
 
 ```bash
-zdm device update ID
+zdm device update   [OPTIONS] ID
 ```
 
-Where:
-
-* `ID` is the id of the device
 
 Options:
 
@@ -55,15 +45,12 @@ Options:
 
 ## Provision
 The command generates a configuration file (zdevice.json) that contains the credentials and the endpoint
-to be used to provision a new device.
+to be used to provision the device with `DEVICE_ID`. 
 
 ```sh
 zdm device provision [OPTIONS] DEVICE_ID
 ```
 
-Where:
-
-* `DEVICE_ID` is the id of the device
 
 Options:
 
@@ -71,6 +58,4 @@ Options:
  * `--credentials [device_token|cloud_token]` Choose device credentials. Default `device_token`.
  * `-o, --output TEXT`              Path to save zdevice.json. Default current directory.
 
-
-## 
 

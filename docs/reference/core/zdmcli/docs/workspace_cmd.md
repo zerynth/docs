@@ -4,15 +4,12 @@ You can imagine the workspace as the main folder of your project.
 
 
 ## Create
-Create a new workspace.
+Create a new workspace with a `NAME`.
 
 ```bash
-zdm workspace create NAME
+zdm workspace create [OPTIONS] NAME
 ```
 
-Where:
-
-* `NAME` is the name you want to give to your workspace
 
 Options:
 
@@ -20,15 +17,12 @@ Options:
 
 
 ## Get
-Get a single workspace.
+Get a single workspace by `ID`.
 
 ```bash
 zdm workspace get ID
 ```
 
-Where:
-
-* `ID` is the id of the workspace (e.g. `wks-000111aaabbc`)
 
 ## List
 List all the workspace.
@@ -44,16 +38,12 @@ Manage the data of a workspace.
 
 
 ### List
-List the data published on a workspace on a given tag.
+List the data published on a workspace with `ID` on a given `TAG`.
 
 ```bash
-zdm workspace data all ID TAG
+zdm workspace data all [OPTIONS] ID TAG
 ```
 
-Where:
-
-* `ID` is the id of the workspace 
-* `TAG` is the tag of the published data
 
 Options:
 
@@ -62,31 +52,26 @@ Options:
 *  `--end DATE`     end date filter (RFC3339
 
 ### Tags
-Get the list of data tags of a workspace
+List the data tags of a workspace with `ID`.
 
 ```bash
 zdm workspace data tags ID
 ```
-Where:
 
-* `ID` is the id of the workspace 
+
 
 ### Export
 Export the data of a workspace. 
 An export create a link where the data can be downloaded.
 
 #### Create
-Create an export for downloading the data. 
+Create an export with `NAME` for downloading the data.
+The export is of a given `TYPE` on a `WORKSPACE_ID` between a `START`date (RFC339 format) 
+and `END`  date  (RFC339 format). 
 
 ```sh
-zdm workspace data export create NAME TYPE WORKSPACE_ID START END
+zdm workspace data export create [OPTIONS]  NAME TYPE WORKSPACE_ID START END
 ```
-Where:
-
-* `NAME` is the name of the export
-* `WORKSPACE_ID` is the id of the workspace 
-* `START` is start date of the data in RFC339 format
-* `END` is end data of the data in RFC339 format 
 
 Options:
 
@@ -94,15 +79,11 @@ Options:
 * `--fleet TEXT`   filter data by a fleet id
 
 #### Get
- Get the information of an export.
+Get the information of an export given the `EXPORT_ID`.
 
  ```bash
 zdm workspace data export get EXPORT_ID
  ```
-
-Where:
-
-* `EXPORT_ID` is the id of the export
 
 
 ## Conditions 
@@ -110,16 +91,12 @@ Retrieve the conditions of a workspace associated to a tag.
 
 
 ### List
-List all the conditions  of a workspace.
+List all the conditions  of a workspace `ID` on a given condition `TAG`.
 
 ```bash
-zdm workspace condition all ID TAG
+zdm workspace condition [OPTIONS] all ID TAG
 ```
 
-Where:
-
-* `ID` is the id of the workspace 
-* `TAG` is the tag of the condition.
 
 Options:
 
