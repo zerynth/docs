@@ -19,5 +19,5 @@ Here below, the Zerynth driver for the Microchip MCP4921.
 Contents:
 
 
-* [MCP4921 Module](https://docs.zerynth.com/latest/official/lib.microchip.mcp4921/docs/official_lib.microchip.mcp4921_mcp4921.html)
-    * [MCP4921 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp4921/docs/official_lib.microchip.mcp4921_mcp4921.html#mcp4921-class)
+* [MCP4921 Module](/latest/reference/libs/microchip/mcp4921/docs/mcp4921/)
+    * [MCP4921 class](/latest/reference/libs/microchip/mcp4921/docs/mcp4921/#mcp4921-class)
