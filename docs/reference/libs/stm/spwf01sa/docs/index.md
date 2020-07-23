@@ -22,7 +22,7 @@ Here below, the Zerynth driver for the STM SPWF01SA.
 Contents:
 
 
-* [SPWF01SA Module](https://docs.zerynth.com/latest/official/lib.stm.spwf01sa/docs/official_lib.stm.spwf01sa_spwf01sa.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.stm.spwf01sa/examples/examples.html)
-     * [find and set baud](https://docs.zerynth.com/latest/official/lib.stm.spwf01sa/examples/examples.html#find-and-set-baud)
-     * [connect](https://docs.zerynth.com/latest/official/lib.stm.spwf01sa/examples/examples.html#connect)
+* [SPWF01SA Module](/latest/reference/libs/stm/spwf01sa/docs/spwf01sa/)
+* [Examples](/latest/reference/libs/stm/spwf01sa/docs/examples/)
+     * [find and set baud](/latest/reference/libs/stm/spwf01sa/docs/examples/#find-and-set-baud)
+     * [connect](/latest/reference/libs/stm/spwf01sa/docs/examples/#connect)
