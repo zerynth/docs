@@ -29,8 +29,8 @@ nav:
 - Develop:
   - develop/Develop.md
 - Deploy and Manage:
-  - Index: deploy/index.md
-  - ZDM Web Interface: deploy/webInterface.md
+  - Index: deploy/docs/index.md
+  - ZDM Web Interface: deploy/docs/webInterface.md
 - Integrate:
   - integrate/Integrate.md
 - Reference:
@@ -129,7 +129,7 @@ nav:
           - reference/core/toolchain/docs/aws_awscmd.md
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
-        
+
         - ZDM CLI:
           - reference/core/zdmcli/docs/index.md
           - reference/core/zdmcli/docs/account_cmd.md
