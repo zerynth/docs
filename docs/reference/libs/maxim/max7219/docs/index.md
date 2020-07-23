@@ -19,9 +19,9 @@ Here below, the Zerynth driver for the Maxim MAX729.
 
  Contents:
  
- -   [MAX7219 Module](https://docs.zerynth.com/latest/official/lib.maxim.max7219/docs/official_lib.maxim.max7219_max7219.html)
- -   [Examples](https://docs.zerynth.com/latest/official/lib.maxim.max7219/examples/examples.html)
-     -   [led matrix](https://docs.zerynth.com/latest/official/lib.maxim.max7219/examples/examples.html#led-matrix)
+ -   [MAX7219 Module](/latest/reference/libs/maxim/max7219/docs/max7219/)
+ -   [Examples](/latest/reference/libs/maxim/max7219/docs/examples/)
+     -   [led matrix](/latest/reference/libs/maxim/max7219/docs/examples/#led-matrix)
 
 
 <!--stackedit_data:
