@@ -11,7 +11,7 @@ A program using the ZerynthApp module must provide some components:
 * a set of remotely callable functions representing the channel from Javascript to Python
 * a set of events representing the channel from Python to Javascript
 
-When the ZerynthApp class, defined in this module, is instantiated and run, it waits for messages coming from the mobile app through the [Zerynth Advanced Device Manager](https://docs.zerynth.com/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
+When the ZerynthApp class, defined in this module, is instantiated and run, it waits for messages coming from the mobile app through the [Zerynth Advanced Device Manager](/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
 
 ## ZerynthApp Step by Step
 
@@ -26,7 +26,7 @@ Using the “zerynthapp” module is easy.
 
 ### HTML templates
 
-HTML templates reside on the ADM servers and are transferred from it to the mobile app where they are rendered. Javascript is needed to add some logic to the template. The task is made easier by using the [Zerynth ADM Javascript library](https://docs.zerynth.com/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
+HTML templates reside on the ADM servers and are transferred from it to the mobile app where they are rendered. Javascript is needed to add some logic to the template. The task is made easier by using the [Zerynth ADM Javascript library](/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
 
 Templates are better explained with examples:
 
