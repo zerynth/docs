@@ -15,4 +15,4 @@ Location fixes are obtained by parsing NMEA sentences of type RMC and GGA, and o
 Contents:
 
 
-* [NMEA Module](https://docs.zerynth.com/latest/official/lib.quectel.nmea/docs/official_lib.quectel.nmea_nmea.html)
+* [NMEA Module](/latest/reference/libs/quectel/nmea/docs/nmea/)
