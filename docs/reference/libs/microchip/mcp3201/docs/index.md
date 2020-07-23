@@ -20,5 +20,5 @@ Here below, the Zerynth driver for the Microchip MCP3201.
 Contents:
 
 
-* [MCP3201 Module](https://docs.zerynth.com/latest/official/lib.microchip.mcp3201/docs/official_lib.microchip.mcp3201_mcp3201.html)
-    * [MCP3201 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp3201/docs/official_lib.microchip.mcp3201_mcp3201.html#mcp3201-class)
+* [MCP3201 Module](/latest/reference/libs/microchip/mcp3201/docs/mcp3201/)
+    * [MCP3201 class](/latest/reference/libs/microchip/mcp3201/docs/mcp3201/#mcp3201-class)
