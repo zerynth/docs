@@ -21,7 +21,7 @@ Below, Zerynth driver documentation for Microchip WINC1500 wifi chip.
 Contents:
 
 
-* [WINC1500 Module](https://docs.zerynth.com/latest/official/lib.microchip.winc1500/docs/official_lib.microchip.winc1500_winc1500.html)
+* [WINC1500 Module](/latest/reference/libs/microchip/winc1500/docs/winc1500/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE1OTYyNTU5MjNdfQ==
 -->
