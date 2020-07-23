@@ -22,8 +22,8 @@ Here below, the Zerynth driver for the Maxim DS2482.
 
 Contents:
 
--   [DS2482 Module - One Wire](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html)
-    -   [OneWireSensor class](https://docs.zerynth.com/latest/official/lib.maxim.ds2482/docs/official_lib.maxim.ds2482_ds2482.html#onewiresensor-class)
+-   [DS2482 Module - One Wire](/latest/reference/libs/maxim/ds2482/docs/ds2482/)
+    -   [OneWireSensor class](/latest/reference/libs/maxim/ds2482/docs/ds2482/#onewiresensor-class)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE1Njk5NDkwMzVdfQ==
 -->
