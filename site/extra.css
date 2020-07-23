@@ -102,4 +102,8 @@ h5 {
 .md-typeset ul li p, .md-typeset ul li blockquote, .md-typeset ol li p, .md-typeset ol li blockquote {
     margin: .2em 0;
 }
-
+.md-typeset img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
