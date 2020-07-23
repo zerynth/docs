@@ -17,15 +17,15 @@ Here below, the Zerynth driver for the MAXIM MAX30101.
 
 Contents:
 
--   [MAX30101 Module](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html)
-    -   [MAX30101 Class](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#max30101-class)
-        -   [FIFO configuration](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#fifo-configuration)
-        -   [Interrupt configuration](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#interrupt-configuration)
-        -   [Mode configuration](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#mode-configuration)
-        -   [Temperature Data](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#temperature-data)
-        -   [Part ID](https://docs.zerynth.com/latest/official/lib.maxim.max30101/docs/official_lib.maxim.max30101_max30101.html#part-id)
--   [Examples](https://docs.zerynth.com/latest/official/lib.maxim.max30101/examples/examples.html)
-    -   [heart beat](https://docs.zerynth.com/latest/official/lib.maxim.max30101/examples/examples.html#heart-beat)
+-   [MAX30101 Module](/latest/reference/libs/maxim/max30101/docs/max30101/)
+    -   [MAX30101 Class](/latest/reference/libs/maxim/max30101/docs/max30101/#max30101-class)
+        -   [FIFO configuration](/latest/reference/libs/maxim/max30101/docs/max30101/#fifo-configuration)
+        -   [Interrupt configuration](/latest/reference/libs/maxim/max30101/docs/max30101/#interrupt-configuration)
+        -   [Mode configuration](/latest/reference/libs/maxim/max30101/docs/max30101/#mode-configuration)
+        -   [Temperature Data](/latest/reference/libs/maxim/max30101/docs/max30101/#temperature-data)
+        -   [Part ID](/latest/reference/libs/maxim/max30101/docs/max30101/#part-id)
+-   [Examples](/latest/reference/libs/maxim/max30101/docs/examples/)
+    -   [heart beat](/latest/reference/libs/maxim/max30101/docs/examples/#detect-heart-rate-with-max30101)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTk4NTc3NDI2MV19
 -->
