@@ -18,7 +18,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tilde
 nav:
-  - zdmgettingstarted.md
+  - zdmclientpy.md
+  - zdmesp32.md
 plugins:
   - search
   -   minify: {minify_html: true}

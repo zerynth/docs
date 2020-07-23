@@ -55,7 +55,7 @@ In the **Device security** modal *Credentials type* *Endpoint type* are set by d
     [ ![](img/publishdata.png) ](img/publishdata.png)
     
 ##Data visualization
-1.  Go back to the **ZDM Web Interface**, then open the device page clicking on the device name in the devices table.
+1.  Go back to the **ZDM Web Interface**, then open the device page clicking on the name in the devices table.
     Data sent by the device are visible here!
     
     [ ![](img/dataconsole.png) ](img/dataconsole.png)
