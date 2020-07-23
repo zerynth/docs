@@ -24,5 +24,5 @@ Contents:
     * [ModbusTCP class](/latest/reference/libs/zerynth/modbus/docs/modbus/#modbustcp-class)
     * [ModbusSerial class](/latest/reference/libs/zerynth/modbus/docs/modbus/#modbusserial-class)
 * [Examples](/latest/reference/libs/zerynth/modbus/docs/examples/)
-    * [ModbusTcp](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/examples/examples.html#modbustcp)
-    * [ModbusSerial](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/examples/examples.html#modbusserial)
+    * [ModbusTcp](/latest/reference/libs/zerynth/modbus/docs/examples/#modbustcp)
+    * [ModbusSerial](/latest/reference/libs/zerynth/modbus/docs/examples/#modbusserial)
