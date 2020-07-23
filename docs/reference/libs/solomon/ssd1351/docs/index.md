@@ -22,7 +22,7 @@ Here below, the Zerynth driver for the SOLOMON SSD1351.
 Contents:
 
 
-* [SSD1351 Module](https://docs.zerynth.com/latest/official/lib.solomon.ssd1351/docs/official_lib.solomon.ssd1351_ssd1351.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.solomon.ssd1351/examples/examples.html)
-    * [blinking image](https://docs.zerynth.com/latest/official/lib.solomon.ssd1351/examples/examples.html#blinking-image)
-    * [print on oled display](https://docs.zerynth.com/latest/official/lib.solomon.ssd1351/examples/examples.html#print-on-oled-display)
+* [SSD1351 Module](/latest/reference/libs/solomon/ssd1351/docs/ssd1351/)
+* [Examples](/latest/reference/libs/solomon/ssd1351/docs/examples/)
+    * [blinking image](/latest/reference/libs/solomon/ssd1351/docs/examples/#draw-a-blinking-image)
+    * [print on oled display](/latest/reference/libs/solomon/ssd1351/docs/examples/#print-on-oled-display)
