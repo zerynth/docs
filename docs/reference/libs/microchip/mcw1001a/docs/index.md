@@ -19,4 +19,4 @@ Here below, the Zerynth driver for the Microchip MCW1001A.
 Contents:
 
 
-* [MCW1001A Module](https://docs.zerynth.com/latest/official/lib.microchip.mcw1001a/docs/official_lib.microchip.mcw1001a_mcw1001a.html)
+* [MCW1001A Module](/latest/reference/libs/microchip/mcw1001a/docs/mcw1001a/)
