@@ -26,9 +26,9 @@ Here below, the Zerynth driver for the NXP FXOS8700CQ.
 
 Contents:
 
--   [FXOS8700CQ Module](https://docs.zerynth.com/latest/official/lib.nxp.fxos8700cq/docs/official_lib.nxp.fxos8700cq_fxos8700cq.html)
--   [Examples](https://docs.zerynth.com/latest/official/lib.nxp.fxos8700cq/examples/examples.html)
-    -   [get accel magn](https://docs.zerynth.com/latest/official/lib.nxp.fxos8700cq/examples/examples.html#get-accel-magn)
+-   [FXOS8700CQ Module](/latest/reference/libs/nxp/fxos8700cq/docs/fxos8700cq/)
+-   [Examples](/latest/reference/libs/nxp/fxos8700cq/docs/examples/)
+    -   [get accel magn](/latest/reference/libs/nxp/fxos8700cq/docs/examples/#read-accelerometer-and-magnetometer-data-from-fxos8700cq)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2ODgxOTcwOTZdfQ==
 -->
