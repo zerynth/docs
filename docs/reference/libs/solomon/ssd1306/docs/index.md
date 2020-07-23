@@ -24,7 +24,7 @@ Here below, the Zerynth driver for the SOLOMON SSD1306.
 
 Contents:
 
-* [SSD1306 Module](https://docs.zerynth.com/latest/official/lib.solomon.ssd1306/docs/official_lib.solomon.ssd1306_ssd1306.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.solomon.ssd1306/examples/examples.html)
-    * [fading image](https://docs.zerynth.com/latest/official/lib.solomon.ssd1306/examples/examples.html#fading-image)
-    * [writing on bw oled](https://docs.zerynth.com/latest/official/lib.solomon.ssd1306/examples/examples.html#writing-on-bw-oled)
+* [SSD1306 Module](/latest/reference/libs/solomon/ssd1306/docs/ssd1306/)
+* [Examples](/latest/reference/libs/solomon/ssd1306/docs/examples/)
+    * [fading image](/latest/reference/libs/solomon/ssd1306/docs/examples/#draw-a-fading-image)
+    * [writing on bw oled](/latest/reference/libs/solomon/ssd1306/docs/examples/#draw-text-on-oled-display)
