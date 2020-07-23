@@ -21,8 +21,8 @@ Here below, the Zerynth driver for the Maxim MAX11644/11645.
 
 Contents:
 
--   [MAX11644/11645 Module](https://docs.zerynth.com/latest/official/lib.maxim.max11644/docs/official_lib.maxim.max11644_max11644.html)
-    -   [MAX11644 class](https://docs.zerynth.com/latest/official/lib.maxim.max11644/docs/official_lib.maxim.max11644_max11644.html#max11644-class)
+-   [MAX11644/11645 Module](/latest/reference/libs/maxim/max11644/docs/max11644/)
+    -   [MAX11644 class](/latest/reference/libs/maxim/max11644/docs/max11644/#max11644-class)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI1MzIwNzE0MF19
 -->
