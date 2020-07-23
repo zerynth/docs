@@ -21,8 +21,8 @@ Here below, the Zerynth Library for MQTT connectivity protocol and some examples
 Contents:
 
 
-* [MQTT Library](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/docs/official_lib.zerynth.mqtt_mqtt.html)
-    * [MQTTMessage class](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/docs/official_lib.zerynth.mqtt_mqtt.html#mqttmessage-class)
-    * [Client class](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/docs/official_lib.zerynth.mqtt_mqtt.html#client-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/examples/examples.html)
-    * [MQTT at mosquitto org](https://docs.zerynth.com/latest/official/lib.zerynth.mqtt/examples/examples.html#mqtt-at-mosquitto-org)
+* [MQTT Library](/latest/reference/libs/zerynth/mqtt/docs/mqtt/)
+    * [MQTTMessage class](/latest/reference/libs/zerynth/mqtt/docs/mqtt/#mqttmessage-class)
+    * [Client class](/latest/reference/libs/zerynth/mqtt/docs/mqtt/#client-class)
+* [Examples](/latest/reference/libs/zerynth/mqtt/docs/examples/)
+    * [MQTT at mosquitto org](/latest/reference/libs/zerynth/mqtt/docs/examples/#mqtt-at-mosquittoorg)

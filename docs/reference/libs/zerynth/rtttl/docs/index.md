@@ -21,6 +21,6 @@ Here below, the Zerynth Library for RTTTL melody player and some examples to bet
 Contents:
 
 
-* [RTTTL Library](https://docs.zerynth.com/latest/official/lib.zerynth.rtttl/docs/official_lib.zerynth.rtttl_rtttl.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.rtttl/examples/examples.html)
-    * [RTTTL Basics](https://docs.zerynth.com/latest/official/lib.zerynth.rtttl/examples/examples.html#rtttl-basics)
+* [RTTTL Library](/latest/reference/libs/zerynth/rtttl/docs/rtttl/)
+* [Examples](/latest/reference/libs/zerynth/rtttl/docs/examples/)
+    * [RTTTL Basics](/latest/reference/libs/zerynth/rtttl/docs/examples/#rtttl-library-basics)
