@@ -4,10 +4,10 @@
 Contents:
 
 
-* [Zerynth ADM Library](https://docs.zerynth.com/latest/official/lib.zerynth.zadm/docs/official_lib.zerynth.zadm_zadm.html)
-    * [Zerynth ADM Step by Step](https://docs.zerynth.com/latest/official/lib.zerynth.zadm/docs/official_lib.zerynth.zadm_zadm.html#zerynth-adm-step-by-step)
-    * [The Device class](https://docs.zerynth.com/latest/official/lib.zerynth.zadm/docs/official_lib.zerynth.zadm_zadm.html#the-device-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.zadm/examples/examples.html)
-    * [Simple ADM](https://docs.zerynth.com/latest/official/lib.zerynth.zadm/examples/examples.html#simple-adm)
-    * [FOTA updates](https://docs.zerynth.com/latest/official/lib.zerynth.zadm/examples/examples.html#fota-updates)
+* [Zerynth ADM Library](/latest/reference/libs/zerynth/zadm/docs/zadm/)
+    * [Zerynth ADM Step by Step](/latest/reference/libs/zerynth/zadm/docs/zadm/#zerynth-adm-step-by-step)
+    * [The Device class](/latest/reference/libs/zerynth/zadm/docs/zadm/#the-device-class)
+* [Examples](/latest/reference/libs/zerynth/zadm/docs/examples/)
+    * [Simple ADM](/latest/reference/libs/zerynth/zadm/docs/examples/#simple-adm)
+    * [FOTA updates](/latest/reference/libs/zerynth/zadm/docs/examples/#fota-updates)
 
