@@ -2,7 +2,7 @@
 
 The SH01 xChip is a multiple channel capacitive touch sensor controller. It is based on the [CAP1296](https://www.microchip.com/wwwproducts/en/CAP1296) manufactured by Microchip. Each sensor input is calibrated to compensate for system parasitic capacitance and automatically recalibrated to compensate for gradual environmental changes. In addition, the CAP1296 can be configured to detect proximity on one or more channels with an optional signal guard to reduce noise sensitivity. The CAP1296 includes Multiple Pattern Touch recognition that allows the user to select a specific set of buttons to be touched simultaneously. If this pattern is detected, a status bit is set and an interrupt is generated.
 
-Please note, SH01 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](https://docs.zerynth.com/latest/official/board.zerynth.xinabox_esp32/docs/index.html). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
+Please note, SH01 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](/latest/reference/boards/xinabox_esp32/docs/). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
 
 ## Technical Details
 
@@ -20,7 +20,7 @@ Please note, SH01 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* [SH01 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/docs/official_lib.xinabox.sh01_sh01.html)
-    * [SH01 class](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/docs/official_lib.xinabox.sh01_sh01.html#sh01-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/examples/examples.html)
-    * [touch button](https://docs.zerynth.com/latest/official/lib.xinabox.sh01/examples/examples.html#touch-button)
+* [SH01 Module](/latest/reference/libs/xinabox/sh01/docs/sh01/)
+    * [SH01 class](/latest/reference/libs/xinabox/sh01/docs/sh01/#sh01-class)
+* [Examples](/latest/reference/libs/xinabox/sh01/docs/examples/)
+    * [touch button](/latest/reference/libs/xinabox/sh01/docs/examples/#capacitive-touch-detection)

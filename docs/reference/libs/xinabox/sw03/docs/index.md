@@ -4,7 +4,7 @@ The SW03 xChip is equipped with a weather sensor that is capable of measuring th
 
 The MPL3115A2 is a compact, piezoresistive, absolute pressure sensor with an I2C digital interface. MPL3115A2 has a wide operating range of 20 kPa to 110 kPa, a range that covers all surface elevations on earth. The MEMS is temperature compensated utilizing an on-chip temperature sensor. The pressure and temperature data is fed into a high resolution ADC to provide fully compensated and digitized outputs for pressure in Pascals and temperature in °C. The compensated pressure output can then be converted to altitude.
 
-Please note, SW03 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](https://docs.zerynth.com/latest/official/board.zerynth.xinabox_esp32/docs/index.html). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
+Please note, SW03 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](/latest/reference/boards/xinabox_esp32/docs/). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
 
 ## Technical Details
 
@@ -21,7 +21,7 @@ Please note, SW03 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* [SW03 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/docs/official_lib.xinabox.sw03_sw03.html)
-    * [SW03 class](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/docs/official_lib.xinabox.sw03_sw03.html#sw03-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/examples/examples.html)
-    * [environmental data](https://docs.zerynth.com/latest/official/lib.xinabox.sw03/examples/examples.html#environmental-data)
+* [SW03 Module](/latest/reference/libs/xinabox/sw03/docs/sw03/)
+    * [SW03 class](/latest/reference/libs/xinabox/sw03/docs/sw03/#sw03-class)
+* [Examples](/latest/reference/libs/xinabox/sw03/docs/examples/)
+    * [environmental data](/latest/reference/libs/xinabox/sw03/docs/examples/#environmental-data-measurement)
