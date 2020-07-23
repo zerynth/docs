@@ -28,6 +28,6 @@ Below, Zerynth driver documentation for STM IIS3DWB chip.
 Contents:
 
 
-* [IIS3DWB Module](https://docs.zerynth.com/latest/official/lib.stm.iis3dwb/docs/official_lib.stm.iis3dwb_iis3dwb.html)
-* [Example](https://docs.zerynth.com/latest/official/lib.stm.iis3dwb/examples/examples.html)
-     * [get data](https://docs.zerynth.com/latest/official/lib.stm.iis3dwb/examples/examples.html#get-data)
+* [IIS3DWB Module](/latest/reference/libs/stm/iis3dwb/docs/iis3dwb/)
+* [Example](/latest/reference/libs/stm/iis3dwb/docs/examples/)
+     * [get data](/latest/reference/libs/stm/iis3dwb/docs/examples/#read-vibrometer-and-temperature-data-from-iis3dwb)
