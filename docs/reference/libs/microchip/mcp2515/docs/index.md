@@ -23,8 +23,8 @@ Here below, the Zerynth driver for the Microchip MCP2515.
 
 Contents:
 
-* [MCP2515 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/docs/official_lib.microchip.mcp2515_mcp2515.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/examples/examples.html)
-   * [can loopback](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/examples/examples.html#can-loopback)
-   * [can communication](https://docs.zerynth.com/latest/official/lib.microchip.mcp2515/examples/examples.html#can-communication)
+* [MCP2515 class](/latest/reference/libs/microchip/mcp2515/docs/mcp2515/#mcp2515-class)
+* [Examples](/latest/reference/libs/microchip/mcp2515/docs/examples/)
+   * [can loopback](/latest/reference/libs/microchip/mcp2515/docs/examples/#can-loopback-example)
+   * [can communication](/latest/reference/libs/microchip/mcp2515/docs/examples/#can-communication-example)
 
