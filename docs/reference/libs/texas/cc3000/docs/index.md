@@ -21,5 +21,5 @@ Here below, the Zerynth driver for the Texas Instruments CC3000.
 Contents:
 
 
-* [CC3000 Module](https://docs.zerynth.com/latest/official/lib.texas.cc3000/docs/official_lib.texas.cc3000_cc3000.html)
-* [CC3000 Tiny](https://docs.zerynth.com/latest/official/lib.texas.cc3000/docs/official_lib.texas.cc3000_cc3000_tiny.html)
+* [CC3000 Module](/latest/reference/libs/texas/cc3000/docs/cc3000/)
+* [CC3000 Tiny](/latest/reference/libs/texas/cc3000/docs/cc3000_tiny/)
