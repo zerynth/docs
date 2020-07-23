@@ -2,7 +2,7 @@
 
 The SU02 xChip is a digital input. It is based on the [ADC081C021](http://www.ti.com/lit/ds/symlink/adc081c021.pdf) manufactured by texas Instruments.
 
-Please note, SU02 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](https://docs.zerynth.com/latest/official/board.zerynth.xinabox_esp32/docs/index.html). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
+Please note, SU02 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](/latest/reference/boards/xinabox_esp32/docs/). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
 
 ## Technical Details
 
@@ -18,7 +18,7 @@ Please note, SU02 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* [SU02 Module](https://docs.zerynth.com/latest/official/lib.xinabox.su02/docs/official_lib.xinabox.su02_su02.html)
-    * [SU02 class](https://docs.zerynth.com/latest/official/lib.xinabox.su02/docs/official_lib.xinabox.su02_su02.html#su02-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.su02/examples/examples.html)
-    * [read input](https://docs.zerynth.com/latest/official/lib.xinabox.su02/examples/examples.html#read-input)
+* [SU02 Module](/latest/reference/libs/xinabox/su02/docs/su02/)
+    * [SU02 class](/latest/reference/libs/xinabox/su02/docs/su02/#su02-class)
+* [Examples](/latest/reference/libs/xinabox/su02/docs/examples/)
+    * [read input](/latest/reference/libs/xinabox/su02/docs/examples/#read-input-state)
