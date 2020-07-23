@@ -19,8 +19,8 @@ Here below, the Zerynth driver for the Microchip RN2483 and some examples to bet
 Contents: 
 
 
-* [RN2483 Module](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/docs/official_lib.microchip.rn2483_rn2483.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html)
-  * [get eui](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html#get-eui)
-  * [ping](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html#ping)
-  * [custom eui](https://docs.zerynth.com/latest/official/lib.microchip.rn2483/examples/examples.html#custom-euiS)
+* [RN2483 Module](/latest/reference/libs/microchip/rn2483/docs/rn2483/)
+* [Examples](/latest/reference/libs/microchip/rn2483/docs/examples/)
+  * [get eui](/latest/reference/libs/microchip/rn2483/docs/examples/#eui)
+  * [ping](/latest/reference/libs/microchip/rn2483/docs/examples/#lora-ping)
+  * [custom eui](/latest/reference/libs/microchip/rn2483/docs/examples/#custom-eui)
