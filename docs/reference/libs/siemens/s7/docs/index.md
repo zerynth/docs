@@ -9,8 +9,8 @@ The Zerynth Siemens S7 Communication Protocol Library is based on the [Snap7](ht
 Contents:
 
 
-* [Siemens S7 Communication Protocol Library](https://docs.zerynth.com/latest/official/lib.siemens.s7/docs/official_lib.siemens.s7_s7.html)
-    * [The Client class](https://docs.zerynth.com/latest/official/lib.siemens.s7/docs/official_lib.siemens.s7_s7.html#the-client-class)
-    * [Library Functions](https://docs.zerynth.com/latest/official/lib.siemens.s7/docs/official_lib.siemens.s7_s7.html#library-functions)
-* [Examples](https://docs.zerynth.com/latest/official/lib.siemens.s7/examples/examples.html)
-    * [DB write and read](https://docs.zerynth.com/latest/official/lib.siemens.s7/examples/examples.html#db-write-and-read)
+* [Siemens S7 Communication Protocol Library](/latest/reference/libs/siemens/s7/docs/s7/)
+    * [The Client class](/latest/reference/libs/siemens/s7/docs/s7/#the-client-class)
+    * [Library Functions](/latest/reference/libs/siemens/s7/docs/s7/#library-functions)
+* [Examples](/latest/reference/libs/siemens/s7/docs/examples/)
+    * [DB write and read](/latest/reference/libs/siemens/s7/docs/examples/#db-write-and-read)
