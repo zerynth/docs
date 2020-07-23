@@ -21,6 +21,6 @@ Teseo-LIV3F provides also the Autonomous Assisted GNSS able to predict satellite
 Contents:
 
 
-* [TeseoLiv3F Module](https://docs.zerynth.com/latest/official/lib.stm.teseoliv3f/docs/official_lib.stm.teseoliv3f_teseoliv3f.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.stm.teseoliv3f/examples/examples.html)
-     * [Fix GPS](https://docs.zerynth.com/latest/official/lib.stm.teseoliv3f/examples/examples.html#fix-gps)
+* [TeseoLiv3F Module](/latest/reference/libs/stm/teseoliv3f/docs/teseoliv3f/)
+* [Examples](/latest/reference/libs/stm/teseoliv3f/docs/examples/)
+     * [Fix GPS](/latest/reference/libs/stm/teseoliv3f/docs/examples/#fix)
