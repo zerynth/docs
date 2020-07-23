@@ -23,9 +23,9 @@ Below, Zerynth driver documentation for ON Semiconductor NCV7240 chip.
 
 Contents:
 
--   [NCV7240](https://docs.zerynth.com/latest/official/lib.onsemi.ncv7240/docs/index.html)
-    -   [Technical Details](https://docs.zerynth.com/latest/official/lib.onsemi.ncv7240/docs/index.html#technical-details)
-        -   [NCV7240 Module](https://docs.zerynth.com/latest/official/lib.onsemi.ncv7240/docs/official_lib.onsemi.ncv7240_ncv7240.html)
+-   [NCV7240](/latest/reference/libs/onsemi/ncv7240/docs/)
+    -   [Technical Details](/latest/reference/libs/onsemi/ncv7240/docs/#technical-details)
+        -   [NCV7240 Module](/latest/reference/libs/onsemi/ncv7240/docs/ncv7240/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTcwODYyOTc5MV19
 -->
