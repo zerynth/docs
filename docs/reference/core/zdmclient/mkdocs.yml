@@ -1,5 +1,6 @@
 ---
 markdown_extensions:
+- mkdocs-click
 - meta
 - admonition
 - footnotes
@@ -19,13 +20,6 @@ markdown_extensions:
 - pymdownx.tilde
 nav: 
     - index.md
-    - account_cmd.md
-    - workspace_cmd.md
-    - fleet_cmd.md
-    - device_cmd.md
-    - gate_cmd.md
-    - job_cmd.md
-    - fota_cmd.md
 plugins:
 - search
 -   minify: {minify_html: true}
