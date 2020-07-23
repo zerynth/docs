@@ -5,9 +5,10 @@ markdown_extensions:
 - admonition
 - footnotes
 - meta
--   codehilite: {guess_lang: true}
--   toc: {permalink: true}
--   pymdownx.betterem: {smart_enable: all}
+- attr_list
+- codehilite: {guess_lang: true}
+- toc: {permalink: true}
+- pymdownx.betterem: {smart_enable: all}
 - pymdownx.caret
 - pymdownx.critic
 - pymdownx.inlinehilite
@@ -15,28 +16,26 @@ markdown_extensions:
 - pymdownx.mark
 - pymdownx.smartsymbols
 - pymdownx.superfences
--   pymdownx.tasklist: {custom_checkbox: true}
+- pymdownx.tasklist: {custom_checkbox: true}
 - pymdownx.tabbed
 - pymdownx.tilde
 nav:
-- Welcome: index.md
-
-- Conceptual Model:
-  - conceptualmodel/Conceptual Model.md
-  - conceptualmodel/Zerynth Components.md
+- Introduction:
+  - intro/intro.md
+  - intro/components.md
 - Getting Started:
   - gettingstarted/Getting Started.md
 - Develop:
   - develop/Develop.md
 - Deploy and Manage:
-  - Index: deploy/docs/index.md
-  - ZDM Web Interface: deploy/docs/webInterface.md
-- Integrate:
-  - integrate/Integrate.md
-- Reference:
+  - Introduction: deploy/index.md
+  - Getting Started with Zerynth SDK: deploy/getting_started_with_sdk.md
+  - Getting Started with Raspberry PI: deploy/getting_started_with_rpi.md
+  - Web Interface: deploy/web_interface.md
+# - Integrate:
+#   - integrate/Integrate.md
+- Technical Reference:
     - {Index: reference.md}
-    - Zerynth Hardware:
-        - 4zp/4ZeroBox.md
     - Programming Guide:
         - reference/guide/docs/index.md
         - reference/guide/docs/basics.md
@@ -129,7 +128,6 @@ nav:
           - reference/core/toolchain/docs/aws_awscmd.md
           - reference/core/toolchain/docs/misc_misccmd.md
           - reference/core/toolchain/docs/provisioning_provisioningcmd.md
-
         - ZDM CLI:
           - reference/core/zdmcli/docs/index.md
           - reference/core/zdmcli/docs/account_cmd.md
@@ -139,6 +137,8 @@ nav:
           - reference/core/zdmcli/docs/gate_cmd.md
           - reference/core/zdmcli/docs/job_cmd.md
           - reference/core/zdmcli/docs/fota_cmd.md
+    - Zerynth Hardware:
+        - 4zp/4ZeroBox.md
     - Supported Devices:
       - reference/boards/Supported_Devices.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
@@ -443,7 +443,7 @@ nav:
             - ncv7240:
               - reference/libs/onsemi/ncv7240/docs/index.md
               - reference/libs/onsemi/ncv7240/docs/ncv7240.md
-        -  patlite:
+        - patlite:
             - la6:
               - reference/libs/patlite/la6/docs/index.md
               - reference/libs/patlite/la6/docs/la6.md
@@ -512,8 +512,7 @@ nav:
               - reference/libs/stm/ism330dhcx/docs/examples.md
             - lis2hh12:
               - reference/libs/stm/lis2hh12/docs/index.md
-              - reference/libs/stm/lis2hh12/docs/_index.md
-                reference/libs/stm/lis2hh12/docs/lis2hh12.md
+              - reference/libs/stm/lis2hh12/docs/lis2hh12.md
             - mfx:
               - reference/libs/stm/mfx/docs/index.md
               - reference/libs/stm/mfx/docs/mfx.md
@@ -615,7 +614,7 @@ nav:
               - reference/libs/xinabox/sw10/docs/index.md
               - reference/libs/xinabox/sw10/docs/sw10.md
               - reference/libs/xinabox/sw10/docs/examples.md
-        -   zerynth:
+        - zerynth:
             - dcz:
               - reference/libs/zerynth/dcz/docs/index.md
               - reference/libs/zerynth/dcz/docs/dcz.md
@@ -655,30 +654,21 @@ nav:
               - reference/libs/zerynth/smartsensors/docs/analogSensors.md
               - reference/libs/zerynth/smartsensors/docs/digitalSensors.md
               - reference/libs/zerynth/smartsensors/docs/examples.md
-            - zadm:
-              - reference/libs/zerynth/zadm/docs/index.md
-              - reference/libs/zerynth/zadm/docs/zadm.md
-              - reference/libs/zerynth/zadm/docs/examples.md
             - zdm:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+            # - ZDM-Client Python Library:
+            #   - reference/core/zdmclient/docs/index.md
 
-            - ZDM-Client Python Library:
-              - reference/core/zdmclient/docs/index.md
-
-            - zerynthapp:
-              - reference/libs/zerynth/zerynthapp/docs/index.md
-              - reference/libs/zerynth/zerynthapp/docs/zerynthapp.md
-              - reference/libs/zerynth/zerynthapp/docs/examples.md
-            - zerynthshield:
-              - reference/libs/zerynth/zerynthshield/docs/index.md
-              - reference/libs/zerynth/zerynthshield/docs/zerynthshield.md
-              - reference/libs/zerynth/zerynthshield/docs/examples.md
+            # - zerynthshield:
+            #   - reference/libs/zerynth/zerynthshield/docs/index.md
+            #   - reference/libs/zerynth/zerynthshield/docs/zerynthshield.md
+            #   - reference/libs/zerynth/zerynthshield/docs/examples.md
 plugins:
 - search
 - minify: {minify_html: true}
-site_name: Zerynth
+site_name: Zerynth Documentation
 theme:
     custom_dir: material
     favicon: images/favicon.png
@@ -687,4 +677,7 @@ theme:
     logo: images/favicon-white.png
     name: material
     palette: {accent: red, primary: indigo}
+google_analytics:
+  - UA-64288331-2
+  - auto
 ...

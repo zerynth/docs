@@ -37,26 +37,31 @@ margin:.8rem 0;
 font-weight:700;
 font-size:.8rem;
 letter-spacing:-0.01em}
-.md-typeset h5{
-margin:.8rem 0;
-color:var(--md-default-fg-color--light);
-font-weight:700;
-font-size:.64rem;
-letter-spacing:-0.01em}
-.md-typeset h6{
+.md-typeset h6, .md-typeset h5{
 margin:.8rem 0;
 color:var(--md-default-fg-color);
 font-weight:700;
-font-size:.8rem;
+font-size:.1rem;
 letter-spacing:-0.01em;
 text-decoration: underline;
 text-decoration-style:dotted;
 text-decoration-color: var(--md-default-fg-color--light);
+visibility:hidden;
 }
+
 .md-typeset h5{text-transform:none}
+
 .md-typeset hr{
 margin:1.5em 0;
 border-bottom:.05rem dotted var(--md-default-fg-color--lighter)}
+
+h5+p .highlight {
+    background: transparent;
+}
+
+h6+p .highlight {
+    background: transparent;
+}
 
 /* change block content width */
 

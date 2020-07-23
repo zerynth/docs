@@ -4,7 +4,7 @@ Zerynth Device can connect directly to various external services:
 
 ### **Amazon Web Services Integration**
 
-<a style="font-size: 15px; margin-right: 0px;" href="/latest/reference/libs/aws/iot/docs/" class="md-button md-button--primary">
+<a style="font-size: 15px; margin-right: 0px;" href="reference/libs/aws/iot/docs/" class="md-button md-button--primary">
             Learn more
           </a>
 
@@ -12,7 +12,7 @@ Zerynth Device can connect directly to various external services:
 
 ### **Microsoft Azure Integration**
 
-<a style="font-size: 15px; margin-right: 0px;" href="/latest/reference/libs/azure/iot/docs/" class="md-button md-button--primary">
+<a style="font-size: 15px; margin-right: 0px;" href="/reference/libs/azure/iot/docs/" class="md-button md-button--primary">
             Learn more
           </a>
 
