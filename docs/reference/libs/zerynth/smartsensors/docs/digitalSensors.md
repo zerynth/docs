@@ -7,9 +7,9 @@ This module contains class definitions for digital sensors. DigitalSensor class 
 Every DigitalSensor instance inherits the whole set of methods from generic Sensor class and it also implements the following methods:
 
 
-* onSequence: see method [onSequence](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html#onsequence)
-* onRiseAndFall: see method [onRiseAndFall](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html#onriseandfall)
-* onFallAndRise: see method [onFallAndRise](https://docs.zerynth.com/latest/official/lib.zerynth.smartsensors/docs/official_lib.zerynth.smartsensors_digitalSensors.html#onfallandrise)
+* onSequence: see method [onSequence](/latest/reference/libs/zerynth/smartsensors/docs/digitalSensors/#digitalsensoronsequence)
+* onRiseAndFall: see method [onRiseAndFall](/latest/reference/libs/zerynth/smartsensors/docs/digitalSensors/#digitalsensoronriseandfall)
+* onFallAndRise: see method [onFallAndRise](/latest/reference/libs/zerynth/smartsensors/docs/digitalSensors/#digitalsensoronfallandrise)
 * onRise: alias for onPinRise on the instance pin
 * onFall: alias for onPinFall on the instance pin
 
