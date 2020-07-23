@@ -22,7 +22,7 @@ Here below, the Zerynth driver for the Vishay VCNL4200.
 Contents:
 
 
-* [VCNL4200 Module](https://docs.zerynth.com/latest/official/lib.vishay.vcnl4200/docs/official_lib.vishay.vcnl4200_vcnl4200.html)
-    * [VCNL4200 class](https://docs.zerynth.com/latest/official/lib.vishay.vcnl4200/docs/official_lib.vishay.vcnl4200_vcnl4200.html#vcnl4200-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.vishay.vcnl4200/examples/examples.html)
-    * [get distance](https://docs.zerynth.com/latest/official/lib.vishay.vcnl4200/examples/examples.html#get-distance)
+* [VCNL4200 Module](/latest/reference/libs/vishay/vcnl4200/docs/vcnl4200/)
+    * [VCNL4200 class](/latest/reference/libs/vishay/vcnl4200/docs/vcnl4200/#vcnl4200-class)
+* [Examples](/latest/reference/libs/vishay/vcnl4200/docs/examples/)
+    * [get distance](/latest/reference/libs/vishay/vcnl4200/docs/examples/#read-distance-from-vcnl4200)
