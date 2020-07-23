@@ -122,7 +122,7 @@ To be able to use zerynth secure socket on esp32 boards `native_mbedtls: true` m
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-This feature is strongly platform dependent; more information at [Secure Firmware - ESP32 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-esp32).
+This feature is strongly platform dependent; more information at [Secure Firmware - ESP32 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-esp32-devices).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTc5OTkyNDE3NiwtNTg4OTg2MzY0XX0=
 -->

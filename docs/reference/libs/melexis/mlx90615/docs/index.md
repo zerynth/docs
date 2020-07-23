@@ -23,10 +23,10 @@ Here below, the Zerynth driver for the Melexis MLX90615 and some examples to bet
 
 Contents:
 
--   [Melexis MLX90615](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/docs/index.html)
-    -   [Technical Details](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/docs/index.html#technical-details)
-        -   [MLX90615 Module](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/docs/official_lib.melexis.mlx90615_mlx90615.html)
-        -   [Examples](https://docs.zerynth.com/latest/official/lib.melexis.mlx90615/examples/examples.html)
+-   [Melexis MLX90615](/latest/reference/libs/melexis/mlx90615/docs/)
+    -   [Technical Details](/latest/reference/libs/melexis/mlx90615/docs/#technical-details)
+        -   [MLX90615 Module](/latest/reference/libs/melexis/mlx90615/docs/mlx90615/)
+        -   [Examples](/latest/reference/libs/melexis/mlx90615/docs/examples/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExMDM2NDk1MzVdfQ==
 -->

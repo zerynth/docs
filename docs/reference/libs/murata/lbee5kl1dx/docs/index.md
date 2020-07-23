@@ -38,7 +38,7 @@ Here below, the Zerynth driver for the Murata LBEE5KL1DX wifi chip.
 
 Contents:
 
--   [LBEE5KL1DX Module](https://docs.zerynth.com/latest/official/lib.murata.lbee5kl1dx/docs/official_lib.murata.lbee5kl1dx_lbee5kl1dx.html)
+-   [LBEE5KL1DX Module](/latest/reference/libs/murata/lbee5kl1dx/docs/lbee5kl1dx/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTMzNDA0MDgxXX0=
 -->

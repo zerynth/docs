@@ -118,7 +118,7 @@ Follow these steps to register and virtualize a Particle Electron:
 After virtualization, the Particle Electron is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! important
-    To exploit the GSM/GPRS chip functionalities of the Particle Electron, the [lib.ublox.g350 library](https://docs.zerynth.com/latest/official/lib.ublox.g350/docs/index.html#ublox-g350) must be installed (some example code is provided).
+    To exploit the GSM/GPRS chip functionalities of the Particle Electron, the [lib.ublox.g350 library](/latest/reference/libs/ublox/g350/docs/) must be installed (some example code is provided).
 
 ## Firmware Over the Air update (FOTA)
 
@@ -142,7 +142,7 @@ Power Management feature allows to optimize power consumption by putting the dev
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-Both these features are strongly platform dependent; more information at [Power Management - STM32F](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-stm32f) section and [Secure Firmware - STM32F section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-stm32f).
+Both these features are strongly platform dependent; more information at [Power Management - STM32F](/latest/reference/core/stdlib/docs/pwr/#power-management-for-stm32fxx-families) section and [Secure Firmware - STM32F section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-stm32fxx-families).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTIzMjg0NjI2MSwxMDc3MDExMDkyLC0xNz
 M4OTI0Njc2LDExMzEzMDM5MDAsLTM1NDQ2MzY0MF19

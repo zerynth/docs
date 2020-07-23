@@ -38,12 +38,12 @@ Below, Zerynth driver documentation for Bridgetek BT81x Embedded Video Engines.
 
 Contents:
 
- * [BT81x library](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html)
-    * [Co-Processor Commands](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/docs/official_lib.bridgetek.bt81x_bt81x.html#co-processor-commands)
- * [Examples](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html)
-	 * [DisplayZerynthLogo](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html#displayzerynthlogo)
-	 * [DisplayNetworks](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html#displaynetworks)
-	 * [DisplayWidgets](https://docs.zerynth.com/latest/official/lib.bridgetek.bt81x/examples/examples.html#displaywidgets)
+ * [BT81x library](/latest/reference/libs/bridgetek/bt81x/docs/bt81x/)
+    * [Co-Processor Commands](/latest/reference/libs/bridgetek/bt81x/docs/bt81x/#co-processor-commands)
+ * [Examples](/latest/reference/libs/bridgetek/bt81x/docs/examples/)
+	 * [DisplayZerynthLogo](/latest/reference/libs/bridgetek/bt81x/docs/examples/#display-zerynth-logo)
+	 * [DisplayNetworks](/latest/reference/libs/bridgetek/bt81x/docs/examples/#display-networks)
+	 * [DisplayWidgets](/latest/reference/libs/bridgetek/bt81x/docs/examples/#display-networks)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjEyNDAxMjE1OCwtMTcxMjExMDU3N119

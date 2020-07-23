@@ -21,12 +21,12 @@ Here below, the Zerynth driver for the NXP Hexiwear Module.
 
 Contents:
  
- -   [HEXIWEAR Module](https://docs.zerynth.com/latest/official/lib.nxp.hexiwear/docs/official_lib.nxp.hexiwear_hexiwear.html)
- -   [KW40Z Module](https://docs.zerynth.com/latest/official/lib.nxp.hexiwear/docs/official_lib.nxp.hexiwear_kw40z_kw40z.html)
- -   [Examples](https://docs.zerynth.com/latest/official/lib.nxp.hexiwear/examples/examples.html)
-     -   [hexiwear example](https://docs.zerynth.com/latest/official/lib.nxp.hexiwear/examples/examples.html#hexiwear-example)
-     -   [ble hexiwear](https://docs.zerynth.com/latest/official/lib.nxp.hexiwear/examples/examples.html#ble-hexiwear)
-     -   [ble data transmission](https://docs.zerynth.com/latest/official/lib.nxp.hexiwear/examples/examples.html#ble-data-transmission)
+ -   [HEXIWEAR Module](/latest/reference/libs/nxp/hexiwear/docs/hexiwear/)
+ -   [KW40Z Module](/latest/reference/libs/nxp/hexiwear/docs/kw40z_kw40z/)
+ -   [Examples](/latest/reference/libs/nxp/hexiwear/docs/examples/)
+     -   [hexiwear example](/latest/reference/libs/nxp/hexiwear/docs/examples/#basic-example-of-use-for-hexiwear-library)
+     -   [ble hexiwear](/latest/reference/libs/nxp/hexiwear/docs/examples/#basic-example-of-use-for-kw40z-on-hexiwear-device)
+     -   [ble data transmission](/latest/reference/libs/nxp/hexiwear/docs/examples/#sensor-data-exchange-via-bluetooth)
 
 
 <!--stackedit_data:

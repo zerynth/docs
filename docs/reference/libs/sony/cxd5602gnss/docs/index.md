@@ -14,7 +14,7 @@ Below, Zerynth driver documentation for Sony CXD5602 GNSS.
 Contents:
 
 
-* [Sony CXD5602 GNSS Module](https://docs.zerynth.com/latest/official/lib.sony.cxd5602gnss/docs/official_lib.sony.cxd5602gnss_gnss.html)
-    * [Utils](https://docs.zerynth.com/latest/official/lib.sony.cxd5602gnss/docs/official_lib.sony.cxd5602gnss_gnss.html#utils)
-* [Examples](https://docs.zerynth.com/latest/official/lib.sony.cxd5602gnss/examples/examples.html)
-    * [GNSSData](https://docs.zerynth.com/latest/official/lib.sony.cxd5602gnss/examples/examples.html#gnssdata)
+* [Sony CXD5602 GNSS Module](/latest/reference/libs/sony/cxd5602gnss/docs/gnss/)
+    * [Utils](/latest/reference/libs/sony/cxd5602gnss/docs/gnss/#utils)
+* [Examples](/latest/reference/libs/sony/cxd5602gnss/docs/examples/)
+    * [GNSSData](/latest/reference/libs/sony/cxd5602gnss/docs/examples/#gnss-data-example)

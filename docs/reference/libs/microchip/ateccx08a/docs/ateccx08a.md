@@ -6,8 +6,9 @@ Furthermore an interface to allow the use of chip-related functionalities from o
 
 ## Auxiliary methods
 
+###### crc16
 
-**`crc16(data:bytes)`**
+```#!py3 crc16(data:bytes)```
 
 Compute the CRC16 checksum for some bytes.
 The CRC is calculated using 0x8005 as polynomial and starting with the registry set as 0x00.
@@ -22,8 +23,9 @@ The CRC is calculated using 0x8005 as polynomial and starting with the registry 
 
 ## ATECC508A class
 
+##### class ATECC508A
 
-**`class ATECC508A(i2c.I2C)`**
+```#!py3 class ATECC508A(i2c.I2C)```
 
 Class for controlling the ATECC508A chip.
 
@@ -31,7 +33,9 @@ Members:
 
 * device_awake : Boolean. If True the device is running a multiple commands sequence.
 
-**`__init__(drvname,addr=DEFAULT_ADDR,clk=100000)`**
+###### ATECC508A.__init__
+
+```#!py3 __init__(drvname,addr=DEFAULT_ADDR,clk=100000)```
 
 Connect to a device and start I2C protocol.
 
@@ -46,8 +50,9 @@ Connect to a device and start I2C protocol.
 
 ### Internal methods
 
+###### ATECC508A._send_cmd
 
-**`_send_cmd(self,opcode,param1,param2:bytes,data=bytes())`**
+```#!py3 _send_cmd(self,opcode,param1,param2:bytes,data=bytes())```
 
 Send a command packet to the device.
 
@@ -71,8 +76,9 @@ Send a command packet to the device.
 -	**param2** (*bytes*) – The second mandatory parameter. 2 bytes long.
 -	**data** (*bytes*) – Other optional data. (Default value = bytes())
 
+###### ATECC508A._read_result
 
-**`_read_result()`**
+```#!py3 _read_result()```
 
 Read, verify checksum, and extract data of a packet from the device.
 
@@ -93,8 +99,9 @@ Read, verify checksum, and extract data of a packet from the device.
 
 ### Public methods
 
+###### ATECC508A.start_cmd_sequence
 
-**`start_cmd_sequence()`**
+```#!py3 start_cmd_sequence()```
 
 Call this function before a command sequence to wake up device from idle mode.
 
@@ -103,8 +110,9 @@ This is done by keeping SDA low for more than 60 microseconds.
 !!! note
 	At this moment a 0x00 byte is written as a normal I2C transaction, ignoring the exception raised. This workaround won’t work at higher clock rates (more than ~100 kHz)!
 
+###### ATECC508A.end_cmd_sequence
 
-**`end_cmd_sequence()`**
+```#!py3 end_cmd_sequence()```
 
 
 

@@ -25,11 +25,11 @@ Here below, the Zerynth driver for the Worldsemi WS2812 led strips and some exam
 Contents:
 
 
-* [WS2812 RGB Led Module](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/docs/official_lib.worldsemi.ws2812_ledstrips.html)
-  * [LedStrip class](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/docs/official_lib.worldsemi.ws2812_ledstrips.html#ledstrip-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html)
-  * [LED Strips](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html#led-strips)
-  * [LED Strips Advanced](https://docs.zerynth.com/latest/official/lib.worldsemi.ws2812/examples/examples.html#led-strips-advanced)
+* [WS2812 RGB Led Module](/latest/reference/libs/worldsemi/ws2812/docs/ledstrips/)
+  * [LedStrip class](/latest/reference/libs/worldsemi/ws2812/docs/ledstrips/#ledstrip-class)
+* [Examples](/latest/reference/libs/worldsemi/ws2812/docs/examples/)
+  * [LED Strips](/latest/reference/libs/worldsemi/ws2812/docs/examples/#ws2812-rgb-leds-strip-basics-and-animations)
+  * [LED Strips Advanced](/latest/reference/libs/worldsemi/ws2812/docs/examples/#led-strips-advanced)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3MDU3MTkxNV19
 -->

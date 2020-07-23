@@ -6,8 +6,9 @@ To learn how to be able to use it and call ZDM methods, see the [ZDM getting sta
 
 # The Device class
 
+##### class Device
 
-**`class Device(device_id, jobs_dict=None, endpoint, port, fota_callback=None)`**
+```#!py3 class Device(device_id, jobs_dict=None, endpoint, port, fota_callback=None)```
 
 Creates a Device instance with uid `device_id`. All other parameters are optional and have default values.
 
@@ -19,18 +20,21 @@ Creates a Device instance with uid `device_id`. All other parameters are optiona
 
 the `fota_callback` can return a boolean value. If the return value is True, the FOTA process continues, otherwise it is stopped.
 
+###### Device.set_password
 
-**`set_password(password)`**
+```#!py3 set_password(password)```
 
 Set the device password to `password`. You can generate a password using the ZDM, creating a key for your device.
 
+###### Device.connect
 
-**`connect()`**
+```#!py3 connect()```
 
 Connect your device to the ZDM. You must set device’s password first. It also enable your device to receive incoming messages.
 
+###### Device.publish
 
-**`publish(data, tag=None)`**
+```#!py3 publish(data, tag=None)```
 
 Publish a message to the ZDM.
 
@@ -38,8 +42,9 @@ Publish a message to the ZDM.
 * `data` is the message payload, represented by a dictionary
 * `tag`, is a label for the device’s data into your workspace. More than one device can publish message to the same tag
 
+###### Device.send_event
 
-**`send_event(value)`**
+```#!py3 send_event(value)```
 
 Send an event from device to the ZDM. Events should be used to notify the occurrence of certain conditions, for example reaching a threshold.
 

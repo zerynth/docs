@@ -24,9 +24,9 @@ Here below, the Zerynth driver for the MEAS HTU21D.
 
 Contents:
 
--   [HTU21D Module](https://docs.zerynth.com/latest/official/lib.meas.htu21d/docs/official_lib.meas.htu21d_htu21d.html)
--   [Examples](https://docs.zerynth.com/latest/official/lib.meas.htu21d/examples/examples.html)
-    -   [get humid temp](https://docs.zerynth.com/latest/official/lib.meas.htu21d/examples/examples.html#get-humid-temp)
+-   [HTU21D Module](/latest/reference/libs/meas/htu21d/docs/htu21d/)
+-   [Examples](/latest/reference/libs/meas/htu21d/docs/examples/)
+    -   [get humid temp](/latest/reference/libs/meas/htu21d/docs/examples/#read-humidity-and-temperature-values-from-htu21d)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTg2NTcwNTYwOF19
 -->

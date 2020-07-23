@@ -25,6 +25,6 @@ Here below, the Zerynth driver for the STMicroelectronics STTS751.
 Contents:
 
 
-* [STTS751 Module](https://docs.zerynth.com/latest/official/lib.stm.stts751/docs/official_lib.stm.stts751_stts751.html)
-* [Examples](https://docs.zerynth.com/latest/official/lib.stm.stts751/examples/examples.html)
-    * [get temperature](https://docs.zerynth.com/latest/official/lib.stm.stts751/examples/examples.html#get-temperature)
+* [STTS751 Module](/latest/reference/libs/stm/stts751/docs/stts751/)
+* [Examples](/latest/reference/libs/stm/stts751/docs/examples/)
+    * [get temperature](/latest/reference/libs/stm/stts751/docs/examples/#read-temperature-values-from-stts751)

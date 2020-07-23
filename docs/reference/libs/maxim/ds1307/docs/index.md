@@ -18,8 +18,8 @@ Here below, the Zerynth driver for the Maxim DS1307.
 
 Contents:
 
--   [DS1307 Module](https://docs.zerynth.com/latest/official/lib.maxim.ds1307/docs/official_lib.maxim.ds1307_ds1307.html)
-    -   [DS1307 class](https://docs.zerynth.com/latest/official/lib.maxim.ds1307/docs/official_lib.maxim.ds1307_ds1307.html#ds1307-class)
+-   [DS1307 Module](/latest/reference/libs/maxim/ds1307/docs/ds1307/)
+    -   [DS1307 class](/latest/reference/libs/maxim/ds1307/docs/ds1307/#ds1307-class)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDYzODk2ODddfQ==
 -->

@@ -2,8 +2,9 @@
 
 This module implements the RLP encoding scheme for the Ethereum protocol.
 
+###### encode
 
-**`encode(obj)`**
+```#!py3 encode(obj)```
 
 
 **Parameters:**

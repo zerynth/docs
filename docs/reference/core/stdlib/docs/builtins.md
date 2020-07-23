@@ -8,19 +8,23 @@ The explicit name `__builtins__` must be used when there is a need to modify a b
 
 Zerynth VM defines the following Python builtin constants:
 
+###### False
 
-**`False()`**
+```#!py3 False()```
 
 The false value of the `bool()` type. Assignments to `False`
 are illegal and raise a :exc:`SyntaxError`.
 
-**`True()`**
+###### True
+
+```#!py3 True()```
 
 The true value of the `bool()` type. Assignments to `True`
 are illegal and raise a :exc:`SyntaxError`.
 
+###### None
 
-**`None()`**
+```#!py3 None()```
 
 The sole value of the type `NoneType`.  `None` is frequently used to
 represent the absence of a value, as when default arguments are not passed to a function. Assignments to `None` are illegal and raise a :exc:`SyntaxError`.
@@ -151,26 +155,33 @@ This feature has a drawback: two modules defining an exception with the same nam
 Zerynth VM extends Python with builtins functions to handle the General Purpose Input Output pins of the embedded device.
 These functions resembles the ones used by Arduino, but are more flexible.
 
+###### pinMode
 
-**`pinMode(pin, mode)`**
+```#!py3 pinMode(pin, mode)```
 
 Sets the pin ```pin``` in mode ```mode```. Allowed values for ```mode``` are `INPUT, OUTPUT, INPUT_PULLUP, INPUT_PULLDOWN, OUTPUT_PUSHPULL, OUTPUT_OPENDRAIN, INPUT_ANALOG`
 
+###### digitalRead
 
-**`digitalRead(pin)`**
+```#!py3 digitalRead(pin)```
 
 Returns the state of the pin ```pin```. The state can be `LOW` or `HIGH`
 
+###### digitalWrite
 
-**`digitalWrite(pin, val)`**
+```#!py3 digitalWrite(pin, val)```
 
 Sets the pin ```pin``` to the value ```val```. If val is zero, ```pin``` is set to `LOW`, otherwise to `HIGH`
 
-**`pinToggle(pin)`**
+###### pinToggle
+
+```#!py3 pinToggle(pin)```
 
 Sets the pin ```pin``` to the value opposite to the current pin value. If value is zero, ```pin``` is set to `HIGH`, otherwise to `LOW`
 
-**`analogRead(pin, samples=1)`**
+###### analogRead
+
+```#!py3 analogRead(pin, samples=1)```
 
 Reads analog values from ```pin``` that must be one of the Ax pins. If ```samples``` is 1 or not given, returns the integer value read from ```pin```.
 If ```samples``` is greater than 1, returns a tuple of integers of size ```samples```.
@@ -208,8 +219,9 @@ x = adc.read(A3)
 ```
 
 
+###### analogWrite
 
-**`analogWrite(pin, period, pulse, time_unit=MILLIS, npulses=0)`**
+```#!py3 analogWrite(pin, period, pulse, time_unit=MILLIS, npulses=0)```
 
 Activate PWM (Pulse Width Modulation) on pin ```pin``` (must be one of the PWMx pins). The state of ```pin``` is periodically switched between `LOW` and `HIGH` according to parameters:
 
@@ -295,7 +307,9 @@ Can be used together with `onPinRise()` on the same pin.
 
 ## Builtin Functions
 
-**`int(x=0, base=10)`**
+###### int
+
+```#!py3 int(x=0, base=10)```
 
 Return an integer object constructed from a number or string ```x```, or return
 `0` if no arguments are given.  If ```x``` is a floating point number, it is
@@ -314,8 +328,9 @@ means to interpret exactly as a code literal, so that the actual base is 2,
 8, 10, or 16, and so that `int('010', 0)` is not legal, while
 `int('010')` is, as well as `int('010', 8)`.
 
+###### type
 
-**`type(x)`**
+```#!py3 type(x)```
 
 Return an integer representing the type of x.
 The following are the builtin constants returned by type():
@@ -326,8 +341,9 @@ PFROZENSET, PSET, PDICT, PFUNCTION, PMETHOD, PCLASS, PINSTANCE, PMODULE, PITERAT
 PNONE, PEXCEPTION, PNATIVE, PSYSOBJ, PDRIVER, PTHREAD
 ```
 
+###### thread
 
-**`thread(fun, \*args, prio=PRIO_NORMAL, size=-1)`**
+```#!py3 thread(fun, \*args, prio=PRIO_NORMAL, size=-1)```
 
 Function ```fun``` is launched in a new thread using args as its parameters.
 ```fun``` must be a normal function or a methods, other callables are not supported yet.
@@ -337,7 +353,9 @@ Function ```fun``` is launched in a new thread using args as its parameters.
 
 Returns the created thread, already started. Raises :exc:`RuntimeError` if no more threads can be created.
 
-**`sleep(time, time_unit=MILLIS)`**
+###### sleep
+
+```#!py3 sleep(time, time_unit=MILLIS)```
 
 Suspend the current thread for ```time``` expressed in ```time_units```. All the other threads are free to continue their execution.
 If ```time_unit``` is MICROS, sleep does not suspend the current thread, but starts polling the cycles counter in a loop.
@@ -349,13 +367,15 @@ For high precision sleep refer to :mod:`hwtimers
 
 Returns a random integer. If ```a``` and ```b``` are given, the random integer is contained in the range [a,b]. If the board has a builtin Random Number Generator, it is used.
 
+###### range
 
-**`range(stop)` `range(start, stop, )`**
+```#!py3 range(stop)` `range(start, stop, )```
 
 Creates a range object.
 
+###### bytearray
 
-**`bytearray()`**
+```#!py3 bytearray()```
 
 Return a new array of bytes. A bytearray is a mutable
 sequence of integers in the range 0 <= x < 256.  It has most of the usual
@@ -375,7 +395,9 @@ initialized with null bytes.
 
 Without an argument, an array of size 0 is created.
 
-**`bytes()`**
+###### bytes
+
+```#!py3 bytes()```
 
 Return a new “bytes” object, which is an immutable sequence of integers in
 the range `0 <= x < 256`.  `bytes()` is an immutable version of
@@ -384,7 +406,9 @@ indexing and slicing behavior.
 
 Accordingly, constructor arguments are interpreted as for `bytearray()`.
 
-**`shortarray()`**
+###### shortarray
+
+```#!py3 shortarray()```
 
 Return a new array of shorts. A shortarray is a mutable
 sequence of integers in the range 0 <= x < 65536.  It has most of the usual
@@ -404,7 +428,9 @@ If the conversion is not possible, an exception is raised.
 
 Without an argument, an array of size 0 is created.
 
-**`shorts()`**
+###### shorts
+
+```#!py3 shorts()```
 
 Return a new shorts object, which is an immutable sequence of integers in
 the range `0 <= x < 65536`.  `shorts()` is an immutable version of
@@ -413,8 +439,9 @@ indexing and slicing behavior.
 
 Accordingly, constructor arguments are interpreted as for `shortarray()`.
 
+###### enumerate
 
-**`enumerate(iterable, start=0)`**
+```#!py3 enumerate(iterable, start=0)```
 
 Return an enumerate object. ```iterable``` must be a sequence, an
 iterator, or some other object which supports iteration.
@@ -437,8 +464,9 @@ for idx, val in enumerate(ints):
 
 In this version of the VM, enumerate works only for primitive iterable types, not yet for instances with `__next__` and `__iter__` methods.
 
+###### reversed
 
-**`reversed(seq)`**
+```#!py3 reversed(seq)```
 
 Return a reverse iterator.  ```seq``` must be an object which has
 a `__reversed__()` method or supports the sequence protocol (the
@@ -447,7 +475,9 @@ arguments starting at `0`).
 
 In this version of the VM, reversed works only for primitive iterable types, not yet for instances with `__next__` and `__iter__` methods.
 
-**`ord(c)`**
+###### ord
+
+```#!py3 ord(c)```
 
 Given a string representing one character, return an integer
 representing that character.  For example, `ord('a')` returns the integer `97`.
@@ -477,15 +507,17 @@ the result of `ord(":")` (which is 58). The compiler transforms our program to a
 x = 58
 ```
 
+###### chr
 
-**`chr(i)`**
+```#!py3 chr(i)```
 
 Return the string representing a character whose byte representation is the integer
 ```i```.  For example, `chr(97)` returns the string `'a'`. This is the
 inverse of `ord()`. `ValueError` will be raised if ```i``` is outside the valid range.
 
+###### isinstance
 
-**`isinstance(object, class)`**
+```#!py3 isinstance(object, class)```
 
 Return true if the ```object``` argument is an instance of the ```class```
 argument, or of a (direct, indirect) subclass thereof.  If ```object``` is not
@@ -494,8 +526,9 @@ an object of the given type, the function always returns false.  If ```class``` 
 In this version of the VM, isinstance is still not compliant with the Python one.
 It is suggested to use isinstance to determine the hierarchy of instances and to use `type()` for primitive types.
 
+###### print
 
-**`print(\*args, sep=" ", end="\\n", stream=None)`**
+```#!py3 print(\*args, sep=" ", end="\\n", stream=None)```
 
 Print ```objects``` to the stream ```stream```, separated by ```sep``` and followed
 by ```end```.  ```sep```, ```end``` and ```stream```, if present, must be given as keyword
@@ -511,14 +544,16 @@ is not present or `None`, `__default_stream` will be used.
 
 Whether output is buffered is usually determined by ```stream```.
 
+###### abs
 
-**`abs(x)`**
+```#!py3 abs(x)```
 
 Return the absolute value of a number.  The argument may be an
 integer or a floating point number.
 
+###### all
 
-**`all(iterable)`**
+```#!py3 all(iterable)```
 
 Return `True` if all elements of the ```iterable``` are true (or if the iterable
 is empty).  Equivalent to:
@@ -531,8 +566,9 @@ def all(iterable):
     return True
 ```
 
+###### any
 
-**`any(iterable)`**
+```#!py3 any(iterable)```
 
 Return `True` if any element of the ```iterable``` is true.  If the iterable
 is empty, return `False`.  Equivalent to:
@@ -545,31 +581,36 @@ def any(iterable):
     return False
 ```
 
+###### sum
 
-**`sum(iterable, )`**
+```#!py3 sum(iterable, )```
 
 Sums ```start``` and the items of an ```iterable``` from left to right and returns the
 total.  ```start``` defaults to `0`.
 
+###### max
 
-**`max(\*args)`**
+```#!py3 max(\*args)```
 
 Return the largest item in args.
 
+###### min
 
-**`min(\*args)`**
+```#!py3 min(\*args)```
 
 Return the smallest item in args.
 
+###### len
 
-**`len(s)`**
+```#!py3 len(s)```
 
 Return the length (the number of items) of an object.  The argument may be a
 sequence (such as a string, bytes, tuple, list, or range) or a collection
 (such as a dictionary, set, or frozen set), or any instance defining the method `__len__`.
 
+###### hex
 
-**`hex(x, prefix="0x")`**
+```#!py3 hex(x, prefix="0x")```
 
 Convert an integer number to a lowercase hexadecimal string
 prefixed with ```prefix``` (if not given “0x” is used), for example:
@@ -584,38 +625,49 @@ prefixed with ```prefix``` (if not given “0x” is used), for example:
 See also `int()` for converting a hexadecimal string to an
 integer using a base of 16.
 
+###### str
 
-**`str(x="")`**
+```#!py3 str(x="")```
 
 Return a string version of ```x```.  If ```x``` is not
 provided, returns the empty string.
 Returns the “informal” or nicely printable string representation of ```object```.  For string objects, this is
 the string itself. For primitive types like list, tuples, dicts a standard representation is returned. For all other types, the method __str__ is called.
 
+###### dict
 
-**`dict()`**
+```#!py3 dict()```
 
-**`dict(\*args)`**
+###### dict
+
+```#!py3 dict(\*args)```
 
 Return a new dictionary initialized from an optional *args. If no *args is given, an empty dictionary is created. If a single positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object.
 Otherwise, if more than a positional argument is given, each pair of arguments is inserted in the dictionary with the first argument of the pair being the key and the second argument the value.
 If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
 If the number of positional arguments is odd, the value for the last key is None.
 
+######  set
 
- **`set()` `set(\*args)`**
+```#!py3 set()` `set(\*args)```
 
 Return a new set initialized from an optional *args. If no *args is given, an empty set is created. If a single positional argument is given and it is an iterable object, a set is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the set.
 
-**`frozenset()`**
+###### frozenset
 
-**`frozenset(\*args)`**
+```#!py3 frozenset()```
+
+###### frozenset
+
+```#!py3 frozenset(\*args)```
 
 Return a new frozenset initialized from an optional *args. If no *args. If no *args is given, an empty frozenset is created. If a single positional argument is given and it is an iterable object, a frozenset is created and filled with the values of the iterable.
 Otherwise, if more than a positional argument is given, each argument is inserted in the frozenset.
 
-**`open(file, mode="rb")`**
+###### open
+
+```#!py3 open(file, mode="rb")```
 
 Return an object similar to a stream with read and write methods. The object class depends on the type of file opened.
 

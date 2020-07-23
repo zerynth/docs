@@ -20,9 +20,9 @@ To work via RTU, a device class that implements read, write and close methods is
 Contents:
 
 
-* [MODBUS Library](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/docs/official_lib.zerynth.modbus_modbus.html)
-    * [ModbusTCP class](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/docs/official_lib.zerynth.modbus_modbus.html#modbustcp-class)
-    * [ModbusSerial class](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/docs/official_lib.zerynth.modbus_modbus.html#modbusserial-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/examples/examples.html)
-    * [ModbusTcp](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/examples/examples.html#modbustcp)
-    * [ModbusSerial](https://docs.zerynth.com/latest/official/lib.zerynth.modbus/examples/examples.html#modbusserial)
+* [MODBUS Library](/latest/reference/libs/zerynth/modbus/docs/modbus/)
+    * [ModbusTCP class](/latest/reference/libs/zerynth/modbus/docs/modbus/#modbustcp-class)
+    * [ModbusSerial class](/latest/reference/libs/zerynth/modbus/docs/modbus/#modbusserial-class)
+* [Examples](/latest/reference/libs/zerynth/modbus/docs/examples/)
+    * [ModbusTcp](/latest/reference/libs/zerynth/modbus/docs/examples/#modbustcp)
+    * [ModbusSerial](/latest/reference/libs/zerynth/modbus/docs/examples/#modbusserial)

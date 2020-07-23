@@ -17,5 +17,5 @@ Here below, the Zerynth driver for the Semtech SX1503.
 Contents:
 
 
-* [SX1503 Module](https://docs.zerynth.com/latest/official/lib.semtech.sx1503/docs/official_lib.semtech.sx1503_sx1503.html)
-    * [SX1503 class](https://docs.zerynth.com/latest/official/lib.semtech.sx1503/docs/official_lib.semtech.sx1503_sx1503.html#sx1503-class)
+* [SX1503 Module](/latest/reference/libs/semtech/sx1503/docs/sx1503/)
+    * [SX1503 class](/latest/reference/libs/semtech/sx1503/docs/sx1503/#sx1503-class)

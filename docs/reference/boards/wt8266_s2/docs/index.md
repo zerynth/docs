@@ -76,7 +76,7 @@ Once connected to a USB port the WT8266-DK V2 device can be seen as a Virtual Se
 After virtualization, the WT8266-DK V2 device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! important
-    To exploit the Wi-Fi chip functionalities of the WT8266-DK V2, the [lib.espressif.esp8266wifi library](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/index.html#esp8266wifi) must be installed (some example code is provided).
+    To exploit the Wi-Fi chip functionalities of the WT8266-DK V2, the [lib.espressif.esp8266wifi library](/latest/reference/libs/espressif/esp8266wifi/docs/) must be installed (some example code is provided).
 
 ## Firmware Over the Air update (FOTA)
 
@@ -97,7 +97,7 @@ Flash Layout is shown in table below:
 !!! important
     FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the WT8266-DK V2 is allocated in the RTC memory.
 
-Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266).
+Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-esp8266).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTg5ODExMTg2OF19
 -->

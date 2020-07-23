@@ -588,8 +588,9 @@ The following CA certificates are available with the __lookup primitive:
 
 ## The sslsocket class
 
+##### class sslsocket
 
-**`sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())`**
+```#!py3 class sslsocket(family=AF_INET, type=SOCK_STREAM, proto=IPPROTO_TCP, ctx=())```
 
 This class represents a secure socket based on SSL/TLS protocol. It inherits from socket.socket
 
@@ -624,8 +625,9 @@ sock.sendall("Hello World!")
 ```
 
 <!-- _stdlib.ssl.create_ssl_context -->
+###### sslsocket.create_ssl_context
 
-**`create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)`**
+```#!py3 create_ssl_context(cacert="", clicert="", pkey="", hostname="", options=ssl.CERT_NONE|ssl.SERVER_AUTH)```
 
 This function generates an SSL context with the following data:
 

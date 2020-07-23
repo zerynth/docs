@@ -25,9 +25,9 @@ Here below, the Zerynth driver for the NXP MPL3115A2.
 
 Contents:
 
--   [MPL3115A2 Module](https://docs.zerynth.com/latest/official/lib.nxp.mpl3115a2/docs/official_lib.nxp.mpl3115a2_mpl3115a2.html)
--   [Examples](https://docs.zerynth.com/latest/official/lib.nxp.mpl3115a2/examples/examples.html)
-    -   [get pressure](https://docs.zerynth.com/latest/official/lib.nxp.mpl3115a2/examples/examples.html#get-pressure)
+-   [MPL3115A2 Module](/latest/reference/libs/nxp/mpl3115a2/docs/mpl3115a2/)
+-   [Examples](/latest/reference/libs/nxp/mpl3115a2/docs/examples/)
+    -   [get pressure](/latest/reference/libs/nxp/mpl3115a2/docs/examples/#read-pressure-from-mpl3115a2)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTU0Nzk4MjYyMl19
 -->

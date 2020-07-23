@@ -39,8 +39,9 @@ The module defines the following constants defining curves:
 
 * `SECP256K1`
 
+###### make_keys
 
-**`make_keys(curve)`**
+```#!py3 make_keys(curve)```
 
 Return a tuple of two elements. The first element is a byte object
 containing the uncompressed representation of the generated public key. The
@@ -51,38 +52,44 @@ This function uses the random number generator provided by the
 VM. For real world usage and enhanced security the random number generator
 must be of cryptographic quality (generally implemented in hardware).
 
+###### check_public_key
 
-**`check_public_key(curve, pbkey)`**
+```#!py3 check_public_key(curve, pbkey)```
 
 Return `True` if ```pbkey``` (in uncompressed format) is a valid public
 key for ```curve```.
 
+###### derive_public_key
 
-**`derive_public_key(curve, pvkey)`**
+```#!py3 derive_public_key(curve, pvkey)```
 
 Return a byte object containing the uncompressed representation of the
 public key matching ```pvkey``` for curve ```curve```.
 
 Raise `ValueError` if derivation is not possible.
 
+###### compress_key
 
-**`compress_key(curve, key)`**
+```#!py3 compress_key(curve, key)```
 
 Return a compressed representation of ```key```.
 
+###### decompress_key
 
-**`decompress_key(curve, key)`**
+```#!py3 decompress_key(curve, key)```
 
 Return a uncompressed representation of ```key```.
 
+###### verify
 
-**`verify(curve, message, signature, pbkey)`**
+```#!py3 verify(curve, message, signature, pbkey)```
 
 Return `True` if ```signature``` is a valid signature for message
 ```message``` given ```curve``` and a public key ```pbkey```.
 
+###### sign
 
-**`sign(curve, message, pvkey, deterministic = False, recoverable = False)`**
+```#!py3 sign(curve, message, pvkey, deterministic = False, recoverable = False)```
 
 Return the signature of ```message``` with ```pvkey``` for curve ```curve```. Usually
 the message to sign is not the entire message but a hash of it. The

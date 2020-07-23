@@ -23,9 +23,9 @@ Here below, the Zerynth driver for the Espressif ESP8266 and some examples to be
 
 Contents:
 
--   [ESP8266 Wifi Module](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/docs/official_lib.espressif.esp8266wifi_esp8266wifi.html)
--   [Examples](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/examples/examples.html)
-    -   [WIFI CONNECT](https://docs.zerynth.com/latest/official/lib.espressif.esp8266wifi/examples/examples.html#wifi-connect)
+-   [ESP8266 Wifi Module](/latest/reference/libs/espressif/esp8266wifi/docs/esp8266wifi/)
+-   [Examples](https://newtestdocs.zerynth.com/latest/reference/libs/espressif/esp8266wifi/docs/examples/)
+    -   [WIFI CONNECT](/latest/reference/libs/espressif/esp8266wifi/docs/examples/#wifi-connect)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE1OTY1MDMxNl19
 -->

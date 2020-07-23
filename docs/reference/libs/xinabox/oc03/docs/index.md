@@ -6,7 +6,7 @@ The optically isolated relay is controlled by a PCA9554A IO expander, which prov
 
 The TLP241A photorelay consist of a photo MOSFET optically coupled to an infrared light emitting diode which switches a AC or DC load. It provides an isolation voltage of 5000 Vrms, making it suitable for applications that require reinforced circuit insulation.
 
-Please note, OC03 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](https://docs.zerynth.com/latest/official/board.zerynth.xinabox_esp32/docs/index.html). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
+Please note, OC03 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](/latest/reference/boards/xinabox_esp32/docs/). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
 
 ## Technical Details
 
@@ -34,8 +34,8 @@ Please note, OC03 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* [OC03 Module](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/docs/official_lib.xinabox.oc03_oc03.html)
-    * [OC03 class](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/docs/official_lib.xinabox.oc03_oc03.html#oc03-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/examples/examples.html)
-    * [toggle output](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/examples/examples.html#toggle-output)
-    * [remote relay control weather monitor wolkabout](https://docs.zerynth.com/latest/official/lib.xinabox.oc03/examples/examples.html#remote-relay-control-weather-monitor-wolkabout)
+* [OC03 Module](/latest/reference/libs/xinabox/oc03/docs/oc03/)
+    * [OC03 class](/latest/reference/libs/xinabox/oc03/docs/oc03/#oc03-class)
+* [Examples](/latest/reference/libs/xinabox/oc03/docs/examples/)
+    * [toggle output](/latest/reference/libs/xinabox/oc03/docs/examples/#toggle-relay-on-oc03)
+    * [remote relay control weather monitor wolkabout](/latest/reference/libs/xinabox/oc03/docs/examples/#control-oc03-xchip-low-voltage-relay-remotely)

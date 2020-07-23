@@ -11,7 +11,7 @@ A program using the ZerynthApp module must provide some components:
 * a set of remotely callable functions representing the channel from Javascript to Python
 * a set of events representing the channel from Python to Javascript
 
-When the ZerynthApp class, defined in this module, is instantiated and run, it waits for messages coming from the mobile app through the [Zerynth Advanced Device Manager](https://docs.zerynth.com/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
+When the ZerynthApp class, defined in this module, is instantiated and run, it waits for messages coming from the mobile app through the [Zerynth Advanced Device Manager](/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
 
 ## ZerynthApp Step by Step
 
@@ -26,7 +26,7 @@ Using the “zerynthapp” module is easy.
 
 ### HTML templates
 
-HTML templates reside on the ADM servers and are transferred from it to the mobile app where they are rendered. Javascript is needed to add some logic to the template. The task is made easier by using the [Zerynth ADM Javascript library](https://docs.zerynth.com/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
+HTML templates reside on the ADM servers and are transferred from it to the mobile app where they are rendered. Javascript is needed to add some logic to the template. The task is made easier by using the [Zerynth ADM Javascript library](/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm).
 
 Templates are better explained with examples:
 
@@ -152,27 +152,32 @@ This simple script connects to the local Wifi network, configures and runs a Zer
 
 ## The ZerynthApp class
 
+##### class ZerynthApp
 
-**`class ZerynthApp(uid, token, ip=None, address="things.zerynth.com", log=False)`**
+```#!py3 class ZerynthApp(uid, token, ip=None, address="things.zerynth.com", log=False)```
 
 Creates a ZerynthApp instance or the device with uid `uid` and token `token`. If *log* is True, some debug messages are printed. If *ip* is given, it tries to connect to the ADM instance hosted at ip (default ip is 178.22.65.123). If *address* is given, it tries to connect to the ADM instance hosted ad address url (default address is “things.zerynth.com”).
 
+###### ZerynthApp.on
 
-**`on(method, fn)`**
+```#!py3 on(method, fn)```
 
 Associates the method name *method* to the callable *fn*. Everytime the ZerynthApp instance receives a request for *method* from the mobile app, the callable *fn* is executed (possibly with arguments).
 
+###### ZerynthApp.event
 
-**`event(payload)`**
+```#!py3 event(payload)```
 
 Sends an event with payload *payload* to the mobile app.
 
+###### ZerynthApp.notify
 
-**`notify(title, text)`**
+```#!py3 notify(title, text)```
 
 Sends a push notification to connected apps with title *title* and text *text*.
 
+###### ZerynthApp.run
 
-**`run()`**
+```#!py3 run()```
 
 Starts the ZerynthApp instance on a separate thread and returns immediately.

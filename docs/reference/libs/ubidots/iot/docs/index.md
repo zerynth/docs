@@ -8,7 +8,7 @@ Here below, the Zerynth Library to manage your devices thanks to Ubidots:
 Contents:
 
 
-* [Ubidots Library](https://docs.zerynth.com/latest/official/lib.ubidots.iot/docs/official_lib.ubidots.iot_iot.html)
-    * [The Device class](https://docs.zerynth.com/latest/official/lib.ubidots.iot/docs/official_lib.ubidots.iot_iot.html#the-device-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.ubidots.iot/examples/examples.html)
-    * [Controlled publish period](https://docs.zerynth.com/latest/official/lib.ubidots.iot/examples/examples.html#controlled-publish-period)
+* [Ubidots Library](/latest/reference/libs/ubidots/iot/docs/iot/)
+    * [The Device class](/latest/reference/libs/ubidots/iot/docs/iot/#the-device-class)
+* [Examples](/latest/reference/libs/ubidots/iot/docs/examples/)
+    * [Controlled publish period](/latest/reference/libs/ubidots/iot/docs/examples/#controlled-publish-period)

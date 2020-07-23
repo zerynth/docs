@@ -21,7 +21,9 @@ lamp.set_LED_colors(["green","green","white","red","red"])
 
 ## la6HTTP class
 
-**`class la6HTTP(colors=["off,"off,"off","off","off"],buzzer="off",flash="off",address="192.168.10.1")`**
+##### class la6HTTP
+
+```#!py3 class la6HTTP(colors=["off,"off,"off","off","off"],buzzer="off",flash="off",address="192.168.10.1")```
 
 Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP protocol.
 
@@ -55,39 +57,45 @@ Create an instance of the la6HTTP class for control patlite la6 lamp with HTTP p
 -	**address** – The IP address of the devices concerned.
 
 
+###### la6HTTP.set_LED_colors
 
-**`set_LED_colors(colors)`**
+```#!py3 set_LED_colors(colors)```
 
 **Arguments:** **colors** – Array of 5 positions containing the colors of the led strips.
 
 
+###### la6HTTP.set_buzzer
 
-**`set_buzzer(buzzer)`**
+```#!py3 set_buzzer(buzzer)```
 
 **Arguments:** **buzzer** – Buzzer status.
 
 
+###### la6HTTP.set_flash
 
-**`set_flash(flash)`**
+```#!py3 set_flash(flash)```
 
 **Arguments:** **flash** – Flash LED unit status.
 
 
+###### la6HTTP.clear
 
-**`clear()`**
+```#!py3 clear()```
 
 LED unit and buzzer reset.
 
+###### la6HTTP.set_smartmode
 
-**`set_smartmode(command)`**
+```#!py3 set_smartmode(command)```
 
 **Arguments:** **command** – Through this parameter composed of the digits from 1 to 15 it is possible to draw on the SmartMode LED animation functions sanctioned by the lamp manufacturer.
 
 
 ## la6MODBUS class
 
+##### class la6MODBUS
 
-**`class la6MODBUS(colors=["off,"off,"off","off","off"],buzzer="off",flash="off",address="192.168.10.1",port=502)`**
+```#!py3 class la6MODBUS(colors=["off,"off,"off","off","off"],buzzer="off",flash="off",address="192.168.10.1",port=502)```
 
 Create an instance of the la6MODBUS class for control patlite la6 lamp with MODBUS TCP protocol.
 
@@ -123,32 +131,37 @@ Create an instance of the la6MODBUS class for control patlite la6 lamp with MODB
 -	**port** – Network port for connection in modbus protocol.
 
 
+###### la6MODBUS.set_LED_colors
 
-**`set_LED_colors(colors)`**
+```#!py3 set_LED_colors(colors)```
 
 **Arguments:** **colors** – Array of 5 positions containing the colors of the led strips.
 
 
+###### la6MODBUS.set_buzzer
 
-**`set_buzzer(buzzer)`**
+```#!py3 set_buzzer(buzzer)```
 
 **Arguments:**  **buzzer** – Buzzer status.
 
 
+###### la6MODBUS.set_flash
 
-**`set_flash(flash)`**
+```#!py3 set_flash(flash)```
 
 **Arguments:** **flash** – Flash LED unit status.
 
 
+###### la6MODBUS.set_smartmode
 
-**`set_smartmode(command)`**
+```#!py3 set_smartmode(command)```
 
 **Arguments:** **command** – Through this parameter composed of the digits from 1 to 15 it is possible to draw on the SmartMode LED animation functions sanctioned by the lamp manufacturer.
 
 
+###### la6MODBUS.clear
 
-**`clear()`**
+```#!py3 clear()```
 
 LED unit and buzzer reset.
 <!--stackedit_data:

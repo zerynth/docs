@@ -11,8 +11,9 @@ It can be used with Cypress PSoC6 WiFi-BT Pioneer Kit.
 TLS support is available by means of Zeynth mbedTLS integration.
 To enable it and allow the creation of TLS sockets using the Zerynth `ssl` module, place `ZERYNTH_SSL: true` inside your project `project.yml` file.
 
+###### init
 
-**`init(country)`**
+```#!py3 init(country)```
 
 
 **Arguments:** **contry** – two-letter country code
@@ -23,8 +24,9 @@ Tries to init the lbee5kl1dx driver.
 **Raises PeripheralError:**  in case of failed initialization
 
 
+###### auto_init
 
-**`auto_init(country="US")`**
+```#!py3 auto_init(country="US")```
 
 
 **Arguments:** **contry** – two-letter country code

@@ -2,7 +2,9 @@
 
 This module provides uniform access to Polaris on-board modem, which may vary on different board variants.
 
-**`init()`**
+###### init
+
+```#!py3 init()```
 
 Initializes the correct Modem library for the current Polaris target board variant and returns the module object.
 

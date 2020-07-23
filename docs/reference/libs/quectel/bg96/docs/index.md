@@ -7,10 +7,10 @@ The driver must be used together with the standard library GSM Module.
 Contents:
 
 
-* [BG96 Module](https://docs.zerynth.com/latest/official/lib.quectel.bg96/docs/official_lib.quectel.bg96_bg96.html)
-    * [Network Time](https://docs.zerynth.com/latest/official/lib.quectel.bg96/docs/official_lib.quectel.bg96_bg96.html#network-time)
-    * [GNSS](https://docs.zerynth.com/latest/official/lib.quectel.bg96/docs/official_lib.quectel.bg96_bg96.html#gnss)
-* [BG96_GNSS Module](https://docs.zerynth.com/latest/official/lib.quectel.bg96/docs/official_lib.quectel.bg96_bg96gnss.html)
-    * [NMEA](https://docs.zerynth.com/latest/official/lib.quectel.bg96/docs/official_lib.quectel.bg96_bg96gnss.html#nmea)
-* [Examples](https://docs.zerynth.com/latest/official/lib.quectel.bg96/examples/examples.html)
-    * [UDP Socket](https://docs.zerynth.com/latest/official/lib.quectel.bg96/examples/examples.html#udp-socket)
+* [BG96 Module](/latest/reference/libs/quectel/bg96/docs/bg96/#bg96-module)
+    * [Network Time](/latest/reference/libs/quectel/bg96/docs/bg96/#network-time)
+    * [GNSS](/latest/reference/libs/quectel/bg96/docs/bg96/#gnss)
+* [BG96_GNSS Module](/latest/reference/libs/quectel/bg96/docs/bg96gnss/)
+    * [NMEA](/latest/reference/libs/quectel/bg96/docs/bg96gnss/#nmea)
+* [Examples](/latest/reference/libs/quectel/bg96/docs/examples/)
+    * [UDP Socket](/latest/reference/libs/quectel/bg96/docs/examples/#udp-socket)

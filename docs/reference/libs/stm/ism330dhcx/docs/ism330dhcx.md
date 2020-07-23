@@ -4,8 +4,9 @@ This module contains the driver for STMicroelectronics ISM330DHCX 3-axis acceler
 
 In the ISM330DHCX, the sensing elements of the accelerometer and of the gyroscope are implemented on the same silicon die, thus guaranteeing superior stability and robustness. ([datasheet](https://www.st.com/resource/en/datasheet/ism330dhcx.pdf)).
 
+##### class ISM330DHCX
 
-**`class ISM330DHCX(spidrv, pin_cs, clk=5000000)`**
+```#!py3 class ISM330DHCX(spidrv, pin_cs, clk=5000000)```
 
 Class which provides a simple interface to ISM330DHCX features.
 
@@ -33,12 +34,15 @@ acc = accgyro.get_acc_data()
 gyro = accgyro.get_gyro_data()
 ```
 
-**`reset()`**
+###### ISM330DHCX.reset
+
+```#!py3 reset()```
 
 Reset the device using the internal register flag.
 
+###### ISM330DHCX.enable_acc
 
-**`enable_acc(odr=ISM330DHCX_ODR_417Hz, fs=0)`**
+```#!py3 enable_acc(odr=ISM330DHCX_ODR_417Hz, fs=0)```
 
 Sets the device’s configuration registers for accelerometer.
 
@@ -73,15 +77,17 @@ Sets the device’s configuration registers for accelerometer.
 
 Returns True if configuration is successful, False otherwise.
 
+###### ISM330DHCX.disable_acc
 
-**`disable_acc()`**
+```#!py3 disable_acc()```
 
 Disables the accelerator sensor.
 
 Returns True if configuration is successful, False otherwise.
 
+###### ISM330DHCX.enable_gyro
 
-**`enable_gyro(odr=ISM330DHCX_ODR_417Hz, fs=0)`**
+```#!py3 enable_gyro(odr=ISM330DHCX_ODR_417Hz, fs=0)```
 
 Sets the device’s configuration registers for gyroscope.
 
@@ -117,20 +123,23 @@ Sets the device’s configuration registers for gyroscope.
 
 Returns True if configuration is successful, False otherwise.
 
+###### ISM330DHCX.disable_gyro
 
-**`disable_gyro()`**
+```#!py3 disable_gyro()```
 
 Disables the gyroscope sensor.
 
 Returns True if configuration is successful, False otherwise.
 
+###### ISM330DHCX.whoami
 
-**`whoami()`**
+```#!py3 whoami()```
 
 Value of the ```ISM330DHCX_WHO_AM_I``` register (0x6B).
 
+###### ISM330DHCX.get_acc_data
 
-**`get_acc_data(ms2=True, raw=False)`**
+```#!py3 get_acc_data(ms2=True, raw=False)```
 
 Retrieves accelerometer data in one call.
 
@@ -144,8 +153,9 @@ Retrieves accelerometer data in one call.
 
 Returns acc_x, acc_y, acc_z.
 
+###### ISM330DHCX.get_gyro_data
 
-**`get_gyro_data(dps=True, raw=False)`**
+```#!py3 get_gyro_data(dps=True, raw=False)```
 
 Retrieves gyroscope data in one call.
 
@@ -159,14 +169,17 @@ Retrieves gyroscope data in one call.
 
 Returns gyro_x, gyro_y, gyro_z.
 
-**`get_temp()`**
+###### ISM330DHCX.get_temp
+
+```#!py3 get_temp()```
 
 Retrieves temperature in one call; if raw flag is enabled, returns raw register values.
 
 Returns temp.
 
+###### ISM330DHCX.get_fast
 
-**`get_fast()`**
+```#!py3 get_fast()```
 
 Retrieves all data sensors in one call in fast way (c-code acquisition).
 
@@ -177,8 +190,9 @@ Retrieves all data sensors in one call in fast way (c-code acquisition).
 
 Returns temp, acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z.
 
+###### ISM330DHCX.set_event_interrupt
 
-**`set_event_interrupt(pin_int, sensor, enable)`**
+```#!py3 set_event_interrupt(pin_int, sensor, enable)```
 
 Enables the interrupt pins. When data from sensor selected will be ready, the related interrupt pin configured will be set to high.
 

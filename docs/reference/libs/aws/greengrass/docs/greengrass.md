@@ -10,8 +10,9 @@ The Zerynth AWS Greengrass Library contains helper functions for IoT devices to 
 
 ## The DiscoveryInfo class
 
+##### class DiscoveryInfo
 
-**`class DiscoveryInfo(raw_info)`**
+```#!py3 class DiscoveryInfo(raw_info)```
 
 A DiscoveryInfo instance is returned by `greengrass.discover()` function.
 
@@ -22,20 +23,23 @@ It exposes the following attributes and methods:
 * `DiscoveryInfo.CA()`
 * `DiscoveryInfo.connectivity()`
 
+###### DiscoveryInfo.CA
 
-**`CA()`**
+```#!py3 CA()```
 
 Returns Greengrass Core CA Certificate if only one Server Certificate is returned by discover call. Raises `GreengrassDiscoveryInfoException` if more than one certificate is returned.
 
+###### DiscoveryInfo.connectivity
 
-**`connectivity()`**
+```#!py3 connectivity()```
 
 Returns a tuple `(core_address, core_port)` with Greengrass Core address and port if only one Core is returned by discover call. Raises `GreengrassDiscoveryInfoException` if more than one Core is returned.
 
 ## Helper Functions
 
+###### discover
 
-**`discover(endpoint, thingname, clicert, pkey, cacert=None)`**
+```#!py3 discover(endpoint, thingname, clicert, pkey, cacert=None)```
 
 
 * **param endpoint:**   AWS server where to retrieve Greengrass core info

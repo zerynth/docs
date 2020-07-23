@@ -24,13 +24,13 @@ Here below, the Zerynth driver for the Espressif ESP32 and some examples to bett
 
 Contents:
 
- -   [ESP32 Ethernet Module](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/docs/official_lib.espressif.esp32net_esp32eth.html)
- -   [ESP32 Wifi Module](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/docs/official_lib.espressif.esp32net_esp32wifi.html)
- -   [Examples](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/examples/examples.html)
-     -   [Wifi](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/examples/examples.html#wifi)
-     -   [SoftAP](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/examples/examples.html#softap)
-     -   [Sniffer](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/examples/examples.html#sniffer)
-     -   [Advanced Sniffer](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/examples/examples.html#advanced-sniffer)
+ -   [ESP32 Ethernet Module](/latest/reference/libs/espressif/esp32net/docs/esp32eth/)
+ -   [ESP32 Wifi Module](/latest/reference/libs/espressif/esp32net/docs/esp32wifi/)
+ -   [Examples](/latest/reference/libs/espressif/esp32net/docs/examples/)
+     -   [Wifi](/latest/reference/libs/espressif/esp32net/docs/examples/#wifi-connect)
+     -   [SoftAP](/latest/reference/libs/espressif/esp32net/docs/examples/#soft-ap-mode)
+     -   [Sniffer](/latest/reference/libs/espressif/esp32net/docs/examples/#sniffer)
+     -   [Advanced Sniffer](/latest/reference/libs/espressif/esp32net/docs/examples/#advanced-sniffer)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5NjMzMjI4MzhdfQ==
 -->

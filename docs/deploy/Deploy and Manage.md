@@ -22,7 +22,7 @@ ZDM is device and OS independent, allowing the connection of microcontroller-bas
 
 This device produced data is collected, aggregated, and stored by the ZDM, allowing IoT application frontend to retrieve the data by means of RESTfull API or using the ZDM Gates.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/zdm-diagram.jpg)
+![](img/zdm-diagram.jpg)
 
 The Zerynth Device Managers is based on the following key concepts;
 
@@ -53,7 +53,7 @@ Go to [https://zdm.zerynth.com](https://zdm.zerynth.com/) and login with your ze
 
 **Home Page**
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Home%20Page.png)
+![](img/Home%20Page.png)
 
 From here you can get an overview of your workspaces, search for them and add new ones.
 
@@ -69,25 +69,25 @@ After clicking “Add” the new workspace will be added to the home ready to be
 
 If you don’t indicate any fleet in the form, the default fleet will be created automatically.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Workspace.png)
+![](img/Add%20new%20Workspace.png)
 
 **Workspace**
 
 To open a workspace just click on its title in the homepage grid. The workspace page allows you to configure the workspace, manage associated devices, create gates and lunch jobs on your devices.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Workspace.png)
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Workspace%202.png)
+![](img/Workspace.png)
+![](img/Workspace%202.png)
 
 **Configuration**
 
-The configuration button: ![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/config.png) is used to:
+The configuration button: ![](img/config.png) is used to:
 
 -   delete the fleets (you can delete only empty fleets)
     
 -   delete the workspace itself (only if it doesn’t contain devices)
     
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/workspace%20Configuration.png)
+![](img/workspace%20Configuration.png)
 
 **Fleets Management**
 
@@ -107,7 +107,7 @@ To add a new GATE click on the Add new Gate button, and select the type of Gate 
 
 Webhook
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Webhook.png)
+![](img/Webhook.png)
 
 For the Webhook gate, you have to fill the form with:
 
@@ -128,11 +128,11 @@ Ubidots GATE
 
 In the Ubidots gate creation form you will find the Ubidots address URL pre-filled. To add a Ubidots webhook you need to add the “device label” of the Ubidots device where you want to receive the data. If you have already created a device on Ubidots, copy it here otherwise insert a device name you prefer (without spaces) and Ubidots will create it automatically when the ZDM gate is created. The Ubidots token can be copied from the Ubidots API credential section of the Ubidots user menu. In the Example 2 of this guide you will find more details on how to create a device in Ubidots.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Ubidots%20GATE.png)
+![](img/Ubidots%20GATE.png)
 
 **View, activate/deactivate, modify and delete a Gate**
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/View,%20activate%20deactivate,modify%20and%20delete%20a%20Gate.png)
+![](img/View,%20activate%20deactivate,modify%20and%20delete%20a%20Gate.png)
 
 Once created, the Gates are added to the Gates tab, and from here it is possible to activate/deactivate them, edit and delete them.
 
@@ -144,7 +144,7 @@ Devices can be filtered by fleets and ordered by creation date. Through the tabl
 
 Selecting one or more devices from the list you can perform mass operations such as FOTA, Custom RPC, Device Reset and other bulk actions that can be selected from the drop-down menu on the left.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/workspace%20Configuration.png)
+![](img/workspace%20Configuration.png)
 
 **Add new Fleet**
 
@@ -154,9 +154,9 @@ You can add a new fleet on the Workspace using the “Add new Fleet” button. T
 
 Just click on the “Add New Device” button on the workspace page. You will be prompted with the device creation form. Here, just fill in “Device Name” and select the fleet to which the device will be associated from the drop-down menu.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Add%20new%20Device.png)
+![](img/Add%20new%20Device.png)
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Device%20added.png)
+![](img/Device%20added.png)
 
 Once successfully created, the screen will show the device id and the Password required for device authentication on the ZDM. Please copy the password and the device id, you will need to paste it in the Zerynth Device firmware or in your ZDM client lib based application.
 
@@ -168,7 +168,7 @@ If you lose a device password you can always regenerate it from the specific dev
 
 **Regenerate device password**
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Regenerate%20device%20password.png)
+![](img/Regenerate%20device%20password.png)
 
 **Bulk Actions**
 
@@ -192,15 +192,15 @@ The first step to start a FOTA update on your devices is to prepare and upload a
 
 To upload your firmware, open the Zerynth Studio (**Note:** Zerynth studio v. 2.5.0 or higher is required). Open the project you want to compile and use for the FOTA and click on the Zerynth Device Manager Icon on the left vertical menu.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Zerynth%20Device%20Manager%20Icon%20on%20the%20left%20vertical%20menu.png)
+![](img/Zerynth%20Device%20Manager%20Icon%20on%20the%20left%20vertical%20menu.png)
 
 Now click on the ZDM FOTA Prepare orange button.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/ZDM%20FOTA%20Prepare%20orange%20button.png)
+![](img/ZDM%20FOTA%20Prepare%20orange%20button.png)
 
 Select the ZDM device you want to update and indicate a unique firmware version identifier (you can’t reuse a version identifier previously used), click prepare.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Select%20the%20ZDM%20device%20you%20want%20to%20update.png)
+![](img/Select%20the%20ZDM%20device%20you%20want%20to%20update.png)
 
 When the firmware preparation and upload process will be completed Zerynth Studio will prompt you to another window. If you want to go ahead with the FOTA procedure click Open ZDM GUI.
 
@@ -208,7 +208,7 @@ You will be redirected to the ZDM selected device page.
 
 Just click FOTA, select the firmware you just uploaded and click Start.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/ZDM%20selected%20device%20page.png)
+![](img/ZDM%20selected%20device%20page.png)
 
 The FOTA procedure will be scheduled on your device. Refresh the device Status form and you will see the status of the FOTA procedure.
 
@@ -218,7 +218,7 @@ Jobs are device actions that the ZDM will be scheduled. Jobs need to be enabled 
 
 Once your device or devices are online and programmed with custom Jobs, you can select one or more devices and click the “Jobs” button.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Launch%20jobs.png)
+![](img/Launch%20jobs.png)
 
 A dialog will come up, which will summarize the list of devices you have selected.
 
@@ -235,7 +235,7 @@ On the page of a specific device, you will see the info about that device, then 
 
 In addition you will see the Tag Console, which will show you in real time the data that that device is publishing in a specific tag.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Device%20Page.png)
+![](img/Device%20Page.png)
 
 At the top you can see some summary information on your device such as name, id, fleet to which it belongs, associated tags, the firmware version, the status of the jobs called and the last time your device was seen online.
 
@@ -245,7 +245,7 @@ At the end of device pages, you can find the Data Console, it allows you to see 
 
 By clicking in the left checkboxes you can better navigate the published data, they will be presented on the right in the “Show selected Data” box.
 
-![](https://raw.githubusercontent.com/zerynth/docs/test/docs/images/Data%20Console.png)
+![](img/Data%20Console.png)
 
   
 ## The ZDM Command Line Interface

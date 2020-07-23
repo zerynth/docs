@@ -6,7 +6,7 @@ This module supports SSL/TLS.
 
 Contents:
 
-* [Infineon XMC4000 Ethernet Module](https://docs.zerynth.com/latest/official/lib.infineon.xmc4eth/docs/official_lib.infineon.xmc4eth_xmc4eth.html)
+* [Infineon XMC4000 Ethernet Module](/latest/reference/libs/infineon/xmc4eth/docs/xmc4eth/)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMzgzMjkwNTc5XX0=

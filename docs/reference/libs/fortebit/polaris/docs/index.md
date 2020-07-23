@@ -7,13 +7,13 @@ Below, Zerynth documentation for the Polaris library.
 Contents:
 
 
--   [Polaris Board](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_polaris.html)
--   [GNSS](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_gnss.html)
--   [Modem](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_modem.html)
--   [Cloud Service](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_cloud.html)
--   [Accelerometer](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_accelerometer.html)
--   [I/O Expander](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_ioexpander.html)
--   [QSPI Flash](https://docs.zerynth.com/latest/official/lib.fortebit.polaris/docs/official_lib.fortebit.polaris_qspiflash.html)
+-   [Polaris Board](/latest/reference/libs/fortebit/polaris/docs/polaris/)
+-   [GNSS](/latest/reference/libs/fortebit/polaris/docs/gnss/)
+-   [Modem](/latest/reference/libs/fortebit/polaris/docs/modem/)
+-   [Cloud Service](/latest/reference/libs/fortebit/polaris/docs/cloud/)
+-   [Accelerometer](/latest/reference/libs/fortebit/polaris/docs/accelerometer/)
+-   [I/O Expander](/latest/reference/libs/fortebit/polaris/docs/ioexpander/)
+-   [QSPI Flash](/latest/reference/libs/fortebit/polaris/docs/qspiflash/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE4MTA5NzM1MF19
 -->

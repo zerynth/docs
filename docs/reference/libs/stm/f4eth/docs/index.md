@@ -7,4 +7,4 @@ This module supports SSL/TLS.
 Contents:
 
 
-* [STM32F4 Native Ethernet Module](https://docs.zerynth.com/latest/official/lib.stm.f4eth/docs/official_lib.stm.f4eth_f4eth.html)
+* [STM32F4 Native Ethernet Module](/latest/reference/libs/stm/f4eth/docs/f4eth/)

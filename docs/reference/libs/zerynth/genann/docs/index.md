@@ -6,7 +6,7 @@ Below, Zerynth port of the powerful and simple [Genann](https://github.com/codep
 Contents:
 
 
-* [Genann](https://docs.zerynth.com/latest/official/lib.zerynth.genann/docs/official_lib.zerynth.genann_genann.html)
-    * [ANN Class](https://docs.zerynth.com/latest/official/lib.zerynth.genann/docs/official_lib.zerynth.genann_genann.html#ann-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.genann/examples/examples.html)
-    * [Hello XOR](https://docs.zerynth.com/latest/official/lib.zerynth.genann/examples/examples.html#hello-xor)
+* [Genann](/latest/reference/libs/zerynth/genann/docs/genann/)
+    * [ANN Class](/latest/reference/libs/zerynth/genann/docs/genann/#ann-class)
+* [Examples](/latest/reference/libs/zerynth/genann/docs/examples/)
+    * [Hello XOR](/latest/reference/libs/zerynth/genann/docs/examples/#hello-xor)

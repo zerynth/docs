@@ -26,5 +26,5 @@ Here below, the Zerynth driver for the Texas Instruments TMP112.
 Contents:
 
 
-* [TMP112 Module](https://docs.zerynth.com/latest/official/lib.texas.tmp112/docs/official_lib.texas.tmp112_tmp112.html)
-    * [TMP112 class](https://docs.zerynth.com/latest/official/lib.texas.tmp112/docs/official_lib.texas.tmp112_tmp112.html)
+* [TMP112 Module](/latest/reference/libs/texas/tmp112/docs/tmp112/)
+    * [TMP112 class](/latest/reference/libs/texas/tmp112/docs/tmp112/#class-tmp112)

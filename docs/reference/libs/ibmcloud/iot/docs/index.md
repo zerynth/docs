@@ -20,10 +20,10 @@ Here below, the Zerynth Library to manage your devices thanks to IBM Watson IoT:
 
 Contents:
 
--   [IBM Cloud Watson IoT Library](https://docs.zerynth.com/latest/official/lib.ibmcloud.iot/docs/official_lib.ibmcloud.iot_iot.html)
-    -   [The Device class](https://docs.zerynth.com/latest/official/lib.ibmcloud.iot/docs/official_lib.ibmcloud.iot_iot.html#the-device-class)
--   [Examples](https://docs.zerynth.com/latest/official/lib.ibmcloud.iot/examples/examples.html)
-    -   [Controlled publish period](https://docs.zerynth.com/latest/official/lib.ibmcloud.iot/examples/examples.html#controlled-publish-period)
+-   [IBM Cloud Watson IoT Library](/latest/reference/libs/ibmcloud/iot/docs/iot/)
+    -   [The Device class](/latest/reference/libs/ibmcloud/iot/docs/iot/#the-device-class)
+-   [Examples](/latest/reference/libs/ibmcloud/iot/docs/examples/)
+    -   [Controlled publish period](/latest/reference/libs/ibmcloud/iot/docs/examples/#controlled-publish-period)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTcyMDExMTM5M119
 -->

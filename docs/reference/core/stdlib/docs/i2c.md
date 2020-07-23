@@ -48,53 +48,63 @@ The I2C protocol provides mechanisms to detect bus errors. Zerynth VM catches bu
 
 ## The I2C class
 
+##### class I2C
 
-**`I2C(drvname, addr, clock=100000)`**
+```#!py3 class I2C(drvname, addr, clock=100000)```
 
 Creates an I2C instance using the MCU I2C circuitry ```drvname``` (one of I2C0, I2C1, … check pinmap for details). The created instance is configured to communicate with the slave peripheral identified by ```addr```. ```clock``` is configured by default in slow mode.
 
+###### I2C.set_addr
 
-**`set_addr(addr)`**
+```#!py3 set_addr(addr)```
 
 Changes the peripheral address to communicate with.
 
+###### I2C.start
 
-**`start()`**
+```#!py3 start()```
 
 I2C is started. It is necessary to start the driver before any communication can commence to transfer the I2C configuration parameter to the low level driver. If the I2C bus is already configured with different settings by another active istance of the I2C class, an exception is raised.
 
+###### I2C.write_bytes
 
-**`write_bytes(\*args, timeout=-1)`**
+```#!py3 write_bytes(\*args, timeout=-1)```
 
 ```args``` is converted to bytes and sent.
 
+###### I2C.write
 
-**`write(data, timeout=-1)`**
+```#!py3 write(data, timeout=-1)```
 
 ```data``` is written.
 
+###### I2C.read
 
-**`read(n, timeout=-1)`**
+```#!py3 read(n, timeout=-1)```
 
 Returns a sequence of ```n``` bytes.
 
+###### I2C.write_read
 
-**`write_read(data, n, timeout=-1)`**
+```#!py3 write_read(data, n, timeout=-1)```
 
 Writes ```data``` and then reads ```n``` bytes in a single call.
 
+###### I2C.stop
 
-**`stop()`**
+```#!py3 stop()```
 
 i2c is stopped and low level configuration disabled.
 
+###### I2C.lock
 
-**`lock()`**
+```#!py3 lock()```
 
 Locks the driver. It is useful when the same i2c object is used by multiple threads to avoid interferences.
 
+###### I2C.unlock
 
-**`unlock()`**
+```#!py3 unlock()```
 
 Unlocks the driver. It is useful when the same i2c object is used by multiple threads to avoid interferences.
 <!--stackedit_data:

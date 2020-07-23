@@ -2,7 +2,7 @@
 
 The SL06 xChip features advanced Gesture detection, Proximity detection, Digital Ambient Light Sense (ALS) and Colour Sense (RGBC). It is based on the popular [APDS9960](https://www.broadcom.com/products/optical-sensors/integrated-ambient-light-and-proximity-sensors/apds-9960) manufactured by Avago Technologies.
 
-Please note, SL06 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](https://docs.zerynth.com/latest/official/board.zerynth.xinabox_esp32/docs/index.html). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
+Please note, SL06 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](/latest/reference/boards/xinabox_esp32/docs/). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
 
 ## Technical Details
 
@@ -34,10 +34,10 @@ Please note, SL06 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* [SL06 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/docs/official_lib.xinabox.sl06_sl06.html)
-    * [SL06 class](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/docs/official_lib.xinabox.sl06_sl06.html#sl06-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html)
-    * [ambient light](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#ambient-light)
-    * [colour](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#colour)
-    * [gesture](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#gesture)
-    * [proximity](https://docs.zerynth.com/latest/official/lib.xinabox.sl06/examples/examples.html#proximity)
+* [SL06 Module](/latest/reference/libs/xinabox/sl06/docs/sl06/)
+    * [SL06 class](/latest/reference/libs/xinabox/sl06/docs/sl06/#sl06-class)
+* [Examples](/latest/reference/libs/xinabox/sl06/docs/examples/)
+    * [ambient light](/latest/reference/libs/xinabox/sl06/docs/examples/#ambient-light-detection)
+    * [colour](/latest/reference/libs/xinabox/sl06/docs/examples/#colour-detection)
+    * [gesture](/latest/reference/libs/xinabox/sl06/docs/examples/#gesture-detection)
+    * [proximity](/latest/reference/libs/xinabox/sl06/docs/examples/#proximity-detection)

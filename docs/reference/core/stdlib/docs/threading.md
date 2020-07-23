@@ -51,8 +51,9 @@ through `ident`.
 
 ### Thread class
 
+##### class Thread
 
-**`Thread(target=None, name=None, args=())`**
+```#!py3 class Thread(target=None, name=None, args=())```
 
 This constructor should always be called with keyword arguments.  Arguments
 are:
@@ -69,8 +70,9 @@ If the subclass overrides the constructor, it must make sure to invoke the
 base class constructor (`Thread.__init__()`) before doing anything else to
 the thread.
 
+###### Thread.start
 
-**`start(prio = PRIO_NORMAL, size=512)`**
+```#!py3 start(prio = PRIO_NORMAL, size=512)```
 
 Start the thread’s activity.
 
@@ -82,8 +84,9 @@ This method will raise a `RuntimeError` if called more than once
 on the same thread object. 
 ```prio``` and ```size``` are used to set the thread priority and the stack size.
 
+###### Thread.run
 
-**`run()`**
+```#!py3 run()```
 
 Method representing the thread’s activity.
 
@@ -92,8 +95,9 @@ method invokes the callable object passed to the object’s constructor as
 the ```target``` argument, if any, with sequential arguments taken
 from the ```args``` argument.
 
+###### Thread.join
 
-**`join(timeout=-1)`**
+```#!py3 join(timeout=-1)```
 
 Wait until the thread terminates. This blocks the calling thread until
 the thread whose `join()` method is called terminates – either
@@ -112,23 +116,26 @@ block until the thread terminates.
 
 A thread can be `join()`ed many times.
 
+###### Thread.is_alive
 
-**`is_alive()`**
+```#!py3 is_alive()```
 
 Return whether the thread is alive.
 
 This method returns `True` just before the `run()` method
 starts until just after the `run()` method terminates.
 
+###### Thread.name
 
-**`name()`**
+```#!py3 name()```
 
 A string used for identification purposes only. It has no semantics.
 Multiple threads may be given the same name.  The initial name is set by
 the constructor.
 
+###### Thread.ident
 
-**`ident()`**
+```#!py3 ident()```
 
 The ‘thread identifier’ of this thread or `None` if the thread has not
 been started.  This is a non negative integer. Thread identifiers may be recycled
@@ -137,8 +144,9 @@ available even after the thread has exited.
 
 ### Lock class
 
+##### class Lock
 
-**`Lock()`**
+```#!py3 class Lock()```
 
 A Lock object can be in two states: ```locked``` or ```unlocked```. When a Lock object is created it starts ```unlocked```.
 
@@ -187,8 +195,9 @@ thread(threadfun,"World")
 
 Both threads in the example will compete to call `print(msg)`. The Lock object ensure that while one thread is printing on the serial port, the other one is blocked, waiting for the message to be printed.
 
+###### Lock.acquire
 
-**`acquire(blocking=True, timeout=-1)`**
+```#!py3 acquire(blocking=True, timeout=-1)```
 
 Acquire a lock, blocking or non-blocking.
 
@@ -208,8 +217,9 @@ when ```blocking``` is false.
 The return value is `True` if the lock is acquired successfully,
 `False` if not (for example if the ```timeout``` expired).
 
+###### Lock.release
 
-**`release()`**
+```#!py3 release()```
 
 Release a lock.  This can be called from any thread, not only the thread
 which has acquired the lock.
@@ -220,8 +230,9 @@ to proceed.
 
 ### Semaphore class
 
+##### class Semaphore
 
-**`Semaphore(value=1)`**
+```#!py3 class Semaphore(value=1)```
 
 This class implements semaphore objects.  A semaphore manages a counter
 representing the number of `release()` calls minus the number of
@@ -232,8 +243,9 @@ If not given, ```value``` defaults to 1.
 The optional argument gives the initial ```value``` for the internal counter; it
 defaults to `1`. If the ```value``` given is less than 0, `ValueError`is raised.
 
+###### Semaphore.acquire
 
-**`acquire(blocking=True, timeout=-1)`**
+```#!py3 acquire(blocking=True, timeout=-1)```
 
 Acquire a semaphore.
 
@@ -255,8 +267,9 @@ When invoked with a ```timeout``` other than -1, it will block for at
 most ```timeout``` milliseconds.  If acquire does not complete successfully in
 that interval, return false.  Return true otherwise.
 
+###### Semaphore.release
 
-**`release()`**
+```#!py3 release()```
 
 Release a semaphore, incrementing the internal counter by one.  When it
 was zero on entry and another thread is waiting for it to become larger
@@ -264,35 +277,40 @@ than zero again, wake up that thread.
 
 ### Event class
 
+##### class Event
 
-**`Event()`**
+```#!py3 class Event()```
 
 Class implementing event objects.  An event manages a flag that can be set to
 true with the `set()` method and reset to false with the
 `clear()` method.  The `wait()` method blocks until the flag is true.
 The flag is initially false.
 
+###### Event.set
 
-**`set()`**
+```#!py3 set()```
 
 Set the internal flag to true. All threads waiting for it to become true
 are awakened. Threads that call `wait()` once the flag is true will
 not block at all.
 
+###### Event.is_set
 
-**`is_set()`**
+```#!py3 is_set()```
 
 Return true if and only if the internal flag is true.
 
+###### Event.clear
 
-**`clear()`**
+```#!py3 clear()```
 
 Reset the internal flag to false. Subsequently, threads calling
 `wait()` will block until `set()` is called to set the internal
 flag to true again.
 
+###### Event.wait
 
-**`wait(timeout=-1)`**
+```#!py3 wait(timeout=-1)```
 
 Block until the internal flag is true.  If the internal flag is true on
 entry, return immediately.  Otherwise, block until another thread calls
@@ -380,8 +398,9 @@ but this is not guaranteed for every VM.
 
 ### Condition class
 
+##### class Condition
 
-**`Condition(lock=None)`**
+```#!py3 class Condition(lock=None)```
 
 This class implements condition variable objects.  A condition variable
 allows one or more threads to wait until they are notified by another thread.
@@ -390,20 +409,23 @@ If the ```lock``` argument is given and not `None`, it must be a `Lock()` object
 and it is used as the underlying lock.  Otherwise,
 a new `Lock()` object is created and used as the underlying lock.
 
+###### Condition.acquire
 
-**`acquire(blocking=True, timeout=-1)`**
+```#!py3 acquire(blocking=True, timeout=-1)```
 
 Acquire the underlying lock. This method calls the corresponding method on
 the underlying lock; the return value is whatever that method returns.
 
+###### Condition.release
 
-**`release()`**
+```#!py3 release()```
 
 Release the underlying lock. This method calls the corresponding method on
 the underlying lock; there is no return value.
 
+###### Condition.wait
 
-**`wait(timeout=-1)`**
+```#!py3 wait(timeout=-1)```
 
 Wait until notified or until a timeout occurs. If the calling thread has
 not acquired the lock when this method is called, a `RuntimeError` is
@@ -420,8 +442,9 @@ integer number specifying a timeout for the operation in milliseconds.
 The return value is `True` unless a given ```timeout``` expired, in which
 case it is `False`.
 
+###### Condition.wait_for
 
-**`wait_for(predicate, timeout=-1)`**
+```#!py3 wait_for(predicate, timeout=-1)```
 
 Wait until a condition evaluates to True.  ```predicate``` should be a
 callable which result will be interpreted as a boolean value.
@@ -444,8 +467,9 @@ Therefore, the same rules apply as with `wait()`: The lock must be
 held when called and is re-acquired on return.  The predicate is evaluated
 with the lock held.
 
+###### Condition.notify
 
-**`notify(n=1)`**
+```#!py3 notify(n=1)```
 
 By default, wake up one thread waiting on this condition, if any.  If the
 calling thread has not acquired the lock when this method is called, a `RuntimeError` is raised.
@@ -459,8 +483,9 @@ threads are waiting.
 !!! note
 	an awakened thread does not actually return from its `wait()` call until it can reacquire the lock.  Since `notify()` does not release the lock, its caller should.
 
+###### Condition.notify_all
 
-**`notify_all()`**
+```#!py3 notify_all()```
 
 Wake up all threads waiting on this condition.  This method acts like
 `notify()`, but wakes up all waiting threads instead of one. If the

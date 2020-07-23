@@ -4,20 +4,24 @@ This module loads the Analog to Digital Converter (adc) driver of the embedded d
 
 When imported, automatically sets the system adc driver to  the default one.
 
-**`init(drvname, samples_per_second=800000)`**
+###### init
+
+```#!py3 init(drvname, samples_per_second=800000)```
 
 Loads the adc driver identified by ```drvname``` and sets it up to read ```samples_per_second``` samples per second. The default is a sampling frequency of 0.8 MHz,
 valid values are dependent on the board.
 
 Returns the previous driver without disabling it.
 
+###### done
 
-**`done(drvname)`**
+```#!py3 done(drvname)```
 
 Unloads the adc driver identified by ```drvname```.
 
+###### read
 
-**`read(pin, samples=1)`**
+```#!py3 read(pin, samples=1)```
 
 Reads analog values from ```pin``` that must be one of the Ax pins. If ```samples``` is 1 or not given, returns the integer value read from ```pin```.
 If ```samples``` is greater than 1, returns a tuple of integers of size ```samples```.

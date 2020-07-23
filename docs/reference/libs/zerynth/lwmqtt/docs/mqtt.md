@@ -11,8 +11,9 @@ Reconnection can be manually handled by the user by means of several callbacks a
 
 ## Client class
 
+##### class Client
 
-**`class Client(client_id, clean_session=True, cycle_timeout=500, command_timeout=60000)`**
+```#!py3 class Client(client_id, clean_session=True, cycle_timeout=500, command_timeout=60000)```
 
 
 * **Arguments:**
@@ -26,8 +27,9 @@ Reconnection can be manually handled by the user by means of several callbacks a
 
 Instantiates the MQTT Client.
 
+###### Client.connect
 
-**`connect(host, keepalive, port=1883, ssl_ctx=None, breconnect_cb=None, aconnect_cb=None, loop_failure=None, start_loop=True)`**
+```#!py3 connect(host, keepalive, port=1883, ssl_ctx=None, breconnect_cb=None, aconnect_cb=None, loop_failure=None, start_loop=True)```
 
 
 **Arguments:**
@@ -46,13 +48,15 @@ Connects to a remote broker and start the MQTT reception thread.
 
 
 
+###### Client.get_return_code
 
-**`get_return_code()`**
+```#!py3 get_return_code()```
 
 Get the return code of the last connection attempt.
 
+###### Client.reconnect
 
-**`reconnect()`**
+```#!py3 reconnect()```
 
 Tries to connect again with previously set connection parameters.
 
@@ -60,20 +64,23 @@ If `breconnect_cb` was passed to `connect()`, `breconnect_cb` is executed first.
 
 Return the return code of the connection.
 
+###### Client.connected
 
-**`connected()`**
+```#!py3 connected()```
 
 Returns `True` if client is connected, `False` otherwise.
 
+###### Client.loop
 
-**`loop()`**
+```#!py3 loop()```
 
 Starts MQTT background loop to handle incoming packets.
 
 Already called by `connect()` if `start_loop` is `True`.
 
+###### Client.set_username_pw
 
-**`set_username_pw(username, password='')`**
+```#!py3 set_username_pw(username, password='')```
 
 **Arguments:**
 
@@ -84,8 +91,9 @@ Already called by `connect()` if `start_loop` is `True`.
 
 Sets connection username and password.
 
+###### Client.publish
 
-**`publish(topic, payload='', qos=0, retain=False)`**
+```#!py3 publish(topic, payload='', qos=0, retain=False)```
 
 
 **Arguments:**
@@ -101,8 +109,9 @@ Publishes a message on a topic.
 
 This causes a message to be sent to the broker and subsequently from the broker to any clients subscribing to matching topics.
 
+###### Client.subscribe
 
-**`subscribe(topic, function, qos=0)`****
+```#!py3 subscribe(topic, function, qos=0)`*```
 
 
 **Arguments:**
@@ -123,8 +132,9 @@ def my_callback(mqtt_client, payload, topic):
     ...
 ```
 
+###### Client.unsubscribe
 
-**`unsubscribe(topic)`**
+```#!py3 unsubscribe(topic)```
 
 Unsubscribes the client from one topic.
 
@@ -132,8 +142,9 @@ Unsubscribes the client from one topic.
 **Arguments: topic** – is the string representing the subscribed topic to unsubscribe from.
 
 
+###### Client.disconnect
 
-**`disconnect(timeout=None)`**
+```#!py3 disconnect(timeout=None)```
 
 Sends a disconnect message, optionally waiting for the loop to exit.
 

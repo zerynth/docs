@@ -2,7 +2,7 @@
 
 The following are a list of examples for lib.zerynth.modbus.
 
-
+## ModbusTcp
 
 ```main.py```
 
@@ -70,7 +70,7 @@ except Exception as e:
 	print("Error ", e)
 
 ```
-
+## ModbusSerial
 
 ```main.py```
 

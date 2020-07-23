@@ -20,8 +20,9 @@ The following operations are allowed:
 
 ## SpiFlash class
 
+##### class SpiFlash
 
-**`SpiFlash(drvname, cs, clock=1000000)`**
+```#!py3 class SpiFlash(drvname, cs, clock=1000000)```
 
 Initialize an external Flash memory specifying its:
 
@@ -34,19 +35,22 @@ Initialize an external Flash memory specifying its:
 
 * clock ```clock```, default at 1MHz.
 
+###### SpiFlash.write_enable
 
-**`write_enable()`**
+```#!py3 write_enable()```
 
 Enable write operations.
 Automatically called by `write_data()`, `erase_sector()`, `chip_erase()` methods.
 
+###### SpiFlash.is_write_busy
 
-**`is_write_busy()`**
+```#!py3 is_write_busy()```
 
 Returns 1 or 0 depending on whether the Flash is busy or not.
 
+###### SpiFlash.write_data
 
-**`write_data(addr, data)`**
+```#!py3 write_data(addr, data)```
 
 Write data ```data``` starting from address ```addr```.
 ```data``` can be a bytearray or a list of integers less than 256.
@@ -59,14 +63,16 @@ Writing is also allowed via bracket notation. The following is valid syntax:
 my_flash[addr] = data
 ```
 
+###### SpiFlash.erase_sector
 
-**`erase_sector(addr)`**
+```#!py3 erase_sector(addr)```
 
 Erase a whole sector passing the ```addr``` address of any byte contained in it.
 All sector bytes set to 0xff.
 
+###### SpiFlash.read_data
 
-**`read_data(addr, n=1)`**
+```#!py3 read_data(addr, n=1)```
 
 Read ```n``` bytes of data starting from address ```addr```.
 
@@ -76,14 +82,16 @@ Reading is also allowed via bracket notation. The following is valid syntax:
 my_data = my_flash[addr:addr+n]
 ```
 
+###### SpiFlash.chip_erase
 
-**`chip_erase()`**
+```#!py3 chip_erase()```
 
 Erase the whole memory.
 All memory bytes set to 0xff.
 
+###### SpiFlash.chip_id
 
-**`chip_id(n)`**
+```#!py3 chip_id(n)```
 
 Returns the bytes representation of the flash chip unique identifier.
 The length in bytes of the chip id must be passed as argument ```n```.

@@ -112,7 +112,7 @@ Once connected on a USB port, if drivers have been correctly installed, the Pyco
 After virtualization, the Pycom Fipy 1.0 is ready to be programmed and the Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “upload” button of Zerynth Studio and **reset** the device by pressing the Reset on-board button when asked.
 
 !!! important
-    To exploit the Wi-Fi chip functionalities of the Pycom Fipy 1.0, the [lib.espressif.esp32net library](https://docs.zerynth.com/latest/official/lib.espressif.esp32net/docs/index.html#esp32wifi) must be installed and imported on the Zerynth script.
+    To exploit the Wi-Fi chip functionalities of the Pycom Fipy 1.0, the [lib.espressif.esp32net library](/latest/reference/libs/espressif/esp32net/docs/) must be installed and imported on the Zerynth script.
 
 ## Firmware Over the Air update (FOTA)
 
@@ -144,7 +144,7 @@ For Esp32 based devices, the FOTA process is implemented mostly by using the pro
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-This feature is strongly platform dependent; more information at [Secure Firmware - ESP32 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-esp32).
+This feature is strongly platform dependent; more information at [Secure Firmware - ESP32 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-esp32-devices).
 
 ## Zerynth secure socket
 

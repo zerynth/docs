@@ -22,4 +22,4 @@ Here below, the Zerynth driver for the STMicroelectronics HTS221.
 Contents:
 
 
-* [HTS221 Module](https://docs.zerynth.com/latest/official/lib.stm.hts221/docs/official_lib.stm.hts221_hts221.html)
+* [HTS221 Module](/latest/reference/libs/stm/hts221/docs/hts221/)

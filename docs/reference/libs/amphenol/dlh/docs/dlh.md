@@ -4,9 +4,9 @@ This module contains the Zerynth driver for Amphenol DLH pressure sensors series
 
 ## The driver implements SPI communication.
 
-DLH Class
+##### class DLH
 
-**`class DLH(spidrv, cs, d_or_g, clock=2000000)`**
+```#!py3 class DLH(spidrv, cs, d_or_g, clock=2000000)```
 
 Creates an instance of the DLH class.
 
@@ -23,7 +23,7 @@ Creates an instance of the DLH class.
 
 Temperature and pressure values can be easily obtained from the sensor:
 
-```py
+```python
 from amphenol.dlh import dlh
 
 ...
@@ -34,8 +34,9 @@ press, temp = d.get_values(unit=dlh.UNIT_PASCAL)
 ```
 
 
+###### DLH.get_values
 
-**`get_values(mode=MODE_SINGLE, unit=UNIT_INH20)`**
+```#!py3 get_values(mode=MODE_SINGLE, unit=UNIT_INH20)```
 
 Return a 2-element tuple containing current pressure and temperature values.
 The acquisition mode can be specified with one of:

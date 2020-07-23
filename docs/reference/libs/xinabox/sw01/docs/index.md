@@ -8,7 +8,7 @@ The pressure sensor is an absolute barometric pressure sensor with extremely hig
 
 The integrated temperature sensor has been optimized for lowest noise and highest resolution. Its output is used for temperature compensation of the pressure and humidity sensors and can also be used for estimation of the ambient temperature.
 
-Please note, SW01 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](https://docs.zerynth.com/latest/official/board.zerynth.xinabox_esp32/docs/index.html). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
+Please note, SW01 and all other xChips is currently only supported in Zerynth Studio with [XinaBox CW02](/latest/reference/boards/xinabox_esp32/docs/). Review the [Quick Start](https://wiki.xinabox.cc/Quick-Start) guide for interfacing xChips.
 
 ## Technical Details
 
@@ -28,7 +28,7 @@ Please note, SW01 and all other xChips is currently only supported in Zerynth St
 Contents:
 
 
-* [SW01 Module](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/docs/official_lib.xinabox.sw01_sw01.html)
-    * [SW01 class](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/docs/official_lib.xinabox.sw01_sw01.html#sw01-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/examples/examples.html)
-    * [environmental data](https://docs.zerynth.com/latest/official/lib.xinabox.sw01/examples/examples.html#environmental-data)
+* [SW01 Module](/latest/reference/libs/xinabox/sw01/docs/sw01/)
+    * [SW01 class](/latest/reference/libs/xinabox/sw01/docs/sw01/#sw01-class)
+* [Examples](/latest/reference/libs/xinabox/sw01/docs/examples/)
+    * [environmental data](/latest/reference/libs/xinabox/sw01/docs/examples/#environmental-data-measurement)

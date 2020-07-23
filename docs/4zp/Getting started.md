@@ -4,7 +4,7 @@
 
 This is a step-by-step tutorial that guides the user in the usage of the 4ZeroPlatform Web-App interface from the the registration of a new account to the configuration of your device.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/4zeroplatform-home-1.png)
+![](img/4zeroplatform-home-1.png)
 
 From the sidebar menù you can always easly navigate to each main section of the platform:
 
@@ -30,17 +30,17 @@ Extract the downloaded archive and run the executable file named “4ZeroPlatfor
 
 Open the 4ZeroPlatform Configurator, if that’s your first time, you will need an user account for the 4ZeroPlatform. Click on `Register` and compile the form:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/register.png)
+![](img/register.png)
 
 After that, you will be redirected to the login page, where you can enter the email address and the password of the account you just created:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/login.png)
+![](img/login.png)
 
 #### Setup your local machine
 
 Before starting to interact with your 4ZeroBox and discover all 4ZeroPlatform functionalities, you need to install the official developing tool for programming the 4ZeroBox.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/configurator-home.jpg)
+![](img/configurator-home.jpg)
 
 Zerynth is an ecosystem of software tools to program microcontrollers in Python and connect them to the Cloud. With Zerynth you can program your 4ZeroBox in Python or hybrid C/Python language and t is available for all 64-bit platforms (Windows, Mac, Linux).
 
@@ -56,7 +56,7 @@ Zerynth main features are:
 
 Once Installed Zerynth Studio, following page will apprear:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/install_studio.png)
+![](img/install_studio.png)
 
 In sequence, both operation must be excecuted before proceeding to program the 4ZeroBox:
 
@@ -77,9 +77,9 @@ Remember to logout and log back in to apply the group changes.
 
 After Driver installation, click on **Configure Zerynth Studio** to apply new libraries and examples to it.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/studio_patch_ongoing.png)
+![](img/studio_patch_ongoing.png)
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/studio_patch_complete.png)
+![](img/studio_patch_complete.png)
 
 !!! important
     Configuration of Zerynth Studio must be done every time there is a new release or new patch of it.
@@ -88,7 +88,7 @@ After Driver installation, click on **Configure Zerynth Studio** to apply new li
 
 Before connecting your 4ZeroBox you have to check jumper and switch position on-board to enable the programming status.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/4zerobox-programming.png)
+![](img/4zerobox-programming.png)
 
 As shown in the figure, to enable the programming via USB you have to set:
 
@@ -97,23 +97,23 @@ As shown in the figure, to enable the programming via USB you have to set:
 
 It’s time to register your device! Plug your 4ZeroBox to your computer using an USB cable and click on **Add new device** section. If drivers are correctly installed and Zerynth Studio correctly configured, clicking the **Configure new device** button the device configuration procedure will start as shown in figure below.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/device_configuration.png)
+![](img/device_configuration.png)
 
 At the end, the device will be ready to be programmed:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/device_configured.png)
+![](img/device_configured.png)
 
 You can now add a new device if you have or click on **Launch Zerynth Studio** to open the IDE and program your 4ZeroBox, it will be listed in the available devices, select it!
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/studio_first_open.png)
+![](img/studio_first_open.png)
 
 If you click on the console icon, a serial terminal monitor will show up, printing a line with _“Hello 4ZeroBox”_ message every second:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/studio_console.png)
+![](img/studio_console.png)
 
 On the left column, you can click on the _light bulb_ icon to open available examples. Searching for **toi** in the bar shows a couple of code samples:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/studio_examples.png)
+![](img/studio_examples.png)
 
 Double-click on the example provided within the **fourzeromanager** library clone it (more informations about cloning an example and uplinking it can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.docs/gettingstarted/docs/index.html#clone-an-example-and-start-with-zerynth-python-scripts)) and edit the line 129 with a valid Wi-Fi configuration to be like that:
 
@@ -133,7 +133,7 @@ you’ll be able to send your first data online.
     To devolop new applications for the 4ZeroBox, a **project.yml** file must be present inside the project folder (can be copied from the examples available in TOI libraries). In project.yml file, peripherals and functionalities can be enabled or disabled according to what your application need making your script optimized and saving resources. More info [here](https://www.zerynth.com/blog/docs/4zeroplatform/4zerobox/#library)
 
 !!! warning
-    Remember that to make more safe each application, a recovery mechanism from unexpected behavior based on microcontroller watchdog is enabled for all available Zerynth Virtual Machines of the 4ZeroBox. More info on Zerynth Secure Firmware can be found [here](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#secure-firmware)
+    Remember that to make more safe each application, a recovery mechanism from unexpected behavior based on microcontroller watchdog is enabled for all available Zerynth Virtual Machines of the 4ZeroBox. More info on Zerynth Secure Firmware can be found [here](/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#secure-firmware)
 
 ### 4ZeroManager
 
@@ -141,7 +141,7 @@ you’ll be able to send your first data online.
 
 As last step, re-opening the 4ZeroPlatform Configurator, you can find a **4ZeroManager** section:
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/my_devices.png)
+![](img/my_devices.png)
 
 Here, you will be able to have an overview of all your registered devices. Clicking on the name of one of them, you can see details and settings of this specific device.
 
@@ -149,7 +149,7 @@ Here, you will be able to have an overview of all your registered devices. Click
 
 There are two MQTT consoles showing data received respectively from the _data_ topic, and from the _RPC_ (Remote Procedure Call) topic.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/device_details_1.png)
+![](img/device_details_1.png)
 
 #### RPC – Remote Procedure Call
 
@@ -161,7 +161,7 @@ A RPC is a method activated by remote. There are some already defined in the _fo
 
 From the custom RPC section you can call your RPC registered in the Zerynth firmware.
 
-[![](https://www.zerynth.com/wp-content/uploads/2020/03/device_details_2.png)](https://www.zerynth.com/wp-content/uploads/2020/03/device_details_2.png "device_details_2")
+[![](img/device_details_2.png)](img/device_details_2.png "device_details_2")
 
 #### FOTA – Firmware over the Air
 
@@ -169,7 +169,7 @@ One of the default RPC is the FOTA update. This means that you can flash a new f
 
 Clicking the FOTA button will ask you for a folder containing a valid Zerynth project, select it and wait some seconds – the device will reboot using the new firmware.
 
-![enter image description here](https://raw.githubusercontent.com/zerynth/testdoc/vojislavgvozdic-patch-1/docs/images/device_details_2.png)
+![](img/device_details_2.png)
 
 !!! important
     FOTA functionalities are available only on desktop version of the 4ZeroPlatform Configurator.

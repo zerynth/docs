@@ -7,8 +7,8 @@ The driver must be used together with the standard library GSM Module.
 Contents:
 
 
-* [M95 Module](https://docs.zerynth.com/latest/official/lib.quectel.m95/docs/official_lib.quectel.m95_m95.html)
-    * [Network Time](https://docs.zerynth.com/latest/official/lib.quectel.m95/docs/official_lib.quectel.m95_m95.html#network-time)
-* [Examples](https://docs.zerynth.com/latest/official/lib.quectel.m95/examples/examples.html)
-    * [Secure Socket](https://docs.zerynth.com/latest/official/lib.quectel.m95/examples/examples.html)
-    * [UDP Socket](https://docs.zerynth.com/latest/official/lib.quectel.m95/examples/examples.html#udp-socket)
+* [M95 Module](/latest/reference/libs/quectel/m95/docs/m95/)
+    * [Network Time](/latest/reference/libs/quectel/m95/docs/m95/#network-time)
+* [Examples](/latest/reference/libs/quectel/m95/docs/examples/)
+    * [Secure Socket](/latest/reference/libs/quectel/m95/docs/examples/#secure-socket)
+    * [UDP Socket](/latest/reference/libs/quectel/m95/docs/examples/#udp-socket)

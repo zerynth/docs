@@ -9,7 +9,9 @@ Frames are received by all devices, including by the transmitting device.
 
 ## The Can class
 
-**`Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)`**
+##### class Can
+
+```#!py3 class Can(drvname, baud, options=0, sample_point=75.0, prop=0, phase1=0, phase2=0, sjw=1)```
 
 This class implements CAN controller functionalities.
 
@@ -66,8 +68,9 @@ The synchronization jump width ```sjw``` can be specified in any case.
         * `OPTION_LOOPBACK` to activate internal loopback test mode (can be combined with listen-only)
 
 
+###### Can.add_filter
 
-**`add_filter(id, mask)`**
+```#!py3 add_filter(id, mask)```
 
 Add a message acceptance filter for this CAN controller. A received message is accepted if:
 
@@ -123,8 +126,9 @@ Send a message to the CAN bus output mailboxes.
     * ```timeout``` – the maximum time to wait for queuing the message or -1 to wait indefinitely
 
 
+###### Can.receive
 
-**`receive(data=None, timeout=-1)`**
+```#!py3 receive(data=None, timeout=-1)```
 
 Receive a message from the CAN bus input mailboxes.
 
@@ -156,8 +160,9 @@ If a ```data``` bytearray is provided it is used to store received data, otherwi
 
 
 
+###### Can.get_errors
 
-**`get_errors()`**
+```#!py3 get_errors()```
 
 Get the accumulated error information.
 
@@ -213,30 +218,35 @@ Get the accumulated error information.
 
 
 
+###### Can.abort_receive
 
-**`abort_receive()`**
+```#!py3 abort_receive()```
 
 Abort any pending `receive()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be received, raising ```ConnectionAbortedError```, until resumed.
 
+###### Can.abort_transmit
 
-**`abort_transmit()`**
+```#!py3 abort_transmit()```
 
 Abort any pending `transmit()` calls, that will raise a ```TimeoutError```, and prevent further messages
 to be transmitted, raising ```ConnectionAbortedError```, until resumed.
 
+###### Can.resume_receive
 
-**`resume_receive()`**
+```#!py3 resume_receive()```
 
 Resume receiving messages from the bus.
 
+###### Can.resume_transmit
 
-**`resume_transmit()`**
+```#!py3 resume_transmit()```
 
 Resume transmitting messages to the bus.
 
+###### Can.done
 
-**`done()`**
+```#!py3 done()```
 
 Close this CAN driver instance and release used resources. Any pending function call or subsequent calls
 will raise an ```IOError``` exception.

@@ -9,8 +9,8 @@ Here below, the Zerynth Library to manage your devices thanks to Microsoft Azure
 Contents:
 
 
-* [Microsoft Azure Iot Hub Library](https://docs.zerynth.com/latest/official/lib.azure.sas/docs/index.html)
-    * [The Device class](https://docs.zerynth.com/latest/official/lib.azure.iot/docs/official_lib.azure.iot_iot.html#the-device-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.azure.iot/examples/examples.html)
-    * [Controlled publish period](https://docs.zerynth.com/latest/official/lib.azure.iot/examples/examples.html#controlled-publish-period)
-    * [Direct methods and messages](https://docs.zerynth.com/latest/official/lib.azure.iot/examples/examples.html#direct-methods-and-messages)
+* [Microsoft Azure Iot Hub Library](/latest/reference/libs/azure/iot/docs/iot/)
+    * [The Device class](/latest/reference/libs/azure/iot/docs/iot/#the-device-class)
+* [Examples](/latest/reference/libs/azure/iot/docs/examples/)
+    * [Controlled publish period](/latest/reference/libs/azure/iot/docs/examples/#controlled-publish-period)
+    * [Direct methods and messages](/latest/reference/libs/azure/iot/docs/examples/#direct-methods-and-messages)

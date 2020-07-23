@@ -8,15 +8,18 @@ The device always send and receive data in the JSON format.
 
 ## The Device class
 
-**`class  Device(device_token,client,ctx=None)`**
+##### class  Device
+
+```#!py3 class  Device(device_token,client,ctx=None)```
 
 Create a Device instance representing a Fortebit IoT device.
 
 The device is provisioned by the `device_token`, obtained from the Fortebit dashboard upon the creation of a new device. The `client` parameter is a class that provides the implementation of the low level details for the connection. It can be one of `MqttClient` in the `mqtt_client` module, or `HttpClient` in the `http_client` module.
 The optional `ctx` parameter is an initialized secure socket context.
 
+###### Device.listen_rpc
 
-**`listen_rpc(callback)`**
+```#!py3 listen_rpc(callback)```
 
 Listen to incoming RPC requests that get reported to the specified `callback` function, called as *callback(id, method, params)*:
 
@@ -27,49 +30,59 @@ Listen to incoming RPC requests that get reported to the specified `callback` fu
 
 Call `send_rpc_reply()` to provide the result of the RPC request.
 
+###### Device.connect
 
-**`connect()`**
+```#!py3 connect()```
 
 Setup a connection to the Fortebit Cloud. Return *True* if successful.
 
+###### Device.is_connected
 
-**`is_connected()`**
+```#!py3 is_connected()```
 
 Returns the status of the connection to the Fortebit Cloud (reconnections are automatic).
 
+###### Device.run
 
-**`run()`**
+```#!py3 run()```
 
 Starts the device by executing the underlying client loop.
 
+###### Device.publish_telemetry
 
-**`publish_telemetry(values,ts)`**
+```#!py3 publish_telemetry(values,ts)```
 
 Publish `values` (dictionary) to the device telemetry, with optional timestamp `ts` (epoch in milliseconds).
 
 Return a boolean, *False* if the message cannot be sent.
 
-**`publish_attributes(attributes)`**
+###### Device.publish_attributes
+
+```#!py3 publish_attributes(attributes)```
 
 Publish `attributes` (dictionary) to the device *client* attributes.
 
 Return a boolean, *False* if the message cannot be sent.
 
+###### Device.get_attributes
 
-**`get_attributes(client,shared,timeout)`**
+```#!py3 get_attributes(client,shared,timeout)```
 
 Obtain the specified `client` and/or `shared` attributes from the device.
 
 Return a dictionary, *None* if the data could not be received.
 
+###### Device.send_rpc_reply
 
-**`send_rpc_reply(id,result)`**
+```#!py3 send_rpc_reply(id,result)```
 
 Publish `result` (dictionary) as a reply to the RPC request with identifier `id`.
 
 Return a boolean, *False* if the message cannot be sent.
 
-**`do_rpc_request(method,params,timeout)`**
+###### Device.do_rpc_request
+
+```#!py3 do_rpc_request(method,params,timeout)```
 
 Perform an RPC request with name `method` and arguments `params`, waiting for a reply maximum `timeout` milliseconds (only with MqttClient).
 

@@ -4,21 +4,24 @@ The Zerynth AWS IoT Jobs Library can be used to handle [IoT Jobs](https://docs.a
 
 ## Jobs class
 
+##### class Jobs
 
-**`class Jobs(thing)`**
+```#!py3 class Jobs(thing)```
 
 This class allows the retrieval of the `thing` job list.
 
 It requires the connection to thw MQTT broker to be already established: It subscribes to various
 topic to receive jobs notifications.
 
+###### Jobs.changed
 
-**`changed()`**
+```#!py3 changed()```
 
 Return True if there are new pending jobs. If called again, and in the meantime no new job notifications have been received, return False.
 
+###### Jobs.list
 
-**`list()`**
+```#!py3 list()```
 
 Retrieve the list of jobs for the current Thing. The result value is a tuple with two items. The first item is the list of IN_PROGRESS jobs, while the second item is the list of QUEUED jobs (as `Job()` instances).
 
@@ -26,14 +29,16 @@ This method is *blocking*. Control is not released until the list of jobs is ret
 
 ## Job class
 
+##### class Job
 
-**`class Job(thing, jobid)`**
+```#!py3 class Job(thing, jobid)```
 
 This class abstracts an IoT Job related to a particular `thing` and having jobId `jobid`.
 There is no need to manually create instances of this class, they are returned by methods of the `Jobs()` class.
 
+###### Job.describe
 
-**`describe()`**
+```#!py3 describe()```
 
 Retrieves data about the job. In particular the fields `version`, `status` and `document` are associated to the job instance after a successful `describe`.
 
@@ -41,8 +46,9 @@ This method is *blocking*. Control is not released until the job description is 
 
 Return True on success, False otherwise.
 
+###### Job.update
 
-**`update(status, status_details={})`**
+```#!py3 update(status, status_details={})```
 
 Updates the status of the job. The `status` can be one of the following class constant:
 

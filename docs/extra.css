@@ -3,10 +3,60 @@
 
 .md-tabs{background-color: #1e1e1e;}
 
+.md-main__inner {
+    max-width: 80% !important;
+}
 article {
     font-size: 0.8rem !important; 
     line-height: normal;
 }
+.md-typeset h1{
+margin:0 0 2rem;
+color:var(--md-default-fg-color);
+font-weight:500 !important;
+font-size:1.5625rem !important;
+line-height:1.3;
+letter-spacing:-0.01em;
+}
+
+.md-typeset h2{
+margin:2rem 0 .8rem;
+font-weight:500 !important;
+font-size:1.25rem;
+line-height:1.4;
+letter-spacing:-0.01em}
+.md-typeset h3{
+margin:1.6rem 0 .8rem;
+font-weight:600 !important;
+font-size:1rem;
+line-height:1.5;
+letter-spacing:-0.01em}
+.md-typeset h2+h3{margin-top:.8rem}
+.md-typeset h4{
+margin:.8rem 0;
+font-weight:700;
+font-size:.8rem;
+letter-spacing:-0.01em}
+.md-typeset h5{
+margin:.8rem 0;
+color:var(--md-default-fg-color--light);
+font-weight:700;
+font-size:.64rem;
+letter-spacing:-0.01em}
+.md-typeset h6{
+margin:.8rem 0;
+color:var(--md-default-fg-color);
+font-weight:700;
+font-size:.8rem;
+letter-spacing:-0.01em;
+text-decoration: underline;
+text-decoration-style:dotted;
+text-decoration-color: var(--md-default-fg-color--light);
+}
+.md-typeset h5{text-transform:none}
+.md-typeset hr{
+margin:1.5em 0;
+border-bottom:.05rem dotted var(--md-default-fg-color--lighter)}
 
 /* change block content width */
 
@@ -52,4 +102,8 @@ h5 {
 .md-typeset ul li p, .md-typeset ul li blockquote, .md-typeset ol li p, .md-typeset ol li blockquote {
     margin: .2em 0;
 }
-
+.md-typeset img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

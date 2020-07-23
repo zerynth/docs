@@ -21,5 +21,5 @@ Here below, the Zerynth driver for the Texas Instruments ADS1015.
 Contents:
 
 
-* [ADS1015 Module](https://docs.zerynth.com/latest/official/lib.texas.ads1015/docs/official_lib.texas.ads1015_ads1015.html)
-    * [ADS1015 class](https://docs.zerynth.com/latest/official/lib.texas.ads1015/docs/official_lib.texas.ads1015_ads1015.html#ads1015-class)
+* [ADS1015 Module](/latest/reference/libs/texas/ads1015/docs/ads1015/)
+    * [ADS1015 class](/latest/reference/libs/texas/ads1015/docs/ads1015/#ads1015-class)

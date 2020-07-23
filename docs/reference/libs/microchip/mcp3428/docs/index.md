@@ -25,7 +25,7 @@ Here below, the Zerynth driver for the Microchip MCP3426/3427/3428.
 Contents:
 
 
-* [MCP3426/3427/3428 Module](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/docs/official_lib.microchip.mcp3208_mcp3208.html)
-    * [MCP3428 class](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/docs/official_lib.microchip.mcp3208_mcp3208.html#mcp3208-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/examples/examples.html)
-    * [thumbstick](https://docs.zerynth.com/latest/official/lib.microchip.mcp3208/examples/examples.html#thumbstick)
+* [MCP3426/3427/3428 Module](/latest/reference/libs/microchip/mcp3428/docs/mcp3428/)
+    * [MCP3428 class](/latest/reference/libs/microchip/mcp3428/docs/mcp3428/#mcp3428-class)
+* [Examples](/latest/reference/libs/microchip/mcp3208/docs/examples/)
+    * [thumbstick](/latest/reference/libs/microchip/mcp3208/docs/examples/#thumbstick-controller-with-mcp32043208)

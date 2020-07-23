@@ -22,14 +22,16 @@ print("Chain:",eth.getChainId())
 
 # RPC class
 
+##### class RPC
 
-**`class RPC(host)`**
+```#!py3 class RPC(host)```
 
 Initialize a RPC instance with the get node at ```host```.
 ```host``` must also contain the port and the protocol (i.e. `https://mynode.com:8545`)
 
+###### RPC.call
 
-**`call(method,params=(),retry=10)`**
+```#!py3 call(method,params=(),retry=10)```
 
 **Parameters:**
     
@@ -40,8 +42,9 @@ Initialize a RPC instance with the get node at ```host```.
 
 Call endpoint *method* with params *params*. Return the `result` field of the endpoint json response or None in case of error. Error reason can be retrieved in `self.last_error`.
 
+###### RPC.getBalance
 
-**`getBalance(address, block_number="latest")`**
+```#!py3 getBalance(address, block_number="latest")```
 
 
 **Params address:** Ethereum address
@@ -52,16 +55,21 @@ Call endpoint *method* with params *params*. Return the `result` field of the en
 
 Return the current balance for address *address*. Previous balances can be retrieved by specifying a different *block_number*.
 
-**`getGasPrice()`**
+###### RPC.getGasPrice
+
+```#!py3 getGasPrice()```
 
 Return the current gas price estimated by the Ethereum node. Return 0 on error.
 
+###### RPC.getChainId
 
-**`getChainId()`**
+```#!py3 getChainId()```
 
 Return the Ethereum network id.
 
-**`getTransactionCount(address,block_number="latest")`**
+###### RPC.getTransactionCount
+
+```#!py3 getTransactionCount(address,block_number="latest")```
 
 **Parameters:**
 
@@ -70,8 +78,9 @@ Return the Ethereum network id.
 
 Return the current transaction count for address *address*. The returned value can be used as nonce for the next transaction. Transaction counts at specific points in time can be retrieved by specifying a different *block_number*.
 
+###### RPC.sendTransaction
 
-**`sendTransaction(tx,retry=10)`**
+```#!py3 sendTransaction(tx,retry=10)```
 
 Parameters:
 
@@ -80,8 +89,9 @@ Parameters:
 
 Send the raw transaction to the get node in order to broadcast it to all nodes in the network. If correct, it will be eventually added to a mined block.
 
+###### RPC.simpleCall
 
-**`simpleCall(tx,block_number,retry=10)`**
+```#!py3 simpleCall(tx,block_number,retry=10)```
 
 
 **Parameters:**

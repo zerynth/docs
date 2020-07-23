@@ -9,11 +9,11 @@ Here below, the Zerynth Library to manage your devices thanks to Google Cloud Io
 
 Contents:
  
- -   [Google Cloud IoT Core](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/docs/index.html)
-     -   [Google Cloud IoT Core Library](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/docs/official_lib.googlecloud.iot_iot.html)
-         -   [The Device class](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/docs/official_lib.googlecloud.iot_iot.html#the-device-class)
-     -   [Examples](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/examples/examples.html)
-         -   [Controlled publish period](https://docs.zerynth.com/latest/official/lib.googlecloud.iot/examples/examples.html#controlled-publish-period)
+ -   [Google Cloud IoT Core](/latest/reference/libs/googlecloud/iot/docs/)
+     -   [Google Cloud IoT Core Library](/latest/reference/libs/googlecloud/iot/docs/iot/)
+         -   [The Device class](/latest/reference/libs/googlecloud/iot/docs/iot/#the-device-class)
+     -   [Examples](/latest/reference/libs/googlecloud/iot/docs/examples/)
+         -   [Controlled publish period](/latest/reference/libs/googlecloud/iot/docs/examples/#controlled-publish-period)
 
 
 <!--stackedit_data:

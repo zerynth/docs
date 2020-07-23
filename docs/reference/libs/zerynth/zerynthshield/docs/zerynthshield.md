@@ -42,15 +42,17 @@ while True:
 
 ## TouchSensor class
 
+##### class TouchSensor
 
-**`class TouchSensor`**
+```#!py3 class TouchSensor()```
 
 This class provides simple methods for the detection of single and double touch on the Zerynth Shield integrated capacitive touch sensor.
 
 An instance of the class is available by calling the zerynthshield.touch attribute.
 
+###### TouchSensor.onSingleTouch
 
-**`onSingleTouch(min_time, max_time, to_do, long_fn = None)`**
+```#!py3 onSingleTouch(min_time, max_time, to_do, long_fn = None)```
 
 Sets a to_do function to be executed when a touch occurs and lasts more than min_time and less than max_time (expressed in milliseconds), if max_time limit is exceeded long_fn is called.
 
@@ -62,8 +64,9 @@ Sets a to_do function to be executed when a touch occurs and lasts more than min
 * to_do (function): function to be executed when a single-touch occurs
 * long_fn (function, optional): function to be executed when a long touch occurs
 
+###### TouchSensor.onDoubleTouch
 
-**`onDoubleTouch(min_time, max_time, to_do, long_fn = None)`**
+```#!py3 onDoubleTouch(min_time, max_time, to_do, long_fn = None)```
 
 Sets a first_action function to be executed when a touch occurs and lasts more than min_time and less than max_time (expressed in milliseconds), if max_time limit is
 exceeded long_fn is executed.
@@ -82,41 +85,47 @@ When first_action constrains are respected, if a second touch occurs at most aft
 
 ## LightSensor class
 
+##### class LightSensor
 
-**`class LightSensor`**
+```#!py3 class LightSensor()```
 
 This class provides a default getFloat() normalization method for the photoresistor integrated in the Zerynth Shield.
 
 An instance of the class is available by calling the zerynthshield.light attribute.
 
+###### LightSensor.getFloat
 
-**`getFloat()`**
+```#!py3 getFloat()```
 
 Returns samples normalized between 0 and 1.
 
 ## TemperatureSensor class
 
+##### class TemperatureSensor
 
-**`class TemperatureSensor`**
+```#!py3 class TemperatureSensor()```
 
 This class provides two default normalization method for the temperature sensor: getFloat() and getCelsius().
 
 An instance of the class is available by calling the zerynthshield.temperature attribute.
 
+###### TemperatureSensor.getCelsius
 
-**`getCelsius()`**
+```#!py3 getCelsius()```
 
 Returns samples directly converted in celsius degrees.
 
+###### TemperatureSensor.getFloat
 
-**`getFloat()`**
+```#!py3 getFloat()```
 
 Returns samples normalized between 0 and 1.
 
 ## MicrophoneSensor class
 
+##### class MicrophoneSensor
 
-**`class MicrophoneSensor`**
+```#!py3 class MicrophoneSensor()```
 
 This class provides a default getFloat() normalization method for the microphone.
 
@@ -124,7 +133,8 @@ An instance of the class is available by calling zerynthshield.microphone attrib
 
 zerynthshield.microphone.skipEval (see Sensor class) is set to true because of the high sampling frequencies that may be needed by the sensor.
 
+###### MicrophoneSensor.getFloat
 
-**`getFloat()`**
+```#!py3 getFloat()```
 
 Returns samples normalized between 0 and 1.

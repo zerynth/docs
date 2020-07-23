@@ -19,4 +19,4 @@ Below, Zerynth driver documentation for STM LIS2HH12 chip.
 Contents:
 
 
-* [LIS2HH12 Module](https://docs.zerynth.com/latest/official/lib.stm.lis2hh12/docs/official_lib.stm.lis2hh12_lis2hh12.html)
+* [LIS2HH12 Module](/latest/reference/libs/stm/lis2hh12/docs/)

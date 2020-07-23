@@ -89,7 +89,7 @@ Flash Layout is shown in table below:
 
 ## Power Management
 
-Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_pwr.html#pwr-esp8266).
+Power Management feature allows to optimize power consumption by putting the device in low consumption state. More information in [Power Management - ESP8266 section](/latest/reference/core/stdlib/docs/pwr/#power-management-for-esp8266).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDc1MjE5Nzg0LDE5MzU0NTQxNzhdfQ==
 -->

@@ -92,7 +92,7 @@ Flash Layout is shown in table below:
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-This feature is strongly platform dependent; more information at [Secure Firmware - Microchip SAMC21 section](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-samd21).
+This feature is strongly platform dependent; more information at [Secure Firmware - Microchip SAMC21 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-microchip-samd21).
 
 ## Missing features
 

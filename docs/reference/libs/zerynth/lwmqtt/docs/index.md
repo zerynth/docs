@@ -21,8 +21,8 @@ Here below, the Zerynth Lightweight Library for MQTT connectivity protocol and s
 Contents:
 
 
-* [Lightweight MQTT Library](https://docs.zerynth.com/latest/official/lib.zerynth.lwmqtt/docs/official_lib.zerynth.lwmqtt_mqtt.html)
-    * [Client class](https://docs.zerynth.com/latest/official/lib.zerynth.lwmqtt/docs/official_lib.zerynth.lwmqtt_mqtt.html#client-class)
-* [Examples](https://docs.zerynth.com/latest/official/lib.zerynth.lwmqtt/examples/examples.html)
-    * [LWMQTT at mosquitto org](https://docs.zerynth.com/latest/official/lib.zerynth.lwmqtt/examples/examples.html#lwmqtt-at-mosquitto-org)
+* [Lightweight MQTT Library](/latest/reference/libs/zerynth/lwmqtt/docs/mqtt/)
+    * [Client class](/latest/reference/libs/zerynth/lwmqtt/docs/mqtt/#client-class)
+* [Examples](/latest/reference/libs/zerynth/lwmqtt/docs/examples/)
+    * [LWMQTT at mosquitto org](/latest/reference/libs/zerynth/lwmqtt/docs/examples/#lwmqtt-at-mosquittoorg)
 

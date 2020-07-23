@@ -130,8 +130,9 @@ while True:
     sleep(10000)
 
 ```
-## # Smart contract example
+## DiceGame
 
+## # Smart contract example
 
 This example shows how to call some smart contract functions, get the return value, or transfer Ether to a payable function.
 

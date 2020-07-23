@@ -47,34 +47,40 @@ gpio.high(mypin1)                    # set pin D10 to high
 gpio.low(mypin2)                     # set pin "100" to low
 ```
 
+###### high
 
-**`high(pin)` **
+```#!py3 high(pin)````
 Set the value of pin to `HIGH`. If the module is configured with one or more port expanders, the value of
 pin is set by calling into the port expander driver.
 
+###### low
 
-**`low(pin)` **
+```#!py3 low(pin)````
 Set the value of pin to `LOW`. If the module is configured with one or more port expanders, the value of
 pin is set by calling into the port expander driver.
 
+###### set
 
-**`set(pin, value)` **
+```#!py3 set(pin, value)````
 Set the value of pin to `value`. If the module is configured with one or more port expanders, the value of
 pin is set by calling into the port expander driver.
 
+###### get
 
-**`get(pin)` **
+```#!py3 get(pin)````
 Return the value of pin. If the module is configured with one or more port expanders, the value of
 pin is returned by calling into the port expander driver.
 
+###### mode
 
-**`mode(pin, pinmode)` **
+```#!py3 mode(pin, pinmode)````
 Set the mode of pin to `pinmode`. If the module is configured with one or more port expanders, the mode of
 pin is set by calling into the port expander driver.
 For available modes please check  here.
 
+###### add_expander
 
-**`add_expander(id, pdriver, pinmap)` **
+```#!py3 add_expander(id, pdriver, pinmap)````
 Add `pdriver` and `pinmap` as expander `id` to the list of available expanders.
 `pdriver` must be a port expander driver, `pinmap` must be a dictionary mapping pin names
 to the port expander internal representation.

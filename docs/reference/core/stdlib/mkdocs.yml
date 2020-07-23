@@ -91,4 +91,6 @@ theme:
     font: {code: Roboto Mono, text: Roboto}
     name: material
     palette: {accent: red, primary: indigo}
+extra_css: [extra.css]
 ...
+

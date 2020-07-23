@@ -16,8 +16,9 @@ Every Servo instance implements the following methods:
 
 ## Servo class
 
+##### class Servo
 
-**`class Servo(pin, min_width=500, max_width=2500, default_width=1500, period=20000)`**
+```#!py3 class Servo(pin, min_width=500, max_width=2500, default_width=1500, period=20000)```
 
 Creates a Servo instance:
 
@@ -30,32 +31,38 @@ Creates a Servo instance:
 
 After initialization the servo motor object is created and the controlling PWM set to 0 leaving the servo digitally disconnected
 
+###### Servo.attach
 
-**`attach()`**
+```#!py3 attach()```
 
 Writes **default_width** to the servo associated PWM, enabling the motor and moving it to the default position.
 
+###### Servo.detach
 
-**`detach()`**
+```#!py3 detach()```
 
 Writes 0 to the servo associated PWM disabling the motor.
 
+###### Servo.moveToDegree
 
-**`moveToDegree(degree)`**
+```#!py3 moveToDegree(degree)```
 
 Moves the servo motor to the desired position expressed in degrees (float).
 
+###### Servo.moveToPulseWidth
 
-**`moveToPulseWidth(width)`**
+```#!py3 moveToPulseWidth(width)```
 
 Moves the servo motor to the desired position expressed as pulse width (int) microseconds. The input has to be in min_width:max_width range.
 
+###### Servo.getCurrentPulseWidth
 
-**`getCurrentPulseWidth()`**
+```#!py3 getCurrentPulseWidth()```
 
 Returns the servo motor position as pulse width (microseconds).
 
+###### Servo.getCurrentDegree
 
-**`getCurrentDegree()`**
+```#!py3 getCurrentDegree()```
 
 Returns the servo motor position as degrees.

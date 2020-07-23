@@ -22,9 +22,9 @@ Here below, the Zerynth driver for the NXP FXAS21002C.
 
 Contents:
 
--   [FXAS21002C Module](https://docs.zerynth.com/latest/official/lib.nxp.fxas21002c/docs/official_lib.nxp.fxas21002c_fxas21002c.html)
--   [Examples](https://docs.zerynth.com/latest/official/lib.nxp.fxas21002c/examples/examples.html)
-    -   [get angular velocity](https://docs.zerynth.com/latest/official/lib.nxp.fxas21002c/examples/examples.html#get-angular-velocity)
+-   [FXAS21002C Module](/latest/reference/libs/nxp/fxas21002c/docs/fxas21002c/)
+-   [Examples](/latest/reference/libs/nxp/fxas21002c/docs/examples/)
+    -   [get angular velocity](/latest/reference/libs/nxp/fxas21002c/docs/examples/#read-gyroscope-data-from-fxas21002c)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE0NzYwMTM5MV19
 -->

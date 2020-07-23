@@ -59,8 +59,9 @@ When a connection with a slave device has been established, coils and registers 
 
 ## ModbusTCP class
 
+##### class ModbusTCP
 
-**`class ModbusTCP(identifier)`**
+```#!py3 class ModbusTCP(identifier)```
 
 Create an instance of the ModbusTCP class which allow modbus communication with slave device using TCP.
 
@@ -68,8 +69,9 @@ Create an instance of the ModbusTCP class which allow modbus communication with 
 **Arguments: identifier** – The slave device identifier, used in the header of every packet.
 
 
+###### ModbusTCP.read_coils
 
-**`read_coils(address, n)`**
+```#!py3 read_coils(address, n)```
 
 
 **Arguments:**
@@ -83,8 +85,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the coils.
 
+###### ModbusTCP.read_input
 
-**`read_input(address, n)`**
+```#!py3 read_input(address, n)```
 
 
 **Arguments**
@@ -96,8 +99,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the input registers.
 
+###### ModbusTCP.read_holding
 
-**`read_holding(address, n)`**
+```#!py3 read_holding(address, n)```
 
 
 **Arguments:**
@@ -110,8 +114,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the holding registers.
 
+###### ModbusTCP.read_discrete
 
-**`read_discrete(address, n)`**
+```#!py3 read_discrete(address, n)```
 
 
 **Arguments:**
@@ -123,8 +128,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the discrete registers.
 
+###### ModbusTCP.write_coil
 
-**`write_coil(address, n)`**
+```#!py3 write_coil(address, n)```
 
 
 **Arguments:**
@@ -136,8 +142,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
+###### ModbusTCP.write_register
 
-**`write_register(address, n)`**
+```#!py3 write_register(address, n)```
 
 
 **Arguments:**
@@ -149,8 +156,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
+###### ModbusTCP.write_multiple_coils
 
-**`write_multiple_coils(address, n, values)`
+```#!py3 write_multiple_coils(address, n, value```
 
 
 **Arguments:**
@@ -162,8 +170,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** the number of coils written.
 
+###### ModbusTCP.write_multiple_registers
 
-**`write_multiple_registers(address, n, values)`**
+```#!py3 write_multiple_registers(address, n, values)```
 
 
 **Arguments:**
@@ -176,8 +185,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** the number of holding registers written
 
+###### ModbusTCP.connect
 
-**`connect(address, )`**
+```#!py3 connect(address, )```
 
 
 **Arguments:**
@@ -187,15 +197,17 @@ Read the status of **n** coils, starting from **address**.
 * **port** – port on which the slave device is listening to
 
 
+###### ModbusTCP.close
 
-**`close()`**
+```#!py3 close()```
 
 Close the connection with the slave device.
 
 ## ModbusSerial class
 
+##### class ModbusSerial
 
-**`class ModbusSerial(identifier, serial_device)`**
+```#!py3 class ModbusSerial(identifier, serial_device)```
 
 Create an instance of the ModbusSerial class which allow modbus communication with slave device using RTU.
 
@@ -208,8 +220,9 @@ Create an instance of the ModbusSerial class which allow modbus communication wi
 * **receive_sleep** – timeout on the receiving function;
 
 
+###### ModbusSerial.read_coils
 
-**`read_coils(address, n)`**
+```#!py3 read_coils(address, n)```
 
 
 **Arguments:**
@@ -223,8 +236,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the coils.
 
+###### ModbusSerial.read_input
 
-**`read_input(address, n)`**
+```#!py3 read_input(address, n)```
 
 
 **Arguments:**
@@ -236,8 +250,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the input registers.
 
+###### ModbusSerial.read_holding
 
-**`read_holding(address, n)`**
+```#!py3 read_holding(address, n)```
 
 
 **Arguments:**
@@ -249,8 +264,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the holding registers.
 
+###### ModbusSerial.read_discrete
 
-**`read_discrete(address, n)`**
+```#!py3 read_discrete(address, n)```
 
 
 **Arguments:**
@@ -262,8 +278,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** a python list containing the values of the discrete registers.
 
+###### ModbusSerial.write_coil
 
-**`write_coil(address, n)`**
+```#!py3 write_coil(address, n)```
 
 
 **Arguments:**
@@ -275,8 +292,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
+###### ModbusSerial.write_register
 
-**`write_register(address, n)`**
+```#!py3 write_register(address, n)```
 
 **Arguments:**
 
@@ -287,8 +305,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** 1 if the write has been successfull. Otherwhise an exception will be thrown.
 
+###### ModbusSerial.write_multiple_coils
 
-**`write_multiple_coils(address, n, values)`**
+```#!py3 write_multiple_coils(address, n, values)```
 
 
 **Arguments:**
@@ -301,8 +320,9 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** the number of coils written.
 
+###### ModbusSerial.write_multiple_registers
 
-**`write_multiple_registers(address, n, values)`**
+```#!py3 write_multiple_registers(address, n, values)```
 
 
 **Arguments:**
@@ -315,7 +335,8 @@ Read the status of **n** coils, starting from **address**.
 
 **Returns:** the number of holding registers written.
 
+###### ModbusSerial.close
 
-**`close()`**
+```#!py3 close()```
 
 Close the serial port by calling the close function implemented by the device class.

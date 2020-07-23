@@ -1,7 +1,8 @@
 # The Asset class
 
+##### class Asset
 
-**`class Asset(baseUrl,apiKey,srNo,assetName,assetTypeCode,ssl_ctx)`**
+```#!py3 class Asset(baseUrl,apiKey,srNo,assetName,assetTypeCode,ssl_ctx)```
 
 This class represents asset software which facilitates all communication to the LiveIntersect cloud.  [LiveIntersect](https://esprida.com/platform/) is a IoT enablement platform which collects and manages asset data and enables you to build IoT solutions.
 
@@ -19,8 +20,9 @@ This class represents asset software which facilitates all communication to the 
 
 my_Asset = li_http.Asset(https://liveintersect.com/, apiKey, srNo, assetName, assetTypeCode, ssl_ctx)
 
+###### Asset.do_api_get
 
-**`do_api_get(resourcePath,params=None,headers = None)`**
+```#!py3 do_api_get(resourcePath,params=None,headers = None)```
 
 Performs GET resource from resourcePath using Asset credentials
 
@@ -28,8 +30,9 @@ Performs GET resource from resourcePath using Asset credentials
 `params` Http parameteres (query-string)
 `headers` Http headers
 
+###### Asset.do_api_post
 
-**`do_api_post(resourcePath,jsonObj,headers = None)`**
+```#!py3 do_api_post(resourcePath,jsonObj,headers = None)```
 
 Performs POST to resourcePath using Asset credentials
 
@@ -37,14 +40,16 @@ Performs POST to resourcePath using Asset credentials
 `jsonObj` JSON payload
 `headers` Http headers
 
+###### Asset.register_asset
 
-**`register_asset()`**
+```#!py3 register_asset()```
 
 Use this method to register your device and with the LiveIntersect server.  Every asset must be registered before the cloud accepts any communication from the device.
 This method first checks if asset instance is already registered, if not new registration request will be made.
 
+###### post_metric
 
-**`post_metric(asset)`**
+```#!py3 post_metric(asset)```
 
 Use this method to retrieve information about the current asset.  This method will return the asset properties, configuration data (within attribute list), current telemetry data (within cloud)
 
@@ -52,8 +57,9 @@ Use this method to retrieve information about the current asset.  This method wi
 
 *returns* Api-Response JSON with JSON[“result”] being asset-information
 
+###### post_metric
 
-**`post_metric(asset,metric_code,metric_value)`**
+```#!py3 post_metric(asset,metric_code,metric_value)```
 
 Use this method to send sensor data or telemetry data to the LiveIntersect cloud.
 
@@ -61,8 +67,9 @@ Use this method to send sensor data or telemetry data to the LiveIntersect cloud
 `metric_code` unique identifier for the metric associated with the asset type
 `metric_value` Raw value of the Metric (may contain unit-symbol i.e. 45C)
 
+###### post_attribute
 
-**`post_attribute(asset,attr_code,attr_value)`**
+```#!py3 post_attribute(asset,attr_code,attr_value)```
 
 Use this method to configuration data to the LiveIntersect cloud.
 Note: use get_asset_info to download attribute currently stored in the cloud.

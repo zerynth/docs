@@ -4,8 +4,9 @@ This module implements the interface to the hardware timers of the board, allowi
 
 Currently, only the sleep_micros function is implemented
 
+###### sleep_micros
 
-**`sleep_micros(n)`**
+```#!py3 sleep_micros(n)```
 
 Suspend the current thread for ```n``` microseconds by using the functionalities of an high precision
 hardware timer. Currently, sleep_micros is not thread safe, and can’t be called simultaneously by more than one thread.

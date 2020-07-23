@@ -35,13 +35,15 @@ The following constants are defined:
 
 * `AUTH_CHAP`, use CHAP authentication
 
+###### gethostbyname
 
-**`gethostbyname(hostname)`**
+```#!py3 gethostbyname(hostname)```
 
 Translate a host name to IPv4 address format. The IPv4 address is returned as a string, such as “192.168.0.5”.
 
+###### attach
 
-**`attach(apn, username = "", psw = "", auth = AUTH_NONE, timeout=120000)`**
+```#!py3 attach(apn, username = "", psw = "", auth = AUTH_NONE, timeout=120000)```
 
 Try to establish a link with the chosen Access Point Name ```apn```.
 ```auth``` must be one of AUTH_NONE (default), AUTH_PAP, AUTH_CHAP, AUTH_DETECT.
@@ -50,13 +52,15 @@ Try to establish a link with the chosen Access Point Name ```apn```.
 
 An exception can be raised if the connection is not successful.
 
+###### detach
 
-**`detach()`**
+```#!py3 detach()```
 
 Detach from APN.
 
+###### mobile_info
 
-**`mobile_info()`**
+```#!py3 mobile_info()```
 
 Return information on the mobile device and SIM card.
 
@@ -68,8 +72,9 @@ The result is a tuple where the elements are, in order:
 
 * The SIM card id as a string
 
+###### link_info
 
-**`link_info()`**
+```#!py3 link_info()```
 
 Return information on the currently established APN link.
 
@@ -83,8 +88,9 @@ The result is a tuple where the elements are, in order:
 
 Note that the returned IP, is in the private range and doesn’t match the IP seen by the other end of a socket.
 
+###### network_info
 
-**`network_info()`**
+```#!py3 network_info()```
 
 Return information on the GSM network.
 
@@ -114,13 +120,15 @@ The result is a tuple where the elements are, in order:
 
 * The presence of a link to an APN: True or False
 
+###### rssi
 
-**`rssi()`**
+```#!py3 rssi()```
 
 Return an integer representing the signal strength in dB.
 
+###### operators
 
-**`operators()`**
+```#!py3 operators()```
 
 Retrieve the list of available operators/carrier. If the result is `None`, it was not possible to retrieve the list of operators.
 
@@ -138,13 +146,15 @@ The result is a tuple where each items is a tuple of the following items:
 
 * ```identifier```, the numeric identifier of the operator as a string
 
+###### set_operator
 
-**`set_operator(opname)`**
+```#!py3 set_operator(opname)```
 
 Try to select the operator with long name ```opname```. It is suggested to retrieve the list of operators before trying to set one.
 
+###### set_rat
 
-**`set_rat(rat, bands=[])`**
+```#!py3 set_rat(rat, bands=[])```
 
 Try to set the Radio Access Technology to use. `rat` must be one of the constants:
 
@@ -164,8 +174,9 @@ For LTE bands, the set of available bands can be looked up [here](https://en.wik
 
 The underlying gsm driver may not support the RAT or the bands and can raise an exception or ignore unsupported bands.
 
+###### select
 
-**`select(rlist, wlist, xlist, timeout=None)`**
+```#!py3 select(rlist, wlist, xlist, timeout=None)```
 
 This is equivalent to the Unix ```select``` system call.
 The first three arguments are sequences of socket instances.
@@ -188,8 +199,9 @@ The return value is a triple of lists of objects that are ready: subsets of the
 first three arguments.  When the time-out is reached without a socket
 becoming ready, three empty lists are returned.
 
+###### list_sms
 
-**`list_sms(unread=False, maxsms=10, offset=0)`**
+```#!py3 list_sms(unread=False, maxsms=10, offset=0)```
 
 Return a tuple of received SMS. Each SMS is a tuple with:
 
@@ -208,8 +220,9 @@ Return a tuple of received SMS. Each SMS is a tuple with:
 Parameter `unread` selects unread SMS only if set to True. `maxsms` defines the maximum number of SMS to return, while `offset` selects only
 SMS with index greater than or equal to `offset`. If the device stores many SMS, it is suggested to read them in chunks by incrementing `offset`.
 
+###### send_sms
 
-**`send_sms(num, txt)`**
+```#!py3 send_sms(num, txt)```
 
 Try to send the SMS with text `txt` to receiver `num`.
 
@@ -217,23 +230,27 @@ Return an integer representing the index of the SMS (but this may vary from driv
 If the returned integer is negative, it has not been possible to send the SMS. An exception is raised if
 the underlying drivers fails while sending the SMS.
 
+###### delete_sms
 
-**`delete_sms(index)`**
+```#!py3 delete_sms(index)```
 
 Delete the SMS identified by `index`. The value of `index` to use must be taken from the result of list_sms.
 
+###### pending_sms
 
-**`pending_sms()`**
+```#!py3 pending_sms()```
 
 Return the number of SMS received since startup. It is not necessarily equal to the number of unread SMS.
 
+###### get_smsc
 
-**`get_smsc()`**
+```#!py3 get_smsc()```
 
 Return a string representing the Short Message Service Center
 
+###### set_smsc
 
-**`set_smsc(smsc)`**
+```#!py3 set_smsc(smsc)```
 
 Set the Short Message Service Center to the value of `smsc`
 <!--stackedit_data:

@@ -89,8 +89,9 @@ The FOTA process in this case consists of the following steps:
 
 ## FOTA functions
 
+###### get_record
 
-**`get_record()`**
+```#!py3 get_record()```
 
 Return the FOTA record (fota) as a tuple of integers following this scheme:
 
@@ -121,8 +122,9 @@ Return the FOTA record (fota) as a tuple of integers following this scheme:
 
 * fota[8] is the OTA chunk
 
+###### set_record
 
-**`set_record(newfota)`**
+```#!py3 set_record(newfota)```
 
 Set the FOTA record (fota) to the values in newfota according to this scheme:
 
@@ -140,48 +142,57 @@ Set the FOTA record (fota) to the values in newfota according to this scheme:
 
 All other fota elements are managed by the VM and cannot be changed
 
+###### find_bytecode_slot
 
-**`find_bytecode_slot()`**
+```#!py3 find_bytecode_slot()```
 
 Return the address of next available bytecode slot.
 
+###### find_vm_slot
 
-**`find_vm_slot()`**
+```#!py3 find_vm_slot()```
 
 Return the address of the next available vm slot. If the result of the function is equal to fota[7], the current VM does not support VM updates.
 
+###### erase_slot
 
-**`erase_slot(addr, size)`**
+```#!py3 erase_slot(addr, size)```
 
 Erase the slot (either bytecode or VM) starting at `addr` for at least `size` bytes. Since flash memories are often organized in sectors, the erased size can be larger than the requested size.
 
+###### write_slot
 
-**`write_slot(addr, block)`**
+```#!py3 write_slot(addr, block)```
 
 Write `block` (bytes, bytearray or string) at `addr` where `addr` is an address contained in a bytecode or VM slot. This function does not keep count of the written blocks, it is up to the programmer to update the address correctly.
 
+###### close_slot
 
-**`close_slot(addr)`**
+```#!py3 close_slot(addr)```
 
 This function must be called once at the end of the operations (write, erase, …) on a specific `addr` where `addr` is an address contained in a bytecode or VM slot.
 
+###### checksum_slot
 
-**`checksum_slot(addr, size)`**
+```#!py3 checksum_slot(addr, size)```
 
 Return the MD5 checksum (as a bytes object) of the slot starting at `addr` and extending for `size` bytes.
 
+###### restart
 
-**`restart()`**
+```#!py3 restart()```
 
 Reset the microcontroller and restart the system
 
+###### accept
 
-**`accept()`**
+```#!py3 accept()```
 
 Modify the FOTA record to make the current configuration the last working configuration. Must be called by the new bytecode in order to end the FOTA process correctly.
 
+###### attempt
 
-**`attempt(bcslot, vmslot)`**
+```#!py3 attempt(bcslot, vmslot)```
 
 Modify the FOTA record to make `bcslot` and `vmslot` (expressed as indexes starting from 0), the test configuration to be tried on restart.
 <!--stackedit_data:

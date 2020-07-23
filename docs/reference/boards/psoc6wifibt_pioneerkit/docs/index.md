@@ -82,7 +82,7 @@ Once connected the PSoC6 WiFi-Bt Pioneer Kit device is recognized by Zerynth Stu
 After virtualization, the PSoC6 WiFi-Bt Pioneer Kit device is ready to be programmed and the  Zerynth scripts **uploaded**. Just **Select** the virtualized device from the “Device Management Toolbar” and **click** the dedicated “uplink” button of Zerynth Studio.
 
 !!!important
-    To exploit the board WiFi capabilities, the [lib.murata.lbee5kl1dx library](https://docs.zerynth.com/latest/official/lib.murata.lbee5kl1dx/docs/index.html#lib-murata-lbee5kl1dx) must be imported inside your Zerynth script.
+    To exploit the board WiFi capabilities, the [lib.murata.lbee5kl1dx library](/latest/reference/libs/murata/lbee5kl1dx/docs/) must be imported inside your Zerynth script.
 
 ## Missing features
 

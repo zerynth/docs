@@ -1,6 +1,6 @@
 # Zerynth ADM Library
 
-The Zerynth ADM library can be used yo ease the connection to the [Zerynth ADM sandbox](https://docs.zerynth.com/latest/official/core.zerynth.docs/zadm/docs/index.html#zadm). It takes care of connecting to the ADM and listening for incoming messages. Moreover it seamlessly enables RPC calls and mobile integration. For Virtual Machines supporting FOTA updates, the Zerynth ADM also performs the FOTA process automatically when requested.
+The Zerynth ADM library can be used yo ease the connection to the [Zerynth ADM sandbox](/latest/reference/libs/zerynth/zadm/docs/zadm/). It takes care of connecting to the ADM and listening for incoming messages. Moreover it seamlessly enables RPC calls and mobile integration. For Virtual Machines supporting FOTA updates, the Zerynth ADM also performs the FOTA process automatically when requested.
 
 ## Zerynth ADM Step by Step
 
@@ -17,8 +17,9 @@ Check the provided examples for more details.
 
 ## The Device class
 
+##### class Device
 
-**`class Device(uid, token, ip=None, address="things.zerynth.com", heartbeat=60, rpc=None, log=False, fota_callback=None, low_res=False)`**
+```#!py3 class Device(uid, token, ip=None, address="things.zerynth.com", heartbeat=60, rpc=None, log=False, fota_callback=None, low_res=False)```
 
 Creates a Device instance with uid `uid` and token `token`. All other parameters are optional and have default values.
 
@@ -37,22 +38,26 @@ Creates a Device instance with uid `uid` and token `token`. All other parameters
     the `fota_callback` can return a boolean value. If the return value is True, the FOTA process continues, otherwise it is stopped.
 * `low_res`, if true makes the FOTA process a bit less performant but more lightweight (needed for low-resource devices)
 
+###### Device.start
 
-**`start()`**
+```#!py3 start()```
 
 Starts the connection process and creates background threads to handle incoming and outgoing messages. It returns immediately.
 
+###### Device.send
 
-**`send(msg)`**
+```#!py3 send(msg)```
 
 Send a raw message to the ADM. `msg` is a dictionary that will be serialized to JSON and sent.
 
+###### Device.send_event
 
-**`send_event(payload)`**
+```#!py3 send_event(payload)```
 
 Send an event message containing the payload `payload` to the ADM. Payload is given as a dictionary and then serialized to JSON.
 
+###### Device.send_notification
 
-**`send_notification(title, text)`**
+```#!py3 send_notification(title, text)```
 
 Send a push notification to connected apps and templates. The notification must have a `title` and a `text`.

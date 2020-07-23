@@ -68,19 +68,22 @@ Each microcontroller family has its own watchdog peculiarities, described in the
 
 This module provides the following functions for watchdog usage:
 
+###### watchdog
 
-**`watchdog(time0, timeout)`**
+```#!py3 watchdog(time0, timeout)```
 
 Enable the watchdog. If `time0` is zero, the watchdog is configured in normal mode; if it is greater than zero, the watchdog is configured in windowed mode (if supported) in such a way that a kick in the first `time0` milliseconds resets the device.
 `timeout` configures the number of milliseconds the whole watchdog window lasts. Once started, the watchdog CAN’T be stopped!
 
+###### kick
 
-**`kick()`**
+```#!py3 kick()```
 
 Refresh the watchdog, resetting its time window.
 
+###### watchdog_triggered
 
-**`watchdog_triggered()`**
+```#!py3 watchdog_triggered()```
 
 Return `True` if the microcontroller has been reset by the watchdog, `False` otherwise.
 
