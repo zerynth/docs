@@ -64,6 +64,5 @@ Commands:
   logout     Delete the current session
   workspace  Manage the workspaces
 
-
 ```
 
