@@ -6,7 +6,7 @@ The SAM E54 Xplained Pro features a 32-bit ARM® Cortex®-M4 processor with Floa
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port.
 
-![Xplained Pro Sam E54](https://olddocs.zerynth.com/latest/_images/SAME54.png)
+![Xplained Pro Sam E54](img/SAME54.png)
 
 _Xplained Pro Sam E54. Copyright Microchip Technology_
 
@@ -15,7 +15,7 @@ _Xplained Pro Sam E54. Copyright Microchip Technology_
 
 ## Pin Mapping
 
-![Xplained Pro Sam E54 Pin Mapping](https://olddocs.zerynth.com/latest/_images/SAME54_pin_io.jpg)
+![Xplained Pro Sam E54 Pin Mapping](img/SAME54_pin_io.jpg)
 
 Xplained Pro Sam E54 Official Schematic, Reference Design and Pin Mapping are available on the official  [Microchip User Guide](https://www.microchip.com/developmenttools/productdetails/atsame54-xpro).
 
