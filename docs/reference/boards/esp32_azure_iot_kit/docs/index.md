@@ -4,11 +4,11 @@ The ESP32 Azure IoT Kit is one of the development board created by Espressif. It
 
 The ESP32 Azure IoT Kit enables smart network configuration, cloud platform access and sensor data acquisition to speed up the development of new IoT applications.
 
-![Esp32 Azure IoT Kit](https://olddocs.zerynth.com/latest/_images/esp32_azure_iot_kit.png)
+![Esp32 Azure IoT Kit](img/esp32_azure_iot_kit.png)
 
 ## Pin Mapping
 
-![Esp32 Azure IoT Kit](https://olddocs.zerynth.com/latest/_images/esp32_azure_iot_kit_comm.jpg)
+![Esp32 Azure IoT Kit](img/esp32_azure_iot_kit_comm.jpg)
 
 Official reference for ESP32 Azure IoT Kit can be found  [here](https://www.espressif.com/en/products/devkits/esp32-azure-kit/overview).
 
@@ -149,7 +149,7 @@ For Esp32 based devices, the FOTA process is implemented mostly by using the pro
 
 Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
 
-This feature is strongly platform dependent; more information at  [Secure Firmware - ESP32 section](https://olddocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_sfw.html#sfw-esp32).
+This feature is strongly platform dependent; more information at  [Secure Firmware - ESP32 section](/latest/reference/core/stdlib/docs/sfw/#watchdogs-for-esp32-devices).
 
 ## Zerynth Secure Socket
 
