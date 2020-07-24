@@ -87,7 +87,7 @@ Once connected on a USB port the Xplained Pro Sam E54 device is recognized by Ze
 After virtualization, the Xplained Pro Sam G55 is ready to be programmed and the Zerynth scripts  **uploaded**. Just  **Select**  the virtualized device from the “Device Management Toolbar” and  **click**  the dedicated “upload” button of Zerynth Studio and  **reset**  the device by pressing the Reset on-board button when asked.
 
 !!! note
-	Advanced programming and debugging through EDBG are available in  [Device Management Advanced Mode](https://docs.zerynth.com/latest/reference/core/studio/docs/#advanced-device-widget)  selecting Atmel EDBG interface
+	Advanced programming and debugging through EDBG are available in  [Device Management Advanced Mode](/latest/reference/core/studio/docs/#advanced-device-widget)  selecting Atmel EDBG interface
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjEyNTU3Mzk2MSwtMTQ4MTI0NzYxNF19
 -->
