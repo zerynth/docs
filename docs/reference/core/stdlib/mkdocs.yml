@@ -1,0 +1,96 @@
+---
+markdown_extensions:
+- meta
+- admonition
+- footnotes
+- meta
+-   codehilite: {guess_lang: false}
+-   toc: {permalink: true}
+-   pymdownx.betterem: {smart_enable: all}
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.inlinehilite
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences
+-   pymdownx.tasklist: {custom_checkbox: true}
+- pymdownx.tabbed
+- pymdownx.tilde
+nav: 
+    - index.md
+    - builtins.md
+    - streams.md
+    - threading.md
+    - struct.md
+    - os.md
+    - vm.md
+    - gc.md
+    - math.md
+    - timers.md
+    - bignum_bignum.md
+    - Data Structures:
+        - fifo.md
+        - queue.md
+    - Serialization:
+        - base64.md
+        - json.md
+        - cbor.md
+        - msgpack.md
+        - jwt.md
+    - Storage:
+        - flash.md
+        - fatfs.md
+        - spiflash.md
+        - qspiflash.md
+        - spisd.md
+    - Peripherals:
+        - mcu.md
+        - gpio.md
+        - i2c.md
+        - spi.md
+        - adc.md
+        - dac.md
+        - pwm.md
+        - icu.md
+        - rtc.md
+        - can.md
+        - hwtimers.md
+    - Networking:
+        - socket.md
+        - requests.md
+        - urlparse.md
+        - ntpclient.md
+    - Connectivity:
+        - eth.md
+        - wireless_wifi.md
+        - wireless_gsm.md
+        - wireless_ble.md
+        - wireless_ble_beacons.md
+    - Security:
+        - ssl.md
+        - x509.md
+        - crypto.md
+        - crypto_ecc_ecc.md
+        - crypto_hash_md5.md
+        - crypto_hash_sha1.md
+        - crypto_hash_sha2.md
+        - crypto_hash_sha3.md
+        - crypto_hash_hmac.md
+        - crypto_hash_keccak.md
+    - pwr.md
+    - sfw.md
+    - fota.md
+    - examples.md
+plugins:
+- search
+-   minify: {minify_html: true}
+- awesome-pages
+site_name: core.zerynth.stdlib
+theme:
+    font: {code: Roboto Mono, text: Roboto}
+    name: material
+    palette: {accent: red, primary: indigo}
+extra_css: [extra.css]
+...
+

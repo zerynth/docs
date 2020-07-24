@@ -1,117 +1,16 @@
 # Virtual Machine
 
-The core of Zerynth is the Zerynth Virtual Machine. Zerynth VM has been developed from scratch with the goal of bringing Python to the embedded world with support for multi-thread and cross board compatibility. More info on Zerynth VM section.
+The core of Zerynth is the Zerynth Virtual Machine. Zerynth VM has been developed from scratch with the goal of bringing Python to the embedded world with support for multi-thread and cross board compatibility. More info on [Zerynth VM](https://docs.zerynth.com/latest/official/core.zerynth.stdlib/docs/vm.html#zerynthvm) section.
 
 Contents:
 
+-   [Virtual Machine](/latest/reference/guide/docs/zos/ "Virtual Machine")
 
-* The Zerynth Virtual Machine
+-   [The Zerynth Virtual Machine](/latest/reference/guide/docs/vm/ "The Zerynth Virtual Machine")
 
+-   [Operating System Abstraction Layer](/latest/reference/guide/docs/vosal/ "Operating System Abstraction Layer")
 
-    * Zerynth and Python
-
-
-* Operative System Abstraction Layer
-
-
-    * Types
-
-
-    * Variables
-
-
-    * Macros
-
-
-    * Return values
-
-
-    * System and Thread functions
-
-
-    * Semaphores
-
-
-    * Mailboxes
-
-
-    * System Timers
-
-
-    * Events
-
-
-* Hardware Abstraction Layer
-
-
-    * Pin Mapping
-
-
-    * Peripherals Mapping
-
-
-    * GPIO
-
-
-    * ADC
-
-
-    * DAC
-
-
-    * PWM
-
-
-    * ICU
-
-
-    * HTM
-
-
-    * SERIAL
-
-
-    * I2C
-
-
-    * SPI
-
-
-    * NFO
-
-
-    * FLASH
-
-
-    * RNG
-
-
-    * RTC
-
-
-    * Interrupts
-
-
-    * Error Codes
-
-
-* VM Interface
-
-
-    * PObject
-
-
-    * Numbers
-
-
-    * Bool & None
-
-
-    * Sequences
-
-
-    * Dictionaries and Sets
-
-
-    * Exceptions
-
+-   [Hardware Abstraction Layer](/latest/reference/guide/docs/vhal/ "Hardware Abstraction Layer")
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2MDM2NTEzMzhdfQ==
+-->

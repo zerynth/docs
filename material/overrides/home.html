@@ -2,6 +2,9 @@
   This file was automatically generated - do not edit
 -#}
 {% extends "overrides/main.html" %}
+{% block htmltitle %}
+<title>Zerynth | Documentation</title>
+{% endblock %}
 {% block tabs %}
   {{ super() }}
   <style>.md-header{position:initial; background-color: #0070ef;} .md-tabs{background-color: #1e1e1e;} .md-main__inner{margin:0}.md-content{display:none}.tx-container{padding-top:1rem;background: #1e1e1e}.tx-hero{margin:0 .8rem;color:var(--md-primary-bg-color)}.tx-hero h1{margin-bottom:1rem;color:currentColor;font-weight:700} .blocks h3{margin-bottom:1rem;color:#1e1e1e;font-weight:700}.tx-hero__content{padding-bottom:6rem}.tx-hero .md-button{margin-top:.5rem;margin-right:.5rem;color:var(--md-primary-bg-color)}.tx-hero .md-button--primary{background-color:#0070ef;color:#ffffff;border-color:#0070ef;}.tx-hero .md-button:focus,.tx-hero .md-button:hover{background-color:#0070ef;color:#ffffff;border-color:var(--md-accent-fg-color)}@media screen and (max-width:30em){.tx-hero h1{font-size:1.4rem}}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}.tx-hero{display:flex;align-items:stretch;justify-items:space-between}.tx-hero__content{max-width:19rem;margin-top:3.5rem;}.tx-hero__image{width:38rem;order:1;transform:translateX(4rem)}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}.tx-hero__image{transform:translateX(8rem)}}</style>
@@ -11,16 +14,29 @@
        <!--  <div class="tx-hero__image">
           <img src="images/favicon.png" draggable="false">
         </div> -->
-        <div class="tx-hero__content">
-          <h1>The Zerynth platform documentation</h1>
+        <div class="tx-hero__content" style="max-width: 600px;">
+          <h1 style="color: #0070ef;">The Zerynth platform documentation</h1>
+          <p>Zerynth is the platform for simplifying and accelerating the development of IoT applications.
+Zerynth offers developers, system integrators, and businesses a way to enable IoT for their products, rapidly.
+Our industry insight, vast experience, and versatile toolset accompany you from idea to finished product in no time.
+</p>
           <!-- <p>{{ config.site_description }}</p> -->
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Getting Started
+          <a href="intro/" title="Let's start!" class="md-button md-button--primary">
+            Let's start!
           </a>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--secondary">
+          <a href="https://www.zerynth.com/zsdk/" class="md-button md-button--secondary" target="_blank">
             Download
           </a><br>
         </div>
+        <div class="tx-hero__content" style="padding-right: 20px; padding-left: 20px;">
+         <img src="images/zerynth-platform-image.png" draggable="false">
+        </div>
+     <!--     <div class="tx-hero__content" style="padding-right: 20px;">
+         <img src="images/update2.png" draggable="false">
+        </div>
+         <div class="tx-hero__content">
+         <img src="images/organize.png" draggable="false">
+        </div> -->
       </div>
     </div>
   </section>
@@ -28,36 +44,34 @@
 <div class="container">
     <div class="md-grid md-typeset">
       <div class="tx-hero">
-        
-        <div class="tx-hero__content blocks" style="margin-right: 8%;">
-          <h3>Zerynth OS</h3>
-          <p style="color: black;">See the full documentation</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Getting Started
+        <div class="tx-hero__content blocks" style="margin: auto; text-align: center;">
+          <h3 style="font-size: 16px; text-align: center;">Zerynth OS</h3>
+          <img style="width: 100px; display: block; margin: auto;" src="images/zerynth-os-icon.png" draggable="false"> 
+          <a style="font-size: 15px; margin-right: 0px;" href="develop/" class="md-button md-button--primary">
+            Learn more
           </a>
         </div>
-         <div class="tx-hero__content blocks" style="margin-right: 8%;">
-          <h3>Zerynth Device Manager</h3>
-          <p style="color: black;">See the full documentation</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Getting Started
+         <div class="tx-hero__content blocks" style="margin: auto; text-align: center;">
+          <h3 style="font-size: 16px; text-align: center;">Zerynth Device Manager</h3>
+          <img style="width: 100px; display: block; margin: auto;" src="images/zdm-icon.png" draggable="false">
+          <a style="font-size: 15px; margin-right: 0px;" href="deploy/" class="md-button md-button--primary">
+            Learn more
           </a>
         </div>
-         <div class="tx-hero__content blocks" style="margin-right: 8%;">
-          <h3>Zerynth Studio</h3>
-          <p style="color: black;">See the full documentation</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Getting Started
+         <div class="tx-hero__content blocks" style="margin: auto; text-align: center;">
+          <h3 style="font-size: 16px; text-align: center;">Zerynth Supported Devices</h3>
+          <img style="width: 100px; display: block; margin: auto;" src="images/supported-edevices.png" draggable="false">
+          <a style="font-size: 15px; margin-right: 0px;" href="reference/boards/" class="md-button md-button--primary">
+            Learn more
           </a>
         </div>
-         <div class="tx-hero__content blocks" style="margin-right: 8%;">
-          <h3>4ZeroPlatform</h3>
-          <p style="color: black;">See the full documentation</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Getting Started
+         <div class="tx-hero__content blocks" style="margin: auto; text-align: center;">
+          <h3 style="font-size: 16px; text-align: center;">4ZeroPlatform</h3>
+          <img style="width: 100px; display: block; margin: auto;" src="images/4zp-icon.png" draggable="false">
+          <a style="font-size: 15px; margin-right: 0px;" href="4zp/4ZeroBox/" class="md-button md-button--primary">
+            Learn more
           </a>
         </div>
-   
       </div>
     </div>
   </section>
