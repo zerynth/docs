@@ -67,19 +67,19 @@ Publish a message to the ZDM.
 * ```payload``` is a dictionary containing the payload.
 * ```tag``` is the tag associated to the published payload.
 
-### ZDMClient.request_timestamp
+### ZDMClient.request_timestamppublish
 
 ```#!py3 request_timestamp()```
 
 Request the timestamp to the ZDM. When the timestamp is received, the callback ```on_timestamp``` is called.
 
-### ZDMClient.request_open_conditions
+### ZDMClient.request_open_conditionspublish
 
 ```#!py3 request_open_conditions()```
 
 Request all the open conditions of the device not yet closed. When the open conditions are received, the callback on_open_conditions is called.
 
-### ZDMClient.new_condition
+### ZDMClient.new_conditionpublish
 
 ```#!py3 new_condition(condition_tag)```
 
@@ -125,3 +125,6 @@ Reset the condition by generating a new id.
 ```#!py3 is_open()```
 
 Return True if the condition is open. False otherwise.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA4MTc1NDAzMl19
+-->
