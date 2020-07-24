@@ -10,9 +10,8 @@ One of its most important features is the Atmel Embedded Debugger (EDBG), which 
 
 _Xplained Pro Sam E54. Copyright Microchip Technology_
 
-Note
-
-All the reported information are extracted from the official  [Xplained Pro Sam E54 page](https://www.microchip.com/developmenttools/productdetails/atsame54-xpro), visit this page for more details and updates.
+!!! note
+	All the reported information are extracted from the official  [Xplained Pro Sam E54 page](https://www.microchip.com/developmenttools/productdetails/atsame54-xpro), visit this page for more details and updates.
 
 ## Pin Mapping
 
@@ -51,17 +50,15 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 For powering the device through Target USB (debug USB port on Xplained pro kit), voltage of 4.4V to 5.25V and current of 500 mA are needed.
 
-Note
-
-External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
+!!! note
+	External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
 
 ## Connect, Register, Virtualize and Program
 
 The Xplained Pro Sam E54 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all  **Windows**  (automatic driver software installation),  **OSX**  and  **Linux**  machines will recognize the device as a COM port automatically.
 
-Note
-
-**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
+!!! note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 > -   **Ubuntu**  distribution –> dialout group
 > -   **Arch Linux**  distribution –> uucp group
@@ -84,15 +81,13 @@ Once connected on a USB port the Xplained Pro Sam E54 device is recognized by Ze
 -   **Create**  a Virtual Machine for the device by clicking the “Z” button for the second time;
 -   **Virtualize**  the device by clicking the “Z” button for the third time.
 
-Note
-
-No user intervention on the device is required for registration and virtualization process
+!!! note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the Xplained Pro Sam G55 is ready to be programmed and the Zerynth scripts  **uploaded**. Just  **Select**  the virtualized device from the “Device Management Toolbar” and  **click**  the dedicated “upload” button of Zerynth Studio and  **reset**  the device by pressing the Reset on-board button when asked.
 
-Note
-
-Advanced programming and debugging through EDBG are available in  [Device Management Advanced Mode](https://olddocs.zerynth.com/latest/official/core.zerynth.studio/docs/index.html#zerynth-studio-device-advanced)  selecting Atmel EDBG interface
+!!! note
+	Advanced programming and debugging through EDBG are available in  [Device Management Advanced Mode](https://docs.zerynth.com/latest/reference/core/studio/docs/#advanced-device-widget)  selecting Atmel EDBG interface
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODEyNDc2MTRdfQ==
+eyJoaXN0b3J5IjpbMjEyNTU3Mzk2MSwtMTQ4MTI0NzYxNF19
 -->
