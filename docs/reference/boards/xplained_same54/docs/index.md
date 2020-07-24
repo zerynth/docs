@@ -6,6 +6,7 @@ The SAM E54 Xplained Pro features a 32-bit ARM® Cortex®-M4 processor with Floa
 
 One of its most important features is the Atmel Embedded Debugger (EDBG), which provides a full debug interface without the need for additional hardware, significantly increasing the ease-of-use for software debugging. EDBG also supports a virtual COM port.
 
+
 ![Xplained Pro Sam E54](img/SAME54.png)
 
 _Xplained Pro Sam E54. Copyright Microchip Technology_
@@ -50,12 +51,14 @@ The device can operate on an external supply of 5V ±2% (±100mV) for USB host o
 
 For powering the device through Target USB (debug USB port on Xplained pro kit), voltage of 4.4V to 5.25V and current of 500 mA are needed.
 
+
 !!! note
 	External power is required when 500mA from a USB connector is not enough to power the device with possible extension boards. A connected USB device in a USB host application might easily exceed this limit.
 
 ## Connect, Register, Virtualize and Program
 
 The Xplained Pro Sam E54 debug port is connected to EDBG, which provides a virtual COM port to software on a connected computer. To recognize the device, all  **Windows**  (automatic driver software installation),  **OSX**  and  **Linux**  machines will recognize the device as a COM port automatically.
+
 
 !!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:

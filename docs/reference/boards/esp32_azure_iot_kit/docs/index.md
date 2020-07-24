@@ -4,6 +4,7 @@ The ESP32 Azure IoT Kit is one of the development board created by Espressif. It
 
 The ESP32 Azure IoT Kit enables smart network configuration, cloud platform access and sensor data acquisition to speed up the development of new IoT applications.
 
+
 ![Esp32 Azure IoT Kit](img/esp32_azure_iot_kit.png)
 
 ## Pin Mapping
@@ -110,6 +111,7 @@ Once connected on a USB port, if drivers have been correctly installed, the Azur
 -   **Create**  a Virtual Machine for the device by clicking the “Z” button for the second time;
 -   **Virtualize**  the device by clicking the “Z” button for the third time.
 
+
 !!! note
 	No user intervention on the device is required for registration and virtualization process
 
@@ -123,6 +125,7 @@ After virtualization, the Azure IoT Kit is ready to be programmed and the Zerynt
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the Azure IoT Kit device is available for bytecode and VM.
 
 Flash Layout is shown in table below:
+
 
 | Start address | Size  | Content                   |
 |---------------|-------|---------------------------|
@@ -162,5 +165,6 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 > -   Touch detection support
 > -   WROVER’s SPI flash module
 <!--stackedit_data:
+
 eyJoaXN0b3J5IjpbLTk3ODgyOTk5NSwxODEwMDc1Nl19
 -->
