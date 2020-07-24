@@ -125,6 +125,8 @@ Reset the condition by generating a new id.
 ```#!py3 is_open()```
 
 Return True if the condition is open. False otherwise.
+
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjA4MTc1NDAzMl19
 -->
