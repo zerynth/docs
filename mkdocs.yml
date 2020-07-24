@@ -150,6 +150,7 @@ nav:
       - reference/boards/az3166/docs/index.md
       - reference/boards/cvm_espwroom32/docs/index.md
       - reference/boards/doit_esp32/docs/index.md
+      - reference/boards/esp32_azure_iot_kit/docs/index.md
       - reference/boards/esp32_devkitc/docs/index.md
       - reference/boards/esp32_ethernetkit/docs/index.md
       - reference/boards/esp32_pico_v4/docs/index.md
@@ -206,6 +207,7 @@ nav:
       - reference/boards/xplained_c21n/docs/index.md
       - reference/boards/xplained_d21/docs/index.md
       - reference/boards/xplained_l21b/docs/index.md
+      - reference/boards/xplained_same54/docs/index.md
       - reference/boards/xplained_samg55/docs/index.md
     - Libraries:
         - adafruit:

@@ -16,6 +16,8 @@ The complete list of devices supported by Zerynth:
 
 -   [DOIT Esp32 DevKit v1](/latest/reference/boards/doit_esp32/docs/ "DOIT Esp32 DevKit v1")
 
+-   [Esp32 Azure IoT Kit](/latest/reference/boards/esp32_azure_iot_kit/docs/ "Esp32 Azure IoT Kit")
+
 -   [ESP32 DevKitC](/latest/reference/boards/esp32_devkitc/docs/ "ESP32 DevKitC")
 
 -   [ESP32 EthernetKit](/latest/reference/boards/esp32_ethernetkit/docs/ "ESP32 EthernetKit")
@@ -128,7 +130,6 @@ The complete list of devices supported by Zerynth:
 
 -   [Xplained Pro Sam L21](/latest/reference/boards/xplained_l21b/docs/ "Xplained Pro Sam L21")
 
+-   [Xplained Pro Sam E54](/latest/reference/boards/xplained_same54/docs/ "Xplained Pro Sam E54")
+
 -   [Xplained Pro Sam G55](/latest/reference/boards/xplained_samg55/docs/ "Xplained Pro Sam G55")
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk0Nzk2MTRdfQ==
--->
