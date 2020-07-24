@@ -441,11 +441,3 @@ In the Zerynth Studio Preferences Menu, following options are available:
 
 !!! note
 	the “Forget all devices” option is needed when there are one or more errors in recognizing devices connected to the machine. Confirming this command local device database will be cleaned.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzA5MzA5NSwtMjE5ODgwNTAyLDEwOD
-Y3MjEyMDksLTg1NjAwODcwMF19
-<<<<<<< HEAD
--->
-=======
--->
->>>>>>> origin/dev-voja

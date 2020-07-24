@@ -35,7 +35,7 @@ Once credentials are ready, you can download them into a **zdevice.json** file. 
 
 ##Prepare the firmware
 You now need to open up Zerynth Studio, our IDE, and program your device with one of the many examples it offers.
-If you don't have Zerynth Studio installed, follow this [quick getting started](../gettingstarted/Getting Started.md) and come back here.
+If you don't have Zerynth Studio installed, follow this [quick getting started](../gettingstarted/index.md) and come back here.
 
 Done? You should now have a device with the Zerynth OS running on it, just waiting for some firmware to execute. Let's do it.
 

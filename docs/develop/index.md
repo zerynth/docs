@@ -1,33 +1,37 @@
 # Develop
 
-This section introduces you to the main features of Zerynth and provides you a step-by-step guide to get started with the system. Take a look at the video below to see Zerynth in action!
+This section introduces the main features of Zerynth and provides a step-by-step guide to get started with the system. Take a look at the video below to see Zerynth in action!
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/u2pEH5dSZbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-### Create a Zerynth User Account
+### Create an account
 
-It is necessary to create a User Account to access Zerynth.
+It is necessary to create a user account to use Zerynth.
 
-To register a new Zerynth Account or to Log in an existing one, you can proceed manually (**email**, **username** and **password**) or you can automatically register/login with social credentials (**Facebook** and **Google+**).
+To register or to login you can either provide manual credentials (**email**, **username** and **password**) or use social login with **Facebook** and **Google**
 
 ![](img/Create%20a%20Zerynth%20User%20Account.png)
 
 !!! note
-	For Manual Registration: check your email and verify your new account by clicking on the link provided in the confirmation email
+	If you choose manual credentials you will need to verify your new account by clicking the link provided in the confirmation email
 
 !!! warning
 	The first time you create a user account or if you have sign-in issues, a restart of Zerynth Studio might be necessary
 
-### Connect, Register and Virtualize your Device
+### Prepare a device
 
-To make a device usable with Zerynth, you need to **Connect**, **Register**, and **“Virtualize”** it.
+To make a device usable with Zerynth, you need to **Connect** it and install **Zerynth OS** on it.
 
-According to the platform used and to the connected device, the user has to install the related driver to make the machine able to recognize and exchange data with the board.
+According to the platform used and to the connected device, you may need to install the related drivers for enabling it in the development machine.
 
 !!! warning
-	Procedure to install drivers, if needed, is reported device by device in [Supported Devices](/latest/reference/boards/Supported_Devices/).
+	Procedure to install drivers, if needed, is reported device by device in [Supported Devices](../reference/boards/index.md).
 
-The **Registration** phase is the process of retrieving the device info to allow the Zerynth backend to build its specific virtual machine.
+To install Zerynth OS, you can click the **Z** button and install it in one click.
+
+If you want more fine grained control on the features of the Zerynth OS, keep on reading.
+
+The **Registration** phase is the process of retrieving the device info to allow the Zerynth backend to know about the device.
 
 ![](img/Registration%20phase.png)
 
@@ -37,15 +41,15 @@ To register a new device, you can follow these steps:
 
 1.  connect your device to the machine. The “Devices Management Widget” notifies the devices list update with a yellow blink;
 2.  select the device from the dropdown menu;
-3.  click on the “Zerynth” button. Zerynth Studio will guide you in the entire process through info messages displayed in the log console section at the bottom of the screen.
+3.  click on the “Z” button. Zerynth Studio will guide you in the entire process through info messages displayed in the log console section at the bottom of the screen.
 
 !!! note
 	“Powered by Zerynth” devices are accompained by a redeemable code that can be inserted in the above window and exchanged for a free virtual machine license.
 
 !!! warning
-	Some devices require to be set in Device Firmware Update (DFU) mode in order to allow their registration and the flashing of the Zerynth Virtual Machine. Detailed guides on how to put them in DFU mode is available in the [Supported Devices](/latest/reference/boards/Supported_Devices/) section of the documentation.
+	Some devices require to be set in Device Firmware Update (DFU) mode in order to allow their registration and the flashing of the Zerynth Virtual Machine. Detailed guides on how to put them in DFU mode is available in the [Supported Devices](../reference/boards/index.md) section of the documentation.
 
-Once registration has been performed, the user is given the option to create a Virtual Machine for the registered device by clicking again the “Z” button.
+Once registration has been performed, you are given the option to create a Virtual Machine for the registered device by clicking again the “Z” button.
 
 ![](img/create%20a%20Virtual%20Machine.png)
 
@@ -69,7 +73,7 @@ The created Virtual Machine can now be virtualized (i.e. burned on the device). 
 !!! note
 	Zerynth Studio toolbar allows to **“Virtualize”** the selected device.
 
-### Zerynth Devices
+### Supported Devices
 
 The supported devices are grouped into Physical Devices (the ones physically connected to the local machine) and Virtual Devices (the devices usable with Zerynth).
 
@@ -93,7 +97,7 @@ Finally, the **Device Pinmap window** provides the pinout of the selected device
 
 ![](img/Device%20Pinmap%20window.png)
 
-### Clone an example and start with Zerynth Python Scripts
+### Start with an example
 
 Zerynth Studio includes many examples to get started: from the most basic ones to the examples related to the installed libraries. Zerynth examples cannot be edited, they are “read only” folders and they can be used as reference for the design of new projects.
 
@@ -109,7 +113,7 @@ Zerynth examples can be cloned in just few clicks:
 !!! warning
 	Remember that Zerynth does not allow two projects to have the same **Folder**
 
-### Verify and Uplink a Zerynth Project
+### Verify and Uplink
 
 The buttons on the upper left toolbar allow you to verify and uplink a script into a device. To verify a project click on the **Verify** icon to check your script for errors. The errors will be reported in the console and in the code editor with helpful tooltips.
 
@@ -120,9 +124,9 @@ To Uplink your verified project into a Virtualized device just click the **Uplin
 !!! warning
 	Some devices require to be reset during the uplink operation in order to write in flash the bytecode
 
-### Develop your First Zerynth Project
+### Create your first project
 
-To create your First Zerynth Project from scratch you have to do just a few steps:
+To create your first project from scratch you have to do just a few steps:
 
 1.  click on the button “Browse Project”;
 2.  click on “New Project”;
@@ -154,7 +158,7 @@ helpers.fun_name(fun_attribute1, fun_attribute2, ...)
 	If you want to save the `template.html` in the device flash as resource to be used by a specific module like the Zerynth App library, you have to use the `new_resource()` function defining the following code in the `main.py` file:
 new_resource("template.html")
 
-### Import a Zerynth Package into a Project
+### Import packages
 
 Packages import syntax is very simple:
 
@@ -163,7 +167,7 @@ Packages import syntax is very simple:
 
 The import autocomplete feature of Zerynth Studio makes the task of importing modules even easier: as soon as “from” or “import” is typed in the code editor, the autocomplete box lists all the matching modules.
 
-The [Zerynth Programming Guide](/latest/reference/guide/docs/) and various programming examples are also provided.
+The [Zerynth Programming Guide](../reference/guide/docs/index.md) and various programming examples are also provided.
 
 For both the Official Library and the Community Library, a complete documentation is available and if the package contains usage examples, they can be found under the examples tab.
 
@@ -171,7 +175,7 @@ Finally, if you need help with Python, here you can find a good [overview on Pyt
 
 You can always post your questions and doubts on the [Zerynth Community Forum](http://community.zerynth.com/) logging-in with your Zerynth Account.
 
-### Zerynth Studio updates
+### Zerynth SDK updates
 
 Zerynth Studio has two different update mechanisms:
 
@@ -186,7 +190,7 @@ On the contrary, rolling updates do not change the system version but just a gro
 
 ![](img/rolling%20update.jpg)
 
-### Zerynth and Git
+### Git support
 
 Zerynth Studio offers the possibility to store your projects on our backend, in a private git repository. Such feature is accessible from the Project View in the left panel by clicking the git “code-branch” icon.
 
@@ -198,7 +202,7 @@ The project git repository is automatically configured with a remote called “z
 
 Git operations not featured in Zerynth Studio (for example “merge”), can be performed manually using git from the command line.
 
-### Search and Install Community Libraries
+### Community libraries
 
 Zerynth allows searching and installing libraries created by Zerynth users and hosted on GitHub.
 
@@ -208,7 +212,7 @@ The results of the search are shown in the left column that displays a brief des
 
 ![](img/Search%20and%20Install%20Community%20Libraries.png)
 
-### Publishing community libraries
+#### Publishing libraries
 
 Zerynth Studio allows publishing your projects as community libraries that can be installed by everyone else in the Zerynth community. To publish a project, select the “Publish” option for the currently opened project to fire up the publish wizard.
 
@@ -234,9 +238,3 @@ The third step is a recap of what is going to happen during the publishing; read
 
 In the last step the selected Github repository is cloned, the project to be published is copied in and the changes are committed and pushed back to the master branch. Also, a new Github release is created with version and description given in step 2. As soon as the Zerynth backend discovers the new release, the library will be made available to all the Zerynth users.
 
-!!! important
-	In order for the users of your library to have a better programming experience, we strongly suggest to add examples and documentation. Please refer [here](/latest/reference/core/toolchain/docs/packages_packagecmd/#publishing-a-community-library) for more details.
-
-### Creating Custom Virtual Machines
-
-Zeryth Studio allows creating custom Virtual Machines for PCBs and devices based on supported microcontrollers (At the moment only ESP32 has the support for custom VMs, more architectures will be added soon). The customization process involves editing a template file where many settings like pin mapping and onboard peripherals can be specified. More info can be found [here](/latest/develop/Develop/) and [here](/latest/reference/core/toolchain/docs/virtualmachines_vmcmd/#custom-virtual-machines).

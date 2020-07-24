@@ -5,7 +5,7 @@ description: ...
 
 # Technical reference
 
-The Zerynth technical reference contains the developer documentation for the vast ecosystem of tools provided by Zerynth.
+The Zerynth technical reference contains the developer documentation for the vast ecosystem of programming tools provided by Zerynth, collectively known as **Zerynth SDK**.
 
 It can be daunting to navigate all the information, but the task is made easire by the full site search on the site header.
 Moreover, the technical reference can be divided into topics:
@@ -15,6 +15,9 @@ Moreover, the technical reference can be divided into topics:
 - **Zerynth devices** documentation, with the detailed description of each supported hardware, together with pinmaps and available features. Supported devices can be accessed from the menu on the left.
 - **Zerynth command line tools** documentation. It is divided into a section for the Zerynth SDK Toolchain (ZTC) and a section for the Zerynth Device manager (ZDM)
 
+
+!!! warning "Old documentation"
+    Documentation for versions of Zerynth SDK before r2.6.0 can be found <a href="https://olddocs.zerynth.com" target="_blank">here</a>
 
 
 

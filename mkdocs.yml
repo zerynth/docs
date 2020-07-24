@@ -21,12 +21,12 @@ markdown_extensions:
 - pymdownx.tilde
 nav:
 - Introduction:
-  - intro/intro.md
-  - intro/components.md
+  - Zerynth in a nutshell: intro/index.md
+  - Zerynth components: intro/components.md
 - Getting Started:
-  - gettingstarted/Getting Started.md
+  - gettingstarted/index.md
 - Develop:
-  - develop/Develop.md
+  - develop/index.md
 - Deploy and Manage:
   - Introduction: deploy/index.md
   - Getting Started with Zerynth SDK: deploy/getting_started_with_sdk.md
@@ -44,6 +44,7 @@ nav:
         - reference/guide/docs/clang.md
         - Zerynth OS:
           - reference/guide/docs/zos.md
+          - reference/guide/docs/lang.md
           - reference/guide/docs/vm.md
           - reference/guide/docs/vosal.md
           - reference/guide/docs/vhal.md
@@ -140,7 +141,7 @@ nav:
     - Zerynth Hardware:
         - 4zp/4ZeroBox.md
     - Supported Devices:
-      - reference/boards/Supported_Devices.md
+      - reference/boards/index.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
       - reference/boards/adafruit_feather_m0wifi/docs/index.md
       - reference/boards/adafruit_huzzah32/docs/index.md
@@ -658,6 +659,12 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+
+
+
+
+
+
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 
