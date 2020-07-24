@@ -97,7 +97,7 @@ Power to the Esp32 Azure IoT Kit is supplied via the on-board USB Micro B connec
 
 The Esp32 Azure IoT Kit comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. Drivers may be needed depending on your system (Mac or Windows) and can be download from the official  [Espressif documentation](http://esp-idf.readthedocs.io/en/latest/get-started/establish-serial-connection.html)  page. In Linux systems, the Azure Kit should work out of the box.
 
-Note
+!!! note
 	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 
 -   **Ubuntu**  distribution –> dialout group
@@ -162,5 +162,5 @@ Not all IDF features have been included in the Esp32 based VMs. In particular th
 > -   Touch detection support
 > -   WROVER’s SPI flash module
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDIzNTYyLDE4MTAwNzU2XX0=
+eyJoaXN0b3J5IjpbLTk3ODgyOTk5NSwxODEwMDc1Nl19
 -->
