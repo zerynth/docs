@@ -11,7 +11,7 @@ A multithreaded real-time OS that supports hybrid Python/C coding, advanced secu
 
 Zerynth Device Manager (ZDM) is a device and data management service that makes it easy to securely register, organize, monitor, and remotely manage IoT devices at scale.
 
-<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/latest/deploy/Deploy%20and%20Manage/" class="md-button md-button--primary">
+<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/latest/deploy/" class="md-button md-button--primary">
             Learn more
           </a>
 
@@ -38,7 +38,7 @@ These Zerynth powered solutions will inspire you to look beyond your expectation
 
 ## **Zerynth Supported Devices**
 
-<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/latest/reference/boards/adafruit_feather_huzzah/docs/" class="md-button md-button--primary">
+<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/latest/reference/boards/" class="md-button md-button--primary">
             Learn more
           </a>
 
