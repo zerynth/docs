@@ -5,7 +5,7 @@ Go to [https://zdm.zerynth.com](https://zdm.zerynth.com/){target=_blank} and log
 
 ## Home Page
 
-[ ![](img/homePage.png) ](img/homePage.png)
+[ ![](img/homepage2.png) ](img/homepage2.png)
 
 From here you can get an overview of your workspaces, search for them and add new ones.
 
@@ -132,7 +132,7 @@ On the fleets page you can view a list of your fleets with the ability to add ne
 The data page refreshes every 10 seconds, but you can also pause it or change the refresh interval using the input at the bottom.
 As for the device page, the data inspector allows you to view data in a JSON-like format.
 
-[ ![](img/dataConsole.png) ](img/dataConsole.png)
+[ ![](img/datamanager.png) ](img/datamanager.png)
 
 It is possible to download your devices data clicking on the "Download data" button, that allows you to configure your download preferences including format and time range.
 
