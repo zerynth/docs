@@ -43,12 +43,12 @@ Options:
 *  `--name TEXT`     new  device name
 
 
-## Provision
+## Credentials
 The command generates a configuration file (zdevice.json) that contains the credentials and the endpoint
 to be used to provision the device with `DEVICE_ID`. 
 
 ```sh
-zdm device provision [OPTIONS] DEVICE_ID
+zdm device credentials [OPTIONS] DEVICE_ID
 ```
 
 
