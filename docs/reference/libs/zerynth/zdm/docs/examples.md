@@ -716,3 +716,60 @@ try:
 except Exception as e:
     print("main", e)
 ```
+
+
+
+## ZDM_Credentials
+
+
+Basic template example of connecting the device to ZDM.
+
+
+```main.py```
+
+```python
+################################################################################
+# Zerynth Device Manager
+#
+# Created by Zerynth Team 2020 CC
+# Authors: E.Neri, D.Neri
+###############################################################################
+
+
+import streams
+from bsp.drivers import wifi
+from zdm import zdm
+
+#In order to connect the device to the ZDM, follow the steps:
+#   1) Open the ZDM GUI
+#   2) Navigate into your workspace and select the device
+#   3) Click into the "Security" button and select the appropriate device security
+#   4) Click "ok" and then "Download credentials".
+#   5) The GUI generates the credential configuration file (zdevice.json) that contains the security parameter.
+#   6) Save the zdevice.json file into the main folder of your project.
+#   7) Uplink and have fun with Zerynth:)
+
+streams.serial()
+
+try:
+    wifi.init()
+    print("Connecting to wifi...")
+    interface = wifi.interface()
+    interface.link("***Wifi-ssid***", interface.WIFI_WPA2, "***Wifi-password****")
+    print("Connect wifi done")
+
+    # Create a ZDM Device instance.
+    # The ZDM library automatically parses the credential configuration file (zdevice.json)
+    # and configures the device with the right credential mode.
+    device = zdm.Device()
+
+    # connect your device to ZDM.
+    device.connect()
+
+    while True:
+        sleep(2000)
+        
+
+except Exception as e:
+    print("main", e)
+```
