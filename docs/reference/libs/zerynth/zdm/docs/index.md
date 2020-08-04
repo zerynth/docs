@@ -11,5 +11,7 @@ Contents:
     * [Simple ZDM](/latest/reference/libs/zerynth/zdm/docs/examples/#simple-zdm)
     * [ZDM Jobs](/latest/reference/libs/zerynth/zdm/docs/examples/#zdm-jobs)
     * [Advanced FOTA update](/latest/reference/libs/zerynth/zdm/docs/examples/#fota-updates)
-    * [ZDM events](/latest/reference/libs/zerynth/zdm/docs/examples/#zdm_events)
+    * [ZDM Conditions](/latest/reference/libs/zerynth/zdm/docs/examples/#ZDM_Conditions)
     * [ZDM Advanced](/latest/reference/libs/zerynth/zdm/docs/examples/#zdm_advanced)
+    * [ZDM Timestamp](/latest/reference/libs/zerynth/zdm/docs/examples/#zdm_timestamp)
+    * [ZDM Credentials](/latest/reference/libs/zerynth/zdm/docs/examples/#zdm_credentials)
