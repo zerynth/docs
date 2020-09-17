@@ -661,12 +661,16 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
-
-
-
-
-
-
+- Demos:
+  - ZDM:
+    - demos/ZDM/connect_power_bi_to_the_zerynth_device_manager.md
+    - demos/ZDM/connect_zerynth_device_manager_with_grafana_for_iot_data_visualization.md
+  - Zerynth OS:
+    - demos/zerynth-os/an_alcohol_tester_with_led_lights.md
+    - demos/zerynth-os/combining_iot_and_blockchain_using_simple_python.md
+    - demos/zerynth-os/iot_ambient_light.md
+    - demos/zerynth-os/lorawan_using_python.md
+    
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 
