@@ -666,12 +666,12 @@ nav:
     - demos/ZDM/connect_power_bi_to_the_zerynth_device_manager.md
     - demos/ZDM/connect_zerynth_device_manager_with_grafana_for_iot_data_visualization.md
   - Zerynth OS:
-    - demos/zerynth-os/easy_keyboard_module_with_zerynth_and_riverdi_iot_display.md
     - demos/zerynth-os/an_alcohol_tester_with_led_lights.md
     - demos/zerynth-os/combining_iot_and_blockchain_using_simple_python.md
     - demos/zerynth-os/iot_ambient_light.md
     - demos/zerynth-os/lorawan_using_python.md
     - demos/zerynth-os/remote_proximity_sensing.md
+    - demos/zerynth-os/easy_keyboard_module_with_zerynth_and_riverdi_iot_display.md
     
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
