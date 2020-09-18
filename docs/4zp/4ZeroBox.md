@@ -18,127 +18,31 @@ The internal flash of the ESP32 module is organized in a single flash area with 
 
 In particular, for non-BLE VMs:
 
-Start address
-
-Size
-
-Content
-
-0x00009000
-
-16Kb
-
-Esp32 NVS area
-
-0x0000D000
-
-8Kb
-
-Esp32 OTA data
-
-0x0000F000
-
-4Kb
-
-Esp32 PHY data
-
-0x00010000
-
-1Mb
-
-Zerynth VM
-
-0x00110000
-
-1Mb
-
-Zerynth VM (FOTA)
-
-0x00210000
-
-512Kb
-
-Zerynth Bytecode
-
-0x00290000
-
-512Kb
-
-Zerynth Bytecode (FOTA)
-
-0x00310000
-
-512Kb
-
-Free for user storage
-
-0x00390000
-
-448Kb
-
-Reserved
+| Start address | Size  | Content                 |
+|---------------|-------|-------------------------|
+| 0x00009000    | 16Kb  | Esp32 NVS area          |
+| 0x0000D000    | 8Kb   | Esp32 OTA data          |
+| 0x0000F000    | 4Kb   | Esp32 PHY data          |
+| 0x00010000    | 1Mb   | Zerynth VM              |
+| 0x00110000    | 1Mb   | Zerynth VM (FOTA)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode        |
+| 0x00290000    | 512Kb | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb | Free for user storage   |
+| 0x00390000    | 448Kb | Reserved                |
 
 For BLE VMs:
 
-Start address
-
-Size
-
-Content
-
-0x00009000
-
-16Kb
-
-Esp32 NVS area
-
-0x0000D000
-
-8Kb
-
-Esp32 OTA data
-
-0x0000F000
-
-4Kb
-
-Esp32 PHY data
-
-0x00010000
-
-1216Kb
-
-Zerynth VM
-
-0x00140000
-
-1216Kb
-
-Zerynth VM (FOTA)
-
-0x00270000
-
-320Kb
-
-Zerynth Bytecode
-
-0x002C0000
-
-320Kb
-
-Zerynth Bytecode (FOTA)
-
-0x00310000
-
-512Kb
-
-Free for user storage
-
-0x00390000
-
-448Kb
-
-Reserved
+| Start address | Size   | Content                 |
+|---------------|--------|-------------------------|
+| 0x00009000    | 16Kb   | Esp32 NVS area          |
+| 0x0000D000    | 8Kb    | Esp32 OTA data          |
+| 0x0000F000    | 4Kb    | Esp32 PHY data          |
+| 0x00010000    | 1216Kb | Zerynth VM              |
+| 0x00140000    | 1216Kb | Zerynth VM (FOTA)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode        |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (FOTA) |
+| 0x00310000    | 512Kb  | Free for user storage   |
+| 0x00390000    | 448Kb  | Reserved                |
 
 ## Device Summary
 
@@ -197,10 +101,8 @@ Power to the 4ZeroBox is supplied via the on-board USB Micro B connector or dire
 
 The 4ZeroBox comes with a serial-to-usb chip on board that allows programming and opening the UART of the ESP32 module. The CH340 USB to UART chip is also connected to the boot pins of the module, allowing for a seamless virtualization of the device.
 
-Note
-
-**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
-
+!!! Note
+	**For Linux Platform**: to allow the access to serial ports the user needs read/write access to the serial device file. Adding the user to the group, that owns this file, gives the required read/write access:
 -   **Ubuntu**  distribution –> dialout group
 -   **Arch Linux**  distribution –> uucp group
 
@@ -310,5 +212,5 @@ This feature is strongly platform dependent; more information at  [Secure Firmwa
 
 To be able to use Zerynth Secure Socket on esp32 boards  `NATIVE_MBEDTLS:  true`  must be used instead of  `ZERYNTH_SSL:  true`  in the  `project.yml`  file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTQ5MjY1XX0=
+eyJoaXN0b3J5IjpbOTI1NjMzNzIxLDIwMTE0OTI2NV19
 -->
