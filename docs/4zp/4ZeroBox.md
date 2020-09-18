@@ -8,7 +8,7 @@ The 4ZeroBox is a modular hardware electronic unit that simplifies the developme
 
 ## Pin Mapping
 
-![Zerynth 4ZeroBox](https://oldtestdocs.zerynth.com/latest/_images/4zeroboxpin.png)
+![](img/4zeroboxpin.png)
 
 Official reference for Zerynth 4ZeroBox can be found  [here](https://www.zerynth.com/4zeroplatform/).
 
@@ -164,6 +164,6 @@ This feature is strongly platform dependent; more information at  [Secure Firmwa
 
 To be able to use Zerynth Secure Socket on esp32 boards  `NATIVE_MBEDTLS:  true`  must be used instead of  `ZERYNTH_SSL:  true`  in the  `project.yml`  file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTI4MTI1NCwtMzA3MTU1ODQwLDIwMT
+eyJoaXN0b3J5IjpbLTE5MzIwMjAxOCwtMzA3MTU1ODQwLDIwMT
 E0OTI2NV19
 -->
