@@ -113,15 +113,13 @@ Once connected on a USB port, if drivers have been correctly installed, the 4Zer
 -   **Create**  a Virtual Machine for the device by clicking the “Z” button for the second time;
 -   **Virtualize**  the device by clicking the “Z” button for the third time.
 
-Note
-
-No user intervention on the device is required for registration and virtualization process
+!!!Note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the 4ZeroBox is ready to be programmed and the Zerynth scripts  **uploaded**. Just  **Select**  the virtualized device from the “Device Management Toolbar” and  **click**  the dedicated “upload” button of Zerynth Studio.
 
-Note
-
-No user intervention on the device is required for the uplink process.
+!!!Note
+	No user intervention on the device is required for the uplink process.
 
 ## Resources
 
@@ -138,67 +136,21 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-Start address
-
-Size
-
-Content
-
-0x00010000
-
-1Mb
-
-Zerynth VM (slot 0)
-
-0x00110000
-
-1Mb
-
-Zerynth VM (slot 1)
-
-0x00210000
-
-512Kb
-
-Zerynth Bytecode (slot 0)
-
-0x00290000
-
-512Kb
-
-Zerynth Bytecode (slot 1)
+| Start address | Size  | Content                   |
+|---------------|-------|---------------------------|
+| 0x00010000    | 1Mb   | Zerynth VM (slot 0)       |
+| 0x00110000    | 1Mb   | Zerynth VM (slot 1)       |
+| 0x00210000    | 512Kb | Zerynth Bytecode (slot 0) |
+| 0x00290000    | 512Kb | Zerynth Bytecode (slot 1) |
 
 For BLE VMs:
 
-Start address
-
-Size
-
-Content
-
-0x00010000
-
-1216Kb
-
-Zerynth VM (slot 0)
-
-0x00140000
-
-1216Kb
-
-Zerynth VM (slot 1)
-
-0x00270000
-
-320Kb
-
-Zerynth Bytecode (slot 0)
-
-0x002C0000
-
-320Kb
-
-Zerynth Bytecode (slot 1)
+| Start address | Size   | Content                   |
+|---------------|--------|---------------------------|
+| 0x00010000    | 1216Kb | Zerynth VM (slot 0)       |
+| 0x00140000    | 1216Kb | Zerynth VM (slot 1)       |
+| 0x00270000    | 320Kb  | Zerynth Bytecode (slot 0) |
+| 0x002C0000    | 320Kb  | Zerynth Bytecode (slot 1) |
 
 For Esp32 based devices, the FOTA process is implemented mostly by using the provided system calls in the IDF framework. The selection of the next VM to be run is therefore a duty of the Espressif bootloader; the bootloader however, does not provide a failsafe mechanism to revert to the previous VM in case the currently selected one fails to start. At the moment this lack of a safety feature can not be circumvented, unless by changing the bootloader. As soon as Espressif relases a new IDF with such feature, we will release updated VMs.
 
@@ -212,5 +164,5 @@ This feature is strongly platform dependent; more information at  [Secure Firmwa
 
 To be able to use Zerynth Secure Socket on esp32 boards  `NATIVE_MBEDTLS:  true`  must be used instead of  `ZERYNTH_SSL:  true`  in the  `project.yml`  file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1NjMzNzIxLDIwMTE0OTI2NV19
+eyJoaXN0b3J5IjpbLTMwNzE1NTg0MCwyMDExNDkyNjVdfQ==
 -->
