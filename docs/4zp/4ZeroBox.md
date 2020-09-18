@@ -4,7 +4,7 @@ The 4ZeroBox is a modular hardware electronic unit that simplifies the developme
 
 4ZeroBox mounts a powerful ESP32 Microcontroller by Espressif Systems (240MHz, 4Mb Flash, 512KB SRAM) and provides many onboard features like: a DIN-rail mountable case with industrial grade sensor channels, support for Wi-fi, Bluetooth, Ethernet, LoRa, CAN, RS485, RS232, SD Card, JTAG, I2C, SPI; last but not least, there are 2 on-board MikroBUS sockets to extend the 4ZeroBox with hundreds of MikroElektronika click boards (see “MikroBus Slots” section).
 
-
+![](img/4zerobox_v1.png)
 
 ## Pin Mapping
 
@@ -164,6 +164,6 @@ This feature is strongly platform dependent; more information at  [Secure Firmwa
 
 To be able to use Zerynth Secure Socket on esp32 boards  `NATIVE_MBEDTLS:  true`  must be used instead of  `ZERYNTH_SSL:  true`  in the  `project.yml`  file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTI4NzgyMiwtMzA3MTU1ODQwLDIwMT
+eyJoaXN0b3J5IjpbLTM3OTI4MTI1NCwtMzA3MTU1ODQwLDIwMT
 E0OTI2NV19
 -->
