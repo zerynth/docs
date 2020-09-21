@@ -252,3 +252,5 @@ As we have demonstrated in this demo, it's easy to program a whole keyboard modu
 Of course, the user can further customize the application to their liking, by changing a few parameters during the initialization. 
 
 It's important to note that the user needs to have the latest version of the [Zerynth Device Manager](https://www.zerynth.com/zsdk/) to develop this project.
+
+The code is available in our [GitHub repository](https://github.com/zerynth/demo_keyboard).
