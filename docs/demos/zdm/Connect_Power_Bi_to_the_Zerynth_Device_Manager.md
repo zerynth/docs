@@ -9,7 +9,7 @@ In this tutorial, the Power Bi Desktop is used to build a dashboard that connect
 To start with this tutorial you need:
 
 - A Zerynth Device Manager account with an active workspace where at least one device has been created,
-- A Zerynth device running the [simple ZDM example](https://docs.zerynth.com/latest/reference/libs/zerynth/zdm/docs/examples/#simple-zdm) (see the [ZDM getting started](https://www.zerynth.com/blog/docs/zdm/getting-started/) for how to program and connect a device to the ZDM) or a PC/Raspberry Pi running the ZDM Client Python lib example (see the dedicated how-to guide [here](https://docs.zerynth.com/latest/deploy/getting_started_with_rpi/)),
+- A Zerynth device running the [simple ZDM example](https://docs.zerynth.com/latest/reference/libs/zerynth/zdm/docs/examples/#simple-zdm) (see the [ZDM getting started](https://docs.zerynth.com/latest/deploy/) for how to program and connect a device to the ZDM) or a PC/Raspberry Pi running the ZDM Client Python lib example (see the dedicated how-to guide [here](/latest/deploy/)),
 - Power Bi desktop installed on your computer (download from [here](https://www.zerynth.com/download/15669/)),
 - The ready to use .pbx file you can download from here,
 - Copy and paste skills. 🙂

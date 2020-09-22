@@ -40,7 +40,7 @@ To get a better grasp on the advantages of using Blockchain with Embedded System
 
 And here are the use cases for logistics made by [TOI – Things on Internet](https://www.zerynth.com/use-cases/blockchain-enabled-iot-shipment-tracking-system/), the company that develops 4ZeroBox, an ESP32 board “powered by Zerynth” and tailored for Industrial IoT applications.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=kIjS6R5yIW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](img/zerynth-video-thumbnail-b.png)](https://www.youtube.com/watch?v=kIjS6R5yIW4 "Video Title"){:target="_blank"}
 
 ## The Zerynth Ethereum module – open source Python library for Ethereum and Smart Contracts
 
