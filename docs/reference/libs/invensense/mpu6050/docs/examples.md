@@ -5,11 +5,14 @@
 
 ## get values
 
+```python
 Read temperature, accelerometer and gyroscope value from MPU6050
 ==========================================================
 
 Basic example to read the current values from Invensense sensor MPU6050.
+```
 
+```python
 ################################################################################
 # Motion Sensor Example
 #
@@ -43,14 +46,17 @@ try:
         sleep(2000)
 except Exception as e:
     print("Error2: ",e)
+```
 
 ## get motion
 
+```python
 Detect motion from MPU6050
 ==========================================================
 
 Basic example to detect motion from Invensense sensor MPU6050.
-
+```
+```python
 ################################################################################
 # Motion Detection Example
 #
@@ -81,6 +87,8 @@ try:
         sleep(200)
 except Exception as e:
     print("Error2: ",e)
+ 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTM1NzYzMV19
+eyJoaXN0b3J5IjpbMjExODc2MTQwN119
 -->
