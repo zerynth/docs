@@ -10,7 +10,9 @@ Read magnetometer values from MAG3110
 ==========================================================
 
 Basic example to read the current values of magnetometer from NXP sensor MAG3110.
+```
 
+```python
 ################################################################################
 # Magnetometer Sensor Example
 #
@@ -47,14 +49,18 @@ try:
         sleep(1000)
 except Exception as e:
     print("Error2: ",e)
+```
+
 
 ## triggered measurement
 
+```python
 Read magnetometer values from MAG3110 with triggered measurement
 ==========================================================
 
 Basic example to read the current values of magnetometer from NXP sensor MAG3110.
-
+```
+```python
 ################################################################################
 # Magnetometer Sensor Example with Triggered Measurement
 # This saves power but may affect the accuracy of the data.
@@ -104,6 +110,7 @@ try:
         sleep(1000)
 except Exception as e:
     print("Error2: ",e)
+    ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA1MzA0MTldfQ==
+eyJoaXN0b3J5IjpbMTY1NTAzMjUyMV19
 -->
