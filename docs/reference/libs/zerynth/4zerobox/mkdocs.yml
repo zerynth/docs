@@ -17,18 +17,14 @@ markdown_extensions:
 -   pymdownx.tasklist: {custom_checkbox: true}
 - pymdownx.tabbed
 - pymdownx.tilde
-nav: [index.md, iot.md, examples.md]
+nav: [index.md, ah01.md, examples.md]
 plugins:
 - search
 -   minify: {minify_html: true}
 - awesome-pages
-site_name: lib.ubidots.iot
+site_name: lib.xinabox.ah01
 theme:
     font: {code: Roboto Mono, text: Roboto}
     name: material
     palette: {accent: red, primary: indigo}
 ...
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODUxNjI2MF19
--->
