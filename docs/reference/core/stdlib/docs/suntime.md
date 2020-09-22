@@ -45,7 +45,7 @@ ss3 = CapeTown.get_sunset_time (*dt3) # (17, 57)
 print('Cape Town:', sr3, ss3)
 ```
 
-If  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  module is available, results above can be expressed in local time:
+If  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  module is available, results above can be expressed in local time:
 
 ```python
 import datetime as datetimelib
@@ -81,5 +81,5 @@ print('>', rt3)
 print('>', st3)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjE5ODE2NzddfQ==
+eyJoaXN0b3J5IjpbMTYxMTkwMjY4MV19
 -->
