@@ -63,41 +63,18 @@ Return the clock source the sensor is set to.
 
 **clksel**: is the clock source to set. Values accepted are 0, 1, 2, 3, 4, 5 or 7.
 
-clksel
 
-Clock source
+| clksel | Clock source                                   |
+|--------|------------------------------------------------|
+| 0      | Internal 8MHz oscillator                       |
+| 1      | PLL with X axis gyroscope reference            |
+| 2      | PLL with Y axis gyroscope reference            |
+| 3      | PLL with Z axis gyroscope reference            |
+| 4      | PLL with external 32.768kHz reference          |
+| 5      | PLL with external 19.2MHz reference            |
+| 6      | Reserved                                       |
+| 7      | Stops the clock and keeps the timing generator |
 
-0
-
-Internal 8MHz oscillator
-
-1
-
-PLL with X axis gyroscope reference
-
-2
-
-PLL with Y axis gyroscope reference
-
-3
-
-PLL with Z axis gyroscope reference
-
-4
-
-PLL with external 32.768kHz reference
-
-5
-
-PLL with external 19.2MHz reference
-
-6
-
-Reserved
-
-7
-
-Stops the clock and keeps the timing generator
 
 Set the clock source.
 
@@ -161,5 +138,5 @@ Return 1 if data is ready, otherwise 0.
 
 Set the configuration for motion detection.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYzNjIyNjQwXX0=
+eyJoaXN0b3J5IjpbMTc0MzE0ODQ2OF19
 -->
