@@ -665,11 +665,17 @@ nav:
               - reference/libs/zerynth/4zerobox/docs/index.md
               - reference/libs/zerynth/4zerobox/docs/module.md
               - reference/libs/zerynth/4zerobox/docs/examples.md
-
-
-
-
-
+- Demos:
+  - ZDM:
+    - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
+    - demos/zdm/Connect_Zerynth_Device_Manager_with_Grafana_for_IoT_data_Visualization.md
+  - Zerynth OS:
+    - demos/zerynth-os/An_alcohol_tester_with_LED_lights.md
+    - demos/zerynth-os/Combining_IoT_and_Blockchain_Using_Simple_Python.md
+    - demos/zerynth-os/IoT_Ambient_Light_Zerynth_Lamp.md
+    - demos/zerynth-os/LoRaWAN_Using_Python,_Zerynth_and_The_Things_Network.md
+    - demos/zerynth-os/Remote_Proximity_Sensing_with_XinaBox,_Zerynth_and_Ubidots.md
+    - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
 
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
