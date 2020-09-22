@@ -20,165 +20,21 @@ ST Nucleo L4R5 official manual is available  [here](https://www.st.com/en/microc
 
 The internal flash of the ST Nucleo L4R5 is organized into two banks of 1Mb each. Each bank has sectors of different size according to the following table:
 
-Bank 1
-
-Bank 2
-
-Start address
-
-Size
-
-Content
-
-Start address
-
-Size
-
-Content
-
-0x8000000
-
-16Kb
-
-Virtual Machine
-
-0x8100000
-
-16Kb
-
-Bytecode Bank 7
-
-0x8004000
-
-16Kb
-
-Virtual Machine
-
-0x8104000
-
-16Kb
-
-Bytecode Bank 8
-
-0x8008000
-
-16Kb
-
-Virtual Machine
-
-0x8108000
-
-16Kb
-
-Bytecode Bank 9
-
-0x800C000
-
-16Kb
-
-Virtual Machine
-
-0x810C000
-
-16Kb
-
-Bytecode Bank 10
-
-0x8010000
-
-64Kb
-
-Virtual Machine
-
-0x8110000
-
-64Kb
-
-Bytecode Bank 11
-
-0x8020000
-
-128kb
-
-Bytecode Bank 0
-
-0x8120000
-
-128kb
-
-Bytecode Bank 12
-
-0x8040000
-
-128kb
-
-Bytecode Bank 1
-
-0x8140000
-
-128kb
-
-Bytecode Bank 13
-
-0x8060000
-
-128kb
-
-Bytecode Bank 2
-
-0x8160000
-
-128kb
-
-Bytecode Bank 14
-
-0x8080000
-
-128kb
-
-Bytecode Bank 3
-
-0x8180000
-
-128kb
-
-Bytecode Bank 15
-
-0x80A0000
-
-128kb
-
-Bytecode Bank 4
-
-0x81A0000
-
-128kb
-
-Bytecode Bank 16
-
-0x80C0000
-
-128kb
-
-Bytecode Bank 5
-
-0x81C0000
-
-128kb
-
-Bytecode Bank 17
-
-0x80E0000
-
-128kb
-
-Bytecode Bank 6
-
-0x81E0000
-
-128kb
-
-Bytecode Bank 18
+| Bank 1        |       |                 | Bank 2        |       |                  |
+|---------------|-------|-----------------|---------------|-------|------------------|
+| Start address | Size  | Content         | Start address | Size  | Content          |
+| 0x8000000     | 16Kb  | Virtual Machine | 0x8100000     | 16Kb  | Bytecode Bank 7  |
+| 0x8004000     | 16Kb  | Virtual Machine | 0x8104000     | 16Kb  | Bytecode Bank 8  |
+| 0x8008000     | 16Kb  | Virtual Machine | 0x8108000     | 16Kb  | Bytecode Bank 9  |
+| 0x800C000     | 16Kb  | Virtual Machine | 0x810C000     | 16Kb  | Bytecode Bank 10 |
+| 0x8010000     | 64Kb  | Virtual Machine | 0x8110000     | 64Kb  | Bytecode Bank 11 |
+| 0x8020000     | 128kb | Bytecode Bank 0 | 0x8120000     | 128kb | Bytecode Bank 12 |
+| 0x8040000     | 128kb | Bytecode Bank 1 | 0x8140000     | 128kb | Bytecode Bank 13 |
+| 0x8060000     | 128kb | Bytecode Bank 2 | 0x8160000     | 128kb | Bytecode Bank 14 |
+| 0x8080000     | 128kb | Bytecode Bank 3 | 0x8180000     | 128kb | Bytecode Bank 15 |
+| 0x80A0000     | 128kb | Bytecode Bank 4 | 0x81A0000     | 128kb | Bytecode Bank 16 |
+| 0x80C0000     | 128kb | Bytecode Bank 5 | 0x81C0000     | 128kb | Bytecode Bank 17 |
+| 0x80E0000     | 128kb | Bytecode Bank 6 | 0x81E0000     | 128kb | Bytecode Bank 18 |
 
 ## Device Summary
 
@@ -200,10 +56,8 @@ On the ST Nucleo L4R5, the power supply is provided either by the host PC throug
 
 The ST-LINK/V2-1 supports USB power management allowing to request more than 100 mA current to the host PC. All parts of the STM32 Nucleo device and shield can be powered from the ST-LINK USB connector CN1 (U5V or VBUS).
 
-Warning
-
-Depending on the type of power supply choosen, the jumper JP3 must be correclty selected:
-
+!!!Warning
+	Depending on the type of power supply choosen, the jumper JP3 must be correclty selected:
 -   JP3 between pin 1 and pin 2 for E5V power supply;
 -   JP3 between pin 3 and pin 4 for U5V power supply (ST-Link VBUS);
 -   JP3 between pin 5 and pin 6 for VIN-5V power supply.
@@ -271,6 +125,6 @@ Important
 
 FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the ST Nucleo L4R5 device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5ODI1MTAxMCw2NjQwMzQ5ODksNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTgzOTQ0MzIwLDY2NDAzNDk4OSw3MzA5OT
+gxMTZdfQ==
 -->
