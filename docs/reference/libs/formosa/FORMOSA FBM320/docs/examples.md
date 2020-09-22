@@ -1,6 +1,6 @@
 # Examples
 
--   [get values](https://oldtestdocs.zerynth.com/latest/official/lib.formosa.fbm320/examples/examples.html#lib-formosa-fbm320-get-values)
+-   [get values](/latest/reference/libs/formosa/FORMOSA%20FBM320/docs/examples/#get-values)
 
 ## get values
 
