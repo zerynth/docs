@@ -24,7 +24,7 @@ Taking up the “IoT Ambient Light: Zerynth Lamp” project, making it compatibl
 
 The Zerynth Lamp tutorial is a popular project on Hackster with over 8, 000 views and a lot of comments. Everyone wanted to make their own Python programmable ambient light.
 
-[![](img/video-thumbnail-ambient.png)](https://www.youtube.com/watch?v=KMjvH_d8PeQ "Video Title"){:target="_blank"}
+[![](img/video-thumbnail-ambient.png)](https://www.youtube.com/watch?v=KMjvH_d8PeQ "Ambient light"){:target="_blank"}
 
 Well, now it got an update, and it’s compatible with the latest version of Zerynth.
 
