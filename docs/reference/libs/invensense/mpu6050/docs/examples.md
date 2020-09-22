@@ -1,7 +1,7 @@
 # Examples
 
--   [get values](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/examples/examples.html#lib-invensense-mpu6050-get-values)
--   [get motion](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/examples/examples.html#lib-invensense-mpu6050-get-motion)
+-   [get values](/latest/reference/libs/invensense/mpu6050/docs/examples/#get-values)
+-   [get motion](/latest/reference/libs/invensense/mpu6050/docs/examples/#get-motion)
 
 ## get values
 
