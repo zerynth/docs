@@ -334,6 +334,11 @@ nav:
             - xmc4eth:
               - reference/libs/infineon/xmc4eth/docs/index.md
               - reference/libs/infineon/xmc4eth/docs/xmc4eth.md
+       - invensense:
+            - mpu6050:
+              - reference/libs/invensense/mpu6050/docs/index.md
+              - reference/libs/invensense/mpu6050/docs/module.md
+              - reference/libs/invensense/mpu6050/docs/examples.md
         - liveintersect:
             - iot:
               - reference/libs/liveintersect/iot/docs/index.md
