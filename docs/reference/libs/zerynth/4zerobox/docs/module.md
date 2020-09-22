@@ -2,9 +2,8 @@
 
 This module contains the driver for enabling and handling all 4ZeroBox onboard features. The 4ZeroBox class permits an easier access to the internal peripherals and exposes all functionalities in simple function calls.
 
-Warning
-
-this library is using the Zerynth  _conditional compilation_  feature. This means that some of the methods documented below must be
+!!!Warning
+	this library is using the Zerynth  _conditional compilation_  feature. This means that some of the methods documented below must be
 
 explicitly enabled in a separate configuration file called  project.yml  (or using the Zerynth Studio configuration browser).
 
@@ -460,5 +459,5 @@ Parameters:
 -   **start_address**  – Initial address to read from.
 -   **tot_size**  – Total size of data to be read.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTcxNjAzNl19
+eyJoaXN0b3J5IjpbLTc4ODI2NTkxN119
 -->
