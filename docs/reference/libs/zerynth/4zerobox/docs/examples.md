@@ -41,11 +41,14 @@ while True:
 
 ## Sensor Reading
 
+```python
 Sensor Reading
 ==============
 
 This example shows how to initialize and configurate adc channels of the 4ZeroBox (Analog 4-20mA and 0-10V, Resistive, and current channels).
+```
 
+```python
 ################################################################################
 # 4ZeroBox Sensor Reading
 #
@@ -648,6 +651,6 @@ except Exception as e:
     fzbox.pulse('R', 10000)
     mcu.reset()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDYyMzYwNCwtMTI5OTQyMTQ3MiwxNT
-YxNjM0NjA2LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEzMTcwNzg0NjYsLTEyOTk0MjE0NzIsMT
+U2MTYzNDYwNiw3MzA5OTgxMTZdfQ==
 -->
