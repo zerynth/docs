@@ -278,17 +278,15 @@ Parameters:
 
 Connect to the network using the Ethernet interface. This method is enabled at compilation time using the  NETWORK_ETH  flag.
 
-Warning
-
-use only one of  NETWORK_ETH,  NETWORK_WIFI,  NETWORK_GSM.
+!!!Warning
+	use only one of  NETWORK_ETH,  NETWORK_WIFI,  NETWORK_GSM.
 
 `net_connect(ssid, password, keying=None) - Wi-Fi`
 
 Connect to the network using the Wi-Fi interface. This method is enabled at compilation time using the  NETWORK_WIFI  flag.
 
-Warning
-
-use only one of  NETWORK_ETH,  NETWORK_WIFI,  NETWORK_GSM.
+!!!Warning
+	use only one of  NETWORK_ETH,  NETWORK_WIFI,  NETWORK_GSM.
 
 Parameters:
 
@@ -300,9 +298,8 @@ Parameters:
 
 Connect to the network using the GSM/GPRS interface. This method is enabled at compilation time using the  NETWORK_GSM  flag.
 
-Warning
-
-use only one of  NETWORK_ETH,  NETWORK_WIFI,  NETWORK_GSM.
+!!!Warning
+	use only one of  NETWORK_ETH,  NETWORK_WIFI,  NETWORK_GSM.
 
 Parameters:
 
@@ -430,5 +427,5 @@ Parameters:
 -   **start_address**  – Initial address to read from.
 -   **tot_size**  – Total size of data to be read.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5ODk1MjY1MCwtMjc4NjQxMzAzXX0=
+eyJoaXN0b3J5IjpbLTY1MjE2Nzg4MywtMjc4NjQxMzAzXX0=
 -->
