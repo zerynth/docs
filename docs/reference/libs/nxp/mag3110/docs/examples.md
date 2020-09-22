@@ -1,7 +1,7 @@
 # Examples
 
--   [get values](https://oldtestdocs.zerynth.com/latest/official/lib.nxp.mag3110/examples/examples.html#lib-nxp-mag3110-get-values)
--   [triggered measurement](https://oldtestdocs.zerynth.com/latest/official/lib.nxp.mag3110/examples/examples.html#lib-nxp-mag3110-triggered-measurement)
+-   [get values](/latest/reference/libs/nxp/mag3110/docs/examples/#get-values)
+-   [triggered measurement](/latest/reference/libs/nxp/mag3110/docs/examples/#triggered-measurement)
 
 ## get values
 
@@ -60,7 +60,9 @@ Read magnetometer values from MAG3110 with triggered measurement
 
 Basic example to read the current values of magnetometer from NXP sensor MAG3110.
 ```
+
 ```python
+
 ################################################################################
 # Magnetometer Sensor Example with Triggered Measurement
 # This saves power but may affect the accuracy of the data.
