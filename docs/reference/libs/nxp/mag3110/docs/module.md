@@ -16,6 +16,7 @@ Parameters:
 
 Magnetometer values can be easily obtained from the sensor:
 
+```python
 from nxp.mag3110 import mag3110
 
 ...
@@ -23,6 +24,7 @@ from nxp.mag3110 import mag3110
 mag = mag3110.MAG3110(I2C0)
 
 mag_values = mag.get_values()
+```
 
 `set_measurement`(_mode = 0_,  _osr = 32_,  _odr = 1_)
 
@@ -109,5 +111,5 @@ Set the offset value of temperature.
 
 Return the temperature in degrees Celsius.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTc1OTA4MTFdfQ==
+eyJoaXN0b3J5IjpbNzkzNTMwOTYxLC0xNjk3NTkwODExXX0=
 -->
