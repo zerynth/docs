@@ -12,11 +12,11 @@ Here below, the Zerynth driver for the Invensense MPU6050.
 
 > Contents:
 > 
-> -   [MPU6050 Module](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/docs/official_lib.invensense.mpu6050_mpu6050.html)
->     -   [MPU6050 class](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/docs/official_lib.invensense.mpu6050_mpu6050.html#mpu6050-class)
-> -   [Examples](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/examples/examples.html)
->     -   [get values](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/examples/examples.html#get-values)
->     -   [get motion](https://oldtestdocs.zerynth.com/latest/official/lib.invensense.mpu6050/examples/examples.html#get-motion)
+> -   [MPU6050 Module](/latest/reference/libs/invensense/mpu6050/docs/module/)
+>     -   [MPU6050 class](/latest/reference/libs/invensense/mpu6050/docs/module/#mpu6050-class)
+> -   [Examples](/latest/reference/libs/invensense/mpu6050/docs/examples/)
+>     -   [get values](/latest/reference/libs/invensense/mpu6050/docs/examples/#get-values)
+>     -   [get motion](/latest/reference/libs/invensense/mpu6050/docs/examples/#get-motion)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTQyNTc1MTQyM119
 -->
