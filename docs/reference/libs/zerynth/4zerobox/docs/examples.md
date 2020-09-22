@@ -663,8 +663,8 @@ except Exception as e:
     print (e)
     fzbox.pulse('R', 10000)
     mcu.reset()
-    ```
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDM1NDU1NiwxNDE0MzI2MjYsLTEyOT
+eyJoaXN0b3J5IjpbMTUyMTI5NjkwMCwxNDE0MzI2MjYsLTEyOT
 k0MjE0NzIsMTU2MTYzNDYwNiw3MzA5OTgxMTZdfQ==
 -->
