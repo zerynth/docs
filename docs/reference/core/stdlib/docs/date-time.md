@@ -392,6 +392,7 @@ Return the tuple  `(year,  month,  day,  hour,  minute,  second,  tzinfo)`.
 
 Examples of working with  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  objects:
 
+```python
 from datetime import timedelta, timezone, datetime, fromisoformat
 
 print(datetime(2005, 7, 14, 12, 30))            # 2005-07-14 12:30:00
@@ -402,6 +403,8 @@ print(tz1)                                      # UTC+04:30
 dt = datetime(1900, 11, 21, 3, 30, tzinfo=tz1)
 print(dt)                                       # 1900-11-21 03:30:00+04:30
 print(dt.astimezone(timezone.utc))              # 1900-11-20 23:00:00+00:00
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTY1NDMwNSwtMTMyMjQ0NDQxM119
+eyJoaXN0b3J5IjpbLTEyNDAxNDI3MDUsLTEzMjI0NDQ0MTNdfQ
+==
 -->
