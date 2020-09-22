@@ -145,14 +145,17 @@ except Exception as e:
     print (e)
     fzbox.pulse('R', 10000)
     mcu.reset()
+```
 
 ## Modbus Serial Interface
 
+```python
 Modbus Serial Interface
 =======================
 
 This example shows how to initialize and establish a serial modbus communication
-
+```
+```python
 ###############################################################################
 # Modbus Serial Interface
 #
@@ -239,14 +242,17 @@ try:
 except Exception as e:
     print("Exception ", e)
     master_in.close()
+```
 
 ## 4ZeroBox meets ZDM
 
+```python
 4ZeroBox meets ZDM
 ==================
 
 Basic example to connect 4ZeroBox to the Zerynth Device Manager sending data to the cloud service
-
+```
+```python
 ###############################################################################
 # 4ZeroBox meets ZDM
 #
@@ -366,9 +372,11 @@ except Exception as e:
     print (e)
     fzbox.pulse('R', 10000)
     mcu.reset()
+```
 
 ## 4ZeroBox meets ZDM with GSM
 
+```python
 4ZeroBox meets ZDM with GSM
 ===========================
 
@@ -651,6 +659,6 @@ except Exception as e:
     fzbox.pulse('R', 10000)
     mcu.reset()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTcwNzg0NjYsLTEyOTk0MjE0NzIsMT
-U2MTYzNDYwNiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjc1NTA4MTE0LC0xMjk5NDIxNDcyLDE1Nj
+E2MzQ2MDYsNzMwOTk4MTE2XX0=
 -->
