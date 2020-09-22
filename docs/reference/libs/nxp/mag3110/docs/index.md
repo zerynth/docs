@@ -17,8 +17,8 @@ Here below, the Zerynth driver for the NXP MAG311O.
 
 > Contents:
 > 
-> -   [MAG3110 Module](https://oldtestdocs.zerynth.com/latest/official/lib.nxp.mag3110/docs/official_lib.nxp.mag3110_mag3110.html)
->     -   [MAG3110 class](https://oldtestdocs.zerynth.com/latest/official/lib.nxp.mag3110/docs/official_lib.nxp.mag3110_mag3110.html#mag3110-class)
+> -   [MAG3110 Module](/latest/reference/libs/nxp/mag3110/docs/module/)
+>     -   [MAG3110 class](/latest/reference/libs/nxp/mag3110/docs/module/#mag3110-class)
 > -   [Examples](/latest/reference/libs/nxp/mag3110/docs/examples/)
 >     -   [get values](/latest/reference/libs/nxp/mag3110/docs/examples/#get-values)
 >     -   [triggered measurement](/latest/reference/libs/nxp/mag3110/docs/examples/#triggered-measurement)
