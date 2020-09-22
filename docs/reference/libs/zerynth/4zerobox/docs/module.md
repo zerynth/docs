@@ -9,22 +9,23 @@ explicitly enabled in a separate configuration file called  project.yml  (or usi
 
 Here Below a list of configurable defines for this library:
 
-> Example:
-> 
-> # project.yml
-> config:
->     # enable ethernet connection
->     NETWORK_ETH: null
->     # enable wifi connection
->     NETWORK_WIFI: true
->     # enable gsm connection
->     NETWORK_GSM: true
->     # enable ADC 0-10v/4-20mA peripheral
->     ADC_010_420: null
->     # enable ADC resistive peripheral
->     ADC_RESISTIVE: null
->     # enable ADC current peripheral
->     ADC_CURRENT: null
+Example:
+
+```python
+# project.yml
+config:
+ # enable ethernet connection
+ NETWORK_ETH: null
+ # enable wifi connection
+ NETWORK_WIFI: true
+ # enable gsm connection
+ NETWORK_GSM: true
+ # enable ADC 0-10v/4-20mA peripheral
+ ADC_010_420: null
+ # enable ADC resistive peripheral
+ ADC_RESISTIVE: null
+ # enable ADC current peripheral
+  ADC_CURRENT: null
 >     # enable can peripheral
 >     CAN_ENABLE: null
 >     # enable RS485 peripheral
@@ -35,7 +36,7 @@ Here Below a list of configurable defines for this library:
 >     SDCARD_ENABLED: null
 >     # enable DEBUG for fourzerobox
 >     DEBUG_FZB: null
-
+```
 _class_`FourZeroBox`(_i2c_clk=400000_,  _spi_clk=1000000_)
 
 Initialize the class specifying what features must be enabled and configuring the clock speed of I2C and SPI protocols.
@@ -459,5 +460,5 @@ Parameters:
 -   **start_address**  – Initial address to read from.
 -   **tot_size**  – Total size of data to be read.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODI2NTkxN119
+eyJoaXN0b3J5IjpbLTE5NDM4NzkzMTVdfQ==
 -->
