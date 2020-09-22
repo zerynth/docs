@@ -20,21 +20,133 @@ ST Nucleo L4R5 official manual is available  [here](https://www.st.com/en/microc
 
 The internal flash of the ST Nucleo L4R5 is organized into two banks of 1Mb each. Each bank has sectors of different size according to the following table:
 
-| Bank 1        |       |                 | Bank 2        |       |                  |
-|---------------|-------|-----------------|---------------|-------|------------------|
-| Start address | Size  | Content         | Start address | Size  | Content          |
-| 0x8000000     | 16Kb  | Virtual Machine | 0x8100000     | 16Kb  | Bytecode Bank 7  |
-| 0x8004000     | 16Kb  | Virtual Machine | 0x8104000     | 16Kb  | Bytecode Bank 8  |
-| 0x8008000     | 16Kb  | Virtual Machine | 0x8108000     | 16Kb  | Bytecode Bank 9  |
-| 0x800C000     | 16Kb  | Virtual Machine | 0x810C000     | 16Kb  | Bytecode Bank 10 |
-| 0x8010000     | 64Kb  | Virtual Machine | 0x8110000     | 64Kb  | Bytecode Bank 11 |
-| 0x8020000     | 128kb | Bytecode Bank 0 | 0x8120000     | 128kb | Bytecode Bank 12 |
-| 0x8040000     | 128kb | Bytecode Bank 1 | 0x8140000     | 128kb | Bytecode Bank 13 |
-| 0x8060000     | 128kb | Bytecode Bank 2 | 0x8160000     | 128kb | Bytecode Bank 14 |
-| 0x8080000     | 128kb | Bytecode Bank 3 | 0x8180000     | 128kb | Bytecode Bank 15 |
-| 0x80A0000     | 128kb | Bytecode Bank 4 | 0x81A0000     | 128kb | Bytecode Bank 16 |
-| 0x80C0000     | 128kb | Bytecode Bank 5 | 0x81C0000     | 128kb | Bytecode Bank 17 |
-| 0x80E0000     | 128kb | Bytecode Bank 6 | 0x81E0000     | 128kb | Bytecode Bank 18 |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-wh69{background-color:#F3F6F6;color:#404040;text-align:left;vertical-align:middle}
+.tg .tg-htbt{background-color:#FFF;border-color:inherit;color:#404040;text-align:left;vertical-align:middle}
+.tg .tg-vfhj{background-color:#FFF;color:#404040;font-weight:bold;text-align:left;vertical-align:bottom}
+.tg .tg-zatc{background-color:#FFF;border-color:inherit;color:#404040;font-weight:bold;text-align:left;vertical-align:bottom}
+.tg .tg-5ncm{background-color:#F3F6F6;border-color:inherit;color:#404040;text-align:left;vertical-align:middle}
+.tg .tg-3me6{background-color:#FFF;color:#404040;text-align:left;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-zatc" colspan="3"><span style="font-weight:bold">Bank 1</span></th>
+    <th class="tg-vfhj" colspan="3"><span style="font-weight:bold">Bank 2</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-zatc"><span style="font-weight:bold">Start address</span></td>
+    <td class="tg-zatc"><span style="font-weight:bold">Size</span></td>
+    <td class="tg-zatc"><span style="font-weight:bold">Content</span></td>
+    <td class="tg-vfhj"><span style="font-weight:bold">Start address</span></td>
+    <td class="tg-vfhj"><span style="font-weight:bold">Size</span></td>
+    <td class="tg-vfhj"><span style="font-weight:bold">Content</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5ncm"><span style="background-color:#F3F6F6">0x8000000</span></td>
+    <td class="tg-5ncm"><span style="background-color:#F3F6F6">16Kb</span></td>
+    <td class="tg-5ncm"><span style="background-color:#F3F6F6">Virtual Machine</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8100000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">16Kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 7</span></td>
+  </tr>
+  <tr>
+    <td class="tg-htbt"><span style="background-color:transparent">0x8004000</span></td>
+    <td class="tg-htbt"><span style="background-color:transparent">16Kb</span></td>
+    <td class="tg-htbt"><span style="background-color:transparent">Virtual Machine</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">0x8104000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">16Kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 8</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5ncm"><span style="background-color:#F3F6F6">0x8008000</span></td>
+    <td class="tg-5ncm"><span style="background-color:#F3F6F6">16Kb</span></td>
+    <td class="tg-5ncm"><span style="background-color:#F3F6F6">Virtual Machine</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8108000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">16Kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-3me6"><span style="background-color:transparent">0x800C000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">16Kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Virtual Machine</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">0x810C000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">16Kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 10</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8010000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">64Kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Virtual Machine</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8110000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">64Kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 11</span></td>
+  </tr>
+  <tr>
+    <td class="tg-3me6"><span style="background-color:transparent">0x8020000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 0</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">0x8120000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 12</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8040000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">128kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 1</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8140000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">128kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 13</span></td>
+  </tr>
+  <tr>
+    <td class="tg-3me6"><span style="background-color:transparent">0x8060000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 2</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">0x8160000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 14</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8080000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">128kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 3</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x8180000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">128kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 15</span></td>
+  </tr>
+  <tr>
+    <td class="tg-3me6"><span style="background-color:transparent">0x80A0000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 4</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">0x81A0000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 16</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x80C0000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">128kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 5</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">0x81C0000</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">128kb</span></td>
+    <td class="tg-wh69"><span style="background-color:#F3F6F6">Bytecode Bank 17</span></td>
+  </tr>
+  <tr>
+    <td class="tg-3me6"><span style="background-color:transparent">0x80E0000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 6</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">0x81E0000</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">128kb</span></td>
+    <td class="tg-3me6"><span style="background-color:transparent">Bytecode Bank 18</span></td>
+  </tr>
+</tbody>
+</table>
 
 ## Device Summary
 
