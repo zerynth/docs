@@ -16,6 +16,7 @@ Parameters:
 
 Temperature, accelerometer and gyroscope value can be easily obtained from the sensor:
 
+```python
 from invensense.mpu6050 import mpu6050
 
 ...
@@ -23,6 +24,7 @@ from invensense.mpu6050 import mpu6050
 mpu = mpu6050.mpu6050(I2C0)
 
 temp, acc, gyro = mpu.get_values()
+```
 
 `set_dlpf_mode`(_dlpf_)
 
@@ -38,33 +40,16 @@ Set the DLPF mode.
 
 **dhpf**: is the DHPF mode to set. Values accepted are 0, 1, 2, 3, 4 or 7.
 
-dhpf
 
-DHPF mode
+| dhpf | DHPF mode    |
+|------|--------------|
+| 0    | Reset        |
+| 1    | On @ 5 Hz    |
+| 2    | On @ 2.5 Hz  |
+| 3    | On @ 1.25 Hz |
+| 4    | On @ 0.63 Hz |
+| 7    | Hold         |
 
-0
-
-Reset
-
-1
-
-On @ 5 Hz
-
-2
-
-On @ 2.5 Hz
-
-3
-
-On @ 1.25 Hz
-
-4
-
-On @ 0.63 Hz
-
-7
-
-Hold
 
 Set the DHPF mode.
 
@@ -176,5 +161,5 @@ Return 1 if data is ready, otherwise 0.
 
 Set the configuration for motion detection.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NjE5OTE4XX0=
+eyJoaXN0b3J5IjpbNjYzNjIyNjQwXX0=
 -->
