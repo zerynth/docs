@@ -44,7 +44,7 @@ If any tag can’t be seen, it means that the user doesn't have any data in the 
 
 Here it is,a ZDM data plotted in Grafana!
 
-![](img/ZDMdemo.png)
+![](img/dashboard.png)
 
 *Acknowledgement: Thanks to [Francesco Pirro](https://www.linkedin.com/checkpoint/challengesV2/AQE0B9fhEcgJOgAAAXOPQHU_zPS1d39svKS8YuHM25Y7ih9uRvZ8cOn_6F-bej4xezII6d4VwB2Eatpim_bErtfblHG0okwBew) for the contribution in the development of the  ZDM simple JSON connector.*
 
