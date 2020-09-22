@@ -67,6 +67,4 @@ The wizard can be opened by clicking on “split” in the payload column of the
 
 Now the user can publish their Dashboard online if they want!
 
-![](img/dashboard.png)
-
 ![](img/ZDMdemo.png)
