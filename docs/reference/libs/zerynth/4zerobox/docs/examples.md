@@ -2,6 +2,7 @@
 
 ## Hello 4ZeroBox
 
+```python
 Hello 4ZeroBox
 ==============
 
@@ -9,7 +10,9 @@ The simplest example to be tried for starting with embedded development
 
 tags: [First Steps, Serial]
 groups:[First Steps]
+```
 
+```python
 ###############################################################################
 # Hello 4ZeroBox
 #
@@ -33,6 +36,8 @@ while True:
     sleep(1000)
     # Reset Watchdog timer
     sfw.kick()
+```
+
 
 ## Sensor Reading
 
@@ -643,6 +648,6 @@ except Exception as e:
     fzbox.pulse('R', 10000)
     mcu.reset()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTk0MjE0NzIsMTU2MTYzNDYwNiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTk3MDYyMzYwNCwtMTI5OTQyMTQ3MiwxNT
+YxNjM0NjA2LDczMDk5ODExNl19
 -->
