@@ -25,17 +25,17 @@ config:
  # enable ADC resistive peripheral
  ADC_RESISTIVE: null
  # enable ADC current peripheral
-  ADC_CURRENT: null
->     # enable can peripheral
->     CAN_ENABLE: null
->     # enable RS485 peripheral
->     RS485_ENABLE: null
->     # enable RS232 peripheral
->     RS232_ENABLE: null
->     # enable SD Card
->     SDCARD_ENABLED: null
->     # enable DEBUG for fourzerobox
->     DEBUG_FZB: null
+ ADC_CURRENT: null
+ # enable can peripheral
+ CAN_ENABLE: null
+ # enable RS485 peripheral
+ RS485_ENABLE: null
+ # enable RS232 peripheral
+ RS232_ENABLE: null
+ # enable SD Card
+ SDCARD_ENABLED: null
+ # enable DEBUG for fourzerobox
+ DEBUG_FZB: null
 ```
 _class_`FourZeroBox`(_i2c_clk=400000_,  _spi_clk=1000000_)
 
@@ -460,5 +460,5 @@ Parameters:
 -   **start_address**  – Initial address to read from.
 -   **tot_size**  – Total size of data to be read.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDM4NzkzMTVdfQ==
+eyJoaXN0b3J5IjpbLTI3ODY0MTMwM119
 -->
