@@ -2,46 +2,46 @@
 
 This module supplies classes for manipulating dates, times, and deltas. It represents a minimalistic implementation of Python module  [datetime](https://docs.python.org/3/library/datetime.html).
 
-[`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  objects may be categorized as “aware” or “naive” depending on whether or not they include timezone information. An aware object can locate itself relative to other aware objects. An  _aware_  object represents a specific moment in time that is not open to interpretation.
+[`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  objects may be categorized as “aware” or “naive” depending on whether or not they include timezone information. An aware object can locate itself relative to other aware objects. An  _aware_  object represents a specific moment in time that is not open to interpretation.
 
-A  _naive_  object does not contain enough information to unambiguously locate itself relative to other  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  objects. Whether a naive object represents Coordinated Universal Time (UTC), local time, or time in some other timezone is purely up to the program, just like it is up to the program whether a particular number represents metres, miles, or mass. Naive objects are easy to understand and to work with, at the cost of ignoring some aspects of reality.
+A  _naive_  object does not contain enough information to unambiguously locate itself relative to other  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  objects. Whether a naive object represents Coordinated Universal Time (UTC), local time, or time in some other timezone is purely up to the program, just like it is up to the program whether a particular number represents metres, miles, or mass. Naive objects are easy to understand and to work with, at the cost of ignoring some aspects of reality.
 
-For applications requiring aware objects,  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  objects have an optional time zone information attribute,  _tzinfo_, that can be set to an instance of a  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  class. These objects capture information about the offset from UTC time and the time zone name.
+For applications requiring aware objects,  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  objects have an optional time zone information attribute,  _tzinfo_, that can be set to an instance of a  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  class. These objects capture information about the offset from UTC time and the time zone name.
 
 The following classes are provided:
 
--   [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")
--   [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")
--   [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")
+-   [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")
+-   [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")
+-   [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")
 
 ## timedelta Objects
 
-A  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object represents a duration, the difference between two dates or times. With respect to the Python module  [datetime](https://docs.python.org/3/library/datetime.html), this implementation is constrained as follows:
+A  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object represents a duration, the difference between two dates or times. With respect to the Python module  [datetime](https://docs.python.org/3/library/datetime.html), this implementation is constrained as follows:
 
 > -   Minimum resolution is  _1 second_, instead of  _1 microsecond_.
-> -   Arithmetic is done via direct function calls ([`add()`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.add "datetime.add")  vs  `__add__()`) due to Zerynth’s limits.
+> -   Arithmetic is done via direct function calls ([`add()`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.add")  vs  `__add__()`) due to Zerynth’s limits.
 
 ### Class attributes
 
 `timedelta.``MINYEAR`
 
-The year of  [`timedelta.min`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta.min "datetime.timedelta.min"), i.e.  `timedelta.min.tuple()[1]  //  (365×24×60×60)  ==  -34`.
+The year of  [`timedelta.min`](/latest/reference/core/stdlib/docs/date-time/#class-attributes "datetime.timedelta.min"), i.e.  `timedelta.min.tuple()[1]  //  (365×24×60×60)  ==  -34`.
 
 `timedelta.``MAXYEAR`
 
-The year of  [`timedelta.max`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta.max "datetime.timedelta.max"), i.e.  `timedelta.max.tuple()[1]  //  (365×24×60×60)  ==  34`.
+The year of  [`timedelta.max`](/latest/reference/core/stdlib/docs/date-time/#class-attributes "datetime.timedelta.max"), i.e.  `timedelta.max.tuple()[1]  //  (365×24×60×60)  ==  34`.
 
 `timedelta.``min`
 
-The most negative  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object,  `timedelta(-2**30)`.
+The most negative  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-attributes "datetime.timedelta")  object,  `timedelta(-2**30)`.
 
 `timedelta.``max`
 
-The most positive  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object,  `timedelta(2**30  -  1)`.
+The most positive  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-attributes "datetime.timedelta")  object,  `timedelta(2**30  -  1)`.
 
 `timedelta.``resolution`
 
-The smallest possible difference between non-equal  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  objects,  `timedelta(seconds=1)`.
+The smallest possible difference between non-equal  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  objects,  `timedelta(seconds=1)`.
 
 ### Class methods
 
@@ -79,11 +79,11 @@ The floor is computed and the remainder (if any) is thrown away. When  _other_  
 
 `mod`(_other_)
 
-The remainder is computed as a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object.
+The remainder is computed as a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object.
 
 `divmod`(_other_)
 
-Computes the quotient and the remainder:  `q  =  td1.floordiv(td2)`  and  `r  =  td1.mod(td2)`.  `q`  is an integer and  `r`  is a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object.
+Computes the quotient and the remainder:  `q  =  td1.floordiv(td2)`  and  `r  =  td1.mod(td2)`.  `q`  is an integer and  `r`  is a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object.
 
 `neg`()
 
@@ -151,19 +151,19 @@ print(three_years)                  # 1095d 00:00:00
 
 ## timezone Objects
 
-The  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  class represents a timezone defined by a fixed offset from UTC. Define a subclass of  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  to capture information about a particular time zone.
+The  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  class represents a timezone defined by a fixed offset from UTC. Define a subclass of  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  to capture information about a particular time zone.
 
-An instance of  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  can be passed to the constructors for  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime"). The latter objects view their attributes as being in local time, and the  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  object supports methods revealing offset of local time from UTC, the name of the time zone, and DST offset, all relative to a date-time object passed to them.
+An instance of  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  can be passed to the constructors for  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime"). The latter objects view their attributes as being in local time, and the  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  object supports methods revealing offset of local time from UTC, the name of the time zone, and DST offset, all relative to a date-time object passed to them.
 
 ### Methods to customize
 
-A subclass of  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  may need to override the following methods. Exactly which methods are needed depends on the uses made of aware  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  objects. If in doubt, simply implement all of them.
+A subclass of  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  may need to override the following methods. Exactly which methods are needed depends on the uses made of aware  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  objects. If in doubt, simply implement all of them.
 
 `utcoffset`(_dt_)
 
-Return offset of local time from UTC, as a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object that is positive east of UTC. If local time is west of UTC, this should be negative.
+Return offset of local time from UTC, as a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object that is positive east of UTC. If local time is west of UTC, this should be negative.
 
-This represents the  _total_  offset from UTC; for example, if a  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  object represents both time zone and DST adjustments,  `timezone.utcoffset()`  should return their sum. If the UTC offset isn’t known, return  `None`. Else the value returned must be a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object strictly between  `timedelta(hours=-24)`  and  `timedelta(hours=24)`  (the magnitude of the offset must be less than one day). Most implementations of  `timezone.utcoffset()`  will probably look like one of these two:
+This represents the  _total_  offset from UTC; for example, if a  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  object represents both time zone and DST adjustments,  `timezone.utcoffset()`  should return their sum. If the UTC offset isn’t known, return  `None`. Else the value returned must be a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object strictly between  `timedelta(hours=-24)`  and  `timedelta(hours=24)`  (the magnitude of the offset must be less than one day). Most implementations of  `timezone.utcoffset()`  will probably look like one of these two:
 
 > return CONSTANT # fixed-offset class return CONSTANT + self.dst(dt) # daylight-aware class
 
@@ -173,9 +173,9 @@ The default implementation of  `timezone.utcoffset()`  returns the sum of time z
 
 `dst`(_dt_)
 
-Return the daylight saving time (DST) adjustment, as a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object or  `None`  if DST information isn’t known.
+Return the daylight saving time (DST) adjustment, as a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object or  `None`  if DST information isn’t known.
 
-Return  `timedelta(0)`  if DST is not in effect. If DST is in effect, return the offset as a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object (see  `timezone.utcoffset()`  for details). Note that DST offset, if applicable, has already been added to the UTC offset returned by  `timezone.utcoffset()`, so there’s no need to consult  `timezone.dst()`  unless you’re interested in obtaining DST info separately.
+Return  `timedelta(0)`  if DST is not in effect. If DST is in effect, return the offset as a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object (see  `timezone.utcoffset()`  for details). Note that DST offset, if applicable, has already been added to the UTC offset returned by  `timezone.utcoffset()`, so there’s no need to consult  `timezone.dst()`  unless you’re interested in obtaining DST info separately.
 
 Most implementations of  `timezone.dst()`  will probably look like one of these two:
 
@@ -204,11 +204,11 @@ The default implementation of  `timezone.dst()`  returns  `None`.
 
 `tzname`(_dt_)
 
-Return the time zone name corresponding to the  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object  _dt_, as a string. Nothing about string names is defined by the  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  module, and there’s no requirement that it mean anything in particular. For example, “GMT”, “UTC”, “-500”, “-5:00”, “EDT”, “US/Eastern”, “America/New York” are all valid replies. Return  `None`  if a string name isn’t known. Note that this is a method rather than a fixed string primarily because some  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  subclasses will wish to return different names depending on the specific value of  _dt_  passed, especially if the  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  class is accounting for daylight time.
+Return the time zone name corresponding to the  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object  _dt_, as a string. Nothing about string names is defined by the  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  module, and there’s no requirement that it mean anything in particular. For example, “GMT”, “UTC”, “-500”, “-5:00”, “EDT”, “US/Eastern”, “America/New York” are all valid replies. Return  `None`  if a string name isn’t known. Note that this is a method rather than a fixed string primarily because some  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  subclasses will wish to return different names depending on the specific value of  _dt_  passed, especially if the  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  class is accounting for daylight time.
 
-The default implementation of  `timezone.tzname()`  returns the fixed value specified when the  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  instance is constructed. If  _name_  is not provided in the constructor, the name returned by  `tzname()`  is generated from the value of the  `offset`  as follows. If  _offset_  is  `timedelta(0)`, the name is “UTC”, otherwise it returns the string provided by  `timezone.isoformat()`  method.
+The default implementation of  `timezone.tzname()`  returns the fixed value specified when the  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  instance is constructed. If  _name_  is not provided in the constructor, the name returned by  `tzname()`  is generated from the value of the  `offset`  as follows. If  _offset_  is  `timedelta(0)`, the name is “UTC”, otherwise it returns the string provided by  `timezone.isoformat()`  method.
 
-These methods are called by a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object, in response to their methods of the same names. A  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object passes  _self_  as  _dt_  argument.
+These methods are called by a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object, in response to their methods of the same names. A  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object passes  _self_  as  _dt_  argument.
 
 ### Class attributes
 
@@ -220,9 +220,9 @@ The UTC timezone,  `timezone(timedelta(0))`.
 
 _class_`timezone`(_offset_,  _name=None_)
 
-The  _offset_  argument must be specified as a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object representing the difference between the local time and UTC. It must be strictly between  `timedelta(hours=-24)`  and  `timedelta(hours=24)`, otherwise  `ValueError`  is raised.
+The  _offset_  argument must be specified as a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object representing the difference between the local time and UTC. It must be strictly between  `timedelta(hours=-24)`  and  `timedelta(hours=24)`, otherwise  `ValueError`  is raised.
 
-The  _name_  argument is optional. If specified it must be a string that will be used as the value returned by the  [`datetime.tzname()`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.tzname "datetime.tzname")  method.
+The  _name_  argument is optional. If specified it must be a string that will be used as the value returned by the  [`datetime.tzname()`]( "datetime.tzname")  method.
 
 `isoformat`(_dt_)
 
@@ -273,17 +273,17 @@ print(tz.tzname   (datetime(2011, 8, 1))) # CEST
 
 ## datetime Objects
 
-A  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object is a single object containing all the information for specifying an absolute date and time point.
+A  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object is a single object containing all the information for specifying an absolute date and time point.
 
-[`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  assumes the current Gregorian calendar extended in both directions, past and future. January 1 of year 1 is called day number 1, January 2 of year 1 is called day number 2, and so on.
+[`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  assumes the current Gregorian calendar extended in both directions, past and future. January 1 of year 1 is called day number 1, January 2 of year 1 is called day number 2, and so on.
 
-[`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  assumes there are exactly 3600*24 seconds in every day and subject to adjustment via a  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  object.
+[`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  assumes there are exactly 3600*24 seconds in every day and subject to adjustment via a  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  object.
 
 ### Constructors
 
 _class_`datetime`(_self_,  _year_,  _month_,  _day_,  _hour=0_,  _minute=0_,  _second=0_,  _tzinfo=None_)
 
-The  _year_,  _month_  and  _day_  arguments are required.  _tzinfo_  may be  `None`, or an instance of a  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  class. The remaining arguments must be integers in the following ranges:
+The  _year_,  _month_  and  _day_  arguments are required.  _tzinfo_  may be  `None`, or an instance of a  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  class. The remaining arguments must be integers in the following ranges:
 
 -   `MINYEAR  <=  year  <=  MAXYEAR`,
 -   `1  <=  month  <=  12`,
@@ -296,7 +296,7 @@ If an argument outside those ranges is given,  `ValueError`  is raised.
 
 `fromisoformat`(_date_string_)
 
-Return a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  corresponding to a  _date_string_  in the format emitted by  [`datetime.isoformat()`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.isoformat "datetime.isoformat").
+Return a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  corresponding to a  _date_string_  in the format emitted by  [`datetime.isoformat()`]("datetime.isoformat").
 
 Specifically, this function supports strings in the format:
 
@@ -308,35 +308,35 @@ where  `*`  can match any single character.
 
 `fromordinal`(_n_)
 
-Return the  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  corresponding to the proleptic Gregorian ordinal, where January 1 of year 1 has ordinal 1.  `ValueError`  is raised unless  `1  <=  ordinal  <=  datetime.max.toordinal()`. The hour, minute and second of the result are all 0, and  _tzinfo_  is  `None`.
+Return the  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  corresponding to the proleptic Gregorian ordinal, where January 1 of year 1 has ordinal 1.  `ValueError`  is raised unless  `1  <=  ordinal  <=  datetime.max.toordinal()`. The hour, minute and second of the result are all 0, and  _tzinfo_  is  `None`.
 
 ### Class attributes
 
 `datetime.``MINYEAR`
 
-The smallest year number allowed in a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object.  [`datetime.MINYEAR`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.datetime.MINYEAR "datetime.datetime.MINYEAR")  is  `1`.
+The smallest year number allowed in a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object.  [`datetime.MINYEAR`](/latest/reference/core/stdlib/docs/date-time/#class-attributes_2 "datetime.datetime.MINYEAR")  is  `1`.
 
 `datetime.``MAXYEAR`
 
-The largest year number allowed in a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object.  [`datetime.MAXYEAR`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.datetime.MAXYEAR "datetime.datetime.MAXYEAR")  is  `9999`.
+The largest year number allowed in a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object.  [`datetime.MAXYEAR`](/latest/reference/core/stdlib/docs/date-time/#class-attributes_2 "datetime.datetime.MAXYEAR")  is  `9999`.
 
 ### Class methods
 
 `add`(_other_)
 
-In the expression  `datetime2  =  datetime1.add(timedelta)`,  `datetime2`  is a duration of  `timedelta`  removed from  `datetime1`, moving forward in time if  `timedelta  >  0`, or backward if  `timedelta  <  0`. The result has the same  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  attribute as the input  `datetime1`, and  `datetime2  -  datetime1  ==  timedelta`  after.
+In the expression  `datetime2  =  datetime1.add(timedelta)`,  `datetime2`  is a duration of  `timedelta`  removed from  `datetime1`, moving forward in time if  `timedelta  >  0`, or backward if  `timedelta  <  0`. The result has the same  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  attribute as the input  `datetime1`, and  `datetime2  -  datetime1  ==  timedelta`  after.
 
 Note that no time zone adjustments are done even if the input is an aware object.
 
 `sub`(_other_)
 
-If  _other_  is an instance of  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta"), the expression  `datetime2  =  datetime1.sub(timedelta)`  computes the  `datetime2`  such that  `datetime2  +  timedelta  ==  datetime1`. As for addition, the result has the same  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  attribute as the input  `datetime1`, and no time zone adjustments are done even if the input is aware.
+If  _other_  is an instance of  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta"), the expression  `datetime2  =  datetime1.sub(timedelta)`  computes the  `datetime2`  such that  `datetime2  +  timedelta  ==  datetime1`. As for addition, the result has the same  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  attribute as the input  `datetime1`, and no time zone adjustments are done even if the input is aware.
 
-If  _other_  is an instance of  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime"), subtraction  `timedelta  =  datetime2.sub(datetime1)`  is defined only if both operands are naive, or if both are aware. If one is aware and the other is naive,  `TypeError`  is raised.
+If  _other_  is an instance of  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime"), subtraction  `timedelta  =  datetime2.sub(datetime1)`  is defined only if both operands are naive, or if both are aware. If one is aware and the other is naive,  `TypeError`  is raised.
 
-If both are naive, or both are aware and have the same  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  attribute, the  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  attributes are ignored, and the result is a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object  _t_  such that  `datetime2  +  t  ==  datetime1`. No time zone adjustments are done in this case.
+If both are naive, or both are aware and have the same  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  attribute, the  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  attributes are ignored, and the result is a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object  _t_  such that  `datetime2  +  t  ==  datetime1`. No time zone adjustments are done in this case.
 
-If both are aware and have different  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  attributes,  `a-b`  acts as if  _a_  and  _b_  were first converted to naive UTC datetimes first.
+If both are aware and have different  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  attributes,  `a-b`  acts as if  _a_  and  _b_  were first converted to naive UTC datetimes first.
 
 `lt`(_other_)
 
@@ -360,21 +360,21 @@ Equivalent to  `dt1.toordinal()  >  dt2.toordinal()`.
 
 `utcoffset`()
 
-If  _tzinfo_  is  `None`, returns  `None`, else returns a  [`timedelta`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timedelta "datetime.timedelta")  object with magnitude less than one day.
+If  _tzinfo_  is  `None`, returns  `None`, else returns a  [`timedelta`](/latest/reference/core/stdlib/docs/date-time/#class-methods "datetime.timedelta")  object with magnitude less than one day.
 
 `replace`(_year=None_,  _month=None_,  _day=None_,  _hour=None_,  _minute=None_,  _second=None_,  _tzinfo=True_)
 
-Return a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  with the same attributes, except for those attributes given new values by whichever keyword arguments are specified. Note that  `tzinfo=None`  can be specified to create a naive  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  from an aware  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  with no conversion of date and time data.
+Return a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  with the same attributes, except for those attributes given new values by whichever keyword arguments are specified. Note that  `tzinfo=None`  can be specified to create a naive  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  from an aware  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  with no conversion of date and time data.
 
 `astimezone`(_tz_)
 
-Return a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  object with new  _tzinfo_  attribute  _tz_, adjusting the date and time data so the result is the same UTC time as  _self_, but in  _tz_’s local time.  _self_  must be aware.
+Return a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  object with new  _tzinfo_  attribute  _tz_, adjusting the date and time data so the result is the same UTC time as  _self_, but in  _tz_’s local time.  _self_  must be aware.
 
-If you merely want to attach a  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  object  _tz_  to a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  _dt_  without adjustment of date and time data, use  `dt.replace(tzinfo=tz)`. If you merely want to remove the  [`timezone`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.timezone "datetime.timezone")  object from an aware  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  _dt_  without conversion of date and time data, use  `dt.replace(tzinfo=None)`.
+If you merely want to attach a  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  object  _tz_  to a  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  _dt_  without adjustment of date and time data, use  `dt.replace(tzinfo=tz)`. If you merely want to remove the  [`timezone`](/latest/reference/core/stdlib/docs/date-time/#class-methods_1 "datetime.timezone")  object from an aware  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  _dt_  without conversion of date and time data, use  `dt.replace(tzinfo=None)`.
 
 `isoformat`(_sep='T'_)
 
-Return a string representing the date and time in ISO 8601 format  `YYYY-MM-DDTHH:MM:SS`. If  [`datetime.utcoffset()`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#datetime.utcoffset "datetime.utcoffset")  does not return  `None`, a string is appended, giving the UTC offset:  `YYYY-MM-DDTHH:MM:SS+HH:MM`.
+Return a string representing the date and time in ISO 8601 format  `YYYY-MM-DDTHH:MM:SS`. If  [`datetime.utcoffset()`](/latest/reference/core/stdlib/docs/date-time/#methods-to-customize "datetime.utcoffset")  does not return  `None`, a string is appended, giving the UTC offset:  `YYYY-MM-DDTHH:MM:SS+HH:MM`.
 
 `toordinal`()
 
@@ -390,7 +390,7 @@ Return the tuple  `(year,  month,  day,  hour,  minute,  second,  tzinfo)`.
 
 ### Examples of usage
 
-Examples of working with  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  objects:
+Examples of working with  [`datetime`](/latest/reference/core/stdlib/docs/date-time/#date-and-time "datetime")  objects:
 
 ```python
 from datetime import timedelta, timezone, datetime, fromisoformat
