@@ -18,10 +18,10 @@ Here below, the Zerynth driver for the NXP MAG311O.
 
 > Contents:
 > 
-> -   [FBM320 Module](https://oldtestdocs.zerynth.com/latest/official/lib.formosa.fbm320/docs/official_lib.formosa.fbm320_fbm320.html)
->     -   [FBM320 class](https://oldtestdocs.zerynth.com/latest/official/lib.formosa.fbm320/docs/official_lib.formosa.fbm320_fbm320.html#fbm320-class)
-> -   [Examples](https://oldtestdocs.zerynth.com/latest/official/lib.formosa.fbm320/examples/examples.html)
->     -   [get values](https://oldtestdocs.zerynth.com/latest/official/lib.formosa.fbm320/examples/examples.html#get-values)
+> -   [FBM320 Module](/latest/reference/libs/formosa/FORMOSA%20FBM320/docs/module/)
+>     -   [FBM320 class](/latest/reference/libs/formosa/FORMOSA%20FBM320/docs/module/#fbm320-class)
+> -   [Examples](/latest/reference/libs/formosa/FORMOSA%20FBM320/docs/examples/)
+>     -   [get values](/latest/reference/libs/formosa/FORMOSA%20FBM320/docs/examples/#get-values)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTMyNzQ5NzQwM119
 -->
