@@ -5,6 +5,7 @@
 
 ## get values
 
+```python
 Read magnetometer values from MAG3110
 ==========================================================
 
@@ -104,5 +105,5 @@ try:
 except Exception as e:
     print("Error2: ",e)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzMzQ3NjUzXX0=
+eyJoaXN0b3J5IjpbNTA1MzA0MTldfQ==
 -->
