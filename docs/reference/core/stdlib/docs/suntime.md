@@ -20,6 +20,7 @@ Calculate the sunset time for the given date. It returns a tuple of integers  `(
 
 This example calculates sunrise and sunset of three major cities:
 
+```python
 import suntime
 
 test('suntime: example')
@@ -42,9 +43,11 @@ dt3 = (2016, 12, 21)
 sr3 = CapeTown.get_sunrise_time(*dt3) # (3, 32)
 ss3 = CapeTown.get_sunset_time (*dt3) # (17, 57)
 print('Cape Town:', sr3, ss3)
+```
 
 If  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zerynth.stdlib/docs/official_core.zerynth.stdlib_datetime.html#module-datetime "datetime")  module is available, results above can be expressed in local time:
 
+```python
 import datetime as datetimelib
 
 timedelta = datetimelib.timedelta
@@ -76,6 +79,7 @@ rt3 = datetime(*dt3, *sr3, tzinfo=utc).astimezone(tz3) # 2016-12-21 05:32:00+02:
 st3 = datetime(*dt3, *ss3, tzinfo=utc).astimezone(tz3) # 2016-12-21 19:57:00+02:00
 print('>', rt3)
 print('>', st3)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM4MTUzMjNdfQ==
+eyJoaXN0b3J5IjpbLTE5NjE5ODE2NzddfQ==
 -->
