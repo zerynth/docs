@@ -1,12 +1,5 @@
 # Examples
 
--   [Hello 4ZeroBox](https://oldtestdocs.zerynth.com/latest/official/lib.zerynth.fourzerobox/examples/examples.html#lib-zerynth-fourzerobox-hello-4zerobox)
--   [Sensor Reading](https://oldtestdocs.zerynth.com/latest/official/lib.zerynth.fourzerobox/examples/examples.html#lib-zerynth-fourzerobox-sensor-reading)
--   [Modbus Serial Interface](https://oldtestdocs.zerynth.com/latest/official/lib.zerynth.fourzerobox/examples/examples.html#lib-zerynth-fourzerobox-modbus-serial-interface)
--   [4ZeroBox meets ZDM](https://oldtestdocs.zerynth.com/latest/official/lib.zerynth.fourzerobox/examples/examples.html#lib-zerynth-fourzerobox-4zerobox-meets-zdm)
--   [4ZeroBox meets ZDM with GSM](https://oldtestdocs.zerynth.com/latest/official/lib.zerynth.fourzerobox/examples/examples.html#lib-zerynth-fourzerobox-4zerobox-meets-zdm-with-gsm)
--   [Firmware Over The Air Update](https://oldtestdocs.zerynth.com/latest/official/lib.zerynth.fourzerobox/examples/examples.html#lib-zerynth-fourzerobox-firmware-over-the-air-update)
-
 ## Hello 4ZeroBox
 
 Hello 4ZeroBox
@@ -650,5 +643,6 @@ except Exception as e:
     fzbox.pulse('R', 10000)
     mcu.reset()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MTYzNDYwNiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEyOTk0MjE0NzIsMTU2MTYzNDYwNiw3Mz
+A5OTgxMTZdfQ==
 -->
