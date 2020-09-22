@@ -194,6 +194,7 @@ nav:
       - reference/boards/st_nucleof401re/docs/index.md
       - reference/boards/st_nucleof429zi/docs/index.md
       - reference/boards/st_nucleof746zg/docs/index.md
+      - reference/boards/st_nucleol4r5/docs/index.md
       - reference/boards/wemos_d1_mini/docs/index.md
       - reference/boards/wemos_esp32_oled/docs/index.md
       - reference/boards/wio_link/docs/index.md
