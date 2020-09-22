@@ -149,57 +149,27 @@ Parameters:
 
 Read value from the power ADC. It is possible to get the raw data from the ADC, or the electric value of the read signal, or by default it is converted with the rules defined using  set_conversion_current  method.
 
-Param:
+**Param**: ch: Select the ADC channel to read from. Can be one of 1, 2, 3.
 
-ch: Select the ADC channel to read from. Can be one of 1, 2, 3.
+**Param:** raw: If set, the raw data of the ADC is returned. (D=False)
 
-Param:
-
-raw: If set, the raw data of the ADC is returned. (D=False)
-
-Param:
-
-electric_value: If set, the electric value is returned. (D=False)
+**Param:** electric_value: If set, the electric value is returned. (D=False)
 
 `set_led`(_color_)
 
 Set the LED status to a custom color.
 
-Parameters:
+**Parameters:** **color**  – Character representing a color, see the table below.
 
-**color**  – Character representing a color, see the table below.
-
-Char
-
-Color
-
-R
-
-Red
-
-G
-
-Green
-
-B
-
-Blue
-
-M
-
-Magenta
-
-Y
-
-Yellow
-
-C
-
-Cyan
-
-W
-
-White
+| Char | Color   |
+|------|---------|
+| R    | Red     |
+| G    | Green   |
+| B    | Blue    |
+| M    | Magenta |
+| Y    | Yellow  |
+| C    | Cyan    |
+| W    | White   |
 
 `clear_led`()
 
@@ -460,5 +430,5 @@ Parameters:
 -   **start_address**  – Initial address to read from.
 -   **tot_size**  – Total size of data to be read.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODY0MTMwM119
+eyJoaXN0b3J5IjpbMTk5ODk1MjY1MCwtMjc4NjQxMzAzXX0=
 -->
