@@ -334,7 +334,7 @@ nav:
             - xmc4eth:
               - reference/libs/infineon/xmc4eth/docs/index.md
               - reference/libs/infineon/xmc4eth/docs/xmc4eth.md
-       - invensense:
+        - invensense:
             - mpu6050:
               - reference/libs/invensense/mpu6050/docs/index.md
               - reference/libs/invensense/mpu6050/docs/module.md
