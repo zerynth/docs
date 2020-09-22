@@ -42,6 +42,8 @@ And here are the use cases for logistics made by [TOI – Things on Internet](ht
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=kIjS6R5yIW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[![](img/zerynth-video-thumbnail.png)](https://www.youtube.com/watch?v=kIjS6R5yIW4 "Video Title")]
+
 ## The Zerynth Ethereum module – open source Python library for Ethereum and Smart Contracts
 
 The **Zerynth Ethereum library** takes advantage of the JSON-RPC interface available to interact with an Ethereum node and sending transaction. It also implements the RLP (Recursive Length Prefix)encoding scheme, and exposes some high-level API to call the more common methods (e.g. getting the balance of an address). For the hashing and signatures, the [Zerynth crypto module](https://docs.zerynth.com/latest/reference/core/stdlib/docs/crypto/) is used.
