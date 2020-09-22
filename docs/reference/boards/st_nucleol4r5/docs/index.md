@@ -77,9 +77,8 @@ Once connected on a USB port, if drivers have been correctly installed the ST Nu
 -   **Create**  a Virtual Machine for the device by clicking the “Z” button for the second time;
 -   **Virtualize**  the device by clicking the “Z” button for the third time.
 
-Note
-
-No user intervention on the device is required for registration and virtualization process
+!!!Note
+	No user intervention on the device is required for registration and virtualization process
 
 After virtualization, the ST Nucleo L4R5 device is ready to be programmed and the Zerynth scripts  **uploaded**. Just  **Select**  the virtualized device from the “Device Management Toolbar” and  **click**  the dedicated “uplink” button of Zerynth Studio .. warning:: Scripts uploading and serial console connection issues on St Nucleo devices have been reported. If the upload fails also with a correctly performed reset or if the device is not able to print on the console, disconnect the device from the USB port and plug it again on another USB socket.
 
@@ -91,40 +90,16 @@ The Firmware Over the Air feature allows to update the device firmware at runtim
 
 Flash Layout is shown in table below:
 
-Start address
+| Start address | Size  | Content         |
+|---------------|-------|-----------------|
+| 0x08000000    | 128Kb | VM Slot 0       |
+| 0x08020000    | 384kb | Bytecode Slot 0 |
+| 0x08080000    | 128kb | VM Slot 1       |
+| 0x080A0000    | 384kb | Bytecode Slot 1 |
 
-Size
-
-Content
-
-0x08000000
-
-128Kb
-
-VM Slot 0
-
-0x08020000
-
-384kb
-
-Bytecode Slot 0
-
-0x08080000
-
-128kb
-
-VM Slot 1
-
-0x080A0000
-
-384kb
-
-Bytecode Slot 1
-
-Important
-
-FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the ST Nucleo L4R5 device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
+!!!Important
+	FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the ST Nucleo L4R5 device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzOTQ0MzIwLDY2NDAzNDk4OSw3MzA5OT
-gxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI5ODg4OTEyOSw2NjQwMzQ5ODksNzMwOT
+k4MTE2XX0=
 -->
