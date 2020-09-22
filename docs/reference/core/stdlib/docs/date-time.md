@@ -125,6 +125,7 @@ Return the tuple  `(sign,  days,  hours,  minutes,  seconds)`, where  `sign`  is
 
 An example of normalization:
 
+```python
 import datetime.timedelta
 
 # Components of another_year add up to exactly 365 days
@@ -132,9 +133,11 @@ year = timedelta(days=365)
 another_year = timedelta(weeks=40, days=84, hours=23, minutes=50, seconds=600)
 print(year.eq(another_year)) # True
 print(year.total_seconds())  # 31536000
+```
 
 Examples of timedelta arithmetic:
 
+```python
 import datetime.timedelta
 
 year = timedelta(days=365)
@@ -144,6 +147,7 @@ nine_years = ten_years.sub(year)
 print(nine_years)                   # 3285d 00:00:00
 three_years = nine_years.floordiv(3)
 print(three_years)                  # 1095d 00:00:00
+```
 
 ## timezone Objects
 
@@ -175,9 +179,11 @@ Return  `timedelta(0)`  if DST is not in effect. If DST is in effect, return the
 
 Most implementations of  `timezone.dst()`  will probably look like one of these two:
 
+```python
 def dst(self, dt):
     # a fixed-offset class:  doesn't account for DST
     return timedelta(0)
+```
 
 or:
 
@@ -391,5 +397,5 @@ dt = datetime(1900, 11, 21, 3, 30, tzinfo=tz1)
 print(dt)                                       # 1900-11-21 03:30:00+04:30
 print(dt.astimezone(timezone.utc))              # 1900-11-20 23:00:00+00:00
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjI0NDQ0MTNdfQ==
+eyJoaXN0b3J5IjpbMTE2NzA5OTAxNSwtMTMyMjQ0NDQxM119
 -->
