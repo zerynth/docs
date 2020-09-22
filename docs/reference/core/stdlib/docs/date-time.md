@@ -187,6 +187,7 @@ def dst(self, dt):
 
 or:
 
+```python
 def dst(self, dt):
     # Code to set dston and dstoff to the time zone's DST
     # transition times based on the input *dt*'s year, and
@@ -197,6 +198,7 @@ def dst(self, dt):
         return timedelta(hours=1)
     else:
         return timedelta(0)
+```
 
 The default implementation of  `timezone.dst()`  returns  `None`.
 
@@ -234,6 +236,7 @@ _dt_  is needed in determining the right offset; it can be  `None`.
 
 [Central European Time](https://en.wikipedia.org/wiki/Summer_time_in_Europe)  (CET), used in most parts of Europe and a few North African countries, is a standard time which is 1 hour ahead of Coordinated Universal Time (UTC). As of 2011, all member states of the European Union observe summer time; those that during the winter use CET use Central European Summer Time (CEST) (or: UTC+02:00, daylight saving time) in summer (from last Sunday of March to last Sunday of October).
 
+```python
 import datetime
 
 class cet(datetime.timezone):
@@ -266,6 +269,7 @@ print(tz.isoformat(datetime(2011, 1, 1))) # UTC+01:00
 print(tz.tzname   (datetime(2011, 1, 1))) # CET
 print(tz.isoformat(datetime(2011, 8, 1))) # UTC+02:00
 print(tz.tzname   (datetime(2011, 8, 1))) # CEST
+```
 
 ## datetime Objects
 
@@ -296,7 +300,9 @@ Return a  [`datetime`](https://oldtestdocs.zerynth.com/latest/official/core.zery
 
 Specifically, this function supports strings in the format:
 
+```python
 YYYY-MM-DD[*HH[:MM[:SS[.fff[fff]]]][+HH:MM[:SS[.ffffff]]]]
+```
 
 where  `*`  can match any single character.
 
@@ -397,5 +403,5 @@ dt = datetime(1900, 11, 21, 3, 30, tzinfo=tz1)
 print(dt)                                       # 1900-11-21 03:30:00+04:30
 print(dt.astimezone(timezone.utc))              # 1900-11-20 23:00:00+00:00
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzA5OTAxNSwtMTMyMjQ0NDQxM119
+eyJoaXN0b3J5IjpbMTg4NTY1NDMwNSwtMTMyMjQ0NDQxM119
 -->
