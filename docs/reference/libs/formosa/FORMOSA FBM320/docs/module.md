@@ -15,7 +15,7 @@ Parameters:
 -   **clk**  – Clock speed, default 400kHz
 
 Barometer values can be easily obtained from the sensor:
-
+```python
 from formosa.fbm320 import fbm320
 
 ...
@@ -23,6 +23,7 @@ from formosa.fbm320 import fbm320
 fbm = fbm320.FBM320(I2C0)
 
 temp, press, altitude = fbm.get_values()
+```
 
 `set_osr`(_osr_)
 
@@ -52,5 +53,5 @@ Return the altitude in metres.
 
 Return the temperature (°C), pressure (hPa) and altitude (m) in a list [temperature, pressure, altitude].
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzMjI5MzU1XX0=
+eyJoaXN0b3J5IjpbLTEwNDQxMDMzOTVdfQ==
 -->
