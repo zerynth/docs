@@ -6,13 +6,13 @@ The STM32 Nucleo-144 board provides an affordable and flexible way for users to 
 
 The ST Zio connector and the ST morpho headers provide an easy means of expanding the functionality of the Nucleo open development platform with a wide choice of specialized shields. The STM32 Nucleo-144 boards do not require any separate probe as they integrate the ST-LINK/V2-1 debugger/programmer.
 
-![ST Nucleo L4R5](https://oldtestdocs.zerynth.com/latest/_images/st_nucleofL4R5.png)
+![](img/st_nucleofL4R5.png)
 
 _St Microelectronics Nucleo L4R5. Copyright st.com_
 
 ## Pin Mapping
 
-![ST Nucleo L4R5 Pin Map](https://oldtestdocs.zerynth.com/latest/_images/ST-Nucleo-L4R5ZI-io.png)
+![](img/ST-Nucleo-L4R5ZI-io.png)
 
 ST Nucleo L4R5 official manual is available  [here](https://www.st.com/en/microcontrollers-microprocessors/stm32l4r5zi.html)
 
@@ -271,5 +271,6 @@ Important
 
 FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the ST Nucleo L4R5 device is allocated in 16kb sector inside the VM Slot 0 at 0x08004000 address.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0MDM0OTg5LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTM5ODI1MTAxMCw2NjQwMzQ5ODksNzMwOT
+k4MTE2XX0=
 -->
