@@ -381,7 +381,8 @@ except Exception as e:
 ===========================
 
 Basic example to connect 4ZeroBox to the Zerynth Device Manager, with GSM connectivity, sending data to the cloud service
-
+```
+```python
 ###############################################################################
 # 4ZeroBox meets ZDM with GSM
 #
@@ -498,9 +499,11 @@ except Exception as e:
     print (e)
     fzbox.pulse('R', 10000)
     mcu.reset()
+```
 
 ## Firmware Over The Air Update
 
+```python
 Firmware Over The Air Update
 ============================
 
@@ -512,7 +515,8 @@ If the callback returns True the device will accept the FOTA update requests, if
 the device will refuse it.
 
 Try to edit the function e do your tests using ZDM FOTA commands.
-
+```
+```python
 ###############################################################################
 # Firmware Over The Air Update
 #
@@ -658,7 +662,8 @@ except Exception as e:
     print (e)
     fzbox.pulse('R', 10000)
     mcu.reset()
+    ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1NTA4MTE0LC0xMjk5NDIxNDcyLDE1Nj
+eyJoaXN0b3J5IjpbMTQxNDMyNjI2LC0xMjk5NDIxNDcyLDE1Nj
 E2MzQ2MDYsNzMwOTk4MTE2XX0=
 -->
