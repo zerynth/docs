@@ -112,7 +112,4 @@ try:
         sleep(1000)
 except Exception as e:
     print("Error2: ",e)
-    ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NTAzMjUyMV19
--->
+ ```
