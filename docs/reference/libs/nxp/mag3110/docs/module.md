@@ -32,17 +32,10 @@ mag_values = mag.get_values()
 
 **mode**: is the measurement mode to set (default value = 0). Values accepted: 0 or 1.
 
-mode
-
-Measurement mode
-
-0
-
-Continuous measurements
-
-1
-
-Triggered measurements
+| mode | Measurement mode        |
+|------|-------------------------|
+| 0    | Continuous measurements |
+| 1    | Triggered measurements  |
 
 **osr**: is oversampling rate to set (default value = 32). Values accepted: 16, 32, 64 or 128.
 
@@ -56,17 +49,10 @@ Set the measurement mode, the oversampling rate and output data rate.
 
 **mode**: is the operation mode to set. Values accepted: 0 or 1.
 
-mode
-
-Operating mode
-
-0
-
-Standby mode
-
-1
-
-Active mode
+| mode | Operating mode |
+|------|----------------|
+| 0    | Standby mode   |
+| 1    | Active mode    |
 
 Set the operating mode.
 
@@ -111,5 +97,5 @@ Set the offset value of temperature.
 
 Return the temperature in degrees Celsius.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkzNTMwOTYxLC0xNjk3NTkwODExXX0=
+eyJoaXN0b3J5IjpbLTI1NjYxMTg5NiwtMTY5NzU5MDgxMV19
 -->
