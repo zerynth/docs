@@ -69,3 +69,4 @@ Now the user can publish their Dashboard online if they want!
 
 ![](img/dashboard.png)
 
+![](img/ZDMdemo.png)
