@@ -516,6 +516,7 @@ the device will refuse it.
 
 Try to edit the function e do your tests using ZDM FOTA commands.
 ```
+
 ```python
 ###############################################################################
 # Firmware Over The Air Update
@@ -664,6 +665,6 @@ except Exception as e:
     mcu.reset()
     ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDMyNjI2LC0xMjk5NDIxNDcyLDE1Nj
-E2MzQ2MDYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTYwMDM1NDU1NiwxNDE0MzI2MjYsLTEyOT
+k0MjE0NzIsMTU2MTYzNDYwNiw3MzA5OTgxMTZdfQ==
 -->
