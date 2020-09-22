@@ -661,6 +661,10 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+             - 4zerobox:
+              - reference/libs/zerynth/4zerobox/docs/index.md
+              - reference/libs/zerynth/4zerobox/docs/module.md
+              - reference/libs/zerynth/4zerobox/docs/examples.md
 
 
 
