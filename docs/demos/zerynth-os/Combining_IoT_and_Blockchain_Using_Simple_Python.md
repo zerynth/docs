@@ -22,7 +22,7 @@ This tutorial will be exploring the potential of combining IoT and blockchain us
 
 This tutorial will be exploring the potential of **combining IoT and blockchain using simple Python directly on microcontrollers**, thanks to Zerynth tools.
 
-In particular, the [Zerynth Ethereum library](https://docs.zerynth.com/latest/reference/libs/blockchain/ethereum/docs/) allows microcontrollers, the heart of IoT solutions, to generate and sign Ethereum transactions in a few lines of Python. This empowers IoT developers to easily connect to the **Ethereum blockchain**, use Smart Contracts and seamlessly integrate IoT devices with DApps (decentralized applications).
+In particular, the [Zerynth Ethereum library](/latest/reference/libs/blockchain/ethereum/docs/) allows microcontrollers, the heart of IoT solutions, to generate and sign Ethereum transactions in a few lines of Python. This empowers IoT developers to easily connect to the **Ethereum blockchain**, use Smart Contracts and seamlessly integrate IoT devices with DApps (decentralized applications).
 
 A high-level interface is made available with this library, granting to anyone the possibility to start using blockchain and secure any kind of IoT application.
 
@@ -44,7 +44,7 @@ And here are the use cases for logistics made by [TOI – Things on Internet](ht
 
 ## The Zerynth Ethereum module – open source Python library for Ethereum and Smart Contracts
 
-The **Zerynth Ethereum library** takes advantage of the JSON-RPC interface available to interact with an Ethereum node and sending transaction. It also implements the RLP (Recursive Length Prefix)encoding scheme, and exposes some high-level API to call the more common methods (e.g. getting the balance of an address). For the hashing and signatures, the [Zerynth crypto module](https://docs.zerynth.com/latest/reference/core/stdlib/docs/crypto/) is used.
+The **Zerynth Ethereum library** takes advantage of the JSON-RPC interface available to interact with an Ethereum node and sending transaction. It also implements the RLP (Recursive Length Prefix)encoding scheme, and exposes some high-level API to call the more common methods (e.g. getting the balance of an address). For the hashing and signatures, the [Zerynth crypto module](/latest/reference/core/stdlib/docs/crypto/) is used.
 
 The main class available is RPC. From an RPC object, it’s possible to fetch network status information and make transactions. To get a higher level interface there are also two companion classes: Transaction and Contract. The first helps to build a correct signed transaction ready to be sent, and the latter can be used to register a smart contract and its methods for calling them later.
 
@@ -62,7 +62,7 @@ In both examples the Ropsten test network is used, so no real value is actually 
 
 This example shows how to transfer value (Ether) from an address to another through an Ethereum transaction. After signing and sending the transaction it’s possible to use an external tool like [https://ropsten.etherscan.io](https://ropsten.etherscan.io/) to monitor the status and the validity of it.
 
-There is a snippet of the code below. The complete code and more info can be found at the related [documentation page](https://docs.zerynth.com/latest/reference/libs/blockchain/ethereum/docs/examples/.
+There is a snippet of the code below. The complete code and more info can be found at the related [documentation page](/latest/reference/libs/blockchain/ethereum/docs/examples/).
 
 
 ```python
@@ -144,7 +144,7 @@ After rolling the dice, if the sum of the number is greater or equal to 14, the 
 !!! note
     The smart contract source code it’s included in the example folder, that will be created after the cloning of the example via Zerynth Studio. A live version of the contract can be found on the Ropsten network at this address: 0xf7a270b24d2859002c0f414b0a0c97e4c794f5cc.
 
-More info and source code can be found [here](https://docs.zerynth.com/latest/reference/libs/blockchain/ethereum/docs/examples/#dicegame).
+More info and source code can be found [here](/latest/reference/libs/blockchain/ethereum/docs/examples/#dicegame).
 
 ![](img/ropsten.jpeg)
 
@@ -154,17 +154,17 @@ To get started and play with blockchain on microcontrollers just follow these si
 
 1. Download and Install [Zerynth Studio](https://www.zerynth.com/zsdk/)
 
-2. Connect, Register and Virtualize one of the [Zerynth supported boards](https://www.zerynth.com/integrations/). More info[here](https://docs.zerynth.com/latest/#connect-register-and-virtualize-your-device).
+2. Connect, Register and Virtualize one of the [Zerynth supported boards](https://www.zerynth.com/integrations/). More info[here](/latest/#connect-register-and-virtualize-your-device).
 
 For this tutorial, we’ve chosen the ESP32 DevKit C by our partner [Espressif Systems](https://www.zerynth.com/blog/zerynth-is-recommended-by-espressif-systems-as-firmware-toolkit-for-esp32/).
 
 ![](img/ESP32.jpeg)
 
-3. [Clone one of the examples](https://docs.zerynth.com/latest/#clone-an-example-and-start-with-zerynth-python-scripts) mentioned before and uplink to your microcontroller.
+1. [Clone one of the examples](/latest/#clone-an-example-and-start-with-zerynth-python-scripts) mentioned before and uplink to your microcontroller.
 
 ![](img/clone.png)
 
-4. [Verify and Uplinkthe script](https://docs.zerynth.com/latest/#verify-and-uplink-a-zerynth-project).
+1. [Verify and Uplinkthe script](/latest/#verify-and-uplink-a-zerynth-project).
 
 ## Setup of Ethereum test network
 
