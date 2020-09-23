@@ -40,7 +40,7 @@ It’s then required to click Add query, then open the Query menu and select Sim
 
 Now, to open the Select Metric Menu and choose the ZDM Tag that is going to be used as an IOT data source for the visualization the user is building.
 
-If any tag can’t be seen, it means that the user doesn't have any data in the ZDM storage and no devices streaming. To launch a Python client device this [guide](https://docs.zerynth.com/latest/deploy/getting_started_with_rpi/) can be used, to connect a Zerynth IOT device this [guide](https://www.zerynth.com/blog/docs/zdm/getting-started/the-zdm-web-user-interface/) can be followed.
+If any tag can’t be seen, it means that the user doesn't have any data in the ZDM storage and no devices streaming. To launch a Python client device this [guide](https://docs.zerynth.com/latest/deploy/getting_started_with_rpi/) can be used, to connect a Zerynth IOT device this [guide](https://docs.zerynth.com/latest/deploy/getting_started_with_sdk/) can be followed.
 
 Here it is,a ZDM data plotted in Grafana!
 

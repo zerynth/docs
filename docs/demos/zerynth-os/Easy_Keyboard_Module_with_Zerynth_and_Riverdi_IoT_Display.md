@@ -8,7 +8,7 @@ So, let’s start!
 
 ## REQUIREMENTS:
 
-- [Riverdi IoT Display - RiTFT-50-IOT-CAP x 1](https://riverdi.com/product/ritft50iotcap/)
+- [Riverdi IoT Display - RiTFT-50-IOT-CAP](https://riverdi.com/product/ritft50iotcap/)
 - [Zerynth SDK](https://www.zerynth.com/zsdk/) 
 
 ## STEP BY STEP:
@@ -31,7 +31,7 @@ Just connect the display and PC with a USB cable, as shown below:
 #### 2. Software Setup
 
 
-1. Download and Install [Zerynth Studio r.2.6.1]()https://www.zerynth.com/zsdk.
+1. Download and Install [Zerynth Studio r.2.6.1](https://www.zerynth.com/zsdk).
 2. Once Zerynth is installed, the user can Connect, Register, and Virtualize the device.
    
 ![](img/register_virtualize.jpg)
