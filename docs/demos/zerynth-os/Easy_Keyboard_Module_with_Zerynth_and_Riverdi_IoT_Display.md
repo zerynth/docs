@@ -36,7 +36,7 @@ Just connect the display and PC with a USB cable, as shown below:
    
 ![](img/register_virtualize.jpg)
 
-3. Then it’s just a matter of selecting the [Riverdi IoT Display](https://docs.zerynth.com/latest/reference/boards/riverdi_tft50_iotxxx/docs/) from the Device dropdown.
+1. Then it’s just a matter of selecting the [Riverdi IoT Display](/latest/reference/boards/riverdi_tft50_iotxxx/docs/) from the Device dropdown.
 
 ![](img/choose_device.png)
 
@@ -101,7 +101,7 @@ After adding all the buttons we should be able to present the keyboard on the sc
 
 Voila, we have the keyboard layout. Now, let’s add the other layouts. We will have all the visual stuff implemented and ready for the logical part. 
 
-Regarding the logic, we should add an event for each button press. Thanks to the [bt81x library](https://docs.zerynth.com/latest/reference/libs/bridgetek/bt81x/docs/bt81x/) that should be no big deal. As a step of the preparation for touch detection implementation we will add an array of the button object for each row separately. 
+Regarding the logic, we should add an event for each button press. Thanks to the [bt81x library](/latest/reference/libs/bridgetek/bt81x/docs/bt81x/) that should be no big deal. As a step of the preparation for touch detection implementation we will add an array of the button object for each row separately. 
 
 ```py
 btnNumList = [btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9, btn_0]
