@@ -59,6 +59,7 @@ nav:
         - reference/core/stdlib/docs/gc.md
         - reference/core/stdlib/docs/math.md
         - reference/core/stdlib/docs/timers.md
+        - reference/core/stdlib/docs/suntime.md
         - reference/core/stdlib/docs/bignum_bignum.md
         - Data Structures: 
           - reference/core/stdlib/docs/fifo.md
