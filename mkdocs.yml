@@ -677,6 +677,11 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+            - 4zerobox:
+              - reference/libs/zerynth/4zerobox/docs/index.md
+              - reference/libs/zerynth/4zerobox/docs/module.md
+              - reference/libs/zerynth/4zerobox/docs/examples.md
+
 - Demos:
   - ZDM:
     - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
@@ -688,7 +693,6 @@ nav:
     - demos/zerynth-os/LoRaWAN_Using_Python,_Zerynth_and_The_Things_Network.md
     - demos/zerynth-os/Remote_Proximity_Sensing_with_XinaBox,_Zerynth_and_Ubidots.md
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
-    
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 
