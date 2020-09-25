@@ -437,6 +437,10 @@ nav:
               - reference/libs/nxp/mpl3115a2/docs/index.md
               - reference/libs/nxp/mpl3115a2/docs/mpl3115a2.md
               - reference/libs/nxp/mpl3115a2/docs/examples.md
+            - mag3110:
+              - reference/libs/nxp/mag3110/docs/index.md
+              - reference/libs/nxp/mag3110/docs/module.md
+              - reference/libs/nxp/mag3110/docs/examples.md
         - okdo:
             - iot:
               - reference/libs/okdo/iot/docs/index.md
