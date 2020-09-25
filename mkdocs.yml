@@ -299,6 +299,11 @@ nav:
               - reference/libs/espressif/esp8266wifi/docs/index.md
               - reference/libs/espressif/esp8266wifi/docs/esp8266wifi.md
               - reference/libs/espressif/esp8266wifi/docs/examples.md
+        - formosa:
+            - FORMOSA FBM320:
+              - reference/libs/formosa/FORMOSA FBM320/docs/index.md
+              - reference/libs/formosa/FORMOSA FBM320/docs/module.md
+              - reference/libs/formosa/FORMOSA FBM320/docs/examples.md
         - fortebit:
             - iot:
               - reference/libs/fortebit/iot/docs/index.md
