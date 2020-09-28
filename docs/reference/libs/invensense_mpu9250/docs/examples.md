@@ -1,6 +1,6 @@
 # Examples
 
-## Get values
+- [get values]((/latest/reference/libs/invensense/mpu9250/docs/examples/#get-values))
 
 ```py
 Read temperature, accelerometer, gyroscope and magnetometer values from MPU9250
