@@ -1,6 +1,6 @@
 # Examples
 
-## Write on display
+- [write on display]((/reference/libs/sitronix/docs/examples/#write-on-display))
 
 ```py
 
@@ -40,7 +40,7 @@ except Exception as e:
     print("Error2: ",e)
 ```
 
-## Logo on display
+- [logo on display]((/reference/libs/sitronix/docs/examples/#logo-on-display))
 
 ```py
 Draw logo on display ST7735
