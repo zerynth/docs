@@ -1,6 +1,6 @@
 # ST7735 Module
 
-This module exposes all functionalities of Sitronix ST7735 Display driver (datasheet).
+This module exposes all functionalities of Sitronix ST7735 Display driver ([datasheet](https://datasheetspdf.com/pdf-file/694957/SitronixTechnology/ST7735/1)).
 
 ## ST7735 class
 
