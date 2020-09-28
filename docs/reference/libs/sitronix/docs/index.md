@@ -16,8 +16,8 @@ Here below, the Zerynth driver for the Sitronix ST7735.
 
 > Contents:
 >
-> - [ST7735 Module](/reference/libs/sitronix/docs/st7735_module)
->    - [ST7735 class](/reference/libs/sitronix/docs/st7735_module/#st7735-class)
-> - [Examples](/reference/libs/sitronix/docs/examples)
->   - [write on display](/reference/libs/sitronix/docs/examples/#write-on-display)
->   - [logo on display](/reference/libs/sitronix/docs/examples/#logo-on-display)
+> - [ST7735 Module](/latest/reference/libs/sitronix/docs/st7735_module)
+>    - [ST7735 class](/latest/reference/libs/sitronix/docs/st7735_module/#st7735-class)
+> - [Examples](/latest/reference/libs/sitronix/docs/examples)
+>   - [write on display](/latest/reference/libs/sitronix/docs/examples/#write-on-display)
+>   - [logo on display](/latest/reference/libs/sitronix/docs/examples/#logo-on-display)
