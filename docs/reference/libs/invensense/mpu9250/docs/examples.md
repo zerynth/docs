@@ -1,6 +1,6 @@
 # Examples
 
-- [get values]((/latest/reference/libs/invensense/mpu9250/docs/examples/#get-values))
+## get values
 
 ```py
 Read temperature, accelerometer, gyroscope and magnetometer values from MPU9250
@@ -45,5 +45,5 @@ except Exception as e:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MDQ1NzU1XX0=
+eyJoaXN0b3J5IjpbLTgwODM4MjgwMCw2NTcwNDU3NTVdfQ==
 -->
