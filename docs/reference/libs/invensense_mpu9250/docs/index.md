@@ -12,7 +12,7 @@ Here below, the Zerynth driver for the Invensense MPU9250.
 
 > Contents:
 >
-> - [MPU9250 Module](/latest/reference/libs/invensense_mpu9250/docs/mpu9250_module)
->   - [MPU9250 class](/latest/reference/libs/invensense_mpu9250/docs/mpu9250_module/#mpu9250-class)
-> - [Examples](/latest/reference/libs/invensense_mpu9250/docs/examples)
->   - [get values](/latest/reference/libs/invensense_mpu9250/docs/examples/#get-values)
+> - [MPU9250 Module](/latest/reference/libs/invensense/mpu9250/docs/mpu9250_module)
+>   - [MPU9250 class](/latest/reference/libs/invensense/mpu9250/docs/mpu9250_module/#mpu9250-class)
+> - [Examples](/latest/reference/libs/invensense/mpu9250/docs/examples)
+>   - [get values](/latest/reference/libs/invensense/mpu9250/docs/examples/#get-values)
