@@ -347,6 +347,10 @@ nav:
               - reference/libs/invensense/mpu6050/docs/index.md
               - reference/libs/invensense/mpu6050/docs/module.md
               - reference/libs/invensense/mpu6050/docs/examples.md
+            - mpu9250:
+              - reference/libs/invensense/mpu9250/docs/index.md
+              - reference/libs/invensense/mpu9250/docs/mpu9250_module.md
+              - reference/libs/invensense/mpu9250/docs/examples.md
         - liveintersect:
             - iot:
               - reference/libs/liveintersect/iot/docs/index.md
