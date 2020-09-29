@@ -163,6 +163,7 @@ nav:
       - reference/boards/heltec_wifikit32/docs/index.md
       - reference/boards/hexagon_v1/docs/index.md
       - reference/boards/hexiwear/docs/index.md
+      - reference/boards/lilygo_t_wristband/docs/index.md
       - reference/boards/mikroe_quail/docs/index.md
       - reference/boards/nodemcu2/docs/index.md
       - reference/boards/nodemcu3/docs/index.md
