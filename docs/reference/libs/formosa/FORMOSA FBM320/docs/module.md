@@ -10,9 +10,9 @@ Creates an intance of the FBM320 class.
 
 Parameters:
 
--   **##### drvname**  – I2C Bus used ‘( I2C0, ... )’
--   **addr**  – Slave address, default 0x6D If SDO pin is pulled low, I2C address is 6C. If SDO pin is pulled high, I2C address is 6D.
--   **clk**  – Clock speed, default 400kHz
+**###### drvname**  – I2C Bus used ‘( I2C0, ... )’
+**addr**  – Slave address, default 0x6D If SDO pin is pulled low, I2C address is 6C. If SDO pin is pulled high, I2C address is 6D.
+**clk**  – Clock speed, default 400kHz
 
 Barometer values can be easily obtained from the sensor:
 ```python
