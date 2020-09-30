@@ -27,9 +27,9 @@ temp, press, altitude = fbm.get_values()
 
 `set_osr`(_osr_)
 
-##Parameters:
+###Parameters:
 
-**osr**  – is the oversampling rate to set. Values accepted: 1024, 2048, 4096 or 8192.
+**####osr**  – is the oversampling rate to set. Values accepted: 1024, 2048, 4096 or 8192.
 
 Set oversampling rate.
 
@@ -43,9 +43,9 @@ Return the pressure in hPa.
 
 `get_altitude`(_pressure_)
 
-Parameters:
+###Parameters:
 
-**pressure**  – pressure value in hPa.
+**####pressure**  – pressure value in hPa.
 
 Return the altitude in metres.
 
