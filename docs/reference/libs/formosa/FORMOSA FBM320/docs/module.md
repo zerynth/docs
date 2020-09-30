@@ -34,15 +34,15 @@ Parameters:
 **osr**  – is the oversampling rate to set. Values accepted: 1024, 2048, 4096 or 8192.
 
 Set oversampling rate.
-
+###### get_temp ()
 `get_temp`()
 
 Return the temperature in degrees Celsius.
-
+###### get_press ()
 `get_press`()
 
 Return the pressure in hPa.
-
+###### get_altitude(_pressure_)
 `get_altitude`(_pressure_)
 
 Parameters:
@@ -50,7 +50,7 @@ Parameters:
 **pressure**  – pressure value in hPa.
 
 Return the altitude in metres.
-
+###### get_values ()
 `get_values`()
 
 Return the temperature (°C), pressure (hPa) and altitude (m) in a list [temperature, pressure, altitude].
