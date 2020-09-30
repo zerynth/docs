@@ -24,6 +24,7 @@ fbm = fbm320.FBM320(I2C0)
 temp, press, altitude = fbm.get_values()
 ```
 
+###### set_osr
 `set_osr`(_osr_)
 
 Parameters:
