@@ -9,11 +9,8 @@ _class_`FBM320`(_drvname_,  _addr=0x6D_,  _clk=400000_)
 Creates an intance of the FBM320 class.
 
 Parameters:
-###### drvname
 - **drvname**  – I2C Bus used ‘( I2C0, ... )’
-###### addr
 - **addr**  – Slave address, default 0x6D If SDO pin is pulled low, I2C address is 6C. If SDO pin is pulled high, I2C address is 6D.
-###### clk
 - **clk**  – Clock speed, default 400kHz
 
 Barometer values can be easily obtained from the sensor:
@@ -30,19 +27,18 @@ temp, press, altitude = fbm.get_values()
 `set_osr`(_osr_)
 
 Parameters:
-###### osr
 **osr**  – is the oversampling rate to set. Values accepted: 1024, 2048, 4096 or 8192.
 
 Set oversampling rate.
-###### get_temp ()
+###### get_temp
 `get_temp`()
 
 Return the temperature in degrees Celsius.
-###### get_press ()
+###### get_press
 `get_press`()
 
 Return the pressure in hPa.
-###### get_altitude(_pressure_)
+###### get_altitude
 `get_altitude`(_pressure_)
 
 Parameters:
@@ -50,7 +46,7 @@ Parameters:
 **pressure**  – pressure value in hPa.
 
 Return the altitude in metres.
-###### get_values ()
+###### get_values
 `get_values`()
 
 Return the temperature (°C), pressure (hPa) and altitude (m) in a list [temperature, pressure, altitude].
