@@ -45,7 +45,7 @@ Return the pressure in hPa.
 `get_altitude`(_pressure_) 
 
 Parameters:
-###### pressure 
+
 **pressure**  – pressure value in hPa.
 
 Return the altitude in metres.
