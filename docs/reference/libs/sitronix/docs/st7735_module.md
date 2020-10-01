@@ -4,6 +4,8 @@ This module exposes all functionalities of Sitronix ST7735 Display driver ([data
 
 ## ST7735 class
 
+###### class ST7735
+
 ```py
 classST7735(drv, cs, dc, bl=None, rst=None, clock=27000000)
 ```
@@ -40,11 +42,15 @@ display.draw_line(30, 20, 100, [0,0,255])
 display.draw_text("Hello Zerynth")
 ```
 
+###### on
+
 ```py
 on()
 ```
 
 Turns on the display.
+
+###### off
 
 ```py
 off()
@@ -52,11 +58,15 @@ off()
 
 Turns off the display.
 
+###### reset
+
 ```py
 reset()
 ```
 
 Reset the display.
+
+###### set_rotation
 
 ```py
 set_rotation(rotation = 1)
@@ -68,6 +78,7 @@ set_rotation(rotation = 1)
 
 Set the direction of frame memory.
 
+###### set_backlight
 ```py
 set_backlight(state)
 ```
@@ -77,6 +88,8 @@ set_backlight(state)
 **state**: is the state of backlight. Values accepted: 0 or 1.
 
 Set the backlight.
+
+###### invert
 
 ```py
 invert(value)
@@ -88,11 +101,15 @@ invert(value)
 
 Set the display inversion mode.
 
+###### clear
+
 ```py
 clear()
 ```
 
 Clears the display.
+
+###### fill_screen
 
 ```py
 fill_screen(color)
@@ -103,6 +120,8 @@ fill_screen(color)
 **color**: is a list composed by RGB color.
 
 Fills the entire display with RGB color provided as argument.
+
+###### fill_rect
 
 ```py
 fill_rect(x, y, w, h, color)
@@ -122,6 +141,8 @@ fill_rect(x, y, w, h, color)
 
 Draws a rectangular area in the screen colored with the RGB color provided as argument.
 
+###### draw_pixel
+
 ```py
 draw_pixel(x, y, color)
 ```
@@ -135,6 +156,8 @@ draw_pixel(x, y, color)
 **color**: is a list composed by RGB color.
 
 Draws a single pixel in the screen colored with the RGB color provided as argument.
+
+###### draw_line
 
 ```py
 draw_line(x, y, lenght, color)
@@ -151,6 +174,8 @@ draw_line(x, y, lenght, color)
 **color**: is a list composed by RGB color.
 
 Draws a line in the screen colored with the RGB color provided as argument.
+
+###### draw_image
 
 ```py
 draw_img(image, x=0, y=0, w=80, h=80)
@@ -174,6 +199,8 @@ Draws the image passed in bytearray format as argument.
     To obtain a converted image in hex array format, you can go and use this [online tool](http://www.digole.com/tools/PicturetoC_Hex_converter.php).
     After uploading your image, you can resize it setting the width and height fields; you can also choose the code format (HEX:0x recommended) and the color format (65K color recommended).
     Clicking on the “Get C string” button, the tool converts your image with your settings to a hex string that you can copy and paste inside a bytearray in your project and privide to this function.
+
+###### draw_text
 
 ```py
 draw_text(text, x=0, y=0, w=None, h=None, font_text=None, font_color=None, align=3, background=None)

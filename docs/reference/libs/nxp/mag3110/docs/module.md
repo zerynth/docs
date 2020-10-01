@@ -4,6 +4,8 @@ This module contains the Zerynth driver for MAG3110 digital sensor. It features 
 
 ## MAG3110 class
 
+###### class MAG3110
+
 _class_`MAG3110`(_drvname_,  _addr=0x0E_,  _clk=400000_)
 
 Creates an intance of the MAG3110 class.
@@ -25,6 +27,7 @@ mag = mag3110.MAG3110(I2C0)
 
 mag_values = mag.get_values()
 ```
+###### set_measurement
 
 `set_measurement`(_mode = 0_,  _osr = 32_,  _odr = 1_)
 
@@ -43,6 +46,8 @@ mag_values = mag.get_values()
 
 Set the measurement mode, the oversampling rate and output data rate.
 
+###### set_mode
+
 `set_mode`(_mode_)
 
 **Parameters**:
@@ -56,13 +61,19 @@ Set the measurement mode, the oversampling rate and output data rate.
 
 Set the operating mode.
 
+###### set_offset_on
+
 `set_offset_on`()
 
 Enable the correction of data values according to offset register values.
 
+###### set_offet_off
+
 `set_offset_off`()
 
 Disable the correction of data values according to offset register values.
+
+###### set_offset
 
 `set_offset`(_axis_,  _offset_)
 
@@ -73,17 +84,25 @@ Parameters:
 
 Set offset to the axis specified.
 
+###### is_data_ready
+
 `is_data_ready`()
 
 Return 1 if new data ready, otherwise 0.
+
+###### trigger_measurement
 
 `trigger_measurement`()
 
 Set measurement in trigger mode.
 
+###### get_values
+
 `get_values`()
 
 Return the X, Y and Z values of the magnetometer in a dictionary.
+
+###### set_offset_temp
 
 `set_offset_temp`(_value = 10_)
 
@@ -92,6 +111,8 @@ Parameters:
 **value**  – is the value of temperature offset to set. Default value is 10.
 
 Set the offset value of temperature.
+
+###### get_temp
 
 `get_temp`()
 
