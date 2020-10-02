@@ -4,6 +4,8 @@ MPU-9250 features three 16-bit analog-to-digital converters (ADCs) for digitizin
 
 ## MPU9250 class
 
+###### classMPU9250
+
 ```py
 classMPU9250(drvname, addr, clk=400000)
 ```
@@ -27,6 +29,9 @@ mpu = mpu9250.MPU9250(I2C0)
 
 temp, acc, gyro, magneto = mpu.get_values()
 ```
+
+###### set_dlpf_mode
+
 ```py
 set_dlpf_mode(dlpf)
 ```
@@ -36,11 +41,14 @@ set_dlpf_mode(dlpf)
 
 Set the DLPF mode.
 
+###### get_clock_source
+
 ```py
 get_clock_source()
 ```
-
 Return the clock source the sensor is set to.
+
+###### set_clock_source
 
 ```py
 set_clock_source(clksel)
@@ -63,10 +71,14 @@ set_clock_source(clksel)
 
 Set the clock source.
 
+###### get_temp
+
 ```py
 get_temp()
 ```
 Return the temperature in degrees Celsius.
+
+###### set_accel_fullscale
 
 ```py
 set_accel_fullscale(full_scale)
@@ -78,11 +90,14 @@ set_accel_fullscale(full_scale)
 
 Set the full-scale range of the accelerometer.
 
+###### get_accel_fullscale
+
 ```py
 get_accel_fullscale()
 ```
-
 Return the full-scale value the accelerometer is set to. When something went wrong, it returns -1.
+
+###### get_accel_values
 
 ```py
 get_accel_values(g = False)
@@ -94,6 +109,8 @@ get_accel_values(g = False)
 
 Return the X, Y and Z accelerometer values in a dictionary.
 
+###### set_gyro_fullscale
+
 ```py
 set_gyro_fullscale(full_scale)
 ```
@@ -103,17 +120,23 @@ set_gyro_fullscale(full_scale)
 
 Set the full-scale range of the gyroscope.
 
+###### get_gyro_fullscale
+
 ```py
 get_gyro_fullscale()
 ```
 
 Return the full-scale value the gyroscope is set to. When something went wrong, it returns -1.
 
+###### get_gyro_values
+
 ```py
 get_gyro_values()
 ```
 
 Return the X, Y and Z gyroscope values in a dictionary.
+
+###### set_magneto_config
 
 ```py
 set_magneto_config(mfs = 0, mode = 0)
@@ -137,11 +160,15 @@ mode: is the magneto mode (default value is 0).
 
 Set the magnetometer scale and mode.
 
+###### get_magneto_values
+
 ```py
 get_magneto_values()
 ```
 
 Return the X, Y and Z magnetometer values in a dictionary.
+
+###### get_values
 
 ```py
 get_values(g = False)
@@ -152,6 +179,8 @@ get_values(g = False)
 **g**: is the format of accelerometer values. If g = False is m/s^2, otherwise is g. Default value is False.
 
 Return the values of temperature, gyroscope, accelerometer and magnetometer in a list [temp, accel, gyro, magneto].
+
+###### is_data_ready
 
 ```py
 is_data_ready()
