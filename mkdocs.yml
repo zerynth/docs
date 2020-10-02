@@ -347,6 +347,10 @@ nav:
               - reference/libs/invensense/mpu6050/docs/index.md
               - reference/libs/invensense/mpu6050/docs/module.md
               - reference/libs/invensense/mpu6050/docs/examples.md
+            - mpu9250:
+              - reference/libs/invensense/mpu9250/docs/index.md
+              - reference/libs/invensense/mpu9250/docs/mpu9250_module.md
+              - reference/libs/invensense/mpu9250/docs/examples.md
         - liveintersect:
             - iot:
               - reference/libs/liveintersect/iot/docs/index.md
@@ -501,6 +505,10 @@ nav:
               - reference/libs/siemens/s7/docs/index.md
               - reference/libs/siemens/s7/docs/s7.md
               - reference/libs/siemens/s7/docs/examples.md
+        - sitronix:
+              - reference/libs/sitronix/docs/index.md
+              - reference/libs/sitronix/docs/st7735_module.md
+              - reference/libs/sitronix/docs/examples.md
         - solomon:
             - ssd1306:
               - reference/libs/solomon/ssd1306/docs/index.md
