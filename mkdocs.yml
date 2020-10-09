@@ -705,6 +705,7 @@ plugins:
 - search
 - minify: {minify_html: true}
 site_name: Zerynth Documentation
+strict:true
 theme:
     custom_dir: material
     favicon: images/favicon.png
