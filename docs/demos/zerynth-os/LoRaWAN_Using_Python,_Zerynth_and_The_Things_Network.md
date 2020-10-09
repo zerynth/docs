@@ -86,7 +86,7 @@ Next, to send data up to the new Application that was just registered, the users
 
 To do this, they need to navigate to the “Devices” tab on the Application home page and click the “Register Device” button.
 
-![](img/The-Things-Network-Console-DEvice-Info.jpg)
+![](img/The-Things-Network-Console-Device-Info.jpg)
 
 In the Register Device panel, they’ll need to complete the forms for the Device ID and the Device EUI, that must consist of exactly 8 bytes, given in hexadecimal. The user can get this code directly from your board, following the instructions below.
 
