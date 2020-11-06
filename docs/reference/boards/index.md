@@ -133,3 +133,5 @@ The complete list of devices supported by Zerynth:
 -   [Xplained Pro Sam E54](/latest/reference/boards/xplained_same54/docs/ "Xplained Pro Sam E54")
 
 -   [Xplained Pro Sam G55](/latest/reference/boards/xplained_samg55/docs/ "Xplained Pro Sam G55")
+
+-   [Lilygo T-Wristband](/latest/reference/boards/lilygo_t_wristband/docs/ "Lilygo T-Wristband")

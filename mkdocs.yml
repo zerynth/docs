@@ -59,6 +59,8 @@ nav:
         - reference/core/stdlib/docs/gc.md
         - reference/core/stdlib/docs/math.md
         - reference/core/stdlib/docs/timers.md
+        - reference/core/stdlib/docs/date-time.md
+        - reference/core/stdlib/docs/suntime.md
         - reference/core/stdlib/docs/bignum_bignum.md
         - Data Structures: 
           - reference/core/stdlib/docs/fifo.md
@@ -194,6 +196,7 @@ nav:
       - reference/boards/st_nucleof401re/docs/index.md
       - reference/boards/st_nucleof429zi/docs/index.md
       - reference/boards/st_nucleof746zg/docs/index.md
+      - reference/boards/st_nucleol4r5/docs/index.md
       - reference/boards/wemos_d1_mini/docs/index.md
       - reference/boards/wemos_esp32_oled/docs/index.md
       - reference/boards/wio_link/docs/index.md
@@ -297,6 +300,11 @@ nav:
               - reference/libs/espressif/esp8266wifi/docs/index.md
               - reference/libs/espressif/esp8266wifi/docs/esp8266wifi.md
               - reference/libs/espressif/esp8266wifi/docs/examples.md
+        - formosa:
+            - FORMOSA FBM320:
+              - reference/libs/formosa/FORMOSA FBM320/docs/index.md
+              - reference/libs/formosa/FORMOSA FBM320/docs/module.md
+              - reference/libs/formosa/FORMOSA FBM320/docs/examples.md
         - fortebit:
             - iot:
               - reference/libs/fortebit/iot/docs/index.md
@@ -334,6 +342,15 @@ nav:
             - xmc4eth:
               - reference/libs/infineon/xmc4eth/docs/index.md
               - reference/libs/infineon/xmc4eth/docs/xmc4eth.md
+        - invensense:
+            - mpu6050:
+              - reference/libs/invensense/mpu6050/docs/index.md
+              - reference/libs/invensense/mpu6050/docs/module.md
+              - reference/libs/invensense/mpu6050/docs/examples.md
+            - mpu9250:
+              - reference/libs/invensense/mpu9250/docs/index.md
+              - reference/libs/invensense/mpu9250/docs/mpu9250_module.md
+              - reference/libs/invensense/mpu9250/docs/examples.md
         - liveintersect:
             - iot:
               - reference/libs/liveintersect/iot/docs/index.md
@@ -435,6 +452,10 @@ nav:
               - reference/libs/nxp/mpl3115a2/docs/index.md
               - reference/libs/nxp/mpl3115a2/docs/mpl3115a2.md
               - reference/libs/nxp/mpl3115a2/docs/examples.md
+            - mag3110:
+              - reference/libs/nxp/mag3110/docs/index.md
+              - reference/libs/nxp/mag3110/docs/module.md
+              - reference/libs/nxp/mag3110/docs/examples.md
         - okdo:
             - iot:
               - reference/libs/okdo/iot/docs/index.md
@@ -484,6 +505,10 @@ nav:
               - reference/libs/siemens/s7/docs/index.md
               - reference/libs/siemens/s7/docs/s7.md
               - reference/libs/siemens/s7/docs/examples.md
+        - sitronix:
+              - reference/libs/sitronix/docs/index.md
+              - reference/libs/sitronix/docs/st7735_module.md
+              - reference/libs/sitronix/docs/examples.md
         - solomon:
             - ssd1306:
               - reference/libs/solomon/ssd1306/docs/index.md
@@ -661,6 +686,11 @@ nav:
               - reference/libs/zerynth/zdm/docs/index.md
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
+            - 4zerobox:
+              - reference/libs/zerynth/4zerobox/docs/index.md
+              - reference/libs/zerynth/4zerobox/docs/module.md
+              - reference/libs/zerynth/4zerobox/docs/examples.md
+
 - Demos:
   - ZDM:
     - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
@@ -672,7 +702,6 @@ nav:
     - demos/zerynth-os/LoRaWAN_Using_Python,_Zerynth_and_The_Things_Network.md
     - demos/zerynth-os/Remote_Proximity_Sensing_with_XinaBox,_Zerynth_and_Ubidots.md
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
-    
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 

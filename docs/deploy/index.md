@@ -27,7 +27,7 @@ The Zerynth Device Manager is based on the following key concepts:
 - An **Alert** is a notification fired by a condition. Alerts are like GATES for conditions. Alerts can be notified via email or webhook allowing seamless integration with the IOT application backend.
 - A **Job** is a command sent to a device. Jobs usually maps to firmware functions like reset, perform diagnostics, update firmware, etc...
 
-If you want to know more, we have a [5 minutes tutorial](https://docs.zerynth.com/latest/deploy/getting_started_with_sdk/) to get you started with the ZDM.
+If you want to know more, we have a [5 minutes tutorial](/latest/gettingstarted/) to get you started with the ZDM.
 
 ZDM can be easily accessed via the Web App at https://zdm.zerynth.com or, for more advanced usages, via the ZDM Command Line Interface integrated in the Zerynth SDK (download from https://www.zerynth.com/zsdk/).
 
