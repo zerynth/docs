@@ -709,6 +709,8 @@ nav:
             #   - reference/libs/zerynth/zerynthshield/docs/index.md
             #   - reference/libs/zerynth/zerynthshield/docs/zerynthshield.md
             #   - reference/libs/zerynth/zerynthshield/docs/examples.md
+  - 4ZeroBox:
+    - demos/4ZeroBox/Hello_4ZeroBox.md
 plugins:
 - search
 - minify: {minify_html: true}
