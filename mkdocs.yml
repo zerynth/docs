@@ -702,9 +702,14 @@ nav:
     - demos/zerynth-os/LoRaWAN_Using_Python,_Zerynth_and_The_Things_Network.md
     - demos/zerynth-os/Remote_Proximity_Sensing_with_XinaBox,_Zerynth_and_Ubidots.md
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
-  - 4ZeroBox:
-    - demos/4zerobox/Hello_4ZeroBox.md
-  plugins:
+            # - ZDM-Client Python Library:
+            #   - reference/core/zdmclient/docs/index.md
+
+            # - zerynthshield:
+            #   - reference/libs/zerynth/zerynthshield/docs/index.md
+            #   - reference/libs/zerynth/zerynthshield/docs/zerynthshield.md
+            #   - reference/libs/zerynth/zerynthshield/docs/examples.md
+plugins:
 - search
 - minify: {minify_html: true}
 site_name: Zerynth Documentation
