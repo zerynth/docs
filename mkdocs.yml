@@ -703,7 +703,7 @@ nav:
     - demos/zerynth-os/Remote_Proximity_Sensing_with_XinaBox,_Zerynth_and_Ubidots.md
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
   - 4ZeroBox:
-    - demos/4zerobox/Hello_4ZeroBox.md
+    - demos/4zerobox./Hello_4ZeroBox.md
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 
