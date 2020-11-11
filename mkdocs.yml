@@ -711,6 +711,7 @@ nav:
             #   - reference/libs/zerynth/zerynthshield/docs/index.md
             #   - reference/libs/zerynth/zerynthshield/docs/zerynthshield.md
             #   - reference/libs/zerynth/zerynthshield/docs/examples.md
+            
 plugins:
 - search
 - minify: {minify_html: true}
