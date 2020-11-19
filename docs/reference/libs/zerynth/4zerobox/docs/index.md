@@ -13,7 +13,7 @@ For full list of features of 4ZeroBox :
 ![](img/4zerobox-scheme-a.png)
 !!! note
 	For more information about the hardware as: Pin Mapping, Flash Layout, features, Power regulation.
-	Please check the following : [4ZeroBox Hardware](/4zp/4ZeroBox/index.md)
+	Please check the following : [4ZeroBox Hardware](/zerynth-hardware/4ZeroBox/index.md)
 
 ## 4ZeroBox Library 
 
