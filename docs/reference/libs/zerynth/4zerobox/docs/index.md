@@ -21,7 +21,7 @@ This module contains the driver for enabling and handling all 4ZeroBox onboard f
 
 ## More Resources:
 
-* [4ZeroBox Library Examples](/reference/libs/zerynth/4zerobox/docs/examples/)
+* [4ZeroBox Library Examples](/latest/reference/libs/zerynth/4zerobox/docs/examples/)
 * [4ZeroBox User Manual](https://www.zerynth.com/download/13894/)
 * [4ZeroBox Brochure](https://www.zerynth.com/download/13895/)
 
