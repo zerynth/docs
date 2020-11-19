@@ -141,7 +141,7 @@ nav:
           - reference/core/zdmcli/docs/job_cmd.md
           - reference/core/zdmcli/docs/fota_cmd.md
     - Zerynth Hardware:
-        - 4zp/4ZeroBox.md
+        - zerynth-hardware/4ZeroBox.md
     - Supported Devices:
       - reference/boards/index.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
