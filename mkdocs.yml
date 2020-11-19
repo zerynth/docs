@@ -114,6 +114,7 @@ nav:
         - reference/core/stdlib/docs/pwr.md
         - reference/core/stdlib/docs/sfw.md
         - reference/core/stdlib/docs/fota.md
+        - reference/core/stdlib/docs/board-support-package.md
         - reference/core/stdlib/docs/examples.md
     - Command Line Interface:
         - Zerynth Toolchain:
