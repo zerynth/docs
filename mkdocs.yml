@@ -689,6 +689,7 @@ nav:
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
             - 4zerobox:
+              - {Gettin Started: https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/}
               - reference/libs/zerynth/4zerobox/docs/index.md
               - reference/libs/zerynth/4zerobox/docs/module.md
               - reference/libs/zerynth/4zerobox/docs/examples.md
