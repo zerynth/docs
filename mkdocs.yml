@@ -707,6 +707,7 @@ nav:
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
   - 4ZeroBox:
     - demos/4zerobox/Hello_4ZeroBox.md
+    - demos/4zerobox/Connecting_the_4ZeroBox_to_Zerynth_Device_Manager_over_WiFi.md
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 
