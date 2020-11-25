@@ -25,17 +25,3 @@ This module contains the driver for enabling and handling all 4ZeroBox onboard f
 * [4ZeroBox User Manual](https://www.zerynth.com/download/13894/)
 * [4ZeroBox Brochure](https://www.zerynth.com/download/13895/)
 
-
-
-Contents:
-
-
-* [Getting started](https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/)
-* [4ZeroBox Module](/latest/reference/libs/zerynth/4zerobox/docs/module/#4zerobox-module)
-* [Examples](/latest/reference/libs/zerynth/4zerobox/docs/examples/)
-    * [Hello 4ZeroBox](/latest/reference/libs/zerynth/4zerobox/docs/examples/#hello-4zerobox)
-    * [Sensor Reading](/latest/reference/libs/zerynth/4zerobox/docs/examples/#sensor-reading)
-    * [Modbus Serial Interface](/latest/reference/libs/zerynth/4zerobox/docs/examples/#modbus-serial-interface)
-    * [4ZeroBox meets ZDM](/latest/reference/libs/zerynth/4zerobox/docs/examples/#4zerobox-meets-zdm)
-    * [4ZeroBox meets ZDM with GSM](/latest/reference/libs/zerynth/4zerobox/docs/examples/#4zerobox-meets-zdm-with-gsm)
-    * [Firmware Over The Air Update](/latest/reference/libs/zerynth/4zerobox/docs/examples/#firmware-over-the-air-update)
