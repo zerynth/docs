@@ -10,15 +10,15 @@ The 4ZeroBox is a modular hardware electronic unit that simplifies the developme
 
 For more infos about electrical connections, and how to use 4ZeroBox with sensors and other hardware, see the  [user manual](https://www.zerynth.com/download/13894/).
 
+For more information on the 4ZeroBox Library as software drivers, Its features, functions and examples
+[Please check this Link](/latest/reference/libs/zerynth/4zerobox/docs/)
+
 Other useful documents are:
 
 -   [Datasheet](https://www.zerynth.com/download/13895/)
 -   [Quick Guide](https://www.zerynth.com/download/15283/)
 
-
-!!!Note
-	For more information on the 4ZeroBox Library, Its features, functions and examples
-	[Please check this Link](/latest/reference/libs/zerynth/4zerobox/docs/)
+	
 
 
 ## Pin Mapping
@@ -135,7 +135,7 @@ After virtualization, the 4ZeroBox is ready to be programmed and the Zerynth scr
 
 !!!Note
 	No user intervention on the device is required for the uplink process.
-
+<!--
 ## Board Support Package
 
 For the BSP pack of the 4ZeroBox, The following modules are supported:
@@ -155,7 +155,7 @@ interface = wifi.interface()
 interface.link("***Wifi-ssid***", interface.WIFI_WPA2, "***Wifi-password****")
 
 ```
-
+-->
 ## Firmware Over the Air update (FOTA)
 
 The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the 4ZeroBox device is available for bytecode and VM.
