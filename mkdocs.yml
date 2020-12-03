@@ -704,6 +704,7 @@ nav:
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
   - 4ZeroBox:
     - demos/4zerobox/Hello_4ZeroBox.md
+    - demos/4zerobox/Multi_Blinking.md
             # - ZDM-Client Python Library:
             #   - reference/core/zdmclient/docs/index.md
 
