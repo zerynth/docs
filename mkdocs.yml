@@ -695,6 +695,7 @@ nav:
   - ZDM:
     - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
     - demos/zdm/Connect_Zerynth_Device_Manager_with_Grafana_for_IoT_data_Visualization.md
+    - demos/zdm/Connect_a_Raspberry_Pi_or_PC_application_to_the_Zerynth_Device_Manager.md
   - Zerynth OS:
     - demos/zerynth-os/An_alcohol_tester_with_LED_lights.md
     - demos/zerynth-os/Combining_IoT_and_Blockchain_Using_Simple_Python.md
