@@ -15,3 +15,5 @@ The steps for contributing to the Zerynth Documentation are as follows:
 9. wait for someone to accept your changes or to ask you for some modifications
 
 You can work on multiple branches in parallel. Please, keep the work on each branch relative to a small amount of indipendent changes, otherwise reviewing youe work will be a nightmare (which means it won't be done).
+
+g
