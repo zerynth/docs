@@ -41,13 +41,3 @@ These Zerynth powered solutions will inspire you to look beyond your expectation
 <a style="font-size: 15px; margin-right: 0px;" target="_blank" href="/latest/reference/boards/" class="md-button md-button--primary">
             Learn more
           </a>
-
-  
-
-## **Zerynth 4.0 Platform**
-
-4ZeroPlatform is a platform designed for Industry 4.0 solution providers, and thanks to its versatility, it can be adapted to any industrial context. 4ZeroPlatform is composed of 4ZeroBox and 4ZeroManager.
-
-<a style="font-size: 15px; margin-right: 0px;" target="_blank" href="https://www.zerynth.com/4zeroplatform/" class="md-button md-button--primary">
-            Learn more
-          </a>
