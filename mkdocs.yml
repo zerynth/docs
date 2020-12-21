@@ -114,7 +114,6 @@ nav:
         - reference/core/stdlib/docs/pwr.md
         - reference/core/stdlib/docs/sfw.md
         - reference/core/stdlib/docs/fota.md
-        - reference/core/stdlib/docs/board-support-package.md
         - reference/core/stdlib/docs/examples.md
     - Command Line Interface:
         - Zerynth Toolchain:
@@ -142,8 +141,7 @@ nav:
           - reference/core/zdmcli/docs/job_cmd.md
           - reference/core/zdmcli/docs/fota_cmd.md
     - Zerynth Hardware:
-        - {Gettin Started: https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/}
-        - zerynth-hardware/4ZeroBox.md
+        - 4zp/4ZeroBox.md
     - Supported Devices:
       - reference/boards/index.md
       - reference/boards/adafruit_feather_huzzah/docs/index.md
@@ -689,7 +687,6 @@ nav:
               - reference/libs/zerynth/zdm/docs/zdm.md
               - reference/libs/zerynth/zdm/docs/examples.md
             - 4zerobox:
-              - {Gettin Started: https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/}
               - reference/libs/zerynth/4zerobox/docs/index.md
               - reference/libs/zerynth/4zerobox/docs/module.md
               - reference/libs/zerynth/4zerobox/docs/examples.md
@@ -707,14 +704,10 @@ nav:
     - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
   - 4ZeroBox:
     - demos/4zerobox/Hello_4ZeroBox.md
+    - demos/4zerobox/Multi_Blinking.md
     - demos/4zerobox/Connecting_the_4ZeroBox_to_Zerynth_Device_Manager_over_WiFi.md
-            # - ZDM-Client Python Library:
-            #   - reference/core/zdmclient/docs/index.md
 
-            # - zerynthshield:
-            #   - reference/libs/zerynth/zerynthshield/docs/index.md
-            #   - reference/libs/zerynth/zerynthshield/docs/zerynthshield.md
-            #   - reference/libs/zerynth/zerynthshield/docs/examples.md
+
             
 plugins:
 - search

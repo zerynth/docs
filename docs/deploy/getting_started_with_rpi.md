@@ -98,5 +98,6 @@ and just check the incoming messages in the data widget.
 
 ...and we are done!
 
+Click [here](https://github.com/zerynth/zdm-client-py){target=_blank} if you want to see more examples like this one.
 
 
