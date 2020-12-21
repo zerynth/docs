@@ -113,7 +113,7 @@ Then something like this will appear on the serial console:
 
 Now, let’s take a look at these colorful palette LEDs.
 
-![](video/led_video.mp4)
+![](img/led_video.mp4)
 
 ## Summary
 
@@ -121,7 +121,7 @@ We hope that this demo will be an inspiration for creating more exciting and col
 
 The user can find the complete 4ZeroBox documentation at this [link](/latest/4zp/4ZeroBox/).
 
-[here](https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
+[Here](https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
 
 Other useful documents are:
 
@@ -129,6 +129,6 @@ Other useful documents are:
 - [Brochure](https://www.zerynth.com/download/13895/),
 - [Examples](/latest/reference/libs/zerynth/zdm/docs/examples/).
 
-The code is available in our [GitHub repository](https://github.com/zerynth).
+The code is available in our [GitHub repository](https://github.com/zerynth/demos-4zerobox/tree/main/multi-blinking-demo).
 
 Happy coding!
