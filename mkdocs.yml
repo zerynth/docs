@@ -707,6 +707,7 @@ nav:
     - demos/4zerobox/Multi_Blinking.md
     - demos/4zerobox/Connecting_the_4Zerobox_to_Zerynth_Device_Manager_over_Ethernet.md
     - demos/4zerobox/Connecting_the_4ZeroBox_to_Zerynth_Device_Manager_over_WiFi.md
+    - demos/4zerobox/Firmware_over_the_air_Updates_for_4ZeroBox_over_WiFi.md
 
 
             

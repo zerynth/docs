@@ -121,7 +121,7 @@ We hope that this demo will be an inspiration for creating more exciting and col
 
 The user can find the complete 4ZeroBox documentation at this [link](/latest/4zp/4ZeroBox/).
 
-[Here](https://docs.zerynth.com/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
+[Here](/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
 
 Other useful documents are:
 
