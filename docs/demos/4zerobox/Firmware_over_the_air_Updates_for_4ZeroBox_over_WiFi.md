@@ -1,6 +1,7 @@
-# Connecting the 4ZeroBox to Zerynth Device Manager over WiFi
+# Firmware over the air Updates for 4ZeroBox over Wifi
 
-In this tutorial, we will show you how to connect the 4ZeroBox to the Zerynth Device Manager sending data to a cloud service.
+In this tutorial, we will show how the user can connect the 4ZeroBox to the Zerynth Device Manager sending data to a cloud service and how to use the FOTA (Firmware Over The Air) update procedure to update the firmware on the 4ZeroBox device.
+
 Zerynth Device Manager (ZDM) is a device and data management service that makes it easy to securely register, organize, monitor, and remotely manage IoT devices at scale. 
 With Zerynth Device Manager, you can manage large and diverse device fleets such as operational technology systems, machines, appliances, vehicles, and more.
 
@@ -31,7 +32,7 @@ The 4ZeroBox comes with a serial-to-usb chip on board that allows programming an
 !!! note
     For Linux Platform: to allow the access to the serial ports the user needs read/write access to the serial device file. Adding the user to the group that owns this file, gives the required read/write access: Ubuntu distribution –> dialout group; Arch Linux distribution –> uucp group.
 
-Once connected on a USB port, if the drivers have been correctly installed, the 4ZeroBox device is recognized by Zerynth Studio.
+Once connected to a USB port, if the drivers have been correctly installed, the 4ZeroBox device is recognized by Zerynth Studio.
 Now, the user can download and Install [Zerynth Studio r.2.6.2](https://www.zerynth.com/zsdk). If you have already installed and virtualized your 4ZeroBox you can skip to the Implementation section.
 
 Once Zerynth is installed, the user can Connect, Register, and Virtualize the device.
@@ -80,160 +81,52 @@ Once the credentials are ready, you can download them into a zdevice.json file. 
 
 ![](img/download.jpg)
 
-## Implementation
+## FOTA
 
-In this section, we will run a very simple application which will connect the 4ZeroBox to the Zerynth Device Manager and send fibonacci numbers as data to the cloud service. At the same time data will be printed on the console, so you can monitor both ZDM devices and physical devices in parallel. 
+The FOTA (Firmware Over The Air) update procedure is used to update the firmware of one or more devices remotely.
 
-So, let’s start with the implementation.
+!!! important
+    In order to perform the FOTA of a device, you need to virtualize it with a “Fota Enabled” virtual machine.
 
-**1. Create and setup the advanced project configuration**
+The first step to start a FOTA update on your devices is to prepare and upload firmware to the ZDM cloud. To upload your firmware, open the Zerynth Studio (Zerynth studio v. 2.5.0 or higher is required). 
 
-Let’s create a new project by clicking Project, then New and choose the location and name for your project. After it is created and appears in the project view. Double click the ‘project.yml’ to open it in the editor. Now replace the `config: {}` with this text.
+Open the project you want to compile and use for the FOTA (https://github.com/zerynth/demos-4zerobox/tree/main/connecting-4zerobox-to-zdm-over-wifi) and click on the Connected Devices icon on the left vertical menu.
 
-```py
-config:
-	# enable ethernet connection
-	NETWORK_ETH: null
-	# enable wifi connection
-	NETWORK_WIFI: true
-	# enable gsm connection
-	NETWORK_GSM: null
-	# enable ADC 0-10v/4-20mA peripheral
-	ADC_010_420: null
-	# enable ADC resistive peripheral
-	ADC_RESISTIVE: null
-	# enable ADC current peripheral
-	ADC_CURRENT: null
-	# enable can peripheral
-	CAN_ENABLE: null
-	# enable RS485 peripheral
-	RS485_ENABLE: null
-	# enable RS232 peripheral
-	RS232_ENABLE: null
-	# enable SD Card
-	SDCARD_ENABLED: null
-	# enable DEBUG for fourzerobox
-	DEBUG_FZB: null
-```
+![](img/connected_devices.jpg)
 
-By pasting this inside `project.yml` we have enabled the usage of WIFI - as you can see WIFI has the value `true` compared to others which are `null`.
+Now click on the **ZDM FOTA Prepare** orange button and then:
 
-**Copy the `zdevice.json` saved in previous steps to the project folder.** 
+1. select the ZDM device you want to update,
+2. select the firmware’s project location in your local file system you want to use with FOTA (https://github.com/zerynth/demos-4zerobox/tree/main/multi-blinking-demo),
+3. indicate a unique firmware version identifier, click **prepare**.
 
-**2. System Initialization**
+![](img/fota_prepare.jpg)
 
-Let’s first import all necessary modules and create a sequence which will initialize the system. 
+Fota has been prepared correctly! Well done!
 
-In this example, we are using a watchdog timer that must be reset every pre-defined period. Alongside with that we will initialize serial and create an instance of the fourzerobox class.
+Now click on the **open ZDM GUI** button and you will be redirected to the ZDM selected device page.
 
-```py
-from bsp.drivers import wifi
-import streams
-from zdm import zdm
-import threading as th
-import sfw
-import mcu
-from fourzerobox import fourzerobox
+![](img/fota_prepared_correctly.jpg)
 
-fzbox = None
+Now, choose your firmware ID and click on the **Start** button.
 
-# Initialize system
-sfw.watchdog(0, 60000)
-streams.serial()
-print("Serial init\r\n... DONE")
-try:
-	print("FourZerobox init")
-	fzbox = fourzerobox.FourZeroBox()
-	print("... DONE")
-except Exception as e:
-	print('Init exception: ', e)
-	mcu.reset()
-```
+![](img/fota_start.jpg)
 
-**3. Setup WIFI connection and connect to the ZDM**
+Your FOTA started successfully! Well done.
 
-Now let’s initialize the WIFI connection and setup the connection to the ZDM. Don’t forget to replace the strings for SSID and password with real names.
+![](img/fota_started_succesfully.jpg)
 
-```py
-# Setup connection
-try:
-	print("Network init")
-	fzbox.net_init()
-	print("... DONE")
-	print("Connecting to wifi ...")
-	fzbox.net_connect("MyNetwork","MyPassword")
-	print("... DONE")
-	print("Connecting to ZDM ...")
-	device = zdm.Device()
-	device.connect()
-	print("... DONE")
-except Exception as e:
-	print('Connect exception: ', e)
-	fzbox.pulse('R', 10000)
-	mcu.reset()
-```
+Now, you can check your device's FOTA state to verify the result.
 
-As you can see, it is pretty simple, except for network parameters there are no hardcoded strings needed to make a connection between a physical hardware device and a virtual cloud device - all of that is automatically provided from the zdevice.json file, which we copied in the previous steps.
+And this is our result:
 
-**4. Publish function**
+![](img/led_video.mp4)
 
-In this step we will create the function which will publish the data to the cloud. As we said before, for the sake of simplicity, there is no sensor which provides us with some measurements so we will implement the simple algorithm which calculates the fibonacci sequence.
-
-```py
-def publish_handler():
-	global d1
-	global d2
-	try:
-    		print(" --- Data to send ---")
-    	# Calculate fibonacci number
-    		num = d1 + d2
-    	d1 = d2
-    		d2 = num
-    	print("fibonacci:", num)
-    	to_send = {}
-    		to_send["fibonacci"] = num
-    	# Publish data to ZDM cloud service
-    		device.publish(to_send, "data" )
-    	print("... DONE")
-	except Exception as e:
-    		print('Publish exception: ', e)
-    	fzbox.error_cloud()
-    		mcu.reset()
-```
-
-As you can see - sending is pretty easy - the single method call is enough to send data to the cloud. 
-
-**5. Main loop**
-
-As a final step it remains to implement a main loop. For that purpose we need nothing more than a simple `while ` loop executed each 10 seconds, for example.
-
-```py
-# Main Loop
-try:
-	print("Start Main")
-	while True:
-    		publish_handler()
-    	sfw.kick()
-    		sleep(10000)
-except Exception as e:
-	print('Run exception: ', e)
-	fzbox.pulse('R', 10000)
-	mcu.reset()
-```
-
-Here, you can see a picture of the folder structure:
-
-![](img/folder_structure.jpg)
-
-After compilation of the code and uplinking to the 4ZeroBox you will be able to monitor the fibonacci sequence on the Console and ZDM web application in parallel. 
-
-![](img/data.jpg)
-
-![](img/console_wifi.png)
+![](img/fota_console.jpg)
 
 ## Summary
 
-As you can see, in this tutorial, connecting your device to ZDM is very simple. Of course, for some real use-cases it is necessary to implement additional things like sensor readings etc. but the purpose of this tutorial was to show you the basics.
+Thanks to Firmware Over-the-Air (FOTA) technology, users are untethered from hardwired machines and no longer need expert technicians to manually update devices. Transmitting the information wirelessly makes FOTA fast, convenient, safe, cost-effective, and responsive. Since the implementation of FOTA is very complex, now, thanks to Zerynth ZDM, the user needs only one click to start FOTA and there is no need to write any code.
 
 We hope you enjoyed our new demo. Feel free to join our community forum if you have any additional questions.
 
@@ -254,16 +147,6 @@ We have a [5 minute tutorial](/latest/gettingstarted/) to get you started with t
 ZDM can be easily accessed via the Web App at https://zdm.zerynth.com or, for more advanced usages, via the ZDM Command Line Interface integrated in the Zerynth SDK (download from https://www.zerynth.com/zsdk/).
 
 You can also follow the tutorial on the ZDM [Web Interface](/latest/deploy/web_interface/) for finding your way around.
-The code is available in our [GitHub](https://github.com/zerynth/demos-4zerobox/tree/main/connecting-4zerobox-to-zdm-over-wifi) repository.
 
-
-
-
-
-
-
-
-
-
-
+Both codes used for this tutorial are available at our [GitHub repository](https://github.com/zerynth/demos-4zerobox).
 
