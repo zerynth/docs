@@ -62,6 +62,7 @@ In this step by step tutorial we will explain how to program the 4ZeroBox with t
 
 Register or login to the [ZDM](https://zdm.zerynth.com/). The first time you access the ZDM, a default workspace and a default fleet are created for you. Workspaces and fleets are ways of organizing your devices in the ZDM. Open the workspace by clicking on it.
 
+
 ![](img/workspace.jpg)
 
 **2. Create a device**
@@ -237,11 +238,13 @@ As you can see, in this tutorial, connecting your device to ZDM is very simple. 
 
 We hope you enjoyed our new demo. Feel free to join our community forum if you have any additional questions.
 
+
 The complete 4ZeroBox documentation is available [here](/latest/4zp/4ZeroBox/).
 
 The user can find the complete 4ZeroBox documentation at this [link](/latest/4zp/4ZeroBox/).
 
 [Here](/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
+
 
 Other useful documents are:
 
@@ -249,11 +252,13 @@ Other useful documents are:
 - [Brochure](https://www.zerynth.com/download/13895/),
 - [Examples](/latest/reference/libs/zerynth/zdm/docs/examples/).
 
+
 We have a [5 minute tutorial](/latest/gettingstarted/) to get you started with the ZDM.
 
 ZDM can be easily accessed via the Web App at https://zdm.zerynth.com or, for more advanced usages, via the ZDM Command Line Interface integrated in the Zerynth SDK (download from https://www.zerynth.com/zsdk/).
 
 You can also follow the tutorial on the ZDM [Web Interface](/latest/deploy/web_interface/) for finding your way around.
+
 
 The code is available in our [GitHub repository](https://github.com/zerynth/demos-4zerobox/tree/main/connecting-the-4zerobox-to-zdm-over-ethernet).
 
