@@ -12,7 +12,7 @@ In this example, we will be using:
     - [Zerynth Toolchain](https://docs.zerynth.com/latest/reference/core/toolchain/docs/) – a command-line interface that integrates all the essential functions for the development with [Zerynth OS](https://www.zerynth.com/zos/) and the management of the Zerynth Device Manager cloud service.
     - [Zerynth Studio](https://docs.zerynth.com/latest/develop/) – an advanced [IDE](https://docs.zerynth.com/latest/reference/core/studio/docs/) for the Zerynth Toolchain. It includes development and debugging tools and numerous code examples.
 3. [Zerynth Device Manager (ZDM)](https://testdocs.zerynth.com/latest/deploy/) -it helps you register, organize, monitor, and remotely manage IoT devices at scale. ZDM allows managing devices and also collects and aggregates the data they produce. ZDM integrates with all primary cloud service providers to easily connect devices to the cloud and other devices so you can remotely control your fleet. You can use ZDM to take mitigating actions such as pushing security fixes. You can also easily send firmware-over-the-air (FOTA) updates to your Zerynth OS powered devices, such as the latest software version or a new firmware update.
-4. [4ZeroBox](/latest/4zp/4ZeroBox/) - a modular hardware electronic unit that simplifies the development of Industrial IoT applications allowing rapid integration with sensors, actuators, and Cloud services. 4ZeroBox is programmable in Python (or hybrid C/Python) thanks to the Zerynth SDK.
+4. [4ZeroBox](/latest/hardware/4ZeroBox/) - a modular hardware electronic unit that simplifies the development of Industrial IoT applications allowing rapid integration with sensors, actuators, and Cloud services. 4ZeroBox is programmable in Python (or hybrid C/Python) thanks to the Zerynth SDK.
 
 ## Hardware Setup
 
@@ -239,9 +239,9 @@ As you can see, in this tutorial, connecting your device to ZDM is very simple. 
 We hope you enjoyed our new demo. Feel free to join our community forum if you have any additional questions.
 
 
-The complete 4ZeroBox documentation is available [here](/latest/4zp/4ZeroBox/).
+The complete 4ZeroBox documentation is available [here](/latest/hardware/4ZeroBox/).
 
-The user can find the complete 4ZeroBox documentation at this [link](/latest/4zp/4ZeroBox/).
+The user can find the complete 4ZeroBox documentation at this [link](/latest/hardware/4ZeroBox/).
 
 [Here](/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
 

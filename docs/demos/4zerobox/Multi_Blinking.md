@@ -8,7 +8,7 @@ In this example, we will be using:
 2. [Zerynth SDK](https://www.zerynth.com/zsdk/) - the gateway to our platform which includes:   
     - [Zerynth Toolchain](https://docs.zerynth.com/latest/reference/core/toolchain/docs/) – a command-line interface that integrates all the essential functions for the development with [Zerynth OS](https://www.zerynth.com/zos/)  and the management of the Zerynth Device Manager cloud service.
     - [Zerynth Studio](https://docs.zerynth.com/latest/develop/) – an advanced [IDE](https://docs.zerynth.com/latest/reference/core/studio/docs/) for the Zerynth Toolchain. It includes development and debugging tools and numerous code examples.  
-3. [4ZeroBox](/latest/4zp/4ZeroBox/) - a modular hardware electronic unit that simplifies the development of Industrial IoT applications allowing rapid integration with sensors, actuators, and Cloud services. 4ZeroBox is programmable in Python (or hybrid C/Python) thanks to the Zerynth SDK.
+3. [4ZeroBox](/latest/hardware/4ZeroBox/) - a modular hardware electronic unit that simplifies the development of Industrial IoT applications allowing rapid integration with sensors, actuators, and Cloud services. 4ZeroBox is programmable in Python (or hybrid C/Python) thanks to the Zerynth SDK.
 
 ## Hardware Setup
 
@@ -119,7 +119,7 @@ Now, let’s take a look at these colorful palette LEDs.
 
 We hope that this demo will be an inspiration for creating more exciting and colorful projects in the future.
 
-The user can find the complete 4ZeroBox documentation at this [link](/latest/4zp/4ZeroBox/).
+The user can find the complete 4ZeroBox documentation at this [link](/latest/hardware/4ZeroBox/).
 
 [Here](/latest/demos/4zerobox/Hello_4ZeroBox/) is the link for all available 4ZeroBox demos.
 
