@@ -696,12 +696,12 @@ nav:
     - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
     - demos/zdm/Connect_Zerynth_Device_Manager_with_Grafana_for_IoT_data_Visualization.md
   - Zerynth OS:
-    - demos/zerynth-os/adc.md
-    - demos/zerynth-os/c_language_interface.md
     - demos/zerynth-os/hello_zerynth.md
-    - demos/zerynth-os/i2c.md
     - demos/zerynth-os/multi_serial.md
     - demos/zerynth-os/multi_thread_basic.md
+    - demos/zerynth-os/c_language_interface.md
+    - demos/zerynth-os/adc.md
+    - demos/zerynth-os/i2c.md
     - demos/zerynth-os/spi.md
     - demos/zerynth-os/watchdog.md
     - demos/zerynth-os/zdm_simple.md
