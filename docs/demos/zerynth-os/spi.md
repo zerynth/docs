@@ -3,6 +3,7 @@
 The demonstration of spi module usage, where BME260 sensor by Bosch is for communication. After the initialization of the SPI bus we are reading the device ID from the sensor in two different ways - each way is implemented in separated thread. Also every thread uses lock mechanism to prevent interferences. For this particular sensor device id is placed inside register on address `0x0D` and the content of the register should be `0x60`.
 
 More information about modules used in this demo:
+
 - [SPI](latest/reference/core/stdlib/docs/i2c/#class-i2c)
 
 
