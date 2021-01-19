@@ -692,9 +692,6 @@ nav:
               - reference/libs/zerynth/4zerobox/docs/examples.md
 
 - Demos:
-  - ZDM:
-    - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
-    - demos/zdm/Connect_Zerynth_Device_Manager_with_Grafana_for_IoT_data_Visualization.md
   - Zerynth OS:
     - demos/zerynth-os/hello_zerynth.md
     - demos/zerynth-os/multi_serial.md
@@ -705,6 +702,12 @@ nav:
     - demos/zerynth-os/spi.md
     - demos/zerynth-os/watchdog.md
     - demos/zerynth-os/zdm_simple.md
+    - demos/zerynth-os/Easy_Keyboard_Module_with_Zerynth_and_Riverdi_IoT_Display.md
+    - demos/zerynth-os/Combining_IoT_and_Blockchain_Using_Simple_Python.md
+  - ZDM:
+    - {Getting Started: /latest/deploy/getting_started_with_sdk/}
+    - demos/zdm/Connect_Power_Bi_to_the_Zerynth_Device_Manager.md
+    - demos/zdm/Connect_Zerynth_Device_Manager_with_Grafana_for_IoT_data_Visualization.md
   - 4ZeroBox:
     - demos/4zerobox/Hello_4ZeroBox.md
     - demos/4zerobox/Multi_Blinking.md
