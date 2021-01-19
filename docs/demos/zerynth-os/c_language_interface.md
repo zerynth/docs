@@ -3,6 +3,7 @@
 The demonstration of how to write the C code function inside separate file which is then wrapped in python code. C functions are implemented to do basic operations of multiplying and addition of the two variables. Then inside main module they are wrapped with python functions and called in order to add and multiply two numbers.
 
 More information about content used in this demo:
+
 - [C Language Interface](/latest/reference/guide/docs/clang/)
 
 File which carries C source code `c_file.c` should be placed inside project folder.

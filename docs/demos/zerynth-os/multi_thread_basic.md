@@ -3,6 +3,7 @@
 The basic demonstration of Zerynth multi-threading. Two threads are running in parallel, each thread toggle the single LED and in same time print the message about which thread toggle the LED and polarity of the GPIO pin.
 
 More information about modules used in this demo:
+
 - [Threading](/latest/reference/core/stdlib/docs/threading/)
 - [GPIO](/latest/reference/guide/docs/vhal/#gpio)
 - [Serial](/latest/reference/guide/docs/vhal/#serial)

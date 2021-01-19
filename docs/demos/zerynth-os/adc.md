@@ -3,6 +3,7 @@
 This demonstration of ADC usage. During first ADC readout, single sample will be read and then converted to the real voltage based on ADC resolution and reference voltage. During second readout, 4 samples will be read from the single analog pin with default sampling period. During the third readout, 4 samples will be read from two analog pins.
 
 More information about modules used in this demo:
+
 - [ADC](latest/reference/guide/docs/vhal/#adc)
 
 ```py

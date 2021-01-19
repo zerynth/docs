@@ -3,6 +3,7 @@
 The demonstration of multiple serial ports usage via Zerynth multi-threading. All data written to port 1 will be printed to port 2 and vice versa. There are two threads and each thread is polling the single serial port. If there is data available on the particular port it will be printed to other serial port. Due to usage of the same serial ports from different threads Lock is involved in order to achieve synchronization between threads on same object usage.
 
 More information about modules used in this demo:
+
 - [Streams](/latest/reference/core/stdlib/docs/streams/)
 - [Threading](/latest/reference/core/stdlib/docs/threading/)
 
